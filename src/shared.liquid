@@ -714,7 +714,17 @@ So the bare key is refined into the variant the day actually is. Each
 falls back to plain 'perfect' when a language has not written it, which
 keeps every existing and future translation working with the one key.
 {%- endcomment %}
+{%- comment %}
+is_steady means "the temperature has nothing to say today", whichever
+variant of that we end up naming. Everything downstream tests this rather
+than the scenario string, because the moment 'perfect' could become
+'perfect_evening' or 'theme_xmas', a string comparison silently stopped
+matching and the tip started pairing a nothing-is-happening sentence with a
+rain fragment - exactly the join the original markup existed to prevent.
+{%- endcomment %}
+{%- assign is_steady = false -%}
 {%- if scenario == 'perfect' -%}
+  {%- assign is_steady = true -%}
   {%- assign perfect_variant = '' -%}
   {%- if active_theme != '' -%}
     {%- comment %}
@@ -813,7 +823,7 @@ See docs/TRANSLATING.md for the full contract.
     when there is. This is what stops 'Nothing comes off, nothing
     goes on. Take the umbrella.' from ever rendering.
     {%- endcomment %}
-    {%- if scenario == 'perfect' -%}
+    {%- if is_steady -%}
       {%- assign p_key = precip_scenario -%}
     {%- else -%}
       {%- assign p_key = precip_scenario | append: '_j' -%}
@@ -842,7 +852,7 @@ See docs/TRANSLATING.md for the full contract.
         If none fit, take the shortest and let it be tight rather than
         dropping the rain warning, which is the part someone acts on.
         {%- endcomment %}
-        {%- if scenario == 'perfect' -%}
+        {%- if is_steady -%}
           {%- comment %} the temp clause is discarded below, so it costs nothing {%- endcomment %}
           {%- assign room = TIP_BUDGET -%}
         {%- else -%}
@@ -875,7 +885,7 @@ See docs/TRANSLATING.md for the full contract.
     {%- endif -%}
   {%- endif -%}
 
-  {%- if scenario == 'perfect' and precip_clause != '' -%}
+  {%- if is_steady and precip_clause != '' -%}
     {%- assign today_tip = precip_clause -%}
   {%- elsif precip_clause != '' -%}
     {%- assign today_tip = temp_clause | append: ' ' | append: precip_clause -%}

@@ -563,7 +563,9 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
   {%- when 'nikolo' -%}{%- assign theme_whitelist = '' -%}
 {%- endcase -%}
 
+{%- assign is_steady = false -%}
 {%- if scenario == 'perfect' -%}
+  {%- assign is_steady = true -%}
   {%- assign perfect_variant = '' -%}
   {%- if active_theme != '' -%}
         {%- assign perfect_variant = 'theme_' | append: active_theme -%}
@@ -852,7 +854,7 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
   {%- assign temp_clause = temp_clause | replace: '  ', ' ' | strip -%}
 
   {%- if precip_scenario != '' -%}
-        {%- if scenario == 'perfect' -%}
+        {%- if is_steady -%}
       {%- assign p_key = precip_scenario -%}
     {%- else -%}
       {%- assign p_key = precip_scenario | append: '_j' -%}
@@ -887,7 +889,7 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
     {%- if p_arr -%}
       {%- assign pn = p_arr | size -%}
       {%- if pn > 0 -%}
-                {%- if scenario == 'perfect' -%}
+                {%- if is_steady -%}
                     {%- assign room = TIP_BUDGET -%}
         {%- else -%}
           {%- assign room = TIP_BUDGET | minus: temp_clause.size | minus: 1 -%}
@@ -919,7 +921,7 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
     {%- endif -%}
   {%- endif -%}
 
-  {%- if scenario == 'perfect' and precip_clause != '' -%}
+  {%- if is_steady and precip_clause != '' -%}
     {%- assign today_tip = precip_clause -%}
   {%- elsif precip_clause != '' -%}
     {%- assign today_tip = temp_clause | append: ' ' | append: precip_clause -%}

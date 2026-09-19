@@ -45,7 +45,31 @@
       "Heute bleibt alles an. Was du anhast, reicht den ganzen Tag.",
       "So wie du dastehst, bist du richtig angezogen. Los geht's.",
       "Nichts ändert sich heute. Du musst nichts tragen und nichts überlegen.",
-      "Ein ruhiger Wettertag. Einpacken musst du heute nichts."
+      "Ein ruhiger Wettertag. Einpacken musst du heute nichts.",
+      "Gleichbleibendes Wetter heute. Deine Sachen passen von früh bis spät.",
+      "Du brauchst heute keine zweite Schicht. Geh einfach so los.",
+      "Keine Überraschung im Wetter. Dein Outfit stimmt so, wie es ist.",
+      "Alles bleibt ruhig. Du kannst losgehen, ohne nochmal nachzudenken.",
+      "Wettermäßig passiert heute nichts Besonderes. Deine Schichten bleiben alle dran.",
+      "Draußen ändert sich nichts. Was du anhast, trägt dich durch den Tag.",
+      "Ein gleichmäßiger Tag. Kein Umziehen, kein Nachlegen, kein Überlegen.",
+      "Deine Schichten bleiben heute genau da, wo sie sind.",
+      "Kein Wetterwechsel heute. Du bist so angezogen genau richtig.",
+      "So bleibt es den ganzen Tag. Du musst nichts nachlegen.",
+      "Nichts kommt dazu, nichts muss runter. Ein unkomplizierter Wettertag.",
+      "Ruhiges Wetter ohne Überraschungen. Du kannst dich auf dein Outfit verlassen.",
+      "Das Thermometer hält still. Umplanen musst du heute nichts.",
+      "Einfach losgehen. Am Wetter ändert sich heute nichts mehr.",
+      "Angezogen bist du richtig. Mehr braucht es heute nicht.",
+      "Kein Grund zum Umziehen. Es bleibt heute bei diesem Wetter.",
+      "Stabiles Wetter heute. Deine Kleidung passt ohne Änderung.",
+      "Heute gibt's nichts zu entscheiden. Geh los, wie du bist.",
+      "Ein bequemer Wettertag. Du musst weder etwas ausziehen noch etwas nachlegen.",
+      "Du bist für draußen gut angezogen. Mehr ist heute nicht nötig.",
+      "Nichts Neues am Himmel. Deine Sachen bleiben, wie sie sind.",
+      "Es bleibt bei dem, was du gerade trägst. Ganz ohne Nachbessern.",
+      "Ganz normales Wetter, von vorn bis hinten. Kein Grund für Extras.",
+      "Dein Tag braucht kein Ersatzoutfit. Das Wetter bleibt gleichmäßig."
     ],
     "arc_colder": [
       "{GARMENT} kommt {WHEN} runter. {WHEN2} reicht das nicht. Nimm eine Schicht extra.",
@@ -85,7 +109,13 @@
       "Irgendwann fliegt die dicke Jacke runter. Dann ist ein Arm belegt.",
       "Trag die Winterjacke {WHEN} im Arm oder nimm einen Rucksack mit.",
       "Die Winterjacke ist {WHEN} zu warm. Zieh sie aus, bevor du schwitzt.",
-      "Die dicke Jacke brauchst du {WHEN} nicht mehr. Mach vorher Platz im Rucksack."
+      "Die dicke Jacke brauchst du {WHEN} nicht mehr. Mach vorher Platz im Rucksack.",
+      "Irgendwann brauchst du die Winterjacke nicht mehr. Sie füllt jeden Rucksack.",
+      "Die Daunenjacke muss {WHEN} runter. Zusammengefaltet passt sie kaum irgendwo hin.",
+      "Ohne dicke Jacke geht es {WHEN} besser. Nimm einen Rucksack mit.",
+      "Pack einen Rucksack ein. Die Winterjacke muss {WHEN} irgendwo hinein.",
+      "So eine dicke Jacke im Arm stört. Plan {WHEN} Platz dafür ein.",
+      "Mach im Rucksack Platz frei. {WHEN} kommt die Winterjacke dazu."
     ],
     "w_jacket": [
       "Die Jacke kannst du {WHEN} ausziehen. Danach trägst du sie über dem Arm.",
@@ -93,7 +123,13 @@
       "Mit Jacke ist es {WHEN} zu warm. Ohne Tasche trägst du sie in der Hand.",
       "Die Jacke hast du nicht den ganzen Tag an. Plan einen Platz dafür ein.",
       "{WHEN} landet die Jacke im Rucksack. Klein gefaltet passt sie gut rein.",
-      "Nimm eine Tasche mit. Die Jacke muss {WHEN} irgendwo hin."
+      "Nimm eine Tasche mit. Die Jacke muss {WHEN} irgendwo hin.",
+      "{WHEN} musst du die Jacke ausziehen. Ohne Rucksack trägst du sie herum.",
+      "Ohne Jacke ist es {WHEN} angenehmer. Binde sie dir um die Hüfte.",
+      "Zieh die Jacke {WHEN} aus, bevor dir zu warm wird.",
+      "Eine leichte Jacke passt zusammengerollt in jede Tasche. {WHEN} braucht sie einen Platz.",
+      "Später trägst du die Jacke im Arm. Ein Beutel macht das leichter.",
+      "Plan einen Platz für die Jacke ein. {WHEN} kommt sie runter."
     ],
     "w_hoodie": [
       "Der Hoodie kommt {WHEN} runter. Um die Hüfte gebunden ist er gut verstaut.",
@@ -109,7 +145,13 @@
       "{WHEN} reicht das T-Shirt allein. Das Sweatshirt trägst du dann im Arm.",
       "Das Sweatshirt bleibt nicht lange an. Denk an eine Tasche dafür.",
       "Ohne Sweatshirt ist es {WHEN} angenehmer. Binde es dir um die Hüfte.",
-      "{WHEN} genügt ein T-Shirt. Roll das Sweatshirt zusammen und nimm es mit."
+      "{WHEN} genügt ein T-Shirt. Roll das Sweatshirt zusammen und nimm es mit.",
+      "{WHEN} kommt der Pulli runter. Um die Hüfte gebunden ist er verstaut.",
+      "Unter dem Sweatshirt reicht {WHEN} das T-Shirt. Nimm eine Tasche mit.",
+      "Der Pulli hat {WHEN} Feierabend. Danach trägst du ihn im Arm.",
+      "Zieh den Pulli {WHEN} aus, bevor du ins Schwitzen kommst.",
+      "Warm genug ohne Sweatshirt {WHEN}. Roll es zusammen und pack es weg.",
+      "Einen Platz für den Pulli brauchst du heute. Denk vorher daran."
     ],
     "w_water": [
       "Nimm eine Flasche Wasser mit. Trink {WHEN} regelmäßig.",
@@ -117,7 +159,13 @@
       "Wasserflasche einpacken. Weniger anziehen geht heute nicht mehr.",
       "Trink über den Tag verteilt viel Wasser. Schatten hilft mehr als alles andere.",
       "Such dir {WHEN} einen schattigen Platz. Und trink genug.",
-      "Die Hitze legt {WHEN} zu. Nimm Wasser mit und geh langsam."
+      "Die Hitze legt {WHEN} zu. Nimm Wasser mit und geh langsam.",
+      "Es geht {WHEN} noch weiter nach oben. Trink früher als sonst.",
+      "Pack eine Wasserflasche ein und füll sie unterwegs wieder auf.",
+      "Bleib {WHEN} im Schatten, wenn du kannst. Und trink regelmäßig.",
+      "Mehr ausziehen geht nicht. Wasser und Schatten sind jetzt deine Mittel.",
+      "Heißer als jetzt, und Kleidung hilft dabei nicht. Trink genug.",
+      "Geh langsam und such dir kühle Plätze. Wasser gehört in die Tasche."
     ],
     "c_scarf": [
       "Pack einen Schal ein. Die Jacke allein lässt den Hals frei.",
@@ -157,15 +205,153 @@
       "Ein Sweatshirt über dem Arm stört nicht und hilft dir {WHEN}.",
       "Leg ein Sweatshirt bereit. Später sind kurze Ärmel zu wenig.",
       "An den Armen ist es {WHEN} zu kühl. Nimm ein Sweatshirt mit.",
-      "Ohne Ärmel ist es später zu kühl. Ein Sweatshirt genügt."
+      "Ohne Ärmel ist es später zu kühl. Ein Sweatshirt genügt.",
+      "Steck ein Sweatshirt in die Tasche. {WHEN} willst du es anhaben.",
+      "Kurze Ärmel reichen {WHEN} nicht mehr. Nimm ein Sweatshirt mit.",
+      "Denk an ein Sweatshirt. Später sind die Arme sonst kalt.",
+      "Ein Pulli im Rucksack kostet dich nichts. {WHEN} brauchst du ihn.",
+      "Zieh los mit einem Sweatshirt im Gepäck. Am Abend hilft es dir.",
+      "Später brauchst du etwas über den Armen. Ein Sweatshirt reicht dafür."
     ],
     "c_relief": [
-      "Die größte Hitze ist {WHEN} vorbei. Mitnehmen musst du nichts.",
+      "Die größte Hitze ist {WHEN} vorbei. Eine Schicht mehr brauchst du nicht.",
       "Die Hitze lässt {WHEN} nach. Warm bleibt es trotzdem.",
       "Angenehmer als jetzt, aber immer noch warm. Du brauchst nichts extra.",
       "Zieh einfach so los. {WHEN} ist es schon angenehmer.",
       "Die Spitze der Hitze ist heute schon durch. Umziehen musst du dich nicht.",
-      "Es bleibt warm, nur nicht mehr so heiß. Nichts zu packen."
+      "Es bleibt warm, nur nicht mehr so heiß. Ohne Zusatzschicht.",
+      "Das Schlimmste der Hitze liegt hinter dir. Zusätzliche Schichten braucht es keine.",
+      "Aus sehr heiß wird angenehm warm. An den Schichten ändert das nichts.",
+      "{WHEN} atmet es sich leichter. Anziehen musst du deswegen nichts.",
+      "Der heißeste Teil ist vorbei. Leicht angezogen bist du weiter richtig.",
+      "{WHEN} lässt die Hitze nach. Für eine lange Hose reicht das nicht.",
+      "Erträglicher wird es, warm bleibt es. Eine Schicht extra braucht es nicht.",
+      "Die Luft wird {WHEN} milder. Für Ärmel reicht die Abkühlung nicht.",
+      "Ein bisschen weniger Hitze, mehr passiert nicht. Deine Schichten bleiben unverändert.",
+      "Es kühlt ab, aber nur von heiß auf warm. Schichten brauchst du keine.",
+      "Trink trotzdem genug. Die Hitze geht zurück, verschwindet aber nicht.",
+      "Die schlimmste Hitze ist {WHEN} vorbei. Umziehen lohnt sich nicht.",
+      "Kühler, ja, aber nicht kühl. Eine Jacke bleibt heute zu Hause."
+    ],
+    "perfect_evening": [
+      "Der Rest des Tages bleibt so. Du brauchst nichts mehr.",
+      "Für den Abend passt genau das, was du anhast.",
+      "Viel Tag ist nicht mehr übrig. Dein Outfit reicht dafür.",
+      "Bis nach Hause bleibt es so. Zieh nichts extra an.",
+      "Der Abend bleibt ruhig. Du kommst so durch, wie du bist.",
+      "Abends ändert sich nichts mehr. Deine Sachen passen bis zum Schluss.",
+      "Was jetzt noch kommt, ist mehr vom Gleichen. Alles passt so.",
+      "Nur noch ein Stück Tag. Dafür brauchst du keine Schicht extra.",
+      "Bis zum Abend bleibt das Wetter gleich. Geh einfach so los.",
+      "Kein Wechsel mehr heute. Du bist für den Abend richtig angezogen.",
+      "Der Abend bringt nichts Neues. So bist du gut dabei.",
+      "Für die letzten Stunden draußen passt das, was du trägst.",
+      "So wie jetzt bleibt es auch nachher. Nichts mehr zu tun.",
+      "Nach Hause kommst du ohne Extras. Am Wetter passiert nichts mehr.",
+      "Heute kommt nichts mehr nach. Zieh dich nicht extra um.",
+      "Von jetzt an bleibt alles gleich. Es fehlt dir nichts.",
+      "Der Tagesrest ist unkompliziert. Nachlegen musst du nichts mehr.",
+      "Draußen bleibt es so wie jetzt. Der Abend macht keine Ausnahme."
+    ],
+    "perfect_hot": [
+      "Heiß bleibt es heute durchgehend. Trink früh und trink viel.",
+      "Heiß von morgens bis abends. Such dir immer wieder Schatten.",
+      "Weniger anziehen geht nicht mehr. Wasser und Schatten helfen dir heute.",
+      "Füll dir eine Flasche Wasser ab und nimm sie mit.",
+      "Kleidung kann gegen diese Hitze nichts mehr ausrichten. Trinken schon.",
+      "Bei der Hitze zählt vor allem Trinken. Geh es ruhig an.",
+      "Durchgehend heiß heute. Plan kleine Pausen im Schatten ein.",
+      "Im Schatten ist es deutlich angenehmer. Geh von Schatten zu Schatten.",
+      "Die Sonne drückt den ganzen Tag. Trink, bevor du Durst hast.",
+      "Geh langsam und bleib oft stehen. Wasser gehört heute immer dazu.",
+      "So heiß bleibt es bis zum Abend. Denk ans Trinken.",
+      "Umziehen bringt heute nichts mehr. Setz auf Schatten und volle Flaschen."
+    ],
+    "perfect_cold": [
+      "Kalt bleibt es den ganzen Tag. Zieh alles an und lass es an.",
+      "Die Kälte hält durch. Was du anhast, ist genau richtig.",
+      "Wärmer wird es heute nicht. Mütze und Schal bleiben oben.",
+      "Frostig von früh bis spät. Zieh die Handschuhe gleich mit an.",
+      "Kalt, und das bleibt so. Deine warme Jacke behältst du an.",
+      "Mütze auf, Reißverschluss zu. Daran ändert sich heute nichts mehr.",
+      "Nichts wird heute milder. Die warmen Sachen bleiben, wo sie sind.",
+      "Dauerfrost heute. Die dicke Jacke ist von früh an richtig.",
+      "Bleib gut eingepackt. An der Kälte ändert sich heute nichts.",
+      "Kalte Luft, den ganzen Tag über. Zieh dich einmal richtig an.",
+      "Die Kälte bleibt gleichmäßig. Umziehen musst du heute nicht.",
+      "Ohne Mütze wird es ungemütlich. Setz sie gleich auf."
+    ],
+    "theme_ny": [
+      "Fürs Feuerwerk musst du dich nicht umziehen. Das Wetter bleibt gleichmäßig.",
+      "Silvester ohne Wetterwechsel. Draußen stehen hält sich heute gut aus.",
+      "Ruhiges Wetter zum Jahreswechsel. Du musst nichts extra einpacken.",
+      "Das alte Jahr macht keinen Ärger mehr. Deine Sachen passen so."
+    ],
+    "theme_ghd": [
+      "Heute wie gestern, morgen genauso. Du kannst dich darauf verlassen.",
+      "Murmeltiertag: Das Wetter wiederholt sich einfach. Dein Outfit darf das auch.",
+      "Nichts ändert sich, den ganzen Tag lang. Passend zum Murmeltiertag.",
+      "Ein Tag wie der davor. Du brauchst genau dieselben Sachen."
+    ],
+    "theme_pi": [
+      "Pi-Tag heute. Das Wetter läuft so gleichmäßig weiter wie die Zahl.",
+      "Kreisrund und gleichbleibend: Draußen ändert sich heute nichts. Geh so los.",
+      "Zum Pi-Tag passt dieses Wetter: Es hört nicht auf, gleich zu bleiben.",
+      "Ein Stück Kuchen zum Pi-Tag, und draußen bleibt alles beim Alten."
+    ],
+    "theme_force": [
+      "Möge das Wetter mit dir sein. Heute bleibt alles ruhig.",
+      "Star-Wars-Tag, und das Wetter hält sich zurück. Du brauchst nichts extra.",
+      "Auch ein Jedi kommt heute ohne Extraschicht aus. Alles bleibt ruhig.",
+      "Der vierte Mai ohne Wetterüberraschung. Du bist richtig angezogen."
+    ],
+    "theme_bike": [
+      "Guter Tag fürs Rad. Das Wetter bleibt von früh bis spät gleich.",
+      "Auf dem Rad brauchst du heute nichts Zusätzliches. Es bleibt gleichmäßig.",
+      "Weltfahrradtag, und das Wetter spielt mit. Einmal anziehen reicht.",
+      "Fahrradwetter ohne Wechsel. Am Lenker hast du beide Hände frei."
+    ],
+    "theme_tdf": [
+      "Tour-Wetter heute. Gleichmäßig von der ersten bis zur letzten Etappe.",
+      "Wie eine flache Etappe: Nichts steigt, nichts fällt, nichts kommt dazu.",
+      "Die Tour läuft, und das Wetter fährt einfach mit. Nichts ändert sich.",
+      "Heute gibt es keine Bergwertung. Das Wetter bleibt auf einer Höhe."
+    ],
+    "theme_okt": [
+      "Oktoberfest heute. Am Wetter ändert sich nichts, an der Musik schon.",
+      "Fürs Festzelt brauchst du nichts Zusätzliches. Das Wetter bleibt gleichmäßig.",
+      "Ein ruhiger Wiesntag. Dein Outfit bleibt, wie es ist.",
+      "Zum Oktoberfest hält das Wetter still. Einpacken kannst du dir sparen."
+    ],
+    "theme_spooky": [
+      "Halloween ohne Wetterschreck. Dein Kostüm hält den ganzen Abend durch.",
+      "Für die Runde von Tür zu Tür bleibt das Wetter ruhig.",
+      "Gespenstisch ruhig heute. Kein Wetterwechsel, nur viele Kostüme.",
+      "Unterm Kostüm bleibt alles, wie es ist. Das Wetter auch."
+    ],
+    "theme_thanks": [
+      "In Amerika gibt's heute Truthahn. Bei dir bleibt das Wetter ruhig.",
+      "Thanksgiving feiern andere. Dein Tag braucht keine Extraschicht.",
+      "Ein guter Tag zum Sattessen. Draußen bleibt alles beim Gleichen.",
+      "Erntedank mit Truthahn kennst du aus dem Fernsehen. Heute ändert sich nichts."
+    ],
+    "theme_krampus": [
+      "Krampusnacht heute. Für den Lauf passt das, was du anhast.",
+      "Draußen bleibt es, wie es ist. Beim Krampuslauf musst du dich nicht umziehen.",
+      "Heute klappern die Glocken und die Ruten. Das Wetter bleibt ruhig.",
+      "Vom Straßenrand aus schaust du zu. Am Wetter ändert sich nichts."
+    ],
+    "theme_nikolo": [
+      "Nikolaustag heute. Am Wetter ändert sich nichts, du bist richtig angezogen.",
+      "Heute kommt der Nikolaus. Das Wetter bleibt so, wie es ist.",
+      "Mandarinen, Nüsse und ein Wetter, das sich nicht rührt.",
+      "Was heute in den Schuhen landet, ist die eigentliche Neuigkeit. Draußen passiert nichts."
+    ],
+    "theme_xmas": [
+      "Am Weihnachtstag bleibt das Wetter ruhig. Du brauchst nichts nachzulegen.",
+      "Für den Weg zur Kirche oder zu Oma passt dein Outfit.",
+      "Heute geht es um anderes als ums Wetter. Das bleibt ohnehin gleich.",
+      "Heiligabend bleibt draußen ruhig. Einpacken brauchst du nichts."
     ]
   },
   "precip_0": {
@@ -175,7 +361,13 @@
       "Regen ist möglich, sicher ist er nicht. Der Schirm passt trotzdem rein.",
       "Schirm einpacken schadet nie. {WHENP} kann es tröpfeln.",
       "Es kann regnen, muss aber nicht. Mit Schirm bist du auf der sicheren Seite.",
-      "Ein kleiner Schirm reicht heute. Regen ist durchaus möglich."
+      "Ein kleiner Schirm reicht heute. Regen ist durchaus möglich.",
+      "{WHENP} tröpfelt es vielleicht. Der Schirm passt in jeden Rucksack.",
+      "Sicher ist der Regen nicht, möglich schon. Nimm den Schirm mit.",
+      "Ob es wirklich regnet, weiß keiner genau. Schirm einstecken hilft.",
+      "Ein Schirm wiegt wenig und hilft dir {WHENP} vielleicht sehr.",
+      "Steck den Schirm ein. Regnen kann es {WHENP} durchaus.",
+      "Ein paar Tropfen sind möglich. Der Schirm darf trotzdem mit."
     ],
     "wetter_maybe_j": [
       "Dazu kann es regnen. Nimm den Schirm lieber mit.",
@@ -183,7 +375,13 @@
       "Regen ist nicht ausgeschlossen. Der Schirm passt in die Tasche.",
       "Dazu vielleicht ein bisschen Regen. Ein Schirm schadet nicht.",
       "Und es könnte tröpfeln. Schirm einstecken, dann passt das.",
-      "Außerdem kann Regen dazukommen. Der Schirm gehört in die Tasche."
+      "Außerdem kann Regen dazukommen. Der Schirm gehört in die Tasche.",
+      "Dazu ein kleines Regenrisiko. Der Schirm gehört heute mit.",
+      "Und vielleicht wird es nass. Nimm den Schirm zur Sicherheit mit.",
+      "Obendrein kann es tröpfeln. Ein Schirm im Rucksack reicht völlig.",
+      "Nass werden musst du nicht. Steck den Schirm einfach ein.",
+      "Außerdem ist Regen möglich. Der kleine Schirm reicht dafür.",
+      "Vielleicht bleibt es trocken, vielleicht nicht. Schirm mitnehmen kostet nichts."
     ],
     "wetter": [
       "{WHENP} fängt es an zu regnen. Nimm den Schirm mit.",
@@ -273,7 +471,31 @@
       "Kein Kleidungsstück muss heute umdisponieren. So was gibt's ja auch mal.",
       "Was du anhast, reicht bis abends. Der Rest des Tages ist Formsache.",
       "Die Garderobe hat heute frei. Das Wetter liefert eben nichts nach.",
-      "Ein Tag ohne Handgepäck. Das Thermometer hat sich wohl schon festgelegt."
+      "Ein Tag ohne Handgepäck. Das Thermometer hat sich wohl schon festgelegt.",
+      "Das Thermometer steht heute still und hat dazu auch nichts weiter zu sagen.",
+      "Kein Grund für eine zweite Schicht. Die Kurve läuft heute schnurgerade durch.",
+      "Die Garderobenfrage ist morgens geklärt und bleibt es auch. Selten genug.",
+      "Das Wetter hat heute nichts vor. Die Schichten halten einfach ihre Stellung.",
+      "Ein Tag ohne Zwischenstopp am Haken. Die Klamotten bleiben eben, wie sie sind.",
+      "Nichts muss runter, nichts muss drauf. Der Tag hat das schon vorher geklärt.",
+      "Kein Umziehen, kein Umdenken. Am Outfit gibt es heute schlicht nichts zu tun.",
+      "Die Vorhersage hat wenig zu melden. Für die Kleidung ändert sich dadurch nichts.",
+      "Das Outfit hat einen ruhigen Dienst. Dazwischenfunken tut das Wetter heute ja nicht.",
+      "Vom Wetter kommt heute keine einzige Ansage. Die Schichten bleiben also unter sich.",
+      "Der Schrank ist heute schnell wieder zu. Eine Entscheidung, und die Sache steht.",
+      "Angezogen ist angezogen. Am Wetter gibt es heute nichts mehr zu deuten.",
+      "Die Temperatur bleibt flach, die Garderobe bleibt komplett. Mehr gibt der Tag nicht her.",
+      "Heute hat das Wetter einfach mal nichts zu sagen. Die Schichten nehmen das gelassen.",
+      "Die Wetterlage hat heute keinen Punkt auf der Tagesordnung. Das Outfit auch nicht.",
+      "Einmal anziehen, fertig. Das Wetter hat seine Pläne offenbar woanders.",
+      "Der Tagesplan des Wetters ist leer. Die Garderobe hat entsprechend wenig zu tun.",
+      "Zwischen den Schichten gibt es heute nichts zu verhandeln. Das Wetter hält sich zurück.",
+      "Was am Morgen richtig war, bleibt richtig. Das Wetter kennt heute keine Kanten.",
+      "Kein Wechsel im Dienstplan. Die Schichten, die du anhast, machen das heute allein.",
+      "Die Luft hält ihr Niveau, und das Outfit hält seins.",
+      "Ruhiger Tag im Kleiderschrank. Das Wetter hat heute keine Sonderwünsche.",
+      "Heute bleibt alles beim Alten, und zwar wirklich alles. Sogar die Vorhersage langweilt sich.",
+      "Ein glatter Tag ohne Kleiderwechsel. Nachlegen muss heute keine Schicht."
     ],
     "arc_colder": [
       "{GARMENT} geht {WHEN} runter, {WHEN2} wieder rauf, und braucht dann Verstärkung.",
@@ -313,7 +535,13 @@
       "So eine Winterjacke am Arm ist {WHEN} kein Kleidungsstück mehr, sondern Gepäck.",
       "Der Daunenmantel wird {WHEN} arbeitslos und nimmt dann halt den halben Rucksack ein.",
       "Die dicke Jacke hört irgendwann auf zu helfen und fängt an zu stören.",
-      "Irgendwo muss die Winterjacke {WHEN} hin, und klein macht sie sich nicht."
+      "Irgendwo muss die Winterjacke {WHEN} hin, und klein macht sie sich nicht.",
+      "{WHEN} wird aus der Winterjacke ein Möbelstück. Tragbar ist sie dann nur formal.",
+      "Eine Daunenjacke am Arm braucht {WHEN} ja ihren eigenen Platz.",
+      "{WHEN} kündigt die Winterjacke den Dienst. Ab dann reist sie als Frachtgut mit.",
+      "Die Daunen haben {WHEN} Feierabend, das Volumen eben nicht. Plan Stauraum ein.",
+      "Kein Rucksack schluckt eine Winterjacke ganz. Runter kommt sie {WHEN} trotzdem.",
+      "Erst hält die dicke Jacke warm, dann hält sie halt eine Hand besetzt."
     ],
     "w_jacket": [
       "Die Jacke macht {WHEN} Schluss. Danach hängt sie über dem Arm mit.",
@@ -321,7 +549,13 @@
       "Eine leichte Jacke verschwindet wenigstens in jedem Rucksack. {WHEN} muss sie das.",
       "Runter kommt die Jacke {WHEN}, und danach reist sie am Arm mit.",
       "Halbtags Jacke, halbtags Ballast. Dazwischen liegt genau ein Reißverschluss.",
-      "Spätestens {WHEN} sucht die Jacke nur noch eine Ablage."
+      "Spätestens {WHEN} sucht die Jacke nur noch eine Ablage.",
+      "Vom Kleidungsstück zum Gepäckstück: {WHEN} macht die Jacke diesen Schritt.",
+      "Der Jacke geht {WHEN} die Aufgabe aus. Ein Haken wäre dann halt praktisch.",
+      "Zusammengerollt ist die Jacke ja halb so schlimm. {WHEN} wird das relevant.",
+      "Die Jacke hat heute eben nur einen halben Arbeitstag. Den Rest hängt sie herum.",
+      "Offene Jacke hilft nur kurz. {WHEN} muss sie ganz runter.",
+      "Früher Feierabend für die Jacke, und danach fährt sie als Ballast mit."
     ],
     "w_hoodie": [
       "Der Hoodie landet {WHEN} um die Hüfte. Einen besseren Platz gibt's nicht.",
@@ -337,7 +571,13 @@
       "Unterm Sweatshirt ist {WHEN} ja genug T-Shirt für den Rest des Tages.",
       "Eine Schicht zu viel {WHEN}: Das Sweatshirt geht runter und reist mit.",
       "Zu warm fürs Sweatshirt. Danach ist es einfach nur noch Handgepäck.",
-      "{WHEN} verabschiedet sich das Sweatshirt. Der Arm übernimmt den Transport."
+      "{WHEN} verabschiedet sich das Sweatshirt. Der Arm übernimmt den Transport.",
+      "{WHEN} macht der Pulli dicht. Danach sucht er einen Platz und findet selten einen.",
+      "Der Pulli hat heute einen kurzen Dienst. Das Tragen danach dauert eben länger.",
+      "Um die Hüfte gebunden ist der Pulli {WHEN} wenigstens aus dem Weg.",
+      "Das T-Shirt darunter macht {WHEN} ja allein weiter. Der Pulli geht in Pause.",
+      "Irgendwann ist halt Schluss mit Pulli, und dann ist eine Hand belegt.",
+      "Aus Wärmespender wird {WHEN} Fracht. Der Pulli nimmt das ja gelassen."
     ],
     "w_water": [
       "Die Kleidung hat {WHEN} alle Argumente ausgespielt. Ab da hilft nur Wasser.",
@@ -345,7 +585,13 @@
       "Der Schatten macht {WHEN} Überstunden, die Garderobe hat ihre Möglichkeiten ausgeschöpft.",
       "Noch heißer {WHEN}, und ausziehen lässt sich nichts mehr. Also Wasser dabeihaben.",
       "Gegen diese Hitze hat die Garderobe nichts mehr. Die Flasche schon.",
-      "{WHEN} klettert es weiter nach oben. Trinken ist dann der einzige Hebel."
+      "{WHEN} klettert es weiter nach oben. Trinken ist dann der einzige Hebel.",
+      "{WHEN} legt die Hitze nach, und ausziehen ist als Antwort längst durch.",
+      "Die Flasche wird {WHEN} zum wichtigsten Teil der Ausrüstung. Stoff hilft ja nicht mehr.",
+      "Schatten schlägt {WHEN} jedes Kleidungsstück. Trinken schlägt dann eben beides.",
+      "Noch weiter rauf {WHEN}. Der Garderobe fällt dazu nichts mehr ein, dem Wasserhahn schon.",
+      "Weniger geht ja nicht. Also Wasser dabeihaben und den schattigen Weg nehmen.",
+      "{WHEN} zieht die Hitze noch mal an. Dagegen hilft halt nur Flüssigkeit."
     ],
     "c_scarf": [
       "Der Mantel deckt {WHEN} alles ab außer den Hals. Dafür gibt's den Schal.",
@@ -385,15 +631,153 @@
       "Kurze Ärmel halten heute nicht bis zum Schluss durch. Sweatshirt einpacken.",
       "Ein Sweatshirt wiegt nichts und wird {WHEN} trotzdem gebraucht. Also mitnehmen.",
       "{WHEN} sinkt es unter die Gänsehautgrenze. Ein Sweatshirt hält dagegen.",
-      "Das Sweatshirt darf {WHEN} wieder ran. Dafür muss es aber mitkommen."
+      "Das Sweatshirt darf {WHEN} wieder ran. Dafür muss es aber mitkommen.",
+      "Ein Sweatshirt im Rucksack ist {WHEN} ja kein Ballast, sondern Vorsorge.",
+      "{WHEN} werden aus angenehmen Armen eben kühle Arme. Ein Sweatshirt kümmert sich darum.",
+      "Pack den Pulli ein, weil kurze Ärmel {WHEN} schlicht zu wenig sind.",
+      "Kurze Ärmel haben heute einen frühen Feierabend. Der Pulli übernimmt danach.",
+      "Ein Pulli auf dem Unterarm sieht albern aus und ist {WHEN} trotzdem richtig.",
+      "{WHEN} rutscht es halt in Pulliwetter. Ohne einen dabei wird der Rückweg zäh."
     ],
     "c_relief": [
-      "{WHEN} lässt die Hitze nach. Mitnehmen musst du deswegen trotzdem nichts.",
+      "{WHEN} lässt die Hitze nach. Eine Schicht mehr braucht es deswegen trotzdem nicht.",
       "Die Hitze macht {WHEN} einen Schritt zurück. Am Outfit ändert das nichts.",
-      "Etwas kühler {WHEN}, aber immer noch warm. Der Rucksack bleibt also leer.",
-      "Die Spitze ist durch. Warm bleibt es trotzdem, also nichts einzupacken.",
+      "Etwas kühler {WHEN}, aber immer noch warm. Eine Schicht extra wäre halt zu viel.",
+      "Die Spitze ist durch. Warm bleibt es trotzdem, für Ärmel reicht das nicht.",
       "{WHEN} geht die Temperatur runter, aber nur bis angenehm. Keine Schicht nötig.",
-      "Aus Hitze wird {WHEN} einfach Wärme. Dafür braucht's keine Ausrüstung."
+      "Aus Hitze wird {WHEN} einfach Wärme. Dafür braucht's keine zusätzliche Schicht.",
+      "Der Hitze geht {WHEN} die Luft aus. Für eine Schicht reicht das eben nicht.",
+      "Die Spitze der Hitze hat {WHEN} ihren Auftritt hinter sich. Ärmel werden trotzdem keine gebraucht.",
+      "Aus brütend wird {WHEN} bloß warm. Das ist kein Grund für Stoff.",
+      "Später ist es nur noch warm statt heiß. Ohne Ärmel bleibt es trotzdem angenehm.",
+      "Die Sonne nimmt {WHEN} das Tempo raus. Blanke Arme reichen ja weiterhin.",
+      "Die Hitzewelle knickt {WHEN} ein, bleibt aber Wärme. Keine zusätzliche Schicht im Spiel.",
+      "Erträglicher {WHEN}, und das war's schon. Ein Schichtwechsel steht heute nicht an.",
+      "Vom Höhepunkt der Hitze geht es {WHEN} runter. Bis zu langen Ärmeln aber nicht.",
+      "{WHEN} verliert die Hitze ihre Schärfe. Am Sommeroutfit ändert das halt nichts.",
+      "Heiß bleibt es, nur nicht mehr unangenehm heiß. Ärmel braucht dafür niemand.",
+      "Die schlimmste Stunde ist heute schon vorbei. Warm genug für blanke Arme bleibt es.",
+      "Der Hitzegipfel ist {WHEN} überschritten. Danach ist es eben nur noch warm."
+    ],
+    "perfect_evening": [
+      "Am Abend macht der Tag Kassensturz. Vom Wetter steht nichts mehr offen.",
+      "Was du anhast, bringt dich noch nach Hause. Mehr braucht es ja nicht.",
+      "Die Schichten haben ihren Dienst fast hinter sich. Der Rest ist Heimweg.",
+      "Das Wetter hat für heute Feierabend gemacht und niemandem Bescheid gesagt.",
+      "Ab jetzt läuft nur noch der Abend ab. Am Outfit ändert sich nichts mehr.",
+      "Die Vorhersage hat kaum noch Strecke vor sich. Die Klamotten kommen so durch.",
+      "Für den Rest des Abends bleibt alles, wie es ist. Ziemlich unspektakulär.",
+      "Der Abend hat keine Überraschung mehr im Plan. Die Kleidung kann so bleiben.",
+      "Das Tagesgeschäft ist durch. Was jetzt noch kommt, ändert an den Schichten nichts.",
+      "Die Luft bleibt so, wie sie gerade ist. Für den Heimweg reicht das.",
+      "Spät genug, dass nichts mehr dazwischenkommt. Die Garderobe hat's überstanden.",
+      "Nur noch ein paar Stunden, und die laufen ohne Wetterwechsel ab.",
+      "Von hier bis zur Haustür ändert sich nichts mehr. Kein Nachlegen, kein Ablegen.",
+      "Der Abend ist schon vorsortiert. Die Schichten bleiben genau so, wie sie sind.",
+      "Draußen hat das Wetter längst Schluss gemacht. Ändern tut sich nichts mehr.",
+      "Spätdienst ohne Zwischenfälle. Das Thermometer rührt sich heute nicht mehr.",
+      "Alles, was heute passieren sollte, ist passiert. Die Klamotten bleiben bis zum Schluss.",
+      "Nichts läuft heute noch aus dem Ruder. Das Outfit hat seinen Teil erledigt."
+    ],
+    "perfect_hot": [
+      "Die Kleidung ist hier fertig. Ab jetzt arbeiten Wasser und Schatten.",
+      "Der Hitze sind die Schichten egal. Eine Flasche Wasser nimmt sie ernster.",
+      "Weniger anziehen geht nicht mehr. Bleiben Schatten, Wasser und ein langsameres Tempo.",
+      "Die Garderobe ist am Ende ihres Lateins. Ab hier zählt nur noch Trinken.",
+      "Heiß bleibt heiß, und zwar hartnäckig. Dagegen hilft kein Stoff, nur Schatten.",
+      "Am Outfit gibt's nichts mehr zu optimieren. An der Wassermenge schon.",
+      "Die Hitze hält ihr Niveau. Die Wasserflasche hat damit den wichtigsten Job.",
+      "Schatten ist heute keine Nettigkeit, sondern Infrastruktur.",
+      "So heiß, wie es ist, bleibt es auch. Die Flasche gehört in Reichweite.",
+      "Kein Stück Stoff macht das heute besser. Wasser und ein schattiger Weg schon.",
+      "Der Hitzetag läuft ohne Knick durch. Die Wasserflasche macht dafür Dauerdienst.",
+      "Die Sonne verhandelt heute nicht. Schatten und Wasser sind die einzigen Gegenargumente."
+    ],
+    "perfect_cold": [
+      "Die Winterausrüstung bleibt heute komplett im Dienst. Abziehen lässt sich davon nichts.",
+      "Kalt ist kalt, und daran ändert sich nichts. Die Montur passt so.",
+      "Alles, was du anhast, hat heute seinen Grund. Keine Schicht ist zu viel.",
+      "Die Kälte bleibt stur auf ihrem Stand. Genau dafür ist die Montur da.",
+      "Keine Schicht wird heute überflüssig. Die Kälte macht eben keine Pause.",
+      "Angezogen wie jetzt ist richtig, und das bleibt den Tag über so.",
+      "Die Frostlage hält sich hartnäckig. Aufmachen lohnt sich heute an keiner Stelle.",
+      "Kein Grund, irgendwo einen Reißverschluss zu öffnen. Die Kälte bleibt, wo sie ist.",
+      "Die Kälte hat sich eingerichtet und bleibt. Dafür ist ja alles schon angezogen.",
+      "Mütze bleibt oben, Jacke bleibt zu. Mehr Entscheidungen hat der Tag nicht.",
+      "Was jetzt warm hält, hält auch später warm. Die Kälte bleibt sich treu.",
+      "Frostbeständig angezogen, und dabei bleibt es. Die Kurve rührt sich heute nicht."
+    ],
+    "theme_ny": [
+      "Das Jahr wechselt, das Wetter nicht. Die Schichten von gestern reichen auch heute.",
+      "Gute Vorsätze hat die Garderobe keine. Sie bleibt heute einfach, wie sie ist.",
+      "Silvester ändert am Thermometer nichts. Was anliegt, liegt eben weiter an.",
+      "Ein neues Jahr, dieselben Schichten. Das Wetter macht da keinen Unterschied."
+    ],
+    "theme_ghd": [
+      "Der Murmeltiertag macht seinem Namen Ehre: Das Wetter wiederholt sich einfach weiter.",
+      "Heute wie gestern, morgen vermutlich auch. Die Schichten bleiben in der Schleife.",
+      "Das Murmeltier sieht seinen Schatten, die Kleidung sieht keinen Grund zur Änderung.",
+      "Wiederholung ist heute das Programm. Am Outfit ändert sich dabei genau nichts."
+    ],
+    "theme_pi": [
+      "Pi ist unendlich, der Wetterbericht heute kurz. Das Outfit bleibt unangetastet.",
+      "Der Kreis ist rund, die Kurve heute flach. An den Schichten ändert sich nichts.",
+      "Unendlich viele Nachkommastellen, und trotzdem null Wetterwechsel. Die Kleidung bleibt, wie sie ist.",
+      "Heute geht's um Kreise und Kuchen. Das Wetter liefert dazu eine gerade Linie."
+    ],
+    "theme_force": [
+      "Die Macht hilft heute nicht weiter. Das Wetter hält sich auch ohne sie zurück.",
+      "Der vierte Mai bringt Kostüme, aber keinen Wetterwechsel. Darunter ändert sich nichts.",
+      "Ein Jedi braucht keine zweite Schicht. Heute braucht sie sonst auch niemand.",
+      "In einer weit entfernten Galaxis ändert sich das Wetter. Hier eben nicht."
+    ],
+    "theme_bike": [
+      "Gutes Wetter fürs Rad: Der Fahrtwind ist heute der einzige Wetterwechsel.",
+      "Am Weltfahrradtag hält das Wetter still. Die Kleidung muss unterwegs nichts nachliefern.",
+      "Für die Schichten braucht's heute keine Satteltasche. Draußen bleibt alles, wie es ist.",
+      "Das Rad rollt, das Thermometer nicht. Unterwegs ändert sich an der Kleidung nichts."
+    ],
+    "theme_tdf": [
+      "Etappentag: Das Wetter fährt heute im Feld mit und attackiert nicht.",
+      "Die Tour hat Bergwertungen, das Wetter heute keine. Die Kurve bleibt flach.",
+      "Im Trikot wie auf dem Rad: Was jetzt passt, passt die ganze Etappe.",
+      "Kein Ausreißversuch von der Temperatur. Das Peloton der Schichten bleibt beisammen."
+    ],
+    "theme_okt": [
+      "Wiesnwetter ohne Überraschungen. Die Jankerfrage klärt sich morgens und bleibt dann geklärt.",
+      "Im Zelt ist es warm, draußen bleibt es, wie es ist. Dazwischen liegt eine Schicht.",
+      "Die Wiesn dauert, das Wetter bleibt. Die Trachtenjacke hat heute einen ruhigen Dienst.",
+      "Zwischen Bierzelt und Heimweg ändert das Wetter nichts. Nachschub braucht keine Schicht."
+    ],
+    "theme_spooky": [
+      "Das Kostüm ist gruselig, das Wetter nicht. Darunter bleibt alles, wie es ist.",
+      "Über dem Kostüm bleibt heute jede Schicht liegen. Das Wetter spielt nicht mit.",
+      "Gespenster kommen ohne Wetterwechsel aus. Heute die Kleidung eben auch.",
+      "Zum Fürchten ist höchstens das Kostüm. Am Thermometer tut sich ja nichts."
+    ],
+    "theme_thanks": [
+      "Thanksgiving anderswo, hier ein normaler Novembertag. Die Schichten bleiben, wie sie sind.",
+      "Truthahn gibt's heute woanders. Das Wetter bleibt hier jedenfalls unaufgeregt.",
+      "Ein Feiertag, der hier keiner ist. Am Outfit ändert das ohnehin nichts.",
+      "Während drüben der Braten im Ofen steht, bleibt hier die Temperaturkurve flach."
+    ],
+    "theme_krampus": [
+      "Der Krampus geht heute um, das Wetter bleibt brav. Alles bleibt an.",
+      "Beim Krampuslauf steht man lange draußen. Gut, dass die Kälte ihr Niveau hält.",
+      "Ruten und Glocken sind laut, das Thermometer ist leise. Es rührt sich nichts.",
+      "Kalt genug für Fell und Maske, und dabei bleibt es. Die Montur passt so."
+    ],
+    "theme_nikolo": [
+      "Die Stiefel stehen geputzt vor der Tür. Draußen bleibt das Wetter, wie es ist.",
+      "Nikolo bringt Nüsse und Mandarinen, aber keinen Wetterwechsel. Die Montur bleibt komplett.",
+      "Für den Weg zum Nikolomarkt reicht, was schon anliegt. Das Wetter hält still.",
+      "Ob Nikolo oder nicht: Die Temperaturkurve nimmt davon keine Notiz."
+    ],
+    "theme_xmas": [
+      "Der gute Mantel hat heute genau eine Aufgabe, und die ändert sich nicht.",
+      "Zwischen Kirche und Bescherung ändert das Wetter nichts. Eine Garderobe reicht für beides.",
+      "Weihnachten läuft nach Plan, das Wetter auch. Beides heute ohne Zwischenfälle.",
+      "Die Feiertagsgarderobe hält den Tag durch. Das Wetter liefert keinen Grund dagegen."
     ]
   },
   "precip_10": {
@@ -403,7 +787,13 @@
       "Ein Schirm im Rucksack ist die billigste Versicherung, die es gibt.",
       "{WHENP} sind die Wolken eine Drohung, keine Ansage. Schirm trotzdem einpacken.",
       "Vielleicht regnet's {WHENP}. Mit Schirm ist die Frage halt egal.",
-      "Der Schirm fährt heute vermutlich umsonst mit. Vermutlich ist aber kein Versprechen."
+      "Der Schirm fährt heute vermutlich umsonst mit. Vermutlich ist aber kein Versprechen.",
+      "Die Wolken haben sich {WHENP} noch nicht entschieden. Der Schirm kommt vorsichtshalber mit.",
+      "Ein zusammengeklappter Schirm nimmt ja keinen Platz weg. Ein nasser Rücken schon.",
+      "{WHENP} steht Regen auf der Liste, aber eben weit unten. Schirm einstecken reicht.",
+      "Angemeldet hat sich der Regen noch nicht. Mitgehen darf der Schirm trotzdem.",
+      "Es kann tröpfeln, es kann trocken bleiben. Der Schirm deckt halt beide Fälle ab.",
+      "Möglich ist Regen {WHENP}, sicher aber nicht. Ein kleiner Schirm klärt die Frage schon."
     ],
     "wetter_maybe_j": [
       "Dazu vielleicht ein paar Tropfen. Der Schirm fährt zur Sicherheit mit.",
@@ -412,7 +802,12 @@
       "Außerdem ein Regenrisiko, das ein Schirm im Rucksack komplett erledigt.",
       "Die Wolken halten sich beide Optionen offen. Schirm einstecken.",
       "Möglicherweise regnet's dazu. Ein Schirm im Rucksack kostet ja nichts.",
-      "Dazu ein Regenrisiko. Dagegen gibt's ja den Schirm."
+      "Dazu ein Regenrisiko. Dagegen gibt's ja den Schirm.",
+      "Und vielleicht Regen. Der Schirm kommt halt für den Fall mit.",
+      "Dabei könnte es tropfen. Ein Schirm in der Tasche erledigt das schon.",
+      "Der Himmel lässt sich eben nicht festnageln. Mit Schirm ist das egal.",
+      "Obendrein ein bisschen Regenverdacht. Den klärt der Schirm ja nebenbei.",
+      "Und nass könnte es auch noch werden. Ein Schirm deckt das ab."
     ],
     "wetter": [
       "{WHENP} fängt der Regen an. Lange bleibt er nicht, der Schirm reicht.",
@@ -504,7 +899,31 @@
       "Nichts zu tragen, nichts zu planen. Du findest schon einen Grund, trotzdem etwas einzupacken.",
       "Ein Tag ganz ohne Aufgabe für dich. Genieß das, bevor du dir selbst wieder eine erfindest.",
       "So bleibt's den ganzen Tag. Kein Ballast, keine Ausrede, kein Umziehen um halb drei.",
-      "Du bist angezogen und fertig. Der Rest des Morgens gehört deiner üblichen Unentschlossenheit."
+      "Du bist angezogen und fertig. Der Rest des Morgens gehört deiner üblichen Unentschlossenheit.",
+      "Nichts ändert sich heute. Deine Sorgfalt beim Schichtenplanen läuft halt mal komplett ins Leere.",
+      "Dein Outfit passt bis abends. Du stellst es trotzdem zweimal grundsätzlich in Frage.",
+      "Keine Schicht geht heute runter, keine kommt drauf. Du suchst trotzdem schon nach dem Haken.",
+      "Dein Tag hat keine Wetterüberraschung. Du planst ja trotzdem lieber für drei verschiedene.",
+      "Zieh einfach los. Das Grübeln vor dem Schrank bringt heute nun wirklich gar nichts.",
+      "Gleichbleibend, von morgens bis abends. Du misstraust dem ja grundsätzlich, aber diesmal stimmt es.",
+      "Dein Wetter-App-Reflex darf heute ruhen. Es passiert schlicht nichts, was dein Outfit interessieren würde.",
+      "Heute gibt's nichts einzupacken. Du packst trotzdem, weil leere Hände dich nervös machen.",
+      "Die Sache ist entschieden, bevor du anfängst. Dein Schrank bleibt heute ausnahmsweise mal zu.",
+      "Ruhiges Wetter, keine Aufgabe für dich. Genau dann fällt dir ein, dass du eine brauchst.",
+      "Kein Umziehen, kein Nachlegen, kein Mitschleppen. Du findest schon was, worüber du nachdenken kannst.",
+      "Alles bleibt, wie es ist. Deine Neigung zum Zweitpulli ist heute rein emotional begründet.",
+      "So wie du dastehst, stimmt es. Dass dir das reicht, wäre allerdings neu.",
+      "Dein Outfit hat heute keinen Gegner. Trotzdem stehst du da und suchst nach einem.",
+      "Von oben kommt heute nichts Neues. Deine Taschen könnten also mal leer bleiben.",
+      "Los geht's, so wie du bist. Die zweite Meinung vom Fenster brauchst du nicht.",
+      "Kein Grund, irgendwas mitzunehmen. Du nimmst trotzdem was mit, und zwar aus Prinzip.",
+      "Heute passiert wettermäßig genau gar nichts. Du machst daraus trotzdem ein Thema.",
+      "Ein Tag zum Durchziehen, ohne Nachbesserung. Deine Ersatzjacke bleibt heute halt sinnlos im Rucksack.",
+      "Deine Kleidung braucht heute keine Betreuung. Du betreust sie natürlich trotzdem den ganzen Tag.",
+      "Von früh bis spät dasselbe. Dein Bauchgefühl meldet trotzdem Zweifel an, wie meistens.",
+      "Einmal anziehen, fertig. An deiner Kleidung musst du den Rest des Tages nichts nachbessern.",
+      "Wettermäßig ist heute Ruhe. Deine innere Checkliste läuft trotzdem, wie jeden Morgen um diese Zeit.",
+      "Nichts davon braucht eine Entscheidung von dir. Du triffst trotzdem drei, alle völlig folgenlos."
     ],
     "arc_colder": [
       "{GARMENTA} ziehst du {WHEN} aus, {WHEN2} wieder an — und dann fehlt dir noch eine Schicht.",
@@ -544,7 +963,13 @@
       "Dicke Jacke aus, Arm voll. Du sagst jetzt, du legst sie irgendwo ab, und tust es nie.",
       "Der Mantel ist {WHEN} nur noch Ballast. Du schleppst ihn trotzdem bis abends mit dir rum.",
       "Die Daunenjacke ziehst du irgendwann aus, und dann gehört sie den Rest des Tages deinem Arm.",
-      "Wohin mit dem Mantel {WHEN}? Darüber denkst du jetzt nicht nach und ärgerst dich später doppelt."
+      "Wohin mit dem Mantel {WHEN}? Darüber denkst du jetzt nicht nach und ärgerst dich später doppelt.",
+      "Irgendwann fliegt die Winterjacke runter. Ab da schleppst du ein Möbelstück durch die Stadt.",
+      "{WHEN} hat die dicke Jacke fertig. Ein Haken im Café ist ja keine Aufbewahrungsstrategie.",
+      "Der Wintermantel kommt {WHEN} runter. Du könntest einen Rucksack mitnehmen, tust es aber wieder nicht.",
+      "Zu warm für Daunen {WHEN}. Und dann stehst du da, mit einem Arm voller Jacke.",
+      "Die Winterjacke ist {WHEN} zu viel. Klein macht sie sich eben nicht, und du planst das nie ein.",
+      "Ausziehen musst du {WHEN} sowieso. Die Frage ist halt, wohin mit dem ganzen Volumen."
     ],
     "w_jacket": [
       "Die Jacke kommt {WHEN} runter. Danach trägst du sie, weil wieder kein Rucksack dabei ist.",
@@ -552,7 +977,13 @@
       "Jacke aus {WHEN}, Hand belegt bis Feierabend. Ein Rucksack hätte das gelöst, aber gut.",
       "Du brauchst die Jacke {WHEN} nicht mehr. Um die Hüfte binden gilt auch als Lösung, zugegeben.",
       "Irgendwann ist die Jacke zu viel, und dann trägst du sie halt. Wie an den meisten Tagen.",
-      "Kurzer Arbeitstag für die Jacke. Du merkst es erst, wenn dir längst viel zu warm ist."
+      "Kurzer Arbeitstag für die Jacke. Du merkst es erst, wenn dir längst viel zu warm ist.",
+      "Irgendwann hast du die Jacke in der Hand. Vorher schwitzt du noch eine ganze Weile.",
+      "{WHEN} gehört die Jacke in den Rucksack. In deinen passt sie, falls du einen dabeihast.",
+      "Die Jacke macht {WHEN} Schluss. Dein Arm übernimmt, weil du das ja nie anders planst.",
+      "Ohne Jacke geht's {WHEN} besser. Bis du das zugibst, vergehen allerdings noch drei Straßen.",
+      "Zieh die Jacke aus, bevor sie klebt. Du wartest damit erfahrungsgemäß viel zu lange.",
+      "Warm genug ohne Jacke {WHEN}. Sie braucht dann aber einen Platz, und zwar deinen."
     ],
     "w_hoodie": [
       "Der Hoodie kommt {WHEN} runter. Und dann hängt er den Rest des Tages an dir dran.",
@@ -568,7 +999,13 @@
       "Pulli runter {WHEN}, und wohin damit? Du hast wieder nichts dabei, wo er reinpassen würde.",
       "Du behältst den Pulli {WHEN} viel zu lange an, weil Ausziehen dir wie Aufgeben vorkommt.",
       "Irgendwann ist der Pulli fällig. Bis dahin hältst du tapfer durch, und niemand dankt es dir.",
-      "Das Sweatshirt landet {WHEN} auf deinem Arm und bleibt dort, bis du abends zu Hause bist."
+      "Das Sweatshirt landet {WHEN} auf deinem Arm und bleibt dort, bis du abends zu Hause bist.",
+      "{WHEN} reicht das T-Shirt drunter völlig. Der Pulli sucht sich dann halt deinen Arm.",
+      "Zieh den Pulli aus, bevor du klebst. Bei dir passiert das grundsätzlich andersrum.",
+      "Ein T-Shirt drunter wäre heute clever. Du entscheidest das wie immer fünf Minuten zu spät.",
+      "{WHEN} ist der Pulli zu warm. Ohne Beutel hängt er dann den ganzen Nachmittag an dir.",
+      "Der Pulli hat heute nur einen halben Arbeitstag. Den Rest trägst du ihn eben spazieren.",
+      "Nach dem Ausziehen fängt das Tragen an. Ein Rucksack wäre die Lösung, wie letzte Woche schon."
     ],
     "w_water": [
       "Kleidung hilft dir heute nicht weiter. Wasser, Schatten, langsamer — du machst natürlich genau das Gegenteil.",
@@ -576,7 +1013,13 @@
       "{WHEN} ist Schatten keine Option mehr, sondern Pflicht. Deine Flasche steht übrigens noch in der Küche.",
       "Ausziehen geht nicht mehr. Bleiben Wasser und Schatten, und ja, das gilt auch für dich.",
       "Nimm Wasser mit. Du kennst die Nummer: erst kein Durst, dann drei Stunden Kopfschmerzen.",
-      "Heiß, und {WHEN} noch heißer. Trink früher als du denkst, später vergisst du es sowieso."
+      "Heiß, und {WHEN} noch heißer. Trink früher als du denkst, später vergisst du es sowieso.",
+      "{WHEN} legt die Hitze noch zu. Trink jetzt, nicht erst, wenn dir schwindelig wird.",
+      "Runter geht nichts mehr, also hoch mit der Flasche. Deine steht wohl noch im Regal.",
+      "Schatten ist {WHEN} kein Luxus mehr. Dein Weg führt natürlich schnurgerade durch die pralle Sonne.",
+      "Noch heißer {WHEN}. Du könntest langsamer gehen, machst aber wie immer das genaue Gegenteil.",
+      "Trink mehr, als dir sinnvoll vorkommt. Dein Durstgefühl meldet sich heute viel zu spät.",
+      "Noch mal heißer {WHEN}. Ausziehen geht ja nicht mehr, trinken schon, falls du was dabeihast."
     ],
     "c_scarf": [
       "Schal einpacken. Der Mantel hört am Hals auf, und {WHEN} merkst du genau das.",
@@ -616,15 +1059,153 @@
       "Nimm ein Sweatshirt mit. Ja, jetzt fühlt sich das albern an. Später nicht mehr, wie üblich.",
       "Du gehst gleich ohne Pulli raus, stimmt's? {WHEN} fällt dir dieser Satz wieder ein.",
       "Blanke Arme funktionieren heute nur begrenzt. Ein Sweatshirt im Beutel wiegt weniger als dein Trotz.",
-      "Ein Sweatshirt reicht, mehr braucht's nicht. Nur genau dieses eine Teil vergisst du ja jedes Mal."
+      "Ein Sweatshirt reicht, mehr braucht's nicht. Nur genau dieses eine Teil vergisst du ja jedes Mal.",
+      "Pack einen Pulli ein. Deine Arme melden sich {WHEN} schon ganz von allein.",
+      "Mit kurzen Ärmeln kommst du {WHEN} nicht mehr durch. Ein Sweatshirt im Beutel klärt das.",
+      "Der Pulli müsste nur mitkommen. Genau daran scheitert es bei dir aber zuverlässig.",
+      "Kurze Ärmel halten {WHEN} nicht mehr. Ein Sweatshirt wiegt nichts, deine Sturheit dafür einiges.",
+      "Ein Pulli in den Rucksack, jetzt gleich. Später erinnerst du dich daran und hast ihn nicht.",
+      "Ohne Pulli wird der Rückweg ungemütlich. Du weißt das ja und tust trotzdem wieder nichts."
     ],
     "c_relief": [
-      "Die schlimmste Hitze ist {WHEN} durch. Mitnehmen musst du nichts, also lass den Rucksack mal zu.",
-      "{WHEN} wird's erträglich. Nichts einzupacken, nichts umzuziehen — du suchst trotzdem nach einer Aufgabe.",
+      "Die schlimmste Hitze ist {WHEN} durch. Eine Schicht drüber brauchst du deswegen trotzdem nicht.",
+      "{WHEN} wird's erträglich. Keine Schicht kommt dazu, und du suchst trotzdem nach einer Aufgabe.",
       "Es kühlt runter, bleibt aber warm. Die Jacke bleibt zu Hause, egal was dein Reflex sagt.",
-      "Atmen geht {WHEN} wieder. Einpacken musst du nichts, so schwer dir das fällt.",
-      "Die Hitze lässt nach, und das war's. Kein Grund, jetzt vorsorglich irgendwas einzupacken.",
-      "Warm bleibt es, nur eben nicht mehr brutal. Für Umziehen reicht das nicht."
+      "Atmen geht {WHEN} wieder. Nach einem Pulli greifen musst du deswegen halt trotzdem nicht.",
+      "Die Hitze lässt nach, und das war's. Kein Grund, jetzt vorsorglich nach Ärmeln zu suchen.",
+      "Warm bleibt es, nur eben nicht mehr brutal. Für Umziehen reicht das nicht.",
+      "Die Spitze der Hitze ist {WHEN} vorbei. Eine Schicht mehr braucht das trotzdem nicht.",
+      "Backofen war gestern, {WHEN} ist es einfach warm. Kurze Ärmel reichen dafür völlig.",
+      "Etwas kühler {WHEN}, aber ehrlich warm. Dein Griff zum Pulli wäre heute deutlich verfrüht.",
+      "Die Hitze geht runter, nicht weg. Ärmel brauchst du keine, egal wie erleichtert du bist.",
+      "Erträglicher {WHEN}, mehr nicht. Du planst schon die lange Hose, dabei bleibt es ja warm.",
+      "Der Höhepunkt der Hitze ist durch. Nachlegen musst du an deinen Schichten trotzdem nichts.",
+      "Weniger heiß, gleich warm. Die zusätzliche Schicht, an die du jetzt denkst, wäre Unsinn.",
+      "{WHEN} lässt der schlimmste Teil nach. An deinem Outfit ändert das genau nichts.",
+      "Die brutale Phase endet {WHEN}. Trotzdem bleibt es warm genug, dass keine Schicht dazukommt.",
+      "Aufatmen ist erlaubt, Umziehen nicht nötig. Warm bleibt es ja weiterhin, auch wenn du anders hoffst.",
+      "Angenehmer ja, kühl nein. Dein Reflex, jetzt einen Pulli zu suchen, geht wieder zu weit.",
+      "Die Luft wird {WHEN} wieder atembar. Ärmel bleiben trotzdem kurz, solange du draußen bist."
+    ],
+    "perfect_evening": [
+      "Der Tag ist durch. Die letzten Stunden hält deine Kleidung locker aus.",
+      "Ab jetzt passiert nichts mehr. Dein drittes Outfit heute war also wirklich nicht nötig.",
+      "Für den Rest des Abends bleibt alles, wie es ist. Umziehen lohnt sich nicht mehr.",
+      "Viel Abend ist nicht mehr übrig. Deine große Kleiderfrage hat sich damit von selbst erledigt.",
+      "Der Rest des Tages ist Formsache. Du hast dich heute schon oft genug umentschieden.",
+      "Draußen bleibt es so, wie es jetzt ist. Falls du überhaupt noch mal rausgehst.",
+      "Die letzten Stunden ändern nichts mehr. Dein Morgen-Ich hat heute ausnahmsweise mal richtig gelegen.",
+      "Nichts kommt mehr nach. Was noch ansteht, schaffst du genau so, wie du dastehst.",
+      "Der Abend hält, was der Nachmittag angefangen hat. Nachlegen musst du dafür nichts mehr.",
+      "Heute Abend ist die Kleiderfrage beendet. Du warst ja ohnehin kaum zwanzig Minuten draußen.",
+      "Ein letzter Weg, und das war's. Dafür ziehst du dich jetzt bitte nicht noch mal um.",
+      "Nach Hause kommst du so, wie du losgegangen bist. Falls du überhaupt losgegangen bist.",
+      "Zum Tagesende hin passiert nichts mehr. Du könntest also einfach so gehen, wie du bist.",
+      "Jetzt noch umziehen wäre reiner Aktionismus. Das Wetter macht bis Mitternacht keinen Mucks.",
+      "Was noch kommt, ist überschaubar. Deine Kleidung hält das aus, auch dieses vierte Mal.",
+      "Abends ändert sich am Wetter nichts mehr. An deinen Plänen vermutlich schon, das ist deine Sache.",
+      "Die restlichen Stunden sind entschieden. Du hast heute genug Zeit vor dem Spiegel verbracht.",
+      "Für den Heimweg reicht genau das, was du anhast. Mehr braucht es heute nicht."
+    ],
+    "perfect_hot": [
+      "Diese Hitze bleibt, wie sie ist. Weniger anziehen geht nicht, also Wasser und Schatten.",
+      "An der Kleidung kannst du heute nichts mehr drehen. An deiner Tagesplanung dagegen schon.",
+      "Gleichbleibend heiß. Dein Plan, das mittags einfach zu ignorieren, hat noch nie funktioniert.",
+      "Der Stoff hat sich erledigt, jetzt zählen Trinken und Schatten. Du hast natürlich keinen Durst.",
+      "Bleib im Schatten, trink früher als nötig. Deine Erledigungen könnten auch bis abends warten.",
+      "Durchgehend heiß, den ganzen Nachmittag. Du hast dir trotzdem drei Wege quer durch die Stadt vorgenommen.",
+      "Kleidung hat heute nichts mehr zu bieten. Deine Wasserflasche schon, wenn du sie mitnimmst.",
+      "Die Sonne verhandelt heute nicht. Schieb halt, was geht, in die kühlen Stunden.",
+      "Nichts davon lässt sich noch ausziehen. Bleibt nur langsam gehen und viel trinken.",
+      "Dauerhitze ohne Pause. Dein Plan sieht Mittagssonne vor, weil du ihn gestern Abend gemacht hast.",
+      "Wasser gehört heute mit, Schatten auch. Dein Ehrgeiz darf ausnahmsweise mal zu Hause bleiben.",
+      "Heiß bleibt heiß, stumpf und durchgehend. Stell dein Programm darauf ein, nicht deine Kleidung."
+    ],
+    "perfect_cold": [
+      "Was du anhast, ist richtig und bleibt richtig. Du zweifelst ja trotzdem bis zur Haustür.",
+      "Die Kälte bleibt konstant. Deine Zweifel an der dicken Jacke sind es leider auch.",
+      "Einmal richtig angezogen, und das hält den ganzen Tag. Nachbessern musst du heute nichts.",
+      "Gleichmäßig kalt, ohne Ausreißer nach oben. Die Schicht, die du anhast, war richtig.",
+      "Heute ist nichts zu verhandeln. Du überlegst im Flur trotzdem noch mal komplett neu.",
+      "Bis zum Abend bleibt es frostig. Alles, was schon an dir dranhängt, darf dranbleiben.",
+      "So kalt, so bleibt's. Dünner ginge heute theoretisch, würde dich aber den ganzen Tag ärgern.",
+      "Die dicke Jacke hat heute Recht behalten, ausnahmsweise mal von morgens bis abends.",
+      "Durchgehend Frost. Dein Gefühl, übertrieben angezogen zu sein, hält bis zur ersten Kreuzung.",
+      "Mütze und Jacke bleiben, wo sie sind. Du zupfst halt trotzdem den ganzen Tag daran.",
+      "Nichts wird heute milder. Was du morgens entschieden hast, trägt dich eben durch den ganzen Tag.",
+      "Kalt und stabil, bis in den Abend. Umziehen wäre heute reine Beschäftigungstherapie."
+    ],
+    "theme_ny": [
+      "Das Wetter macht heute keine Vorsätze. Es bleibt einfach, wie es ist, anders als du.",
+      "Steht dein Outfit für heute Nacht? Gut, am Wetter ändert sich nämlich nichts mehr.",
+      "Gleichbleibend bis Mitternacht. Deine Vorsätze halten erfahrungsgemäß nicht mal so lange wie diese Wetterlage.",
+      "Draußen ändert sich nichts mehr. Deine Liste für nächstes Jahr wird ja trotzdem wieder lang."
+    ],
+    "theme_ghd": [
+      "Heute wie gestern, morgen vermutlich auch. Das Wetter hat sich halt festgefahren, wie du im Flur.",
+      "Schon wieder ändert sich nichts. Zieh das Gleiche an wie gestern, es stimmt weiterhin.",
+      "Dasselbe Wetter, dieselbe Grübelei vor dem Schrank. Eins von beidem könntest du abstellen.",
+      "Der Tag wiederholt sich wettermäßig. Deine Entscheidung von gestern war richtig und ist es immer noch."
+    ],
+    "theme_pi": [
+      "Konstant bis auf mehrere Stellen hinterm Komma. Du rechnest trotzdem vorsichtshalber noch mal nach.",
+      "Heute ist das Wetter berechenbar. Deine Entscheidung im Flur ist es nach wie vor nicht.",
+      "Rund, gleichmäßig, ohne Überraschung. Für so einen Tag brauchst du wirklich keine zweite Jacke.",
+      "Ein gleichmäßiger Tag ohne Ende hinterm Komma. Deine Zweifel daran sind mathematisch nicht zu retten."
+    ],
+    "theme_force": [
+      "Die Wetterlage steht fest, ganz ohne dein Zutun. Widerstand im Flur bringt heute ebenfalls nichts.",
+      "Konstant von morgens bis abends. Deine Ahnung, dass da noch was kommt, täuscht dich halt.",
+      "Vertrau ausnahmsweise dem, was du anhast. Deine Gefühle sagen heute erwiesenermaßen nichts Nützliches.",
+      "Alles bleibt auf Kurs. Du bist der einzige Unsicherheitsfaktor, und das schon vor dem Frühstück."
+    ],
+    "theme_bike": [
+      "Ruhiges Radwetter, den ganzen Tag. Deine Ausrede von heute Morgen hält der Lage nicht stand.",
+      "Kein Wind, kein Umschwung, nichts. Das Rad steht trotzdem seit März unbenutzt im Keller.",
+      "Gleichmäßig warm und trocken. Für die Strecke, die du dir vornimmst, reicht das dreimal.",
+      "Nichts am Wetter spricht heute gegen das Rad. Deine Liste von Gründen kennen wir ja schon."
+    ],
+    "theme_tdf": [
+      "Die Wetterlage fährt heute im Feld mit, ohne Ausreißer. Du kannst dich ganz aufs Treten konzentrieren.",
+      "Flache Etappe, wettermäßig. Deine Beine sind das Einzige, was heute noch Widerstand leistet.",
+      "Konstant über die ganze Strecke. Ein Trikotwechsel unterwegs gehört heute wirklich nicht zum Plan.",
+      "Bergauf ändert sich am Wetter auch nichts. Deinen Ausreden fällt schon noch was Neues ein."
+    ],
+    "theme_okt": [
+      "Gleichbleibend frisch, den ganzen Tag. Dirndl und Lederhose halten das aus, deine Planung eher nicht.",
+      "Am Wetter ändert sich nichts. Was du jetzt anhast, trägt dich durch den ganzen Festtag.",
+      "Stabil von morgens bis Mitternacht. Im Zelt ist es ohnehin wärmer, als deine Planung vorgesehen hat.",
+      "Ein ruhiger Tag, wettermäßig. Alles andere heute liegt halt ganz allein an deinen Entscheidungen."
+    ],
+    "theme_spooky": [
+      "Gleichbleibend kühl bis in die Nacht. Dein Kostüm hat für Wetter noch nie Platz gelassen.",
+      "Am Wetter ändert sich heute nichts Gruseliges. An deiner Jackenlogik wie jedes Jahr aber auch nichts.",
+      "Unverändert kühl bis spät. Die Jacke übers Kostüm ruiniert weniger, als du jetzt glaubst.",
+      "Kein Umschwung heute Nacht. Frieren fürs Kostüm ist eine Entscheidung, und du triffst sie wieder."
+    ],
+    "theme_thanks": [
+      "Ruhige Wetterlage, so wie drüben am langen Wochenende. Hier ist es halt ein normaler Donnerstag.",
+      "Gleichbleibend kühl, den ganzen Tag. Deine Jacke muss heute keine Extrarunde drehen.",
+      "Kein Umschwung, kein Aufwand. Danke sagen könntest du heute mal deiner Jacke, die hält durch.",
+      "Wettermäßig ist heute nichts los, drüben feiern sie trotzdem. Du ziehst dich einfach normal an."
+    ],
+    "theme_krampus": [
+      "Durchgehend kalt. Der Krampus führt Buch, und deine dünne Jacke steht da schon länger drin.",
+      "Frostig bleibt es den ganzen Abend. Wer ohne Mütze losgeht, landet heute halt auf der Liste.",
+      "Gleichbleibend kalt, ohne Pause. Deine Kleiderentscheidungen dieses Jahr waren teilweise wirklich grenzwertig.",
+      "Kalt bleibt es, den ganzen Abend. Ob du dich passend anziehst, notiert heute ausnahmsweise jemand."
+    ],
+    "theme_nikolo": [
+      "Beständig kalt, den ganzen Tag. In die Stiefel vor der Tür passt übrigens auch eine Mütze.",
+      "Draußen bleibt alles, wie es ist. Die Stiefel stehen geputzt da, du gehst trotzdem in Sneakern.",
+      "Gleichmäßig frostig bis abends. Wer brav ist, zieht die Mütze an, bevor die Tür aufgeht.",
+      "Die Kälte hält sich hartnäckig. Was du heute anziehst, entscheidet, wie der Weg zur Arbeit läuft."
+    ],
+    "theme_xmas": [
+      "Stabil kalt, den ganzen Feiertag. Die gute Jacke hat heute genau eine Aufgabe und macht sie.",
+      "Nichts ändert sich bis zum Abend. Deine dünne Festtagsjacke war trotzdem wieder die erste Wahl.",
+      "Durchgehend kalt draußen. Deine Festtagsjacke sieht gut aus und wärmt ungefähr wie Geschenkpapier.",
+      "Frostig von früh bis spät. Zwischen Tür und Angel ziehst du dir trotzdem nichts Vernünftiges an."
     ]
   },
   "precip_11": {
@@ -634,7 +1215,13 @@
       "{WHENP} könnte es regnen. Einmal umsonst getragen ist billiger als einmal falsch gehofft.",
       "Kann regnen, muss nicht. Dein Bauchgefühl liegt hier ungefähr bei null, also nimm den Schirm.",
       "Du guckst gleich raus und entscheidest dich falsch. Schirm einpacken deckt beide Fälle ab.",
-      "Die Regenwahrscheinlichkeit reicht für einen Schirm, nur nicht für deine Überzeugung. Nimm ihn trotzdem mit."
+      "Die Regenwahrscheinlichkeit reicht für einen Schirm, nur nicht für deine Überzeugung. Nimm ihn trotzdem mit.",
+      "{WHENP} kann es nass werden. Dein Schirm steht im Flur und bleibt da wohl auch.",
+      "Sicher ist der Regen nicht, möglich schon. Du legst dich trotzdem wieder auf trocken fest.",
+      "Ein Schirm in der Tasche kostet nichts. Deine Überzeugung, ihn nicht zu brauchen, schon.",
+      "Nimm den Schirm mit, {WHENP} könnte es losgehen. Du hältst das jetzt halt für übertrieben.",
+      "Womöglich regnet es, womöglich nicht. Bei dieser Frage lagst du zuletzt selten richtig.",
+      "Der Himmel hält sich {WHENP} beide Möglichkeiten offen. Dein Schirm sollte das auch tun."
     ],
     "wetter_maybe_j": [
       "Dazu vielleicht Regen. Nimm den Schirm, meckern darfst du später.",
@@ -643,7 +1230,12 @@
       "Regen ist möglich, mehr nicht. Reicht bei dir für nasse Schuhe.",
       "Und es könnte regnen. Du nennst das überschaubar, bis du drinstehst.",
       "Außerdem ein Regenrisiko. Schirm einpacken dauert zehn Sekunden, deine Ausrede länger.",
-      "Dazu vielleicht Regen. Nimm den Schirm, du Optimist."
+      "Dazu vielleicht Regen. Nimm den Schirm, du Optimist.",
+      "Obendrauf ein Regenrisiko. Dein Schirm bleibt trotzdem zu Hause.",
+      "Und vielleicht Regen. Der Schirm passt ja in jede Tasche.",
+      "Nass kann's dazu werden. Du wettest wie immer dagegen.",
+      "Dazu Regentropfen, vielleicht. Schirm einstecken wäre halt das Vernünftige.",
+      "Möglicher Regen obendrein. Du entscheidest dich gleich wieder falsch."
     ],
     "wetter": [
       "{WHENP} regnet es. Der Schirm steht neben der Tür, du gehst gleich links dran vorbei.",

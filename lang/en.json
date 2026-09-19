@@ -45,7 +45,31 @@
       "The weather holds. Dress once and you're done.",
       "No layers to add, none to take off.",
       "Same weather from now until evening. An easy day.",
-      "Wear that and you're set. There's nothing else to plan."
+      "Wear that and you're set. There's nothing else to plan.",
+      "One outfit covers today. That's the whole forecast.",
+      "Nothing shifts out there. Walk out as you are.",
+      "Steady all the way through. You've already made the only decision.",
+      "Dress for now and it still works later.",
+      "The air stays put today. So can your plan.",
+      "Easy one today. What's on the screen is the whole answer.",
+      "Go as you are. Nothing later asks for a change.",
+      "There's no change coming. Head out and forget the weather.",
+      "Flat and even, start to finish. Nothing to think about.",
+      "Pick an outfit once. It holds right through.",
+      "Quiet day out there. Your clothes have nothing to prove.",
+      "Same all day, so the first choice is the right one.",
+      "Nothing to plan around today. The weather's already decided.",
+      "You're dressed for it already, and you stay dressed for it.",
+      "It holds steady from here. No layer changes at all.",
+      "A level day, front to back. Nothing to add later.",
+      "Out the door as you are. Today keeps its shape.",
+      "This one stays put. No swapping layers halfway through.",
+      "Settled weather, start to finish. One outfit does it.",
+      "Whatever you pick this morning still fits this evening.",
+      "Even air all day. No layer has to come off.",
+      "Comfortable now, comfortable later. Nothing in between changes.",
+      "Straight line of a day. Dress once and go.",
+      "Nothing surprising in today. Wear what you've got on."
     ],
     "arc_colder": [
       "{GARMENT} comes off {WHEN}, then back {WHEN2}. Bring a warmer layer with it.",
@@ -85,20 +109,32 @@
       "The coat comes off later and takes up both arms.",
       "You'll be warm enough without the puffer {WHEN}. Decide where it goes.",
       "Off with the coat {WHEN}. That's a bulky thing to manage.",
-      "Coat weather ends {WHEN}. Carrying it is the hard part."
+      "Coat weather ends {WHEN}. Carrying it is the hard part.",
+      "The puffer's too much {WHEN}. It won't squash into a bag.",
+      "You'll be carrying that coat {WHEN}. It takes up a whole arm.",
+      "Milder later, and the coat becomes the biggest thing you're holding.",
+      "Once the coat's off {WHEN}, there's nowhere small to put it.",
+      "Bring a bag if you can. The coat comes off {WHEN}.",
+      "Big coat now, no coat {WHEN}. The carrying is the tricky part."
     ],
     "w_jacket": [
-      "Jacket off {WHEN}. Tie it round your waist and keep going.",
+      "Jacket off {WHEN}. Tie it around your waist and keep going.",
       "Take the jacket off {WHEN} — it packs down small in a bag.",
       "Mild enough later that the jacket comes off. It packs small.",
       "You won't need the jacket {WHEN}. Sling it over one shoulder.",
       "Light jacket now, no jacket {WHEN}. Easy enough to carry.",
-      "One layer less {WHEN}. The jacket tucks under an arm."
+      "One layer less {WHEN}. The jacket tucks under an arm.",
+      "The jacket comes off {WHEN} and rides on your arm after that.",
+      "Warmer later, so the jacket's job ends early. It's light to carry.",
+      "Unzip {WHEN}, then take the jacket off altogether. It folds down small.",
+      "A jacket in your hand beats a jacket you're sweating in.",
+      "Your arms end up carrying the jacket {WHEN}. It's no weight at all.",
+      "Off comes the jacket {WHEN}. A bag or a shoulder will do."
     ],
     "w_hoodie": [
-      "The hoodie comes off {WHEN}. Tie the sleeves round your waist.",
+      "The hoodie comes off {WHEN}. Tie the sleeves around your waist.",
       "Hoodie off {WHEN}. It'll bunch up small in your bag.",
-      "T-shirt weather later. The hoodie ends up round your waist.",
+      "T-shirt weather later. The hoodie ends up around your waist.",
       "Too warm for the hoodie {WHEN}. Have somewhere to stash it.",
       "Pull the hoodie off {WHEN}. One arm's enough to carry it.",
       "Nothing over the t-shirt {WHEN}. The hoodie goes in the bag."
@@ -108,8 +144,14 @@
       "Short sleeves {WHEN}. The sweatshirt goes over your shoulder.",
       "Warm enough later that the sweatshirt comes off. Easy to carry.",
       "You'll want the sweatshirt off {WHEN}. One arm can hold it.",
-      "Off comes the sweatshirt {WHEN}. Tie it round your middle.",
-      "Bare arms {WHEN}. The sweatshirt travels with you from then on."
+      "Off comes the sweatshirt {WHEN}. Tie it around your middle.",
+      "Bare arms {WHEN}. The sweatshirt travels with you from then on.",
+      "The sweatshirt's done {WHEN}. Roll it up and keep going.",
+      "T-shirt weather {WHEN}. The sweatshirt ties around your waist.",
+      "Peel the sweatshirt off {WHEN}. It packs down to nothing.",
+      "Once it's off {WHEN}, the sweatshirt fits in any bag.",
+      "A sweatshirt is easy to carry, and it comes off {WHEN}.",
+      "Shoulder or bag, the sweatshirt has to go somewhere {WHEN}."
     ],
     "w_water": [
       "Hotter {WHEN}. Take water and find shade when you can.",
@@ -117,11 +159,17 @@
       "Fill a water bottle before you go. Today's a hot one.",
       "The heat climbs {WHEN}. Shade and cold water do the work now.",
       "Drink more than you think you need. Keep to the shady side.",
-      "Water, shade, and a slower pace {WHEN}. That's the whole plan."
+      "Water, shade, and a slower pace {WHEN}. That's the whole plan.",
+      "Nothing left to take off {WHEN}. Water does the rest.",
+      "Peak heat lands {WHEN}. Find shade and keep drinking.",
+      "A bottle of water is worth more than any outfit today.",
+      "Stay out of the sun {WHEN}. Cold water helps more than clothes.",
+      "Shade and water from here on. Clothing has nothing left to give.",
+      "Sip water through the day, and take the shady side of the street."
     ],
     "c_scarf": [
       "Take a scarf. The coat leaves your neck open {WHEN}.",
-      "Your neck's the cold bit {WHEN}. A scarf sorts that out.",
+      "Your neck's the cold part {WHEN}. A scarf takes care of that.",
       "A scarf goes in the bag today. The coat won't cover everything.",
       "Cold enough {WHEN} to feel it on your neck. Bring a scarf.",
       "The coat's warm enough. It's your neck that wants a scarf {WHEN}.",
@@ -130,7 +178,7 @@
     "c_coat": [
       "Take the big coat, not the light one. It's freezing {WHEN}.",
       "The winter coat comes out today. A jacket won't hold up {WHEN}.",
-      "Proper coat weather later. Leave the thin jacket on its hook.",
+      "Real coat weather later. Leave the thin jacket on its hook.",
       "Bring the padded coat. A jacket stops being enough {WHEN}.",
       "Freezing {WHEN}. That means the thick coat, not the thin one.",
       "Big drop coming, so pack the heaviest coat you've got."
@@ -140,7 +188,7 @@
       "Slip a jacket over your arm before you head out today.",
       "If you only take one thing today, make it a jacket.",
       "A jacket over the hoodie {WHEN}. That's all it takes.",
-      "Cold enough for a proper jacket {WHEN}. Bring one along.",
+      "Cold enough for a real jacket {WHEN}. Bring one along.",
       "Hoodie plus jacket {WHEN}. One on its own won't be enough."
     ],
     "c_hoodie": [
@@ -157,7 +205,13 @@
       "Long sleeves later. A sweatshirt over the t-shirt does it.",
       "Pack a sweatshirt. Your arms will notice the change {WHEN}.",
       "Cool enough {WHEN} for sleeves. A sweatshirt is plenty.",
-      "Take something long-sleeved — a sweatshirt, a jumper, whatever's by the door."
+      "Take something long-sleeved — a sweatshirt, a sweater, whatever's by the door.",
+      "Sleeves make the difference {WHEN}. A sweatshirt is all it takes.",
+      "Grab a sweatshirt on the way out. Cooler air comes {WHEN}.",
+      "The t-shirt alone stops working {WHEN}. Take a sweatshirt with you.",
+      "One sweatshirt in the bag covers the cooler end of today.",
+      "Warm now, cooler {WHEN}. A sweatshirt bridges the two.",
+      "Sweatshirt weather arrives {WHEN}. Take one before you head out."
     ],
     "c_relief": [
       "The heat eases off {WHEN}. No extra layer needed.",
@@ -165,7 +219,139 @@
       "The peak passes and the evening's comfortable. No layer to carry.",
       "A break from the heat {WHEN}. What you're wearing works.",
       "Warm, then a little less warm. No extra layers needed.",
-      "Comfortable by evening. You're already dressed for it."
+      "Comfortable by evening. You're already dressed for it.",
+      "The worst of the heat is done {WHEN}. Same clothes, less sweat.",
+      "Cooler {WHEN}, though still warm. You won't need a layer over that.",
+      "Some of the heat leaves {WHEN}. What's left is easy to dress for.",
+      "Evening air is kinder than this. No extra layer to put on.",
+      "The high heat steps back {WHEN}. Same outfit, more comfortable.",
+      "Less heat {WHEN}, and still no need for sleeves.",
+      "Hot now, merely warm {WHEN}. Your clothes stay the same.",
+      "A softer end to a hot day. No layer to add.",
+      "The peak is behind you {WHEN}. Dress as you already have.",
+      "Warm turns into comfortable {WHEN}. No layer changes with it.",
+      "Sweaty now, fine later, and the same clothes cover both.",
+      "Heat backs off {WHEN} without going cold. Nothing to put on over it."
+    ],
+    "perfect_evening": [
+      "The evening holds steady. What you're wearing sees it out.",
+      "Nothing more changes tonight. You're dressed for the rest of it.",
+      "Rest of the evening stays like this. No extra layer needed.",
+      "Short stretch left, and it stays as it is.",
+      "The day's nearly done, and it ends the way it is now.",
+      "Steady through to bedtime. Nothing left to swap.",
+      "What's left of today needs no changes.",
+      "Evening stays even. Head out as you are.",
+      "No surprises left in this one. The outfit holds.",
+      "Whatever's left of the day matches what you've got on.",
+      "Calm end to the day. No layer changes left.",
+      "You're set for the evening, and that's the last of it.",
+      "Same air from here to the end of the day.",
+      "One outfit finishes the day, and it's already on you.",
+      "The last hours run flat. No layer comes off or on.",
+      "Nothing left to decide today. The evening stays put.",
+      "Quiet evening ahead, and your clothes already match it.",
+      "Not much day left, and none of it changes."
+    ],
+    "perfect_hot": [
+      "Hot all day, with no let-up. Keep water with you.",
+      "Clothes can't do much more in this. Drink often and find shade.",
+      "Steady heat right through. Cold water helps more than anything you wear.",
+      "Heat stays high all day. Walk the shady side and drink more.",
+      "No cooler stretch is coming. Fill a bottle before you go.",
+      "Hot now and hot later. Shade is the only real relief.",
+      "You're already dressed as light as it gets. Water does the rest.",
+      "Nothing in your closet fixes this. Shade, water, slower walking.",
+      "A long hot one. Take breaks indoors where you can.",
+      "Same heat all the way through. Keep drinking, even before you're thirsty.",
+      "This heat sits still all day. Stay out of the sun when you can.",
+      "Light clothes are doing all they can. The rest is water and shade."
+    ],
+    "perfect_cold": [
+      "Cold all day, and it stays that way. The coat's enough.",
+      "Freezing right through. What you've got on is the right call.",
+      "No warm patch is coming. Keep the coat on all day.",
+      "Cold air sits still today. Zip up and go.",
+      "Hat, coat, boots. All three earn their place until bedtime.",
+      "Steady cold from now on. Nothing comes off today.",
+      "One warm layer covers the whole day. You're wearing it.",
+      "Bundled up is the right answer, and it stays right.",
+      "Nothing warms up later. Dress heavy and leave it that way.",
+      "Wrap up now and stay wrapped up. The cold doesn't budge.",
+      "Same cold, hour after hour. The big coat has a full day.",
+      "Keep your hands and ears covered. It stays this cold throughout."
+    ],
+    "theme_ny": [
+      "Nothing new from the weather today. Dress once and start the year.",
+      "No news from the sky today. The date does all the talking.",
+      "A calm day to begin on. What you've got on is fine.",
+      "No changes out there. Whatever you're wearing takes you into the year."
+    ],
+    "theme_ghd": [
+      "Today repeats itself, hour after hour. One outfit covers all of it.",
+      "The same weather over and over. Dress once and you're done with it.",
+      "No change in sight, whatever the groundhog says. Wear what you've got.",
+      "A day that looks the same at both ends. Nothing to swap."
+    ],
+    "theme_pi": [
+      "Today's forecast repeats like a long number. Nothing in it changes.",
+      "Round numbers, round day. What you're wearing covers all of it.",
+      "Weather holds steady, on and on, with no end in sight.",
+      "Flat, even day from end to end. Save your thinking for pie."
+    ],
+    "theme_force": [
+      "Steady weather stays with you all day. Nothing to change.",
+      "Calm skies, calm day. Your outfit needs no backup.",
+      "Nothing out there fights you today. Wear what's comfortable and go.",
+      "No layers to swap today. The day stays quiet out there."
+    ],
+    "theme_bike": [
+      "Good weather to ride in, and it stays that way all day.",
+      "The ride home feels like the ride out. Nothing changes between them.",
+      "Same air out and back. No layer to peel off on the way.",
+      "Dress once and ride. The weather holds from end to end."
+    ],
+    "theme_tdf": [
+      "A long flat stage of a day. No changes to make.",
+      "Steady weather from start to finish. Ride your own pace.",
+      "The whole day runs at one pace. Nothing to peel off.",
+      "Even conditions, mile after mile. The outfit doesn't change."
+    ],
+    "theme_okt": [
+      "Even weather all day out there. One outfit covers the whole thing.",
+      "No weather news today. The benches are long and the day is calm.",
+      "Calm all day out there. Plenty of time for a long lunch.",
+      "Steady from morning to night. Dress once and stay out as long as you like."
+    ],
+    "theme_spooky": [
+      "Quiet weather tonight. Your costume needs no extra layer.",
+      "Nothing scary in the forecast. It holds steady all evening.",
+      "Steady all evening for trick-or-treating. What you've got on works.",
+      "Dark or light, the weather's the same. No reason to change anything."
+    ],
+    "theme_thanks": [
+      "Quiet skies for the whole day. Good day to stay put and eat.",
+      "Nothing to plan for outside today. The oven does the rest.",
+      "Outside does nothing all day, so the table gets all the attention.",
+      "Outside stays the same right through. The walk after dinner is easy."
+    ],
+    "theme_krampus": [
+      "Nothing changes out there tonight. Stay close and keep an eye out.",
+      "Steady out there tonight, whatever else is walking around.",
+      "Dress once and go out. The evening holds steady, bells and all.",
+      "No surprises from the sky tonight. The parade brings its own."
+    ],
+    "theme_nikolo": [
+      "Nothing shifts in the weather today. Check by the door for treats.",
+      "The weather stays put all day. Tonight's the night for shoes by the door.",
+      "Same weather from dawn to dark. One outfit does the whole day.",
+      "A quiet one out there. Whatever's on works all day."
+    ],
+    "theme_xmas": [
+      "Nothing about the weather changes today. The day has plenty else going on.",
+      "No weather to work around today. Stay in or head out, same either way.",
+      "Whatever you've got on is the outfit. Nobody's checking today.",
+      "The forecast takes the day off. Yours can too."
     ]
   },
   "precip_0": {
@@ -175,7 +361,13 @@
       "There's a chance of rain {WHENP}. Bring the umbrella just in case.",
       "An umbrella in the bag covers you if the rain shows up.",
       "Maybe rain {WHENP}, maybe nothing. Either way, take the umbrella.",
-      "Not certain, but likely enough — slide an umbrella in your bag."
+      "Not certain, but likely enough — slide an umbrella in your bag.",
+      "Rain could show up {WHENP}. The umbrella's worth its space.",
+      "Slip the umbrella in your bag. Rain's a maybe {WHENP}.",
+      "A small chance of rain {WHENP}. The umbrella covers it.",
+      "Clouds might open {WHENP}. An umbrella settles the question.",
+      "The forecast isn't sure about rain {WHENP}. Take an umbrella anyway.",
+      "Umbrella in the bag, just in case. Rain's possible {WHENP}."
     ],
     "wetter_maybe_j": [
       "Rain's a maybe too, so take the umbrella.",
@@ -184,7 +376,12 @@
       "Possible rain on top of that. The umbrella's worth carrying.",
       "Add an umbrella: rain isn't certain, but it's likely enough.",
       "Chance of rain too. An umbrella is easy to carry.",
-      "Rain's possible too. Take the umbrella."
+      "Rain's possible too. Take the umbrella.",
+      "Maybe rain as well. The umbrella's easy to bring.",
+      "Plus a chance of rain, so the umbrella comes along.",
+      "Take an umbrella too — rain isn't certain, but it's close.",
+      "Rain might join in. The umbrella's worth the space.",
+      "An umbrella covers the maybe. Rain's not certain today."
     ],
     "wetter": [
       "Rain arrives {WHENP}. Take the umbrella — it doesn't last long.",
@@ -206,7 +403,7 @@
     "wetter_long": [
       "Rain begins {WHENP} and stays for hours. Take the umbrella.",
       "Hours of rain {WHENP}. The umbrella's doing real work today.",
-      "Long wet stretch {WHENP}. Take a proper umbrella, not the tiny one.",
+      "Long wet stretch {WHENP}. Take the big umbrella, not the tiny one.",
       "The umbrella comes with you today — this rain lasts hours.",
       "Once it starts {WHENP}, it keeps going. Umbrella, and good shoes.",
       "Steady rain for most of the day. Carry the umbrella."
@@ -255,18 +452,18 @@
       "Wet all day, with no dry gap."
     ],
     "snow_coming": [
-      "Snow {WHENP}. Wear boots with grip — paths turn slippery.",
+      "Snow {WHENP}. Wear boots with grip — sidewalks turn slippery.",
       "Boots with tread today. Snow arrives {WHENP} and settles.",
       "Snow's on the way {WHENP}. Shoes matter more than anything else.",
       "Watch your footing later — snow's coming and the ground gets slick.",
-      "Proper boots, not trainers. Snow starts {WHENP}.",
+      "Real boots, not sneakers. Snow starts {WHENP}.",
       "Snow falls {WHENP}. Grip on your shoes is what helps."
     ],
     "snow_coming_j": [
       "And snow with it. Wear boots you can grip in.",
       "Snow's coming too. Check your shoes before you go.",
       "Plus snow later. Footwear is the thing that matters.",
-      "There's snow in it as well. Boots, not trainers.",
+      "There's snow in it as well. Boots, not sneakers.",
       "Snow on top of that. Go for grip underfoot.",
       "Snow shows up at some point. Solid boots today.",
       "Snow too. Wear boots with grip."
@@ -279,7 +476,31 @@
       "Today's weather clocks in and does the minimum. The outfit needs no backup.",
       "No layer changes hands today. Whatever's on stays on, start to finish.",
       "The day holds steady, so nothing needs carrying and nothing needs deciding.",
-      "The coat rack and the umbrella stand both get the day off."
+      "The coat rack and the umbrella stand both get the day off.",
+      "Every layer on duty now stays on duty. Nothing gets handed back.",
+      "Quiet shift for the weather, and a quieter one for the closet.",
+      "Whatever's on now is what's on later. The forecast has no second act.",
+      "Same outfit at both ends of the day. The weather isn't negotiating.",
+      "This one runs flat. No layer comes off, none goes back on.",
+      "Dressed once and done. The sky has filed no revisions.",
+      "One outfit, one shift, no handover. Nothing else has been arranged.",
+      "Flat line on the forecast. Whatever's on your back handles all of it.",
+      "Neither warmer nor colder in any way worth a layer. Carry on as dressed.",
+      "Hangers stay full today. The outfit already showing is the whole plan.",
+      "A day with no moving parts. Nothing needs adding and nothing needs removing.",
+      "Sleeves stay where they are. The weather has nothing scheduled against them.",
+      "Air holds its position all day. No spare layer gets called in.",
+      "Zero handovers on today's roster. What's on now finishes the job.",
+      "Weather's on standby. The outfit covers everything it might get around to.",
+      "Boring, in the way that saves carrying things around all afternoon.",
+      "Nobody clocks off today. Every layer that's on works right to closing.",
+      "Conditions stay put. The only thing moving today is the clock.",
+      "Forecast's flat enough to ignore. Dress once and think about something else.",
+      "Layers keep their posts, and the umbrella stand keeps its dust.",
+      "Steady start to finish, with nothing for the closet to reconsider.",
+      "Not a single decision in this one. The wardrobe already made them all.",
+      "Wind, sun and temperature all agree to do the minimum. So can you.",
+      "Nothing due in from the forecast. Whatever's on holds the line all day."
     ],
     "arc_colder": [
       "{GARMENT} clocks off {WHEN} and comes back {WHEN2} short-staffed. Pack a layer over it.",
@@ -308,7 +529,7 @@
     "w_scarf": [
       "The scarf's the only thing clocking off {WHEN}. Coat, hat and boots stay on.",
       "Only the scarf changes status {WHEN}; the rest of the outfit works straight through.",
-      "A scarf ends up in a pocket and the rest of the kit carries on.",
+      "A scarf ends up in a pocket and the rest of the gear carries on.",
       "Loosen the scarf {WHEN}. It's the one layer this day makes redundant.",
       "First off the payroll {WHEN}: the scarf. Everything else keeps its hours.",
       "That scarf stops earning {WHEN} and rides in a pocket from there on."
@@ -319,15 +540,27 @@
       "Coats that size don't fold away quietly, and this one's off before the day's out.",
       "Room in the bag or an arm free: the puffer's done {WHEN} either way.",
       "Warm now, dead weight {WHEN}. That's the price of a morning like this one.",
-      "A puffer goes from essential to awkward {WHEN}, with nowhere good to put it."
+      "A puffer goes from essential to awkward {WHEN}, with nowhere good to put it.",
+      "The puffer stops being clothing {WHEN} and starts being a large soft suitcase.",
+      "Nothing folds a winter coat small. It comes off {WHEN} regardless.",
+      "Off comes the puffer {WHEN}, and it's an armful from then on.",
+      "That coat goes from doing everything to doing nothing {WHEN}, and weighs the same throughout.",
+      "Plan for where the puffer goes {WHEN}. It doesn't fit anywhere politely.",
+      "A winter coat carried is a winter coat resented, and this one comes off before dark."
     ],
     "w_jacket": [
       "The jacket's shift ends {WHEN}; after that it rides on an arm.",
-      "Sleeves round the waist {WHEN}, because the jacket's work is finished by then.",
+      "Sleeves around the waist {WHEN}, because the jacket's work is finished by then.",
       "Expect the jacket off {WHEN} and in the way for the rest of the day.",
-      "A jacket earns its keep this morning and turns into hand luggage afterwards.",
+      "A jacket earns its keep this morning and becomes baggage afterwards.",
       "Light as it is, the jacket still needs somewhere to go {WHEN}.",
-      "Clothing now, cargo {WHEN}. The jacket's useful stretch is the shorter one."
+      "Clothing now, cargo {WHEN}. The jacket's useful stretch is the shorter one.",
+      "Once it's off {WHEN}, the jacket occupies an arm and gives nothing back.",
+      "Nothing about the jacket is heavy, but it's still something to hold {WHEN}.",
+      "Shoulders lose the jacket {WHEN}, and a hand inherits it.",
+      "A free hand is worth having {WHEN}, because that's when the jacket needs one.",
+      "The zip comes down first, then the whole thing {WHEN}. The bag gets a passenger.",
+      "Useful all morning, then an object with nowhere to be. That's the jacket's day."
     ],
     "w_hoodie": [
       "The hoodie hands in its notice {WHEN}. Somewhere to stash it would help.",
@@ -343,7 +576,13 @@
       "Not much to carry once the sweatshirt's off, at least. It rolls up small.",
       "Peel the sweatshirt off {WHEN}; the shirt underneath takes the rest of the shift.",
       "One layer too many {WHEN}, and the sweatshirt's the one that goes.",
-      "That sweatshirt clocks out {WHEN} and travels the rest of the way as luggage."
+      "That sweatshirt clocks out {WHEN} and travels the rest of the way as luggage.",
+      "Up and off {WHEN}, and from there the sweatshirt is just something to hold.",
+      "The middle of the day turns the sweatshirt into an item you're carrying.",
+      "Sleeves get pushed up first, then the whole thing comes off {WHEN}.",
+      "Nothing underneath needs help {WHEN}, so the sweatshirt rides in the bag.",
+      "Once off, the sweatshirt is barely luggage. That's the one mercy here.",
+      "The day outgrows the sweatshirt {WHEN}. It comes off and doesn't go back."
     ],
     "w_water": [
       "Clothing's out of moves {WHEN}. Water and shade take over from here.",
@@ -351,7 +590,13 @@
       "There's no layer left to shed {WHEN}; shade is the only thing still helping.",
       "Hydration's doing the work today. The wardrobe already handed over everything it had.",
       "Nothing left to take off {WHEN}, which makes the water bottle the whole plan.",
-      "Heat keeps stacking up {WHEN}. Shade, water and a slower pace do the rest."
+      "Heat keeps stacking up {WHEN}. Shade, water and a slower pace do the rest.",
+      "Not a stitch left to remove {WHEN}. The water bottle takes over from the wardrobe.",
+      "The wardrobe's contribution is already maxed out; {WHEN} it's shade doing the lifting.",
+      "Heat climbs past the point where clothing can help. Drink before it occurs to you.",
+      "Taking anything else off isn't an option {WHEN}, so the shade has to cover it.",
+      "Refill the bottle now, because {WHEN} the heat builds and the outfit's out of answers.",
+      "Shade stops being optional {WHEN}. There's no layer left to trade for comfort."
     ],
     "c_scarf": [
       "The coat covers everything but the neck, and {WHEN} that gap starts to matter.",
@@ -363,7 +608,7 @@
     ],
     "c_coat": [
       "This is coat weather {WHEN}, not jacket weather. The jacket loses that argument.",
-      "A light jacket gets outmatched {WHEN}. The proper winter coat, then.",
+      "A light jacket gets outmatched {WHEN}. The real winter coat, then.",
       "The winter coat's back on the roster; nothing lighter covers what's coming.",
       "Bring the heavy coat. Anything thinner gets found out {WHEN}.",
       "Jacket now, coat {WHEN}, and the difference stops being cosmetic somewhere in between.",
@@ -391,7 +636,13 @@
       "Sleeves become necessary later, so the sweatshirt travels with everything else.",
       "Warm enough for a t-shirt now, not {WHEN}, so the sweatshirt comes along.",
       "The cool end of the day wants a sweatshirt. Give it one.",
-      "Pack a sweatshirt. The air loses its warmth {WHEN} and doesn't get it back."
+      "Pack a sweatshirt. The air loses its warmth {WHEN} and doesn't get it back.",
+      "A sweatshirt in the bag now saves an argument with the air {WHEN}.",
+      "Take something with sleeves. Bare arms lose their case {WHEN}.",
+      "Short sleeves stop being enough {WHEN}, so the sweatshirt comes along for the ride.",
+      "The air thins out {WHEN} and arms notice it first. Pack the sweatshirt.",
+      "Something with sleeves goes in the bag, and it gets used before the day's out.",
+      "Sweatshirt weather turns up {WHEN}. Better it's in the bag than on its hook."
     ],
     "c_relief": [
       "The heat finally knocks off {WHEN}. Still warm, and still no layer to carry.",
@@ -399,7 +650,139 @@
       "Cooler later, in the way that's welcome. No extra layer needed for it.",
       "That's the peak behind us {WHEN}. Comfortable from there, with no layer to bring.",
       "Some of the heat leaves {WHEN}. What's left is manageable in the same clothes.",
-      "The temperature backs off {WHEN} without going anywhere that needs a layer."
+      "The temperature backs off {WHEN} without going anywhere that needs a layer.",
+      "Part of the heat withdraws {WHEN}. Warm still, with no layer to add for it.",
+      "Heat eases off {WHEN} and stops well short of anything the wardrobe answers to.",
+      "Still hot, then less so {WHEN}. No layer gets involved either way.",
+      "Peak heat gives way {WHEN} to something the same clothes handle better.",
+      "The sun loosens its grip {WHEN}, and nothing in the outfit changes for it.",
+      "Warm instead of hot {WHEN}, which is the whole improvement. No layer required.",
+      "It stops being punishing {WHEN} and settles for merely warm. Same clothes throughout.",
+      "Hot now, less hot later, and no layer travels with you for the difference.",
+      "Relief arrives {WHEN} in the form of slightly less heat. The outfit stays put.",
+      "This day steps off the boil {WHEN} and stays warm enough to change nothing.",
+      "Cooler air arrives {WHEN}, though never enough for anything with sleeves.",
+      "The edge comes off the heat {WHEN}. Everything on now is still the right call."
+    ],
+    "perfect_evening": [
+      "The day's nearly filed. What's on now sees it out.",
+      "Evening holds what the afternoon set. Nothing changes between here and bed.",
+      "Not much day left to dress for, and the outfit covers all of it.",
+      "Whatever's on now is what finishes the evening. There's nothing left to swap.",
+      "Weather's clocked out for the night. It leaves the outfit as it found it.",
+      "Air stays as it is through the evening. Nothing else is due in.",
+      "Last stretch of the day, and it holds steady. The outfit's already made its case.",
+      "Evenings like this ask for nothing. What's on handles the rest of it.",
+      "The rest of tonight runs the same as the last hour did.",
+      "Steady through the evening. The day has run out of surprises.",
+      "Nothing more from the forecast today. It's closing up exactly as it is.",
+      "This is the day's last state, and it's an uneventful one.",
+      "Whatever the day did, it's finished doing it. The evening just holds.",
+      "The outfit gets to finish its shift unchanged. So does the evening.",
+      "No handovers left on tonight's roster. The last layer works to closing.",
+      "Same through to the end of the night. The forecast has already gone home.",
+      "Tonight's arranged itself already. What you walked out in still works.",
+      "One state from here until dark, with nothing lined up behind it."
+    ],
+    "perfect_hot": [
+      "Heat's settled in for the day. The wardrobe already gave what it had.",
+      "Steady heat, and clothing has nothing left to offer it. Water does the rest.",
+      "Nothing more comes off, so the shade has to do the work instead.",
+      "The wardrobe's finished its part. What's left is water, shade and patience.",
+      "Hot, and staying that way. A full bottle outranks anything left in the closet.",
+      "Sun keeps its hours today. Shade covers the part clothing can't reach.",
+      "No layer left to argue with this heat. Drink more than feels necessary.",
+      "This heat doesn't move all day. The only useful thing left is water.",
+      "Full day of it. The outfit's maxed out, so let the shade take the slack.",
+      "The closet ran out of ideas hours ago. Water and shade run the afternoon.",
+      "Heat like this ignores the wardrobe entirely. A slower pace still counts for something.",
+      "Steady and hot straight through. Refill something before going anywhere."
+    ],
+    "perfect_cold": [
+      "Cold holds its position all day. Everything already on keeps earning.",
+      "The cold isn't going anywhere, and neither is a single one of those layers.",
+      "Winter dress stays complete all day. No layer gets released early.",
+      "Steady cold from here. The coat is in for the whole shift.",
+      "Nothing thaws today. The coat works straight through to closing.",
+      "This cold keeps the same hours you do. Dressed as shown, that's settled.",
+      "It stays properly cold all day, so every layer on now stays on.",
+      "No let-up in this one. The heavy coat has the day's only real job.",
+      "Hat and boots keep their posts all day, and so does everything above them.",
+      "Cold settles in and stays settled. What's already on covers it.",
+      "The day's committed to the cold. Nothing comes off between now and dark.",
+      "Same cold all the way through. The outfit's right, and it keeps being right."
+    ],
+    "theme_ny": [
+      "The year's first forecast files nothing. A quiet opening shift for the closet.",
+      "The weather's resolution this year is to stay exactly as it is.",
+      "Nothing changes today, which is a poor start for a year of change.",
+      "New calendar, same air. Whatever went out last night still applies."
+    ],
+    "theme_ghd": [
+      "Today's forecast is yesterday's forecast. Wear yesterday's answer and expect the same tomorrow.",
+      "Conditions repeat themselves, and so does the outfit. Nobody here is learning anything.",
+      "Steady, again. The day loops without adding a thing to what's already on.",
+      "Same conditions as yesterday. Even the shadow knows where this one is going."
+    ],
+    "theme_pi": [
+      "Conditions hold to the last decimal. Nothing in the outfit needs rounding up.",
+      "Today goes around and comes back unchanged. No layer moves in between.",
+      "Flat the whole way around today. The outfit covers the full circumference.",
+      "Nothing to solve here. What's on now is the answer, all the way down."
+    ],
+    "theme_force": [
+      "The weather holds its position, so the outfit needs no reinforcements today.",
+      "Nothing in this forecast puts up a fight. What's on now wins unopposed.",
+      "A quiet day out in the far bands of the forecast. No layer gets called up.",
+      "Everything out there keeps to the plan, which is more than most plans manage."
+    ],
+    "theme_bike": [
+      "Good weather for two wheels, and it stays that way. No layer changes en route.",
+      "Road conditions stay exactly as they are. What's on now works the whole way.",
+      "Steady all day, so nothing has to come off halfway up a hill.",
+      "Nothing in the sky interferes with the ride. The outfit stays as it is."
+    ],
+    "theme_tdf": [
+      "A flat stage in the forecast. No climbs, no layer changes, nothing to attack.",
+      "Today's weather sits in the pack and refuses to do anything interesting.",
+      "No breakaway from these conditions. Whatever's on now stays on to the end.",
+      "Steady to the finish. The outfit gets through this one without a support car."
+    ],
+    "theme_okt": [
+      "Steady all day, tent or no tent. Nothing comes off and nothing goes on.",
+      "The sky's settled in at a long table and ordered nothing else.",
+      "No changes on today's menu. The outfit stands up to the whole session.",
+      "One steady round, all day, and whatever's on covers every bit of it."
+    ],
+    "theme_spooky": [
+      "Nothing lurking in the forecast, which is the most unsettling thing about it.",
+      "Nothing out there has surprises planned. Whatever's on now survives the night.",
+      "Steady conditions, steady costume. Nothing underneath needs adding or taking off.",
+      "Dead quiet in the forecast. The layers on now hold straight through."
+    ],
+    "theme_thanks": [
+      "The sky brought nothing to the table. What's on now covers the whole day.",
+      "Steady conditions, no seconds required. The outfit's portion is already the right one.",
+      "Nothing on today's list needs carving up. The layers stay exactly as served.",
+      "The air holds all day, so the only thing overworked today is the oven."
+    ],
+    "theme_krampus": [
+      "The weather's on its best behavior tonight. Nothing else out there is.",
+      "Steady and quiet outside. What's on now holds right past the bells.",
+      "No punishment from the sky today. The outfit escapes without a single change.",
+      "Out there the weather behaves itself. Everything else tonight has chains and does not."
+    ],
+    "theme_nikolo": [
+      "The overnight delivery came and went. The forecast has nothing to add to it.",
+      "Nothing to unpack in today's weather. What's on now holds straight through.",
+      "A steady day, delivered on time. No layer changes hands between now and tonight.",
+      "Today's sky brought nothing, good or bad. Whatever's on stays as it is."
+    ],
+    "theme_xmas": [
+      "Nothing shifts all day. Whatever's on now stays on through dinner and after.",
+      "The forecast's taken the day off, same as everyone else. Nothing needs deciding.",
+      "No deliveries from the sky today. Whatever's on now lasts until the plates are cleared.",
+      "Everything holds. The weather's one contribution today is leaving well alone."
     ]
   },
   "precip_10": {
@@ -409,7 +792,13 @@
       "Rain's on the list {WHENP} without being confirmed. Take the umbrella anyway.",
       "The clouds haven't committed to anything {WHENP}. The umbrella can come along regardless.",
       "Maybe rain, maybe not {WHENP}, and the umbrella settles it either way.",
-      "An umbrella that stays shut costs nothing, and rain's a real possibility {WHENP}."
+      "An umbrella that stays shut costs nothing, and rain's a real possibility {WHENP}.",
+      "The clouds are keeping their options open {WHENP}. The umbrella can do the same.",
+      "A shower might get signed off {WHENP}. Take the umbrella and make it unnecessary.",
+      "Nothing's confirmed {WHENP}, but the umbrella fits in the bag either way.",
+      "Forecast's hedging {WHENP}. An umbrella is the cheapest way to stop caring.",
+      "Somewhere between dry and not {WHENP}. Take the umbrella and let it stay shut.",
+      "Odds are middling {WHENP}, and a closed umbrella weighs about as much as the doubt."
     ],
     "wetter_maybe_j": [
       "Rain's possible too, and an umbrella costs nothing to carry around unused.",
@@ -418,7 +807,12 @@
       "Rain's a maybe rather than a promise; the umbrella comes anyway.",
       "Add an umbrella, on the chance the clouds mean it this time.",
       "Possibly wet as well. An umbrella that goes unopened costs nothing.",
-      "Rain's a maybe. The umbrella costs nothing."
+      "Rain's a maybe. The umbrella costs nothing.",
+      "Nothing's promised on the rain front, so the umbrella covers the maybe.",
+      "Wet's a possibility alongside it, and the umbrella deals with that cheaply.",
+      "Take the umbrella too. It costs nothing if the clouds change their minds.",
+      "Those clouds might follow through as well, which the umbrella handles.",
+      "Rain's on the table too, unconfirmed. One umbrella and it stops mattering."
     ],
     "wetter": [
       "The rain turns up {WHENP} and doesn't stay long. Take the umbrella.",
@@ -472,7 +866,7 @@
       "The rain clocks off early. Dry after that."
     ],
     "stays_wet": [
-      "Today's rain has cleared its diary. There's no gap in it anywhere.",
+      "Today's rain has cleared its calendar. There's no gap in it anywhere.",
       "No breaks in this one. The rain has booked the whole day out.",
       "It's raining, and it plans to keep raining. No dry window to wait for.",
       "The wet's on for the duration, so there's nothing to wait out.",
@@ -490,7 +884,7 @@
     ],
     "snow_coming": [
       "Snow's due {WHENP}. Boots with grip, because an umbrella's decoration out there.",
-      "The pavement stops cooperating {WHENP} when the snow lands. Wear something with tread.",
+      "The sidewalk stops cooperating {WHENP} when the snow lands. Wear something with tread.",
       "Snow arrives {WHENP} and the footwear matters more than anything else today.",
       "There's snow {WHENP}, which makes this a footwear problem rather than a coat one.",
       "Boots earn their place {WHENP}; snow's coming and the ground turns slick.",
@@ -513,7 +907,31 @@
       "No layer to carry, no call to make — a rare day you can't overthink.",
       "Steady the whole way through. Your only opponent today is your own fidgeting.",
       "Dress once and stop. You'll check this screen again anyway, and it'll say the same.",
-      "Whatever you grabbed on the way out actually works today. Don't get used to it."
+      "Whatever you grabbed on the way out actually works today. Don't get used to it.",
+      "The weather has no opinion today. That leaves only yours, and yours is unreliable.",
+      "Same outfit from door to door. Somehow you'll still stand in front of the closet.",
+      "A flat, uneventful day. You'll find something to worry about, because that's the hobby.",
+      "This screen says the same thing all day. You'll consult it four more times.",
+      "Pick something. It works. The half-hour you're about to spend deciding does not.",
+      "Your instinct at the door is correct today, which must be deeply confusing.",
+      "Nothing to add, nothing to shed, nothing to blame. Enjoy the silence, briefly.",
+      "Boring, in the good way. You'll still pack a backup layer you never touch.",
+      "The day holds still. You're the only variable left, and you know your record.",
+      "An outfit, once, and done. Revisiting it at lunch changes nothing but your mood.",
+      "Today asks nothing of you. You'll still overdress, on principle, and sweat about it.",
+      "Wear what you're wearing. The forecast has quietly agreed with you for once.",
+      "Every hour looks like this one. Your three costume changes won't improve on it.",
+      "There is no catch, no turn, no trap. You'll keep looking for one.",
+      "Hold the line: whatever's on you now is still the right answer at bedtime.",
+      "Flat all day. You'll still text someone to ask what they're wearing.",
+      "Conditions don't move. Your confidence will, roughly twice an hour, for no reason.",
+      "Weather offers you nothing to react to. Try deciding without it, just this once.",
+      "Consistent from now until you're home. Consistency is the one thing you never trust.",
+      "Put clothes on. Leave. That's the whole instruction, and you'll still stall twice.",
+      "Unremarkable weather, start to finish. You'll remark on it anyway, several times.",
+      "Nobody has to be clever today. You'll try, and it'll cost you ten minutes.",
+      "Zero drama out there. You'll supply your own, roughly around the time you leave.",
+      "It holds all the way through, so the only thing changing is your mind."
     ],
     "arc_colder": [
       "{GARMENT} comes off {WHEN}, back on {WHEN2}, and still isn't enough. Take something extra.",
@@ -553,21 +971,33 @@
       "Too warm for the puffer {WHEN}. It becomes cargo, and you've brought no bag. Again.",
       "You'll be hugging that coat by afternoon, because carrying things never makes it into your plan.",
       "Shedding the puffer {WHEN} costs you an arm for the rest of the day.",
-      "The coat comes off today, and nobody carries a puffer gracefully, least of all you."
+      "The coat comes off today, and nobody carries a puffer gracefully, least of all you.",
+      "That puffer stops being clothing {WHEN} and starts being a bag you didn't pack.",
+      "Losing the puffer {WHEN} sounds like freedom until you're carrying it in both arms.",
+      "Peeling off a puffer {WHEN} leaves you holding a sleeping bag with sleeves.",
+      "Your arms are the storage plan today, and they've never been a good one.",
+      "Milder {WHEN}, and that coat has to go somewhere. Chairs aren't a filing system.",
+      "Nobody's built a puffer that carries well. Yours ends up draped over an arm anyway."
     ],
     "w_jacket": [
       "The jacket's redundant {WHEN}. You'll keep it on anyway and call that commitment.",
-      "Light jacket comes off {WHEN}, then lives on your arm, because you won't tie it round anything.",
+      "Light jacket comes off {WHEN}, then lives on your arm, because you won't tie it around anything.",
       "Warm enough {WHEN} to shed the jacket, which you'll get around to four streets late.",
       "You'll insist you're fine in the jacket {WHEN}, right up until you're carrying it.",
       "Sooner or later that jacket's dead weight, and you'll have nowhere to put it.",
-      "Off it comes {WHEN}, and a free hand goes with it. Plan for that, or don't."
+      "Off it comes {WHEN}, and a free hand goes with it. Plan for that, or don't.",
+      "Mild enough {WHEN} that the jacket becomes a thing you're holding. You'll hold it badly.",
+      "That jacket's coming off {WHEN} whether you concede it or not. Where does it go?",
+      "The sleeves stop earning their place {WHEN}. After that you're just transporting a jacket.",
+      "Shed it {WHEN} or sweat through the morning; you've picked sweating every time before.",
+      "You'll take it off four streets after you should have. That's the established pattern.",
+      "Zipped now, redundant later, draped over your arm forever. The middle part is optional."
     ],
     "w_hoodie": [
       "The hoodie's too much {WHEN}, and you'll sweat for twenty minutes before conceding.",
-      "Hoodie off {WHEN}. Tie it round your waist and pretend that was a style decision.",
+      "Hoodie off {WHEN}. Tie it around your waist and pretend that was a style decision.",
       "You'll keep the hood up {WHEN} out of loyalty rather than temperature. Take it off.",
-      "That hoodie ends up round your waist eventually. It always does. Make peace early.",
+      "That hoodie ends up around your waist eventually. It always does. Make peace early.",
       "Once it's off {WHEN}, the hoodie's yours to carry. There are no hooks out there.",
       "Too warm for the hoodie {WHEN}; you'll wear it anyway, out of spite."
     ],
@@ -577,7 +1007,13 @@
       "You'll last ten minutes {WHEN} before the sweatshirt comes off and joins your arm.",
       "Mild enough later that the sweatshirt's just something you're carrying. You knew that leaving.",
       "Give it up {WHEN}: the sweatshirt's done, and stubbornness has never cooled anybody down.",
-      "Whatever you tell yourself {WHEN}, the sweatshirt's coming off and going onto your arm."
+      "Whatever you tell yourself {WHEN}, the sweatshirt's coming off and going onto your arm.",
+      "Warm past sweatshirt weather {WHEN}. After that it's cargo, and you've brought no bag.",
+      "That sweatshirt's over {WHEN}. Tying it around your waist is a decision, apparently.",
+      "Off with it {WHEN}, though you'll wait until you're visibly uncomfortable, as usual.",
+      "Peel it off {WHEN} or keep pretending. Pretending has never lowered anyone's temperature.",
+      "The arms come out eventually, and the sweatshirt spends the afternoon on yours.",
+      "Sleeves stop being useful {WHEN}. Then you're the person carrying a sweatshirt in sunshine."
     ],
     "w_water": [
       "Clothes have run out of moves {WHEN}. Drink water before you get dramatic about it.",
@@ -585,7 +1021,13 @@
       "You'll claim you're not thirsty {WHEN}. Carry a bottle and prove yourself wrong quietly.",
       "Hotter than any outfit can fix today. Shade and water, and you'll look for neither.",
       "The heat climbs {WHEN} and your wardrobe's out of ideas. Drink water, or complain instead.",
-      "Peak heat {WHEN}. Water, shade, slower walking — three things you've ignored every summer."
+      "Peak heat {WHEN}. Water, shade, slower walking — three things you've ignored every summer.",
+      "Your wardrobe has no answer {WHEN}. Water does, and it's two steps from the door.",
+      "Warmer still {WHEN}, which fabric can't fix. Fill a bottle before you forget again.",
+      "Shade {WHEN}, not stubbornness. You've tested stubbornness against real heat and lost publicly.",
+      "Rising {WHEN} past anything clothing can solve. Drink before the headache, not after it.",
+      "No layer left to lose, so hydration is the only lever you've got.",
+      "Climbing {WHEN}. Carry water, walk slower, sit in shade — three habits you've never adopted."
     ],
     "c_scarf": [
       "Your coat can't cover a neck. Take the scarf you swear blind you own.",
@@ -596,7 +1038,7 @@
       "Cold enough later that bare necks stop being a look. The scarf's right there."
     ],
     "c_coat": [
-      "The light jacket won't get you through {WHEN}. Take the proper coat you keep avoiding.",
+      "The light jacket won't get you through {WHEN}. Go back for the real coat.",
       "Real coat weather {WHEN}. You'll argue with that for a while and lose anyway.",
       "Whatever jacket you're reaching for isn't enough later. The heavy one. Yes, that one.",
       "Freezing {WHEN}, and the jacket you're negotiating with has never once won this argument.",
@@ -625,15 +1067,153 @@
       "The arms you're leaving uncovered will be filing a complaint later. Bring a sweatshirt.",
       "You'll want sleeves {WHEN} and remember this exact sentence. Sweatshirt. Bag. Now.",
       "Warm now, distinctly less so {WHEN}. A sweatshirt solves it; leaving it home doesn't.",
-      "A sweatshirt takes up no room and settles the evening. Yours isn't coming, is it."
+      "A sweatshirt takes up no room and settles the evening. Yours isn't coming, is it.",
+      "Pack sleeves {WHEN}. Folded arms have never once generated warmth, however hard you try.",
+      "Cooling off {WHEN}, enough that short sleeves stop working. Bag. Sweatshirt. Two seconds.",
+      "That sweatshirt weighs nothing and settles {WHEN} entirely. Yours stays draped over a chair.",
+      "Take sleeves with you, because the version of you at dusk has no vote now.",
+      "Mild turns chilly {WHEN}, and bare arms lose that argument every single time.",
+      "One sweatshirt in the bag fixes the entire evening. You'll leave without it regardless."
     ],
     "c_relief": [
-      "The heat backs off {WHEN} and you need nothing for it. Take the win.",
+      "The heat backs off {WHEN} and no layer comes with it. Take the win.",
       "Cooler {WHEN}, still warm, and no layer to carry. Yes, really.",
       "You'll read this twice looking for the catch. There isn't one — it just eases {WHEN}.",
       "The worst of the heat's done today. Same outfit, no layers, nothing to argue with.",
       "Easier {WHEN} without going cold. Dress exactly as you are and leave the layers home.",
-      "Relief {WHEN}, and no layer to carry, so you've no excuse for the mood later."
+      "Relief {WHEN}, and no layer to carry, so you've no excuse for the mood later.",
+      "The peak's behind you {WHEN}. Still warm, still no extra layer, still the same outfit.",
+      "Heat eases {WHEN} without turning into anything. Your outfit was right the first time.",
+      "That brutal stretch ends {WHEN}. What's on you stays on you; no layers required.",
+      "Down from the worst of it {WHEN}, and still warm enough to skip every layer.",
+      "The afternoon stops attacking {WHEN}. Same clothes, less suffering, and you'll still complain somehow.",
+      "Less punishing {WHEN}, though nowhere near cool. Adding layers would be a genuine mistake.",
+      "You've survived the top of it. The rest is warm, steady and layer-free.",
+      "Softer heat {WHEN}. Your outfit needs no edits, which won't stop you making some.",
+      "The worst hour has passed. Still warm out, and your layers stay exactly where they are.",
+      "Backing off {WHEN}, though not to anything you'd call cool. No extra layer needed.",
+      "Warm rather than punishing {WHEN}. You'll keep describing it as unbearable out of habit.",
+      "Coming down {WHEN} from the truly unpleasant part. Layers stay home; the outfit's fine."
+    ],
+    "perfect_evening": [
+      "What's left of today needs no adjustments. You've already made four of them.",
+      "The evening holds at exactly this. Changing again won't make it any different.",
+      "Dressed correctly, finally, with an hour of daylight left to prove it.",
+      "There's no layering left to do tonight. You'll rearrange something anyway.",
+      "Same as it is right now, all the way to bed. Stop fiddling.",
+      "The rest of tonight looks like the last hour. Wear what's already on you.",
+      "Steady through the evening, which is more than your outfit history can claim.",
+      "You changed three times to arrive here. Here is where it stays.",
+      "Whatever's on you now still works at midnight. Settling is the hard part.",
+      "Evening holds flat. If you didn't get outside today, that wasn't the weather.",
+      "Tonight stays exactly as advertised. The screen won't change; that's not why you're checking.",
+      "This is the outfit now. Late changes have never improved anything you've worn.",
+      "Out or in, the evening's the same temperature. Only one of those counts as living.",
+      "No shift left in this day. The decisions are behind you, all six of them.",
+      "Calm from here to dark. You spent the whole day dressing for a different one.",
+      "Consistent evening ahead. Your third outfit was fine, and so was your first.",
+      "It stays like this until you're asleep. Start planning tomorrow's excuse instead.",
+      "Hours left and nothing moves. You still haven't gone out, and now you're deciding not to."
+    ],
+    "perfect_hot": [
+      "Hot, and staying hot. Clothing stopped being the answer somewhere before breakfast.",
+      "Shade and water all day. Your errand list was written by an optimist.",
+      "Heat that doesn't move. Whatever you planned for this afternoon, halve it.",
+      "Fabric has nothing left to offer. Water does. You'll bring neither, historically.",
+      "Stays hot straight through. That ambitious walk is a negotiation with physics.",
+      "Drink more than you think, then more again. You never think it's enough.",
+      "No relief coming today. Shade is a strategy; insisting you're fine isn't.",
+      "Serious heat, unchanged for hours. Move slower, drink more, cancel the noon thing.",
+      "Your outfit's already doing all it can. The rest is shade, water and humility.",
+      "Bucket hat, cold water, low expectations. You'll pack one of those three.",
+      "Peak heat for hours yet. Indoors at midday is a plan, not a defeat.",
+      "Steady, punishing heat. Your body needs water more often than your phone needs checking."
+    ],
+    "perfect_cold": [
+      "Cold, and it stays cold. The coat on screen is the whole answer.",
+      "This is as warm as today gets. Dress for that and quit hoping.",
+      "Correct now, correct at dusk. You'll doubt the puffer by mid-morning anyway.",
+      "Freezing all day, flat. There's no clever middle option you haven't already tried.",
+      "Full winter kit, all day. The lighter jacket is lying to you from the hook.",
+      "Cold that doesn't budge. Neither should the layers you left the house in.",
+      "Beanie, boots, the big coat. Yes, even for the quick trip to the store.",
+      "Nothing about this softens later. Underdressing now is a decision you'll carry all day.",
+      "Hard cold, steady cold. Your ten-minute walk is a fifteen-minute walk in this.",
+      "Boots and the heavy coat, all day, no negotiation. You'll attempt one regardless.",
+      "Second-guessing this won't warm you. The coat was right yesterday and it's right now.",
+      "It's cold and it stays that way. The forecast isn't going to blink first."
+    ],
+    "theme_ny": [
+      "Nothing in the forecast shifts today, so the resolution has no excuse ready.",
+      "New year, and the weather's already doing more with its day than you are.",
+      "Steady from here on. Day one of the new you is fully catered for.",
+      "The forecast made no resolutions and intends to keep them. Yours has until lunchtime."
+    ],
+    "theme_ghd": [
+      "Groundhog Day. You'll wear what you wore, and call it a tradition.",
+      "Same conditions hour after hour. So is your outfit, and you call that variety.",
+      "Today repeats itself out there. You'll repeat yourself checking this screen again.",
+      "No change coming, again. Six more weeks of you re-reading the same forecast."
+    ],
+    "theme_pi": [
+      "The numbers run forever; the forecast doesn't move. Only your deliberating does both.",
+      "Conditions hold to an absurd number of decimal places. Wear what's already on.",
+      "Nothing irrational out there today. That leaves your outfit deliberations holding the title alone.",
+      "Steady and endless out there. Your getting-dressed routine is endless too, and less charming."
+    ],
+    "theme_force": [
+      "Steady conditions, so trust your instincts and the outfit already on you.",
+      "Reaching out with your feelings won't shift the forecast. It holds regardless.",
+      "Nothing shifts today. What you're wearing is entirely your own decision. Own it.",
+      "Calm all day. You'll still deliberate as though a galaxy depended on your outfit."
+    ],
+    "theme_bike": [
+      "Steady enough to ride in, which removes the last excuse you had left.",
+      "No change in the forecast, so the bike's only obstacle is you and the sofa.",
+      "Flat conditions the whole way. The hill is still a hill; that part's on you.",
+      "Nothing out there will stop you riding. Your tires, however, are your own problem."
+    ],
+    "theme_tdf": [
+      "Holding steady for hours, like a flat stage. Your outfit needs no attacks.",
+      "Conditions won't break today. Neither will the group, so stop looking for a gap.",
+      "One outfit gets you up every climb today. The legs are a separate conversation.",
+      "Settled the whole way. Whatever pace you promised yourself, the weather isn't the limiter."
+    ],
+    "theme_okt": [
+      "Holding steady outside. Inside the tent, conditions are entirely of your own making.",
+      "Nothing out there changes all day. The walk home is the part to plan.",
+      "Conditions stay put. Your judgment is the only variable with a forecast worth watching.",
+      "Unmoving weather, start to finish. The only thing swaying later won't be the forecast."
+    ],
+    "theme_spooky": [
+      "Nothing shifts tonight. The costume was always the risky decision, not the forecast.",
+      "Steady for the whole trick-or-treat circuit. Your outfit choices remain the scariest part.",
+      "Settled all evening. The only horror out there is what you've decided to wear.",
+      "Flat and unchanging after dark. You'll still regret the outfit, as you do annually."
+    ],
+    "theme_thanks": [
+      "Steady all day, so the walk after the meal needs no planning at all.",
+      "Nothing outside changes today, which leaves you one fewer thing to negotiate.",
+      "Unchanging conditions right through. Dress once and spend your energy on the other decisions.",
+      "Holding flat all day. Your optimism about going outside later is the only variable."
+    ],
+    "theme_krampus": [
+      "Nothing changes tonight except who's checking up on you. Your outfit choices count.",
+      "Settled out there, no excuses. Ignoring what this screen says is exactly what gets noted.",
+      "Weather holds all evening. Your history of ignoring it does not go unrecorded.",
+      "Flat, unchanging night. Dress sensibly and there's nothing on the list about you."
+    ],
+    "theme_nikolo": [
+      "Quiet, unchanging weather. Whatever you left by the door last night stays there.",
+      "No surprises in the forecast. The surprise waiting by your door isn't weather.",
+      "Weather does nothing today, so today's only gamble is whether you behaved.",
+      "Conditions sit still. Your choices, as ever, are the thing under review."
+    ],
+    "theme_xmas": [
+      "Unchanged all day. Whatever you're wearing indoors still has to work outdoors.",
+      "Settled right through. That walk you keep promising needs no weather planning, only willpower.",
+      "Flat conditions from now on. Going outside today is a decision, not a forecast problem.",
+      "Steady the whole day. You'll check this screen anyway, looking for an excuse."
     ]
   },
   "precip_11": {
@@ -643,16 +1223,27 @@
       "Grab the umbrella for the fifty-fifty, or skip it and spend tomorrow telling people why.",
       "Maybe rain, maybe not — you'll judge it from a window and head out bare-headed.",
       "The odds aren't terrible {WHENP}, which is exactly how you've been caught before. Umbrella.",
-      "Possible rain {WHENP}. An umbrella weighs less than the story you'll tell about getting soaked."
+      "Possible rain {WHENP}. An umbrella weighs less than the story you'll tell about getting soaked.",
+      "A real chance of rain {WHENP}, which you'll assess from a window and misjudge.",
+      "Could go either way {WHENP}. Your track record on either-ways is genuinely terrible.",
+      "Not certain, not unlikely {WHENP}. The umbrella settles it and weighs nothing at all.",
+      "Rain is on the table {WHENP}. You'll take your chances, then narrate the consequences.",
+      "Carry the umbrella for once, on the off-chance the sky has other ideas.",
+      "Fifty-fifty at best {WHENP}, and your optimism has never once improved those odds."
     ],
     "wetter_maybe_j": [
       "Maybe rain too, and you'll still leave the umbrella standing there.",
-      "And a chance of rain. Take the umbrella, be smug for once.",
+      "A chance of rain. Take the umbrella, be smug for once.",
       "Possibly rain too. You'll bet against it, as always.",
-      "Plus a decent chance of rain you've already talked yourself out of. Umbrella.",
+      "Plus rain you've already talked yourself out of. Umbrella.",
       "And it might rain. 'Might' has soaked you before. Umbrella.",
       "Rain's a maybe too. Your maybes have a poor record. Umbrella.",
-      "Might rain too. Umbrella, or the usual gamble."
+      "Might rain too. Umbrella, or the usual gamble.",
+      "Rain's possible as well. Your window-check isn't a forecast.",
+      "Could rain too. Gambling is not the same as deciding.",
+      "There's a decent rain chance. Umbrella, or the familiar regret.",
+      "Some rain risk too, which you'll shrug off, then resent.",
+      "Possible rain too. The umbrella has never been too heavy."
     ],
     "wetter": [
       "Rain arrives {WHENP}, and you'll be somewhere umbrella-less by then, entirely by choice.",
@@ -675,7 +1266,7 @@
       "Hours of it {WHENP}, not a shower. The umbrella earns its keep; carry it regardless.",
       "Rain sets up shop {WHENP} and doesn't leave. Waiting it out isn't the plan you think.",
       "Once it starts {WHENP} it's hours. Your dash-between-doorways technique has a terrible record.",
-      "Carry the umbrella, properly carry it. Rain starts {WHENP} and outlasts your patience easily.",
+      "Carry the umbrella, actually carry it. Rain starts {WHENP} and outlasts your patience easily.",
       "Long rain {WHENP}. You'll test whether you can outlast it, and you'll lose, wetly.",
       "It's set in for hours {WHENP}, so the umbrella isn't optional, whatever you tell yourself."
     ],
@@ -701,7 +1292,7 @@
       "Rain eases off too, sooner than the mood you've built around it.",
       "Also drying out later, whatever you've already written off.",
       "Plus it clears, so you can stop sulking at the window.",
-      "The wet part ends before the day does. Undo whatever you just cancelled.",
+      "The wet part ends before the day does. Undo whatever you just canceled.",
       "It eases later too, which your morning mood hasn't caught up with.",
       "Rain stops later. Your mood needn't."
     ],
@@ -728,16 +1319,16 @@
       "Snow's coming {WHENP}, so an umbrella's decoration. Grip is the part you keep forgetting.",
       "You'll dress for cold and forget your feet. It snows {WHENP}; boots, not the flat-soled ones.",
       "Snow starts {WHENP}. Whatever's on your feet right now is probably the wrong answer.",
-      "It snows {WHENP} and pavements turn slick. Take the boring boots, keep your dignity."
+      "It snows {WHENP} and sidewalks turn slick. Take the boring boots, keep your dignity."
     ],
     "snow_coming_j": [
       "And snow, so pick grip over the pair you always pick.",
       "Snow too. An umbrella won't help and neither will pretending.",
       "Plus snow. Boots with tread, unless falling over publicly appeals.",
-      "Snow in it too, so your smooth-soled favourites stay home.",
+      "Snow in it too, so your smooth-soled favorites stay home.",
       "Also snow. Learn about grip now or the hard way again.",
       "Snow's in it too, and whatever's by the door is wrong. Boots.",
-      "Snow too. Grip, or the pavement wins."
+      "Snow too. Grip, or the sidewalk wins."
     ]
   }
 }
