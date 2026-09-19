@@ -41,6 +41,12 @@ fall through to fallback_sprite_url.
 {%- assign RAIN_LOW = 25 -%}
 {%- assign RAIN_HIGH = 50 -%}
 {%- assign DAY_END_HOUR = 21 -%}
+{%- comment %}
+Characters the tip may occupy before it starts crowding the sprite. Used
+to pick which of a scenario's interchangeable precipitation lines to pair
+with the temperature line. Measured against the OG device at title--large.
+{%- endcomment %}
+{%- assign TIP_BUDGET = 165 -%}
 
 
 {%- comment %} ============ SPRITE BASES ============ {%- endcomment %}
@@ -705,6 +711,17 @@ See docs/TRANSLATING.md for the full contract.
     {%- endif -%}
   {%- endif -%}
 
+  {%- comment %}
+  Substituted here, while the temperature clause is final and before the
+  precipitation line is chosen, so the length test below measures the
+  sentence that actually renders rather than one still full of tokens.
+  {%- endcomment %}
+  {%- assign temp_clause = temp_clause | replace: '{GARMENT}', garment_n -%}
+  {%- assign temp_clause = temp_clause | replace: '{GARMENTA}', garment_a -%}
+  {%- assign temp_clause = temp_clause | replace: '{WHEN2}', when_temp2 -%}
+  {%- assign temp_clause = temp_clause | replace: '{WHEN}', when_temp -%}
+  {%- assign temp_clause = temp_clause | replace: '  ', ' ' | strip -%}
+
   {%- if precip_scenario != '' -%}
     {%- comment %}
     Standalone form when there is no temp hinge, joined fragment
@@ -725,11 +742,50 @@ See docs/TRANSLATING.md for the full contract.
       {%- assign pn = p_arr | size -%}
       {%- if pn > 0 -%}
         {%- comment %}
-        Offset so the two clauses do not cycle in lockstep and
-        produce the same pairing every time.
+        ============ FITTING THE PAIR ON THE SCREEN ============
+        On a day with both a temperature hinge and rain, these two
+        sentences render as one tip. Each half is written and reviewed on
+        its own, so nothing stops a long one meeting another long one and
+        overflowing the layout.
+
+        Start at the rotating index, so the pairing still varies day to
+        day and does not cycle in lockstep with the temperature line, then
+        walk forward to the first alternative that fits the space the
+        temperature clause left. Every line in the array says the same
+        thing, so taking a later one costs nothing.
+
+        If none fit, take the shortest and let it be tight rather than
+        dropping the rain warning, which is the part someone acts on.
         {%- endcomment %}
-        {%- assign pidx = local_days | plus: 3 | modulo: pn -%}
-        {%- assign precip_clause = p_arr[pidx] -%}
+        {%- if scenario == 'perfect' -%}
+          {%- comment %} the temp clause is discarded below, so it costs nothing {%- endcomment %}
+          {%- assign room = TIP_BUDGET -%}
+        {%- else -%}
+          {%- assign room = TIP_BUDGET | minus: temp_clause.size | minus: 1 -%}
+        {%- endif -%}
+        {%- assign start_at = local_days | plus: 3 | modulo: pn -%}
+        {%- for probe in (0..11) -%}
+          {%- if probe >= pn -%}{%- break -%}{%- endif -%}
+          {%- assign try_at = start_at | plus: probe | modulo: pn -%}
+          {%- assign candidate = p_arr[try_at] -%}
+          {%- if candidate.size <= room -%}
+            {%- assign precip_clause = candidate -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if precip_clause == '' -%}
+          {%- assign shortest = 9999 -%}
+          {%- for candidate in p_arr -%}
+            {%- if candidate.size < shortest -%}
+              {%- assign shortest = candidate.size -%}
+              {%- assign precip_clause = candidate -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
+        {%- assign precip_clause = precip_clause | replace: '{WHENP}', when_precip -%}
+        {%- assign precip_clause = precip_clause | replace: '  ', ' ' | strip -%}
       {%- endif -%}
     {%- endif -%}
   {%- endif -%}
@@ -742,13 +798,7 @@ See docs/TRANSLATING.md for the full contract.
     {%- assign today_tip = temp_clause -%}
   {%- endif -%}
 
-  {%- comment %} {WHEN2} first so it cannot be clipped by a partial match. {%- endcomment %}
-  {%- assign today_tip = today_tip | replace: '{GARMENT}', garment_n -%}
-  {%- assign today_tip = today_tip | replace: '{GARMENTA}', garment_a -%}
-  {%- assign today_tip = today_tip | replace: '{WHEN2}', when_temp2 -%}
-  {%- assign today_tip = today_tip | replace: '{WHEN}', when_temp -%}
-  {%- assign today_tip = today_tip | replace: '{WHENP}', when_precip -%}
-  {%- assign today_tip = today_tip | replace: '  ', ' ' | strip -%}
+  {%- assign today_tip = today_tip | strip -%}
 
 {%- endif -%}
 

@@ -12,6 +12,7 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
 {%- assign RAIN_LOW = 25 -%}
 {%- assign RAIN_HIGH = 50 -%}
 {%- assign DAY_END_HOUR = 21 -%}
+{%- assign TIP_BUDGET = 165 -%}
 
 {%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/' -%}
 {%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
@@ -793,6 +794,12 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
     {%- endif -%}
   {%- endif -%}
 
+    {%- assign temp_clause = temp_clause | replace: '{GARMENT}', garment_n -%}
+  {%- assign temp_clause = temp_clause | replace: '{GARMENTA}', garment_a -%}
+  {%- assign temp_clause = temp_clause | replace: '{WHEN2}', when_temp2 -%}
+  {%- assign temp_clause = temp_clause | replace: '{WHEN}', when_temp -%}
+  {%- assign temp_clause = temp_clause | replace: '  ', ' ' | strip -%}
+
   {%- if precip_scenario != '' -%}
         {%- if scenario == 'perfect' -%}
       {%- assign p_key = precip_scenario -%}
@@ -829,8 +836,34 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
     {%- if p_arr -%}
       {%- assign pn = p_arr | size -%}
       {%- if pn > 0 -%}
-                {%- assign pidx = local_days | plus: 3 | modulo: pn -%}
-        {%- assign precip_clause = p_arr[pidx] -%}
+                {%- if scenario == 'perfect' -%}
+                    {%- assign room = TIP_BUDGET -%}
+        {%- else -%}
+          {%- assign room = TIP_BUDGET | minus: temp_clause.size | minus: 1 -%}
+        {%- endif -%}
+        {%- assign start_at = local_days | plus: 3 | modulo: pn -%}
+        {%- for probe in (0..11) -%}
+          {%- if probe >= pn -%}{%- break -%}{%- endif -%}
+          {%- assign try_at = start_at | plus: probe | modulo: pn -%}
+          {%- assign candidate = p_arr[try_at] -%}
+          {%- if candidate.size <= room -%}
+            {%- assign precip_clause = candidate -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if precip_clause == '' -%}
+          {%- assign shortest = 9999 -%}
+          {%- for candidate in p_arr -%}
+            {%- if candidate.size < shortest -%}
+              {%- assign shortest = candidate.size -%}
+              {%- assign precip_clause = candidate -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
+        {%- assign precip_clause = precip_clause | replace: '{WHENP}', when_precip -%}
+        {%- assign precip_clause = precip_clause | replace: '  ', ' ' | strip -%}
       {%- endif -%}
     {%- endif -%}
   {%- endif -%}
@@ -843,12 +876,7 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
     {%- assign today_tip = temp_clause -%}
   {%- endif -%}
 
-    {%- assign today_tip = today_tip | replace: '{GARMENT}', garment_n -%}
-  {%- assign today_tip = today_tip | replace: '{GARMENTA}', garment_a -%}
-  {%- assign today_tip = today_tip | replace: '{WHEN2}', when_temp2 -%}
-  {%- assign today_tip = today_tip | replace: '{WHEN}', when_temp -%}
-  {%- assign today_tip = today_tip | replace: '{WHENP}', when_precip -%}
-  {%- assign today_tip = today_tip | replace: '  ', ' ' | strip -%}
+  {%- assign today_tip = today_tip | strip -%}
 
 {%- endif -%}
 
