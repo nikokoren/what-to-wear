@@ -48,6 +48,20 @@ TOKEN_RE = re.compile(r"\{[A-Z0-9_]+\}")
 # sentence is about the umbrella in hand, not about when something starts.
 NO_WHENP_KEYS = {"drier", "stays_wet"}
 
+_ENGLISH = None
+
+
+def load_english():
+    """English is the reference every other language is diffed against."""
+    global _ENGLISH
+    if _ENGLISH is None:
+        path = LANG_DIR / "en.json"
+        try:
+            _ENGLISH = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            _ENGLISH = {}
+    return _ENGLISH
+
 
 def check_lang(path, problems):
     name = path.name
@@ -167,7 +181,61 @@ def check_lang(path, problems):
         for kind in ("temp", "precip"):
             section = doc.get(f"{kind}_{level}") or {}
             counts.append(sum(len(v) for v in section.values() if isinstance(v, list)))
-    print(f"  {name}: {sum(counts)} lines, meta.code={code!r}")
+    total = sum(counts)
+
+    # Every key existing is not the same as every key being translated. A
+    # straight copy of en.json passes every check above - the keys are all
+    # there, the placeholders are all valid - and then ships English
+    # sentences to someone who picked another language. Catch the lines that
+    # are still byte-identical to the English.
+    untranslated = []
+    if code and code != "en":
+        english = load_english()
+        if english:
+            allow = set(meta.get("allow_same_as_en") or [])
+            for section_name, section in doc.items():
+                if not isinstance(section, dict):
+                    continue
+                if not (section_name.startswith(("temp_", "precip_"))
+                        or section_name in ("ui", "garments")):
+                    continue
+                ref = english.get(section_name)
+                if not isinstance(ref, dict):
+                    continue
+                for key, lines in section.items():
+                    ref_lines = ref.get(key)
+                    if isinstance(lines, str) and isinstance(ref_lines, str):
+                        if lines == ref_lines and f"{section_name}.{key}" not in allow:
+                            untranslated.append(f"{section_name}.{key}")
+                        continue
+                    if not isinstance(lines, list) or not isinstance(ref_lines, list):
+                        continue
+                    for i, line in enumerate(lines):
+                        where = f"{section_name}.{key}[{i}]"
+                        if line in ref_lines and where not in allow:
+                            untranslated.append(where)
+
+            for section_name in ("buckets", "relative"):
+                mine, ref = doc.get(section_name), english.get(section_name)
+                if isinstance(mine, list) and isinstance(ref, list):
+                    for i, v in enumerate(mine):
+                        if v in ref and f"{section_name}[{i}]" not in allow:
+                            untranslated.append(f"{section_name}[{i}]")
+
+    if untranslated:
+        done = total - len([u for u in untranslated if "[" in u])
+        problems.append(
+            f"{name}: {len(untranslated)} string(s) still identical to English "
+            f"(roughly {max(0, done)}/{total} lines translated).\n"
+            "      A partly translated file renders a mix of both languages on the "
+            "device.\n"
+            "      First few: " + ", ".join(untranslated[:6]) + "\n"
+            "      If a string is genuinely the same in this language, list it in "
+            'meta.allow_same_as_en.'
+        )
+
+    suffix = "" if not untranslated else f", {len(untranslated)} untranslated"
+    print(f"  {name}: {total} lines, meta.code={code!r}{suffix}")
 
 
 def main():

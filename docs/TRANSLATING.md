@@ -8,6 +8,12 @@ cp lang/en.json lang/fr.json     # then translate it
 python3 tools/validate_lang.py   # catches most mistakes instantly
 ```
 
+Translate the whole file. CI compares every string against `en.json` and
+fails on any line still identical to the English, because a half-translated
+file renders a mix of both languages on the device — the keys are all
+present, so nothing else would catch it. If a string is genuinely identical
+in your language, list its path in `meta.allow_same_as_en`.
+
 Open a PR. CI runs the validator and renders your file against every weather
 scenario, so a missing key or a misplaced placeholder fails the build rather
 than reaching someone's wall.
