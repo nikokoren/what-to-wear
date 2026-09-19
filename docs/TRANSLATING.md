@@ -56,9 +56,28 @@ write *"take the umbrella, you will want it {WHENP}"*, not *"take the
 umbrella for {WHENP}"* — the relative form ("in two hours") dies after a
 preposition.
 
-`{GARMENT}` and `{GARMENTA}` exist because German needs a different case
-depending on position. If your language inflects further, split the sentence
-so the garment stays in one grammatical slot, or write around it.
+### You are translating sentences, not words
+
+Every line is a complete sentence that you write from scratch in your own
+language. Nothing is assembled from pieces. The only fragments in the file
+are the eight time phrases (`buckets`, `relative`) and the five garment
+names — and you choose where in your sentence those land.
+
+`{GARMENT}` and `{GARMENTA}` are needed in **three keys only**: `arc_colder`,
+`arc_level` and `arc_warmer`. Everywhere else the scenario key already fixes
+which layer is meant — `w_jacket` can only ever be about the jacket — so
+those lines just name it in ordinary prose. Do the same.
+
+Even in the `arc_*` keys the token is optional. If your language needs more
+than the two cases the file carries, or inflects adjectives to agree with the
+garment's gender, write those lines without `{GARMENT}` at all: say "the
+layer", or restructure so the garment is implied. Several English arc lines
+already do exactly that. Nothing breaks — an absent token is simply not
+substituted.
+
+Watch for agreement if you do use the token: the five garments will not share
+one gender in most languages, so any adjective agreeing with `{GARMENT}` will
+be wrong for some of them.
 
 ### Every key needs one line that works without a time
 
