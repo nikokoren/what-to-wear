@@ -32,12 +32,34 @@ A change has to be at least 2 °C *and* cross a band to say anything.
 
 ## Temperature keys
 
-### `perfect`
+### `perfect`, and its four variants
 
 Nothing worth mentioning happens. No band change, or too small to matter.
 
-Say: the outfit holds, there is nothing to carry, nothing to decide. This
-also renders on its own when there is no forecast window left in the day.
+**This is about half of everything the plugin ever says.** Measured over a
+year of real weather it fires on 53% of renders, against 0.1% for
+`arc_colder`. Depth here is worth more than depth anywhere else in the file.
+
+Because it fires across the whole temperature range and the whole day, the
+markup refines it into whichever of these the day actually is. Each falls
+back to plain `perfect` when a language has not written it, so a translation
+can ship with just the one key and add the rest later.
+
+| Key | Fires when | Say |
+|---|---|---|
+| `perfect_evening` | from 17:00 | the day is nearly done, not "you're set for the day" |
+| `perfect_hot` | band 7-8, before 17:00 | steady heat. Water and shade, because clothing has nothing left to offer |
+| `perfect_cold` | band 1-2, before 17:00 | steady cold. What is on screen is the right answer, all day |
+| `perfect` | everything else | the outfit holds, nothing to carry, nothing to decide |
+| `theme_<name>` | a seasonal day, any time | see below |
+
+Two of those exist because the plain key was getting them wrong. It skews
+late — the forecast window shrinks as the day ends, so a steady evening is
+the commonest state of all, and lines like "one outfit covers the whole day"
+were rendering at 20:00. And at the top of the scale it said "nothing changes
+today" during a heatwave, which is true and useless.
+
+`perfect` also renders on its own when there is no forecast window left.
 
 ### The `w_*` keys — it warms up, a layer comes off
 
@@ -92,8 +114,23 @@ thing.
 
 Fires when it drops from band 7 or 8 but stays at band 6 or above.
 
+**Far more common than it looks: 26% of renders across a summer, and 32% in
+US cities.** It is the second-busiest key in the file after `perfect`, and
+it deserves the depth that implies.
+
 Say: the worst of the heat passes, nothing to bring, the outfit is unchanged.
 The tone is relief without a recommendation.
+
+It is tempting to write these vaguely because no garment can be named — above
+band 6 there is no removable layer. But the key only ever fires when the
+current band is hot or very hot, so the line can always talk about the heat
+itself. That is the specific thing it has to work with, and vagueness here is
+a choice rather than a constraint.
+
+Do not say "nothing to bring" or "put the bag down": this key joins to
+precipitation fragments, and "nothing to carry" followed by "take the
+umbrella" is a self-contradiction that shipped once already. Scope every
+claim to layers.
 
 ### The `arc_*` keys — it warms, then cools again
 
@@ -120,6 +157,25 @@ optional — see [TRANSLATING.md](TRANSLATING.md).
 
 `{WHEN2}` only resolves in these three keys. It is the second turning point,
 always a time of day rather than "in two hours".
+
+### `theme_<name>` — a seasonal day
+
+On the thirteen days a year that have their own artwork, the tip can
+acknowledge it. The theme names match the sprite prefixes: `theme_ny`,
+`theme_ghd`, `theme_pi`, `theme_force`, `theme_bike`, `theme_tdf`,
+`theme_okt`, `theme_spooky`, `theme_thanks`, `theme_krampus`,
+`theme_nikolo`, `theme_xmas`.
+
+**A theme line only ever replaces `perfect`.** If the day has real advice to
+give — a layer coming off, rain arriving — that advice wins and the theme
+stays in the picture only. A joke about Christmas is never worth someone
+getting cold.
+
+Keep them weather-shaped rather than pure greeting: the plugin is still a
+weather plugin on Christmas Day. `Steady cold all day. The good coat has one
+job and today's it.` works; `Merry Christmas!` does not.
+
+A language that omits these falls back to `perfect`, so they are optional.
 
 ## Precipitation keys
 

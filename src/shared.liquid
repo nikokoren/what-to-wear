@@ -654,6 +654,91 @@ single contains test instead of a chained and/or condition.
 {%- endif -%}
 
 
+{%- comment %} ============ SEASONAL THEMES ============ {%- endcomment %}
+{%- assign active_theme = '' -%}
+{%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
+{%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
+{%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
+{%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
+{%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
+{%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
+{%- if today_md >= '09-20' and today_md <= '10-05' -%}{%- assign active_theme = 'okt' -%}{%- endif -%}
+{%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
+{%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
+{%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
+{%- if today_md == '12-05' -%}{%- assign active_theme = 'krampus' -%}{%- endif -%}
+{%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
+{%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
+
+{%- comment %}
+Theme whitelist. A theme only replaces the sprite for slugs that
+have actually been drawn. 'ALL' means the full set exists.
+Note: the ALL themes now need extra_cold_dry and extra_cold_snow
+as well, since the band was added. Until those are drawn, consider
+dropping the affected themes back to a comma list.
+{%- endcomment %}
+{%- assign theme_whitelist = '' -%}
+{%- case active_theme -%}
+  {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'pi' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'bike' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'okt' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'spooky' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'nikolo' -%}{%- assign theme_whitelist = '' -%}
+{%- endcase -%}
+
+
+
+
+{%- comment %}
+============ WHICH KIND OF NOTHING ============
+'perfect' - the day holds steady - is by far the most common outcome:
+roughly half of all renders, measured over a year of real weather. One
+generic line therefore carries more traffic than everything else put
+together, and it has to serve a -8C morning and a 34C afternoon alike.
+Two of those readings were plainly wrong:
+
+  - it skews late. The forecast window shrinks as the day ends, so a
+    steady evening is the single commonest state of all, and lines like
+    "one outfit covers the whole day" were rendering at 20:00.
+  - at the top of the scale it said "nothing changes today" during a
+    heatwave, which is true and useless.
+
+So the bare key is refined into the variant the day actually is. Each
+falls back to plain 'perfect' when a language has not written it, which
+keeps every existing and future translation working with the one key.
+{%- endcomment %}
+{%- if scenario == 'perfect' -%}
+  {%- assign perfect_variant = '' -%}
+  {%- if active_theme != '' -%}
+    {%- comment %}
+    A themed day with nothing to advise is the one moment the plugin can
+    just enjoy itself. Only ever replaces 'perfect', so real advice is
+    never displaced by a joke about Christmas.
+    {%- endcomment %}
+    {%- assign perfect_variant = 'theme_' | append: active_theme -%}
+  {%- elsif local_hour >= 17 -%}
+    {%- assign perfect_variant = 'perfect_evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign perfect_variant = 'perfect_hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign perfect_variant = 'perfect_cold' -%}
+  {%- endif -%}
+  {%- if perfect_variant != '' -%}
+    {%- assign temp_probe_key = 'temp_' | append: sarcasm_level -%}
+    {%- assign probe_lib = texts[temp_probe_key] -%}
+    {%- if probe_lib[perfect_variant] -%}
+      {%- assign scenario = perfect_variant -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
 {%- comment %}
 ================================================================
 BUILD THE HINT
@@ -801,46 +886,6 @@ See docs/TRANSLATING.md for the full contract.
   {%- assign today_tip = today_tip | strip -%}
 
 {%- endif -%}
-
-
-{%- comment %} ============ SEASONAL THEMES ============ {%- endcomment %}
-{%- assign active_theme = '' -%}
-{%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
-{%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
-{%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
-{%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
-{%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
-{%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
-{%- if today_md >= '09-20' and today_md <= '10-05' -%}{%- assign active_theme = 'okt' -%}{%- endif -%}
-{%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
-{%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
-{%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
-{%- if today_md == '12-05' -%}{%- assign active_theme = 'krampus' -%}{%- endif -%}
-{%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
-{%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
-
-{%- comment %}
-Theme whitelist. A theme only replaces the sprite for slugs that
-have actually been drawn. 'ALL' means the full set exists.
-Note: the ALL themes now need extra_cold_dry and extra_cold_snow
-as well, since the band was added. Until those are drawn, consider
-dropping the affected themes back to a comma list.
-{%- endcomment %}
-{%- assign theme_whitelist = '' -%}
-{%- case active_theme -%}
-  {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'pi' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'bike' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'okt' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'spooky' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'nikolo' -%}{%- assign theme_whitelist = '' -%}
-{%- endcase -%}
 
 
 {%- comment %} ============ SPRITE FALLBACKS ============ {%- endcomment %}

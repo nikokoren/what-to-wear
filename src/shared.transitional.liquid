@@ -532,6 +532,57 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
 
 {%- endif -%}
 
+{%- assign active_theme = '' -%}
+{%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
+{%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
+{%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
+{%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
+{%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
+{%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
+{%- if today_md >= '09-20' and today_md <= '10-05' -%}{%- assign active_theme = 'okt' -%}{%- endif -%}
+{%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
+{%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
+{%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
+{%- if today_md == '12-05' -%}{%- assign active_theme = 'krampus' -%}{%- endif -%}
+{%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
+{%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
+
+{%- assign theme_whitelist = '' -%}
+{%- case active_theme -%}
+  {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'pi' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'bike' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'okt' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'spooky' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'nikolo' -%}{%- assign theme_whitelist = '' -%}
+{%- endcase -%}
+
+{%- if scenario == 'perfect' -%}
+  {%- assign perfect_variant = '' -%}
+  {%- if active_theme != '' -%}
+        {%- assign perfect_variant = 'theme_' | append: active_theme -%}
+  {%- elsif local_hour >= 17 -%}
+    {%- assign perfect_variant = 'perfect_evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign perfect_variant = 'perfect_hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign perfect_variant = 'perfect_cold' -%}
+  {%- endif -%}
+  {%- if perfect_variant != '' -%}
+    {%- assign temp_probe_key = 'temp_' | append: sarcasm_level -%}
+    {%- assign probe_lib = texts[temp_probe_key] -%}
+    {%- if probe_lib[perfect_variant] -%}
+      {%- assign scenario = perfect_variant -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
 
 {%- comment %} embedded libraries, transitional only {%- endcomment %}
 
@@ -879,37 +930,6 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
   {%- assign today_tip = today_tip | strip -%}
 
 {%- endif -%}
-
-{%- assign active_theme = '' -%}
-{%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
-{%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
-{%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
-{%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
-{%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
-{%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
-{%- if today_md >= '09-20' and today_md <= '10-05' -%}{%- assign active_theme = 'okt' -%}{%- endif -%}
-{%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
-{%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
-{%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
-{%- if today_md == '12-05' -%}{%- assign active_theme = 'krampus' -%}{%- endif -%}
-{%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
-{%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
-
-{%- assign theme_whitelist = '' -%}
-{%- case active_theme -%}
-  {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'pi' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'bike' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'okt' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'spooky' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'nikolo' -%}{%- assign theme_whitelist = '' -%}
-{%- endcase -%}
 
 {%- if weather_slug == 'very_hot_rain' -%}
   {%- assign weather_slug = 'hot_rain' -%}
