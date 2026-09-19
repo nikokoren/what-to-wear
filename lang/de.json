@@ -637,11 +637,11 @@
       "Die Regenwahrscheinlichkeit reicht für einen Schirm, nur nicht für deine Überzeugung. Nimm ihn trotzdem mit."
     ],
     "wetter_maybe_j": [
-      "Dazu vielleicht Regen. Nimm den Schirm, auch wenn du ihn wieder ungenutzt heimschleppst.",
-      "Und Regen ist gut möglich. Dein Schirm bleibt trotzdem im Flur stehen, schätze ich.",
-      "Dazu kann's nass werden. Pack den Schirm ein, bevor du ihn dir wieder wegdiskutierst.",
-      "Regen ist möglich, mehr nicht. Reicht bei dir erfahrungsgemäß für nasse Schuhe.",
-      "Und es könnte regnen. Du nennst das Risiko überschaubar, bis du mittendrin stehst.",
+      "Dazu vielleicht Regen. Nimm den Schirm, meckern darfst du später.",
+      "Und Regen ist gut möglich. Dein Schirm bleibt trotzdem im Flur.",
+      "Dazu kann's nass werden. Pack den Schirm ein, ohne Diskussion.",
+      "Regen ist möglich, mehr nicht. Reicht bei dir für nasse Schuhe.",
+      "Und es könnte regnen. Du nennst das überschaubar, bis du drinstehst.",
       "Außerdem ein Regenrisiko. Schirm einpacken dauert zehn Sekunden, deine Ausrede länger.",
       "Dazu vielleicht Regen. Nimm den Schirm, du Optimist."
     ],
@@ -654,12 +654,12 @@
       "Der Schirm passt in jede Tasche. Deiner bleibt {WHENP} zu Hause und du irgendwo stehen."
     ],
     "wetter_j": [
-      "Dazu kommt Regen. Der Schirm liegt bereit, du gehst erfahrungsgemäß ohne ihn los.",
-      "Und dann regnet's. Kurz zwar, aber ohne Schirm stehst du trotzdem ziemlich doof da.",
-      "Plus eine Runde Regen. Nimm den Schirm, statt dich später auf Hauseingänge zu verlassen.",
-      "Dazu Regen, nicht lang. Lang genug für deine übliche Entscheidung gegen den Schirm.",
-      "Es kommt noch Regen dazu. Schirm mitnehmen kostet dich nichts als etwas Vorausdenken.",
-      "Und nass gibt's obendrauf. Du könntest den Schirm mitnehmen, du machst es nur nicht.",
+      "Dazu kommt Regen. Den Schirm lässt du wieder liegen, klar.",
+      "Und dann regnet's, kurz. Ohne Schirm stehst du trotzdem doof da.",
+      "Obendrauf eine Runde Regen. Nimm den Schirm, nicht die Hauseingänge.",
+      "Dazu Regen, nicht lang. Lang genug für deine übliche Fehlentscheidung.",
+      "Regen kommt noch dazu. Der Schirm kostet dich nur Vorausdenken.",
+      "Und nass gibt's obendrauf. Den Schirm nimmst du trotzdem nicht mit.",
       "Dazu Regen, kurz. Ohne Schirm stehst du wieder rum."
     ],
     "wetter_long": [
@@ -671,12 +671,12 @@
       "{WHENP} setzt Dauerregen ein. Deine Jacke allein schafft das nicht, egal wie wasserdicht du sie nennst."
     ],
     "wetter_long_j": [
-      "Dazu Dauerregen. Da kommst du nicht trocken durch, indem du einfach schneller gehst.",
-      "Und der Regen bleibt, stundenlang. Den Schirm brauchst du heute wirklich, nicht nur theoretisch.",
-      "Und Regen ohne Pause. Abwarten hilft heute nicht, so gern du das tust.",
-      "Dazu stundenlang nass. Der Schirm ist kein Zubehör, sondern dein einziger vernünftiger Gedanke heute.",
+      "Dazu Dauerregen. Schneller gehen bringt dich heute auch nicht trocken durch.",
+      "Und der Regen bleibt, stundenlang. Den Schirm brauchst du wirklich.",
+      "Und Regen ohne Pause. Abwarten hilft nicht, so gern du's tust.",
+      "Dazu stundenlang nass. Der Schirm ist dein einziger vernünftiger Gedanke heute.",
       "Nass von oben, stundenlang. Trockene Füße sind heute reines Wunschdenken.",
-      "Regen am Stück obendrauf. Nimm den Schirm, sonst wird das eine sehr lange Geduldsübung.",
+      "Regen am Stück obendrauf. Nimm den Schirm, sonst wird's eine Geduldsübung.",
       "Dazu Stunden Regen. Nimm den Schirm, echt jetzt."
     ],
     "drier": [
@@ -688,12 +688,12 @@
       "Es klart auf. Du klebst trotzdem am Fenster und rechnest mit dem Schlimmsten."
     ],
     "drier_j": [
-      "Und der Regen hört auf. Du gehst wie immer eine Viertelstunde zu früh raus.",
-      "Dazu trocknet es später ab. Deine Hektik heute Morgen war also wieder mal umsonst.",
-      "Plus Entwarnung beim Regen. Nur bleibt deine Stimmung erfahrungsgemäß noch etwas länger grau.",
-      "Und es klart auf. Du hast es nur zu eilig, um das noch mitzubekommen.",
-      "Bald ist Schluss mit nass. Deine Geduld reicht fast bis dahin, aber eben nur fast.",
-      "Dazu gibt's trockene Luft. Du könntest kurz abwarten, gehst aber wie immer sofort los.",
+      "Und der Regen hört auf. Du gehst eine Viertelstunde zu früh.",
+      "Dazu trocknet es später ab. Deine Hektik heute Morgen war umsonst.",
+      "Obendrein Entwarnung beim Regen. Deine Stimmung bleibt trotzdem länger grau.",
+      "Und es klart auf. Du hast es nur zu eilig dafür.",
+      "Bald ist Schluss mit nass. Deine Geduld reicht fast so weit.",
+      "Dazu gibt's trockene Luft. Abwarten könntest du, machst du aber nicht.",
       "Trocken wird's noch. Kein Grund für dein Drama."
     ],
     "stays_wet": [
@@ -705,12 +705,12 @@
       "Das hört nicht mehr auf. Richte dich darauf ein, statt stündlich wieder rauszuschauen."
     ],
     "stays_wet_j": [
-      "Und nass bleibt's. Deine Hoffnung auf eine Regenpause kannst du heute gleich abschreiben.",
-      "Dazu Regen ohne Ende. Du wartest sonst wieder auf ein Fenster, das zubleibt.",
+      "Und nass bleibt's. Deine Hoffnung auf eine Regenpause kannst du abschreiben.",
+      "Dazu Regen ohne Ende. Du wartest sonst auf eine Lücke vergebens.",
       "Obendrein nasse Füße, falls du bei den Schuhen wieder optimistisch warst.",
-      "Es hört nicht auf zu regnen. Dein Plan hat damit wie üblich nicht gerechnet.",
-      "Dazu bleibt es nass, komplett. Keine Lücke, auf die du dich rausreden kannst.",
-      "Regen ohne Pause obendrauf. Richte dich ein, statt auf deine übliche Wetterwende zu hoffen.",
+      "Aufhören tut das nicht. Dein Plan hat damit nicht gerechnet.",
+      "Dazu bleibt es nass, komplett. Keine Lücke zum Rausreden.",
+      "Regen ohne Pause obendrauf. Deine übliche Wetterwende fällt heute aus.",
       "Nass bleibt es. Deine Lücke kommt heute nicht."
     ],
     "snow_coming": [
@@ -722,11 +722,11 @@
       "Dein Schirm bleibt heute nutzlos. {WHENP} kommt Schnee, wichtig ist nur, was unter dir ist."
     ],
     "snow_coming_j": [
-      "Dazu Schnee. Profil statt Schirm — deine Sneaker bleiben heute zu Hause.",
-      "Und dann schneit's. Du greifst gleich zu den falschen Schuhen, wie üblich.",
-      "Obendrein Schnee. Das Problem ist nicht nass, sondern rutschig — wie deine Sohlen.",
-      "Dazu kommt Schnee. Profil schlägt heute Stil, ob dir das passt oder nicht.",
-      "Und Schnee obendrauf. Stiefel statt Sneaker. Du weißt es, du machst es nur selten.",
+      "Dazu Schnee. Profil statt Schirm — nicht deine Sneaker.",
+      "Und dann schneit's. Du greifst wie üblich zu den falschen Schuhen.",
+      "Obendrein Schnee. Nicht nass, sondern rutschig — wie deine Sohlen.",
+      "Dazu kommt Schnee. Profil schlägt heute Stil, dir zum Trotz.",
+      "Und Schnee obendrauf. Stiefel statt Sneaker, wie jedes Jahr nicht.",
       "Schnee kommt dazu. Der Schirm nützt nichts, deine Schuhwahl dafür alles.",
       "Dazu Schnee. Stiefel, nicht deine üblichen Schuhe."
     ]
