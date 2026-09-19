@@ -17,7 +17,8 @@ What it enforces, and why:
   - the three sarcasm levels are not copies of each other, and no string is
     still identical to the English reference. Both pass every structural
     check and both ship something broken to a real device.
-  - arc_* lines are the only ones needing {GARMENT}, because those keys are the
+  - the garment and time tokens carry their own article and preposition, so
+    nothing may precede them that would double it up.
   - no line is empty, and none contains the '||' or ';;' delimiters that
     the transitional build still uses to inline these strings.
   - the _j (joined) precip forms carry no {WHENP}, since they attach to a
@@ -45,6 +46,30 @@ PRECIP_KEYS = [k + s for k in PRECIP_BASE for s in ("", "_j")]
 
 KNOWN_TOKENS = {"{WHEN}", "{WHEN2}", "{WHENP}", "{GARMENT}", "{GARMENTA}"}
 TOKEN_RE = re.compile(r"\{[A-Z0-9_]+\}")
+
+# {GARMENT} and {GARMENTA} already carry their article: they substitute
+# "The jacket" / "the jacket", "Die Jacke" / "die Jacke". Putting a
+# determiner in front produces "the The jacket" on a real device.
+DETERMINER_BEFORE_GARMENT = re.compile(
+    r"\b("
+    r"the|a|an|your|my|that|this|its|his|her|their|"
+    r"der|die|das|den|dem|des|ein|eine|einen|einem|eines|"
+    r"dein|deine|deinen|deinem|deiner|mein|meine|meinen|meinem|"
+    r"le|la|les|un|une|ton|ta|votre|"
+    r"el|los|las|una|tu|su|"
+    r"il|lo|gli|uno|tuo"
+    r")\s+\{GARMENTA?\}",
+    re.IGNORECASE,
+)
+
+# {WHEN} and {WHENP} can render the relative form ("in two hours"), which
+# dies after a preposition. {WHEN2} is always a bucket ("this evening") and
+# is therefore safe after one, so it is deliberately not checked here.
+PREPOSITION_BEFORE_TIME = re.compile(
+    r"\b(for|at|by|until|till|from|on|before|after|"
+    r"f\u00fcr|um|bis|ab|vor|nach|gegen|seit|w\u00e4hrend)\s+\{(WHEN|WHENP)\}",
+    re.IGNORECASE,
+)
 
 # Keys whose lines carry no time token at all: it is already raining, so the
 # sentence is about the umbrella in hand, not about when something starts.
@@ -145,6 +170,15 @@ def check_lang(path, problems):
                     tokens = set(TOKEN_RE.findall(line))
                     for tok in sorted(tokens - KNOWN_TOKENS):
                         bad(f"{where} uses unknown placeholder {tok}")
+
+                    m = DETERMINER_BEFORE_GARMENT.search(line)
+                    if m:
+                        bad(f"{where} has {m.group(0)!r} - the garment token already "
+                            "carries its article, so this renders as \"the The jacket\"")
+                    m = PREPOSITION_BEFORE_TIME.search(line)
+                    if m:
+                        bad(f"{where} has {m.group(0)!r} - the time token carries its own "
+                            "preposition, and the relative form (\"in two hours\") dies after one")
 
                     if kind == "temp":
                         if "{WHENP}" in tokens:
