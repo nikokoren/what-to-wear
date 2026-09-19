@@ -42,9 +42,9 @@
     "perfect": [
       "Das Wetter bleibt, wie es ist. Nimm nichts extra mit.",
       "Heute passt alles so. Du kannst die Hände frei lassen.",
-      "Kein Schichtwechsel heute. Was du anhast, reicht den ganzen Tag.",
+      "Heute bleibt alles an. Was du anhast, reicht den ganzen Tag.",
       "So wie du dastehst, bist du richtig angezogen. Los geht's.",
-      "Nichts ändert sich heute. Kein Ballast, nichts zu überlegen.",
+      "Nichts ändert sich heute. Du musst nichts tragen und nichts überlegen.",
       "Ein ruhiger Wettertag. Einpacken musst du heute nichts."
     ],
     "arc_colder": [
@@ -53,7 +53,7 @@
       "{WHEN} geht die Schicht runter, {WHEN2} wieder drauf. Dann fehlt dir noch eine.",
       "Der Tag endet kälter, als er anfängt. Nimm eine Schicht mehr mit als sonst.",
       "Erst wärmer, dann kälter als jetzt. Nimm eine zusätzliche Schicht mit.",
-      "{WHEN} darfst du was ausziehen. {WHEN2} brauchst du alles und eine Extraschicht."
+      "{WHEN} darfst du was ausziehen. {WHEN2} brauchst du alles wieder und eine Schicht mehr."
     ],
     "arc_level": [
       "{WHEN} kannst du {GARMENTA} ausziehen. {WHEN2} brauchst du die Schicht wieder.",
@@ -76,13 +76,13 @@
       "{WHEN} nimmst du den Schal ab. Steck ihn in die Tasche.",
       "Nur der Schal kommt weg. Der Rest bleibt den ganzen Tag an.",
       "Den Schal hast du {WHEN} zu viel. Er passt in jede Tasche.",
-      "Um den Hals ist es {WHEN} zu warm. Der Schal darf runter.",
+      "Am Hals ist es {WHEN} zu warm. Der Schal darf runter.",
       "Der Schal kommt {WHEN} runter. Alles andere bleibt an."
     ],
     "w_coat": [
       "Die Winterjacke kommt {WHEN} runter. Für so viel Jacke brauchst du Platz.",
       "Die dicke Jacke ist {WHEN} zu viel. Sie passt in keine Tasche.",
-      "Irgendwann fliegt die dicke Jacke runter. Dann hast du einen Arm weniger frei.",
+      "Irgendwann fliegt die dicke Jacke runter. Dann ist ein Arm belegt.",
       "Trag die Winterjacke {WHEN} im Arm oder nimm einen Rucksack mit.",
       "Die Winterjacke ist {WHEN} zu warm. Zieh sie aus, bevor du schwitzt.",
       "Die dicke Jacke brauchst du {WHEN} nicht mehr. Mach vorher Platz im Rucksack."
@@ -90,7 +90,7 @@
     "w_jacket": [
       "Die Jacke kannst du {WHEN} ausziehen. Danach trägst du sie über dem Arm.",
       "{WHEN} ist die Jacke zu warm. Zieh sie aus und nimm sie mit.",
-      "Mit Jacke ist es {WHEN} zu warm. Ein Arm bleibt dafür belegt.",
+      "Mit Jacke ist es {WHEN} zu warm. Ohne Tasche trägst du sie in der Hand.",
       "Die Jacke hast du nicht den ganzen Tag an. Plan einen Platz dafür ein.",
       "{WHEN} landet die Jacke im Rucksack. Klein gefaltet passt sie gut rein.",
       "Nimm eine Tasche mit. Die Jacke muss {WHEN} irgendwo hin."
@@ -121,7 +121,7 @@
     ],
     "c_scarf": [
       "Pack einen Schal ein. Die Jacke allein lässt den Hals frei.",
-      "{WHEN} zieht es am Hals. Ein Schal gehört heute mit dazu.",
+      "{WHEN} zieht es am Hals. Ein Schal hilft dagegen.",
       "Am Hals fehlt sonst die letzte Schicht. Häng dir einen Schal um.",
       "Ein Schal passt in jede Jackentasche. {WHEN} bist du froh darüber.",
       "{WHEN} reicht der Kragen nicht mehr. Nimm einen Schal mit.",
@@ -154,7 +154,7 @@
     "c_sweatshirt": [
       "Nackte Arme reichen {WHEN} nicht mehr. Pack ein Sweatshirt ein.",
       "{WHEN} fehlt etwas über den Armen. Ein Sweatshirt reicht schon.",
-      "Ein Sweatshirt über dem Arm ist schnell mitgenommen und {WHEN} nützlich.",
+      "Ein Sweatshirt über dem Arm stört nicht und hilft dir {WHEN}.",
       "Leg ein Sweatshirt bereit. Später sind kurze Ärmel zu wenig.",
       "An den Armen ist es {WHEN} zu kühl. Nimm ein Sweatshirt mit.",
       "Ohne Ärmel ist es später zu kühl. Ein Sweatshirt genügt."
@@ -164,7 +164,7 @@
       "Die Hitze lässt {WHEN} nach. Warm bleibt es trotzdem.",
       "Angenehmer als jetzt, aber immer noch warm. Du brauchst nichts extra.",
       "Zieh einfach so los. {WHEN} ist es schon angenehmer.",
-      "Die Spitze der Hitze ist heute schon durch. Dein Outfit passt weiter.",
+      "Die Spitze der Hitze ist heute schon durch. Umziehen musst du dich nicht.",
       "Es bleibt warm, nur nicht mehr so heiß. Nichts zu packen."
     ]
   },
@@ -175,7 +175,7 @@
       "Regen ist möglich, sicher ist er nicht. Der Schirm passt trotzdem rein.",
       "Schirm einpacken schadet nie. {WHENP} kann es tröpfeln.",
       "Es kann regnen, muss aber nicht. Mit Schirm bist du auf der sicheren Seite.",
-      "Ein kleiner Schirm reicht heute. Die Chance auf Regen ist da."
+      "Ein kleiner Schirm reicht heute. Regen ist durchaus möglich."
     ],
     "wetter_maybe_j": [
       "Dazu kann es regnen. Nimm den Schirm lieber mit.",
@@ -189,7 +189,7 @@
       "{WHENP} fängt es an zu regnen. Nimm den Schirm mit.",
       "Regen kommt {WHENP}. Lange dauert er nicht.",
       "Nimm den Schirm mit. {WHENP} brauchst du ihn.",
-      "Kurzer Regen steht an. Ohne Schirm gehst du heute besser nicht.",
+      "Kurzer Regen steht an. Geh heute nicht ohne Schirm los.",
       "{WHENP} regnet es kurz. Der Schirm reicht völlig aus.",
       "Schirm nicht vergessen. {WHENP} ist es kurz nass."
     ],
@@ -228,7 +228,7 @@
     "drier_j": [
       "Und der Regen hört bald auf. Danach bleibt es trocken.",
       "Immerhin lässt der Regen später nach.",
-      "Später ist es trocken. Der Regen hört vorher auf.",
+      "Nass ist es nur noch eine Weile.",
       "Und irgendwann ist der Regen durch. Dann bleibt es trocken.",
       "Nass bleibt es nicht den ganzen Tag.",
       "Gegen Ende des Tages hört der Regen auf."
@@ -238,7 +238,7 @@
       "Heute regnet es durch. Trockene Pausen sind keine dabei.",
       "Nass bleibt es bis zum Abend. Plan das einfach ein.",
       "Es regnet ohne Pause. Zieh feste Schuhe an.",
-      "Kein trockenes Fenster heute. Zieh dich wasserdicht an.",
+      "Keine trockene Stunde heute. Zieh dich wasserdicht an.",
       "Von morgens bis abends Regen. Stell dich darauf ein."
     ],
     "stays_wet_j": [
@@ -297,7 +297,7 @@
       "Einmal ausziehen {WHEN}, und damit hat die Schicht ihren Dienst hinter sich.",
       "Später kühlt's ein bisschen ab, zurück muss die Schicht deswegen nicht.",
       "{GARMENTA} brauchst du {WHEN} nicht mehr, und danach auch nicht.",
-      "Nach oben geht's {WHEN} über die Schicht hinaus, und darunter fällt es nicht mehr."
+      "{WHEN} geht die Schicht in Rente. Der Knick am Abend holt sie nicht zurück."
     ],
     "w_scarf": [
       "Der Schal ist {WHEN} überflüssig. Mütze und Mantel bleiben trotzdem im Dienst.",
@@ -320,8 +320,8 @@
       "{WHEN} hat die Jacke nichts mehr zu tun und sucht sich halt einen Arm.",
       "Eine leichte Jacke verschwindet wenigstens in jedem Rucksack. {WHEN} muss sie das.",
       "Runter kommt die Jacke {WHEN}, und danach reist sie am Arm mit.",
-      "Halbtags Jacke, halbtags Ballast. Der Reißverschluss hat's dann hinter sich.",
-      "Spätestens {WHEN} ist die Jacke nur noch etwas zum Hinlegen."
+      "Halbtags Jacke, halbtags Ballast. Dazwischen liegt genau ein Reißverschluss.",
+      "Spätestens {WHEN} sucht die Jacke nur noch eine Ablage."
     ],
     "w_hoodie": [
       "Der Hoodie landet {WHEN} um die Hüfte. Einen besseren Platz gibt's nicht.",
@@ -381,7 +381,7 @@
     ],
     "c_sweatshirt": [
       "Blanke Arme funktionieren {WHEN} nicht mehr. Ein Sweatshirt im Gepäck erledigt das.",
-      "{WHEN} melden sich die Unterarme. Ein Sweatshirt beendet die Diskussion.",
+      "{WHEN} melden sich die Arme. Ein Sweatshirt beendet die Diskussion.",
       "Kurze Ärmel halten heute nicht bis zum Schluss durch. Sweatshirt einpacken.",
       "Ein Sweatshirt wiegt nichts und wird {WHEN} trotzdem gebraucht. Also mitnehmen.",
       "{WHEN} sinkt es unter die Gänsehautgrenze. Ein Sweatshirt hält dagegen.",
@@ -403,7 +403,7 @@
       "Ein Schirm im Rucksack ist die billigste Versicherung, die es gibt.",
       "{WHENP} sind die Wolken eine Drohung, keine Ansage. Schirm trotzdem einpacken.",
       "Vielleicht regnet's {WHENP}. Mit Schirm ist die Frage halt egal.",
-      "Der Schirm fährt heute wohl umsonst mit. Wohl ist aber nicht sicher."
+      "Der Schirm fährt heute vermutlich umsonst mit. Vermutlich ist aber kein Versprechen."
     ],
     "wetter_maybe_j": [
       "Dazu vielleicht ein paar Tropfen. Der Schirm fährt zur Sicherheit mit.",
@@ -411,7 +411,8 @@
       "Regen steht im Raum, sicher ist er nicht. Schirm als Versicherung.",
       "Außerdem ein Regenrisiko, das ein Schirm im Rucksack komplett erledigt.",
       "Die Wolken halten sich beide Optionen offen. Schirm einstecken.",
-      "Möglicherweise regnet's dazu. Ein Schirm im Rucksack kostet ja nichts."
+      "Möglicherweise regnet's dazu. Ein Schirm im Rucksack kostet ja nichts.",
+      "Dazu ein Regenrisiko. Dagegen gibt's ja den Schirm."
     ],
     "wetter": [
       "{WHENP} fängt der Regen an. Lange bleibt er nicht, der Schirm reicht.",
@@ -443,22 +444,23 @@
       "Stundenlang nass obendrein. Ohne Schirm geht das heute nicht.",
       "Und nass bleibt es stundenlang, der Schirm kommt nicht zur Ruhe.",
       "Dabei regnet's durch, ohne Pause. Schirm ist heute Pflicht.",
-      "Regen ohne Ende dazu. Der Schirm bleibt halt den ganzen Tag oben."
+      "Regen ohne Ende dazu. Der Schirm bleibt halt den ganzen Tag oben.",
+      "Dazu Regen, stundenlang. Ohne Schirm geht's nicht."
     ],
     "drier": [
       "Der Regen macht früher Schluss als der Tag. Danach bleibt's trocken.",
       "Irgendwann hat der Regen dann doch genug und hört auf. Der Schirm kriegt Pause.",
-      "Das Nasse hört noch heute auf, danach trocknet der Schirm vor sich hin.",
+      "Nass ist es nur noch eine Weile, danach trocknet der Schirm vor sich hin.",
       "Bald hat's der Schirm hinter sich, der Regen zieht nämlich ab.",
       "Die Wolken räumen später ab. Der Schirm darf dann zusammenklappen.",
       "Nass ist heute nur eine Zwischenlösung, später hört der Regen auf."
     ],
     "drier_j": [
-      "Später hört der Regen auf, dann klappt der Schirm zu.",
+      "Irgendwann hört der Regen auf, dann klappt der Schirm zu.",
       "Nasser Anfang, trockener Rest. Der Regen macht eben nicht ewig weiter.",
       "Außerdem trocknet es ab, der Regen hört von allein auf.",
       "Und nass bleibt's nicht den ganzen Tag, irgendwann ist Schluss.",
-      "Zwischendurch gibt der Regen auf, und dann bleibt es trocken.",
+      "Heute gibt der Regen noch auf, und dann bleibt es trocken.",
       "Dazu ein Regen mit absehbarem Ende. Später trocknet es ab."
     ],
     "stays_wet": [
@@ -475,7 +477,8 @@
       "Außerdem regnet's einfach weiter. Eine trockene Stunde ist nicht dabei.",
       "Nass bleibt nass, den ganzen Tag. Der Schirm hat Dauerdienst.",
       "Heute bleibt der Regen einfach da, von vorn bis hinten.",
-      "Eine trockene Pause gibt's heute nicht, das bleibt bis abends so."
+      "Eine trockene Pause gibt's heute nicht, das bleibt bis abends so.",
+      "Nass bleibt es, ohne eine einzige Lücke."
     ],
     "snow_coming": [
       "Schnee kommt {WHENP}. Entscheidend sind dann die Sohlen, nicht der Schirm.",
@@ -506,26 +509,26 @@
     "arc_colder": [
       "{GARMENTA} ziehst du {WHEN} aus, {WHEN2} wieder an — und dann fehlt dir noch eine Schicht.",
       "{WHEN} runter, {WHEN2} wieder drauf, und dann reicht's eben nicht. Pack eine Schicht extra ein.",
-      "Der Abend endet kälter als dein Morgen. Angezogen hast du dich für den Morgen. Nimm mehr mit.",
+      "Angezogen für den Morgen, kälter wird der Abend. Nimm eine Schicht extra mit.",
       "Du legst {WHEN} ab, greifst {WHEN2} wieder zu und frierst trotzdem. Eine Schicht extra löst das.",
       "Zwei Schichten, nicht eine: {WHEN2} kommt die alte zurück und tut nur so, als reiche sie.",
-      "Es endet kälter, als es angefangen hat. Deine Rechnung geht wieder nicht auf — zweite Schicht einpacken."
+      "Es endet kälter, als du rechnest. Pack die zweite Schicht trotzdem ein."
     ],
     "arc_level": [
       "{GARMENT} macht heute nur Pause, keinen Feierabend. Behalt die Schicht bei dir, statt sie irgendwo abzulegen.",
       "{WHEN} runter, {WHEN2} wieder rauf. Nicht liegen lassen — genau da scheiterst du sonst jedes Mal.",
-      "Du ziehst {WHEN} aus und {WHEN2} wieder an. Dazwischen trägst du halt, das ist kein Drama.",
+      "Du ziehst die Schicht {WHEN} aus und {WHEN2} wieder an. Dazwischen trägst du sie halt.",
       "Der Tag endet, wo er anfängt. Die Schicht kommt {WHEN} runter und {WHEN2} zurück — behalt sie.",
       "Leg dich gleich darauf fest, die Schicht zu behalten. {WHEN2} willst du sie wieder, garantiert.",
       "Abgelegt, rumgetragen, wieder angezogen. Und nein, diesmal vergisst du die Schicht nicht im Café."
     ],
     "arc_warmer": [
-      "{GARMENTA} ziehst du {WHEN} aus, und das war's dann. Abends kühlt's kurz, dich juckt das nicht.",
+      "{GARMENTA} ziehst du {WHEN} aus, und das war's. Abends kühlt's kurz, du merkst es nicht.",
       "{WHEN} kommt die Schicht runter und bleibt unten. Der Knick am Abend ist reine Formsache.",
       "Du legst {WHEN} ab und ziehst nichts mehr nach. Dein Vorsorgereflex kann heute mal frei nehmen.",
       "Einmal ausziehen reicht heute völlig. Du suchst am Abend trotzdem einen Grund, dich wieder einzupacken.",
       "{GARMENT} braucht dich {WHEN} nicht mehr, und abends auch nicht. Spar dir das vorsorgliche Wiederanziehen.",
-      "Die Schicht kommt runter und bleibt unten. Dein übliches zweites Anziehen kannst du dir heute sparen."
+      "Die Schicht kommt runter und bleibt unten. Heute musst du nicht nachlegen."
     ],
     "w_scarf": [
       "Der Schal kommt {WHEN} runter. Danach hängt er am Arm, weil du wieder keine Tasche dabeihast.",
@@ -588,7 +591,7 @@
       "{WHEN} reicht die dünne Jacke nicht mehr. Nimm die dicke, auch wenn sie dir übertrieben vorkommt.",
       "Heute ist Daunentag. Dein Kompromissjäckchen bleibt zu Hause, so gern du es auch mitnehmen würdest.",
       "Du glaubst, die leichte Jacke reicht. {WHEN} weißt du es besser. Nimm gleich den Wintermantel.",
-      "Wintermantel einpacken oder anziehen, egal. Nur bitte nicht wieder die Übergangsjacke, die nie etwas übergeht.",
+      "Wintermantel einpacken oder anziehen, egal. Nur bitte nicht wieder die Übergangsjacke.",
       "Es kippt {WHEN} in echte Kälte. Die dünne Jacke ist Dekoration — nimm heute die richtige."
     ],
     "c_jacket": [
@@ -619,9 +622,9 @@
       "Die schlimmste Hitze ist {WHEN} durch. Mitnehmen musst du nichts, also lass den Rucksack mal zu.",
       "{WHEN} wird's erträglich. Nichts einzupacken, nichts umzuziehen — du suchst trotzdem nach einer Aufgabe.",
       "Es kühlt runter, bleibt aber warm. Die Jacke bleibt zu Hause, egal was dein Reflex sagt.",
-      "Atmen geht {WHEN} wieder. Du brauchst nichts, außer der Einsicht, dass heute nichts zu entscheiden ist.",
+      "Atmen geht {WHEN} wieder. Einpacken musst du nichts, so schwer dir das fällt.",
       "Die Hitze lässt nach, und das war's. Kein Grund, jetzt vorsorglich irgendwas einzupacken.",
-      "Warm bleibt es, nur eben nicht mehr brutal. Zieh dich nicht um, du bereust es sowieso."
+      "Warm bleibt es, nur eben nicht mehr brutal. Für Umziehen reicht das nicht."
     ]
   },
   "precip_11": {
@@ -637,15 +640,16 @@
       "Dazu vielleicht Regen. Nimm den Schirm, auch wenn du ihn wieder ungenutzt heimschleppst.",
       "Und Regen ist gut möglich. Dein Schirm bleibt trotzdem im Flur stehen, schätze ich.",
       "Dazu kann's nass werden. Pack den Schirm ein, bevor du ihn dir wieder wegdiskutierst.",
-      "Regen ist möglich, mehr nicht. Genau solche Tage kostest du regelmäßig mit nassen Schuhen aus.",
+      "Regen ist möglich, mehr nicht. Reicht bei dir erfahrungsgemäß für nasse Schuhe.",
       "Und es könnte regnen. Du nennst das Risiko überschaubar, bis du mittendrin stehst.",
-      "Plus Regenrisiko. Schirm einpacken dauert zehn Sekunden, deine Ausrede danach deutlich länger."
+      "Außerdem ein Regenrisiko. Schirm einpacken dauert zehn Sekunden, deine Ausrede länger.",
+      "Dazu vielleicht Regen. Nimm den Schirm, du Optimist."
     ],
     "wetter": [
       "{WHENP} regnet es. Der Schirm steht neben der Tür, du gehst gleich links dran vorbei.",
       "Regen {WHENP}, nicht lange. Trotzdem lang genug, dass dein Nichtmitnehmen sich heute rächt.",
       "Nimm den Schirm mit. {WHENP} fängt's an, und du behauptest nachher, das kam überraschend.",
-      "Kurzer Regen {WHENP}. Du kommst mit Schirm trocken durch oder ohne — such dir was aus.",
+      "Kurzer Regen {WHENP}. Mit Schirm kommst du trocken durch, ohne eben nicht.",
       "Es regnet gleich eine Runde. Schirm einpacken, sonst wartest du wieder unter irgendeinem Vordach.",
       "Der Schirm passt in jede Tasche. Deiner bleibt {WHENP} zu Hause und du irgendwo stehen."
     ],
@@ -655,7 +659,8 @@
       "Plus eine Runde Regen. Nimm den Schirm, statt dich später auf Hauseingänge zu verlassen.",
       "Dazu Regen, nicht lang. Lang genug für deine übliche Entscheidung gegen den Schirm.",
       "Es kommt noch Regen dazu. Schirm mitnehmen kostet dich nichts als etwas Vorausdenken.",
-      "Und nass gibt's obendrauf. Du könntest den Schirm mitnehmen, du machst es nur nicht."
+      "Und nass gibt's obendrauf. Du könntest den Schirm mitnehmen, du machst es nur nicht.",
+      "Dazu Regen, kurz. Ohne Schirm stehst du wieder rum."
     ],
     "wetter_long": [
       "Der Regen bleibt stundenlang. Dein Plan, das auszusitzen, funktioniert heute ausnahmsweise mal überhaupt nicht.",
@@ -668,10 +673,11 @@
     "wetter_long_j": [
       "Dazu Dauerregen. Da kommst du nicht trocken durch, indem du einfach schneller gehst.",
       "Und der Regen bleibt, stundenlang. Den Schirm brauchst du heute wirklich, nicht nur theoretisch.",
-      "Plus Regen ohne Pause. Kurz abwarten ist heute keine Option, so gern du das tust.",
+      "Und Regen ohne Pause. Abwarten hilft heute nicht, so gern du das tust.",
       "Dazu stundenlang nass. Der Schirm ist kein Zubehör, sondern dein einziger vernünftiger Gedanke heute.",
-      "Nass von oben, ohne Unterbrechung. Dein Plan war schon durchweicht, bevor du ihn überhaupt hattest.",
-      "Regen am Stück obendrauf. Nimm den Schirm, sonst wird das eine sehr lange Geduldsübung."
+      "Nass von oben, stundenlang. Trockene Füße sind heute reines Wunschdenken.",
+      "Regen am Stück obendrauf. Nimm den Schirm, sonst wird das eine sehr lange Geduldsübung.",
+      "Dazu Stunden Regen. Nimm den Schirm, echt jetzt."
     ],
     "drier": [
       "Der Regen hört auf. Du gehst natürlich genau in dem Moment los, in dem er noch fällt.",
@@ -679,7 +685,7 @@
       "Es zieht ab. Du könntest kurz warten, aber Warten war noch nie deine große Stärke.",
       "Gleich hört's auf. Zehn Minuten Geduld, und du kämst trocken durch — hast du aber nicht.",
       "Das Nasse ist bald durch. Du rennst trotzdem gleich los und beschwerst dich anschließend über beides.",
-      "Es klart auf. Deine Laune hängt noch am Fenster fest, obwohl das Schlimmste schon vorbei ist."
+      "Es klart auf. Du klebst trotzdem am Fenster und rechnest mit dem Schlimmsten."
     ],
     "drier_j": [
       "Und der Regen hört auf. Du gehst wie immer eine Viertelstunde zu früh raus.",
@@ -687,11 +693,12 @@
       "Plus Entwarnung beim Regen. Nur bleibt deine Stimmung erfahrungsgemäß noch etwas länger grau.",
       "Und es klart auf. Du hast es nur zu eilig, um das noch mitzubekommen.",
       "Bald ist Schluss mit nass. Deine Geduld reicht fast bis dahin, aber eben nur fast.",
-      "Dazu gibt's trockene Luft. Du könntest kurz abwarten, gehst aber wie immer sofort los."
+      "Dazu gibt's trockene Luft. Du könntest kurz abwarten, gehst aber wie immer sofort los.",
+      "Trocken wird's noch. Kein Grund für dein Drama."
     ],
     "stays_wet": [
       "Das bleibt so, den ganzen Tag. Dein Plan war schon nass, bevor du ihn hattest.",
-      "Kein trockenes Fenster, nirgends. Du suchst trotzdem den halben Tag lang danach.",
+      "Keine trockene Lücke, nirgends. Du suchst trotzdem den halben Tag danach.",
       "Es regnet durch. Die Pause, auf die du gleich wartest, kommt heute schlicht nicht.",
       "Den ganzen Tag nass. Bei den Schuhen hast du heute Morgen schon falsch entschieden, vermute ich.",
       "Durchgehend Regen. Du planst gerade eine Lücke ein, die es heute einfach nicht gibt.",
@@ -700,10 +707,11 @@
     "stays_wet_j": [
       "Und nass bleibt's. Deine Hoffnung auf eine Regenpause kannst du heute gleich abschreiben.",
       "Dazu Regen ohne Ende. Du wartest sonst wieder auf ein Fenster, das zubleibt.",
-      "Plus durchgehend nasse Füße, falls du bei den Schuhen wieder optimistisch warst.",
+      "Obendrein nasse Füße, falls du bei den Schuhen wieder optimistisch warst.",
       "Es hört nicht auf zu regnen. Dein Plan hat damit wie üblich nicht gerechnet.",
-      "Dazu bleibt es nass, komplett. Es gibt keine Lücke, auf die du dich rausreden kannst.",
-      "Regen ohne Pause obendrauf. Richte dich ein, statt auf deine übliche Wetterwende zu hoffen."
+      "Dazu bleibt es nass, komplett. Keine Lücke, auf die du dich rausreden kannst.",
+      "Regen ohne Pause obendrauf. Richte dich ein, statt auf deine übliche Wetterwende zu hoffen.",
+      "Nass bleibt es. Deine Lücke kommt heute nicht."
     ],
     "snow_coming": [
       "{WHENP} schneit es. Deine glatten Sohlen kennen wir beide, also nimm heute die mit Profil.",
@@ -714,12 +722,13 @@
       "Dein Schirm bleibt heute nutzlos. {WHENP} kommt Schnee, wichtig ist nur, was unter dir ist."
     ],
     "snow_coming_j": [
-      "Dazu Schnee. Schuhe mit Profil, kein Schirm — deine Sneaker bleiben heute mal zu Hause.",
-      "Und dann schneit's. Du entscheidest dich gleich für die falschen Schuhe, das ist quasi Tradition.",
-      "Plus Schnee. Nass ist nicht das Problem, sondern rutschig — und deine Sohlen sind es längst.",
-      "Dazu kommt Schnee. Griff ist heute wichtiger als Stil, auch wenn dir das nicht passt.",
+      "Dazu Schnee. Profil statt Schirm — deine Sneaker bleiben heute zu Hause.",
+      "Und dann schneit's. Du greifst gleich zu den falschen Schuhen, wie üblich.",
+      "Obendrein Schnee. Das Problem ist nicht nass, sondern rutschig — wie deine Sohlen.",
+      "Dazu kommt Schnee. Profil schlägt heute Stil, ob dir das passt oder nicht.",
       "Und Schnee obendrauf. Stiefel statt Sneaker. Du weißt es, du machst es nur selten.",
-      "Schnee kommt dazu. Der Schirm nützt nichts, deine Schuhwahl dafür alles."
+      "Schnee kommt dazu. Der Schirm nützt nichts, deine Schuhwahl dafür alles.",
+      "Dazu Schnee. Stiefel, nicht deine üblichen Schuhe."
     ]
   }
 }
