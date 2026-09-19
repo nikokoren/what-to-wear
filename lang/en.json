@@ -48,7 +48,7 @@
       "Wear that and you're set. There's nothing else to plan."
     ],
     "arc_colder": [
-      "{GARMENT} comes off {WHEN}, then back {WHEN2}. Bring a warmer layer too.",
+      "{GARMENT} comes off {WHEN}, then back {WHEN2}. Bring a warmer layer with it.",
       "You'll want {GARMENTA} again {WHEN2}, and something warmer over it.",
       "Colder at the end than right now. Take {GARMENTA} and something warmer.",
       "Warm stretch {WHEN}, then colder than right now. Pack an extra layer.",
@@ -88,7 +88,7 @@
       "Coat weather ends {WHEN}. Carrying it is the hard part."
     ],
     "w_jacket": [
-      "Jacket off {WHEN}. Tie it round your waist and carry on.",
+      "Jacket off {WHEN}. Tie it round your waist and keep going.",
       "Take the jacket off {WHEN} — it packs down small in a bag.",
       "Mild enough later that the jacket comes off. It packs small.",
       "You won't need the jacket {WHEN}. Sling it over one shoulder.",
@@ -160,9 +160,9 @@
       "Take something long-sleeved — a sweatshirt, a jumper, whatever's by the door."
     ],
     "c_relief": [
-      "The heat eases off {WHEN}. Nothing extra to bring.",
+      "The heat eases off {WHEN}. No extra layer needed.",
       "Still warm {WHEN}, just less of it. Nothing to change.",
-      "The peak passes and the evening's comfortable. There's nothing to carry.",
+      "The peak passes and the evening's comfortable. No layer to carry.",
       "A break from the heat {WHEN}. What you're wearing works.",
       "Warm, then a little less warm. No extra layers needed.",
       "Comfortable by evening. You're already dressed for it."
@@ -171,7 +171,7 @@
   "precip_0": {
     "wetter_maybe": [
       "Rain's possible {WHENP}. An umbrella weighs nothing, so take one.",
-      "Might rain, might not. The umbrella's cheap insurance either way.",
+      "Might rain, might not. Take the umbrella and you're covered either way.",
       "There's a chance of rain {WHENP}. Bring the umbrella just in case.",
       "An umbrella in the bag covers you if the rain shows up.",
       "Maybe rain {WHENP}, maybe nothing. Either way, take the umbrella.",
@@ -183,7 +183,8 @@
       "And it might rain, so an umbrella wouldn't hurt.",
       "Possible rain on top of that. The umbrella's worth carrying.",
       "Add an umbrella: rain isn't certain, but it's likely enough.",
-      "Chance of rain too. An umbrella is easy to carry."
+      "Chance of rain too. An umbrella is easy to carry.",
+      "Rain's possible too. Take the umbrella."
     ],
     "wetter": [
       "Rain arrives {WHENP}. Take the umbrella — it doesn't last long.",
@@ -191,7 +192,7 @@
       "A short burst of rain {WHENP}. The umbrella handles it.",
       "Pack the umbrella. Rain's on the way and it won't last.",
       "Wet {WHENP}, dry again soon after. One umbrella sees you through.",
-      "Short rain today, but it's real. Carry an umbrella."
+      "The rain is short, but it does arrive. Carry an umbrella."
     ],
     "wetter_j": [
       "Rain's coming too, so take the umbrella.",
@@ -199,7 +200,8 @@
       "And rain, briefly. One umbrella covers the whole of it.",
       "Wet for a while as well. The umbrella's worth taking.",
       "Rain shows up at some point. Bring the umbrella.",
-      "Throw in the umbrella: there's rain in the day too."
+      "Throw in the umbrella: there's rain in the day too.",
+      "Rain later as well. Take the umbrella."
     ],
     "wetter_long": [
       "Rain begins {WHENP} and stays for hours. Take the umbrella.",
@@ -215,7 +217,8 @@
       "Rain moves in for a long stretch. Umbrella and good shoes.",
       "Plus steady rain most of the day — umbrella, definitely.",
       "Add a long wet spell, so bring the umbrella.",
-      "Rain all afternoon on top. The umbrella earns its keep."
+      "Rain all afternoon on top. The umbrella earns its keep.",
+      "Hours of rain too. Take the umbrella."
     ],
     "drier": [
       "The rain stops later. The rest of the day is dry.",
@@ -231,7 +234,8 @@
       "Plus the rain eases off later on.",
       "Rain's on its way out. Drier after that.",
       "It dries up as the day goes on.",
-      "Wet right now, dry later. That's the shape of it."
+      "Wet right now, dry later. That's how today goes.",
+      "The rain stops later on."
     ],
     "stays_wet": [
       "Rain all day today, with no dry gap in it.",
@@ -247,7 +251,8 @@
       "Wet right through as well. No gap anywhere in it.",
       "Rain the whole time on top of that.",
       "Plus rain with no break in it at all.",
-      "Non-stop rain to go with it."
+      "Non-stop rain to go with it.",
+      "Wet all day, with no dry gap."
     ],
     "snow_coming": [
       "Snow {WHENP}. Wear boots with grip — paths turn slippery.",
@@ -263,7 +268,8 @@
       "Plus snow later. Footwear is the thing that matters.",
       "There's snow in it as well. Boots, not trainers.",
       "Snow on top of that. Go for grip underfoot.",
-      "Snow shows up at some point. Solid boots today."
+      "Snow shows up at some point. Solid boots today.",
+      "Snow too. Wear boots with grip."
     ]
   },
   "temp_10": {
@@ -276,17 +282,17 @@
       "The coat rack and the umbrella stand both get the day off."
     ],
     "arc_colder": [
-      "{GARMENT} clocks off {WHEN} and returns {WHEN2} outgunned, so pack something over it.",
+      "{GARMENT} clocks off {WHEN} and comes back {WHEN2} short-staffed. Pack a layer over it.",
       "{GARMENT} comes off {WHEN}, then goes back {WHEN2}, and still isn't enough. Bring more.",
-      "Today ends colder than it started, so pack something warmer than {GARMENTA} as well.",
-      "Off {WHEN}, back {WHEN2}, and losing by then. An extra layer travels with it.",
+      "Today ends colder than it started, so pack something warmer than {GARMENTA}.",
+      "Off {WHEN}, back {WHEN2}, and not enough by then. Pack an extra layer.",
       "Two changes today: lighter {WHEN}, heavier {WHEN2}, and that second one needs an extra layer.",
       "A round trip for {GARMENTA}, which comes back to a colder day. Bring reinforcements."
     ],
     "arc_level": [
       "{GARMENT} works a split shift: off {WHEN}, back {WHEN2}. Keep hold of it.",
       "Off {WHEN}, on again {WHEN2}, so {GARMENTA} doesn't get left anywhere in between.",
-      "The day finishes exactly where it started, so whatever comes off has to travel too.",
+      "Today finishes exactly where it started, so whatever comes off has to travel.",
       "Warm in the middle, cool at both ends, so {GARMENTA} stays with you throughout.",
       "{GARMENT} is off {WHEN} and wanted again {WHEN2}, so it goes wherever you go.",
       "Hold onto {GARMENTA} once it's off {WHEN}; the cold comes back {WHEN2} unchanged."
@@ -296,7 +302,7 @@
       "One shift only: {GARMENTA} is finished {WHEN}, and {WHEN2} never gets cold enough to matter.",
       "The warm part wins today, and the layer that comes off stays off.",
       "{GARMENT} is done {WHEN}. Whatever cools {WHEN2} isn't enough to ask for it back.",
-      "Shed {GARMENTA} {WHEN} and leave it shed; {WHEN2} cools a little and nobody notices.",
+      "Shed {GARMENTA} {WHEN} and leave it off; {WHEN2} cools a little and nobody notices.",
       "Nothing today asks for {GARMENTA} twice. Once it's off, it's off for good."
     ],
     "w_scarf": [
@@ -321,7 +327,7 @@
       "Expect the jacket off {WHEN} and in the way for the rest of the day.",
       "A jacket earns its keep this morning and turns into hand luggage afterwards.",
       "Light as it is, the jacket still needs somewhere to go {WHEN}.",
-      "Clothing now, cargo {WHEN}, and the jacket's day is the shorter of the two."
+      "Clothing now, cargo {WHEN}. The jacket's useful stretch is the shorter one."
     ],
     "w_hoodie": [
       "The hoodie hands in its notice {WHEN}. Somewhere to stash it would help.",
@@ -351,7 +357,7 @@
       "The coat covers everything but the neck, and {WHEN} that gap starts to matter.",
       "A scarf's the difference {WHEN} between a coat that works and one that nearly does.",
       "Take a scarf. The cold {WHEN} goes straight for the one gap a coat leaves.",
-      "Neck first, everything else second, which is how the cold operates {WHEN}. Scarf, then.",
+      "Cold works neck-first {WHEN}, and a coat stops at the collar. Take a scarf.",
       "Scarf in the bag. The coat's doing its best but it stops at the collar.",
       "Good coats still run out at the collar, and the cold finds that {WHEN}."
     ],
@@ -388,10 +394,10 @@
       "Pack a sweatshirt. The air loses its warmth {WHEN} and doesn't get it back."
     ],
     "c_relief": [
-      "The heat finally knocks off {WHEN}. Still warm, and still nothing to carry.",
+      "The heat finally knocks off {WHEN}. Still warm, and still no layer to carry.",
       "The worst of it clocks out {WHEN}, and the outfit carries on unchanged.",
       "Cooler later, in the way that's welcome. No extra layer needed for it.",
-      "That's the peak behind us {WHEN}. Comfortable from there, with nothing to bring.",
+      "That's the peak behind us {WHEN}. Comfortable from there, with no layer to bring.",
       "Some of the heat leaves {WHEN}. What's left is manageable in the same clothes.",
       "The temperature backs off {WHEN} without going anywhere that needs a layer."
     ]
@@ -408,10 +414,11 @@
     "wetter_maybe_j": [
       "Rain's possible too, and an umbrella costs nothing to carry around unused.",
       "A chance of rain comes with it, and the umbrella covers that.",
-      "The clouds might follow through, which makes the umbrella worth bringing.",
+      "Clouds might follow through, which makes the umbrella worth bringing.",
       "Rain's a maybe rather than a promise; the umbrella comes anyway.",
       "Add an umbrella, on the chance the clouds mean it this time.",
-      "Possibly wet as well. An umbrella that goes unopened costs nothing."
+      "Possibly wet as well. An umbrella that goes unopened costs nothing.",
+      "Rain's a maybe. The umbrella costs nothing."
     ],
     "wetter": [
       "The rain turns up {WHENP} and doesn't stay long. Take the umbrella.",
@@ -427,7 +434,8 @@
       "Add rain, not much of it. An umbrella handles the whole episode.",
       "Rain turns up for a short stint; the umbrella goes in the bag.",
       "A wet interval arrives with it, and the umbrella's a short assignment.",
-      "Bring the umbrella too, since the rain shows up and leaves quickly."
+      "Bring the umbrella too, since the rain shows up and leaves quickly.",
+      "Brief rain with it. One umbrella covers it."
     ],
     "wetter_long": [
       "The rain starts {WHENP} and settles in for hours. The umbrella works a full shift.",
@@ -443,7 +451,8 @@
       "Add hours of rain. The umbrella earns its place in the bag.",
       "Hours of rain come with it, so take the umbrella.",
       "Wet for hours on top of that, which puts the umbrella on duty.",
-      "Umbrella in hand for hours, because the rain's in no rush to finish."
+      "Umbrella in hand for hours, because the rain's in no rush to finish.",
+      "Hours of rain. A full shift for the umbrella."
     ],
     "drier": [
       "The rain's working through the last of its shift. It finishes before the day does.",
@@ -454,12 +463,13 @@
       "The sky hands over what's left and clocks off. It dries up from there."
     ],
     "drier_j": [
-      "The rain's also on its way out. It won't last the day.",
+      "Rain's also on its way out, and won't last the day.",
       "And the rain clears, which gives the umbrella the afternoon off.",
-      "The wet part finishes early too. Dry by the end of it.",
+      "Wet now, dry well before the day's out.",
       "Rain's winding down as well; the sky's nearly finished with it.",
       "Plus the rain stops. What's left of the day comes out dry.",
-      "That shower's running out of material. It dries up from there."
+      "That shower's running out of material. It dries up from there.",
+      "The rain clocks off early. Dry after that."
     ],
     "stays_wet": [
       "Today's rain has cleared its diary. There's no gap in it anywhere.",
@@ -473,9 +483,10 @@
       "Rain's in for the day as well, with no gap to wait for.",
       "And it stays wet, because there's no break coming.",
       "Rain all day on top of that. Nothing dries out.",
-      "The wet doesn't let up either; it's a full day of it.",
+      "No let-up either; it's a full day of it.",
       "No dry spell with it, either. The rain's on for the duration.",
-      "Add rain that never stops. The whole day's a wet one."
+      "Add rain that never stops. The whole day's a wet one.",
+      "No gap in it. The rain has the day booked."
     ],
     "snow_coming": [
       "Snow's due {WHENP}. Boots with grip, because an umbrella's decoration out there.",
@@ -491,7 +502,8 @@
       "Add snow. The footwear becomes the part worth thinking about.",
       "Snow follows. Soles with tread do more good than an umbrella ever will.",
       "And snow, which turns this into a question about boots.",
-      "Snow joins in later, the ground turns slick, so wear something with grip."
+      "Snow joins in later, the ground turns slick, so wear something with grip.",
+      "Snow with it. Grip matters, umbrellas don't."
     ]
   },
   "temp_11": {
@@ -531,7 +543,7 @@
       "The scarf's surplus {WHEN}, and you'll leave it on the back of a chair. Again.",
       "Warm enough {WHEN} to lose the scarf, which is precisely how you lose scarves.",
       "Scarf comes off {WHEN}. Everything else stays on, whatever your sense of freedom suggests.",
-      "You'll unwind the scarf {WHEN} and then carry it around like a small pet.",
+      "You'll unwind the scarf {WHEN} and then hold it for six hours.",
       "The scarf's finished once it's off. The coat isn't, so don't get ambitious.",
       "Off comes the scarf {WHEN}; the puffer stays, no matter how liberated that makes you feel."
     ],
@@ -557,10 +569,10 @@
       "You'll keep the hood up {WHEN} out of loyalty rather than temperature. Take it off.",
       "That hoodie ends up round your waist eventually. It always does. Make peace early.",
       "Once it's off {WHEN}, the hoodie's yours to carry. There are no hooks out there.",
-      "Too warm for the hoodie {WHEN}; you'll haul it about like it owes you money."
+      "Too warm for the hoodie {WHEN}; you'll wear it anyway, out of spite."
     ],
     "w_sweatshirt": [
-      "The sweatshirt stops helping {WHEN}. Taking it off in public isn't the ordeal you imagine.",
+      "The sweatshirt stops helping {WHEN}. You'll keep it on for another mile regardless.",
       "Sweatshirt off {WHEN}, and now you're a person holding a sweatshirt. That was always coming.",
       "You'll last ten minutes {WHEN} before the sweatshirt comes off and joins your arm.",
       "Mild enough later that the sweatshirt's just something you're carrying. You knew that leaving.",
@@ -571,8 +583,8 @@
       "Clothes have run out of moves {WHEN}. Drink water before you get dramatic about it.",
       "Nothing left to take off {WHEN}, so it's water and shade, both of which you'll skip.",
       "You'll claim you're not thirsty {WHEN}. Carry a bottle and prove yourself wrong quietly.",
-      "Hotter than any outfit can fix today. Shade and water, neither of which you'll seek.",
-      "The heat climbs {WHEN} and your wardrobe's out of ideas. Hydrate, or suffer performatively.",
+      "Hotter than any outfit can fix today. Shade and water, and you'll look for neither.",
+      "The heat climbs {WHEN} and your wardrobe's out of ideas. Drink water, or complain instead.",
       "Peak heat {WHEN}. Water, shade, slower walking — three things you've ignored every summer."
     ],
     "c_scarf": [
@@ -616,12 +628,12 @@
       "A sweatshirt takes up no room and settles the evening. Yours isn't coming, is it."
     ],
     "c_relief": [
-      "The heat backs off {WHEN} and you need nothing for it. Try enjoying something.",
-      "Cooler {WHEN}, still warm, still nothing to carry. Yes, really. Put the bag down.",
+      "The heat backs off {WHEN} and you need nothing for it. Take the win.",
+      "Cooler {WHEN}, still warm, and no layer to carry. Yes, really.",
       "You'll read this twice looking for the catch. There isn't one — it just eases {WHEN}.",
-      "The worst of the heat's done today. Same outfit, no layers, nothing for you to forget.",
-      "Easier {WHEN} without going cold. Dress exactly as you are and stop planning contingencies.",
-      "Relief {WHEN}, and nothing to carry, so you've no excuse for the mood later."
+      "The worst of the heat's done today. Same outfit, no layers, nothing to argue with.",
+      "Easier {WHEN} without going cold. Dress exactly as you are and leave the layers home.",
+      "Relief {WHEN}, and no layer to carry, so you've no excuse for the mood later."
     ]
   },
   "precip_11": {
@@ -634,12 +646,13 @@
       "Possible rain {WHENP}. An umbrella weighs less than the story you'll tell about getting soaked."
     ],
     "wetter_maybe_j": [
-      "Maybe rain too — the umbrella costs you nothing, and you'll still leave it standing there.",
-      "There's a chance of rain as well. Take the umbrella and be smug for once.",
-      "Possibly rain too. You'll bet against it, which is roughly how this always goes.",
-      "Plus a decent chance of rain, so bring the umbrella you've already talked yourself out of.",
-      "And it might rain. 'Might' has soaked you before, and the umbrella's right there.",
-      "Rain's a maybe as well, and your maybes have a poor record. Umbrella. Please."
+      "Maybe rain too, and you'll still leave the umbrella standing there.",
+      "And a chance of rain. Take the umbrella, be smug for once.",
+      "Possibly rain too. You'll bet against it, as always.",
+      "Plus a decent chance of rain you've already talked yourself out of. Umbrella.",
+      "And it might rain. 'Might' has soaked you before. Umbrella.",
+      "Rain's a maybe too. Your maybes have a poor record. Umbrella.",
+      "Might rain too. Umbrella, or the usual gamble."
     ],
     "wetter": [
       "Rain arrives {WHENP}, and you'll be somewhere umbrella-less by then, entirely by choice.",
@@ -651,11 +664,12 @@
     ],
     "wetter_j": [
       "Umbrella too — yes, the one you abandon at the first dry moment.",
-      "Rain's coming as well, and your hood isn't the solution you keep insisting it is.",
-      "There's rain in it too, so bring the umbrella you've already decided against bringing.",
-      "Also rain. You'll check the sky, declare yourself fine, and be wrong within twenty minutes.",
-      "And rain. Umbrella in the bag, where it costs you nothing except your pride.",
-      "Bring the umbrella as well, because \"it's not that heavy\" is an argument you always lose."
+      "Rain's coming too, and your hood has never once been the answer.",
+      "Rain in it too. Bring the umbrella you've already decided against.",
+      "Also rain. You'll check the sky, declare yourself fine, and be wrong.",
+      "And rain. The umbrella costs you nothing but your pride.",
+      "Take the umbrella too. \"Too heavy\" is an argument you always lose.",
+      "Rain too. The umbrella's right there. Still."
     ],
     "wetter_long": [
       "Hours of it {WHENP}, not a shower. The umbrella earns its keep; carry it regardless.",
@@ -666,17 +680,18 @@
       "It's set in for hours {WHENP}, so the umbrella isn't optional, whatever you tell yourself."
     ],
     "wetter_long_j": [
-      "And hours of rain, so the umbrella's coming whether you respect it or not.",
-      "Rain settles in too — waiting for a gap is a plan with no gap in it.",
-      "Take the umbrella as well; this isn't a shower you can outwait in a doorway.",
-      "Plus long rain. Your usual sprint-between-awnings routine doesn't stretch that far, and never has.",
-      "There's steady rain in it too, and you have never won that waiting game.",
-      "Also: hours of rain. Bring the umbrella you'll resent carrying and be glad of later."
+      "And hours of rain. The umbrella's coming, like it or not.",
+      "Rain settles in too, and there's no gap to wait for.",
+      "Take the umbrella too. No doorway outlasts this one.",
+      "Plus long rain. Your awning-to-awning sprint doesn't stretch that far.",
+      "Steady rain with it, and you've never won that waiting game.",
+      "Also hours of rain. Bring the umbrella you'll resent all morning.",
+      "Hours of rain. No doorway waits that long."
     ],
     "drier": [
       "The rain quits before you do, so stop rearranging your entire day around it.",
       "Clearing later. You'll cancel something first and then watch the sky go embarrassingly blue.",
-      "It dries up later, which means your dramatic weather commentary has an expiry time.",
+      "It dries up later, so your dramatic weather commentary has an expiry date.",
       "Wet now, done later. The only thing still dripping by then will be your mood.",
       "You'll assume it's like this all day. It isn't. Recalibrate, and uncancel something.",
       "This lets up before the day's out, so cancel nothing and quit checking the window."
@@ -684,10 +699,11 @@
     "drier_j": [
       "And the rain stops later, so stop treating today as a write-off.",
       "Rain eases off too, sooner than the mood you've built around it.",
-      "Also drying out later, whatever you've already abandoned on account of the window.",
-      "Plus it clears. You can stop performing resignation about the weather now.",
+      "Also drying out later, whatever you've already written off.",
+      "Plus it clears, so you can stop sulking at the window.",
       "The wet part ends before the day does. Undo whatever you just cancelled.",
-      "It eases later too, which your morning face has not yet accounted for."
+      "It eases later too, which your morning mood hasn't caught up with.",
+      "Rain stops later. Your mood needn't."
     ],
     "stays_wet": [
       "No dry gap today. Whatever break you're waiting for, it isn't coming.",
@@ -698,12 +714,13 @@
       "Nothing dries out today, including the plan you're still pretending will somehow work."
     ],
     "stays_wet_j": [
-      "And it rains right through, so the day you'd sketched out is already soaked.",
-      "Plus no let-up. You'll still head out as if a gap might appear for you.",
-      "The rain doesn't stop either — every hour, including the one you're counting on.",
+      "And it rains right through, so whatever you'd planned is already wet.",
+      "Plus no let-up, and you'll still head out expecting a gap.",
+      "The rain doesn't stop either, including the hour you're counting on.",
       "Also raining all day, which your optimism discovers around the second attempt.",
       "Steady rain the whole way through. Whatever you're hoping for, hope isn't waterproof.",
-      "And no gap, so that dash you're planning between doorways happens in rain regardless."
+      "And no gap, so that doorway dash happens in rain anyway.",
+      "Rain all day. No gap, however long you stare."
     ],
     "snow_coming": [
       "Snow {WHENP}. Boots with real tread, because the smooth ones have betrayed you before.",
@@ -714,12 +731,13 @@
       "It snows {WHENP} and pavements turn slick. Take the boring boots, keep your dignity."
     ],
     "snow_coming_j": [
-      "And snow, so pick footwear with grip instead of the pair you always pick.",
-      "Snow too — an umbrella won't help, and neither will pretending pavements aren't slippery.",
-      "Plus snow. Boots with tread, unless falling over publicly is on your list this year.",
-      "There's snow in it as well, so your smooth-soled favourites stay home today.",
-      "Also snow. Otherwise you'll learn about grip the hard way, same as last winter.",
-      "Snow's in it too. Whatever's by the door is wrong; wear the proper boots."
+      "And snow, so pick grip over the pair you always pick.",
+      "Snow too. An umbrella won't help and neither will pretending.",
+      "Plus snow. Boots with tread, unless falling over publicly appeals.",
+      "Snow in it too, so your smooth-soled favourites stay home.",
+      "Also snow. Learn about grip now or the hard way again.",
+      "Snow's in it too, and whatever's by the door is wrong. Boots.",
+      "Snow too. Grip, or the pavement wins."
     ]
   }
 }
