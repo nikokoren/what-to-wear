@@ -42,54 +42,37 @@ subtly wrong, and getting them wrong sends someone out underdressed.
 
 ## The three voices
 
-Users pick a sarcasm level. The three must feel genuinely different or the
-setting is pointless — this is the most common way a translation comes out
-flat. Measured across the English corpus:
+[VOICE.md](VOICE.md) is the spec, and it is prescriptive. In short:
 
-| | words/line | addresses the reader | first person |
-|---|---|---|---|
-| `0` | 9.6 | 30% | 0% |
-| `10` | 10.8 | 24% | 0% |
-| `11` | 11.5 | 55% | 17% |
+| | The sentence is about | Stance |
+|---|---|---|
+| `0` | your day, and what you do about it | helpful, plain, kid-safe |
+| `10` | the *things* — jacket, umbrella, rain | deadpan observer of objects |
+| `11` | **you** — your habits, your optimism | savage, and usually right |
 
-**Level 0 — plain.** Says the thing and stops. Shortest lines. Kid-safe, no
-joke to get, nothing to decode. Someone reading it at 7am half-awake gets the
-information and moves on.
+The levels differ by **what the sentence is about**, not by how many jokes
+they contain. That is the test for every line. A level-10 line about the
+reader belongs at 11; a level-11 line about the weather belongs at 10.
 
-> The jacket comes off {WHEN}. Have a bag or a free arm ready.
+One rule outranks everything: **the fact is the joke's setup, not its
+neighbour.** Delete the humour from a line — if the advice went with it,
+rewrite. Level 11 is not worse advice delivered rudely; it is the same
+complete advice aimed at someone expected to ignore it.
 
-**Level 10 — dry.** Same information, wry about the *situation*. Note it
-addresses the reader *less* than level 0: the joke is aimed at the weather,
-the umbrella, the coat — not at the person. Understated, never mean.
+Read VOICE.md in full before writing. It has the per-level word counts, the
+banned constructions, and language-specific guidance — including, for German,
+the present-tense and modal-particle rules that keep it from reading like a
+translation.
 
-> You will want the jacket off {WHEN}. Your arm is the hook.
+Check your work with:
 
-**Level 11 — personal.** Turns on the reader. Longest lines, most direct
-address, keeps score, assumes they will ignore the advice and says so. In
-English it also has a narrator with opinions ("I am noting that you were
-warned") — that device is one way to do it, not a requirement. The German
-does not use first person at all and escalates instead through length and
-direct address. Either works. What must be true is that 11 is *more* than
-10, and aimed at the reader rather than the weather.
+```bash
+python3 tools/style_report.py <code>
+```
 
-> The jacket becomes dead weight {WHEN}. Wear something underneath you can
-> live with.
-
-Same scenario at all three levels, which is the comparison worth making:
-
-| | `precip_*.stays_wet` |
-|---|---|
-| `0` | It rains all day. The umbrella stays with you. |
-| `10` | No dry spell. The umbrella is on a double today. |
-| `11` | It rains all day. You and the umbrella are in this together. |
-
-Across all three levels the *advice never changes*. Level 11 is not worse
-advice delivered rudely — the reader still learns exactly when the rain
-starts and what to take. Humour is never at the cost of the information.
-
-Write level 0 first and get it right, then work up. The validator fails a
-file whose levels are identical to each other, because a copy-paste across
-levels silently removes a feature people paid attention to.
+It measures the things that went wrong last time: repeated openings, banned
+constructions, whether the five cooling keys share a frame, and whether your
+level 10 and 11 actually differ in who they are about.
 
 ## Lines are interchangeable
 
