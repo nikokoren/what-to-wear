@@ -95,8 +95,15 @@ def main():
     src = COMMENT.sub("", src)
     src = re.sub(r"\n{3,}", "\n\n", src).lstrip("\n")
 
+    # Deliberately the FROZEN pre-rewrite snapshot, not the live language
+    # files. These inlined copies only serve devices that have the new markup
+    # but not yet the texts polling URL; for them, "what they saw yesterday"
+    # is the correct output. Devices past that point read lang/<code>.json.
+    # It is also what keeps this build under the 100 KB ceiling: the rewritten
+    # corpus is larger and would not fit. See lang/.rollout-fallback/README.md.
+    fallback = REPO / "lang" / ".rollout-fallback"
     langs = {
-        code: json.loads((REPO / "lang" / f"{code}.json").read_text(encoding="utf-8"))
+        code: json.loads((fallback / f"{code}.json").read_text(encoding="utf-8"))
         for code in LANGS
     }
 

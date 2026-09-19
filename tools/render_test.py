@@ -1,18 +1,28 @@
 #!/usr/bin/env python3
 """
-Renders the shared markup against synthetic Open-Meteo payloads and proves
-the refactor is behaviour-preserving.
+Renders the shared markup against synthetic Open-Meteo payloads.
 
-The check that matters is REGRESSION: for the same weather, the same day and
-the same settings, the transitional markup reading its EMBEDDED libraries
-(what every device runs today) and the final markup reading the JSON language
-file (what devices run after the rollout) must produce a byte-identical tip.
-If that holds for every scenario, nobody sees the refactor happen.
+Three things are checked:
 
-It also checks the three degraded states that the rollout can pass through:
-  - final markup, no texts payload yet  -> no tip, no crash, sprite intact
-  - transitional markup, root payload   -> pre-migration behaviour
-  - transitional markup, IDX payload    -> post-migration behaviour
+1. THE TWO CODE PATHS AGREE. src/shared.liquid and the generated
+   src/shared.transitional.liquid must produce identical output given the
+   same language file and the same payload. They share their logic but not
+   their text lookup, so this is what stops one drifting from the other.
+
+2. THE ROLLOUT FALLBACK RENDERS. Transitional markup with a single-URL
+   payload has no IDX_1 to read and falls back to the text inlined from
+   lang/.rollout-fallback/. That path serves real devices during the window
+   between the markup update and the polling-URL update, so it has to
+   produce a complete sentence, not a blank.
+
+3. EVERY LANGUAGE RENDERS EVERY SCENARIO with no placeholder left
+   unsubstituted, no doubled spaces and no punctuation left dangling where
+   a token resolved to nothing.
+
+An earlier version of this file also asserted that the refactor was
+byte-identical to the pre-extraction markup. It was, and that is recorded in
+the history; the text has since been deliberately rewritten, so comparing
+the two corpora no longer means anything.
 
 Uses python-liquid, which is not the Ruby engine TRMNL runs, so this proves
 the logic and not the last 1% of engine quirks. Force Refresh in the TRMNL
@@ -166,37 +176,46 @@ def main():
                 for name, data in SCENARIOS.items():
                     cfg = settings(lang=lang, sarcasm=sarcasm)
                     texts = LANGS[lang]
+                    label = f"{lang}/{sarcasm}/day{day}/{name}"
 
-                    old_html, _ = render(
+                    # Both markups, same corpus, same payload shape: the two
+                    # code paths must agree exactly. This is what stops a
+                    # change to one of them drifting from the other.
+                    trans_html, _ = render(
                         env, "shared.transitional.liquid", "views/full.liquid",
-                        globals_for(data, None, cfg, "root", day),
+                        globals_for(data, texts, cfg, "idx", day),
                     )
-                    new_html, _ = render(
+                    final_html, _ = render(
                         env, "shared.liquid", "views/full.liquid",
                         globals_for(data, texts, cfg, "idx", day),
                     )
-
-                    old_tip = extract_tip(old_html)
-                    new_tip = extract_tip(new_html)
                     checked += 1
 
-                    label = f"{lang}/{sarcasm}/day{day}/{name}"
-                    if old_tip != new_tip:
+                    if extract_tip(trans_html) != extract_tip(final_html):
                         failures.append(
-                            f"TIP MISMATCH {label}\n"
-                            f"   before: {old_tip!r}\n"
-                            f"   after:  {new_tip!r}"
+                            f"PATHS DISAGREE {label}\n"
+                            f"   transitional: {extract_tip(trans_html)!r}\n"
+                            f"   final:        {extract_tip(final_html)!r}"
                         )
-                    if extract_sprite(old_html) != extract_sprite(new_html):
-                        failures.append(
-                            f"SPRITE MISMATCH {label}\n"
-                            f"   before: {extract_sprite(old_html)}\n"
-                            f"   after:  {extract_sprite(new_html)}"
-                        )
-                    if old_tip in (None, ""):
-                        failures.append(f"EMPTY TIP {label} - scenario produced no text")
+                    if extract_sprite(trans_html) != extract_sprite(final_html):
+                        failures.append(f"SPRITE MISMATCH {label}")
 
-    print(f"regression: {checked} render pairs compared ({', '.join(EMBEDDED_LANGS)})")
+                    # The rollout fallback: transitional markup on a device
+                    # that has the new markup but not yet the texts polling
+                    # URL. It must still render the pre-rewrite text rather
+                    # than nothing.
+                    fb_html, _ = render(
+                        env, "shared.transitional.liquid", "views/full.liquid",
+                        globals_for(data, None, cfg, "root", day),
+                    )
+                    fb_tip = extract_tip(fb_html)
+                    if not fb_tip:
+                        failures.append(f"NO FALLBACK TIP {label}")
+                    elif re.search(r"\{[A-Z0-9_]+\}", fb_tip):
+                        failures.append(f"FALLBACK UNSUBSTITUTED {label}: {fb_tip!r}")
+
+    print(f"code paths agree: {checked} render pairs ({', '.join(EMBEDDED_LANGS)})")
+    print(f"rollout fallback: {checked} renders off the pinned snapshot")
 
     # ---- every language renders every scenario with nothing left unfilled ----
     smoke = 0
@@ -243,17 +262,23 @@ def main():
     if "404.png" in html or "<img" not in html:
         failures.append("final markup without texts should still render the sprite")
 
-    # transitional markup, second polling URL has arrived
+    # Transitional markup in both payload shapes. The two tips are expected
+    # to DIFFER in wording: with IDX_1 present it reads the rewritten text
+    # from lang/, without it the pre-rewrite text inlined from the pinned
+    # snapshot. What matters is that both are complete sentences, so a device
+    # renders properly on either side of the polling-URL update.
     html_idx, _ = render(env, "shared.transitional.liquid", "views/full.liquid",
                          globals_for(data, LANGS["en"], cfg, "idx"))
     html_root, _ = render(env, "shared.transitional.liquid", "views/full.liquid",
                           globals_for(data, None, cfg, "root"))
-    if extract_tip(html_idx) != extract_tip(html_root):
-        failures.append(
-            "transitional markup must render the same tip in both payload shapes\n"
-            f"   idx:  {extract_tip(html_idx)!r}\n"
-            f"   root: {extract_tip(html_root)!r}"
-        )
+    for shape, html in (("idx", html_idx), ("root", html_root)):
+        tip = extract_tip(html)
+        if not tip:
+            failures.append(f"transitional markup rendered no tip in {shape} shape")
+        elif re.search(r"\{[A-Z0-9_]+\}", tip):
+            failures.append(f"transitional/{shape} left a placeholder: {tip!r}")
+    if extract_sprite(html_idx) != extract_sprite(html_root):
+        failures.append("transitional markup picked different sprites per payload shape")
 
     # missing weather entirely
     for tmpl in ("shared.liquid", "shared.transitional.liquid"):
@@ -284,7 +309,8 @@ def main():
             print(f"  ... and {len(failures) - 25} more")
         return 1
 
-    print("\nall good: the refactor is byte-identical on every scenario tested")
+    print("\nall good: both code paths agree, the rollout fallback renders,\n"
+          "and every language fills every scenario cleanly")
     return 0
 
 

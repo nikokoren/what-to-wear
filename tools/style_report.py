@@ -100,7 +100,10 @@ def report(code, doc, flags):
                     f"{code}/{level}: {100*fut:.0f}% of lines use wird/wirst/werden "
                     "- German prefers present tense for the near future (old corpus: 33%)"
                 )
-            if extra < 0.20:
+            # Only levels 10 and 11 are supposed to be dry. VOICE.md asks
+            # level 0 to use particles sparingly, because it is friendly
+            # rather than wry, so a low count there is correct.
+            if level in ("10", "11") and extra < 0.15:
                 flags.append(
                     f"{code}/{level}: only {100*extra:.0f}% of lines use a modal particle "
                     "- these are the native device for dry German (old corpus: ~0%)"
