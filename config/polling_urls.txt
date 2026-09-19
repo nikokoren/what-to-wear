@@ -1,0 +1,17 @@
+# TRMNL > Plugins > What to Wear > Polling URL
+#
+# Two lines, exactly. Line order is load-bearing: the markup reads the
+# weather from IDX_0 and the phrasing from IDX_1.
+#
+# Do NOT add the second line until the transitional markup has been
+# published and given time to reach installed devices. See
+# docs/MIGRATION.md.
+#
+# The texts URL uses jsDelivr rather than raw.githubusercontent.com on
+# purpose: raw serves .json as text/plain and is rate limited, jsDelivr
+# serves application/json from a CDN. jsDelivr caches @main for up to 12
+# hours, which is fine for copy that changes rarely; use a tag if you ever
+# need a faster or pinned rollout.
+
+https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
+https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@main/lang/##{{ language | default: 'en' }}.json

@@ -1,0 +1,49 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  languages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate language files
+        run: python3 tools/validate_lang.py
+
+      - name: Install Liquid engine
+        run: pip install --quiet python-liquid
+
+      - name: Check the transitional build is in sync
+        run: |
+          python3 tools/build_transitional.py
+          if ! git diff --quiet src/shared.transitional.liquid; then
+            echo "::error::src/shared.transitional.liquid is stale."
+            echo "Run: python3 tools/build_transitional.py, then commit the result."
+            git diff --stat src/shared.transitional.liquid
+            exit 1
+          fi
+
+      - name: Render every scenario in every language
+        run: python3 tools/render_test.py
+
+      - name: Check the markup fits TRMNL's size ceiling
+        run: |
+          fail=0
+          for f in src/shared.liquid src/shared.transitional.liquid; do
+            size=$(wc -c < "$f")
+            printf '%-36s %7d bytes' "$f" "$size"
+            if [ "$size" -gt 100000 ]; then
+              printf '  OVER THE 100 KB CEILING\n'
+              fail=1
+            else
+              printf '  ok (%d spare)\n' "$((100000 - size))"
+            fi
+          done
+          exit $fail

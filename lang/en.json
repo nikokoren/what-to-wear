@@ -1,0 +1,720 @@
+{
+  "$schema": "../lang/schema.json",
+  "meta": {
+    "code": "en",
+    "name": "English",
+    "schema": 1
+  },
+  "ui": {
+    "error_current": "Unable to retrieve weather data. Please try again later.",
+    "error_hourly": "Unable to load forecast data. Please try again later.",
+    "error_short": "Could not read weather data"
+  },
+  "garments": {
+    "n": [
+      "The scarf",
+      "The coat",
+      "The jacket",
+      "The hoodie",
+      "The sweatshirt"
+    ],
+    "a": [
+      "the scarf",
+      "the coat",
+      "the jacket",
+      "the hoodie",
+      "the sweatshirt"
+    ]
+  },
+  "buckets": [
+    "this morning",
+    "around midday",
+    "this afternoon",
+    "this evening",
+    "tonight"
+  ],
+  "relative": [
+    "in an hour",
+    "in two hours",
+    "in three hours"
+  ],
+  "temp_0": {
+    "perfect": [
+      "You are set for the day. No layer to add or remove.",
+      "The outfit works for the rest of the day.",
+      "No changes ahead, so you are good as you are.",
+      "Conditions hold steady. The outfit works from here on.",
+      "The temperature sits still today. Wear what you have on.",
+      "Steady all day, so nothing about the outfit has to change."
+    ],
+    "arc_colder": [
+      "{GARMENT} comes off {WHEN} and is wanted again {WHEN2}. Today ends colder, so take an extra layer.",
+      "{GARMENT} comes off {WHEN}. You will want it back {WHEN2}, and something warmer on top.",
+      "{GARMENT} comes off for a few hours and goes back on later. The day ends colder than now, so pack a warmer layer.",
+      "{GARMENT} comes off {WHEN}, then returns {WHEN2}. It ends colder than it is now, so bring more than you are wearing.",
+      "{GARMENT} comes off {WHEN} and will not be enough on its own {WHEN2}."
+    ],
+    "arc_level": [
+      "{GARMENT} comes off {WHEN} and is wanted again {WHEN2}.",
+      "You will want {GARMENTA} off {WHEN} and back again {WHEN2}.",
+      "{GARMENT} comes off for a few hours and goes back on later. Keep it with you.",
+      "{GARMENT} comes off {WHEN}, then returns {WHEN2}.",
+      "Lose {GARMENTA} {WHEN} but have it close by {WHEN2}."
+    ],
+    "arc_warmer": [
+      "{GARMENT} comes off {WHEN} and does not need to go back on.",
+      "You can lose {GARMENTA} {WHEN}. It stays warm enough after that.",
+      "{GARMENT} comes off during the day and stays off.",
+      "{GARMENT} comes off {WHEN}. There is a dip later, but not enough to want it back.",
+      "You are done with {GARMENTA} {WHEN}. It stays warm enough for the rest of the day.",
+      "{GARMENT} comes off once and stays off. No extra layer needed after that."
+    ],
+    "w_scarf": [
+      "The scarf can come off {WHEN}. Everything else stays on.",
+      "You will not need the scarf {WHEN}.",
+      "The scarf comes off {WHEN}. The coat stays on.",
+      "It gets mild enough to lose the scarf {WHEN}.",
+      "The scarf comes off later. Nothing else changes."
+    ],
+    "w_coat": [
+      "The coat comes off {WHEN}. You will be carrying it after that.",
+      "The coat can come off {WHEN}.",
+      "The coat comes off before the day is out, and you carry it from there.",
+      "The coat is more than you need {WHEN}.",
+      "You will be out of coat weather {WHEN}. Have a way to carry it.",
+      "You will be carrying the coat by the end of the day."
+    ],
+    "w_jacket": [
+      "You will want the jacket off {WHEN}.",
+      "The jacket comes off {WHEN}. Have a bag or a free arm ready.",
+      "The jacket stops being needed later today.",
+      "It turns warm enough for the jacket to come off {WHEN}.",
+      "The jacket comes off {WHEN} and rides along after that.",
+      "Expect to be holding the jacket rather than wearing it later."
+    ],
+    "w_hoodie": [
+      "The hoodie comes off partway through the day.",
+      "The hoodie comes off {WHEN}. Make sure you can carry it.",
+      "You can drop the hoodie {WHEN}.",
+      "It gets mild enough for the hoodie to come off {WHEN}.",
+      "The hoodie is done {WHEN}, and then it is yours to carry."
+    ],
+    "w_sweatshirt": [
+      "It gets warm enough to lose the sweatshirt {WHEN}.",
+      "The sweatshirt comes off {WHEN}. You will want somewhere to put it.",
+      "The sweatshirt comes off later and travels with you.",
+      "You can take the sweatshirt off {WHEN}.",
+      "The sweatshirt comes off {WHEN} and stays off.",
+      "The sweatshirt stops being needed later."
+    ],
+    "w_water": [
+      "It gets hotter {WHEN} and there is nothing left to take off. Take water and find shade.",
+      "Nothing left to remove {WHEN}. Be sure to hydrate.",
+      "It gets hotter later. Take a bottle with you and stay out of the sun.",
+      "The heat builds {WHEN}. Water and shade do the work now.",
+      "There is nothing left to shed {WHEN}. Keep water on you.",
+      "The heat keeps climbing later. Refill the bottle when you can."
+    ],
+    "c_scarf": [
+      "It gets cold enough for a scarf {WHEN}. Take one with you.",
+      "A scarf becomes worth having {WHEN}.",
+      "It turns scarf cold later, so put one in your pocket.",
+      "The coat alone stops being enough {WHEN}. Take a scarf.",
+      "Scarf weather arrives {WHEN}. Take one along.",
+      "Your neck will want covering later. Bring a scarf."
+    ],
+    "c_coat": [
+      "Winter coat weather starts {WHEN}. Bring yours.",
+      "The heavy coat earns its place {WHEN}. Take it along.",
+      "A light jacket will not be enough later. Take the winter coat.",
+      "The cold sharpens {WHEN}. The winter coat is the right call.",
+      "The temperature falls into winter coat range {WHEN}. Take yours with you.",
+      "It turns properly cold later, so bring the winter coat."
+    ],
+    "c_jacket": [
+      "It drops to jacket weather {WHEN}. Take one with you.",
+      "You will want a jacket {WHEN}. Bring one.",
+      "A hoodie will not be enough later. Take a jacket.",
+      "The temperature drops into jacket range {WHEN}. Put one in your bag.",
+      "Jacket weather starts {WHEN}. Have one with you.",
+      "A jacket is worth carrying today. You will be glad of it later."
+    ],
+    "c_hoodie": [
+      "Hoodie weather arrives {WHEN}. Bring one.",
+      "It gets cool enough for a hoodie {WHEN}. Slip one in your bag.",
+      "What you have on stops being enough {WHEN}. Bring another layer.",
+      "A hoodie becomes the right layer {WHEN}.",
+      "It cools into hoodie territory later. Do not leave yours at home.",
+      "The cool sets in later on. Take an extra layer with you."
+    ],
+    "c_sweatshirt": [
+      "It drops to sweatshirt weather {WHEN}. Keep one in your bag.",
+      "Bare arms stop being comfortable {WHEN}. Take a sweatshirt.",
+      "It cools to sweatshirt weather later. Bring one along.",
+      "It turns cool enough for sleeves {WHEN}. A sweatshirt does it.",
+      "Sweatshirt weather turns up {WHEN}. Bring yours.",
+      "The warmth does not last all day. Pack a sweatshirt."
+    ],
+    "c_relief": [
+      "It eases off {WHEN} but stays warm. No extra layer needed.",
+      "The worst of the heat passes {WHEN}. What you have on still works.",
+      "It cools later, but stays warm enough for the outfit you have on.",
+      "It cools down {WHEN}, but you should be OK with what you have.",
+      "The heat backs off {WHEN}. Your outfit stays right either way."
+    ]
+  },
+  "precip_0": {
+    "wetter_maybe": [
+      "Rain is possible {WHENP}. The umbrella is worth taking.",
+      "It might turn wet {WHENP}. The umbrella covers you either way.",
+      "There is a chance of rain later. Take the umbrella.",
+      "A shower is possible {WHENP}. Better to have the umbrella than not.",
+      "Maybe rain later, maybe not. The umbrella is the safe answer.",
+      "Rain could arrive {WHENP}. Put the umbrella in your bag."
+    ],
+    "wetter_maybe_j": [
+      "Rain is possible later, so take the umbrella.",
+      "There is a chance of rain later, so bring the umbrella.",
+      "Bring the umbrella too, since rain is possible.",
+      "A shower might arrive later, so bring the umbrella.",
+      "Take the umbrella as well, just in case.",
+      "Possible rain later, so the umbrella is worth having."
+    ],
+    "wetter": [
+      "Rain comes {WHENP}. Put the umbrella in your bag.",
+      "Take the umbrella, you will want it {WHENP}.",
+      "It turns wet {WHENP}. Take the umbrella.",
+      "Rain arrives {WHENP}. Take the umbrella.",
+      "Take the umbrella. Rain is coming later.",
+      "Rain is due {WHENP}. Bring the umbrella."
+    ],
+    "wetter_j": [
+      "Take the umbrella too, rain is coming.",
+      "Rain arrives later, so take the umbrella.",
+      "It turns wet later, so bring the umbrella.",
+      "You will want the umbrella later as well.",
+      "Rain is coming, so put the umbrella in your bag.",
+      "Bring the umbrella as well, it gets wet later."
+    ],
+    "wetter_long": [
+      "Rain starts {WHENP} and stays for hours. Take the umbrella.",
+      "It turns wet {WHENP} and stays that way. The umbrella is worth the space.",
+      "Long rain later. Take the umbrella and expect to use it.",
+      "Rain arrives {WHENP} and settles in for the rest of the day. Bring the umbrella.",
+      "Hours of rain follow {WHENP}. Pack the umbrella.",
+      "Rain settles {WHENP} and lasts. Take the umbrella."
+    ],
+    "wetter_long_j": [
+      "Rain arrives later and stays for hours, so take the umbrella.",
+      "Take the umbrella too, the rain lasts most of the rest of the day.",
+      "Hours of rain follow later, so bring the umbrella.",
+      "The umbrella is worth taking, because the rain does not pass quickly.",
+      "Long rain later, so pack the umbrella.",
+      "Bring the umbrella as well, the wet part lasts a while."
+    ],
+    "drier": [
+      "The rain clears later. The umbrella gets a rest.",
+      "It dries out later.",
+      "Rain now, dry after that. You can put the umbrella away later.",
+      "It stops raining before the day is out.",
+      "The wet part is early. It clears after that.",
+      "The rain runs out later, and the umbrella can come down."
+    ],
+    "drier_j": [
+      "The rain clears later.",
+      "It dries out before the day is out.",
+      "The umbrella is only needed early on.",
+      "And it stops raining later.",
+      "The wet part does not last.",
+      "It turns dry again later, so the umbrella can go away."
+    ],
+    "stays_wet": [
+      "It rains all day. The umbrella stays with you.",
+      "No dry window today.",
+      "Wet all day. The umbrella does not get a break.",
+      "The rain has no gaps in it today. Keep the umbrella up.",
+      "It stays wet right through. Expect to keep the umbrella open.",
+      "The rain carries on for the rest of the day."
+    ],
+    "stays_wet_j": [
+      "The rain does not stop today, so keep the umbrella up.",
+      "The umbrella stays in use all day.",
+      "The rain keeps going all day.",
+      "And it stays wet right through.",
+      "No dry spell later, so the umbrella stays open.",
+      "It rains for the rest of the day as well."
+    ],
+    "snow_coming": [
+      "Snow arrives {WHENP}.",
+      "Snow comes {WHENP}.",
+      "Snow later.",
+      "It starts snowing {WHENP}.",
+      "Snow is due {WHENP}.",
+      "It turns to snow later. Give yourself extra time."
+    ],
+    "snow_coming_j": [
+      "Snow comes later.",
+      "Snow is on the way.",
+      "And snow later.",
+      "It snows later.",
+      "Snow arrives later.",
+      "Then it turns to snow."
+    ]
+  },
+  "temp_10": {
+    "perfect": [
+      "The weather has made its one decision for the day. What you have on covers it.",
+      "No changes coming. Enjoy the rare day where getting dressed was the hard part.",
+      "Same weather all day. The outfit is done thinking.",
+      "The sky has one setting today and it is stuck on it.",
+      "Steady all day. You picked the right thing, or you did not, and now you are committed.",
+      "One outfit, no revisions."
+    ],
+    "arc_colder": [
+      "{GARMENT} comes off {WHEN} and is back {WHEN2}, by which point it is not enough. Take a warmer layer too.",
+      "You lose {GARMENTA} {WHEN} and want it again {WHEN2}, plus something over the top.",
+      "{GARMENT} does a round trip and comes back to a colder day than it left. Bring an extra layer.",
+      "It warms up {WHEN}, then goes past cold {WHEN2}. Pack more than you have on.",
+      "{GARMENT} is back {WHEN2} and losing. Bring a layer to go on top.",
+      "Warm in the middle, colder at the end. Whatever you take, take more of it."
+    ],
+    "arc_level": [
+      "{GARMENT} comes off {WHEN} and is back {WHEN2}. Do not leave it anywhere.",
+      "{GARMENT} does both halves of the day. Keep hold of it in between.",
+      "{GARMENT} gets a few hours off {WHEN} and is wanted again {WHEN2}.",
+      "{GARMENT} is out {WHEN} and back {WHEN2}, with no explanation offered.",
+      "{GARMENT} ends up exactly where it started. The hours in between are the only difference.",
+      "Off, then on again. It goes where you go."
+    ],
+    "arc_warmer": [
+      "{GARMENT} comes off {WHEN} and that is the last of it.",
+      "{GARMENT} comes off later and does not come back.",
+      "{GARMENT} comes off {WHEN} and stays off. It gets cooler later, but not enough to matter.",
+      "You are done with {GARMENTA} {WHEN}. Properly done.",
+      "{GARMENT} is finished {WHEN}. Nothing later asks for it.",
+      "One layer off, and that is the day."
+    ],
+    "w_scarf": [
+      "The scarf comes off {WHEN}. That is the whole event.",
+      "The scarf gets the rest of the day off {WHEN}.",
+      "One scarf lighter, and the coat carries on as before.",
+      "The scarf comes off {WHEN}. The coat did not even get a look in.",
+      "Mild enough to lose the scarf {WHEN}. Do not get ambitious.",
+      "The scarf is the only thing coming off."
+    ],
+    "w_coat": [
+      "The coat comes off {WHEN}. Then it is just a big warm thing in your arms.",
+      "Warm enough to lose the coat {WHEN}. Bad luck for whichever arm gets it.",
+      "You will be carrying that coat later, and it is not a small coat.",
+      "The coat is done {WHEN}. It still wants a lift home.",
+      "It gets too warm for the coat {WHEN}. That is one hand gone.",
+      "The coat spends the back half of the day as luggage."
+    ],
+    "w_jacket": [
+      "The jacket comes off {WHEN} and spends the rest of the day over your arm.",
+      "You will want the jacket off {WHEN}. Your arm is the hook.",
+      "The jacket stops being clothing later and starts being something you are holding.",
+      "Warm enough to drop the jacket {WHEN}. It does not walk itself home.",
+      "The jacket is finished {WHEN}, well before you are.",
+      "The jacket comes off early and hangs about after that."
+    ],
+    "w_hoodie": [
+      "The hoodie comes off {WHEN}. Round your waist it goes, whether you like that or not.",
+      "You will want the hoodie off {WHEN}. It does not fold small.",
+      "The hoodie comes off later and ties round your waist, like everyone else's.",
+      "Too warm for the hoodie {WHEN}. Sleeves round the middle it is.",
+      "The hoodie is done {WHEN}. Where it goes is your problem.",
+      "The hoodie ends up round your waist. It always does."
+    ],
+    "w_sweatshirt": [
+      "The sweatshirt comes off {WHEN} and lives on your forearm after that.",
+      "You will be peeling the sweatshirt off {WHEN}. It comes with you anyway.",
+      "The sweatshirt stops being useful later and starts being carried.",
+      "Warm enough to lose the sweatshirt {WHEN}. Somewhere to put it would help.",
+      "The sweatshirt is done {WHEN}. It still takes up an arm.",
+      "The sweatshirt spends the rest of the day over your arm."
+    ],
+    "w_water": [
+      "It gets hotter {WHEN} and there is nothing left to take off. Water and shade from here.",
+      "Serious heat later. Drink more than you think you need.",
+      "The clothes have done all they can. Carry water.",
+      "Nothing left to shed {WHEN}. Take a bottle instead.",
+      "It gets hotter {WHEN}. No outfit is winning this, so carry water.",
+      "Out of layers to lose. Water does the rest."
+    ],
+    "c_scarf": [
+      "It gets scarf cold {WHEN}. The coat covers everything except the bit that complains.",
+      "Scarf weather {WHEN}. Nobody has covered your neck but you.",
+      "It turns scarf cold later. Take one, unless you like a draught down your collar.",
+      "Scarf weather {WHEN}. A raised collar is not a scarf.",
+      "It gets cold enough for a scarf {WHEN}. The coat does the shouting, the scarf does the work.",
+      "Scarf cold later. Your neck is on its own otherwise."
+    ],
+    "c_coat": [
+      "It drops to winter coat weather {WHEN}. A light jacket is not in this.",
+      "Winter coat weather {WHEN}. The light one has heart and no insulation.",
+      "It gets properly cold later. Take the heavy coat, not the hopeful one.",
+      "Winter coat weather {WHEN}. Bring the big one.",
+      "It turns properly cold {WHEN}. The light jacket will not manage it.",
+      "Coat weather later. The heavy one, not the nice one."
+    ],
+    "c_jacket": [
+      "Jacket weather {WHEN}. A hoodie is not going to cut it.",
+      "It gets jacket cold later. Be the one who brought one.",
+      "Jacket weather {WHEN}. Yours is on the hook, being no help at all.",
+      "It drops to jacket weather {WHEN}. Pack one before you talk yourself out of it.",
+      "Jacket cold {WHEN}. A hoodie is a guess, a jacket is an answer.",
+      "Jacket cold later. Take one and be smug about it."
+    ],
+    "c_hoodie": [
+      "It drops to hoodie weather {WHEN}. Take one, unless goosebumps are the goal.",
+      "Hoodie weather {WHEN}. Yours is folded at home, helping nobody.",
+      "It gets cool enough for a hoodie later. Bring one and stop thinking about it.",
+      "Hoodie weather {WHEN}. What you have on runs out of ideas.",
+      "It turns hoodie cool {WHEN}. Pack one and skip the argument with yourself.",
+      "Hoodie cold later. You will want the hood, not just the sleeves."
+    ],
+    "c_sweatshirt": [
+      "It drops to sweatshirt weather {WHEN}. Take one, unless you enjoy shivering on the way back.",
+      "Sweatshirt weather {WHEN}. Yours is on the chair where you left it.",
+      "It gets sweatshirt cold later. Your arms will make the case before you do.",
+      "Sweatshirt weather {WHEN}. Pack one before the day makes the point for you.",
+      "It turns cool {WHEN}. Sleeves are the right answer.",
+      "Sweatshirt cold later. Bare arms have had their day."
+    ],
+    "c_relief": [
+      "It backs off {WHEN}, from unbearable down to warm.",
+      "It eases {WHEN}. Do not get excited, it is still hot.",
+      "The heat lets up later and stays on. No layer worth adding.",
+      "It cools {WHEN}, technically. Nothing about the outfit changes.",
+      "The heat loses interest {WHEN}. Warm is the best on offer.",
+      "Less hot later. That is the whole news."
+    ]
+  },
+  "precip_10": {
+    "wetter_maybe": [
+      "Rain is a maybe {WHENP}. The umbrella is the cheap option.",
+      "The sky is undecided {WHENP}. Take the umbrella and settle it.",
+      "Rain is possible later. An umbrella you did not need beats the other way round.",
+      "Decent chance of rain {WHENP}. Worth covering.",
+      "It might rain {WHENP}. Small effort now, or a wet walk later.",
+      "Maybe rain later. Take the umbrella and dare it."
+    ],
+    "wetter_maybe_j": [
+      "Possible rain later, so take the umbrella while you are at it.",
+      "Rain is on the cards later.",
+      "Add the umbrella, in case the forecast means it this time.",
+      "Take the umbrella too, just in case.",
+      "There is a decent chance of rain later.",
+      "Bring the umbrella as well and dare it to rain."
+    ],
+    "wetter": [
+      "The sky opens {WHENP}. Take the umbrella.",
+      "Take the umbrella. The sky has form for this.",
+      "Rain shows up {WHENP} without telling anybody.",
+      "Rain is coming later and it does not knock. Take the umbrella.",
+      "It turns wet {WHENP}. Umbrella, then.",
+      "Rain turns up {WHENP}, uninvited as usual."
+    ],
+    "wetter_j": [
+      "Take the umbrella too, unless you like the damp.",
+      "Rain arrives later, so give the umbrella something to do.",
+      "Bring the umbrella as well, the sky is not on your side.",
+      "And the umbrella, because the sky cannot be trusted.",
+      "It turns wet later, so the umbrella comes too.",
+      "Pack the umbrella too, the sky has other plans."
+    ],
+    "wetter_long": [
+      "Rain starts {WHENP} and works the full day.",
+      "It turns wet {WHENP} and does not knock off early.",
+      "Hours of rain later. The umbrella finally earns its keep.",
+      "Rain arrives {WHENP} and settles in properly.",
+      "Long rain later. The umbrella is about to do the most work it has done all year.",
+      "Rain sets up {WHENP} and does not move."
+    ],
+    "wetter_long_j": [
+      "Take the umbrella as well, the rain is in no hurry.",
+      "Long rain later, so the umbrella earns its keep.",
+      "Pack the umbrella, because the wet part does not clear quickly.",
+      "Rain runs long later, so the umbrella comes too.",
+      "Add the umbrella, it will be open for hours.",
+      "Bring the umbrella too, this one lasts."
+    ],
+    "drier": [
+      "The rain knocks off early. The umbrella is nearly done.",
+      "Rain now, nothing later. One shift and the umbrella is finished.",
+      "It dries out before the day is out. After that the umbrella is just something you are holding.",
+      "The rain gives up early and does not come back.",
+      "Short shift for the rain today.",
+      "It clears later. The umbrella can come down after that."
+    ],
+    "drier_j": [
+      "The rain knocks off later, and the umbrella with it.",
+      "It quits later, leaving the umbrella with nothing to do.",
+      "And it clears up later, so the umbrella can come down.",
+      "The wet part finishes early.",
+      "Then the rain stops and the umbrella goes idle.",
+      "It dries out later, well before you do."
+    ],
+    "stays_wet": [
+      "No dry spell. The umbrella is on a double today.",
+      "It rains all day. Make peace with the umbrella.",
+      "Wet from start to finish. The umbrella has no way out.",
+      "The rain does not take breaks, and neither does the umbrella.",
+      "The rain has pulled a double. So have you.",
+      "All day, no let-up, no handover."
+    ],
+    "stays_wet_j": [
+      "The rain works the full day, and so does the umbrella.",
+      "There is no let-up coming, so the umbrella stays up.",
+      "The umbrella gets no break today.",
+      "No dry spell later, and the umbrella knows it.",
+      "And the rain has nowhere else to be.",
+      "Wet the whole way, start to finish."
+    ],
+    "snow_coming": [
+      "Snow arrives {WHENP}. Grip becomes optional.",
+      "It turns to snow {WHENP}, and the ground stops helping.",
+      "Snow later. Walking becomes a skill again.",
+      "Snow shows up {WHENP} and takes the traction with it.",
+      "It snows {WHENP}. Your shoes are about to find out.",
+      "Snow takes hold {WHENP}. Nothing grips after that."
+    ],
+    "snow_coming_j": [
+      "Snow later, and grip goes with it.",
+      "Snow arrives later, so allow for the slide.",
+      "It snows later, and the ground stops helping.",
+      "Then it turns to snow, and traction is optional.",
+      "And snow later, with less grip to go round.",
+      "Snow follows later, gravity included."
+    ]
+  },
+  "temp_11": {
+    "perfect": [
+      "Nothing changes. You have already made every decision this day will give you.",
+      "Same weather for hours. You will remember none of it.",
+      "I checked twice. Nothing happens.",
+      "No changes coming. This is it.",
+      "You will wear this all day and it will be fine, which is the most that can be said.",
+      "Steady all day. The weather has nothing planned for you either way."
+    ],
+    "arc_colder": [
+      "{GARMENT} comes off {WHEN}, goes back {WHEN2}, and still loses. Take something warmer.",
+      "You get a few warm hours {WHEN} and pay for them {WHEN2}. Pack more than you are wearing.",
+      "{GARMENT} comes back later and is not enough. Bring something to go over it.",
+      "{GARMENT} is back {WHEN2} on a day that has moved on without it. Bring more.",
+      "I am noting that you were warned about the cold end of this.",
+      "You finish colder than you started, wearing everything you brought."
+    ],
+    "arc_level": [
+      "{GARMENT} comes off {WHEN} and goes back {WHEN2}. You carried it the whole time.",
+      "You take it off and put it back on for a day that ends where it began. Keep {GARMENTA} with you.",
+      "{GARMENT} leaves {WHEN} and is dragged back {WHEN2}. Nobody wins.",
+      "You lose {GARMENTA} {WHEN} and want it again {WHEN2}, none the wiser.",
+      "I have seen this day before. It goes nowhere.",
+      "A whole round trip, and the thermometer ends where it started."
+    ],
+    "arc_warmer": [
+      "You take {GARMENTA} off {WHEN} and nothing asks for it again.",
+      "You lose {GARMENTA} {WHEN}. It gets cooler later and you will not care.",
+      "{GARMENT} comes off once and you carry it home out of habit.",
+      "{GARMENT} is finished {WHEN}. You will miss it less than you think.",
+      "I would leave it behind. You will not, and I have watched you not do it before.",
+      "One layer lighter. Enjoy it, that is the whole improvement."
+    ],
+    "w_scarf": [
+      "You get to lose the scarf {WHEN}. Read nothing into it.",
+      "The cold goes from bad to slightly less bad. The scarf comes off, nothing else does.",
+      "One scarf off, and you wear the rest of it all day.",
+      "The scarf is free {WHEN}. You are not.",
+      "I would take the scarf off too. It is the only part of this I get to hand back.",
+      "Your neck gets out. The rest of you stays in."
+    ],
+    "w_coat": [
+      "The coat stops being useful {WHEN} and starts being your problem. Wear something decent underneath.",
+      "You will carry that coat with both arms {WHEN} and look like you are moving house.",
+      "The coat comes off before the day is out, and then it is yours to lug around.",
+      "I would put it in a bag. I do not have arms, so take that with a pinch of salt.",
+      "The coat goes home in your hands, warm and useless.",
+      "It gets too warm for the coat {WHEN}. That is one hand gone for the rest of the day."
+    ],
+    "w_jacket": [
+      "You will carry the jacket instead of wearing it {WHEN}, and resent it.",
+      "The jacket becomes dead weight {WHEN}. Wear something underneath you can live with.",
+      "The jacket is finished long before you are. You take it home anyway.",
+      "You will want your hands free {WHEN}. One of them will have a jacket in it.",
+      "I am writing down that the jacket was your idea.",
+      "The jacket spends the rest of the day sweating on your arm."
+    ],
+    "w_hoodie": [
+      "The hoodie comes off {WHEN} and goes round your waist. That is the look now.",
+      "You will take it off {WHEN} and carry it for hours. This was avoidable.",
+      "The hoodie comes off later and follows you around as one more thing to lose.",
+      "Too warm for the hoodie {WHEN}, and too attached to leave it anywhere.",
+      "I would tie it round my waist. I do not have a waist, so ignore me.",
+      "Sleeves knotted at your middle, all the way back."
+    ],
+    "w_sweatshirt": [
+      "You will hate the sweatshirt {WHEN} and you will still be holding it.",
+      "The sweatshirt comes off {WHEN}. Wear something underneath you have made peace with.",
+      "The sweatshirt stops helping later and never leaves your side.",
+      "Warm, then hot, then stuck with a sweatshirt you cannot put down.",
+      "I have the time you put it on. I will have the time you regret it.",
+      "Off your back and onto your arm. That is the whole upgrade."
+    ],
+    "w_water": [
+      "Nothing you own helps {WHEN}. Take water and low expectations.",
+      "You run out of things to take off {WHEN}. Water and shade from there.",
+      "You will be out of options long before the heat is. Carry a bottle.",
+      "The heat carries on past the point where clothes matter. Take water.",
+      "I would drink more than you are planning to. I do not sweat, so I can afford to say that.",
+      "The heat wins {WHEN}. The bottle is all you have left."
+    ],
+    "c_scarf": [
+      "It gets scarf cold {WHEN}. You will find out which bits the coat never covered.",
+      "Scarf weather {WHEN}. The cold goes looking for skin and you are carrying some.",
+      "It gets cold enough for a scarf later. Every gap you left gets found.",
+      "Scarf weather {WHEN}. Your collar is not going to cope.",
+      "I am noting that the scarf was available and stayed on its hook.",
+      "Bare neck, long walk."
+    ],
+    "c_coat": [
+      "It drops to winter coat weather {WHEN}. The light jacket gives up and leaves you to it.",
+      "Winter coat weather {WHEN}. You will feel it long before you admit it.",
+      "It gets properly cold later. Take the heavy coat, or spend the walk back regretting the light one.",
+      "Winter coat weather {WHEN}. Everything else you own is just an opinion.",
+      "I would take the heavy one. I also do not have fingers to lose.",
+      "Properly cold {WHEN}. You can be warm or you can be stubborn."
+    ],
+    "c_jacket": [
+      "Jacket weather {WHEN}, and yours is at home. Take it now.",
+      "Jacket weather {WHEN}. You notice it in your hands first, then everywhere else.",
+      "It gets jacket cold later. Go without and the walk back explains why.",
+      "It drops to jacket weather {WHEN}. The hoodie will not hold, and neither will you.",
+      "I am putting this down as a warning given.",
+      "Jacket cold later. Take one or do not, but you were told."
+    ],
+    "c_hoodie": [
+      "It drops to hoodie weather {WHEN}. What you have on stops being enough and you notice slowly.",
+      "Hoodie weather {WHEN}. Yours is somewhere else and it will stay there.",
+      "It gets cool enough for a hoodie later. Leaving it behind is a slow regret.",
+      "Hoodie weather {WHEN}. You will think about the hood in particular.",
+      "I am writing the hoodie down, because you will not.",
+      "It turns hoodie cool {WHEN}. Your shoulders complain before you do."
+    ],
+    "c_sweatshirt": [
+      "It drops to sweatshirt weather {WHEN}. Bring one, or count the minutes back without it.",
+      "Sweatshirt weather {WHEN}. Yours is at home, and I know because you left it there.",
+      "It gets sweatshirt cold later. You will be fine, in the way people say they are fine.",
+      "Sweatshirt weather {WHEN}. The day collects what you did not pack.",
+      "It turns cool {WHEN}. Bring one, or spend the walk back thinking about it.",
+      "Your own arms are building the case against you."
+    ],
+    "c_relief": [
+      "The heat backs off {WHEN}, beaten but not gone.",
+      "It goes from unbearable to tolerable {WHEN}. That is the whole concession.",
+      "It eases later and stays warm. The outfit does not change.",
+      "The heat retreats {WHEN} without apologising for any of it.",
+      "I would not call this relief. I would call it less.",
+      "Less unbearable later. You had already lowered the bar."
+    ]
+  },
+  "precip_11": {
+    "wetter_maybe": [
+      "Rain is possible {WHENP}. You either carry the umbrella or you are wrong in public.",
+      "It might rain {WHENP}. The odds are not the point.",
+      "Rain is a coin flip later, and you have lost coin flips before.",
+      "There is a chance of rain {WHENP}. Take the umbrella or take the consequences.",
+      "I would take it. I am not the one who gets wet.",
+      "Maybe rain later. You will be checking the sky all day instead."
+    ],
+    "wetter_maybe_j": [
+      "Rain is possible later, and hoping has never worked.",
+      "Rain might come later, so decide now.",
+      "I would take the umbrella. I do not get wet either way.",
+      "Take the umbrella too, or explain it to yourself later.",
+      "There is a chance of rain later as well.",
+      "Bring the umbrella too, on the off chance."
+    ],
+    "wetter": [
+      "Take the umbrella, you will want it {WHENP}.",
+      "The sky opens {WHENP}. Take the umbrella or be a lesson to others.",
+      "Rain arrives {WHENP} whether you packed for it or not.",
+      "Rain is coming later. Take the umbrella, or be the one person out there without one.",
+      "I would take the umbrella. Then again, I do not get wet.",
+      "It turns wet {WHENP}. Short, but wet."
+    ],
+    "wetter_j": [
+      "Take the umbrella too.",
+      "Bring the umbrella as well, the day is not negotiating.",
+      "And the umbrella, or be the one person without one.",
+      "Rain arrives later, and it will find you.",
+      "I am noting that you were told.",
+      "Pack the umbrella too, this one is already decided."
+    ],
+    "wetter_long": [
+      "Rain starts {WHENP} and does not stop for hours.",
+      "Take the umbrella. What arrives {WHENP} will outlast your patience.",
+      "Hours of rain later. Take the umbrella and settle in.",
+      "It turns wet {WHENP} and stays wet.",
+      "I hope you like the umbrella. You are spending hours together.",
+      "Long rain later. There is no waiting this one out."
+    ],
+    "wetter_long_j": [
+      "Take the umbrella too, the rain has hours of it planned.",
+      "Long rain later, and waiting it out will not work.",
+      "Rain runs long later, and it will outlast you.",
+      "And hours of rain, so bring the umbrella.",
+      "Bring the umbrella as well, this one does not pass.",
+      "I am putting this one down as hours, not minutes."
+    ],
+    "drier": [
+      "The rain gives up before you do.",
+      "It dries out later, and you carry a damp umbrella around for the rest of it.",
+      "The rain stops eventually. Your shoes stay wet.",
+      "Rain now, nothing later. The umbrella comes home dripping either way.",
+      "I will admit it stops. The wet umbrella still comes home with you.",
+      "It clears later, and the umbrella drips on your leg the whole way back."
+    ],
+    "drier_j": [
+      "The rain stops later.",
+      "It clears during the day, leaving you a damp umbrella to hold.",
+      "And it dries out later, too late for your shoes.",
+      "The wet part ends, the damp umbrella does not.",
+      "I will give you the ending. The damp stays.",
+      "It quits later, having made its point."
+    ],
+    "stays_wet": [
+      "It rains all day. You and the umbrella are in this together.",
+      "There is no let-up. Your shoes find out first.",
+      "Wet all day. You will forget what dry socks feel like.",
+      "Rain from the first step to the last.",
+      "I have checked the whole day. There is no gap in it.",
+      "The rain does the full day. So do you."
+    ],
+    "stays_wet_j": [
+      "The rain keeps going, and the umbrella never leaves your hand.",
+      "Wet all day, and dry shoes are tomorrow's problem.",
+      "And no let-up, so your socks lose either way.",
+      "It stays wet, hour after hour.",
+      "I would not wait for a gap. There is not one.",
+      "Then more rain, and more after that."
+    ],
+    "snow_coming": [
+      "Snow arrives {WHENP}. Gravity is undefeated.",
+      "It turns to snow {WHENP}, and the pavement stops taking your side.",
+      "Snow later. Every step gets a bit of thought.",
+      "Snow starts {WHENP}. Your shoes have no say in it.",
+      "I would take it slowly. I also do not have knees to lose.",
+      "It snows {WHENP}. The ground has already decided."
+    ],
+    "snow_coming_j": [
+      "Snow later, and your shoes lose their say.",
+      "Snow arrives later, whatever you had planned.",
+      "It snows later, and you will feel it underfoot.",
+      "Then snow, and nothing to hold onto.",
+      "I would allow extra time. I am not the one walking.",
+      "Snow follows later. Nothing you own grips it."
+    ]
+  }
+}

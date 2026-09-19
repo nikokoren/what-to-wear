@@ -1,0 +1,41 @@
+<div class="layout layout--col layout--center-x p--xs">
+
+  {% if is_error %}
+     <div class="stretch-y flex flex--center-y flex--center-x w--100" style="min-height: 0;">
+        <img
+          class="image image-dither" 
+        style="max-height: 100%; max-width: 100%; object-fit: contain;" src="{{ sprite_url }}" alt="Error">
+     </div>
+
+  <div class="title text--center mt--xs">
+          {{ error_headline }}
+        </div>
+
+  {% else %}
+
+    <div class="stretch-y flex flex--center-y flex--center-x w--100" style="min-height: 0;">
+      
+      <img 
+        class="image image-dither" 
+        style="max-height: 100%; max-width: 100%; object-fit: contain;"
+        src="{{ sprite_url }}" 
+        alt="Outfit"
+      >
+    </div>
+
+    {% if show_future_suggestions == 'on' and today_tip != '' %}
+       <div class="title title--large outfit-tip text--center mt--xs">
+        {{ today_tip }}
+      </div>
+    {% endif %}
+
+  {% endif %}
+
+</div>
+
+{%- if show_bottom_bar == 'on' -%}
+  <div class="title_bar">
+    <span class="title title--small">What to Wear</span>
+    <span class="instance">{{ location_label }}</span>
+  </div>
+{%- endif -%}

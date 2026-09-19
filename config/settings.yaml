@@ -1,0 +1,60 @@
+# TRMNL form fields for the What to Wear private plugin / recipe.
+# Kept here for reference and review; TRMNL is still edited by hand.
+#
+# Adding a language means adding an option to the `language` field below
+# AND shipping lang/<code>.json. Without the option, the file is
+# unreachable. See docs/TRANSLATING.md.
+- keyname: author_bio
+  field_type: author_bio
+  name: About this plugin
+  description: "Getting out the door has never been this easy!<br>Your TRMNL now reads your local weather forecast and tells you exactly what to wear.<br>Keep it simple with the perfect outfit for right now, or turn on future hints for clothing suggestions based on upcoming weather changes. Choose a kid-friendly tone or dial the sarcasm all the way up to eleven.<br>Comes with 30+ hand-drawn outfits, including festive themes that unlock throughout the year.<br>Install (don't Fork!) to automatically receive new outfits and updates.<br><br>v1.2.0 – 2026-09-03
+New light jacket outfit for the gap between hoodie and puffer, plus an extra cold band so freezing and properly freezing finally look different. Future hints now name the layer you're actually wearing and add the timing, so you know when the jacket comes off or the sweatshirt goes back on. All three tones rewritten: neutral got warmer, sarcastic got more range, and eleven got a narrator who makes it personal.<br>v1.1.0 – 2026-01-23 What to Wear now speaks Deutsch. Added German future outfit suggestions and expanded the English text library with more variety across future weather conditions and sarcasm levels.<br> <br>v1.0.1 - 2025-11-26 Time is now calculated based on coordinates, not local time of device. Dedicated to everyone using TRMNL to dissociate into a sunny mini-vacation."
+  category: "life,environment"
+  description-de: "Noch nie war es so einfach, aus dem Haus zu gehen!<br>Dein TRMNL liest jetzt die lokale Wettervorhersage und sagt dir genau, was du anziehen solltest.<br>Halte es simpel mit dem perfekten Outfit für den aktuellen Moment oder aktiviere Zukunftstipps für Kleidungsvorschläge basierend auf bevorstehenden Wetteränderungen. Wählen einen kinderfreundlichen Ton oder drehen den Sarkasmus bis zum Anschlag auf.<br>Mit über 30 handgezeichneten Outfits, darunter festliche Designs, die im Laufe des Jahres freigeschaltet werden. <br>Installieren (nicht forken!), um zukünftig neue Outfits und Updates zu erhalten.<br><br>v1.1.0 – 2026-01-23
+What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits wurden ergänzt und die englische Textbibliothek um mehr Varianten für unterschiedliche Wetterverläufe und Sarkasmus-Stufen erweitert. <br><br>v1.0.1 – 26.11.2025 Die Zeit wird nun anhand von Koordinaten berechnet und nicht mehr anhand der Ortszeit des Geräts. Gewidmet allen, die TRMNL nutzen, um sich in einen sonnigen Kurzurlaub zu versetzen."
+- keyname: lat_lon
+  field_type: lat_lon
+  name: Location
+  description: Search for a city or postal code, or provide a comma-separated lat/long.
+- keyname: location_label
+  field_type: string
+  name: Location name
+  description: Optional. Name will be shown in the bottom bar
+  optional: true
+  description-de: "Optional. Name wird in der Fußleiste angezeigt"
+- keyname: show_future_suggestions
+  field_type: select
+  name: Show forecast and resulting clothing suggestions
+  description: Select no to keep it minimal
+  default: "yes"
+  options:
+  - "No"
+  - "Yes"
+  description-de: "Zeige die Wettervorhersage und Vorschläge für zukünftige Outfits als Text an. Wähle nein um minimalistisch zu bleiben."
+- keyname: language
+  field_type: select
+  name: In what language should the clothing suggestions be shown?
+  default: "en"
+  options:
+  - English: "en"
+  - German: "de"
+  description-de: "In welcher Sprache sollen die Kleidungsvorschläge angezeigt werden?"
+- keyname: sarcasm_level
+  field_type: select
+  name: Use sarcasm in future clothing suggestion
+  description: "Turn sarcasm off, on, or up to 11."
+  default: "10"
+  options:
+  - "Off": 0
+  - "On": 10
+  - 11: 11
+  description-de: "Verwende Sarkasmus in zukünftigen Kleidungsvorschlägen. Sarkasmus ausschalten, einschalten, oder auf 11 hochdrehen."
+- keyname: show_bottom_bar
+  field_type: select
+  name: Title bar
+  description: "Do you want to show or hide the bottom title bar?"
+  default: "on"
+  options:
+  - Show: "on"
+  - Hide: "off"
+  description-de: "Willst du die untere Titelleiste ausblenden oder anzeigen?"
