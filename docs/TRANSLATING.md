@@ -14,6 +14,10 @@ file renders a mix of both languages on the device — the keys are all
 present, so nothing else would catch it. If a string is genuinely identical
 in your language, list its path in `meta.allow_same_as_en`.
 
+Read [SCENARIOS.md](SCENARIOS.md) before you start — it says when each key
+fires and what the drawing already shows, which is what keeps a line specific
+rather than a vague paraphrase.
+
 Open a PR. CI runs the validator and renders your file against every weather
 scenario, so a missing key or a misplaced placeholder fails the build rather
 than reaching someone's wall.
@@ -31,9 +35,61 @@ than reaching someone's wall.
 | `temp_0` / `temp_10` / `temp_11` | temperature lines, per sarcasm level |
 | `precip_0` / `precip_10` / `precip_11` | precipitation lines, per level |
 
-Sarcasm level `0` is plain and kid-safe, `10` is dry, `11` has a narrator who
-makes it personal. Keep the register distinct — that difference is the
-feature.
+Each scenario key is documented in [SCENARIOS.md](SCENARIOS.md): when it
+fires, what the drawing already shows, and what the sentence therefore has to
+say. Read it before writing. The `arc_*` keys in particular are easy to get
+subtly wrong, and getting them wrong sends someone out underdressed.
+
+## The three voices
+
+Users pick a sarcasm level. The three must feel genuinely different or the
+setting is pointless — this is the most common way a translation comes out
+flat. Measured across the English corpus:
+
+| | words/line | addresses the reader | first person |
+|---|---|---|---|
+| `0` | 9.6 | 30% | 0% |
+| `10` | 10.8 | 24% | 0% |
+| `11` | 11.5 | 55% | 17% |
+
+**Level 0 — plain.** Says the thing and stops. Shortest lines. Kid-safe, no
+joke to get, nothing to decode. Someone reading it at 7am half-awake gets the
+information and moves on.
+
+> The jacket comes off {WHEN}. Have a bag or a free arm ready.
+
+**Level 10 — dry.** Same information, wry about the *situation*. Note it
+addresses the reader *less* than level 0: the joke is aimed at the weather,
+the umbrella, the coat — not at the person. Understated, never mean.
+
+> You will want the jacket off {WHEN}. Your arm is the hook.
+
+**Level 11 — personal.** Turns on the reader. Longest lines, most direct
+address, keeps score, assumes they will ignore the advice and says so. In
+English it also has a narrator with opinions ("I am noting that you were
+warned") — that device is one way to do it, not a requirement. The German
+does not use first person at all and escalates instead through length and
+direct address. Either works. What must be true is that 11 is *more* than
+10, and aimed at the reader rather than the weather.
+
+> The jacket becomes dead weight {WHEN}. Wear something underneath you can
+> live with.
+
+Same scenario at all three levels, which is the comparison worth making:
+
+| | `precip_*.stays_wet` |
+|---|---|
+| `0` | It rains all day. The umbrella stays with you. |
+| `10` | No dry spell. The umbrella is on a double today. |
+| `11` | It rains all day. You and the umbrella are in this together. |
+
+Across all three levels the *advice never changes*. Level 11 is not worse
+advice delivered rudely — the reader still learns exactly when the rain
+starts and what to take. Humour is never at the cost of the information.
+
+Write level 0 first and get it right, then work up. The validator fails a
+file whose levels are identical to each other, because a copy-paste across
+levels silently removes a feature people paid attention to.
 
 ## Lines are interchangeable
 

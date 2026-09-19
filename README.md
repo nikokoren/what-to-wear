@@ -29,7 +29,9 @@ Edit `lang/<code>.json`. Nothing else. Then:
 python3 tools/validate_lang.py
 ```
 
-New language? See [docs/TRANSLATING.md](docs/TRANSLATING.md) — it is one file
+New language? See [docs/TRANSLATING.md](docs/TRANSLATING.md) for the process
+and the three voices, and [docs/SCENARIOS.md](docs/SCENARIOS.md) for what
+each scenario key means. It is one file
 and a PR.
 
 ## Changing the logic

@@ -14,8 +14,10 @@ What it enforces, and why:
   - placeholders are spelled correctly and only appear where they work.
     {WHEN2} outside an arc_* key never gets substituted and ships a
     literal "{WHEN2}" to a real device.
-  - arc_* lines use {GARMENT} or {GARMENTA}, because those keys are the
-    ones whose sentence is about a specific garment.
+  - the three sarcasm levels are not copies of each other, and no string is
+    still identical to the English reference. Both pass every structural
+    check and both ship something broken to a real device.
+  - arc_* lines are the only ones needing {GARMENT}, because those keys are the
   - no line is empty, and none contains the '||' or ';;' delimiters that
     the transitional build still uses to inline these strings.
   - the _j (joined) precip forms carry no {WHENP}, since they attach to a
@@ -221,6 +223,32 @@ def check_lang(path, problems):
                     for i, v in enumerate(mine):
                         if v in ref and f"{section_name}[{i}]" not in allow:
                             untranslated.append(f"{section_name}[{i}]")
+
+    # Users choose a sarcasm level, so the three have to actually differ.
+    # Copying one level into the others passes every other check and quietly
+    # removes a setting people notice.
+    flat_levels = []
+    for kind in ("temp", "precip"):
+        for key in (TEMP_KEYS if kind == "temp" else PRECIP_KEYS):
+            variants = {}
+            for level in LEVELS:
+                section = doc.get(f"{kind}_{level}")
+                if isinstance(section, dict) and isinstance(section.get(key), list):
+                    variants[level] = tuple(section[key])
+            seen = {}
+            for level, lines_t in variants.items():
+                if lines_t in seen:
+                    flat_levels.append(f"{kind}_{seen[lines_t]} and {kind}_{level} .{key}")
+                else:
+                    seen[lines_t] = level
+    if flat_levels:
+        problems.append(
+            f"{name}: {len(flat_levels)} scenario(s) are word-for-word identical "
+            "across sarcasm levels.\n"
+            "      Level 0 is plain, 10 is dry about the situation, 11 turns on the "
+            "reader - see docs/TRANSLATING.md.\n"
+            "      First few: " + "; ".join(flat_levels[:4])
+        )
 
     if untranslated:
         done = total - len([u for u in untranslated if "[" in u])
