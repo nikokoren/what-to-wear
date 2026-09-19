@@ -41,6 +41,18 @@ TEMP_KEYS = [
     "w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_sweatshirt", "w_water",
     "c_scarf", "c_coat", "c_jacket", "c_hoodie", "c_sweatshirt", "c_relief",
 ]
+
+# The markup refines 'perfect' into one of these when the day fits, and falls
+# back to plain 'perfect' when the language has not written it. So they are
+# optional - a translation can ship with the one key - but if present they
+# have to obey the same rules.
+OPTIONAL_TEMP_KEYS = ["perfect_evening", "perfect_hot", "perfect_cold"]
+THEMES = ["ny", "ghd", "pi", "force", "bike", "tdf", "okt",
+          "spooky", "thanks", "krampus", "nikolo", "xmas"]
+OPTIONAL_TEMP_KEYS += [f"theme_{t}" for t in THEMES]
+
+# None of them describe a change, so none may name a time.
+STEADY_KEYS = set(["perfect"] + OPTIONAL_TEMP_KEYS)
 PRECIP_BASE = ["wetter_maybe", "wetter", "wetter_long", "drier", "stays_wet", "snow_coming"]
 PRECIP_KEYS = [k + s for k in PRECIP_BASE for s in ("", "_j")]
 
@@ -147,10 +159,14 @@ def check_lang(path, problems):
                 bad(f"{section_name} is missing")
                 continue
 
-            for extra in sorted(set(section) - set(keys)):
+            allowed = set(keys)
+            if kind == "temp":
+                allowed |= set(OPTIONAL_TEMP_KEYS)
+            for extra in sorted(set(section) - allowed):
                 bad(f"{section_name}.{extra} is not a scenario the markup asks for")
 
-            for key in keys:
+            present = list(keys) + [k for k in OPTIONAL_TEMP_KEYS if k in section]
+            for key in present:
                 lines = section.get(key)
                 if not isinstance(lines, list) or not lines:
                     bad(f"{section_name}.{key} must have at least one line")
@@ -179,6 +195,10 @@ def check_lang(path, problems):
                     if m:
                         bad(f"{where} has {m.group(0)!r} - the time token carries its own "
                             "preposition, and the relative form (\"in two hours\") dies after one")
+
+                    if kind == "temp" and key in STEADY_KEYS and tokens:
+                        bad(f"{where} uses {sorted(tokens)} - {key} describes a day "
+                            "that does not change, so there is no moment to name")
 
                     if kind == "temp":
                         if "{WHENP}" in tokens:

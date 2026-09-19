@@ -96,6 +96,30 @@ It tells you anyway.
 
 ## Writing English
 
+**`lang/en.json` is US English.** The audience is roughly 70% American,
+then British, then central European. British idiom is not a neutral default
+here — some of it is actively wrong across the Atlantic:
+
+| Write | Not | Because |
+|---|---|---|
+| around your waist | round your waist | |
+| sidewalk | pavement | in the US, *pavement* is the road surface, so "the pavement stops cooperating" reads as the road |
+| sweater | jumper | a US jumper is a pinafore dress |
+| tank top | vest | a US vest is a waistcoat |
+| pants | trousers | |
+| fall | autumn | both work, *fall* is more natural |
+| a real / a proper *(sparingly)* | proper cold | *properly cold* is fine; *proper cold* as an intensifier reads British |
+
+A British variant belongs in `en-GB.json` as its own file, which is the
+easiest translation anyone will ever submit. Don't hedge `en.json` toward
+mid-Atlantic — that pleases nobody.
+
+**Never state a temperature number.** The plugin has no idea whether its
+reader thinks in Celsius or Fahrenheit, and it never needs to: the drawing
+shows the outfit and the words describe the change. Say "cold enough for a
+jacket", never "down to 9 degrees". The corpus currently has zero numbers in
+it and should stay that way.
+
 **Use contractions.** The old corpus had two in 499 lines and read like a
 manual. *doesn't, won't, you'll, there's, it's.* This is the single biggest
 difference between stiff and spoken.
@@ -133,6 +157,23 @@ Hard rules, each one fixing a measured flaw in the old corpus:
 > 0 `Nimm eine Jacke mit. {WHEN} brauchst du sie.`
 > 10 `Dem Hoodie gehen {WHEN} die Argumente aus. Die Jacke übernimmt.`
 > 11 `{WHEN} Jackenwetter. Deine hängt zu Hause, und das nennst du dann eine Entscheidung.`
+
+## Depth follows frequency, not fairness
+
+Every key used to have six lines. Replaying the plugin's own logic over a
+year of real weather, and over a summer across nine cities weighted to the
+audience, says that was exactly wrong:
+
+| key | share of renders | lines |
+|---|---|---|
+| `perfect` and its variants | ~50% | as many as you can write |
+| `c_relief` | 26% in summer, 32% in US cities | deep |
+| `w_coat` `w_jacket` | ~8% and ~6% in winter | deep |
+| `w_water` `c_sweatshirt` `w_sweatshirt` | 6-8% | medium |
+| `arc_colder` `c_hoodie` | 0.1% | six is plenty |
+
+A line in `perfect` shows roughly 80 times a year at six alternatives. A line
+in `arc_colder` shows once. Write where the traffic is.
 
 ## Variety
 
