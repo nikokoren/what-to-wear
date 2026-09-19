@@ -96,9 +96,10 @@ It tells you anyway.
 
 ## Writing English
 
-**`lang/en.json` is US English.** The audience is roughly 70% American,
-then British, then central European. British idiom is not a neutral default
-here — some of it is actively wrong across the Atlantic:
+**`lang/en.json` is US English.** The US is about half of all devices and
+**79% of the English-speaking ones** — see [AUDIENCE.md](AUDIENCE.md). That
+is not close enough to hedge. British idiom is not a neutral default here,
+and some of it is actively wrong across the Atlantic:
 
 | Write | Not | Because |
 |---|---|---|
@@ -110,9 +111,10 @@ here — some of it is actively wrong across the Atlantic:
 | fall | autumn | both work, *fall* is more natural |
 | a real / a proper *(sparingly)* | proper cold | *properly cold* is fine; *proper cold* as an intensifier reads British |
 
-A British variant belongs in `en-GB.json` as its own file, which is the
-easiest translation anyone will ever submit. Don't hedge `en.json` toward
-mid-Atlantic — that pleases nobody.
+A British variant belongs in `en-GB.json` as its own file. The UK, Australia
+and Canada together are ~13% of devices, so it is the highest-value
+translation anyone could submit, and the easiest — a diff, not a rewrite.
+Don't hedge `en.json` toward mid-Atlantic; that pleases nobody.
 
 **Never state a temperature number.** The plugin has no idea whether its
 reader thinks in Celsius or Fahrenheit, and it never needs to: the drawing
@@ -152,6 +154,9 @@ Hard rules, each one fixing a measured flaw in the old corpus:
 6. **Konjunktiv II carries knowingness** at level 11. *Du könntest ihn
    mitnehmen.*
 7. **Du throughout**, never Sie.
+9. **Germany, Switzerland, Austria — in that order.** Switzerland is roughly
+   twice Austria by device count. Standard German serves all three; just
+   avoid phrasing that works in only one of them when a neutral one exists.
 8. Colloquial contractions are fine and good: *wird's, gibt's, hab's.*
 
 > 0 `Nimm eine Jacke mit. {WHEN} brauchst du sie.`

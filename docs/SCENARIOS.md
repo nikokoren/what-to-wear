@@ -171,9 +171,17 @@ give — a layer coming off, rain arriving — that advice wins and the theme
 stays in the picture only. A joke about Christmas is never worth someone
 getting cold.
 
+**Never name a temperature, a season's weather, or a specific garment.**
+These keys replace `perfect` at *any* band, so the same line renders on a
+mild Christmas and a freezing one. And about 2.7% of devices are in the
+southern hemisphere, where Christmas is high summer — the themes fire on a
+date, not a season.
+
+> ✗ `Steady cold all day. The good coat has one job and today's it.`
+> ✓ `Nothing about the weather changes today. The day has enough going on.`
+
 Keep them weather-shaped rather than pure greeting: the plugin is still a
-weather plugin on Christmas Day. `Steady cold all day. The good coat has one
-job and today's it.` works; `Merry Christmas!` does not.
+weather plugin on Christmas Day. `Merry Christmas!` is not a tip.
 
 A language that omits these falls back to `perfect`, so they are optional.
 
