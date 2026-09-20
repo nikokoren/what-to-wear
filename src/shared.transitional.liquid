@@ -931,6 +931,21 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
 
   {%- assign today_tip = today_tip | strip -%}
 
+    {%- assign sentences = today_tip | split: '. ' -%}
+  {%- assign cased = '' -%}
+  {%- for sentence in sentences -%}
+    {%- assign head = sentence | slice: 0 | upcase -%}
+    {%- assign tail = sentence | slice: 1, 400 -%}
+    {%- if forloop.first -%}
+      {%- assign cased = head | append: tail -%}
+    {%- else -%}
+      {%- assign cased = cased | append: '. ' | append: head | append: tail -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if cased != '' -%}
+    {%- assign today_tip = cased -%}
+  {%- endif -%}
+
 {%- endif -%}
 
 {%- if weather_slug == 'very_hot_rain' -%}

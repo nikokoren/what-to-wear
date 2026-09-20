@@ -895,6 +895,36 @@ See docs/TRANSLATING.md for the full contract.
 
   {%- assign today_tip = today_tip | strip -%}
 
+  {%- comment %}
+  ============ SENTENCE CASE ============
+  The time phrases are stored lowercase, because most of the time they land
+  mid-sentence: "the jacket comes off this afternoon". But German fronts time
+  adverbials as a matter of normal word order - "Heute Abend regnet es" is
+  simply how the sentence goes - and 129 German lines do exactly that. Left
+  alone, those render "heute Abend regnet es" with a lowercase opening, which
+  reads as a typo rather than as a style.
+
+  Banning the construction would be fighting the language, so instead the
+  finished tip gets its sentence starts capitalised here. Doing it after
+  substitution rather than before means it is language-agnostic: any future
+  translation that fronts a time phrase is handled without knowing anything
+  about it.
+  {%- endcomment %}
+  {%- assign sentences = today_tip | split: '. ' -%}
+  {%- assign cased = '' -%}
+  {%- for sentence in sentences -%}
+    {%- assign head = sentence | slice: 0 | upcase -%}
+    {%- assign tail = sentence | slice: 1, 400 -%}
+    {%- if forloop.first -%}
+      {%- assign cased = head | append: tail -%}
+    {%- else -%}
+      {%- assign cased = cased | append: '. ' | append: head | append: tail -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if cased != '' -%}
+    {%- assign today_tip = cased -%}
+  {%- endif -%}
+
 {%- endif -%}
 
 
