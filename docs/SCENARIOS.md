@@ -160,11 +160,18 @@ always a time of day rather than "in two hours".
 
 ### `theme_<name>` — a seasonal day
 
-On the thirteen days a year that have their own artwork, the tip can
-acknowledge it. The theme names match the sprite prefixes: `theme_ny`,
+On the seasonal days, the tip can acknowledge the occasion. The theme names
+match the sprite prefixes: `theme_ny`,
 `theme_ghd`, `theme_pi`, `theme_force`, `theme_bike`, `theme_tdf`,
 `theme_okt`, `theme_spooky`, `theme_thanks`, `theme_krampus`,
 `theme_nikolo`, `theme_xmas`.
+
+Only four of them — `ny`, `force`, `thanks`, `xmas` — actually have artwork
+drawn. The rest get their themed *words* over the ordinary outfit, which is
+the intended fallback and not a bug. A theme is only whitelisted for a
+themed sprite once every band of it exists; `tools/check_sprites.py`
+enforces that, after `okt` spent sixteen days a year pointing at a PNG
+nobody had drawn.
 
 **A theme line only ever replaces `perfect`.** If the day has real advice to
 give — a layer coming off, rain arriving — that advice wins and the theme

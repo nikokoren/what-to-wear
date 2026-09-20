@@ -18,6 +18,7 @@
         class="image image-dither" 
         style="max-height: 100%; max-width: 100%; object-fit: contain;"
         src="{{ sprite_url }}" 
+        onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'"
         alt="Outfit"
       >
     </div>

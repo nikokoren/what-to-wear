@@ -550,13 +550,13 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
 {%- assign theme_whitelist = '' -%}
 {%- case active_theme -%}
   {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'pi' -%}{%- assign theme_whitelist = 'ALL' -%}
   {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'bike' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'okt' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'spooky' -%}{%- assign theme_whitelist = 'ALL' -%}
   {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
   {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'pi' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'bike' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'okt' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'spooky' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
@@ -955,6 +955,9 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
 {%- elsif weather_slug == 'extra_cold_rain' -%}
   {%- assign weather_slug = 'extra_cold_snow' -%}
 {%- endif -%}
+{%- if weather_slug == 'extra_cold_dry' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
+{%- if weather_slug == 'extra_cold_snow' -%}{%- assign weather_slug = 'freezing_snow' -%}{%- endif -%}
+{%- if weather_slug == 'freezing_rain' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
 
 {%- assign sprite_slug = weather_slug -%}
 {%- if active_theme != '' and is_error == false -%}

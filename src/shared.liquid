@@ -677,16 +677,33 @@ Note: the ALL themes now need extra_cold_dry and extra_cold_snow
 as well, since the band was added. Until those are drawn, consider
 dropping the affected themes back to a comma list.
 {%- endcomment %}
+{%- comment %}
+A theme may only claim a themed sprite if that artwork actually exists in
+the repo. An empty whitelist is not a downgrade — the day still gets its
+themed *words*, it just wears the plain outfit. A whitelist naming art
+that was never drawn is a visible outage: the image 404s and the device
+shows the alt text instead of a picture, for every reader, for the whole
+window. 'okt' did exactly that for sixteen days a year.
+
+Before moving a theme to ALL, draw every slug for it:
+  {extra_cold,freezing,cold,cool,mild,warm,hot,very_hot}_dry
+  plus _rain for the temperate bands and _snow for the cold ones.
+A comma list ,mild_dry,warm_dry, is the way to ship a theme that only has
+some of its bands drawn.
+
+Drawn, full set:   ny, force, thanks, xmas
+No artwork yet:    pi, bike, okt, spooky, ghd, tdf, krampus, nikolo
+{%- endcomment %}
 {%- assign theme_whitelist = '' -%}
 {%- case active_theme -%}
   {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'pi' -%}{%- assign theme_whitelist = 'ALL' -%}
   {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'bike' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'okt' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'spooky' -%}{%- assign theme_whitelist = 'ALL' -%}
   {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
   {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'pi' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'bike' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'okt' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'spooky' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
@@ -936,6 +953,24 @@ See docs/TRANSLATING.md for the full contract.
 {%- elsif weather_slug == 'extra_cold_rain' -%}
   {%- assign weather_slug = 'extra_cold_snow' -%}
 {%- endif -%}
+{%- comment %}
+Band 1 was added without its artwork, so extra_cold_dry and extra_cold_snow
+have never existed. Below -7 the device was building a URL that 404s and
+showing alt text instead of an outfit. Freezing is the closest drawn band —
+same puffer, beanie and boots, minus the scarf — so borrow it until band 1
+is drawn. Delete these two lines the day the art lands.
+{%- endcomment %}
+{%- if weather_slug == 'extra_cold_dry' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
+{%- if weather_slug == 'extra_cold_snow' -%}{%- assign weather_slug = 'freezing_snow' -%}{%- endif -%}
+{%- comment %}
+freezing_rain was never drawn either, and unlike band 1 it fires often:
+rain at or below 3 degrees is an ordinary winter day across Europe and the
+northern US. Borrow freezing_dry rather than cold_rain, because the picture
+is the outfit advice and getting the warmth right matters more than showing
+the umbrella — the words still say to take one. Replace this with real
+sleet artwork when someone draws it.
+{%- endcomment %}
+{%- if weather_slug == 'freezing_rain' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
 
 {%- assign sprite_slug = weather_slug -%}
 {%- if active_theme != '' and is_error == false -%}
