@@ -105,6 +105,17 @@ SCENARIOS = {
     "heat_no_layers_left": payload(29, 0, ramp(29, 36), flat(0)),
     "extra_cold": payload(-12, 0, flat(-12), flat(0)),
     "freezing_snow_now": payload(-2, 73, flat(-2), flat(90), flat(73)),
+
+    # The ladder's old dead zones. The current reading and the forecast
+    # extremes used to be ranked by three separate copies of the ladder
+    # that disagreed at 0-3, 7-10 and 19-20, so a real band change in one
+    # of those ranges was ranked as no change at all and the tip claimed
+    # the day was steady. Each of these crosses an edge that only one of
+    # the old copies knew about.
+    "deadzone_cool_to_cold": payload(12, 0, ramp(12, 8), flat(0)),
+    "deadzone_cold_to_freezing": payload(5, 0, ramp(5, 1), flat(0)),
+    "deadzone_warm_to_mild": payload(22, 0, ramp(22, 19), flat(0)),
+    "deadzone_up_mild_to_warm": payload(18, 0, ramp(18, 24), flat(0)),
 }
 
 
@@ -280,18 +291,42 @@ def main():
     if extract_sprite(html_idx) != extract_sprite(html_root):
         failures.append("transitional markup picked different sprites per payload shape")
 
-    # missing weather entirely
+    # Missing weather entirely. Two different causes that must not share a
+    # message: a real outage, where waiting is the right advice, and an
+    # unset location, where waiting can never help.
     for tmpl in ("shared.liquid", "shared.transitional.liquid"):
         for lang in ("en", "de"):
-            ctx = globals_for({}, None, settings(lang=lang), "root")
-            html, _ = render(env, tmpl, "views/full.liquid", ctx)
-            if "404.png" not in html:
-                failures.append(f"{tmpl}/{lang}: error state should use the 404 sprite")
-            expected = LANGS[lang]["ui"]["error_short"]
-            if expected not in html:
-                failures.append(
-                    f"{tmpl}/{lang}: error headline missing, expected {expected!r}"
-                )
+            for label, extra, key in (
+                ("outage", {"lat_lon": "48.21,16.37"}, "error_short"),
+                ("legacy coords", {"latitude": "48.21", "longitude": "16.37"},
+                 "error_short"),
+                ("no location", {}, "error_location_short"),
+            ):
+                cfg = settings(lang=lang)
+                cfg.update(extra)
+                ctx = globals_for({}, None, cfg, "root")
+                html, _ = render(env, tmpl, "views/full.liquid", ctx)
+                if "404.png" not in html:
+                    failures.append(
+                        f"{tmpl}/{lang}/{label}: error state should use the "
+                        f"404 sprite"
+                    )
+                expected = LANGS[lang]["ui"][key]
+                if expected not in html:
+                    failures.append(
+                        f"{tmpl}/{lang}/{label}: expected headline "
+                        f"{expected!r}"
+                    )
+                # The two causes must be distinguishable on screen.
+                other = LANGS[lang]["ui"][
+                    "error_short" if key != "error_short"
+                    else "error_location_short"
+                ]
+                if other in html:
+                    failures.append(
+                        f"{tmpl}/{lang}/{label}: showed the other error's "
+                        f"headline {other!r}"
+                    )
 
     # future suggestions turned off
     html, _ = render(env, "shared.liquid", "views/full.liquid",
@@ -299,7 +334,7 @@ def main():
     if extract_tip(html) not in (None, ""):
         failures.append("show_future_suggestions=No should suppress the tip")
 
-    print("degraded states: 4 checks")
+    print("degraded states: error causes, both markups, both languages")
 
     if failures:
         print(f"\n{len(failures)} FAILURE(S):\n")

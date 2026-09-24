@@ -14,6 +14,9 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
 {%- assign DAY_END_HOUR = 21 -%}
 {%- assign TIP_BUDGET = 165 -%}
 
+{%- assign BAND_EDGES = '-7,3,10,14,19,27,32' -%}
+{%- assign BAND_NAMES = 'extra_cold,freezing,cold,cool,mild,warm,hot,very_hot' -%}
+
 {%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/' -%}
 {%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
 
@@ -22,6 +25,13 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
 {%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}
 {%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}
 {%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}
+{%- assign temp_preference_raw = trmnl.plugin_settings.custom_fields_values.temp_preference | default: '0' -%}
+
+{%- assign temp_shift = 0 -%}
+{%- assign tp_check = temp_preference_raw | strip -%}
+{%- if tp_check == '-4' or tp_check == '-2' or tp_check == '2' or tp_check == '4' -%}
+  {%- assign temp_shift = tp_check | plus: 0 -%}
+{%- endif -%}
 
 {%- assign show_future_suggestions = 'on' -%}
 {%- assign sfs_check = show_future_suggestions_raw | downcase | strip -%}
@@ -71,26 +81,49 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
   {%- assign error_key = 'error_hourly' -%}
 {%- endif -%}
 
+{%- assign has_location = false -%}
+{%- assign lat_lon_set = trmnl.plugin_settings.custom_fields_values.lat_lon | default: '' | strip -%}
+{%- assign latitude_set = trmnl.plugin_settings.custom_fields_values.latitude | default: '' | strip -%}
+{%- if lat_lon_set != '' or latitude_set != '' -%}
+  {%- assign has_location = true -%}
+{%- endif -%}
+{%- if is_error and has_location == false -%}
+  {%- assign error_key = 'error_location' -%}
+{%- endif -%}
+
 {%- if is_error -%}
   {%- if texts_ok -%}
     {%- assign error_message = texts.ui[error_key] -%}
     {%- assign error_headline = texts.ui.error_short -%}
+    {%- if error_key == 'error_location' and texts.ui.error_location_short -%}
+      {%- assign error_headline = texts.ui.error_location_short -%}
+    {%- endif -%}
   {%- endif -%}
     {%- if error_message == '' or error_message == nil -%}
     {%- if lang == 'de' -%}
-      {%- if error_key == 'error_current' -%}
-        {%- assign error_message = 'Wetterdaten konnten nicht abgerufen werden. Bitte versuche es später erneut.' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.' -%}
+        {%- assign error_headline = 'Kein Ort eingestellt' -%}
       {%- else -%}
-        {%- assign error_message = 'Wettervorhersage konnte nicht geladen werden. Bitte versuche es später erneut.' -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Wetterdaten konnten nicht abgerufen werden. Bitte versuche es später erneut.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Wettervorhersage konnte nicht geladen werden. Bitte versuche es später erneut.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Wetterdaten konnten nicht gelesen werden' -%}
       {%- endif -%}
-      {%- assign error_headline = 'Wetterdaten konnten nicht gelesen werden' -%}
     {%- else -%}
-      {%- if error_key == 'error_current' -%}
-        {%- assign error_message = 'Unable to retrieve weather data. Please try again later.' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'No location set. Open this plugin’s settings and choose one.' -%}
+        {%- assign error_headline = 'No location set' -%}
       {%- else -%}
-        {%- assign error_message = 'Unable to load forecast data. Please try again later.' -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Unable to retrieve weather data. Please try again later.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Unable to load forecast data. Please try again later.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Could not read weather data' -%}
       {%- endif -%}
-      {%- assign error_headline = 'Could not read weather data' -%}
     {%- endif -%}
   {%- endif -%}
 {%- endif -%}
@@ -166,23 +199,20 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
     {%- assign is_now_snow = 1 -%}
   {%- endif -%}
 
-    {%- if temp_c <= -7 -%}
-    {%- assign band = 'extra_cold' -%}{%- assign band_rank = 1 -%}
-  {%- elsif temp_c <= 3 -%}
-    {%- assign band = 'freezing' -%}{%- assign band_rank = 2 -%}
-  {%- elsif temp_c <= 10 -%}
-    {%- assign band = 'cold' -%}{%- assign band_rank = 3 -%}
-  {%- elsif temp_c <= 14 -%}
-    {%- assign band = 'cool' -%}{%- assign band_rank = 4 -%}
-  {%- elsif temp_c <= 19 -%}
-    {%- assign band = 'mild' -%}{%- assign band_rank = 5 -%}
-  {%- elsif temp_c <= 27 -%}
-    {%- assign band = 'warm' -%}{%- assign band_rank = 6 -%}
-  {%- elsif temp_c <= 32 -%}
-    {%- assign band = 'hot' -%}{%- assign band_rank = 7 -%}
-  {%- else -%}
-    {%- assign band = 'very_hot' -%}{%- assign band_rank = 8 -%}
-  {%- endif -%}
+    {%- assign band_edge_list = BAND_EDGES | split: ',' -%}
+  {%- assign band_name_list = BAND_NAMES | split: ',' -%}
+
+  {%- assign temp_banded = temp_c | plus: temp_shift -%}
+  {%- assign band_rank = 8 -%}
+  {%- for edge in band_edge_list -%}
+    {%- assign edge_c = edge | plus: 0 -%}
+    {%- if temp_banded <= edge_c -%}
+      {%- assign band_rank = forloop.index -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign band_idx = band_rank | minus: 1 -%}
+  {%- assign band = band_name_list[band_idx] -%}
 
     {%- assign precip_suffix = 'dry' -%}
   {%- if is_now_snow == 1 -%}
@@ -306,23 +336,25 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
       {%- assign peak_first = false -%}
     {%- endif -%}
 
-        {%- if max_temp_future <= -7 -%}{%- assign up_rank = 1 -%}
-    {%- elsif max_temp_future <= 0 -%}{%- assign up_rank = 2 -%}
-    {%- elsif max_temp_future <= 7 -%}{%- assign up_rank = 3 -%}
-    {%- elsif max_temp_future <= 14 -%}{%- assign up_rank = 4 -%}
-    {%- elsif max_temp_future <= 20 -%}{%- assign up_rank = 5 -%}
-    {%- elsif max_temp_future <= 27 -%}{%- assign up_rank = 6 -%}
-    {%- elsif max_temp_future <= 32 -%}{%- assign up_rank = 7 -%}
-    {%- else -%}{%- assign up_rank = 8 -%}{%- endif -%}
+        {%- assign max_banded = max_temp_future | plus: temp_shift -%}
+    {%- assign up_rank = 8 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if max_banded <= edge_c -%}
+        {%- assign up_rank = forloop.index -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
 
-    {%- if min_temp_future <= -7 -%}{%- assign down_rank = 1 -%}
-    {%- elsif min_temp_future <= 0 -%}{%- assign down_rank = 2 -%}
-    {%- elsif min_temp_future <= 7 -%}{%- assign down_rank = 3 -%}
-    {%- elsif min_temp_future <= 14 -%}{%- assign down_rank = 4 -%}
-    {%- elsif min_temp_future <= 20 -%}{%- assign down_rank = 5 -%}
-    {%- elsif min_temp_future <= 27 -%}{%- assign down_rank = 6 -%}
-    {%- elsif min_temp_future <= 32 -%}{%- assign down_rank = 7 -%}
-    {%- else -%}{%- assign down_rank = 8 -%}{%- endif -%}
+    {%- assign min_banded = min_temp_future | plus: temp_shift -%}
+    {%- assign down_rank = 8 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if min_banded <= edge_c -%}
+        {%- assign down_rank = forloop.index -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
 
         {%- if texts_ok -%}
       {%- assign GARMENTS_N = texts.garments.n -%}

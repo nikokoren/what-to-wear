@@ -8,7 +8,9 @@
   "ui": {
     "error_current": "Wetterdaten konnten nicht abgerufen werden. Bitte versuche es später erneut.",
     "error_hourly": "Wettervorhersage konnte nicht geladen werden. Bitte versuche es später erneut.",
-    "error_short": "Wetterdaten konnten nicht gelesen werden"
+    "error_short": "Wetterdaten konnten nicht gelesen werden",
+    "error_location": "Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.",
+    "error_location_short": "Kein Ort eingestellt"
   },
   "garments": {
     "n": [

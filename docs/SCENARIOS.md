@@ -30,6 +30,19 @@ same thing thermally — so moving between them produces no hint at all.
 
 A change has to be at least 2 °C *and* cross a band to say anything.
 
+The edges above are the defaults. The optional **"Do you run cold or
+warm?"** setting shifts every reading by up to ±4 °C before it meets the
+ladder, so someone who is always cold gets a sweatshirt where the default
+gives a t-shirt. It is one uniform shift rather than seven editable
+thresholds, which is what makes it safe: adding the same number to every
+reading cannot reorder the edges, so overlapping bands are not
+representable and there is nothing to validate. Differences survive it
+untouched, so the 2 °C rule and every arc comparison behave identically.
+
+None of this changes what you write. No line may name a temperature
+anyway, so a shifted ladder is invisible in the text — it only changes
+which scenario fires and which outfit is drawn.
+
 ## Temperature keys
 
 ### `perfect`, and its four variants

@@ -16,6 +16,11 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   field_type: lat_lon
   name: Location
   description: Search for a city or postal code, or provide a comma-separated lat/long.
+  description-de: "Suche nach Stadt oder Postleitzahl, oder gib Breiten- und Längengrad durch Komma getrennt ein."
+  # Deliberately NOT optional. An install that predates this field keeps
+  # working through the polling URL's fallback to latitude/longitude, and
+  # one that reaches the form cannot save a config with no location in it.
+  # Those two together cover everyone without a nag: see docs/MIGRATION.md.
 - keyname: location_label
   field_type: string
   name: Location name
@@ -49,6 +54,28 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   - "On": 10
   - 11: 11
   description-de: "Verwende Sarkasmus in zukünftigen Kleidungsvorschlägen. Sarkasmus ausschalten, einschalten, oder auf 11 hochdrehen."
+- keyname: temp_preference
+  field_type: select
+  name: Do you run cold or warm?
+  description: "Optional. Shifts every outfit suggestion up or down the scale to match how you actually feel the cold."
+  default: "0"
+  optional: true
+  options:
+  - "I'm always cold": -4
+  - "I feel the cold": -2
+  - "Average": 0
+  - "I run warm": 2
+  - "I'm always hot": 4
+  description-de: "Optional. Verschiebt alle Kleidungsvorschläge nach oben oder unten, je nachdem, wie du Kälte tatsächlich empfindest."
+  # Labelled in words rather than degrees on purpose. Half the audience
+  # thinks in Fahrenheit, where "+2 C" means nothing, and the useful
+  # question is about the person, not the number.
+  #
+  # One uniform shift, not seven editable thresholds. Adding the same
+  # number to every reading cannot reorder the band edges, so overlapping
+  # or inverted bands are not representable and there is nothing to
+  # validate. See the note on temp_shift in src/shared.liquid.
+
 - keyname: show_bottom_bar
   field_type: select
   name: Title bar
@@ -58,3 +85,29 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   - Show: "on"
   - Hide: "off"
   description-de: "Willst du die untere Titelleiste ausblenden oder anzeigen?"
+
+# ---------------------------------------------------------------------
+# LEGACY LOCATION FIELDS
+#
+# Superseded by lat_lon, kept because deleting them is the one step in
+# this migration that can break a working install. An install that never
+# opens this form still has its coordinates stored against these keys,
+# and the polling URL falls back to them. Delete these only once that
+# fallback is provably unused -- docs/MIGRATION.md says how to establish
+# that, and why "some time later" is not a criterion.
+#
+# In TRMNL these belong in a collapsed group at the bottom of the form so
+# they are out of the way for new installs without being removed.
+# ---------------------------------------------------------------------
+- keyname: latitude
+  field_type: string
+  name: Latitude (legacy)
+  description: "Superseded by Location above. Leave as is."
+  optional: true
+  description-de: "Wird durch das Feld Ort ersetzt. Unverändert lassen."
+- keyname: longitude
+  field_type: string
+  name: Longitude (legacy)
+  description: "Superseded by Location above. Leave as is."
+  optional: true
+  description-de: "Wird durch das Feld Ort ersetzt. Unverändert lassen."

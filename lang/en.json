@@ -8,7 +8,9 @@
   "ui": {
     "error_current": "Unable to retrieve weather data. Please try again later.",
     "error_hourly": "Unable to load forecast data. Please try again later.",
-    "error_short": "Could not read weather data"
+    "error_short": "Could not read weather data",
+    "error_location": "No location set. Open this plugin’s settings and choose one.",
+    "error_location_short": "No location set"
   },
   "garments": {
     "n": [

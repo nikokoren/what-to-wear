@@ -138,7 +138,8 @@ def check_lang(path, problems):
         bad("meta.name is required (the language's name in that language)")
 
     ui = doc.get("ui") or {}
-    for key in ("error_current", "error_hourly", "error_short"):
+    for key in ("error_current", "error_hourly", "error_short",
+                "error_location", "error_location_short"):
         if not (ui.get(key) or "").strip():
             bad(f"ui.{key} is required")
 

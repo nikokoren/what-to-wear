@@ -100,3 +100,56 @@ TRMNL's docs are explicit that forked recipes receive no updates from the
 original author. They keep their embedded phrasing and keep rendering exactly
 as they do today; they are frozen, not broken. That was your instinct in the
 first place, and it is right.
+
+## The separate migration: latitude/longitude to lat_lon
+
+This is its own change with its own risk, and it does not belong in the
+same polling-URL edit as step 2. Land it first, confirm it, then do the
+texts rollout — one variable at a time.
+
+The polling URL reads `lat_lon` and falls back to the old pair:
+
+```liquid
+latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}
+```
+
+That covers both populations at once, so **no user has to do anything**:
+
+| | what happens |
+|---|---|
+| never opens the form | old values stay in the database, fallback uses them |
+| opens the form, saves | `lat_lon` is required, so they leave with it set |
+
+Both halves matter. The fallback alone strands anyone who never saves; a
+required field alone does nothing for them either, because the people who
+never open settings are exactly the people who never see a new field. Put
+together they need no nag, and no one can save into a broken state.
+
+### Why the old fields stay in the form
+
+Deleting them is the one step here that can break a working install, and
+it rests on an assumption nobody has tested: that a settings value
+survives in the database after its field is removed. Until that is
+verified, keep them, grouped and labelled legacy at the bottom of the
+form. The cost of keeping them is clutter. The cost of being wrong is a
+device showing an error with no way for its owner to know why.
+
+To verify it, on a fork: add a `latitude` field, set it, save, delete the
+field from the form, do not touch the instance again, then render
+`{{ latitude }}` in the markup and force refresh. Ten minutes, and it
+turns a belief into a fact. Better still, ask TRMNL to run a one-time
+backfill populating `lat_lon` from the old pair — that dissolves the whole
+problem and every other plugin author hits this too.
+
+**"Some time later" is not a criterion.** You cannot see how many installs
+still rely on the fallback, so a time-based gate is a guess with a blast
+radius. Gate on the verification above, or do not delete at all.
+
+### The failure mode, for recognising it later
+
+With no coordinates the URL asks for `latitude=&longitude=`, and
+Open-Meteo answers **200 with a zero-byte body** rather than an error — so
+it arrives as a missing payload, not a failed request. The markup now
+separates that case from a real outage and says *No location set. Open
+this plugin's settings and choose one.* instead of *Please try again
+later*, which was advice that could never work.

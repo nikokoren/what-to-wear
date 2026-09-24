@@ -48,6 +48,30 @@ with the temperature line. Measured against the OG device at title--large.
 {%- endcomment %}
 {%- assign TIP_BUDGET = 165 -%}
 
+{%- comment %}
+============ THE BAND LADDER ============
+The upper edge of each band in apparent degrees C, cold to warm. Seven
+edges make eight bands; anything above the last edge is the eighth.
+
+This string is the only place the ladder is written down. It used to be
+three hand-copied if/elsif chains -- one for the current temperature, one
+for the forecast high, one for the forecast low -- and they had drifted
+apart at three thresholds: freezing ended at 3 in one and 0 in the others,
+cold at 10 against 7, mild at 19 against 20.
+
+That is not cosmetic. A day going from 12 to 8 put the current reading in
+cool and the forecast low in cool as well, because 8 is over that ladder's
+7, so no band change was detected and the tip said the weather was holding
+steady while the drawing showed a hoodie and the reader needed a jacket.
+The dead zones were 0-3, 7-10 and 19-20, which is most of a European
+winter afternoon.
+
+Bands 4 and 5 are one warmth class -- a hoodie and a sweatshirt are the
+same thing thermally -- which the scenario logic handles separately.
+{%- endcomment %}
+{%- assign BAND_EDGES = '-7,3,10,14,19,27,32' -%}
+{%- assign BAND_NAMES = 'extra_cold,freezing,cold,cool,mild,warm,hot,very_hot' -%}
+
 
 {%- comment %} ============ SPRITE BASES ============ {%- endcomment %}
 {%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/' -%}
@@ -60,6 +84,33 @@ with the temperature line. Measured against the OG device at title--large.
 {%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}
 {%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}
 {%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}
+{%- assign temp_preference_raw = trmnl.plugin_settings.custom_fields_values.temp_preference | default: '0' -%}
+
+{%- comment %}
+============ PERSONAL THERMOSTAT ============
+Degrees C added to every temperature before it meets the ladder. Negative
+means the reader feels colder than the forecast says, so the day is banded
+colder and the outfit comes out warmer.
+
+A uniform shift is deliberate, and it is what makes this setting safe to
+expose. Adding the same number to every reading cannot reorder the edges,
+so the bands can never overlap or swap order no matter what is in the
+field -- there is nothing to validate, because a bad state is not
+representable. Letting anyone name seven thresholds would need ordering
+checks, and a form that can be saved in a broken state eventually is.
+
+Differences survive the shift untouched, so MIN_DELTA and every arc
+comparison behave exactly as before. Nothing on screen shows a temperature,
+so shifting is invisible except in which outfit gets drawn.
+
+Absent or unparseable is 0, which is the behaviour every existing install
+already has.
+{%- endcomment %}
+{%- assign temp_shift = 0 -%}
+{%- assign tp_check = temp_preference_raw | strip -%}
+{%- if tp_check == '-4' or tp_check == '-2' or tp_check == '2' or tp_check == '4' -%}
+  {%- assign temp_shift = tp_check | plus: 0 -%}
+{%- endif -%}
 
 {%- assign show_future_suggestions = 'on' -%}
 {%- assign sfs_check = show_future_suggestions_raw | downcase | strip -%}
@@ -118,10 +169,36 @@ for it is what lets one copy of this markup serve both shapes.
   {%- assign error_key = 'error_hourly' -%}
 {%- endif -%}
 
+{%- comment %}
+============ NO LOCATION IS NOT A WEATHER OUTAGE ============
+With no coordinates the polling URL asks Open-Meteo for latitude= and
+longitude=, which answers 200 with a zero-byte body rather than an error.
+That lands here as a missing payload and used to read "Please try again
+later", which is advice that can never work: waiting does not set a
+location. Say what would actually fix it.
+
+Both fields are read, because an install predating lat_lon still has its
+coordinates in latitude/longitude and the polling URL falls back to them.
+If either holds anything, a missing payload is a real outage and keeps the
+ordinary message.
+{%- endcomment %}
+{%- assign has_location = false -%}
+{%- assign lat_lon_set = trmnl.plugin_settings.custom_fields_values.lat_lon | default: '' | strip -%}
+{%- assign latitude_set = trmnl.plugin_settings.custom_fields_values.latitude | default: '' | strip -%}
+{%- if lat_lon_set != '' or latitude_set != '' -%}
+  {%- assign has_location = true -%}
+{%- endif -%}
+{%- if is_error and has_location == false -%}
+  {%- assign error_key = 'error_location' -%}
+{%- endif -%}
+
 {%- if is_error -%}
   {%- if texts_ok -%}
     {%- assign error_message = texts.ui[error_key] -%}
     {%- assign error_headline = texts.ui.error_short -%}
+    {%- if error_key == 'error_location' and texts.ui.error_location_short -%}
+      {%- assign error_headline = texts.ui.error_location_short -%}
+    {%- endif -%}
   {%- endif -%}
   {%- comment %}
   Hardcoded fallback: the texts payload is exactly what may be
@@ -130,19 +207,29 @@ for it is what lets one copy of this markup serve both shapes.
   {%- endcomment %}
   {%- if error_message == '' or error_message == nil -%}
     {%- if lang == 'de' -%}
-      {%- if error_key == 'error_current' -%}
-        {%- assign error_message = 'Wetterdaten konnten nicht abgerufen werden. Bitte versuche es später erneut.' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.' -%}
+        {%- assign error_headline = 'Kein Ort eingestellt' -%}
       {%- else -%}
-        {%- assign error_message = 'Wettervorhersage konnte nicht geladen werden. Bitte versuche es später erneut.' -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Wetterdaten konnten nicht abgerufen werden. Bitte versuche es später erneut.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Wettervorhersage konnte nicht geladen werden. Bitte versuche es später erneut.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Wetterdaten konnten nicht gelesen werden' -%}
       {%- endif -%}
-      {%- assign error_headline = 'Wetterdaten konnten nicht gelesen werden' -%}
     {%- else -%}
-      {%- if error_key == 'error_current' -%}
-        {%- assign error_message = 'Unable to retrieve weather data. Please try again later.' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'No location set. Open this plugin’s settings and choose one.' -%}
+        {%- assign error_headline = 'No location set' -%}
       {%- else -%}
-        {%- assign error_message = 'Unable to load forecast data. Please try again later.' -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Unable to retrieve weather data. Please try again later.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Unable to load forecast data. Please try again later.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Could not read weather data' -%}
       {%- endif -%}
-      {%- assign error_headline = 'Could not read weather data' -%}
     {%- endif -%}
   {%- endif -%}
 {%- endif -%}
@@ -231,32 +318,34 @@ single contains test instead of a chained and/or condition.
 
   {%- comment %}
   ============ BAND LADDER ============
-  rank 1 extra_cold  <= -7   puffer + scarf + beanie + boots
-  rank 2 freezing    <=  3   puffer + beanie + boots
-  rank 3 cold        <= 10   light jacket + beanie + boots
-  rank 4 cool        <= 14   hoodie + sneakers
-  rank 5 mild        <= 19   sweatshirt + long pants
-  rank 6 warm        <= 27   t-shirt + shorts + cap
-  rank 7 hot         <= 32   tank + sandals
-  rank 8 very_hot     > 32   tank + bucket hat + water
+  Walk BAND_EDGES and take the first edge the temperature fits under.
+  Falling off the end is the eighth band. The same three lines do the
+  forecast high and low further down, off the same string, which is the
+  point -- see the note on BAND_EDGES above for what drifting copies cost.
+
+  rank 1 extra_cold  puffer + scarf + beanie + boots
+  rank 2 freezing    puffer + beanie + boots
+  rank 3 cold        light jacket + beanie + boots
+  rank 4 cool        hoodie + sneakers
+  rank 5 mild        sweatshirt + long pants
+  rank 6 warm        t-shirt + shorts + cap
+  rank 7 hot         tank + sandals
+  rank 8 very_hot    tank + bucket hat + water
   {%- endcomment %}
-  {%- if temp_c <= -7 -%}
-    {%- assign band = 'extra_cold' -%}{%- assign band_rank = 1 -%}
-  {%- elsif temp_c <= 3 -%}
-    {%- assign band = 'freezing' -%}{%- assign band_rank = 2 -%}
-  {%- elsif temp_c <= 10 -%}
-    {%- assign band = 'cold' -%}{%- assign band_rank = 3 -%}
-  {%- elsif temp_c <= 14 -%}
-    {%- assign band = 'cool' -%}{%- assign band_rank = 4 -%}
-  {%- elsif temp_c <= 19 -%}
-    {%- assign band = 'mild' -%}{%- assign band_rank = 5 -%}
-  {%- elsif temp_c <= 27 -%}
-    {%- assign band = 'warm' -%}{%- assign band_rank = 6 -%}
-  {%- elsif temp_c <= 32 -%}
-    {%- assign band = 'hot' -%}{%- assign band_rank = 7 -%}
-  {%- else -%}
-    {%- assign band = 'very_hot' -%}{%- assign band_rank = 8 -%}
-  {%- endif -%}
+  {%- assign band_edge_list = BAND_EDGES | split: ',' -%}
+  {%- assign band_name_list = BAND_NAMES | split: ',' -%}
+
+  {%- assign temp_banded = temp_c | plus: temp_shift -%}
+  {%- assign band_rank = 8 -%}
+  {%- for edge in band_edge_list -%}
+    {%- assign edge_c = edge | plus: 0 -%}
+    {%- if temp_banded <= edge_c -%}
+      {%- assign band_rank = forloop.index -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign band_idx = band_rank | minus: 1 -%}
+  {%- assign band = band_name_list[band_idx] -%}
 
   {%- comment %} Suffix from the code, not the band. {%- endcomment %}
   {%- assign precip_suffix = 'dry' -%}
@@ -401,24 +490,30 @@ single contains test instead of a chained and/or condition.
       {%- assign peak_first = false -%}
     {%- endif -%}
 
-    {%- comment %} Rank the extremes. {%- endcomment %}
-    {%- if max_temp_future <= -7 -%}{%- assign up_rank = 1 -%}
-    {%- elsif max_temp_future <= 0 -%}{%- assign up_rank = 2 -%}
-    {%- elsif max_temp_future <= 7 -%}{%- assign up_rank = 3 -%}
-    {%- elsif max_temp_future <= 14 -%}{%- assign up_rank = 4 -%}
-    {%- elsif max_temp_future <= 20 -%}{%- assign up_rank = 5 -%}
-    {%- elsif max_temp_future <= 27 -%}{%- assign up_rank = 6 -%}
-    {%- elsif max_temp_future <= 32 -%}{%- assign up_rank = 7 -%}
-    {%- else -%}{%- assign up_rank = 8 -%}{%- endif -%}
+    {%- comment %}
+    Rank the extremes off the same ladder the current reading used, with
+    the same personal shift applied. These two used to be separate copies
+    with three thresholds that disagreed with the one above.
+    {%- endcomment %}
+    {%- assign max_banded = max_temp_future | plus: temp_shift -%}
+    {%- assign up_rank = 8 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if max_banded <= edge_c -%}
+        {%- assign up_rank = forloop.index -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
 
-    {%- if min_temp_future <= -7 -%}{%- assign down_rank = 1 -%}
-    {%- elsif min_temp_future <= 0 -%}{%- assign down_rank = 2 -%}
-    {%- elsif min_temp_future <= 7 -%}{%- assign down_rank = 3 -%}
-    {%- elsif min_temp_future <= 14 -%}{%- assign down_rank = 4 -%}
-    {%- elsif min_temp_future <= 20 -%}{%- assign down_rank = 5 -%}
-    {%- elsif min_temp_future <= 27 -%}{%- assign down_rank = 6 -%}
-    {%- elsif min_temp_future <= 32 -%}{%- assign down_rank = 7 -%}
-    {%- else -%}{%- assign down_rank = 8 -%}{%- endif -%}
+    {%- assign min_banded = min_temp_future | plus: temp_shift -%}
+    {%- assign down_rank = 8 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if min_banded <= edge_c -%}
+        {%- assign down_rank = forloop.index -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
 
     {%- comment %}
     ============ GARMENT FROM THE CURRENT BAND ============
