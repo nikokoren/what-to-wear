@@ -108,6 +108,21 @@ def check_lang(path, problems):
         doc = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
         problems.append(f"{name}: not valid JSON - {exc}")
+        # "Expecting value: line 50 column 7" is not a useful thing to hand
+        # someone who just pasted a line in from a text editor. The usual
+        # cause is smart quotes standing in for the " that delimits the
+        # string, so name the line and the character.
+        for i, line in enumerate(
+            path.read_text(encoding="utf-8").splitlines(), 1
+        ):
+            for ch, what in (("“", "left"), ("”", "right")):
+                if ch in line:
+                    problems.append(
+                        f"{name}:{i}: {what} smart quote {ch} - JSON strings "
+                        f'need a plain ". Apostrophes inside a line are '
+                        f"fine; it is only the delimiters that matter.\n"
+                        f"      {line.strip()}"
+                    )
         return
 
     def bad(msg):
