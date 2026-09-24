@@ -691,15 +691,26 @@ Before moving a theme to ALL, draw every slug for it:
 A comma list ,mild_dry,warm_dry, is the way to ship a theme that only has
 some of its bands drawn.
 
-Drawn, full set:   ny, force, thanks, xmas
-No artwork yet:    pi, bike, okt, spooky, ghd, tdf, krampus, nikolo
+No theme is on ALL, because no theme is actually complete. Each list below
+is exactly the set of <theme>_<slug>.png that exists in the repo, and
+tools/check_sprites.py regenerates and verifies it. Add to a list only in
+the same commit that adds the artwork.
+
+Known gaps, in rough order of how often they would have fired:
+  xmas_cold_dry, xmas_cold_rain   a 4-10 degree Christmas, i.e. most of
+                                  western Europe most years
+  thanks_cold_rain                a wet Thanksgiving
+  force_cold_dry, force_cool_dry  early May in the north
+  ny_mild_*, ny_warm_*            New Year in the southern hemisphere
+No artwork at all: pi, bike, okt, spooky, ghd, tdf, krampus, nikolo.
+easter_mild_{dry,rain} exist but no easter date ever fires.
 {%- endcomment %}
 {%- assign theme_whitelist = '' -%}
 {%- case active_theme -%}
-  {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'ny' -%}{%- assign theme_whitelist = ',cold_dry,cold_rain,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,very_hot_dry,' -%}
+  {%- when 'force' -%}{%- assign theme_whitelist = ',cold_rain,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
+  {%- when 'thanks' -%}{%- assign theme_whitelist = ',cold_dry,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
+  {%- when 'xmas' -%}{%- assign theme_whitelist = ',cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
   {%- when 'pi' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'bike' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'okt' -%}{%- assign theme_whitelist = '' -%}

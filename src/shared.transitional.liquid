@@ -549,10 +549,10 @@ src/shared.liquid in step 3. See docs/MIGRATION.md.
 
 {%- assign theme_whitelist = '' -%}
 {%- case active_theme -%}
-  {%- when 'ny' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'force' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'thanks' -%}{%- assign theme_whitelist = 'ALL' -%}
-  {%- when 'xmas' -%}{%- assign theme_whitelist = 'ALL' -%}
+  {%- when 'ny' -%}{%- assign theme_whitelist = ',cold_dry,cold_rain,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,very_hot_dry,' -%}
+  {%- when 'force' -%}{%- assign theme_whitelist = ',cold_rain,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
+  {%- when 'thanks' -%}{%- assign theme_whitelist = ',cold_dry,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
+  {%- when 'xmas' -%}{%- assign theme_whitelist = ',cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
   {%- when 'pi' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'bike' -%}{%- assign theme_whitelist = '' -%}
   {%- when 'okt' -%}{%- assign theme_whitelist = '' -%}

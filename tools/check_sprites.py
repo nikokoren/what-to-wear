@@ -93,6 +93,21 @@ def timestamp_for(md, hour=12):
     return int(local.timestamp()) - UTC_OFFSET
 
 
+def dated(data, md, hour=12):
+    """Move a payload onto a given date.
+
+    The markup derives today_md from current.time when the API supplies it,
+    and only falls back to trmnl.system.timestamp_utc when it does not. The
+    first version of this script set the timestamp alone, so every render
+    silently happened on the shared test date and no themed sprite was ever
+    requested. Set both.
+    """
+    stamp = f"{YEAR}-{md}T{hour:02d}:00"
+    data["current"]["time"] = stamp
+    data["hourly"]["time"] = [f"{YEAR}-{md}T{h:02d}:00" for h in range(24)]
+    return data
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--remote", action="store_true",
@@ -112,8 +127,11 @@ def main():
             ts = timestamp_for(md)
             for band, temp in BANDS.items():
                 for precip, code in PRECIP.items():
-                    data = payload(temp, code, flat(temp), flat(0),
-                                   flat(code) if code else None)
+                    data = dated(
+                        payload(temp, code, flat(temp), flat(0),
+                                flat(code) if code else None),
+                        md,
+                    )
                     ctx = globals_for(data, None, settings(), "root")
                     ctx["trmnl"]["system"]["timestamp_utc"] = ts
                     html, _ = render(
