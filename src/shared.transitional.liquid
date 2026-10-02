@@ -43,7 +43,7 @@ Rollout step 1; see docs/MIGRATION.md.
 
 {%- assign local_days = local_secs | divided_by: 86400 -%}
 
-{%- assign dev_width = trmnl.device.width | plus: 0 -%}{%- assign is_og = false -%}{%- if dev_width <= 800 -%}{%- assign is_og = true -%}{%- endif -%}
+{%- assign dev_width = trmnl.device.width | plus: 0 -%}{%- assign is_og = false -%}{%- if dev_width > 0 and dev_width <= 800 -%}{%- assign is_og = true -%}{%- endif -%}
 
 {%- assign RAIN_CODES = ',51,53,55,56,57,61,63,65,66,67,80,81,82,95,96,99,' -%}{%- assign SNOW_CODES = ',71,73,75,77,85,86,' -%}
 

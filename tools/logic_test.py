@@ -34,7 +34,7 @@ SHARED = (REPO / "src" / "shared.liquid").read_text(encoding="utf-8")
 LANGS = {c: json.loads((REPO / "lang" / f"{c}.json").read_text(encoding="utf-8"))
          for c in ("en", "de")}
 
-FIELDS = ["scenario", "precip_scenario", "band", "sprite_slug", "active_theme",
+FIELDS = ["is_og", "scenario", "precip_scenario", "band", "sprite_slug", "active_theme",
           "when_temp", "when_temp2", "when_precip", "today_tip"]
 PROBE = "<P>" + "^".join("{{ %s }}" % f for f in FIELDS) + "</P>"
 
@@ -45,7 +45,7 @@ def utc(y, m, d, hh, mi=0):
 
 def run(env, cur, temps, probs, hour, codes=None, date="2026-10-07",
         offset=7200, ts=None, lang="en", texts=None, current_extra=None,
-        preference=None):
+        preference=None, device={"width": 800}):
     """Render one payload and return the markup's own decisions."""
     codes = codes or [0] * 24
     hours = [f"{date}T{h:02d}:00" for h in range(24)]
@@ -68,7 +68,7 @@ def run(env, cur, temps, probs, hour, codes=None, date="2026-10-07",
         cfg["temp_preference"] = preference
     ctx = {"trmnl": {"plugin_settings": {"custom_fields_values": cfg},
                      "system": {"timestamp_utc": ts},
-                     "user": {"utc_offset": 0}, "device": {"width": 800}},
+                     "user": {"utc_offset": 0}, "device": device},
            "IDX_0": data, "IDX_1": texts or LANGS[lang]}
     out = env.from_string(SHARED + PROBE).render(**ctx)
     values = out.split("<P>", 1)[1].split("</P>", 1)[0].split("^")
@@ -216,6 +216,13 @@ def main():
     got = run(env, 12, rising, [0] * 24, 10, preference="-4")
     expect("12 to 16, always cold", got, scenario="w_jacket", band="cold",
            when_temp="around midday")
+
+    # ---- small type only on a device that says it is small ----
+    for label, device, want in (("OG, 800 wide", {"width": 800}, "true"),
+                                ("X, 1040 wide", {"width": 1040}, "false"),
+                                ("no width reported", {}, "false")):
+        got = run(env, 17, [17] * 24, [0] * 24, 10, device=device)
+        expect(label, got, is_og=want)
 
     # ---- sentences start capitalised after ? and ! too ----
     texts = copy.deepcopy(LANGS["de"])
