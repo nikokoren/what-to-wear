@@ -18,7 +18,7 @@ jobs:
         run: python3 tools/validate_lang.py
 
       - name: Install Liquid engine
-        run: pip install --quiet python-liquid
+        run: pip install --quiet -r tools/requirements.txt
 
       - name: Check the transitional build is in sync
         run: |
@@ -32,6 +32,9 @@ jobs:
 
       - name: Render every scenario in every language
         run: python3 tools/render_test.py
+
+      - name: Check the weather logic does what it says
+        run: python3 tools/logic_test.py
 
       - name: Check the markup fits TRMNL's size ceiling
         run: |

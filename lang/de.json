@@ -464,6 +464,15 @@
       "Schnee kommt dazu. Geh langsam, der Boden ist glatt.",
       "Und dazu Schnee. Stiefel mit Profil sind die richtige Wahl.",
       "Dazu Schnee. Der Schirm bleibt zu Hause, die Stiefel kommen mit."
+    ],
+    "wet_again": [
+      "Der Regen macht eine Pause und kommt {WHENP} zurück. Behalte den Schirm dabei.",
+      "Zwischendurch bleibt es trocken, {WHENP} regnet es wieder. Lass den Schirm nicht liegen.",
+      "Eine Weile trocken, {WHENP} wieder Regen. Der Schirm bleibt bei dir."
+    ],
+    "wet_again_j": [
+      "Der Regen pausiert nur. Behalte den Schirm dabei.",
+      "Dazu eine Regenpause, dann regnet es wieder."
     ]
   },
   "temp_10": {
@@ -892,6 +901,15 @@
       "Schnee kommt dazu. Stiefel mit Grip sind heute die halbe Miete.",
       "Dabei fällt Schnee, und Schirme helfen dagegen bekanntlich wenig.",
       "Und dazu Schnee. Rutschige Wege sind das eigentliche Thema."
+    ],
+    "wet_again": [
+      "Der Regen legt eine Pause ein und meldet sich {WHENP} zurück. Der Schirm hat noch Dienst.",
+      "Das ist eine Pause, kein Feierabend. {WHENP} regnet es wieder, also bleibt der Schirm in der Hand.",
+      "Erst trocken, {WHENP} dann Runde zwei. Der Schirm ist noch nicht fertig."
+    ],
+    "wet_again_j": [
+      "Der Regen pausiert nur, der Schirm hat noch Dienst.",
+      "Regen macht Pause und kommt wieder. Schirm behalten."
     ]
   },
   "temp_11": {
@@ -1323,6 +1341,15 @@
       "Und Schnee obendrauf. Stiefel statt Sneaker, wie jedes Jahr nicht.",
       "Schnee kommt dazu. Der Schirm nützt nichts, deine Schuhwahl dafür alles.",
       "Dazu Schnee. Stiefel, nicht deine üblichen Schuhe."
+    ],
+    "wet_again": [
+      "Es hört auf, du erklärst den Regen für erledigt, und {WHENP} geht's wieder los. Der Schirm steht dann dort, wo du gefeiert hast.",
+      "Gleich kommt eine trockene Pause, in der du den Schirm irgendwo vergisst. {WHENP} regnet es wieder.",
+      "Der Regen pausiert, und du hältst das für ein Versprechen. {WHENP} ist er zurück, deine Überraschung auch."
+    ],
+    "wet_again_j": [
+      "Der Regen pausiert nur. Der Schirm bleibt irgendwo liegen.",
+      "Der Regen kommt wieder, kaum dass du Entwarnung gibst."
     ]
   }
 }

@@ -46,12 +46,14 @@ branch, so a fork uses the same artwork the live recipe does.
    markup reads weather from `IDX_0` and phrasing from `IDX_1`.
 
    ```
-   https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
+   https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
    https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@<SHA>/lang/##{{ language | default: 'en' }}.json
    ```
 
    The first line works whether the fork's form has `lat_lon`, the old
-   `latitude`/`longitude`, or both.
+   `latitude`/`longitude`, or both. `weather_code` must be in the
+   **hourly** list as well as the current one: without it snow forecasts
+   never fire (`tools/logic_test.py` checks the two agree).
 
 3. **Paste `src/shared.liquid`** into the shared markup, and each of
    `src/views/*.liquid` into its matching view.

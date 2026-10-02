@@ -30,8 +30,13 @@ SPRITE WORK THIS FILE ASSUMES
                    sprite that was drawn as snow)
   cold_dry      -> NEW, light jacket
   cold_rain     -> NEW, light jacket with umbrella
-Until the two new ones exist, cold_dry and cold_rain will 404 and
-fall through to fallback_sprite_url.
+Until that lands on main, the files under the old names still exist
+with the OLD ladder's art, so nothing 404s but the pictures are one
+band off: cold_dry draws a puffer where this ladder means a light
+jacket, cold_rain draws a puffer in snow, and freezing_dry already
+wears the scarf that belongs to extra_cold. Every themed set carries
+the same shift. tools/check_sprites.py only proves a file exists, so
+it cannot catch this; look at the pictures.
 ================================================================
 {%- endcomment %}
 
@@ -141,10 +146,12 @@ for it is what lets one copy of this markup serve both shapes.
 {%- if IDX_0 -%}
   {%- assign cw = IDX_0.current -%}
   {%- assign h = IDX_0.hourly -%}
+  {%- assign wx_offset = IDX_0.utc_offset_seconds -%}
   {%- assign texts = IDX_1 -%}
 {%- else -%}
   {%- assign cw = current -%}
   {%- assign h = hourly -%}
+  {%- assign wx_offset = utc_offset_seconds -%}
 {%- endif -%}
 
 {%- comment %} A texts payload that did not parse has no meta.code. {%- endcomment %}
@@ -238,20 +245,37 @@ ordinary message.
 {%- comment %} ============ SHARED TIME ============ {%- endcomment %}
 {%- assign local_hour = 12 -%}
 {%- assign today_md = '01-01' -%}
+{%- assign today_year = '2026' -%}
+
+{%- comment %}
+Local means the forecast location's clock. Open-Meteo states that offset
+outright (utc_offset_seconds, from timezone=auto); the device's own offset
+is only the fallback, for a payload that somehow lacks it.
+{%- endcomment %}
+{%- assign epoch_utc = trmnl.system.timestamp_utc | default: 0 | plus: 0 -%}
+{%- assign day_offset = trmnl.user.utc_offset | default: 0 | plus: 0 -%}
+{%- if wx_offset != nil -%}
+  {%- assign day_offset = wx_offset | plus: 0 -%}
+{%- endif -%}
+{%- assign local_secs = epoch_utc | plus: day_offset -%}
 
 {%- if now_time -%}
   {%- assign local_hour = now_time | slice: 11, 2 | plus: 0 -%}
   {%- assign today_md = now_time | slice: 5, 5 -%}
+  {%- assign today_year = now_time | slice: 0, 4 -%}
 {%- else -%}
-  {%- assign epoch_utc0 = trmnl.system.timestamp_utc | default: 0 | plus: 0 -%}
-  {%- assign utc_offset = trmnl.user.utc_offset | default: 0 | plus: 0 -%}
-  {%- assign local_secs = epoch_utc0 | plus: utc_offset -%}
   {%- assign local_hour = local_secs | divided_by: 3600 | modulo: 24 -%}
   {%- assign today_md = local_secs | date: '%m-%d' -%}
+  {%- assign today_year = local_secs | date: '%Y' -%}
 {%- endif -%}
 
-{%- assign epoch_utc = trmnl.system.timestamp_utc | default: 0 | plus: 0 -%}
-{%- assign local_days = epoch_utc | divided_by: 86400 -%}
+{%- comment %}
+Day number on the LOCAL calendar. It drives the weekday (Thanksgiving) and
+which line of a scenario rotates in. Counting UTC days instead switched
+Thanksgiving on at 19:00 on Wednesday in New York and off at 19:00 on the
+day itself, and changed the tip mid-morning in Sydney.
+{%- endcomment %}
+{%- assign local_days = local_secs | divided_by: 86400 -%}
 
 {%- assign dev_width = trmnl.device.width | plus: 0 -%}
 {%- assign is_og = false -%}
@@ -280,15 +304,13 @@ single contains test instead of a chained and/or condition.
 
 {%- assign has_future_window = false -%}
 {%- assign max_temp_future = 0 -%}
-{%- assign min_temp_future = 0 -%}
 {%- assign max_temp_idx = 0 -%}
-{%- assign min_temp_idx = 0 -%}
 {%- assign peak_rain = 0 -%}
 {%- assign first_rain_idx = -1 -%}
 {%- assign first_snow_idx = -1 -%}
 {%- assign future_has_snow = false -%}
 {%- assign rain_qualifies = false -%}
-{%- assign peak_first = false -%}
+{%- assign next_hour_precip = '' -%}
 
 {%- assign scenario = 'perfect' -%}
 {%- assign temp_scenario = '' -%}
@@ -300,12 +322,15 @@ single contains test instead of a chained and/or condition.
 {%- assign is_arc = false -%}
 {%- assign garment_n = '' -%}
 {%- assign garment_a = '' -%}
-{%- assign when_same = false -%}
 
 
 {%- if is_error == false -%}
 
-  {%- assign temp_c = cw.apparent_temperature | default: 0 | plus: 0 -%}
+  {%- comment %}
+  Air temperature is the fallback for a missing feels-like reading. A bare
+  default of 0 would band a null as freezing and draw a puffer in July.
+  {%- endcomment %}
+  {%- assign temp_c = cw.apparent_temperature | default: cw.temperature_2m | default: 0 | plus: 0 -%}
   {%- assign wmo = cw.weather_code | default: 0 | plus: 0 -%}
 
   {%- assign wmo_probe = ',' | append: wmo | append: ',' -%}
@@ -387,6 +412,7 @@ single contains test instead of a chained and/or condition.
   {%- endif -%}
 
   {%- assign temps = h.apparent_temperature -%}
+  {%- assign temps_air = h.temperature_2m -%}
   {%- assign probs = h.precipitation_probability -%}
   {%- assign codes = h.weather_code -%}
 
@@ -402,22 +428,113 @@ single contains test instead of a chained and/or condition.
 
     {%- if start_index <= end_index -%}
       {%- assign has_future_window = true -%}
-      {%- assign max_temp_future = temp_c -%}
-      {%- assign min_temp_future = temp_c -%}
-      {%- assign max_temp_idx = start_index -%}
-      {%- assign min_temp_idx = start_index -%}
 
-      {%- for t in temps -%}
-        {%- assign i = forloop.index0 -%}
-        {%- if i >= start_index and i <= end_index -%}
-          {%- assign tv = t | plus: 0 -%}
-          {%- if tv > max_temp_future -%}
-            {%- assign max_temp_future = tv -%}
-            {%- assign max_temp_idx = i -%}
+      {%- comment %}
+      ============ TWO HOUR PERSISTENCE ============
+      A band change only counts if it holds for two consecutive hours, the
+      same rule the rain test below has always used. So each hour is read
+      as a pair with the hour after it:
+
+        held_hi = the warmth the pair sustains  (the lower of the two)
+        held_lo = the cold the pair sustains    (the higher of the two)
+
+      Before this, one reading was enough. A 1.5 degree dip at sunrise
+      crossed an edge and outranked the whole day: at 05:30 a reader in a
+      light jacket was told to fetch the winter coat for a single hour,
+      and never heard that the jacket comes off this afternoon.
+
+      The last hour of the window pairs with the hour after it when the
+      payload has one, so a drop that starts at 21:00 still counts.
+
+      Each pair is ranked once here, off the same BAND_EDGES as the
+      current reading, and kept as comma lists indexed from start_index.
+      {%- endcomment %}
+      {%- assign held_lo_csv = '' -%}
+      {%- assign rank_hi_csv = '' -%}
+      {%- assign rank_lo_csv = '' -%}
+      {%- comment %}
+      The day's sustained peak is tracked on the way through. If nothing
+      beats the current reading the peak is "now", which makes everything
+      after it the cooling side.
+      {%- endcomment %}
+      {%- assign max_temp_future = temp_c -%}
+      {%- assign max_temp_idx = now_index -%}
+      {%- assign up_rank = band_rank -%}
+      {%- for i in (start_index..end_index) -%}
+        {%- assign tv = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
+        {%- assign held_hi = tv -%}
+        {%- assign held_lo = tv -%}
+        {%- assign j = i | plus: 1 -%}
+        {%- if j <= last_index -%}
+          {%- assign tn = temps[j] | default: temps_air[j] | default: tv | plus: 0 -%}
+          {%- if tn < held_hi -%}{%- assign held_hi = tn -%}{%- endif -%}
+          {%- if tn > held_lo -%}{%- assign held_lo = tn -%}{%- endif -%}
+        {%- endif -%}
+
+        {%- comment %}
+        Both ranked in one walk: the edges ascend, so a value's rank is one
+        more than the number of edges it is above - the same answer as the
+        first-edge-it-fits-under walk used for the current reading.
+        {%- endcomment %}
+        {%- assign hi_banded = held_hi | plus: temp_shift -%}
+        {%- assign lo_banded = held_lo | plus: temp_shift -%}
+        {%- assign r_hi = 1 -%}
+        {%- assign r_lo = 1 -%}
+        {%- for edge in band_edge_list -%}
+          {%- assign edge_c = edge | plus: 0 -%}
+          {%- if hi_banded > edge_c -%}{%- assign r_hi = forloop.index | plus: 1 -%}{%- endif -%}
+          {%- if lo_banded > edge_c -%}{%- assign r_lo = forloop.index | plus: 1 -%}{%- endif -%}
+        {%- endfor -%}
+
+        {%- if held_hi > max_temp_future -%}
+          {%- assign max_temp_future = held_hi -%}
+          {%- assign max_temp_idx = i -%}
+          {%- assign up_rank = r_hi -%}
+        {%- endif -%}
+
+        {%- comment %}
+        Separator BEFORE every item but the first. A trailing comma splits
+        into an extra empty item in some Liquid engines and not others.
+        {%- endcomment %}
+        {%- unless forloop.first -%}
+          {%- assign held_lo_csv = held_lo_csv | append: ',' -%}
+          {%- assign rank_hi_csv = rank_hi_csv | append: ',' -%}
+          {%- assign rank_lo_csv = rank_lo_csv | append: ',' -%}
+        {%- endunless -%}
+        {%- assign held_lo_csv = held_lo_csv | append: held_lo -%}
+        {%- assign rank_hi_csv = rank_hi_csv | append: r_hi -%}
+        {%- assign rank_lo_csv = rank_lo_csv | append: r_lo -%}
+      {%- endfor -%}
+      {%- assign held_lo_list = held_lo_csv | split: ',' -%}
+      {%- assign rank_hi_list = rank_hi_csv | split: ',' -%}
+      {%- assign rank_lo_list = rank_lo_csv | split: ',' -%}
+
+      {%- comment %}
+      Two different cold spells, kept apart because they tell different
+      stories. One global minimum used to stand for both, so a cold hour
+      before the peak hid the evening drop after it.
+
+        dip    before the peak, measured down from now
+        after  after the peak, measured down from the peak
+      {%- endcomment %}
+      {%- assign dip_min = temp_c -%}
+      {%- assign dip_rank = band_rank -%}
+      {%- assign after_min = max_temp_future -%}
+      {%- assign after_rank = up_rank -%}
+      {%- assign after_idx = max_temp_idx -%}
+      {%- for v in held_lo_list -%}
+        {%- assign hr = start_index | plus: forloop.index0 -%}
+        {%- assign vv = v | plus: 0 -%}
+        {%- if hr < max_temp_idx -%}
+          {%- if vv < dip_min -%}
+            {%- assign dip_min = vv -%}
+            {%- assign dip_rank = rank_lo_list[forloop.index0] | plus: 0 -%}
           {%- endif -%}
-          {%- if tv < min_temp_future -%}
-            {%- assign min_temp_future = tv -%}
-            {%- assign min_temp_idx = i -%}
+        {%- elsif hr > max_temp_idx -%}
+          {%- if vv < after_min -%}
+            {%- assign after_min = vv -%}
+            {%- assign after_idx = hr -%}
+            {%- assign after_rank = rank_lo_list[forloop.index0] | plus: 0 -%}
           {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
@@ -427,46 +544,97 @@ single contains test instead of a chained and/or condition.
       reach RAIN_LOW or any single hour reaches RAIN_HIGH. This is
       what kills the summer convection false positives that a flat
       20 percent threshold produced.
+
+      The same pass looks for a dry break: two consecutive hours under
+      RAIN_LOW. When it is raining now, that break is the difference
+      between "this clears", "this never lets up" and "this stops and
+      comes back", and the rain after the break is judged on its own.
       {%- endcomment %}
       {%- assign run_len = 0 -%}
       {%- assign best_run = 0 -%}
-      {%- for p in probs -%}
-        {%- assign i = forloop.index0 -%}
-        {%- if i >= start_index and i <= end_index -%}
-          {%- assign pv = p | default: 0 | plus: 0 -%}
-          {%- if pv > peak_rain -%}
-            {%- assign peak_rain = pv -%}
+      {%- assign dry_run = 0 -%}
+      {%- assign gap_found = false -%}
+      {%- assign back_run = 0 -%}
+      {%- assign back_best = 0 -%}
+      {%- assign back_peak = 0 -%}
+      {%- assign back_idx = -1 -%}
+      {%- for i in (start_index..end_index) -%}
+        {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
+        {%- if pv > peak_rain -%}
+          {%- assign peak_rain = pv -%}
+        {%- endif -%}
+        {%- if pv >= RAIN_LOW -%}
+          {%- assign run_len = run_len | plus: 1 -%}
+          {%- if run_len > best_run -%}
+            {%- assign best_run = run_len -%}
+          {%- endif -%}
+          {%- if first_rain_idx < 0 -%}
+            {%- assign first_rain_idx = i -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign run_len = 0 -%}
+        {%- endif -%}
+
+        {%- if gap_found -%}
+          {%- if pv > back_peak -%}
+            {%- assign back_peak = pv -%}
           {%- endif -%}
           {%- if pv >= RAIN_LOW -%}
-            {%- assign run_len = run_len | plus: 1 -%}
-            {%- if run_len > best_run -%}
-              {%- assign best_run = run_len -%}
+            {%- assign back_run = back_run | plus: 1 -%}
+            {%- if back_run > back_best -%}
+              {%- assign back_best = back_run -%}
             {%- endif -%}
-            {%- if first_rain_idx < 0 -%}
-              {%- assign first_rain_idx = i -%}
+            {%- if back_idx < 0 -%}
+              {%- assign back_idx = i -%}
             {%- endif -%}
           {%- else -%}
-            {%- assign run_len = 0 -%}
+            {%- assign back_run = 0 -%}
           {%- endif -%}
+        {%- elsif pv < RAIN_LOW -%}
+          {%- assign dry_run = dry_run | plus: 1 -%}
+          {%- if dry_run >= 2 -%}
+            {%- assign gap_found = true -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign dry_run = 0 -%}
         {%- endif -%}
       {%- endfor -%}
 
       {%- if best_run >= 2 or peak_rain >= RAIN_HIGH -%}
         {%- assign rain_qualifies = true -%}
       {%- endif -%}
+      {%- assign rain_returns = false -%}
+      {%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}
+        {%- assign rain_returns = true -%}
+      {%- endif -%}
 
-      {%- comment %} Snow anywhere in the window. {%- endcomment %}
+      {%- comment %}
+      What the next hour holds, for the picture: someone leaving in ten
+      minutes into a 90% hour should see the umbrella, not just read
+      about it.
+      {%- endcomment %}
+      {%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}
+      {%- if next_prob >= RAIN_HIGH -%}
+        {%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}
+        {%- if SNOW_CODES contains next_probe -%}
+          {%- assign next_hour_precip = 'snow' -%}
+        {%- else -%}
+          {%- assign next_hour_precip = 'rain' -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- comment %}
+      Snow anywhere in the window. Needs weather_code in the HOURLY list of
+      the polling URL; without it this never fires and a snowy afternoon
+      reads as rain and gets an umbrella.
+      {%- endcomment %}
       {%- if codes != nil -%}
-        {%- for c in codes -%}
-          {%- assign i = forloop.index0 -%}
-          {%- if i >= start_index and i <= end_index -%}
-            {%- assign c_probe = ',' | append: c | append: ',' -%}
-            {%- if SNOW_CODES contains c_probe -%}
-              {%- assign future_has_snow = true -%}
-              {%- if first_snow_idx < 0 -%}
-                {%- assign first_snow_idx = i -%}
-              {%- endif -%}
-            {%- endif -%}
+        {%- for i in (start_index..end_index) -%}
+          {%- assign c_probe = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains c_probe -%}
+            {%- assign future_has_snow = true -%}
+            {%- assign first_snow_idx = i -%}
+            {%- break -%}
           {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
@@ -475,45 +643,6 @@ single contains test instead of a chained and/or condition.
 
 
   {%- if has_future_window -%}
-
-    {%- comment %}
-    ============ SEQUENCE AWARE DELTAS ============
-    When the peak comes before the trough, the drop is measured
-    from the PEAK.
-    {%- endcomment %}
-    {%- assign delta_up = max_temp_future | minus: temp_c -%}
-    {%- if max_temp_idx <= min_temp_idx -%}
-      {%- assign delta_down = max_temp_future | minus: min_temp_future -%}
-      {%- assign peak_first = true -%}
-    {%- else -%}
-      {%- assign delta_down = temp_c | minus: min_temp_future -%}
-      {%- assign peak_first = false -%}
-    {%- endif -%}
-
-    {%- comment %}
-    Rank the extremes off the same ladder the current reading used, with
-    the same personal shift applied. These two used to be separate copies
-    with three thresholds that disagreed with the one above.
-    {%- endcomment %}
-    {%- assign max_banded = max_temp_future | plus: temp_shift -%}
-    {%- assign up_rank = 8 -%}
-    {%- for edge in band_edge_list -%}
-      {%- assign edge_c = edge | plus: 0 -%}
-      {%- if max_banded <= edge_c -%}
-        {%- assign up_rank = forloop.index -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-
-    {%- assign min_banded = min_temp_future | plus: temp_shift -%}
-    {%- assign down_rank = 8 -%}
-    {%- for edge in band_edge_list -%}
-      {%- assign edge_c = edge | plus: 0 -%}
-      {%- if min_banded <= edge_c -%}
-        {%- assign down_rank = forloop.index -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
 
     {%- comment %}
     ============ GARMENT FROM THE CURRENT BAND ============
@@ -553,6 +682,7 @@ single contains test instead of a chained and/or condition.
     {%- endif -%}
 
     {%- comment %} ---- warming: name what comes off ---- {%- endcomment %}
+    {%- assign delta_up = max_temp_future | minus: temp_c -%}
     {%- assign warm_key = '' -%}
     {%- assign warm_removable = false -%}
     {%- if delta_up >= MIN_DELTA and up_rank > band_rank -%}
@@ -572,53 +702,116 @@ single contains test instead of a chained and/or condition.
       {%- endunless -%}
     {%- endif -%}
 
-    {%- comment %} ---- cooling: name what to bring ---- {%- endcomment %}
-    {%- assign cold_key = '' -%}
-    {%- if peak_first -%}
-      {%- assign from_rank = up_rank -%}
-    {%- else -%}
-      {%- assign from_rank = band_rank -%}
-    {%- endif -%}
-    {%- if delta_down >= MIN_DELTA and down_rank < from_rank -%}
+    {%- comment %} ---- cooling, either side of the peak: name what to bring ---- {%- endcomment %}
+    {%- assign dip_key = '' -%}
+    {%- assign delta_dip = temp_c | minus: dip_min -%}
+    {%- if delta_dip >= MIN_DELTA and dip_rank < band_rank -%}
       {%- assign same_class = false -%}
-      {%- if down_rank >= 4 and down_rank <= 5 and from_rank >= 4 and from_rank <= 5 -%}
+      {%- if dip_rank >= 4 and dip_rank <= 5 and band_rank >= 4 and band_rank <= 5 -%}
         {%- assign same_class = true -%}
       {%- endif -%}
       {%- unless same_class -%}
-        {%- if down_rank <= 5 -%}
-          {%- assign ci = down_rank | minus: 1 -%}
-          {%- assign cold_key = CKEYS[ci] -%}
+        {%- if dip_rank <= 5 -%}
+          {%- assign ci = dip_rank | minus: 1 -%}
+          {%- assign dip_key = CKEYS[ci] -%}
         {%- else -%}
-          {%- assign cold_key = 'c_relief' -%}
+          {%- assign dip_key = 'c_relief' -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+    {%- assign after_key = '' -%}
+    {%- assign delta_after = max_temp_future | minus: after_min -%}
+    {%- if delta_after >= MIN_DELTA and after_rank < up_rank -%}
+      {%- assign same_class = false -%}
+      {%- if after_rank >= 4 and after_rank <= 5 and up_rank >= 4 and up_rank <= 5 -%}
+        {%- assign same_class = true -%}
+      {%- endif -%}
+      {%- unless same_class -%}
+        {%- if after_rank <= 5 -%}
+          {%- assign ci = after_rank | minus: 1 -%}
+          {%- assign after_key = CKEYS[ci] -%}
+        {%- else -%}
+          {%- assign after_key = 'c_relief' -%}
         {%- endif -%}
       {%- endunless -%}
     {%- endif -%}
 
     {%- comment %}
-    Arc needs something you can actually take off and put back on,
-    so it only fires when the warming key is a removable garment.
-    w_water plus a cooling key is not an arc: there is nothing to
-    shed, so the evening simply wins.
+    ============ WHEN, ON THE CLOCK ============
+    The time a line names is the hour the band is CROSSED, read off the
+    held series - not the hour of the peak or the trough. The extreme is
+    usually the last hour of the window in the evening, so naming it said
+    "tonight" about a jacket that was needed from 15:00.
+
+      comes off   first held_hi above the current class
+      bring       first held_lo inside the destination band
+      back on     first held_lo after the peak back at the current band
+                  (or the dip's band, when the day ends warmer)
+    {%- endcomment %}
+    {%- assign off_rank = band_rank | plus: 1 -%}
+    {%- if band_rank == 4 -%}
+      {%- assign off_rank = 6 -%}
+    {%- endif -%}
+    {%- assign back_rank = band_rank -%}
+    {%- if after_rank > band_rank -%}
+      {%- assign back_rank = after_rank -%}
+    {%- endif -%}
+    {%- assign warm_idx = -1 -%}
+    {%- assign dip_idx = -1 -%}
+    {%- assign bring_idx = -1 -%}
+    {%- assign back_on_idx = -1 -%}
+    {%- for r in rank_lo_list -%}
+      {%- assign hr = start_index | plus: forloop.index0 -%}
+      {%- assign rv = r | plus: 0 -%}
+      {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
+      {%- if hr > max_temp_idx -%}
+        {%- if bring_idx < 0 and rv <= after_rank -%}{%- assign bring_idx = hr -%}{%- endif -%}
+        {%- if back_on_idx < 0 and rv <= back_rank -%}{%- assign back_on_idx = hr -%}{%- endif -%}
+      {%- else -%}
+        {%- if warm_idx < 0 and hv >= off_rank -%}{%- assign warm_idx = hr -%}{%- endif -%}
+        {%- if dip_idx < 0 and hr < max_temp_idx and rv <= dip_rank -%}{%- assign dip_idx = hr -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if warm_idx < 0 -%}{%- assign warm_idx = max_temp_idx -%}{%- endif -%}
+    {%- if dip_idx < 0 -%}{%- assign dip_idx = start_index -%}{%- endif -%}
+    {%- if bring_idx < 0 -%}{%- assign bring_idx = after_idx -%}{%- endif -%}
+    {%- if back_on_idx < 0 -%}{%- assign back_on_idx = after_idx -%}{%- endif -%}
+
+    {%- comment %}
+    Which story wins:
+
+      1. a dip before the peak. It is the first thing the reader walks
+         into, and getting cold is the one mistake with a real cost.
+      2. an arc: a layer comes off and the evening wants one back. Needs
+         something you can actually take off, so w_water plus a cooling
+         key is not an arc - there is nothing to shed, so the evening
+         simply wins.
+      3. cooling after the peak.
+      4. warming.
     {%- endcomment %}
     {%- assign primary_idx = 0 -%}
     {%- assign secondary_idx = 0 -%}
 
-    {%- if warm_removable and cold_key != '' and peak_first -%}
-      {%- if down_rank < band_rank -%}
+    {%- if dip_key != '' -%}
+      {%- assign temp_scenario = dip_key -%}
+      {%- assign primary_idx = dip_idx -%}
+    {%- elsif warm_removable and after_key != '' -%}
+      {%- if after_rank < band_rank -%}
         {%- assign temp_scenario = 'arc_colder' -%}
-      {%- elsif down_rank > band_rank -%}
+      {%- elsif after_rank > band_rank -%}
         {%- assign temp_scenario = 'arc_warmer' -%}
       {%- else -%}
         {%- assign temp_scenario = 'arc_level' -%}
       {%- endif -%}
-      {%- assign primary_idx = max_temp_idx -%}
-      {%- assign secondary_idx = min_temp_idx -%}
-    {%- elsif cold_key != '' -%}
-      {%- assign temp_scenario = cold_key -%}
-      {%- assign primary_idx = min_temp_idx -%}
+      {%- assign primary_idx = warm_idx -%}
+      {%- assign secondary_idx = back_on_idx -%}
+    {%- elsif after_key != '' -%}
+      {%- assign temp_scenario = after_key -%}
+      {%- assign primary_idx = bring_idx -%}
     {%- elsif warm_key != '' -%}
       {%- assign temp_scenario = warm_key -%}
-      {%- assign primary_idx = max_temp_idx -%}
+      {%- assign primary_idx = warm_idx -%}
     {%- endif -%}
 
     {%- assign is_arc = false -%}
@@ -626,7 +819,15 @@ single contains test instead of a chained and/or condition.
       {%- assign is_arc = true -%}
     {%- endif -%}
 
-    {%- comment %} ============ PRECIP SCENARIO ============ {%- endcomment %}
+    {%- comment %}
+    ============ PRECIP SCENARIO ============
+    While it is raining now:
+      nothing qualifies, or a dry break with nothing behind it -> drier
+      a dry break, then rain that qualifies on its own          -> wet_again
+      no dry break of two hours anywhere                        -> stays_wet
+    'stays_wet' used to fire on any later rain at all, so a wet morning
+    and a wet evening with eight dry hours between them read "no gaps".
+    {%- endcomment %}
     {%- assign precip_idx = 0 -%}
     {%- if future_has_snow and is_now_snow == 0 -%}
       {%- assign precip_scenario = 'snow_coming' -%}
@@ -640,34 +841,39 @@ single contains test instead of a chained and/or condition.
         {%- assign precip_scenario = 'wetter' -%}
       {%- endif -%}
       {%- assign precip_idx = first_rain_idx -%}
-    {%- elsif is_now_precip == 1 and rain_qualifies == false -%}
-      {%- assign precip_scenario = 'drier' -%}
-      {%- assign precip_idx = start_index -%}
-    {%- elsif is_now_precip == 1 and rain_qualifies -%}
-      {%- assign precip_scenario = 'stays_wet' -%}
-      {%- assign precip_idx = end_index -%}
+    {%- elsif is_now_precip == 1 -%}
+      {%- if rain_qualifies == false -%}
+        {%- assign precip_scenario = 'drier' -%}
+        {%- assign precip_idx = start_index -%}
+      {%- elsif gap_found and rain_returns -%}
+        {%- assign precip_scenario = 'wet_again' -%}
+        {%- assign precip_idx = back_idx -%}
+      {%- elsif gap_found -%}
+        {%- assign precip_scenario = 'drier' -%}
+        {%- assign precip_idx = start_index -%}
+      {%- else -%}
+        {%- assign precip_scenario = 'stays_wet' -%}
+        {%- assign precip_idx = end_index -%}
+      {%- endif -%}
     {%- endif -%}
 
     {%- comment %} Time wording also comes from the language file. {%- endcomment %}
     {%- assign BUCKETS = texts.buckets -%}
     {%- assign RELATIVE = texts.relative -%}
+    {%- comment %}
+    Which of the five BUCKETS an hour of the day falls in:
+    morning to 10, midday 11-13, afternoon 14-16, evening 17-19, night 20+.
+    {%- endcomment %}
+    {%- assign HOUR_BUCKET = '0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,3,3,3,4,4,4,4' | split: ',' -%}
 
-    {%- if local_hour < 11 -%}{%- assign now_bucket = 0 -%}
-    {%- elsif local_hour < 14 -%}{%- assign now_bucket = 1 -%}
-    {%- elsif local_hour < 17 -%}{%- assign now_bucket = 2 -%}
-    {%- elsif local_hour < 20 -%}{%- assign now_bucket = 3 -%}
-    {%- else -%}{%- assign now_bucket = 4 -%}{%- endif -%}
+    {%- assign now_bucket = HOUR_BUCKET[local_hour] | plus: 0 -%}
 
     {%- comment %} primary temp token {%- endcomment %}
     {%- if temp_scenario != '' and texts_ok -%}
       {%- assign gap = primary_idx | minus: now_index -%}
       {%- assign th = local_hour | plus: gap -%}
       {%- if th > 23 -%}{%- assign th = 23 -%}{%- endif -%}
-      {%- if th < 11 -%}{%- assign tb = 0 -%}
-      {%- elsif th < 14 -%}{%- assign tb = 1 -%}
-      {%- elsif th < 17 -%}{%- assign tb = 2 -%}
-      {%- elsif th < 20 -%}{%- assign tb = 3 -%}
-      {%- else -%}{%- assign tb = 4 -%}{%- endif -%}
+      {%- assign tb = HOUR_BUCKET[th] | plus: 0 -%}
       {%- assign when_temp_bucket = tb -%}
       {%- if tb == now_bucket and gap >= 1 and gap <= 3 and is_arc == false -%}
         {%- assign gi = gap | minus: 1 -%}
@@ -682,11 +888,7 @@ single contains test instead of a chained and/or condition.
       {%- assign gap2 = secondary_idx | minus: now_index -%}
       {%- assign th2 = local_hour | plus: gap2 -%}
       {%- if th2 > 23 -%}{%- assign th2 = 23 -%}{%- endif -%}
-      {%- if th2 < 11 -%}{%- assign tb2 = 0 -%}
-      {%- elsif th2 < 14 -%}{%- assign tb2 = 1 -%}
-      {%- elsif th2 < 17 -%}{%- assign tb2 = 2 -%}
-      {%- elsif th2 < 20 -%}{%- assign tb2 = 3 -%}
-      {%- else -%}{%- assign tb2 = 4 -%}{%- endif -%}
+      {%- assign tb2 = HOUR_BUCKET[th2] | plus: 0 -%}
       {%- comment %}
       If both hinges land in the same bucket there is no two part
       story to tell. Nudge the second to 'tonight' when that is
@@ -712,26 +914,19 @@ single contains test instead of a chained and/or condition.
     {%- if precip_scenario contains 'wetter' -%}
       {%- assign wants_whenp = true -%}
     {%- endif -%}
-    {%- if precip_scenario == 'snow_coming' -%}
+    {%- if precip_scenario == 'snow_coming' or precip_scenario == 'wet_again' -%}
       {%- assign wants_whenp = true -%}
     {%- endif -%}
     {%- if wants_whenp and texts_ok -%}
       {%- assign pgap = precip_idx | minus: now_index -%}
       {%- assign ph = local_hour | plus: pgap -%}
       {%- if ph > 23 -%}{%- assign ph = 23 -%}{%- endif -%}
-      {%- if ph < 11 -%}{%- assign pb = 0 -%}
-      {%- elsif ph < 14 -%}{%- assign pb = 1 -%}
-      {%- elsif ph < 17 -%}{%- assign pb = 2 -%}
-      {%- elsif ph < 20 -%}{%- assign pb = 3 -%}
-      {%- else -%}{%- assign pb = 4 -%}{%- endif -%}
+      {%- assign pb = HOUR_BUCKET[ph] | plus: 0 -%}
       {%- if pb == now_bucket and pgap >= 1 and pgap <= 3 -%}
         {%- assign pgi = pgap | minus: 1 -%}
         {%- assign when_precip = RELATIVE[pgi] -%}
       {%- else -%}
         {%- assign when_precip = BUCKETS[pb] -%}
-      {%- endif -%}
-      {%- if temp_scenario != '' and pb == when_temp_bucket -%}
-        {%- assign when_same = true -%}
       {%- endif -%}
     {%- endif -%}
 
@@ -754,6 +949,32 @@ single contains test instead of a chained and/or condition.
 {%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
 {%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
 {%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
+{%- comment %}
+Easter Sunday, by the anonymous Gregorian computus. Integer arithmetic
+only, which Liquid's divided_by gives us when both sides are whole.
+{%- endcomment %}
+{%- assign ey = today_year | plus: 0 -%}
+{%- assign ea = ey | modulo: 19 -%}
+{%- assign eb = ey | divided_by: 100 -%}
+{%- assign ec = ey | modulo: 100 -%}
+{%- assign ed = eb | divided_by: 4 -%}
+{%- assign ee = eb | modulo: 4 -%}
+{%- assign ef = eb | plus: 8 | divided_by: 25 -%}
+{%- assign eg = eb | minus: ef | plus: 1 | divided_by: 3 -%}
+{%- assign eh = ea | times: 19 | plus: eb | minus: ed | minus: eg | plus: 15 | modulo: 30 -%}
+{%- assign ei = ec | divided_by: 4 -%}
+{%- assign ek = ec | modulo: 4 -%}
+{%- assign el = ee | times: 2 | plus: 32 | plus: ei | plus: ei | minus: eh | minus: ek | modulo: 7 -%}
+{%- assign eh11 = eh | times: 11 -%}
+{%- assign em = el | times: 22 | plus: ea | plus: eh11 | divided_by: 451 -%}
+{%- assign em7 = em | times: 7 -%}
+{%- assign en_ = eh | plus: el | minus: em7 | plus: 114 -%}
+{%- assign easter_month = en_ | divided_by: 31 -%}
+{%- assign easter_day = en_ | modulo: 31 | plus: 1 -%}
+{%- assign easter_md = '0' | append: easter_month | append: '-' -%}
+{%- if easter_day < 10 -%}{%- assign easter_md = easter_md | append: '0' -%}{%- endif -%}
+{%- assign easter_md = easter_md | append: easter_day -%}
+{%- if today_md == easter_md -%}{%- assign active_theme = 'easter' -%}{%- endif -%}
 {%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
 {%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
 {%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
@@ -798,7 +1019,7 @@ Known gaps, in rough order of how often they would have fired:
   force_cold_dry, force_cool_dry  early May in the north
   ny_mild_*, ny_warm_*            New Year in the southern hemisphere
 No artwork at all: pi, bike, okt, spooky, ghd, tdf, krampus, nikolo.
-easter_mild_{dry,rain} exist but no easter date ever fires.
+easter fires on Easter Sunday and has only its two mild sprites.
 {%- endcomment %}
 {%- assign theme_whitelist = '' -%}
 {%- case active_theme -%}
@@ -806,15 +1027,13 @@ easter_mild_{dry,rain} exist but no easter date ever fires.
   {%- when 'force' -%}{%- assign theme_whitelist = ',cold_rain,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
   {%- when 'thanks' -%}{%- assign theme_whitelist = ',cold_dry,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
   {%- when 'xmas' -%}{%- assign theme_whitelist = ',cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
-  {%- when 'pi' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'bike' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'okt' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'spooky' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'ghd' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'tdf' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'krampus' -%}{%- assign theme_whitelist = '' -%}
-  {%- when 'nikolo' -%}{%- assign theme_whitelist = '' -%}
+  {%- when 'easter' -%}{%- assign theme_whitelist = ',mild_dry,mild_rain,' -%}
 {%- endcase -%}
+{%- comment %}
+pi, bike, okt, spooky, ghd, tdf, krampus and nikolo have no artwork and so
+no branch: an empty whitelist is the default. Add a `when` in the same
+commit as the first drawing.
+{%- endcomment %}
 
 
 
@@ -848,28 +1067,34 @@ rain fragment - exactly the join the original markup existed to prevent.
 {%- assign is_steady = false -%}
 {%- if scenario == 'perfect' -%}
   {%- assign is_steady = true -%}
-  {%- assign perfect_variant = '' -%}
+  {%- comment %}
+  Candidates in order, first one the language has written wins. A themed
+  day with nothing to advise is the one moment the plugin can just enjoy
+  itself - and it only ever replaces 'perfect', so real advice is never
+  displaced by a joke about Christmas. A theme the language has no line
+  for falls through to the evening / hot / cold variant rather than all
+  the way to plain 'perfect'.
+  {%- endcomment %}
+  {%- assign variant_csv = '' -%}
   {%- if active_theme != '' -%}
-    {%- comment %}
-    A themed day with nothing to advise is the one moment the plugin can
-    just enjoy itself. Only ever replaces 'perfect', so real advice is
-    never displaced by a joke about Christmas.
-    {%- endcomment %}
-    {%- assign perfect_variant = 'theme_' | append: active_theme -%}
-  {%- elsif local_hour >= 17 -%}
-    {%- assign perfect_variant = 'perfect_evening' -%}
-  {%- elsif band_rank >= 7 -%}
-    {%- assign perfect_variant = 'perfect_hot' -%}
-  {%- elsif band_rank <= 2 -%}
-    {%- assign perfect_variant = 'perfect_cold' -%}
+    {%- assign variant_csv = 'theme_' | append: active_theme -%}
   {%- endif -%}
-  {%- if perfect_variant != '' -%}
-    {%- assign temp_probe_key = 'temp_' | append: sarcasm_level -%}
-    {%- assign probe_lib = texts[temp_probe_key] -%}
+  {%- if local_hour >= 17 -%}
+    {%- assign variant_csv = variant_csv | append: ',perfect_evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign variant_csv = variant_csv | append: ',perfect_hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign variant_csv = variant_csv | append: ',perfect_cold' -%}
+  {%- endif -%}
+  {%- assign temp_probe_key = 'temp_' | append: sarcasm_level -%}
+  {%- assign probe_lib = texts[temp_probe_key] -%}
+  {%- assign variant_list = variant_csv | split: ',' -%}
+  {%- for perfect_variant in variant_list -%}
     {%- if probe_lib[perfect_variant] -%}
       {%- assign scenario = perfect_variant -%}
+      {%- break -%}
     {%- endif -%}
-  {%- endif -%}
+  {%- endfor -%}
 {%- endif -%}
 
 {%- comment %}
@@ -939,6 +1164,19 @@ See docs/TRANSLATING.md for the full contract.
   {%- assign temp_clause = temp_clause | replace: '{WHEN2}', when_temp2 -%}
   {%- assign temp_clause = temp_clause | replace: '{WHEN}', when_temp -%}
   {%- assign temp_clause = temp_clause | replace: '  ', ' ' | strip -%}
+
+  {%- comment %}
+  wet_again is optional in a language file. Without it, say the true half -
+  the rain stops - rather than nothing, because no rain clause at all
+  leaves a steady-day line that may promise "no umbrella" mid-shower.
+  {%- endcomment %}
+  {%- if precip_scenario == 'wet_again' -%}
+    {%- assign wa_lib_key = 'precip_' | append: sarcasm_level -%}
+    {%- assign wa_lib = texts[wa_lib_key] -%}
+    {%- unless wa_lib['wet_again'] -%}
+      {%- assign precip_scenario = 'drier' -%}
+    {%- endunless -%}
+  {%- endif -%}
 
   {%- if precip_scenario != '' -%}
     {%- comment %}
@@ -1033,7 +1271,13 @@ See docs/TRANSLATING.md for the full contract.
   translation that fronts a time phrase is handled without knowing anything
   about it.
   {%- endcomment %}
-  {%- assign sentences = today_tip | split: '. ' -%}
+  {%- comment %}
+  Sentences end in . ! or ? - a German line asking "stimmt's?" before a
+  fronted time phrase rendered "stimmt's? heute Abend ..." when only ". "
+  counted. The mark stays on the sentence it ends; ^^ is just a cut point.
+  {%- endcomment %}
+  {%- assign marked = today_tip | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
+  {%- assign sentences = marked | split: '^^' -%}
   {%- assign cased = '' -%}
   {%- for sentence in sentences -%}
     {%- assign head = sentence | slice: 0 | upcase -%}
@@ -1041,7 +1285,7 @@ See docs/TRANSLATING.md for the full contract.
     {%- if forloop.first -%}
       {%- assign cased = head | append: tail -%}
     {%- else -%}
-      {%- assign cased = cased | append: '. ' | append: head | append: tail -%}
+      {%- assign cased = cased | append: ' ' | append: head | append: tail -%}
     {%- endif -%}
   {%- endfor -%}
   {%- if cased != '' -%}
@@ -1051,10 +1295,20 @@ See docs/TRANSLATING.md for the full contract.
 {%- endif -%}
 
 
+{%- comment %}
+============ DRESS FOR THE DOOR ============
+The precipitation half of the picture looks one hour ahead: dry now but
+raining (or snowing) in the next hour draws the wet outfit. The words are
+unaffected - they still say when it starts.
+{%- endcomment %}
+{%- if is_error == false and is_now_precip == 0 and next_hour_precip != '' -%}
+  {%- assign weather_slug = band | append: '_' | append: next_hour_precip -%}
+{%- endif -%}
+
 {%- comment %} ============ SPRITE FALLBACKS ============ {%- endcomment %}
 {%- if weather_slug == 'very_hot_rain' -%}
   {%- assign weather_slug = 'hot_rain' -%}
-{%- elsif weather_slug == 'very_hot_snow' or weather_slug == 'hot_snow' or weather_slug == 'warm_snow' or weather_slug == 'mild_snow' or weather_slug == 'cool_snow' or weather_slug == 'cold_snow' -%}
+{%- elsif weather_slug contains '_snow' and weather_slug != 'freezing_snow' and weather_slug != 'extra_cold_snow' -%}
   {%- assign weather_slug = 'freezing_snow' -%}
 {%- elsif weather_slug == 'extra_cold_rain' -%}
   {%- assign weather_slug = 'extra_cold_snow' -%}
@@ -1062,9 +1316,10 @@ See docs/TRANSLATING.md for the full contract.
 {%- comment %}
 Band 1 was added without its artwork, so extra_cold_dry and extra_cold_snow
 have never existed. Below -7 the device was building a URL that 404s and
-showing alt text instead of an outfit. Freezing is the closest drawn band —
-same puffer, beanie and boots, minus the scarf — so borrow it until band 1
-is drawn. Delete these two lines the day the art lands.
+showing alt text instead of an outfit. Borrow freezing until band 1 is
+drawn - which, until the renames in the header land, is the old ladder's
+puffer WITH the scarf, i.e. already the band 1 outfit. Delete these two
+lines the day the art lands.
 {%- endcomment %}
 {%- if weather_slug == 'extra_cold_dry' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
 {%- if weather_slug == 'extra_cold_snow' -%}{%- assign weather_slug = 'freezing_snow' -%}{%- endif -%}

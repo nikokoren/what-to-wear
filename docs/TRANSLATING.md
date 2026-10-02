@@ -136,6 +136,9 @@ Each precipitation scenario appears twice:
 
 `drier` and `stays_wet` name no time in either form and never tell anyone to
 take an umbrella — it is already raining, so the drawing already has one.
+`wet_again` (rain now, a dry break, rain again) is optional; its standalone
+form may say when the rain returns with `{WHENP}`, and it too never tells
+anyone to fetch an umbrella, only not to leave it behind.
 
 ## House style
 

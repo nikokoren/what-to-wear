@@ -34,6 +34,7 @@ from liquid import Environment, FileSystemLoader
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from render_test import (  # noqa: E402
     REPO,
+    assert_engine,
     extract_sprite,
     globals_for,
     payload,
@@ -87,6 +88,22 @@ def thanksgiving(year):
     return f"11-{thursdays[3]:02d}"
 
 
+def easter(year):
+    """Easter Sunday, anonymous Gregorian computus - the same arithmetic as
+    the markup, written independently so the two can be checked against
+    each other (tools/logic_test.py does)."""
+    a, b, c = year % 19, year // 100, year % 100
+    d, e = b // 4, b % 4
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = c // 4, c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month, day = divmod(h + l - 7 * m + 114, 31)
+    return f"{month:02d}-{day + 1:02d}"
+
+
 def timestamp_for(md, hour=12):
     month, day = (int(x) for x in md.split("-"))
     local = dt.datetime(YEAR, month, day, hour, tzinfo=dt.timezone.utc)
@@ -113,9 +130,11 @@ def main():
     ap.add_argument("--remote", action="store_true",
                     help="also check each URL resolves over the network")
     args = ap.parse_args()
+    assert_engine()
 
     dates = dict(THEME_DATES)
     dates["thanks"] = [thanksgiving(YEAR)]
+    dates["easter"] = [easter(YEAR)]
 
     env = Environment(loader=FileSystemLoader(str(REPO / "src")))
     missing = {}   # filename -> set of "theme date band precip" that want it

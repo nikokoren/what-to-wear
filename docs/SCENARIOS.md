@@ -28,7 +28,19 @@ drawing already shows, or what to put in the bag.
 Bands 4 and 5 count as one warmth class — a hoodie and a sweatshirt are the
 same thing thermally — so moving between them produces no hint at all.
 
-A change has to be at least 2 °C *and* cross a band to say anything.
+A change has to be at least 2 °C *and* cross a band to say anything, and
+it has to **hold for two consecutive hours**, the same rule rain has always
+had. A single cold hour at sunrise is not a story.
+
+The rain or snow half of the picture looks one hour ahead: dry now but at
+least 50% in the next hour draws the wet outfit, so someone leaving in ten
+minutes sees the umbrella rather than only reading about it.
+
+### When a line says "this afternoon"
+
+`{WHEN}` and `{WHEN2}` are the hour the band is **crossed**, not the hour of
+the peak or the low. A jacket needed from 15:00 says "this afternoon", even
+if the coldest hour of the window is 21:00.
 
 The edges above are the defaults. The optional **"Do you run cold or
 warm?"** setting shifts every reading by up to ±4 °C before it meets the
@@ -175,12 +187,12 @@ always a time of day rather than "in two hours".
 
 On the seasonal days, the tip can acknowledge the occasion. The theme names
 match the sprite prefixes: `theme_ny`,
-`theme_ghd`, `theme_pi`, `theme_force`, `theme_bike`, `theme_tdf`,
+`theme_ghd`, `theme_pi`, `theme_easter`, `theme_force`, `theme_bike`, `theme_tdf`,
 `theme_okt`, `theme_spooky`, `theme_thanks`, `theme_krampus`,
 `theme_nikolo`, `theme_xmas`.
 
-Only four of them — `ny`, `force`, `thanks`, `xmas` — actually have artwork
-drawn. The rest get their themed *words* over the ordinary outfit, which is
+Five of them have artwork: `ny`, `force`, `thanks` and `xmas`, plus `easter`
+(Easter Sunday, computed, mild bands only). The rest get their themed *words* over the ordinary outfit, which is
 the intended fallback and not a bug. A theme is only whitelisted for a
 themed sprite once every band of it exists; `tools/check_sprites.py`
 enforces that, after `okt` spent sixteen days a year pointing at a PNG
@@ -203,7 +215,8 @@ date, not a season.
 Keep them weather-shaped rather than pure greeting: the plugin is still a
 weather plugin on Christmas Day. `Merry Christmas!` is not a tip.
 
-A language that omits these falls back to `perfect`, so they are optional.
+A language that omits these falls back to the evening, hot or cold variant
+the day would otherwise get, then to `perfect`, so they are optional.
 
 ## Precipitation keys
 
@@ -218,12 +231,17 @@ must not carry `{WHENP}` and should read as a continuation.
 | `wetter` | rain is coming, short | take the umbrella, it arrives `{WHENP}` |
 | `wetter_long` | rain for 4+ consecutive hours | it settles in; the umbrella earns its keep |
 | `drier` | **raining now**, stopping later | it clears; the umbrella gets a rest |
-| `stays_wet` | **raining now**, no let-up | all day, no gap |
+| `stays_wet` | **raining now**, no dry break of 2+ hours in the window | all day, no gap |
+| `wet_again` | **raining now**, a dry break, then rain again `{WHENP}` | it stops for a while; don't leave the umbrella anywhere |
 | `snow_coming` | snow ahead, not snowing yet | snow `{WHENP}`; footwear, not umbrellas |
 
-`drier` and `stays_wet` name **no time and never tell anyone to take an
-umbrella.** It is already raining, so the figure in the drawing is already
+`drier`, `stays_wet` and `wet_again` **never tell anyone to take an
+umbrella**, and only `wet_again` (standalone form) names a time — when the
+rain comes back. It is already raining, so the figure in the drawing is already
 holding one. Telling them to fetch it reads as a bug.
+
+`wet_again` is optional. A language without it gets `drier` — the true half
+of the story — rather than no rain line at all.
 
 `snow_coming` is about grip, not staying dry. Boots with tread. An umbrella
 is decoration in snow.

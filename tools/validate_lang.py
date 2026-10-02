@@ -47,7 +47,7 @@ TEMP_KEYS = [
 # optional - a translation can ship with the one key - but if present they
 # have to obey the same rules.
 OPTIONAL_TEMP_KEYS = ["perfect_evening", "perfect_hot", "perfect_cold"]
-THEMES = ["ny", "ghd", "pi", "force", "bike", "tdf", "okt",
+THEMES = ["ny", "ghd", "pi", "easter", "force", "bike", "tdf", "okt",
           "spooky", "thanks", "krampus", "nikolo", "xmas"]
 OPTIONAL_TEMP_KEYS += [f"theme_{t}" for t in THEMES]
 
@@ -55,6 +55,11 @@ OPTIONAL_TEMP_KEYS += [f"theme_{t}" for t in THEMES]
 STEADY_KEYS = set(["perfect"] + OPTIONAL_TEMP_KEYS)
 PRECIP_BASE = ["wetter_maybe", "wetter", "wetter_long", "drier", "stays_wet", "snow_coming"]
 PRECIP_KEYS = [k + s for k in PRECIP_BASE for s in ("", "_j")]
+
+# Raining now, a dry break of two hours or more, then rain again. Optional:
+# a language without it falls back to 'drier', which is the true half of
+# the story. If present, both forms must be.
+OPTIONAL_PRECIP_KEYS = ["wet_again", "wet_again_j"]
 
 KNOWN_TOKENS = {"{WHEN}", "{WHEN2}", "{WHENP}", "{GARMENT}", "{GARMENTA}"}
 TOKEN_RE = re.compile(r"\{[A-Z0-9_]+\}")
@@ -175,13 +180,17 @@ def check_lang(path, problems):
                 bad(f"{section_name} is missing")
                 continue
 
-            allowed = set(keys)
-            if kind == "temp":
-                allowed |= set(OPTIONAL_TEMP_KEYS)
+            optional = OPTIONAL_TEMP_KEYS if kind == "temp" else OPTIONAL_PRECIP_KEYS
+            allowed = set(keys) | set(optional)
             for extra in sorted(set(section) - allowed):
                 bad(f"{section_name}.{extra} is not a scenario the markup asks for")
+            if kind == "precip":
+                have = [k for k in OPTIONAL_PRECIP_KEYS if k in section]
+                if have and len(have) != len(OPTIONAL_PRECIP_KEYS):
+                    bad(f"{section_name} has {have[0]} without its pair; "
+                        "wet_again needs both the standalone and the _j form")
 
-            present = list(keys) + [k for k in OPTIONAL_TEMP_KEYS if k in section]
+            present = list(keys) + [k for k in optional if k in section]
             for key in present:
                 lines = section.get(key)
                 if not isinstance(lines, list) or not lines:
@@ -299,7 +308,7 @@ def check_lang(path, problems):
     # removes a setting people notice.
     flat_levels = []
     for kind in ("temp", "precip"):
-        for key in (TEMP_KEYS if kind == "temp" else PRECIP_KEYS):
+        for key in (TEMP_KEYS if kind == "temp" else PRECIP_KEYS + OPTIONAL_PRECIP_KEYS):
             variants = {}
             for level in LEVELS:
                 section = doc.get(f"{kind}_{level}")

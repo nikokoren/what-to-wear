@@ -41,6 +41,28 @@ from liquid import FileSystemLoader
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 
+
+def assert_engine():
+    """Refuse to test on a Liquid that cannot compare.
+
+    python-liquid 2.3.3 evaluates `9 >= 9` and `9 <= 9` as false. The markup
+    leans on both at every band edge and window boundary, so on that release
+    the tests quietly exercise different logic from what TRMNL runs - and
+    pass. CI pins a good version; this is the tripwire for anyone who
+    installs whatever pip hands them.
+    """
+    import liquid
+    probe = Environment().from_string(
+        "{% if 9 >= 9 %}a{% endif %}{% if 9 <= 9 %}b{% endif %}"
+        "{% if 8 >= 9 %}X{% endif %}{% if 9 <= 8 %}Y{% endif %}"
+    ).render()
+    if probe != "ab":
+        raise SystemExit(
+            f"python-liquid {liquid.__version__} gets <= / >= wrong "
+            f"(probe rendered {probe!r}, expected 'ab').\n"
+            "Install the pinned version: pip install -r tools/requirements.txt"
+        )
+
 # Every language in the repo gets rendered. The two that predate the refactor
 # additionally get compared against the embedded copies, because only those
 # two have an embedded copy to compare against.
@@ -105,6 +127,9 @@ SCENARIOS = {
     "heat_no_layers_left": payload(29, 0, ramp(29, 36), flat(0)),
     "extra_cold": payload(-12, 0, flat(-12), flat(0)),
     "freezing_snow_now": payload(-2, 73, flat(-2), flat(90), flat(73)),
+    "rain_breaks_then_returns": payload(
+        12, 61, flat(12), [90] * 10 + [5] * 8 + [80] * 6,
+        [61] * 10 + [0] * 8 + [61] * 6),
 
     # The ladder's old dead zones. The current reading and the forecast
     # extremes used to be ranked by three separate copies of the ladder
@@ -177,6 +202,7 @@ def extract_sprite(html):
 
 
 def main():
+    assert_engine()
     env = Environment(loader=FileSystemLoader(str(REPO / "src")))
     failures = []
     checked = 0
@@ -296,11 +322,13 @@ def main():
     # unset location, where waiting can never help.
     for tmpl in ("shared.liquid", "shared.transitional.liquid"):
         for lang in ("en", "de"):
+            # The full view shows the message rather than the headline,
+            # because the message is the part that says what to do.
             for label, extra, key in (
-                ("outage", {"lat_lon": "48.21,16.37"}, "error_short"),
+                ("outage", {"lat_lon": "48.21,16.37"}, "error_current"),
                 ("legacy coords", {"latitude": "48.21", "longitude": "16.37"},
-                 "error_short"),
-                ("no location", {}, "error_location_short"),
+                 "error_current"),
+                ("no location", {}, "error_location"),
             ):
                 cfg = settings(lang=lang)
                 cfg.update(extra)
@@ -314,18 +342,18 @@ def main():
                 expected = LANGS[lang]["ui"][key]
                 if expected not in html:
                     failures.append(
-                        f"{tmpl}/{lang}/{label}: expected headline "
+                        f"{tmpl}/{lang}/{label}: expected message "
                         f"{expected!r}"
                     )
                 # The two causes must be distinguishable on screen.
                 other = LANGS[lang]["ui"][
-                    "error_short" if key != "error_short"
-                    else "error_location_short"
+                    "error_location" if key != "error_location"
+                    else "error_current"
                 ]
                 if other in html:
                     failures.append(
                         f"{tmpl}/{lang}/{label}: showed the other error's "
-                        f"headline {other!r}"
+                        f"message {other!r}"
                     )
 
     # future suggestions turned off

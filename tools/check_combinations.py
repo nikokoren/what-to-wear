@@ -36,7 +36,8 @@ TEMP_KEYS = [
     "w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_sweatshirt", "w_water",
     "c_scarf", "c_coat", "c_jacket", "c_hoodie", "c_sweatshirt", "c_relief",
 ]
-PRECIP_BASE = ["wetter_maybe", "wetter", "wetter_long", "drier", "stays_wet", "snow_coming"]
+PRECIP_BASE = ["wetter_maybe", "wetter", "wetter_long", "drier", "stays_wet",
+               "wet_again", "snow_coming"]
 
 # Roughly what fits at title--large on the small device before the layout
 # starts eating the sprite. Deliberately generous; the point is to catch the

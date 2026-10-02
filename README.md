@@ -40,7 +40,7 @@ Edit `src/shared.liquid`, then regenerate the transitional build and run the
 tests:
 
 ```bash
-pip install python-liquid
+pip install -r tools/requirements.txt   # pinned: 2.3.3 gets >= wrong
 python3 tools/build_transitional.py
 python3 tools/render_test.py
 ```
@@ -56,7 +56,9 @@ truth, not a deploy target. The one path that needs care is the text
 extraction rollout — see [docs/MIGRATION.md](docs/MIGRATION.md).
 
 TRMNL caps shared markup at 100 KB. Before the refactor this file was 100,158
-bytes, which is what prompted it. It is now 33 KB.
+bytes, which is what prompted it. It is now 58 KB, comments included; the
+transitional build strips comments and indentation and sits just under 100 KB,
+so check its headroom (CI prints it) before adding logic.
 
 ## A note for anyone who forked
 

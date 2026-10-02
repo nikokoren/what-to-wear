@@ -456,6 +456,15 @@
       "Snow on top of that. Go for grip underfoot.",
       "Snow shows up at some point. Solid boots today.",
       "Snow too. Wear boots with grip."
+    ],
+    "wet_again": [
+      "The rain stops for a while, then comes back {WHENP}. Keep the umbrella with you.",
+      "A dry spell in the middle, then more rain {WHENP}. Don't leave the umbrella behind.",
+      "It clears for a few hours. The rain is back {WHENP}, so hold on to the umbrella."
+    ],
+    "wet_again_j": [
+      "The rain pauses, then comes back. Keep the umbrella.",
+      "A dry spell, then more rain. Hold on to the umbrella."
     ]
   },
   "temp_10": {
@@ -887,6 +896,15 @@
       "And snow, which turns this into a question about boots.",
       "Snow joins in later, the ground turns slick, so wear something with grip.",
       "Snow with it. Grip matters, umbrellas don't."
+    ],
+    "wet_again": [
+      "The rain takes a few hours off and clocks back in {WHENP}. The umbrella stays on duty.",
+      "This is an intermission, not an ending. More rain {WHENP}, so the umbrella doesn't get left anywhere.",
+      "Dry for a stretch, then round two {WHENP}. The umbrella's job isn't finished."
+    ],
+    "wet_again_j": [
+      "The rain only pauses, so the umbrella stays on duty.",
+      "Rain takes a break and comes back. The umbrella isn't done."
     ]
   },
   "temp_11": {
@@ -1318,6 +1336,15 @@
       "Also snow. Learn about grip now or the hard way again.",
       "Snow's in it too, and whatever's by the door is wrong. Boots.",
       "Snow too. Grip, or the sidewalk wins."
+    ],
+    "wet_again": [
+      "It stops, you'll declare victory, and it starts again {WHENP}. The umbrella will be wherever you celebrated.",
+      "A dry spell is coming, and you'll leave the umbrella somewhere in it. The rain's back {WHENP}.",
+      "The rain pauses. You'll take that as a promise. It's back {WHENP}, and so is your surprise."
+    ],
+    "wet_again_j": [
+      "The rain only pauses. You'll lose the umbrella in the gap.",
+      "The rain comes back right after you call it over."
     ]
   }
 }

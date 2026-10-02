@@ -13,5 +13,5 @@
 # hours, which is fine for copy that changes rarely; use a tag if you ever
 # need a faster or pinned rollout.
 
-https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
+https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
 https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@main/lang/##{{ language | default: 'en' }}.json
