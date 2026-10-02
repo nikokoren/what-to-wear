@@ -44,7 +44,8 @@ def utc(y, m, d, hh, mi=0):
 
 
 def run(env, cur, temps, probs, hour, codes=None, date="2026-10-07",
-        offset=7200, ts=None, lang="en", texts=None, current_extra=None):
+        offset=7200, ts=None, lang="en", texts=None, current_extra=None,
+        preference=None):
     """Render one payload and return the markup's own decisions."""
     codes = codes or [0] * 24
     hours = [f"{date}T{h:02d}:00" for h in range(24)]
@@ -63,6 +64,8 @@ def run(env, cur, temps, probs, hour, codes=None, date="2026-10-07",
         ts = utc(y, m, d, hour, 30) - offset
     cfg = {"language": lang, "sarcasm_level": "10", "show_future_suggestions": "yes",
            "lat_lon": "48.2,16.4"}
+    if preference is not None:
+        cfg["temp_preference"] = preference
     ctx = {"trmnl": {"plugin_settings": {"custom_fields_values": cfg},
                      "system": {"timestamp_utc": ts},
                      "user": {"utc_offset": 0}, "device": {"width": 800}},
@@ -194,6 +197,25 @@ def main():
     # no theme_easter line yet: falls through to the evening variant
     got = run(env, 16, [16] * 24, [0] * 24, 18, date="2026-04-05")
     expect("Easter evening, no themed line", got, scenario="perfect_evening")
+
+    # ---- "Do you run cold or warm?" shifts the reading, not the ladder ----
+    got = run(env, 21, [21] * 24, [0] * 24, 10)
+    expect("21C, average", got, band="warm")
+    got = run(env, 21, [21] * 24, [0] * 24, 10, preference="-4")
+    expect("21C, always cold", got, band="mild")
+    got = run(env, 17, [17] * 24, [0] * 24, 10, preference="4")
+    expect("17C, always hot", got, band="warm")
+    got = run(env, 21, [21] * 24, [0] * 24, 10, preference="3")
+    expect("unlisted preference is ignored", got, band="warm")
+    # the forecast is shifted too, so the hint agrees with the picture:
+    # 12 -> 16 is hoodie weather all day for most, jacket-then-hoodie
+    # for someone who is always cold
+    rising = [12] * 11 + [13, 14, 15, 16] + [16] * 9
+    got = run(env, 12, rising, [0] * 24, 10)
+    expect("12 to 16, average", got, scenario="perfect", band="cool")
+    got = run(env, 12, rising, [0] * 24, 10, preference="-4")
+    expect("12 to 16, always cold", got, scenario="w_jacket", band="cold",
+           when_temp="around midday")
 
     # ---- sentences start capitalised after ? and ! too ----
     texts = copy.deepcopy(LANGS["de"])
