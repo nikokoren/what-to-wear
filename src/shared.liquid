@@ -277,16 +277,6 @@ day itself, and changed the tip mid-morning in Sydney.
 {%- endcomment %}
 {%- assign local_days = local_secs | divided_by: 86400 -%}
 
-{%- comment %}
-Small text only on a device that REPORTS a width of 800 or less. A missing
-width reads as 0, and treating that as the OG put the X's half-vertical,
-half-horizontal and quadrant tips in tiny type in the markup preview.
-{%- endcomment %}
-{%- assign dev_width = trmnl.device.width | plus: 0 -%}
-{%- assign is_og = false -%}
-{%- if dev_width > 0 and dev_width <= 800 -%}
-  {%- assign is_og = true -%}
-{%- endif -%}
 
 
 {%- comment %}

@@ -1,43 +1,27 @@
-<div class="layout layout--col layout--center-x p--xs">
-
-  {% if is_error %}
-     <div class="flex flex--col flex--center-y w--100 stretch-y">
-        <img
-          class="image image-dither" 
-        style="max-height: 100%; max-width: 100%; object-fit: contain;" src="{{ sprite_url }}" alt="Error">
-        <div class="title title--small text--center mt--xs">
-          {{ error_message }}
-        </div>
-     </div>
-
-  {% else %}
-
-    <div class="stretch-y flex flex--center-y flex--center-x w--100" style="min-height: 0;">
-      
-      <img 
-        class="image image-dither" 
-        style="max-height: 100%; max-width: 100%; object-fit: contain;"
-        src="{{ sprite_url }}" 
-        onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'"
-        alt="Outfit"
-      >
+{%- assign show_tip = false -%}
+{%- if show_future_suggestions == 'on' and today_tip != '' -%}{%- assign show_tip = true -%}{%- endif -%}
+<div class="layout layout--col layout--center">
+  <div class="richtext richtext--center gap w--max-[100cqw]">
+  {%- if is_error %}
+    <img class="image image--contain h--[55cqh]" src="{{ sprite_url }}" alt="Error">
+    <div class="content content--center text--center w--max-[100cqw] content--base lg:content--large" data-content-limiter="true">
+      <p>{{ error_message }}</p>
     </div>
-
-    {% if show_future_suggestions == 'on' and today_tip != '' %}
-       <div class="title {% if is_og == false %}title--large
-{% else %}title--small
-{% endif %} outfit-tip text--center mt--xs">
-        {{ today_tip }}
-      </div>
-    {% endif %}
-
-  {% endif %}
-
+  {%- else %}
+    <img class="image image--contain image-dither {% if show_tip %}h--[55cqh]{% else %}h--[100cqh]{% endif %}"
+      src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'" alt="Outfit">
+    {%- if show_tip %}
+    <div class="content outfit-tip content--center text--center w--max-[100cqw] content--large lg:content--xlarge" data-content-limiter="true">
+      <p>{{ today_tip }}</p>
+    </div>
+    {%- endif %}
+  {%- endif %}
+  </div>
 </div>
 
 {%- if show_bottom_bar == 'on' -%}
   <div class="title_bar">
-    <span class="title title--small">What to Wear</span>
+    <span class="title">What to Wear</span>
     <span class="instance">{{ location_label }}</span>
   </div>
 {%- endif -%}

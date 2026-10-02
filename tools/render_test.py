@@ -189,10 +189,10 @@ def render(env, template_name, view_name, ctx):
 
 
 def extract_tip(html):
-    marker = 'outfit-tip text--center mt--xs">'
+    marker = 'outfit-tip'
     if marker not in html:
         return None
-    return html.split(marker, 1)[1].split("</div>", 1)[0].strip()
+    return html.split(marker, 1)[1].split("<p>", 1)[1].split("</p>", 1)[0].strip()
 
 
 def extract_sprite(html):
