@@ -18,6 +18,8 @@ src/shared.transitional.liquid
                       generated; only needed during the rollout
 config/               form fields and polling URLs, for reference
 tools/                validation and render tests
+worker/               optional texts Worker that counts forecast and
+                      sarcasm settings; see worker/README.md
 docs/                 how to translate, how to roll out
 ```
 

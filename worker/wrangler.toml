@@ -1,0 +1,13 @@
+name = "what-to-wear"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# jsDelivr ref the texts are served from. A commit SHA pins a build.
+LANG_REF = "main"
+# Record 1 poll in N, weighted by N. 1 records every poll.
+STATS_SAMPLE = "1"
+
+[[analytics_engine_datasets]]
+binding = "STATS"
+dataset = "what_to_wear_polls"
