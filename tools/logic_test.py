@@ -124,10 +124,13 @@ def main():
     expect("snowing now", got, band="coat", sprite_slug="coat_snow")
     got = run(env, -8, [-8] * 24, [0] * 9 + [90] * 15, 8, codes=[0] * 9 + [73] * 15)
     expect("snow from the next hour", got, band="bundled", sprite_slug="bundled_snow")
-    # an outfit without a snow drawing draws dry: snow at 2C feels-like
-    # for someone who is always hot (+4) lands in the jacket band
+    # snow at 2C feels-like for someone who is always hot (+4) lands in
+    # the jacket band, which has a snow drawing for exactly that
     got = run(env, 2, [2] * 24, [90] * 24, 8, codes=[73] * 24, preference="4")
-    expect("snow, shifted into the jacket band", got, band="jacket", sprite_slug="jacket_dry")
+    expect("snow, shifted into the jacket band", got, band="jacket", sprite_slug="jacket_snow")
+    # an outfit without a snow drawing draws dry
+    got = run(env, 9, [9] * 24, [90] * 24, 8, codes=[73] * 24, preference="4")
+    expect("snow in the sweater band", got, band="sweater", sprite_slug="sweater_dry")
 
     # ---- a one-hour dip at sunrise does not outrank the day ----
     day = [9, 9, 8.5, 8.5, 8.2, 8.0, 7.0, 4.5, 6.5, 9, 11, 13, 15, 17, 18.5, 19,

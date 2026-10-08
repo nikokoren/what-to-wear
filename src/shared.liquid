@@ -84,11 +84,12 @@ are decided instead.
 {%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}
 {%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}
 {%- comment %}
-Outfits with a snow drawing. Snow only falls on these two (tools/climate/:
-72% bundled, 28% coat); an outfit not listed draws dry in snow, which
-only happens when "Do you run cold or warm?" shifts a snowy day warmer.
+Outfits with a snow drawing. At the default setting snow only falls on
+bundled and coat (tools/climate/: 72% and 28%); jacket is for "Do you run
+cold or warm?" shifting a snowy day warmer. An outfit not listed draws dry
+in snow.
 {%- endcomment %}
-{%- assign SNOW_OUTFITS = ',bundled,coat,' -%}
+{%- assign SNOW_OUTFITS = ',bundled,coat,jacket,' -%}
 
 
 {%- comment %} ============ SPRITE BASES ============ {%- endcomment %}

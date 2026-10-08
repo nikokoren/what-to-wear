@@ -27,7 +27,9 @@ drawing already shows, or what to put in the bag.
 
 Each step is one decision at the door. Rain adds the umbrella, as a sign
 that rain is coming rather than a garment. Snow is the dry outfit with snow
-falling, drawn for `bundled` and `coat`, the only outfits snow falls on.
+falling, drawn for `bundled` and `coat` (the only outfits snow falls on at
+the default setting) and `jacket` (for "Do you run cold or warm?" shifting
+a snowy day warmer).
 
 Bands 5 and 6 have the same top layer. Moving between them is a question of
 legs, which are decided once at the door (the long-pants rule below), so it
