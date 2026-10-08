@@ -61,6 +61,76 @@ Open questions:
   outfit, from the hourly precipitation in that slot.
 - **Labels** go in `lang/*.json` like every other word on screen.
 
+## 3. Better writing, and a review process that isn't tedious
+
+The tips read robotic in both languages, English most of all, and
+reviewing them line by line in JSON has always been slow. Do this after
+item 1: new outfits change every `w_*`/`c_*` line, so write once, not
+twice. Pilot on `perfect`, which is about half of everything shown.
+
+### Why the current lines sound generated
+
+- **One joke, repeated.** About 9% of the 1,025 English lines give
+  objects a job: the jacket's "shift ends", the rain "cleared its
+  calendar", the forecast "filed nothing". That is a rule in
+  `docs/VOICE.md` ("level 10: deadpan, aimed at the objects") turned
+  into a template.
+- **Too many lines.** "Depth follows frequency" pushed volume, and
+  volume forces formula. A reader sees one line a day; three great
+  lines per key beat twelve passable ones.
+- **Written and judged out of context.** Each line is written and
+  reviewed alone in a JSON file, never on the screen with the outfit,
+  the time words filled in, and the rain line it gets paired with.
+- **Rules instead of examples.** Adjectives like "warm" or "deadpan"
+  steer a model far less than a handful of lines you actually like.
+
+### How the owner can help the writer
+
+- **A taste file:** 20 to 30 lines you love from anywhere (apps, ads,
+  friends' messages), and 20 from the current corpus you dislike, each
+  with one word for why. Concrete examples beat any rulebook.
+- **One sentence on who is talking.** "A friend who checked the weather
+  for you", not a style guide.
+- **Rate, don't rewrite.** A star or a veto with a tag is faster for you
+  and better signal for the next round than editing lines yourself.
+- **A native read of the English.** About 50% of devices are in the US;
+  a native speaker reading the starred lines once catches what neither
+  of us will.
+
+### Generating better from the start
+
+- Write about five candidates for every line needed. You keep the best;
+  the rest are thrown away, not repaired.
+- Starred lines become the examples for the next round, vetoed lines and
+  their tags a "don't" list. Keep both in the repo so every future
+  session starts from your taste, not from zero.
+- Write each line against the situation it renders in (outfit, time,
+  what changes), not against a key name.
+- Extend `tools/style_report.py` to flag the tics measured above
+  (object-has-a-job metaphors, semicolons, ", because" explanations,
+  repeated sentence skeletons).
+- German is written and judged on its own, never as a translation.
+
+### A review page, like the postcard veto site
+
+An artifact page with a shared database (so votes persist and can be
+read back):
+
+- Each line shown **as it renders**: on a mock device screen with the
+  right sprite, time words filled in, and its rain pairing where one
+  applies.
+- **Star / Keep / Veto**, plus tags (robotic, too long, not funny, wrong
+  garment, wrong fact, unclear) and an optional note. Keyboard shortcuts.
+- Filters by language, sarcasm level and key; a count per key so you
+  never veto a key empty.
+- Decisions remembered across rounds, so a vetoed line never returns.
+- Export in the format `tools/apply_review.py` already reads (it refuses
+  to overwrite a line that changed since review). Stars feed the
+  examples file; notes feed the next round.
+
+The new `wet_again` lines (written in October to fill a new scenario)
+are the first candidates for this review.
+
 ## Loose ends from the October 2026 fixes
 
 - **Check the new views in TRMNL's own editor preview** on the original
@@ -76,8 +146,6 @@ Open questions:
 - **Wording:** several `c_jacket` and `c_coat` lines name a garment
   the figure may not be wearing ("A jacket over the hoodie" when the
   drawing is a t-shirt). Also folded into item 1.
-- **Review the `wet_again` lines** (en and de, all three sarcasm levels)
-  for voice; they were written to fill the new scenario.
 - **Usage Worker** (`worker/`): deploy it and switch the second polling
   URL to start counting forecast on/off and sarcasm level. Steps are in
   `worker/README.md`.
