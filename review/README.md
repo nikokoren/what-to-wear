@@ -73,3 +73,6 @@ flavour line has a voice.
 - Then: `python3 tools/review_sync.py <votes> --key=review/rounds/2026-10-voices.key.json`
   prints the score per voice. The winner (or a blend of two) becomes the
   brief for the real writing round.
+- After the voice is picked, the first real round is also the model
+  comparison: Fable 5.1 and Opus 5.5 each write it from the same brief,
+  as two blind batches.
