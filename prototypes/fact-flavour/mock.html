@@ -1,0 +1,180 @@
+<title>Fact and Flavour Mock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky control bar, then one row per real day: the day's curve on the left, today's screen and the new screen side by side. */
+:root {
+  --bg: #f1f1ee; --panel: #ffffff; --fg: #1d1f22; --muted: #62666d; --line: #dcdcd6;
+  --accent: #2f5d8a; --rain: #3b7fc4; --now: #b3362c; --curve: #1d1f22;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #16181b; --panel: #1f2226; --fg: #e8e9ea; --muted: #9ba0a7; --line: #33373d;
+  --accent: #7fb0e0; --rain: #6fa8e6; --now: #f07a6f; --curve: #e8e9ea; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #16181b; --panel: #1f2226; --fg: #e8e9ea; --muted: #9ba0a7; --line: #33373d;
+  --accent: #7fb0e0; --rain: #6fa8e6; --now: #f07a6f; --curve: #e8e9ea; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); padding: 0 16px 48px }
+.wrap { max-width: 1240px; margin: 0 auto }
+header.top { padding-block: 22px 8px; display: flex; flex-direction: column; gap: 6px }
+h1 { font: 700 28px/1.1 var(--display); margin: 0; text-wrap: balance }
+.lede { margin: 0; max-width: 72ch; color: var(--muted) }
+.lede b { color: var(--fg); font-weight: 600 }
+.controls { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 12px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center }
+.group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap }
+.label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600 }
+.seg { display: flex; gap: 4px }
+.seg button { font: 500 13px var(--body); border: 1px solid var(--line); background: var(--panel); color: var(--fg); border-radius: 5px; padding: 5px 11px; cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg) }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+section.day { display: grid; grid-template-columns: 230px minmax(0, 1fr) minmax(0, 1fr); gap: 20px; padding-block: 26px; border-bottom: 1px solid var(--line) }
+@media (max-width: 980px) { section.day { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) } .info { grid-column: 1 / -1 } }
+@media (max-width: 620px) { section.day { grid-template-columns: minmax(0, 1fr) } }
+.info { display: flex; flex-direction: column; gap: 8px; min-width: 0 }
+.info h2 { font: 600 19px/1.2 var(--display); margin: 0; text-wrap: balance }
+.where { font: 13px var(--mono); color: var(--muted) }
+.chart svg { width: 100%; height: auto; display: block }
+.chart text { font: 10px var(--mono); fill: var(--muted) }
+.key { font-size: 12px; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap }
+.key i { display: inline-block; width: 10px; height: 3px; vertical-align: middle; margin-right: 4px }
+.shot { display: flex; flex-direction: column; gap: 8px; min-width: 0 }
+.shot .cap { display: flex; justify-content: space-between; gap: 8px; align-items: baseline }
+.shot .cap b { font: 600 13px var(--body) }
+.shot .cap span { font: 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.shot img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; background: #fff; display: block }
+.words { font-size: 14px; display: flex; flex-direction: column; gap: 2px }
+.words .fact { font-weight: 600 }
+.words .flav { color: var(--muted) }
+.words .none { color: var(--muted); font-style: italic }
+.fit { padding-block: 34px 8px }
+.fit h2 { font: 600 22px/1.2 var(--display); margin: 0 0 6px }
+.fit p { margin: 0 0 16px; color: var(--muted); max-width: 72ch }
+.fitgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 22px }
+.pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px }
+.pair figure { margin: 0; display: flex; flex-direction: column; gap: 4px }
+.pair figcaption { font: 11px var(--mono); color: var(--muted) }
+.pair img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; background: #fff }
+.fitname { font: 600 13px var(--body); margin-bottom: 6px }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Fact and Flavour Mock</h1>
+    <p class="lede">Nine real days from station records, rendered through the actual markup. On the left, what the device shows today. On the right, the split: <b>a fact line</b> built from short templates, the same at every setting, and a <b>flavour line</b> picked by the mood of the day, absent when sarcasm is off. The flavour lines are placeholders for the voice audition, and the drawings are placeholders too.</p>
+  </header>
+
+  <div class="controls">
+    <div class="group"><span class="label">Language</span><div class="seg" id="c-lang"></div></div>
+    <div class="group"><span class="label">Sarcasm setting</span><div class="seg" id="c-sarc"></div></div>
+    <div class="group"><span class="label">New version on</span><div class="seg" id="c-dev"></div></div>
+  </div>
+
+  <div id="days"></div>
+
+  <div class="fit">
+    <h2>Does it fit?</h2>
+    <p>The longest fact line found in two years of data, at setting 11, in the smaller slots. Old on the left of each pair, new on the right.</p>
+    <div class="fitgrid" id="fit"></div>
+  </div>
+</div>
+
+<script>
+const DATA = /*DATA*/null || { days: [], fit: [] };
+const ui = { lang: "en", sarc: "10", dev: "og" };
+try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-mock") || "{}")); } catch (e) {}
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const SARC = { "0": "Off", "10": "On", "11": "11" };
+const VIEW = { full: "full", half_horizontal: "half, wide", half_vertical: "half, tall", quadrant: "quarter" };
+
+function seg(id, opts, field) {
+  $(id).replaceChildren(...opts.map(([v, label]) => {
+    const b = el("button", null, label); b.type = "button";
+    b.setAttribute("aria-pressed", String(ui[field] === v));
+    b.onclick = () => { ui[field] = v; try { localStorage.setItem("wtw-mock", JSON.stringify(ui)); } catch (e) {} render(); };
+    return b;
+  }));
+}
+
+function chart(day) {
+  const W = 230, H = 92, pl = 26, pr = 6, pt = 8, pb = 18;
+  const t = day.temps, lo = Math.floor(Math.min(...t) / 5) * 5, hi = Math.ceil(Math.max(...t) / 5) * 5 || lo + 5;
+  const x = (h) => pl + (W - pl - pr) * h / 23, y = (v) => pt + (H - pt - pb) * (hi - v) / ((hi - lo) || 1);
+  const ns = "http://www.w3.org/2000/svg", svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `Feels-like temperature through the day, ${Math.min(...t).toFixed(0)} to ${Math.max(...t).toFixed(0)} °C`);
+  const add = (tag, attrs, text) => { const n = document.createElementNS(ns, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text) n.textContent = text; svg.append(n); return n; };
+  for (const v of [lo, hi]) {
+    add("line", { x1: pl, x2: W - pr, y1: y(v), y2: y(v), stroke: "var(--line)", "stroke-width": 1 });
+    add("text", { x: pl - 4, y: y(v) + 3, "text-anchor": "end" }, `${v}°`);
+  }
+  day.wet.forEach((w, h) => { if (w) add("rect", { x: x(h) - 3, y: H - pb + 2, width: 6, height: 4, fill: "var(--rain)" }); });
+  add("line", { x1: x(day.hour), x2: x(day.hour), y1: pt, y2: H - pb, stroke: "var(--now)", "stroke-width": 1.5, "stroke-dasharray": "3 2" });
+  add("polyline", { points: t.map((v, h) => `${x(h)},${y(v)}`).join(" "), fill: "none", stroke: "var(--curve)", "stroke-width": 1.75, "stroke-linejoin": "round" });
+  add("circle", { cx: x(day.hour), cy: y(t[day.hour]), r: 3, fill: "var(--now)" });
+  for (const h of [0, 6, 12, 18]) add("text", { x: x(h), y: H - 2, "text-anchor": "middle" }, String(h).padStart(2, "0"));
+  return svg;
+}
+
+function words(row, kind) {
+  const w = el("div", "words");
+  if (kind === "old") { w.append(el("span", null, row.old || "(no tip)")); return w; }
+  w.append(el("span", "fact", row.fact));
+  w.append(row.flavour ? el("span", "flav", row.flavour) : el("span", "none", "No flavour line at this setting."));
+  return w;
+}
+
+function shot(title, src, len, alt, wordsEl) {
+  const s = el("div", "shot");
+  const cap = el("div", "cap"); cap.append(el("b", null, title), el("span", null, `${len} characters`));
+  const img = el("img"); img.src = src; img.alt = alt; img.loading = "lazy";
+  s.append(cap, img, wordsEl);
+  return s;
+}
+
+function render() {
+  seg("c-lang", [["en", "English"], ["de", "Deutsch"]], "lang");
+  seg("c-sarc", [["0", "Off"], ["10", "On"], ["11", "11"]], "sarc");
+  seg("c-dev", [["og", "TRMNL OG"], ["x", "TRMNL X"]], "dev");
+  $("days").replaceChildren(...DATA.days.map((day) => {
+    const row = day.langs[ui.lang][ui.sarc];
+    const sec = el("section", "day");
+    const info = el("div", "info");
+    info.append(el("h2", null, day.title));
+    info.append(el("div", "where", `${day.city} · ${day.date} · ${String(day.hour).padStart(2, "0")}:30`));
+    const c = el("div", "chart"); c.append(chart(day)); info.append(c);
+    const key = el("div", "key");
+    key.innerHTML = '<span><i style="background:var(--curve)"></i>feels like, °C</span><span><i style="background:var(--rain)"></i>rain or snow</span><span><i style="background:var(--now)"></i>now</span>';
+    info.append(key);
+    const newLen = row.fact.length + (row.flavour ? row.flavour.length + 1 : 0);
+    sec.append(info,
+      shot("Today", row.old_og, (row.old || "").length, `Today's screen: ${row.old}`, words(row, "old")),
+      shot("Fact + flavour", ui.dev === "x" ? row.new_x : row.new_og, newLen, `New screen: ${row.fact} ${row.flavour}`, words(row, "new")));
+    return sec;
+  }));
+  const groups = new Map();
+  for (const f of DATA.fit.filter((f) => f.lang === ui.lang)) {
+    const k = `${f.device}|${f.portrait}|${f.view}`;
+    if (!groups.has(k)) groups.set(k, {});
+    groups.get(k)[f.kind] = f;
+  }
+  $("fit").replaceChildren(...[...groups.entries()].map(([k, g]) => {
+    const [dev, portrait, view] = k.split("|");
+    const box = el("div");
+    box.append(el("div", "fitname", `${dev === "x" ? "TRMNL X" : "TRMNL OG"}, ${portrait === "true" ? "portrait" : "landscape"}, ${VIEW[view]}`));
+    const pair = el("div", "pair");
+    for (const kind of ["old", "new"]) {
+      const f = el("figure"); const img = el("img"); img.src = g[kind].img; img.alt = `${kind} layout`; img.loading = "lazy";
+      f.append(img, el("figcaption", null, kind === "old" ? "today" : "fact + flavour"));
+      pair.append(f);
+    }
+    box.append(pair);
+    return box;
+  }));
+}
+render();
+</script>

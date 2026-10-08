@@ -1,0 +1,130 @@
+{
+  "facts": {
+    "garments": [
+      "Hat and scarf",
+      "Winter coat",
+      "Jacket",
+      "Sweater"
+    ],
+    "steady": "Good for the whole day.",
+    "steady_evening": "Good for the rest of the evening.",
+    "steady_hot": "Hot all day. Water and shade.",
+    "steady_cold": "Cold all day. Keep it all on.",
+    "w_scarf": "Hat, scarf and gloves off {WHEN}.",
+    "w_coat": "Winter coat off {WHEN}.",
+    "w_jacket": "Jacket off {WHEN}.",
+    "w_hoodie": "Sweater off {WHEN}.",
+    "w_water": "Getting hot {WHEN}. Bring water.",
+    "c_scarf": "Hat, scarf and gloves needed {WHEN}.",
+    "c_coat": "Winter coat needed {WHEN}.",
+    "c_jacket": "Jacket needed {WHEN}.",
+    "c_hoodie": "Sweater needed {WHEN}.",
+    "c_relief": "The heat eases {WHEN}.",
+    "arc_warmer": "{G} off {WHEN}, for good.",
+    "arc_level": "{G} off {WHEN}, back on {WHEN2}.",
+    "arc_colder": "{G} off {WHEN}. Back on {WHEN2}, plus a layer.",
+    "shorts_early": "Cool start, shorts weather {WHEN}.",
+    "p_wetter": "A shower {WHENP}. Take the umbrella.",
+    "p_wetter_long": "Steady rain {WHENP}. Take the umbrella.",
+    "p_wetter_maybe": "Rain possible {WHENP}. Umbrella optional.",
+    "p_stays_wet": "Rain all day. Take the umbrella.",
+    "p_drier": "Rain stops later. Umbrella for now.",
+    "p_wet_again": "A dry spell, then rain again {WHENP}. Keep the umbrella.",
+    "p_snow_coming": "Snow {WHENP}.",
+    "p_stays_wet_snow": "Snow all day.",
+    "p_drier_snow": "Snow stops later.",
+    "p_wet_again_snow": "Snow stops, then returns {WHENP}."
+  },
+  "flavour_10": {
+    "nice": [
+      "Honestly, a good one.",
+      "The kind of day people move here for.",
+      "Go outside at some point. That's the whole tip."
+    ],
+    "mild": [
+      "Not exciting. Not trying to be.",
+      "Ordinary weather. Nothing wrong with that.",
+      "A perfectly fine, perfectly forgettable day."
+    ],
+    "cold": [
+      "Proper cold. Hands in pockets.",
+      "A day for warm drinks and short walks.",
+      "Cold enough to see your breath."
+    ],
+    "hot": [
+      "Walk on the shady side of the street.",
+      "Even the pigeons are hiding.",
+      "Slow down. It's that kind of heat."
+    ],
+    "wet": [
+      "A good day for a window seat.",
+      "Puddles ahead. Choose your shoes wisely.",
+      "Somewhere, a dog is enjoying this."
+    ],
+    "snow": [
+      "Snow! Act surprised.",
+      "Pretty from inside, slippery outside.",
+      "Walk like a penguin. It works."
+    ],
+    "fickle": [
+      "The weather can't decide. You'll have to.",
+      "Layers. That's the whole strategy.",
+      "One of those days that changes its mind."
+    ],
+    "evening": [
+      "Not much day left, and it went fine.",
+      "Evening. No more surprises out there.",
+      "The day's winding down. So can you."
+    ],
+    "theme_xmas": [
+      "Merry Christmas. The weather's not the point today.",
+      "Christmas Day. Staying in counts as a plan."
+    ]
+  },
+  "flavour_11": {
+    "nice": [
+      "Perfect weather. No excuses today.",
+      "Even you can't get this one wrong.",
+      "If you stay inside today, that's on you."
+    ],
+    "mild": [
+      "You'll be fine. Probably.",
+      "Low stakes. Try not to overthink it.",
+      "A day so average you'll forget it by dinner."
+    ],
+    "cold": [
+      "Yes, the hat. No, your hair will survive.",
+      "You'll complain about the cold anyway.",
+      "Gloves. Both of them, this time."
+    ],
+    "hot": [
+      "You will sweat. Accept it now.",
+      "Drink water. Coffee doesn't count.",
+      "Sunscreen. You always say you'll remember."
+    ],
+    "wet": [
+      "You'll forget the umbrella anyway, won't you.",
+      "Leave the suede shoes at home. I know you.",
+      "You're getting wet today. Make peace with it."
+    ],
+    "snow": [
+      "Snow. I've seen how you walk. Careful.",
+      "You want to build a snowman. Just do it.",
+      "Snow. Your shoes were not made for this."
+    ],
+    "fickle": [
+      "You'll be dressed wrong at least once today.",
+      "The weather's as consistent as your sleep schedule.",
+      "Dress in layers, like a grown-up."
+    ],
+    "evening": [
+      "Day's nearly over. You survived it, somehow.",
+      "Tonight's forecast: you, on the couch.",
+      "Whatever you're wearing now, it's fine. Nobody's looking."
+    ],
+    "theme_xmas": [
+      "Merry Christmas. You're wearing the new sweater, aren't you.",
+      "Christmas. Wear something that survives a second helping."
+    ]
+  }
+}

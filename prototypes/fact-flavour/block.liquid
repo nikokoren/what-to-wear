@@ -1,0 +1,103 @@
+{%- comment %}
+============ PROTOTYPE: FACT + FLAVOUR ============
+Two lines instead of one. The fact line is built from short templates,
+one per situation, and is the same at every sarcasm level. The flavour
+line carries the personality: picked by the mood of the day, never
+asked to carry a fact, absent at sarcasm 0.
+
+Inserted by prototypes/fact-flavour/build.py ahead of DRESS FOR THE
+DOOR, after the old hint is built, so both can be rendered side by side.
+Reads only what the scenario logic above already worked out.
+{%- endcomment %}
+{%- assign fact_line = '' -%}
+{%- assign flavour_line = '' -%}
+{%- assign mood = '' -%}
+{%- if is_error == false and show_future_suggestions == 'on' and texts_ok and texts.facts -%}
+  {%- assign F = texts.facts -%}
+  {%- if is_steady -%}
+    {%- if local_hour >= 17 -%}
+      {%- assign f_key = 'steady_evening' -%}
+    {%- elsif band_rank >= 7 -%}
+      {%- assign f_key = 'steady_hot' -%}
+    {%- elsif band_rank <= 2 -%}
+      {%- assign f_key = 'steady_cold' -%}
+    {%- else -%}
+      {%- assign f_key = 'steady' -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign f_key = temp_scenario -%}
+  {%- endif -%}
+  {%- assign f_g = '' -%}
+  {%- if band_rank <= 4 -%}
+    {%- assign fgi = band_rank | minus: 1 -%}
+    {%- assign f_g = F.garments[fgi] -%}
+  {%- endif -%}
+  {%- assign f_temp = F[f_key] | default: '' -%}
+  {%- assign f_temp = f_temp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
+  {%- assign f_precip = '' -%}
+  {%- if precip_scenario != '' -%}
+    {%- assign pk = 'p_' | append: precip_scenario -%}
+    {%- comment %} Snowing now: the snow wording, where the situation has one. {%- endcomment %}
+    {%- if is_now_snow == 1 -%}
+      {%- assign pks = pk | append: '_snow' -%}
+      {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+    {%- endif -%}
+    {%- assign f_precip = F[pk] | default: '' | replace: '{WHENP}', when_precip -%}
+  {%- endif -%}
+  {%- if is_steady and f_precip != '' -%}
+    {%- assign fact_line = f_precip -%}
+  {%- elsif f_precip != '' -%}
+    {%- assign fact_line = f_temp | append: ' ' | append: f_precip -%}
+  {%- else -%}
+    {%- assign fact_line = f_temp -%}
+  {%- endif -%}
+  {%- assign fact_line = fact_line | replace: '  ', ' ' | replace: ' .', '.' | replace: ' ,', ',' | strip -%}
+  {%- assign marked = fact_line | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
+  {%- assign sentences = marked | split: '^^' -%}
+  {%- assign cased = '' -%}
+  {%- for sentence in sentences -%}
+    {%- assign s = sentence | strip -%}
+    {%- assign head = s | slice: 0 | upcase -%}
+    {%- assign tail = s | slice: 1, 400 -%}
+    {%- if forloop.first -%}
+      {%- assign cased = head | append: tail -%}
+    {%- else -%}
+      {%- assign cased = cased | append: ' ' | append: head | append: tail -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign fact_line = cased -%}
+
+  {%- comment %} The mood of the day, for the flavour line. First match wins. {%- endcomment %}
+  {%- if precip_scenario == 'snow_coming' or is_now_snow == 1 -%}
+    {%- assign mood = 'snow' -%}
+  {%- elsif precip_scenario != '' -%}
+    {%- assign mood = 'wet' -%}
+  {%- elsif is_steady and local_hour >= 18 -%}
+    {%- assign mood = 'evening' -%}
+  {%- elsif is_arc -%}
+    {%- assign mood = 'fickle' -%}
+  {%- elsif band_rank >= 7 or up_rank >= 7 -%}
+    {%- assign mood = 'hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign mood = 'cold' -%}
+  {%- elsif is_steady and band_rank >= 4 -%}
+    {%- assign mood = 'nice' -%}
+  {%- else -%}
+    {%- assign mood = 'mild' -%}
+  {%- endif -%}
+  {%- if sarcasm_level != '0' -%}
+    {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
+    {%- assign fl_lib = texts[fl_key] -%}
+    {%- assign fl_pool = fl_lib[mood] -%}
+    {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
+    {%- if is_steady and active_theme != '' -%}
+      {%- assign th_key = 'theme_' | append: active_theme -%}
+      {%- if fl_lib[th_key] -%}{%- assign fl_pool = fl_lib[th_key] -%}{%- endif -%}
+    {%- endif -%}
+    {%- if fl_pool -%}
+      {%- assign fl_n = fl_pool | size -%}
+      {%- assign fl_i = local_days | plus: 5 | modulo: fl_n -%}
+      {%- assign flavour_line = fl_pool[fl_i] -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
