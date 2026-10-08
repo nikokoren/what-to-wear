@@ -54,6 +54,26 @@ To decide together, from scratch:
 - Which layer each tip names as coming off or going in the bag. The
   `w_*` and `c_*` keys in `lang/*.json` are tied to today's garments.
 
+### Data (October 2026, `tools/climate/`)
+
+Three years of hourly station data, 28 cities weighted by device share:
+
+- **The year is mostly cold or cool.** At the 7 am dressing hour, 52% of
+  readings fall in today's three coldest bands (10 °C feels-like or
+  below); above 27 °C is under 5%.
+- **Hoodie and sweatshirt cover 31% of daytime hours** between them, yet
+  the code already treats them as one warmth class: one outfit drawn
+  twice.
+- **Rain mostly falls on coat and jacket days.** 52% of wet hours are in
+  today's puffer and light-jacket bands. The puffer band has no rain
+  sprite (it falls back to dry), so about a quarter of rainy hours show
+  no umbrella. Precipitation at snow temperatures is only ~6% of wet
+  hours.
+- **Most days change outfit.** About two days in three change between
+  08:00, the afternoon peak and 19:00, whichever ladder is used: daily
+  swings are wider than any sensible band. That argues for outfits built
+  as layers that come off, and for the visual forecast (item 2).
+
 Keep from today's system:
 
 - The "Do you run cold or warm?" setting (`temp_preference`): one
