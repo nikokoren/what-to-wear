@@ -1,0 +1,653 @@
+{
+ "round": "2026-10-writing",
+ "lines": [
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Unterm Vordach auf ein Wunder warten, das kannst du.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Mach dir keinen Kopf. Den machst du dir eh nie.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "The sky's going through something. I'm staying out of it.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Draußen wärst heut sogar du erträglich.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Neben dir wirkt jeder Schneemann lebendig.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Du bist heut garantiert immer eine Schicht daneben.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Red heut Abend bitte nicht wieder nur übers Wetter.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.mild",
+   "text": "Today won't give you a story. You'll tell one anyway.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Pulling your hood up isn't a plan. It's a hope.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "So spät mach ich nur noch das Nötigste. Wie immer eigentlich.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Der Hausmeister hat wieder seinen großen Tag.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "It's a good hair day, weather-wise. The rest is on you.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You'll search 'ice cream near me' later. Twice.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Going out is overrated. Says a screen that's never been out.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "I'm the only thing today that won't change its mind.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'm very good for umbrella sales.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "You'll feel very clever for about half the day.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Wennst heut alles richtig machst, schreib ich's mir auf.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schneeballschlacht? Du triffst eh nix.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Jetzt werfen sich wieder alle in Schale. Für wen eigentlich?",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "„Nur auf ein Bier.“ Das hab ich schon öfter gehört.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Today's drawing is mostly coat. I'm very proud of the coat.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Today the weather's on your side. Don't make it awkward.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow is rain with better presentation. I respect that.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Schneeketten hat natürlich wieder keiner dabei.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "In der Bahn riecht's heut wieder nach allen.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Thin, pale and cool. I was made for this.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Zwiebelprinzip nennen die das. Ich nenn's Theater.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "The weather's the easy part of tonight.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Deine Waden sieht heut jeder. Gefragt hat keiner.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Whoever you're seeing tonight has a worse screen than me.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Tomorrow-you is already annoyed with tonight-you.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow gets more photos than I do. I'm not bitter.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Heut wär ein guter Tag, um mal was zu erledigen. Wär.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Du wirst heut wieder jeden fragen, ob ihm auch so heiß ist.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.mild",
+   "text": "Other screens get to show paintings. I get today.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Heut ist mir sogar das Meckern zu anstrengend.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und dann gibt's Leut', die sagen, sie mögen den Winter.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Jeder Weg ist dir heut zu weit. Also wie immer.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Everyone out there is copying my drawing. Flattering.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Und jetzt nicht wieder an den Kühlschrank.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Somewhere, a weather presenter is saying 'scorcher'. I'd never.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "I can hold this picture all night without power. Try that.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "No sad cloud icons here. I have taste.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.mild",
+   "text": "You keep looking at me like I owe you drama.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Für so ein Wetter hätt's mich nicht gebraucht.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I counted the layers twice. Correct both times.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll make that noise once you're outside. You know the one.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "If you're heading out now, I admire the commitment.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Kalte Füße kriegst du heut nicht nur vor Entscheidungen.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "I look just as good in the dark. You can't tell.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "You'll step in other people's footprints and call it strategy.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Today's weather has more mood swings than you. Barely.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Give it an hour, then you'll take the snow personally.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schneeschippen wär heut mal Sport für dich. Ausnahmsweise.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Übers Wetter schimpf ich heut nicht. Über dich schon.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ausgehen willst du? Mit dem Gesicht?",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Im Bett ist's eh am schönsten. Das Wetter kann mich mal.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Wo gehst denn hin? Sag's mir lieber nicht.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Nachts kann ich wenigstens ungestört grantig sein.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Die Funktionsjacken-Fraktion ist wieder vollzählig.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Whatever the sky does, you'll say you knew. You didn't.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Wieder Socken in Sandalen unterwegs. Ich schau weg.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "I don't need beauty sleep. Clearly.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "You'll take one short walk and talk about it all week.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Die Leute gehen aus, als hätten's morgen frei.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You'll be 'ready in five' for at least half an hour.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Hauptsache, die Schnecken haben was davon.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll say it's not that cold. Your face will disagree.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Wenn du heut grillst, dann bitte nicht wieder alles schwarz.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Someone turned the outside up too far. Don't look at me.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "I give it even odds you lose that layer by tonight.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Today the weather looks almost as good as I do.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Du findest jede Pfütze. Sonst findest du nix.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Da hätt die Oma keinen aus dem Haus gelassen.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Nachts wirst du immer so philosophisch. Lass es.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Your patience has a melting point. Today you'll find it.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "This drawing is going in my portfolio.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Hitzefrei gibt's nur für Schüler. Der Rest muss durch.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Lüft dich halt aus. Du riechst schon nach Wohnung.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "The sky has opinions today. Mine are better.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Dick eingepackt gefällst du mir am besten. Man sieht weniger.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "I've looked this good all day without a mirror.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "So ein Hin und Her hält ja kein Mensch aus. Ich schon gar nicht.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Today has a plot twist. I've read ahead.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Wildfremde Leute grüßen sich heut wieder. Furchtbar.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Try to bring the umbrella home. Unlike the last three.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Three outfit changes later, you'll be wearing this one.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Grown adults go giddy over snow. I remain composed.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Bei dem Wetter kann man nicht mal gescheit schlecht drauf sein.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Whoever's nearby gets your snow commentary. Usually me.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.mild",
+   "text": "You'll describe today as 'fine'. Nobody will ask.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.mild",
+   "text": "It takes real talent to make today look interesting.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Three alarms, and you'll still sleep through two of them.",
+   "batch": "E2"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Shoulders up by your ears all day. Very elegant.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Schlaf gut. Und bitte leiser als gestern.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Ich zeig's halt an. Begeistern muss es mich ja nicht.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You're about to have strong opinions about air conditioning.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Das Wetter macht heut, was es will. Wie alle anderen auch.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Easy day to forecast. I'll still take the credit.",
+   "batch": "E2"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Da hat sich das Wetter heut auch keine Mühe gegeben.",
+   "batch": "D1"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heut muss man mitdenken. Schlecht für dich.",
+   "batch": "D1"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.mild",
+   "text": "Not my most exciting drawing. Still flawless.",
+   "batch": "E2"
+  }
+ ]
+}

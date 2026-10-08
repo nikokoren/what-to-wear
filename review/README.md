@@ -101,3 +101,17 @@ Two rounds on one page, each blind by letter:
 - After the voice is picked, the first real round is also the model
   comparison: Fable 5.1 and Opus 5.5 each write it from the same brief,
   as two blind batches.
+
+## Round 3: the writing round (October 2026)
+
+Fill every flavour pool: three new candidates per mood, level and
+language, written cold from the brief by a subagent.
+
+- `2026-10-writing.json`: Opus 5.5's 108 lines (sets E1/E2 in English,
+  D1/D2 in German; one of each is in use until the second writer runs).
+  The writer's raw output is in `2026-10-writing/`.
+- The Fable 5.1 writer, given the identical brief, could not run: the
+  account had no Fable usage credits. Once it can, run it with the same
+  prompt, save its output next to Opus's, and rebuild with
+  `python3 review/rounds/make_round3.py "Opus 5.5=review/rounds/2026-10-writing/opus-5.5.json" "Fable 5.1=<file>"`.
+  Opus keeps its label; lines already rated are dropped.

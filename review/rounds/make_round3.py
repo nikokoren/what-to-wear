@@ -3,11 +3,13 @@
 Round 3, the writing round: two writers fill every flavour pool from the
 same brief, cold, without seeing each other's lines.
 
-    python3 review/rounds/make_round3.py <writer-1.json> <writer-2.json>
+    python3 review/rounds/make_round3.py "Opus 5.5=<file>" ["Fable 5.1=<file>"]
 
 Each input is {"lines": [{"lang", "path": "flavour_<level>.<mood>", "text"}]}.
 The writers get a blind set label per language; which writer is which
-goes into 2026-10-writing.key.json. Don't open the key, or the inputs,
+goes into 2026-10-writing.key.json. A writer's label depends only on
+its place in WRITERS, so a writer added later leaves the others' labels
+alone. Don't open the key, or the inputs,
 until the votes are in.
 
 Lines that repeat an already rated line, or each other, are dropped:
@@ -35,7 +37,8 @@ def line_id(lang, text):
 
 
 def main():
-    if len(sys.argv) != 3:
+    args = [a.split("=", 1) for a in sys.argv[1:]]
+    if not args or any(len(a) != 2 or a[0] not in WRITERS for a in args):
         print(__doc__.strip())
         return 2
     rated = set()
@@ -48,7 +51,8 @@ def main():
         rng.shuffle(labels[lang])
 
     lines, key, seen, report = [], {}, set(), []
-    for n, (writer, src) in enumerate(zip(WRITERS, sys.argv[1:])):
+    for writer, src in args:
+        n = WRITERS.index(writer)
         data = json.loads(pathlib.Path(src).read_text(encoding="utf-8"))
         kept = dropped = 0
         for c in data["lines"]:
