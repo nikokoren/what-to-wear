@@ -1,0 +1,773 @@
+{
+ "round": "2026-10-facts",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "fact_0.s1_steady",
+   "text": "No changes until tonight.",
+   "batch": "K",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s2_shower",
+   "text": "Jacket off around 9am. Shower around noon, so take the umbrella.",
+   "batch": "K",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s3_off_on",
+   "text": "Jacket off around 2pm, back on around 8pm.",
+   "batch": "K",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s4_cooling",
+   "text": "Jacket needed from about 7pm.",
+   "batch": "K",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s5_snow",
+   "text": "Snow from about 11am.",
+   "batch": "K",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s6_hot",
+   "text": "Hot from about 9am. Bring water.",
+   "batch": "K",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s7_evening",
+   "text": "No changes for the rest of the evening.",
+   "batch": "K",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s8_busy",
+   "text": "Coat off around noon, back on around 8pm. Rain stops soon, back around 2pm. Keep the umbrella.",
+   "batch": "K",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s1_steady",
+   "text": "No changes.",
+   "batch": "L",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s2_shower",
+   "text": "Umbrella. Jacket off by 9.",
+   "batch": "L",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s3_off_on",
+   "text": "Jacket off at 2, on at 8.",
+   "batch": "L",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s4_cooling",
+   "text": "Jacket by 7.",
+   "batch": "L",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s5_snow",
+   "text": "Snow at 11.",
+   "batch": "L",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s6_hot",
+   "text": "Water. Hot by 9.",
+   "batch": "L",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s7_evening",
+   "text": "No changes tonight.",
+   "batch": "L",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s8_busy",
+   "text": "Umbrella. Coat off at noon, on at 8.",
+   "batch": "L",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s1_steady",
+   "text": "Good for the whole day.",
+   "batch": "M",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s2_shower",
+   "text": "Jacket off in two hours. A shower around midday. Take the umbrella.",
+   "batch": "M",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s3_off_on",
+   "text": "Jacket off this afternoon, back on tonight.",
+   "batch": "M",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s4_cooling",
+   "text": "Jacket needed this evening.",
+   "batch": "M",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s5_snow",
+   "text": "Snow around midday.",
+   "batch": "M",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s6_hot",
+   "text": "Getting hot in two hours. Bring water.",
+   "batch": "M",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s7_evening",
+   "text": "Good for the rest of the evening.",
+   "batch": "M",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s8_busy",
+   "text": "Winter coat off around midday, back on tonight. A dry spell, then rain again this afternoon. Keep the umbrella.",
+   "batch": "M",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s1_steady",
+   "text": "All day: as shown.",
+   "batch": "N",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s2_shower",
+   "text": "9am: jacket off. Noon: shower, umbrella.",
+   "batch": "N",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s3_off_on",
+   "text": "2pm: jacket off. 8pm: jacket back on.",
+   "batch": "N",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s4_cooling",
+   "text": "7pm: add a jacket.",
+   "batch": "N",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s5_snow",
+   "text": "11am: snow.",
+   "batch": "N",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s6_hot",
+   "text": "9am: heat. Bring water.",
+   "batch": "N",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s7_evening",
+   "text": "Rest of the evening: as shown.",
+   "batch": "N",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s8_busy",
+   "text": "Now: rain. Noon: coat off. 2pm: rain again. 8pm: coat back on.",
+   "batch": "N",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s1_steady",
+   "text": "Nothing to carry today.",
+   "batch": "O",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s2_shower",
+   "text": "Take the umbrella for a shower around midday. Jacket off in two hours.",
+   "batch": "O",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s3_off_on",
+   "text": "Keep the jacket with you. Off this afternoon, back on tonight.",
+   "batch": "O",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s4_cooling",
+   "text": "Bring a jacket for this evening.",
+   "batch": "O",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s5_snow",
+   "text": "Watch your step: snow around midday.",
+   "batch": "O",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s6_hot",
+   "text": "Bring water. It gets hot in two hours.",
+   "batch": "O",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s7_evening",
+   "text": "Nothing to change this evening.",
+   "batch": "O",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s8_busy",
+   "text": "Keep the umbrella and the coat with you. Coat off around midday, back on tonight. Rain returns this afternoon.",
+   "batch": "O",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s1_steady",
+   "text": "What you're wearing works for the whole day.",
+   "batch": "P",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s2_shower",
+   "text": "You can take the jacket off in a couple of hours. There's a shower around midday, so bring the umbrella.",
+   "batch": "P",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s3_off_on",
+   "text": "The jacket can come off this afternoon, but you'll want it back tonight.",
+   "batch": "P",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s4_cooling",
+   "text": "It cools down this evening, so bring a jacket.",
+   "batch": "P",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s5_snow",
+   "text": "It stays this cold all day, and snow starts around midday.",
+   "batch": "P",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s6_hot",
+   "text": "It gets hot in a couple of hours, so bring water.",
+   "batch": "P",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s7_evening",
+   "text": "What you're wearing works for the rest of the evening.",
+   "batch": "P",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.s8_busy",
+   "text": "The coat can come off around midday, but you'll want it back tonight. The rain pauses, then returns this afternoon, so keep the umbrella.",
+   "batch": "P",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s1_steady",
+   "text": "Heute musst du nichts mitnehmen.",
+   "batch": "Q",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s2_shower",
+   "text": "Schirm mitnehmen, gegen Mittag kommt ein Schauer. Die Jacke kann in zwei Stunden weg.",
+   "batch": "Q",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s3_off_on",
+   "text": "Jacke dabeihaben: am Nachmittag aus, heute Nacht wieder an.",
+   "batch": "Q",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s4_cooling",
+   "text": "Für heute Abend eine Jacke einpacken.",
+   "batch": "Q",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s5_snow",
+   "text": "Vorsicht auf dem Weg: Gegen Mittag kommt Schnee.",
+   "batch": "Q",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s6_hot",
+   "text": "Wasser mitnehmen, in zwei Stunden wird's heiß.",
+   "batch": "Q",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s7_evening",
+   "text": "Heute Abend nichts mehr umziehen.",
+   "batch": "Q",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s8_busy",
+   "text": "Schirm und Winterjacke dabeihaben. Mittags aus, nachts wieder an. Am Nachmittag regnet's wieder.",
+   "batch": "Q",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s1_steady",
+   "text": "Was du anhast, passt für den ganzen Tag.",
+   "batch": "R",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s2_shower",
+   "text": "In zwei Stunden kann die Jacke weg. Gegen Mittag kommt ein Schauer, also nimm den Schirm mit.",
+   "batch": "R",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s3_off_on",
+   "text": "Am Nachmittag kann die Jacke weg, heute Nacht brauchst du sie wieder.",
+   "batch": "R",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s4_cooling",
+   "text": "Am Abend kühlt's ab, da braucht's eine Jacke.",
+   "batch": "R",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s5_snow",
+   "text": "Es bleibt den ganzen Tag so kalt, und gegen Mittag fängt's an zu schneien.",
+   "batch": "R",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s6_hot",
+   "text": "In zwei Stunden wird's heiß, nimm Wasser mit.",
+   "batch": "R",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s7_evening",
+   "text": "Was du anhast, passt für den restlichen Abend.",
+   "batch": "R",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s8_busy",
+   "text": "Gegen Mittag kann die Winterjacke weg, heute Nacht brauchst du sie wieder. Der Regen macht Pause und kommt am Nachmittag zurück, also Schirm behalten.",
+   "batch": "R",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s1_steady",
+   "text": "Keine Änderung bis zum Abend.",
+   "batch": "S",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s2_shower",
+   "text": "Ab etwa 9 Uhr ohne Jacke. Gegen 12 ein Schauer, Schirm mitnehmen.",
+   "batch": "S",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s3_off_on",
+   "text": "Ab 14 Uhr Jacke aus, ab 20 Uhr wieder an.",
+   "batch": "S",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s4_cooling",
+   "text": "Ab etwa 19 Uhr braucht's eine Jacke.",
+   "batch": "S",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s5_snow",
+   "text": "Ab etwa 11 Uhr Schnee.",
+   "batch": "S",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s6_hot",
+   "text": "Ab etwa 9 Uhr heiß. Wasser mitnehmen.",
+   "batch": "S",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s7_evening",
+   "text": "Keine Änderung mehr heute Abend.",
+   "batch": "S",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s8_busy",
+   "text": "Ab 12 Uhr Winterjacke aus, ab 20 Uhr wieder an. Kurze Regenpause, ab 14 Uhr regnet's wieder. Schirm behalten.",
+   "batch": "S",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s1_steady",
+   "text": "Ganzer Tag: wie gezeigt.",
+   "batch": "T",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s2_shower",
+   "text": "9 Uhr: Jacke aus. 12 Uhr: Schauer, Schirm.",
+   "batch": "T",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s3_off_on",
+   "text": "14 Uhr: Jacke aus. 20 Uhr: Jacke an.",
+   "batch": "T",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s4_cooling",
+   "text": "19 Uhr: Jacke dazu.",
+   "batch": "T",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s5_snow",
+   "text": "11 Uhr: Schnee.",
+   "batch": "T",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s6_hot",
+   "text": "9 Uhr: Hitze. Wasser mitnehmen.",
+   "batch": "T",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s7_evening",
+   "text": "Restlicher Abend: wie gezeigt.",
+   "batch": "T",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s8_busy",
+   "text": "Jetzt: Regen. 12 Uhr: Winterjacke aus. 14 Uhr: wieder Regen. 20 Uhr: Winterjacke an.",
+   "batch": "T",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s1_steady",
+   "text": "So bleibt's den ganzen Tag.",
+   "batch": "U",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s2_shower",
+   "text": "In zwei Stunden Jacke aus. Gegen Mittag ein Schauer. Schirm mitnehmen.",
+   "batch": "U",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s3_off_on",
+   "text": "Heute Nachmittag Jacke aus, heute Nacht wieder an.",
+   "batch": "U",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s4_cooling",
+   "text": "Heute Abend braucht's eine Jacke.",
+   "batch": "U",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s5_snow",
+   "text": "Gegen Mittag Schnee.",
+   "batch": "U",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s6_hot",
+   "text": "In zwei Stunden wird's heiß. Wasser mitnehmen.",
+   "batch": "U",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s7_evening",
+   "text": "So bleibt's den restlichen Abend.",
+   "batch": "U",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s8_busy",
+   "text": "Gegen Mittag Winterjacke aus, heute Nacht wieder an. Zwischendurch trocken, heute Nachmittag regnet's wieder. Schirm behalten.",
+   "batch": "U",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s1_steady",
+   "text": "Keine Änderung.",
+   "batch": "V",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line. New York, 2 June, 07:30. Warm and steady all day."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s2_shower",
+   "text": "Schirm. Ab 9 ohne Jacke.",
+   "batch": "V",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. London, 1 May, 07:30. Jacket off around 9, a shower around noon."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s3_off_on",
+   "text": "Jacke: 14 Uhr aus, 20 Uhr an.",
+   "batch": "V",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line. Vienna, 22 March, 07:30. Jacket off around 2pm, back on around 8pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s4_cooling",
+   "text": "Jacke ab 19 Uhr.",
+   "batch": "V",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line. London, 24 September, 07:30. Mild, a jacket needed from about 7pm."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s5_snow",
+   "text": "Schnee ab 11.",
+   "batch": "V",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line. Minneapolis, 8 January, 07:30. Bitter cold all day, snow from about 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s6_hot",
+   "text": "Wasser. Ab 9 heiß.",
+   "batch": "V",
+   "sprite": "heat_dry",
+   "meaning": "Fact line. Phoenix, 7 June, 07:30. Hot from about 9."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s7_evening",
+   "text": "Keine Änderung mehr.",
+   "batch": "V",
+   "sprite": "coat_dry",
+   "meaning": "Fact line. New York, 2 January, 19:30. Steady cold evening."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.s8_busy",
+   "text": "Schirm. Winterjacke: 12 aus, 20 an.",
+   "batch": "V",
+   "sprite": "coat_rain",
+   "meaning": "Fact line. London, 6 March, 07:30. Raining now, coat off around noon, rain back around 2pm, coat back on around 8pm."
+  }
+ ]
+}

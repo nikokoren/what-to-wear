@@ -1,0 +1,653 @@
+{
+ "round": "2026-10-voices-2",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "I'm a screen on a wall. Even I'd go outside today.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Lovely out. I'll be here, refreshing.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Perfect weather. I can't leave the wall. What's your excuse?",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "I'll pretend I didn't see you stay in.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.mild",
+   "text": "Nothing to report. I'll keep refreshing anyway, out of habit.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.mild",
+   "text": "A day with no surprises. I've shown worse.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.mild",
+   "text": "Even I'm bored, and I'm a screen.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.mild",
+   "text": "Unremarkable out there. You'll fit right in.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I'm staying on the wall where it's warm.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I don't feel the cold. You do. That's the difference between us.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "I've drawn you a warm coat. The least you can do is wear it.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll stand at the door and argue with me. I'll win.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "No fan, no sweat. Perks of being a screen.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "I'll be here in the shade of your hallway.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "I don't sweat. You will. I'll be here, judging.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You'll come home looking less crisp than this drawing.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I don't get wet. Perks of living indoors.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'll be on the wall, dry and smug.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "I refresh every few minutes. Wet socks don't.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "I'd hold the umbrella for you, but, you know. Wall.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "I've never seen snow. Describe it to me later.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow is basically e-ink for the outdoors. I approve.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Snow looks great on e-ink. Less great on your shoes.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Try not to slip. I can't call anyone.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Make up your mind, weather. Some of us refresh on a schedule.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "I'll keep you posted. That's literally all I do.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "You'll trust me in the morning and blame me by lunch.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "I've changed this drawing in my head twice already.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Evening. I'm still here. Of course I am.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Off somewhere? I'll hold the wall down.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Going out? Look better than this drawing.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Whatever your plans are, I'm not invited. Fine.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "Nothing new from me tonight. Sleep well.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "Late. I'm on battery, you're on coffee. Let's both rest.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "You've looked at me a lot today. Go to bed.",
+   "batch": "W"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Still up? I'm a wall decoration and even I'm tired.",
+   "batch": "W"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Und nun das Wetter. Gibt nichts zu meckern. Leider.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Ein Hoch. Ich hab extra zweimal nachgeschaut, ob das stimmt.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Bestes Wetter. Beschwerden bitte trotzdem an die Redaktion.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Wetterlage: unspektakulär. Meine Moderation: ebenso.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Heute keine Unwetterwarnung. Nur Mittelmaß.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Ich könnte dir jetzt was von Luftdruck erzählen. Du hörst eh nicht zu.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Wenig Wetter heute. Mehr Zeit für deine Ausreden.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Polarluft hat uns fest im Griff. Klingt dramatisch, ist es auch.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Arktische Luft. Ich hab sie nicht bestellt.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Kein Rekord, aber kalt genug für deinen ersten Schnupfen.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ich sag's seit Tagen an. Trotzdem stehst du überrascht an der Tür.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Hitzewarnung. Ich moderiere im Anzug. Beneide mich nicht.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Tropische Werte. Ich bleib im klimatisierten Studio.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Viel trinken, Schatten suchen. Sag ich jeden Sommer. Hört keiner.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Ich zeig dir die Hitzekarte. Sie ist komplett rot. Wie du später.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Und schon wieder ein Tief. Ich kann nichts dafür.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Ein Tiefausläufer bringt Nässe. Klingt harmlos, ist es selten.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Ich sag den Regen an, du ignorierst ihn. Unser kleines Ritual.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wenn du nass wirst: Ich hab's angesagt. Zur besten Sendezeit.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Schnee. Die Kollegen vom Verkehrsfunk freuen sich schon.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Schneefall. Ich hab extra die Wetterkarte in Weiß dabei.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Ich hab Schnee angesagt. Du hast Turnschuhe an. Wer hat jetzt recht?",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Glätte. Hinterher heißt's wieder, ich hätt's nicht angesagt.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Wechselhaft. Das sagen wir Wetterfrösche, wenn wir's selber nicht wissen.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Erst Hoch, dann Tief. Wie meine Laune.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Wechselhaft. Und du ziehst dich an, als gäb's nur ein Wetter. Mutig.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Ich hab für heute zwei Wetter angesagt. Du hast für keins geplant.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Das war das Wetter für heute. Schönen Abend.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Noch was vor heute? Das Wetter hält still.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ausgehen? Würd ich auch. Wenn ich nicht im Studio festsäße.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Abendprognose: Du entscheidest dich wieder in letzter Minute.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Sendeschluss. Morgen früh gibt's frisches Wetter.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Nachtprogramm. Bis morgen früh ändert sich nichts mehr.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Um die Uhrzeit schauen nur noch zwei aufs Wetter: ich und du. Geh schlafen.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Schlaf jetzt. Ich wiederhol die Sendung morgen früh.",
+   "batch": "X"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Schönes Wetter. Ich trau dem Frieden nicht.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Nichts auszusetzen. Das ärgert mich fast.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Nicht schön, nicht schlimm. Typisch.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.mild",
+   "text": "Ein Wetter wie Leitungswasser.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.mild",
+   "text": "Nichts los da draußen. Wie bei dir am Wochenende.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Saukalt. Mehr gibt's nicht zu sagen.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Mütze rausgehen und dann jammern. Kennen wir schon.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Und du wieder in der dünnen Jacke. Na dann viel Spaß.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Zu heiß. Und im Winter wieder jammern, dass es zu kalt ist.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Schwitzen im Stehen. Ein Traum.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Du wirst kleben, schwitzen und dich beschweren. In der Reihenfolge.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Keine Klimaanlage, du nicht und ich nicht. Wir leiden gemeinsam.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Regen. Wieder. Natürlich.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nass ist's. War ja klar.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wer ohne Schirm geht, braucht nachher nicht jammern.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Du wirst nass. Und dann bin wieder ich schuld.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Schnee. Gleich fährt keine Bahn mehr, wetten?",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Schön zum Anschauen. Zum Gehen weniger.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Du und Glatteis. Das wird wieder was.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Der Gehweg wartet. Der Nachbar schaut schon.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Warm, kalt, warm. Kann sich auch mal entscheiden.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heute trägst du die Jacke mehr spazieren als am Leib.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Abend. Das Wetter ändert sich nicht mehr. Ich mich auch nicht.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Falls du noch weggehst: Ich bleib hier. Wie immer.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Feierabend. Jetzt lass mich auch in Ruhe.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ausgehen? Zieh was Schöneres an als das hier.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Spät ist's. Ich zeig das hier trotzdem weiter.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Nachts passiert eh nichts. Außer du schaust mich an.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Schon wieder so spät? Ab ins Bett. Das Wetter wartet nicht auf dich.",
+   "batch": "Y"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Um die Uhrzeit noch aufs Wetter schauen. Respekt. Oder Problem.",
+   "batch": "Y"
+  }
+ ]
+}

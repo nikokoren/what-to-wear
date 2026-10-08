@@ -73,6 +73,26 @@ flavour line has a voice.
 - Then: `python3 tools/review_sync.py <votes> --key=review/rounds/2026-10-voices.key.json`
   prints the score per voice. The winner (or a blend of two) becomes the
   brief for the real writing round.
+- **Result (8 October):** English, the screen (+6; every other voice
+  scored −17 or worse). German, the Grantler (0) and the Wetterfrosch
+  (−4); Kumpel, Oma and the Bauernregel lost. The lessons are in
+  `docs/BRIEF.md`.
+
+## Round 2 (October 2026)
+
+Two rounds on one page, each blind by letter:
+
+- `2026-10-voices-2`: the flavour line narrowed to the winners and
+  rewritten under the lessons. English: the screen (set W). German: the
+  Grantler without dialect, and a grumbling TV weather presenter (sets X
+  and Y). All nine moods, including `night` (from 22:00, the only mood
+  that may mention bed). Lines you already rated in round 1 keep their
+  vote and don't come back under "Not rated".
+- `2026-10-facts`: the fact line. Six styles (sets K to P in English, Q
+  to V in German), each written for the same eight real situations.
+  Filter by key to compare the styles on one situation.
+- Keys: `2026-10-voices-2.key.json`, `2026-10-facts.key.json`; sync with
+  `--key=` both, comma-separated.
 - After the voice is picked, the first real round is also the model
   comparison: Fable 5.1 and Opus 5.5 each write it from the same brief,
   as two blind batches.

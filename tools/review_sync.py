@@ -138,19 +138,22 @@ def write_fixes(lang, known):
 
 
 def batch_results(votes, key_path):
-    key = json.loads(pathlib.Path(key_path).read_text(encoding="utf-8")) if key_path else {}
+    key = {}
+    for kp in (key_path or "").split(","):
+        if kp:
+            key.update(json.loads(pathlib.Path(kp).read_text(encoding="utf-8")))
     tally = collections.defaultdict(collections.Counter)
     for v in votes:
         if v.get("batch") and v.get("verdict"):
-            tally[(v["lang"], v["batch"])][v["verdict"]] += 1
+            tally[(v.get("round", ""), v["lang"], v["batch"])][v["verdict"]] += 1
     print("\nby batch (stars, keeps, vetoes; score = 2 per star + 1 per keep - 2 per veto):")
     rows = []
-    for (lang, batch), c in tally.items():
+    for (rnd, lang, batch), c in tally.items():
         score = 2 * c["star"] + c["keep"] - 2 * c["veto"]
-        rows.append((lang, -score, batch, c, score))
-    for lang, _, batch, c, score in sorted(rows):
-        name = key.get(batch, {}).get("voice", "")
-        print(f"  {lang} {batch} {name:14} {c['star']:3} {c['keep']:3} {c['veto']:3}   score {score:+d}")
+        rows.append((rnd, lang, -score, batch, c, score))
+    for rnd, lang, _, batch, c, score in sorted(rows):
+        name = key.get(batch, {}).get("voice", "") or key.get(batch, {}).get("style", "")
+        print(f"  {rnd:18} {lang} {batch} {name:14} {c['star']:3} {c['keep']:3} {c['veto']:3}   score {score:+d}")
 
 
 def main():

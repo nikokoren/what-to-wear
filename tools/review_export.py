@@ -36,7 +36,7 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip|flavour)_(\d+))\.([a-z_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour|fact)_(\d+))\.([a-z0-9_]+)$")
 PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
@@ -106,7 +106,8 @@ FLAVOUR_CTX = {
     "wet": ("jacket_rain", ["w_jacket", "p_wetter"], "Rain at some point: coming, possible, or stopping."),
     "snow": ("coat_snow", ["p_snow_coming"], "Snow coming or falling."),
     "fickle": ("jacket_dry", ["arc_level"], "Warms up, then cools again."),
-    "evening": ("jacket_dry", ["steady_evening"], "A steady evening, from 18:00."),
+    "evening": ("jacket_dry", ["steady_evening"], "A steady evening, 18:00 to 22:00. People check before going out."),
+    "night": ("jacket_dry", ["steady_evening"], "A steady night, from 22:00. Bed jokes allowed."),
 }
 
 
@@ -148,6 +149,8 @@ def context(lang, doc, section, key, text):
     kind, level = section.split("_")
     if kind == "flavour":
         return flavour_context(lang, doc, key, text)
+    if kind == "fact":
+        return {"sprite": "jacket_dry", "tip": text, "pair": None, "meaning": ""}
     base = key[:-2] if key.endswith("_j") else key
     if kind == "temp":
         outfit = TEMP_CTX.get(key) or THEME_CTX.get(key) or "sweater"
@@ -200,8 +203,16 @@ def rows_from_candidates(cand_path):
         if not m:
             raise SystemExit(f"bad candidate path {c['path']!r}: want e.g. temp_10.perfect")
         section, key = m.group(1), m.group(4)
-        rows.append(row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
-                        "candidate", c.get("batch", "")))
+        r = row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
+                "candidate", c.get("batch", ""))
+        # A round can say exactly what the screen shows next to its line.
+        for field in ("sprite", "fact", "meaning"):
+            if field in c:
+                r[field] = c[field]
+        r["round"] = data.get("round", "")
+        if section.startswith("fact_"):
+            r["levelName"] = "every setting"
+        rows.append(r)
     # Interleave the batches, the same way on every build, so no writer's
     # lines arrive as a block.
     rows.sort(key=lambda r: (r["lang"], r["key"], r["level"], r["id"]))
@@ -225,7 +236,7 @@ def row(lang, doc, section, key, text, path, source, batch):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--keys", default="")
-    ap.add_argument("--candidates")
+    ap.add_argument("--candidates", action="append", default=[])
     ap.add_argument("--only-candidates", action="store_true")
     ap.add_argument("--focus", default="", help="key the page opens on")
     ap.add_argument("--out", default=str(REPO / "build" / "review"))
@@ -235,9 +246,12 @@ def main():
     rows, round_name = [], ""
     if not a.only_candidates:
         rows += rows_from_lang(keys)
-    if a.candidates:
-        cand, round_name = rows_from_candidates(a.candidates)
+    names = []
+    for path in a.candidates:
+        cand, name = rows_from_candidates(path)
         rows += cand
+        names.append(name)
+    round_name = " + ".join(n for n in names if n)
 
     seen, unique = set(), []
     for r in rows:

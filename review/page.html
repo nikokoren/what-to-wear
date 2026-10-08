@@ -97,7 +97,7 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
       <div class="seg" id="f-level"></div>
     </div>
     <div class="group" id="g-batch" hidden>
-      <span class="label">Voice</span>
+      <span class="label">Set</span>
       <div class="seg" id="f-batch"></div>
     </div>
     <div class="group">
@@ -256,7 +256,7 @@ function render() {
     ["", r.sprite.replace(/_/g, " ")],
     ["", `${(r.fact ? r.fact.length + 1 : 0) + tip.length} characters`],
   ];
-  if (r.source === "candidate") meta.push(["", r.batch ? "voice " + r.batch : "new candidate"]);
+  if (r.source === "candidate") meta.push(["", r.batch ? "set " + r.batch : "new candidate"]);
   $("meta").replaceChildren(...meta.map(([tag, text]) => { const e = document.createElement(tag || "span"); e.textContent = text; return e; }));
   if (r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Too long for the small views"; $("meta").append(w); }
   $("meaning").textContent = r.meaning;
@@ -280,7 +280,7 @@ async function save(r, patch, advance) {
   const prev = decisions.get(r.id) || {};
   const doc = {
     id: r.id, lang: r.lang, level: r.level, key: r.key, path: r.path, text: r.text,
-    source: r.source, batch: r.batch || "", round: DATA.round || "",
+    source: r.source, batch: r.batch || "", round: r.round || DATA.round || "",
     verdict: prev.verdict || "", tags: prev.tags || [], note: prev.note || "",
     ...patch, updatedAt: new Date().toISOString(),
   };

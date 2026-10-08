@@ -72,6 +72,9 @@ Reads only what the scenario logic above already worked out.
     {%- assign mood = 'snow' -%}
   {%- elsif precip_scenario != '' -%}
     {%- assign mood = 'wet' -%}
+  {%- elsif is_steady and local_hour >= 22 -%}
+    {%- comment %} Only this late may a line mention bed: at 19:00 people check before going out. {%- endcomment %}
+    {%- assign mood = 'night' -%}
   {%- elsif is_steady and local_hour >= 18 -%}
     {%- assign mood = 'evening' -%}
   {%- elsif is_arc -%}

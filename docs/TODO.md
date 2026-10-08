@@ -164,7 +164,11 @@ Open questions:
 - The tip becomes a fact line plus a flavour line; sarcasm 0 shows the
   fact alone, 10 and 11 add flavour. Prototype and mock in
   `prototypes/fact-flavour/`.
-- Voice audition on the review page; see `review/README.md`.
+- Voice audition on the review page; see `review/README.md`. Round 1
+  done (English: the screen; German: Grantler and Wetterfrosch). Round 2
+  running, together with an audition of fact-line styles.
+- Idea from the votes: a "first cold day in a while" pool. Needs the
+  previous days' weather (Open-Meteo `past_days`).
 
 - Review page: https://claude.ai/artifact/TLLXhH5LF2LEog84w4zPoN, built
   from `review/page.html` by `tools/review_export.py`. Votes live in its

@@ -6,18 +6,48 @@ owner's taste, kept as examples, not adjectives.
 
 ## Who is talking
 
-> **A friend who checked the weather for you before you left, and tells
-> you the one thing worth knowing.**
+Leading after the first audition, to be settled by round 2:
 
-*(Draft. The owner confirms or rewrites this sentence before the pilot.)*
+- **English:** the screen on your wall, talking about itself and a
+  little too pleased with it.
+- **German:** a grumbler, in plain German with a southern accent at
+  most, or a grumbling TV weather presenter. Round 2 has both.
 
-The three sarcasm levels are the same friend in three moods:
+The tip is a fact line plus a flavour line (`prototypes/fact-flavour/`).
+Only the flavour line has a voice; sarcasm Off shows the fact alone.
 
-| Level | Setting | The friend is |
-|---|---|---|
-| `0` | Plain | helpful and brief |
-| `10` | Dry | the same, with a straight face |
-| `11` | Sarcastic | teasing you, because they know you |
+| Setting | The flavour line is |
+|---|---|
+| Off (`0`) | absent |
+| On (`10`) | sarcastic, dry |
+| `11` | sarcastic and personal: it's about you |
+
+### What the first voice audition settled (October 2026)
+
+From 160 votes and the owner's notes (`review/decisions/`):
+
+- **On is sarcastic too.** "Not sarcastic" was the most common note on
+  On lines. Friendly or merely pleasant lines get vetoed.
+- **Never restate the weather.** The fact line already said it. "Cold
+  out.", "Nass heute.", "Rain." in front of a joke get cut. (Exception the
+  owner starred: a pure grumble like "Regen. Wieder. Natürlich.", where
+  the restatement is the joke.)
+- **No clothing advice in the flavour line.** Garments the fact line
+  didn't name ("wear an undershirt") are wrong garment. A joke about a
+  garment is fine.
+- **Evening is not bedtime.** From 18:00 people check the screen before
+  going out. No going home, no tea, no bed, no end-of-day before 22:00;
+  after that a `night` pool may talk about bed.
+- **Light regional colour, not dialect.** The Grantler won German but was
+  "too Bavarian". No "Alter". No rhymes ("not a poetry slam").
+- **What worked:** English, the screen talking about itself ("I'm a
+  screen on a wall. Even I'd go outside today."). German, the Grantler's
+  grumbling and the TV Wetterfrosch's patter ("Und schon wieder ein Tief.
+  Ich kann nichts dafür.").
+- **What failed everywhere:** deadpan restatement, epic narration,
+  trivia, rhymes, the caring grandparent, the buddy.
+- A line that's great once can wear thin daily ("good for the first cold
+  day in a while"). Prefer lines that survive repetition.
 
 ## What to read before writing, in this order
 
