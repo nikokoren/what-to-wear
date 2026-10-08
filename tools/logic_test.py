@@ -113,31 +113,38 @@ def main():
         failures.append(f"render_test fixtures carry current.{f}, which the real URL "
                         "does not request")
 
-    # ---- snow ahead is about boots, not umbrellas ----
+    # Outfits, cold to warm (src/shared.liquid, BAND_EDGES):
+    #   bundled <= -5 < coat <= 5 < jacket <= 12 < sweater <= 18
+    #   < tee_pants <= 24 < tee_shorts <= 30 < heat <= 34 < extreme_heat
+
+    # ---- snow ahead is about grip, not umbrellas; snow now draws dry ----
     got = run(env, 1, [1] * 24, [0] * 12 + [80] * 12, 8, codes=[0] * 12 + [73] * 12)
     expect("snow later", got, precip_scenario="snow_coming", when_precip="around midday")
+    got = run(env, -2, [-2] * 24, [90] * 24, 8, codes=[73] * 24)
+    expect("snowing now", got, band="coat", sprite_slug="coat_dry")
 
     # ---- a one-hour dip at sunrise does not outrank the day ----
-    day = [6, 6, 5.5, 5.5, 5.2, 5.0, 4.0, 2.5, 3.5, 6, 8, 10, 12, 14, 15.5, 16,
-           15.5, 14, 12.5, 11, 10, 8, 7.5, 7]
-    got = run(env, 5.0, day, [0] * 24, 5)
-    expect("one-hour sunrise dip", got, scenario="arc_level",
+    day = [9, 9, 8.5, 8.5, 8.2, 8.0, 7.0, 4.5, 6.5, 9, 11, 13, 15, 17, 18.5, 19,
+           18.5, 17, 15.5, 14, 13, 11, 10.5, 10]
+    got = run(env, 8.0, day, [0] * 24, 5)
+    expect("one-hour sunrise dip", got, band="jacket", scenario="arc_level",
            when_temp="around midday", when_temp2="tonight")
 
     # ...but a dip that holds for two hours is real, and it comes first
     held = list(day)
-    held[7], held[8] = 2.5, 2.0
-    got = run(env, 5.0, held, [0] * 24, 5)
+    held[7], held[8] = 4.5, 4.0
+    got = run(env, 8.0, held, [0] * 24, 5)
     expect("two-hour sunrise dip", got, scenario="c_coat", when_temp="in two hours")
 
     # ---- the time named is when the band is crossed, not the trough ----
-    cooling = [12] * 8 + [18, 17, 15.5, 14, 12.5, 11, 10.2, 9.5, 9, 8.5, 8, 7, 6.5, 6, 6, 6]
+    cooling = [12] * 8 + [18, 17.5, 17, 16, 15, 14, 13, 12.5, 11.5, 11, 10, 9, 8, 7.5, 7, 7]
     got = run(env, 18, cooling, [0] * 24, 8)
-    expect("cooling crosses at 15:00", got, scenario="c_jacket", when_temp="this afternoon")
+    expect("cooling crosses at 16:00", got, band="sweater", scenario="c_jacket",
+           when_temp="this afternoon")
 
     warming = [8] * 9 + [8, 9, 11, 13, 15, 17, 18, 19, 19, 19.5, 20, 20, 20, 20, 20]
     got = run(env, 8, warming, [0] * 24, 8)
-    expect("warming crosses at 11:00", got, scenario="w_jacket", when_temp="around midday")
+    expect("warming crosses at 12:00", got, scenario="w_jacket", when_temp="around midday")
 
     # ---- raining now: clears, never stops, or stops and comes back ----
     wet = [61] * 24
@@ -146,7 +153,7 @@ def main():
     expect("rain, dry break, rain", got, precip_scenario="wet_again",
            when_precip="this evening")
     got = run(env, 12, [12] * 24, [90] * 24, 8, codes=wet)
-    expect("rain all day", got, precip_scenario="stays_wet")
+    expect("rain all day", got, precip_scenario="stays_wet", sprite_slug="jacket_rain")
     got = run(env, 12, [12] * 24, [90] * 10 + [5] * 14, 8, codes=[61] * 10 + [0] * 14)
     expect("rain that clears", got, precip_scenario="drier")
     # a single 30% blip after the break is not "it comes back"
@@ -164,19 +171,50 @@ def main():
 
     # ---- the picture dresses for the next hour ----
     got = run(env, 12, [12] * 24, [0] * 9 + [90] * 15, 8)
-    expect("rain from the next hour", got, sprite_slug="cool_rain",
+    expect("rain from the next hour", got, sprite_slug="jacket_rain",
            precip_scenario="wetter_long", when_precip="in an hour")
     got = run(env, 12, [12] * 24, [0] * 9 + [40] * 15, 8)
-    expect("40% next hour", got, sprite_slug="cool_dry")
+    expect("40% next hour", got, sprite_slug="jacket_dry")
 
-    # ---- band edges are inclusive: 3.0 is still freezing ----
-    got = run(env, 3.0, [3.0] * 24, [0] * 24, 8)
-    expect("exactly on an edge", got, band="freezing")
+    # ---- band edges are inclusive: 5.0 is still coat ----
+    got = run(env, 5.0, [5.0] * 24, [0] * 24, 8)
+    expect("exactly on an edge", got, band="coat")
+
+    # ---- both heat outfits ----
+    got = run(env, 31, [31] * 24, [0] * 24, 12)
+    expect("31C", got, band="heat", sprite_slug="heat_dry")
+    got = run(env, 36, [36] * 24, [0] * 24, 12)
+    expect("36C", got, band="extreme_heat", sprite_slug="extreme_heat_dry")
+
+    # ---- the long-pants rule: legs are decided at the door ----
+    # 07:30, 20C now, shorts weather from 10:00 until 21:00: three cool
+    # hours against eleven warm ones, so shorts now
+    early = [18] * 7 + [20, 21, 23, 25, 26, 27, 28, 28, 28, 27, 27, 26, 26, 25, 25, 24, 22]
+    got = run(env, 20, early, [0] * 24, 7)
+    expect("shorts weather most of the day", got, band="tee_shorts",
+           sprite_slug="tee_shorts_dry", scenario="perfect")
+    # the same morning, but shorts weather only from 15:00 to 18:00: eight
+    # cool hours against three warm ones, so long pants
+    late = [18] * 7 + [20, 20, 21, 21, 22, 22, 22, 23, 25, 26, 26, 25, 23, 22, 21, 20, 19]
+    got = run(env, 20, late, [0] * 24, 7)
+    expect("shorts weather only late", got, band="tee_pants",
+           sprite_slug="tee_pants_dry", scenario="perfect")
+    # a language that has shorts_early lines gets to explain the picture
+    se = copy.deepcopy(LANGS["en"])
+    se["temp_10"]["shorts_early"] = ["Shorts weather arrives {WHEN}. Worth the cool start."]
+    got = run(env, 20, early, [0] * 24, 7, texts=se)
+    expect("shorts_early line", got, scenario="shorts_early",
+           today_tip="Shorts weather arrives in three hours. Worth the cool start.")
+    # cooling from shorts weather into long-pants weather is legs, not a
+    # layer: nothing to put in the bag
+    evening = [27] * 13 + [26, 25, 24, 23, 22, 21, 20, 20, 20, 20, 20]
+    got = run(env, 27, evening, [0] * 24, 10)
+    expect("shorts to pants by evening", got, band="tee_shorts", scenario="perfect")
 
     # ---- a missing feels-like reading falls back to the air ----
-    got = run(env, 24, [24] * 24, [0] * 24, 8,
+    got = run(env, 26, [26] * 24, [0] * 24, 8,
               current_extra={"apparent_temperature": None})
-    expect("no apparent temperature", got, band="warm")
+    expect("no apparent temperature", got, band="tee_shorts")
 
     # ---- the calendar is the forecast location's, not UTC ----
     ny = -5 * 3600
@@ -188,10 +226,12 @@ def main():
     expect("Thanksgiving, 07:30 New York", got, active_theme="thanks")
 
     # ---- Easter, checked against an independent computus ----
+    # No themed drawings in the new outfit set yet: the theme is active
+    # (themed words) but the picture is the plain outfit.
     for year in range(2024, 2036):
         md = easter(year)
         got = run(env, 16, [16] * 24, [0] * 24, 10, date=f"{year}-{md}")
-        expect(f"Easter {year}-{md}", got, active_theme="easter", sprite_slug="easter_mild_dry")
+        expect(f"Easter {year}-{md}", got, active_theme="easter", sprite_slug="sweater_dry")
     got = run(env, 16, [16] * 24, [0] * 24, 10, date="2026-04-06")
     expect("Easter Monday", got, active_theme="")
     # no theme_easter line yet: falls through to the evening variant
@@ -200,21 +240,21 @@ def main():
 
     # ---- "Do you run cold or warm?" shifts the reading, not the ladder ----
     got = run(env, 21, [21] * 24, [0] * 24, 10)
-    expect("21C, average", got, band="warm")
+    expect("21C, average", got, band="tee_pants")
     got = run(env, 21, [21] * 24, [0] * 24, 10, preference="-4")
-    expect("21C, always cold", got, band="mild")
+    expect("21C, always cold", got, band="sweater")
     got = run(env, 17, [17] * 24, [0] * 24, 10, preference="4")
-    expect("17C, always hot", got, band="warm")
+    expect("17C, always hot", got, band="tee_pants")
     got = run(env, 21, [21] * 24, [0] * 24, 10, preference="3")
-    expect("unlisted preference is ignored", got, band="warm")
+    expect("unlisted preference is ignored", got, band="tee_pants")
     # the forecast is shifted too, so the hint agrees with the picture:
-    # 12 -> 16 is hoodie weather all day for most, jacket-then-hoodie
+    # 14 -> 18 is sweater weather all day for most, jacket-then-sweater
     # for someone who is always cold
-    rising = [12] * 11 + [13, 14, 15, 16] + [16] * 9
-    got = run(env, 12, rising, [0] * 24, 10)
-    expect("12 to 16, average", got, scenario="perfect", band="cool")
-    got = run(env, 12, rising, [0] * 24, 10, preference="-4")
-    expect("12 to 16, always cold", got, scenario="w_jacket", band="cold",
+    rising = [14] * 11 + [15, 16, 17, 18] + [18] * 9
+    got = run(env, 14, rising, [0] * 24, 10)
+    expect("14 to 18, average", got, scenario="perfect", band="sweater")
+    got = run(env, 14, rising, [0] * 24, 10, preference="-4")
+    expect("14 to 18, always cold", got, scenario="w_jacket", band="jacket",
            when_temp="around midday")
 
     # ---- sentences start capitalised after ? and ! too ----

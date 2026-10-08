@@ -53,6 +53,10 @@ OPTIONAL_TEMP_KEYS += [f"theme_{t}" for t in THEMES]
 
 # None of them describe a change, so none may name a time.
 STEADY_KEYS = set(["perfect"] + OPTIONAL_TEMP_KEYS)
+
+# Shorts drawn early by the long-pants rule. Optional; may name {WHEN}, the
+# hour shorts weather starts. Without it the day reads as steady.
+OPTIONAL_TEMP_KEYS.append("shorts_early")
 PRECIP_BASE = ["wetter_maybe", "wetter", "wetter_long", "drier", "stays_wet", "snow_coming"]
 PRECIP_KEYS = [k + s for k in PRECIP_BASE for s in ("", "_j")]
 

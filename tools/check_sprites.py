@@ -43,16 +43,16 @@ from render_test import (  # noqa: E402
     settings,
 )
 
-# One apparent temperature per band, from the ladder in SCENARIOS.md.
+# One apparent temperature per outfit, from BAND_EDGES in src/shared.liquid.
 BANDS = {
-    "extra_cold": -12,
-    "freezing": 0,
-    "cold": 7,
-    "cool": 12,
-    "mild": 17,
-    "warm": 24,
-    "hot": 30,
-    "very_hot": 35,
+    "bundled": -10,
+    "coat": 0,
+    "jacket": 8,
+    "sweater": 15,
+    "tee_pants": 21,
+    "tee_shorts": 27,
+    "heat": 32,
+    "extreme_heat": 37,
 }
 
 # Open-Meteo weather codes: clear, rain, snow.
@@ -165,7 +165,8 @@ def main():
                         )
                         continue
 
-                    name = url.rsplit("/", 1)[-1]
+                    # repo-relative path: sprites/<slug>.png, or 404.png
+                    name = url.split("/refs/heads/main/", 1)[1]
                     seen.add(name)
                     if not (REPO / name).exists():
                         missing.setdefault(name, set()).add(
@@ -179,7 +180,7 @@ def main():
     if args.remote and not missing:
         import urllib.request
         base = ("https://raw.githubusercontent.com/nikokoren/"
-                "what-to-wear/refs/heads/main/")
+                "what-to-wear/refs/heads/main/")  # + sprites/<slug>.png
         for name in sorted(seen):
             req = urllib.request.Request(base + name, method="HEAD")
             try:
@@ -204,6 +205,22 @@ def main():
         return 1
 
     print("\nall good: every sprite the markup can build exists")
+
+    # Drawing progress: a new sprite still byte-identical to an old
+    # root-level drawing is a placeholder copied in to keep the set
+    # rendering until the real artwork lands.
+    import hashlib
+    digest = lambda f: hashlib.md5(f.read_bytes()).hexdigest()
+    legacy = {digest(f): f.name for f in REPO.glob("*.png")}
+    placeholders = [
+        (f.name, legacy[digest(f)])
+        for f in sorted((REPO / "sprites").glob("*.png"))
+        if digest(f) in legacy
+    ]
+    if placeholders:
+        print(f"\n{len(placeholders)} sprite(s) still a placeholder copy of old art:")
+        for new, old in placeholders:
+            print(f"  sprites/{new:24} (copy of {old})")
     return 0
 
 

@@ -22,21 +22,14 @@ whichever order those two updates reach a device.
 If the texts payload is missing or 404s, today_tip comes out empty
 and the views simply hide the tip line. The sprite still renders.
 
-SPRITE WORK THIS FILE ASSUMES
-  freezing_dry  -> extra_cold_dry     (rename)
-  freezing_snow -> extra_cold_snow    (rename)
-  cold_dry      -> freezing_dry       (rename)
-  cold_rain     -> freezing_snow      (rename, also fixes the
-                   sprite that was drawn as snow)
-  cold_dry      -> NEW, light jacket
-  cold_rain     -> NEW, light jacket with umbrella
-Until that lands on main, the files under the old names still exist
-with the OLD ladder's art, so nothing 404s but the pictures are one
-band off: cold_dry draws a puffer where this ladder means a light
-jacket, cold_rain draws a puffer in snow, and freezing_dry already
-wears the scarf that belongs to extra_cold. Every themed set carries
-the same shift. tools/check_sprites.py only proves a file exists, so
-it cannot catch this; look at the pictures.
+SPRITES
+The outfit set lives in sprites/ on main, one finished PNG per case:
+  sprites/<outfit>_<dry|rain>.png           the plain outfit
+  sprites/<theme>_<outfit>_<dry|rain>.png   a themed version, if drawn
+with <outfit> one of BAND_NAMES below. Snow has no item of its own: it
+draws the dry outfit. The umbrella in _rain is a symbol that rain is
+coming, not a garment. The old flat files in the repo root belong to the
+published recipe and are not used here.
 ================================================================
 {%- endcomment %}
 
@@ -71,15 +64,29 @@ steady while the drawing showed a hoodie and the reader needed a jacket.
 The dead zones were 0-3, 7-10 and 19-20, which is most of a European
 winter afternoon.
 
-Bands 4 and 5 are one warmth class -- a hoodie and a sweatshirt are the
-same thing thermally -- which the scenario logic handles separately.
+Each step is one decision at the door. Edges were placed with
+tools/climate/ (three years of hourly data where the devices are) and are
+meant to be tuned here by hand:
+
+  1 bundled       <= -5   winter coat, hat, scarf, gloves
+  2 coat          -5..5   winter coat
+  3 jacket        5..12   jacket over long sleeves
+  4 sweater      12..18   sweater or hoodie
+  5 tee_pants    18..24   t-shirt, long pants
+  6 tee_shorts   24..30   t-shirt, shorts
+  7 heat         30..34   tank top, sandals
+  8 extreme_heat   > 34   tank top, sun hat, water
+
+Bands 5 and 6 have the same top layer, so moving between them is not a
+layer coming off or going on - see THE LONG-PANTS RULE for how the legs
+are decided instead.
 {%- endcomment %}
-{%- assign BAND_EDGES = '-7,3,10,14,19,27,32' -%}
-{%- assign BAND_NAMES = 'extra_cold,freezing,cold,cool,mild,warm,hot,very_hot' -%}
+{%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}
+{%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}
 
 
 {%- comment %} ============ SPRITE BASES ============ {%- endcomment %}
-{%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/' -%}
+{%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/sprites/' -%}
 {%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
 
 
@@ -343,14 +350,7 @@ single contains test instead of a chained and/or condition.
   forecast high and low further down, off the same string, which is the
   point -- see the note on BAND_EDGES above for what drifting copies cost.
 
-  rank 1 extra_cold  puffer + scarf + beanie + boots
-  rank 2 freezing    puffer + beanie + boots
-  rank 3 cold        light jacket + beanie + boots
-  rank 4 cool        hoodie + sneakers
-  rank 5 mild        sweatshirt + long pants
-  rank 6 warm        t-shirt + shorts + cap
-  rank 7 hot         tank + sandals
-  rank 8 very_hot    tank + bucket hat + water
+  Ranks 1-8 are the outfits listed with BAND_EDGES above.
   {%- endcomment %}
   {%- assign band_edge_list = BAND_EDGES | split: ',' -%}
   {%- assign band_name_list = BAND_NAMES | split: ',' -%}
@@ -367,11 +367,12 @@ single contains test instead of a chained and/or condition.
   {%- assign band_idx = band_rank | minus: 1 -%}
   {%- assign band = band_name_list[band_idx] -%}
 
-  {%- comment %} Suffix from the code, not the band. {%- endcomment %}
+  {%- comment %}
+  Suffix from the code, not the band. Rain draws the umbrella; snow has no
+  item of its own and draws the dry outfit.
+  {%- endcomment %}
   {%- assign precip_suffix = 'dry' -%}
-  {%- if is_now_snow == 1 -%}
-    {%- assign precip_suffix = 'snow' -%}
-  {%- elsif is_now_precip == 1 -%}
+  {%- if is_now_precip == 1 and is_now_snow == 0 -%}
     {%- assign precip_suffix = 'rain' -%}
   {%- endif -%}
   {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
@@ -505,6 +506,42 @@ single contains test instead of a chained and/or condition.
       {%- assign rank_lo_list = rank_lo_csv | split: ',' -%}
 
       {%- comment %}
+      ============ THE LONG-PANTS RULE ============
+      Every other layer comes off, but legs are decided once, at the door.
+      Someone told "long pants" on a morning that turns into shorts weather
+      is stuck in them all afternoon. So when it is long-pants weather now
+      (rank 5) and the day warms into shorts weather (rank 6 or above, held
+      two hours like every other change), compare the two stretches:
+
+        cool part   hours from now until shorts weather starts
+        warm part   hours of shorts weather in the window
+
+      If the cool part is no longer than the warm part, draw shorts now:
+      a bit cool for a while beats sweating all afternoon. A shorts day
+      that only arrives late keeps the long pants. The worst case is
+      shorts at the bottom of rank 5 (18 C feels-like) for a few hours.
+      {%- endcomment %}
+      {%- assign shorts_idx = -1 -%}
+      {%- assign shorts_hours = 0 -%}
+      {%- for r in rank_hi_list -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- if rv >= 6 -%}
+          {%- assign shorts_hours = shorts_hours | plus: 1 -%}
+          {%- if shorts_idx < 0 -%}{%- assign shorts_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- assign shorts_early = false -%}
+      {%- if band_rank == 5 and shorts_idx >= 0 -%}
+        {%- assign cool_hours = shorts_idx | minus: now_index -%}
+        {%- if cool_hours <= shorts_hours -%}
+          {%- assign shorts_early = true -%}
+          {%- assign band_rank = 6 -%}
+          {%- assign band = band_name_list[5] -%}
+          {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- comment %}
       Two different cold spells, kept apart because they tell different
       stories. One global minimum used to stand for both, so a cold hour
       before the peak hid the evening drop after it.
@@ -606,16 +643,14 @@ single contains test instead of a chained and/or condition.
       {%- comment %}
       What the next hour holds, for the picture: someone leaving in ten
       minutes into a 90% hour should see the umbrella, not just read
-      about it.
+      about it. Snow in the next hour changes nothing - no snow item.
       {%- endcomment %}
       {%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}
+      {%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}
       {%- if next_prob >= RAIN_HIGH -%}
-        {%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}
-        {%- if SNOW_CODES contains next_probe -%}
-          {%- assign next_hour_precip = 'snow' -%}
-        {%- else -%}
+        {%- unless SNOW_CODES contains next_probe -%}
           {%- assign next_hour_precip = 'rain' -%}
-        {%- endif -%}
+        {%- endunless -%}
       {%- endif -%}
 
       {%- comment %}
@@ -643,34 +678,31 @@ single contains test instead of a chained and/or condition.
     ============ GARMENT FROM THE CURRENT BAND ============
     The text names the garment ON SCREEN and says what happens to it.
 
-    band 1 extra_cold  puffer + scarf   -> the scarf comes off
-    band 2 freezing    puffer           -> the coat comes off
-    band 3 cold        light jacket     -> the jacket comes off
-    band 4 cool        hoodie           -> the hoodie comes off
-    band 5 mild        sweatshirt       -> the sweatshirt comes off
-    band 6 warm        t-shirt + shorts -> nothing left to remove
-    band 7 hot         tank top
-    band 8 very_hot    tank top
+    band 1 bundled     -> the scarf (and hat, gloves) come off
+    band 2 coat        -> the coat comes off
+    band 3 jacket      -> the jacket comes off
+    band 4 sweater     -> the sweater comes off (lines say hoodie)
+    band 5-8           -> t-shirt or tank top, nothing left to remove
 
     Cooling names the garment of the DESTINATION band, because that
     is the thing to put in the bag.
 
-    Bands 4 and 5 are one warmth class. A hoodie and a sweatshirt are
-    the same thing thermally, so moving between them produces no hint
-    at all.
+    Bands 5 and 6 share a top layer: moving between them is a matter of
+    legs, which THE LONG-PANTS RULE settles at the door, so it produces
+    no hint. w_sweatshirt and c_sweatshirt are no longer used.
 
     Garment wording comes from the language file so translators can
     get the article and case right for their language.
     {%- endcomment %}
     {%- assign GARMENTS_N = texts.garments.n -%}
     {%- assign GARMENTS_A = texts.garments.a -%}
-    {%- assign WKEYS = 'w_scarf,w_coat,w_jacket,w_hoodie,w_sweatshirt' | split: ',' -%}
-    {%- assign CKEYS = 'c_scarf,c_coat,c_jacket,c_hoodie,c_sweatshirt' | split: ',' -%}
+    {%- assign WKEYS = 'w_scarf,w_coat,w_jacket,w_hoodie' | split: ',' -%}
+    {%- assign CKEYS = 'c_scarf,c_coat,c_jacket,c_hoodie' | split: ',' -%}
 
     {%- comment %} what is on screen right now {%- endcomment %}
     {%- assign garment_n = '' -%}
     {%- assign garment_a = '' -%}
-    {%- if band_rank <= 5 and texts_ok -%}
+    {%- if band_rank <= 4 and texts_ok -%}
       {%- assign gi = band_rank | minus: 1 -%}
       {%- assign garment_n = GARMENTS_N[gi] -%}
       {%- assign garment_a = GARMENTS_A[gi] -%}
@@ -682,11 +714,11 @@ single contains test instead of a chained and/or condition.
     {%- assign warm_removable = false -%}
     {%- if delta_up >= MIN_DELTA and up_rank > band_rank -%}
       {%- assign same_class = false -%}
-      {%- if band_rank >= 4 and band_rank <= 5 and up_rank >= 4 and up_rank <= 5 -%}
+      {%- if band_rank >= 5 and band_rank <= 6 and up_rank >= 5 and up_rank <= 6 -%}
         {%- assign same_class = true -%}
       {%- endif -%}
       {%- unless same_class -%}
-        {%- if band_rank <= 5 -%}
+        {%- if band_rank <= 4 -%}
           {%- assign wi = band_rank | minus: 1 -%}
           {%- assign warm_key = WKEYS[wi] -%}
           {%- assign warm_removable = true -%}
@@ -702,11 +734,11 @@ single contains test instead of a chained and/or condition.
     {%- assign delta_dip = temp_c | minus: dip_min -%}
     {%- if delta_dip >= MIN_DELTA and dip_rank < band_rank -%}
       {%- assign same_class = false -%}
-      {%- if dip_rank >= 4 and dip_rank <= 5 and band_rank >= 4 and band_rank <= 5 -%}
+      {%- if dip_rank >= 5 and dip_rank <= 6 and band_rank >= 5 and band_rank <= 6 -%}
         {%- assign same_class = true -%}
       {%- endif -%}
       {%- unless same_class -%}
-        {%- if dip_rank <= 5 -%}
+        {%- if dip_rank <= 4 -%}
           {%- assign ci = dip_rank | minus: 1 -%}
           {%- assign dip_key = CKEYS[ci] -%}
         {%- else -%}
@@ -719,11 +751,11 @@ single contains test instead of a chained and/or condition.
     {%- assign delta_after = max_temp_future | minus: after_min -%}
     {%- if delta_after >= MIN_DELTA and after_rank < up_rank -%}
       {%- assign same_class = false -%}
-      {%- if after_rank >= 4 and after_rank <= 5 and up_rank >= 4 and up_rank <= 5 -%}
+      {%- if after_rank >= 5 and after_rank <= 6 and up_rank >= 5 and up_rank <= 6 -%}
         {%- assign same_class = true -%}
       {%- endif -%}
       {%- unless same_class -%}
-        {%- if after_rank <= 5 -%}
+        {%- if after_rank <= 4 -%}
           {%- assign ci = after_rank | minus: 1 -%}
           {%- assign after_key = CKEYS[ci] -%}
         {%- else -%}
@@ -745,8 +777,8 @@ single contains test instead of a chained and/or condition.
                   (or the dip's band, when the day ends warmer)
     {%- endcomment %}
     {%- assign off_rank = band_rank | plus: 1 -%}
-    {%- if band_rank == 4 -%}
-      {%- assign off_rank = 6 -%}
+    {%- if band_rank == 5 -%}
+      {%- assign off_rank = 7 -%}
     {%- endif -%}
     {%- assign back_rank = band_rank -%}
     {%- if after_rank > band_rank -%}
@@ -784,6 +816,8 @@ single contains test instead of a chained and/or condition.
          simply wins.
       3. cooling after the peak.
       4. warming.
+      5. shorts drawn early by THE LONG-PANTS RULE, if the language has
+         lines for it; otherwise the day reads as steady.
     {%- endcomment %}
     {%- assign primary_idx = 0 -%}
     {%- assign secondary_idx = 0 -%}
@@ -807,6 +841,13 @@ single contains test instead of a chained and/or condition.
     {%- elsif warm_key != '' -%}
       {%- assign temp_scenario = warm_key -%}
       {%- assign primary_idx = warm_idx -%}
+    {%- elsif shorts_early and texts_ok -%}
+      {%- assign se_key = 'temp_' | append: sarcasm_level -%}
+      {%- assign se_lib = texts[se_key] -%}
+      {%- if se_lib['shorts_early'] -%}
+        {%- assign temp_scenario = 'shorts_early' -%}
+        {%- assign primary_idx = shorts_idx -%}
+      {%- endif -%}
     {%- endif -%}
 
     {%- assign is_arc = false -%}
@@ -982,53 +1023,17 @@ only, which Liquid's divided_by gives us when both sides are whole.
 {%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
 
 {%- comment %}
-Theme whitelist. A theme only replaces the sprite for slugs that
-have actually been drawn. 'ALL' means the full set exists.
-Note: the ALL themes now need extra_cold_dry and extra_cold_snow
-as well, since the band was added. Until those are drawn, consider
-dropping the affected themes back to a comma list.
-{%- endcomment %}
-{%- comment %}
-A theme may only claim a themed sprite if that artwork actually exists in
-the repo. An empty whitelist is not a downgrade — the day still gets its
-themed *words*, it just wears the plain outfit. A whitelist naming art
-that was never drawn is a visible outage: the image 404s and the device
-shows the alt text instead of a picture, for every reader, for the whole
-window. 'okt' did exactly that for sixteen days a year.
+Theme whitelist: the outfits a theme has a finished drawing for, as
+,<outfit>_<dry|rain>, entries, or 'ALL' once all 16 exist. A theme with
+an empty list still gets its themed words over the plain outfit; a list
+naming art that was never drawn shows a broken image all day, which is
+why tools/check_sprites.py checks every entry against sprites/.
 
-Before moving a theme to ALL, draw every slug for it:
-  {extra_cold,freezing,cold,cool,mild,warm,hot,very_hot}_dry
-  plus _rain for the temperate bands and _snow for the cold ones.
-A comma list ,mild_dry,warm_dry, is the way to ship a theme that only has
-some of its bands drawn.
-
-No theme is on ALL, because no theme is actually complete. Each list below
-is exactly the set of <theme>_<slug>.png that exists in the repo, and
-tools/check_sprites.py regenerates and verifies it. Add to a list only in
-the same commit that adds the artwork.
-
-Known gaps, in rough order of how often they would have fired:
-  xmas_cold_dry, xmas_cold_rain   a 4-10 degree Christmas, i.e. most of
-                                  western Europe most years
-  thanks_cold_rain                a wet Thanksgiving
-  force_cold_dry, force_cool_dry  early May in the north
-  ny_mild_*, ny_warm_*            New Year in the southern hemisphere
-No artwork at all: pi, bike, okt, spooky, ghd, tdf, krampus, nikolo.
-easter fires on Easter Sunday and has only its two mild sprites.
+The new outfit set has no themed drawings yet. To add one, in the same
+commit as its artwork, wrap the line below in a case on active_theme with
+a branch per theme, e.g. xmas -> ',coat_dry,coat_rain,'.
 {%- endcomment %}
 {%- assign theme_whitelist = '' -%}
-{%- case active_theme -%}
-  {%- when 'ny' -%}{%- assign theme_whitelist = ',cold_dry,cold_rain,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,very_hot_dry,' -%}
-  {%- when 'force' -%}{%- assign theme_whitelist = ',cold_rain,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
-  {%- when 'thanks' -%}{%- assign theme_whitelist = ',cold_dry,cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
-  {%- when 'xmas' -%}{%- assign theme_whitelist = ',cool_dry,cool_rain,freezing_dry,freezing_snow,hot_dry,hot_rain,mild_dry,mild_rain,very_hot_dry,warm_dry,warm_rain,' -%}
-  {%- when 'easter' -%}{%- assign theme_whitelist = ',mild_dry,mild_rain,' -%}
-{%- endcase -%}
-{%- comment %}
-pi, bike, okt, spooky, ghd, tdf, krampus and nikolo have no artwork and so
-no branch: an empty whitelist is the default. Add a `when` in the same
-commit as the first drawing.
-{%- endcomment %}
 
 
 
@@ -1293,40 +1298,12 @@ See docs/TRANSLATING.md for the full contract.
 {%- comment %}
 ============ DRESS FOR THE DOOR ============
 The precipitation half of the picture looks one hour ahead: dry now but
-raining (or snowing) in the next hour draws the wet outfit. The words are
+raining in the next hour draws the wet outfit. The words are
 unaffected - they still say when it starts.
 {%- endcomment %}
 {%- if is_error == false and is_now_precip == 0 and next_hour_precip != '' -%}
   {%- assign weather_slug = band | append: '_' | append: next_hour_precip -%}
 {%- endif -%}
-
-{%- comment %} ============ SPRITE FALLBACKS ============ {%- endcomment %}
-{%- if weather_slug == 'very_hot_rain' -%}
-  {%- assign weather_slug = 'hot_rain' -%}
-{%- elsif weather_slug contains '_snow' and weather_slug != 'freezing_snow' and weather_slug != 'extra_cold_snow' -%}
-  {%- assign weather_slug = 'freezing_snow' -%}
-{%- elsif weather_slug == 'extra_cold_rain' -%}
-  {%- assign weather_slug = 'extra_cold_snow' -%}
-{%- endif -%}
-{%- comment %}
-Band 1 was added without its artwork, so extra_cold_dry and extra_cold_snow
-have never existed. Below -7 the device was building a URL that 404s and
-showing alt text instead of an outfit. Borrow freezing until band 1 is
-drawn - which, until the renames in the header land, is the old ladder's
-puffer WITH the scarf, i.e. already the band 1 outfit. Delete these two
-lines the day the art lands.
-{%- endcomment %}
-{%- if weather_slug == 'extra_cold_dry' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
-{%- if weather_slug == 'extra_cold_snow' -%}{%- assign weather_slug = 'freezing_snow' -%}{%- endif -%}
-{%- comment %}
-freezing_rain was never drawn either, and unlike band 1 it fires often:
-rain at or below 3 degrees is an ordinary winter day across Europe and the
-northern US. Borrow freezing_dry rather than cold_rain, because the picture
-is the outfit advice and getting the warmth right matters more than showing
-the umbrella — the words still say to take one. Replace this with real
-sleet artwork when someone draws it.
-{%- endcomment %}
-{%- if weather_slug == 'freezing_rain' -%}{%- assign weather_slug = 'freezing_dry' -%}{%- endif -%}
 
 {%- assign sprite_slug = weather_slug -%}
 {%- if active_theme != '' and is_error == false -%}

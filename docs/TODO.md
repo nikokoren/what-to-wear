@@ -11,7 +11,8 @@ to pick it up cold.
 - Item 3 (the text) is deferred on purpose: it is the most expensive
   item, the approach below is agreed, and it should wait for item 1 and
   for real usage numbers.
-- Nothing in items 1 to 3 is started.
+- **Item 1 is decided and coded; the drawings are next.** See its status
+  below. Items 2 and 3 are not started.
 
 ### Suggested order, and why
 
@@ -34,6 +35,50 @@ to pick it up cold.
    actually use.
 
 ## 1. Rethink the clothing system and the temperature bands
+
+**Status: decided and implemented (October 2026). Waiting on the art.**
+
+Decisions:
+
+- Eight outfits, each step one decision at the door. Edges in
+  `BAND_EDGES` (feels-like °C, tune by hand):
+
+  | Outfit | Feels like |
+  |---|---|
+  | `bundled`: winter coat, hat, scarf, gloves | ≤ −5 |
+  | `coat`: winter coat | −5 to 5 |
+  | `jacket`: jacket over long sleeves | 5 to 12 |
+  | `sweater`: sweater or hoodie | 12 to 18 |
+  | `tee_pants`: t-shirt, long pants | 18 to 24 |
+  | `tee_shorts`: t-shirt, shorts | 24 to 30 |
+  | `heat`: tank top, sandals | 30 to 34 |
+  | `extreme_heat`: tank top, sun hat, water | > 34 |
+
+- Rain adds the umbrella, as a sign that rain is coming. Snow has no item
+  (no boots); it draws the dry outfit.
+- **The long-pants rule:** legs are decided at the door. In long-pants
+  weather, if the day warms into shorts weather and the cool stretch is
+  no longer than the warm one, draw shorts now.
+- Art: one finished PNG per case, made with layers in the drawing tool:
+  16 base sprites, `sprites/<outfit>_<dry|rain>.png`, plus themed ones
+  as `sprites/<theme>_<outfit>_<dry|rain>.png`.
+
+Left to do:
+
+- **Draw the 16 sprites.** `sprites/` holds placeholder copies of the
+  closest old drawings so everything renders meanwhile;
+  `python3 tools/check_sprites.py` lists which are still placeholders.
+- **`sprites/` must be on `main`** before a beta fork can show them: the
+  markup loads sprites from `main`. New names in a new folder, so the
+  published recipe is unaffected.
+- Themed sprites: none yet in the new set; add each theme to the
+  whitelist in `src/shared.liquid` with its artwork.
+- Text, with item 3: `w_sweatshirt`/`c_sweatshirt` are unused; lines for
+  the optional `shorts_early` key; `w_hoodie`/`c_hoodie` lines should
+  read as "sweater or hoodie"; `w_scarf`/`c_scarf` cover hat and gloves
+  too.
+
+Original brief:
 
 Do this first: the visual forecast below draws outfits, so it depends on
 what the outfits are.

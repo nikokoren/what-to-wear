@@ -16,17 +16,30 @@ drawing already shows, or what to put in the bag.
 
 | Band | Feels like | What the drawing shows |
 |---|---|---|
-| 1 `extra_cold` | ≤ −7 °C | puffer, scarf, beanie, boots |
-| 2 `freezing` | ≤ 3 °C | puffer, beanie, boots |
-| 3 `cold` | ≤ 10 °C | light jacket, beanie, boots |
-| 4 `cool` | ≤ 14 °C | hoodie, sneakers |
-| 5 `mild` | ≤ 19 °C | sweatshirt, long trousers |
-| 6 `warm` | ≤ 27 °C | t-shirt, shorts, cap |
-| 7 `hot` | ≤ 32 °C | vest, sandals |
-| 8 `very_hot` | > 32 °C | vest, bucket hat, water |
+| 1 `bundled` | ≤ −5 °C | winter coat, hat, scarf, gloves |
+| 2 `coat` | ≤ 5 °C | winter coat |
+| 3 `jacket` | ≤ 12 °C | jacket over long sleeves |
+| 4 `sweater` | ≤ 18 °C | sweater or hoodie |
+| 5 `tee_pants` | ≤ 24 °C | t-shirt, long pants |
+| 6 `tee_shorts` | ≤ 30 °C | t-shirt, shorts |
+| 7 `heat` | ≤ 34 °C | tank top, sandals |
+| 8 `extreme_heat` | > 34 °C | tank top, sun hat, water |
 
-Bands 4 and 5 count as one warmth class — a hoodie and a sweatshirt are the
-same thing thermally — so moving between them produces no hint at all.
+Each step is one decision at the door. Rain adds the umbrella, as a sign
+that rain is coming rather than a garment. Snow has no item of its own and
+draws the dry outfit.
+
+Bands 5 and 6 have the same top layer. Moving between them is a question of
+legs, which are decided once at the door (the long-pants rule below), so it
+produces no hint at all.
+
+**The long-pants rule.** Every other layer comes off, but someone told
+"long pants" on a morning that turns into shorts weather is stuck in them
+all afternoon. So when it is long-pants weather now and the day warms into
+shorts weather (held for two hours), the drawing switches to shorts if the
+cool stretch before it is no longer than the warm stretch. Better a bit
+cool for a while than sweating all afternoon. A shorts day that only
+arrives late keeps the long pants.
 
 A change has to be at least 2 °C *and* cross a band to say anything, and
 it has to **hold for two consecutive hours**, the same rule rain has always
@@ -93,11 +106,12 @@ key names **the layer in the drawing right now**, so the garment is fixed:
 
 | Key | Fires in band | The sentence is about |
 |---|---|---|
-| `w_scarf` | 1 `extra_cold` | the scarf comes off, everything else stays |
-| `w_coat` | 2 `freezing` | the puffer comes off, and is bulky to carry |
-| `w_jacket` | 3 `cold` | the light jacket comes off |
-| `w_hoodie` | 4 `cool` | the hoodie comes off |
-| `w_sweatshirt` | 5 `mild` | the sweatshirt comes off |
+| `w_scarf` | 1 `bundled` | the scarf (and hat, gloves) come off, the coat stays |
+| `w_coat` | 2 `coat` | the winter coat comes off, and is bulky to carry |
+| `w_jacket` | 3 `jacket` | the jacket comes off |
+| `w_hoodie` | 4 `sweater` | the sweater or hoodie comes off |
+
+`w_sweatshirt` is no longer used: the sweater band covers it.
 
 Because the key fixes the garment, name it in plain prose. Don't use
 `{GARMENT}` here.
@@ -108,8 +122,8 @@ somewhere to put it, an arm occupied, tied round the waist.
 
 ### `w_water` — it gets hotter and there is nothing left to take off
 
-Fires from band 6 up, when it climbs further. The figure is already in a
-t-shirt or vest.
+Fires from band 5 up, when it climbs into heat (band 7 or 8). The figure is
+already in a t-shirt or tank top.
 
 Say: clothing has run out of moves. Water, shade, hydrate. Never name a
 garment — there is no removable layer, so `{GARMENT}` would render empty.
@@ -121,11 +135,19 @@ bring**, which is the destination band's garment, not what is on screen:
 
 | Key | Drops to band | Bring |
 |---|---|---|
-| `c_scarf` | 1 `extra_cold` | a scarf; the coat alone stops covering the neck |
-| `c_coat` | 2 `freezing` | the winter coat; a light jacket will not do |
-| `c_jacket` | 3 `cold` | a jacket; a hoodie will not do |
-| `c_hoodie` | 4 `cool` | a hoodie |
-| `c_sweatshirt` | 5 `mild` | a sweatshirt; bare arms stop being comfortable |
+| `c_scarf` | 1 `bundled` | a scarf, hat and gloves; the coat alone stops being enough |
+| `c_coat` | 2 `coat` | the winter coat; a jacket will not do |
+| `c_jacket` | 3 `jacket` | a jacket; a sweater will not do |
+| `c_hoodie` | 4 `sweater` | a sweater or hoodie; bare arms stop being comfortable |
+
+`c_sweatshirt` is no longer used.
+
+### `shorts_early` — shorts now, though it starts cool (optional)
+
+Fires when the long-pants rule draws shorts in long-pants weather and nothing
+else changes. `{WHEN}` is when shorts weather starts. Say: a cool start, worth
+it, because long pants would be wrong for most of the day. A language without
+it reads the day as steady, which is still true of the drawing.
 
 Frame these as **packing**, not weather reporting. The reader is about to
 leave the house and the useful sentence is "take one with you", not "it will
@@ -137,7 +159,7 @@ thing.
 
 ### `c_relief` — it cools, but stays warm
 
-Fires when it drops from band 7 or 8 but stays at band 6 or above.
+Fires when it drops from band 7 or 8 but stays at band 5 or above.
 
 **Far more common than it looks: 26% of renders across a summer, and 32% in
 US cities.** It is the second-busiest key in the file after `perfect`, and
@@ -191,9 +213,9 @@ match the sprite prefixes: `theme_ny`,
 `theme_okt`, `theme_spooky`, `theme_thanks`, `theme_krampus`,
 `theme_nikolo`, `theme_xmas`.
 
-Five of them have artwork: `ny`, `force`, `thanks` and `xmas`, plus `easter`
-(Easter Sunday, computed, mild bands only). The rest get their themed *words* over the ordinary outfit, which is
-the intended fallback and not a bug. A theme is only whitelisted for a
+No theme has artwork in the new outfit set yet, so every theme gets its
+themed *words* over the ordinary outfit, which is the intended fallback and
+not a bug. Easter fires on Easter Sunday (computed). A theme is only whitelisted for a
 themed sprite once every band of it exists; `tools/check_sprites.py`
 enforces that, after `okt` spent sixteen days a year pointing at a PNG
 nobody had drawn.

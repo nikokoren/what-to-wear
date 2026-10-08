@@ -169,7 +169,7 @@ def main():
 
     # ---- 3. drop the texts_ok guards: the embedded copies always resolve ----
     for old, new, label in [
-        ("{%- if band_rank <= 5 and texts_ok -%}", "{%- if band_rank <= 5 -%}", "band guard"),
+        ("{%- if band_rank <= 4 and texts_ok -%}", "{%- if band_rank <= 4 -%}", "band guard"),
         ("{%- if temp_scenario != '' and texts_ok -%}", "{%- if temp_scenario != '' -%}", "temp token guard"),
         ("{%- if is_arc and texts_ok -%}", "{%- if is_arc -%}", "arc guard"),
         ("{%- if wants_whenp and texts_ok -%}", "{%- if wants_whenp -%}", "whenp guard"),
