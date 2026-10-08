@@ -27,7 +27,9 @@ to pick it up cold.
    the texts URL to the usage Worker at that step starts the counting.
 5. **Item 3, the text**, after a few weeks of usage numbers (forecast on
    or off, which sarcasm level), so the expensive writing goes where
-   people actually read.
+   people actually read. The process is set up (below); the owner's
+   part can start any time: fill in `review/taste.md`, confirm the
+   narrator sentence in `docs/BRIEF.md`, vote the `wet_again` lines.
 
 ## 1. Rethink the clothing system and the temperature bands
 
@@ -156,6 +158,19 @@ Open questions:
 - **Labels** go in `lang/*.json` like every other word on screen.
 
 ## 3. Better writing, and a review process that isn't tedious
+
+**Status: process set up (October 2026). Writing waits for usage numbers.**
+
+- Review page: https://claude.ai/artifact/TLLXhH5LF2LEog84w4zPoN, built
+  from `review/page.html` by `tools/review_export.py`. Votes live in its
+  database; `tools/review_sync.py` turns them into `review/decisions/`,
+  `review/examples/`, `review/dont/` and a fix file for
+  `tools/apply_review.py` (which now also deletes vetoed lines).
+- `docs/BRIEF.md` replaces VOICE.md for new writing; `review/taste.md`
+  waits for the owner; `review/README.md` has the loop and the pilot
+  (Fable 5.1 vs Opus 5.5, blind, on English `perfect`).
+- `tools/style_report.py` now measures the tics below. Baseline, English:
+  object-has-a-job 14% at level 10, semicolons 4% at 10 and 11.
 
 The tips read robotic in both languages, English most of all, and
 reviewing them line by line in JSON has always been slow. Do this after

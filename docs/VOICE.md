@@ -1,5 +1,10 @@
 # The three voices
 
+> **Superseded for new writing by [BRIEF.md](BRIEF.md)**, which steers
+> by the owner's examples (`review/`) instead of rules. Kept for the
+> reasoning behind the current corpus. Its "level 10 aims at the objects"
+> rule is where the object-has-a-job habit came from.
+
 This is the spec every line is written against. It is prescriptive on
 purpose: the previous corpus drifted into template-filling because nothing
 said what the levels were *for*.

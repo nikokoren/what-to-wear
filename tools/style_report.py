@@ -46,6 +46,79 @@ READER_EN = re.compile(r"\b(you|your|you're|you'll)\b", re.IGNORECASE)
 READER_DE = re.compile(r"\b(du|dein|deine|deinen|deiner|dir|dich|hast|bist)\b", re.IGNORECASE)
 
 
+# The tics that made the October 2026 corpus read as generated (see
+# docs/TODO.md item 3). Each is fine once; as a habit it is a template.
+#
+# Objects given a job: the jacket's "shift ends", the rain "cleared its
+# calendar", the forecast "filed nothing". About 9% of English lines.
+OFFICE = {
+    "en": re.compile(
+        r"\b(clock(s|ed)? (in|off|out)|shift|on duty|off duty|schedule[ds]?|calendar|"
+        r"filed?|paperwork|memo|agenda|appointment|booked|overtime|staff(ed|ing)?|"
+        r"job|hired|fired|retire[sd]?|punch(es|ed)? (in|out)|day off|signs? off|"
+        r"short-staffed|minutes|meeting|office|desk|shift's|union)\b", re.IGNORECASE),
+    "de": re.compile(
+        r"\b(Feierabend|Dienst\w*|Termin\w*|Kalender|Akte\w*|"
+        r"Überstunden|Büro|Urlaub|Kündigung|gekündigt|Arbeitstag|Job)\b"),
+}
+BECAUSE = {"en": re.compile(r", because\b"), "de": re.compile(r", weil\b")}
+FUNCTION_WORDS = {
+    "en": set("the a an it it's its is are was be and or but so then if when "
+              "once until by to of on off in out up for with you your you're "
+              "that this there's there no not nothing don't won't".split()),
+    "de": set("der die das den dem des ein eine einen es ist sind und oder aber "
+              "dann wenn bis zu von auf ab in aus an für mit du dein deine dich "
+              "dir nicht kein keine nichts".split()),
+}
+
+
+def skeleton(text, code):
+    """The sentence frame with content words blanked: two lines that differ
+    only in their nouns and verbs share a skeleton."""
+    words = re.findall(r"\{[A-Z0-9]+\}|[\w']+|[.,;:!?]", text.lower())
+    fw = FUNCTION_WORDS.get(code, set())
+    return " ".join(w if w in fw or not w[0].isalnum() else "_" for w in words[:7])
+
+
+def tics(code, doc, flags):
+    print("\n  tics (share of lines):")
+    print(f"    {'lvl':>4} {'office':>7} {'semicolon':>10} {'because':>8}")
+    office_re, because_re = OFFICE.get(code), BECAUSE.get(code)
+    for level in LEVELS:
+        texts = [t for _, t in level_lines(doc, level)]
+        if not texts:
+            continue
+        n = len(texts)
+        office = sum(1 for t in texts if office_re and office_re.search(t))
+        semi = sum(1 for t in texts if ";" in t)
+        because = sum(1 for t in texts if because_re and because_re.search(t))
+        print(f"    {level:>4} {100*office/n:6.1f}% {100*semi/n:9.1f}% {100*because/n:7.1f}%")
+        if office / n > 0.03:
+            flags.append(f"{code}/{level}: {office} lines ({100*office/n:.0f}%) give an object a job "
+                         "(shifts, calendars, filing). Once is a joke, this is a template")
+        if semi / n > 0.02:
+            flags.append(f"{code}/{level}: {semi} lines use a semicolon. Nobody texts a semicolon")
+        if because / n > 0.03:
+            flags.append(f"{code}/{level}: {because} lines explain themselves with ', because'")
+
+    print("\n  repeated sentence frames (content words blanked):")
+    for level in LEVELS:
+        lines = level_lines(doc, level)
+        if not lines:
+            continue
+        frames = collections.Counter(skeleton(t, code) for _, t in lines)
+        # A frame of blanks says nothing: only count ones with real scaffolding.
+        frames = collections.Counter({f: k for f, k in frames.items()
+                                      if sum(w[0].isalnum() for w in f.split() if w != "_") >= 2})
+        worst = [(f, k) for f, k in frames.most_common(3) if k > 2]
+        for frame, k in worst:
+            print(f"    level {level:>2}: {k}x  {frame}")
+            if k > 4:
+                flags.append(f"{code}/{level}: {k} lines share the frame {frame!r}")
+        if not worst:
+            print(f"    level {level:>2}: none over 2")
+
+
 def level_lines(doc, level):
     out = []
     for kind in ("temp", "precip"):
@@ -171,6 +244,8 @@ def report(code, doc, flags):
                 f"{code}/temp_{level}: the c_* keys share a sentence frame "
                 f"({distinct} distinct openings across {len(heads)} keys)"
             )
+
+    tics(code, doc, flags)
 
     longest = max(
         ((len(strip_tokens(t).split()), t) for _, t in

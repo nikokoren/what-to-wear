@@ -18,7 +18,9 @@ The fix file is what an independent review pass produces:
 An entry with a non-empty "old" must match the line currently at that index
 exactly, or nothing is written. That is the point: a reviewer works from a
 snapshot, and a stale fix silently overwriting a line someone else changed is
-worse than a failed run. An empty "old" appends.
+worse than a failed run. An empty "old" appends. A "new" of null deletes
+the line at that index (again only if "old" still matches); deletions run
+last, highest index first, so they never shift a replacement's index.
 
 The language code is taken from the fix filename (en_fixes.json -> en).
 """
@@ -50,7 +52,8 @@ def main():
     if rating:
         print("reviewer ratings: " + "  ".join(f"{k}={v}" for k, v in rating.items()))
 
-    applied, added, problems = 0, 0, []
+    applied, added, removed, problems = 0, 0, 0, []
+    deletions = []
 
     for entry in fixes.get("replacements", []):
         path, old, new = entry["path"], entry.get("old", ""), entry["new"]
@@ -66,6 +69,9 @@ def main():
             continue
 
         if not old:
+            if new is None:
+                problems.append(f"{path}: a deletion needs the current line in 'old'")
+                continue
             if new in lines:
                 problems.append(f"{path}: addition duplicates an existing line")
                 continue
@@ -83,10 +89,21 @@ def main():
                 f"       found:    {lines[index]!r}"
             )
             continue
+        if new is None:
+            deletions.append((section, key, index))
+            continue
         lines[index] = new
         applied += 1
 
-    print(f"{applied} replaced, {added} added" + (", DRY RUN" if dry else ""))
+    for section, key, index in sorted(deletions, key=lambda d: -d[2]):
+        lines = doc[section][key]
+        if len(lines) <= 1:
+            problems.append(f"{section}.{key}[{index}]: not deleted, it is the key's last line")
+            continue
+        del lines[index]
+        removed += 1
+
+    print(f"{applied} replaced, {added} added, {removed} deleted" + (", DRY RUN" if dry else ""))
 
     if problems:
         print(f"\n{len(problems)} entr(ies) not applied:")
