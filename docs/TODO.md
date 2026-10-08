@@ -1,7 +1,37 @@
 # To do
 
-Parked work for the complete rewrite. Nothing here is started. Each item
-carries enough context to pick it up cold.
+Parked work for the complete rewrite. Each item carries enough context
+to pick it up cold.
+
+## Where we left off (8 October 2026)
+
+- All October work is on branch `claude/serene-meitner-cg3e4v`, not on
+  `main`. The published recipe still runs the old markup with a single
+  polling URL.
+- Item 3 (the text) is deferred on purpose: it is the most expensive
+  item, the approach below is agreed, and it should wait for item 1 and
+  for real usage numbers.
+- Nothing in items 1 to 3 is started.
+
+### Suggested order, and why
+
+1. **Check the new views in TRMNL's editor** (loose end below). Quick,
+   done in the editor, and the views carry over into the rewrite.
+2. **Item 1, the clothing system.** It blocks everything else: it
+   decides the sprite set, and the beta cannot ship until the sprites
+   match the temperature ladder (today the 3-10 °C band draws a puffer
+   where the code means a light jacket). Mostly a design conversation,
+   so it is cheap to start. Useful input: how often each band actually
+   occurs over a year in the main US and German cities, from
+   Open-Meteo's archive API (rate-limited the first time; retry then).
+3. **Ship the beta** with the new outfits, following
+   `docs/MIGRATION.md`. That is also what lets the usage Worker count
+   real users: it needs the refactored markup live first, because a
+   second polling URL breaks the old markup.
+4. **Item 2, the visual forecast**, drawn with the new outfits.
+5. **Item 3, the text**, scoped by a few weeks of usage numbers (forecast
+   on or off, which sarcasm level), so effort goes to the voices people
+   actually use.
 
 ## 1. Rethink the clothing system and the temperature bands
 
@@ -139,13 +169,14 @@ are the first candidates for this review.
   the editor may use a different framework version.
 - **Sprites:** the renames in the header of `src/shared.liquid` (cold →
   freezing and so on), and a light-jacket outfit for the `cold` band.
-  The three `force_*` images are the same picture at every temperature.
+  The eleven `force_*` files are just two pictures (one dry, one wet), shown at every temperature.
   `xmas_cold_dry.jpg`, `xmas_cold_rain.jpg` and `thanks_cold_rain.jpg`
   are unreachable because the markup only loads `.png`. Likely folded
   into item 1.
 - **Wording:** several `c_jacket` and `c_coat` lines name a garment
   the figure may not be wearing ("A jacket over the hoodie" when the
   drawing is a t-shirt). Also folded into item 1.
-- **Usage Worker** (`worker/`): deploy it and switch the second polling
-  URL to start counting forecast on/off and sarcasm level. Steps are in
-  `worker/README.md`.
+- **Usage Worker** (`worker/`): built and tested, not deployed. It can
+  only count real users once the refactored markup is live (step 3 of the
+  order above); until then, switching the published recipe to two polling
+  URLs would break it. Steps are in `worker/README.md`.
