@@ -27,13 +27,22 @@ Reads only what the scenario logic above already worked out.
   {%- else -%}
     {%- assign f_key = temp_scenario -%}
   {%- endif -%}
+  {%- comment %}
+  The garment on screen, for the arc keys: {G} the garment, {GP} its
+  pronoun, {GV} garment with its verb (German agrees "kann"/"können").
+  {%- endcomment %}
   {%- assign f_g = '' -%}
+  {%- assign f_gp = '' -%}
+  {%- assign f_gv = '' -%}
   {%- if band_rank <= 4 -%}
     {%- assign fgi = band_rank | minus: 1 -%}
     {%- assign f_g = F.garments[fgi] -%}
+    {%- assign f_gp = F.garments_pron[fgi] -%}
+    {%- assign f_gv = F.garments_verb[fgi] -%}
   {%- endif -%}
   {%- assign f_temp = F[f_key] | default: '' -%}
-  {%- assign f_temp = f_temp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
+  {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
+  {%- assign f_temp = f_temp | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
   {%- assign f_precip = '' -%}
   {%- if precip_scenario != '' -%}
     {%- assign pk = 'p_' | append: precip_scenario -%}

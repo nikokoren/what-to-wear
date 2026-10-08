@@ -165,8 +165,10 @@ Open questions:
   fact alone, 10 and 11 add flavour. Prototype and mock in
   `prototypes/fact-flavour/`.
 - Voice audition on the review page; see `review/README.md`. Round 1
-  done (English: the screen; German: Grantler and Wetterfrosch). Round 2
-  running, together with an audition of fact-line styles.
+  and 2 done: the speaker is the TRMNL itself; English, the screen;
+  German, the Grantler; fact line in plain full sentences (templates in
+  the prototype). Next: the real writing round for the flavour pools,
+  Fable 5.1 against Opus 5.5, blind.
 - Idea from the votes: a "first cold day in a while" pool. Needs the
   previous days' weather (Open-Meteo `past_days`).
 

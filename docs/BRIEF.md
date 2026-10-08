@@ -6,12 +6,15 @@ owner's taste, kept as examples, not adjectives.
 
 ## Who is talking
 
-Leading after the first audition, to be settled by round 2:
+Settled by two auditions (October 2026):
 
+- **The speaker is the TRMNL itself**, in both languages. Not a TV
+  presenter, not a grandparent, not a friend ("the TRMNL is not
+  moderating in a suit").
 - **English:** the screen on your wall, talking about itself and a
   little too pleased with it.
-- **German:** a grumbler, in plain German with a southern accent at
-  most, or a grumbling TV weather presenter. Round 2 has both.
+- **German:** a grumbler (Grantler), in plain German with a southern
+  accent at most. The TV-presenter variant lost badly.
 
 The tip is a fact line plus a flavour line (`prototypes/fact-flavour/`).
 Only the flavour line has a voice; sarcasm Off shows the fact alone.
@@ -48,6 +51,27 @@ From 160 votes and the owner's notes (`review/decisions/`):
   trivia, rhymes, the caring grandparent, the buddy.
 - A line that's great once can wear thin daily ("good for the first cold
   day in a while"). Prefer lines that survive repetition.
+
+### The fact line (round 2)
+
+**Plain, full sentences** won in both languages; the timeline and the
+as-few-words-as-possible styles were "robotic" across the board. The
+fact line talks about the outfit on screen, then what changes, and says
+why when it asks for something: "It cools down this evening, so bring a
+jacket." / "Gegen Mittag kommt ein Schauer, also nimm den Schirm mit."
+A steady day says the outfit works ("What you're wearing works for the
+whole day"), not "no changes". Time words, not clock times. The current
+templates are `facts` in `prototypes/fact-flavour/lang/`.
+
+### What round 2 added about the flavour line
+
+- **End on the joke.** Most notes were cuts: "remove the last
+  sentence", "remove 'I'll be here, judging'", "remove 'Oder Problem'",
+  "remove the Schnee at the start". Write the line, then cut everything
+  after the laugh and everything before it that restates the weather.
+- Kept lines with those cuts applied are the current pools in
+  `prototypes/fact-flavour/lang/`; still missing: English `mild` and
+  `evening` at On, German `mild` at On and `hot` at 11.
 
 ## What to read before writing, in this order
 

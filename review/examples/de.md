@@ -17,6 +17,15 @@ Do not edit by hand; vote on the page instead.
 - Kein Rekord, aber kalt genug für deinen ersten Schnupfen.
 - Ohne Handschuhe? Deine Finger hassen dich jetzt schon.
 
+## fickle · dry
+
+- Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
+- Wechselhaft. Das sagen wir Wetterfrösche, wenn wir's selber nicht wissen.
+
+## mild · sarcastic
+
+- Ich könnte dir jetzt was von Luftdruck erzählen. Du hörst eh nicht zu.
+
 ## nice · sarcastic
 
 - Bei so einem Wetter hab ich früher den ganzen Garten gemacht.

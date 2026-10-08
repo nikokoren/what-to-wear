@@ -1,4 +1,19 @@
 {
+ "de-011bb6bf9dfb": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Tropische Werte. Ich bleib im klimatisierten Studio.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:24:06.946Z"
+ },
  "de-0123fa028acf": {
   "level": "11",
   "key": "wet",
@@ -11,6 +26,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:50:07.670Z"
+ },
+ "de-02550416cfd7": {
+  "level": "0",
+  "key": "s3_off_on",
+  "path": "fact_0.s3_off_on[+]",
+  "text": "Jacke dabeihaben: am Nachmittag aus, heute Nacht wieder an.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:39.459Z"
  },
  "de-02ad52e92de0": {
   "level": "11",
@@ -53,6 +83,51 @@
   "note": "",
   "updatedAt": "2026-10-08T21:45:46.457Z"
  },
+ "de-0498668b46c1": {
+  "level": "0",
+  "key": "s5_snow",
+  "path": "fact_0.s5_snow[+]",
+  "text": "11 Uhr: Schnee.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:49.121Z"
+ },
+ "de-064a8ba465d8": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Hitzewarnung. Ich moderiere im Anzug. Beneide mich nicht.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "wrong fact"
+  ],
+  "note": "The trmnl is not moderating in a suit",
+  "updatedAt": "2026-10-08T22:24:28.297Z"
+ },
+ "de-09bd6b6d0052": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Warm, kalt, warm. Kann sich auch mal entscheiden.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:23:30.538Z"
+ },
  "de-09e43e24c773": {
   "level": "10",
   "key": "cold",
@@ -65,6 +140,75 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:31:52.037Z"
+ },
+ "de-0ab9eebdd27a": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Schneefall. Ich hab extra die Wetterkarte in Weiß dabei.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:27:00.336Z"
+ },
+ "de-0aeae6376a4d": {
+  "level": "0",
+  "key": "s4_cooling",
+  "path": "fact_0.s4_cooling[+]",
+  "text": "Für heute Abend eine Jacke einpacken.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Pack für heute Abend eine Jacke ein.",
+  "updatedAt": "2026-10-08T22:18:21.155Z"
+ },
+ "de-0c7e83f3e08e": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Abend. Das Wetter ändert sich nicht mehr. Ich mich auch nicht.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:22:37.705Z"
+ },
+ "de-0d8d1faffc9f": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Erst Hoch, dann Tief. Wie meine Laune.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:23:37.903Z"
+ },
+ "de-0d8fd9b473e2": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Sendeschluss. Morgen früh gibt's frisches Wetter.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Leaning too heavily into the weather anchor",
+  "updatedAt": "2026-10-08T22:26:22.586Z"
  },
  "de-0e47a6b5836d": {
   "level": "11",
@@ -105,6 +249,78 @@
   "note": "",
   "updatedAt": "2026-10-08T21:36:21.980Z"
  },
+ "de-13f08bbc1397": {
+  "level": "0",
+  "key": "s7_evening",
+  "path": "fact_0.s7_evening[+]",
+  "text": "Heute Abend nichts mehr umziehen.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:19.650Z"
+ },
+ "de-1500f3dab84c": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Heute trägst du die Jacke mehr spazieren als am Leib.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:29:01.279Z"
+ },
+ "de-15032ed4ad82": {
+  "level": "0",
+  "key": "s1_steady",
+  "path": "fact_0.s1_steady[+]",
+  "text": "Ganzer Tag: wie gezeigt.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:14:46.809Z"
+ },
+ "de-15f99663a4a0": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Und nun das Wetter. Gibt nichts zu meckern. Leider.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:32.855Z"
+ },
+ "de-1609eab3d8d2": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Wechselhaft. Und du ziehst dich an, als gäb's nur ein Wetter. Mutig.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:29:17.708Z"
+ },
  "de-1636bc0d7625": {
   "level": "10",
   "key": "cold",
@@ -121,6 +337,34 @@
   "note": "Not sarcastic enough?",
   "updatedAt": "2026-10-08T21:32:32.768Z"
  },
+ "de-168438f13529": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Schwitzen im Stehen. Ein Traum.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:24:34.953Z"
+ },
+ "de-1a8a2efbd922": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "Wenig Wetter heute. Mehr Zeit für deine Ausreden.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:29.454Z"
+ },
  "de-1c08e0c74bf0": {
   "level": "11",
   "key": "wet",
@@ -133,6 +377,36 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:50:11.441Z"
+ },
+ "de-1d7e5adbf665": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Ohne Mütze rausgehen und dann jammern. Kennen wir schon.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:27:47.317Z"
+ },
+ "de-1ea867d664c9": {
+  "level": "0",
+  "key": "s8_busy",
+  "path": "fact_0.s8_busy[+]",
+  "text": "Schirm und Winterjacke dabeihaben. Mittags aus, nachts wieder an. Am Nachmittag regnet's wieder.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic",
+   "unclear",
+   "too long"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:55.332Z"
  },
  "de-1f23b8ea3308": {
   "level": "10",
@@ -149,6 +423,34 @@
   "note": "",
   "updatedAt": "2026-10-08T21:41:11.493Z"
  },
+ "de-1f59bab7db7b": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Keine Klimaanlage, du nicht und ich nicht. Wir leiden gemeinsam.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:29:59.841Z"
+ },
+ "de-23a50962d3bc": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Falls du noch weggehst: Ich bleib hier. Wie immer.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:22:58.023Z"
+ },
  "de-244171bb00a8": {
   "level": "11",
   "key": "nice",
@@ -161,6 +463,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:49:05.156Z"
+ },
+ "de-26a2985c6be6": {
+  "level": "0",
+  "key": "s6_hot",
+  "path": "fact_0.s6_hot[+]",
+  "text": "9 Uhr: Hitze. Wasser mitnehmen.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:19:28.335Z"
  },
  "de-26e179d258dc": {
   "level": "11",
@@ -192,6 +509,21 @@
   "note": "It’s referencing things that might not be correct. It’s assuming I’m going home, because it’s late, but I might be going out. And looking at my trmnl at home to decide what to wear.",
   "updatedAt": "2026-10-08T21:37:32.895Z"
  },
+ "de-2b32a351f498": {
+  "level": "0",
+  "key": "s1_steady",
+  "path": "fact_0.s1_steady[+]",
+  "text": "Keine Änderung bis zum Abend.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "It should say something like: what you’re wearing works all day",
+  "updatedAt": "2026-10-08T22:15:27.918Z"
+ },
  "de-2b3bc4f2d0ad": {
   "level": "10",
   "key": "wet",
@@ -204,6 +536,75 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:44:51.957Z"
+ },
+ "de-2c062f105bdf": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Ein Hoch. Ich hab extra zweimal nachgeschaut, ob das stimmt.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:41.056Z"
+ },
+ "de-2c9d8335b4d6": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Du und Glatteis. Das wird wieder was.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:10.431Z"
+ },
+ "de-301c3812469a": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Spät ist's. Ich zeig das hier trotzdem weiter.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:26:32.571Z"
+ },
+ "de-35164c4256b3": {
+  "level": "0",
+  "key": "s4_cooling",
+  "path": "fact_0.s4_cooling[+]",
+  "text": "Heute Abend braucht's eine Jacke.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:25.177Z"
+ },
+ "de-395b314775e0": {
+  "level": "0",
+  "key": "s4_cooling",
+  "path": "fact_0.s4_cooling[+]",
+  "text": "Jacke ab 19 Uhr.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:28.422Z"
  },
  "de-39d881f056c5": {
   "level": "11",
@@ -233,6 +634,36 @@
   "note": "",
   "updatedAt": "2026-10-08T21:48:08.043Z"
  },
+ "de-3b72d7925530": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Schlaf jetzt. Ich wiederhol die Sendung morgen früh.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:52.885Z"
+ },
+ "de-3d15d35b9592": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Der Gehweg wartet. Der Nachbar schaut schon.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:15.745Z"
+ },
  "de-3ebe88acd3a6": {
   "level": "11",
   "key": "nice",
@@ -246,6 +677,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:49:09.523Z"
  },
+ "de-3ef7d7bf248a": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "Nicht schön, nicht schlimm. Typisch.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:16.562Z"
+ },
  "de-3f3047444e53": {
   "level": "10",
   "key": "wet",
@@ -258,6 +704,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:45:00.777Z"
+ },
+ "de-3fa5c3944e1c": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Wer ohne Schirm geht, braucht nachher nicht jammern.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:37.540Z"
  },
  "de-404ec0653a54": {
   "level": "11",
@@ -273,6 +732,32 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T21:48:19.575Z"
+ },
+ "de-45b511b4e2b8": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Ausgehen? Zieh was Schöneres an als das hier.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Remove the ausgehen? Part",
+  "updatedAt": "2026-10-08T22:28:30.676Z"
+ },
+ "de-46d7e5957d9a": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:49.487Z"
  },
  "de-472df2bcd6ec": {
   "level": "10",
@@ -313,6 +798,47 @@
   "note": "",
   "updatedAt": "2026-10-08T21:49:14.407Z"
  },
+ "de-4b6b3d87aff6": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Ich hab für heute zwei Wetter angesagt. Du hast für keins geplant.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [],
+  "note": "„Zwei Wetter” sounds unnatural",
+  "updatedAt": "2026-10-08T22:29:41.337Z"
+ },
+ "de-4c0a55a8d8d6": {
+  "level": "0",
+  "key": "s2_shower",
+  "path": "fact_0.s2_shower[+]",
+  "text": "In zwei Stunden Jacke aus. Gegen Mittag ein Schauer. Schirm mitnehmen.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:16:57.952Z"
+ },
+ "de-4ff3983efb7a": {
+  "level": "0",
+  "key": "s6_hot",
+  "path": "fact_0.s6_hot[+]",
+  "text": "In zwei Stunden wird's heiß, nimm Wasser mit.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:19:31.950Z"
+ },
  "de-52550bbcdfaa": {
   "level": "11",
   "key": "nice",
@@ -325,6 +851,49 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:49:19.378Z"
+ },
+ "de-53f4427898ea": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Schön zum Anschauen. Zum Gehen weniger.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:27:04.251Z"
+ },
+ "de-54019d90208e": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "Heute keine Unwetterwarnung. Nur Mittelmaß.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:20.847Z"
+ },
+ "de-54544757955f": {
+  "level": "0",
+  "key": "s3_off_on",
+  "path": "fact_0.s3_off_on[+]",
+  "text": "Am Nachmittag kann die Jacke weg, heute Nacht brauchst du sie wieder.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:44.728Z"
  },
  "de-55cdbc71ce32": {
   "level": "10",
@@ -351,6 +920,36 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:45:52.556Z"
+ },
+ "de-5715add1e7fd": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "Wetterlage: unspektakulär. Meine Moderation: ebenso.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:24.458Z"
+ },
+ "de-58f6c89d2bfb": {
+  "level": "0",
+  "key": "s1_steady",
+  "path": "fact_0.s1_steady[+]",
+  "text": "Heute musst du nichts mitnehmen.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "wrong fact"
+  ],
+  "note": "Should focus on the factvthat the outfit works all day",
+  "updatedAt": "2026-10-08T22:16:09.349Z"
  },
  "de-5a588210e0f7": {
   "level": "11",
@@ -406,6 +1005,21 @@
   "note": "Also referencing the fact that I’ll stay home. But we don’t know that. I might look at this because I’m going out. Even in the evening.",
   "updatedAt": "2026-10-08T21:38:35.406Z"
  },
+ "de-68881a4935cc": {
+  "level": "0",
+  "key": "s2_shower",
+  "path": "fact_0.s2_shower[+]",
+  "text": "Schirm mitnehmen, gegen Mittag kommt ein Schauer. Die Jacke kann in zwei Stunden weg.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:05.550Z"
+ },
  "de-69254b634ffb": {
   "level": "10",
   "key": "cold",
@@ -418,6 +1032,47 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:32:43.134Z"
+ },
+ "de-698f205b2113": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Du wirst nass. Und dann bin wieder ich schuld.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:40.313Z"
+ },
+ "de-69dbb6887661": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Abendprognose: Du entscheidest dich wieder in letzter Minute.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:28:38.809Z"
+ },
+ "de-6b3a9e090ee7": {
+  "level": "0",
+  "key": "s6_hot",
+  "path": "fact_0.s6_hot[+]",
+  "text": "Ab etwa 9 Uhr heiß. Wasser mitnehmen.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Ab etwa 9 Uhr wirds richtig heiß.",
+  "updatedAt": "2026-10-08T22:19:56.448Z"
  },
  "de-6b577ad0f7c4": {
   "level": "11",
@@ -447,6 +1102,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:46:07.622Z"
+ },
+ "de-6dfbbc35fa7b": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Ich sag's seit Tagen an. Trotzdem stehst du überrascht an der Tür.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:27:56.398Z"
  },
  "de-6f1e4de5de70": {
   "level": "11",
@@ -492,6 +1160,86 @@
   "note": "",
   "updatedAt": "2026-10-08T21:48:26.447Z"
  },
+ "de-718255f32169": {
+  "level": "0",
+  "key": "s5_snow",
+  "path": "fact_0.s5_snow[+]",
+  "text": "Ab etwa 11 Uhr Schnee.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Ab etwa 11 Uhr soll es schneien.",
+  "updatedAt": "2026-10-08T22:19:09.334Z"
+ },
+ "de-720c52d378ba": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Nichts auszusetzen. Das ärgert mich fast.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:45.878Z"
+ },
+ "de-7370b6499410": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Zu heiß. Und im Winter wieder jammern, dass es zu kalt ist.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Remove the zu heiß at the start. The rest is good.",
+  "updatedAt": "2026-10-08T22:25:06.811Z"
+ },
+ "de-756b3569c995": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Schnee. Die Kollegen vom Verkehrsfunk freuen sich schon.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:27:08.770Z"
+ },
+ "de-76b2e95142d9": {
+  "level": "0",
+  "key": "s1_steady",
+  "path": "fact_0.s1_steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:16:12.335Z"
+ },
+ "de-76c036843505": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Um die Uhrzeit noch aufs Wetter schauen. Respekt. Oder Problem.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Remove the “Oder problem”",
+  "updatedAt": "2026-10-08T22:31:18.946Z"
+ },
  "de-779a5e66696c": {
   "level": "11",
   "key": "wet",
@@ -504,6 +1252,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:50:23.167Z"
+ },
+ "de-7810a909fb9f": {
+  "level": "0",
+  "key": "s1_steady",
+  "path": "fact_0.s1_steady[+]",
+  "text": "Keine Änderung.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:16:18.482Z"
  },
  "de-7862aa44a8b4": {
   "level": "10",
@@ -518,6 +1281,32 @@
   "note": "",
   "updatedAt": "2026-10-08T21:33:37.263Z"
  },
+ "de-7a5a61ffba8f": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:33.504Z"
+ },
+ "de-7af71dc8eaf1": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "Ich könnte dir jetzt was von Luftdruck erzählen. Du hörst eh nicht zu.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:37.634Z"
+ },
  "de-7c94aab18bab": {
   "level": "11",
   "key": "wet",
@@ -530,6 +1319,34 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:50:34.600Z"
+ },
+ "de-7f1133170072": {
+  "level": "0",
+  "key": "s4_cooling",
+  "path": "fact_0.s4_cooling[+]",
+  "text": "19 Uhr: Jacke dazu.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:30.956Z"
+ },
+ "de-81585701e791": {
+  "level": "0",
+  "key": "s1_steady",
+  "path": "fact_0.s1_steady[+]",
+  "text": "So bleibt's den ganzen Tag.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Should reference that this outfit is the thing that’s not changing.",
+  "updatedAt": "2026-10-08T22:16:50.845Z"
  },
  "de-81bea706911a": {
   "level": "10",
@@ -570,6 +1387,32 @@
   "note": "",
   "updatedAt": "2026-10-08T21:49:35.957Z"
  },
+ "de-851a21fa5987": {
+  "level": "0",
+  "key": "s7_evening",
+  "path": "fact_0.s7_evening[+]",
+  "text": "Was du anhast, passt für den restlichen Abend.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:22.399Z"
+ },
+ "de-851ca40eaf76": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Arktische Luft. Ich hab sie nicht bestellt.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:22:18.691Z"
+ },
  "de-863ff57192bb": {
   "level": "11",
   "key": "cold",
@@ -582,6 +1425,90 @@
   "tags": [],
   "note": "I like it, but maybe too Bavarian.",
   "updatedAt": "2026-10-08T21:46:37.521Z"
+ },
+ "de-87631920337f": {
+  "level": "0",
+  "key": "s6_hot",
+  "path": "fact_0.s6_hot[+]",
+  "text": "Wasser mitnehmen, in zwei Stunden wird's heiß.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:03.202Z"
+ },
+ "de-882066dab88a": {
+  "level": "0",
+  "key": "s5_snow",
+  "path": "fact_0.s5_snow[+]",
+  "text": "Schnee ab 11.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:19:12.055Z"
+ },
+ "de-8943ce129f34": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "Nichts los da draußen. Wie bei dir am Wochenende.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:42.653Z"
+ },
+ "de-8be05011a211": {
+  "level": "0",
+  "key": "s7_evening",
+  "path": "fact_0.s7_evening[+]",
+  "text": "Keine Änderung mehr heute Abend.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:28.880Z"
+ },
+ "de-8c61473b9561": {
+  "level": "0",
+  "key": "s7_evening",
+  "path": "fact_0.s7_evening[+]",
+  "text": "So bleibt's den restlichen Abend.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:32.782Z"
+ },
+ "de-8d9af5227b0e": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Um die Uhrzeit schauen nur noch zwei aufs Wetter: ich und du. Geh schlafen.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:31:35.228Z"
  },
  "de-8eb64d5b987a": {
   "level": "10",
@@ -638,6 +1565,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:41:49.340Z"
  },
+ "de-997d021e8d83": {
+  "level": "0",
+  "key": "s5_snow",
+  "path": "fact_0.s5_snow[+]",
+  "text": "Gegen Mittag Schnee.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:19:13.953Z"
+ },
  "de-9b06a88d35c8": {
   "level": "10",
   "key": "wet",
@@ -651,6 +1591,34 @@
   "note": "",
   "updatedAt": "2026-10-08T21:45:21.227Z"
  },
+ "de-9efbee161bf2": {
+  "level": "0",
+  "key": "s8_busy",
+  "path": "fact_0.s8_busy[+]",
+  "text": "Ab 12 Uhr Winterjacke aus, ab 20 Uhr wieder an. Kurze Regenpause, ab 14 Uhr regnet's wieder. Schirm behalten.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:21:17.165Z"
+ },
+ "de-a03ab36b990b": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Schnee. Gleich fährt keine Bahn mehr, wetten?",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Remove the Schnee at the start.",
+  "updatedAt": "2026-10-08T22:27:26.914Z"
+ },
  "de-a16ebb1f7415": {
   "level": "10",
   "key": "nice",
@@ -663,6 +1631,50 @@
   "tags": [],
   "note": "Not sarcastic",
   "updatedAt": "2026-10-08T21:41:58.811Z"
+ },
+ "de-a22cc2854ade": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Du wirst kleben, schwitzen und dich beschweren. In der Reihenfolge.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:06.806Z"
+ },
+ "de-a23c07860cd4": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "Ein Wetter wie Leitungswasser.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:29.840Z"
+ },
+ "de-a4166a4124d8": {
+  "level": "0",
+  "key": "s8_busy",
+  "path": "fact_0.s8_busy[+]",
+  "text": "Gegen Mittag Winterjacke aus, heute Nacht wieder an. Zwischendurch trocken, heute Nachmittag regnet's wieder. Schirm behalten.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "The Schirm behalten sounds wrong. T he rest is ok.",
+  "updatedAt": "2026-10-08T22:21:41.489Z"
  },
  "de-a85bc9374978": {
   "level": "10",
@@ -707,6 +1719,22 @@
   "note": "",
   "updatedAt": "2026-10-08T21:48:32.990Z"
  },
+ "de-a977d7982fb5": {
+  "level": "0",
+  "key": "s8_busy",
+  "path": "fact_0.s8_busy[+]",
+  "text": "Schirm. Winterjacke: 12 aus, 20 an.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:21:48.463Z"
+ },
  "de-ab5e5cf0fe92": {
   "level": "10",
   "key": "nice",
@@ -733,6 +1761,103 @@
   "note": "",
   "updatedAt": "2026-10-08T21:34:37.175Z"
  },
+ "de-b0c624e68d94": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Feierabend. Jetzt lass mich auch in Ruhe.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:28:45.383Z"
+ },
+ "de-b300715abb62": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Ich zeig dir die Hitzekarte. Sie ist komplett rot. Wie du später.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:13.772Z"
+ },
+ "de-b37971bf6c2a": {
+  "level": "0",
+  "key": "s3_off_on",
+  "path": "fact_0.s3_off_on[+]",
+  "text": "Ab 14 Uhr Jacke aus, ab 20 Uhr wieder an.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:48.061Z"
+ },
+ "de-b3b7c8685a24": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Ich hab Schnee angesagt. Du hast Turnschuhe an. Wer hat jetzt recht?",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:22.762Z"
+ },
+ "de-b5889bc07ab1": {
+  "level": "0",
+  "key": "s7_evening",
+  "path": "fact_0.s7_evening[+]",
+  "text": "Restlicher Abend: wie gezeigt.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:36.582Z"
+ },
+ "de-b66eb67b15f8": {
+  "level": "0",
+  "key": "s3_off_on",
+  "path": "fact_0.s3_off_on[+]",
+  "text": "Heute Nachmittag Jacke aus, heute Nacht wieder an.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:53.598Z"
+ },
+ "de-b8cf166894ba": {
+  "level": "0",
+  "key": "s2_shower",
+  "path": "fact_0.s2_shower[+]",
+  "text": "In zwei Stunden kann die Jacke weg. Gegen Mittag kommt ein Schauer, also nimm den Schirm mit.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:11.899Z"
+ },
  "de-b8e33f336567": {
   "level": "11",
   "key": "evening",
@@ -758,6 +1883,21 @@
   "tags": [],
   "note": "Leaning too heavily into the Bavarian.",
   "updatedAt": "2026-10-08T21:46:55.804Z"
+ },
+ "de-baa4189046d7": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Nachtprogramm. Bis morgen früh ändert sich nichts mehr.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:26:40.687Z"
  },
  "de-bb0fc98c4102": {
   "level": "11",
@@ -800,6 +1940,75 @@
   "note": "I like it, keep it, but this might sound boring after a bit. Great for the first cold day in a while or something like that.",
   "updatedAt": "2026-10-08T21:35:36.684Z"
  },
+ "de-bddc4b8b7cbd": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:23:42.884Z"
+ },
+ "de-bdf596bd6b29": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Und du wieder in der dünnen Jacke. Na dann viel Spaß.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:28:05.462Z"
+ },
+ "de-be0674601a3f": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Wechselhaft. Das sagen wir Wetterfrösche, wenn wir's selber nicht wissen.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:23:51.747Z"
+ },
+ "de-bfa86bf98e0b": {
+  "level": "0",
+  "key": "s7_evening",
+  "path": "fact_0.s7_evening[+]",
+  "text": "Keine Änderung mehr.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:41.962Z"
+ },
+ "de-bfdcfcad1a5a": {
+  "level": "0",
+  "key": "s3_off_on",
+  "path": "fact_0.s3_off_on[+]",
+  "text": "Jacke: 14 Uhr aus, 20 Uhr an.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:56.831Z"
+ },
  "de-c2780a29831b": {
   "level": "11",
   "key": "cold",
@@ -840,6 +2049,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T21:42:27.923Z"
+ },
+ "de-c75441db283b": {
+  "level": "0",
+  "key": "s6_hot",
+  "path": "fact_0.s6_hot[+]",
+  "text": "Wasser. Ab 9 heiß.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:05.604Z"
  },
  "de-c9c1c2181340": {
   "level": "11",
@@ -882,6 +2104,19 @@
   "note": "Not sarcastic. We’re not at a stand up poetry slam.",
   "updatedAt": "2026-10-08T21:39:42.566Z"
  },
+ "de-ccde08a5f17e": {
+  "level": "0",
+  "key": "s8_busy",
+  "path": "fact_0.s8_busy[+]",
+  "text": "Gegen Mittag kann die Winterjacke weg, heute Nacht brauchst du sie wieder. Der Regen macht Pause und kommt am Nachmittag zurück, also Schirm behalten.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:21:59.477Z"
+ },
  "de-d35db9fcb9b8": {
   "level": "10",
   "key": "nice",
@@ -909,6 +2144,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:49:57.754Z"
+ },
+ "de-d4dcc9985f4d": {
+  "level": "0",
+  "key": "s2_shower",
+  "path": "fact_0.s2_shower[+]",
+  "text": "Ab etwa 9 Uhr ohne Jacke. Gegen 12 ein Schauer, Schirm mitnehmen.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:17.244Z"
  },
  "de-d8cdb6d96199": {
   "level": "10",
@@ -979,6 +2229,51 @@
   "note": "",
   "updatedAt": "2026-10-08T21:48:51.993Z"
  },
+ "de-d9fca93e9a74": {
+  "level": "0",
+  "key": "s6_hot",
+  "path": "fact_0.s6_hot[+]",
+  "text": "In zwei Stunden wird's heiß. Wasser mitnehmen.",
+  "source": "candidate",
+  "batch": "U",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:20:08.384Z"
+ },
+ "de-db6e41d371d9": {
+  "level": "0",
+  "key": "s2_shower",
+  "path": "fact_0.s2_shower[+]",
+  "text": "Schirm. Ab 9 ohne Jacke.",
+  "source": "candidate",
+  "batch": "V",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:25.082Z"
+ },
+ "de-dcade1be5daf": {
+  "level": "0",
+  "key": "s8_busy",
+  "path": "fact_0.s8_busy[+]",
+  "text": "Jetzt: Regen. 12 Uhr: Winterjacke aus. 14 Uhr: wieder Regen. 20 Uhr: Winterjacke an.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:22:04.279Z"
+ },
  "de-dd62e2569f5f": {
   "level": "10",
   "key": "cold",
@@ -1007,6 +2302,32 @@
   "note": "",
   "updatedAt": "2026-10-08T21:45:31.944Z"
  },
+ "de-de586ba2c22a": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Viel trinken, Schatten suchen. Sag ich jeden Sommer. Hört keiner.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:30:24.720Z"
+ },
+ "de-e1710be07bc8": {
+  "level": "0",
+  "key": "s5_snow",
+  "path": "fact_0.s5_snow[+]",
+  "text": "Es bleibt den ganzen Tag so kalt, und gegen Mittag fängt's an zu schneien.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:19:19.137Z"
+ },
  "de-e2f591b6e456": {
   "level": "11",
   "key": "wet",
@@ -1019,6 +2340,77 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:51:10.133Z"
+ },
+ "de-e353d6b146a0": {
+  "level": "0",
+  "key": "s3_off_on",
+  "path": "fact_0.s3_off_on[+]",
+  "text": "14 Uhr: Jacke aus. 20 Uhr: Jacke an.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:00.544Z"
+ },
+ "de-e3d3041bd957": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Schon wieder so spät? Ab ins Bett. Das Wetter wartet nicht auf dich.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Remove the last sentence",
+  "updatedAt": "2026-10-08T22:32:02.559Z"
+ },
+ "de-e83324e02f26": {
+  "level": "0",
+  "key": "s4_cooling",
+  "path": "fact_0.s4_cooling[+]",
+  "text": "Ab etwa 19 Uhr braucht's eine Jacke.",
+  "source": "candidate",
+  "batch": "S",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:39.429Z"
+ },
+ "de-e8427997b52b": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Ausgehen? Würd ich auch. Wenn ich nicht im Studio festsäße.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:28:50.196Z"
+ },
+ "de-e9172d0356d5": {
+  "level": "0",
+  "key": "s2_shower",
+  "path": "fact_0.s2_shower[+]",
+  "text": "9 Uhr: Jacke aus. 12 Uhr: Schauer, Schirm.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:17:30.996Z"
  },
  "de-eadd8bf0e2a0": {
   "level": "11",
@@ -1045,6 +2437,80 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:39:59.600Z"
+ },
+ "de-ee897ffab348": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Schönes Wetter. Ich trau dem Frieden nicht.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:25:52.558Z"
+ },
+ "de-f383b20e2868": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Wenn du nass wirst: Ich hab's angesagt. Zur besten Sendezeit.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:45.357Z"
+ },
+ "de-f567031497e7": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Nachts passiert eh nichts. Außer du schaust mich an.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T22:26:53.786Z"
+ },
+ "de-f5b020c4ab5a": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Noch was vor heute? Das Wetter hält still.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "Not sarcastic",
+  "updatedAt": "2026-10-08T22:23:09.750Z"
+ },
+ "de-f99586262e21": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.",
+  "source": "candidate",
+  "batch": "Y",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:29:47.158Z"
  },
  "de-fa119b376f82": {
   "level": "10",
@@ -1074,6 +2540,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:47:10.831Z"
  },
+ "de-fb6f5ab2ffe6": {
+  "level": "0",
+  "key": "s5_snow",
+  "path": "fact_0.s5_snow[+]",
+  "text": "Vorsicht auf dem Weg: Gegen Mittag kommt Schnee.",
+  "source": "candidate",
+  "batch": "Q",
+  "round": "2026-10-facts",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:19:23.701Z"
+ },
  "de-fec578809aa1": {
   "level": "10",
   "key": "nice",
@@ -1086,5 +2565,31 @@
   "tags": [],
   "note": "Don’t like the alter",
   "updatedAt": "2026-10-08T21:43:35.878Z"
+ },
+ "de-ff70b64d74b9": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Glätte. Hinterher heißt's wieder, ich hätt's nicht angesagt.",
+  "source": "candidate",
+  "batch": "X",
+  "round": "2026-10-voices-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:32:27.877Z"
+ },
+ "de-ff8b9c95bc9c": {
+  "level": "0",
+  "key": "s4_cooling",
+  "path": "fact_0.s4_cooling[+]",
+  "text": "Am Abend kühlt's ab, da braucht's eine Jacke.",
+  "source": "candidate",
+  "batch": "R",
+  "round": "2026-10-facts",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T22:18:45.776Z"
  }
 }

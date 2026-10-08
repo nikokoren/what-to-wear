@@ -11,3 +11,21 @@ Do not edit by hand; vote on the page instead.
 ## nice · sarcastic
 
 - Perfect weather. I can't leave the wall. What's your excuse?
+
+## s2_shower · plain
+
+- Take the umbrella for a shower around midday. Jacket off in two hours.
+- You can take the jacket off in a couple of hours. There's a shower around midday, so bring the umbrella.
+
+## s3_off_on · plain
+
+- The jacket can come off this afternoon, but you'll want it back tonight.
+
+## s4_cooling · plain
+
+- Bring a jacket for this evening.
+- It cools down this evening, so bring a jacket.
+
+## s7_evening · plain
+
+- What you're wearing works for the rest of the evening.

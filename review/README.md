@@ -93,6 +93,11 @@ Two rounds on one page, each blind by letter:
   Filter by key to compare the styles on one situation.
 - Keys: `2026-10-voices-2.key.json`, `2026-10-facts.key.json`; sync with
   `--key=` both, comma-separated.
+- **Result (9 October):** fact line, plain sentences won both
+  languages (English +12, German +8; timeline −16, minimal −13). Flavour,
+  the German Grantler held (+2) and the TV presenter lost (−33); the
+  English screen stayed the only English voice, though no new line got a
+  star. Details in `docs/BRIEF.md`.
 - After the voice is picked, the first real round is also the model
   comparison: Fable 5.1 and Opus 5.5 each write it from the same brief,
   as two blind batches.
