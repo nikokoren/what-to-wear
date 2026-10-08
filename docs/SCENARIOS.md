@@ -26,8 +26,8 @@ drawing already shows, or what to put in the bag.
 | 8 `extreme_heat` | > 34 °C | tank top, sun hat, water |
 
 Each step is one decision at the door. Rain adds the umbrella, as a sign
-that rain is coming rather than a garment. Snow has no item of its own and
-draws the dry outfit.
+that rain is coming rather than a garment. Snow is the dry outfit with snow
+falling, drawn for `bundled` and `coat`, the only outfits snow falls on.
 
 Bands 5 and 6 have the same top layer. Moving between them is a question of
 legs, which are decided once at the door (the long-pants rule below), so it

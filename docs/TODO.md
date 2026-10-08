@@ -54,18 +54,21 @@ Decisions:
   | `heat`: tank top, sandals | 30 to 34 |
   | `extreme_heat`: tank top, sun hat, water | > 34 |
 
-- Rain adds the umbrella, as a sign that rain is coming. Snow has no item
-  (no boots); it draws the dry outfit.
+- Rain adds the umbrella, as a sign that rain is coming. Snow is the dry
+  outfit with snow falling (no boots), drawn for `bundled` and `coat`
+  only: the climate data has snow on no other outfit. Any other outfit
+  draws dry in snow. The list is `SNOW_OUTFITS` in `src/shared.liquid`.
 - **The long-pants rule:** legs are decided at the door. In long-pants
   weather, if the day warms into shorts weather and the cool stretch is
   no longer than the warm one, draw shorts now.
 - Art: one finished PNG per case, made with layers in the drawing tool:
-  16 base sprites, `sprites/<outfit>_<dry|rain>.png`, plus themed ones
-  as `sprites/<theme>_<outfit>_<dry|rain>.png`.
+  18 base sprites, `sprites/<outfit>_<dry|rain>.png` for all eight plus
+  `bundled_snow` and `coat_snow`; themed ones as
+  `sprites/<theme>_<outfit>_<dry|rain|snow>.png`.
 
 Left to do:
 
-- **Draw the 16 sprites.** `sprites/` holds placeholder copies of the
+- **Draw the 18 sprites.** `sprites/` holds placeholder copies of the
   closest old drawings so everything renders meanwhile;
   `python3 tools/check_sprites.py` lists which are still placeholders.
 - **`sprites/` must be on `main`** before a beta fork can show them: the

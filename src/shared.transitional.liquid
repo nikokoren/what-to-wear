@@ -5,7 +5,7 @@ Rollout step 1; see docs/MIGRATION.md.
 {%- endcomment %}
 {%- assign MIN_DELTA = 2 -%}{%- assign RAIN_LOW = 25 -%}{%- assign RAIN_HIGH = 50 -%}{%- assign DAY_END_HOUR = 21 -%}{%- assign TIP_BUDGET = 165 -%}
 
-{%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}{%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}
+{%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}{%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}{%- assign SNOW_OUTFITS = ',bundled,coat,' -%}
 
 {%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/sprites/' -%}{%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
 
@@ -61,7 +61,7 @@ Rollout step 1; see docs/MIGRATION.md.
 
 {%- assign temp_banded = temp_c | plus: temp_shift -%}{%- assign band_rank = 8 -%}{%- for edge in band_edge_list -%}{%- assign edge_c = edge | plus: 0 -%}{%- if temp_banded <= edge_c -%}{%- assign band_rank = forloop.index -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- assign band_idx = band_rank | minus: 1 -%}{%- assign band = band_name_list[band_idx] -%}
 
-{%- assign precip_suffix = 'dry' -%}{%- if is_now_precip == 1 and is_now_snow == 0 -%}{%- assign precip_suffix = 'rain' -%}{%- endif -%}{%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+{%- assign precip_suffix = 'dry' -%}{%- if is_now_snow == 1 -%}{%- assign precip_suffix = 'snow' -%}{%- elsif is_now_precip == 1 -%}{%- assign precip_suffix = 'rain' -%}{%- endif -%}{%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
 
 {%- assign now_index = -1 -%}{%- if now_time and h.time -%}{%- assign now_stamp = now_time | slice: 0, 13 -%}{%- for t in h.time -%}{%- if t contains now_stamp -%}{%- assign now_index = forloop.index0 -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endif -%}{%- if now_index < 0 -%}{%- assign now_index = local_hour -%}{%- endif -%}
 
@@ -91,7 +91,7 @@ Rollout step 1; see docs/MIGRATION.md.
 
 {%- if best_run >= 2 or peak_rain >= RAIN_HIGH -%}{%- assign rain_qualifies = true -%}{%- endif -%}{%- assign rain_returns = false -%}{%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}{%- assign rain_returns = true -%}{%- endif -%}
 
-{%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}{%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}{%- if next_prob >= RAIN_HIGH -%}{%- unless SNOW_CODES contains next_probe -%}{%- assign next_hour_precip = 'rain' -%}{%- endunless -%}{%- endif -%}
+{%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}{%- if next_prob >= RAIN_HIGH -%}{%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}{%- if SNOW_CODES contains next_probe -%}{%- assign next_hour_precip = 'snow' -%}{%- else -%}{%- assign next_hour_precip = 'rain' -%}{%- endif -%}{%- endif -%}
 
 {%- if codes != nil -%}{%- for i in (start_index..end_index) -%}{%- assign c_probe = ',' | append: codes[i] | append: ',' -%}{%- if SNOW_CODES contains c_probe -%}{%- assign future_has_snow = true -%}{%- assign first_snow_idx = i -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endif -%}{%- endif -%}{%- endif -%}
 
@@ -223,6 +223,6 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
 
 {%- if is_error == false and is_now_precip == 0 and next_hour_precip != '' -%}{%- assign weather_slug = band | append: '_' | append: next_hour_precip -%}{%- endif -%}
 
-{%- assign sprite_slug = weather_slug -%}{%- if active_theme != '' and is_error == false -%}{%- assign slug_probe = ',' | append: weather_slug | append: ',' -%}{%- if theme_whitelist == 'ALL' or theme_whitelist contains slug_probe -%}{%- assign sprite_slug = active_theme | append: '_' | append: weather_slug -%}{%- endif -%}{%- endif -%}
+{%- assign snow_probe = ',' | append: band | append: ',' -%}{%- if weather_slug contains '_snow' -%}{%- unless SNOW_OUTFITS contains snow_probe -%}{%- assign weather_slug = band | append: '_dry' -%}{%- endunless -%}{%- endif -%}{%- assign sprite_slug = weather_slug -%}{%- if active_theme != '' and is_error == false -%}{%- assign slug_probe = ',' | append: weather_slug | append: ',' -%}{%- if theme_whitelist == 'ALL' or theme_whitelist contains slug_probe -%}{%- assign sprite_slug = active_theme | append: '_' | append: weather_slug -%}{%- endif -%}{%- endif -%}
 
 {%- if is_error -%}{%- assign sprite_url = error_sprite_url -%}{%- assign fallback_sprite_url = error_sprite_url -%}{%- else -%}{%- assign sprite_url = sprite_base_url | append: sprite_slug | append: '.png' -%}{%- assign fallback_sprite_url = sprite_base_url | append: weather_slug | append: '.png' -%}{%- endif -%}

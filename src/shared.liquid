@@ -24,11 +24,11 @@ and the views simply hide the tip line. The sprite still renders.
 
 SPRITES
 The outfit set lives in sprites/ on main, one finished PNG per case:
-  sprites/<outfit>_<dry|rain>.png           the plain outfit
-  sprites/<theme>_<outfit>_<dry|rain>.png   a themed version, if drawn
-with <outfit> one of BAND_NAMES below. Snow has no item of its own: it
-draws the dry outfit. The umbrella in _rain is a symbol that rain is
-coming, not a garment. The old flat files in the repo root belong to the
+  sprites/<outfit>_<dry|rain|snow>.png           the plain outfit
+  sprites/<theme>_<outfit>_<dry|rain|snow>.png   a themed version
+with <outfit> one of BAND_NAMES below. _rain adds the umbrella, a sign
+that rain is coming rather than a garment. _snow is the dry outfit with
+snow falling, drawn only for the outfits in SNOW_OUTFITS. The old flat files in the repo root belong to the
 published recipe and are not used here.
 ================================================================
 {%- endcomment %}
@@ -83,6 +83,12 @@ are decided instead.
 {%- endcomment %}
 {%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}
 {%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}
+{%- comment %}
+Outfits with a snow drawing. Snow only falls on these two (tools/climate/:
+72% bundled, 28% coat); an outfit not listed draws dry in snow, which
+only happens when "Do you run cold or warm?" shifts a snowy day warmer.
+{%- endcomment %}
+{%- assign SNOW_OUTFITS = ',bundled,coat,' -%}
 
 
 {%- comment %} ============ SPRITE BASES ============ {%- endcomment %}
@@ -367,12 +373,11 @@ single contains test instead of a chained and/or condition.
   {%- assign band_idx = band_rank | minus: 1 -%}
   {%- assign band = band_name_list[band_idx] -%}
 
-  {%- comment %}
-  Suffix from the code, not the band. Rain draws the umbrella; snow has no
-  item of its own and draws the dry outfit.
-  {%- endcomment %}
+  {%- comment %} Suffix from the code, not the band. {%- endcomment %}
   {%- assign precip_suffix = 'dry' -%}
-  {%- if is_now_precip == 1 and is_now_snow == 0 -%}
+  {%- if is_now_snow == 1 -%}
+    {%- assign precip_suffix = 'snow' -%}
+  {%- elsif is_now_precip == 1 -%}
     {%- assign precip_suffix = 'rain' -%}
   {%- endif -%}
   {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
@@ -643,14 +648,16 @@ single contains test instead of a chained and/or condition.
       {%- comment %}
       What the next hour holds, for the picture: someone leaving in ten
       minutes into a 90% hour should see the umbrella, not just read
-      about it. Snow in the next hour changes nothing - no snow item.
+      about it.
       {%- endcomment %}
       {%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}
-      {%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}
       {%- if next_prob >= RAIN_HIGH -%}
-        {%- unless SNOW_CODES contains next_probe -%}
+        {%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}
+        {%- if SNOW_CODES contains next_probe -%}
+          {%- assign next_hour_precip = 'snow' -%}
+        {%- else -%}
           {%- assign next_hour_precip = 'rain' -%}
-        {%- endunless -%}
+        {%- endif -%}
       {%- endif -%}
 
       {%- comment %}
@@ -1298,13 +1305,19 @@ See docs/TRANSLATING.md for the full contract.
 {%- comment %}
 ============ DRESS FOR THE DOOR ============
 The precipitation half of the picture looks one hour ahead: dry now but
-raining in the next hour draws the wet outfit. The words are
+raining or snowing in the next hour draws the wet or snowy outfit. The words are
 unaffected - they still say when it starts.
 {%- endcomment %}
 {%- if is_error == false and is_now_precip == 0 and next_hour_precip != '' -%}
   {%- assign weather_slug = band | append: '_' | append: next_hour_precip -%}
 {%- endif -%}
 
+{%- assign snow_probe = ',' | append: band | append: ',' -%}
+{%- if weather_slug contains '_snow' -%}
+  {%- unless SNOW_OUTFITS contains snow_probe -%}
+    {%- assign weather_slug = band | append: '_dry' -%}
+  {%- endunless -%}
+{%- endif -%}
 {%- assign sprite_slug = weather_slug -%}
 {%- if active_theme != '' and is_error == false -%}
   {%- assign slug_probe = ',' | append: weather_slug | append: ',' -%}

@@ -117,11 +117,17 @@ def main():
     #   bundled <= -5 < coat <= 5 < jacket <= 12 < sweater <= 18
     #   < tee_pants <= 24 < tee_shorts <= 30 < heat <= 34 < extreme_heat
 
-    # ---- snow ahead is about grip, not umbrellas; snow now draws dry ----
+    # ---- snow ahead is about grip, not umbrellas; snow now draws snowfall ----
     got = run(env, 1, [1] * 24, [0] * 12 + [80] * 12, 8, codes=[0] * 12 + [73] * 12)
     expect("snow later", got, precip_scenario="snow_coming", when_precip="around midday")
     got = run(env, -2, [-2] * 24, [90] * 24, 8, codes=[73] * 24)
-    expect("snowing now", got, band="coat", sprite_slug="coat_dry")
+    expect("snowing now", got, band="coat", sprite_slug="coat_snow")
+    got = run(env, -8, [-8] * 24, [0] * 9 + [90] * 15, 8, codes=[0] * 9 + [73] * 15)
+    expect("snow from the next hour", got, band="bundled", sprite_slug="bundled_snow")
+    # an outfit without a snow drawing draws dry: snow at 2C feels-like
+    # for someone who is always hot (+4) lands in the jacket band
+    got = run(env, 2, [2] * 24, [90] * 24, 8, codes=[73] * 24, preference="4")
+    expect("snow, shifted into the jacket band", got, band="jacket", sprite_slug="jacket_dry")
 
     # ---- a one-hour dip at sunrise does not outrank the day ----
     day = [9, 9, 8.5, 8.5, 8.2, 8.0, 7.0, 4.5, 6.5, 9, 11, 13, 15, 17, 18.5, 19,
