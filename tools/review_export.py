@@ -36,7 +36,8 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip)_(\d+))\.([a-z_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour)_(\d+))\.([a-z_]+)$")
+PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
 # key fixes the situation (docs/SCENARIOS.md), so one example per key is
@@ -93,7 +94,20 @@ MEANING = {
     "wet_again": "Raining now, stops, comes back.",
     "snow_coming": "Snow is coming.",
 }
-LEVEL_NAME = {"0": "Plain", "10": "Dry", "11": "Sarcastic"}
+LEVEL_NAME = {"0": "Off", "10": "On", "11": "11"}
+
+# Flavour lines (prototypes/fact-flavour) render under a fact line. One
+# typical day per mood: the drawing and the fact keys that build its fact.
+FLAVOUR_CTX = {
+    "nice": ("sweater_dry", ["steady"], "A steady, pleasant day."),
+    "mild": ("sweater_dry", ["c_jacket"], "An ordinary day with one change."),
+    "cold": ("coat_dry", ["steady_cold"], "Steady cold."),
+    "hot": ("tee_shorts_dry", ["w_water"], "Heat building."),
+    "wet": ("jacket_rain", ["w_jacket", "p_wetter"], "Rain at some point: coming, possible, or stopping."),
+    "snow": ("coat_snow", ["p_snow_coming"], "Snow coming or falling."),
+    "fickle": ("jacket_dry", ["arc_level"], "Warms up, then cools again."),
+    "evening": ("jacket_dry", ["steady_evening"], "A steady evening, from 18:00."),
+}
 
 
 def line_id(lang, text):
@@ -116,9 +130,24 @@ def fill(text, doc, garment_rank=3):
     return re.sub(r"  +", " ", out).strip()
 
 
+def flavour_context(lang, doc, key, text):
+    facts = json.loads((PROTO / f"{lang}.json").read_text(encoding="utf-8"))["facts"]
+    sprite, fact_keys, meaning = FLAVOUR_CTX.get(key, ("jacket_dry", ["steady"], ""))
+    if key.startswith("theme_"):
+        meaning = "A seasonal day with nothing else to say."
+    b = doc["buckets"]
+    fact = " ".join(facts[k] for k in fact_keys)
+    fact = (fact.replace("{G}", facts["garments"][2]).replace("{WHEN2}", b[3])
+                .replace("{WHEN}", b[1]).replace("{WHENP}", b[2]))
+    return {"sprite": sprite, "fact": sentence_case(fact), "tip": text, "pair": None,
+            "meaning": "Flavour line. " + meaning}
+
+
 def context(lang, doc, section, key, text):
     """What the device shows for this line: drawing, full tip, pairing."""
     kind, level = section.split("_")
+    if kind == "flavour":
+        return flavour_context(lang, doc, key, text)
     base = key[:-2] if key.endswith("_j") else key
     if kind == "temp":
         outfit = TEMP_CTX.get(key) or THEME_CTX.get(key) or "sweater"
@@ -173,6 +202,9 @@ def rows_from_candidates(cand_path):
         section, key = m.group(1), m.group(4)
         rows.append(row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
                         "candidate", c.get("batch", "")))
+    # Interleave the batches, the same way on every build, so no writer's
+    # lines arrive as a block.
+    rows.sort(key=lambda r: (r["lang"], r["key"], r["level"], r["id"]))
     return rows, data.get("round", "")
 
 
@@ -183,7 +215,10 @@ def row(lang, doc, section, key, text, path, source, batch):
         "id": line_id(lang, text), "lang": lang, "level": level,
         "levelName": LEVEL_NAME.get(level, level), "key": key, "path": path,
         "text": text, "source": source, "batch": batch,
-        "tooLong": len(ctx["tip"]) > TIP_BUDGET, **ctx,
+        # A flavour line sits under its fact line; the mock fits 200 together.
+        "tooLong": (len(ctx["fact"]) + 1 + len(ctx["tip"]) > 200) if ctx.get("fact")
+                   else len(ctx["tip"]) > TIP_BUDGET,
+        **ctx,
     }
 
 

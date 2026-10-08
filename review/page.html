@@ -52,7 +52,9 @@ main { display: flex; flex-direction: column; gap: 16px; min-width: 0 }
 .device { background: var(--bezel); border-radius: 14px; padding: 14px; max-width: 640px; width: 100%; margin: 0 auto }
 .screen { background: var(--paper); color: var(--ink); aspect-ratio: 800 / 480; border-radius: 3px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4%; padding: 5% 7%; overflow: hidden }
 .screen img { height: 58%; width: auto; max-width: 100%; object-fit: contain; image-rendering: pixelated; filter: grayscale(1) contrast(1.2) }
-.screen p { margin: 0; text-align: center; font: 500 clamp(14px, 2.6vw, 21px)/1.3 var(--body); text-wrap: balance; max-width: 100% }
+.screen .words { display: flex; flex-direction: column; gap: 2px; max-width: 100% }
+.screen p { margin: 0; text-align: center; font: 400 clamp(14px, 2.6vw, 21px)/1.3 var(--body); text-wrap: balance; max-width: 100% }
+.screen p.fact { font-weight: 700 }
 .screen.empty p { color: #555 }
 .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; font-size: 13px; color: var(--muted); max-width: 640px; width: 100%; margin: 0 auto }
 .meta code { font: 12px var(--mono); color: var(--fg) }
@@ -93,6 +95,10 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
     <div class="group">
       <span class="label">Sarcasm level</span>
       <div class="seg" id="f-level"></div>
+    </div>
+    <div class="group" id="g-batch" hidden>
+      <span class="label">Voice</span>
+      <div class="seg" id="f-batch"></div>
     </div>
     <div class="group">
       <span class="label">Show</span>
@@ -147,14 +153,15 @@ const TAGS = ["robotic", "too long", "not funny", "wrong garment", "wrong fact",
 const ROWS = DATA.rows;
 const decisions = new Map();          // id -> decision doc
 let db = null, coll = null;
-const ui = { lang: "all", level: "all", state: "open", key: DATA.focus || null, idx: 0, showPair: false };
+const ui = { lang: "all", level: "all", batch: "all", state: "open", key: DATA.focus || null, idx: 0, showPair: false };
 try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-review-ui") || "{}"), { idx: 0, showPair: false }); } catch (e) {}
 const $ = (id) => document.getElementById(id);
 
-function remember() { try { localStorage.setItem("wtw-review-ui", JSON.stringify({ lang: ui.lang, level: ui.level, state: ui.state, key: ui.key })); } catch (e) {} }
+function remember() { try { localStorage.setItem("wtw-review-ui", JSON.stringify({ lang: ui.lang, level: ui.level, batch: ui.batch, state: ui.state, key: ui.key })); } catch (e) {} }
 function verdictOf(r) { const d = decisions.get(r.id); return d && d.verdict || ""; }
 function baseFilter(r) {
-  return (ui.lang === "all" || r.lang === ui.lang) && (ui.level === "all" || r.level === ui.level);
+  return (ui.lang === "all" || r.lang === ui.lang) && (ui.level === "all" || r.level === ui.level) &&
+    (ui.batch === "all" || r.batch === ui.batch);
 }
 function queue() {
   return ROWS.filter((r) => baseFilter(r) && (!ui.key || r.key === ui.key) &&
@@ -210,8 +217,13 @@ function current() { const q = queue(); if (ui.idx >= q.length) ui.idx = Math.ma
 function render() {
   const langs = [...new Set(ROWS.map((r) => r.lang))];
   seg($("f-lang"), [["all", "All"], ...langs.map((l) => [l, l.toUpperCase()])], "lang");
-  seg($("f-level"), [["all", "All"], ["0", "Plain"], ["10", "Dry"], ["11", "Sarcastic"]], "level");
+  seg($("f-level"), [["all", "All"], ["0", "Off"], ["10", "On"], ["11", "11"]], "level");
+  const batches = [...new Set(ROWS.map((r) => r.batch).filter(Boolean))].sort();
+  $("g-batch").hidden = !batches.length;
+  if (!batches.includes(ui.batch)) ui.batch = "all";
+  if (batches.length) seg($("f-batch"), [["all", "All"], ...batches.map((b) => [b, b])], "batch");
   seg($("f-state"), [["open", "Not rated"], ["all", "All"], ["star", "Starred"], ["keep", "Kept"], ["veto", "Vetoed"]], "state");
+  if (ui.key && !ROWS.some((r) => r.key === ui.key)) ui.key = null;
   renderKeys();
 
   const done = ROWS.filter((r) => verdictOf(r)).length;
@@ -233,18 +245,20 @@ function render() {
   screen.className = "screen";
   const img = document.createElement("img");
   img.src = "sprites/" + r.sprite + ".png"; img.alt = r.sprite.replace(/_/g, " ");
-  const p = document.createElement("p"); p.textContent = tip;
-  screen.replaceChildren(img, p);
+  const words = document.createElement("div"); words.className = "words";
+  if (r.fact) { const f = document.createElement("p"); f.className = "fact"; f.textContent = r.fact; words.append(f); }
+  const p = document.createElement("p"); p.textContent = tip; words.append(p);
+  screen.replaceChildren(img, words);
 
   const meta = [
     ["", `${r.lang.toUpperCase()} · ${r.levelName}`],
     ["code", r.path],
     ["", r.sprite.replace(/_/g, " ")],
-    ["", `${tip.length} characters`],
+    ["", `${(r.fact ? r.fact.length + 1 : 0) + tip.length} characters`],
   ];
-  if (r.source === "candidate") meta.push(["", "new candidate" + (r.batch ? " · batch " + r.batch : "")]);
+  if (r.source === "candidate") meta.push(["", r.batch ? "voice " + r.batch : "new candidate"]);
   $("meta").replaceChildren(...meta.map(([tag, text]) => { const e = document.createElement(tag || "span"); e.textContent = text; return e; }));
-  if (r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Over the 165-character budget"; $("meta").append(w); }
+  if (r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Too long for the small views"; $("meta").append(w); }
   $("meaning").textContent = r.meaning;
   $("raw").textContent = r.text;
   $("pair").hidden = !r.pair;

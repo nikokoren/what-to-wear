@@ -48,7 +48,7 @@ The three sarcasm levels are the same friend in three moods:
   Kaiserwetter, Aprilwetter, meckern, Oma's "zieh dir was Warmes an", the
   Funktionsjacke, socks in sandals, Hitzefrei, the Regenradar, the trains
   in snow, clearing the Gehweg, Tatort, gemütlich. A starting point, not a
-  checklist. Facts too: idiomatic German ("wird eine Jacke fällig"), not
+  checklist. Facts too: idiomatic German ("heute Abend braucht's eine Jacke"), not
   the English sentence in German words.
 - **Run `python3 tools/style_report.py <lang>`** before handing over. It
   flags the habits that made the last corpus read as generated: objects

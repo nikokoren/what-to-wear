@@ -56,14 +56,20 @@ A line's id comes from its text, so a line that moves keeps its vote and
 an edited line is reviewed again. A vetoed line stays in `decisions/`
 after it is deleted from `lang/`, which is what keeps it from coming back.
 
-## The pilot
+## The voice audition (October 2026)
 
-1. Owner fills in `review/taste.md` and confirms the narrator sentence in
-   the brief.
-2. Owner votes the shipped `wet_again` lines: small, new, a warm-up for
-   the page.
-3. Two writers (Fable 5.1 and Opus 5.5) each write a `perfect` round for
-   English, five candidates per line, from the same brief and taste file.
-   Their lines go into one candidates file as batch A and batch B,
-   shuffled; the key stays out of the repo until the votes are in.
-4. Owner votes. Stars per batch decide who writes the rest.
+Before any lines are written at scale, pick the voice. The tip is now a
+fact line plus a flavour line (`prototypes/fact-flavour/`), and only the
+flavour line has a voice.
+
+- `review/rounds/2026-10-voices.json`: five English voices and five
+  separate German ones, the same four moods each (nice, wet, cold,
+  evening), two lines per mood at On and at 11. 160 lines. English voices
+  are letters A to E, German F to J.
+- **Don't open `2026-10-voices.key.json` or `make_voices.py` until you've
+  voted**: they say which letter is which voice.
+- Vote on the review page. Filter by Voice to hear one voice across moods,
+  or by key to compare all voices on the same mood.
+- Then: `python3 tools/review_sync.py <votes> --key=review/rounds/2026-10-voices.key.json`
+  prints the score per voice. The winner (or a blend of two) becomes the
+  brief for the real writing round.

@@ -159,7 +159,12 @@ Open questions:
 
 ## 3. Better writing, and a review process that isn't tedious
 
-**Status: process set up (October 2026). Writing waits for usage numbers.**
+**Status: format decided, voice audition running (October 2026).**
+
+- The tip becomes a fact line plus a flavour line; sarcasm 0 shows the
+  fact alone, 10 and 11 add flavour. Prototype and mock in
+  `prototypes/fact-flavour/`.
+- Voice audition on the review page; see `review/README.md`.
 
 - Review page: https://claude.ai/artifact/TLLXhH5LF2LEog84w4zPoN, built
   from `review/page.html` by `tools/review_export.py`. Votes live in its

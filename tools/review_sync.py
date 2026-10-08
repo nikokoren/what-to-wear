@@ -17,6 +17,9 @@ Writes, per language:
     review/dont/<lang>.md          vetoed lines with their tags and notes.
                                    The writer's "don't" list.
 
+With --key=review/rounds/<round>.key.json it also prints the votes per
+batch with the name behind each letter: the result of a blind round.
+
 With --fixes it also writes build/review/<lang>_fixes.json for
 tools/apply_review.py: vetoed shipped lines are deleted, starred or kept
 candidates are appended. Review it with --dry-run before applying.
@@ -134,7 +137,24 @@ def write_fixes(lang, known):
     return target, len(out)
 
 
+def batch_results(votes, key_path):
+    key = json.loads(pathlib.Path(key_path).read_text(encoding="utf-8")) if key_path else {}
+    tally = collections.defaultdict(collections.Counter)
+    for v in votes:
+        if v.get("batch") and v.get("verdict"):
+            tally[(v["lang"], v["batch"])][v["verdict"]] += 1
+    print("\nby batch (stars, keeps, vetoes; score = 2 per star + 1 per keep - 2 per veto):")
+    rows = []
+    for (lang, batch), c in tally.items():
+        score = 2 * c["star"] + c["keep"] - 2 * c["veto"]
+        rows.append((lang, -score, batch, c, score))
+    for lang, _, batch, c, score in sorted(rows):
+        name = key.get(batch, {}).get("voice", "")
+        print(f"  {lang} {batch} {name:14} {c['star']:3} {c['keep']:3} {c['veto']:3}   score {score:+d}")
+
+
 def main():
+    key_path = next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--key=")), None)
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     if len(args) != 1:
         print(__doc__.strip())
@@ -143,6 +163,8 @@ def main():
     by_lang = collections.defaultdict(list)
     for v in votes:
         by_lang[v["lang"]].append(v)
+    if any(v.get("batch") for v in votes):
+        batch_results(votes, key_path)
     for lang, vs in sorted(by_lang.items()):
         known, changed = merge(lang, vs)
         write_examples(lang, known)

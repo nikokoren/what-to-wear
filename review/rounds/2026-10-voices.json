@@ -1,0 +1,965 @@
+{
+ "round": "2026-10-voices",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Good one today. Get outside if you can.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Nothing to plan around. Enjoy that.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Perfect day, and I know you'll spend it indoors.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Great weather. Try to look like you're enjoying it.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "A damp one. Not a day for your nice shoes.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Wet out there at some point. Give yourself five extra minutes.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Umbrella by the door. Yes, that one. Take it.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "You'll check the window five times and still get wet.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Cold one. Wear the warm socks.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Scarf up to the nose today.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll say 'it's not that cold' and regret it by the corner.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Gloves. The pair, not just the one you found.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Day's done. Nothing else coming.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Quiet evening out there. Same in here, hopefully.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You made it. Pajamas are now a valid outfit.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Evening. You're not going anywhere, are you.",
+   "batch": "A"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "I'm a screen on a wall. Even I'd go outside today.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Lovely out. I'll be here, refreshing.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Perfect weather. I can't leave the wall. What's your excuse?",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Go outside. I'll pretend I didn't see you stay in.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I don't get wet. Perks of living indoors.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain today. I'll be on the wall, dry and smug.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "I can't hold an umbrella. You can. Think about that.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "I refresh every few minutes. Wet socks don't.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Cold out. I'm staying on the wall where it's warm.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Batteries hate the cold. So do you. Dress warm.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "I'd wear a hat if I had a head. You have a head.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "I've drawn you a warm coat. The least you can do is wear it.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Nothing new from me tonight. Sleep well.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Evening. I'll keep showing this until morning.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "I'll be here all night. Unlike your motivation.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You've looked at me a lot today. Go to bed.",
+   "batch": "B"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "A steady day. Meteorologists call this boring. I call it lovely.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "'Fair weather' is an actual forecast term. Today qualifies.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Ideal conditions. Wasted on people who stay indoors. Hint.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Low drama in the atmosphere today. Unlike your group chat.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "That smell after rain has a name: petrichor.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Raindrops aren't teardrop-shaped. More like hamburger buns.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Raindrops fall faster than you can run. Don't try.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Fun fact: umbrellas only work if you bring them.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Wind makes cold feel colder. Cover the bits that stick out.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Cold air is dry air. Lip balm counts as a weather precaution.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You don't lose most heat through your head. Wear the hat anyway.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Fingers lose heat fast. You'll still leave the gloves.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Air cools fastest after sunset. Blanket weather, technically.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Today's weather is done. Tomorrow's is already forming.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Nights are when the air settles down. Take the hint.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Tonight's forecast: you, ignoring tomorrow's forecast.",
+   "batch": "C"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Nice. Noted.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Fine all day. Unusual.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Good weather. Try not to waste it. You will.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Nothing to complain about. Do your best.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Wet. As expected.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain is involved today.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Wet. Bring the umbrella or a good excuse.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Rain. You'll act surprised. Don't.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Cold. Dress like it.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Cold. That's the whole update.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Cold. You'll still try the thin jacket.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Cold. Wear the ugly hat. Nobody's looking at you.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Evening. Nothing to report.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "That was the day.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Day over. You did the minimum. Fine.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Evening. Go to bed at a reasonable hour. You won't.",
+   "batch": "D"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "And on this day, the weather asked nothing of anyone.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "A rare, gentle day settles over the land.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Bards will sing of this day. You will mostly scroll.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "The sun rose, the day was perfect, and you checked your phone.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "And the rains came, as they always do, to the people of the city.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Somewhere, a puddle waits for the perfect shoe.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Our hero stepped out in canvas shoes. A bold choice. A wet one.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Brave traveller, you left without an umbrella. The sky noticed.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Winter tightened its grip on the city.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "The cold arrived like an uninvited guest, and stayed.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Our hero met the cold in a thin jacket. A tragedy in one act.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "The ancient scrolls say: wear a hat. You never read the scrolls.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "And so the day draws to a close, uneventfully.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Night falls. The weather rests. So should you.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "As night fell, our hero chose the sofa. Again.",
+   "batch": "E"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "The day ends. Your to-do list does not.",
+   "batch": "E"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Ist der Himmel ruhig und still, zieh dich an, wie man es will.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Bleibt das Wetter, wie es ist, freu dich, dass du draußen bist.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Ist das Wetter einmal fein, fällt dir sicher Arbeit ein.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Scheint das Glück dir ins Gesicht, nutzt du's wieder sicher nicht.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Hängt der Himmel grau und schwer, muss der Regenschirm schnell her.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Wenn es tropft und wenn es rinnt, freut sich nur das Gummistiefel-Kind.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Gehst du ohne Schirm hinaus, siehst du später nass dann aus.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Bist du nass bis auf die Knochen, hast du's wieder selbst verbrochen.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Ist die Nase rot gefroren, hilft ein Schal bis zu den Ohren.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Handschuh, Schal und Mütze an, dann kommt der Frost nicht an dich ran.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gehst du ohne Mütze raus, frieren dir die Ohren aus.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Wer im Winter Sneaker trägt, hat sich das gut überlegt. Nicht.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Kommt der Abend still daher, braucht's vom Wetter heut nichts mehr.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Geht die Sonne schlafen bald, mach's ihr nach, sonst wird es kalt.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Wer am Abend Serien schaut, hat sich morgen früh verhaut.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Gehst du spät erst in das Bett, ist der Morgen nicht so nett.",
+   "batch": "F"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Schön ist's. Wird schon wieder was passieren.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Mild, ruhig, alles gut. Verdächtig.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Perfekter Tag. Freu dich halt, wenn's geht.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Regen. Wieder. Natürlich.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nass ist's. War ja klar.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wennst ohne Schirm gehst, brauchst nachher nicht jammern.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Nass. Und die Leut' fahren wieder, als hätten's nie Regen gesehen.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Saukalt. Mehr gibt's nicht zu sagen.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Haube rausgehen und dann jammern. Kenn ma schon.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Kalt. Und du in der dünnen Jacke. Na servas.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Abend. Endlich a Ruh.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Der Tag is gegessen.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Feierabend. Jetzt lass mich auch in Ruh.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Schau nicht so. Morgen is eh wieder Wetter.",
+   "batch": "G"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Und nun das Wetter: ruhig, freundlich, keine Überraschungen.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Ein Hoch macht's heute ruhig. Schöner wird's nicht.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Bestes Wetter. Beschwerden bitte trotzdem an die Redaktion.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Ein Tiefausläufer bringt Nässe. Klingt harmlos, ist es selten.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Und schon wieder ein Tief. Ich kann nichts dafür.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Ich sag den Regen an, du ignorierst ihn. Unser kleines Ritual.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Regenwahrscheinlichkeit: hoch. Deine Laune danach: tief.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Polarluft hat uns fest im Griff. Klingt dramatisch, ist es auch.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Gefühlt noch kälter als gemessen. Das Gefühl hat recht.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Meine Empfehlung: Mütze. Deine Entscheidung: vermutlich falsch.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Kein Rekord, aber kalt genug für deinen ersten Schnupfen.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Das war das Wetter für heute. Schönen Abend.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Für heute keine weiteren Meldungen.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Morgen gibt's wieder Wetter. Ob du hinschaust, ist die andere Frage.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ende der Sendung. Du darfst jetzt umschalten.",
+   "batch": "H"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Bestes Wetter, Alter. Raus mit dir.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Heute passt einfach alles. Genieß es.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Grillwetter. Und wer hat wieder nichts eingekauft? Genau.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Heute keine Ausreden. Fahrrad, nicht Bahn.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nass heute. Kapuze auf und durch.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Regen. Nicht schön, aber auch nicht tragisch.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Ohne Schirm? Mutig. Und dumm.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Nasse Socken sind kein Lifestyle. Schirm mit.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Richtig kalt heute. Pack dich ein.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Kalt. Jacke zu, Mütze auf, los.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Arschkalt. Und du willst echt ohne Mütze? Viel Glück.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Handschuhe? Deine Finger hassen dich jetzt schon.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Feierabend. Füße hoch.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Für heute ist Schluss. Chill mal.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Abend, Alter. Morgen früh raus, also nicht wieder bis zwei.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Pizza bestellen ist heute erlaubt. Ich sag's keinem.",
+   "batch": "I"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Schönes Wetter, Kind. Geh ein bisschen an die frische Luft.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "So ein Tag, da hängt man die Wäsche raus.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "So ein schöner Tag. Ruf mal wieder an, wenn du schon nicht vorbeikommst.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Bei so einem Wetter hab ich früher den ganzen Garten gemacht.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nimm einen Schirm mit, Kind. Und eine Jacke mit Kapuze.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nasse Füße, und schon hast du dir was geholt.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wenn du nass wirst, sag nicht, ich hätt's nicht gesagt.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Mit nassen Haaren rausgehen? Nur über meine Leiche.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Zieh dir ein Unterhemd an. Das schadet nie.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei der Kälte gehört eine Mütze auf den Kopf. Punkt.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Mütze? Dann wundere dich nicht über die Ohren.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ich hab dir extra den Schal gestrickt. Trag ihn auch.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Jetzt aber ab ins Warme. Und iss was Ordentliches.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Der Tag ist rum. Mach dir einen Tee.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Nicht so lange aufbleiben. Ich seh das, wenn du müde bist.",
+   "batch": "J"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Hast du heute überhaupt was gegessen? Na also.",
+   "batch": "J"
+  }
+ ]
+}
