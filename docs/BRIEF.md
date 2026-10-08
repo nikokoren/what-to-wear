@@ -42,7 +42,14 @@ The three sarcasm levels are the same friend in three moods:
   beat twelve passable ones; `perfect` and `c_relief` earn more because
   they show most often.
 - **German is written in German**, against the German examples, never
-  translated from the English.
+  translated from the English. Write it without the English open. No
+  German line may share its joke or concept with an English one, even
+  reworded; both languages get their own material. German has plenty:
+  Kaiserwetter, Aprilwetter, meckern, Oma's "zieh dir was Warmes an", the
+  Funktionsjacke, socks in sandals, Hitzefrei, the Regenradar, the trains
+  in snow, clearing the Gehweg, Tatort, gemütlich. A starting point, not a
+  checklist. Facts too: idiomatic German ("wird eine Jacke fällig"), not
+  the English sentence in German words.
 - **Run `python3 tools/style_report.py <lang>`** before handing over. It
   flags the habits that made the last corpus read as generated: objects
   given a job (the jacket's "shift", the rain's "calendar"), semicolons,

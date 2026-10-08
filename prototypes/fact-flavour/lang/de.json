@@ -6,125 +6,125 @@
       "Jacke",
       "Pulli"
     ],
-    "steady": "Passt für den ganzen Tag.",
-    "steady_evening": "Passt für den restlichen Abend.",
-    "steady_hot": "Den ganzen Tag heiß. Wasser und Schatten.",
-    "steady_cold": "Den ganzen Tag kalt. Alles anlassen.",
+    "steady": "So bleibt's den ganzen Tag.",
+    "steady_evening": "So bleibt's bis zum Schlafengehen.",
+    "steady_hot": "Heiß bis zum Abend. Viel trinken, Schatten suchen.",
+    "steady_cold": "Kalt bis zum Abend. Alles bleibt an.",
     "w_scarf": "{WHEN} Mütze, Schal und Handschuhe ab.",
     "w_coat": "{WHEN} Winterjacke aus.",
     "w_jacket": "{WHEN} Jacke aus.",
     "w_hoodie": "{WHEN} Pulli aus.",
     "w_water": "{WHEN} wird's heiß. Wasser mitnehmen.",
-    "c_scarf": "{WHEN} braucht's Mütze, Schal und Handschuhe.",
-    "c_coat": "{WHEN} braucht's die Winterjacke.",
-    "c_jacket": "{WHEN} braucht's eine Jacke.",
-    "c_hoodie": "{WHEN} braucht's einen Pulli.",
+    "c_scarf": "{WHEN} werden Mütze, Schal und Handschuhe fällig.",
+    "c_coat": "{WHEN} wird die Winterjacke fällig.",
+    "c_jacket": "{WHEN} wird eine Jacke fällig.",
+    "c_hoodie": "{WHEN} wird ein Pulli fällig.",
     "c_relief": "{WHEN} lässt die Hitze nach.",
     "arc_warmer": "{WHEN} {G} aus, und zwar endgültig.",
     "arc_level": "{WHEN} {G} aus, {WHEN2} wieder an.",
-    "arc_colder": "{WHEN} {G} aus. {WHEN2} wieder an, plus eine Schicht.",
-    "shorts_early": "Kühler Start, {WHEN} Shorts-Wetter.",
+    "arc_colder": "{WHEN} {G} aus, {WHEN2} wieder an, dann mit einer Schicht mehr.",
+    "shorts_early": "Morgens frisch, {WHEN} Shorts-Wetter.",
     "p_wetter": "{WHENP} ein Schauer. Schirm mitnehmen.",
     "p_wetter_long": "{WHENP} Dauerregen. Schirm mitnehmen.",
-    "p_wetter_maybe": "{WHENP} vielleicht Regen. Schirm optional.",
+    "p_wetter_maybe": "{WHENP} vielleicht Regen. Ein Schirm schadet nicht.",
     "p_stays_wet": "Regen den ganzen Tag. Schirm mitnehmen.",
     "p_drier": "Der Regen hört später auf. Bis dahin Schirm.",
-    "p_wet_again": "Kurze Pause, {WHENP} wieder Regen. Schirm behalten.",
+    "p_wet_again": "Zwischendurch trocken, {WHENP} regnet's wieder. Schirm behalten.",
     "p_snow_coming": "{WHENP} Schnee.",
     "p_stays_wet_snow": "Schnee den ganzen Tag.",
     "p_drier_snow": "Der Schnee hört später auf.",
-    "p_wet_again_snow": "Kurze Pause, {WHENP} wieder Schnee."
+    "p_wet_again_snow": "Zwischendurch Ruhe, {WHENP} schneit's wieder."
   },
   "flavour_10": {
     "nice": [
-      "Ein richtig guter Tag. Einfach genießen.",
-      "So ein Tag, für den man hier wohnt.",
-      "Irgendwann rausgehen. Das ist der ganze Tipp."
+      "Kaiserwetter. Mehr gibt's dazu nicht zu sagen.",
+      "Spazierwetter. Das Wort gibt's wegen Tagen wie heute.",
+      "Heute ist das Wetter mal auf deiner Seite."
     ],
     "mild": [
-      "Unspektakulär. Passt schon.",
-      "Ganz normales Wetter. Ist ja auch was.",
-      "Ein ordentlicher, schnell vergessener Tag."
+      "Weder Fisch noch Fleisch. Aber trocken.",
+      "Ein Tag zum Durchwinken.",
+      "So ein Wetter, über das keiner redet. Selten genug."
     ],
     "cold": [
-      "Richtig kalt. Hände in die Taschen.",
-      "Ein Tag für heißen Tee.",
-      "Kalt genug, dass man den Atem sieht."
+      "Frisch, sagt man im Norden. Alle anderen sagen kalt.",
+      "Ab heute ist die Wärmflasche wieder Familienmitglied.",
+      "Ein Tag, an dem die Nasenspitze mitredet."
     ],
     "hot": [
-      "Heute gehört dir die Schattenseite der Straße.",
-      "Sogar die Tauben verstecken sich.",
-      "Langsam machen. Es ist so eine Hitze."
+      "Hitzefrei gibt's leider nur in der Schule.",
+      "Wer heute einen Ventilator hat, ist König.",
+      "Hundstage. Die Hunde wissen, warum sie liegen bleiben."
     ],
     "wet": [
-      "Ein Tag für den Fensterplatz.",
-      "Pfützen voraus. Schuhe mit Bedacht wählen.",
-      "Irgendwo freut sich ein Hund darüber."
+      "Es gibt kein schlechtes Wetter, sagt man. Man sagt viel.",
+      "Schmuddelwetter, ganz offiziell.",
+      "Die Stadt riecht heute nach nassem Asphalt."
     ],
     "snow": [
-      "Schnee! Bitte überrascht tun.",
-      "Von drinnen hübsch, draußen rutschig.",
-      "Gehen wie ein Pinguin. Funktioniert."
+      "Schnee macht die Stadt für ein paar Stunden leise.",
+      "Streusalz-Tag. Die Schuhe werden's merken.",
+      "Kakaowetter. Mit Sahne, wenn's sein muss."
     ],
     "fickle": [
-      "Das Wetter kann sich nicht entscheiden. Du schon.",
-      "Zwiebelprinzip. Mehr Strategie braucht's nicht.",
-      "So ein Tag, der es sich dauernd anders überlegt."
+      "April, April. Egal, welcher Monat.",
+      "Ein Tag mit Wendungen. Wie ein Tatort, nur kürzer.",
+      "Was der Mittag verspricht, hält der Abend nicht."
     ],
     "evening": [
-      "Viel Tag ist nicht mehr übrig, und er war okay.",
-      "Abend. Draußen passiert nichts Neues mehr.",
-      "Der Tag fährt runter. Du darfst auch."
+      "Sofawetter. Ganz unabhängig vom Wetter.",
+      "Morgen ist auch noch ein Tag. Mit eigenem Wetter.",
+      "Draußen wird's still. Drinnen darf's gemütlich werden."
     ],
     "theme_xmas": [
-      "Frohe Weihnachten. Das Wetter ist heute Nebensache.",
-      "Weihnachten. Drinnen bleiben zählt als Plan."
+      "Stille Nacht. Das Wetter hält sich dran.",
+      "Frohe Weihnachten. Für den Weg zur Verwandtschaft reicht's."
     ]
   },
   "flavour_11": {
     "nice": [
-      "Perfektes Wetter. Heute keine Ausreden.",
-      "Selbst du kannst dich heute nicht falsch anziehen.",
-      "Wer heute drinnen bleibt, ist selber schuld."
+      "Nicht mal übers Wetter kannst du heute meckern. Hart.",
+      "Dein Balkon hat heute mehr vor als du.",
+      "Sonnenbrille nicht vergessen. Die auf deinem Kopf."
     ],
     "mild": [
-      "Wird schon passen. Wahrscheinlich.",
-      "Nichts Wildes. Nicht wieder alles zerdenken.",
-      "So durchschnittlich, dass du ihn bis zum Abendessen vergessen hast."
+      "Keine Ausrede fürs Zuspätkommen. Am Wetter lag's nicht.",
+      "Nichts los da draußen. Genau dein Tempo.",
+      "Kein Wetterdrama heute. Dein Drama bringst du selbst mit."
     ],
     "cold": [
-      "Ja, die Mütze. Nein, die Frisur überlebt das.",
-      "Du jammerst eh über die Kälte. Wie jedes Jahr.",
-      "Handschuhe. Diesmal beide."
+      "Zieh dir was Warmes an, sagt deine Oma. Sie hat recht.",
+      "Die Funktionsjacke darf raus. Endlich hat sie eine Funktion.",
+      "Kalte Hände, warmes Herz. Bei dir vor allem kalte Hände."
     ],
     "hot": [
-      "Du wirst schwitzen. Gleich akzeptieren.",
-      "Trink Wasser. Kaffee zählt nicht.",
-      "Sonnencreme. Du sagst jedes Mal, du denkst dran."
+      "Socken in Sandalen? Heute nicht. Eigentlich nie.",
+      "Du sagst heute mindestens dreimal: Boah, ist das warm.",
+      "Du klebst heute überall fest. Auch am Autositz."
     ],
     "wet": [
-      "Den Schirm vergisst du ja eh.",
-      "Lass die Wildlederschuhe daheim. Ich kenn dich.",
-      "Du wirst heute nass. Find dich damit ab."
+      "Du schaust heute eh fünfmal aufs Regenradar. Mindestens.",
+      "Gummistiefel sind auch für Erwachsene erlaubt. Trau dich.",
+      "Wer heute ohne Kapuze rausgeht, hat's nicht anders gewollt."
     ],
     "snow": [
-      "Schnee. Ich hab dich schon gehen sehen. Vorsicht.",
-      "Du willst einen Schneemann bauen. Dann bau einen.",
-      "Deine Schuhe sind dafür nicht gemacht."
+      "Räum den Gehweg, bevor der Nachbar es tut und dich anschaut.",
+      "Winterreifen? Wolltest du doch letzte Woche machen.",
+      "Schnee. Mal sehen, wie lange die Bahn durchhält."
     ],
     "fickle": [
-      "Mindestens einmal bist du heute falsch angezogen.",
-      "Das Wetter ist so beständig wie dein Schlafrhythmus.",
-      "Zwiebelprinzip. Wie ein Erwachsener."
+      "Zu kalt, zu warm, zu kalt. Und du hast nur eine Jacke.",
+      "Pack ein, was du nicht brauchst. Du brauchst es dann doch.",
+      "Heute bist du der Mensch mit der Jacke überm Arm. Steht dir."
     ],
     "evening": [
-      "Der Tag ist fast rum. Irgendwie überlebt.",
-      "Prognose für heute Abend: du, auf der Couch.",
-      "Was du gerade anhast, passt. Schaut eh keiner."
+      "Ab jetzt ist Jogginghose erlaubt. Bei dir war sie's schon immer.",
+      "Morgen schaust du wieder nicht aufs Wetter. Deshalb gibt's mich.",
+      "Heute Abend nur noch eine Entscheidung: welche Serie."
     ],
     "theme_xmas": [
-      "Frohe Weihnachten. Du trägst den neuen Pulli, oder?",
-      "Weihnachten. Zieh was an, das einen Nachschlag verträgt."
+      "Frohe Weihnachten. Die Verwandtschaft ist wetterfest. Du auch?",
+      "Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr."
     ]
   }
 }
