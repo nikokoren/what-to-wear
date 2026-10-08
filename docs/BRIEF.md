@@ -70,8 +70,25 @@ templates are `facts` in `prototypes/fact-flavour/lang/`.
   "remove the Schnee at the start". Write the line, then cut everything
   after the laugh and everything before it that restates the weather.
 - Kept lines with those cuts applied are the current pools in
-  `prototypes/fact-flavour/lang/`; still missing: English `mild` and
-  `evening` at On, German `mild` at On and `hot` at 11.
+  `prototypes/fact-flavour/lang/`, rebuilt from the votes by
+  `review/rounds/build_pools.py`.
+
+### What round 3 added (the writing round)
+
+From 108 lines by Opus 5.5 (German +12 with 6 stars; English −11 with 1
+star; Fable 5.1 could not run):
+
+- **Evening doesn't assume going out either.** The screen may just be
+  rotating through. Lines about other people going out, or with an "if",
+  are fine; "where are you going?" is not.
+- **Don't lean on the drawing.** "Don't reference the drawings that
+  much": an English line about "this drawing" now and then, not every
+  mood.
+- **`mild` is the weak mood** in both languages: 1 of 6 German On lines
+  survived, 1 of 3 English 11 lines. An ordinary day gives the joke
+  nothing to push against.
+- **English keeps, but rarely stars.** 31 keeps against 1 star: the
+  screen voice is safe, not yet loved. German is close to done.
 
 ## What to read before writing, in this order
 

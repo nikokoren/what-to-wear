@@ -1,4 +1,17 @@
 {
+ "en-0245855aaabf": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "The sky's going through something. I'm staying out of it.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:32.087Z"
+ },
  "en-05fc148f6e94": {
   "level": "11",
   "key": "wet",
@@ -94,6 +107,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:33:35.305Z"
+ },
+ "en-0bfd890900c2": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "The weather's the easy part of tonight.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:08.957Z"
  },
  "en-0c2a7bcc0475": {
   "level": "10",
@@ -192,6 +218,48 @@
   "note": "",
   "updatedAt": "2026-10-08T22:36:01.814Z"
  },
+ "en-15501dbed31b": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "I'm the only thing today that won't change its mind.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:40.852Z"
+ },
+ "en-15f3a556240d": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "It's a good hair day, weather-wise. The rest is on you.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:34.744Z"
+ },
+ "en-165ecdff66dd": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Give it an hour, then you'll take the snow personally.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:15.990Z"
+ },
  "en-18a008c74188": {
   "level": "11",
   "key": "evening",
@@ -207,6 +275,52 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T22:00:33.285Z"
+ },
+ "en-19e5188e2bb5": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Your patience has a melting point. Today you'll find it.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:49.014Z"
+ },
+ "en-19eed0d05d56": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Pulling your hood up isn't a plan. It's a hope.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:37.473Z"
+ },
+ "en-1abd086c074b": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "I look just as good in the dark. You can't tell.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:45:54.609Z"
  },
  "en-1ad8ac3c194a": {
   "level": "11",
@@ -329,6 +443,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:59:07.981Z"
  },
+ "en-24bb63c33fd0": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Whoever you're seeing tonight has a worse screen than me.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:47:49.372Z"
+ },
  "en-2533df685cfe": {
   "level": "11",
   "key": "evening",
@@ -384,6 +513,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:59:11.977Z"
  },
+ "en-29f675829d34": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "Not my most exciting drawing. Still flawless.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Don’t reference the drawings that much",
+  "updatedAt": "2026-10-08T23:44:31.046Z"
+ },
  "en-29fec18af484": {
   "level": "10",
   "key": "evening",
@@ -429,6 +571,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T21:51:26.547Z"
+ },
+ "en-2bfc6e57ea4f": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Thin, pale and cool. I was made for this.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:53.836Z"
  },
  "en-2c7dae241469": {
   "level": "11",
@@ -488,6 +643,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T22:36:12.012Z"
+ },
+ "en-2f51a68cfc40": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "It takes real talent to make today look interesting.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:44:36.134Z"
  },
  "en-3001274d4b32": {
   "level": "0",
@@ -602,6 +770,21 @@
   "note": "Not sarcastic",
   "updatedAt": "2026-10-08T21:57:09.606Z"
  },
+ "en-396799ab8217": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "You keep looking at me like I owe you drama.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:08.128Z"
+ },
  "en-3a72421a8159": {
   "level": "11",
   "key": "cold",
@@ -671,6 +854,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:04:28.084Z"
  },
+ "en-3b8ee6035e14": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "You're about to have strong opinions about air conditioning.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:54.996Z"
+ },
  "en-3e1779ba7bec": {
   "level": "11",
   "key": "evening",
@@ -725,6 +921,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:54:29.213Z"
  },
+ "en-42cc26ed1abd": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Try to bring the umbrella home. Unlike the last three.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:41.988Z"
+ },
  "en-43d6dfd671eb": {
   "level": "10",
   "key": "mild",
@@ -740,6 +949,21 @@
   "note": "",
   "updatedAt": "2026-10-08T22:40:57.724Z"
  },
+ "en-44659bb44f46": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Everyone out there is copying my drawing. Flattering.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:42:43.775Z"
+ },
  "en-47048d7fcb25": {
   "level": "0",
   "key": "s4_cooling",
@@ -752,6 +976,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:34:39.420Z"
+ },
+ "en-47b0156eaca2": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "I'm very good for umbrella sales.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:42.375Z"
  },
  "en-49b3f673030e": {
   "level": "10",
@@ -767,6 +1004,32 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T21:54:33.533Z"
+ },
+ "en-49d52dc482db": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Today's weather has more mood swings than you. Barely.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:19.982Z"
+ },
+ "en-49e3c347c965": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Easy day to forecast. I'll still take the credit.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:45:12.167Z"
  },
  "en-4b7e97480fe7": {
   "level": "11",
@@ -874,6 +1137,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:36:25.678Z"
  },
+ "en-543bccbee489": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "You'll feel very clever for about half the day.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:31.346Z"
+ },
  "en-557ce9e7a7dd": {
   "level": "10",
   "key": "cold",
@@ -947,6 +1223,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:35:45.316Z"
  },
+ "en-5fe325fae6af": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "I don't need beauty sleep. Clearly.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:02.592Z"
+ },
  "en-61d703183996": {
   "level": "11",
   "key": "evening",
@@ -990,6 +1279,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:35:01.551Z"
  },
+ "en-644e14ba78c9": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "You'll say it's not that cold. Your face will disagree.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:47:32.770Z"
+ },
  "en-6662602cdfe7": {
   "level": "10",
   "key": "nice",
@@ -1030,6 +1332,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:52:00.461Z"
+ },
+ "en-69d457a51492": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Somewhere, a weather presenter is saying 'scorcher'. I'd never.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:44:04.233Z"
  },
  "en-6c82e67cdfac": {
   "level": "10",
@@ -1083,6 +1401,34 @@
   "note": "",
   "updatedAt": "2026-10-08T22:02:23.330Z"
  },
+ "en-720314d04fe9": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Today has a plot twist. I've read ahead.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:45.637Z"
+ },
+ "en-723fb6b5470c": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "You'll step in other people's footprints and call it strategy.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:21.524Z"
+ },
  "en-754d6008257d": {
   "level": "10",
   "key": "cold",
@@ -1095,6 +1441,19 @@
   "tags": [],
   "note": "Remove the cold out. That’s already clear from the first line.",
   "updatedAt": "2026-10-08T21:52:27.242Z"
+ },
+ "en-755ca19ea4b8": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "No sad cloud icons here. I have taste.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:56.057Z"
  },
  "en-75b8c653dcf2": {
   "level": "10",
@@ -1137,6 +1496,35 @@
   "note": "",
   "updatedAt": "2026-10-08T22:35:24.716Z"
  },
+ "en-78db20cf6d05": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "I can hold this picture all night without power. Try that.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:08.744Z"
+ },
+ "en-7a6e5e9c7926": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Three outfit changes later, you'll be wearing this one.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:00.583Z"
+ },
  "en-7c26afba6e1f": {
   "level": "0",
   "key": "s4_cooling",
@@ -1162,6 +1550,35 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:38:48.817Z"
+ },
+ "en-7cf83f81b576": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "This drawing is going in my portfolio.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:45:38.533Z"
+ },
+ "en-7d1309b7c46e": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Snow gets more photos than I do. I'm not bitter.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:20.790Z"
  },
  "en-7e8e95d2571c": {
   "level": "10",
@@ -1214,6 +1631,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:33:20.175Z"
+ },
+ "en-888c10ff99bd": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Snow is rain with better presentation. I respect that.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:25.460Z"
  },
  "en-8b7a43ea5b73": {
   "level": "11",
@@ -1301,6 +1731,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T21:56:19.211Z"
+ },
+ "en-91511ed7cbee": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "If you're heading out now, I admire the commitment.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:57.640Z"
  },
  "en-997648be57e4": {
   "level": "10",
@@ -1428,6 +1871,32 @@
   "note": "",
   "updatedAt": "2026-10-08T22:02:28.049Z"
  },
+ "en-a6e52d985fb7": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Today the weather looks almost as good as I do.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:45:45.465Z"
+ },
+ "en-a8c194980003": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "You'll search 'ice cream near me' later. Twice.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:00.514Z"
+ },
  "en-aa6fe281cb90": {
   "level": "10",
   "key": "cold",
@@ -1442,6 +1911,32 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T21:52:42.506Z"
+ },
+ "en-ab721c827122": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "You'll take one short walk and talk about it all week.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:41.277Z"
+ },
+ "en-abfc4b125e26": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Shoulders up by your ears all day. Very elegant.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:47:38.235Z"
  },
  "en-aef79e13f9f4": {
   "level": "0",
@@ -1553,6 +2048,36 @@
   "note": "I like it. But remove the go outside",
   "updatedAt": "2026-10-08T22:03:01.195Z"
  },
+ "en-b907cc875cca": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "Today the weather's on your side. Don't make it awkward.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:46.357Z"
+ },
+ "en-b9bdae057e08": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "You'll describe today as 'fine'. Nobody will ask.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:12.962Z"
+ },
  "en-b9e969b0f5bc": {
   "level": "11",
   "key": "wet",
@@ -1656,6 +2181,22 @@
   "note": "",
   "updatedAt": "2026-10-08T22:37:24.819Z"
  },
+ "en-c4453e3caf8a": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "You'll be 'ready in five' for at least half an hour.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:11.534Z"
+ },
  "en-c536f41fda34": {
   "level": "10",
   "key": "evening",
@@ -1671,6 +2212,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:40:19.058Z"
  },
+ "en-c56965a9c2bc": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Someone turned the outside up too far. Don't look at me.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:44:09.269Z"
+ },
  "en-c5748c286a77": {
   "level": "10",
   "key": "evening",
@@ -1683,6 +2237,32 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:55:30.243Z"
+ },
+ "en-c5c366cece46": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Today's drawing is mostly coat. I'm very proud of the coat.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:42:50.725Z"
+ },
+ "en-c81f3109d2ff": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "I give it even odds you lose that layer by tonight.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:48:39.899Z"
  },
  "en-c82777bf8947": {
   "level": "0",
@@ -1846,6 +2426,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:57:57.250Z"
  },
+ "en-d4af86585cc9": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Going out is overrated. Says a screen that's never been out.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:15.541Z"
+ },
  "en-d5c9ad78e64b": {
   "level": "11",
   "key": "nice",
@@ -1859,6 +2452,35 @@
   "note": "",
   "updatedAt": "2026-10-08T22:03:34.358Z"
  },
+ "en-d61b5e390c79": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "I counted the layers twice. Correct both times.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:00.505Z"
+ },
+ "en-d62023bd5a57": {
+  "level": "10",
+  "key": "mild",
+  "path": "flavour_10.mild[+]",
+  "text": "Other screens get to show paintings. I get today.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "I get today’s weather.",
+  "updatedAt": "2026-10-08T23:45:02.994Z"
+ },
  "en-d7813cc48e36": {
   "level": "0",
   "key": "s2_shower",
@@ -1871,6 +2493,37 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:33:52.957Z"
+ },
+ "en-d82b66ecfc63": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "The sky has opinions today. Mine are better.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:47:18.967Z"
+ },
+ "en-d99ac2fcd97a": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Grown adults go giddy over snow. I remain composed.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:46:34.444Z"
  },
  "en-db165a5a6432": {
   "level": "10",
@@ -1969,6 +2622,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:56:31.408Z"
  },
+ "en-e01cdf188665": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "You'll make that noise once you're outside. You know the one.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:47:43.669Z"
+ },
  "en-e0e68f329cc1": {
   "level": "11",
   "key": "evening",
@@ -2034,6 +2700,22 @@
   "note": "",
   "updatedAt": "2026-10-08T22:00:17.537Z"
  },
+ "en-e6939fc47dca": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "I've looked this good all day without a mirror.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:43:25.323Z"
+ },
  "en-ed21ccb7245a": {
   "level": "0",
   "key": "s7_evening",
@@ -2092,6 +2774,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:56:40.586Z"
  },
+ "en-f06a25c582a1": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Whoever's nearby gets your snow commentary. Usually me.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:29.974Z"
+ },
  "en-f0f9e006d178": {
   "level": "11",
   "key": "wet",
@@ -2133,6 +2828,21 @@
   "note": "",
   "updatedAt": "2026-10-08T22:33:58.989Z"
  },
+ "en-f8923c7ff1e4": {
+  "level": "11",
+  "key": "mild",
+  "path": "flavour_11.mild[+]",
+  "text": "Today won't give you a story. You'll tell one anyway.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:49:19.928Z"
+ },
  "en-f9409a22d96e": {
   "level": "0",
   "key": "s8_busy",
@@ -2161,5 +2871,46 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:40:36.524Z"
+ },
+ "en-fa9339393523": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Whatever the sky does, you'll say you knew. You didn't.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:48.820Z"
+ },
+ "en-fbdf71499306": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Tomorrow-you is already annoyed with tonight-you.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:04.411Z"
+ },
+ "en-fcdad5a8fc73": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Three alarms, and you'll still sleep through two of them.",
+  "source": "candidate",
+  "batch": "E2",
+  "round": "2026-10-writing",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-08T23:50:10.942Z"
  }
 }

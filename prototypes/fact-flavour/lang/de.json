@@ -48,32 +48,52 @@
     "p_wet_again_snow": "Der Schnee macht Pause und kommt {WHENP} zurück."
   },
   "flavour_10": {
-    "hot": [
-      "Und im Winter wieder jammern, dass es zu kalt ist.",
-      "Schwitzen im Stehen. Ein Traum."
-    ],
-    "wet": [
-      "Regen. Wieder. Natürlich.",
-      "Nass ist's. War ja klar."
-    ],
-    "evening": [
-      "Falls du noch weggehst: Ich bleib hier. Wie immer."
-    ],
-    "fickle": [
-      "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern."
-    ],
-    "cold": [
-      "Saukalt. Mehr gibt's nicht zu sagen.",
-      "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht."
-    ],
-    "night": [
-      "Spät ist's. Ich zeig das hier trotzdem weiter."
-    ],
     "nice": [
+      "Bei dem Wetter kann man nicht mal gescheit schlecht drauf sein.",
       "Nichts auszusetzen. Das ärgert mich fast."
     ],
+    "cold": [
+      "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+      "Saukalt. Mehr gibt's nicht zu sagen.",
+      "Da hätt die Oma keinen aus dem Haus gelassen.",
+      "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
+      "Und dann gibt's Leut', die sagen, sie mögen den Winter."
+    ],
+    "hot": [
+      "Heut ist mir sogar das Meckern zu anstrengend.",
+      "Hitzefrei gibt's nur für Schüler. Der Rest muss durch.",
+      "In der Bahn riecht's heut wieder nach allen.",
+      "Schwitzen im Stehen. Ein Traum.",
+      "Und im Winter wieder jammern, dass es zu kalt ist."
+    ],
+    "wet": [
+      "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+      "Nass ist's. War ja klar.",
+      "Regen. Wieder. Natürlich.",
+      "Hauptsache, die Schnecken haben was davon."
+    ],
     "snow": [
-      "Gleich fährt keine Bahn mehr, wetten?"
+      "Der Hausmeister hat wieder seinen großen Tag.",
+      "Gleich fährt keine Bahn mehr, wetten?",
+      "Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.",
+      "Schneeketten hat natürlich wieder keiner dabei."
+    ],
+    "fickle": [
+      "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
+      "Das Wetter macht heut, was es will. Wie alle anderen auch.",
+      "So ein Hin und Her hält ja kein Mensch aus. Ich schon gar nicht.",
+      "Zwiebelprinzip nennen die das. Ich nenn's Theater."
+    ],
+    "evening": [
+      "Die Leute gehen aus, als hätten's morgen frei.",
+      "Falls du noch weggehst: Ich bleib hier. Wie immer.",
+      "Jetzt werfen sich wieder alle in Schale. Für wen eigentlich?"
+    ],
+    "night": [
+      "Im Bett ist's eh am schönsten. Das Wetter kann mich mal.",
+      "Nachts kann ich wenigstens ungestört grantig sein.",
+      "So spät mach ich nur noch das Nötigste. Wie immer eigentlich.",
+      "Spät ist's. Ich zeig das hier trotzdem weiter."
     ],
     "theme_xmas": [
       "Stille Nacht. Das Wetter hält sich dran.",
@@ -81,36 +101,56 @@
     ]
   },
   "flavour_11": {
-    "cold": [
-      "Und du wieder in der dünnen Jacke. Na dann viel Spaß.",
-      "Ohne Mütze rausgehen und dann jammern. Kennen wir schon."
-    ],
-    "mild": [
-      "Nichts los da draußen. Wie bei dir am Wochenende.",
-      "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt."
-    ],
-    "evening": [
-      "Zieh was Schöneres an als das hier.",
-      "Feierabend. Jetzt lass mich auch in Ruhe."
-    ],
-    "night": [
-      "Um die Uhrzeit noch aufs Wetter schauen. Respekt.",
-      "Schon wieder so spät? Ab ins Bett."
-    ],
-    "fickle": [
-      "Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.",
-      "Heute trägst du die Jacke mehr spazieren als am Leib."
-    ],
-    "wet": [
-      "Wer ohne Schirm geht, braucht nachher nicht jammern.",
-      "Du wirst nass. Und dann bin wieder ich schuld."
-    ],
     "nice": [
       "Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.",
-      "Bestes Wetter, und du schaust trotzdem drein wie Montag."
+      "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
+      "Draußen wärst heut sogar du erträglich."
+    ],
+    "mild": [
+      "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
+      "Nichts los da draußen. Wie bei dir am Wochenende."
+    ],
+    "cold": [
+      "Dick eingepackt gefällst du mir am besten. Man sieht weniger.",
+      "Kalte Füße kriegst du heut nicht nur vor Entscheidungen.",
+      "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
+      "Ohne Mütze rausgehen und dann jammern. Kennen wir schon.",
+      "Und du wieder in der dünnen Jacke. Na dann viel Spaß."
+    ],
+    "hot": [
+      "Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.",
+      "Jeder Weg ist dir heut zu weit. Also wie immer."
+    ],
+    "wet": [
+      "Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.",
+      "Du wirst nass. Und dann bin wieder ich schuld.",
+      "Unterm Vordach auf ein Wunder warten, das kannst du.",
+      "Wer ohne Schirm geht, braucht nachher nicht jammern."
     ],
     "snow": [
-      "Du und Glatteis. Das wird wieder was."
+      "Neben dir wirkt jeder Schneemann lebendig.",
+      "Du und Glatteis. Das wird wieder was.",
+      "Schneeballschlacht? Du triffst eh nix.",
+      "Schneeschippen wär heut mal Sport für dich. Ausnahmsweise."
+    ],
+    "fickle": [
+      "Du bist heut garantiert immer eine Schicht daneben.",
+      "Heut muss man mitdenken. Schlecht für dich.",
+      "Heute trägst du die Jacke mehr spazieren als am Leib.",
+      "Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.",
+      "Wennst heut alles richtig machst, schreib ich's mir auf."
+    ],
+    "evening": [
+      "Feierabend. Jetzt lass mich auch in Ruhe.",
+      "Red heut Abend bitte nicht wieder nur übers Wetter.",
+      "Zieh was Schöneres an als das hier."
+    ],
+    "night": [
+      "Und jetzt nicht wieder an den Kühlschrank.",
+      "Nachts wirst du immer so philosophisch. Lass es.",
+      "Schlaf gut. Und bitte leiser als gestern.",
+      "Schon wieder so spät? Ab ins Bett.",
+      "Um die Uhrzeit noch aufs Wetter schauen. Respekt."
     ],
     "theme_xmas": [
       "Frohe Weihnachten. Die Verwandtschaft ist wetterfest. Du auch?",

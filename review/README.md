@@ -115,3 +115,7 @@ language, written cold from the brief by a subagent.
   prompt, save its output next to Opus's, and rebuild with
   `python3 review/rounds/make_round3.py "Opus 5.5=review/rounds/2026-10-writing/opus-5.5.json" "Fable 5.1=<file>"`.
   Opus keeps its label; lines already rated are dropped.
+- **Result (9 October):** German 6 stars, 32 keeps, 16 vetoes (+12);
+  English 1 star, 31 keeps, 22 vetoes (−11). The pools now hold 2 to 5
+  lines per mood, rebuilt with `python3 review/rounds/build_pools.py`;
+  German `mild` at On is still empty.

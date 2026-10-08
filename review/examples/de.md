@@ -13,7 +13,9 @@ Do not edit by hand; vote on the page instead.
 
 ## cold · sarcastic
 
+- Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Ich hab dir extra den Schal gestrickt. Trag ihn auch.
+- Kalte Füße kriegst du heut nicht nur vor Entscheidungen.
 - Kein Rekord, aber kalt genug für deinen ersten Schnupfen.
 - Ohne Handschuhe? Deine Finger hassen dich jetzt schon.
 
@@ -32,8 +34,21 @@ Do not edit by hand; vote on the page instead.
 - Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.
 - Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
 
+## night · sarcastic
+
+- Und jetzt nicht wieder an den Kühlschrank.
+
+## snow · dry
+
+- Der Hausmeister hat wieder seinen großen Tag.
+
+## snow · sarcastic
+
+- Neben dir wirkt jeder Schneemann lebendig.
+
 ## wet · dry
 
+- Alle starren wieder aufs Regenradar. Als ob das was hilft.
 - Nass ist's. War ja klar.
 - Regen. Wieder. Natürlich.
 - Und schon wieder ein Tief. Ich kann nichts dafür.
