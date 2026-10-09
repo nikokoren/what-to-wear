@@ -123,7 +123,8 @@ def main():
     got = run(env, -2, [-2] * 24, [90] * 24, 8, codes=[73] * 24)
     expect("snowing now", got, band="coat", sprite_slug="coat_snow")
     got = run(env, -8, [-8] * 24, [0] * 9 + [90] * 15, 8, codes=[0] * 9 + [73] * 15)
-    expect("snow from the next hour", got, band="bundled", sprite_slug="bundled_snow")
+    expect("snow from the next hour, dry now", got, band="bundled", sprite_slug="bundled_dry",
+           precip_scenario="snow_coming", when_precip="in an hour")
     # snow at 2C feels-like for someone who is always hot (+4) lands in
     # the jacket band, which has a snow drawing for exactly that
     got = run(env, 2, [2] * 24, [90] * 24, 8, codes=[73] * 24, preference="4")
@@ -178,12 +179,12 @@ def main():
               codes=[61] * 10 + [0] * 8 + [61] * 6, texts=bare)
     expect("wet_again missing from language", got, precip_scenario="drier")
 
-    # ---- the picture dresses for the next hour ----
+    # ---- the picture shows the weather now; the words say what's coming ----
     got = run(env, 12, [12] * 24, [0] * 9 + [90] * 15, 8)
-    expect("rain from the next hour", got, sprite_slug="jacket_rain",
+    expect("rain from the next hour, dry now", got, sprite_slug="jacket_dry",
            precip_scenario="wetter_long", when_precip="in an hour")
-    got = run(env, 12, [12] * 24, [0] * 9 + [40] * 15, 8)
-    expect("40% next hour", got, sprite_slug="jacket_dry")
+    got = run(env, 12, [12] * 24, [90] * 24, 8, codes=[61] * 24)
+    expect("raining now", got, sprite_slug="jacket_rain")
 
     # ---- band edges are inclusive: 5.0 is still coat ----
     got = run(env, 5.0, [5.0] * 24, [0] * 24, 8)

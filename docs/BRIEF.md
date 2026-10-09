@@ -133,8 +133,8 @@ Twins only stretch a pool; new jokes are what move the number.
   all night without power. Try that." beat "Your move."). Fact lines
   reword well; flavour lines need new material.
 - **Evening: general observations, not the reader's plans.** "In case
-  you're on your way out" doesn't work, and neither does other people
-  going out. Write about the end of a day in general: looking back on
+  you're on your way out" doesn't work. Write about the end of a day in
+  general: looking back on
   it, grumbling about it, about work, about the commute. Never assume
   where the reader is or what they did: they may have been home all day.
 - **A steady cold day just says it stays cold.** "Keep everything on"

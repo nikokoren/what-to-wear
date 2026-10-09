@@ -17,7 +17,7 @@ import pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 OUT = REPO / "build" / "proto"
-ANCHOR = "{%- comment %}\n============ DRESS FOR THE DOOR"
+ANCHOR = "{%- comment %}\n============ THE PICTURE"
 
 OLD_TIP = "<p>{{ today_tip }}</p>"
 NEW_TIP = ("<p class=\"font--bold\">{{ fact_line }}</p>"

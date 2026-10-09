@@ -47,7 +47,7 @@ Rollout step 1; see docs/MIGRATION.md.
 
 {%- assign temp_c = 0 -%}{%- assign wmo = 0 -%}{%- assign is_now_precip = 0 -%}{%- assign is_now_snow = 0 -%}{%- assign band = 'mild' -%}{%- assign band_rank = 5 -%}{%- assign weather_slug = '' -%}
 
-{%- assign has_future_window = false -%}{%- assign max_temp_future = 0 -%}{%- assign max_temp_idx = 0 -%}{%- assign peak_rain = 0 -%}{%- assign first_rain_idx = -1 -%}{%- assign first_snow_idx = -1 -%}{%- assign future_has_snow = false -%}{%- assign rain_qualifies = false -%}{%- assign next_hour_precip = '' -%}
+{%- assign has_future_window = false -%}{%- assign max_temp_future = 0 -%}{%- assign max_temp_idx = 0 -%}{%- assign peak_rain = 0 -%}{%- assign first_rain_idx = -1 -%}{%- assign first_snow_idx = -1 -%}{%- assign future_has_snow = false -%}{%- assign rain_qualifies = false -%}
 
 {%- assign scenario = 'perfect' -%}{%- assign temp_scenario = '' -%}{%- assign precip_scenario = '' -%}{%- assign when_temp = '' -%}{%- assign when_temp2 = '' -%}{%- assign when_precip = '' -%}{%- assign when_temp_bucket = -1 -%}{%- assign is_arc = false -%}{%- assign garment_n = '' -%}{%- assign garment_a = '' -%}
 
@@ -90,8 +90,6 @@ Rollout step 1; see docs/MIGRATION.md.
 {%- if gap_found -%}{%- if pv > back_peak -%}{%- assign back_peak = pv -%}{%- endif -%}{%- if pv >= RAIN_LOW -%}{%- assign back_run = back_run | plus: 1 -%}{%- if back_run > back_best -%}{%- assign back_best = back_run -%}{%- endif -%}{%- if back_idx < 0 -%}{%- assign back_idx = i -%}{%- endif -%}{%- else -%}{%- assign back_run = 0 -%}{%- endif -%}{%- elsif pv < RAIN_LOW -%}{%- assign dry_run = dry_run | plus: 1 -%}{%- if dry_run >= 2 -%}{%- assign gap_found = true -%}{%- endif -%}{%- else -%}{%- assign dry_run = 0 -%}{%- endif -%}{%- endfor -%}
 
 {%- if best_run >= 2 or peak_rain >= RAIN_HIGH -%}{%- assign rain_qualifies = true -%}{%- endif -%}{%- assign rain_returns = false -%}{%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}{%- assign rain_returns = true -%}{%- endif -%}
-
-{%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}{%- if next_prob >= RAIN_HIGH -%}{%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}{%- if SNOW_CODES contains next_probe -%}{%- assign next_hour_precip = 'snow' -%}{%- else -%}{%- assign next_hour_precip = 'rain' -%}{%- endif -%}{%- endif -%}
 
 {%- if codes != nil -%}{%- for i in (start_index..end_index) -%}{%- assign c_probe = ',' | append: codes[i] | append: ',' -%}{%- if SNOW_CODES contains c_probe -%}{%- assign future_has_snow = true -%}{%- assign first_snow_idx = i -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endif -%}{%- endif -%}{%- endif -%}
 
@@ -220,8 +218,6 @@ wetter_maybe::Regen ist {WHENP} möglich. Nimm den Schirm mit, denn falsch liege
 {%- assign marked = today_tip | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}{%- assign sentences = marked | split: '^^' -%}{%- assign cased = '' -%}{%- for sentence in sentences -%}{%- assign head = sentence | slice: 0 | upcase -%}{%- assign tail = sentence | slice: 1, 400 -%}{%- if forloop.first -%}{%- assign cased = head | append: tail -%}{%- else -%}{%- assign cased = cased | append: ' ' | append: head | append: tail -%}{%- endif -%}{%- endfor -%}{%- if cased != '' -%}{%- assign today_tip = cased -%}{%- endif -%}
 
 {%- endif -%}
-
-{%- if is_error == false and is_now_precip == 0 and next_hour_precip != '' -%}{%- assign weather_slug = band | append: '_' | append: next_hour_precip -%}{%- endif -%}
 
 {%- assign snow_probe = ',' | append: band | append: ',' -%}{%- if weather_slug contains '_snow' -%}{%- unless SNOW_OUTFITS contains snow_probe -%}{%- assign weather_slug = band | append: '_dry' -%}{%- endunless -%}{%- endif -%}{%- assign sprite_slug = weather_slug -%}{%- if active_theme != '' and is_error == false -%}{%- assign slug_probe = ',' | append: weather_slug | append: ',' -%}{%- if theme_whitelist == 'ALL' or theme_whitelist contains slug_probe -%}{%- assign sprite_slug = active_theme | append: '_' | append: weather_slug -%}{%- endif -%}{%- endif -%}
 

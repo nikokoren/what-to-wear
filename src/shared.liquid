@@ -26,9 +26,9 @@ SPRITES
 The outfit set lives in sprites/ on main, one finished PNG per case:
   sprites/<outfit>_<dry|rain|snow>.png           the plain outfit
   sprites/<theme>_<outfit>_<dry|rain|snow>.png   a themed version
-with <outfit> one of BAND_NAMES below. _rain adds the umbrella, a sign
-that rain is coming rather than a garment. _snow is the dry outfit with
-snow falling, drawn only for the outfits in SNOW_OUTFITS. The old flat files in the repo root belong to the
+with <outfit> one of BAND_NAMES below. _rain adds the umbrella and _snow
+draws snow falling (only for the outfits in SNOW_OUTFITS), both only when
+it is raining or snowing now. Rain or snow later is the words' job. The old flat files in the repo root belong to the
 published recipe and are not used here.
 ================================================================
 {%- endcomment %}
@@ -319,7 +319,6 @@ single contains test instead of a chained and/or condition.
 {%- assign first_snow_idx = -1 -%}
 {%- assign future_has_snow = false -%}
 {%- assign rain_qualifies = false -%}
-{%- assign next_hour_precip = '' -%}
 
 {%- assign scenario = 'perfect' -%}
 {%- assign temp_scenario = '' -%}
@@ -644,21 +643,6 @@ single contains test instead of a chained and/or condition.
       {%- assign rain_returns = false -%}
       {%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}
         {%- assign rain_returns = true -%}
-      {%- endif -%}
-
-      {%- comment %}
-      What the next hour holds, for the picture: someone leaving in ten
-      minutes into a 90% hour should see the umbrella, not just read
-      about it.
-      {%- endcomment %}
-      {%- assign next_prob = probs[start_index] | default: 0 | plus: 0 -%}
-      {%- if next_prob >= RAIN_HIGH -%}
-        {%- assign next_probe = ',' | append: codes[start_index] | append: ',' -%}
-        {%- if SNOW_CODES contains next_probe -%}
-          {%- assign next_hour_precip = 'snow' -%}
-        {%- else -%}
-          {%- assign next_hour_precip = 'rain' -%}
-        {%- endif -%}
       {%- endif -%}
 
       {%- comment %}
@@ -1304,15 +1288,11 @@ See docs/TRANSLATING.md for the full contract.
 
 
 {%- comment %}
-============ DRESS FOR THE DOOR ============
-The precipitation half of the picture looks one hour ahead: dry now but
-raining or snowing in the next hour draws the wet or snowy outfit. The words are
-unaffected - they still say when it starts.
+============ THE PICTURE ============
+Rain and snow are drawn only while they fall. An umbrella on a dry
+morning looked like a broken screen next to words saying the rain starts
+later; the words carry what's coming.
 {%- endcomment %}
-{%- if is_error == false and is_now_precip == 0 and next_hour_precip != '' -%}
-  {%- assign weather_slug = band | append: '_' | append: next_hour_precip -%}
-{%- endif -%}
-
 {%- assign snow_probe = ',' | append: band | append: ',' -%}
 {%- if weather_slug contains '_snow' -%}
   {%- unless SNOW_OUTFITS contains snow_probe -%}

@@ -72,11 +72,13 @@ Decisions:
   | `heat`: tank top, sandals | 30 to 34 |
   | `extreme_heat`: tank top, sun hat, water | > 34 |
 
-- Rain adds the umbrella, as a sign that rain is coming. Snow is the dry
-  outfit with snow falling (no boots), drawn for `bundled`, `coat` and
-  `jacket`. The climate data has snow only on bundled and coat; jacket
-  covers "I'm always hot" shifting a snowy day warmer. Any other outfit
-  draws dry in snow. The list is `SNOW_OUTFITS` in `src/shared.liquid`.
+- Rain adds the umbrella, and snow is the dry outfit with snow falling
+  (no boots), both only while it is raining or snowing now: rain later
+  is the text's job (changed October 2026; an umbrella on a dry morning
+  looked broken). Snow is drawn for `bundled`, `coat` and `jacket`. The
+  climate data has snow only on bundled and coat; jacket covers "I'm
+  always hot" shifting a snowy day warmer. Any other outfit draws dry in
+  snow. The list is `SNOW_OUTFITS` in `src/shared.liquid`.
 - **The long-pants rule:** legs are decided at the door. In long-pants
   weather, if the day warms into shorts weather and the cool stretch is
   no longer than the warm one, draw shorts now.

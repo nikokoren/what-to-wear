@@ -25,11 +25,11 @@ drawing already shows, or what to put in the bag.
 | 7 `heat` | ≤ 34 °C | tank top, sandals |
 | 8 `extreme_heat` | > 34 °C | tank top, sun hat, water |
 
-Each step is one decision at the door. Rain adds the umbrella, as a sign
-that rain is coming rather than a garment. Snow is the dry outfit with snow
-falling, drawn for `bundled` and `coat` (the only outfits snow falls on at
-the default setting) and `jacket` (for "Do you run cold or warm?" shifting
-a snowy day warmer).
+Each step is one decision at the door. Rain adds the umbrella while it is
+raining. Snow is the dry outfit with snow falling, while it snows, drawn
+for `bundled` and `coat` (the only outfits snow falls on at the default
+setting) and `jacket` (for "Do you run cold or warm?" shifting a snowy day
+warmer).
 
 Bands 5 and 6 have the same top layer. Moving between them is a question of
 legs, which are decided once at the door (the long-pants rule below), so it
@@ -47,9 +47,9 @@ A change has to be at least 2 °C *and* cross a band to say anything, and
 it has to **hold for two consecutive hours**, the same rule rain has always
 had. A single cold hour at sunrise is not a story.
 
-The rain or snow half of the picture looks one hour ahead: dry now but at
-least 50% in the next hour draws the wet outfit, so someone leaving in ten
-minutes sees the umbrella rather than only reading about it.
+The rain or snow half of the picture shows only what is falling now. Rain
+or snow later is said in words; an umbrella on a dry morning made the
+screen look broken (October 2026).
 
 ### When a line says "this afternoon"
 
