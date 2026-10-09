@@ -3,6 +3,46 @@
 Not built. Captured while the surrounding design was fresh, because most of
 the machinery it needs already exists.
 
+## Update, October 2026: the owner's version
+
+The text redesign (fact line plus flavour line, `prototypes/fact-flavour/`)
+changes where these lines go and makes most of the original plan below
+unnecessary. What the owner wants:
+
+- **Written with Claude as a sparring partner, whenever something
+  happens.** Not an automated news job: the owner opens a session,
+  brainstorms On and 11 lines about the event, votes on them on the
+  review page, and the keepers go in. A person writes and picks every
+  line, so the disaster-joke risk described below mostly goes away
+  (the topic allowlist is still a good habit).
+- **Rotated in and out automatically.** Each topical line carries a
+  date window, and the markup shows it only inside that window:
+
+  ```json
+  "topical_10": [
+    {"text": "...", "from": "2026-11-03", "until": "2026-11-10", "region": "US"}
+  ]
+  ```
+
+  Expired lines simply stop showing; nothing has to be republished to
+  take them out. Adding one is a commit to `lang/<code>.json`, live
+  within jsDelivr's ~12 hours.
+- **Where they show:** in the flavour line, levels 10 and 11 only, which
+  never carries a fact, so a topical line can never displace advice.
+  Inside its window it competes with the mood's pool rather than
+  replacing it (say one day in three), so a week of one joke doesn't
+  wear thin.
+- **No third polling URL.** A dozen dated lines fit in the language file
+  that is already fetched. `region` (optional) uses the coordinate-based
+  region idea below; lines without one show everywhere in the language.
+- Still optional per device, off by default for existing installs.
+
+Needs: the date-window filter in the markup (the date is already known,
+`today_year`/`today_md`), a `topical` round type in `tools/review_export.py`,
+and a short how-to so a future session knows the routine.
+
+The original plan, for reference:
+
 The idea: a weekly job reads the news, writes a handful of jokes about it in
 each language, and those rotate into the tip for a week or two before being
 replaced. Carrot Weather does something like this and it is a large part of

@@ -25,11 +25,14 @@ to pick it up cold.
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching
    the texts URL to the usage Worker at that step starts the counting.
-5. **Item 3, the text**, after a few weeks of usage numbers (forecast on
-   or off, which sarcasm level), so the expensive writing goes where
-   people actually read. The process is set up (below); the owner's
-   part can start any time: fill in `review/taste.md`, confirm the
-   narrator sentence in `docs/BRIEF.md`, vote the `wet_again` lines.
+5. **Item 3, the text**: in progress. The tip becomes a fact line plus a
+   flavour line; voice, fact style and most pools are decided by four
+   rounds of votes (`review/README.md`). Left: the top-up round, then
+   moving the prototype into `src/shared.liquid` and `lang/*.json`.
+6. **Topical lines** (backlog, after the text ships): On and 11 lines about
+   current events, written with Claude whenever something happens, each
+   with a date window so it rotates in and out by itself. Plan in
+   `docs/FUTURE-topical-lines.md` (the October 2026 update at the top).
 
 ## 1. Rethink the clothing system and the temperature bands
 
