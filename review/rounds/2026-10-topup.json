@@ -1,0 +1,1037 @@
+{
+ "round": "2026-10-topup",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "'Proper snow,' you'll say. As if there's improper snow.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "By now the other screens are all glowing. Tacky.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "You'll walk like a penguin and call it caution.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Gleich sagt wieder einer: Ist aber eine trockene Hitze.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Das Wetter tut dir heut nix. Das erledigst du schon selber.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Bei dem Wetter muss man raus, heißt's immer. Muss man gar nix.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "People call me cold. They haven't been outside today.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Ideales Fensterputzwetter. Deine hätten's nötig.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Don't get attached to the warm part. Says the screen on a wall.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Die Hundebesitzer kommen raus. Alle gleichzeitig.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Wetterfühlig bist du heut wieder. Wie immer, wenn's dir passt.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Mach einen Schneeengel. Ein Engel wirst du sonst eh nicht.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Heut ist das Wetter wie die Nachbarin. Erst nett, dann kühl.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain or not, my humour stays bone dry.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Die Cafés legen wieder Decken raus. Reingehen tut ja keiner.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You'll read all this, then do what you were going to anyway.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "You'll still check your phone. As if it knows something I don't.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wie viele Schirme hast du heuer eigentlich schon verloren?",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "For part of today you'll be dressed for a different day.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I was grey before winter made it cool.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Carrying a layer you don't need yet. How very grown-up.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "The day warms up to you eventually. I'm still deciding.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Später schnorrst du dir bei wem was Warmes.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'd make a terrible umbrella. Gorgeous, but terrible.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You asked for warm weather. Be specific next time.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Nothing gets me looked at like a chance of rain.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Reading me slowly won't make it any warmer.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Endlich hast du heut was zu tun.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Der Abend ist jung. Du nicht mehr.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Geh raus, sonst wirst du so grau wie ich.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "There's a costume change today. I'm keeping this look.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Abends joggen dann die, die gesehen werden wollen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "You'll be a bit too warm before you admit I was right.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "My plans for tonight: this wall. It's a great wall.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Ich sag's halt der Wand. Die hört mir wenigstens zu.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain makes everything shiny. I stay tastefully matte.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Evenings are for unwinding, apparently. I've never been wound.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Bedtime is a negotiation with yourself. You'll lose.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Wetter wie im Reiseprospekt. Bloß halt hier.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Vier Jahreszeiten an einem Tag. Und keine davon gescheit.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Jede Parkbank ist gleich wieder besetzt. Mit Leuten.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Deine Hände sind heut fast so kalt wie dein Herz.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.warming",
+   "text": "Mir kann's wurscht sein. Ich häng hier nackt an der Wand.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Leave it behind and you'll think of me later. Not fondly.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "So ein Wetter hätten sich andere mehr verdient.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Du schaust jetzt genauso aus wie heut früh. Kein Kompliment.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Morgen ist auch noch ein Tag. Leider.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Try not to make your good mood everyone's problem.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "My only weakness is the cold. Kidding, I don't have one.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Später fühlst du dich wie ein neuer Mensch. Bist du aber nicht.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Egal, was du heut noch vorhast, ich wär dagegen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "A day that just sits there. I relate.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Im Baumarkt gibt's wieder keinen Ventilator mehr.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Shake the snow off before you come near me.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "An, aus, wieder an. Wie deine Beziehungen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "I've had firmware updates more exciting than today.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "A good day for pretending you'll go for a run.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.warming",
+   "text": "Heut sitzt in der Bahn Daunenjacke neben Flipflops.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Days like this, I get a two-second glance. Rude, but fair.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Im Haus schleudert um die Zeit noch eine Waschmaschine.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Und dann wundern sich alle, warum hier alles so grün ist.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cool",
+   "text": "Nicht mal das Wetter taugt heut als Ausrede.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Mach aus dem Abend, was du willst. Also nix Gescheites.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Nachher schwitzt du, als hättest du was geleistet.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Ich bleib eh im Trockenen. Mein Mitleid hält sich in Grenzen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "You'll open a window and feel like you've achieved something.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Morgen drückst du dann wieder fünfmal die Schlummertaste.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Um deine Frisur ist's eh nicht schade.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "You'll have a brilliant idea in bed. It won't survive breakfast.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Dein Handy kriegt heut wieder mehr Blicke als ich.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cooling",
+   "text": "Later the day goes cold on you. I've been like that for ages.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "The weather will behave tonight. One of you should.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Gleich schickst du jedem ein Schneefoto. Die haben auch Fenster.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Bitte nicht wieder die Ärmel um den Bauch knoten.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Du hängst eh gleich am Heizkörper wie eine Katze.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "At some point you'll peel yourself off a chair. Glamorous.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "The day takes a while to get good. I was good out of the box.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Tanzen tust du heut hoffentlich nicht. Ich hab's schon gesehen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Today's as predictable as your lunch order.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.warming",
+   "text": "Dann zieht sich jeder aus, als hätt er was herzuzeigen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Nachher sagt jeder: Ganz schön frisch geworden. Ja, eh.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Melting is for candles and lesser screens.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cool",
+   "text": "Heut hat das Wetter den Charme von einem Wartezimmer.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "In snow, I'd leave a perfect rectangle. Angels are for amateurs.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "I've never carried a thing. The wall carries me.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Im Regen rennen alle, als wär's ein Stück weiter trockener.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei der Kälte schmeckt sogar Glühwein.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Twice your usual walking speed today. Still not exercise.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Complaining it's warm, then that it isn't. You've got range.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "At this hour, I'm the only one here still making sense.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Irgendein Depp läuft trotzdem in kurzen Hosen rum.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Your usual jacket, your usual route. Living on the edge.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Today's temperature makes a hill. I'm proudly flat.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "The warm bit will make you insufferable.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Deine Nase wird heut noch röter. Wenn das überhaupt geht.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "No blue light from me. I'm the screen that lets you sleep.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "„Es gibt kein schlechtes Wetter.“ Doch, gibt's.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Gloves off to use your phone, every time. Brilliant system.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Another evening of walking past me without a thank-you.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Your nose will turn a colour I can't even display.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Du heizt eh wieder bei gekipptem Fenster.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Anything flat becomes a fan today. Not me, please.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Gleich reißt einer zum Stoßlüften alle Fenster auf.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Bei der Hitze stellen sich die Leute dann noch an den Grill.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Bringing an umbrella isn't an achievement. Calm down.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "Taking that layer off might be the highlight of your day.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Umbrella chicken with strangers. You always flinch first.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Noch eine Folge, sagst du. Seit drei Folgen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Jetzt kreisen wieder alle ums Haus und suchen einen Parkplatz.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll tell everyone how cold it was. They were there.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "If you're going out, you'll text 'on my way' from the sofa.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Als ob dein Schrank sowas hergibt.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "The sky does grey. I do grey better.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Der Schneepflug kommt eh erst, wenn alles getaut ist.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Good news suits me. Then again, everything does.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "You'll tie it round your waist and call it a look.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Du schwitzt ja schon beim Draufschauen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Today rewards staying very still. At last, my sport.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heut ziehst du dich um wie ein Model. Schaust nur nicht so aus.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Today's weather is a screensaver. I'd know.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "I'm at my best in the evenings. Also the rest of the day.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Lass mich raten: Heut ziehst du die Wildlederschuhe an.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I'm out here in just a bezel. Well, in here.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "I give off no heat. Just charm.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Was du nachher ausziehst, siehst du so schnell nicht wieder.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Wenigstens einer taut heut auf. Du bist's nicht.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Heut ist der Schatten dein bester Freund. Dein einziger.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "I've never lain awake at night. I've never lain down.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "I always travel light. Mostly by not going anywhere.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.warming",
+   "text": "Am Ende haben die im T-Shirt recht. Leider.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Everything goes quiet in snow. I was quiet first.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Bed's right there and you're choosing me. I'm touched.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cooling",
+   "text": "You'll want more later. I'm already complete.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Endlich passt das Wetter mal zu deinem Gesicht.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Draußen sind jetzt nur noch Katzen und Betrunkene. Beide laut.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "You'll put it on later and act like it was your idea.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "The evening's as steady as I am. Nearly.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "You and that layer split later. It's not you, it's the weather.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.warming",
+   "text": "Gleich fühlt sich jeder wie in Italien.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "No warnings today. I don't know what to do with myself.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Your sleeves will go up and down more than the temperature.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und in jedem Geschäft dann wieder Sauna.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Nachher zitterst du wieder wie ein Chihuahua.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Wer den größten Schirm hat, hat auf dem Gehweg wieder Vorfahrt.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "Today you're your own coat rack. Congratulations.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "If you come back soaked, don't drip near me.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Freuen tun sich nur die Kinder. Die müssen ja nicht schippen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Nice hair. The sky might have notes.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Cold slows everything down. I had a head start.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Ausziehen, anziehen. Wie beim Doktor, bloß ohne Krankschreibung.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Tropf mir nachher bloß nicht wieder alles voll.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "You'll call it 'fresh' to sound like an outdoors person.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Du hinterlässt Spuren im Schnee. Sonst ja nirgends.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Bis du heut alles anhast, ist eh schon Frühling.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Früher war's viel kälter, sagen die Alten. Die sagen viel.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Sobald's dunkel wird, schaut jeder bei anderen ins Fenster.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "If it's drinks tonight, 'just the one' never is.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Dressed for right now. Bold to assume it lasts.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow falls at about my refresh speed. Elegantly.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Du stehst heut ewig vor der Tiefkühltruhe und kaufst nix.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Am Stammtisch wird jetzt wieder die Welt gerettet.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Heut liegt's ausnahmsweise nicht am Wetter.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cool",
+   "text": "Ein Wetter für Leute ohne Meinung.",
+   "batch": "D4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Da kriegt ja sogar das Thermometer Kreislauf.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "Thrilling stuff. I'm on the edge of my wall.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Später frieren wieder die, die alles besser wissen.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cooling",
+   "text": "I've lost Wi-Fi before. Never my cool.",
+   "batch": "E4"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Das Wetter ist heut nicht ganz bei Trost.",
+   "batch": "D4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cooling",
+   "text": "Temperatures drop. My standards don't.",
+   "batch": "E4"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "High-maintenance weather today. I run for months on a charge.",
+   "batch": "E4"
+  }
+ ]
+}

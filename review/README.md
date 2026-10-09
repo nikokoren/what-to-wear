@@ -119,3 +119,12 @@ language, written cold from the brief by a subagent.
   English 1 star, 31 keeps, 22 vetoes (−11). The pools now hold 2 to 5
   lines per mood, rebuilt with `python3 review/rounds/build_pools.py`;
   German `mild` at On is still empty.
+
+## Round 4: the top-up (October 2026)
+
+"Mild" split into `warming`, `cooling` and `cool` (see `docs/BRIEF.md`),
+and every pool topped up, sized by how often its mood shows. One writer
+per language (Opus 5.5), the German one forbidden from reading any
+English lines. 172 lines in `2026-10-topup.json` (sets E4 and D4), raw
+output in `2026-10-topup/`. After voting: sync, then
+`python3 review/rounds/build_pools.py`.

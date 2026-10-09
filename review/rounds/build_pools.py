@@ -19,8 +19,8 @@ MOODS = ["nice", "cool", "warming", "cooling", "cold", "hot", "wet", "snow", "fi
 
 # The winning voice in each round, as (round, set) pairs.
 WIN = {
-    "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2")},
-    "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1")},
+    "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2"), ("2026-10-topup", "E4")},
+    "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1"), ("2026-10-topup", "D4")},
 }
 # The owner's notes, applied. None drops a line a cleaner version replaces.
 EDIT = {
