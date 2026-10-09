@@ -66,7 +66,7 @@ section.day { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 2
       <li><b>A change</b> is an outfit step held for two hours, or rain or snow starting (one likely hour is enough) or stopping (two dry hours).</li>
       <li><b>At most three panels.</b> Changes less than two hours apart merge, outfit changes win over rain changes, and two panels that would look the same become one.</li>
       <li><b>Now</b> shows rain only while it falls. Rain later appears in the panel where it happens.</li>
-      <li><b>The last time reads "from 7 pm"</b> ("ab 19 Uhr"): that outfit holds for the rest of the day.</li>
+      <li><b>Every later time reads "from"</b>: "Now · from 1 pm · from 7 pm". Each panel holds until the next one, the last for the rest of the day.</li>
       <li><b>Words.</b> One panel: "works all day", plus the sarcastic line at On. Two or three panels: only the sarcastic line, and nothing at Off.</li>
     </ul>
   </header>
@@ -98,12 +98,12 @@ try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-panels-mock") || "{
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 const HOUR = (label) => {
-  label = label.replace(/^(from|ab) /, "");
+  label = label.replace(/^(from|ab)\s/, "");
   if (label === "noon") return 12;
   if (label === "midnight") return 0;
-  const m = /^(\d+) (am|pm)$/.exec(label);
+  const m = /^(\d+)\s(am|pm)$/.exec(label);
   if (m) return (+m[1] % 12) + (m[2] === "pm" ? 12 : 0);
-  const d = /^(\d+) Uhr$/.exec(label);
+  const d = /^(\d+)\sUhr$/.exec(label);
   return d ? +d[1] : null;
 };
 const NAME = { bundled: "winter coat, hat", coat: "winter coat", jacket: "jacket", sweater: "sweater", tee_pants: "T-shirt", tee_shorts: "shorts", heat: "tank top", extreme_heat: "tank top, hat" };

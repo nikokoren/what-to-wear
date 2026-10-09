@@ -40,11 +40,14 @@ TEMPLATE = """{%- assign has_words = false -%}
   /* The view is the measure: every cq unit below is a share of it. */
   .wtw-box { container-type: size; width: 100%; height: 100%; }
   .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 92cqw; }
-  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-end; gap: 4cqw; }
+  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 4cqw; }
   .wtw-panel { display: flex; flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
   .wtw-panel img { aspect-ratio: 1; object-fit: contain;
     width: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih)); height: auto; }
   .wtw-panel .label { white-space: nowrap; }
+  /* 240 px wide (the OG's portrait quarter): "from" over "3 pm". The
+     hours have a no-break space, so "3 pm" stays whole. */
+  @container (max-width: 300px) { .wtw-panel .label { white-space: normal; text-align: center; justify-content: center; } }
   .wtw-now .label { font-weight: 700; text-decoration: underline; }
   /* The words fit themselves: TRMNL's content limiter miscounts on the X
      (it measures the drawings scaled up, the space not) and hides them. */

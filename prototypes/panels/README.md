@@ -30,9 +30,11 @@ the current outfit.
   panels that would look the same become one.
 - **Now** shows rain only while it falls (as the single picture does).
 - **The time under each panel** is when it starts: "Now", then "1 pm" /
-  "13 Uhr" (`panels.hours` in the language files). The last one reads
-  "from 7 pm" / "ab 19 Uhr" (`panels.from`): that outfit holds for the
-  rest of the day.
+  "13 Uhr" (`panels.hours` in the language files), each with "from" /
+  "ab" (`panels.from`): "Now · from 1 pm · from 7 pm". A panel is a
+  stretch, so a bare "1 pm" would read as a moment. The hours have a
+  no-break space; in the OG's portrait quarter (240 px wide) the time
+  wraps to "from" over "1 pm".
 - **Words:** one panel shows a "works all day" fact wording, plus the
   sarcastic line at On and 11. Two or three panels show only the
   sarcastic line, and nothing at Off.

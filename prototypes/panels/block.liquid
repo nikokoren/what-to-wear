@@ -33,6 +33,7 @@ after the fact + flavour block and the picture.
 {%- if is_error == false -%}
   {%- assign PN = texts.panels -%}
   {%- assign p_now = PN.now | default: 'Now' -%}
+  {%- assign p_from = PN.from | default: 'from' -%}
 
   {%- comment %} Every change, in order: hour index, kind (T outfit, P rain), and the state after it. {%- endcomment %}
   {%- assign b_idx = '' -%}
@@ -215,7 +216,9 @@ after the fact + flavour block and the picture.
       {%- assign label = p_now -%}
     {%- else -%}
       {%- assign hn = ph[n0] | plus: 0 -%}
+      {%- comment %} Each later panel holds from its time on: "from 1 pm", "ab 13 Uhr". {%- endcomment %}
       {%- assign label = PN.hours[hn] | default: hn -%}
+      {%- assign label = p_from | append: ' ' | append: label -%}
     {%- endif -%}
     {%- comment %} Two panels that would look the same are one. {%- endcomment %}
     {%- assign this_slug = pband | append: '_' | append: suffix -%}
@@ -230,17 +233,6 @@ after the fact + flavour block and the picture.
     {%- assign prev_slug = this_slug -%}
   {%- endfor -%}
   {%- assign panel_n = panel_slugs | split: '|' | size -%}
-  {%- comment %} The last panel holds for the rest of the day: "from 7 pm", "ab 19 Uhr". {%- endcomment %}
-  {%- if panel_n > 1 -%}
-    {%- assign pl = panel_labels | split: '|' -%}
-    {%- assign p_from = PN.from | default: 'from' -%}
-    {%- assign panel_labels = p_now -%}
-    {%- for l in pl offset: 1 -%}
-      {%- assign panel_labels = panel_labels | append: '|' -%}
-      {%- if forloop.last -%}{%- assign panel_labels = panel_labels | append: p_from | append: ' ' -%}{%- endif -%}
-      {%- assign panel_labels = panel_labels | append: l -%}
-    {%- endfor -%}
-  {%- endif -%}
 
   {%- comment %} Words: "this works all day" for one panel; the sarcastic line at On and 11. {%- endcomment %}
   {%- if show_future_suggestions == 'on' and texts_ok -%}
