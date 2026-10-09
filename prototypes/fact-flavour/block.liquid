@@ -77,6 +77,7 @@ Reads only what the scenario logic above already worked out.
   {%- assign fact_line = cased -%}
 
   {%- comment %} The mood of the day, for the flavour line. First match wins. {%- endcomment %}
+  {%- assign temp_prefix = temp_scenario | slice: 0, 2 -%}
   {%- if precip_scenario == 'snow_coming' or is_now_snow == 1 -%}
     {%- assign mood = 'snow' -%}
   {%- elsif precip_scenario != '' -%}
@@ -94,8 +95,15 @@ Reads only what the scenario logic above already worked out.
     {%- assign mood = 'cold' -%}
   {%- elsif is_steady and band_rank >= 4 -%}
     {%- assign mood = 'nice' -%}
+  {%- elsif temp_prefix == 'c_' -%}
+    {%- comment %} An ordinary day, split by what it actually does: a layer is needed later... {%- endcomment %}
+    {%- assign mood = 'cooling' -%}
+  {%- elsif temp_scenario != '' -%}
+    {%- comment %} ...something comes off later (the commonest of all)... {%- endcomment %}
+    {%- assign mood = 'warming' -%}
   {%- else -%}
-    {%- assign mood = 'mild' -%}
+    {%- comment %} ...or a steady, cool jacket day. {%- endcomment %}
+    {%- assign mood = 'cool' -%}
   {%- endif -%}
   {%- if sarcasm_level != '0' -%}
     {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}

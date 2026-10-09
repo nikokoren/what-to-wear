@@ -15,7 +15,7 @@ import json
 import pathlib
 
 REPO = pathlib.Path(__file__).resolve().parent.parent.parent
-MOODS = ["nice", "mild", "cold", "hot", "wet", "snow", "fickle", "evening", "night"]
+MOODS = ["nice", "cool", "warming", "cooling", "cold", "hot", "wet", "snow", "fickle", "evening", "night"]
 
 # The winning voice in each round, as (round, set) pairs.
 WIN = {
@@ -40,6 +40,9 @@ EDIT = {
     "Wennst ohne Schirm gehst, brauchst nachher nicht jammern.": None,
     "Feierabend. Jetzt lass mich auch in Ruh.": None,
 }
+# Round 4 split "mild" in three. The mild lines the owner kept all talk
+# about an unremarkable day, which is the steady one.
+MOOD_RENAME = {"mild": "cool"}
 # Lines the owner moved to a later hour.
 MOVE = {"Nothing new from me tonight. Sleep well.": "night",
         "You've looked at me a lot today. Go to bed.": "night"}
@@ -55,7 +58,7 @@ def main():
             text = EDIT.get(d["text"], d["text"])
             if text is None:
                 continue
-            mood = MOVE.get(d["text"], d["key"])
+            mood = MOVE.get(d["text"], MOOD_RENAME.get(d["key"], d["key"]))
             entry = (d["verdict"] != "star", text)  # starred lines first
             if entry not in pools[d["level"]][mood]:
                 pools[d["level"]][mood].append(entry)

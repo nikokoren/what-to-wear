@@ -100,7 +100,10 @@ LEVEL_NAME = {"0": "Off", "10": "On", "11": "11"}
 # typical day per mood: the drawing and the fact keys that build its fact.
 FLAVOUR_CTX = {
     "nice": ("sweater_dry", ["steady"], "A steady, pleasant day."),
-    "mild": ("sweater_dry", ["c_jacket"], "An ordinary day with one change."),
+    "mild": ("sweater_dry", ["c_jacket"], "An ordinary day with one change (split into warming, cooling and cool in round 4)."),
+    "warming": ("jacket_dry", ["w_jacket"], "An ordinary day that warms up: a layer comes off later and gets carried."),
+    "cooling": ("sweater_dry", ["c_jacket"], "An ordinary day that cools down: a layer is needed later."),
+    "cool": ("jacket_dry", ["steady"], "A steady, cool day in jacket weather. Nothing changes."),
     "cold": ("coat_dry", ["steady_cold"], "Steady cold."),
     "hot": ("tee_shorts_dry", ["w_water"], "Heat building."),
     "wet": ("jacket_rain", ["w_jacket", "p_wetter"], "Rain at some point: coming, possible, or stopping."),

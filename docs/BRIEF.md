@@ -90,6 +90,31 @@ star; Fable 5.1 could not run):
 - **English keeps, but rarely stars.** 31 keeps against 1 star: the
   screen voice is safe, not yet loved. German is close to done.
 
+### The moods (round 4)
+
+The flavour line is picked by the mood of the day, first match wins
+(`prototypes/fact-flavour/block.liquid`). "Mild" turned out to be three
+different days with nothing in common, so it was split. Shares are of
+7:00 readings over two years in London, New York and Vienna; evening and
+night come on top, by the clock, and steady evenings are the most common
+state of all.
+
+| Mood | The day | Share at 7:00 |
+|---|---|---|
+| `snow` | snow coming or falling | 2% |
+| `wet` | rain coming, possible or stopping | 36% |
+| `night` | steady, from 22:00 (the only mood that may mention bed) | |
+| `evening` | steady, 18:00 to 22:00 (may or may not be going out) | |
+| `fickle` | warms up, then cools again | 15% |
+| `hot` | heat, or climbing into it | 2% |
+| `cold` | winter coat or more, all day | 21% |
+| `nice` | steady, pleasant, dry | 8% |
+| `cooling` | ordinary dry day, a layer needed later | 2% |
+| `warming` | ordinary dry day, a layer comes off later | 11% |
+| `cool` | steady, cool jacket day | 3% |
+
+Pools should be sized by share: the common moods repeat most.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it
