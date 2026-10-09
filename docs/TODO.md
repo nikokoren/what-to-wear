@@ -5,11 +5,17 @@ to pick it up cold.
 
 ## Where we left off (October 2026)
 
-- Everything is on `main` as of `db44aa5` (a fast-forward that only added
-  files). The published recipe is unaffected: it still runs the old
-  markup, one polling URL, and the old drawings in the repo root.
+- Everything is on `main` as of 9 October 2026 (fast-forwards, the last
+  one bringing in the text work: the fact + flavour prototype, five
+  review rounds, topical lines and the weekly scout). The published
+  recipe is unaffected: it still runs the old markup, one polling URL,
+  and the old drawings in the repo root; `lang/` and `sprites/` are
+  unchanged.
+- Running on `main` now: the weekly `topical-prune` workflow (a no-op
+  until topical lines ship in `lang/`) and the "Topical scout" routine,
+  which reads the `topical` skill from `main`.
 - Item 1 is decided and coded; the 19 drawings are next.
-- Item 3 (the text) is deferred on purpose until there are usage numbers.
+- Item 3 (the text) is well along in the prototype; see item 5 below.
 
 ### Open, in order
 
