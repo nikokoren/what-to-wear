@@ -102,16 +102,23 @@ state of all.
 | Mood | The day | Share at 7:00 |
 |---|---|---|
 | `snow` | snow coming or falling | 2% |
-| `wet` | rain coming, possible or stopping | 36% |
+| `wet` | rain coming, possible or stopping | 40% |
 | `night` | steady, from 22:00 (the only mood that may mention bed) | |
 | `evening` | steady, 18:00 to 22:00 (may or may not be going out) | |
-| `fickle` | warms up, then cools again | 15% |
-| `hot` | heat, or climbing into it | 2% |
-| `cold` | winter coat or more, all day | 21% |
-| `nice` | steady, pleasant, dry | 8% |
+| `fickle` | warms up, then cools enough to want the layer back | 11% |
+| `hot` | heat, or climbing into it | 3% |
+| `cold` | winter coat or more, all day | 20% |
+| `nice` | steady, pleasant, dry | 6% |
 | `cooling` | ordinary dry day, a layer needed later | 2% |
-| `warming` | ordinary dry day, a layer comes off later | 11% |
-| `cool` | steady, cool jacket day | 3% |
+| `warming` | ordinary dry day, a layer comes off later (and stays off) | 14% |
+| `cool` | steady, cool jacket day | 2% |
+
+A day that warms up and only cools a little (the evening still warmer
+than the morning, `arc_warmer`) is not `fickle`: its fact says the layer
+"can come off and stay off", and the owner limited "Erst zu warm, dann
+zu kalt" to days that cool down again (October 2026). Lines in the
+`fickle` pool may assume the layer goes back on. Shares re-measured
+then, on 2023 and 2024.
 
 Pools should be sized by share: the common moods repeat most.
 

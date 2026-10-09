@@ -104,7 +104,13 @@ Reads only what the scenario logic above already worked out.
     {%- assign mood = 'night' -%}
   {%- elsif is_steady and local_hour >= 18 -%}
     {%- assign mood = 'evening' -%}
-  {%- elsif is_arc -%}
+  {%- elsif is_arc and temp_scenario != 'arc_warmer' -%}
+    {%- comment %}
+    Only an arc that wants the layer back. When the evening stays warmer
+    than the morning, the fact says "can come off and stay off", and
+    "Erst zu warm, dann zu kalt" or "An, aus, wieder an" would contradict
+    it: that day falls through to hot or warming.
+    {%- endcomment %}
     {%- assign mood = 'fickle' -%}
   {%- elsif band_rank >= 7 or up_rank >= 7 -%}
     {%- assign mood = 'hot' -%}
