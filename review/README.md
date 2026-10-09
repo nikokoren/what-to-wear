@@ -169,3 +169,20 @@ share of lines already shown in the previous 7 / 30 days.
 The 30-day flavour number is the one left to beat: the pools are small,
 and a rewording doesn't count as a new joke. Next steps are item 6 in
 `docs/TODO.md`.
+
+**Result (9 October):** fact wordings did well: English 19 stars, 33
+keeps, 2 vetoes (25 not yet rated: the steady and `w_*` ones); German 26
+stars, 40 keeps, 11 vetoes. The rewordings did worse: English 13 stars,
+48 keeps, 37 vetoes; German 12 stars, 72 keeps, 23 vetoes, nearly all
+"not funny". The owner's notes are applied in `build_pools.py` (`EDIT`,
+`FACT_EDIT`). With what was kept, at sarcasm On:
+
+| | before | after the votes |
+|---|---|---|
+| English fact / flavour / whole screen, 7 days | 33% / 29% / 10% | 21% / 16% / 5% |
+| English, 30 days | 50% / 79% / 28% | 38% / 67% / 17% |
+| German, 7 days | 33% / 15% / 5% | 14% / 11% / 0% |
+| German, 30 days | 50% / 75% / 23% | 31% / 56% / 7% |
+
+English facts still repeat more because the steady facts, the commonest,
+aren't rated yet.

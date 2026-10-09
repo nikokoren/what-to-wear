@@ -38,10 +38,11 @@ FACTS = {
                        "The heat stays all day, so keep water with you.",
                        "No break from the heat today. Water and shade help.",
                        "It stays hot until tonight, so drink plenty and find shade."],
-        "steady_cold": ["It's cold all day. Keep everything on.",
-                        "The cold stays all day, so everything stays on.",
-                        "No warming up today. Keep it all on.",
-                        "It stays this cold until tonight, so don't take anything off."],
+        # Without "keep everything on": the owner found it redundant (round 5).
+        "steady_cold": ["It's cold all day.",
+                        "The cold stays all day.",
+                        "No warming up today.",
+                        "It stays this cold until tonight."],
         "w_scarf": ["You can take off the hat, scarf and gloves {WHEN}.",
                     "{WHEN} it's mild enough to lose the hat, scarf and gloves."],
         "w_coat": ["You can take the winter coat off {WHEN}.",
@@ -453,13 +454,20 @@ def main():
                 lines.append({"lang": lang, "path": f"fact_0.{key}", "text": render(lang, key, t),
                               "template": t, "batch": "F" + lang[0].upper(), "sprite": sprite,
                               "meaning": f"Fact line variant. {meaning}"})
+    # Once the votes are in, the pools move on; where a line has since left
+    # its pool, keep the place it had when the round was written.
+    out = HERE / f"{ROUND}.json"
+    before = {(l["lang"], l["text"]): l["path"] for l in json.loads(out.read_text(encoding="utf-8"))["lines"]} if out.exists() else {}
     for lang, pairs in FLAVOUR.items():
         doc = json.loads((REPO / "prototypes" / "fact-flavour" / "lang" / f"{lang}.json").read_text(encoding="utf-8"))
         where = {t: (lv[-2:], m) for lv in ("flavour_10", "flavour_11") for m, v in doc[lv].items() for t in v}
         for original, variant in pairs.items():
-            if original not in where:
+            if original in where:
+                level, mood = where[original]
+            elif (lang, variant) in before:
+                level, mood = before[(lang, variant)].split(".")[0][-2:], before[(lang, variant)].split(".")[1]
+            else:
                 raise SystemExit(f"not in the pool: {original!r}")
-            level, mood = where[original]
             lines.append({"lang": lang, "path": f"flavour_{level}.{mood}", "text": variant,
                           "variant_of": original, "batch": "V" + lang[0].upper(),
                           "meaning": f"Reworded. The kept line it varies: \u201c{original}\u201d"})

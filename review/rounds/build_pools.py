@@ -56,6 +56,33 @@ EDIT = {
     "Ohne Haube rausgehen und dann jammern. Kenn ma schon.": None,
     "Wennst ohne Schirm gehst, brauchst nachher nicht jammern.": None,
     "Feierabend. Jetzt lass mich auch in Ruh.": None,
+    # round 5: the owner's notes on the reworded lines
+    "Somewhere a screen is showing a Monet. I got today.": "Somewhere a screen is showing a Monet. All you get is this.",
+    "Flat, pale and cool. Built for days like this.": "Flat, pale and cool. I'm built for days like this.",
+    "Today you'll fan yourself with anything flat. Not me.": "Today you'll fan yourself with anything flat. Please don't use me.",
+    "Snow stays at the door. Not near me.": "Snow stays at the door. Don't bring it near me.",
+    "You won't get a sad little cloud icon from me. Standards.": "You won't get a sad little cloud icon from me. I've got artistic integrity.",
+    "Bei der Kälte trinkt man sogar Glühwein freiwillig.": "Bei der Kälte trinkt man sogar freiwillig Glühwein.",
+    "Dieses Hin und Her macht mich ganz kirre.": "Dieses Hin und Her macht mich ganz verrückt.",
+    "Gleich kommt wieder: „Aber es ist eine trockene Hitze.“": "Gleich kommt wieder: „Früher war es auch schon heiß.“",
+    "Im Januar wünschen sich das alle zurück. Wetten?": "Jetzt meckern, und im Januar wünschen sich alle wieder den Sommer zurück.",
+    "Gleich fragst du wieder jeden, ob dem auch so warm ist.": "Gleich fragst du wieder alle, ob ihnen auch so warm ist.",
+    "Irgendwo im Haus läuft jetzt garantiert der Trockner.": "Irgendwo im Haus läuft jetzt garantiert der Trockner. Wumm, wumm, wumm.",
+    "Mich betrifft das nicht. Ich häng hier ohne alles an der Wand.": "Mich betrifft das nicht. Ich häng hier nackt an der Wand.",
+    # "In case you're on your way out" doesn't work in the evening (round 5).
+    "Falls du noch weggehst: Ich bleib hier. Wie immer.": None,
+}
+# The owner's notes on fact wordings, by template. Round 5: "don't take
+# anything off" on a steady cold day is "boring and redundant".
+FACT_EDIT = {
+    "{WHEN} {GV} weg. Heute brauchst du {GP} nicht mehr.": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr.",
+    "{WHEN} {GV} weg, und du brauchst {GP} heute nicht mehr.": "{WHEN} {GV} weg, und du brauchst {GP} danach nicht mehr.",
+    "Erst eine Schneepause, {WHENP} schneit's wieder.": "Erstmal eine Schneepause. {WHENP} schneit es dann aber wieder.",
+    "Was du anhast, reicht für den ganzen Abend.": "Was du anhast, passt für den ganzen Abend.",
+    "Es bleibt den ganzen Tag so kalt, also lass alles an.": "Es bleibt den ganzen Tag so kalt.",
+    "Heute wird's nicht wärmer. Lass alles an.": "Heute wird's nicht wärmer.",
+    "Die Kälte bleibt den ganzen Tag, also nichts ausziehen.": "Die Kälte bleibt den ganzen Tag.",
+    "It stays this cold all day, so keep everything on.": "It stays this cold all day.",
 }
 # Round 4 split "mild" in three. The mild lines the owner kept all talk
 # about an unremarkable day, which is the steady one.
@@ -83,13 +110,15 @@ def build_facts(doc, lang, decisions, round_lines):
         if (d.get("round"), d.get("batch")) == (VARIANTS, fact_set) and d.get("verdict") in ("star", "keep"):
             line = round_lines.get((lang, d["text"]))
             if line:
-                kept[d["key"]].append(line["template"])
+                kept[d["key"]].append(FACT_EDIT.get(line["template"], line["template"]))
     order = {(l["path"], l.get("template")): i for i, l in enumerate(round_lines.values())}
     for key, value in facts.items():
         if key.startswith("garments"):
             continue
         first = value[0] if isinstance(value, list) else value
-        more = sorted(kept.get(key, []), key=lambda t: order.get((f"fact_0.{key}", t), 0))
+        first = FACT_EDIT.get(first, first)
+        inverse = {v: k for k, v in FACT_EDIT.items()}
+        more = sorted(kept.get(key, []), key=lambda t: order.get((f"fact_0.{key}", inverse.get(t, t)), 0))
         facts[key] = [first] + [t for t in more if t != first]
     return sum(len(v) for k, v in facts.items() if not k.startswith("garments"))
 
@@ -103,8 +132,9 @@ def main():
         for d in decisions.values():
             if (d.get("round"), d.get("batch")) == (VARIANTS, VARIANT_SETS[lang][0]):
                 line = round_lines.get((lang, d["text"]))
-                if line and d.get("verdict") in ("star", "keep"):
-                    reworded[d["level"]][d["key"]].append((line["variant_of"], d["text"]))
+                text = EDIT.get(d["text"], d["text"])
+                if line and text and d.get("verdict") in ("star", "keep"):
+                    reworded[d["level"]][d["key"]].append((line["variant_of"], text))
                 continue
             if (d.get("round"), d.get("batch")) not in winners or d.get("verdict") not in ("star", "keep"):
                 continue

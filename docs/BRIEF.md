@@ -125,6 +125,25 @@ right for the whole day" next to "What you're wearing works for the
 whole day"), and flavour lines get reworded twins placed a cycle apart.
 Twins only stretch a pool; new jokes are what move the number.
 
+### What round 5 added (variants)
+
+- **Rewording a joke usually breaks it.** A third of the English twins
+  and a fifth of the German ones were vetoed, nearly all "not funny":
+  the original's exact wording was the joke ("I can hold this picture
+  all night without power. Try that." beat "Your move."). Fact lines
+  reword well; flavour lines need new material.
+- **Evening: general observations, not the reader's plans.** "In case
+  you're on your way out" doesn't work, and neither does other people
+  going out. Write about the end of a day in general: looking back on
+  it, grumbling about it, about work, about the commute. Never assume
+  where the reader is or what they did: they may have been home all day.
+- **A steady cold day just says it stays cold.** "Keep everything on"
+  after it is "boring and redundant"; the drawing shows the outfit.
+- **Terse fact fragments read as robotic** ("Bis dahin Schirm.", "Kalt
+  bis zum Abend, da bleibt alles an."). Full sentences.
+- **No regional words the owner doesn't know**, northern ones included
+  ("kirre").
+
 ### What round 4 added (the top-up)
 
 172 lines, one writer per language, written in volume. German 3 stars,

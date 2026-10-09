@@ -112,38 +112,38 @@
   {
    "lang": "en",
    "path": "fact_0.steady_cold",
-   "text": "It's cold all day. Keep everything on.",
-   "template": "It's cold all day. Keep everything on.",
+   "text": "It's cold all day.",
+   "template": "It's cold all day.",
    "batch": "FE",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day.”"
   },
   {
    "lang": "en",
    "path": "fact_0.steady_cold",
-   "text": "The cold stays all day, so everything stays on.",
-   "template": "The cold stays all day, so everything stays on.",
+   "text": "The cold stays all day.",
+   "template": "The cold stays all day.",
    "batch": "FE",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day.”"
   },
   {
    "lang": "en",
    "path": "fact_0.steady_cold",
-   "text": "No warming up today. Keep it all on.",
-   "template": "No warming up today. Keep it all on.",
+   "text": "No warming up today.",
+   "template": "No warming up today.",
    "batch": "FE",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day.”"
   },
   {
    "lang": "en",
    "path": "fact_0.steady_cold",
-   "text": "It stays this cold until tonight, so don't take anything off.",
-   "template": "It stays this cold until tonight, so don't take anything off.",
+   "text": "It stays this cold until tonight.",
+   "template": "It stays this cold until tonight.",
    "batch": "FE",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day.”"
   },
   {
    "lang": "en",
@@ -827,7 +827,7 @@
    "template": "Kalt bis zum Abend, da bleibt alles an.",
    "batch": "FD",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt.”"
   },
   {
    "lang": "de",
@@ -836,7 +836,7 @@
    "template": "Die Kälte bleibt den ganzen Tag, also nichts ausziehen.",
    "batch": "FD",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt.”"
   },
   {
    "lang": "de",
@@ -845,7 +845,7 @@
    "template": "Heute wird's nicht wärmer. Lass alles an.",
    "batch": "FD",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt.”"
   },
   {
    "lang": "de",
@@ -854,7 +854,7 @@
    "template": "Es bleibt so kalt bis zum Abend, da kommt nichts runter.",
    "batch": "FD",
    "sprite": "coat_dry",
-   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt.”"
   },
   {
    "lang": "de",
