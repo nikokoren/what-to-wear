@@ -25,9 +25,9 @@ MOODS = ["nice", "cool", "warming", "cooling", "cold", "hot", "wet", "snow", "fi
 # The winning voice in each round, as (round, set) pairs.
 WIN = {
     "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2"), ("2026-10-topup", "E4"),
-           ("2026-10-evening", "E6")},
+           ("2026-10-evening", "E6"), ("2026-10-evening-2", "E6")},
     "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1"), ("2026-10-topup", "D4"),
-           ("2026-10-evening", "D6")},
+           ("2026-10-evening", "D6"), ("2026-10-evening-2", "D6")},
 }
 # Round 5: reworded flavour lines (set V*) and fact wordings (set F*).
 VARIANTS = "2026-10-variants"
@@ -71,6 +71,10 @@ EDIT = {
     "Gleich fragst du wieder jeden, ob dem auch so warm ist.": "Gleich fragst du wieder alle, ob ihnen auch so warm ist.",
     "Irgendwo im Haus läuft jetzt garantiert der Trockner.": "Irgendwo im Haus läuft jetzt garantiert der Trockner. Wumm, wumm, wumm.",
     "Mich betrifft das nicht. Ich häng hier ohne alles an der Wand.": "Mich betrifft das nicht. Ich häng hier nackt an der Wand.",
+    # round 6: the owner's notes on the evening lines
+    "Um kurz vor sechs kommt immer noch eine „kurze Rückfrage“.": "Typisch. Um kurz vor Feierabend kommt natürlich eine „kurze Rückfrage“.",
+    "Um die Zeit bohrt garantiert noch irgendein Nachbar.": "Gleich bohrt garantiert noch irgendein Nachbar in der Wand rum.",
+    "No 'quick questions' at 5:58 for me. Perks of being a wall.": "No 'quick questions' at 5:58 for me. Perks of being a screen.",
     # "In case you're on your way out" doesn't work in the evening (round 5).
     "Falls du noch weggehst: Ich bleib hier. Wie immer.": None,
 }

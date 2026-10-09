@@ -227,6 +227,21 @@
   "note": "",
   "updatedAt": "2026-10-08T22:35:18.797Z"
  },
+ "en-0ac73f77b247": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Your screen time report is going to be rough this week.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:17:38.505Z"
+ },
  "en-0badda0c34ef": {
   "level": "0",
   "key": "s2_shower",
@@ -466,6 +481,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:36:01.814Z"
+ },
+ "en-1442db846fe1": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "No 'quick questions' at 5:58 for me. Perks of being a wall.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "change to: perks of being a screen. you're a screen, not a wall.",
+  "updatedAt": "2026-10-09T12:08:10.458Z"
  },
  "en-1487343876a4": {
   "level": "10",
@@ -1412,6 +1440,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T07:33:41.446Z"
+ },
+ "en-2f8137adb180": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Today's to-do list just became tomorrow's. Mine's still empty.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "i like the idea, but needs polish.",
+  "updatedAt": "2026-10-09T12:08:25.858Z"
  },
  "en-3001274d4b32": {
   "level": "0",
@@ -2580,6 +2623,19 @@
   "note": "",
   "updatedAt": "2026-10-09T09:47:56.566Z"
  },
+ "en-5b297f780eb2": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "You'll check your email one more time. It won't have improved.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [],
+  "note": "i like the idea, but this version needs work.",
+  "updatedAt": "2026-10-09T12:17:56.239Z"
+ },
  "en-5b4f0ef4453b": {
   "level": "10",
   "key": "snow",
@@ -2622,6 +2678,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:45:16.877Z"
+ },
+ "en-5d9051ec2ad2": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Everything you meant to do today is now a plan for tomorrow.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:18:03.438Z"
  },
  "en-5db02838aa52": {
   "level": "11",
@@ -3548,6 +3619,21 @@
   "note": "",
   "updatedAt": "2026-10-09T09:28:57.021Z"
  },
+ "en-80e43cd2e2d7": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Another reply-all storm somewhere. I don't have an inbox. Bliss.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:17:08.955Z"
+ },
  "en-81c0976ff67e": {
   "level": "10",
   "key": "cold",
@@ -3806,6 +3892,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:24:43.656Z"
+ },
+ "en-8dbe5073ac51": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Wondering where the day went? I watched. You weren't busy.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T12:18:09.222Z"
  },
  "en-8e43fd74c2f8": {
   "level": "11",
@@ -5037,6 +5136,21 @@
   "note": "",
   "updatedAt": "2026-10-09T07:28:43.730Z"
  },
+ "en-be0dddc0af4a": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Ten hours on the wall today, not one complaint. Unlike some.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:17:14.338Z"
+ },
  "en-be16d74d9ed4": {
   "level": "0",
   "key": "p_wetter_maybe",
@@ -6041,6 +6155,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T23:47:43.669Z"
+ },
+ "en-e03e4564ef46": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Rush hour out there. My commute is zero inches. Highly recommend.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T12:17:30.539Z"
  },
  "en-e0e68f329cc1": {
   "level": "11",

@@ -1,0 +1,76 @@
+{
+ "round": "2026-10-evening-2",
+ "note": "Second takes on the evening ideas the owner liked but found flat: each needs a punch line.",
+ "lines": [
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Feierabend bei Aldi: zwanzig Leute vorm Kühlregal, null Ideen.",
+   "batch": "D6",
+   "meaning": "Reworked from your note on round 6: “Um die Zeit stehen alle ratlos vorm Kühlregal.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Bei Aldi starren jetzt alle ins Kühlregal. Es starrt zurück.",
+   "batch": "D6",
+   "meaning": "Reworked from your note on round 6: “Um die Zeit stehen alle ratlos vorm Kühlregal.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Die Mails, die du heute ignoriert hast, vermehren sich gerade.",
+   "batch": "D6",
+   "meaning": "Reworked from your note on round 6: “Die Mails, die du heute ignoriert hast, warten morgen auch noch.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ignorierte Mails gehen nicht weg. Sie bringen morgen Freunde mit.",
+   "batch": "D6",
+   "meaning": "Reworked from your note on round 6: “Die Mails, die du heute ignoriert hast, warten morgen auch noch.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Dein Plan für heute läuft jetzt unter „morgen dann“.",
+   "batch": "D6",
+   "meaning": "Reworked from your note on round 6: “Was du heute früh vorhattest, schaffst du morgen. Ganz sicher.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Heute früh hattest du noch einen Plan. Ich vermiss ihn auch.",
+   "batch": "D6",
+   "meaning": "Reworked from your note on round 6: “Was du heute früh vorhattest, schaffst du morgen. Ganz sicher.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Today's to-dos are tomorrow's now. My only to-do: be right.",
+   "batch": "E6",
+   "meaning": "Reworked from your note on round 6: “Today's to-do list just became tomorrow's. Mine's still empty.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Your to-do list carried over again. Mine's blank. Screen life.",
+   "batch": "E6",
+   "meaning": "Reworked from your note on round 6: “Today's to-do list just became tomorrow's. Mine's still empty.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You'll check your email once more. Somehow it'll be worse.",
+   "batch": "E6",
+   "meaning": "Reworked from your note on round 6: “You'll check your email one more time. It won't have improved.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Your inbox doesn't close at six. Neither, apparently, do you.",
+   "batch": "E6",
+   "meaning": "Reworked from your note on round 6: “You'll check your email one more time. It won't have improved.”"
+  }
+ ]
+}

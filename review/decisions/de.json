@@ -404,6 +404,19 @@
   "note": "",
   "updatedAt": "2026-10-09T09:39:20.092Z"
  },
+ "de-0cc7142ca68e": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Jetzt stehen wieder alle im Stau und nennen es Feierabend.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T12:04:25.026Z"
+ },
  "de-0cef17a08cc6": {
   "level": "10",
   "key": "hot",
@@ -745,6 +758,19 @@
   "note": "I like the washing machine commentary, but maybe something along the lines of: and someone thought doing laundry this late was a great idea again. Or something like that.",
   "updatedAt": "2026-10-09T07:14:29.283Z"
  },
+ "de-195a7fbaf330": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Um kurz vor sechs kommt immer noch eine „kurze Rückfrage“.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Change to: Typisch. Um kurz vor Feierabend kommt natürlich eine \"kurze Rückfrage\".",
+  "updatedAt": "2026-10-09T12:04:53.658Z"
+ },
  "de-19d5d415eb7e": {
   "level": "10",
   "key": "hot",
@@ -926,6 +952,19 @@
   ],
   "note": "Not sure what the point of the Treppenhaus is all about.",
   "updatedAt": "2026-10-09T11:44:31.842Z"
+ },
+ "de-2253de425945": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Um die Zeit stehen alle ratlos vorm Kühlregal.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "hm. i like the idea of after work grocery shopping. but maybe somethign like: Aktuell stehen alle ratlos vorm Kühlregal bei Aldi. but it's missing the punch line?",
+  "updatedAt": "2026-10-09T12:05:55.908Z"
  },
  "de-2359b76484ad": {
   "level": "10",
@@ -1969,6 +2008,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:49:14.407Z"
  },
+ "de-48872af28aca": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Die Mails, die du heute ignoriert hast, warten morgen auch noch.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "i like the idea, but this version isnt funny. there is no punch line.",
+  "updatedAt": "2026-10-09T12:07:11.575Z"
+ },
  "de-488cb193bd86": {
   "level": "11",
   "key": "fickle",
@@ -2748,6 +2802,19 @@
   "note": "",
   "updatedAt": "2026-10-08T23:36:35.620Z"
  },
+ "de-5ff9bb2bc4e9": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Um die Zeit bohrt garantiert noch irgendein Nachbar.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Change to: Gleich bohrt garantiert noch irgendein Nachbar in der Wand rum.",
+  "updatedAt": "2026-10-09T12:06:25.724Z"
+ },
  "de-6064b73f565a": {
   "level": "0",
   "key": "p_wetter",
@@ -2775,6 +2842,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:13:41.711Z"
+ },
+ "de-611d8e480a5f": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Gleich fragst du wieder, wo der Tag hin ist. Ich hab zugeschaut.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:07:21.341Z"
  },
  "de-617a3a4bd11b": {
   "level": "10",
@@ -2940,6 +3023,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T07:12:12.938Z"
+ },
+ "de-67162b6e0c4d": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Pünktlich zum Feierabend fällt wieder eine S-Bahn aus.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T12:06:31.625Z"
  },
  "de-67bd4f719f02": {
   "level": "0",
@@ -3151,6 +3247,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:46:07.622Z"
+ },
+ "de-6d4dfaca7d76": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Was du heute früh vorhattest, schaffst du morgen. Ganz sicher.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "i like the idea, but this version isnt funny.",
+  "updatedAt": "2026-10-09T12:07:35.491Z"
  },
  "de-6dfbbc35fa7b": {
   "level": "11",
@@ -4248,6 +4359,21 @@
   "note": "Hm. I’m starting to think that the second line of “don’t take anything off” on all these phrases is boring and redundant.",
   "updatedAt": "2026-10-09T09:42:35.821Z"
  },
+ "de-90c22fabd877": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Was heute liegen geblieben ist, ist morgen dringend.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:06:36.408Z"
+ },
  "de-90de9ea6a5cf": {
   "level": "0",
   "key": "p_wetter_maybe",
@@ -4346,6 +4472,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T23:35:54.223Z"
+ },
+ "de-93b27a3fa221": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T12:07:43.258Z"
  },
  "de-93b4cccebd2c": {
   "level": "11",
@@ -4734,6 +4873,22 @@
   "tags": [],
   "note": "Gleich kommt wieder: früher war es auch schon heiß",
   "updatedAt": "2026-10-09T09:10:09.139Z"
+ },
+ "de-9f87be7aaf08": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Die Vorsätze von heute früh sind um die Zeit meist erledigt.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:06:42.275Z"
  },
  "de-9fb143e537e8": {
   "level": "11",
@@ -6585,6 +6740,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:19:19.137Z"
+ },
+ "de-e2b4a3a11ba3": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Gleich kommt im Fernsehen das Wetter. Ich war schneller.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T12:06:48.575Z"
  },
  "de-e2f591b6e456": {
   "level": "11",

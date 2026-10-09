@@ -166,6 +166,18 @@ throw more away before the owner sees them.
 - **English keeps but doesn't star.** 10 stars in four rounds. The
   screen voice is safe; it needs a sharper writer or a native ear.
 
+### What round 6 added (evenings)
+
+9 kept of 21. The German Feierabend scenes worked: the S-Bahn cancelled
+on time, everyone in traffic calling it Feierabend, the "kurze
+Rückfrage" just before six, the neighbour's drill.
+
+- **An idea isn't a joke.** Five notes said "I like the idea, but it
+  isn't funny": the line stated the observation and stopped. It needs
+  a punch line, a turn at the end.
+- **The TRMNL is a screen, not a wall.** It hangs on one. "Perks of
+  being a wall" was corrected to "a screen".
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it
