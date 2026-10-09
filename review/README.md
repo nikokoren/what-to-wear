@@ -170,9 +170,8 @@ The 30-day flavour number is the one left to beat: the pools are small,
 and a rewording doesn't count as a new joke. Next steps are item 6 in
 `docs/TODO.md`.
 
-**Result (9 October):** fact wordings did well: English 19 stars, 33
-keeps, 2 vetoes (25 not yet rated: the steady and `w_*` ones); German 26
-stars, 40 keeps, 11 vetoes. The rewordings did worse: English 13 stars,
+**Result (9 October):** fact wordings did well: English 23 stars, 54
+keeps, 2 vetoes; German 26 stars, 40 keeps, 11 vetoes. The rewordings did worse: English 13 stars,
 48 keeps, 37 vetoes; German 12 stars, 72 keeps, 23 vetoes, nearly all
 "not funny". The owner's notes are applied in `build_pools.py` (`EDIT`,
 `FACT_EDIT`). With what was kept, at sarcasm On:
@@ -184,8 +183,8 @@ stars, 40 keeps, 11 vetoes. The rewordings did worse: English 13 stars,
 | German, 7 days | 33% / 15% / 5% | 14% / 11% / 0% |
 | German, 30 days | 50% / 75% / 23% | 31% / 56% / 7% |
 
-English facts still repeat more because the steady facts, the commonest,
-aren't rated yet.
+With the last English facts rated, English at On is 10% / 29% for the
+fact line and 2% / 9% for the whole screen.
 
 ## Topical rounds
 
@@ -193,6 +192,7 @@ Lines about a current event, with a date window, written with Claude
 whenever something happens. The routine is the repo skill
 `.claude/skills/topical`: the event and the gate, the window and region,
 the round file (`<yyyy-mm>-topical-<slug>.json`, set T), then
-`python3 tools/topical.py add <round>` after the vote. The first is
-`2026-10-topical-clocks`: the clocks going back, 25 October in Europe and
-1 November in the US.
+`python3 tools/topical.py add <round>` after the vote. The first was
+`2026-10-topical-clocks`, the clocks going back: 2 of 9 kept in each
+language, all at 11. Most vetoes were "missing the context": a line has
+to name the event itself, because nothing else on the screen does.

@@ -1431,6 +1431,21 @@
   "note": "",
   "updatedAt": "2026-10-09T09:37:28.247Z"
  },
+ "de-3437850765ed": {
+  "level": "10",
+  "key": "clocks_back",
+  "path": "topical_10.clocks_back[+]",
+  "text": "Jetzt streiten wieder alle: Sommerzeit oder Winterzeit. Jedes Jahr.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:03:50.856Z"
+ },
  "de-34fdd3f3c8d9": {
   "level": "10",
   "key": "cooling",
@@ -1841,6 +1856,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:40:40.530Z"
+ },
+ "de-4595cf810a97": {
+  "level": "10",
+  "key": "clocks_back",
+  "path": "topical_10.clocks_back[+]",
+  "text": "Die Uhr im Auto stimmt jetzt wieder. Bis März.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "Missing the context",
+  "updatedAt": "2026-10-09T11:04:07.884Z"
  },
  "de-45b511b4e2b8": {
   "level": "11",
@@ -3340,6 +3370,19 @@
   "note": "",
   "updatedAt": "2026-10-09T09:41:32.077Z"
  },
+ "de-75ebd2a06f96": {
+  "level": "11",
+  "key": "clocks_back",
+  "path": "topical_11.clocks_back[+]",
+  "text": "Eine Stunde länger geschlafen, und du siehst trotzdem so aus.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T11:04:45.350Z"
+ },
  "de-760c0d6b3d47": {
   "level": "11",
   "key": "evening",
@@ -4282,6 +4325,21 @@
   "note": "",
   "updatedAt": "2026-10-09T09:22:24.116Z"
  },
+ "de-97a970952b36": {
+  "level": "11",
+  "key": "clocks_back",
+  "path": "topical_11.clocks_back[+]",
+  "text": "Die Uhr am Herd stellst du wieder nicht um. Ich kenn dich.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "Missing the context",
+  "updatedAt": "2026-10-09T11:04:58.881Z"
+ },
  "de-9824a1693efa": {
   "level": "0",
   "key": "shorts_early",
@@ -4439,6 +4497,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:45:21.227Z"
+ },
+ "de-9b320fd4f35d": {
+  "level": "10",
+  "key": "clocks_back",
+  "path": "topical_10.clocks_back[+]",
+  "text": "Abschaffen wollten sie die Zeitumstellung ja schon 2019. Na dann.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "Missing the context",
+  "updatedAt": "2026-10-09T11:04:25.690Z"
  },
  "de-9b62ea078490": {
   "level": "10",
@@ -4888,6 +4962,21 @@
   "note": "",
   "updatedAt": "2026-10-09T09:04:30.149Z"
  },
+ "de-aa20cb9a9d77": {
+  "level": "11",
+  "key": "clocks_back",
+  "path": "topical_11.clocks_back[+]",
+  "text": "Die ganze Woche hast du jetzt um elf schon Hunger. Wetten?",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "Missing the context",
+  "updatedAt": "2026-10-09T11:05:14.663Z"
+ },
  "de-ab5e5cf0fe92": {
   "level": "10",
   "key": "nice",
@@ -5280,6 +5369,22 @@
   ],
   "note": "",
   "updatedAt": "2026-10-09T07:08:46.848Z"
+ },
+ "de-bd177c176784": {
+  "level": "10",
+  "key": "clocks_back",
+  "path": "topical_10.clocks_back[+]",
+  "text": "Eine Stunde geschenkt, heißt es. Gemerkt hat's keiner.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "Missing the context",
+  "updatedAt": "2026-10-09T11:04:40.165Z"
  },
  "de-bddc4b8b7cbd": {
   "level": "10",
@@ -5739,6 +5844,19 @@
   "note": "",
   "updatedAt": "2026-10-09T09:19:12.488Z"
  },
+ "de-cb11a3b71d74": {
+  "level": "11",
+  "key": "clocks_back",
+  "path": "topical_11.clocks_back[+]",
+  "text": "Du hast eine Stunde gewonnen. Und was hast du draus gemacht? Eben.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T11:05:21.298Z"
+ },
  "de-cb65ec6dbb13": {
   "level": "11",
   "key": "wet",
@@ -6161,6 +6279,21 @@
   ],
   "note": "",
   "updatedAt": "2026-10-09T07:24:35.434Z"
+ },
+ "de-db493f886d2b": {
+  "level": "11",
+  "key": "clocks_back",
+  "path": "topical_11.clocks_back[+]",
+  "text": "Um sechs sagst du jetzt wieder: Fühlt sich an wie zehn.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-topical-clocks",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:05:29.266Z"
  },
  "de-db6e41d371d9": {
   "level": "0",

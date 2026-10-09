@@ -27,8 +27,8 @@ to pick it up cold.
    the texts URL to the usage Worker at that step starts the counting.
 5. **Item 3, the text**: in progress. The tip becomes a fact line plus a
    flavour line; voice, fact style and most pools are decided by four
-   rounds of votes (`review/README.md`). Round 5 (variants) is synced;
-   25 English fact wordings are still unrated on the review page. Next:
+   rounds of votes (`review/README.md`). Round 5 (variants) is synced
+   and fully rated. Next:
    new evening lines in both languages (German On is down to two; the
    new direction is in `docs/BRIEF.md`), then moving the prototype into
    `src/shared.liquid` and `lang/*.json`.
@@ -52,7 +52,8 @@ to pick it up cold.
    rotates in and out by itself. Built in the prototype (markup, opt-in
    field, review rounds, add and prune tool, weekly prune job, the
    `topical` skill); ships with the text. The first event, the clocks
-   going back, is on the review page. Details in
+   going back, is voted and in the prototype; a weekly scout routine
+   proposes events from Wikipedia and German news. Details in
    `docs/FUTURE-topical-lines.md`.
 
 ## 1. Rethink the clothing system and the temperature bands

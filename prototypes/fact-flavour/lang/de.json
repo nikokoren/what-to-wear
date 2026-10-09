@@ -414,5 +414,19 @@
       "Frohe Weihnachten. Die Verwandtschaft ist wetterfest. Du auch?",
       "Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr."
     ]
-  }
+  },
+  "topical_11": [
+    {
+      "text": "Eine Stunde länger geschlafen, und du siehst trotzdem so aus.",
+      "from": "2026-10-25",
+      "until": "2026-10-29",
+      "region": "DE,AT,CH"
+    },
+    {
+      "text": "Du hast eine Stunde gewonnen. Und was hast du draus gemacht? Eben.",
+      "from": "2026-10-25",
+      "until": "2026-10-29",
+      "region": "DE,AT,CH"
+    }
+  ]
 }

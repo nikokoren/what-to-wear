@@ -20,28 +20,53 @@
       "What you have on works from now until tonight."
     ],
     "steady_evening": [
-      "What you're wearing works for the rest of the evening."
+      "What you're wearing works for the rest of the evening.",
+      "You're dressed right for the rest of the evening.",
+      "That outfit will see you through the evening.",
+      "Nothing to change tonight. What you have on is right.",
+      "The rest of the evening needs nothing more than this."
     ],
     "steady_hot": [
-      "It stays hot all day, so bring water and look for shade."
+      "It stays hot all day, so bring water and look for shade.",
+      "It's hot all day. Bring water and stay in the shade.",
+      "The heat stays all day, so keep water with you.",
+      "No break from the heat today. Water and shade help.",
+      "It stays hot until tonight, so drink plenty and find shade."
     ],
     "steady_cold": [
-      "It stays this cold all day."
+      "It stays this cold all day.",
+      "It's cold all day.",
+      "The cold stays all day.",
+      "No warming up today.",
+      "It stays this cold until tonight."
     ],
     "w_scarf": [
-      "The hat, scarf and gloves can come off {WHEN}."
+      "The hat, scarf and gloves can come off {WHEN}.",
+      "You can take off the hat, scarf and gloves {WHEN}.",
+      "{WHEN} it's mild enough to lose the hat, scarf and gloves."
     ],
     "w_coat": [
-      "The winter coat can come off {WHEN}."
+      "The winter coat can come off {WHEN}.",
+      "You can take the winter coat off {WHEN}.",
+      "{WHEN} it's warm enough to lose the winter coat.",
+      "It warms up {WHEN}, so the winter coat can come off."
     ],
     "w_jacket": [
-      "You can take the jacket off {WHEN}."
+      "You can take the jacket off {WHEN}.",
+      "The jacket can come off {WHEN}.",
+      "{WHEN} it's warm enough to lose the jacket.",
+      "It warms up {WHEN}, so the jacket can come off."
     ],
     "w_hoodie": [
-      "You can take the sweater off {WHEN}."
+      "You can take the sweater off {WHEN}.",
+      "The sweater can come off {WHEN}.",
+      "{WHEN} it's warm enough to lose the sweater.",
+      "It warms up {WHEN}, so the sweater can come off."
     ],
     "w_water": [
-      "It gets hot {WHEN}, so bring water."
+      "It gets hot {WHEN}, so bring water.",
+      "{WHEN} it gets hot. Bring water.",
+      "It heats up {WHEN}, so take water with you."
     ],
     "c_scarf": [
       "It gets colder {WHEN}, so bring a hat, scarf and gloves.",
@@ -361,5 +386,31 @@
       "Merry Christmas. You're wearing the new sweater, aren't you.",
       "Christmas. Wear something that survives a second helping."
     ]
-  }
+  },
+  "topical_11": [
+    {
+      "text": "You got an extra hour of sleep. It doesn't show.",
+      "from": "2026-10-25",
+      "until": "2026-10-29",
+      "region": "UK,IE"
+    },
+    {
+      "text": "You got an extra hour of sleep. It doesn't show.",
+      "from": "2026-11-01",
+      "until": "2026-11-05",
+      "region": "US"
+    },
+    {
+      "text": "You got an extra hour and you're still running late. Impressive.",
+      "from": "2026-10-25",
+      "until": "2026-10-29",
+      "region": "UK,IE"
+    },
+    {
+      "text": "You got an extra hour and you're still running late. Impressive.",
+      "from": "2026-11-01",
+      "until": "2026-11-05",
+      "region": "US"
+    }
+  ]
 }

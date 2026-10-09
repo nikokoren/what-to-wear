@@ -5,13 +5,9 @@ What's been happening, for the topical lines (.claude/skills/topical).
     python3 tools/topical_scout.py            # the last 8 days
     python3 tools/topical_scout.py --days 3 --out /tmp/scout.md
 
-Lists, as Markdown:
-  - Wikipedia's Current events, only the sections our topics come from
-    (arts and culture, sport, science and technology, business): facts.
-  - The Onion and Der Postillon: a radar for what people are talking
-    about. Never a source of jokes: we take the real event underneath,
-    if there is one, never their premise, punchline or wording. Many of
-    their headlines are invented; those are no event at all.
+Lists, as Markdown, Wikipedia's Current events, only the sections our
+topics come from: arts and culture, sport, science and technology,
+business.
 
 The gate (no death, illness, crime, war, disasters, politics) is applied
 by whoever reads this, as the skill says, and every event is checked in
@@ -20,7 +16,6 @@ real news before anyone writes about it.
 
 import argparse
 import datetime as dt
-import email.utils
 import html
 import re
 import sys
@@ -29,12 +24,6 @@ import urllib.request
 UA = "what-to-wear-topical-scout/1.0 (https://github.com/nikokoren/what-to-wear)"
 WIKI = "https://en.wikipedia.org/w/index.php?title=Portal:Current_events/{d:%Y}_{d:%B}_{d.day}&action=raw"
 WIKI_SECTIONS = ("Arts and culture", "Sports", "Science and technology", "Business and economy")
-FEEDS = [
-    ("The Onion", "https://theonion.com/rss/"),
-    ("Der Postillon", "https://www.der-postillon.com/feeds/posts/default?alt=rss"),
-]
-# Postillon compilations, not headlines.
-SKIP = re.compile(r"^(Newsticker|Fakt des Tages|Sonntagsfrage)\b")
 
 
 def fetch(url):
@@ -86,24 +75,6 @@ def wikipedia(days):
     return out
 
 
-def feed(url, days):
-    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days)
-    out = []
-    for item in re.findall(r"<item>.*?</item>", fetch(url), re.S):
-        title = re.search(r"<title>(.*?)</title>", item, re.S)
-        link = re.search(r"<link>(.*?)</link>", item, re.S)
-        date = re.search(r"<pubDate>(.*?)</pubDate>", item, re.S)
-        if not title:
-            continue
-        title = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", title.group(1))).strip()
-        title = re.sub(r"\s*\(Postillon TELEvision[^)]*\)$", "", re.sub(r"\s+", " ", title))
-        when = email.utils.parsedate_to_datetime(date.group(1)) if date else None
-        if SKIP.match(title) or (when and when < cutoff):
-            continue
-        out.append(f"- {when:%Y-%m-%d} {title} ({link.group(1).strip() if link else ''})")
-    return out
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=8)
@@ -111,15 +82,9 @@ def main():
     a = ap.parse_args()
 
     parts = [f"# Topical scout, {dt.date.today()} (last {a.days} days)", "",
-             "Facts first; the satire is only a radar. Gate, check, then write (.claude/skills/topical).", "",
+             "Gate, check in real news, then write (.claude/skills/topical).", "",
              "## Wikipedia, Current events (culture, sport, science, business)", ""]
     parts += wikipedia(a.days) or ["- nothing"]
-    for name, url in FEEDS:
-        parts += ["", f"## {name} (radar only: never their joke)", ""]
-        try:
-            parts += feed(url, a.days) or ["- nothing"]
-        except Exception as e:
-            parts.append(f"- not available ({e.__class__.__name__}: {e})")
     text = "\n".join(parts) + "\n"
     if a.out:
         with open(a.out, "w", encoding="utf-8") as f:

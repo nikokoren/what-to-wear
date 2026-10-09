@@ -21,13 +21,13 @@ When the owner asks what's been happening, or the weekly scout runs:
 python3 tools/topical_scout.py --days 8
 ```
 
-It lists Wikipedia's Current events (culture, sport, science, business
-only) and the latest headlines from The Onion and Der Postillon.
+It lists Wikipedia's Current events, only culture, sport, science and
+business. That list leans English-speaking: for Germany, Austria and
+Switzerland, also search German-language news for the week (sport,
+culture, the odd story everyone talks about).
 
-- **The satire is a radar, never a source.** Look for the real event
-  underneath a headline; many are invented and have none. Never take
-  their premise, punchline or wording, not even reworded: it's their
-  work, and readers would recognise a Postillon joke on the wall.
+- Never take another outlet's joke, premise or wording, even reworded.
+  The event is the material; the joke is ours.
 - Put every candidate through the gate below and check it in real news
   (a web search, with the date) before proposing it.
 - Add planned events in the next ten days you are sure of (clock changes,
@@ -66,6 +66,10 @@ advice, no regional words the owner doesn't know.
   matters to. 11 is about the reader.
 - **German is its own material**, never a translation; a German angle
   on the same event, or a different German event.
+- **Name the event in the line.** The reader sees it on a weather
+  screen with no headline next to it; "the car clock is right again"
+  without the clocks going back in the line was vetoed as "missing the
+  context". "You got an extra hour of sleep" carries its own context.
 - **It has to survive a week.** No "today", "last night" or "this
   morning": the line may show five days later.
 - At most 65 characters.

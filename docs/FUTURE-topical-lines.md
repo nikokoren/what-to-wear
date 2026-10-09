@@ -21,15 +21,16 @@ the machinery it needs already exists.
   `.github/workflows/topical-prune.yml`), archiving them in
   `review/topical-archive.json`. CI checks the format.
 - **Finding events:** `tools/topical_scout.py` lists Wikipedia's Current
-  events (culture, sport, science, business) and the Onion and
-  Postillon headlines, as a radar only, never as a source of jokes. A
+  events (culture, sport, science, business). (The Onion and Der
+  Postillon were tried as a radar and dropped by the owner.) A
   weekly routine, "Topical scout" (Mondays 07:47 Vienna time, in the
   owner's claude.ai routines), runs it in a fresh session and sends the
   owner a shortlist of three to five events that pass the gate; replying
   in that session starts the writing.
 - **Size:** about 140 bytes a line; pruned, a dozen live lines.
-- **First event:** the clocks going back (`2026-10-topical-clocks`),
-  waiting for votes.
+- **First event:** the clocks going back (`2026-10-topical-clocks`):
+  English 2 kept of 9, German 2 of 9, all at 11. Most vetoes were
+  "missing the context": a line has to name the event itself.
 
 ## Update, October 2026: the owner's version
 

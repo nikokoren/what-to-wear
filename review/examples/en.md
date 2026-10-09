@@ -113,6 +113,22 @@ Do not edit by hand; vote on the page instead.
 
 - A cool start, then shorts weather around midday.
 
+## w_coat · plain
+
+- You can take the winter coat off around midday.
+
+## w_hoodie · plain
+
+- The sweater can come off around midday.
+
+## w_jacket · plain
+
+- The jacket can come off around midday.
+
+## w_scarf · plain
+
+- You can take off the hat, scarf and gloves around midday.
+
 ## warming · sarcastic
 
 - You'll overheat a little before you admit I was right.
