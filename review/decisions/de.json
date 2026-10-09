@@ -911,6 +911,22 @@
   "note": "",
   "updatedAt": "2026-10-08T23:38:14.393Z"
  },
+ "de-1f88e674c935": {
+  "level": "10",
+  "key": "nobel_optogenetik",
+  "path": "topical_10.nobel_optogenetik[+]",
+  "text": "Nobelpreis fürs Licht im Hirn. Im Treppenhaus bleibt's dunkel.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "Not sure what the point of the Treppenhaus is all about.",
+  "updatedAt": "2026-10-09T11:44:31.842Z"
+ },
  "de-2359b76484ad": {
   "level": "10",
   "key": "cool",
@@ -1600,6 +1616,22 @@
   "note": "",
   "updatedAt": "2026-10-08T22:30:52.885Z"
  },
+ "de-3b8638dd75a3": {
+  "level": "11",
+  "key": "nobel_optogenetik",
+  "path": "topical_11.nobel_optogenetik[+]",
+  "text": "Nobelpreis für Licht im Hirn. Du suchst den Schalter im Flur.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:45:13.798Z"
+ },
  "de-3cd7884be6c0": {
   "level": "10",
   "key": "hot",
@@ -2138,6 +2170,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:21:41.570Z"
+ },
+ "de-4cbaaec4f715": {
+  "level": "10",
+  "key": "nobel_optogenetik",
+  "path": "topical_10.nobel_optogenetik[+]",
+  "text": "Nobelpreis für Zellen per Licht. Mein Rollladen klemmt trotzdem.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:44:42.774Z"
  },
  "de-4cc1ffa152d5": {
   "level": "10",
@@ -3272,6 +3320,22 @@
   "note": "Ab etwa 11 Uhr soll es schneien.",
   "updatedAt": "2026-10-08T22:19:09.334Z"
  },
+ "de-72086ba476f7": {
+  "level": "11",
+  "key": "nobel_optogenetik",
+  "path": "topical_11.nobel_optogenetik[+]",
+  "text": "Zwei Deutsche kriegen den Nobelpreis. Du verschiebst die Steuer.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:45:25.842Z"
+ },
  "de-720c52d378ba": {
   "level": "10",
   "key": "nice",
@@ -4004,6 +4068,22 @@
   "note": "",
   "updatedAt": "2026-10-08T22:19:12.055Z"
  },
+ "de-8866255cc1b2": {
+  "level": "11",
+  "key": "nobel_optogenetik",
+  "path": "topical_11.nobel_optogenetik[+]",
+  "text": "Nobelpreis nach Berlin und Würzburg. Du vergisst den Müll.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:45:31.990Z"
+ },
  "de-8943ce129f34": {
   "level": "11",
   "key": "mild",
@@ -4193,6 +4273,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:22:19.469Z"
+ },
+ "de-90ff638b46cb": {
+  "level": "10",
+  "key": "nobel_optogenetik",
+  "path": "topical_10.nobel_optogenetik[+]",
+  "text": "Würzburg kriegt den Nobelpreis. Die Alge hat vorgearbeitet.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:44:55.105Z"
  },
  "de-926871a3bed8": {
   "level": "11",
@@ -5626,6 +5722,22 @@
   "note": "",
   "updatedAt": "2026-10-08T23:33:45.600Z"
  },
+ "de-c2f12501e478": {
+  "level": "10",
+  "key": "nobel_optogenetik",
+  "path": "topical_10.nobel_optogenetik[+]",
+  "text": "Medizin-Nobelpreis für zwei Deutsche. Wegen einer Alge, bitte.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:45:06.336Z"
+ },
  "de-c36df89e2d72": {
   "level": "11",
   "key": "nice",
@@ -6828,6 +6940,22 @@
   "tags": [],
   "note": "Change to: passt für den ganzen Abend.",
   "updatedAt": "2026-10-09T09:43:19.521Z"
+ },
+ "de-f545ea87ec8a": {
+  "level": "11",
+  "key": "nobel_optogenetik",
+  "path": "topical_11.nobel_optogenetik[+]",
+  "text": "Nobelpreis für ein Algenprotein. Dein Basilikum darbt.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:45:39.850Z"
  },
  "de-f567031497e7": {
   "level": "10",

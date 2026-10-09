@@ -33,6 +33,10 @@ the machinery it needs already exists.
 - **First event:** the clocks going back (`2026-10-topical-clocks`):
   English 2 kept of 9, German 2 of 9, all at 11. Most vetoes were
   "missing the context": a line has to name the event itself.
+- **First scout run** (`2026-10-09-topical-scout`, written by Sonnet
+  5.5): 1 kept of 16, reworded by the owner's note. The German lines
+  joked past the event instead of about it. The owner's verdict: the
+  texts need a more capable model, so the routine now runs on Opus 5.5.
 
 ## Update, October 2026: the owner's version
 

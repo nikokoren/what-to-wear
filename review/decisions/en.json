@@ -785,6 +785,22 @@
   "note": "",
   "updatedAt": "2026-10-09T09:28:34.874Z"
  },
+ "en-1d4f8a1dc27e": {
+  "level": "10",
+  "key": "banknotes_animals",
+  "path": "topical_10.banknotes_animals[+]",
+  "text": "The new banknotes get a puffin and a hedgehog. Dignified.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:49:23.572Z"
+ },
  "en-1d98cb7711e7": {
   "level": "0",
   "key": "s7_evening",
@@ -1184,6 +1200,22 @@
   "note": "",
   "updatedAt": "2026-10-09T09:46:42.951Z"
  },
+ "en-2b0d58745053": {
+  "level": "11",
+  "key": "banknotes_animals",
+  "path": "topical_11.banknotes_animals[+]",
+  "text": "Your next tenner is a hedgehog. Spend it before it curls up.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:50:24.575Z"
+ },
  "en-2b184fe89f2f": {
   "level": "0",
   "key": "s1_steady",
@@ -1506,6 +1538,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:23:05.614Z"
+ },
+ "en-34e285a99920": {
+  "level": "10",
+  "key": "banknotes_animals",
+  "path": "topical_10.banknotes_animals[+]",
+  "text": "The next banknotes: puffin, owl, bee, hedgehog. Very classy zoo.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:49:30.551Z"
  },
  "en-363fdf63be93": {
   "level": "11",
@@ -1839,6 +1887,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T07:34:07.084Z"
+ },
+ "en-40c87bc0715e": {
+  "level": "10",
+  "key": "banknotes_animals",
+  "path": "topical_10.banknotes_animals[+]",
+  "text": "Banknotes get a hedgehog now. It'll curl up in your pocket.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:49:39.704Z"
  },
  "en-40f741e87081": {
   "level": "10",
@@ -2829,6 +2893,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:52:00.461Z"
  },
+ "en-684a6a82d6c9": {
+  "level": "11",
+  "key": "banknotes_animals",
+  "path": "topical_11.banknotes_animals[+]",
+  "text": "You'll hold a hedgehog banknote before you own a house.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:50:32.369Z"
+ },
  "en-687420184f27": {
   "level": "10",
   "key": "evening",
@@ -2898,6 +2977,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:26:22.431Z"
+ },
+ "en-6c1f5095a2ff": {
+  "level": "11",
+  "key": "banknotes_animals",
+  "path": "topical_11.banknotes_animals[+]",
+  "text": "A bumblebee on the banknotes. Your savings buzz off too.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:50:39.145Z"
  },
  "en-6c82e67cdfac": {
   "level": "10",
@@ -3606,6 +3700,21 @@
   ],
   "note": "",
   "updatedAt": "2026-10-09T09:30:20.495Z"
+ },
+ "en-8b6968df6046": {
+  "level": "10",
+  "key": "banknotes_animals",
+  "path": "topical_10.banknotes_animals[+]",
+  "text": "A puffin on the new banknotes. It still won't split the bill.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "keep",
+  "tags": [
+   "robotic"
+  ],
+  "note": "I like it. But needs a rewrite to sound less robotic.",
+  "updatedAt": "2026-10-09T11:50:14.147Z"
  },
  "en-8b7a43ea5b73": {
   "level": "11",
@@ -6000,6 +6109,21 @@
   ],
   "note": "",
   "updatedAt": "2026-10-09T07:36:05.758Z"
+ },
+ "en-e19dc326a083": {
+  "level": "11",
+  "key": "banknotes_animals",
+  "path": "topical_11.banknotes_animals[+]",
+  "text": "The puffin on the new notes will vanish from your wallet.",
+  "source": "candidate",
+  "batch": "T",
+  "round": "2026-10-09-topical-scout",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T11:50:43.221Z"
  },
  "en-e3a8ff21df32": {
   "level": "10",

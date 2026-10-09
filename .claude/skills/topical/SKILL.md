@@ -78,6 +78,11 @@ advice, no regional words the owner doesn't know.
 - **It has to survive a week.** No "today", "last night" or "this
   morning": the line may show five days later.
 - At most 65 characters.
+- **The joke comes out of the event.** "Event happened. Meanwhile you
+  forget the bins." is a non-sequitur: all eight such German lines about
+  the Medicine Nobel were vetoed "unclear, not funny" ("not sure what the
+  point of the Treppenhaus is"). The one keeper played on the event
+  itself: a puffin on a banknote, and a puffin's bill.
 - **Vary the frame.** Not every line "Event. Joke about you." The first
   scout run wrote all eight German lines as "Nobelpreis für X. Du Y."
 - English is the screen talking about itself, a little too pleased
