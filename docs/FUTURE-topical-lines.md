@@ -24,9 +24,9 @@ the machinery it needs already exists.
   events (culture, sport, science, business). (The Onion and Der
   Postillon were tried as a radar and dropped by the owner.) A
   weekly routine, "Topical scout" (Mondays 07:47 Vienna time, in the
-  owner's claude.ai routines), runs it in a fresh session and sends the
-  owner a shortlist of three to five events that pass the gate; replying
-  in that session starts the writing.
+  owner's claude.ai routines), runs it in a fresh session, writes lines
+  for every event that passes the gate and puts them on the review page;
+  the owner's votes do the picking.
 - **Size:** about 140 bytes a line; pruned, a dozen live lines.
 - **First event:** the clocks going back (`2026-10-topical-clocks`):
   English 2 kept of 9, German 2 of 9, all at 11. Most vetoes were

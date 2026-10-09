@@ -34,11 +34,14 @@ culture, the odd story everyone talks about).
   (a web search, with the date) before proposing it.
 - Add planned events in the next ten days you are sure of (clock changes,
   holidays, season starts, finals), checked the same way.
-- Propose three to five, each in a few lines: what happened, with a
-  source link; why it's good material; region and languages; a window;
-  one angle per language in the house voices (an angle, not a finished
-  line). If nothing passes, say so in one line. The owner picks; then
-  carry on from step 2.
+- **In a live session with the owner**, propose three to five, each in a
+  few lines: what happened, with a source link; why it's good material;
+  region and languages; a window; one angle per language. The owner
+  picks; then carry on from step 2.
+- **In the weekly scout**, don't wait for a pick: write lines for every
+  event that passes (up to five events), put them all on the review
+  page, and let the owner's votes do the picking. See "The weekly scout"
+  below. If nothing passes, say so in one line and publish nothing.
 
 ## 1. Pin down the event
 
@@ -94,12 +97,18 @@ One line can have several windows (the same joke a week later in the
 US). `meaning` tells the owner on the review page what the event is and
 when and where the line shows.
 
-Build the page with this round plus any round still being voted on, and
-publish it to the review page (the URL is in `docs/TODO.md`, item 3):
+Build the page with this round plus any round still being voted on
+(another `--candidates`), and publish it to the review page,
+https://claude.ai/artifact/TLLXhH5LF2LEog84w4zPoN:
 
 ```bash
 python3 tools/review_export.py --candidates review/rounds/<round>.json --only-candidates
 ```
+
+Publish `build/review/index.html` with `root` `build/review` and, as
+`files`, the `sprites/*.png` the build wrote there. From a session that
+didn't publish the page before, read the artifact first and publish
+with its URL, so the link and the votes stay the same.
 
 ## 4. After the vote
 
@@ -120,6 +129,26 @@ python3 tools/review_export.py --candidates review/rounds/<round>.json --only-ca
    about 12 hours; to make it immediate, purge jsDelivr's cache:
    `curl https://purge.jsdelivr.net/gh/nikokoren/what-to-wear@main/lang/en.json`
    (and `de.json`).
+
+## The weekly scout
+
+The routine "Topical scout" (Mondays, 07:47 Vienna) runs this skill in a
+fresh session with no one watching:
+
+1. Steps 0 and 1: find events, skip covered ones, gate, check.
+2. Step 2 for every event that passes, up to five: four candidates per
+   level per language it matters to. Windows start no earlier than two
+   days after the run, so there is time to vote and publish.
+3. One round for the week, `review/rounds/<yyyy-mm-dd>-topical-scout.json`
+   (`"round"` the same name), one `topical_<level>.<event_slug>` path per
+   event, set `T`, and a `meaning` that names the event, the source and
+   when and where the line shows.
+4. Commit that round file and nothing else, and push it to the branch
+   this skill came from (`git pull --rebase` first). Attach the repo
+   with push access if the push is refused.
+5. Build and publish the review page as in step 3.
+6. One push notification: the events, one line each, and "N lines on
+   the review page". The owner votes; the next "sync" adds the keepers.
 
 ## Expired lines
 
