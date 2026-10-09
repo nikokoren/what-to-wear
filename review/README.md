@@ -128,3 +128,6 @@ per language (Opus 5.5), the German one forbidden from reading any
 English lines. 172 lines in `2026-10-topup.json` (sets E4 and D4), raw
 output in `2026-10-topup/`. After voting: sync, then
 `python3 review/rounds/build_pools.py`.
+- **Result (9 October):** German 3 stars, 39 keeps, 44 vetoes; English
+  0 stars, 42 keeps, 44 vetoes. Pools now hold 1 to 9 lines per mood;
+  warming and cooling also draw from cool. Lessons in `docs/BRIEF.md`.

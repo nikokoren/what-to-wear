@@ -109,6 +109,18 @@ Reads only what the scenario logic above already worked out.
     {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
     {%- assign fl_lib = texts[fl_key] -%}
     {%- assign fl_pool = fl_lib[mood] -%}
+    {%- comment %}
+    Ordinary days share: warming and cooling also draw from the cool pool,
+    whose lines are about an unremarkable day and fit any of the three.
+    {%- endcomment %}
+    {%- if mood == 'warming' or mood == 'cooling' -%}
+      {%- assign fl_cool = fl_lib['cool'] -%}
+      {%- if fl_pool and fl_cool -%}
+        {%- assign fl_pool = fl_pool | concat: fl_cool -%}
+      {%- elsif fl_cool -%}
+        {%- assign fl_pool = fl_cool -%}
+      {%- endif -%}
+    {%- endif -%}
     {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
     {%- if is_steady and active_theme != '' -%}
       {%- assign th_key = 'theme_' | append: active_theme -%}

@@ -6,6 +6,7 @@ Do not edit by hand; vote on the page instead.
 
 ## cold · dry
 
+- Bei der Kälte schmeckt sogar Glühwein.
 - Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.  
   _I like it, keep it, but this might sound boring after a bit. Great for the first cold day in a while or something like that._
 - Polarluft hat uns fest im Griff. Klingt dramatisch, ist es auch.
@@ -24,6 +25,10 @@ Do not edit by hand; vote on the page instead.
 - Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
 - Wechselhaft. Das sagen wir Wetterfrösche, wenn wir's selber nicht wissen.
 
+## hot · dry
+
+- Im Baumarkt gibt's wieder keinen Ventilator mehr.
+
 ## mild · sarcastic
 
 - Ich könnte dir jetzt was von Luftdruck erzählen. Du hörst eh nicht zu.
@@ -41,6 +46,7 @@ Do not edit by hand; vote on the page instead.
 ## snow · dry
 
 - Der Hausmeister hat wieder seinen großen Tag.
+- Drei Flocken, und schon heißt's wieder Schneechaos.
 
 ## snow · sarcastic
 

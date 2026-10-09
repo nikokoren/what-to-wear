@@ -27,6 +27,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:50:07.670Z"
  },
+ "de-013206636c5b": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "Wer den größten Schirm hat, hat auf dem Gehweg wieder Vorfahrt.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "too long"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:17:48.744Z"
+ },
  "de-02550416cfd7": {
   "level": "0",
   "key": "s3_off_on",
@@ -70,6 +85,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:36:05.484Z"
  },
+ "de-03e1f45b3f4f": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Irgendein Depp läuft trotzdem in kurzen Hosen rum.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:06:22.743Z"
+ },
  "de-040b21b70bd3": {
   "level": "11",
   "key": "wet",
@@ -98,6 +126,32 @@
   "note": "",
   "updatedAt": "2026-10-08T21:45:46.457Z"
  },
+ "de-0441f2a90cf2": {
+  "level": "11",
+  "key": "cool",
+  "path": "flavour_11.cool[+]",
+  "text": "Ideales Fensterputzwetter. Deine hätten's nötig.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:20:22.516Z"
+ },
+ "de-047ebc7ba089": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Bis du heut alles anhast, ist eh schon Frühling.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:19:27.047Z"
+ },
  "de-0498668b46c1": {
   "level": "0",
   "key": "s5_snow",
@@ -112,6 +166,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T22:18:49.121Z"
+ },
+ "de-059faafc35e4": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Der Schneepflug kommt eh erst, wenn alles getaut ist.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "„kommt wahrscheinlich wieder erst wenn“ the German writer sounds a tad bit too Austrian. I appreciate it, but light not have mass appeal.",
+  "updatedAt": "2026-10-09T07:15:46.162Z"
  },
  "de-064a8ba465d8": {
   "level": "10",
@@ -266,6 +333,21 @@
   "note": "Leaning too heavily into the weather anchor",
   "updatedAt": "2026-10-08T22:26:22.586Z"
  },
+ "de-0dbcfffc27df": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Du schaust jetzt genauso aus wie heut früh. Kein Kompliment.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:32.874Z"
+ },
  "de-0e47a6b5836d": {
   "level": "11",
   "key": "evening",
@@ -278,6 +360,19 @@
   "tags": [],
   "note": "Might be too early for that line",
   "updatedAt": "2026-10-08T21:47:37.468Z"
+ },
+ "de-0e8db87a34b0": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "Ich bleib eh im Trockenen. Mein Mitleid hält sich in Grenzen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Mein Mitleid hält sich in Grenzen. Ich bleib im Trockenen.",
+  "updatedAt": "2026-10-09T07:18:29.325Z"
  },
  "de-11d94b1dc808": {
   "level": "11",
@@ -445,6 +540,34 @@
   "note": "",
   "updatedAt": "2026-10-08T23:34:06.165Z"
  },
+ "de-17d323ea1223": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Im Haus schleudert um die Zeit noch eine Waschmaschine.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [
+   "unclear"
+  ],
+  "note": "I like the washing machine commentary, but maybe something along the lines of: and someone thought doing laundry this late was a great idea again. Or something like that.",
+  "updatedAt": "2026-10-09T07:14:29.283Z"
+ },
+ "de-19d5d415eb7e": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Bei der Hitze stellen sich die Leute dann noch an den Grill.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:12:02.834Z"
+ },
  "de-1a8a2efbd922": {
   "level": "11",
   "key": "mild",
@@ -559,6 +682,19 @@
   "note": "",
   "updatedAt": "2026-10-08T23:38:14.393Z"
  },
+ "de-2359b76484ad": {
+  "level": "10",
+  "key": "cool",
+  "path": "flavour_10.cool[+]",
+  "text": "Ein Wetter für Leute ohne Meinung.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:08:32.660Z"
+ },
  "de-2382cfb93276": {
   "level": "11",
   "key": "wet",
@@ -597,6 +733,32 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:49:05.156Z"
+ },
+ "de-24a9266744d2": {
+  "level": "11",
+  "key": "cooling",
+  "path": "flavour_11.cooling[+]",
+  "text": "Als ob dein Schrank sowas hergibt.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:20:52.554Z"
+ },
+ "de-254986649cd7": {
+  "level": "10",
+  "key": "cool",
+  "path": "flavour_10.cool[+]",
+  "text": "Nicht mal das Wetter taugt heut als Ausrede.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:08:38.391Z"
  },
  "de-26a2985c6be6": {
   "level": "0",
@@ -643,6 +805,21 @@
   "note": "It’s referencing things that might not be correct. It’s assuming I’m going home, because it’s late, but I might be going out. And looking at my trmnl at home to decide what to wear.",
   "updatedAt": "2026-10-08T21:37:32.895Z"
  },
+ "de-28b9ef339ab5": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Jetzt kreisen wieder alle ums Haus und suchen einen Parkplatz.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:24.667Z"
+ },
  "de-2b32a351f498": {
   "level": "0",
   "key": "s1_steady",
@@ -670,6 +847,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:44:51.957Z"
+ },
+ "de-2b68975937b7": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Wetter wie im Reiseprospekt. Bloß halt hier.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:12:28.276Z"
  },
  "de-2c062f105bdf": {
   "level": "10",
@@ -712,6 +902,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:32:10.431Z"
  },
+ "de-2d0a88709a60": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_10.warming[+]",
+  "text": "Mir kann's wurscht sein. Ich häng hier nackt an der Wand.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Again, Wurscht is a tad bit too Austrian.",
+  "updatedAt": "2026-10-09T07:16:47.028Z"
+ },
  "de-301c3812469a": {
   "level": "10",
   "key": "night",
@@ -724,6 +927,36 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:26:32.571Z"
+ },
+ "de-30bf689768ee": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Sobald's dunkel wird, schaut jeder bei anderen ins Fenster.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:30.068Z"
+ },
+ "de-34fdd3f3c8d9": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_10.cooling[+]",
+  "text": "Heut ist das Wetter wie die Nachbarin. Erst nett, dann kühl.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:08:54.128Z"
  },
  "de-35164c4256b3": {
   "level": "0",
@@ -765,6 +998,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:50:14.004Z"
+ },
+ "de-39f74a61a635": {
+  "level": "11",
+  "key": "cooling",
+  "path": "flavour_11.cooling[+]",
+  "text": "Ich sag's halt der Wand. Die hört mir wenigstens zu.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:02.092Z"
  },
  "de-3a787af6d916": {
   "level": "11",
@@ -811,6 +1060,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:32:15.745Z"
  },
+ "de-3d3a7508b562": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Um deine Frisur ist's eh nicht schade.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:58.258Z"
+ },
  "de-3d40ae1a5065": {
   "level": "10",
   "key": "night",
@@ -823,6 +1085,36 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T23:35:32.407Z"
+ },
+ "de-3de1cc351736": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_10.warming[+]",
+  "text": "Gleich fühlt sich jeder wie in Italien.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:16:58.040Z"
+ },
+ "de-3e0844047692": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Der Abend ist jung. Du nicht mehr.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:27.427Z"
  },
  "de-3ebe88acd3a6": {
   "level": "11",
@@ -1003,6 +1295,22 @@
   "note": "",
   "updatedAt": "2026-10-08T23:33:38.470Z"
  },
+ "de-4ae33450ecbb": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Heut ziehst du dich um wie ein Model. Schaust nur nicht so aus.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "too long",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:13.495Z"
+ },
  "de-4b134e3a656d": {
   "level": "11",
   "key": "fickle",
@@ -1028,6 +1336,19 @@
   "tags": [],
   "note": "„Zwei Wetter” sounds unnatural",
   "updatedAt": "2026-10-08T22:29:41.337Z"
+ },
+ "de-4b7816263ee7": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:15:52.594Z"
  },
  "de-4ba66db8c580": {
   "level": "10",
@@ -1058,6 +1379,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T22:16:57.952Z"
+ },
+ "de-4e4d8c2bc235": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_11.warming[+]",
+  "text": "Bitte nicht wieder die Ärmel um den Bauch knoten.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:25.565Z"
  },
  "de-4ff3983efb7a": {
   "level": "0",
@@ -1097,6 +1431,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:49:19.378Z"
+ },
+ "de-53464f569e01": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Dein Handy kriegt heut wieder mehr Blicke als ich.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:34.619Z"
  },
  "de-53f4427898ea": {
   "level": "10",
@@ -1182,6 +1529,35 @@
   "note": "",
   "updatedAt": "2026-10-08T22:25:24.458Z"
  },
+ "de-57e34fe3e9c9": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Vier Jahreszeiten an einem Tag. Und keine davon gescheit.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:11:12.607Z"
+ },
+ "de-5835c50c38dd": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Ausziehen, anziehen. Wie beim Doktor, bloß ohne Krankschreibung.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "Wie beim Arzt.",
+  "updatedAt": "2026-10-09T07:11:30.214Z"
+ },
  "de-5860f1a64e60": {
   "level": "11",
   "key": "nice",
@@ -1213,6 +1589,22 @@
   "note": "Should focus on the factvthat the outfit works all day",
   "updatedAt": "2026-10-08T22:16:09.349Z"
  },
+ "de-592e2a9f52c5": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Das Wetter ist heut nicht ganz bei Trost.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:11:45.005Z"
+ },
  "de-598c04cfcf69": {
   "level": "11",
   "key": "hot",
@@ -1238,6 +1630,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:45:55.923Z"
+ },
+ "de-5c8bc30c0133": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Gleich schickst du jedem ein Schneefoto. Die haben auch Fenster.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:55.215Z"
  },
  "de-5f2f01f9ae85": {
   "level": "11",
@@ -1265,6 +1670,21 @@
   "note": "",
   "updatedAt": "2026-10-08T23:32:50.191Z"
  },
+ "de-6381cb067e5b": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Die Hundebesitzer kommen raus. Alle gleichzeitig.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:37.394Z"
+ },
  "de-63b66890d5d2": {
   "level": "11",
   "key": "wet",
@@ -1291,6 +1711,19 @@
   "note": "Not sarcastic enough",
   "updatedAt": "2026-10-08T21:41:32.271Z"
  },
+ "de-64df60c486b2": {
+  "level": "11",
+  "key": "cool",
+  "path": "flavour_11.cool[+]",
+  "text": "Das Wetter tut dir heut nix. Das erledigst du schon selber.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [],
+  "note": "Nix is too Austrian.",
+  "updatedAt": "2026-10-09T07:20:36.767Z"
+ },
  "de-656b7c0c6050": {
   "level": "10",
   "key": "evening",
@@ -1305,6 +1738,19 @@
   ],
   "note": "Also referencing the fact that I’ll stay home. But we don’t know that. I might look at this because I’m going out. Even in the evening.",
   "updatedAt": "2026-10-08T21:38:35.406Z"
+ },
+ "de-66d19da56ecc": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Im Baumarkt gibt's wieder keinen Ventilator mehr.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:12:12.938Z"
  },
  "de-68881a4935cc": {
   "level": "0",
@@ -1391,6 +1837,22 @@
   "note": "",
   "updatedAt": "2026-10-08T21:49:30.743Z"
  },
+ "de-6ba10078dc09": {
+  "level": "11",
+  "key": "cooling",
+  "path": "flavour_11.cooling[+]",
+  "text": "Später schnorrst du dir bei wem was Warmes.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:13.057Z"
+ },
  "de-6ca043c2d0e7": {
   "level": "11",
   "key": "mild",
@@ -1459,6 +1921,21 @@
   ],
   "note": "Suggests specific layers. I don’t think it should do that on the sarcasm line",
   "updatedAt": "2026-10-08T21:33:25.377Z"
+ },
+ "de-6f71ab03040f": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_10.cooling[+]",
+  "text": "Nachher sagt jeder: Ganz schön frisch geworden. Ja, eh.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "too long"
+  ],
+  "note": "Maybe something like: nachher sagt wieder jeder: ganz schön frisch geworden“. Without the ja eh.",
+  "updatedAt": "2026-10-09T07:09:47.723Z"
  },
  "de-6fe381539e29": {
   "level": "11",
@@ -1574,6 +2051,19 @@
   "note": "",
   "updatedAt": "2026-10-08T23:37:10.123Z"
  },
+ "de-766093b80c6f": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Früher war's viel kälter, sagen die Alten. Die sagen viel.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [],
+  "note": "I like the “the older generation says everything was like that already in the past” commentary. But this one doesn’t land with the “die sagen viel“ at the end.",
+  "updatedAt": "2026-10-09T07:07:29.083Z"
+ },
  "de-76b2e95142d9": {
   "level": "0",
   "key": "s1_steady",
@@ -1613,6 +2103,34 @@
   "note": "",
   "updatedAt": "2026-10-08T21:50:23.167Z"
  },
+ "de-77bc8868b52e": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "Und dann wundern sich alle, warum hier alles so grün ist.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:18:51.425Z"
+ },
+ "de-77fa3c71b4ed": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Morgen drückst du dann wieder fünfmal die Schlummertaste.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:39.435Z"
+ },
  "de-7810a909fb9f": {
   "level": "0",
   "key": "s1_steady",
@@ -1640,6 +2158,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:33:37.263Z"
+ },
+ "de-799aea7f9d5f": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Du schwitzt ja schon beim Draufschauen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:49.579Z"
  },
  "de-7a5a61ffba8f": {
   "level": "11",
@@ -1706,6 +2239,19 @@
   "note": "",
   "updatedAt": "2026-10-08T23:40:51.398Z"
  },
+ "de-7f0b0e24c1ac": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Endlich passt das Wetter mal zu deinem Gesicht.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:25:03.855Z"
+ },
  "de-7f1133170072": {
   "level": "0",
   "key": "s4_cooling",
@@ -1734,6 +2280,19 @@
   "note": "",
   "updatedAt": "2026-10-08T23:42:12.660Z"
  },
+ "de-7fbce4aa0163": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_11.warming[+]",
+  "text": "Nachher schwitzt du, als hättest du was geleistet.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:29.288Z"
+ },
  "de-81585701e791": {
   "level": "0",
   "key": "s1_steady",
@@ -1759,6 +2318,22 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:45:17.312Z"
+ },
+ "de-825bbdf63de4": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Morgen ist auch noch ein Tag. Leider.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:14:40.018Z"
  },
  "de-825e30fadd5f": {
   "level": "11",
@@ -1801,6 +2376,21 @@
   "note": "",
   "updatedAt": "2026-10-08T23:39:36.054Z"
  },
+ "de-83224ef09fbf": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Tanzen tust du heut hoffentlich nicht. Ich hab's schon gesehen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:40.650Z"
+ },
  "de-832489f114ad": {
   "level": "11",
   "key": "nice",
@@ -1827,6 +2417,21 @@
   "note": "",
   "updatedAt": "2026-10-08T23:36:56.819Z"
  },
+ "de-8515c14147b1": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Wetterfühlig bist du heut wieder. Wie immer, wenn's dir passt.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:24.708Z"
+ },
  "de-851a21fa5987": {
   "level": "0",
   "key": "s7_evening",
@@ -1852,6 +2457,34 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:22:18.691Z"
+ },
+ "de-85a02584a57e": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Draußen sind jetzt nur noch Katzen und Betrunkene. Beide laut.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:14:45.534Z"
+ },
+ "de-860446f434ad": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "Im Regen rennen alle, als wär's ein Stück weiter trockener.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:19:00.797Z"
  },
  "de-863ff57192bb": {
   "level": "11",
@@ -1976,6 +2609,32 @@
   "note": "",
   "updatedAt": "2026-10-08T22:31:35.228Z"
  },
+ "de-8e69e2aaa36f": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Gleich sagt wieder einer: Ist aber eine trockene Hitze.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:12:18.038Z"
+ },
+ "de-8e9e987f6359": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Freuen tun sich nur die Kinder. Die müssen ja nicht schippen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:16:01.002Z"
+ },
  "de-8eb64d5b987a": {
   "level": "10",
   "key": "nice",
@@ -1988,6 +2647,34 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:41:37.109Z"
+ },
+ "de-926871a3bed8": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Noch eine Folge, sagst du. Seit drei Folgen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:47.257Z"
+ },
+ "de-93049a7e2597": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_10.warming[+]",
+  "text": "Am Ende haben die im T-Shirt recht. Leider.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:17:07.493Z"
  },
  "de-930ee0d32064": {
   "level": "10",
@@ -2018,6 +2705,22 @@
   "note": "",
   "updatedAt": "2026-10-08T23:35:54.223Z"
  },
+ "de-9684a891a9b3": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_10.cooling[+]",
+  "text": "Die Cafés legen wieder Decken raus. Reingehen tut ja keiner.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:02.272Z"
+ },
  "de-984790fef6e8": {
   "level": "11",
   "key": "wet",
@@ -2044,6 +2747,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:41:49.340Z"
  },
+ "de-9960d146b4c6": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Gleich reißt einer zum Stoßlüften alle Fenster auf.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:07:38.822Z"
+ },
  "de-997d021e8d83": {
   "level": "0",
   "key": "s5_snow",
@@ -2056,6 +2772,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:19:13.953Z"
+ },
+ "de-99d6eb2436bc": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Wie viele Schirme hast du heuer eigentlich schon verloren?",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:25:10.751Z"
  },
  "de-9a5c5b48645c": {
   "level": "10",
@@ -2082,6 +2811,34 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:45:21.227Z"
+ },
+ "de-9b62ea078490": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Bei der Kälte schmeckt sogar Glühwein.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:07:42.627Z"
+ },
+ "de-9e2693cc3e8f": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Deine Nase wird heut noch röter. Wenn das überhaupt geht.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:19:32.644Z"
  },
  "de-9e340fd0c0bc": {
   "level": "11",
@@ -2154,6 +2911,19 @@
   "note": "Not sarcastic",
   "updatedAt": "2026-10-08T21:41:58.811Z"
  },
+ "de-a2290cf5950e": {
+  "level": "11",
+  "key": "cool",
+  "path": "flavour_11.cool[+]",
+  "text": "Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:20:44.781Z"
+ },
  "de-a22cc2854ade": {
   "level": "11",
   "key": "hot",
@@ -2213,6 +2983,22 @@
   "note": "",
   "updatedAt": "2026-10-08T23:39:43.120Z"
  },
+ "de-a5bd8c439208": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "Endlich hast du heut was zu tun.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear",
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:36.103Z"
+ },
  "de-a7467b911c0a": {
   "level": "11",
   "key": "cold",
@@ -2253,6 +3039,21 @@
   ],
   "note": "I like it, but it sounds too much like I’m looking at a rhyme book, not a sarcastic app talking to me.",
   "updatedAt": "2026-10-08T21:34:32.077Z"
+ },
+ "de-a886876528c9": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_10.warming[+]",
+  "text": "Dann zieht sich jeder aus, als hätt er was herzuzeigen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:17:21.230Z"
  },
  "de-a8baccfd7a0f": {
   "level": "11",
@@ -2298,6 +3099,32 @@
   "note": "",
   "updatedAt": "2026-10-08T21:42:09.791Z"
  },
+ "de-ac2c2b6189d8": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "Geh raus, sonst wirst du so grau wie ich.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:10.180Z"
+ },
+ "de-ae98687b246d": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Egal, was du heut noch vorhast, ich wär dagegen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:53.677Z"
+ },
  "de-af6252422a4e": {
   "level": "10",
   "key": "cold",
@@ -2310,6 +3137,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:34:37.175Z"
+ },
+ "de-b0310ac03bad": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Und in jedem Geschäft dann wieder Sauna.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "I like it the idea, but the German phrasing doesn’t sound super natural.",
+  "updatedAt": "2026-10-09T07:08:24.632Z"
  },
  "de-b0c624e68d94": {
   "level": "11",
@@ -2379,6 +3221,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T22:20:36.582Z"
+ },
+ "de-b60b7a1fe4a6": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Deine Hände sind heut fast so kalt wie dein Herz.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:19:38.974Z"
  },
  "de-b66eb67b15f8": {
   "level": "0",
@@ -2490,6 +3345,21 @@
   "note": "I like it, keep it, but this might sound boring after a bit. Great for the first cold day in a while or something like that.",
   "updatedAt": "2026-10-08T21:35:36.684Z"
  },
+ "de-bc8638a99030": {
+  "level": "10",
+  "key": "cool",
+  "path": "flavour_10.cool[+]",
+  "text": "Heut hat das Wetter den Charme von einem Wartezimmer.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:08:46.848Z"
+ },
  "de-bddc4b8b7cbd": {
   "level": "10",
   "key": "fickle",
@@ -2585,6 +3455,19 @@
   "note": "",
   "updatedAt": "2026-10-08T22:17:56.831Z"
  },
+ "de-c06b2dca843c": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Du hängst eh gleich am Heizkörper wie eine Katze.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "The “eh“ is too Austrian.",
+  "updatedAt": "2026-10-09T07:20:08.024Z"
+ },
  "de-c2780a29831b": {
   "level": "11",
   "key": "cold",
@@ -2597,6 +3480,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:46:59.699Z"
+ },
+ "de-c2a177704fd2": {
+  "level": "11",
+  "key": "cooling",
+  "path": "flavour_11.cooling[+]",
+  "text": "Nachher zitterst du wieder wie ein Chihuahua.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:21:19.254Z"
  },
  "de-c2f0e089651d": {
   "level": "10",
@@ -2623,6 +3519,34 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T21:49:50.488Z"
+ },
+ "de-c49a61480c83": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_11.fickle[+]",
+  "text": "An, aus, wieder an. Wie deine Beziehungen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:41.491Z"
+ },
+ "de-c561b9d1954c": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_10.warming[+]",
+  "text": "Heut sitzt in der Bahn Daunenjacke neben Flipflops.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:17:30.057Z"
  },
  "de-c69bb7120768": {
   "level": "10",
@@ -2651,6 +3575,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:20:05.604Z"
+ },
+ "de-c81848991e26": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Bei dem Wetter muss man raus, heißt's immer. Muss man gar nix.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [
+   "robotic"
+  ],
+  "note": "„Muss man gar nix“ Sounds a bit robotic",
+  "updatedAt": "2026-10-09T07:13:07.551Z"
  },
  "de-c9c1c2181340": {
   "level": "11",
@@ -2719,6 +3658,21 @@
   "note": "",
   "updatedAt": "2026-10-08T22:21:59.477Z"
  },
+ "de-ce25906a7b20": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Mach einen Schneeengel. Ein Engel wirst du sonst eh nicht.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:01.311Z"
+ },
  "de-cfa4f04a3c7c": {
   "level": "10",
   "key": "fickle",
@@ -2731,6 +3685,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T23:33:49.337Z"
+ },
+ "de-d14f42c43ab9": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Tropf mir nachher bloß nicht wieder alles voll.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:25:16.266Z"
  },
  "de-d1a86d284370": {
   "level": "10",
@@ -2746,6 +3713,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T23:34:48.996Z"
+ },
+ "de-d33627e12a84": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_11.wet[+]",
+  "text": "Lass mich raten: Heut ziehst du die Wildlederschuhe an.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:25:22.579Z"
  },
  "de-d35db9fcb9b8": {
   "level": "10",
@@ -2789,6 +3769,21 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T22:17:17.244Z"
+ },
+ "de-d8520f7ff9e6": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Abends joggen dann die, die gesehen werden wollen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:48.681Z"
  },
  "de-d869ae209e26": {
   "level": "11",
@@ -2885,6 +3880,21 @@
   "note": "",
   "updatedAt": "2026-10-08T22:20:08.384Z"
  },
+ "de-daf060f5bca8": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_11.warming[+]",
+  "text": "Was du nachher ausziehst, siehst du so schnell nicht wieder.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:35.434Z"
+ },
  "de-db6e41d371d9": {
   "level": "0",
   "key": "s2_shower",
@@ -2958,6 +3968,21 @@
   "note": "",
   "updatedAt": "2026-10-08T23:33:18.566Z"
  },
+ "de-dde3adcde19d": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Du hinterlässt Spuren im Schnee. Sonst ja nirgends.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:17.510Z"
+ },
  "de-de586ba2c22a": {
   "level": "11",
   "key": "hot",
@@ -2970,6 +3995,19 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:30:24.720Z"
+ },
+ "de-e0361ce6b00d": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Heut ist der Schatten dein bester Freund. Dein einziger.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:54.432Z"
  },
  "de-e1710be07bc8": {
   "level": "0",
@@ -3025,6 +4063,36 @@
   "note": "Remove the last sentence",
   "updatedAt": "2026-10-08T22:32:02.559Z"
  },
+ "de-e662d6534806": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "Heut liegt's ausnahmsweise nicht am Wetter.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:21.383Z"
+ },
+ "de-e6717e9ac037": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_11.warming[+]",
+  "text": "Später fühlst du dich wie ein neuer Mensch. Bist du aber nicht.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:41.264Z"
+ },
  "de-e83324e02f26": {
   "level": "0",
   "key": "s4_cooling",
@@ -3068,6 +4136,22 @@
   "note": "",
   "updatedAt": "2026-10-08T22:17:30.996Z"
  },
+ "de-ea140cb409e3": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Am Stammtisch wird jetzt wieder die Welt gerettet.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:56.706Z"
+ },
  "de-eab6bb38d02c": {
   "level": "10",
   "key": "night",
@@ -3107,6 +4191,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:39:59.600Z"
  },
+ "de-ee41aa7b1aa7": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Du stehst heut ewig vor der Tiefkühltruhe und kaufst nix.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:03.603Z"
+ },
  "de-ee897ffab348": {
   "level": "10",
   "key": "nice",
@@ -3136,6 +4235,22 @@
   "note": "",
   "updatedAt": "2026-10-08T23:33:26.065Z"
  },
+ "de-f118f2905891": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_10.cooling[+]",
+  "text": "Später frieren wieder die, die alles besser wissen.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:10:11.242Z"
+ },
  "de-f1d2f703e824": {
   "level": "11",
   "key": "nice",
@@ -3151,6 +4266,21 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T23:40:02.920Z"
+ },
+ "de-f26a862e9459": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_10.fickle[+]",
+  "text": "Da kriegt ja sogar das Thermometer Kreislauf.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:11:52.166Z"
  },
  "de-f383b20e2868": {
   "level": "11",
@@ -3197,6 +4327,21 @@
   "note": "Not sarcastic",
   "updatedAt": "2026-10-08T22:23:09.750Z"
  },
+ "de-f6f2525ce700": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Du heizt eh wieder bei gekipptem Fenster.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:20:17.101Z"
+ },
  "de-f7e630add820": {
   "level": "10",
   "key": "wet",
@@ -3224,6 +4369,19 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T23:35:27.827Z"
+ },
+ "de-f8c986a9a625": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_10.wet[+]",
+  "text": "„Es gibt kein schlechtes Wetter.“ Doch, gibt's.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:19:06.777Z"
  },
  "de-f99586262e21": {
   "level": "11",
@@ -3292,6 +4450,49 @@
   "note": "",
   "updatedAt": "2026-10-08T22:19:23.701Z"
  },
+ "de-fb75c4c9b7c5": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Mach aus dem Abend, was du willst. Also nix Gescheites.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:22:03.941Z"
+ },
+ "de-fc43e2b329c0": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_11.warming[+]",
+  "text": "Wenigstens einer taut heut auf. Du bist's nicht.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:24:49.319Z"
+ },
+ "de-fcac9088bbed": {
+  "level": "11",
+  "key": "nice",
+  "path": "flavour_11.nice[+]",
+  "text": "So ein Wetter hätten sich andere mehr verdient.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T07:23:26.992Z"
+ },
  "de-fec578809aa1": {
   "level": "10",
   "key": "nice",
@@ -3330,5 +4531,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:18:45.776Z"
+ },
+ "de-ffb8a6ea692f": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_10.nice[+]",
+  "text": "Jede Parkbank ist gleich wieder besetzt. Mit Leuten.",
+  "source": "candidate",
+  "batch": "D4",
+  "round": "2026-10-topup",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T07:13:14.796Z"
  }
 }

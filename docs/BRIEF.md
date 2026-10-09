@@ -115,6 +115,28 @@ state of all.
 
 Pools should be sized by share: the common moods repeat most.
 
+### What round 4 added (the top-up)
+
+172 lines, one writer per language, written in volume. German 3 stars,
+39 keeps, 44 vetoes; English 0 stars, 42 keeps, 44 vetoes. "Not funny"
+was the tag 72 times. Volume costs quality: write fewer lines and
+throw more away before the owner sees them.
+
+- **Standard German, not Austrian.** "eh", "nix", "wurscht", "Ja, eh",
+  "Leut'" were all flagged as too Austrian for a German-wide audience,
+  even in lines the owner liked.
+- **Concrete scenes earn stars.** Every German star is something the
+  reader has seen: Glühwein, the hardware store out of fans, "drei
+  Flocken, und schon Schneechaos", the Hausmeister's big day, everyone
+  staring at the Regenradar. Abstract quips get "not funny".
+- **Generation and neighbour commentary works** ("früher war's kälter",
+  the late-night washing machine), when the ending lands.
+- **Warming and cooling stay hard.** The fact line already says what
+  changes; few lines survived. They also draw from the `cool` pool now
+  (`block.liquid`), so they're never empty.
+- **English keeps but doesn't star.** 10 stars in four rounds. The
+  screen voice is safe; it needs a sharper writer or a native ear.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

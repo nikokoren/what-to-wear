@@ -50,16 +50,34 @@
   "flavour_10": {
     "nice": [
       "Bei dem Wetter kann man nicht mal gescheit schlecht drauf sein.",
-      "Nichts auszusetzen. Das ärgert mich fast."
+      "Bei dem Wetter muss man raus, heißt's immer. Muss man gar nicht.",
+      "Nichts auszusetzen. Das ärgert mich fast.",
+      "Wetter wie im Reiseprospekt. Bloß halt hier."
+    ],
+    "cool": [
+      "Ein Wetter für Leute ohne Meinung.",
+      "Nicht mal das Wetter taugt heut als Ausrede."
+    ],
+    "warming": [
+      "Mir kann's egal sein. Ich häng hier nackt an der Wand."
+    ],
+    "cooling": [
+      "Nachher sagt wieder jeder: Ganz schön frisch geworden."
     ],
     "cold": [
+      "Bei der Kälte schmeckt sogar Glühwein.",
       "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
       "Saukalt. Mehr gibt's nicht zu sagen.",
       "Da hätt die Oma keinen aus dem Haus gelassen.",
+      "Gleich reißt einer zum Stoßlüften alle Fenster auf.",
+      "Irgendein Depp läuft trotzdem in kurzen Hosen rum.",
       "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
       "Und dann gibt's Leut', die sagen, sie mögen den Winter."
     ],
     "hot": [
+      "Im Baumarkt gibt's wieder keinen Ventilator mehr.",
+      "Bei der Hitze stellen sich die Leute dann noch an den Grill.",
+      "Gleich sagt wieder einer: Ist aber eine trockene Hitze.",
       "Heut ist mir sogar das Meckern zu anstrengend.",
       "Hitzefrei gibt's nur für Schüler. Der Rest muss durch.",
       "In der Bahn riecht's heut wieder nach allen.",
@@ -70,16 +88,24 @@
       "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
       "Nass ist's. War ja klar.",
       "Regen. Wieder. Natürlich.",
-      "Hauptsache, die Schnecken haben was davon."
+      "Hauptsache, die Schnecken haben was davon.",
+      "Im Regen rennen alle, als wär's ein Stück weiter trockener.",
+      "Mein Mitleid hält sich in Grenzen. Ich bleib im Trockenen.",
+      "Und dann wundern sich alle, warum hier alles so grün ist.",
+      "„Es gibt kein schlechtes Wetter.“ Doch, gibt's."
     ],
     "snow": [
       "Der Hausmeister hat wieder seinen großen Tag.",
+      "Drei Flocken, und schon heißt's wieder Schneechaos.",
+      "Der Schneepflug kommt wieder erst, wenn alles getaut ist.",
+      "Freuen tun sich nur die Kinder. Die müssen ja nicht schippen.",
       "Gleich fährt keine Bahn mehr, wetten?",
       "Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.",
       "Schneeketten hat natürlich wieder keiner dabei."
     ],
     "fickle": [
       "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
+      "Ausziehen, anziehen. Wie beim Arzt, bloß ohne Krankschreibung.",
       "Das Wetter macht heut, was es will. Wie alle anderen auch.",
       "So ein Hin und Her hält ja kein Mensch aus. Ich schon gar nicht.",
       "Zwiebelprinzip nennen die das. Ich nenn's Theater."
@@ -93,7 +119,8 @@
       "Im Bett ist's eh am schönsten. Das Wetter kann mich mal.",
       "Nachts kann ich wenigstens ungestört grantig sein.",
       "So spät mach ich nur noch das Nötigste. Wie immer eigentlich.",
-      "Spät ist's. Ich zeig das hier trotzdem weiter."
+      "Spät ist's. Ich zeig das hier trotzdem weiter.",
+      "Und wieder hält jemand nachts Wäschewaschen für eine gute Idee."
     ],
     "theme_xmas": [
       "Stille Nacht. Das Wetter hält sich dran.",
@@ -104,36 +131,59 @@
     "nice": [
       "Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.",
       "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
-      "Draußen wärst heut sogar du erträglich."
+      "Draußen wärst heut sogar du erträglich.",
+      "Geh raus, sonst wirst du so grau wie ich.",
+      "So ein Wetter hätten sich andere mehr verdient."
     ],
     "cool": [
       "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
+      "Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.",
+      "Ideales Fensterputzwetter. Deine hätten's nötig.",
       "Nichts los da draußen. Wie bei dir am Wochenende."
+    ],
+    "warming": [
+      "Bitte nicht wieder die Ärmel um den Bauch knoten.",
+      "Nachher schwitzt du, als hättest du was geleistet."
+    ],
+    "cooling": [
+      "Als ob dein Schrank sowas hergibt.",
+      "Nachher zitterst du wieder wie ein Chihuahua."
     ],
     "cold": [
       "Dick eingepackt gefällst du mir am besten. Man sieht weniger.",
       "Kalte Füße kriegst du heut nicht nur vor Entscheidungen.",
+      "Bis du heut alles anhast, ist eh schon Frühling.",
+      "Deine Hände sind heut fast so kalt wie dein Herz.",
+      "Du hängst gleich wieder am Heizkörper wie eine Katze.",
       "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
       "Ohne Mütze rausgehen und dann jammern. Kennen wir schon.",
       "Und du wieder in der dünnen Jacke. Na dann viel Spaß."
     ],
     "hot": [
       "Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.",
+      "Heut ist der Schatten dein bester Freund. Dein einziger.",
       "Jeder Weg ist dir heut zu weit. Also wie immer."
     ],
     "wet": [
       "Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.",
       "Du wirst nass. Und dann bin wieder ich schuld.",
+      "Endlich passt das Wetter mal zu deinem Gesicht.",
+      "Lass mich raten: Heut ziehst du die Wildlederschuhe an.",
+      "Tropf mir nachher bloß nicht wieder alles voll.",
+      "Um deine Frisur ist's eh nicht schade.",
       "Unterm Vordach auf ein Wunder warten, das kannst du.",
-      "Wer ohne Schirm geht, braucht nachher nicht jammern."
+      "Wer ohne Schirm geht, braucht nachher nicht jammern.",
+      "Wie viele Schirme hast du heuer eigentlich schon verloren?"
     ],
     "snow": [
       "Neben dir wirkt jeder Schneemann lebendig.",
       "Du und Glatteis. Das wird wieder was.",
+      "Gleich schickst du jedem ein Schneefoto. Die haben auch Fenster.",
       "Schneeballschlacht? Du triffst eh nix.",
       "Schneeschippen wär heut mal Sport für dich. Ausnahmsweise."
     ],
     "fickle": [
+      "An, aus, wieder an. Wie deine Beziehungen.",
       "Du bist heut garantiert immer eine Schicht daneben.",
       "Heut muss man mitdenken. Schlecht für dich.",
       "Heute trägst du die Jacke mehr spazieren als am Leib.",
@@ -141,6 +191,8 @@
       "Wennst heut alles richtig machst, schreib ich's mir auf."
     ],
     "evening": [
+      "Dein Handy kriegt heut wieder mehr Blicke als ich.",
+      "Egal, was du heut noch vorhast, ich wär dagegen.",
       "Feierabend. Jetzt lass mich auch in Ruhe.",
       "Red heut Abend bitte nicht wieder nur übers Wetter.",
       "Zieh was Schöneres an als das hier."
@@ -148,6 +200,7 @@
     "night": [
       "Und jetzt nicht wieder an den Kühlschrank.",
       "Nachts wirst du immer so philosophisch. Lass es.",
+      "Noch eine Folge, sagst du. Seit drei Folgen.",
       "Schlaf gut. Und bitte leiser als gestern.",
       "Schon wieder so spät? Ab ins Bett.",
       "Um die Uhrzeit noch aufs Wetter schauen. Respekt."

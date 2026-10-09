@@ -36,6 +36,15 @@ EDIT = {
     "Schnee. Gleich fährt keine Bahn mehr, wetten?": "Gleich fährt keine Bahn mehr, wetten?",
     "Du wirst heut wieder jeden fragen, ob ihm auch so heiß ist.": "Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.",
     "Kalt. Und du in der dünnen Jacke. Na servas.": None,
+    # round 4: the owner's notes ("too Austrian", rewordings)
+    "You asked for warm weather. Be specific next time.": "You asked for warm weather. Careful what you wish for.",
+    "Ausziehen, anziehen. Wie beim Doktor, bloß ohne Krankschreibung.": "Ausziehen, anziehen. Wie beim Arzt, bloß ohne Krankschreibung.",
+    "Ich bleib eh im Trockenen. Mein Mitleid hält sich in Grenzen.": "Mein Mitleid hält sich in Grenzen. Ich bleib im Trockenen.",
+    "Du hängst eh gleich am Heizkörper wie eine Katze.": "Du hängst gleich wieder am Heizkörper wie eine Katze.",
+    "Der Schneepflug kommt eh erst, wenn alles getaut ist.": "Der Schneepflug kommt wieder erst, wenn alles getaut ist.",
+    "Mir kann's wurscht sein. Ich häng hier nackt an der Wand.": "Mir kann's egal sein. Ich häng hier nackt an der Wand.",
+    "Bei dem Wetter muss man raus, heißt's immer. Muss man gar nix.": "Bei dem Wetter muss man raus, heißt's immer. Muss man gar nicht.",
+    "Im Haus schleudert um die Zeit noch eine Waschmaschine.": "Und wieder hält jemand nachts Wäschewaschen für eine gute Idee.",
     "Ohne Haube rausgehen und dann jammern. Kenn ma schon.": None,
     "Wennst ohne Schirm gehst, brauchst nachher nicht jammern.": None,
     "Feierabend. Jetzt lass mich auch in Ruh.": None,
@@ -43,6 +52,8 @@ EDIT = {
 # Round 4 split "mild" in three. The mild lines the owner kept all talk
 # about an unremarkable day, which is the steady one.
 MOOD_RENAME = {"mild": "cool"}
+# Lines the owner wrote in a note, added as written.
+OWNER = {("de", "10", "cooling"): ["Nachher sagt wieder jeder: Ganz schön frisch geworden."]}
 # Lines the owner moved to a later hour.
 MOVE = {"Nothing new from me tonight. Sleep well.": "night",
         "You've looked at me a lot today. Go to bed.": "night"}
@@ -62,6 +73,9 @@ def main():
             entry = (d["verdict"] != "star", text)  # starred lines first
             if entry not in pools[d["level"]][mood]:
                 pools[d["level"]][mood].append(entry)
+        for (l, level, mood), texts in OWNER.items():
+            if l == lang:
+                pools[level][mood] += [(False, t) for t in texts if (False, t) not in pools[level][mood]]
         path = REPO / "prototypes" / "fact-flavour" / "lang" / f"{lang}.json"
         doc = json.loads(path.read_text(encoding="utf-8"))
         for level in ("10", "11"):

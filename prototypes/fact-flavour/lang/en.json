@@ -44,16 +44,23 @@
   "flavour_10": {
     "nice": [
       "I'm a screen on a wall. Even I'd go outside today.",
+      "Days like this, I get a two-second glance. Rude, but fair.",
       "Easy day to forecast. I'll still take the credit.",
       "Lovely out. I'll be here, refreshing.",
       "Today the weather looks almost as good as I do."
     ],
     "cool": [
+      "I've had firmware updates more exciting than today.",
       "It takes real talent to make today look interesting.",
       "Other screens get to show paintings. I get today's weather."
     ],
+    "warming": [
+      "Thrilling stuff. I'm on the edge of my wall."
+    ],
     "cold": [
+      "I was grey before winter made it cool.",
       "I'm staying on the wall where it's warm.",
+      "My only weakness is the cold. Kidding, I don't have one.",
       "Today's drawing is mostly coat. I'm very proud of the coat."
     ],
     "hot": [
@@ -64,12 +71,17 @@
     ],
     "wet": [
       "I don't get wet. Perks of living indoors.",
+      "I'd make a terrible umbrella. Gorgeous, but terrible.",
       "I'll be on the wall, dry and smug.",
       "I'm very good for umbrella sales.",
-      "No sad cloud icons here. I have taste."
+      "No sad cloud icons here. I have taste.",
+      "Nothing gets me looked at like a chance of rain.",
+      "Rain makes everything shiny. I stay tastefully matte.",
+      "Rain or not, my humour stays bone dry."
     ],
     "snow": [
       "I've never seen snow. Describe it to me later.",
+      "In snow, I'd leave a perfect rectangle. Angels are for amateurs.",
       "Snow is rain with better presentation. I respect that."
     ],
     "fickle": [
@@ -79,12 +91,16 @@
       "Today has a plot twist. I've read ahead."
     ],
     "evening": [
+      "By now the other screens are all glowing. Tacky.",
+      "Evenings are for unwinding, apparently. I've never been wound.",
       "Going out is overrated. Says a screen that's never been out.",
+      "My plans for tonight: this wall. It's a great wall.",
       "The weather's the easy part of tonight."
     ],
     "night": [
       "I can hold this picture all night without power. Try that.",
       "I don't need beauty sleep. Clearly.",
+      "No blue light from me. I'm the screen that lets you sleep.",
       "Nothing new from me tonight. Sleep well."
     ],
     "theme_xmas": [
@@ -95,46 +111,78 @@
   "flavour_11": {
     "nice": [
       "Perfect weather. I can't leave the wall. What's your excuse?",
+      "A good day for pretending you'll go for a run.",
       "I'll pretend I didn't see you stay in.",
+      "Try not to make your good mood everyone's problem.",
+      "You'll open a window and feel like you've achieved something.",
       "You'll take one short walk and talk about it all week."
     ],
     "cool": [
-      "Unremarkable out there. You'll fit right in."
+      "Today's as predictable as your lunch order.",
+      "Unremarkable out there. You'll fit right in.",
+      "You'll call it 'fresh' to sound like an outdoors person.",
+      "Your usual jacket, your usual route. Living on the edge."
+    ],
+    "warming": [
+      "Taking that layer off might be the highlight of your day.",
+      "Today you're your own coat rack. Congratulations.",
+      "You'll be a bit too warm before you admit I was right."
+    ],
+    "cooling": [
+      "Carrying a layer you don't need yet. How very grown-up.",
+      "Leave it behind and you'll think of me later. Not fondly.",
+      "You'll put it on later and act like it was your idea."
     ],
     "cold": [
+      "Gloves off to use your phone, every time. Brilliant system.",
       "I've drawn you a warm coat. The least you can do is wear it.",
+      "Reading me slowly won't make it any warmer.",
       "Shoulders up by your ears all day. Very elegant.",
+      "Twice your usual walking speed today. Still not exercise.",
       "You'll make that noise once you're outside. You know the one.",
-      "You'll say it's not that cold. Your face will disagree."
+      "You'll say it's not that cold. Your face will disagree.",
+      "Your nose will turn a colour I can't even display."
     ],
     "hot": [
+      "Anything flat becomes a fan today. Not me, please.",
       "I don't sweat. You will.",
+      "You asked for warm weather. Careful what you wish for.",
       "You'll come home looking less crisp than this drawing.",
       "You'll search 'ice cream near me' later. Twice.",
       "You're about to have strong opinions about air conditioning."
     ],
     "wet": [
       "I refresh every few minutes. Wet socks don't.",
+      "If you come back soaked, don't drip near me.",
       "Try to bring the umbrella home. Unlike the last three.",
-      "Whatever the sky does, you'll say you knew. You didn't."
+      "Umbrella chicken with strangers. You always flinch first.",
+      "Whatever the sky does, you'll say you knew. You didn't.",
+      "You'll still check your phone. As if it knows something I don't."
     ],
     "snow": [
+      "'Proper snow,' you'll say. As if there's improper snow.",
       "Give it an hour, then you'll take the snow personally.",
+      "Shake the snow off before you come near me.",
       "Try not to slip. I can't call anyone.",
       "Whoever's nearby gets your snow commentary. Usually me."
     ],
     "fickle": [
+      "Complaining it's warm, then that it isn't. You've got range.",
       "I give it even odds you lose that layer by tonight.",
       "I've changed this drawing in my head twice already.",
+      "The warm bit will make you insufferable.",
       "Today's weather has more mood swings than you. Barely.",
       "You'll feel very clever for about half the day."
     ],
     "evening": [
+      "Another evening of walking past me without a thank-you.",
       "Going out? Look better than this drawing.",
       "I'll be here all night. Unlike your motivation.",
-      "Whatever your plans are, I'm not invited. Fine."
+      "Whatever your plans are, I'm not invited. Fine.",
+      "You'll read all this, then do what you were going to anyway."
     ],
     "night": [
+      "Bed's right there and you're choosing me. I'm touched.",
       "If you're heading out now, I admire the commitment.",
       "Still up? I'm a wall decoration and even I'm tired.",
       "Tomorrow-you is already annoyed with tonight-you.",
