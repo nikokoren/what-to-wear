@@ -1,0 +1,182 @@
+<title>Outfit Panels Mock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky control bar, then one row per real day: the day's curve and its panels on the left, the four views on the screen on the right. */
+:root {
+  --bg: #f1f1ee; --panel: #ffffff; --fg: #1d1f22; --muted: #62666d; --line: #dcdcd6;
+  --accent: #2f5d8a; --rain: #3b7fc4; --now: #b3362c; --curve: #1d1f22; --cut: #8a6d1f;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #16181b; --panel: #1f2226; --fg: #e8e9ea; --muted: #9ba0a7; --line: #33373d;
+  --accent: #7fb0e0; --rain: #6fa8e6; --now: #f07a6f; --curve: #e8e9ea; --cut: #d8b25a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #16181b; --panel: #1f2226; --fg: #e8e9ea; --muted: #9ba0a7; --line: #33373d;
+  --accent: #7fb0e0; --rain: #6fa8e6; --now: #f07a6f; --curve: #e8e9ea; --cut: #d8b25a; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); padding: 0 16px 48px }
+.wrap { max-width: 1280px; margin: 0 auto }
+header.top { padding-block: 22px 10px; display: flex; flex-direction: column; gap: 8px }
+h1 { font: 700 28px/1.1 var(--display); margin: 0; text-wrap: balance }
+.lede { margin: 0; max-width: 74ch; color: var(--muted) }
+.lede b { color: var(--fg); font-weight: 600 }
+.rules { margin: 0; padding-left: 20px; max-width: 80ch; color: var(--muted); font-size: 14px; display: grid; gap: 2px }
+.rules b { color: var(--fg); font-weight: 600 }
+.controls { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 12px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center }
+.group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap }
+.label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600 }
+.seg { display: flex; gap: 4px; flex-wrap: wrap }
+.seg button { font: 500 13px var(--body); border: 1px solid var(--line); background: var(--panel); color: var(--fg); border-radius: 5px; padding: 5px 11px; cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg) }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+section.day { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 24px; padding-block: 28px; border-bottom: 1px solid var(--line) }
+@media (max-width: 860px) { section.day { grid-template-columns: minmax(0, 1fr) } }
+.info { display: flex; flex-direction: column; gap: 10px; min-width: 0 }
+.info h2 { font: 600 19px/1.25 var(--display); margin: 0; text-wrap: balance }
+.where { font: 13px var(--mono); color: var(--muted) }
+.chart svg { width: 100%; height: auto; display: block }
+.chart text { font: 10px var(--mono); fill: var(--muted) }
+.key { font-size: 12px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap }
+.key i { display: inline-block; width: 10px; height: 3px; vertical-align: middle; margin-right: 4px }
+.strip { display: flex; flex-wrap: wrap; gap: 6px }
+.chip { font: 12px var(--mono); border: 1px solid var(--line); background: var(--panel); border-radius: 4px; padding: 3px 7px; font-variant-numeric: tabular-nums }
+.chip b { font-weight: 500; color: var(--fg) }
+.chip.now { border-color: var(--now) }
+.words { font-size: 14px; display: flex; flex-direction: column; gap: 2px }
+.words .fact { font-weight: 600 }
+.words .flav { color: var(--muted) }
+.words .none { color: var(--muted); font-style: italic }
+.shot { min-width: 0; display: flex; flex-direction: column; gap: 6px }
+.shot img { width: 100%; height: auto; border-radius: 4px; display: block; background: #c8c8c8 }
+.shot .cap { font: 12px var(--mono); color: var(--muted) }
+.notes { padding-block: 28px 0; max-width: 80ch; color: var(--muted); font-size: 14px }
+.notes h2 { font: 600 20px/1.2 var(--display); color: var(--fg); margin: 0 0 8px }
+.notes ul { margin: 0; padding-left: 20px; display: grid; gap: 4px }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Outfit Panels Mock</h1>
+    <p class="lede">Seven real days from station records, rendered through the actual markup with TRMNL's own styles. The day is shown as <b>equal panels, left to right</b>: what to wear now, then at each change. A day that doesn't change keeps one panel. Every image shows all four views on the chosen device and orientation. The drawings are still the placeholders.</p>
+    <ul class="rules">
+      <li><b>Today only.</b> Changes count until 21:00; nothing about tomorrow is drawn.</li>
+      <li><b>A change</b> is an outfit step held for two hours, or rain or snow starting (one likely hour is enough) or stopping (two dry hours).</li>
+      <li><b>At most three panels.</b> Changes less than two hours apart merge, outfit changes win over rain changes, and two panels that would look the same become one.</li>
+      <li><b>Now</b> shows rain only while it falls. Rain later appears in the panel where it happens.</li>
+      <li><b>Words.</b> One panel: "works all day", plus the sarcastic line at On. Two or three panels: only the sarcastic line, and nothing at Off.</li>
+    </ul>
+  </header>
+
+  <div class="controls">
+    <div class="group"><span class="label">Language</span><div class="seg" id="c-lang"></div></div>
+    <div class="group"><span class="label">Sarcasm</span><div class="seg" id="c-sarc"></div></div>
+    <div class="group"><span class="label">Device</span><div class="seg" id="c-dev"></div></div>
+    <div class="group"><span class="label">Orientation</span><div class="seg" id="c-orient"></div></div>
+    <div class="group"><span class="label">Drawings</span><div class="seg" id="c-shape"></div></div>
+  </div>
+
+  <div id="days"></div>
+
+  <div class="notes">
+    <h2>What to look at</h2>
+    <ul>
+      <li>Square against tall drawings: tall ones let three panels sit closer and larger, mostly on landscape screens.</li>
+      <li>The quarter view in portrait (240 by 400 on the OG) stacks three tiny drawings. It may need to fall back to the "now" drawing alone.</li>
+      <li>On the half view lying wide, the words sit beside the panels so the drawings keep the full height.</li>
+      <li>The two old rain drawings have an umbrella reaching the edges; the tall crop cuts it. Redrawn tall, it wouldn't.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+const DATA = /*DATA*/null || { days: [] };
+const ui = { lang: "en", sarc: "10", dev: "og", orient: "l", shape: "tall" };
+try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-panels-mock") || "{}")); } catch (e) {}
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const HOUR = (label) => {
+  if (label === "noon") return 12;
+  if (label === "midnight") return 0;
+  const m = /^(\d+) (am|pm)$/.exec(label);
+  if (m) return (+m[1] % 12) + (m[2] === "pm" ? 12 : 0);
+  const d = /^(\d+) Uhr$/.exec(label);
+  return d ? +d[1] : null;
+};
+const NAME = { bundled: "winter coat, hat", coat: "winter coat", jacket: "jacket", sweater: "sweater", tee_pants: "T-shirt", tee_shorts: "shorts", heat: "tank top", extreme_heat: "tank top, hat" };
+const DRESS = (slug) => { const m = /^(.*)_(dry|rain|snow)$/.exec(slug); return NAME[m[1]] + (m[2] === "rain" ? " + umbrella" : m[2] === "snow" ? ", snow" : ""); };
+
+function seg(id, opts, field) {
+  $(id).replaceChildren(...opts.map(([v, label]) => {
+    const b = el("button", null, label); b.type = "button";
+    b.setAttribute("aria-pressed", String(ui[field] === v));
+    b.onclick = () => { ui[field] = v; try { localStorage.setItem("wtw-panels-mock", JSON.stringify(ui)); } catch (e) {} render(); };
+    return b;
+  }));
+}
+
+function chart(day, starts) {
+  const W = 250, H = 96, pl = 26, pr = 6, pt = 8, pb = 18;
+  const t = day.temps, lo = Math.floor(Math.min(...t) / 5) * 5, hi = Math.ceil(Math.max(...t) / 5) * 5 || lo + 5;
+  const x = (h) => pl + (W - pl - pr) * h / 23, y = (v) => pt + (H - pt - pb) * (hi - v) / ((hi - lo) || 1);
+  const ns = "http://www.w3.org/2000/svg", svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `Feels-like temperature through the day, ${Math.min(...t).toFixed(0)} to ${Math.max(...t).toFixed(0)} °C`);
+  const add = (tag, attrs, text) => { const n = document.createElementNS(ns, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text) n.textContent = text; svg.append(n); return n; };
+  for (const v of [lo, hi]) {
+    add("line", { x1: pl, x2: W - pr, y1: y(v), y2: y(v), stroke: "var(--line)", "stroke-width": 1 });
+    add("text", { x: pl - 4, y: y(v) + 3, "text-anchor": "end" }, `${v}°`);
+  }
+  add("rect", { x: x(21), y: pt, width: W - pr - x(21), height: H - pt - pb, fill: "var(--line)", opacity: 0.5 });
+  day.wet.forEach((w, h) => { if (w) add("rect", { x: x(h) - 3, y: H - pb + 2, width: 6, height: 4, fill: "var(--rain)" }); });
+  for (const s of starts) add("line", { x1: x(s), x2: x(s), y1: pt, y2: H - pb, stroke: "var(--cut)", "stroke-width": 1.5 });
+  add("line", { x1: x(day.hour), x2: x(day.hour), y1: pt, y2: H - pb, stroke: "var(--now)", "stroke-width": 1.5, "stroke-dasharray": "3 2" });
+  add("polyline", { points: t.map((v, h) => `${x(h)},${y(v)}`).join(" "), fill: "none", stroke: "var(--curve)", "stroke-width": 1.75, "stroke-linejoin": "round" });
+  add("circle", { cx: x(day.hour), cy: y(t[day.hour]), r: 3, fill: "var(--now)" });
+  for (const h of [0, 6, 12, 18]) add("text", { x: x(h), y: H - 2, "text-anchor": "middle" }, String(h).padStart(2, "0"));
+  return svg;
+}
+
+function render() {
+  seg("c-lang", [["en", "English"], ["de", "Deutsch"]], "lang");
+  seg("c-sarc", [["0", "Off"], ["10", "On"]], "sarc");
+  seg("c-dev", [["og", "TRMNL OG"], ["x", "TRMNL X"]], "dev");
+  seg("c-orient", [["l", "Landscape"], ["p", "Portrait"]], "orient");
+  seg("c-shape", [["square", "Square, as drawn"], ["tall", "Tall, 2:3"]], "shape");
+  $("days").replaceChildren(...DATA.days.map((day) => {
+    const w = day.words[`${ui.lang}_${ui.sarc}`];
+    const en = day.words[`en_${ui.sarc}`];
+    const starts = en.labels.slice(1).map(HOUR).filter((h) => h != null);
+    const sec = el("section", "day");
+    const info = el("div", "info");
+    info.append(el("h2", null, day.title));
+    info.append(el("div", "where", `${day.city} · ${day.date} · ${String(day.hour).padStart(2, "0")}:30`));
+    const c = el("div", "chart"); c.append(chart(day, starts)); info.append(c);
+    const key = el("div", "key");
+    key.innerHTML = '<span><i style="background:var(--curve)"></i>feels like, °C</span><span><i style="background:var(--rain)"></i>rain likely</span><span><i style="background:var(--now)"></i>now</span><span><i style="background:var(--cut)"></i>panel starts</span>';
+    info.append(key);
+    const strip = el("div", "strip");
+    w.slugs.forEach((s, i) => {
+      const chip = el("span", "chip" + (i === 0 ? " now" : ""));
+      const b = el("b", null, w.labels[i]); chip.append(b, document.createTextNode(" " + DRESS(s)));
+      strip.append(chip);
+    });
+    info.append(strip);
+    const words = el("div", "words");
+    if (w.fact) words.append(el("span", "fact", w.fact));
+    if (w.flavour) words.append(el("span", "flav", w.flavour));
+    if (!w.fact && !w.flavour) words.append(el("span", "none", "No words on this screen."));
+    info.append(words);
+    const shot = el("div", "shot");
+    const img = el("img"); img.loading = "lazy";
+    img.src = day.shots[`${ui.lang}_${ui.sarc}_${ui.dev}_${ui.orient}_${ui.shape}`];
+    img.alt = `The four views on ${ui.dev === "x" ? "TRMNL X" : "TRMNL OG"}, ${ui.orient === "p" ? "portrait" : "landscape"}: ${w.labels.map((l, i) => l + ", " + DRESS(w.slugs[i])).join("; ")}`;
+    shot.append(img, el("div", "cap", `${ui.dev === "x" ? "TRMNL X" : "TRMNL OG"} · ${ui.orient === "p" ? "portrait" : "landscape"} · ${ui.shape === "tall" ? "tall drawings" : "square drawings"} · full, half wide, half tall, quarter`));
+    sec.append(info, shot);
+    return sec;
+  }));
+}
+render();
+</script>

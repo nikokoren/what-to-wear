@@ -1,0 +1,259 @@
+{%- comment %}
+============ PROTOTYPE: OUTFIT PANELS ============
+The day as equal panels, left to right: what to wear now, then at each
+change. One panel when nothing changes. Today only: the forecast window
+ends at DAY_END_HOUR, and nothing about tomorrow is ever drawn.
+
+A panel is a stretch of the day, from one change to the next:
+  - a change is an outfit band crossed for two hours running (the
+    same rank lists the text logic uses), rain or snow starting (one
+    hour at RAIN_HIGH is enough: a shower counts, as in the text), or
+    two dry hours ending it;
+  - tee_pants and tee_shorts count as one outfit later in the day: legs
+    are decided at the door;
+  - the "now" panel shows rain only if it is falling now; a later panel
+    shows it if it starts with that panel, or anywhere inside it once
+    panels are merged;
+  - at most three panels. Outfit changes win; a rain change only gets
+    its own panel while there is room, and otherwise wets the panel it
+    falls in.
+
+Text: one panel says "this works all day" (a steady fact wording) and
+adds the sarcastic line at On and 11. Two or three panels show only the
+sarcastic line, and nothing at Off.
+
+Appended to the end of the shared markup by prototypes/panels/build.py,
+after the fact + flavour block and the picture.
+{%- endcomment %}
+{%- assign panel_n = 1 -%}
+{%- assign panel_slugs = '' -%}
+{%- assign panel_labels = '' -%}
+{%- assign panel_fact = '' -%}
+{%- assign panel_flavour = '' -%}
+{%- if is_error == false -%}
+  {%- assign PN = texts.panels -%}
+  {%- assign p_now = PN.now | default: 'Now' -%}
+
+  {%- comment %} Every change, in order: hour index, kind (T outfit, P rain), and the state after it. {%- endcomment %}
+  {%- assign b_idx = '' -%}
+  {%- assign b_kind = '' -%}
+  {%- assign b_rank = '' -%}
+  {%- assign b_wet = '' -%}
+  {%- assign b_snow = '' -%}
+  {%- assign b_n = 0 -%}
+  {%- assign cur_rank = band_rank -%}
+  {%- assign cur_wet = is_now_precip -%}
+  {%- assign cur_snow = is_now_snow -%}
+  {%- if show_future_suggestions == 'on' and has_future_window and rank_hi_list -%}
+    {%- for r in rank_hi_list -%}
+      {%- assign k = forloop.index0 -%}
+      {%- assign i = start_index | plus: k -%}
+      {%- assign hi = r | plus: 0 -%}
+      {%- assign lo = rank_lo_list[k] | plus: 0 -%}
+      {%- assign new_rank = cur_rank -%}
+      {%- if hi > cur_rank -%}
+        {%- assign new_rank = hi -%}
+      {%- elsif lo < cur_rank -%}
+        {%- assign new_rank = lo -%}
+      {%- endif -%}
+      {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
+        {%- assign new_rank = cur_rank -%}
+      {%- endif -%}
+
+      {%- assign j = i | plus: 1 -%}
+      {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+      {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+      {%- assign new_wet = cur_wet -%}
+      {%- assign new_snow = cur_snow -%}
+      {%- comment %} One likely hour starts it (a shower counts, as in the text); only two dry hours end it. {%- endcomment %}
+      {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
+        {%- assign new_wet = 1 -%}
+        {%- assign new_snow = 0 -%}
+        {%- if codes -%}
+          {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
+        {%- endif -%}
+      {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+        {%- assign new_wet = 0 -%}
+        {%- assign new_snow = 0 -%}
+      {%- endif -%}
+
+      {%- if new_rank != cur_rank or new_wet != cur_wet -%}
+        {%- if new_rank != cur_rank -%}{%- assign kind = 'T' -%}{%- else -%}{%- assign kind = 'P' -%}{%- endif -%}
+        {%- if b_n > 0 -%}
+          {%- assign b_idx = b_idx | append: ',' -%}
+          {%- assign b_kind = b_kind | append: ',' -%}
+          {%- assign b_rank = b_rank | append: ',' -%}
+          {%- assign b_wet = b_wet | append: ',' -%}
+          {%- assign b_snow = b_snow | append: ',' -%}
+        {%- endif -%}
+        {%- assign b_idx = b_idx | append: i -%}
+        {%- assign b_kind = b_kind | append: kind -%}
+        {%- assign b_rank = b_rank | append: new_rank -%}
+        {%- assign b_wet = b_wet | append: new_wet -%}
+        {%- assign b_snow = b_snow | append: new_snow -%}
+        {%- assign b_n = b_n | plus: 1 -%}
+        {%- assign cur_rank = new_rank -%}
+        {%- assign cur_wet = new_wet -%}
+        {%- assign cur_snow = new_snow -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- comment %}
+  Pick at most two changes, at least two hours apart. Outfit changes
+  first: of two within two hours the later one wins, since it's where
+  the day settles. Then rain changes, while there is room and nothing
+  chosen is within two hours. keep2 is a 0/1 string over all changes.
+  {%- endcomment %}
+  {%- assign bi = b_idx | split: ',' -%}
+  {%- assign bk = b_kind | split: ',' -%}
+  {%- assign br = b_rank | split: ',' -%}
+  {%- assign bw = b_wet | split: ',' -%}
+  {%- assign bs = b_snow | split: ',' -%}
+  {%- assign keep = '' -%}
+  {%- assign kept = 0 -%}
+  {%- assign t_hours = ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = '0' -%}
+    {%- if kind == 'T' and kept < 2 -%}
+      {%- assign here = bi[idx0] | plus: 0 -%}
+      {%- assign later_t = false -%}
+      {%- for k2 in bk offset: forloop.index -%}
+        {%- assign j2 = idx0 | plus: forloop.index -%}
+        {%- assign there = bi[j2] | plus: 0 | minus: here -%}
+        {%- if k2 == 'T' and there < 2 -%}{%- assign later_t = true -%}{%- endif -%}
+      {%- endfor -%}
+      {%- unless later_t -%}
+        {%- assign flag = '1' -%}
+        {%- assign kept = kept | plus: 1 -%}
+        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- assign keep = keep | append: flag -%}
+  {%- endfor -%}
+  {%- assign keep2 = '' -%}
+  {%- assign chosen = t_hours | split: ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = keep | slice: idx0 -%}
+    {%- if flag == '0' and kind == 'P' and kept < 2 -%}
+      {%- assign here = bi[idx0] | plus: 0 -%}
+      {%- assign near = false -%}
+      {%- for c in chosen -%}
+        {%- if c != '' -%}
+          {%- assign d = c | plus: 0 | minus: here | abs -%}
+          {%- if d < 2 -%}{%- assign near = true -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- unless near -%}
+        {%- assign flag = '1' -%}
+        {%- assign kept = kept | plus: 1 -%}
+        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+        {%- assign chosen = t_hours | split: ',' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- assign keep2 = keep2 | append: flag -%}
+  {%- endfor -%}
+
+  {%- comment %} The panels: the now panel, then one per kept change. A dropped rain start wets the panel it falls in. {%- endcomment %}
+  {%- assign p_rank = band_rank | append: '' -%}
+  {%- assign p_wet = is_now_precip | append: '' -%}
+  {%- assign p_snow = is_now_snow | append: '' -%}
+  {%- assign p_hour = '' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = keep2 | slice: idx0 -%}
+    {%- if flag == '1' -%}
+      {%- assign p_rank = p_rank | append: ',' | append: br[idx0] -%}
+      {%- assign p_wet = p_wet | append: ',' | append: bw[idx0] -%}
+      {%- assign p_snow = p_snow | append: ',' | append: bs[idx0] -%}
+      {%- assign bix = bi[idx0] | plus: 0 -%}
+      {%- assign hr = h.time[bix] | slice: 11, 2 | plus: 0 -%}
+      {%- assign p_hour = p_hour | append: ',' | append: hr -%}
+    {%- elsif bw[idx0] == '1' -%}
+      {%- comment %} Rain starting inside the current last panel: mark it wet. {%- endcomment %}
+      {%- assign wl = p_wet | split: ',' -%}
+      {%- assign sl = p_snow | split: ',' -%}
+      {%- assign last = wl | size | minus: 1 -%}
+      {%- if last > 0 -%}
+        {%- assign p_wet = '' -%}
+        {%- assign p_snow = '' -%}
+        {%- for w in wl -%}
+          {%- unless forloop.first -%}{%- assign p_wet = p_wet | append: ',' -%}{%- assign p_snow = p_snow | append: ',' -%}{%- endunless -%}
+          {%- if forloop.index0 == last -%}
+            {%- assign p_wet = p_wet | append: '1' -%}
+            {%- assign p_snow = p_snow | append: bs[idx0] -%}
+          {%- else -%}
+            {%- assign p_wet = p_wet | append: w -%}
+            {%- assign p_snow = p_snow | append: sl[forloop.index0] -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign pr = p_rank | split: ',' -%}
+  {%- assign pw = p_wet | split: ',' -%}
+  {%- assign ps = p_snow | split: ',' -%}
+  {%- assign ph = p_hour | split: ',' -%}
+  {%- assign prev_slug = '' -%}
+  {%- for rk in pr -%}
+    {%- assign n0 = forloop.index0 -%}
+    {%- assign ri = rk | plus: 0 | minus: 1 -%}
+    {%- assign pband = band_name_list[ri] -%}
+    {%- assign suffix = 'dry' -%}
+    {%- if pw[n0] == '1' -%}
+      {%- assign suffix = 'rain' -%}
+      {%- if ps[n0] == '1' -%}
+        {%- assign sprobe = ',' | append: pband | append: ',' -%}
+        {%- if SNOW_OUTFITS contains sprobe -%}{%- assign suffix = 'snow' -%}{%- else -%}{%- assign suffix = 'dry' -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if forloop.first -%}
+      {%- assign label = p_now -%}
+    {%- else -%}
+      {%- assign hn = ph[n0] | plus: 0 -%}
+      {%- assign label = PN.hours[hn] | default: hn -%}
+    {%- endif -%}
+    {%- comment %} Two panels that would look the same are one. {%- endcomment %}
+    {%- assign this_slug = pband | append: '_' | append: suffix -%}
+    {%- if this_slug != prev_slug -%}
+      {%- unless forloop.first -%}
+        {%- assign panel_slugs = panel_slugs | append: '|' -%}
+        {%- assign panel_labels = panel_labels | append: '|' -%}
+      {%- endunless -%}
+      {%- assign panel_slugs = panel_slugs | append: this_slug -%}
+      {%- assign panel_labels = panel_labels | append: label -%}
+    {%- endif -%}
+    {%- assign prev_slug = this_slug -%}
+  {%- endfor -%}
+  {%- assign panel_n = panel_slugs | split: '|' | size -%}
+
+  {%- comment %} Words: "this works all day" for one panel; the sarcastic line at On and 11. {%- endcomment %}
+  {%- if show_future_suggestions == 'on' and texts_ok -%}
+    {%- if panel_n == 1 and texts.facts -%}
+      {%- if local_hour >= 17 -%}
+        {%- assign sk = 'steady_evening' -%}
+      {%- elsif band_rank >= 7 -%}
+        {%- assign sk = 'steady_hot' -%}
+      {%- elsif band_rank <= 2 -%}
+        {%- assign sk = 'steady_cold' -%}
+      {%- else -%}
+        {%- assign sk = 'steady' -%}
+      {%- endif -%}
+      {%- assign sl = texts.facts[sk] -%}
+      {%- if sl -%}
+        {%- assign sn = sl | size -%}
+        {%- assign si = local_days | plus: 2 | modulo: sn -%}
+        {%- assign panel_fact = sl[si] -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if sarcasm_level != '0' -%}
+      {%- assign panel_flavour = flavour_line -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign panel_slug_list = panel_slugs | split: '|' -%}
+{%- assign panel_label_list = panel_labels | split: '|' -%}

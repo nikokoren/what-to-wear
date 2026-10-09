@@ -24,9 +24,11 @@ to pick it up cold.
    This is what blocks shipping.
 2. **Check the new views in TRMNL's editor**, original TRMNL and X,
    landscape and portrait. Minutes, and only possible there.
-3. **Item 2, the visual forecast.** No longer blocked: the outfit names
-   are fixed, so it can be built against the placeholders while the art
-   is drawn.
+3. **Item 2, the visual forecast.** Being prototyped as equal outfit
+   panels across the day (`prototypes/panels/`, mock on claude.ai): now
+   on the left, then each change, at most three, today only, never
+   tomorrow. Open: square or tall drawings, the portrait quarter view,
+   and how the settings screen explains which switch changes what.
 4. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching
@@ -178,6 +180,12 @@ the garment lists in `lang/*.json`, every `w_*`/`c_*` line, the docs, and
 the tests.
 
 ## 2. Visual forecast: three outfits across the day
+
+**Status (October 2026): prototyped as the owner sketched it**, in
+`prototypes/panels/` (rules in its README): equal panels, now on the
+left, then each change of outfit or rain, at most three, today only.
+One panel says "works all day"; otherwise only the sarcastic line
+shows. The notes below are the original brief.
 
 On views wide enough for it, show three columns, each one a sprite with a
 time label under it, e.g. **Now · Midday · Evening**, each drawing the
