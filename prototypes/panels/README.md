@@ -30,7 +30,9 @@ the current outfit.
   panels that would look the same become one.
 - **Now** shows rain only while it falls (as the single picture does).
 - **The time under each panel** is when it starts: "Now", then "1 pm" /
-  "13 Uhr" (`panels.hours` in the language files).
+  "13 Uhr" (`panels.hours` in the language files). The last one reads
+  "from 7 pm" / "ab 19 Uhr" (`panels.from`): that outfit holds for the
+  rest of the day.
 - **Words:** one panel shows a "works all day" fact wording, plus the
   sarcastic line at On and 11. Two or three panels show only the
   sarcastic line, and nothing at Off.
@@ -41,16 +43,26 @@ On 7:00 readings in London, Vienna and New York over a year: one panel
 ## Views
 
 Generated from one template in `build.py`. Panels sit in a row, sized to
-the view; the half view lying wide puts the words beside them; portrait
-half-tall and quarter stack them. `panel_shape` (a mock-only field)
-crops the current square drawings to 2:3 to show what tall drawings
-would do; the owner can redraw them tall.
+the view, the time always under the drawing; the half view lying wide
+puts the words beside them; only the half view standing tall (240 by
+800 on the OG) stacks them, one under the other. The portrait quarter
+keeps the row: stacked with the time under each, its drawings came out
+smaller. The drawings stay square, as drawn (owner, after comparing
+with a 2:3 crop). The times are larger on the X (`lg:label--xlarge`,
+`lg:label--large` in the quarter).
+
+The words don't use TRMNL's content limiter. On the X the screen is
+scaled up with a CSS transform, and the limiter adds the drawings'
+scaled height to the layout's unscaled one: with the panels above it,
+it found 10 px left and hid the line. The words fit themselves instead
+(they shrink in the column and clamp at three lines each). The live
+views escape it only because there the sum goes negative, which turns
+the limiter off.
 
 ## Open
 
-- Whether the portrait quarter (240 by 400 on the OG) falls back to the
-  now drawing alone.
-- Square or tall drawings, and drawing all outfits with the same figure,
-  pose and position so changes stand out.
+- Drawing all outfits with the same figure, pose and position, so the
+  change between panels is the clothes. The rainy coat is still a copy
+  of the dry coat, without an umbrella.
 - The settings screen: how to explain which switch changes what on the
   screen (forecast text, sarcasm, panels).

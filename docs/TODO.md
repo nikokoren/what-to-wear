@@ -27,8 +27,9 @@ to pick it up cold.
 3. **Item 2, the visual forecast.** Being prototyped as equal outfit
    panels across the day (`prototypes/panels/`, mock on claude.ai): now
    on the left, then each change, at most three, today only, never
-   tomorrow. Open: square or tall drawings, the portrait quarter view,
-   and how the settings screen explains which switch changes what.
+   tomorrow. Decided: square drawings as drawn, the time under every
+   drawing, the last one "from 7 pm" / "ab 19 Uhr", larger times on the
+   X. Open: how the settings screen explains which switch changes what.
 4. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching

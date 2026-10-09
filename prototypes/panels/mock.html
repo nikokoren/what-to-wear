@@ -66,6 +66,7 @@ section.day { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 2
       <li><b>A change</b> is an outfit step held for two hours, or rain or snow starting (one likely hour is enough) or stopping (two dry hours).</li>
       <li><b>At most three panels.</b> Changes less than two hours apart merge, outfit changes win over rain changes, and two panels that would look the same become one.</li>
       <li><b>Now</b> shows rain only while it falls. Rain later appears in the panel where it happens.</li>
+      <li><b>The last time reads "from 7 pm"</b> ("ab 19 Uhr"): that outfit holds for the rest of the day.</li>
       <li><b>Words.</b> One panel: "works all day", plus the sarcastic line at On. Two or three panels: only the sarcastic line, and nothing at Off.</li>
     </ul>
   </header>
@@ -75,7 +76,6 @@ section.day { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 2
     <div class="group"><span class="label">Sarcasm</span><div class="seg" id="c-sarc"></div></div>
     <div class="group"><span class="label">Device</span><div class="seg" id="c-dev"></div></div>
     <div class="group"><span class="label">Orientation</span><div class="seg" id="c-orient"></div></div>
-    <div class="group"><span class="label">Drawings</span><div class="seg" id="c-shape"></div></div>
   </div>
 
   <div id="days"></div>
@@ -83,21 +83,22 @@ section.day { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 2
   <div class="notes">
     <h2>What to look at</h2>
     <ul>
-      <li>Square against tall drawings: tall ones let three panels sit closer and larger, mostly on landscape screens.</li>
-      <li>The quarter view in portrait (240 by 400 on the OG) stacks three tiny drawings. It may need to fall back to the "now" drawing alone.</li>
+      <li>The time sits under every drawing, in every view. Only the half view standing tall puts the panels one under the other.</li>
+      <li>The quarter view in portrait (240 by 400 on the OG) keeps the panels in a row: stacked, with the time under each, the drawings came out smaller.</li>
       <li>On the half view lying wide, the words sit beside the panels so the drawings keep the full height.</li>
-      <li>The two old rain drawings have an umbrella reaching the edges; the tall crop cuts it. Redrawn tall, it wouldn't.</li>
+      <li>The rainy coat is a placeholder copy of the dry coat, so a rainy coat panel shows no umbrella yet.</li>
     </ul>
   </div>
 </div>
 
 <script>
 const DATA = /*DATA*/null || { days: [] };
-const ui = { lang: "en", sarc: "10", dev: "og", orient: "l", shape: "tall" };
+const ui = { lang: "en", sarc: "10", dev: "og", orient: "l" };
 try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-panels-mock") || "{}")); } catch (e) {}
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 const HOUR = (label) => {
+  label = label.replace(/^(from|ab) /, "");
   if (label === "noon") return 12;
   if (label === "midnight") return 0;
   const m = /^(\d+) (am|pm)$/.exec(label);
@@ -144,7 +145,6 @@ function render() {
   seg("c-sarc", [["0", "Off"], ["10", "On"]], "sarc");
   seg("c-dev", [["og", "TRMNL OG"], ["x", "TRMNL X"]], "dev");
   seg("c-orient", [["l", "Landscape"], ["p", "Portrait"]], "orient");
-  seg("c-shape", [["square", "Square, as drawn"], ["tall", "Tall, 2:3"]], "shape");
   $("days").replaceChildren(...DATA.days.map((day) => {
     const w = day.words[`${ui.lang}_${ui.sarc}`];
     const en = day.words[`en_${ui.sarc}`];
@@ -171,9 +171,9 @@ function render() {
     info.append(words);
     const shot = el("div", "shot");
     const img = el("img"); img.loading = "lazy";
-    img.src = day.shots[`${ui.lang}_${ui.sarc}_${ui.dev}_${ui.orient}_${ui.shape}`];
+    img.src = day.shots[`${ui.lang}_${ui.sarc}_${ui.dev}_${ui.orient}`];
     img.alt = `The four views on ${ui.dev === "x" ? "TRMNL X" : "TRMNL OG"}, ${ui.orient === "p" ? "portrait" : "landscape"}: ${w.labels.map((l, i) => l + ", " + DRESS(w.slugs[i])).join("; ")}`;
-    shot.append(img, el("div", "cap", `${ui.dev === "x" ? "TRMNL X" : "TRMNL OG"} · ${ui.orient === "p" ? "portrait" : "landscape"} · ${ui.shape === "tall" ? "tall drawings" : "square drawings"} · full, half wide, half tall, quarter`));
+    shot.append(img, el("div", "cap", `${ui.dev === "x" ? "TRMNL X" : "TRMNL OG"} · ${ui.orient === "p" ? "portrait" : "landscape"} · full, half wide, half tall, quarter`));
     sec.append(info, shot);
     return sec;
   }));
