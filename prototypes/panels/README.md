@@ -6,14 +6,37 @@ change: noon in the middle, the evening on the right. A day that doesn't
 change keeps one panel and says so in words. Today only: nothing about
 tomorrow is ever drawn.
 
+It is called **Visual Forecast** in the form.
+
 ```bash
-python3 prototypes/panels/build.py     # build/panels/
+python3 prototypes/panels/build.py         # build/panels/
+python3 prototypes/panels/test_switch.py   # the forecast field's three values
 ```
 
 `block.liquid` is appended to the shared markup after the fact + flavour
 prototype's block, and reads what the scenario logic already worked out:
 the hourly outfit ranks with their two-hour rule, the rain chances, and
 the current outfit.
+
+## The switch
+
+One field, not a new one: the forecast field (`show_future_suggestions`)
+gets a third value next to "Yes" and "No", `visual`, labelled "Visual
+Forecast (new)". Words and pictures are two ways of showing the same
+forecast, so they can't both be on, and a separate on/off would have
+made "forecast off, Visual Forecast on" a setting that means nothing.
+The whole form is `config/settings.next.yaml`.
+
+| Forecast | Sarcasm Off | Sarcasm On / 11 |
+|---|---|---|
+| Off ("No") | the outfit now | (sarcasm hidden in the form) |
+| In words ("Yes") | outfit, fact line | plus the sarcastic line |
+| Visual Forecast ("visual") | the day's outfits; "works all day" when steady | plus the sarcastic line |
+
+Saved values don't move: "Yes", "No", old spellings and no value at all
+keep the words, and markup from before reads "visual" as on, so the
+form can ship before the markup. Each view is `{% if visual_forecast %}`
+the panels `{% else %}` the fact + flavour view.
 
 ## The rules
 
@@ -66,5 +89,6 @@ the limiter off.
 - Drawing all outfits with the same figure, pose and position, so the
   change between panels is the clothes. The rainy coat is still a copy
   of the dry coat, without an umbrella.
-- The settings screen: how to explain which switch changes what on the
-  screen (forecast text, sarcasm, panels).
+- `conditional_validation` (hiding sarcasm when the forecast is off,
+  topical lines when sarcasm is off) is written from TRMNL's docs and
+  untested: check it in the beta fork's form.

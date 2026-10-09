@@ -12,7 +12,7 @@ the machinery it needs already exists.
   US, UK, IE, DE, AT, CH, AU) and `moods`. Seasonal theme days keep their
   own lines. Pinned by `prototypes/fact-flavour/test_topical.py`.
 - **Opt-in:** the `topical_lines` form field
-  (`prototypes/fact-flavour/settings-topical.yaml`). No value counts as
+  (`config/settings.next.yaml`, hidden while sarcasm is off). No value counts as
   off, so existing installs don't see it unasked.
 - **Writing:** the routine is the repo skill `.claude/skills/topical`;
   rounds go on the review page as `topical_<level>.<event>` rows.

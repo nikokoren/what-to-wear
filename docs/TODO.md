@@ -29,7 +29,10 @@ to pick it up cold.
    on the left, then each change, at most three, today only, never
    tomorrow. Decided: square drawings as drawn, the time under every
    drawing, "from" on every later time ("Now · from 1 pm · from
-   7 pm"), larger times on the X. Open: how the settings screen explains which switch changes what.
+   7 pm"), larger times on the X. Settings: it is "Visual Forecast", a
+   third value of the forecast field, so nothing saved moves
+   (`config/settings.next.yaml`, the whole form for the beta and the
+   launch).
 4. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching

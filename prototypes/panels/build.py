@@ -6,11 +6,14 @@ Builds the outfit-panels prototype into build/panels/:
 
 shared.liquid = src/shared.liquid + the fact + flavour block (as in
 prototypes/fact-flavour) + this prototype's block.liquid at the end.
-The four views are generated from one template below, so the layouts
-differ only where the view's size makes them differ. Language files are
-lang/<code>.json merged with both prototypes' additions.
+Each view is the panels, generated from one template below (so the
+layouts differ only where the view's size makes them differ), when the
+forecast field says Visual Forecast, and otherwise the real view with
+the fact + flavour lines, as that prototype builds it. Language files
+are lang/<code>.json merged with both prototypes' additions.
 """
 
+import importlib.util
 import json
 import pathlib
 
@@ -19,6 +22,18 @@ REPO = HERE.parent.parent
 FF = REPO / "prototypes" / "fact-flavour"
 OUT = REPO / "build" / "panels"
 ANCHOR = "{%- comment %}\n============ THE PICTURE"
+
+_spec = importlib.util.spec_from_file_location("ff_build", FF / "build.py")
+ff_build = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(ff_build)
+
+
+def text_view(view):
+    """The real view with the fact + flavour lines, as prototypes/fact-flavour builds it."""
+    src = (REPO / "src" / "views" / f"{view}.liquid").read_text(encoding="utf-8")
+    if ff_build.OLD_TIP not in src:
+        raise SystemExit(f"{view}.liquid: tip markup not found")
+    return src.replace(ff_build.OLD_TIP, ff_build.NEW_TIP).replace("today_tip != ''", "fact_line != ''")
 
 # Per view: image height (in view height) with words / without, the
 # words' size and the time's size (larger on the X). Only the portrait
@@ -117,6 +132,8 @@ def main():
                .replace("IH_WORDS", str(v["ih_words"])).replace("IH_BARE", str(v["ih_bare"]))
                .replace("WORDS", v["words"]).replace("LABEL", v["label"]).replace("STACK_CSS", STACK if v["stack"] else "")
                .replace("SIDE_CSS", SIDE.replace("IH_BARE_SIDE", str(v["ih_bare"])) if v.get("side") else ""))
+        src = ("{%- if visual_forecast -%}\n" + src.rstrip() + "\n{%- else -%}\n"
+               + text_view(view).rstrip() + "\n{%- endif -%}\n")
         (OUT / "views" / f"{view}.liquid").write_text(src, encoding="utf-8")
 
     for lang in ("en", "de"):

@@ -22,15 +22,24 @@ Text: one panel says "this works all day" (a steady fact wording) and
 adds the sarcastic line at On and 11. Two or three panels show only the
 sarcastic line, and nothing at Off.
 
+The switch is the third value of the forecast field, "visual" (Visual
+Forecast, config/settings.next.yaml); "Yes" keeps the forecast in words
+and "No" turns it off. Markup from before this reads anything but
+no/false/0 as on, so a form that ships first falls back to the words.
+
 Appended to the end of the shared markup by prototypes/panels/build.py,
 after the fact + flavour block and the picture.
 {%- endcomment %}
+{%- assign visual_forecast = false -%}
+{%- if show_future_suggestions == 'on' and sfs_check == 'visual' -%}
+  {%- assign visual_forecast = true -%}
+{%- endif -%}
 {%- assign panel_n = 1 -%}
 {%- assign panel_slugs = '' -%}
 {%- assign panel_labels = '' -%}
 {%- assign panel_fact = '' -%}
 {%- assign panel_flavour = '' -%}
-{%- if is_error == false -%}
+{%- if is_error == false and visual_forecast -%}
   {%- assign PN = texts.panels -%}
   {%- assign p_now = PN.now | default: 'Now' -%}
   {%- assign p_from = PN.from | default: 'from' -%}

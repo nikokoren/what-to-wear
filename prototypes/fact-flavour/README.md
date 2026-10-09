@@ -24,6 +24,6 @@ https://claude.ai/artifact/JQHyySwWENqkdXd2q6KToE
 Lines about current events, each with a date window, can take the
 flavour slot on about one day in three while the window is open:
 `topical_10` / `topical_11` in `lang/*.json` here, TOPICAL LINES in
-`block.liquid`, opt-in through the field in `settings-topical.yaml`.
+`block.liquid`, opt-in through the `topical_lines` field in `config/settings.next.yaml`.
 The routine for writing them is `.claude/skills/topical`; the tool is
 `tools/topical.py`; the tests are `test_topical.py`.
