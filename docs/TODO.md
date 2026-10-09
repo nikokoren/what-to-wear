@@ -43,7 +43,8 @@ to pick it up cold.
    the days its readers keep; a day without a pool falls back to the
    mood line. Both languages: New Year, Pi Day, May the 4th, Bike Day,
    Tour de France, Oktoberfest (international enough, the owner says),
-   Halloween, Easter. English only: Groundhog Day, Thanksgiving. German
+   Halloween, Easter, and Christmas (topped up: its two lines per level
+   came from an early round, before the voice was settled). English only: Groundhog Day, Thanksgiving. German
    only: Nikolaus (key `nikolo`; say "Nikolaus", not the Austrian
    "Nikolo") and Krampus (Alpine; lines must still make sense in
    Hamburg). Three candidates per level and language, in calendar order
