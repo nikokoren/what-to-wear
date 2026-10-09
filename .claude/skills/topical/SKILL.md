@@ -28,6 +28,8 @@ culture, the odd story everyone talks about).
 
 - Never take another outlet's joke, premise or wording, even reworded.
   The event is the material; the joke is ours.
+- Skip events already covered: look at the `review/rounds/*-topical-*.json`
+  rounds and the `topical_*` lines in the language files first.
 - Put every candidate through the gate below and check it in real news
   (a web search, with the date) before proposing it.
 - Add planned events in the next ten days you are sure of (clock changes,
