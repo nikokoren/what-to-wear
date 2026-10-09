@@ -20,6 +20,11 @@ the machinery it needs already exists.
   `prune` takes expired lines out (also weekly, by
   `.github/workflows/topical-prune.yml`), archiving them in
   `review/topical-archive.json`. CI checks the format.
+- **Finding events:** `tools/topical_scout.py` lists Wikipedia's Current
+  events (culture, sport, science, business) and the Onion and
+  Postillon headlines, as a radar only, never as a source of jokes. A
+  weekly routine runs it every Monday morning and sends the owner a
+  shortlist of three to five events that pass the gate.
 - **Size:** about 140 bytes a line; pruned, a dozen live lines.
 - **First event:** the clocks going back (`2026-10-topical-clocks`),
   waiting for votes.

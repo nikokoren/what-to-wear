@@ -13,6 +13,31 @@ plan and its reasons are in `docs/FUTURE-topical-lines.md`.
 The owner writes with you, picks every line on the review page, and
 nothing goes in without a vote.
 
+## 0. What's on? (when the owner asks, and every Monday)
+
+When the owner asks what's been happening, or the weekly scout runs:
+
+```bash
+python3 tools/topical_scout.py --days 8
+```
+
+It lists Wikipedia's Current events (culture, sport, science, business
+only) and the latest headlines from The Onion and Der Postillon.
+
+- **The satire is a radar, never a source.** Look for the real event
+  underneath a headline; many are invented and have none. Never take
+  their premise, punchline or wording, not even reworded: it's their
+  work, and readers would recognise a Postillon joke on the wall.
+- Put every candidate through the gate below and check it in real news
+  (a web search, with the date) before proposing it.
+- Add planned events in the next ten days you are sure of (clock changes,
+  holidays, season starts, finals), checked the same way.
+- Propose three to five, each in a few lines: what happened, with a
+  source link; why it's good material; region and languages; a window;
+  one angle per language in the house voices (an angle, not a finished
+  line). If nothing passes, say so in one line. The owner picks; then
+  carry on from step 2.
+
 ## 1. Pin down the event
 
 - What happened, when, and where it matters. If the owner only names it,
