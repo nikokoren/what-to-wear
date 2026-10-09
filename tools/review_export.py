@@ -140,7 +140,8 @@ def flavour_context(lang, doc, key, text):
     if key.startswith("theme_"):
         meaning = "A seasonal day with nothing else to say."
     b = doc["buckets"]
-    fact = " ".join(facts[k] for k in fact_keys)
+    # A fact may have several wordings; the first is the reference one.
+    fact = " ".join(facts[k][0] if isinstance(facts[k], list) else facts[k] for k in fact_keys)
     fact = (fact.replace("{G}", facts["garments"][2]).replace("{WHEN2}", b[3])
                 .replace("{WHEN}", b[1]).replace("{WHENP}", b[2]))
     return {"sprite": sprite, "fact": sentence_case(fact), "tip": text, "pair": None,

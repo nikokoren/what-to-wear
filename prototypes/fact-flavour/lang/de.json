@@ -18,34 +18,90 @@
       "sie",
       "ihn"
     ],
-    "steady": "Was du anhast, passt für den ganzen Tag.",
-    "steady_evening": "Was du anhast, passt für den restlichen Abend.",
-    "steady_hot": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.",
-    "steady_cold": "Es bleibt den ganzen Tag so kalt, also lass alles an.",
-    "w_scarf": "{WHEN} können Mütze, Schal und Handschuhe weg.",
-    "w_coat": "{WHEN} kann die Winterjacke weg.",
-    "w_jacket": "{WHEN} kann die Jacke weg.",
-    "w_hoodie": "{WHEN} kann der Pulli weg.",
-    "w_water": "{WHEN} wird's richtig heiß, nimm Wasser mit.",
-    "c_scarf": "{WHEN} wird's kälter, da braucht's Mütze, Schal und Handschuhe.",
-    "c_coat": "{WHEN} wird's kälter, da braucht's die Winterjacke.",
-    "c_jacket": "{WHEN} kühlt's ab, da braucht's eine Jacke.",
-    "c_hoodie": "{WHEN} kühlt's ab, da braucht's einen Pulli.",
-    "c_relief": "{WHEN} lässt die Hitze etwas nach, warm bleibt's trotzdem.",
-    "arc_warmer": "{WHEN} {GV} weg, und zwar für den Rest des Tages.",
-    "arc_level": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.",
-    "arc_colder": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine Schicht dazu.",
-    "shorts_early": "Morgens ist's frisch, {WHEN} ist Shorts-Wetter.",
-    "p_wetter": "{WHENP} kommt ein Schauer, also nimm den Schirm mit.",
-    "p_wetter_long": "{WHENP} fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit.",
-    "p_wetter_maybe": "{WHENP} könnte es regnen, ein Schirm schadet nicht.",
-    "p_stays_wet": "Es regnet den ganzen Tag, also nimm den Schirm mit.",
-    "p_drier": "Der Regen hört später auf, bis dahin brauchst du den Schirm.",
-    "p_wet_again": "Der Regen macht Pause und kommt {WHENP} zurück, also nimm den Schirm trotzdem mit.",
-    "p_snow_coming": "{WHENP} soll es schneien.",
-    "p_stays_wet_snow": "Es schneit den ganzen Tag.",
-    "p_drier_snow": "Der Schnee hört später auf.",
-    "p_wet_again_snow": "Der Schnee macht Pause und kommt {WHENP} zurück."
+    "steady": [
+      "Was du anhast, passt für den ganzen Tag."
+    ],
+    "steady_evening": [
+      "Was du anhast, passt für den restlichen Abend."
+    ],
+    "steady_hot": [
+      "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten."
+    ],
+    "steady_cold": [
+      "Es bleibt den ganzen Tag so kalt, also lass alles an."
+    ],
+    "w_scarf": [
+      "{WHEN} können Mütze, Schal und Handschuhe weg."
+    ],
+    "w_coat": [
+      "{WHEN} kann die Winterjacke weg."
+    ],
+    "w_jacket": [
+      "{WHEN} kann die Jacke weg."
+    ],
+    "w_hoodie": [
+      "{WHEN} kann der Pulli weg."
+    ],
+    "w_water": [
+      "{WHEN} wird's richtig heiß, nimm Wasser mit."
+    ],
+    "c_scarf": [
+      "{WHEN} wird's kälter, da braucht's Mütze, Schal und Handschuhe."
+    ],
+    "c_coat": [
+      "{WHEN} wird's kälter, da braucht's die Winterjacke."
+    ],
+    "c_jacket": [
+      "{WHEN} kühlt's ab, da braucht's eine Jacke."
+    ],
+    "c_hoodie": [
+      "{WHEN} kühlt's ab, da braucht's einen Pulli."
+    ],
+    "c_relief": [
+      "{WHEN} lässt die Hitze etwas nach, warm bleibt's trotzdem."
+    ],
+    "arc_warmer": [
+      "{WHEN} {GV} weg, und zwar für den Rest des Tages."
+    ],
+    "arc_level": [
+      "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder."
+    ],
+    "arc_colder": [
+      "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine Schicht dazu."
+    ],
+    "shorts_early": [
+      "Morgens ist's frisch, {WHEN} ist Shorts-Wetter."
+    ],
+    "p_wetter": [
+      "{WHENP} kommt ein Schauer, also nimm den Schirm mit."
+    ],
+    "p_wetter_long": [
+      "{WHENP} fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit."
+    ],
+    "p_wetter_maybe": [
+      "{WHENP} könnte es regnen, ein Schirm schadet nicht."
+    ],
+    "p_stays_wet": [
+      "Es regnet den ganzen Tag, also nimm den Schirm mit."
+    ],
+    "p_drier": [
+      "Der Regen hört später auf, bis dahin brauchst du den Schirm."
+    ],
+    "p_wet_again": [
+      "Der Regen macht Pause und kommt {WHENP} zurück, also nimm den Schirm trotzdem mit."
+    ],
+    "p_snow_coming": [
+      "{WHENP} soll es schneien."
+    ],
+    "p_stays_wet_snow": [
+      "Es schneit den ganzen Tag."
+    ],
+    "p_drier_snow": [
+      "Der Schnee hört später auf."
+    ],
+    "p_wet_again_snow": [
+      "Der Schnee macht Pause und kommt {WHENP} zurück."
+    ]
   },
   "flavour_10": {
     "nice": [

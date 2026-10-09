@@ -2,8 +2,9 @@
 
 A proposal for the text rewrite (docs/TODO.md item 3): split the tip into
 
-- **a fact line**, built from one short template per situation
-  (`facts` in `lang/*.json` here), identical at every sarcasm setting, and
+- **a fact line**, built from short templates, a few wordings per
+  situation rotated by day (`facts` in `lang/*.json` here), identical at
+  every sarcasm setting, and
 - **a flavour line**, picked by the mood of the day (`flavour_10`,
   `flavour_11`), never asked to carry a fact, absent at sarcasm 0. On a
   seasonal day with nothing else to say, a `theme_<name>` pool replaces it.

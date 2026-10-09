@@ -1,7 +1,7 @@
 {%- comment %}
 ============ PROTOTYPE: FACT + FLAVOUR ============
 Two lines instead of one. The fact line is built from short templates,
-one per situation, and is the same at every sarcasm level. The flavour
+a few wordings per situation, and is the same at every sarcasm level. The flavour
 line carries the personality: picked by the mood of the day, never
 asked to carry a fact, absent at sarcasm 0.
 
@@ -40,7 +40,18 @@ Reads only what the scenario logic above already worked out.
     {%- assign f_gp = F.garments_pron[fgi] -%}
     {%- assign f_gv = F.garments_verb[fgi] -%}
   {%- endif -%}
-  {%- assign f_temp = F[f_key] | default: '' -%}
+  {%- comment %}
+  Each situation has several wordings, rotated by day like the flavour
+  line but on their own offsets, so a run of the same weather doesn't
+  show the same words, and fact and flavour don't repeat as a pair.
+  {%- endcomment %}
+  {%- assign f_temp = '' -%}
+  {%- assign f_list = F[f_key] -%}
+  {%- if f_list -%}
+    {%- assign f_n = f_list | size -%}
+    {%- assign f_vi = local_days | plus: 2 | modulo: f_n -%}
+    {%- assign f_temp = f_list[f_vi] -%}
+  {%- endif -%}
   {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
   {%- assign f_temp = f_temp | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
   {%- assign f_precip = '' -%}
@@ -51,7 +62,12 @@ Reads only what the scenario logic above already worked out.
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
     {%- endif -%}
-    {%- assign f_precip = F[pk] | default: '' | replace: '{WHENP}', when_precip -%}
+    {%- assign p_list = F[pk] -%}
+    {%- if p_list -%}
+      {%- assign p_n = p_list | size -%}
+      {%- assign p_vi = local_days | plus: 3 | modulo: p_n -%}
+      {%- assign f_precip = p_list[p_vi] | replace: '{WHENP}', when_precip -%}
+    {%- endif -%}
   {%- endif -%}
   {%- if is_steady and f_precip != '' -%}
     {%- assign fact_line = f_precip -%}

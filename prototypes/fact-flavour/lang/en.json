@@ -12,34 +12,90 @@
       "it",
       "it"
     ],
-    "steady": "What you're wearing works for the whole day.",
-    "steady_evening": "What you're wearing works for the rest of the evening.",
-    "steady_hot": "It stays hot all day, so bring water and look for shade.",
-    "steady_cold": "It stays this cold all day, so keep everything on.",
-    "w_scarf": "The hat, scarf and gloves can come off {WHEN}.",
-    "w_coat": "The winter coat can come off {WHEN}.",
-    "w_jacket": "You can take the jacket off {WHEN}.",
-    "w_hoodie": "You can take the sweater off {WHEN}.",
-    "w_water": "It gets hot {WHEN}, so bring water.",
-    "c_scarf": "It gets colder {WHEN}, so bring a hat, scarf and gloves.",
-    "c_coat": "It gets colder {WHEN}, so bring the winter coat.",
-    "c_jacket": "It cools down {WHEN}, so bring a jacket.",
-    "c_hoodie": "It cools down {WHEN}, so bring a sweater.",
-    "c_relief": "It cools off a little {WHEN}, but stays warm.",
-    "arc_warmer": "{G} can come off {WHEN}, and you won't need {GP} again today.",
-    "arc_level": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.",
-    "arc_colder": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.",
-    "shorts_early": "It starts cool, but it's shorts weather {WHEN}.",
-    "p_wetter": "There's a shower {WHENP}, so bring the umbrella.",
-    "p_wetter_long": "It starts raining {WHENP} and keeps going, so bring the umbrella.",
-    "p_wetter_maybe": "It might rain {WHENP}, so an umbrella wouldn't hurt.",
-    "p_stays_wet": "It rains all day, so bring the umbrella.",
-    "p_drier": "The rain stops later, but you'll want the umbrella for now.",
-    "p_wet_again": "The rain pauses, then returns {WHENP}, so keep the umbrella with you.",
-    "p_snow_coming": "It starts snowing {WHENP}.",
-    "p_stays_wet_snow": "It snows all day.",
-    "p_drier_snow": "The snow stops later.",
-    "p_wet_again_snow": "The snow pauses, then returns {WHENP}."
+    "steady": [
+      "What you're wearing works for the whole day."
+    ],
+    "steady_evening": [
+      "What you're wearing works for the rest of the evening."
+    ],
+    "steady_hot": [
+      "It stays hot all day, so bring water and look for shade."
+    ],
+    "steady_cold": [
+      "It stays this cold all day, so keep everything on."
+    ],
+    "w_scarf": [
+      "The hat, scarf and gloves can come off {WHEN}."
+    ],
+    "w_coat": [
+      "The winter coat can come off {WHEN}."
+    ],
+    "w_jacket": [
+      "You can take the jacket off {WHEN}."
+    ],
+    "w_hoodie": [
+      "You can take the sweater off {WHEN}."
+    ],
+    "w_water": [
+      "It gets hot {WHEN}, so bring water."
+    ],
+    "c_scarf": [
+      "It gets colder {WHEN}, so bring a hat, scarf and gloves."
+    ],
+    "c_coat": [
+      "It gets colder {WHEN}, so bring the winter coat."
+    ],
+    "c_jacket": [
+      "It cools down {WHEN}, so bring a jacket."
+    ],
+    "c_hoodie": [
+      "It cools down {WHEN}, so bring a sweater."
+    ],
+    "c_relief": [
+      "It cools off a little {WHEN}, but stays warm."
+    ],
+    "arc_warmer": [
+      "{G} can come off {WHEN}, and you won't need {GP} again today."
+    ],
+    "arc_level": [
+      "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}."
+    ],
+    "arc_colder": [
+      "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer."
+    ],
+    "shorts_early": [
+      "It starts cool, but it's shorts weather {WHEN}."
+    ],
+    "p_wetter": [
+      "There's a shower {WHENP}, so bring the umbrella."
+    ],
+    "p_wetter_long": [
+      "It starts raining {WHENP} and keeps going, so bring the umbrella."
+    ],
+    "p_wetter_maybe": [
+      "It might rain {WHENP}, so an umbrella wouldn't hurt."
+    ],
+    "p_stays_wet": [
+      "It rains all day, so bring the umbrella."
+    ],
+    "p_drier": [
+      "The rain stops later, but you'll want the umbrella for now."
+    ],
+    "p_wet_again": [
+      "The rain pauses, then returns {WHENP}, so keep the umbrella with you."
+    ],
+    "p_snow_coming": [
+      "It starts snowing {WHENP}."
+    ],
+    "p_stays_wet_snow": [
+      "It snows all day."
+    ],
+    "p_drier_snow": [
+      "The snow stops later."
+    ],
+    "p_wet_again_snow": [
+      "The snow pauses, then returns {WHENP}."
+    ]
   },
   "flavour_10": {
     "nice": [

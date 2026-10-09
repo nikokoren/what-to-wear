@@ -131,3 +131,41 @@ output in `2026-10-topup/`. After voting: sync, then
 - **Result (9 October):** German 3 stars, 39 keeps, 44 vetoes; English
   0 stars, 42 keeps, 44 vetoes. Pools now hold 1 to 9 lines per mood;
   warming and cooling also draw from cool. Lessons in `docs/BRIEF.md`.
+
+## Round 5: variants (October 2026)
+
+Enough lines that a run of the same weather doesn't show the same words.
+Written by hand (`make_round5.py`), not by a writer agent: this is
+editing, not invention. 361 lines in `2026-10-variants.json`:
+
+- **Fact wordings** (sets FE, FD): two to four new wordings of every fact
+  template, five in all for the common situations. Shown with time words
+  filled in; each row also shows the current wording. Kept wordings join
+  the list the template rotates through (`facts` in the prototype are
+  now lists, rotated by day on their own offset).
+- **Flavour rewordings** (sets VE, VD): one new wording of every line in
+  the pools, same joke, different words; each row shows the line it
+  varies. A kept rewording goes into the pool a whole cycle after its
+  original, never next to it. The German ones also drop the Austrian
+  markers still in some kept lines ("eh", "nix", "Leut'", "heuer",
+  "Wennst").
+
+After voting: sync, then `python3 review/rounds/build_pools.py`, which now
+also builds the fact lists.
+
+Repeats, measured by `tools/climate/repeat_report.py` (7:00 in London,
+New York, Minneapolis, Phoenix and Vienna, 2024-2025, sarcasm On): the
+share of lines already shown in the previous 7 / 30 days.
+
+| | before | every variant kept |
+|---|---|---|
+| English fact line | 33% / 50% | 10% / 28% |
+| English flavour line | 29% / 79% | 1% / 56% |
+| English whole screen | 10% / 28% | 0% / 8% |
+| German fact line | 33% / 50% | 12% / 29% |
+| German flavour line | 15% / 75% | 4% / 50% |
+| German whole screen | 5% / 23% | 0% / 2% |
+
+The 30-day flavour number is the one left to beat: the pools are small,
+and a rewording doesn't count as a new joke. Next steps are item 6 in
+`docs/TODO.md`.

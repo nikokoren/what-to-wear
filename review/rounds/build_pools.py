@@ -8,6 +8,11 @@ applied as edits.
 
 Reads review/decisions/<lang>.json (written by tools/review_sync.py).
 Seasonal pools (theme_*) are left as they are.
+
+Round 5 (variance) adds two things: reworded flavour lines, each placed a
+whole pool's length after the line it varies so the same joke never shows
+two days running; and extra wordings of each fact, appended to the list
+the template rotates through (the first wording stays first).
 """
 
 import collections
@@ -22,6 +27,9 @@ WIN = {
     "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2"), ("2026-10-topup", "E4")},
     "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1"), ("2026-10-topup", "D4")},
 }
+# Round 5: reworded flavour lines (set V*) and fact wordings (set F*).
+VARIANTS = "2026-10-variants"
+VARIANT_SETS = {"en": ("VE", "FE"), "de": ("VD", "FD")}
 # The owner's notes, applied. None drops a line a cleaner version replaces.
 EDIT = {
     "I don't sweat. You will. I'll be here, judging.": "I don't sweat. You will.",
@@ -59,11 +67,45 @@ MOVE = {"Nothing new from me tonight. Sleep well.": "night",
         "You've looked at me a lot today. Go to bed.": "night"}
 
 
+def variants_round():
+    path = REPO / "review" / "rounds" / f"{VARIANTS}.json"
+    if not path.exists():
+        return {}
+    return {(l["lang"], l["text"]): l for l in json.loads(path.read_text(encoding="utf-8"))["lines"]}
+
+
+def build_facts(doc, lang, decisions, round_lines):
+    """Each fact becomes a list: its first wording, then the kept variants."""
+    facts = doc["facts"]
+    kept = collections.defaultdict(list)
+    fact_set = VARIANT_SETS[lang][1]
+    for d in decisions.values():
+        if (d.get("round"), d.get("batch")) == (VARIANTS, fact_set) and d.get("verdict") in ("star", "keep"):
+            line = round_lines.get((lang, d["text"]))
+            if line:
+                kept[d["key"]].append(line["template"])
+    order = {(l["path"], l.get("template")): i for i, l in enumerate(round_lines.values())}
+    for key, value in facts.items():
+        if key.startswith("garments"):
+            continue
+        first = value[0] if isinstance(value, list) else value
+        more = sorted(kept.get(key, []), key=lambda t: order.get((f"fact_0.{key}", t), 0))
+        facts[key] = [first] + [t for t in more if t != first]
+    return sum(len(v) for k, v in facts.items() if not k.startswith("garments"))
+
+
 def main():
+    round_lines = variants_round()
     for lang, winners in WIN.items():
         decisions = json.loads((REPO / "review" / "decisions" / f"{lang}.json").read_text(encoding="utf-8"))
         pools = collections.defaultdict(lambda: collections.defaultdict(list))
+        reworded = collections.defaultdict(lambda: collections.defaultdict(list))
         for d in decisions.values():
+            if (d.get("round"), d.get("batch")) == (VARIANTS, VARIANT_SETS[lang][0]):
+                line = round_lines.get((lang, d["text"]))
+                if line and d.get("verdict") in ("star", "keep"):
+                    reworded[d["level"]][d["key"]].append((line["variant_of"], d["text"]))
+                continue
             if (d.get("round"), d.get("batch")) not in winners or d.get("verdict") not in ("star", "keep"):
                 continue
             text = EDIT.get(d["text"], d["text"])
@@ -81,9 +123,16 @@ def main():
         for level in ("10", "11"):
             old = doc[f"flavour_{level}"]
             new = {m: [t for _, t in sorted(pools[level][m])] for m in MOODS if pools[level][m]}
+            # A reworded line goes in the same order as the lines it varies,
+            # so it shows one full cycle after its original, never next to it.
+            for m, pairs in reworded[level].items():
+                base = new.get(m, [])
+                pairs = [p for p in pairs if p[0] in base]
+                new[m] = base + [v for _, v in sorted(pairs, key=lambda p: base.index(p[0]))]
             new.update({k: v for k, v in old.items() if k.startswith("theme_")})
             doc[f"flavour_{level}"] = new
             print(f"{lang} {level}: " + "  ".join(f"{m} {len(new.get(m, []))}" for m in MOODS))
+        print(f"{lang} facts: {build_facts(doc, lang, decisions, round_lines)} wordings")
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

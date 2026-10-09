@@ -115,6 +115,16 @@ state of all.
 
 Pools should be sized by share: the common moods repeat most.
 
+### Variance (round 5)
+
+The owner's goal: repeats rare enough that nobody notices, closer to
+Carrot Weather than to one line per mood. A line seen within the last
+month counts as a repeat; `tools/climate/repeat_report.py` measures it.
+Facts get several wordings each (small swaps are enough: "You're dressed
+right for the whole day" next to "What you're wearing works for the
+whole day"), and flavour lines get reworded twins placed a cycle apart.
+Twins only stretch a pool; new jokes are what move the number.
+
 ### What round 4 added (the top-up)
 
 172 lines, one writer per language, written in volume. German 3 stars,

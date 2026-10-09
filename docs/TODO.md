@@ -27,9 +27,24 @@ to pick it up cold.
    the texts URL to the usage Worker at that step starts the counting.
 5. **Item 3, the text**: in progress. The tip becomes a fact line plus a
    flavour line; voice, fact style and most pools are decided by four
-   rounds of votes (`review/README.md`). Left: the top-up round, then
-   moving the prototype into `src/shared.liquid` and `lang/*.json`.
-6. **Topical lines** (backlog, after the text ships): On and 11 lines about
+   rounds of votes (`review/README.md`). Round 5 (variants) is on the
+   review page; after it, moving the prototype into `src/shared.liquid`
+   and `lang/*.json`.
+6. **Variance, again: week of 16 October 2026.** The owner wants
+   repeats rare enough that nobody notices: "closer to Carrot Weather
+   than to us" over the long term. Round 5 is only the first step.
+   Measure with `python3 tools/climate/repeat_report.py <climate dir>`
+   (share of lines
+   already shown in the previous 7 and 30 days, two years of real
+   mornings in five cities). Numbers are in `review/README.md`, round 5.
+   Even with every variant kept, about half the flavour lines were seen
+   within 30 days, and a reworded joke is still the same joke. Ideas to
+   weigh: much bigger pools for the common moods (wet, cold, steady
+   evening); lines that work in any mood as a shared pool; rotating by a
+   shuffled order instead of in sequence, so a pool never reads as a
+   cycle; lines keyed to the weekday, the season or the run of weather
+   ("third grey day in a row"); and the topical lines (item 7) earlier.
+7. **Topical lines** (backlog, after the text ships): On and 11 lines about
    current events, written with Claude whenever something happens, each
    with a date window so it rotates in and out by itself. Plan in
    `docs/FUTURE-topical-lines.md` (the October 2026 update at the top).

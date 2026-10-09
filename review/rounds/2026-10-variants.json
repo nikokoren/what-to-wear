@@ -1,0 +1,3049 @@
+{
+ "round": "2026-10-variants",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "fact_0.steady",
+   "text": "You're dressed right for the whole day.",
+   "template": "You're dressed right for the whole day.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “What you're wearing works for the whole day.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady",
+   "text": "That outfit will see you through the whole day.",
+   "template": "That outfit will see you through the whole day.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “What you're wearing works for the whole day.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady",
+   "text": "Nothing to change today. What you have on is right.",
+   "template": "Nothing to change today. What you have on is right.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “What you're wearing works for the whole day.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady",
+   "text": "What you have on works from now until tonight.",
+   "template": "What you have on works from now until tonight.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “What you're wearing works for the whole day.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_evening",
+   "text": "You're dressed right for the rest of the evening.",
+   "template": "You're dressed right for the rest of the evening.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “What you're wearing works for the rest of the evening.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_evening",
+   "text": "That outfit will see you through the evening.",
+   "template": "That outfit will see you through the evening.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “What you're wearing works for the rest of the evening.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_evening",
+   "text": "Nothing to change tonight. What you have on is right.",
+   "template": "Nothing to change tonight. What you have on is right.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “What you're wearing works for the rest of the evening.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_evening",
+   "text": "The rest of the evening needs nothing more than this.",
+   "template": "The rest of the evening needs nothing more than this.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “What you're wearing works for the rest of the evening.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_hot",
+   "text": "It's hot all day. Bring water and stay in the shade.",
+   "template": "It's hot all day. Bring water and stay in the shade.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “It stays hot all day, so bring water and look for shade.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_hot",
+   "text": "The heat stays all day, so keep water with you.",
+   "template": "The heat stays all day, so keep water with you.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “It stays hot all day, so bring water and look for shade.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_hot",
+   "text": "No break from the heat today. Water and shade help.",
+   "template": "No break from the heat today. Water and shade help.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “It stays hot all day, so bring water and look for shade.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_hot",
+   "text": "It stays hot until tonight, so drink plenty and find shade.",
+   "template": "It stays hot until tonight, so drink plenty and find shade.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “It stays hot all day, so bring water and look for shade.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_cold",
+   "text": "It's cold all day. Keep everything on.",
+   "template": "It's cold all day. Keep everything on.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_cold",
+   "text": "The cold stays all day, so everything stays on.",
+   "template": "The cold stays all day, so everything stays on.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_cold",
+   "text": "No warming up today. Keep it all on.",
+   "template": "No warming up today. Keep it all on.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_cold",
+   "text": "It stays this cold until tonight, so don't take anything off.",
+   "template": "It stays this cold until tonight, so don't take anything off.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “It stays this cold all day, so keep everything on.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_scarf",
+   "text": "You can take off the hat, scarf and gloves around midday.",
+   "template": "You can take off the hat, scarf and gloves {WHEN}.",
+   "batch": "FE",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line variant. Bitter cold now; hat, scarf and gloves come off later. Current wording: “The hat, scarf and gloves can come off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_scarf",
+   "text": "Around midday it's mild enough to lose the hat, scarf and gloves.",
+   "template": "{WHEN} it's mild enough to lose the hat, scarf and gloves.",
+   "batch": "FE",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line variant. Bitter cold now; hat, scarf and gloves come off later. Current wording: “The hat, scarf and gloves can come off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_coat",
+   "text": "You can take the winter coat off around midday.",
+   "template": "You can take the winter coat off {WHEN}.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Winter coat now; it comes off later. Current wording: “The winter coat can come off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_coat",
+   "text": "Around midday it's warm enough to lose the winter coat.",
+   "template": "{WHEN} it's warm enough to lose the winter coat.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Winter coat now; it comes off later. Current wording: “The winter coat can come off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_coat",
+   "text": "It warms up around midday, so the winter coat can come off.",
+   "template": "It warms up {WHEN}, so the winter coat can come off.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Winter coat now; it comes off later. Current wording: “The winter coat can come off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_jacket",
+   "text": "The jacket can come off around midday.",
+   "template": "The jacket can come off {WHEN}.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Jacket now; it comes off later. Current wording: “You can take the jacket off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_jacket",
+   "text": "Around midday it's warm enough to lose the jacket.",
+   "template": "{WHEN} it's warm enough to lose the jacket.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Jacket now; it comes off later. Current wording: “You can take the jacket off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_jacket",
+   "text": "It warms up around midday, so the jacket can come off.",
+   "template": "It warms up {WHEN}, so the jacket can come off.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Jacket now; it comes off later. Current wording: “You can take the jacket off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_hoodie",
+   "text": "The sweater can come off around midday.",
+   "template": "The sweater can come off {WHEN}.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Sweater now; it comes off later. Current wording: “You can take the sweater off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_hoodie",
+   "text": "Around midday it's warm enough to lose the sweater.",
+   "template": "{WHEN} it's warm enough to lose the sweater.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Sweater now; it comes off later. Current wording: “You can take the sweater off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_hoodie",
+   "text": "It warms up around midday, so the sweater can come off.",
+   "template": "It warms up {WHEN}, so the sweater can come off.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Sweater now; it comes off later. Current wording: “You can take the sweater off around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_water",
+   "text": "Around midday it gets hot. Bring water.",
+   "template": "{WHEN} it gets hot. Bring water.",
+   "batch": "FE",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. It gets hot later. Current wording: “It gets hot around midday, so bring water.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.w_water",
+   "text": "It heats up around midday, so take water with you.",
+   "template": "It heats up {WHEN}, so take water with you.",
+   "batch": "FE",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. It gets hot later. Current wording: “It gets hot around midday, so bring water.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_scarf",
+   "text": "This evening it gets cold enough for a hat, scarf and gloves.",
+   "template": "{WHEN} it gets cold enough for a hat, scarf and gloves.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. It gets bitterly cold later. Current wording: “It gets colder this evening, so bring a hat, scarf and gloves.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_scarf",
+   "text": "Bring a hat, scarf and gloves. It gets colder this evening.",
+   "template": "Bring a hat, scarf and gloves. It gets colder {WHEN}.",
+   "batch": "FE",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. It gets bitterly cold later. Current wording: “It gets colder this evening, so bring a hat, scarf and gloves.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_coat",
+   "text": "This evening it gets cold enough for the winter coat.",
+   "template": "{WHEN} it gets cold enough for the winter coat.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Winter-coat cold later. Current wording: “It gets colder this evening, so bring the winter coat.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_coat",
+   "text": "Bring the winter coat. It gets colder this evening.",
+   "template": "Bring the winter coat. It gets colder {WHEN}.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Winter-coat cold later. Current wording: “It gets colder this evening, so bring the winter coat.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_jacket",
+   "text": "This evening it gets cool enough for a jacket.",
+   "template": "{WHEN} it gets cool enough for a jacket.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Jacket weather later. Current wording: “It cools down this evening, so bring a jacket.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_jacket",
+   "text": "Bring a jacket. It cools down this evening.",
+   "template": "Bring a jacket. It cools down {WHEN}.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Jacket weather later. Current wording: “It cools down this evening, so bring a jacket.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_jacket",
+   "text": "It gets cooler this evening, so take a jacket along.",
+   "template": "It gets cooler {WHEN}, so take a jacket along.",
+   "batch": "FE",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Jacket weather later. Current wording: “It cools down this evening, so bring a jacket.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_hoodie",
+   "text": "This evening it gets cool enough for a sweater.",
+   "template": "{WHEN} it gets cool enough for a sweater.",
+   "batch": "FE",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line variant. Sweater weather later. Current wording: “It cools down this evening, so bring a sweater.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_hoodie",
+   "text": "Bring a sweater. It cools down this evening.",
+   "template": "Bring a sweater. It cools down {WHEN}.",
+   "batch": "FE",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line variant. Sweater weather later. Current wording: “It cools down this evening, so bring a sweater.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_hoodie",
+   "text": "It gets cooler this evening, so take a sweater along.",
+   "template": "It gets cooler {WHEN}, so take a sweater along.",
+   "batch": "FE",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line variant. Sweater weather later. Current wording: “It cools down this evening, so bring a sweater.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_relief",
+   "text": "The heat eases this evening, but it stays warm.",
+   "template": "The heat eases {WHEN}, but it stays warm.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “It cools off a little this evening, but stays warm.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_relief",
+   "text": "This evening it gets a little less hot. Still warm, though.",
+   "template": "{WHEN} it gets a little less hot. Still warm, though.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “It cools off a little this evening, but stays warm.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_relief",
+   "text": "It cools down a bit this evening. Warm all the same.",
+   "template": "It cools down a bit {WHEN}. Warm all the same.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “It cools off a little this evening, but stays warm.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.c_relief",
+   "text": "Some relief from the heat this evening, but it stays warm.",
+   "template": "Some relief from the heat {WHEN}, but it stays warm.",
+   "batch": "FE",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “It cools off a little this evening, but stays warm.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_warmer",
+   "text": "The jacket can come off around midday and stay off.",
+   "template": "{G} can come off {WHEN} and stay off.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up and stays warm. Current wording: “The jacket can come off around midday, and you won't need it again today.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_warmer",
+   "text": "You can take the jacket off around midday. You won't need it again today.",
+   "template": "You can take {G} off {WHEN}. You won't need {GP} again today.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up and stays warm. Current wording: “The jacket can come off around midday, and you won't need it again today.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_warmer",
+   "text": "Around midday the jacket can come off for the rest of the day.",
+   "template": "{WHEN} {G} can come off for the rest of the day.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up and stays warm. Current wording: “The jacket can come off around midday, and you won't need it again today.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_level",
+   "text": "You can take the jacket off around midday. You'll want it back tonight.",
+   "template": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then back to how it started. Current wording: “The jacket can come off around midday, but you'll want it back tonight.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_level",
+   "text": "Take the jacket off around midday, put it back on tonight.",
+   "template": "Take {G} off {WHEN}, put {GP} back on {WHEN2}.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then back to how it started. Current wording: “The jacket can come off around midday, but you'll want it back tonight.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_level",
+   "text": "The jacket can come off around midday. Keep it handy for tonight.",
+   "template": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then back to how it started. Current wording: “The jacket can come off around midday, but you'll want it back tonight.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.arc_colder",
+   "text": "You can take the jacket off around midday. Tonight you'll want it back, and a layer more.",
+   "template": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and a layer more.",
+   "batch": "FE",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then colder than now. Current wording: “The jacket can come off around midday. Tonight you'll want it back, plus an extra layer.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_early",
+   "text": "A cool start, then shorts weather around midday.",
+   "template": "A cool start, then shorts weather {WHEN}.",
+   "batch": "FE",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. Cool now, shorts weather later. Current wording: “It starts cool, but it's shorts weather around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_early",
+   "text": "It's cool now, but around midday it's warm enough for shorts.",
+   "template": "It's cool now, but {WHEN} it's warm enough for shorts.",
+   "batch": "FE",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. Cool now, shorts weather later. Current wording: “It starts cool, but it's shorts weather around midday.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter",
+   "text": "A shower comes through this afternoon, so take the umbrella.",
+   "template": "A shower comes through {WHENP}, so take the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “There's a shower this afternoon, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter",
+   "text": "Bring the umbrella. There's a shower this afternoon.",
+   "template": "Bring the umbrella. There's a shower {WHENP}.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “There's a shower this afternoon, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter",
+   "text": "Expect a shower this afternoon. The umbrella's worth taking.",
+   "template": "Expect a shower {WHENP}. The umbrella's worth taking.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “There's a shower this afternoon, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter",
+   "text": "This afternoon there's a shower, so the umbrella comes along.",
+   "template": "{WHENP} there's a shower, so the umbrella comes along.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “There's a shower this afternoon, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long",
+   "text": "The rain starts this afternoon and doesn't stop. Bring the umbrella.",
+   "template": "The rain starts {WHENP} and doesn't stop. Bring the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain later, and it stays. Current wording: “It starts raining this afternoon and keeps going, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long",
+   "text": "Bring the umbrella. Once it starts raining this afternoon, it keeps going.",
+   "template": "Bring the umbrella. Once it starts raining {WHENP}, it keeps going.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain later, and it stays. Current wording: “It starts raining this afternoon and keeps going, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long",
+   "text": "This afternoon the rain sets in for good. Bring the umbrella.",
+   "template": "{WHENP} the rain sets in for good. Bring the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain later, and it stays. Current wording: “It starts raining this afternoon and keeps going, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe",
+   "text": "There's a chance of rain this afternoon. An umbrella wouldn't hurt.",
+   "template": "There's a chance of rain {WHENP}. An umbrella wouldn't hurt.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain possible later. Current wording: “It might rain this afternoon, so an umbrella wouldn't hurt.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe",
+   "text": "Rain is possible this afternoon, so maybe take the umbrella.",
+   "template": "Rain is possible {WHENP}, so maybe take the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain possible later. Current wording: “It might rain this afternoon, so an umbrella wouldn't hurt.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe",
+   "text": "It could rain this afternoon. Take the umbrella to be safe.",
+   "template": "It could rain {WHENP}. Take the umbrella to be safe.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain possible later. Current wording: “It might rain this afternoon, so an umbrella wouldn't hurt.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet",
+   "text": "It's raining all day. Bring the umbrella.",
+   "template": "It's raining all day. Bring the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain all day. Current wording: “It rains all day, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet",
+   "text": "The rain doesn't stop today, so take the umbrella.",
+   "template": "The rain doesn't stop today, so take the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain all day. Current wording: “It rains all day, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet",
+   "text": "Rain all day long. The umbrella comes along.",
+   "template": "Rain all day long. The umbrella comes along.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain all day. Current wording: “It rains all day, so bring the umbrella.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier",
+   "text": "It stops raining later. Until then, the umbrella.",
+   "template": "It stops raining later. Until then, the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, stops later. Current wording: “The rain stops later, but you'll want the umbrella for now.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier",
+   "text": "Take the umbrella for now. The rain stops later.",
+   "template": "Take the umbrella for now. The rain stops later.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, stops later. Current wording: “The rain stops later, but you'll want the umbrella for now.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier",
+   "text": "The rain eases off later, but bring the umbrella for now.",
+   "template": "The rain eases off later, but bring the umbrella for now.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, stops later. Current wording: “The rain stops later, but you'll want the umbrella for now.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "The rain takes a break, then comes back this afternoon. Keep the umbrella.",
+   "template": "The rain takes a break, then comes back {WHENP}. Keep the umbrella.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, a break, then more. Current wording: “The rain pauses, then returns this afternoon, so keep the umbrella with you.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "A dry spell, then more rain this afternoon. Keep the umbrella with you.",
+   "template": "A dry spell, then more rain {WHENP}. Keep the umbrella with you.",
+   "batch": "FE",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, a break, then more. Current wording: “The rain pauses, then returns this afternoon, so keep the umbrella with you.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_snow_coming",
+   "text": "Snow starts this afternoon.",
+   "template": "Snow starts {WHENP}.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snow later. Current wording: “It starts snowing this afternoon.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_snow_coming",
+   "text": "Expect snow this afternoon.",
+   "template": "Expect snow {WHENP}.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snow later. Current wording: “It starts snowing this afternoon.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_snow_coming",
+   "text": "This afternoon it starts to snow.",
+   "template": "{WHENP} it starts to snow.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snow later. Current wording: “It starts snowing this afternoon.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "It's snowing all day.",
+   "template": "It's snowing all day.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing all day. Current wording: “It snows all day.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "The snow keeps coming all day.",
+   "template": "The snow keeps coming all day.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing all day. Current wording: “It snows all day.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_snow",
+   "text": "It stops snowing later.",
+   "template": "It stops snowing later.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, stops later. Current wording: “The snow stops later.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_snow",
+   "text": "The snow eases off later.",
+   "template": "The snow eases off later.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, stops later. Current wording: “The snow stops later.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "The snow takes a break, then comes back this afternoon.",
+   "template": "The snow takes a break, then comes back {WHENP}.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, a break, then more. Current wording: “The snow pauses, then returns this afternoon.”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "A break in the snow, then more this afternoon.",
+   "template": "A break in the snow, then more {WHENP}.",
+   "batch": "FE",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, a break, then more. Current wording: “The snow pauses, then returns this afternoon.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady",
+   "text": "Du bist für den ganzen Tag richtig angezogen.",
+   "template": "Du bist für den ganzen Tag richtig angezogen.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “Was du anhast, passt für den ganzen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady",
+   "text": "Mit dem, was du anhast, kommst du gut durch den Tag.",
+   "template": "Mit dem, was du anhast, kommst du gut durch den Tag.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “Was du anhast, passt für den ganzen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady",
+   "text": "Heute musst du nichts ändern. Was du anhast, passt.",
+   "template": "Heute musst du nichts ändern. Was du anhast, passt.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “Was du anhast, passt für den ganzen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady",
+   "text": "Was du anhast, passt bis zum Abend.",
+   "template": "Was du anhast, passt bis zum Abend.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. A steady day, nothing changes. Current wording: “Was du anhast, passt für den ganzen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_evening",
+   "text": "Du bist für den Abend richtig angezogen.",
+   "template": "Du bist für den Abend richtig angezogen.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “Was du anhast, passt für den restlichen Abend.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_evening",
+   "text": "Mit dem, was du anhast, kommst du gut durch den Abend.",
+   "template": "Mit dem, was du anhast, kommst du gut durch den Abend.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “Was du anhast, passt für den restlichen Abend.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_evening",
+   "text": "Heute Abend musst du nichts mehr ändern.",
+   "template": "Heute Abend musst du nichts mehr ändern.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “Was du anhast, passt für den restlichen Abend.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_evening",
+   "text": "Was du anhast, reicht für den ganzen Abend.",
+   "template": "Was du anhast, reicht für den ganzen Abend.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. A steady evening. Current wording: “Was du anhast, passt für den restlichen Abend.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_hot",
+   "text": "Heiß bis zum Abend. Nimm Wasser mit und bleib im Schatten.",
+   "template": "Heiß bis zum Abend. Nimm Wasser mit und bleib im Schatten.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_hot",
+   "text": "Die Hitze bleibt den ganzen Tag, also viel trinken.",
+   "template": "Die Hitze bleibt den ganzen Tag, also viel trinken.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_hot",
+   "text": "Heute kühlt's nicht ab. Wasser mitnehmen, Schatten suchen.",
+   "template": "Heute kühlt's nicht ab. Wasser mitnehmen, Schatten suchen.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_hot",
+   "text": "Es bleibt heiß bis zum Abend, also immer Wasser dabeihaben.",
+   "template": "Es bleibt heiß bis zum Abend, also immer Wasser dabeihaben.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. Steady heat all day. Current wording: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Kalt bis zum Abend, da bleibt alles an.",
+   "template": "Kalt bis zum Abend, da bleibt alles an.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Die Kälte bleibt den ganzen Tag, also nichts ausziehen.",
+   "template": "Die Kälte bleibt den ganzen Tag, also nichts ausziehen.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Heute wird's nicht wärmer. Lass alles an.",
+   "template": "Heute wird's nicht wärmer. Lass alles an.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Es bleibt so kalt bis zum Abend, da kommt nichts runter.",
+   "template": "Es bleibt so kalt bis zum Abend, da kommt nichts runter.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Steady cold all day. Current wording: “Es bleibt den ganzen Tag so kalt, also lass alles an.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_scarf",
+   "text": "Gegen Mittag kannst du Mütze, Schal und Handschuhe ablegen.",
+   "template": "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen.",
+   "batch": "FD",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line variant. Bitter cold now; hat, scarf and gloves come off later. Current wording: “Gegen Mittag können Mütze, Schal und Handschuhe weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_scarf",
+   "text": "Gegen Mittag wird's mild genug, dann können Mütze, Schal und Handschuhe weg.",
+   "template": "{WHEN} wird's mild genug, dann können Mütze, Schal und Handschuhe weg.",
+   "batch": "FD",
+   "sprite": "bundled_dry",
+   "meaning": "Fact line variant. Bitter cold now; hat, scarf and gloves come off later. Current wording: “Gegen Mittag können Mütze, Schal und Handschuhe weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_coat",
+   "text": "Gegen Mittag kannst du die Winterjacke ausziehen.",
+   "template": "{WHEN} kannst du die Winterjacke ausziehen.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Winter coat now; it comes off later. Current wording: “Gegen Mittag kann die Winterjacke weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_coat",
+   "text": "Gegen Mittag ist es warm genug, dann brauchst du keine Winterjacke mehr.",
+   "template": "{WHEN} ist es warm genug, dann brauchst du keine Winterjacke mehr.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Winter coat now; it comes off later. Current wording: “Gegen Mittag kann die Winterjacke weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_coat",
+   "text": "Gegen Mittag wird's wärmer, dann kann die Winterjacke weg.",
+   "template": "{WHEN} wird's wärmer, dann kann die Winterjacke weg.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. Winter coat now; it comes off later. Current wording: “Gegen Mittag kann die Winterjacke weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_jacket",
+   "text": "Gegen Mittag kannst du die Jacke ausziehen.",
+   "template": "{WHEN} kannst du die Jacke ausziehen.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Jacket now; it comes off later. Current wording: “Gegen Mittag kann die Jacke weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_jacket",
+   "text": "Gegen Mittag ist es warm genug, dann brauchst du keine Jacke mehr.",
+   "template": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Jacket now; it comes off later. Current wording: “Gegen Mittag kann die Jacke weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_jacket",
+   "text": "Gegen Mittag wird's wärmer, dann kann die Jacke weg.",
+   "template": "{WHEN} wird's wärmer, dann kann die Jacke weg.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Jacket now; it comes off later. Current wording: “Gegen Mittag kann die Jacke weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_hoodie",
+   "text": "Gegen Mittag kannst du den Pulli ausziehen.",
+   "template": "{WHEN} kannst du den Pulli ausziehen.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Sweater now; it comes off later. Current wording: “Gegen Mittag kann der Pulli weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_hoodie",
+   "text": "Gegen Mittag ist es warm genug, dann brauchst du keinen Pulli mehr.",
+   "template": "{WHEN} ist es warm genug, dann brauchst du keinen Pulli mehr.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Sweater now; it comes off later. Current wording: “Gegen Mittag kann der Pulli weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_hoodie",
+   "text": "Gegen Mittag wird's wärmer, dann kann der Pulli weg.",
+   "template": "{WHEN} wird's wärmer, dann kann der Pulli weg.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Sweater now; it comes off later. Current wording: “Gegen Mittag kann der Pulli weg.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_water",
+   "text": "Gegen Mittag wird's heiß, also Wasser einpacken.",
+   "template": "{WHEN} wird's heiß, also Wasser einpacken.",
+   "batch": "FD",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. It gets hot later. Current wording: “Gegen Mittag wird's richtig heiß, nimm Wasser mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.w_water",
+   "text": "Gegen Mittag kommt die Hitze, nimm genug zu trinken mit.",
+   "template": "{WHEN} kommt die Hitze, nimm genug zu trinken mit.",
+   "batch": "FD",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. It gets hot later. Current wording: “Gegen Mittag wird's richtig heiß, nimm Wasser mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_scarf",
+   "text": "Heute Abend wird's kalt genug für Mütze, Schal und Handschuhe.",
+   "template": "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. It gets bitterly cold later. Current wording: “Heute Abend wird's kälter, da braucht's Mütze, Schal und Handschuhe.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_scarf",
+   "text": "Pack Mütze, Schal und Handschuhe ein, heute Abend wird's kälter.",
+   "template": "Pack Mütze, Schal und Handschuhe ein, {WHEN} wird's kälter.",
+   "batch": "FD",
+   "sprite": "coat_dry",
+   "meaning": "Fact line variant. It gets bitterly cold later. Current wording: “Heute Abend wird's kälter, da braucht's Mütze, Schal und Handschuhe.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_coat",
+   "text": "Heute Abend wird's kalt genug für die Winterjacke.",
+   "template": "{WHEN} wird's kalt genug für die Winterjacke.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Winter-coat cold later. Current wording: “Heute Abend wird's kälter, da braucht's die Winterjacke.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_coat",
+   "text": "Nimm die Winterjacke mit, heute Abend wird's kälter.",
+   "template": "Nimm die Winterjacke mit, {WHEN} wird's kälter.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Winter-coat cold later. Current wording: “Heute Abend wird's kälter, da braucht's die Winterjacke.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_jacket",
+   "text": "Heute Abend wird's frisch genug für eine Jacke.",
+   "template": "{WHEN} wird's frisch genug für eine Jacke.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Jacket weather later. Current wording: “Heute Abend kühlt's ab, da braucht's eine Jacke.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_jacket",
+   "text": "Nimm eine Jacke mit, heute Abend kühlt's ab.",
+   "template": "Nimm eine Jacke mit, {WHEN} kühlt's ab.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Jacket weather later. Current wording: “Heute Abend kühlt's ab, da braucht's eine Jacke.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_jacket",
+   "text": "Pack eine Jacke ein, heute Abend wird's kühler.",
+   "template": "Pack eine Jacke ein, {WHEN} wird's kühler.",
+   "batch": "FD",
+   "sprite": "sweater_dry",
+   "meaning": "Fact line variant. Jacket weather later. Current wording: “Heute Abend kühlt's ab, da braucht's eine Jacke.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_hoodie",
+   "text": "Heute Abend wird's frisch genug für einen Pulli.",
+   "template": "{WHEN} wird's frisch genug für einen Pulli.",
+   "batch": "FD",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line variant. Sweater weather later. Current wording: “Heute Abend kühlt's ab, da braucht's einen Pulli.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_hoodie",
+   "text": "Nimm einen Pulli mit, heute Abend kühlt's ab.",
+   "template": "Nimm einen Pulli mit, {WHEN} kühlt's ab.",
+   "batch": "FD",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line variant. Sweater weather later. Current wording: “Heute Abend kühlt's ab, da braucht's einen Pulli.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_hoodie",
+   "text": "Pack einen Pulli ein, heute Abend wird's kühler.",
+   "template": "Pack einen Pulli ein, {WHEN} wird's kühler.",
+   "batch": "FD",
+   "sprite": "tee_pants_dry",
+   "meaning": "Fact line variant. Sweater weather later. Current wording: “Heute Abend kühlt's ab, da braucht's einen Pulli.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_relief",
+   "text": "Heute Abend wird's etwas weniger heiß, aber warm bleibt's.",
+   "template": "{WHEN} wird's etwas weniger heiß, aber warm bleibt's.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “Heute Abend lässt die Hitze etwas nach, warm bleibt's trotzdem.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_relief",
+   "text": "Heute Abend kühlt's ein bisschen ab, warm ist's trotzdem.",
+   "template": "{WHEN} kühlt's ein bisschen ab, warm ist's trotzdem.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “Heute Abend lässt die Hitze etwas nach, warm bleibt's trotzdem.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_relief",
+   "text": "Die Hitze lässt heute Abend nach, warm bleibt's aber.",
+   "template": "Die Hitze lässt {WHEN} nach, warm bleibt's aber.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “Heute Abend lässt die Hitze etwas nach, warm bleibt's trotzdem.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.c_relief",
+   "text": "Heute Abend wird's angenehmer, aber immer noch warm.",
+   "template": "{WHEN} wird's angenehmer, aber immer noch warm.",
+   "batch": "FD",
+   "sprite": "heat_dry",
+   "meaning": "Fact line variant. The heat eases later but stays warm. Current wording: “Heute Abend lässt die Hitze etwas nach, warm bleibt's trotzdem.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.arc_warmer",
+   "text": "Gegen Mittag kann die Jacke weg, und du brauchst sie heute nicht mehr.",
+   "template": "{WHEN} {GV} weg, und du brauchst {GP} heute nicht mehr.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up and stays warm. Current wording: “Gegen Mittag kann die Jacke weg, und zwar für den Rest des Tages.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.arc_warmer",
+   "text": "Gegen Mittag kann die Jacke weg. Heute brauchst du sie nicht mehr.",
+   "template": "{WHEN} {GV} weg. Heute brauchst du {GP} nicht mehr.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up and stays warm. Current wording: “Gegen Mittag kann die Jacke weg, und zwar für den Rest des Tages.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.arc_level",
+   "text": "Gegen Mittag kann die Jacke weg. Heute Nacht brauchst du sie aber wieder.",
+   "template": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then back to how it started. Current wording: “Gegen Mittag kann die Jacke weg, heute Nacht brauchst du sie wieder.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.arc_level",
+   "text": "Gegen Mittag kann die Jacke weg, aber behalt sie griffbereit für heute Nacht.",
+   "template": "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then back to how it started. Current wording: “Gegen Mittag kann die Jacke weg, heute Nacht brauchst du sie wieder.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.arc_colder",
+   "text": "Gegen Mittag kann die Jacke weg. Heute Nacht wird's kälter als jetzt, nimm eine Schicht mehr mit.",
+   "template": "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine Schicht mehr mit.",
+   "batch": "FD",
+   "sprite": "jacket_dry",
+   "meaning": "Fact line variant. Warms up, then colder than now. Current wording: “Gegen Mittag kann die Jacke weg. Heute Nacht brauchst du sie wieder, und noch eine Schicht dazu.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_early",
+   "text": "Frischer Start, gegen Mittag wird's warm genug für Shorts.",
+   "template": "Frischer Start, {WHEN} wird's warm genug für Shorts.",
+   "batch": "FD",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. Cool now, shorts weather later. Current wording: “Morgens ist's frisch, gegen Mittag ist Shorts-Wetter.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_early",
+   "text": "Jetzt noch kühl, gegen Mittag ist es Shorts-Wetter.",
+   "template": "Jetzt noch kühl, {WHEN} ist es Shorts-Wetter.",
+   "batch": "FD",
+   "sprite": "tee_shorts_dry",
+   "meaning": "Fact line variant. Cool now, shorts weather later. Current wording: “Morgens ist's frisch, gegen Mittag ist Shorts-Wetter.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter",
+   "text": "Heute Nachmittag gibt's einen Schauer, der Schirm sollte mit.",
+   "template": "{WHENP} gibt's einen Schauer, der Schirm sollte mit.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter",
+   "text": "Nimm den Schirm mit, heute Nachmittag kommt ein Schauer.",
+   "template": "Nimm den Schirm mit, {WHENP} kommt ein Schauer.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter",
+   "text": "Heute Nachmittag zieht ein Schauer durch, also Schirm einpacken.",
+   "template": "{WHENP} zieht ein Schauer durch, also Schirm einpacken.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter",
+   "text": "Schirm nicht vergessen, heute Nachmittag gibt's einen Schauer.",
+   "template": "Schirm nicht vergessen, {WHENP} gibt's einen Schauer.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. A shower later. Current wording: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long",
+   "text": "Heute Nachmittag setzt Regen ein und bleibt. Nimm den Schirm mit.",
+   "template": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain later, and it stays. Current wording: “Heute Nachmittag fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long",
+   "text": "Nimm den Schirm mit, heute Nachmittag fängt's an zu regnen, und zwar länger.",
+   "template": "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain later, and it stays. Current wording: “Heute Nachmittag fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long",
+   "text": "Heute Nachmittag beginnt der Regen, und der bleibt. Schirm einpacken.",
+   "template": "{WHENP} beginnt der Regen, und der bleibt. Schirm einpacken.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain later, and it stays. Current wording: “Heute Nachmittag fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_maybe",
+   "text": "Heute Nachmittag ist Regen möglich, nimm vielleicht den Schirm mit.",
+   "template": "{WHENP} ist Regen möglich, nimm vielleicht den Schirm mit.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain possible later. Current wording: “Heute Nachmittag könnte es regnen, ein Schirm schadet nicht.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_maybe",
+   "text": "Heute Nachmittag kann's regnen. Mit Schirm bist du auf der sicheren Seite.",
+   "template": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain possible later. Current wording: “Heute Nachmittag könnte es regnen, ein Schirm schadet nicht.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_maybe",
+   "text": "Vielleicht regnet's heute Nachmittag. Der Schirm schadet nicht.",
+   "template": "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain possible later. Current wording: “Heute Nachmittag könnte es regnen, ein Schirm schadet nicht.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet",
+   "text": "Regen bis zum Abend, der Schirm muss mit.",
+   "template": "Regen bis zum Abend, der Schirm muss mit.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain all day. Current wording: “Es regnet den ganzen Tag, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet",
+   "text": "Heute hört's nicht auf zu regnen, also Schirm mitnehmen.",
+   "template": "Heute hört's nicht auf zu regnen, also Schirm mitnehmen.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain all day. Current wording: “Es regnet den ganzen Tag, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet",
+   "text": "Den ganzen Tag Regen. Ohne Schirm geht's nicht.",
+   "template": "Den ganzen Tag Regen. Ohne Schirm geht's nicht.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Rain all day. Current wording: “Es regnet den ganzen Tag, also nimm den Schirm mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier",
+   "text": "Später hört's auf zu regnen. Bis dahin Schirm.",
+   "template": "Später hört's auf zu regnen. Bis dahin Schirm.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, stops later. Current wording: “Der Regen hört später auf, bis dahin brauchst du den Schirm.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst später auf.",
+   "template": "Nimm den Schirm mit, der Regen hört erst später auf.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, stops later. Current wording: “Der Regen hört später auf, bis dahin brauchst du den Schirm.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier",
+   "text": "Der Regen lässt später nach, für jetzt brauchst du den Schirm.",
+   "template": "Der Regen lässt später nach, für jetzt brauchst du den Schirm.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, stops later. Current wording: “Der Regen hört später auf, bis dahin brauchst du den Schirm.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "Erst eine Regenpause, heute Nachmittag regnet's wieder. Der Schirm bleibt dabei.",
+   "template": "Erst eine Regenpause, {WHENP} regnet's wieder. Der Schirm bleibt dabei.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, a break, then more. Current wording: “Der Regen macht Pause und kommt heute Nachmittag zurück, also nimm den Schirm trotzdem mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "Zwischendurch trocken, heute Nachmittag kommt der Regen zurück. Schirm mitnehmen.",
+   "template": "Zwischendurch trocken, {WHENP} kommt der Regen zurück. Schirm mitnehmen.",
+   "batch": "FD",
+   "sprite": "jacket_rain",
+   "meaning": "Fact line variant. Raining now, a break, then more. Current wording: “Der Regen macht Pause und kommt heute Nachmittag zurück, also nimm den Schirm trotzdem mit.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_snow_coming",
+   "text": "Heute Nachmittag fängt's an zu schneien.",
+   "template": "{WHENP} fängt's an zu schneien.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snow later. Current wording: “Heute Nachmittag soll es schneien.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_snow_coming",
+   "text": "Heute Nachmittag kommt Schnee.",
+   "template": "{WHENP} kommt Schnee.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snow later. Current wording: “Heute Nachmittag soll es schneien.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_snow_coming",
+   "text": "Mach dich auf Schnee gefasst, heute Nachmittag geht's los.",
+   "template": "Mach dich auf Schnee gefasst, {WHENP} geht's los.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snow later. Current wording: “Heute Nachmittag soll es schneien.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "Schnee bis zum Abend.",
+   "template": "Schnee bis zum Abend.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing all day. Current wording: “Es schneit den ganzen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "Heute hört's nicht auf zu schneien.",
+   "template": "Heute hört's nicht auf zu schneien.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing all day. Current wording: “Es schneit den ganzen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_snow",
+   "text": "Später hört's auf zu schneien.",
+   "template": "Später hört's auf zu schneien.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, stops later. Current wording: “Der Schnee hört später auf.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_snow",
+   "text": "Der Schneefall lässt später nach.",
+   "template": "Der Schneefall lässt später nach.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, stops later. Current wording: “Der Schnee hört später auf.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Erst eine Schneepause, heute Nachmittag schneit's wieder.",
+   "template": "Erst eine Schneepause, {WHENP} schneit's wieder.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, a break, then more. Current wording: “Der Schnee macht Pause und kommt heute Nachmittag zurück.”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Zwischendurch Ruhe, heute Nachmittag schneit's wieder.",
+   "template": "Zwischendurch Ruhe, {WHENP} schneit's wieder.",
+   "batch": "FD",
+   "sprite": "coat_snow",
+   "meaning": "Fact line variant. Snowing now, a break, then more. Current wording: “Der Schnee macht Pause und kommt heute Nachmittag zurück.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Even a screen bolted to a wall wants to go out today.",
+   "variant_of": "I'm a screen on a wall. Even I'd go outside today.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'm a screen on a wall. Even I'd go outside today.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "On days like this you barely look at me. Fair enough.",
+   "variant_of": "Days like this, I get a two-second glance. Rude, but fair.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Days like this, I get a two-second glance. Rude, but fair.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Not my hardest forecast. I'm taking the credit anyway.",
+   "variant_of": "Easy day to forecast. I'll still take the credit.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Easy day to forecast. I'll still take the credit.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "Lovely out there. I'll stay in here, refreshing.",
+   "variant_of": "Lovely out. I'll be here, refreshing.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Lovely out. I'll be here, refreshing.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "The weather's nearly as easy on the eyes as I am today.",
+   "variant_of": "Today the weather looks almost as good as I do.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Today the weather looks almost as good as I do.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Today has the thrill of a firmware update. A small one.",
+   "variant_of": "I've had firmware updates more exciting than today.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I've had firmware updates more exciting than today.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Making today look interesting takes skill. Lucky you've got me.",
+   "variant_of": "It takes real talent to make today look interesting.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “It takes real talent to make today look interesting.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Somewhere a screen is showing a Monet. I got today.",
+   "variant_of": "Other screens get to show paintings. I get today's weather.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Other screens get to show paintings. I get today's weather.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "Gripping weather. I can barely stay on the wall.",
+   "variant_of": "Thrilling stuff. I'm on the edge of my wall.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Thrilling stuff. I'm on the edge of my wall.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Grey was my look long before winter tried it.",
+   "variant_of": "I was grey before winter made it cool.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I was grey before winter made it cool.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I'll be on the wall. The warm side.",
+   "variant_of": "I'm staying on the wall where it's warm.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'm staying on the wall where it's warm.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "The cold can't touch me. Nothing can. I'm on a wall.",
+   "variant_of": "My only weakness is the cold. Kidding, I don't have one.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “My only weakness is the cold. Kidding, I don't have one.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Today I'm showing mostly coat. Proud of that coat.",
+   "variant_of": "Today's drawing is mostly coat. I'm very proud of the coat.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Today's drawing is mostly coat. I'm very proud of the coat.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Flat, pale and cool. Built for days like this.",
+   "variant_of": "Thin, pale and cool. I was made for this.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Thin, pale and cool. I was made for this.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "I'll sit this one out in your nice shady hallway.",
+   "variant_of": "I'll be here in the shade of your hallway.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'll be here in the shade of your hallway.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "No sweat here. One of the perks of being a screen.",
+   "variant_of": "No fan, no sweat. Perks of being a screen.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “No fan, no sweat. Perks of being a screen.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Somebody cranked the outside too high. Wasn't me.",
+   "variant_of": "Someone turned the outside up too far. Don't look at me.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Someone turned the outside up too far. Don't look at me.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Staying dry is easy when you live on a wall.",
+   "variant_of": "I don't get wet. Perks of living indoors.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I don't get wet. Perks of living indoors.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "As an umbrella I'd be useless. Beautiful, but useless.",
+   "variant_of": "I'd make a terrible umbrella. Gorgeous, but terrible.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'd make a terrible umbrella. Gorgeous, but terrible.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Dry and smug, right here on the wall.",
+   "variant_of": "I'll be on the wall, dry and smug.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'll be on the wall, dry and smug.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "The umbrella industry owes me a thank-you note.",
+   "variant_of": "I'm very good for umbrella sales.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'm very good for umbrella sales.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "You won't get a sad little cloud icon from me. Standards.",
+   "variant_of": "No sad cloud icons here. I have taste.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “No sad cloud icons here. I have taste.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "A chance of rain, and suddenly everyone checks on me.",
+   "variant_of": "Nothing gets me looked at like a chance of rain.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Nothing gets me looked at like a chance of rain.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain makes it all glossy out there. I prefer matte.",
+   "variant_of": "Rain makes everything shiny. I stay tastefully matte.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Rain makes everything shiny. I stay tastefully matte.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Whatever the sky does, my humour stays dry.",
+   "variant_of": "Rain or not, my humour stays bone dry.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Rain or not, my humour stays bone dry.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "I've only heard about snow. Tell me everything later.",
+   "variant_of": "I've never seen snow. Describe it to me later.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I've never seen snow. Describe it to me later.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "My snow angel would be a perfect rectangle. Classy.",
+   "variant_of": "In snow, I'd leave a perfect rectangle. Angels are for amateurs.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “In snow, I'd leave a perfect rectangle. Angels are for amateurs.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow is just rain that cares about presentation.",
+   "variant_of": "Snow is rain with better presentation. I respect that.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Snow is rain with better presentation. I respect that.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Today everything changes its mind except me.",
+   "variant_of": "I'm the only thing today that won't change its mind.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'm the only thing today that won't change its mind.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Pick one, weather. Some of us run on a schedule.",
+   "variant_of": "Make up your mind, weather. Some of us refresh on a schedule.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Make up your mind, weather. Some of us refresh on a schedule.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "The sky's having a day. I'm keeping my distance.",
+   "variant_of": "The sky's going through something. I'm staying out of it.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “The sky's going through something. I'm staying out of it.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Today's got a twist in it. I already know the ending.",
+   "variant_of": "Today has a plot twist. I've read ahead.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Today has a plot twist. I've read ahead.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Every other screen is glowing by now. So tacky.",
+   "variant_of": "By now the other screens are all glowing. Tacky.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “By now the other screens are all glowing. Tacky.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Evenings are for unwinding, they say. I was never wound.",
+   "variant_of": "Evenings are for unwinding, apparently. I've never been wound.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Evenings are for unwinding, apparently. I've never been wound.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Going out is overrated, says the screen that never has.",
+   "variant_of": "Going out is overrated. Says a screen that's never been out.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Going out is overrated. Says a screen that's never been out.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Tonight's plan: same wall as always. Great wall, though.",
+   "variant_of": "My plans for tonight: this wall. It's a great wall.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “My plans for tonight: this wall. It's a great wall.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Of everything tonight, the weather is the easy bit.",
+   "variant_of": "The weather's the easy part of tonight.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “The weather's the easy part of tonight.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "I'll hold this picture all night on no power. Your move.",
+   "variant_of": "I can hold this picture all night without power. Try that.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I can hold this picture all night without power. Try that.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "Beauty sleep? Clearly I don't need any.",
+   "variant_of": "I don't need beauty sleep. Clearly.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I don't need beauty sleep. Clearly.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "I'm the one screen that won't keep you up. You're welcome.",
+   "variant_of": "No blue light from me. I'm the screen that lets you sleep.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “No blue light from me. I'm the screen that lets you sleep.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "That's all from me tonight. Sleep well.",
+   "variant_of": "Nothing new from me tonight. Sleep well.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Nothing new from me tonight. Sleep well.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "I'm stuck on a wall. What's keeping you in today?",
+   "variant_of": "Perfect weather. I can't leave the wall. What's your excuse?",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Perfect weather. I can't leave the wall. What's your excuse?”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Perfect weather to talk about going for a run.",
+   "variant_of": "A good day for pretending you'll go for a run.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “A good day for pretending you'll go for a run.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "If you stay in, I'll act like I didn't notice.",
+   "variant_of": "I'll pretend I didn't see you stay in.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'll pretend I didn't see you stay in.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Go easy with the good mood. Others have to see it.",
+   "variant_of": "Try not to make your good mood everyone's problem.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Try not to make your good mood everyone's problem.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "You'll open one window and call it a productive day.",
+   "variant_of": "You'll open a window and feel like you've achieved something.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll open a window and feel like you've achieved something.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "One short walk today, and we'll hear about it for days.",
+   "variant_of": "You'll take one short walk and talk about it all week.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll take one short walk and talk about it all week.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Today's as surprising as your usual coffee order.",
+   "variant_of": "Today's as predictable as your lunch order.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Today's as predictable as your lunch order.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Nothing special out there. You'll blend right in.",
+   "variant_of": "Unremarkable out there. You'll fit right in.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Unremarkable out there. You'll fit right in.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "You'll call it 'crisp' like you go hiking or something.",
+   "variant_of": "You'll call it 'fresh' to sound like an outdoors person.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll call it 'fresh' to sound like an outdoors person.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Same jacket, same route. You wild thing.",
+   "variant_of": "Your usual jacket, your usual route. Living on the edge.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Your usual jacket, your usual route. Living on the edge.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "That layer coming off could be the peak of your day.",
+   "variant_of": "Taking that layer off might be the highlight of your day.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Taking that layer off might be the highlight of your day.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "Today you're a coat rack with legs. Well done.",
+   "variant_of": "Today you're your own coat rack. Congratulations.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Today you're your own coat rack. Congratulations.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "You'll overheat a little before you admit I was right.",
+   "variant_of": "You'll be a bit too warm before you admit I was right.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll be a bit too warm before you admit I was right.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "A layer you won't need for hours. Look at you, prepared.",
+   "variant_of": "Carrying a layer you don't need yet. How very grown-up.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Carrying a layer you don't need yet. How very grown-up.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Forget it and you'll think of me later. Not kindly.",
+   "variant_of": "Leave it behind and you'll think of me later. Not fondly.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Leave it behind and you'll think of me later. Not fondly.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Later you'll put it on as if you thought of it.",
+   "variant_of": "You'll put it on later and act like it was your idea.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll put it on later and act like it was your idea.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Gloves off for every text. Truly a flawless system.",
+   "variant_of": "Gloves off to use your phone, every time. Brilliant system.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Gloves off to use your phone, every time. Brilliant system.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "That coat up there? Wear it. I worked hard on it.",
+   "variant_of": "I've drawn you a warm coat. The least you can do is wear it.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I've drawn you a warm coat. The least you can do is wear it.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Staring at me longer won't warm it up.",
+   "variant_of": "Reading me slowly won't make it any warmer.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Reading me slowly won't make it any warmer.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Shoulders at ear height all day. So graceful.",
+   "variant_of": "Shoulders up by your ears all day. Very elegant.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Shoulders up by your ears all day. Very elegant.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll walk twice as fast today. Still not cardio.",
+   "variant_of": "Twice your usual walking speed today. Still not exercise.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Twice your usual walking speed today. Still not exercise.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "The second you step out, you'll make that sound. You know it.",
+   "variant_of": "You'll make that noise once you're outside. You know the one.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll make that noise once you're outside. You know the one.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "'It's not that cold,' you'll say. Your ears won't agree.",
+   "variant_of": "You'll say it's not that cold. Your face will disagree.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll say it's not that cold. Your face will disagree.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Your nose is about to go a colour I can't show.",
+   "variant_of": "Your nose will turn a colour I can't even display.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Your nose will turn a colour I can't even display.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Today you'll fan yourself with anything flat. Not me.",
+   "variant_of": "Anything flat becomes a fan today. Not me, please.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Anything flat becomes a fan today. Not me, please.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "One of us is about to sweat. Not me.",
+   "variant_of": "I don't sweat. You will.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I don't sweat. You will.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Remember wishing for summer? This is what you get.",
+   "variant_of": "You asked for warm weather. Careful what you wish for.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You asked for warm weather. Careful what you wish for.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You'll come home a lot less crisp than you left.",
+   "variant_of": "You'll come home looking less crisp than this drawing.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll come home looking less crisp than this drawing.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "'Ice cream near me' is in your future. Twice.",
+   "variant_of": "You'll search 'ice cream near me' later. Twice.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll search 'ice cream near me' later. Twice.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Get ready to have feelings about air conditioning.",
+   "variant_of": "You're about to have strong opinions about air conditioning.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You're about to have strong opinions about air conditioning.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "I refresh every few minutes. Your socks won't.",
+   "variant_of": "I refresh every few minutes. Wet socks don't.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I refresh every few minutes. Wet socks don't.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Come back soaked if you must. Just don't drip on me.",
+   "variant_of": "If you come back soaked, don't drip near me.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “If you come back soaked, don't drip near me.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "This umbrella's coming home, right? Unlike the others.",
+   "variant_of": "Try to bring the umbrella home. Unlike the last three.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Try to bring the umbrella home. Unlike the last three.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Another day of umbrella chicken. You'll blink first.",
+   "variant_of": "Umbrella chicken with strangers. You always flinch first.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Umbrella chicken with strangers. You always flinch first.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Whatever happens, you'll claim you saw it coming. Sure.",
+   "variant_of": "Whatever the sky does, you'll say you knew. You didn't.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Whatever the sky does, you'll say you knew. You didn't.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "You'll double-check on your phone. As if it knows better.",
+   "variant_of": "You'll still check your phone. As if it knows something I don't.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll still check your phone. As if it knows something I don't.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "You'll call it 'proper snow'. Name one improper kind.",
+   "variant_of": "'Proper snow,' you'll say. As if there's improper snow.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “'Proper snow,' you'll say. As if there's improper snow.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "An hour from now, the snow will feel personal.",
+   "variant_of": "Give it an hour, then you'll take the snow personally.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Give it an hour, then you'll take the snow personally.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Snow stays at the door. Not near me.",
+   "variant_of": "Shake the snow off before you come near me.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Shake the snow off before you come near me.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Don't fall. I have no way of getting help.",
+   "variant_of": "Try not to slip. I can't call anyone.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Try not to slip. I can't call anyone.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Someone's getting your full snow report. Usually me.",
+   "variant_of": "Whoever's nearby gets your snow commentary. Usually me.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Whoever's nearby gets your snow commentary. Usually me.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Too warm, then too cold. You'll complain about both.",
+   "variant_of": "Complaining it's warm, then that it isn't. You've got range.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Complaining it's warm, then that it isn't. You've got range.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Fifty-fifty that layer goes missing by tonight.",
+   "variant_of": "I give it even odds you lose that layer by tonight.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I give it even odds you lose that layer by tonight.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "I've redressed you in my head twice already.",
+   "variant_of": "I've changed this drawing in my head twice already.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I've changed this drawing in my head twice already.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "The warm part of today will go to your head.",
+   "variant_of": "The warm bit will make you insufferable.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “The warm bit will make you insufferable.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "The weather's as moody as you today. Nearly.",
+   "variant_of": "Today's weather has more mood swings than you. Barely.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Today's weather has more mood swings than you. Barely.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "You'll feel smart until about lunchtime.",
+   "variant_of": "You'll feel very clever for about half the day.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll feel very clever for about half the day.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Another evening, another walk past me. No thanks, as usual.",
+   "variant_of": "Another evening of walking past me without a thank-you.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Another evening of walking past me without a thank-you.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "If you're going out, try to look better than this.",
+   "variant_of": "Going out? Look better than this drawing.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Going out? Look better than this drawing.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "I'll still be here at midnight. Your motivation won't.",
+   "variant_of": "I'll be here all night. Unlike your motivation.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “I'll be here all night. Unlike your motivation.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Whatever you're doing tonight, I wasn't invited. Noted.",
+   "variant_of": "Whatever your plans are, I'm not invited. Fine.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Whatever your plans are, I'm not invited. Fine.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You'll read this and then do exactly what you planned.",
+   "variant_of": "You'll read all this, then do what you were going to anyway.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You'll read all this, then do what you were going to anyway.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "There's a bed nearby and you picked me. Flattering.",
+   "variant_of": "Bed's right there and you're choosing me. I'm touched.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Bed's right there and you're choosing me. I'm touched.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Going out at this hour? Respect.",
+   "variant_of": "If you're heading out now, I admire the commitment.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “If you're heading out now, I admire the commitment.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Still awake? Even the decor is tired, and that's me.",
+   "variant_of": "Still up? I'm a wall decoration and even I'm tired.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Still up? I'm a wall decoration and even I'm tired.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Morning-you is going to have words with tonight-you.",
+   "variant_of": "Tomorrow-you is already annoyed with tonight-you.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “Tomorrow-you is already annoyed with tonight-you.”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "You've checked me plenty today. Bed.",
+   "variant_of": "You've looked at me a lot today. Go to bed.",
+   "batch": "VE",
+   "meaning": "Reworded. The kept line it varies: “You've looked at me a lot today. Go to bed.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Bei dem Wetter fällt selbst mir schlechte Laune schwer.",
+   "variant_of": "Bei dem Wetter kann man nicht mal gescheit schlecht drauf sein.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bei dem Wetter kann man nicht mal gescheit schlecht drauf sein.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "„Bei dem Wetter muss man raus.“ Wer sagt das eigentlich?",
+   "variant_of": "Bei dem Wetter muss man raus, heißt's immer. Muss man gar nicht.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bei dem Wetter muss man raus, heißt's immer. Muss man gar nicht.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Ich find nichts zum Meckern. Das ärgert mich.",
+   "variant_of": "Nichts auszusetzen. Das ärgert mich fast.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nichts auszusetzen. Das ärgert mich fast.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.nice",
+   "text": "Wie im Urlaubskatalog. Nur halt vor der Haustür.",
+   "variant_of": "Wetter wie im Reiseprospekt. Bloß halt hier.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Wetter wie im Reiseprospekt. Bloß halt hier.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cool",
+   "text": "Wetter für Leute, die beim Essen „passt schon“ sagen.",
+   "variant_of": "Ein Wetter für Leute ohne Meinung.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Ein Wetter für Leute ohne Meinung.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cool",
+   "text": "Heute taugt nicht mal das Wetter als Ausrede.",
+   "variant_of": "Nicht mal das Wetter taugt heut als Ausrede.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nicht mal das Wetter taugt heut als Ausrede.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.warming",
+   "text": "Mich betrifft das nicht. Ich häng hier ohne alles an der Wand.",
+   "variant_of": "Mir kann's egal sein. Ich häng hier nackt an der Wand.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Mir kann's egal sein. Ich häng hier nackt an der Wand.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Gleich heißt's wieder überall: Ist aber frisch geworden.",
+   "variant_of": "Nachher sagt wieder jeder: Ganz schön frisch geworden.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nachher sagt wieder jeder: Ganz schön frisch geworden.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei der Kälte trinkt man sogar Glühwein freiwillig.",
+   "variant_of": "Bei der Kälte schmeckt sogar Glühwein.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bei der Kälte schmeckt sogar Glühwein.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.",
+   "variant_of": "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Saukalt. Mehr fällt mir dazu nicht ein.",
+   "variant_of": "Saukalt. Mehr gibt's nicht zu sagen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Saukalt. Mehr gibt's nicht zu sagen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei dem Wetter hätte Oma die Haustür abgesperrt.",
+   "variant_of": "Da hätt die Oma keinen aus dem Haus gelassen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Da hätt die Oma keinen aus dem Haus gelassen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und gleich wird trotzdem wieder stoßgelüftet.",
+   "variant_of": "Gleich reißt einer zum Stoßlüften alle Fenster auf.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Gleich reißt einer zum Stoßlüften alle Fenster auf.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Einer läuft trotzdem in Shorts rum. Einen gibt's immer.",
+   "variant_of": "Irgendein Depp läuft trotzdem in kurzen Hosen rum.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Irgendein Depp läuft trotzdem in kurzen Hosen rum.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "„Kälte härtet ab“, sagen die mit der Heizung auf fünf.",
+   "variant_of": "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Kälte ist gesund, sagen immer die, die drinnen sitzen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und dann gibt's Leute, die den Winter mögen. Angeblich.",
+   "variant_of": "Und dann gibt's Leut', die sagen, sie mögen den Winter.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Und dann gibt's Leut', die sagen, sie mögen den Winter.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Ventilatoren sind im Baumarkt heute wieder ausverkauft.",
+   "variant_of": "Im Baumarkt gibt's wieder keinen Ventilator mehr.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Im Baumarkt gibt's wieder keinen Ventilator mehr.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Bei der Hitze noch grillen. Muss man wollen.",
+   "variant_of": "Bei der Hitze stellen sich die Leute dann noch an den Grill.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bei der Hitze stellen sich die Leute dann noch an den Grill.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Gleich kommt wieder: „Aber es ist eine trockene Hitze.“",
+   "variant_of": "Gleich sagt wieder einer: Ist aber eine trockene Hitze.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Gleich sagt wieder einer: Ist aber eine trockene Hitze.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Zum Meckern ist es mir heute zu heiß. Fast.",
+   "variant_of": "Heut ist mir sogar das Meckern zu anstrengend.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Heut ist mir sogar das Meckern zu anstrengend.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Hitzefrei kriegen nur die Schüler. Alle anderen schwitzen.",
+   "variant_of": "Hitzefrei gibt's nur für Schüler. Der Rest muss durch.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Hitzefrei gibt's nur für Schüler. Der Rest muss durch.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "In der Bahn riecht's heute nach jedem Einzelnen.",
+   "variant_of": "In der Bahn riecht's heut wieder nach allen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “In der Bahn riecht's heut wieder nach allen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Schwitzen ohne Bewegung. Herrlich.",
+   "variant_of": "Schwitzen im Stehen. Ein Traum.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Schwitzen im Stehen. Ein Traum.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Im Januar wünschen sich das alle zurück. Wetten?",
+   "variant_of": "Und im Winter wieder jammern, dass es zu kalt ist.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Und im Winter wieder jammern, dass es zu kalt ist.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Das Regenradar hat heute mehr Zuschauer als jede Serie.",
+   "variant_of": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Alle starren wieder aufs Regenradar. Als ob das was hilft.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nass. Wer hätte das gedacht.",
+   "variant_of": "Nass ist's. War ja klar.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nass ist's. War ja klar.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Regen. Mal wieder. Was sonst.",
+   "variant_of": "Regen. Wieder. Natürlich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Regen. Wieder. Natürlich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Die Schnecken freuen sich. Immerhin wer.",
+   "variant_of": "Hauptsache, die Schnecken haben was davon.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Hauptsache, die Schnecken haben was davon.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Alle rennen im Regen, als wär's vorne trockener.",
+   "variant_of": "Im Regen rennen alle, als wär's ein Stück weiter trockener.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Im Regen rennen alle, als wär's ein Stück weiter trockener.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Ich bleib trocken. Mehr Mitgefühl ist heute nicht drin.",
+   "variant_of": "Mein Mitleid hält sich in Grenzen. Ich bleib im Trockenen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Mein Mitleid hält sich in Grenzen. Ich bleib im Trockenen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Darum ist hier alles so grün. Nur so als Erklärung.",
+   "variant_of": "Und dann wundern sich alle, warum hier alles so grün ist.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Und dann wundern sich alle, warum hier alles so grün ist.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Kein schlechtes Wetter, nur falsche Kleidung? Schön wär's.",
+   "variant_of": "„Es gibt kein schlechtes Wetter.“ Doch, gibt's.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “„Es gibt kein schlechtes Wetter.“ Doch, gibt's.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Heute ist der Hausmeister der wichtigste Mensch im Haus.",
+   "variant_of": "Der Hausmeister hat wieder seinen großen Tag.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Der Hausmeister hat wieder seinen großen Tag.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Fünf Zentimeter, und im Radio heißt's Schneechaos.",
+   "variant_of": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Drei Flocken, und schon heißt's wieder Schneechaos.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Bis der Räumdienst kommt, ist alles wieder geschmolzen.",
+   "variant_of": "Der Schneepflug kommt wieder erst, wenn alles getaut ist.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Der Schneepflug kommt wieder erst, wenn alles getaut ist.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Die Kinder jubeln. Schippen müssen ja die anderen.",
+   "variant_of": "Freuen tun sich nur die Kinder. Die müssen ja nicht schippen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Freuen tun sich nur die Kinder. Die müssen ja nicht schippen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Die Bahn hat bestimmt schon aufgegeben.",
+   "variant_of": "Gleich fährt keine Bahn mehr, wetten?",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Gleich fährt keine Bahn mehr, wetten?”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Im Baumarkt ist das Streusalz bestimmt schon weg.",
+   "variant_of": "Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Winterreifen kommen bei manchen ja erst im März drauf.",
+   "variant_of": "Schneeketten hat natürlich wieder keiner dabei.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Schneeketten hat natürlich wieder keiner dabei.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Zu warm, zu kalt, zu warm. Zum Meckern reicht's immer.",
+   "variant_of": "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Jacke an, Jacke aus. Fast schon Frühsport.",
+   "variant_of": "Ausziehen, anziehen. Wie beim Arzt, bloß ohne Krankschreibung.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Ausziehen, anziehen. Wie beim Arzt, bloß ohne Krankschreibung.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Heute macht das Wetter, was es will. Wie jeder.",
+   "variant_of": "Das Wetter macht heut, was es will. Wie alle anderen auch.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Das Wetter macht heut, was es will. Wie alle anderen auch.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Dieses Hin und Her macht mich ganz kirre.",
+   "variant_of": "So ein Hin und Her hält ja kein Mensch aus. Ich schon gar nicht.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “So ein Hin und Her hält ja kein Mensch aus. Ich schon gar nicht.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Die sagen Zwiebelprinzip. Ich sag Zirkus.",
+   "variant_of": "Zwiebelprinzip nennen die das. Ich nenn's Theater.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Zwiebelprinzip nennen die das. Ich nenn's Theater.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Draußen tun alle, als wär morgen Sonntag.",
+   "variant_of": "Die Leute gehen aus, als hätten's morgen frei.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Die Leute gehen aus, als hätten's morgen frei.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Wenn du noch los willst: Ich halt hier die Stellung.",
+   "variant_of": "Falls du noch weggehst: Ich bleib hier. Wie immer.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Falls du noch weggehst: Ich bleib hier. Wie immer.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Alle machen sich schick. Wer soll das alles anschauen?",
+   "variant_of": "Jetzt werfen sich wieder alle in Schale. Für wen eigentlich?",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Jetzt werfen sich wieder alle in Schale. Für wen eigentlich?”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Im Bett ist es sowieso am schönsten. Wetter hin oder her.",
+   "variant_of": "Im Bett ist's eh am schönsten. Das Wetter kann mich mal.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Im Bett ist's eh am schönsten. Das Wetter kann mich mal.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Nachts stört mich wenigstens keiner beim Grummeln.",
+   "variant_of": "Nachts kann ich wenigstens ungestört grantig sein.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nachts kann ich wenigstens ungestört grantig sein.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Um die Uhrzeit gibt's von mir nur noch das Nötigste.",
+   "variant_of": "So spät mach ich nur noch das Nötigste. Wie immer eigentlich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “So spät mach ich nur noch das Nötigste. Wie immer eigentlich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Schon spät. Ich zeig trotzdem weiter, was ich zeig.",
+   "variant_of": "Spät ist's. Ich zeig das hier trotzdem weiter.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Spät ist's. Ich zeig das hier trotzdem weiter.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Irgendwo im Haus läuft jetzt garantiert der Trockner.",
+   "variant_of": "Und wieder hält jemand nachts Wäschewaschen für eine gute Idee.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Und wieder hält jemand nachts Wäschewaschen für eine gute Idee.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Endlich passt das Wetter. Dir fällt bestimmt trotzdem was ein.",
+   "variant_of": "Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Traumwetter, und du guckst wie an einem Montag.",
+   "variant_of": "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bestes Wetter, und du schaust trotzdem drein wie Montag.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Bei dem Wetter wärst sogar du gut auszuhalten.",
+   "variant_of": "Draußen wärst heut sogar du erträglich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Draußen wärst heut sogar du erträglich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Geh an die Luft, bevor du so grau wirst wie ich.",
+   "variant_of": "Geh raus, sonst wirst du so grau wie ich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Geh raus, sonst wirst du so grau wie ich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.nice",
+   "text": "Dieses Wetter hast du dir eigentlich nicht verdient.",
+   "variant_of": "So ein Wetter hätten sich andere mehr verdient.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “So ein Wetter hätten sich andere mehr verdient.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.",
+   "variant_of": "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Die Kleidung passt heute. Der Rest ist noch Baustelle.",
+   "variant_of": "Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Perfekt zum Fensterputzen. Nur so ein Hinweis.",
+   "variant_of": "Ideales Fensterputzwetter. Deine hätten's nötig.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Ideales Fensterputzwetter. Deine hätten's nötig.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Draußen passiert nichts. Kennst du ja von deinen Samstagen.",
+   "variant_of": "Nichts los da draußen. Wie bei dir am Wochenende.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nichts los da draußen. Wie bei dir am Wochenende.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
+   "variant_of": "Bitte nicht wieder die Ärmel um den Bauch knoten.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bitte nicht wieder die Ärmel um den Bauch knoten.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Später schwitzt du, ganz ohne was getan zu haben.",
+   "variant_of": "Nachher schwitzt du, als hättest du was geleistet.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nachher schwitzt du, als hättest du was geleistet.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Als hättest du was Passendes im Schrank.",
+   "variant_of": "Als ob dein Schrank sowas hergibt.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Als ob dein Schrank sowas hergibt.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Nachher bibberst du wieder wie ein Chihuahua.",
+   "variant_of": "Nachher zitterst du wieder wie ein Chihuahua.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nachher zitterst du wieder wie ein Chihuahua.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gut eingemummelt siehst du am besten aus. Weniger sichtbar.",
+   "variant_of": "Dick eingepackt gefällst du mir am besten. Man sieht weniger.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Dick eingepackt gefällst du mir am besten. Man sieht weniger.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Heute kriegst du kalte Füße auch ganz ohne Entscheidung.",
+   "variant_of": "Kalte Füße kriegst du heut nicht nur vor Entscheidungen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Kalte Füße kriegst du heut nicht nur vor Entscheidungen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Bis du fertig angezogen bist, blühen schon die Krokusse.",
+   "variant_of": "Bis du heut alles anhast, ist eh schon Frühling.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Bis du heut alles anhast, ist eh schon Frühling.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Heute sind deine Finger so kalt wie deine Kommentare.",
+   "variant_of": "Deine Hände sind heut fast so kalt wie dein Herz.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Deine Hände sind heut fast so kalt wie dein Herz.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gleich klebst du wieder an der Heizung wie die Katze.",
+   "variant_of": "Du hängst gleich wieder am Heizkörper wie eine Katze.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Du hängst gleich wieder am Heizkörper wie eine Katze.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Du redest wieder von Spanien. Dann buch halt endlich.",
+   "variant_of": "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Mütze raus, dann beschweren. Das kennen wir doch.",
+   "variant_of": "Ohne Mütze rausgehen und dann jammern. Kennen wir schon.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Ohne Mütze rausgehen und dann jammern. Kennen wir schon.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Die dünne Jacke wieder? Na, dann viel Vergnügen.",
+   "variant_of": "Und du wieder in der dünnen Jacke. Na dann viel Spaß.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Und du wieder in der dünnen Jacke. Na dann viel Spaß.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Gleich fragst du wieder jeden, ob dem auch so warm ist.",
+   "variant_of": "Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Dein bester Freund heute: der Schatten. Dein einziger.",
+   "variant_of": "Heut ist der Schatten dein bester Freund. Dein einziger.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Heut ist der Schatten dein bester Freund. Dein einziger.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Heute ist dir jeder Meter zu viel. Also ein normaler Tag.",
+   "variant_of": "Jeder Weg ist dir heut zu weit. Also wie immer.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Jeder Weg ist dir heut zu weit. Also wie immer.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Nicht aus Zucker, sagen sie. Bei dir bin ich unsicher.",
+   "variant_of": "Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wenn du nass wirst, war's wieder meine Schuld. Klar.",
+   "variant_of": "Du wirst nass. Und dann bin wieder ich schuld.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Du wirst nass. Und dann bin wieder ich schuld.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Das Wetter passt heute endlich zu deiner Laune.",
+   "variant_of": "Endlich passt das Wetter mal zu deinem Gesicht.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Endlich passt das Wetter mal zu deinem Gesicht.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Ich wette, heute sind die Wildlederschuhe dran.",
+   "variant_of": "Lass mich raten: Heut ziehst du die Wildlederschuhe an.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Lass mich raten: Heut ziehst du die Wildlederschuhe an.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Nachher bitte nicht wieder den Flur volltropfen.",
+   "variant_of": "Tropf mir nachher bloß nicht wieder alles voll.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Tropf mir nachher bloß nicht wieder alles voll.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Um die Frisur ist es sowieso nicht schade.",
+   "variant_of": "Um deine Frisur ist's eh nicht schade.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Um deine Frisur ist's eh nicht schade.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Unterm Vordach warten, bis es aufhört. Deine Paradedisziplin.",
+   "variant_of": "Unterm Vordach auf ein Wunder warten, das kannst du.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Unterm Vordach auf ein Wunder warten, das kannst du.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Ohne Schirm los und dann jammern. Typisch.",
+   "variant_of": "Wer ohne Schirm geht, braucht nachher nicht jammern.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Wer ohne Schirm geht, braucht nachher nicht jammern.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wie viele Schirme hast du dieses Jahr schon liegen lassen?",
+   "variant_of": "Wie viele Schirme hast du heuer eigentlich schon verloren?",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Wie viele Schirme hast du heuer eigentlich schon verloren?”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Jeder Schneemann hat heute mehr Ausstrahlung als du.",
+   "variant_of": "Neben dir wirkt jeder Schneemann lebendig.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Neben dir wirkt jeder Schneemann lebendig.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Du auf Glatteis. Ich hol schon mal Popcorn.",
+   "variant_of": "Du und Glatteis. Das wird wieder was.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Du und Glatteis. Das wird wieder was.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Gleich kriegen alle dein Schneefoto. Als hätten die keins.",
+   "variant_of": "Gleich schickst du jedem ein Schneefoto. Die haben auch Fenster.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Gleich schickst du jedem ein Schneefoto. Die haben auch Fenster.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schneeballschlacht? Du triffst doch sowieso nichts.",
+   "variant_of": "Schneeballschlacht? Du triffst eh nix.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Schneeballschlacht? Du triffst eh nix.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schnee schippen zählt heute als dein Sportprogramm.",
+   "variant_of": "Schneeschippen wär heut mal Sport für dich. Ausnahmsweise.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Schneeschippen wär heut mal Sport für dich. Ausnahmsweise.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "An, aus, an. Kennst du ja aus der Liebe.",
+   "variant_of": "An, aus, wieder an. Wie deine Beziehungen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “An, aus, wieder an. Wie deine Beziehungen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Du liegst heute garantiert immer eine Lage daneben.",
+   "variant_of": "Du bist heut garantiert immer eine Schicht daneben.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Du bist heut garantiert immer eine Schicht daneben.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heute muss man mitdenken. Pech für dich.",
+   "variant_of": "Heut muss man mitdenken. Schlecht für dich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Heut muss man mitdenken. Schlecht für dich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Die Jacke wird heute mehr getragen als angezogen.",
+   "variant_of": "Heute trägst du die Jacke mehr spazieren als am Leib.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Heute trägst du die Jacke mehr spazieren als am Leib.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Erst frieren, dann schwitzen, dann meckern. Dein Tag.",
+   "variant_of": "Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Wenn du heute alles richtig anziehst, schreib ich's auf.",
+   "variant_of": "Wennst heut alles richtig machst, schreib ich's mir auf.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Wennst heut alles richtig machst, schreib ich's mir auf.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Das Handy kriegt heute wieder mehr Aufmerksamkeit als ich.",
+   "variant_of": "Dein Handy kriegt heut wieder mehr Blicke als ich.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Dein Handy kriegt heut wieder mehr Blicke als ich.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Was auch immer du heute Abend vorhast: Ich bin dagegen.",
+   "variant_of": "Egal, was du heut noch vorhast, ich wär dagegen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Egal, was du heut noch vorhast, ich wär dagegen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Abend. Jetzt lass mich auch mal in Ruhe.",
+   "variant_of": "Feierabend. Jetzt lass mich auch in Ruhe.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Feierabend. Jetzt lass mich auch in Ruhe.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Bitte heute Abend mal ein anderes Thema als das Wetter.",
+   "variant_of": "Red heut Abend bitte nicht wieder nur übers Wetter.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Red heut Abend bitte nicht wieder nur übers Wetter.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Du kannst ruhig was Schöneres anziehen als das.",
+   "variant_of": "Zieh was Schöneres an als das hier.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Zieh was Schöneres an als das hier.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Finger weg vom Kühlschrank. Ich seh alles.",
+   "variant_of": "Und jetzt nicht wieder an den Kühlschrank.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Und jetzt nicht wieder an den Kühlschrank.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Um die Uhrzeit wirst du immer tiefsinnig. Bitte nicht.",
+   "variant_of": "Nachts wirst du immer so philosophisch. Lass es.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Nachts wirst du immer so philosophisch. Lass es.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "„Nur noch eine Folge.“ Das war vor zwei Folgen.",
+   "variant_of": "Noch eine Folge, sagst du. Seit drei Folgen.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Noch eine Folge, sagst du. Seit drei Folgen.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Gute Nacht. Und schnarch bitte nicht wieder so.",
+   "variant_of": "Schlaf gut. Und bitte leiser als gestern.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Schlaf gut. Und bitte leiser als gestern.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "So spät noch wach? Ab ins Bett mit dir.",
+   "variant_of": "Schon wieder so spät? Ab ins Bett.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Schon wieder so spät? Ab ins Bett.”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Um die Zeit noch den Wetterbericht checken. Hut ab.",
+   "variant_of": "Um die Uhrzeit noch aufs Wetter schauen. Respekt.",
+   "batch": "VD",
+   "meaning": "Reworded. The kept line it varies: “Um die Uhrzeit noch aufs Wetter schauen. Respekt.”"
+  }
+ ]
+}
