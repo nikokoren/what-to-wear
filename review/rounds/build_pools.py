@@ -24,8 +24,10 @@ MOODS = ["nice", "cool", "warming", "cooling", "cold", "hot", "wet", "snow", "fi
 
 # The winning voice in each round, as (round, set) pairs.
 WIN = {
-    "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2"), ("2026-10-topup", "E4")},
-    "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1"), ("2026-10-topup", "D4")},
+    "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2"), ("2026-10-topup", "E4"),
+           ("2026-10-evening", "E6")},
+    "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1"), ("2026-10-topup", "D4"),
+           ("2026-10-evening", "D6")},
 }
 # Round 5: reworded flavour lines (set V*) and fact wordings (set F*).
 VARIANTS = "2026-10-variants"

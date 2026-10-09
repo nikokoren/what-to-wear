@@ -1,0 +1,132 @@
+{
+ "round": "2026-10-evening",
+ "note": "Evening lines under the owner's round-5 direction: general end-of-day observations (the day, work, the commute), never the reader's plans or whereabouts, no bed, no 'the day is over'. Written by hand in the main session.",
+ "lines": [
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Um kurz vor sechs kommt immer noch eine „kurze Rückfrage“.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Jetzt stehen wieder alle im Stau und nennen es Feierabend.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Pünktlich zum Feierabend fällt wieder eine S-Bahn aus.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Um die Zeit stehen alle ratlos vorm Kühlregal.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Was heute liegen geblieben ist, ist morgen dringend.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Um die Zeit bohrt garantiert noch irgendein Nachbar.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Gleich kommt im Fernsehen das Wetter. Ich war schneller.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Die Vorsätze von heute früh sind um die Zeit meist erledigt.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Was du heute früh vorhattest, schaffst du morgen. Ganz sicher.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Gleich fragst du wieder, wo der Tag hin ist. Ich hab zugeschaut.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.",
+   "batch": "D6"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Die Mails, die du heute ignoriert hast, warten morgen auch noch.",
+   "batch": "D6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Rush hour out there. My commute is zero inches. Highly recommend.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "No 'quick questions' at 5:58 for me. Perks of being a wall.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Another reply-all storm somewhere. I don't have an inbox. Bliss.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Ten hours on the wall today, not one complaint. Unlike some.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Today's to-do list just became tomorrow's. Mine's still empty.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Wondering where the day went? I watched. You weren't busy.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Everything you meant to do today is now a plan for tomorrow.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You'll check your email one more time. It won't have improved.",
+   "batch": "E6"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Your screen time report is going to be rough this week.",
+   "batch": "E6"
+  }
+ ]
+}

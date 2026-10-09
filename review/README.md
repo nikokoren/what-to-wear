@@ -186,6 +186,15 @@ keeps, 2 vetoes; German 26 stars, 40 keeps, 11 vetoes. The rewordings did worse:
 With the last English facts rated, English at On is 10% / 29% for the
 fact line and 2% / 9% for the whole screen.
 
+## Round 6: evenings (October 2026)
+
+`2026-10-evening.json`, 21 lines (sets E6, D6), written by hand under the
+owner's direction from round 5: general end-of-day observations about
+the day, work and the commute; never the reader's plans or whereabouts,
+no bed, no "the day is over". German at On gets the most (8), since it
+was down to two lines. After voting: sync, then
+`python3 review/rounds/build_pools.py` (both sets are already in `WIN`).
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
