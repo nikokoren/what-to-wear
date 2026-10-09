@@ -23,8 +23,10 @@ the machinery it needs already exists.
 - **Finding events:** `tools/topical_scout.py` lists Wikipedia's Current
   events (culture, sport, science, business) and the Onion and
   Postillon headlines, as a radar only, never as a source of jokes. A
-  weekly routine runs it every Monday morning and sends the owner a
-  shortlist of three to five events that pass the gate.
+  weekly routine, "Topical scout" (Mondays 07:47 Vienna time, in the
+  owner's claude.ai routines), runs it in a fresh session and sends the
+  owner a shortlist of three to five events that pass the gate; replying
+  in that session starts the writing.
 - **Size:** about 140 bytes a line; pruned, a dozen live lines.
 - **First event:** the clocks going back (`2026-10-topical-clocks`),
   waiting for votes.
