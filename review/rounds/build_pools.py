@@ -7,7 +7,9 @@ applied as edits.
     python3 review/rounds/build_pools.py
 
 Reads review/decisions/<lang>.json (written by tools/review_sync.py).
-Seasonal pools (theme_*) are left as they are.
+Seasonal pools (theme_*) are built from the votes like the moods; a
+theme line nobody has voted on yet (the first prototype's Christmas
+placeholders) stays until it is voted.
 
 Round 5 (variance) adds two things: reworded flavour lines, each placed a
 whole pool's length after the line it varies so the same joke never shows
@@ -25,9 +27,9 @@ MOODS = ["nice", "cool", "warming", "cooling", "cold", "hot", "wet", "snow", "fi
 # The winning voice in each round, as (round, set) pairs.
 WIN = {
     "en": {("2026-10-voices", "B"), ("2026-10-voices-2", "W"), ("2026-10-writing", "E2"), ("2026-10-topup", "E4"),
-           ("2026-10-evening", "E6"), ("2026-10-evening-2", "E6")},
+           ("2026-10-evening", "E6"), ("2026-10-evening-2", "E6"), ("2026-10-themes-winter", "E7")},
     "de": {("2026-10-voices", "G"), ("2026-10-voices-2", "Y"), ("2026-10-writing", "D1"), ("2026-10-topup", "D4"),
-           ("2026-10-evening", "D6"), ("2026-10-evening-2", "D6")},
+           ("2026-10-evening", "D6"), ("2026-10-evening-2", "D6"), ("2026-10-themes-winter", "D7")},
 }
 # Round 5: reworded flavour lines (set V*) and fact wordings (set F*).
 VARIANTS = "2026-10-variants"
@@ -165,7 +167,13 @@ def main():
                 base = new.get(m, [])
                 pairs = [p for p in pairs if p[0] in base]
                 new[m] = base + [v for _, v in sorted(pairs, key=lambda p: base.index(p[0]))]
-            new.update({k: v for k, v in old.items() if k.startswith("theme_")})
+            voted = {d["text"] for d in decisions.values()}
+            themes = {k for k in pools[level] if k.startswith("theme_")} | {k for k in old if k.startswith("theme_")}
+            for k in sorted(themes):
+                keep = [t for _, t in sorted(pools[level][k])]
+                keep += [t for t in old.get(k, []) if t not in voted and t not in keep]
+                if keep:
+                    new[k] = keep
             doc[f"flavour_{level}"] = new
             print(f"{lang} {level}: " + "  ".join(f"{m} {len(new.get(m, []))}" for m in MOODS))
         print(f"{lang} facts: {build_facts(doc, lang, decisions, round_lines)} wordings")

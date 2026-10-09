@@ -1,0 +1,341 @@
+{
+ "round": "2026-10-themes-winter",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_spooky",
+   "text": "Happy Halloween. The ghosting on my screen? Festive.",
+   "batch": "E7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Everyone's dressing up. I'm going as a screen again.",
+   "batch": "E7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. I've been pale and staring from this wall all year.",
+   "batch": "E7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Your costume is 'tired adult' again, isn't it.",
+   "batch": "E7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. You'll say you're too old for it, then wear the hat.",
+   "batch": "E7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_spooky",
+   "text": "You'll buy candy for trick-or-treaters and eat it by eight.",
+   "batch": "E7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Früher war Reformationstag, da hat keiner geklingelt.",
+   "batch": "D7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Gleich klingeln wieder Kinder, die man nicht kennt.",
+   "batch": "D7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Der Kürbis kostet mehr als der Wocheneinkauf.",
+   "batch": "D7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Wenn's klingelt, bist du plötzlich nicht zu Hause.",
+   "batch": "D7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Du gruselst dich trotzdem nur vor Montag.",
+   "batch": "D7",
+   "meaning": "Theme day: Halloween, 31 October. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_thanks",
+   "text": "Happy Thanksgiving. I'm thankful I don't have to eat anything.",
+   "batch": "E7",
+   "meaning": "Theme day: Thanksgiving, the fourth Thursday of November (US). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. I'm the only one here who won't need a nap later.",
+   "batch": "E7",
+   "meaning": "Theme day: Thanksgiving, the fourth Thursday of November (US). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. I won't bring up politics. I'm a weather screen.",
+   "batch": "E7",
+   "meaning": "Theme day: Thanksgiving, the fourth Thursday of November (US). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Pace yourself. You said that last year too.",
+   "batch": "E7",
+   "meaning": "Theme day: Thanksgiving, the fourth Thursday of November (US). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Your 'one more plate' is a family tradition now.",
+   "batch": "E7",
+   "meaning": "Theme day: Thanksgiving, the fourth Thursday of November (US). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. You'll be grateful, then you'll be horizontal.",
+   "batch": "E7",
+   "meaning": "Theme day: Thanksgiving, the fourth Thursday of November (US). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Endlich ist mal einer schlechter gelaunt als ich.",
+   "batch": "D7",
+   "meaning": "Theme day: Krampustag, 5 December (an Alpine custom; it has to make sense in Hamburg too). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_krampus",
+   "text": "Im Süden ist heute Krampuslauf. Da wundert sich keiner.",
+   "batch": "D7",
+   "meaning": "Theme day: Krampustag, 5 December (an Alpine custom; it has to make sense in Hamburg too). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_krampus",
+   "text": "Krampustag. Ich hab ihm deine Adresse nicht gegeben. Noch nicht.",
+   "batch": "D7",
+   "meaning": "Theme day: Krampustag, 5 December (an Alpine custom; it has to make sense in Hamburg too). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_krampus",
+   "text": "Krampustag. Ob du brav warst? Ich hab mitgeschrieben.",
+   "batch": "D7",
+   "meaning": "Theme day: Krampustag, 5 December (an Alpine custom; it has to make sense in Hamburg too). Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaus. Der einzige Tag, an dem Schuhe vor der Tür was bringen.",
+   "batch": "D7",
+   "meaning": "Theme day: Nikolaus, 6 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaus. Schokolade aus dem Stiefel. Tradition halt.",
+   "batch": "D7",
+   "meaning": "Theme day: Nikolaus, 6 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_nikolo",
+   "text": "Nikolaus. Hast du deine Stiefel rausgestellt? In deinem Alter?",
+   "batch": "D7",
+   "meaning": "Theme day: Nikolaus, 6 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_nikolo",
+   "text": "Nikolaus. In deinem Stiefel liegt bestimmt nur Streusalz.",
+   "batch": "D7",
+   "meaning": "Theme day: Nikolaus, 6 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. Unlike the tree, I'll still be up in February.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. I'm the only decoration that knows the forecast.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. You'll say 'just a small slice'. Twice.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. Act surprised. You've been rehearsing.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Früher lag mehr Schnee, sagen alle. Stimmt nicht.",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Die Gans hat heute den schlechtesten Tag von allen.",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_xmas",
+   "text": "Weihnachten. Du sagst wieder „wir schenken uns nichts“. Sicher.",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_ny",
+   "text": "New Year. I don't do resolutions. I was perfect last year too.",
+   "batch": "E7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_ny",
+   "text": "New Year. Somewhere a gym is about to be very full. Briefly.",
+   "batch": "E7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You'll write last year's date until March.",
+   "batch": "E7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_ny",
+   "text": "New Year. You'll say 'this is my year'. You said that last year.",
+   "batch": "E7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_ny",
+   "text": "Silvester. Erst Feuerwerk, dann Feinstaub. Prost Neujahr.",
+   "batch": "D7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_ny",
+   "text": "Neujahr. Jetzt fegt wieder keiner die Raketenreste weg.",
+   "batch": "D7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_ny",
+   "text": "Neues Jahr, gute Vorsätze. Ich geb dir bis zum Zehnten.",
+   "batch": "D7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_ny",
+   "text": "Neujahr. Dein Wachsgießen sah wieder aus wie eine Kartoffel.",
+   "batch": "D7",
+   "meaning": "Theme day: New Year, 31 December and 1 January. Replaces the mood's line on a steady day."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. The weather's not the point today.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_xmas",
+   "text": "Christmas Day. Staying in counts as a plan.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. You're wearing the new sweater, aren't you.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Wear something that survives a second helping.",
+   "batch": "E7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_xmas",
+   "text": "Stille Nacht. Das Wetter hält sich dran.",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_xmas",
+   "text": "Frohe Weihnachten. Für den Weg zur Verwandtschaft reicht's.",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_xmas",
+   "text": "Frohe Weihnachten. Die Verwandtschaft ist wetterfest. Du auch?",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_xmas",
+   "text": "Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr.",
+   "batch": "D7",
+   "meaning": "Theme day: Christmas, 24 and 25 December. A placeholder from the first prototype: in the pool, never voted."
+  }
+ ]
+}

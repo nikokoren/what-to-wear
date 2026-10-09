@@ -201,6 +201,16 @@ was down to two lines. After voting: sync, then
   hattest du noch einen Plan. Ich vermiss ihn auch."): a flat idea
   doesn't get better by reworking it.
 
+## Round 7: theme days, October to January
+
+`2026-10-themes-winter.json` (sets E7, D7; `make_round7.py`), 48 lines:
+Halloween, Christmas and New Year in both languages, Thanksgiving in
+English, Krampus and Nikolaus in German, plus the first prototype's
+eight Christmas placeholders, voted at last. Every line names its day.
+`build_pools.py` now builds the `theme_*` pools from the votes too.
+The rest of the year (Groundhog Day to Oktoberfest) is the next theme
+round.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
