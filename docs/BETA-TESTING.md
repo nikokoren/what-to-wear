@@ -38,6 +38,10 @@ branch, so a fork uses the same artwork the live recipe does.
 
 ## A. Testing the end state
 
+**For the redesign (fact and sarcastic line, Visual Forecast, the new
+form), use `beta/`:** markup, views, texts and form from one commit,
+set up as in `beta/README.md`. The steps below test `src/` as it is.
+
 1. **Fork the recipe.** TRMNL > Plugins > What to Wear > Fork. A fork
    receives no updates from the published recipe, which is what you want —
    it also means nothing you do here can reach anyone else.
@@ -47,7 +51,7 @@ branch, so a fork uses the same artwork the live recipe does.
 
    ```
    https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
-   https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@<SHA>/lang/##{{ language | default: 'en' }}.json
+   https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@<SHA>/lang/{{ language | default: 'en' }}.json
    ```
 
    The first line works whether the fork's form has `lat_lon`, the old

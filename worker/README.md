@@ -26,7 +26,7 @@ way it always has (picture, no tip).
 3. In TRMNL, replace the second polling URL (the jsDelivr one) with:
 
    ```
-   https://what-to-wear.<your-subdomain>.workers.dev/lang/##{{ language | default: 'en' }}.json?f=##{{ show_future_suggestions }}&s=##{{ sarcasm_level }}
+   https://what-to-wear.<your-subdomain>.workers.dev/lang/{{ language | default: 'en' }}.json?f={{ show_future_suggestions }}&s={{ sarcasm_level }}
    ```
 
    The first line, Open-Meteo, stays as it is. Order still matters: weather

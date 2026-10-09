@@ -1,0 +1,85 @@
+{%- if visual_forecast -%}
+{%- assign has_words = false -%}
+{%- if panel_fact != '' or panel_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
+{%- if has_words -%}{%- assign ih = 56 -%}{%- assign ihs = 56 -%}{%- else -%}{%- assign ih = 74 -%}{%- assign ihs = 74 -%}{%- endif -%}
+{%- assign gaps = panel_n | minus: 1 | times: 4 -%}
+{%- assign vgaps = panel_n | minus: 1 | times: 2 -%}
+<style>
+  /* The view is the measure: every cq unit below is a share of it. */
+  .wtw-box { container-type: size; width: 100%; height: 100%; }
+  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 92cqw; }
+  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 4cqw; }
+  .wtw-panel { display: flex; flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
+  .wtw-panel img { aspect-ratio: 1; object-fit: contain;
+    width: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih)); height: auto; }
+  .wtw-panel .label { white-space: nowrap; }
+  /* 240 px wide (the OG's portrait quarter): "from" over "3 pm". The
+     hours have a no-break space, so "3 pm" stays whole. */
+  @container (max-width: 300px) { .wtw-panel .label { white-space: normal; text-align: center; justify-content: center; } }
+  .wtw-now .label { font-weight: 700; text-decoration: underline; }
+  /* The words fit themselves: TRMNL's content limiter miscounts on the X
+     (it measures the drawings scaled up, the space not) and hides them. */
+  .wtw-words { width: 92cqw; flex: 0 1 auto; min-height: 0; overflow: hidden; }
+  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+  
+  
+</style>
+<div class="wtw-box">
+<div class="layout layout--col layout--center gap--small wtw-day{% if has_words %} wtw-side{% endif %}">
+  {%- if is_error %}
+    <img class="image image--contain h--[60cqh]" src="{{ sprite_url }}" alt="Error">
+    <div class="content content--center text--center content--base" data-content-limiter="true"><p>{{ error_headline }}</p></div>
+  {%- else %}
+  <div class="wtw-panels">
+    {%- for slug in panel_slug_list %}
+    <figure class="wtw-panel{% if forloop.first %} wtw-now{% endif %}">
+      <img class="image image-dither" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+      {%- if panel_n > 1 %}<span class="label lg:label--xlarge">{{ panel_label_list[forloop.index0] }}</span>{%- endif %}
+    </figure>
+    {%- endfor %}
+  </div>
+  {%- if has_words %}
+  <div class="content content--center text--center content--large lg:content--xlarge wtw-words">
+    {%- if panel_fact != '' %}<p class="font--bold">{{ panel_fact }}</p>{%- endif %}
+    {%- if panel_flavour != '' %}<p>{{ panel_flavour }}</p>{%- endif %}
+  </div>
+  {%- endif %}
+  {%- endif %}
+</div>
+</div>
+
+{%- if show_bottom_bar == 'on' -%}
+  <div class="title_bar">
+    <span class="title">What to Wear</span>
+    <span class="instance">{{ location_label }}</span>
+  </div>
+{%- endif -%}
+{%- else -%}
+{%- assign show_tip = false -%}
+{%- if show_future_suggestions == 'on' and fact_line != '' -%}{%- assign show_tip = true -%}{%- endif -%}
+<div class="layout layout--col layout--center">
+  <div class="richtext richtext--center gap w--max-[100cqw]">
+  {%- if is_error %}
+    <img class="image image--contain h--[60cqh]" src="{{ sprite_url }}" alt="Error">
+    <div class="content content--center text--center w--max-[100cqw] content--large lg:content--xlarge" data-content-limiter="true">
+      <p>{{ error_message }}</p>
+    </div>
+  {%- else %}
+    <img class="image image--contain image-dither {% if show_tip %}h--[60cqh]{% else %}h--[100cqh]{% endif %}"
+      src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'" alt="Outfit">
+    {%- if show_tip %}
+    <div class="content outfit-tip content--center text--center w--max-[100cqw] content--xlarge lg:content--xxlarge" data-content-limiter="true">
+      <p class="font--bold">{{ fact_line }}</p>{%- if flavour_line != '' %}<p>{{ flavour_line }}</p>{%- endif %}
+    </div>
+    {%- endif %}
+  {%- endif %}
+  </div>
+</div>
+
+{%- if show_bottom_bar == 'on' -%}
+  <div class="title_bar">
+    <span class="title">What to Wear</span>
+    <span class="instance">{{ location_label }}</span>
+  </div>
+{%- endif -%}
+{%- endif -%}

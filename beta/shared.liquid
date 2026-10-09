@@ -1288,6 +1288,249 @@ See docs/TRANSLATING.md for the full contract.
 
 
 {%- comment %}
+============ PROTOTYPE: FACT + FLAVOUR ============
+Two lines instead of one. The fact line is built from short templates,
+a few wordings per situation, and is the same at every sarcasm level. The flavour
+line carries the personality: picked by the mood of the day, never
+asked to carry a fact, absent at sarcasm 0.
+
+Inserted by prototypes/fact-flavour/build.py ahead of THE PICTURE,
+after the old hint is built, so both can be rendered side by side.
+Reads only what the scenario logic above already worked out.
+{%- endcomment %}
+{%- assign fact_line = '' -%}
+{%- assign flavour_line = '' -%}
+{%- assign mood = '' -%}
+{%- assign flavour_topical = false -%}
+{%- if is_error == false and show_future_suggestions == 'on' and texts_ok and texts.facts -%}
+  {%- assign F = texts.facts -%}
+  {%- if is_steady -%}
+    {%- if local_hour >= 17 -%}
+      {%- assign f_key = 'steady_evening' -%}
+    {%- elsif band_rank >= 7 -%}
+      {%- assign f_key = 'steady_hot' -%}
+    {%- elsif band_rank <= 2 -%}
+      {%- assign f_key = 'steady_cold' -%}
+    {%- else -%}
+      {%- assign f_key = 'steady' -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign f_key = temp_scenario -%}
+  {%- endif -%}
+  {%- comment %}
+  The garment on screen, for the arc keys: {G} the garment, {GP} its
+  pronoun, {GV} garment with its verb (German agrees "kann"/"können").
+  {%- endcomment %}
+  {%- assign f_g = '' -%}
+  {%- assign f_gp = '' -%}
+  {%- assign f_gv = '' -%}
+  {%- if band_rank <= 4 -%}
+    {%- assign fgi = band_rank | minus: 1 -%}
+    {%- assign f_g = F.garments[fgi] -%}
+    {%- assign f_gp = F.garments_pron[fgi] -%}
+    {%- assign f_gv = F.garments_verb[fgi] -%}
+  {%- endif -%}
+  {%- comment %}
+  Each situation has several wordings, rotated by day like the flavour
+  line but on their own offsets, so a run of the same weather doesn't
+  show the same words, and fact and flavour don't repeat as a pair.
+  {%- endcomment %}
+  {%- assign f_temp = '' -%}
+  {%- assign f_list = F[f_key] -%}
+  {%- if f_list -%}
+    {%- assign f_n = f_list | size -%}
+    {%- assign f_vi = local_days | plus: 2 | modulo: f_n -%}
+    {%- assign f_temp = f_list[f_vi] -%}
+  {%- endif -%}
+  {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
+  {%- assign f_temp = f_temp | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
+  {%- assign f_precip = '' -%}
+  {%- if precip_scenario != '' -%}
+    {%- assign pk = 'p_' | append: precip_scenario -%}
+    {%- comment %} Snowing now: the snow wording, where the situation has one. {%- endcomment %}
+    {%- if is_now_snow == 1 -%}
+      {%- assign pks = pk | append: '_snow' -%}
+      {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+    {%- endif -%}
+    {%- assign p_list = F[pk] -%}
+    {%- if p_list -%}
+      {%- assign p_n = p_list | size -%}
+      {%- assign p_vi = local_days | plus: 3 | modulo: p_n -%}
+      {%- assign f_precip = p_list[p_vi] | replace: '{WHENP}', when_precip -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if is_steady and f_precip != '' -%}
+    {%- assign fact_line = f_precip -%}
+  {%- elsif f_precip != '' -%}
+    {%- assign fact_line = f_temp | append: ' ' | append: f_precip -%}
+  {%- else -%}
+    {%- assign fact_line = f_temp -%}
+  {%- endif -%}
+  {%- assign fact_line = fact_line | replace: '  ', ' ' | replace: ' .', '.' | replace: ' ,', ',' | strip -%}
+  {%- assign marked = fact_line | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
+  {%- assign sentences = marked | split: '^^' -%}
+  {%- assign cased = '' -%}
+  {%- for sentence in sentences -%}
+    {%- assign s = sentence | strip -%}
+    {%- assign head = s | slice: 0 | upcase -%}
+    {%- assign tail = s | slice: 1, 400 -%}
+    {%- if forloop.first -%}
+      {%- assign cased = head | append: tail -%}
+    {%- else -%}
+      {%- assign cased = cased | append: ' ' | append: head | append: tail -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign fact_line = cased -%}
+
+  {%- comment %} The mood of the day, for the flavour line. First match wins. {%- endcomment %}
+  {%- assign temp_prefix = temp_scenario | slice: 0, 2 -%}
+  {%- if precip_scenario == 'snow_coming' or is_now_snow == 1 -%}
+    {%- assign mood = 'snow' -%}
+  {%- elsif precip_scenario != '' -%}
+    {%- assign mood = 'wet' -%}
+  {%- elsif is_steady and local_hour >= 22 -%}
+    {%- comment %} Only this late may a line mention bed: at 19:00 people check before going out. {%- endcomment %}
+    {%- assign mood = 'night' -%}
+  {%- elsif is_steady and local_hour >= 18 -%}
+    {%- assign mood = 'evening' -%}
+  {%- elsif is_arc and temp_scenario != 'arc_warmer' -%}
+    {%- comment %}
+    Only an arc that wants the layer back. When the evening stays warmer
+    than the morning, the fact says "can come off and stay off", and
+    "Erst zu warm, dann zu kalt" or "An, aus, wieder an" would contradict
+    it: that day falls through to hot or warming.
+    {%- endcomment %}
+    {%- assign mood = 'fickle' -%}
+  {%- elsif band_rank >= 7 or up_rank >= 7 -%}
+    {%- assign mood = 'hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign mood = 'cold' -%}
+  {%- elsif is_steady and band_rank >= 4 -%}
+    {%- assign mood = 'nice' -%}
+  {%- elsif temp_prefix == 'c_' -%}
+    {%- comment %} An ordinary day, split by what it actually does: a layer is needed later... {%- endcomment %}
+    {%- assign mood = 'cooling' -%}
+  {%- elsif temp_scenario != '' -%}
+    {%- comment %} ...something comes off later (the commonest of all)... {%- endcomment %}
+    {%- assign mood = 'warming' -%}
+  {%- else -%}
+    {%- comment %} ...or a steady, cool jacket day. {%- endcomment %}
+    {%- assign mood = 'cool' -%}
+  {%- endif -%}
+  {%- if sarcasm_level != '0' -%}
+    {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
+    {%- assign fl_lib = texts[fl_key] -%}
+    {%- assign fl_pool = fl_lib[mood] -%}
+    {%- comment %}
+    Ordinary days share: warming and cooling also draw from the cool pool,
+    whose lines are about an unremarkable day and fit any of the three.
+    {%- endcomment %}
+    {%- if mood == 'warming' or mood == 'cooling' -%}
+      {%- assign fl_cool = fl_lib['cool'] -%}
+      {%- if fl_pool and fl_cool -%}
+        {%- assign fl_pool = fl_pool | concat: fl_cool -%}
+      {%- elsif fl_cool -%}
+        {%- assign fl_pool = fl_cool -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
+    {%- assign fl_theme = false -%}
+    {%- if is_steady and active_theme != '' -%}
+      {%- assign th_key = 'theme_' | append: active_theme -%}
+      {%- if fl_lib[th_key] -%}
+        {%- assign fl_pool = fl_lib[th_key] -%}
+        {%- assign fl_theme = true -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if fl_pool -%}
+      {%- assign fl_n = fl_pool | size -%}
+      {%- assign fl_i = local_days | plus: 5 | modulo: fl_n -%}
+      {%- assign flavour_line = fl_pool[fl_i] -%}
+    {%- endif -%}
+
+    {%- comment %}
+    ============ TOPICAL LINES ============
+    Lines about current events, written with the owner and voted like the
+    rest (.claude/skills/topical). Each carries a window and shows only
+    inside it, so an expired line needs no republish; tools/topical.py
+    prunes it from the file later.
+
+      {"text": "...", "from": "2026-10-25", "until": "2026-10-29",
+       "region": "UK,IE", "moods": "cold,wet"}
+
+    region and moods are optional. A line shows on the first day of its
+    window and then about one day in three, rotating with whatever else
+    is active; the other days keep the mood's line, so a week of one joke
+    doesn't wear thin. A seasonal theme day keeps its own lines. Off
+    unless the topical_lines field is "on": installs from before the field
+    have no value, so they never see news they didn't ask for.
+    {%- endcomment %}
+    {%- assign topical_raw = trmnl.plugin_settings.custom_fields_values.topical_lines | default: 'off' | downcase | strip -%}
+    {%- assign tp_key = 'topical_' | append: sarcasm_level -%}
+    {%- assign tp_list = texts[tp_key] -%}
+    {%- if topical_raw == 'on' and fl_theme == false and tp_list -%}
+      {%- comment %}
+      Region from the forecast's own time zone (Open-Meteo, timezone=auto),
+      which follows the device's location, not the account's.
+      {%- endcomment %}
+      {%- if IDX_0 -%}{%- assign tp_tz = IDX_0.timezone | default: '' -%}{%- else -%}{%- assign tp_tz = timezone | default: '' -%}{%- endif -%}
+      {%- assign tp_probe = ',' | append: tp_tz | append: ',' -%}
+      {%- assign tp_region = '' -%}
+      {%- assign US_ZONES = ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Phoenix,America/Anchorage,America/Detroit,America/Boise,America/Juneau,America/Sitka,America/Nome,America/Yakutat,America/Metlakatla,America/Adak,America/Menominee,Pacific/Honolulu,' -%}
+      {%- if tp_probe == ',Europe/Berlin,' or tp_probe == ',Europe/Busingen,' -%}
+        {%- assign tp_region = 'DE' -%}
+      {%- elsif tp_probe == ',Europe/Vienna,' -%}
+        {%- assign tp_region = 'AT' -%}
+      {%- elsif tp_probe == ',Europe/Zurich,' -%}
+        {%- assign tp_region = 'CH' -%}
+      {%- elsif tp_probe == ',Europe/London,' -%}
+        {%- assign tp_region = 'UK' -%}
+      {%- elsif tp_probe == ',Europe/Dublin,' -%}
+        {%- assign tp_region = 'IE' -%}
+      {%- elsif US_ZONES contains tp_probe or tp_tz contains 'America/Indiana/' or tp_tz contains 'America/Kentucky/' or tp_tz contains 'America/North_Dakota/' -%}
+        {%- assign tp_region = 'US' -%}
+      {%- elsif tp_tz contains 'Australia/' -%}
+        {%- assign tp_region = 'AU' -%}
+      {%- endif -%}
+      {%- assign tp_region_probe = ',' | append: tp_region | append: ',' -%}
+      {%- assign tp_mood_probe = ',' | append: mood | append: ',' -%}
+      {%- assign tp_today = today_year | append: '-' | append: today_md -%}
+      {%- assign tp_cycle = local_days | modulo: 3 -%}
+      {%- assign tp_joined = '' -%}
+      {%- assign tp_n = 0 -%}
+      {%- for t in tp_list -%}
+        {%- if t.from <= tp_today and t.until >= tp_today -%}
+          {%- assign tp_ok = true -%}
+          {%- if t.region and t.region != '' -%}
+            {%- assign tp_regions = ',' | append: t.region | remove: ' ' | append: ',' -%}
+            {%- unless tp_region != '' and tp_regions contains tp_region_probe -%}{%- assign tp_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- if t.moods and t.moods != '' -%}
+            {%- assign tp_moods = ',' | append: t.moods | remove: ' ' | append: ',' -%}
+            {%- unless tp_moods contains tp_mood_probe -%}{%- assign tp_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- if tp_ok and t.from == tp_today or tp_ok and tp_cycle == 0 -%}
+            {%- if tp_n == 0 -%}
+              {%- assign tp_joined = t.text -%}
+            {%- else -%}
+              {%- assign tp_joined = tp_joined | append: '~|~' | append: t.text -%}
+            {%- endif -%}
+            {%- assign tp_n = tp_n | plus: 1 -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if tp_n > 0 -%}
+        {%- assign tp_texts = tp_joined | split: '~|~' -%}
+        {%- assign tp_i = local_days | divided_by: 3 | modulo: tp_n -%}
+        {%- assign flavour_line = tp_texts[tp_i] -%}
+        {%- assign flavour_topical = true -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+
+{%- comment %}
 ============ THE PICTURE ============
 Rain and snow are drawn only while they fall. An umbrella on a dry
 morning looked like a broken screen next to words saying the rain starts
@@ -1319,3 +1562,275 @@ later; the words carry what's coming.
   {%- endcomment %}
   {%- assign fallback_sprite_url = sprite_base_url | append: weather_slug | append: '.png' -%}
 {%- endif -%}
+
+{%- comment %}
+============ PROTOTYPE: OUTFIT PANELS ============
+The day as equal panels, left to right: what to wear now, then at each
+change. One panel when nothing changes. Today only: the forecast window
+ends at DAY_END_HOUR, and nothing about tomorrow is ever drawn.
+
+A panel is a stretch of the day, from one change to the next:
+  - a change is an outfit band crossed for two hours running (the
+    same rank lists the text logic uses), rain or snow starting (one
+    hour at RAIN_HIGH is enough: a shower counts, as in the text), or
+    two dry hours ending it;
+  - tee_pants and tee_shorts count as one outfit later in the day: legs
+    are decided at the door;
+  - the "now" panel shows rain only if it is falling now; a later panel
+    shows it if it starts with that panel, or anywhere inside it once
+    panels are merged;
+  - at most three panels. Outfit changes win; a rain change only gets
+    its own panel while there is room, and otherwise wets the panel it
+    falls in.
+
+Text: one panel says "this works all day" (a steady fact wording) and
+adds the sarcastic line at On and 11. Two or three panels show only the
+sarcastic line, and nothing at Off.
+
+The switch is the third value of the forecast field, "visual" (Visual
+Forecast, config/settings.next.yaml); "Yes" keeps the forecast in words
+and "No" turns it off. Markup from before this reads anything but
+no/false/0 as on, so a form that ships first falls back to the words.
+
+Appended to the end of the shared markup by prototypes/panels/build.py,
+after the fact + flavour block and the picture.
+{%- endcomment %}
+{%- assign visual_forecast = false -%}
+{%- if show_future_suggestions == 'on' and sfs_check == 'visual' -%}
+  {%- assign visual_forecast = true -%}
+{%- endif -%}
+{%- assign panel_n = 1 -%}
+{%- assign panel_slugs = '' -%}
+{%- assign panel_labels = '' -%}
+{%- assign panel_fact = '' -%}
+{%- assign panel_flavour = '' -%}
+{%- if is_error == false and visual_forecast -%}
+  {%- assign PN = texts.panels -%}
+  {%- assign p_now = PN.now | default: 'Now' -%}
+  {%- assign p_from = PN.from | default: 'from' -%}
+
+  {%- comment %} Every change, in order: hour index, kind (T outfit, P rain), and the state after it. {%- endcomment %}
+  {%- assign b_idx = '' -%}
+  {%- assign b_kind = '' -%}
+  {%- assign b_rank = '' -%}
+  {%- assign b_wet = '' -%}
+  {%- assign b_snow = '' -%}
+  {%- assign b_n = 0 -%}
+  {%- assign cur_rank = band_rank -%}
+  {%- assign cur_wet = is_now_precip -%}
+  {%- assign cur_snow = is_now_snow -%}
+  {%- if show_future_suggestions == 'on' and has_future_window and rank_hi_list -%}
+    {%- for r in rank_hi_list -%}
+      {%- assign k = forloop.index0 -%}
+      {%- assign i = start_index | plus: k -%}
+      {%- assign hi = r | plus: 0 -%}
+      {%- assign lo = rank_lo_list[k] | plus: 0 -%}
+      {%- assign new_rank = cur_rank -%}
+      {%- if hi > cur_rank -%}
+        {%- assign new_rank = hi -%}
+      {%- elsif lo < cur_rank -%}
+        {%- assign new_rank = lo -%}
+      {%- endif -%}
+      {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
+        {%- assign new_rank = cur_rank -%}
+      {%- endif -%}
+
+      {%- assign j = i | plus: 1 -%}
+      {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+      {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+      {%- assign new_wet = cur_wet -%}
+      {%- assign new_snow = cur_snow -%}
+      {%- comment %} One likely hour starts it (a shower counts, as in the text); only two dry hours end it. {%- endcomment %}
+      {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
+        {%- assign new_wet = 1 -%}
+        {%- assign new_snow = 0 -%}
+        {%- if codes -%}
+          {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
+        {%- endif -%}
+      {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+        {%- assign new_wet = 0 -%}
+        {%- assign new_snow = 0 -%}
+      {%- endif -%}
+
+      {%- if new_rank != cur_rank or new_wet != cur_wet -%}
+        {%- if new_rank != cur_rank -%}{%- assign kind = 'T' -%}{%- else -%}{%- assign kind = 'P' -%}{%- endif -%}
+        {%- if b_n > 0 -%}
+          {%- assign b_idx = b_idx | append: ',' -%}
+          {%- assign b_kind = b_kind | append: ',' -%}
+          {%- assign b_rank = b_rank | append: ',' -%}
+          {%- assign b_wet = b_wet | append: ',' -%}
+          {%- assign b_snow = b_snow | append: ',' -%}
+        {%- endif -%}
+        {%- assign b_idx = b_idx | append: i -%}
+        {%- assign b_kind = b_kind | append: kind -%}
+        {%- assign b_rank = b_rank | append: new_rank -%}
+        {%- assign b_wet = b_wet | append: new_wet -%}
+        {%- assign b_snow = b_snow | append: new_snow -%}
+        {%- assign b_n = b_n | plus: 1 -%}
+        {%- assign cur_rank = new_rank -%}
+        {%- assign cur_wet = new_wet -%}
+        {%- assign cur_snow = new_snow -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- comment %}
+  Pick at most two changes, at least two hours apart. Outfit changes
+  first: of two within two hours the later one wins, since it's where
+  the day settles. Then rain changes, while there is room and nothing
+  chosen is within two hours. keep2 is a 0/1 string over all changes.
+  {%- endcomment %}
+  {%- assign bi = b_idx | split: ',' -%}
+  {%- assign bk = b_kind | split: ',' -%}
+  {%- assign br = b_rank | split: ',' -%}
+  {%- assign bw = b_wet | split: ',' -%}
+  {%- assign bs = b_snow | split: ',' -%}
+  {%- assign keep = '' -%}
+  {%- assign kept = 0 -%}
+  {%- assign t_hours = ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = '0' -%}
+    {%- if kind == 'T' and kept < 2 -%}
+      {%- assign here = bi[idx0] | plus: 0 -%}
+      {%- assign later_t = false -%}
+      {%- for k2 in bk offset: forloop.index -%}
+        {%- assign j2 = idx0 | plus: forloop.index -%}
+        {%- assign there = bi[j2] | plus: 0 | minus: here -%}
+        {%- if k2 == 'T' and there < 2 -%}{%- assign later_t = true -%}{%- endif -%}
+      {%- endfor -%}
+      {%- unless later_t -%}
+        {%- assign flag = '1' -%}
+        {%- assign kept = kept | plus: 1 -%}
+        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- assign keep = keep | append: flag -%}
+  {%- endfor -%}
+  {%- assign keep2 = '' -%}
+  {%- assign chosen = t_hours | split: ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = keep | slice: idx0 -%}
+    {%- if flag == '0' and kind == 'P' and kept < 2 -%}
+      {%- assign here = bi[idx0] | plus: 0 -%}
+      {%- assign near = false -%}
+      {%- for c in chosen -%}
+        {%- if c != '' -%}
+          {%- assign d = c | plus: 0 | minus: here | abs -%}
+          {%- if d < 2 -%}{%- assign near = true -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- unless near -%}
+        {%- assign flag = '1' -%}
+        {%- assign kept = kept | plus: 1 -%}
+        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+        {%- assign chosen = t_hours | split: ',' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- assign keep2 = keep2 | append: flag -%}
+  {%- endfor -%}
+
+  {%- comment %} The panels: the now panel, then one per kept change. A dropped rain start wets the panel it falls in. {%- endcomment %}
+  {%- assign p_rank = band_rank | append: '' -%}
+  {%- assign p_wet = is_now_precip | append: '' -%}
+  {%- assign p_snow = is_now_snow | append: '' -%}
+  {%- assign p_hour = '' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = keep2 | slice: idx0 -%}
+    {%- if flag == '1' -%}
+      {%- assign p_rank = p_rank | append: ',' | append: br[idx0] -%}
+      {%- assign p_wet = p_wet | append: ',' | append: bw[idx0] -%}
+      {%- assign p_snow = p_snow | append: ',' | append: bs[idx0] -%}
+      {%- assign bix = bi[idx0] | plus: 0 -%}
+      {%- assign hr = h.time[bix] | slice: 11, 2 | plus: 0 -%}
+      {%- assign p_hour = p_hour | append: ',' | append: hr -%}
+    {%- elsif bw[idx0] == '1' -%}
+      {%- comment %} Rain starting inside the current last panel: mark it wet. {%- endcomment %}
+      {%- assign wl = p_wet | split: ',' -%}
+      {%- assign sl = p_snow | split: ',' -%}
+      {%- assign last = wl | size | minus: 1 -%}
+      {%- if last > 0 -%}
+        {%- assign p_wet = '' -%}
+        {%- assign p_snow = '' -%}
+        {%- for w in wl -%}
+          {%- unless forloop.first -%}{%- assign p_wet = p_wet | append: ',' -%}{%- assign p_snow = p_snow | append: ',' -%}{%- endunless -%}
+          {%- if forloop.index0 == last -%}
+            {%- assign p_wet = p_wet | append: '1' -%}
+            {%- assign p_snow = p_snow | append: bs[idx0] -%}
+          {%- else -%}
+            {%- assign p_wet = p_wet | append: w -%}
+            {%- assign p_snow = p_snow | append: sl[forloop.index0] -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign pr = p_rank | split: ',' -%}
+  {%- assign pw = p_wet | split: ',' -%}
+  {%- assign ps = p_snow | split: ',' -%}
+  {%- assign ph = p_hour | split: ',' -%}
+  {%- assign prev_slug = '' -%}
+  {%- for rk in pr -%}
+    {%- assign n0 = forloop.index0 -%}
+    {%- assign ri = rk | plus: 0 | minus: 1 -%}
+    {%- assign pband = band_name_list[ri] -%}
+    {%- assign suffix = 'dry' -%}
+    {%- if pw[n0] == '1' -%}
+      {%- assign suffix = 'rain' -%}
+      {%- if ps[n0] == '1' -%}
+        {%- assign sprobe = ',' | append: pband | append: ',' -%}
+        {%- if SNOW_OUTFITS contains sprobe -%}{%- assign suffix = 'snow' -%}{%- else -%}{%- assign suffix = 'dry' -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if forloop.first -%}
+      {%- assign label = p_now -%}
+    {%- else -%}
+      {%- assign hn = ph[n0] | plus: 0 -%}
+      {%- comment %} Each later panel holds from its time on: "from 1 pm", "ab 13 Uhr". {%- endcomment %}
+      {%- assign label = PN.hours[hn] | default: hn -%}
+      {%- assign label = p_from | append: ' ' | append: label -%}
+    {%- endif -%}
+    {%- comment %} Two panels that would look the same are one. {%- endcomment %}
+    {%- assign this_slug = pband | append: '_' | append: suffix -%}
+    {%- if this_slug != prev_slug -%}
+      {%- unless forloop.first -%}
+        {%- assign panel_slugs = panel_slugs | append: '|' -%}
+        {%- assign panel_labels = panel_labels | append: '|' -%}
+      {%- endunless -%}
+      {%- assign panel_slugs = panel_slugs | append: this_slug -%}
+      {%- assign panel_labels = panel_labels | append: label -%}
+    {%- endif -%}
+    {%- assign prev_slug = this_slug -%}
+  {%- endfor -%}
+  {%- assign panel_n = panel_slugs | split: '|' | size -%}
+
+  {%- comment %} Words: "this works all day" for one panel; the sarcastic line at On and 11. {%- endcomment %}
+  {%- if show_future_suggestions == 'on' and texts_ok -%}
+    {%- if panel_n == 1 and texts.facts -%}
+      {%- if local_hour >= 17 -%}
+        {%- assign sk = 'steady_evening' -%}
+      {%- elsif band_rank >= 7 -%}
+        {%- assign sk = 'steady_hot' -%}
+      {%- elsif band_rank <= 2 -%}
+        {%- assign sk = 'steady_cold' -%}
+      {%- else -%}
+        {%- assign sk = 'steady' -%}
+      {%- endif -%}
+      {%- assign sl = texts.facts[sk] -%}
+      {%- if sl -%}
+        {%- assign sn = sl | size -%}
+        {%- assign si = local_days | plus: 2 | modulo: sn -%}
+        {%- assign panel_fact = sl[si] -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if sarcasm_level != '0' -%}
+      {%- assign panel_flavour = flavour_line -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign panel_slug_list = panel_slugs | split: '|' -%}
+{%- assign panel_label_list = panel_labels | split: '|' -%}

@@ -37,6 +37,13 @@ to pick it up cold.
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching
    the texts URL to the usage Worker at that step starts the counting.
+   **Size:** TRMNL takes at most 100 KB per polled URL, and `lang/de.json`
+   with the new texts merged in is about 100.6 KB even minified. The old
+   forecast-text pools (`temp_*`, `precip_*`) have to go at launch, but
+   the logic still checks three of their keys (`shorts_early`, the
+   "perfect" variants, `wet_again`): move those checks to the new pools
+   first. The beta (`beta/`, `tools/build_beta.py`) gets by meanwhile by
+   keeping one line per list.
 5. **Item 3, the text**: in progress. The tip becomes a fact line plus a
    flavour line; voice, fact style and most pools are decided by four
    rounds of votes (`review/README.md`). Round 5 (variants) is synced
