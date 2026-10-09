@@ -36,8 +36,18 @@ to pick it up cold.
    rounds of votes (`review/README.md`). Round 5 (variants) is synced
    and fully rated. Next:
    new evening lines in both languages (German On is down to two; the
-   new direction is in `docs/BRIEF.md`), then moving the prototype into
-   `src/shared.liquid` and `lang/*.json`.
+   new direction is in `docs/BRIEF.md`); then the theme days, then moving
+   the prototype into `src/shared.liquid` and `lang/*.json`.
+   **Theme days** (`theme_*` flavour pools, shown on steady theme days):
+   only Christmas has lines in the new voice. Each language writes only
+   the days its readers keep; a day without a pool falls back to the
+   mood line. Both languages: New Year, Pi Day, May the 4th, Bike Day,
+   Tour de France, Oktoberfest (international enough, the owner says),
+   Halloween, Easter. English only: Groundhog Day, Thanksgiving. German
+   only: Nikolaus (key `nikolo`; say "Nikolaus", not the Austrian
+   "Nikolo") and Krampus (Alpine; lines must still make sense in
+   Hamburg). Three candidates per level and language, in calendar order
+   from Halloween; the joke comes out of the day itself.
 6. **Variance, again: week of 16 October 2026.** The owner wants
    repeats rare enough that nobody notices: "closer to Carrot Weather
    than to us" over the long term. Round 5 is only the first step.
