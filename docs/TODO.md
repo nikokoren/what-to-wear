@@ -47,10 +47,13 @@ to pick it up cold.
    shuffled order instead of in sequence, so a pool never reads as a
    cycle; lines keyed to the weekday, the season or the run of weather
    ("third grey day in a row"); and the topical lines (item 7) earlier.
-7. **Topical lines** (backlog, after the text ships): On and 11 lines about
-   current events, written with Claude whenever something happens, each
-   with a date window so it rotates in and out by itself. Plan in
-   `docs/FUTURE-topical-lines.md` (the October 2026 update at the top).
+7. **Topical lines**: On and 11 lines about current events, written with
+   Claude whenever something happens, each with a date window so it
+   rotates in and out by itself. Built in the prototype (markup, opt-in
+   field, review rounds, add and prune tool, weekly prune job, the
+   `topical` skill); ships with the text. The first event, the clocks
+   going back, is on the review page. Details in
+   `docs/FUTURE-topical-lines.md`.
 
 ## 1. Rethink the clothing system and the temperature bands
 

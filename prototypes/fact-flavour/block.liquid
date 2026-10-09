@@ -12,6 +12,7 @@ Reads only what the scenario logic above already worked out.
 {%- assign fact_line = '' -%}
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
+{%- assign flavour_topical = false -%}
 {%- if is_error == false and show_future_suggestions == 'on' and texts_ok and texts.facts -%}
   {%- assign F = texts.facts -%}
   {%- if is_steady -%}
@@ -138,14 +139,97 @@ Reads only what the scenario logic above already worked out.
       {%- endif -%}
     {%- endif -%}
     {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
+    {%- assign fl_theme = false -%}
     {%- if is_steady and active_theme != '' -%}
       {%- assign th_key = 'theme_' | append: active_theme -%}
-      {%- if fl_lib[th_key] -%}{%- assign fl_pool = fl_lib[th_key] -%}{%- endif -%}
+      {%- if fl_lib[th_key] -%}
+        {%- assign fl_pool = fl_lib[th_key] -%}
+        {%- assign fl_theme = true -%}
+      {%- endif -%}
     {%- endif -%}
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}
       {%- assign fl_i = local_days | plus: 5 | modulo: fl_n -%}
       {%- assign flavour_line = fl_pool[fl_i] -%}
+    {%- endif -%}
+
+    {%- comment %}
+    ============ TOPICAL LINES ============
+    Lines about current events, written with the owner and voted like the
+    rest (.claude/skills/topical). Each carries a window and shows only
+    inside it, so an expired line needs no republish; tools/topical.py
+    prunes it from the file later.
+
+      {"text": "...", "from": "2026-10-25", "until": "2026-10-29",
+       "region": "UK,IE", "moods": "cold,wet"}
+
+    region and moods are optional. A line shows on the first day of its
+    window and then about one day in three, rotating with whatever else
+    is active; the other days keep the mood's line, so a week of one joke
+    doesn't wear thin. A seasonal theme day keeps its own lines. Off
+    unless the topical_lines field is "on": installs from before the field
+    have no value, so they never see news they didn't ask for.
+    {%- endcomment %}
+    {%- assign topical_raw = trmnl.plugin_settings.custom_fields_values.topical_lines | default: 'off' | downcase | strip -%}
+    {%- assign tp_key = 'topical_' | append: sarcasm_level -%}
+    {%- assign tp_list = texts[tp_key] -%}
+    {%- if topical_raw == 'on' and fl_theme == false and tp_list -%}
+      {%- comment %}
+      Region from the forecast's own time zone (Open-Meteo, timezone=auto),
+      which follows the device's location, not the account's.
+      {%- endcomment %}
+      {%- if IDX_0 -%}{%- assign tp_tz = IDX_0.timezone | default: '' -%}{%- else -%}{%- assign tp_tz = timezone | default: '' -%}{%- endif -%}
+      {%- assign tp_probe = ',' | append: tp_tz | append: ',' -%}
+      {%- assign tp_region = '' -%}
+      {%- assign US_ZONES = ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Phoenix,America/Anchorage,America/Detroit,America/Boise,America/Juneau,America/Sitka,America/Nome,America/Yakutat,America/Metlakatla,America/Adak,America/Menominee,Pacific/Honolulu,' -%}
+      {%- if tp_probe == ',Europe/Berlin,' or tp_probe == ',Europe/Busingen,' -%}
+        {%- assign tp_region = 'DE' -%}
+      {%- elsif tp_probe == ',Europe/Vienna,' -%}
+        {%- assign tp_region = 'AT' -%}
+      {%- elsif tp_probe == ',Europe/Zurich,' -%}
+        {%- assign tp_region = 'CH' -%}
+      {%- elsif tp_probe == ',Europe/London,' -%}
+        {%- assign tp_region = 'UK' -%}
+      {%- elsif tp_probe == ',Europe/Dublin,' -%}
+        {%- assign tp_region = 'IE' -%}
+      {%- elsif US_ZONES contains tp_probe or tp_tz contains 'America/Indiana/' or tp_tz contains 'America/Kentucky/' or tp_tz contains 'America/North_Dakota/' -%}
+        {%- assign tp_region = 'US' -%}
+      {%- elsif tp_tz contains 'Australia/' -%}
+        {%- assign tp_region = 'AU' -%}
+      {%- endif -%}
+      {%- assign tp_region_probe = ',' | append: tp_region | append: ',' -%}
+      {%- assign tp_mood_probe = ',' | append: mood | append: ',' -%}
+      {%- assign tp_today = today_year | append: '-' | append: today_md -%}
+      {%- assign tp_cycle = local_days | modulo: 3 -%}
+      {%- assign tp_joined = '' -%}
+      {%- assign tp_n = 0 -%}
+      {%- for t in tp_list -%}
+        {%- if t.from <= tp_today and t.until >= tp_today -%}
+          {%- assign tp_ok = true -%}
+          {%- if t.region and t.region != '' -%}
+            {%- assign tp_regions = ',' | append: t.region | remove: ' ' | append: ',' -%}
+            {%- unless tp_region != '' and tp_regions contains tp_region_probe -%}{%- assign tp_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- if t.moods and t.moods != '' -%}
+            {%- assign tp_moods = ',' | append: t.moods | remove: ' ' | append: ',' -%}
+            {%- unless tp_moods contains tp_mood_probe -%}{%- assign tp_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- if tp_ok and t.from == tp_today or tp_ok and tp_cycle == 0 -%}
+            {%- if tp_n == 0 -%}
+              {%- assign tp_joined = t.text -%}
+            {%- else -%}
+              {%- assign tp_joined = tp_joined | append: '~|~' | append: t.text -%}
+            {%- endif -%}
+            {%- assign tp_n = tp_n | plus: 1 -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if tp_n > 0 -%}
+        {%- assign tp_texts = tp_joined | split: '~|~' -%}
+        {%- assign tp_i = local_days | divided_by: 3 | modulo: tp_n -%}
+        {%- assign flavour_line = tp_texts[tp_i] -%}
+        {%- assign flavour_topical = true -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endif -%}
 {%- endif -%}

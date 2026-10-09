@@ -1,0 +1,17 @@
+# The form field for topical lines, to add to config/settings.yaml when
+# the redesign ships (after sarcasm_level).
+#
+# New installs get the default, "on". Installs from before the field have
+# no value saved, and the markup treats no value as off, so nobody who
+# installed the plugin for the weather starts seeing news jokes unasked.
+# Check this in TRMNL's editor before shipping: if TRMNL fills in the
+# default for existing installs too, change the default to "off".
+- keyname: topical_lines
+  field_type: select
+  name: Jokes about current events
+  description: "Now and then the sarcastic line is about something in the news: sport, records, the clocks changing. Never politics, crime or tragedies. Only shows with sarcasm on or at 11."
+  default: "on"
+  options:
+  - "Off": "off"
+  - "On": "on"
+  description-de: "Ab und zu geht der sarkastische Satz um etwas Aktuelles: Sport, Rekorde, die Zeitumstellung. Nie Politik, Verbrechen oder Unglücke. Nur mit Sarkasmus an oder auf 11."

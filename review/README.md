@@ -186,3 +186,13 @@ stars, 40 keeps, 11 vetoes. The rewordings did worse: English 13 stars,
 
 English facts still repeat more because the steady facts, the commonest,
 aren't rated yet.
+
+## Topical rounds
+
+Lines about a current event, with a date window, written with Claude
+whenever something happens. The routine is the repo skill
+`.claude/skills/topical`: the event and the gate, the window and region,
+the round file (`<yyyy-mm>-topical-<slug>.json`, set T), then
+`python3 tools/topical.py add <round>` after the vote. The first is
+`2026-10-topical-clocks`: the clocks going back, 25 October in Europe and
+1 November in the US.

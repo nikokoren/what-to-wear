@@ -1,0 +1,303 @@
+{
+ "round": "2026-10-topical-clocks",
+ "edits": {},
+ "lines": [
+  {
+   "lang": "en",
+   "path": "topical_10.clocks_back",
+   "text": "I changed my own clock. Your oven is still thinking about it.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_10.clocks_back",
+   "text": "Darker evenings from now on. Finally, a season in my colours.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_10.clocks_back",
+   "text": "Everyone got an extra hour. Nobody can say where it went.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_10.clocks_back",
+   "text": "The clocks changed. I adjusted without a fuss. Take notes.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_11.clocks_back",
+   "text": "The clock in your car is right again. Enjoy it until March.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_11.clocks_back",
+   "text": "You got an extra hour of sleep. It doesn't show.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_11.clocks_back",
+   "text": "Lunch an hour early all week. Your stomach didn't get the memo.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_11.clocks_back",
+   "text": "An extra hour, and you're still running late. Impressive.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "en",
+   "path": "topical_11.clocks_back",
+   "text": "You'll say 'it feels so late' at six o'clock all week.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "UK,IE"
+    },
+    {
+     "from": "2026-11-01",
+     "until": "2026-11-05",
+     "region": "US"
+    }
+   ],
+   "meaning": "Topical: the clocks went back. Shows 25 to 29 October in the UK and Ireland, 1 to 5 November in the US, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_10.clocks_back",
+   "text": "Eine Stunde geschenkt, heißt es. Gemerkt hat's keiner.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_10.clocks_back",
+   "text": "Die Uhr im Auto stimmt jetzt wieder. Bis März.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_10.clocks_back",
+   "text": "Abschaffen wollten sie die Zeitumstellung ja schon 2019. Na dann.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_10.clocks_back",
+   "text": "Jetzt streiten wieder alle: Sommerzeit oder Winterzeit. Jedes Jahr.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_11.clocks_back",
+   "text": "Eine Stunde länger geschlafen, und du siehst trotzdem so aus.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_11.clocks_back",
+   "text": "Du hast eine Stunde gewonnen. Und was hast du draus gemacht? Eben.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_11.clocks_back",
+   "text": "Die Uhr am Herd stellst du wieder nicht um. Ich kenn dich.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_11.clocks_back",
+   "text": "Die ganze Woche hast du jetzt um elf schon Hunger. Wetten?",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  },
+  {
+   "lang": "de",
+   "path": "topical_11.clocks_back",
+   "text": "Um sechs sagst du jetzt wieder: Fühlt sich an wie zehn.",
+   "batch": "T",
+   "windows": [
+    {
+     "from": "2026-10-25",
+     "until": "2026-10-29",
+     "region": "DE,AT,CH"
+    }
+   ],
+   "meaning": "Topical: Zeitumstellung. Shows 25 to 29 October in Germany, Austria and Switzerland, on about one day in three."
+  }
+ ]
+}

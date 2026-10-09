@@ -17,6 +17,9 @@ jobs:
       - name: Validate language files
         run: python3 tools/validate_lang.py
 
+      - name: Check topical lines
+        run: python3 tools/topical.py check --lang-dir lang
+
       - name: Install Liquid engine
         run: pip install --quiet -r tools/requirements.txt
 

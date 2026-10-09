@@ -3,6 +3,27 @@
 Not built. Captured while the surrounding design was fresh, because most of
 the machinery it needs already exists.
 
+## Status, October 2026: built in the prototype
+
+- **Markup:** TOPICAL LINES in `prototypes/fact-flavour/block.liquid`.
+  A line shows inside its window, on the window's first day and then
+  about one day in three, rotating with other active lines; other days
+  keep the mood's line. Optional `region` (from the forecast's time zone:
+  US, UK, IE, DE, AT, CH, AU) and `moods`. Seasonal theme days keep their
+  own lines. Pinned by `prototypes/fact-flavour/test_topical.py`.
+- **Opt-in:** the `topical_lines` form field
+  (`prototypes/fact-flavour/settings-topical.yaml`). No value counts as
+  off, so existing installs don't see it unasked.
+- **Writing:** the routine is the repo skill `.claude/skills/topical`;
+  rounds go on the review page as `topical_<level>.<event>` rows.
+- **In and out:** `tools/topical.py add` puts the keepers in and
+  `prune` takes expired lines out (also weekly, by
+  `.github/workflows/topical-prune.yml`), archiving them in
+  `review/topical-archive.json`. CI checks the format.
+- **Size:** about 140 bytes a line; pruned, a dozen live lines.
+- **First event:** the clocks going back (`2026-10-topical-clocks`),
+  waiting for votes.
+
 ## Update, October 2026: the owner's version
 
 The text redesign (fact line plus flavour line, `prototypes/fact-flavour/`)
