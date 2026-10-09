@@ -562,6 +562,19 @@
   "note": "",
   "updatedAt": "2026-10-08T21:36:21.980Z"
  },
+ "de-13395a261b55": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Heute früh hattest du noch einen Plan. Ich vermiss ihn auch.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening-2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "updatedAt": "2026-10-09T14:11:36.454Z"
+ },
  "de-13d2d91f9491": {
   "level": "0",
   "key": "steady",
@@ -1363,6 +1376,21 @@
   "note": "",
   "updatedAt": "2026-10-09T09:10:50.025Z"
  },
+ "de-2faea9f54a74": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Ignorierte Mails gehen nicht weg. Sie bringen morgen Freunde mit.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "I like it, but I’m not sure others understand the context of Feierabend that goes with it. Currently it’s just a random sentence about emails. From your weather app.",
+  "updatedAt": "2026-10-09T14:12:34.852Z"
+ },
  "de-2fd15707ad49": {
   "level": "11",
   "key": "warming",
@@ -1416,6 +1444,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:21:37.038Z"
+ },
+ "de-31f6a1ebb179": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Die Mails, die du heute ignoriert hast, vermehren sich gerade.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T14:12:42.341Z"
  },
  "de-3212115acff0": {
   "level": "10",
@@ -1485,6 +1528,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-09T09:37:28.247Z"
+ },
+ "de-33daed281998": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Bei Aldi starren jetzt alle ins Kühlregal. Es starrt zurück.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "Hm. Still not landing correctly.",
+  "updatedAt": "2026-10-09T13:27:08.354Z"
  },
  "de-3437850765ed": {
   "level": "10",
@@ -3189,6 +3247,21 @@
   "note": "",
   "updatedAt": "2026-10-08T21:49:30.743Z"
  },
+ "de-6b82dc682c89": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Dein Plan für heute läuft jetzt unter „morgen dann“.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T14:12:53.754Z"
+ },
  "de-6ba10078dc09": {
   "level": "11",
   "key": "cooling",
@@ -4289,6 +4362,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T23:35:13.540Z"
+ },
+ "de-8d0128a7a076": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Feierabend bei Aldi: zwanzig Leute vorm Kühlregal, null Ideen.",
+  "source": "candidate",
+  "batch": "D6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "Same here. Not landing.",
+  "updatedAt": "2026-10-09T13:28:28.042Z"
  },
  "de-8d9af5227b0e": {
   "level": "11",

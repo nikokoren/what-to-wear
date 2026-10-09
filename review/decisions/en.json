@@ -5398,6 +5398,21 @@
   "note": "",
   "updatedAt": "2026-10-08T23:42:50.725Z"
  },
+ "en-c6078ea1aba4": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Today's to-dos are tomorrow's now. My only to-do: be right.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T14:12:59.915Z"
+ },
  "en-c686bf889afd": {
   "level": "11",
   "key": "cool",
@@ -6366,6 +6381,21 @@
   "note": "",
   "updatedAt": "2026-10-08T23:43:25.323Z"
  },
+ "en-e9ecf4c944b7": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "You'll check your email once more. Somehow it'll be worse.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T14:35:57.579Z"
+ },
  "en-ebdf5929a64e": {
   "level": "11",
   "key": "cold",
@@ -6501,6 +6531,21 @@
   "tags": [],
   "note": "",
   "updatedAt": "2026-10-08T22:03:38.725Z"
+ },
+ "en-f25eeb67f43d": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Your to-do list carried over again. Mine's blank. Screen life.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T14:13:13.191Z"
  },
  "en-f32abfef7135": {
   "level": "0",
@@ -6811,6 +6856,21 @@
   ],
   "note": "",
   "updatedAt": "2026-10-08T23:50:10.942Z"
+ },
+ "en-fd35fba2216a": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Your inbox doesn't close at six. Neither, apparently, do you.",
+  "source": "candidate",
+  "batch": "E6",
+  "round": "2026-10-evening-2",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "updatedAt": "2026-10-09T14:36:03.916Z"
  },
  "en-fd6a575afd50": {
   "level": "0",

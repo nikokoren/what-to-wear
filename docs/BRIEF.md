@@ -175,6 +175,12 @@ Rückfrage" just before six, the neighbour's drill.
 - **An idea isn't a joke.** Five notes said "I like the idea, but it
   isn't funny": the line stated the observation and stopped. It needs
   a punch line, a turn at the end.
+- **Don't rework a flat idea twice.** Second takes on the five
+  liked-but-flat ideas: 1 kept of 10. If the first version of an idea
+  doesn't land, drop the idea.
+- **Work lines need their evening.** "Ignorierte Mails gehen nicht weg"
+  read as "a random sentence about emails from your weather app". The
+  kept ones carry their context: Feierabend, the Stau, the S-Bahn.
 - **The TRMNL is a screen, not a wall.** It hangs on one. "Perks of
   being a wall" was corrected to "a screen".
 

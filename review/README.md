@@ -197,7 +197,9 @@ was down to two lines. After voting: sync, then
 - **Result (9 October):** 9 kept of 21; German On goes from 2 evening
   lines to 7. The owner's three rewordings are applied (`EDIT`). Five
   ideas the owner liked but found flat got second takes with a punch
-  line: `2026-10-evening-2.json`, 10 lines, on the review page.
+  line: `2026-10-evening-2.json`, 10 lines. 1 kept ("Heute früh
+  hattest du noch einen Plan. Ich vermiss ihn auch."): a flat idea
+  doesn't get better by reworking it.
 
 ## Topical rounds
 
