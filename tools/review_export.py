@@ -269,6 +269,14 @@ def main():
 
     out = pathlib.Path(a.out)
     (out / "sprites").mkdir(parents=True, exist_ok=True)
+    # The page carries its own round files (published next to it as
+    # rounds/<name>.json), so a session that can't push to the repo, like
+    # the weekly topical scout, loses nothing: sync reads them back.
+    (out / "rounds").mkdir(exist_ok=True)
+    for old in (out / "rounds").glob("*.json"):
+        old.unlink()
+    for path in a.candidates:
+        shutil.copy(path, out / "rounds" / pathlib.Path(path).name)
     for sprite in sorted({r["sprite"] for r in unique}):
         shutil.copy(REPO / "sprites" / f"{sprite}.png", out / "sprites" / f"{sprite}.png")
 
@@ -276,7 +284,10 @@ def main():
     payload = payload.replace("</", "<\\/")
     page = (REPO / "review" / "page.html").read_text(encoding="utf-8")
     (out / "index.html").write_text(page.replace("/*ROWS*/null", payload), encoding="utf-8")
+    files = sorted(str(f.relative_to(out)) for f in [*(out / "sprites").glob("*.png"), *(out / "rounds").glob("*.json")]
+                   if f.parent.name == "rounds" or f.stem in {r["sprite"] for r in unique})
     print(f"{len(unique)} lines, {len({r['sprite'] for r in unique})} sprites -> {out}/index.html")
+    print("publish with root " + str(out) + " and files: " + json.dumps(files))
 
 
 if __name__ == "__main__":

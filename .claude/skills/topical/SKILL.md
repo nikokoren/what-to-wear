@@ -78,6 +78,10 @@ advice, no regional words the owner doesn't know.
 - **It has to survive a week.** No "today", "last night" or "this
   morning": the line may show five days later.
 - At most 65 characters.
+- **Vary the frame.** Not every line "Event. Joke about you." The first
+  scout run wrote all eight German lines as "Nobelpreis für X. Du Y."
+- English is the screen talking about itself, a little too pleased
+  with it, at On; at 11 it's about the reader.
 - Optional `moods` (`hot`, `cold`, `wet`, `snow`, ...) for a line that
   only works in that weather, like a heat record on a hot day.
 
@@ -105,14 +109,18 @@ https://claude.ai/artifact/TLLXhH5LF2LEog84w4zPoN:
 python3 tools/review_export.py --candidates review/rounds/<round>.json --only-candidates
 ```
 
-Publish `build/review/index.html` with `root` `build/review` and, as
-`files`, the `sprites/*.png` the build wrote there. From a session that
+Publish `build/review/index.html` with `root` `build/review` and the
+`files` list the build prints: the sprites and `rounds/<round>.json`,
+the round file itself, which travels with the page. From a session that
 didn't publish the page before, read the artifact first and publish
 with its URL, so the link and the votes stay the same.
 
 ## 4. After the vote
 
-1. Sync the votes as usual (`review/README.md`, step 4).
+1. Sync the votes as usual (`review/README.md`, step 4). If the round
+   file isn't in `review/rounds/` yet (the weekly scout doesn't push),
+   fetch it from the page: Artifact `read` with `path`
+   `rounds/<round>.json`, and save it there.
 2. Rewordings from the owner's notes go in the round's `"edits"`:
    `{"line as voted": "line as it should run"}`.
 3. Add the keepers and prune the expired:
@@ -143,10 +151,10 @@ fresh session with no one watching:
    (`"round"` the same name), one `topical_<level>.<event_slug>` path per
    event, set `T`, and a `meaning` that names the event, the source and
    when and where the line shows.
-4. Commit that round file and nothing else, and push it to the branch
-   this skill came from (`git pull --rebase` first). Attach the repo
-   with push access if the push is refused.
-5. Build and publish the review page as in step 3.
+4. Don't commit or push anything: the scout's session can't push to the
+   repo. The round file goes on the review page with the lines.
+5. Build and publish the review page as in step 3, with the `files` the
+   build prints, the round file among them.
 6. One push notification: the events, one line each, and "N lines on
    the review page". The owner votes; the next "sync" adds the keepers.
 

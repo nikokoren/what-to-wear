@@ -26,7 +26,9 @@ the machinery it needs already exists.
   weekly routine, "Topical scout" (Mondays 07:47 Vienna time, in the
   owner's claude.ai routines), runs it in a fresh session, writes lines
   for every event that passes the gate and puts them on the review page;
-  the owner's votes do the picking.
+  the owner's votes do the picking. It doesn't push to the repo (its
+  session can't): the round file is published with the page as
+  `rounds/<round>.json`, and sync reads it back from there.
 - **Size:** about 140 bytes a line; pruned, a dozen live lines.
 - **First event:** the clocks going back (`2026-10-topical-clocks`):
   English 2 kept of 9, German 2 of 9, all at 11. Most vetoes were
