@@ -122,6 +122,8 @@ REREAD = "2026-10-reread"
 # Round 9: rewordings from the round 8 notes, applied after round 8. Each
 # line says what it replaces: one line, or "*" for every wording of a fact.
 REWORK = "2026-10-rework"
+# Round 10: Visual Forecast's own pools (flavour_vf_10 / flavour_vf_11).
+VISUAL = "2026-10-visual"
 # Round 4 split "mild" in three. The mild lines the owner kept all talk
 # about an unremarkable day, which is the steady one.
 MOOD_RENAME = {"mild": "cool"}
@@ -248,6 +250,49 @@ def apply_rework(doc, lang, decisions):
     return n
 
 
+def build_visual(doc, lang, decisions):
+    """Round 10: per mood, the lines that work without the fact, plus new ones.
+
+    A "needs the fact" (a veto in this round) keeps a line off Visual
+    Forecast only. Warming and cooling take cool's lines too, as the words
+    do. Nothing is written until the round has votes: without these pools
+    the panels show the usual line.
+    """
+    path = REPO / "review" / "rounds" / f"{VISUAL}.json"
+    votes = {}
+    for d in decisions.values():
+        if d.get("round") == VISUAL:
+            votes[(d["path"].split("[")[0], d["text"])] = d
+    if not path.exists() or not votes:
+        return collections.Counter()
+    lines = [l for l in json.loads(path.read_text(encoding="utf-8"))["lines"] if l["lang"] == lang]
+    moods = sorted({l["path"].split(".")[1] for l in lines})
+    n = collections.Counter()
+    for level in ("10", "11"):
+        pools = doc[f"flavour_{level}"]
+        needs = {t for (p, t), d in votes.items() if p.startswith(f"flavour_{level}.") and d.get("verdict") == "veto"}
+        vf = {}
+        for mood in moods:
+            if mood == "cool":
+                continue
+            base = list(pools.get(mood, []))
+            if mood in ("warming", "cooling"):
+                base += [t for t in pools.get("cool", []) if t not in base]
+            alone = [t for t in base if t not in needs]
+            n["kept off"] += len(base) - len(alone)
+            new = []
+            for l in lines:
+                d = votes.get((l["path"], l["text"]))
+                if l["path"] == f"flavour_vf_{level}.{mood}" and d and d.get("verdict") in ("star", "keep"):
+                    new.append(EDIT_FIX.get(d.get("edit"), d.get("edit")) or l["text"])
+            n["new"] += len(new)
+            # The new lines first: they were written for the drawings.
+            if new or alone:
+                vf[mood] = new + [t for t in alone if t not in new]
+        doc[f"flavour_vf_{level}"] = vf
+    return n
+
+
 def main():
     round_lines = variants_round()
     for lang, winners in WIN.items():
@@ -304,6 +349,9 @@ def main():
         rework = apply_rework(doc, lang, decisions)
         if rework:
             print(f"{lang} rework: " + ", ".join(f"{v} {k}" for k, v in rework.items()))
+        visual = build_visual(doc, lang, decisions)
+        if visual:
+            print(f"{lang} Visual Forecast: {visual['new']} new lines, {visual['kept off']} kept off")
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

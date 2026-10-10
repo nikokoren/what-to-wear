@@ -265,6 +265,27 @@ asked for:
 After voting: sync, then `python3 review/rounds/build_pools.py` (it
 applies round 9 after round 8), then `python3 tools/build_beta.py`.
 
+## Round 10: Visual Forecast's sarcastic line
+
+With two or three panels (79% of mornings) the screen shows drawings and
+times but no fact line, so a sarcastic line that answers the fact ("that
+layer", "admit I was right") points at nothing. `2026-10-visual.json`
+(`make_round10.py`), 281 lines, on the same page as round 9, both shown
+the way Visual Forecast shows them (the panels, the times, the line):
+
+- **Stands alone?** (209): every line of the moods that come with
+  changes. The buttons read "Works without the fact" and "Needs the
+  fact"; "needs" only keeps a line off Visual Forecast, it stays in the
+  words. Claude's guess is under each screen.
+- **For the drawings** (72): new lines about what the panels show, per
+  mood, at On and 11. They never name a panel by position.
+
+After voting: sync, then `python3 review/rounds/build_pools.py`, which
+writes `flavour_vf_10` / `flavour_vf_11` (per mood: the new lines first,
+then those that work alone; warming and cooling take cool's too). The
+panels pick from them on multi-panel days and fall back to the usual
+line without them. Then `python3 tools/build_beta.py`.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

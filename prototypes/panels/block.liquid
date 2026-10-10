@@ -264,6 +264,22 @@ after the fact + flavour block and the picture.
     {%- endif -%}
     {%- if sarcasm_level != '0' -%}
       {%- assign panel_flavour = flavour_line -%}
+      {%- comment %}
+      Two or three panels show no fact line, so a sarcastic line that
+      answers it ("that layer") points at nothing. Those days draw from the
+      mood's Visual Forecast pool (flavour_vf_10 / _11: lines that work
+      alone, and lines written for the drawings), rotated like the words.
+      Theme days and topical lines keep theirs; no pool, the usual line.
+      {%- endcomment %}
+      {%- if panel_n > 1 and fl_theme == false and flavour_topical == false -%}
+        {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
+        {%- assign vf_pool = texts[vf_key][mood] -%}
+        {%- if vf_pool -%}
+          {%- assign vf_n = vf_pool | size -%}
+          {%- assign vf_i = local_days | plus: 5 | modulo: vf_n -%}
+          {%- assign panel_flavour = vf_pool[vf_i] -%}
+        {%- endif -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endif -%}
 {%- endif -%}

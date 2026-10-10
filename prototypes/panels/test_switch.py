@@ -78,6 +78,14 @@ for view in VIEWS:
     html = render("visual", view, feels=STEADY)
     expect(f"visual on a steady day is the text view with 'works all day' ({view})",
            "wtw-panels" not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
+# Two or three panels draw from the Visual Forecast pool when there is one.
+VF = {m: ["VISUAL FORECAST LINE"] for m in ("wet", "warming", "cooling", "cold", "fickle", "hot", "snow")}
+TEXTS["en"]["flavour_vf_10"] = VF
+expect("visual with panels takes the Visual Forecast pool", "VISUAL FORECAST LINE" in render("visual"))
+expect("the words keep the usual line", "VISUAL FORECAST LINE" not in render("Yes"))
+expect("one panel keeps the usual line", "VISUAL FORECAST LINE" not in render("visual", feels=STEADY))
+del TEXTS["en"]["flavour_vf_10"]
+expect("no pool: the usual line", "VISUAL FORECAST LINE" not in render("visual"))
 html = render("visual", lang="de")
 expect("German Visual Forecast says 'ab'", ">ab " in html and ">Jetzt<" in html)
 

@@ -32,7 +32,9 @@ to pick it up cold.
    7 pm"), larger times on the X. Settings: it is "Visual Forecast", a
    third value of the forecast field, so nothing saved moves
    (`config/settings.next.yaml`, the whole form for the beta and the
-   launch).
+   launch). Sarcastic line with two or three panels: its own pool of
+   lines that work without the fact plus lines written for the drawings
+   (review round 10, then `build_pools.py`).
 4. **Completely rewrite the whole thing in TRMNL's native framework
    only, before going live.** The owner: "I can't put this out like
    this." The Visual Forecast views carry a hand-written `<style>` block

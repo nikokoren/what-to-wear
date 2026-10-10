@@ -1,0 +1,6172 @@
+{
+ "round": "2026-10-visual",
+ "idPrefix": "vf",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I don't get wet. Perks of living indoors.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'd make a terrible umbrella. Gorgeous, but terrible.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'll be on the wall, dry and smug.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'm very good for umbrella sales.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "No sad cloud icons here. I have taste.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Nothing gets me looked at like a chance of rain.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain makes everything shiny. I stay tastefully matte.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain or not, my humour stays bone dry.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Staying dry is easy when you live on a wall.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "As an umbrella I'd be useless. Beautiful, but useless.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "The umbrella industry owes me a thank-you note.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "You won't get a sad little cloud icon from me. I've got artistic integrity.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "A chance of rain, and suddenly everyone checks on me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Rain makes it all glossy out there. I prefer matte.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "Thrilling stuff. I'm on the edge of my wall.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "Gripping weather. I can barely stay on the wall.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "I've had firmware updates more exciting than today.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "It takes real talent to make today look interesting.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Other screens get to show paintings. I get today's weather.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Today has the thrill of a firmware update. A small one.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Making today look interesting takes skill. Lucky you've got me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cool",
+   "text": "Somewhere a screen is showing a Monet. And all you get is this.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I was grey before winter made it cool.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I'm staying on the wall where it's warm.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "My only weakness is the cold. Kidding, I don't have one.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "Grey was my look long before winter tried it.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Make up your mind, weather. Some of us refresh on a schedule.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.fickle",
+   "text": "Today has a plot twist. I've read ahead.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Thin, pale and cool. I was made for this.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "I'll be here in the shade of your hallway.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "No fan, no sweat. Perks of being a screen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Someone turned the outside up too far. Don't look at me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Flat, pale and cool. I'm built for days like this.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "I'll sit this one out in your nice shady hallway.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "No sweat here. One of the perks of being a screen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Somebody cranked the outside too high. Wasn't me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "I've never seen snow. Describe it to me later.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "In snow, I'd leave a perfect rectangle. Angels are for amateurs.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow is rain with better presentation. I respect that.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "My snow angel would be a perfect rectangle. Classy.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow is just rain that cares about presentation.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.wet",
+   "text": "I put an umbrella in one of these. You're welcome.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.wet",
+   "text": "Spot the difference: one of these has an umbrella.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.wet",
+   "text": "The umbrella makes a guest appearance today. I cast it myself.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.wet",
+   "text": "I drew the umbrella. Bringing it is your department.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.warming",
+   "text": "The sequel has fewer layers. Most sequels do.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.warming",
+   "text": "Watch a layer vanish later. I'm basically a magician.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.warming",
+   "text": "One layer fewer by the end. I drew every gripping detail.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.fickle",
+   "text": "Today is a trilogy, and the third part looks like the first.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.fickle",
+   "text": "Three outfits for one day. I'm basically a costume department.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.fickle",
+   "text": "Same outfit at both ends of the day. Lazy? No. Accurate.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.cold",
+   "text": "Different layers in every drawing. Same cold in all of them.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.cold",
+   "text": "I draw the coats. Your ears are on their own.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.hot",
+   "text": "Less and less clothing in these drawings. I'm keeping it tasteful.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.hot",
+   "text": "The drawings get breezier. I stay cool. Comes with being a screen.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.cooling",
+   "text": "A layer shows up later. I call that foreshadowing.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.cooling",
+   "text": "I drew the extra layer for later. Even I plan ahead.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.snow",
+   "text": "Snow in today's drawings. I drew every flake by hand.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.snow",
+   "text": "There's snow in this lineup. I made it look easy.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "I refresh every few minutes. Wet socks don't.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "If you come back soaked, don't drip near me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Try to bring the umbrella home. Unlike the last three.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Umbrella chicken with strangers. You always flinch first.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "You'll still check your phone. As if it knows something I don't.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "Another day of umbrella chicken. You'll blink first.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.wet",
+   "text": "You'll double-check on your phone. As if it knows better.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "Taking that layer off might be the highlight of your day.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“that layer” points at the fact)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "Today you're your own coat rack. Congratulations.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone, but borderline",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "You'll be a bit too warm before you admit I was right.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“I was right” answers the fact's advice)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "That layer coming off could be the peak of your day.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“that layer” points at the fact)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "Today you're a coat rack with legs. Well done.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone, but borderline",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.warming",
+   "text": "You'll overheat a little before you admit I was right.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“I was right” answers the fact's advice)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Carrying a layer you don't need yet. How very grown-up.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone, but borderline",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Leave it behind and you'll think of me later. Not fondly.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“it” is the jacket the fact names)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "You'll put it on later and act like it was your idea.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“it” is the jacket the fact names)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cooling",
+   "text": "Bringing a layer you won't need for hours. Look at you, prepared.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone, but borderline",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Today's as predictable as your lunch order.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Unremarkable out there. You'll fit right in.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "You'll call it 'fresh' to sound like an outdoors person.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Your usual jacket, your usual route. Living on the edge.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Today's as surprising as your usual coffee order.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Nothing special out there. You'll blend right in.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "You'll call it 'crisp' like you go hiking or something.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cool",
+   "text": "Same jacket, same route. You wild thing.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Gloves off to use your phone, every time. Brilliant system.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "I've drawn you a warm coat. The least you can do is wear it.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Reading this slowly won't make it any warmer.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "The cold will make you go twice your usual walking speed today. Still not exercise.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll make that noise once you're outside. You know the one.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll say it's not that cold. Your face will disagree.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Your nose will turn a colour I can't even display.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "That coat up there? Wear it. I worked hard on it.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "Staring at me longer won't make it warmer.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll walk twice as fast today. Still not cardio.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "'It's not that cold,' you'll say. Your ears won't agree.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Complaining it's warm, then that it isn't. You've got range.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "I give it even odds you lose that layer by tonight.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“that layer” points at the fact)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Today's weather has more mood swings than you. Barely.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.fickle",
+   "text": "Fifty-fifty that layer goes missing by tonight.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“that layer” points at the fact)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Anything flat becomes a fan today. Not me, please.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "I don't sweat. You will.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You asked for warm weather. Careful what you wish for.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You'll search 'ice cream near me' later. Twice.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You're about to have strong opinions about air conditioning.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Today you'll fan yourself with anything flat. Please don't use me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "One of us is about to sweat. Not me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Remember wishing for summer? This is what you get.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Get ready to have feelings about air conditioning.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "'Proper snow,' you'll say. As if there's improper snow.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Give it an hour, then you'll take the snow personally.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Shake the snow off before you come near me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Try not to slip. I can't call anyone.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Snow stays at the door. Don't bring it near me.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "Don't fall. I have no way of getting help.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.wet",
+   "text": "One of these has an umbrella. Guess which one you'll ignore.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.wet",
+   "text": "The umbrella's right there in the drawing. You'll still forget it.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.wet",
+   "text": "You'll check the drawings, nod, and leave the umbrella anyway.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.wet",
+   "text": "Umbrella in the picture, umbrella at home. Classic you.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 2 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll lose a layer. Then you'll lose it for real.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll carry a layer around like a hostage.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.warming",
+   "text": "You'll match the first drawing all day. Out of stubbornness.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.fickle",
+   "text": "Three outfits by tonight. You can barely manage one.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.fickle",
+   "text": "Off and back on. You'll lose track by lunch.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.fickle",
+   "text": "Three drawings, three outfits. You'll get each one wrong.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.cold",
+   "text": "Whatever the drawings say, your nose goes red in all of them.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.cold",
+   "text": "Every drawing has gloves. Yours are in last winter's coat.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.hot",
+   "text": "Fewer clothes later. More complaining, as always.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.hot",
+   "text": "The drawings get lighter. Your mood won't.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from 1 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.cooling",
+   "text": "The extra layer's in the later drawing. Yours will be on a chair.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.cooling",
+   "text": "You'll see the later drawing and leave without the layer anyway.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 6 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.snow",
+   "text": "Snow in the drawings. You'll act surprised anyway.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.snow",
+   "text": "Snow in the drawings, and your boots are still in the closet.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 3 pm"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nass wird's. War ja klar.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "„Es gibt kein schlechtes Wetter.“ Doch, gibt's.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Das Regenradar hat heute mehr Zuschauer als jede Serie.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Nass. Wer hätte das gedacht.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Regen. Mal wieder. Was sonst.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Die Schnecken freuen sich. Immerhin wer.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Alle rennen im Regen, als wär's vorne trockener.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.wet",
+   "text": "Kein schlechtes Wetter, nur falsche Kleidung? Schön wär's.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Nachher sagt wieder jeder: Ganz schön frisch geworden.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cooling",
+   "text": "Gleich heißt's wieder überall: Ist aber frisch geworden.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cool",
+   "text": "Wetter für Leute, die beim Essen „passt schon“ sagen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei der Kälte schmeckt sogar Glühwein.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Saukalt. Mehr gibt's nicht zu sagen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei dem Wetter hätt die Oma keinen aus dem Haus gelassen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Gleich reißt wieder einer zum Stoßlüften alle Fenster auf.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Irgendein Depp läuft vermutlich trotzdem in kurzen Hosen rum.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und dann gibt's Leute, die sagen, sie mögen den Winter.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Bei der Kälte trinkt man sogar freiwillig Glühwein.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Saukalt. Mehr fällt mir dazu nicht ein.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und gleich wird trotzdem wieder stoßgelüftet.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Einer läuft vermutlich trotzdem in Shorts rum. Einen gibt's immer.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "„Kälte härtet ab“, sagen die mit der Heizung auf fünf.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und dann gibt's Leute, die den Winter mögen. Angeblich.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Ausziehen, anziehen. Wie beim Arzt, bloß ohne Krankschreibung.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "So ein Hin und Her hält ja kein Mensch aus.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Zu warm, zu kalt, zu warm. Zum Meckern reicht's immer.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.fickle",
+   "text": "Dieses Hin und Her macht mich ganz verrückt.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Im Baumarkt sind vermutlich gleich wieder alle Ventilatoren ausverkauft.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Bei der Hitze stellen sich die Leute dann noch an den Grill.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Heut ist mir sogar das Meckern zu anstrengend.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "In der Bahn kann man heute wieder seine Mitmenschen riechen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Schwitzen im Stehen. Ein Traum.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Und im Winter wieder jammern, dass es zu kalt ist.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Ventilatoren sind im Baumarkt heute vermutlich wieder ausverkauft.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Gleich kommt wieder: „Früher war es auch schon heiß.“",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Zum Meckern ist es mir heute zu heiß. Fast.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "In der Bahn riecht's heute nach jedem Einzelnen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Jetzt meckern, und im Januar wünschen sich alle wieder den Sommer zurück.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Der Schneepflug kommt wieder erst, wenn alles getaut ist.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Gleich fährt keine Bahn mehr, wetten?",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Schneeketten hat natürlich wieder keiner dabei.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Fünf Zentimeter, und im Radio heißt's Schneechaos.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Bis der Räumdienst kommt, ist alles wieder geschmolzen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Die Kinder jubeln. Schippen müssen ja die anderen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Die Bahn hat bestimmt schon aufgegeben.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Im Baumarkt ist das Streusalz bestimmt schon weg.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at On, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.wet",
+   "text": "Einen Schirm hab ich auch gemalt. Einer muss ja mitdenken.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.wet",
+   "text": "Auf einem Bild ist ein Schirm. Übersehen tun ihn trotzdem alle.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.wet",
+   "text": "Ich mal den Schirm. Mitnehmen müsst ihr ihn schon selber.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.wet",
+   "text": "Mit Schirm, ohne Schirm. Ich mal alles, und keiner dankt's mir.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.warming",
+   "text": "Später ist eine Schicht weg. Mehr Spannung gibt's heute nicht.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.warming",
+   "text": "Erst mit, dann ohne. Ein Drama in zwei Akten. Ein kurzes.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.warming",
+   "text": "Zwei Bilder für einmal Ausziehen. Was ich mir alles antu.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.fickle",
+   "text": "Am Ende schaut's aus wie am Anfang. Typisch für so einen Tag.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.fickle",
+   "text": "Drei Bilder, und zweimal das Gleiche. Ich wiederhol mich ungern.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.fickle",
+   "text": "Drei Bilder für einen Tag. Ich bin doch kein Daumenkino.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.cold",
+   "text": "Auf jedem Bild dick eingepackt. Schöner wird dadurch keiner.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.cold",
+   "text": "Ich mal die Jacken. Frieren müsst ihr selber.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.hot",
+   "text": "Von Bild zu Bild weniger an. Weiter runter mal ich nicht.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.hot",
+   "text": "Je später, desto luftiger. Ich hab da meine Grenzen.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.cooling",
+   "text": "Später kommt eine Schicht dazu. Merkt sowieso keiner.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.cooling",
+   "text": "Die Extraschicht kommt erst später. Spannung bis zum Schluss.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.snow",
+   "text": "Auf meinen Bildern sieht Schnee ordentlich aus. Draußen nicht.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_10.snow",
+   "text": "Schnee kann ich malen. Schippen müsst ihr selber.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at On on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Endlich passt das Wetter mal zu deinem Gesicht.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Tropf mir nachher bloß nicht wieder alles voll.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Um deine Frisur ist's eh nicht schade.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wer ohne Schirm geht, braucht nachher nicht jammern.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wie viele Schirme hast du heuer eigentlich schon verlegt?",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wenn du nass wirst, war's wieder meine Schuld. Klar.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Das Wetter passt heute endlich zu deiner Laune.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Nachher bitte nicht wieder den Flur volltropfen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Du gehst sicher trotzdem ohne Schirm los. Typisch.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.wet",
+   "text": "Wie viele Schirme hast du dieses Jahr schon irgendwo liegen lassen?",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood wet. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Bitte nicht wieder die Ärmel um den Bauch knoten.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Nachher schwitzt du, als hättest du was geleistet.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.warming",
+   "text": "Später schwitzt du, ganz ohne was getan zu haben.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood warming. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Als ob dein Schrank sowas hergibt.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“sowas” points at the jacket the fact names)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cooling",
+   "text": "Als hättest du was Passendes im Schrank.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: needs the fact (“was Passendes” answers the fact's advice)",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cooling. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Ideales Fensterputzwetter. Deine hätten's nötig.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Nichts los da draußen. Wie bei dir am Wochenende.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Perfekt zum Fensterputzen. Nur so ein Hinweis.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cool",
+   "text": "Draußen passiert nichts. Kennst du ja von deinen Samstagen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cool (shown on warming and cooling days). Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Dick eingepackt gefällst du mir am besten. Man sieht weniger.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Heute bekommst du nicht nur vor Entscheidungen kalte Füße.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Bis du heut alles anhast, ist eh schon Frühling.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Deine Hände sind heut fast so kalt wie dein Herz.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Du hängst gleich wieder am Heizkörper wie die Katze.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Mütze rausgehen und dann jammern. Kennen wir schon.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Und du wieder in der dünnen Jacke. Na dann viel Spaß.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gut eingemummelt siehst du am besten aus. Weniger sichtbar.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Bis du fertig angezogen bist, blühen schon die Krokusse.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Gleich klebst du wieder an der Heizung wie die Katze.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Du redest wieder von Spanien. Dann buch halt endlich.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Ohne Mütze raus, dann beschweren. Das kennen wir schon.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood cold. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "An, aus, wieder an. Wie deine Beziehungen.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Du bist heut garantiert immer eine Schicht daneben.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heut muss man mitdenken. Schlecht für dich.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heute trägst du die Jacke mehr spazieren als am Leib.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone, but borderline",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Morgens frierst du, mittags schwitzt du, abends meckerst du. Ich kenn dich.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Wennst heut alles richtig machst, schreib ich's mir auf.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "An, aus, an. Kennst du ja aus der Liebe.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Du liegst heute garantiert immer eine Lage daneben.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.fickle",
+   "text": "Heute muss man mitdenken. Pech für dich.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood fickle. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Heut ist der Schatten dein bester Freund. Dein einziger.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Jeder Weg ist dir heut zu weit. Also wie immer.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Gleich fragst du wieder alle, ob ihnen auch so warm ist.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Dein bester Freund heute: der Schatten. Dein einziger.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Heute ist dir jeder Meter zu viel. Also ein normaler Tag.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood hot. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Neben dir wirkt jeder Schneemann lebendig.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Du und Glatteis. Das wird wieder was.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schneeballschlacht? Du triffst eh nix.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schneeschippen wär heut mal Sport für dich. Ausnahmsweise.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Jeder Schneemann hat heute mehr Ausstrahlung als du.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Du auf Glatteis. Ich hol schon mal Popcorn.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schneeballschlacht? Du triffst doch sowieso nichts.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Schnee schippen zählt heute als dein Sportprogramm.",
+   "batch": "Stands alone?",
+   "role": "flavour",
+   "ask": "alone",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "hint": "Claude's guess: works alone",
+   "meaning": "Visual Forecast, sarcastic line at 11, mood snow. Does it make sense under the drawings, with no fact line? “Needs the fact” only keeps it off Visual Forecast; it stays in the words."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.wet",
+   "text": "Auf einem Bild hast du einen Schirm. In echt eher nicht.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.wet",
+   "text": "Den Schirm siehst du. Mitnehmen wirst du ihn trotzdem nicht.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.wet",
+   "text": "Gemalt hab ich den Schirm. Vergessen musst du ihn schon selber.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.wet",
+   "text": "Mit Schirm siehst du richtig vernünftig aus. Leider nur gemalt.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab 14 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a wet day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.warming",
+   "text": "Später ist eine Schicht weg. Bei dir dauert das bis zum Abend.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.warming",
+   "text": "Zwei Bilder, zwei Outfits. Du schaffst mit Mühe eins.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.warming",
+   "text": "Auf dem Bild schwitzt du nicht. Wunschdenken.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a warming day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.fickle",
+   "text": "Drei Bilder, drei Outfits. Du kommst schon mit einem kaum zurecht.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.fickle",
+   "text": "An, aus, an. Irgendwo dazwischen verlierst du die Jacke.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.fickle",
+   "text": "Am Ende bist du wieder eingepackt. Und genauso schlecht gelaunt.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 13 Uhr"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 19 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a fickle day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.cold",
+   "text": "Auf dem Bild hast du Handschuhe. Deine liegen noch im Keller.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.cold",
+   "text": "Egal welches Bild: Du frierst als Erster.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "bundled_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cold day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.hot",
+   "text": "Von Bild zu Bild luftiger. Dein Gejammer bleibt gleich.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.hot",
+   "text": "Weniger an, mehr Gejammer. Ich kenn dich.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab 13 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a hot day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.cooling",
+   "text": "Die Extraschicht auf dem Bild? Die liegt bei dir dann zu Hause.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.cooling",
+   "text": "Auf dem Bild trägst du später was Wärmeres. Rate mal, wo deins ist.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a cooling day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.snow",
+   "text": "Schnee auf den Bildern. Du bist trotzdem überrascht. Jedes Mal.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.snow",
+   "text": "Schnee kommt. Deine Stiefel sind natürlich noch im Keller.",
+   "batch": "For the drawings",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ],
+   "meaning": "New, for Visual Forecast only: sarcastic line at 11 on a snow day with two or three panels. It talks about the drawings, so it never names a panel by position."
+  }
+ ]
+}

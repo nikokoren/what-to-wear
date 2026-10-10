@@ -32,6 +32,10 @@ show an edit live (round 8, the re-read):
     "fillsAlt": {...}           the same with the hours ("in two hours")
     "under": "..."              a fact's sarcastic line, for context
     "earlier": "keep in ..."    the line's verdict in an earlier round
+    "panels": [{sprite, label}] Visual Forecast: the drawings in a row, no fact
+    "ask": "alone"              a yes/no instead of a verdict (round 10:
+                                "works without the fact" / "needs the fact")
+    "hint": "..."               Claude's guess, shown under the screen
 
 Every row carries a stable id: language plus a hash of the text. A line
 that moves index keeps its decision; a line whose text changes is a new
@@ -47,7 +51,7 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip|flavour|fact|topical)_(\d+))\.([a-z0-9_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|fact|topical)_(\d+))\.([a-z0-9_]+)$")
 PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
@@ -168,8 +172,8 @@ def flavour_context(lang, doc, key, text):
 
 def context(lang, doc, section, key, text):
     """What the device shows for this line: drawing, full tip, pairing."""
-    kind, level = section.split("_")
-    if kind == "flavour":
+    kind, level = section.rsplit("_", 1)
+    if kind in ("flavour", "flavour_vf"):
         return flavour_context(lang, doc, key, text)
     if kind == "topical":
         # A topical line takes the flavour slot on an ordinary day; the
@@ -232,7 +236,7 @@ def rows_from_candidates(cand_path):
         r = row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
                 "candidate", c.get("batch", ""))
         # A round can say exactly what the screen shows next to its line.
-        for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier"):
+        for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier", "panels", "ask", "hint"):
             if field in c:
                 r[field] = c[field]
         if data.get("idPrefix"):
@@ -255,7 +259,7 @@ def rows_from_candidates(cand_path):
 
 
 def row(lang, doc, section, key, text, path, source, batch):
-    level = section.split("_")[1]
+    level = section.rsplit("_", 1)[1]
     ctx = context(lang, doc, section, key, text)
     return {
         "id": line_id(lang, text), "lang": lang, "level": level,
@@ -304,7 +308,8 @@ def main():
         old.unlink()
     for path in a.candidates:
         shutil.copy(path, out / "rounds" / pathlib.Path(path).name)
-    for sprite in sorted({r["sprite"] for r in unique}):
+    used = {r["sprite"] for r in unique} | {p["sprite"] for r in unique for p in r.get("panels", [])}
+    for sprite in sorted(used):
         shutil.copy(REPO / "sprites" / f"{sprite}.png", out / "sprites" / f"{sprite}.png")
 
     payload = json.dumps({"round": round_name, "focus": a.focus, "rows": unique}, ensure_ascii=False)
@@ -312,8 +317,8 @@ def main():
     page = (REPO / "review" / "page.html").read_text(encoding="utf-8")
     (out / "index.html").write_text(page.replace("/*ROWS*/null", payload), encoding="utf-8")
     files = sorted(str(f.relative_to(out)) for f in [*(out / "sprites").glob("*.png"), *(out / "rounds").glob("*.json")]
-                   if f.parent.name == "rounds" or f.stem in {r["sprite"] for r in unique})
-    print(f"{len(unique)} lines, {len({r['sprite'] for r in unique})} sprites -> {out}/index.html")
+                   if f.parent.name == "rounds" or f.stem in used)
+    print(f"{len(unique)} lines, {len(used)} sprites -> {out}/index.html")
     print("publish with root " + str(out) + " and files: " + json.dumps(files))
 
 

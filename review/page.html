@@ -23,6 +23,7 @@
   --accent: #7fb0e0; --star: #e7b53c; --star-bg: #3a3017; --veto: #f07a6f; --veto-bg: #3c2220;
   --keep: #84c492; --keep-bg: #1f3324; --warn: #f0a24a; color-scheme: dark }
 * { box-sizing: border-box }
+[hidden] { display: none !important }
 body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); padding: 20px 16px 40px }
 .wrap { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 24px }
 @media (max-width: 860px) { .wrap { grid-template-columns: minmax(0, 1fr) } }
@@ -62,7 +63,7 @@ main { display: flex; flex-direction: column; gap: 16px; min-width: 0 }
 .meaning { max-width: 640px; width: 100%; margin: 0 auto; font-size: 14px }
 .raw { max-width: 640px; width: 100%; margin: 0 auto; font: 13px/1.5 var(--mono); color: var(--muted); overflow-wrap: anywhere }
 .panel { max-width: 640px; width: 100%; margin: 0 auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; gap: 12px }
-.verdicts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px }
+.verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px }
 .v { font: 600 15px var(--body); padding: 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; display: flex; justify-content: center; gap: 8px; align-items: baseline }
 .v kbd { font: 11px var(--mono); color: var(--muted) }
 .v.star[aria-pressed="true"] { background: var(--star-bg); border-color: var(--star); color: var(--star) }
@@ -89,6 +90,13 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
 .fillhelp code { font: 12px var(--mono); color: var(--fg) }
 .fillhelp .warn { color: var(--warn); font-weight: 600 }
 .meta .earlier { font-style: italic }
+.meta .hint { font-style: italic; color: var(--accent) }
+/* Visual Forecast: the day's drawings in a row, the time under each. */
+.screen .pnl { display: flex; justify-content: center; align-items: flex-start; gap: 1%; height: 62%; max-width: 100% }
+.screen .pnl figure { margin: 0; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 2% }
+.screen .pnl img { height: 82%; width: auto; max-width: none }
+.screen .pnl span { font: 600 clamp(10px, 1.8vw, 14px)/1.2 var(--body); white-space: nowrap }
+.screen .pnl figure:first-child span { text-decoration: underline }
 </style>
 
 <header class="top">
@@ -195,6 +203,7 @@ function sentenceCase(t) { return t.replace(/(^|[.!?]\s+)(\p{Ll})/gu, (m, a, c) 
 function placeholdersIn(t) { return new Set(t.match(/\{[A-Z0-9]+\}/g) || []); }
 // The two paragraphs on the mock screen, and which one is being rated.
 function compose(r) {
+  if (r.panels) return { bold: "", plain: fill(wordingOf(r), fillsOf(r)), judged: "" };
   if (r.role === "fact") return { bold: sentenceCase(fill(wordingOf(r), fillsOf(r))), plain: r.under || "", judged: "bold" };
   if (r.role === "flavour") return { bold: r.fact || "", plain: fill(wordingOf(r), fillsOf(r)), judged: "plain" };
   return { bold: r.fact || "", plain: ui.showPair && r.pair ? r.pair : r.tip, judged: r.fact ? "plain" : "" };
@@ -287,6 +296,7 @@ function render() {
     return;
   }
   screen.className = "screen";
+  renderVerdicts(r);
   renderScreen(r);
   $("meaning").textContent = r.meaning;
   $("raw").textContent = r.role ? "" : r.text;
@@ -308,8 +318,16 @@ function render() {
 
 function renderScreen(r) {
   const c = compose(r);
-  const img = document.createElement("img");
+  let img = document.createElement("img");
   img.src = "sprites/" + r.sprite + ".png"; img.alt = r.sprite.replace(/_/g, " ");
+  if (r.panels) {
+    img = document.createElement("div"); img.className = "pnl";
+    for (const p of r.panels) {
+      const f = document.createElement("figure"), i = document.createElement("img"), t = document.createElement("span");
+      i.src = "sprites/" + p.sprite + ".png"; i.alt = p.sprite.replace(/_/g, " "); t.textContent = p.label;
+      f.append(i); if (r.panels.length > 1) f.append(t); img.append(f);
+    }
+  }
   const words = document.createElement("div"); words.className = "words";
   if (c.bold) { const f = document.createElement("p"); f.className = "fact" + (c.judged === "bold" ? " judged" : ""); f.textContent = c.bold; words.append(f); }
   if (c.plain) { const p = document.createElement("p"); if (c.judged === "plain" && c.bold) p.className = "judged"; p.textContent = c.plain; words.append(p); }
@@ -324,12 +342,24 @@ function renderScreen(r) {
   if (r.source === "candidate") meta.push(["", r.batch ? "set " + r.batch : "new candidate"]);
   $("meta").replaceChildren(...meta.map(([tag, text]) => { const e = document.createElement(tag || "span"); e.textContent = text; return e; }));
   if (r.earlier) { const e = document.createElement("span"); e.className = "earlier"; e.textContent = "earlier: " + r.earlier; $("meta").append(e); }
+  if (r.hint) { const e = document.createElement("span"); e.className = "hint"; e.textContent = r.hint; $("meta").append(e); }
   if (r.role ? length > 200 : r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Too long for the small views"; $("meta").append(w); }
 }
 
+// "Does it stand alone?" rows ask a yes/no, not a verdict on the line.
+const VERDICT_LABELS = { star: "Star", keep: "Keep", veto: "Veto" };
+const ASK_LABELS = { alone: { keep: "Works without the fact", veto: "Needs the fact" } };
+function renderVerdicts(r) {
+  const ask = r && ASK_LABELS[r.ask];
+  for (const b of document.querySelectorAll(".v")) {
+    b.firstChild.textContent = ((ask && ask[b.dataset.v]) || VERDICT_LABELS[b.dataset.v]) + " ";
+    b.hidden = !!ask && !ask[b.dataset.v];
+  }
+}
+
 function renderEditor(r) {
-  $("editbox").hidden = !r.role;
-  if (!r.role) return;
+  $("editbox").hidden = !r.role || !!r.ask;
+  if (!r.role || r.ask) return;
   const saved = editOf(r);
   if (document.activeElement !== $("edit")) $("edit").value = saved || r.text;
   $("edited").hidden = !saved;
@@ -425,14 +455,14 @@ $("reset").onclick = () => { const [r] = current(); if (r) { draft = null; $("ed
 document.addEventListener("keydown", (e) => {
   if (e.target.tagName === "TEXTAREA" || e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key.toLowerCase();
-  if (k === "s") vote("star");
+  if (k === "s") { const [r] = current(); if (r && !ASK_LABELS[r.ask]) vote("star"); }
   else if (k === "k") vote("keep");
   else if (k === "v" || k === "x") vote("veto");
   else if (k === "j" || k === "arrowright") move(1);
   else if (k === "h" || k === "arrowleft") move(-1);
   else if (k === "r") { const [r] = current(); if (r && r.pair) { ui.showPair = !ui.showPair; render(); } }
   else if (k === "n") { e.preventDefault(); $("note").focus(); }
-  else if (k === "e") { const [r] = current(); if (r && r.role) { e.preventDefault(); const t = $("edit"); t.focus(); t.setSelectionRange(t.value.length, t.value.length); } }
+  else if (k === "e") { const [r] = current(); if (r && r.role && !r.ask) { e.preventDefault(); const t = $("edit"); t.focus(); t.setSelectionRange(t.value.length, t.value.length); } }
   else if (/^[1-6]$/.test(k)) toggleTag(TAGS[+k - 1]);
   else return;
   e.preventDefault();

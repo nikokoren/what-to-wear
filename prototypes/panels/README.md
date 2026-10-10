@@ -60,7 +60,10 @@ the panels `{% else %}` the fact + flavour view.
   wraps to "from" over "1 pm".
 - **Words:** one panel shows a "works all day" fact wording, plus the
   sarcastic line at On and 11. Two or three panels show only the
-  sarcastic line, and nothing at Off.
+  sarcastic line, and nothing at Off. With no fact line above it, that
+  line comes from the mood's Visual Forecast pool (`flavour_vf_10` /
+  `_11`, built from review round 10): lines that work without the fact,
+  and lines written for the drawings. No pool, the usual line.
 
 On 7:00 readings in London, Vienna and New York over a year: one panel
 21%, two 33%, three 46%.
