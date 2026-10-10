@@ -8,30 +8,39 @@ Do not edit by hand; vote on the page instead.
 
 - Gegen Mittag kann die Jacke weg, aber behalt sie griffbereit für heute Nacht.
 - Gegen Mittag kann die Jacke weg. Heute Nacht brauchst du sie aber wieder.
+- {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
+- {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
 
 ## c_hoodie · plain
 
 - Nimm einen Pulli mit, heute Abend kühlt's ab.
+- Nimm einen Pulli mit, {WHEN} kühlt's ab.
 - Pack einen Pulli ein, heute Abend wird's kühler.
 
 ## c_jacket · plain
 
 - Nimm eine Jacke mit, heute Abend kühlt's ab.
+- Pack eine Jacke ein, {WHEN} wird's kühler.
 
 ## cold · dry
 
+- Bei der Kälte schmeckt sogar Glühwein.
 - Bei der Kälte schmeckt sogar Glühwein.
 - Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.
 - Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.  
   _I like it, keep it, but this might sound boring after a bit. Great for the first cold day in a while or something like that._
 - Polarluft hat uns fest im Griff. Klingt dramatisch, ist es auch.
 - Saukalt. Mehr fällt mir dazu nicht ein.
+- Saukalt. Mehr fällt mir dazu nicht ein.
+- Saukalt. Mehr gibt's nicht zu sagen.
 - Saukalt. Mehr gibt's nicht zu sagen.
 - „Kälte härtet ab“, sagen die mit der Heizung auf fünf.
 
 ## cold · sarcastic
 
 - Bis du fertig angezogen bist, blühen schon die Krokusse.
+- Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Gut eingemummelt siehst du am besten aus. Weniger sichtbar.
 - Ich hab dir extra den Schal gestrickt. Trag ihn auch.
@@ -45,15 +54,21 @@ Do not edit by hand; vote on the page instead.
 
 ## cool · sarcastic
 
+- Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.
+- Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.
+- Ideales Fensterputzwetter. Deine hätten's nötig.
+- Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.
 - Perfekt zum Fensterputzen. Nur so ein Hinweis.
 
 ## fickle · dry
 
 - Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
+- Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
 - Wechselhaft. Das sagen wir Wetterfrösche, wenn wir's selber nicht wissen.
 
 ## hot · dry
 
+- Gleich kommt wieder: „Früher war es auch schon heiß.“
 - Im Baumarkt gibt's wieder keinen Ventilator mehr.
 - In der Bahn riecht's heute nach jedem Einzelnen.
 
@@ -66,10 +81,16 @@ Do not edit by hand; vote on the page instead.
 - Bei so einem Wetter hab ich früher den ganzen Garten gemacht.
 - Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.
 - Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
+- So ein Wetter hätten sich andere mehr verdient.
 
 ## night · sarcastic
 
+- Finger weg vom Kühlschrank. Ich seh alles.
+- Noch eine Folge, sagst du. Seit drei Folgen.
+- Schon wieder so spät? Ab ins Bett.
+- So spät noch wach? Ab ins Bett mit dir.
 - Und jetzt nicht wieder an den Kühlschrank.
+- „Nur noch eine Folge.“ Das war vor zwei Folgen.
 
 ## p_drier · plain
 
@@ -93,26 +114,34 @@ Do not edit by hand; vote on the page instead.
 
 - Heute Nachmittag beginnt der Regen, und der bleibt. Schirm einpacken.
 - Nimm den Schirm mit, heute Nachmittag fängt's an zu regnen, und zwar länger.
+- Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger.
 
 ## p_wetter_maybe · plain
 
 - Heute Nachmittag kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 - Vielleicht regnet's heute Nachmittag. Der Schirm schadet nicht.
+- {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 
 ## shorts_early · plain
 
 - Frischer Start, gegen Mittag wird's warm genug für Shorts.
+- Gerade ist's noch frisch, aber {WHEN} wird's warm genug für Shorts.
 - Jetzt noch kühl, gegen Mittag ist es Shorts-Wetter.
 
 ## snow · dry
 
 - Der Hausmeister hat wieder seinen großen Tag.
 - Die Bahn hat bestimmt schon aufgegeben.
+- Die Bahn hat bestimmt schon aufgegeben.
+- Drei Flocken, und schon heißt's wieder Schneechaos.
 - Drei Flocken, und schon heißt's wieder Schneechaos.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
+- Fünf Zentimeter, und im Radio heißt's Schneechaos.
+- Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.
 
 ## snow · sarcastic
 
+- Du auf Glatteis. Ich hol schon mal Popcorn.
 - Neben dir wirkt jeder Schneemann lebendig.
 
 ## steady · plain
@@ -120,19 +149,42 @@ Do not edit by hand; vote on the page instead.
 - Mit dem, was du anhast, kommst du gut durch den Tag.
 - Was du anhast, passt bis zum Abend.
 
+## steady_cold · plain
+
+- Die Kälte bleibt den ganzen Tag.
+
+## steady_evening · plain
+
+- Was du anhast, passt für den ganzen Abend.
+
+## theme_krampus · dry
+
+- Krampustag. Endlich ist mal einer schlechter gelaunt als ich.
+
+## theme_xmas · sarcastic
+
+- Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr.
+
+## topical · sarcastic
+
+- Eine Stunde länger geschlafen, und du siehst trotzdem so aus.
+
 ## w_coat · plain
 
 - Gegen Mittag wird's wärmer, dann kann die Winterjacke weg.
+- {WHEN} wird's wärmer, dann kann die Winterjacke weg.
 
 ## w_hoodie · plain
 
 - Gegen Mittag kannst du den Pulli ausziehen.
 - Gegen Mittag wird's wärmer, dann kann der Pulli weg.
+- {WHEN} wird's wärmer, dann kann der Pulli weg.
 
 ## w_jacket · plain
 
 - Gegen Mittag kannst du die Jacke ausziehen.
 - Gegen Mittag wird's wärmer, dann kann die Jacke weg.
+- {WHEN} wird's wärmer, dann kann die Jacke weg.
 
 ## w_scarf · plain
 
@@ -145,12 +197,16 @@ Do not edit by hand; vote on the page instead.
 ## wet · dry
 
 - Alle starren wieder aufs Regenradar. Als ob das was hilft.
+- Alle starren wieder aufs Regenradar. Als ob das was hilft.
 - Die Schnecken freuen sich. Immerhin wer.
 - Nass ist's. War ja klar.
 - Regen. Mal wieder. Was sonst.
 - Regen. Wieder. Natürlich.
 - Und schon wieder ein Tief. Ich kann nichts dafür.
+- „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
 
 ## wet · sarcastic
 
+- Endlich passt das Wetter mal zu deinem Gesicht.
 - Wenn du nass wirst, sag nicht, ich hätt's nicht gesagt.
+- Wenn du nass wirst, war's wieder meine Schuld. Klar.

@@ -83,6 +83,27 @@ EDIT = {
     "No 'quick questions' at 5:58 for me. Perks of being a wall.": "No 'quick questions' at 5:58 for me. Perks of being a screen.",
     # "In case you're on your way out" doesn't work in the evening (round 5).
     "Falls du noch weggehst: Ich bleib hier. Wie immer.": None,
+    # round 7: the owner's rewrites of the theme lines ("work the day into
+    # the sentence, not just: Day. Sentence."), spelling made standard
+    "Neujahr. Jetzt fegt wieder keiner die Raketenreste weg.": "Neujahr. Und wieder hat niemand die Raketenreste weggemacht.",
+    "Halloween. Früher war Reformationstag, da hat keiner geklingelt.": "Halloween. Früher war Reformationstag, da hatte man seine Ruhe.",
+    "Krampustag. Ob du brav warst? Ich hab mitgeschrieben.": "Ob du brav warst? Der Krampus hat mitgeschrieben.",
+    "Krampustag. Ich hab ihm deine Adresse nicht gegeben. Noch nicht.": "Ich hab dem Krampus deine Adresse nicht gegeben. Noch nicht.",
+    "Nikolaus. In deinem Stiefel liegt bestimmt nur Streusalz.": "Der Nikolaus hat in deinem Stiefel bestimmt nur Kohle gelassen.",
+    "Nikolaus. Hast du deine Stiefel rausgestellt? In deinem Alter?": "Du hast deine Schuhe für den Nikolaus rausgestellt? In deinem Alter?",
+    "Neujahr. Dein Wachsgießen sah wieder aus wie eine Kartoffel.": "Beim Bleigießen wird deine Zukunft sicher wieder 'ne Kartoffel. Wie immer.",
+    "Halloween. Wenn's klingelt, bist du plötzlich nicht zu Hause.": "Wenn's klingelt, bist du heute plötzlich wieder nicht zu Hause. Typisch.",
+    "Weihnachten. Du sagst wieder „wir schenken uns nichts“. Sicher.": "Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.",
+    "You'll buy candy for trick-or-treaters and eat it by eight.": "Try not to buy candy for trick-or-treaters and eat it by eight again this year.",
+}
+# Round 8: typos in the owner's edits, corrected (the wording is theirs).
+EDIT_FIX = {
+    "Gleichträumst du wieder vom Süden. Dann fahr halt endlich hin.": "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
+    "Es bleibt bis zum Abend Heiß. Nimm Wasser mit und bleib im Schatten.": "Es bleibt bis zum Abend heiß. Nimm Wasser mit und bleib im Schatten.",
+    "Jetzt ists noch kühl, aber {WHEN} ist es Shorts-Wetter.": "Jetzt ist's noch kühl, aber {WHEN} ist es Shorts-Wetter.",
+    "Was du anhast passt für den restlichen Tag.": "Was du anhast, passt für den restlichen Tag.",
+    "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and a maybe an extra layer more.":
+        "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.",
 }
 # The owner's notes on fact wordings, by template. Round 5: "don't take
 # anything off" on a steady cold day is "boring and redundant".
@@ -98,6 +119,9 @@ FACT_EDIT = {
 }
 # Round 8: every shipped line voted again, applied after everything else.
 REREAD = "2026-10-reread"
+# Round 9: rewordings from the round 8 notes, applied after round 8. Each
+# line says what it replaces: one line, or "*" for every wording of a fact.
+REWORK = "2026-10-rework"
 # Round 4 split "mild" in three. The mild lines the owner kept all talk
 # about an unremarkable day, which is the steady one.
 MOOD_RENAME = {"mild": "cool"}
@@ -155,7 +179,7 @@ def apply_reread(doc, decisions):
                 continue
             if d and d.get("edit"):
                 n["edited"] += 1
-                t = d["edit"]
+                t = EDIT_FIX.get(d["edit"], d["edit"])
             if t not in out:
                 out.append(t)
         return out
@@ -189,6 +213,38 @@ def apply_reread(doc, decisions):
                     t = {**t, "text": d["edit"]}
                 kept.append(t)
             doc[f"topical_{level}"] = kept
+    return n
+
+
+def apply_rework(doc, lang, decisions):
+    """Round 9: a kept rewording replaces its original; "*" replaces a whole fact list."""
+    path = REPO / "review" / "rounds" / f"{REWORK}.json"
+    n = collections.Counter()
+    if not path.exists():
+        return n
+    votes = {d["text"]: d for d in decisions.values() if d.get("round") == REWORK}
+    whole = collections.defaultdict(list)
+    for line in json.loads(path.read_text(encoding="utf-8"))["lines"]:
+        d = votes.get(line["text"])
+        if line["lang"] != lang or not d or d.get("verdict") not in ("star", "keep"):
+            continue
+        text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or line["text"]
+        section, key = line["path"].split(".", 1)
+        if line.get("replaces") == "*":
+            whole[key].append(text)
+            continue
+        pool = doc[section].setdefault(key, [])
+        old = line.get("replaces")
+        if old in pool and text not in pool:
+            pool[pool.index(old)] = text
+            n["reworded"] += 1
+        elif text not in pool:
+            # new, or a second take on an original another take replaced
+            pool.append(text)
+            n["added"] += 1
+    for key, texts in whole.items():
+        doc["facts"][key] = texts
+        n["fact lists replaced"] += 1
     return n
 
 
@@ -228,8 +284,11 @@ def main():
                 base = new.get(m, [])
                 pairs = [p for p in pairs if p[0] in base]
                 new[m] = base + [v for _, v in sorted(pairs, key=lambda p: base.index(p[0]))]
-            # A placeholder theme line counts as voted only by its own round.
+            # A placeholder theme line counts as voted only by its own round;
+            # the owner's rewordings count as voted too, or they'd come back
+            # beside the line they replaced.
             voted = {d["text"] for d in decisions.values() if d.get("round") != REREAD}
+            voted |= {EDIT_FIX.get(d["edit"], d["edit"]) for d in decisions.values() if d.get("edit")}
             themes = {k for k in pools[level] if k.startswith("theme_")} | {k for k in old if k.startswith("theme_")}
             for k in sorted(themes):
                 keep = [t for _, t in sorted(pools[level][k])]
@@ -242,6 +301,9 @@ def main():
         reread = apply_reread(doc, decisions)
         if reread:
             print(f"{lang} re-read: {reread['vetoed']} taken out, {reread['edited']} reworded")
+        rework = apply_rework(doc, lang, decisions)
+        if rework:
+            print(f"{lang} rework: " + ", ".join(f"{v} {k}" for k, v in rework.items()))
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

@@ -237,7 +237,33 @@ topical lines (set Topical, 5).
   replaces it, and a fact keeps at least one wording. Then
   `python3 tools/build_beta.py` for the fork.
 
-Round 7 (theme days) is on the same page, still unvoted.
+Round 7 (theme days) was on the same page.
+
+- **Result (10 October):** every line rated. Facts: 155 kept, 40
+  starred, 4 vetoed. Sarcastic lines: 245 kept, 58 starred, 69 vetoed.
+  58 reworded on the page. German "warming" at On lost all its lines (it
+  still draws from "cool"). Round 7: 26 kept, 1 starred, 21 vetoed; the
+  owner's rewrites in its notes are in `EDIT`. The eight Christmas
+  placeholders were in both rounds; round 7's later vote stands. Typos
+  in the owner's edits are corrected in `EDIT_FIX`. Lessons in
+  `docs/BRIEF.md`.
+
+## Round 9: the rework
+
+`2026-10-rework.json` (`make_round9.py`), 43 lines, what round 8's notes
+asked for:
+
+- **Rain and snow:** new wordings for "raining now, a break, back
+  later" that say the order (the drawing already shows the umbrella).
+  Kept ones replace every current wording of the situation.
+- **Not a wall:** a reworded twin of every kept line that puts the
+  screen on a wall. A kept twin replaces its original; a veto leaves
+  the original.
+- **Themes:** the day worked into the sentence; the owner's New Year
+  idea and a shorter take; three new English Christmas lines at 11.
+
+After voting: sync, then `python3 review/rounds/build_pools.py` (it
+applies round 9 after round 8), then `python3 tools/build_beta.py`.
 
 ## Topical rounds
 

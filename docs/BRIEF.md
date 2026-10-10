@@ -188,8 +188,30 @@ Rückfrage" just before six, the neighbour's drill.
 - **Work lines need their evening.** "Ignorierte Mails gehen nicht weg"
   read as "a random sentence about emails from your weather app". The
   kept ones carry their context: Feierabend, the Stau, the S-Bahn.
-- **The TRMNL is a screen, not a wall.** It hangs on one. "Perks of
-  being a wall" was corrected to "a screen".
+- **The TRMNL is a screen, not a wall.** "Perks of being a wall" was
+  corrected to "a screen".
+
+### What round 8 added (the re-read)
+
+Every line the beta ships, voted again by the owner after seeing the
+first ones on a device: 98 vetoed, 58 reworded on the page (round 8
+facts 155 kept, 40 starred, 4 vetoed; sarcastic lines 245 kept, 58
+starred, 69 vetoed, nearly all "not funny").
+
+- **Don't assume a wall.** The screen may stand on a desk, a shelf or
+  the fridge. "On a wall", "I can't leave the wall": out. "In here",
+  "indoors", "my frame" work wherever it is.
+- **Theme lines: the day in the sentence.** Not "Christmas. Joke." but a
+  sentence the day belongs to: "Der Nikolaus hat in deinem Stiefel
+  bestimmt nur Kohle gelassen", "Ich hab dem Krampus deine Adresse nicht
+  gegeben. Noch nicht."
+- **A fact must agree with the drawing.** While it rains the drawing
+  has the umbrella, so "the rain is taking a break" reads as a lie. Say
+  the order: rain for now, a break later, back this afternoon.
+- **Hedge a guess about the reader.** The owner's edits added
+  "vermutlich", "sicher", "lieber": "Irgendein Depp läuft vermutlich
+  trotzdem in kurzen Hosen rum". The screen doesn't know; it guesses.
+- **When two rounds vote the same line, the later vote stands.**
 
 ## What to read before writing, in this order
 

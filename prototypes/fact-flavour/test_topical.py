@@ -70,7 +70,8 @@ expect("first day", render("2026-10-25", [A])[:2], ("TOPICAL A", True))
 
 # Then about one day in three, the rest the mood's own line.
 shown = [d for d in days_in("2026-10-25", 7) if render(d, [A])[1]]
-want = ["2026-10-25"] + [d for d in days_in("2026-10-26", 6) if local_days(d) % 3 == 0]
+# (31 October is Halloween, a theme day: it keeps its own lines.)
+want = ["2026-10-25"] + [d for d in days_in("2026-10-26", 6) if local_days(d) % 3 == 0 and d != "2026-10-31"]
 expect("one day in three", shown, want)
 
 # Never outside the window.

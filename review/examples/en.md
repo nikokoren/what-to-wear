@@ -8,24 +8,34 @@ Do not edit by hand; vote on the page instead.
 
 - Take the jacket off around midday, put it back on tonight.
 - The jacket can come off around midday. Keep it handy for tonight.
+- You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.
+- {G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.
+- {G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.
 
 ## c_coat · plain
 
 - Bring the winter coat. It gets colder this evening.
+- Bring the winter coat. It gets colder {WHEN}.
 - This evening it gets cold enough for the winter coat.
 
 ## c_hoodie · plain
 
 - Bring a sweater. It cools down this evening.
+- Bring a sweater. It cools down {WHEN}.
+- {WHEN} it gets cool enough for a sweater.
 
 ## c_jacket · plain
 
 - Bring a jacket. It cools down this evening.
+- Bring a jacket. It cools down {WHEN}.
 - This evening it gets cool enough for a jacket.
+- {WHEN} it gets cool enough for a jacket.
 
 ## c_relief · plain
 
+- It cools off a little {WHEN}, but stays warm.
 - Some relief from the heat this evening, but it stays warm.
+- The heat eases {WHEN}, but it stays warm.
 - This evening it gets a little less hot. Still warm, though.
 
 ## c_scarf · plain
@@ -35,29 +45,61 @@ Do not edit by hand; vote on the page instead.
 ## cold · sarcastic
 
 - Shoulders at ear height all day. So graceful.
+- Your nose will turn a colour I can't even display.
+
+## cool · dry
+
+- Today has the thrill of a firmware update. A small one.
 
 ## cool · sarcastic
 
 - Nothing special out there. You'll blend right in.
+- Nothing special out there. You'll blend right in.
+- Same jacket, same route. You wild thing.
+- Unremarkable out there. You'll fit right in.
 - You'll call it 'crisp' like you go hiking or something.
+- You'll call it 'crisp' like you go hiking or something.
+- You'll call it 'fresh' to sound like an outdoors person.
+
+## cooling · sarcastic
+
+- Bringing a layer you won't need for hours. Look at you, prepared.
+- Carrying a layer you don't need yet. How very grown-up.
+
+## evening · sarcastic
+
+- You'll read all this, then do what you were going to anyway.
+
+## fickle · sarcastic
+
+- Complaining it's warm, then that it isn't. You've got range.
 
 ## hot · dry
 
 - I'll sit this one out in your nice shady hallway.
+- I'll sit this one out in your nice shady hallway.
+- No sweat here. One of the perks of being a screen.
+- Somebody cranked the outside too high. Wasn't me.
 - Somebody cranked the outside too high. Wasn't me.
 - Thin, pale and cool. I was made for this.
 
 ## hot · sarcastic
 
 - Remember wishing for summer? This is what you get.
+- Remember wishing for summer? This is what you get.
+- You'll search 'ice cream near me' later. Twice.
 
 ## nice · dry
 
 - I'm a screen on a wall. Even I'd go outside today.
 - Lovely out there. I'll stay in here, refreshing.
+- Lovely out. I'll be here, refreshing.
+- On days like this you barely look at me. Fair enough.
 
 ## nice · sarcastic
 
+- A good day for pretending you'll go for a run.
+- Perfect weather to talk about going for a run.
 - Perfect weather to talk about going for a run.
 - Perfect weather. I can't leave the wall. What's your excuse?
 
@@ -65,9 +107,21 @@ Do not edit by hand; vote on the page instead.
 
 - I'm the one screen that won't keep you up. You're welcome.
 
+## night · sarcastic
+
+- You've looked at me a lot today. Go to bed.
+
 ## p_drier_snow · plain
 
 - It stops snowing later.
+- It stops snowing later.
+- The snow eases off later.
+- The snow stops later.
+
+## p_snow_coming · plain
+
+- Expect snow {WHENP}.
+- It starts snowing {WHENP}.
 
 ## p_stays_wet · plain
 
@@ -76,6 +130,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_stays_wet_snow · plain
 
+- It snows all day.
 - It's snowing all day.
 - The snow keeps coming all day.
 
@@ -113,31 +168,67 @@ Do not edit by hand; vote on the page instead.
 
 - A cool start, then shorts weather around midday.
 
+## snow · sarcastic
+
+- Don't fall. I have no way of getting help.
+
+## steady · plain
+
+- What you're wearing works for the whole day.
+
+## steady_cold · plain
+
+- It stays this cold all day.
+
+## steady_evening · plain
+
+- What you're wearing works for the rest of the evening.
+
+## steady_hot · plain
+
+- It's hot all day. Bring water and stay in the shade.
+- No break from the heat today. Water and shade help.
+
 ## w_coat · plain
 
+- The winter coat can come off {WHEN}.
 - You can take the winter coat off around midday.
 
 ## w_hoodie · plain
 
 - The sweater can come off around midday.
+- The sweater can come off {WHEN}.
+- {WHEN} it's warm enough to lose the sweater.
 
 ## w_jacket · plain
 
 - The jacket can come off around midday.
+- The jacket can come off {WHEN}.
+- You can take the jacket off {WHEN}.
 
 ## w_scarf · plain
 
 - You can take off the hat, scarf and gloves around midday.
+- {WHEN} it's mild enough to lose the hat, scarf and gloves.
 
 ## warming · sarcastic
 
+- Taking that layer off might be the highlight of your day.
+- You'll overheat a little before you admit I was right.
 - You'll overheat a little before you admit I was right.
 
 ## wet · dry
 
 - A chance of rain, and suddenly everyone checks on me.
+- A chance of rain, and suddenly everyone checks on me.
 - As an umbrella I'd be useless. Beautiful, but useless.
+- As an umbrella I'd be useless. Beautiful, but useless.
+- I'd make a terrible umbrella. Gorgeous, but terrible.
+- I'm very good for umbrella sales.
+- You won't get a sad little cloud icon from me. I've got artistic integrity.
 
 ## wet · sarcastic
 
 - You'll double-check on your phone. As if it knows better.
+- You'll double-check on your phone. As if it knows better.
+- You'll still check your phone. As if it knows something I don't.

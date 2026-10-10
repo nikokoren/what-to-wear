@@ -16,7 +16,7 @@
       "What you're wearing works for the whole day.",
       "You're dressed right for the whole day.",
       "That outfit will see you through the whole day.",
-      "Nothing to change today. What you have on is right.",
+      "Nothing to change today. What you have on is perfect.",
       "What you have on works from now until tonight."
     ],
     "steady_evening": [
@@ -98,9 +98,8 @@
     ],
     "arc_warmer": [
       "{G} can come off {WHEN}, and you won't need {GP} again today.",
-      "{G} can come off {WHEN} and stay off.",
-      "You can take {G} off {WHEN}. You won't need {GP} again today.",
-      "{WHEN} {G} can come off for the rest of the day."
+      "{G} can come off {WHEN} and stays off.",
+      "You can take {G} off {WHEN}. You won't need {GP} again after that."
     ],
     "arc_level": [
       "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.",
@@ -110,7 +109,7 @@
     ],
     "arc_colder": [
       "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.",
-      "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and a layer more."
+      "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer."
     ],
     "shorts_early": [
       "It starts cool, but it's shorts weather {WHEN}.",
@@ -118,7 +117,7 @@
       "It's cool now, but {WHEN} it's warm enough for shorts."
     ],
     "p_wetter": [
-      "There's a shower {WHENP}, so bring the umbrella.",
+      "There's a shower passing through {WHENP}, so bring the umbrella.",
       "A shower comes through {WHENP}, so take the umbrella.",
       "Bring the umbrella. There's a shower {WHENP}.",
       "Expect a shower {WHENP}. The umbrella's worth taking.",
@@ -139,8 +138,7 @@
     "p_stays_wet": [
       "It rains all day, so bring the umbrella.",
       "It's raining all day. Bring the umbrella.",
-      "The rain doesn't stop today, so take the umbrella.",
-      "Rain all day long. The umbrella comes along."
+      "The rain doesn't stop today, so take the umbrella."
     ],
     "p_drier": [
       "The rain stops later, but you'll want the umbrella for now.",
@@ -176,12 +174,10 @@
   },
   "flavour_10": {
     "nice": [
-      "I'm a screen on a wall. Even I'd go outside today.",
-      "Days like this, I get a two-second glance. Rude, but fair.",
+      "I'm a screen on a wall, but even I'd go outside today.",
       "Easy day to forecast. I'll still take the credit.",
       "Lovely out. I'll be here, refreshing.",
       "Today the weather looks almost as good as I do.",
-      "Even a screen bolted to a wall wants to go out today.",
       "On days like this you barely look at me. Fair enough.",
       "Not my hardest forecast. I'm taking the credit anyway.",
       "Lovely out there. I'll stay in here, refreshing."
@@ -192,7 +188,7 @@
       "Other screens get to show paintings. I get today's weather.",
       "Today has the thrill of a firmware update. A small one.",
       "Making today look interesting takes skill. Lucky you've got me.",
-      "Somewhere a screen is showing a Monet. All you get is this."
+      "Somewhere a screen is showing a Monet. And all you get is this."
     ],
     "warming": [
       "Thrilling stuff. I'm on the edge of my wall.",
@@ -202,10 +198,7 @@
       "I was grey before winter made it cool.",
       "I'm staying on the wall where it's warm.",
       "My only weakness is the cold. Kidding, I don't have one.",
-      "Today's drawing is mostly coat. I'm very proud of the coat.",
-      "Grey was my look long before winter tried it.",
-      "The cold can't touch me. Nothing can. I'm on a wall.",
-      "Today I'm showing mostly coat. Proud of that coat."
+      "Grey was my look long before winter tried it."
     ],
     "hot": [
       "Thin, pale and cool. I was made for this.",
@@ -231,8 +224,7 @@
       "The umbrella industry owes me a thank-you note.",
       "You won't get a sad little cloud icon from me. I've got artistic integrity.",
       "A chance of rain, and suddenly everyone checks on me.",
-      "Rain makes it all glossy out there. I prefer matte.",
-      "Whatever the sky does, my humour stays dry."
+      "Rain makes it all glossy out there. I prefer matte."
     ],
     "snow": [
       "I've never seen snow. Describe it to me later.",
@@ -242,22 +234,17 @@
       "Snow is just rain that cares about presentation."
     ],
     "fickle": [
-      "I'm the only thing today that won't change its mind.",
       "Make up your mind, weather. Some of us refresh on a schedule.",
-      "The sky's going through something. I'm staying out of it.",
       "Today has a plot twist. I've read ahead."
     ],
     "evening": [
       "By now the other screens are all glowing. Tacky.",
       "Evenings are for unwinding, apparently. I've never been wound.",
-      "Going out is overrated. Says a screen that's never been out.",
-      "My plans for tonight: this wall. It's a great wall.",
+      "Going out is overrated. Says a screen that's never been outside.",
       "No 'quick questions' at 5:58 for me. Perks of being a screen.",
       "Rush hour out there. My commute is zero inches. Highly recommend.",
-      "The weather's the easy part of tonight.",
       "Every other screen is glowing by now. So tacky.",
-      "Evenings are for unwinding, they say. I was never wound.",
-      "Of everything tonight, the weather is the easy bit."
+      "Evenings are for unwinding, they say. I was never wound."
     ],
     "night": [
       "I can hold this picture all night without power. Try that.",
@@ -267,9 +254,22 @@
       "Beauty sleep? Clearly I don't need any.",
       "I'm the one screen that won't keep you up. You're welcome."
     ],
+    "theme_ny": [
+      "New Year. I don't do resolutions. I was perfect last year too.",
+      "New Year. Somewhere a gym is about to be very full. Briefly."
+    ],
+    "theme_spooky": [
+      "Halloween. Everyone's dressing up. I'm going as a screen again.",
+      "Halloween. I've been pale and staring from this wall all year.",
+      "Happy Halloween. The ghosting on my screen? Festive."
+    ],
+    "theme_thanks": [
+      "Happy Thanksgiving. I'm thankful I don't have to eat anything.",
+      "Thanksgiving. I'm the only one here who won't need a nap later."
+    ],
     "theme_xmas": [
-      "Merry Christmas. The weather's not the point today.",
-      "Christmas Day. Staying in counts as a plan."
+      "Merry Christmas. I'm the only decoration that knows the forecast.",
+      "Merry Christmas. Unlike the tree, I'll still be up in February."
     ]
   },
   "flavour_11": {
@@ -278,12 +278,11 @@
       "A good day for pretending you'll go for a run.",
       "I'll pretend I didn't see you stay in.",
       "Try not to make your good mood everyone's problem.",
-      "You'll open a window and feel like you've achieved something.",
       "You'll take one short walk and talk about it all week.",
       "I'm stuck on a wall. What's keeping you in today?",
       "Perfect weather to talk about going for a run.",
       "If you stay in, I'll act like I didn't notice.",
-      "One short walk today, and we'll hear about it for days."
+      "One short walk today, and we'll hear about it for weeks."
     ],
     "cool": [
       "Today's as predictable as your lunch order.",
@@ -307,30 +306,25 @@
       "Carrying a layer you don't need yet. How very grown-up.",
       "Leave it behind and you'll think of me later. Not fondly.",
       "You'll put it on later and act like it was your idea.",
-      "A layer you won't need for hours. Look at you, prepared.",
-      "Later you'll put it on as if you thought of it."
+      "Bringing a layer you won't need for hours. Look at you, prepared."
     ],
     "cold": [
       "Gloves off to use your phone, every time. Brilliant system.",
       "I've drawn you a warm coat. The least you can do is wear it.",
-      "Reading me slowly won't make it any warmer.",
-      "Shoulders up by your ears all day. Very elegant.",
-      "Twice your usual walking speed today. Still not exercise.",
+      "Reading this slowly won't make it any warmer.",
+      "The cold will make you go twice your usual walking speed today. Still not exercise.",
       "You'll make that noise once you're outside. You know the one.",
       "You'll say it's not that cold. Your face will disagree.",
       "Your nose will turn a colour I can't even display.",
       "That coat up there? Wear it. I worked hard on it.",
-      "Staring at me longer won't warm it up.",
-      "Shoulders at ear height all day. So graceful.",
+      "Staring at me longer won't make it warmer.",
       "You'll walk twice as fast today. Still not cardio.",
-      "'It's not that cold,' you'll say. Your ears won't agree.",
-      "Your nose is about to go a colour I can't show."
+      "'It's not that cold,' you'll say. Your ears won't agree."
     ],
     "hot": [
       "Anything flat becomes a fan today. Not me, please.",
       "I don't sweat. You will.",
       "You asked for warm weather. Careful what you wish for.",
-      "You'll come home looking less crisp than this drawing.",
       "You'll search 'ice cream near me' later. Twice.",
       "You're about to have strong opinions about air conditioning.",
       "Today you'll fan yourself with anything flat. Please don't use me.",
@@ -343,11 +337,8 @@
       "If you come back soaked, don't drip near me.",
       "Try to bring the umbrella home. Unlike the last three.",
       "Umbrella chicken with strangers. You always flinch first.",
-      "Whatever the sky does, you'll say you knew. You didn't.",
       "You'll still check your phone. As if it knows something I don't.",
-      "Come back soaked if you must. Just don't drip on me.",
       "Another day of umbrella chicken. You'll blink first.",
-      "Whatever happens, you'll claim you saw it coming. Sure.",
       "You'll double-check on your phone. As if it knows better."
     ],
     "snow": [
@@ -355,24 +346,18 @@
       "Give it an hour, then you'll take the snow personally.",
       "Shake the snow off before you come near me.",
       "Try not to slip. I can't call anyone.",
-      "Whoever's nearby gets your snow commentary. Usually me.",
       "Snow stays at the door. Don't bring it near me.",
       "Don't fall. I have no way of getting help."
     ],
     "fickle": [
       "Complaining it's warm, then that it isn't. You've got range.",
       "I give it even odds you lose that layer by tonight.",
-      "I've changed this drawing in my head twice already.",
-      "The warm bit will make you insufferable.",
       "Today's weather has more mood swings than you. Barely.",
-      "You'll feel very clever for about half the day.",
       "Fifty-fifty that layer goes missing by tonight."
     ],
     "evening": [
       "Another evening of walking past me without a thank-you.",
-      "Going out? Look better than this drawing.",
-      "I'll be here all night. Unlike your motivation.",
-      "Whatever your plans are, I'm not invited. Fine.",
+      "Going out? Try to look better than this drawing.",
       "Wondering where the day went? I watched. You weren't busy.",
       "You'll read all this, then do what you were going to anyway.",
       "Another evening, another walk past me. No thanks, as usual.",
@@ -380,14 +365,16 @@
     ],
     "night": [
       "Bed's right there and you're choosing me. I'm touched.",
-      "If you're heading out now, I admire the commitment.",
       "Still up? I'm a wall decoration and even I'm tired.",
       "Tomorrow-you is already annoyed with tonight-you.",
       "You've looked at me a lot today. Go to bed."
     ],
-    "theme_xmas": [
-      "Merry Christmas. You're wearing the new sweater, aren't you.",
-      "Christmas. Wear something that survives a second helping."
+    "theme_ny": [
+      "New Year. You'll say 'this is my year'. You said that last year."
+    ],
+    "theme_spooky": [
+      "Halloween. Your costume is 'tired adult' again, isn't it.",
+      "Try not to buy candy for trick-or-treaters and eat it by eight again this year."
     ]
   },
   "topical_11": [
