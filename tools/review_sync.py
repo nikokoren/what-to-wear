@@ -20,6 +20,9 @@ Writes, per language:
 With --key=review/rounds/<round>.key.json it also prints the votes per
 batch with the name behind each letter: the result of a blind round.
 
+A vote can carry "edit": the owner's rewording, typed on the page (round
+8). It is kept with the vote; build_pools.py applies it.
+
 With --fixes it also writes build/review/<lang>_fixes.json for
 tools/apply_review.py: vetoed shipped lines are deleted, starred or kept
 candidates are appended. Review it with --dry-run before applying.
@@ -35,7 +38,7 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 OUT = REPO / "review"
 LEVEL_NAME = {"0": "plain", "10": "dry", "11": "sarcastic"}
 FIELDS = ("lang", "level", "key", "path", "text", "source", "batch", "round",
-          "verdict", "tags", "note", "updatedAt")
+          "verdict", "tags", "note", "edit", "updatedAt")
 
 
 def load_votes(path):
@@ -82,8 +85,9 @@ def write_examples(lang, known):
     for (_, key, level), items in grouped(known, "star"):
         lines.append(f"## {key} · {LEVEL_NAME.get(level, level)}")
         lines.append("")
-        for d in sorted(items, key=lambda d: d["text"]):
-            lines.append(f"- {d['text']}" + (f"  \n  _{d['note']}_" if d.get("note") else ""))
+        # A line the owner reworded on the page is starred as reworded.
+        for d in sorted(items, key=lambda d: d.get("edit") or d["text"]):
+            lines.append(f"- {d.get('edit') or d['text']}" + (f"  \n  _{d['note']}_" if d.get("note") else ""))
         lines.append("")
     path = OUT / "examples" / f"{lang}.md"
     path.parent.mkdir(parents=True, exist_ok=True)

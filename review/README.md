@@ -24,7 +24,10 @@ How lines get written, judged and kept. The writer's side is in
    Star, Keep or Veto, with tags (robotic, too long, not funny, wrong
    garment, wrong fact, unclear) and an optional note. Keyboard: `S` `K`
    `V`, tags `1`–`6` (set them before the verdict), `N` for a note, `R`
-   for the rain pairing, arrows to move. The key list counts stars,
+   for the rain pairing, arrows to move. In rounds whose lines say how
+   they sit on the screen (round 8), `E` edits the wording in place: the
+   screen follows as you type, the time words and garments fill in, and
+   Enter saves the change as a keep of the new words. The key list counts stars,
    keeps and vetoes and warns before a key is vetoed empty.
 4. **Sync.** Ask Claude to sync the review. It reads the votes from the
    page's database (or use the page's "Save decisions file") and runs:
@@ -210,6 +213,31 @@ eight Christmas placeholders, voted at last. Every line names its day.
 `build_pools.py` now builds the `theme_*` pools from the votes too.
 The rest of the year (Groundhog Day to Oktoberfest) is the next theme
 round.
+
+## Round 8: the re-read (October 2026)
+
+The owner saw the first new lines on a device and wasn't sure they work,
+so every line the beta ships is back on the page: `2026-10-reread.json`
+(`make_round8.py`), 571 lines. Fact wordings (set Facts, 199), sarcastic
+lines at On and 11 with the Christmas ones (set Sarcasm, 367) and the
+topical lines (set Topical, 5).
+
+- Each line is shown on its screen: a fact with its drawing and a
+  sarcastic line under it, a sarcastic line under the fact of a typical
+  day for its mood. A dashed outline marks the line being rated.
+- **Edit in place:** `E`, change the words, Enter. The screen follows as
+  you type, with the time words ("this afternoon", or "in two hours" with
+  the switch on the left) and garments filled in; a warning shows when a
+  placeholder like `{WHEN}` goes missing. An edited line counts as a keep
+  of the new words; "Back to the original" undoes it.
+- Ids carry the prefix `rr`, so every line is rated afresh; its verdict
+  in an earlier round shows under the screen as "earlier: ...".
+- After the vote: sync, then `python3 review/rounds/build_pools.py`,
+  which applies this round last: a veto takes the line out, an edit
+  replaces it, and a fact keeps at least one wording. Then
+  `python3 tools/build_beta.py` for the fork.
+
+Round 7 (theme days) is on the same page, still unvoted.
 
 ## Topical rounds
 

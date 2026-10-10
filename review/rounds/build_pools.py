@@ -11,6 +11,10 @@ Seasonal pools (theme_*) are built from the votes like the moods; a
 theme line nobody has voted on yet (the first prototype's Christmas
 placeholders) stays until it is voted.
 
+Round 8 (the re-read) comes last: every line the beta ships, voted
+again, some reworded on the page. A veto takes the line out, the owner's
+edit replaces it; a fact keeps at least one wording.
+
 Round 5 (variance) adds two things: reworded flavour lines, each placed a
 whole pool's length after the line it varies so the same joke never shows
 two days running; and extra wordings of each fact, appended to the list
@@ -92,6 +96,8 @@ FACT_EDIT = {
     "Die Kälte bleibt den ganzen Tag, also nichts ausziehen.": "Die Kälte bleibt den ganzen Tag.",
     "It stays this cold all day, so keep everything on.": "It stays this cold all day.",
 }
+# Round 8: every shipped line voted again, applied after everything else.
+REREAD = "2026-10-reread"
 # Round 4 split "mild" in three. The mild lines the owner kept all talk
 # about an unremarkable day, which is the steady one.
 MOOD_RENAME = {"mild": "cool"}
@@ -131,6 +137,61 @@ def build_facts(doc, lang, decisions, round_lines):
     return sum(len(v) for k, v in facts.items() if not k.startswith("garments"))
 
 
+def apply_reread(doc, decisions):
+    """Round 8, by text: a veto takes the line out, an edit replaces it."""
+    votes = {}
+    for d in decisions.values():
+        if d.get("round") == REREAD and d.get("verdict"):
+            section, key = d["path"].split("[")[0].split(".", 1)
+            votes[(section, key, d["text"])] = d
+    n = collections.Counter()
+
+    def fixed(section, key, texts):
+        out = []
+        for t in texts:
+            d = votes.get((section, key, t))
+            if d and d["verdict"] == "veto":
+                n["vetoed"] += 1
+                continue
+            if d and d.get("edit"):
+                n["edited"] += 1
+                t = d["edit"]
+            if t not in out:
+                out.append(t)
+        return out
+
+    facts = doc["facts"]
+    for key, texts in facts.items():
+        if key.startswith("garments"):
+            continue
+        new = fixed("fact_0", key, texts)
+        if not new:
+            print(f"  facts.{key}: every wording vetoed; keeping {texts[0]!r} until there's a new one")
+            new = texts[:1]
+        facts[key] = new
+    for level in ("10", "11"):
+        pools = doc[f"flavour_{level}"]
+        for mood in list(pools):
+            pools[mood] = fixed(f"flavour_{level}", mood, pools[mood])
+            if not pools[mood]:
+                print(f"  flavour_{level}.{mood}: every line vetoed; this mood shows no sarcastic line")
+                del pools[mood]
+        topical = doc.get(f"topical_{level}")
+        if topical:
+            kept = []
+            for t in topical:
+                d = votes.get((f"topical_{level}", "topical", t["text"]))
+                if d and d["verdict"] == "veto":
+                    n["vetoed"] += 1
+                    continue
+                if d and d.get("edit"):
+                    n["edited"] += 1
+                    t = {**t, "text": d["edit"]}
+                kept.append(t)
+            doc[f"topical_{level}"] = kept
+    return n
+
+
 def main():
     round_lines = variants_round()
     for lang, winners in WIN.items():
@@ -167,7 +228,8 @@ def main():
                 base = new.get(m, [])
                 pairs = [p for p in pairs if p[0] in base]
                 new[m] = base + [v for _, v in sorted(pairs, key=lambda p: base.index(p[0]))]
-            voted = {d["text"] for d in decisions.values()}
+            # A placeholder theme line counts as voted only by its own round.
+            voted = {d["text"] for d in decisions.values() if d.get("round") != REREAD}
             themes = {k for k in pools[level] if k.startswith("theme_")} | {k for k in old if k.startswith("theme_")}
             for k in sorted(themes):
                 keep = [t for _, t in sorted(pools[level][k])]
@@ -177,6 +239,9 @@ def main():
             doc[f"flavour_{level}"] = new
             print(f"{lang} {level}: " + "  ".join(f"{m} {len(new.get(m, []))}" for m in MOODS))
         print(f"{lang} facts: {build_facts(doc, lang, decisions, round_lines)} wordings")
+        reread = apply_reread(doc, decisions)
+        if reread:
+            print(f"{lang} re-read: {reread['vetoed']} taken out, {reread['edited']} reworded")
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

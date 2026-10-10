@@ -46,7 +46,7 @@ button:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px
 .keyrow .n { font: 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums }
 .bar { grid-column: 1 / -1; display: flex; height: 4px; border-radius: 2px; overflow: hidden; background: var(--line) }
 .bar i { display: block; height: 100% }
-.bar .s { background: var(--star) } .bar .k2 { background: var(--keep) } .bar .v { background: var(--veto) }
+.bar .s { background: var(--star) } .bar .k2 { background: var(--keep) } .bar .vt { background: var(--veto) }
 .keyrow .thin { grid-column: 1 / -1; font-size: 11px; color: var(--warn) }
 main { display: flex; flex-direction: column; gap: 16px; min-width: 0 }
 .device { background: var(--bezel); border-radius: 14px; padding: 14px; max-width: 640px; width: 100%; margin: 0 auto }
@@ -78,6 +78,17 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
 .keyshelp kbd { font: 11px var(--mono); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; background: var(--panel) }
 .saved { font-size: 12px; color: var(--muted); min-height: 1.2em }
 .exportbox { width: 100%; min-height: 120px; font: 12px var(--mono) }
+/* The line being rated, when the screen shows two. */
+.screen p.judged { outline: 2px dashed rgba(47, 93, 138, .55); outline-offset: 4px; border-radius: 2px }
+.editbox { display: flex; flex-direction: column; gap: 6px }
+.editbox .head { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline }
+.editbox .edited { font: 600 12px var(--body); color: var(--accent) }
+.editbox textarea#edit { min-height: 44px; font: 15px/1.45 var(--body) }
+.editbox .btn.small { padding: 2px 8px; font-size: 12px }
+.fillhelp { font-size: 12px; color: var(--muted) }
+.fillhelp code { font: 12px var(--mono); color: var(--fg) }
+.fillhelp .warn { color: var(--warn); font-weight: 600 }
+.meta .earlier { font-style: italic }
 </style>
 
 <header class="top">
@@ -104,6 +115,10 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
       <span class="label">Show</span>
       <div class="seg" id="f-state"></div>
     </div>
+    <div class="group" id="g-time" hidden>
+      <span class="label">Time words in the preview</span>
+      <div class="seg" id="f-time"></div>
+    </div>
     <div class="group">
       <span class="label">Keys · stars / keeps / vetoes of total</span>
       <div class="keys" id="keys"></div>
@@ -125,6 +140,15 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
     <div class="meaning" id="meaning"></div>
     <div class="raw" id="raw"></div>
     <div class="panel">
+      <div class="editbox" id="editbox" hidden>
+        <div class="head">
+          <span class="label">Wording <kbd>E</kbd></span>
+          <span class="edited" id="edited" hidden>Edited: this wording replaces the original</span>
+          <button type="button" class="btn small" id="reset" hidden>Back to the original</button>
+        </div>
+        <textarea id="edit" rows="2" spellcheck="true" aria-label="Wording of this line"></textarea>
+        <div class="fillhelp" id="fillhelp"></div>
+      </div>
       <div class="verdicts">
         <button type="button" class="v star" data-v="star" aria-pressed="false">Star <kbd>S</kbd></button>
         <button type="button" class="v keep" data-v="keep" aria-pressed="false">Keep <kbd>K</kbd></button>
@@ -142,7 +166,7 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
     </div>
     <div class="keyshelp">
       <kbd>S</kbd> star · <kbd>K</kbd> keep · <kbd>V</kbd> veto (each moves on) · <kbd>1</kbd>–<kbd>6</kbd> tags ·
-      <kbd>N</kbd> note · <kbd>R</kbd> rain pairing · <kbd>J</kbd>/<kbd>→</kbd> next · <kbd>H</kbd>/<kbd>←</kbd> back
+      <kbd>E</kbd> edit the wording (<kbd>Enter</kbd> saves it, and keeps the line) · <kbd>N</kbd> note · <kbd>R</kbd> rain pairing · <kbd>J</kbd>/<kbd>→</kbd> next · <kbd>H</kbd>/<kbd>←</kbd> back
     </div>
   </main>
 </div>
@@ -153,19 +177,36 @@ const TAGS = ["robotic", "too long", "not funny", "wrong garment", "wrong fact",
 const ROWS = DATA.rows;
 const decisions = new Map();          // id -> decision doc
 let db = null, coll = null;
-const ui = { lang: "all", level: "all", batch: "all", state: "open", key: DATA.focus || null, idx: 0, showPair: false };
+const ui = { lang: "all", level: "all", batch: "all", state: "open", key: DATA.focus || null, idx: 0, showPair: false, time: "part" };
 try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-review-ui") || "{}"), { idx: 0, showPair: false }); } catch (e) {}
 const $ = (id) => document.getElementById(id);
+let draft = null;                     // { id, text } while the wording box is being typed in
+let pinned = null;                    // a line just edited stays on screen until you move on
 
-function remember() { try { localStorage.setItem("wtw-review-ui", JSON.stringify({ lang: ui.lang, level: ui.level, batch: ui.batch, state: ui.state, key: ui.key })); } catch (e) {} }
+function remember() { try { localStorage.setItem("wtw-review-ui", JSON.stringify({ lang: ui.lang, level: ui.level, batch: ui.batch, state: ui.state, key: ui.key, time: ui.time })); } catch (e) {} }
+function editOf(r) { const d = decisions.get(r.id); return d && d.edit || ""; }
+// The wording on screen: what is being typed, else the saved edit, else the line as written.
+function wordingOf(r) { return draft && draft.id === r.id ? draft.text : (editOf(r) || r.text); }
+const PLACEHOLDERS = ["{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"];
+function fillsOf(r) { return ui.time === "hours" && r.fillsAlt ? r.fillsAlt : (r.fills || {}); }
+function fill(text, fills) { for (const k of PLACEHOLDERS) text = text.split(k).join(fills[k] || ""); return text.replace(/\s+/g, " ").trim(); }
+// As the markup does it: every sentence starts with a capital.
+function sentenceCase(t) { return t.replace(/(^|[.!?]\s+)(\p{Ll})/gu, (m, a, c) => a + c.toUpperCase()); }
+function placeholdersIn(t) { return new Set(t.match(/\{[A-Z0-9]+\}/g) || []); }
+// The two paragraphs on the mock screen, and which one is being rated.
+function compose(r) {
+  if (r.role === "fact") return { bold: sentenceCase(fill(wordingOf(r), fillsOf(r))), plain: r.under || "", judged: "bold" };
+  if (r.role === "flavour") return { bold: r.fact || "", plain: fill(wordingOf(r), fillsOf(r)), judged: "plain" };
+  return { bold: r.fact || "", plain: ui.showPair && r.pair ? r.pair : r.tip, judged: r.fact ? "plain" : "" };
+}
 function verdictOf(r) { const d = decisions.get(r.id); return d && d.verdict || ""; }
 function baseFilter(r) {
   return (ui.lang === "all" || r.lang === ui.lang) && (ui.level === "all" || r.level === ui.level) &&
     (ui.batch === "all" || r.batch === ui.batch);
 }
 function queue() {
-  return ROWS.filter((r) => baseFilter(r) && (!ui.key || r.key === ui.key) &&
-    (ui.state === "all" || (ui.state === "open" ? !verdictOf(r) : verdictOf(r) === ui.state)));
+  return ROWS.filter((r) => baseFilter(r) && (!ui.key || r.key === ui.key) && (r.id === pinned ||
+    ui.state === "all" || (ui.state === "open" ? !verdictOf(r) : ui.state === "edited" ? !!editOf(r) : verdictOf(r) === ui.state)));
 }
 
 function seg(el, options, field) {
@@ -198,7 +239,7 @@ function renderKeys() {
     const pct = (n) => (100 * n / g.total).toFixed(1) + "%";
     const left = g.total - g.veto;
     b.innerHTML = `<span class="k"></span><span class="n">${g.star}/${g.keep}/${g.veto} of ${g.total}</span>
-      <span class="bar"><i class="s" style="width:${pct(g.star)}"></i><i class="k2" style="width:${pct(g.keep)}"></i><i class="v" style="width:${pct(g.veto)}"></i></span>`;
+      <span class="bar"><i class="s" style="width:${pct(g.star)}"></i><i class="k2" style="width:${pct(g.keep)}"></i><i class="vt" style="width:${pct(g.veto)}"></i></span>`;
     b.querySelector(".k").textContent = key;
     // Counted per language and level when both are picked; across them otherwise.
     if (g.veto && left < 3 && ui.lang !== "all" && ui.level !== "all") {
@@ -222,12 +263,16 @@ function render() {
   $("g-batch").hidden = !batches.length;
   if (!batches.includes(ui.batch)) ui.batch = "all";
   if (batches.length) seg($("f-batch"), [["all", "All"], ...batches.map((b) => [b, b])], "batch");
-  seg($("f-state"), [["open", "Not rated"], ["all", "All"], ["star", "Starred"], ["keep", "Kept"], ["veto", "Vetoed"]], "state");
+  seg($("f-state"), [["open", "Not rated"], ["all", "All"], ["star", "Starred"], ["keep", "Kept"], ["veto", "Vetoed"], ["edited", "Edited"]], "state");
+  const timed = ROWS.some((r) => r.fillsAlt);
+  $("g-time").hidden = !timed;
+  if (timed) seg($("f-time"), [["part", "Part of day"], ["hours", "Hours ahead"]], "time");
   if (ui.key && !ROWS.some((r) => r.key === ui.key)) ui.key = null;
   renderKeys();
 
   const done = ROWS.filter((r) => verdictOf(r)).length;
-  $("status").innerHTML = `<b>${done}</b> of <b>${ROWS.length}</b> lines rated` + (DATA.round ? ` · round <b></b>` : "");
+  const edited = ROWS.filter((r) => editOf(r)).length;
+  $("status").innerHTML = `<b>${done}</b> of <b>${ROWS.length}</b> lines rated` + (edited ? ` · <b>${edited}</b> edited` : "") + (DATA.round ? ` · round <b></b>` : "");
   if (DATA.round) $("status").querySelector("b:last-child").textContent = DATA.round;
 
   const [r, q] = current();
@@ -238,29 +283,14 @@ function render() {
     screen.className = "screen empty";
     screen.innerHTML = ROWS.length ? "<p>Nothing left here. Pick another key or show all.</p>" : "<p>No lines in this build.</p>";
     $("meta").replaceChildren(); $("meaning").textContent = ""; $("raw").textContent = "";
-    $("tags").replaceChildren(); $("note").value = ""; $("pair").hidden = true;
+    $("tags").replaceChildren(); $("note").value = ""; $("pair").hidden = true; $("editbox").hidden = true;
     return;
   }
-  const tip = ui.showPair && r.pair ? r.pair : r.tip;
   screen.className = "screen";
-  const img = document.createElement("img");
-  img.src = "sprites/" + r.sprite + ".png"; img.alt = r.sprite.replace(/_/g, " ");
-  const words = document.createElement("div"); words.className = "words";
-  if (r.fact) { const f = document.createElement("p"); f.className = "fact"; f.textContent = r.fact; words.append(f); }
-  const p = document.createElement("p"); p.textContent = tip; words.append(p);
-  screen.replaceChildren(img, words);
-
-  const meta = [
-    ["", `${r.lang.toUpperCase()} · ${r.levelName}`],
-    ["code", r.path],
-    ["", r.sprite.replace(/_/g, " ")],
-    ["", `${(r.fact ? r.fact.length + 1 : 0) + tip.length} characters`],
-  ];
-  if (r.source === "candidate") meta.push(["", r.batch ? "set " + r.batch : "new candidate"]);
-  $("meta").replaceChildren(...meta.map(([tag, text]) => { const e = document.createElement(tag || "span"); e.textContent = text; return e; }));
-  if (r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Too long for the small views"; $("meta").append(w); }
+  renderScreen(r);
   $("meaning").textContent = r.meaning;
-  $("raw").textContent = r.text;
+  $("raw").textContent = r.role ? "" : r.text;
+  renderEditor(r);
   $("pair").hidden = !r.pair;
   $("pair").firstChild.textContent = ui.showPair ? "Show alone " : "Show with rain ";
 
@@ -276,15 +306,72 @@ function render() {
   if (document.activeElement !== $("note")) $("note").value = d.note || "";
 }
 
+function renderScreen(r) {
+  const c = compose(r);
+  const img = document.createElement("img");
+  img.src = "sprites/" + r.sprite + ".png"; img.alt = r.sprite.replace(/_/g, " ");
+  const words = document.createElement("div"); words.className = "words";
+  if (c.bold) { const f = document.createElement("p"); f.className = "fact" + (c.judged === "bold" ? " judged" : ""); f.textContent = c.bold; words.append(f); }
+  if (c.plain) { const p = document.createElement("p"); if (c.judged === "plain" && c.bold) p.className = "judged"; p.textContent = c.plain; words.append(p); }
+  $("screen").replaceChildren(img, words);
+  const length = (c.bold ? c.bold.length + 1 : 0) + c.plain.length;
+  const meta = [
+    ["", `${r.lang.toUpperCase()} · ${r.levelName}`],
+    ["code", r.path],
+    ["", r.sprite.replace(/_/g, " ")],
+    ["", `${length} characters`],
+  ];
+  if (r.source === "candidate") meta.push(["", r.batch ? "set " + r.batch : "new candidate"]);
+  $("meta").replaceChildren(...meta.map(([tag, text]) => { const e = document.createElement(tag || "span"); e.textContent = text; return e; }));
+  if (r.earlier) { const e = document.createElement("span"); e.className = "earlier"; e.textContent = "earlier: " + r.earlier; $("meta").append(e); }
+  if (r.role ? length > 200 : r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Too long for the small views"; $("meta").append(w); }
+}
+
+function renderEditor(r) {
+  $("editbox").hidden = !r.role;
+  if (!r.role) return;
+  const saved = editOf(r);
+  if (document.activeElement !== $("edit")) $("edit").value = saved || r.text;
+  $("edited").hidden = !saved;
+  $("reset").hidden = !saved;
+  renderFillHelp(r);
+}
+
+function renderFillHelp(r) {
+  const help = $("fillhelp"); help.replaceChildren();
+  const fills = fillsOf(r), had = placeholdersIn(r.text), now = placeholdersIn(wordingOf(r));
+  const parts = [...had].map((k) => { const s = document.createElement("span"); s.innerHTML = "<code></code> = "; s.firstChild.textContent = k; s.append(fills[k] || ""); return s; });
+  parts.forEach((s, i) => { if (i) help.append(" · "); help.append(s); });
+  const missing = [...had].filter((k) => !now.has(k)), extra = [...now].filter((k) => !had.has(k));
+  const warn = (text) => { const w = document.createElement("span"); w.className = "warn"; w.textContent = text; help.append(parts.length ? " · " : "", w); };
+  if (missing.length) warn("Missing " + missing.join(", ") + ": that word won't show");
+  if (extra.length) warn(extra.join(", ") + " isn't filled in on this screen");
+  if (!parts.length && !missing.length && !extra.length) help.textContent = "Change the words and the screen above follows. Enter saves the change and keeps the line.";
+}
+
+function commitEdit() {
+  const [r] = current(); if (!r || !r.role) return;
+  const value = $("edit").value.replace(/\s+/g, " ").trim();
+  draft = null;
+  const prev = decisions.get(r.id) || {};
+  if (!value || value === r.text) { if (prev.edit) save(r, { edit: "" }, false); else render(); return; }
+  if (value === prev.edit) { render(); return; }
+  // A changed wording is a keep of the new words, unless a verdict is already given.
+  pinned = r.id;
+  save(r, { edit: value, verdict: prev.verdict || "keep" }, false);
+}
+
 async function save(r, patch, advance) {
   const prev = decisions.get(r.id) || {};
   const doc = {
     id: r.id, lang: r.lang, level: r.level, key: r.key, path: r.path, text: r.text,
     source: r.source, batch: r.batch || "", round: r.round || DATA.round || "",
-    verdict: prev.verdict || "", tags: prev.tags || [], note: prev.note || "",
+    verdict: prev.verdict || "", tags: prev.tags || [], note: prev.note || "", edit: prev.edit || "",
     ...patch, updatedAt: new Date().toISOString(),
   };
   decisions.set(r.id, doc);
+  // In "Not rated" a voted line leaves the list, so the next one slides in;
+  // elsewhere step forward.
   const wasOpen = ui.state === "open";
   if (advance && !wasOpen) ui.idx++;
   render();
@@ -292,14 +379,30 @@ async function save(r, patch, advance) {
   try { await coll.doc(r.id).set(doc); $("saved").textContent = "Saved"; }
   catch (e) { $("saved").textContent = "Not saved (" + (e && e.code || "error") + "). Try the vote again in a moment."; }
 }
-function vote(v) { const [r] = current(); if (r) save(r, { verdict: (decisions.get(r.id) || {}).verdict === v ? "" : v }, true); }
+function vote(v) {
+  const [r] = current(); if (!r) return;
+  const d = decisions.get(r.id) || {};
+  // Just edited, so already kept: Keep confirms and moves on instead of un-keeping.
+  if (pinned === r.id && d.verdict === v) { move(1); return; }
+  pinned = null;
+  save(r, { verdict: d.verdict === v ? "" : v }, true);
+}
 function toggleTag(t) {
   const [r] = current(); if (!r) return;
   const tags = new Set((decisions.get(r.id) || {}).tags || []);
   tags.has(t) ? tags.delete(t) : tags.add(t);
   save(r, { tags: [...tags] }, false);
 }
-function move(n) { const q = queue(); ui.idx = Math.min(Math.max(0, ui.idx + n), Math.max(0, q.length - 1)); ui.showPair = false; $("saved").textContent = ""; render(); }
+function move(n) {
+  if (pinned) {
+    // The held line leaves "Not rated" now; the next one has already slid into its place.
+    const before = queue().length; pinned = null;
+    if (queue().length < before && n > 0) n -= 1;
+  }
+  const q = queue();
+  ui.idx = Math.min(Math.max(0, ui.idx + n), Math.max(0, q.length - 1));
+  ui.showPair = false; $("saved").textContent = ""; render();
+}
 
 for (const b of document.querySelectorAll(".v")) b.onclick = () => vote(b.dataset.v);
 $("next").onclick = () => move(1);
@@ -307,6 +410,17 @@ $("prev").onclick = () => move(-1);
 $("pair").onclick = () => { ui.showPair = !ui.showPair; render(); };
 $("note").addEventListener("change", () => { const [r] = current(); if (r) save(r, { note: $("note").value.trim() }, false); });
 $("note").addEventListener("keydown", (e) => { if (e.key === "Escape") $("note").blur(); });
+$("edit").addEventListener("input", () => {
+  const [r] = current(); if (!r) return;
+  draft = { id: r.id, text: $("edit").value };
+  renderScreen(r); renderFillHelp(r);
+});
+$("edit").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("edit").blur(); }
+  else if (e.key === "Escape") { const [r] = current(); draft = null; $("edit").value = (r && (editOf(r) || r.text)) || ""; $("edit").blur(); if (r) { renderScreen(r); renderFillHelp(r); } }
+});
+$("edit").addEventListener("blur", commitEdit);
+$("reset").onclick = () => { const [r] = current(); if (r) { draft = null; $("edit").value = r.text; save(r, { edit: "" }, false); } };
 
 document.addEventListener("keydown", (e) => {
   if (e.target.tagName === "TEXTAREA" || e.metaKey || e.ctrlKey || e.altKey) return;
@@ -318,6 +432,7 @@ document.addEventListener("keydown", (e) => {
   else if (k === "h" || k === "arrowleft") move(-1);
   else if (k === "r") { const [r] = current(); if (r && r.pair) { ui.showPair = !ui.showPair; render(); } }
   else if (k === "n") { e.preventDefault(); $("note").focus(); }
+  else if (k === "e") { const [r] = current(); if (r && r.role) { e.preventDefault(); const t = $("edit"); t.focus(); t.setSelectionRange(t.value.length, t.value.length); } }
   else if (/^[1-6]$/.test(k)) toggleTag(TAGS[+k - 1]);
   else return;
   e.preventDefault();
@@ -325,7 +440,7 @@ document.addEventListener("keydown", (e) => {
 
 function exportJson() {
   return JSON.stringify({ exportedAt: new Date().toISOString(), round: DATA.round || "",
-    decisions: [...decisions.values()].filter((d) => d.verdict || d.note || (d.tags || []).length) }, null, 2);
+    decisions: [...decisions.values()].filter((d) => d.verdict || d.note || d.edit || (d.tags || []).length) }, null, 2);
 }
 $("export").onclick = async () => {
   const dl = await claude.use("downloads");
@@ -355,7 +470,7 @@ render();
       if (ch.type === "removed") decisions.delete(ch.doc.id);
       else decisions.set(ch.doc.id, ch.doc.data());
     }
-    if (document.activeElement !== $("note")) render();
+    if (document.activeElement !== $("note") && document.activeElement !== $("edit")) render();
   }, (e) => { const b = $("banner"); b.hidden = false; b.textContent = "Lost the connection to saved votes (" + e.code + "). Reload to try again."; });
 })();
 </script>

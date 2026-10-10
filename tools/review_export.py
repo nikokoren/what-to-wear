@@ -22,6 +22,17 @@ A candidates file is a round of new lines from a writer, reviewed beside
 "batch" is opaque on the page: it is how a blind comparison between two
 writers is kept blind. Keep the batch -> writer key out of the file.
 
+A round can also say how its lines sit on the screen, so the page can
+show an edit live (round 8, the re-read):
+
+    "idPrefix": "rr"            ids become rr-<lang>-<hash>: rated afresh,
+                                whatever earlier rounds said about the text
+    "role": "fact" | "flavour"  the line is the bold fact, or the line under it
+    "fills": {"{WHEN}": ...}    placeholder words, filled live as you type
+    "fillsAlt": {...}           the same with the hours ("in two hours")
+    "under": "..."              a fact's sarcastic line, for context
+    "earlier": "keep in ..."    the line's verdict in an earlier round
+
 Every row carries a stable id: language plus a hash of the text. A line
 that moves index keeps its decision; a line whose text changes is a new
 line and is reviewed again.
@@ -134,6 +145,13 @@ def fill(text, doc, garment_rank=3):
     return re.sub(r"  +", " ", out).strip()
 
 
+def fill_with(text, fills):
+    """A template with a round's own placeholder words (round 8)."""
+    for k in ("{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"):
+        text = text.replace(k, fills.get(k, ""))
+    return re.sub(r"  +", " ", text).strip()
+
+
 def flavour_context(lang, doc, key, text):
     facts = json.loads((PROTO / f"{lang}.json").read_text(encoding="utf-8"))["facts"]
     sprite, fact_keys, meaning = FLAVOUR_CTX.get(key, ("jacket_dry", ["steady"], ""))
@@ -214,9 +232,18 @@ def rows_from_candidates(cand_path):
         r = row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
                 "candidate", c.get("batch", ""))
         # A round can say exactly what the screen shows next to its line.
-        for field in ("sprite", "fact", "meaning"):
+        for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier"):
             if field in c:
                 r[field] = c[field]
+        if data.get("idPrefix"):
+            r["id"] = data["idPrefix"] + "-" + r["id"]
+        if r.get("role") == "fact":
+            r["fact"] = ""
+            r["tip"] = sentence_case(fill_with(c["text"], r.get("fills", {})))
+            r["tooLong"] = len(r["tip"]) + 1 + len(r.get("under", "")) > 200
+        elif r.get("role") == "flavour":
+            r["tip"] = c["text"]
+            r["tooLong"] = len(r.get("fact", "")) + 1 + len(r["tip"]) > 200
         r["round"] = data.get("round", "")
         if section.startswith("fact_"):
             r["levelName"] = "every setting"
