@@ -95,6 +95,8 @@ EDIT = {
     "Halloween. Wenn's klingelt, bist du plötzlich nicht zu Hause.": "Wenn's klingelt, bist du heute plötzlich wieder nicht zu Hause. Typisch.",
     "Weihnachten. Du sagst wieder „wir schenken uns nichts“. Sicher.": "Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.",
     "You'll buy candy for trick-or-treaters and eat it by eight.": "Try not to buy candy for trick-or-treaters and eat it by eight again this year.",
+    # round 10: the owner's note
+    "Schwitzen im Stehen. Ein Traum.": "Bald schwitzt du im Stehen. Ein Traum.",
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
@@ -104,6 +106,9 @@ EDIT_FIX = {
     "Was du anhast passt für den restlichen Tag.": "Was du anhast, passt für den restlichen Tag.",
     "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and a maybe an extra layer more.":
         "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.",
+    # round 10
+    "Ich sag dir es schneit und du bist trotzdem überrascht. Jedes Mal.": "Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.",
+    "You've seen the forecast and leave without the extra layer anyway.": "You've seen the forecast and you'll leave without the extra layer anyway.",
 }
 # The owner's notes on fact wordings, by template. Round 5: "don't take
 # anything off" on a steady cold day is "boring and redundant".

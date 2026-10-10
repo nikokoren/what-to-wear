@@ -189,6 +189,22 @@ Do not edit by hand; vote on the page instead.
 - It's hot all day. Bring water and stay in the shade.
 - No break from the heat today. Water and shade help.
 
+## theme_ny · dry
+
+- I don't do New Year's resolutions. I was perfect last year too.
+
+## theme_spooky · dry
+
+- That ghosting on my screen? It's for Halloween.
+
+## theme_spooky · sarcastic
+
+- Your Halloween costume is 'tired adult' again, isn't it.
+
+## theme_thanks · dry
+
+- This Thanksgiving, I'm thankful I don't have to eat anything.
+
 ## w_coat · plain
 
 - The winter coat can come off {WHEN}.

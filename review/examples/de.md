@@ -161,6 +161,10 @@ Do not edit by hand; vote on the page instead.
 
 - Krampustag. Endlich ist mal einer schlechter gelaunt als ich.
 
+## theme_ny · sarcastic
+
+- Deine Neujahrsvorsätze sind bis zum Zehnten vergessen. Ich kenn dich.
+
 ## theme_xmas · sarcastic
 
 - Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr.

@@ -265,6 +265,13 @@ asked for:
 After voting: sync, then `python3 review/rounds/build_pools.py` (it
 applies round 9 after round 8), then `python3 tools/build_beta.py`.
 
+- **Result (10 October):** every rain and snow wording kept (they now
+  replace the old ones), every wall rewording kept, themes 17 kept or
+  starred of 20 ("Am Nikolaustag bringen Schuhe …", "Die Weihnachtsgans
+  …" and "Unlike the Christmas tree …" vetoed, so their originals stay).
+  Both German New Year takes were kept, so that joke is in the pool
+  twice.
+
 ## Round 10: Visual Forecast's sarcastic line
 
 With two or three panels (79% of mornings) the screen shows drawings and
@@ -285,6 +292,16 @@ writes `flavour_vf_10` / `flavour_vf_11` (per mood: the new lines first,
 then those that work alone; warming and cooling take cool's too). The
 panels pick from them on multi-panel days and fall back to the usual
 line without them. Then `python3 tools/build_beta.py`.
+
+- **Result (10 October):** "needs the fact": 5 English lines (both
+  coat-rack lines, both "that layer … by tonight", "glossy … matte"), no
+  German one. New lines: 11 of 36 kept in each language; the owner's
+  edits prefer "the forecast" to "the drawings". The Visual Forecast
+  pools hold 2 to 16 lines per mood; English fickle at 11 is the
+  thinnest (2). On real mornings with two or three panels, 130 of 132
+  draw from them.
+
+No more voting rounds for now (owner, 10 October).
 
 ## Topical rounds
 
