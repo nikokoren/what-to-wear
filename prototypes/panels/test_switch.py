@@ -29,12 +29,16 @@ DATE = "2026-06-10"
 FEELS = [9, 9, 8, 8, 8, 9, 10, 11, 12, 14, 17, 20, 22, 23, 24, 24, 23, 22, 21, 20, 19, 18, 17, 16]
 
 
-def render(field, view="full", sarcasm="10", lang="en"):
+STEADY = [15] * 24
+
+
+def render(field, view="full", sarcasm="10", lang="en", feels=None):
+    feels = feels or FEELS
     hours = [f"{DATE}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
-            "current": {"time": f"{DATE}T07:30", "temperature_2m": FEELS[7],
-                        "apparent_temperature": FEELS[7], "weather_code": 0},
-            "hourly": {"time": hours, "temperature_2m": FEELS, "apparent_temperature": FEELS,
+            "current": {"time": f"{DATE}T07:30", "temperature_2m": feels[7],
+                        "apparent_temperature": feels[7], "weather_code": 0},
+            "hourly": {"time": hours, "temperature_2m": feels, "apparent_temperature": feels,
                        "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
     cfg = {"language": lang, "sarcasm_level": sarcasm, "lat_lon": "48.2,16.4", "show_bottom_bar": "on"}
     if field is not None:
@@ -70,6 +74,10 @@ html = render("visual", sarcasm="0")
 expect("visual at sarcasm Off has no words on a changing day", "wtw-panels" in html and 'wtw-words"' not in html)
 html = render("visual", sarcasm="10")
 expect("visual at sarcasm On adds the sarcastic line", 'wtw-words"' in html)
+for view in VIEWS:
+    html = render("visual", view, feels=STEADY)
+    expect(f"visual on a steady day is the text view with 'works all day' ({view})",
+           "wtw-panels" not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
 html = render("visual", lang="de")
 expect("German Visual Forecast says 'ab'", ">ab " in html and ">Jetzt<" in html)
 

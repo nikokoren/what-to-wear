@@ -1,27 +1,30 @@
-{%- if visual_forecast -%}
+{%- if visual_forecast and panel_n > 1 -%}
 {%- assign has_words = false -%}
 {%- if panel_fact != '' or panel_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
-{%- if has_words -%}{%- assign ih = 58 -%}{%- assign ihs = 58 -%}{%- else -%}{%- assign ih = 74 -%}{%- assign ihs = 74 -%}{%- endif -%}
-{%- assign gaps = panel_n | minus: 1 | times: 4 -%}
+{%- if has_words -%}{%- assign ih = 62 -%}{%- assign ihs = 62 -%}{%- else -%}{%- assign ih = 78 -%}{%- assign ihs = 78 -%}{%- endif -%}
 {%- assign vgaps = panel_n | minus: 1 | times: 2 -%}
+{%- comment %} Neighbours overlap by a quarter: a row of n is n - (n-1)/4 drawings wide. {%- endcomment %}
+{%- assign den = panel_n | times: 0.75 | plus: 0.25 -%}
 <style>
   /* The view is the measure: every cq unit below is a share of it. */
   .wtw-box { container-type: size; width: 100%; height: 100%; }
-  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 92cqw; }
-  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 4cqw; }
+  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 94cqw; --w: min(calc(var(--pw) / {{ den }}), var(--ih)); }
+  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
   .wtw-panel { display: flex; flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
-  .wtw-panel img { aspect-ratio: 1; object-fit: contain;
-    width: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih)); height: auto; }
-  .wtw-panel .label { white-space: nowrap; }
-  /* 240 px wide (the OG's portrait quarter): "from" over "3 pm". The
-     hours have a no-break space, so "3 pm" stays whole. */
-  @container (max-width: 300px) { .wtw-panel .label { white-space: normal; text-align: center; justify-content: center; } }
+  .wtw-panel img { aspect-ratio: 1; object-fit: contain; width: var(--w); height: auto; }
+  /* The drawings stand in the middle of transparent squares (the figure
+     takes about 55% of the width), so neighbours overlap by a quarter
+     instead of sitting a gap apart: the drawings come out bigger. */
+  .wtw-panel + .wtw-panel { margin-left: calc(var(--w) * -0.25); }
+  /* A time gets its share of the row, less a margin, and wraps to "from"
+     over "3 pm" when it needs more (the hours have a no-break space). */
+  .wtw-panel .label { max-width: calc(var(--w) * 0.68); text-align: center; justify-content: center; }
   .wtw-now .label { font-weight: 700; text-decoration: underline; }
   /* The words fit themselves: TRMNL's content limiter miscounts on the X
      (it measures the drawings scaled up, the space not) and hides them. */
   .wtw-words { width: 92cqw; flex: 0 1 auto; min-height: 0; overflow: hidden; }
-  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-  .screen:not(.screen--portrait) .wtw-side { flex-direction: row; gap: 3cqw; --ih: 74cqh; --pw: 60cqw; }
+  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
+  .screen:not(.screen--portrait) .wtw-side { flex-direction: row; gap: 3cqw; --ih: 84cqh; --pw: 60cqw; }
   .screen:not(.screen--portrait) .wtw-side .wtw-words { width: 34cqw; }
   
 </style>
@@ -40,7 +43,7 @@
     {%- endfor %}
   </div>
   {%- if has_words %}
-  <div class="content content--center text--center content--base lg:content--large wtw-words">
+  <div class="content content--center text--center content--large lg:content--xlarge wtw-words">
     {%- if panel_fact != '' %}<p class="font--bold">{{ panel_fact }}</p>{%- endif %}
     {%- if panel_flavour != '' %}<p>{{ panel_flavour }}</p>{%- endif %}
   </div>
@@ -56,6 +59,7 @@
   </div>
 {%- endif -%}
 {%- else -%}
+{%- if visual_forecast -%}{%- assign fact_line = panel_fact -%}{%- assign flavour_line = panel_flavour -%}{%- endif -%}
 {%- assign show_tip = false -%}
 {%- if show_future_suggestions == 'on' and fact_line != '' -%}{%- assign show_tip = true -%}{%- endif -%}
 <div class="layout layout--row portrait:layout--col layout--center gap">

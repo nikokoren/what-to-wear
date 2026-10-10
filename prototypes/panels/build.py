@@ -35,39 +35,43 @@ def text_view(view):
         raise SystemExit(f"{view}.liquid: tip markup not found")
     return src.replace(ff_build.OLD_TIP, ff_build.NEW_TIP).replace("today_tip != ''", "fact_line != ''")
 
-# Per view: image height (in view height) with words / without, the
-# words' size and the time's size (larger on the X). Only the portrait
-# half-tall stacks the panels (ihs: the whole stack's height, times
-# included); everywhere the time sits under the drawing.
+# Two or three panels, per view: image height (in view height) with words
+# / without, the words' size (the live view's) and the time's size (larger
+# on the X). Only the portrait half-tall stacks the panels (ihs: the whole
+# stack's height, times included); everywhere the time sits under the
+# drawing. One panel is the text view itself, at the live sizes.
 VIEWS = {
-    "full": dict(ih_words=56, ih_bare=74, words="content--large lg:content--xlarge", label="lg:label--xlarge", stack=False),
-    "half_horizontal": dict(ih_words=58, ih_bare=74, words="content--base lg:content--large", label="lg:label--xlarge", stack=False, side=True),
-    "half_vertical": dict(ih_words=58, ih_bare=76, ihs_words=70, ihs_bare=84, words="content--base", label="lg:label--xlarge", stack=True),
-    "quadrant": dict(ih_words=52, ih_bare=70, words="content--small lg:content--base", label="lg:label--large", stack=False),
+    "full": dict(ih_words=66, ih_bare=80, words="content--xlarge lg:content--xxlarge", label="lg:label--xlarge", stack=False),
+    "half_horizontal": dict(ih_words=62, ih_bare=78, side_ih=84, words="content--large lg:content--xlarge", label="lg:label--xlarge", stack=False, side=True),
+    "half_vertical": dict(ih_words=62, ih_bare=78, ihs_words=70, ihs_bare=86, words="content--base lg:content--xlarge", label="lg:label--xlarge", stack=True),
+    "quadrant": dict(ih_words=54, ih_bare=74, words="content--small lg:content--large", label="lg:label--large", stack=False),
 }
 
 TEMPLATE = """{%- assign has_words = false -%}
 {%- if panel_fact != '' or panel_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
 {%- if has_words -%}{%- assign ih = IH_WORDS -%}{%- assign ihs = IHS_WORDS -%}{%- else -%}{%- assign ih = IH_BARE -%}{%- assign ihs = IHS_BARE -%}{%- endif -%}
-{%- assign gaps = panel_n | minus: 1 | times: 4 -%}
 {%- assign vgaps = panel_n | minus: 1 | times: 2 -%}
+{%- comment %} Neighbours overlap by a quarter: a row of n is n - (n-1)/4 drawings wide. {%- endcomment %}
+{%- assign den = panel_n | times: 0.75 | plus: 0.25 -%}
 <style>
   /* The view is the measure: every cq unit below is a share of it. */
   .wtw-box { container-type: size; width: 100%; height: 100%; }
-  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 92cqw; }
-  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 4cqw; }
+  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 94cqw; --w: min(calc(var(--pw) / {{ den }}), var(--ih)); }
+  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
   .wtw-panel { display: flex; flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
-  .wtw-panel img { aspect-ratio: 1; object-fit: contain;
-    width: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih)); height: auto; }
-  .wtw-panel .label { white-space: nowrap; }
-  /* 240 px wide (the OG's portrait quarter): "from" over "3 pm". The
-     hours have a no-break space, so "3 pm" stays whole. */
-  @container (max-width: 300px) { .wtw-panel .label { white-space: normal; text-align: center; justify-content: center; } }
+  .wtw-panel img { aspect-ratio: 1; object-fit: contain; width: var(--w); height: auto; }
+  /* The drawings stand in the middle of transparent squares (the figure
+     takes about 55% of the width), so neighbours overlap by a quarter
+     instead of sitting a gap apart: the drawings come out bigger. */
+  .wtw-panel + .wtw-panel { margin-left: calc(var(--w) * -0.25); }
+  /* A time gets its share of the row, less a margin, and wraps to "from"
+     over "3 pm" when it needs more (the hours have a no-break space). */
+  .wtw-panel .label { max-width: calc(var(--w) * 0.68); text-align: center; justify-content: center; }
   .wtw-now .label { font-weight: 700; text-decoration: underline; }
   /* The words fit themselves: TRMNL's content limiter miscounts on the X
      (it measures the drawings scaled up, the space not) and hides them. */
   .wtw-words { width: 92cqw; flex: 0 1 auto; min-height: 0; overflow: hidden; }
-  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
   SIDE_CSS
   STACK_CSS
 </style>
@@ -113,6 +117,8 @@ SIDE = """.screen:not(.screen--portrait) .wtw-side { flex-direction: row; gap: 3
 STACK = """.screen--portrait .wtw-day { --lbl: 3.5cqh; }
   .screen--portrait.screen--lg .wtw-day { --lbl: 4.5cqh; }
   .screen--portrait .wtw-panels { flex-direction: column; align-items: center; gap: 2cqh; }
+  .screen--portrait .wtw-panel + .wtw-panel { margin-left: 0; }
+  .screen--portrait .wtw-panel .label { max-width: none; }
   .screen--portrait .wtw-panel img { width: auto;
     height: min(calc(({{ ihs }}cqh - {{ vgaps }}cqh - {{ panel_n }} * var(--lbl)) / {{ panel_n }}), 84cqw); }"""
 
@@ -131,8 +137,12 @@ def main():
         src = (TEMPLATE.replace("IHS_WORDS", str(v.get("ihs_words", v["ih_words"]))).replace("IHS_BARE", str(v.get("ihs_bare", v["ih_bare"])))
                .replace("IH_WORDS", str(v["ih_words"])).replace("IH_BARE", str(v["ih_bare"]))
                .replace("WORDS", v["words"]).replace("LABEL", v["label"]).replace("STACK_CSS", STACK if v["stack"] else "")
-               .replace("SIDE_CSS", SIDE.replace("IH_BARE_SIDE", str(v["ih_bare"])) if v.get("side") else ""))
-        src = ("{%- if visual_forecast -%}\n" + src.rstrip() + "\n{%- else -%}\n"
+               .replace("SIDE_CSS", SIDE.replace("IH_BARE_SIDE", str(v.get("side_ih", v["ih_bare"]))) if v.get("side") else ""))
+        # One panel is the screen people know, at the live sizes, with the
+        # "works all day" fact and the sarcastic line in it.
+        src = ("{%- if visual_forecast and panel_n > 1 -%}\n" + src.rstrip() + "\n{%- else -%}\n"
+               + "{%- if visual_forecast -%}{%- assign fact_line = panel_fact -%}"
+               + "{%- assign flavour_line = panel_flavour -%}{%- endif -%}\n"
                + text_view(view).rstrip() + "\n{%- endif -%}\n")
         (OUT / "views" / f"{view}.liquid").write_text(src, encoding="utf-8")
 

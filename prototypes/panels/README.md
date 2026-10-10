@@ -67,22 +67,44 @@ On 7:00 readings in London, Vienna and New York over a year: one panel
 
 ## Views
 
-Generated from one template in `build.py`. Panels sit in a row, sized to
-the view, the time always under the drawing; the half view lying wide
-puts the words beside them; only the half view standing tall (240 by
-800 on the OG) stacks them, one under the other. The portrait quarter
-keeps the row: stacked with the time under each, its drawings came out
-smaller. The drawings stay square, as drawn (owner, after comparing
-with a 2:3 crop). The times are larger on the X (`lg:label--xlarge`,
-`lg:label--large` in the quarter).
+**One panel is the text view** people know, at the live sizes (the
+drawing at 60% of the view's height, the words in the live view's size),
+with the "works all day" fact and the sarcastic line. The first beta
+drew it through the panels template, a little smaller than live and with
+smaller words; the owner found it "tiny".
+
+**Two or three panels** come from one template in `build.py`:
+
+- In a row, the time always under the drawing; the half view lying wide
+  puts the words beside them; only the half view standing tall (240 by
+  800 on the OG) stacks them, one under the other.
+- **Neighbours overlap by a quarter.** The drawings are transparent and
+  the figure takes about 55% of the square (the two old wide-umbrella
+  drawings up to 95%: their rain reaches into the neighbour's empty
+  side), so a row of three is 2.5 drawings wide instead of three plus
+  gaps. With more height for the row too, on the OG in landscape: full
+  view 218 to 279 px, half view lying wide 131 to 149 px, quarter about
+  the same (96 px with words, 131 without).
+- The drawings stay square, as drawn (owner, after comparing with a 2:3
+  crop).
+- The words are the live view's size, except in the two tightest spots
+  on the OG (the portrait half-tall column and the quarter), a step
+  smaller, since the panels can't use TRMNL's limiter to step down.
+- The times are larger on the X (`lg:label--xlarge`, `lg:label--large`
+  in the quarter). A time gets its share of the row and wraps to "from"
+  over "3 pm" when it needs more.
 
 The words don't use TRMNL's content limiter. On the X the screen is
 scaled up with a CSS transform, and the limiter adds the drawings'
 scaled height to the layout's unscaled one: with the panels above it,
 it found 10 px left and hid the line. The words fit themselves instead
-(they shrink in the column and clamp at three lines each). The live
+(they shrink in the column and clamp at four lines each). The live
 views escape it only because there the sum goes negative, which turns
 the limiter off.
+
+Every mock day was checked in every language, sarcasm level, device,
+orientation and view (448 screens) for words cut off, times touching
+and anything spilling out of the view: none.
 
 ## Open
 

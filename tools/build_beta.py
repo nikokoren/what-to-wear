@@ -101,7 +101,7 @@ def verify(shared, view, full, trimmed):
     page = Environment().from_string(shared + view)
     checked = 0
     seen = set()
-    panels = words = 0
+    panels = words = errors = 0
     for lang in ("en", "de"):
         for args in ((d, h, s) for d in DATES for h in HOURS for s in SHAPES):
             for sarcasm in ("0", "10", "11"):
@@ -114,10 +114,12 @@ def verify(shared, view, full, trimmed):
                     seen.add(a)
                     panels += 'class="wtw-panels"' in a
                     words += 'class="font--bold"' in a
-    # Identical is only proof if the screens are real and varied, not all
-    # the error screen.
-    if len(seen) < checked // 2 or panels < checked // 4 or words < checked // 4:
-        raise SystemExit(f"verification renders look wrong: {len(seen)} distinct, {panels} with panels, {words} with words")
+                    errors += 'alt="Error"' in a
+    # Identical is only proof if the screens are real and varied: no error
+    # screens, panels on the days that change, words on most.
+    if errors or len(seen) < checked // 4 or panels < checked // 10 or words < checked // 2:
+        raise SystemExit(f"verification renders look wrong: {errors} errors, {len(seen)} distinct, "
+                         f"{panels} with panels, {words} with words")
     return checked
 
 
