@@ -33,7 +33,18 @@ to pick it up cold.
    third value of the forecast field, so nothing saved moves
    (`config/settings.next.yaml`, the whole form for the beta and the
    launch).
-4. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
+4. **Completely rewrite the whole thing in TRMNL's native framework
+   only, before going live.** The owner: "I can't put this out like
+   this." The Visual Forecast views carry a hand-written `<style>` block
+   (16 rules from the template in `prototypes/panels/build.py`: container
+   units, CSS variables, the overlapping drawings, times that wrap, words
+   that clamp themselves); everything must come from the framework's own
+   classes, the way the text views already do. Expect to give some things
+   up or find framework equivalents: the overlap, the wrapping times, and
+   the words fitting themselves (TRMNL's content limiter hides them on the
+   X, see `prototypes/panels/README.md`). Re-run the fit check over every
+   view, device and orientation after.
+5. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching
    the texts URL to the usage Worker at that step starts the counting.
@@ -44,7 +55,7 @@ to pick it up cold.
    "perfect" variants, `wet_again`): move those checks to the new pools
    first. The beta (`beta/`, `tools/build_beta.py`) gets by meanwhile by
    keeping one line per list.
-5. **Item 3, the text**: in progress. The tip becomes a fact line plus a
+6. **Item 3, the text**: in progress. The tip becomes a fact line plus a
    flavour line; voice, fact style and most pools are decided by four
    rounds of votes (`review/README.md`). Round 5 (variants) is synced
    and fully rated. Next:
@@ -63,7 +74,7 @@ to pick it up cold.
    "Nikolo") and Krampus (Alpine; lines must still make sense in
    Hamburg). Three candidates per level and language, in calendar order
    from Halloween; the joke comes out of the day itself.
-6. **Variance, again: week of 16 October 2026.** The owner wants
+7. **Variance, again: week of 16 October 2026.** The owner wants
    repeats rare enough that nobody notices: "closer to Carrot Weather
    than to us" over the long term. Round 5 is only the first step.
    Measure with `python3 tools/climate/repeat_report.py <climate dir>`
@@ -78,7 +89,7 @@ to pick it up cold.
    shuffled order instead of in sequence, so a pool never reads as a
    cycle; lines keyed to the weekday, the season or the run of weather
    ("third grey day in a row"); and the topical lines (item 7) earlier.
-7. **Topical lines**: On and 11 lines about current events, written with
+8. **Topical lines**: On and 11 lines about current events, written with
    Claude whenever something happens, each with a date window so it
    rotates in and out by itself. Built in the prototype (markup, opt-in
    field, review rounds, add and prune tool, weekly prune job, the
