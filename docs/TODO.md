@@ -127,10 +127,13 @@ to pick it up cold.
    facts. The owner, beta testing: together they're too long and
    don't feel connected. Idea: sarcastic lines only for this case
    ("nothing changes until tomorrow"), so the screen reads as one
-   calm, good piece; maybe a shorter fact with them, or none. Open:
-   Visual Forecast only, or the words view's steady days too (same
-   fact, same pairing). Where it's picked: the one-panel branch of
-   `prototypes/panels/block.liquid` ("this works all day").
+   calm, good piece; maybe a shorter fact with them, or none. It
+   probably affects the words view's steady days too (same kind of
+   fact, same pairing); the owner noticed it in Visual Forecast only
+   because that's what the beta is set up to test, so solve it for
+   both. Where it's picked: the one-panel branch of
+   `prototypes/panels/block.liquid` ("this works all day") and the
+   words view's steady fact in `prototypes/fact-flavour/block.liquid`.
 
 ## 1. Rethink the clothing system and the temperature bands
 
