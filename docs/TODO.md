@@ -99,6 +99,26 @@ to pick it up cold.
    going back, is voted and in the prototype; a weekly scout routine
    proposes events from Wikipedia and German news. Details in
    `docs/FUTURE-topical-lines.md`.
+9. **Later: the sarcastic line in italics?** To set it apart from the
+   fact line, as bold sets the fact apart now. What there is: TRMNL's
+   framework has no italic class, though it loads an italic Inter (the
+   font of the larger text sizes); the pixel fonts of the smaller sizes
+   have no italic, so the browser would slant them, which looks rough
+   in 1-bit. Item 4 rules out our own CSS, so: is there a framework way,
+   and does it read well on the OG and the X?
+10. **Later: rotate the texts while the forecast stays the same.** What
+   happens now: every pool rotates by day only (the fact on day + 2,
+   the rain fact on day + 3, the sarcastic line and Visual Forecast's
+   on day + 5, a topical line every third day), so a day whose weather
+   doesn't change shows the same words from morning to night. The
+   owner wants it livelier: rotate facts and sarcastic lines through
+   their pools during the day too. To work out: the step (each hour,
+   each refresh), keeping fact and sarcastic line from repeating as a
+   pair, and whether TRMNL regenerates often enough (it skips a screen
+   when the merge variables haven't changed, see `docs/MIGRATION.md`;
+   Open-Meteo's current time moves every 15 minutes). Check what more
+   frequent changes cost on the device. The repeat numbers in item 7
+   assume one text a day.
 
 ## 1. Rethink the clothing system and the temperature bands
 
