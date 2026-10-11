@@ -119,6 +119,18 @@ to pick it up cold.
    Open-Meteo's current time moves every 15 minutes). Check what more
    frequent changes cost on the device. The repeat numbers in item 7
    assume one text a day.
+11. **Later, beta feedback: the day with no more changes.** In Visual
+   Forecast, a day whose outfit holds until tomorrow gets one drawing,
+   a "works all day" fact ("What you have on works from now until
+   tonight.", `facts.steady`, `_evening`, `_hot`, `_cold`) and the
+   mood's usual sarcastic line, which was written to follow other
+   facts. The owner, beta testing: together they're too long and
+   don't feel connected. Idea: sarcastic lines only for this case
+   ("nothing changes until tomorrow"), so the screen reads as one
+   calm, good piece; maybe a shorter fact with them, or none. Open:
+   Visual Forecast only, or the words view's steady days too (same
+   fact, same pairing). Where it's picked: the one-panel branch of
+   `prototypes/panels/block.liquid` ("this works all day").
 
 ## 1. Rethink the clothing system and the temperature bands
 
