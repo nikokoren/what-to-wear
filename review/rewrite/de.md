@@ -5,14 +5,22 @@ kept line answers yet. Write completely new lines for each spot,
 not variations of what's out (it's all in `review/dont/`), and give
 each new row `"answers": "<id>"` in the next round's file.
 
+## flavour_10.cold
+
+- **Out:** Also Tür zu. Die Straße heizen wir nicht mit.
+  **Wanted instead:** i like the idea. not sure if "tür zu" works. that would imply that you are pening the door right now? the trmnl might be sitting on your desk next to you.
+  **Tags:** unclear
+  **On screen:** drawing coat_dry; above it: “Es bleibt den ganzen Tag so kalt.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it.
+  **Answers:** `se-de-f8c75ae3a9a2` (2026-10-seasons)
+
 ## flavour_10.evening
 
-- **Out:** Passt also. Jetzt muss nur noch der Abend passen.
-  **Wanted instead:** i like the direction, but the joke just does not lang in german.
-  **Tags:** not funny, unclear
+- **Out:** Gefühlt ist ja schon seit halb fünf Abend.
+  **Tags:** not funny
   **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-4c755141861f` (2026-10-follow)
+  **Answers:** `se-de-212f32cc4183` (2026-10-seasons)
 
 ## flavour_10.hot
 
@@ -21,6 +29,24 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
   **Answers:** `fu-de-deccfafba7ad` (2026-10-follow)
+- **Out:** Im Schatten ist übrigens schon alles besetzt. Mit Handtüchern.
+  **Wanted instead:** i like the idea, but the phrasing isnt flowing well with the forecast. i tried my luck with rephrasing but am still not 100% happy
+  **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
+  **Answers:** `se-de-498ddaa47dd7` (2026-10-seasons)
+- **Out:** Und in der Bahn fällt wieder die Klimaanlage aus. Darauf ist Verlass.
+  **Wanted instead:** now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy
+  **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
+  **Answers:** `se-de-86da3bf6e8b9` (2026-10-seasons)
+
+## flavour_10.night
+
+- **Out:** Fürs Bett reicht übrigens auch der Schlafanzug.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.
+  **Answers:** `se-de-6dbb82ad7913` (2026-10-seasons)
 
 ## flavour_10.off
 
@@ -29,11 +55,12 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kann die Jacke weg.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
   **Answers:** `fu-de-2a322039ae72` (2026-10-follow)
-- **Out:** Und dann liegt's wieder in irgendeinem Büro rum.
-  **Tags:** not funny
+- **Out:** Und schon sind wieder alle gut gelaunt. Unerträglich.
+  **Wanted instead:** why are they all gut gelaunt? the weather is cool.
+  **Tags:** not funny, unclear
   **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kann die Jacke weg.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-2f7e01059b7f` (2026-10-follow)
+  **Answers:** `se-de-51180f41294c` (2026-10-seasons)
 
 ## flavour_10.offon
 
@@ -42,14 +69,15 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.
   **Answers:** `fu-de-9df558276b56` (2026-10-follow)
+- **Out:** Kaum ist's mal schön, ist's auch schon wieder vorbei. Wie alles.
+  **Wanted instead:** does not flow with the forecast line.
+  **Tags:** not funny, robotic
+  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.
+  **Answers:** `se-de-d210b9aa3d35` (2026-10-seasons)
 
 ## flavour_10.on
 
-- **Out:** Und nein, wärmer wird's nicht, nur weil du's nicht glauben willst.
-  **Tags:** not funny, unclear
-  **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-846df8debdf5` (2026-10-follow)
 - **Out:** Abends hat's dann wieder keiner dabei. Außer dir, hoffentlich.
   **Tags:** not funny
   **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
@@ -76,6 +104,11 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing coat_dry; above it: “Heute Nachmittag soll es schneien.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
   **Answers:** `fu-de-7169808d5bf3` (2026-10-follow)
+- **Out:** Die Bahn tut dann wieder, als hätt's seit hundert Jahren nicht geschneit.
+  **Tags:** not funny, robotic
+  **On screen:** drawing coat_dry; above it: “Heute Nachmittag soll es schneien.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
+  **Answers:** `se-de-f494e320be78` (2026-10-seasons)
 
 ## flavour_10.warming
 
@@ -93,12 +126,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
   **What it's for:** New: sarcastic line at 11. A day line (cooling): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
   **Answers:** `al-de-3ec4402a46f4` (2026-10-alone)
-- **Out:** Als hättest du was Passendes im Schrank.
-  **Wanted instead:** same here. forecast and sarcasm are fighting each other, not working together.
-  **Tags:** unclear
-  **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
-  **What it's for:** Sarcastic line at 11. A day line (cooling): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-c63e80b31f40` (2026-10-alone)
 
 ## flavour_11.fickle
 
@@ -147,12 +174,6 @@ each new row `"answers": "<id>"` in the next round's file.
 
 ## flavour_11.on
 
-- **Out:** Nimm's mit. Frieren steht dir nicht.
-  **Wanted instead:** does not flow with the sarcasm line
-  **Tags:** not funny
-  **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-a6401c334466` (2026-10-follow)
 - **Out:** Und später stehst du wieder bibbernd an der Haltestelle und tust überrascht.
   **Wanted instead:** does not flow well with the forecast line
   **Tags:** not funny, robotic
@@ -168,22 +189,35 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”
   **What it's for:** New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
   **Answers:** `fu-de-5ceac18997a2` (2026-10-follow)
+- **Out:** Auf mich hörst du doch erst, wenn die Socken nass sind.
+  **Wanted instead:** now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
+  **Answers:** `se-de-c4a725a2e9d8` (2026-10-seasons)
 
-## flavour_11.steady
+## now_10.nice
 
-- **Out:** Den ganzen Tag richtig angezogen. Merk dir das Gefühl.
+- **Out:** Lebkuchen im September. Eine Frechheit. Ich nehm trotzdem zwei Packungen.
+  **Wanted instead:** i need some help refineing the phrasing
+  **Tags:** unclear
+  **On screen:** drawing tee_pants_dry
+  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `se-de-06338d78f732` (2026-10-seasons)
+- **Out:** Kaum steht der Zwetschgenkuchen draußen, sind die Wespen da. Vor den Gästen.
+  **Wanted instead:** i like the idea. but it's not flowing right yet.
   **Tags:** not funny
-  **On screen:** drawing tee_pants_dry; above it: “Was du anhast, passt für den ganzen Tag.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-3f9dd7519808` (2026-10-follow)
+  **On screen:** drawing tee_pants_dry
+  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `se-de-d6076b7ecb55` (2026-10-seasons)
 
-## now_11.cool
+## now_10.night
 
-- **Out:** Du sagst wieder „angenehm frisch“. Klingt wie aus dem Prospekt.
-  **Tags:** not funny
+- **Out:** Schönheitsschlaf brauch ich keinen mehr. Da ist nichts mehr zu retten.
+  **Wanted instead:** does not fit with other texts where the screen is beautiful. rephrased it to go against the user, but then it might be a level 11
+  **Tags:** unclear
   **On screen:** drawing jacket_dry
-  **What it's for:** New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `al-de-2b3e85392ed2` (2026-10-alone)
+  **What it's for:** New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `se-de-5ad53bc0b53e` (2026-10-seasons)
 
 ## now_11.hot
 
@@ -201,11 +235,6 @@ each new row `"answers": "<id>"` in the next round's file.
 
 ## now_11.nice
 
-- **Out:** Draußen wärst heut sogar du erträglich.
-  **Tags:** not funny
-  **On screen:** drawing tee_pants_dry
-  **What it's for:** Sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `al-de-88026c93fc93` (2026-10-alone)
 - **Out:** Traumwetter, und du suchst trotzdem schon die erste Wolke.
   **Wanted instead:** why?
   **Tags:** unclear

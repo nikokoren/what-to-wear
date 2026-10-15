@@ -118,6 +118,10 @@ Do not edit by hand; vote on the page instead.
 - Und jetzt nicht wieder an den Kühlschrank.
 - „Nur noch eine Folge.“ Das war vor zwei Folgen.
 
+## off · dry
+
+- Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+
 ## p_drier · plain
 
 - Der Regen lässt später nach, für jetzt brauchst du den Schirm.
@@ -180,7 +184,14 @@ Do not edit by hand; vote on the page instead.
 
 ## steady · dry
 
+- Da hätt ich heute auch frei nehmen können.
+- Dann kann ja nur noch alles andere schiefgehen.
 - Wenn doch alles so einfach wär.
+
+## steady · sarcastic
+
+- Ob's dir steht, ist eine andere Frage.
+- Zumindest bis zum ersten Kaffeefleck.
 
 ## steady_cold · plain
 

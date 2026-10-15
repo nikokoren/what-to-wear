@@ -13,27 +13,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it.
   **Answers:** `fu-en-612d3d196d2a` (2026-10-follow)
 
-## flavour_10.cool
-
-- **Out:** It takes real talent to make today look interesting.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** not funny, robotic
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the whole day.”
-  **What it's for:** Sarcastic line at On. A day line (cool): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-en-2f51a68cfc40` (2026-10-alone)
-- **Out:** Today has the thrill of a firmware update. A small one.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** robotic, not funny
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the whole day.”
-  **What it's for:** Sarcastic line at On. A day line (cool): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-en-34807153d5d8` (2026-10-alone)
-- **Out:** Making today look interesting takes skill. Lucky you've got me.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** robotic, not funny
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the whole day.”
-  **What it's for:** Sarcastic line at On. A day line (cool): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-en-366e6ff11ab9` (2026-10-alone)
-
 ## flavour_10.hot
 
 - **Out:** Water and shade are on you. Staying cool is my thing.
@@ -41,6 +20,12 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing heat_dry; above it: “It stays hot all day, so bring water and look for shade.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
   **Answers:** `fu-en-dd8f4cdc60cb` (2026-10-follow)
+- **Out:** Every patch of shade out there will soon have someone guarding it.
+  **Wanted instead:** not flowing well with the forecast.
+  **Tags:** not funny, robotic, unclear
+  **On screen:** drawing heat_dry; above it: “It stays hot all day, so bring water and look for shade.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
+  **Answers:** `se-en-c03a8d6cc521` (2026-10-seasons)
 
 ## flavour_10.night
 
@@ -58,11 +43,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “You can take the jacket off this afternoon.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
   **Answers:** `fu-en-0a5ba52b3d29` (2026-10-follow)
-- **Out:** And it'll spend the afternoon where they all do: over one arm.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “You can take the jacket off this afternoon.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-4afd77018462` (2026-10-follow)
 
 ## flavour_10.on
 
@@ -79,72 +59,18 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “There's a shower passing through this afternoon, so bring the umbrella.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
   **Answers:** `fu-en-3c6bdbfdd863` (2026-10-follow)
-- **Out:** That's my rain forecast. The umbrella's forecast is less certain.
-  **Tags:** not funny, robotic, unclear
-  **On screen:** drawing jacket_dry; above it: “There's a shower passing through this afternoon, so bring the umbrella.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-ca89c3ee3a17` (2026-10-follow)
 - **Out:** I'd hold it for you, but I'm not that kind of screen.
   **Wanted instead:** what kind of screen holds stuff?
   **Tags:** unclear, not funny
   **On screen:** drawing jacket_dry; above it: “There's a shower passing through this afternoon, so bring the umbrella.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
   **Answers:** `fu-en-e98dbe0b0635` (2026-10-follow)
-
-## flavour_10.snow
-
-- **Out:** Snow on schedule. I'd take a bow if I had a waist.
-  **Tags:** unclear
-  **On screen:** drawing coat_dry; above it: “It starts snowing this afternoon.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-f53b8ddae3b3` (2026-10-follow)
-
-## flavour_10.steady
-
-- **Out:** Nothing to update. I'll just stand here being right.
-  **Wanted instead:** forecast and sarcasm arent working together.
-  **Tags:** not funny, unclear, robotic
-  **On screen:** drawing tee_pants_dry; above it: “What you're wearing works for the whole day.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-1a16c71bd2d9` (2026-10-follow)
-- **Out:** Get dressed once and you're done. I do the same, permanently.
-  **Tags:** not funny
-  **On screen:** drawing tee_pants_dry; above it: “What you're wearing works for the whole day.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-b26e37bc6ec0` (2026-10-follow)
-
-## flavour_11.cool
-
-- **Out:** Today's as predictable as your lunch order.
-  **Wanted instead:** sarcasm and forecast arent flowing together. the sarcasm line is fine on it's own though.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the whole day.”
-  **What it's for:** Sarcastic line at 11. A day line (cool): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-en-11e1b81980e7` (2026-10-alone)
-
-## flavour_11.evening
-
-- **Out:** Your outfit's ready for the evening. Are you?
-  **Wanted instead:** sarcasm and forecast arent flowing well together
+- **Out:** Summer, as advertised.
+  **Wanted instead:** not flowing well with the forecast.
   **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the rest of the evening.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-afb325334114` (2026-10-follow)
-
-## flavour_11.hot
-
-- **Out:** You'll forget the water and blame the weather.
-  **Wanted instead:** forecast and sarcsm not working well together.
-  **Tags:** robotic
-  **On screen:** drawing heat_dry; above it: “It stays hot all day, so bring water and look for shade.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-1161ddf27440` (2026-10-follow)
-- **Out:** Shade, water, fewer complaints about the heat. Pick two.
-  **Wanted instead:** forecast and sarcasm arent working well together.
-  **Tags:** robotic
-  **On screen:** drawing heat_dry; above it: “It stays hot all day, so bring water and look for shade.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-7f90ae4857e3` (2026-10-follow)
+  **On screen:** drawing jacket_dry; above it: “There's a shower passing through this afternoon, so bring the umbrella.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
+  **Answers:** `se-en-94930a50790f` (2026-10-seasons)
 
 ## flavour_11.night
 
@@ -170,15 +96,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.
   **Answers:** `fu-en-c992fdc6bf87` (2026-10-follow)
 
-## flavour_11.rain
-
-- **Out:** Bring it, and maybe bring it home this time.
-  **Wanted instead:** sarcasm and forecast arent flowing well together
-  **Tags:** robotic, unclear
-  **On screen:** drawing jacket_dry; above it: “There's a shower passing through this afternoon, so bring the umbrella.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-8986a44cdd3f` (2026-10-follow)
-
 ## flavour_11.snow
 
 - **Out:** You'll still act like it's the first snow ever.
@@ -202,21 +119,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at 11: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.
   **Answers:** `fu-en-c5c30c011d66` (2026-10-follow)
 
-## flavour_vf_10.fickle
-
-- **Out:** Three outfits for one day. You're basically a costume department.
-  **Wanted instead:** i like the idea, but here it's the same outfit at the start and the end. so basically it's just two outfits? but it would work on days that arent an ark, that start warmer or colder than they end.
-  **Tags:** unclear
-  **On screen:** drawing coat_dry
-  **What it's for:** Sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.
-  **Answers:** `al-en-3e32d0fd5b64` (2026-10-alone)
-- **Out:** Three outfits for one day. You're basically a costume department.
-  **Wanted instead:** the example again shows coat jacket coat
-  **Tags:** unclear
-  **On screen:** drawing coat_dry
-  **What it's for:** New: sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.
-  **Answers:** `fu-en-3e32d0fd5b64` (2026-10-follow)
-
 ## now_10.cool
 
 - **Out:** The sky went with a neutral palette. Bold choice. I approve.
@@ -225,6 +127,21 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry
   **What it's for:** New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
   **Answers:** `al-en-2bc20fba84eb` (2026-10-alone)
+- **Out:** Socks-and-sandals weather. Someone out there has waited all year for this.
+  **Wanted instead:** how is cool socks and sandals weather?
+  **Tags:** wrong fact, unclear
+  **On screen:** drawing jacket_dry
+  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `se-en-c3eda54f17b6` (2026-10-seasons)
+
+## now_10.wet
+
+- **Out:** Somewhere a barbecue is going ahead under an umbrella. Out of spite.
+  **Wanted instead:** i like the idea, but this is not hitting right.
+  **Tags:** robotic, not funny
+  **On screen:** drawing jacket_rain
+  **What it's for:** New: sarcastic line at On. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `se-en-33e4ced9401e` (2026-10-seasons)
 
 ## now_11.cold
 
@@ -233,9 +150,8 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing coat_dry
   **What it's for:** Sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
   **Answers:** `al-en-3a72421a8159` (2026-10-alone)
-- **Out:** You'll put the coat on and still complain. I can see it from here.
-  **Wanted instead:** you'll put the coat on and still complain about what?
-  **Tags:** unclear
+- **Out:** Bundled up like that, you've never looked better. Funny, that.
+  **Tags:** not funny
   **On screen:** drawing coat_dry
   **What it's for:** New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `fu-en-cbb634405bb5` (2026-10-follow)
+  **Answers:** `se-en-f6a8fa54dc39` (2026-10-seasons)

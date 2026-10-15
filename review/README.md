@@ -373,6 +373,9 @@ Raw output in `2026-10-seasons/<lang>.json`, notes in
   (`{W:jacket,coat}`); it's skipped on a forecast line that names another.
 - **Seasons south of the equator.** Month tags name the northern season;
   with a southern latitude in the weather data, the month runs six on.
+- **Result (15 October):** English 0 stars, 31 keeps, 45 vetoes, 5 Write
+  new; German 5 stars, 22 keeps, 37 vetoes, 12 Write new. Lessons in
+  `docs/BRIEF.md` ("What rounds 12 and 13 added").
 
 ## Topical rounds
 

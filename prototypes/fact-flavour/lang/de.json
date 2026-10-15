@@ -176,7 +176,8 @@
     "on": [
       "Nachher sagt wieder jeder: Ganz schön frisch geworden.",
       "Gleich heißt's wieder überall: Ist aber frisch geworden.",
-      "Abends ist's dann wieder frisch, und keiner hat's am Schirm. Außer mir."
+      "Abends ist's dann wieder frisch, und keiner hat's am Schirm. Außer mir.",
+      "Pünktlich wie sonst nichts in diesem Land."
     ],
     "rain": [
       "Nass wird's. War ja klar.",
@@ -205,20 +206,26 @@
       "Weihnachten. Die Gans hat heute den schlechtesten Tag von allen."
     ],
     "off": [
+      "Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
       "Und dann darfst du {GP} wieder überm Arm spazieren tragen."
     ],
     "hot": [
       "Wasser, hab ich gesagt. Bier zählt nicht."
     ],
     "steady": [
+      "Dann kann ja nur noch alles andere schiefgehen.",
+      "Da hätt ich heute auch frei nehmen können.",
       "Wenn doch alles so einfach wär.",
       "Langweilig."
     ],
     "cold": [
-      "Da hilft auch kein Jammern."
+      "Da hilft auch kein Jammern.",
+      "Da bleibt immerhin das Bier auf dem Balkon schön kühl.",
+      "{M:01}Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern."
     ],
     "evening": [
-      "Am Outfit liegt's also nicht, wenn der Abend nix wird."
+      "Am Outfit liegt's also nicht, wenn der Abend nix wird.",
+      "Jetzt fehlt nur noch die passende Laune."
     ],
     "night": [
       "Für die Couch passt's sowieso.",
@@ -230,10 +237,13 @@
       "{W:coat,jacket,hoodie}Bitte nicht wieder die Ärmel um den Bauch knoten.",
       "{W:jacket}Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
       "Und dann vergisst du {GP} irgendwo. Wie letztes Mal.",
-      "{W:coat,jacket}Und dann hängt sie den Rest des Tages über deinem Stuhl."
+      "{W:coat,jacket}Und dann hängt sie den Rest des Tages über deinem Stuhl.",
+      "{W:coat,jacket,hoodie}Dann sieht jeder, was du drunter anhast. Das gleiche wie gestern."
     ],
     "on": [
-      "Als ob dein Schrank sowas hergibt."
+      "Als ob dein Schrank sowas hergibt.",
+      "{W:jacket,coat,scarf}Ohne {G} siehst du auch nicht besser aus.",
+      "{M:01}{W:jacket,coat}Vorausgesetzt, deine geht nach den Feiertagen noch zu."
     ],
     "offon": [
       "An, aus, wieder an. Wie deine Beziehungen.",
@@ -261,19 +271,33 @@
       "Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr."
     ],
     "rain": [
-      "Und lass ihn nicht wieder in der Bahn liegen."
+      "Und lass ihn nicht wieder in der Bahn liegen.",
+      "Glauben wirst du's erst dem Regenradar. Weil's bunt ist."
     ],
     "snow": [
-      "Du wirst trotzdem so tun, als hätt's dir keiner gesagt."
+      "Du wirst trotzdem so tun, als hätt's dir keiner gesagt.",
+      "Morgen erzählst du dann allen, wie du dich durchgekämpft hast. Bis zum Sofa."
     ],
     "hot": [
-      "Wasser mitnehmen, hab ich gesagt. Nicht Eiskaffee."
+      "Wasser mitnehmen, hab ich gesagt. Nicht Eiskaffee.",
+      "Heute Abend bist du trotzdem wieder rot wie ein Hummer.",
+      "Im Schatten ist's dir dann wieder zu frisch. Wetten?"
     ],
     "cold": [
-      "Du kannst also aufhören, mich alle fünf Minuten anzuglotzen."
+      "Du kannst also aufhören, mich alle fünf Minuten anzuglotzen.",
+      "Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.",
+      "Das Handy bedienst du wieder mit der Nasenspitze. Sehr elegant."
     ],
     "night": [
-      "Der restliche Abend war vor einer Stunde. Ab ins Bett."
+      "Der restliche Abend war vor einer Stunde. Ab ins Bett.",
+      "Also für die zehn Minuten, bis du auf dem Sofa einschläfst.",
+      "Aber um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank."
+    ],
+    "steady": [
+      "Zumindest bis zum ersten Kaffeefleck.",
+      "Ob's dir steht, ist eine andere Frage.",
+      "Mehr kann ich für dich heute nicht tun.",
+      "Auch für die Joggingrunde, die du dann doch nicht drehst."
     ]
   },
   "topical_11": [
@@ -329,7 +353,9 @@
       "„Bei dem Wetter muss man raus.“ Wer sagt das eigentlich?",
       "Ich find nichts zum Meckern. Das ärgert mich.",
       "Gleich sitzen wieder alle vorm Eiscafé und tun, als hätten sie Urlaub.",
-      "Im Biergarten sind die Plätze vermutlich schon alle weg."
+      "Im Biergarten sind die Plätze vermutlich schon alle weg.",
+      "{M:04,05,06}Ein Kilo Spargel kostet jetzt wieder so viel wie früher meine Miete.",
+      "Bei dem Wetter fahren alle ins Grüne und starren dort ihr Handy an."
     ],
     "cool": [
       "Das ist Wetter für Leute, die beim Essen „passt schon“ sagen.",
@@ -364,7 +390,8 @@
       "Und im Winter wieder jammern, dass es zu kalt ist.",
       "Ventilatoren sind im Baumarkt heute vermutlich wieder ausverkauft.",
       "Zum Meckern ist es mir heute zu heiß. Fast.",
-      "In der Bahn riecht's heute nach jedem Einzelnen."
+      "In der Bahn riecht's heute nach jedem Einzelnen.",
+      "{M:07,08}Am Brenner stehen sie jetzt wieder zwölf Stunden. Für eine Woche Gardasee."
     ],
     "wet": [
       "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
@@ -410,7 +437,8 @@
       "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
       "So ein Wetter hätten sich andere mehr verdient.",
       "Bei dem Wetter wärst sogar du gut auszuhalten.",
-      "Geh an die frische Luft, bevor du so grau wirst wie ich."
+      "Geh an die frische Luft, bevor du so grau wirst wie ich.",
+      "„Man müsste mal wieder was unternehmen.“ Sagst du seit drei Sommern."
     ],
     "cool": [
       "Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.",
@@ -419,7 +447,8 @@
       "Nichts los da draußen. Wie bei dir am Wochenende.",
       "Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.",
       "Perfekt zum Fensterputzen. Nur so ein Hinweis.",
-      "Draußen passiert nichts. Kennst du ja von deinen Samstagen."
+      "Draußen passiert nichts. Kennst du ja von deinen Samstagen.",
+      "Die Jacke hast du schon ein paar Jahre, oder? Sieht man."
     ],
     "cold": [
       "Dick eingepackt gefällst du mir am besten. Man sieht weniger.",

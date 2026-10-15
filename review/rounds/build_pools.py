@@ -103,6 +103,7 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    'Dann fällt das Fitnessstudio heute ja wieder aus. "Wegen dem Wetter".': "Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.",
     "Gleichträumst du wieder vom Süden. Dann fahr halt endlich hin.": "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
     "Es bleibt bis zum Abend Heiß. Nimm Wasser mit und bleib im Schatten.": "Es bleibt bis zum Abend heiß. Nimm Wasser mit und bleib im Schatten.",
     "Jetzt ists noch kühl, aber {WHEN} ist es Shorts-Wetter.": "Jetzt ist's noch kühl, aber {WHEN} ist es Shorts-Wetter.",

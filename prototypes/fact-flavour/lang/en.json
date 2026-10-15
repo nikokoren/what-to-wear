@@ -177,11 +177,13 @@
     "off": [
       "Thrilling stuff. I'm on the edge of my frame.",
       "Gripping weather. I can barely stay in my frame.",
-      "Peeling off a layer: the closest today gets to drama."
+      "Peeling off a layer: the closest today gets to drama.",
+      "Or keep {GP} on out of loyalty and quietly cook."
     ],
     "rain": [
       "Rain or not, my humour stays bone dry.",
-      "Bring it back, too. I'm keeping count."
+      "Bring it back, too. I'm keeping count.",
+      "Then be smug at everyone sheltering in doorways. You learned that from me."
     ],
     "theme_ny": [
       "I don't do New Year's resolutions. I was perfect last year too.",
@@ -201,7 +203,8 @@
       "Merry Christmas. Unlike the tree, I'll still be up in February."
     ],
     "snow": [
-      "Everyone will act shocked anyway. I'm used to it."
+      "Everyone will act shocked anyway. I'm used to it.",
+      "Somewhere, a school is already drafting the snow-day email."
     ],
     "on": [
       "{W:coat,jacket,hoodie}Shame. It was just getting comfortable.",
@@ -209,23 +212,31 @@
     ],
     "offon": [
       "Off, on. The layer gets more exercise than you.",
-      "Don't lose {GP} in between. Like last time."
+      "Don't lose {GP} in between. Like last time.",
+      "Off and on again. That fixes most things, me included.",
+      "Two outfit changes in one day. Very pop star of you.",
+      "I'll redraw you both times. No extra charge."
     ],
     "hot": [
       "I'd come along, but I only work in range of your WiFi.",
       "Stay in the shade. It's where all the cool screens hang out."
     ],
     "cold": [
-      "All day. I checked twice, out of pure spite."
+      "All day. I checked twice, out of pure spite.",
+      "Somewhere, someone in shorts didn't read this."
     ],
     "evening": [
-      "Whatever the evening brings, the outfit won't be the problem."
+      "Whatever the evening brings, the outfit won't be the problem.",
+      "{M:11,12,01}And there's plenty of it. It's been dark since about four."
     ],
     "night": [
       "It also works for bed, I'm told."
     ],
     "steady": [
-      "The one forecast I could do in my sleep. If I slept."
+      "The one forecast I could do in my sleep. If I slept.",
+      "Unlike your phone battery.",
+      "Set it and forget it, like your gym membership.",
+      "So you can stop staring into the wardrobe now."
     ]
   },
   "flavour_11": {
@@ -242,14 +253,16 @@
       "Carrying a layer you don't need yet. How very grown-up.",
       "Leave {GP} behind and you'll think of me later. Not fondly.",
       "You'll put {GP} on later and act like it was your idea.",
-      "Bringing a layer you won't need for hours. Look at you, prepared."
+      "Bringing a layer you won't need for hours. Look at you, prepared.",
+      "{W:jacket,hoodie}Or borrow someone's later and keep it for a year."
     ],
     "offon": [
       "I give it even odds you lose that layer by tonight.",
       "Fifty-fifty that layer goes missing by tonight."
     ],
     "evening": [
-      "You'll read all this, then do what you were going to anyway."
+      "You'll read all this, then do what you were going to anyway.",
+      "Your 'five minutes on the sofa' will probably cover the rest of it."
     ],
     "theme_ny": [
       "You'll call this New Year your year. You said that last year."
@@ -265,17 +278,31 @@
     ],
     "rain": [
       "You'll leave it by the door anyway. I know you.",
-      "I said umbrella. You heard 'my hood will do'."
+      "I said umbrella. You heard 'my hood will do'.",
+      "Everyone still remembers the last time you didn't."
     ],
     "snow": [
-      "And you'll still call it 'unexpected'."
+      "And you'll still call it 'unexpected'.",
+      "Finally, a reason to cancel the plans you were dreading.",
+      "{M:01,02,03}You stopped finding it pretty about two snowfalls ago."
     ],
     "cold": [
       "All day. So no, you can't wait it out.",
-      "No use checking again in an hour, I won't change my mind."
+      "No use checking again in an hour, I won't change my mind.",
+      "You'll come home and hug the radiator like it's family.",
+      "{M:01,02}Perfect for browsing flights somewhere warm and booking nothing. Again."
     ],
     "night": [
       "It works for the couch too, which is where this is going."
+    ],
+    "hot": [
+      "And by water I mean water. Not beer, even if it's nice and cold.",
+      "You'll probably end up loitering in the freezer aisle. Again.",
+      "You'll find shade, then complain it's the wrong shade."
+    ],
+    "steady": [
+      "So if today goes badly, you can't blame the weather.",
+      "Now you just need somewhere to go in it."
     ]
   },
   "topical_11": [
@@ -323,6 +350,10 @@
       "Spot the difference: one of these has an umbrella.",
       "The umbrella makes a guest appearance today. I cast it myself.",
       "I drew the umbrella. Bringing it is your department."
+    ],
+    "fickle": [
+      "{3}Three outfits in one day, and you'll still say you've got nothing to wear.",
+      "{3}Three outfits in one day. The laundry basket will hear about this."
     ]
   },
   "flavour_vf_11": {
@@ -356,7 +387,9 @@
       "My only weakness is the cold. Kidding, I don't have one.",
       "Grey was my look long before winter tried it.",
       "My battery hates the cold too. We're bonding.",
-      "I'd lend you some warmth, but I run cool on principle."
+      "I'd lend you some warmth, but I run cool on principle.",
+      "Someone's scraping ice off a car with a credit card. Best use it's had all month.",
+      "{M:02,03}Someone will say spring's just around the corner. It's a long corner."
     ],
     "hot": [
       "I'll sit this one out in your nice shady hallway.",
@@ -366,7 +399,8 @@
       "Flat, pale and cool. I'm built for days like this.",
       "No sweat here. One of the perks of being a screen.",
       "Somebody cranked the outside too high. Wasn't me.",
-      "I'm the one thing in the house not making it any warmer."
+      "I'm the one thing in the house not making it any warmer.",
+      "Today the bus smells of everyone on board. Lucky I don't have a nose."
     ],
     "wet": [
       "I don't get wet. Perks of living indoors.",
@@ -416,7 +450,9 @@
       "Try not to make your good mood everyone's problem.",
       "You'll take one short walk and talk about it all week.",
       "If you stay in, I'll act like I didn't notice.",
-      "One short walk today, and we'll hear about it for weeks."
+      "One short walk today, and we'll hear about it for weeks.",
+      "Perfect day. I had someone more deserving in mind.",
+      "{M:07,08}Everyone else is away somewhere nice. You're reading a weather forecast."
     ],
     "cool": [
       "You'll call today 'fresh' to sound like an outdoors person.",
@@ -438,7 +474,8 @@
       "Your nose will turn a colour I can't even display.",
       "That coat up there? Wear it. I worked hard on it.",
       "You'll walk twice as fast today. Still not cardio.",
-      "'It's not that cold,' you'll say. Your ears won't agree."
+      "'It's not that cold,' you'll say. Your ears won't agree.",
+      "By the time you've got all that on, I'll need recharging."
     ],
     "hot": [
       "{M:05,06,07}Remember wishing for summer? This is what you get.",

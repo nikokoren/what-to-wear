@@ -15651,6 +15651,1165 @@
   "edit": "Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter.",
   "updatedAt": "2026-10-10T09:11:25.553Z"
  },
+ "se-de-01ded478000d": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "Ob's dir steht, ist eine andere Frage.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:43:40.934Z"
+ },
+ "se-de-01f4f942e5f1": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "Glauben wirst du's erst dem Regenradar. Weil's bunt ist.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:42:23.050Z"
+ },
+ "se-de-06338d78f732": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Lebkuchen im September. Eine Frechheit. Ich nehm trotzdem zwei Packungen.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "unclear"
+  ],
+  "note": "i need some help refineing the phrasing",
+  "edit": "Lebkuchen im September. \"Damals hätte es das nicht gegeben!\". Aber du nimmst trotzdem zwei Packungen.",
+  "updatedAt": "2026-10-15T21:30:43.515Z"
+ },
+ "se-de-1553973ede61": {
+  "level": "11",
+  "key": "nice",
+  "path": "now_11.nice[+]",
+  "text": "„Man müsste mal wieder was unternehmen.“ Sagst du seit drei Sommern.",
+  "source": "candidate",
+  "batch": "Now: nice",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:40:03.536Z"
+ },
+ "se-de-15bf26b750d3": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Ein Kilo Spargel kostet jetzt wieder so viel wie früher meine Miete.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:30:51.066Z"
+ },
+ "se-de-1841caadc6de": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "Andere spüren so was im Knie. Ich im Akku.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:34:50.450Z"
+ },
+ "se-de-1cf2f5d14216": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Jetzt fehlt nur noch die passende Laune.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:26:21.979Z"
+ },
+ "se-de-1fbe37812139": {
+  "level": "11",
+  "key": "hot",
+  "path": "now_11.hot[+]",
+  "text": "Heute klebst du am Stuhl fest. Wie immer, nur diesmal wörtlich.",
+  "source": "candidate",
+  "batch": "Now: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:38:35.987Z"
+ },
+ "se-de-20ee477fe8cc": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "Zumindest bis zum ersten Kaffeefleck.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:43:45.285Z"
+ },
+ "se-de-212f32cc4183": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Gefühlt ist ja schon seit halb fünf Abend.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:26:32.295Z"
+ },
+ "se-de-28105ab35202": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Und du kratzt dann wieder nur ein Guckloch frei. Wie im Panzer.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:43:00.568Z"
+ },
+ "se-de-34dbdc7fc525": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Früher lag der Schnee meterhoch, erzählen die Alten. Da waren sie halt kleiner.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:35:21.068Z"
+ },
+ "se-de-3733983b79f2": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Abend, sagen die Jungen dazu. Für mich ist das längst Nacht.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:31:45.566Z"
+ },
+ "se-de-3748a4f57504": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Bei dem Wetter fahren alle ins Grüne und halten dort ihr Handy in die Luft.",
+  "source": "candidate",
+  "batch": "Now: nice",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Bei dem Wetter fahren alle ins Grüne und starren dort ihr Handy an.",
+  "updatedAt": "2026-10-15T21:31:15.552Z"
+ },
+ "se-de-3a4db4abc716": {
+  "level": "10",
+  "key": "cool",
+  "path": "now_10.cool[+]",
+  "text": "Die Schultüten sind wieder größer als die Kinder. Bei mir gab's einen Apfel.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:25:43.295Z"
+ },
+ "se-de-41188dc6d4e3": {
+  "level": "11",
+  "key": "hot",
+  "path": "now_11.hot[+]",
+  "text": "Erst sitzt du vorm Ventilator, dann jammerst du über Zugluft.",
+  "source": "candidate",
+  "batch": "Now: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:38:43.966Z"
+ },
+ "se-de-475437237fc0": {
+  "level": "10",
+  "key": "offon",
+  "path": "flavour_10.offon[+]",
+  "text": "Die Wärme hält's heute wie ein Beamter: kommt spät, geht früh.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:33:56.717Z"
+ },
+ "se-de-498ddaa47dd7": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Im Schatten ist übrigens schon alles besetzt. Mit Handtüchern.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [],
+  "note": "i like the idea, but the phrasing isnt flowing well with the forecast. i tried my luck with rephrasing but am still not 100% happy",
+  "edit": "Wenn nicht schon wieder alles besetzt ist. Mit Handtüchern.",
+  "updatedAt": "2026-10-15T21:27:52.395Z"
+ },
+ "se-de-49b482148a1b": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Und im Schatten ist's dir dann wieder zu frisch. Wetten?",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Im Schatten ist's dir dann wieder zu frisch. Wetten?",
+  "updatedAt": "2026-10-15T21:39:04.202Z"
+ },
+ "se-de-4c6f2cd24530": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "Sonst kaufst du wieder einen am Bahnhof. Der hält bis zur ersten Böe.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:34:56.869Z"
+ },
+ "se-de-4ce8bb7512eb": {
+  "level": "10",
+  "key": "night",
+  "path": "now_10.night[+]",
+  "text": "Ich bin vermutlich der Einzige hier, der nachts keinen Strom verschwendet.",
+  "source": "candidate",
+  "batch": "Now: night",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:31:52.666Z"
+ },
+ "se-de-50b828db05c0": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "Der Laubbläser vom Nachbarn hält auch den ganzen Tag durch.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:03.883Z"
+ },
+ "se-de-51180f41294c": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Und schon sind wieder alle gut gelaunt. Unerträglich.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "why are they all gut gelaunt? the weather is cool.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:33:24.450Z"
+ },
+ "se-de-511be8e8f308": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "Mehr kann ich für dich heute nicht tun.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:43:49.034Z"
+ },
+ "se-de-51f8c2870440": {
+  "level": "11",
+  "key": "nice",
+  "path": "now_11.nice[+]",
+  "text": "Heute gehst du sicher wieder in Wanderschuhen zum Bäcker.",
+  "source": "candidate",
+  "batch": "Now: nice",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:40:08.669Z"
+ },
+ "se-de-527bff119e7f": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Nicht, dass du heute noch auf irgendwen hören würdest.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:38:11.486Z"
+ },
+ "se-de-54416258c7a0": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "Vorausgesetzt, die geht nach Weihnachten noch zu.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Vorausgesetzt, deine geht nach den Feiertagen noch zu.",
+  "updatedAt": "2026-10-15T21:41:51.569Z"
+ },
+ "se-de-5730c7270a13": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Und heute Abend bist du wieder rot wie ein Hummer. Aber nur auf einer Seite.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy",
+  "edit": "Heute Abend bist du trotzdem wieder rot wie ein Hummer.",
+  "updatedAt": "2026-10-15T21:39:46.286Z"
+ },
+ "se-de-58ca9206e4a9": {
+  "level": "11",
+  "key": "cold",
+  "path": "now_11.cold[+]",
+  "text": "Vom Plätzchenteig kommt wieder die Hälfte nie im Ofen an. Ich schau dich an.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:49.250Z"
+ },
+ "se-de-5ad53bc0b53e": {
+  "level": "10",
+  "key": "night",
+  "path": "now_10.night[+]",
+  "text": "Schönheitsschlaf brauch ich keinen mehr. Da ist nichts mehr zu retten.",
+  "source": "candidate",
+  "batch": "Now: night",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "unclear"
+  ],
+  "note": "does not fit with other texts where the screen is beautiful. rephrased it to go against the user, but then it might be a level 11",
+  "edit": "Schönheitsschlaf brauch du keinen mehr. Da ist nichts mehr zu retten.",
+  "updatedAt": "2026-10-15T21:32:45.833Z"
+ },
+ "se-de-5bd1562ec90e": {
+  "level": "10",
+  "key": "cool",
+  "path": "now_10.cool[+]",
+  "text": "Vor den Eisheiligen pflanzt keiner was. Die einzige Regel, an die sich alle halten.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:25:53.945Z"
+ },
+ "se-de-6026ff873e9b": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Also für die zehn Minuten, bis du auf dem Sofa einschläfst.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:40:19.734Z"
+ },
+ "se-de-62ff04337469": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "Dir macht die Hitze nichts aus, sagst du. Unter den Armen sieht's anders aus.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:39:58.053Z"
+ },
+ "se-de-66f954200083": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Was den Abend selbst angeht: alle Angaben ohne Gewähr.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:26:38.446Z"
+ },
+ "se-de-6733c4a7aad2": {
+  "level": "11",
+  "key": "cool",
+  "path": "now_11.cool[+]",
+  "text": "Die Jacke hast du schon ein paar Jahre, oder? Sieht man.",
+  "source": "candidate",
+  "batch": "Now: cool",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:37:59.067Z"
+ },
+ "se-de-6dbb82ad7913": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Fürs Bett reicht übrigens auch der Schlafanzug.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:32:55.433Z"
+ },
+ "se-de-7693b1133ad1": {
+  "level": "11",
+  "key": "off",
+  "path": "flavour_11.off[+]",
+  "text": "Dann sieht endlich jeder, was du drunter anhast. Das von gestern.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Dann sieht jeder, was du drunter anhast. Das gleiche wie gestern.",
+  "updatedAt": "2026-10-15T21:40:51.770Z"
+ },
+ "se-de-7cca258976b4": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "Früher hat man dafür aus dem Fenster geschaut.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:12.349Z"
+ },
+ "se-de-82543251fa02": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "only show for a few weeks after christmas.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:23:17.661Z"
+ },
+ "se-de-85753948e473": {
+  "level": "10",
+  "key": "hot",
+  "path": "now_10.hot[+]",
+  "text": "Am Brenner stehen sie jetzt wieder zwölf Stunden. Für eine Woche Gardasee.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:28:16.412Z"
+ },
+ "se-de-86da3bf6e8b9": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Und in der Bahn fällt wieder die Klimaanlage aus. Darauf ist Verlass.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [],
+  "note": "now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy",
+  "edit": "An solchen Tagen fällt dann in der Bahn fällt wieder die Klimaanlage aus. \"Zu Heiß\".",
+  "updatedAt": "2026-10-15T21:29:30.028Z"
+ },
+ "se-de-8a75144510c8": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Drinnen bleibst du ja sowieso. Wie im Sommer.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:55.386Z"
+ },
+ "se-de-97241a2d6eee": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Dann ist draußen alles schwarzweiß wie ich. Komisch, da beschwert sich keiner.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:35:28.616Z"
+ },
+ "se-de-97f539c153a9": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Verderben kann den Abend jetzt nur noch einer. Du.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:38:16.883Z"
+ },
+ "se-de-9ee4a30821d6": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Immerhin bleibt das Bier auf dem Balkon kalt.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Da bleibt immerhin das Bier auf dem Balkon schön kühl.",
+  "updatedAt": "2026-10-15T21:24:09.496Z"
+ },
+ "se-de-a0957e4ee85d": {
+  "level": "10",
+  "key": "wet",
+  "path": "now_10.wet[+]",
+  "text": "Nasses Laub ist glatter als Glatteis. Gestreut wird trotzdem nicht.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:30.000Z"
+ },
+ "se-de-a24b948231ca": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Das war übrigens das einzige Lob für heute.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:38:23.683Z"
+ },
+ "se-de-a2f525627cfc": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "Dann kann ja nur noch alles andere schiefgehen.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:18.833Z"
+ },
+ "se-de-a3a025312b18": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "Auch für die Joggingrunde, die du dann doch nicht drehst.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:43:58.801Z"
+ },
+ "se-de-a4447881ed72": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Dann fällt das Fitnessstudio heute ja wieder aus. Aus Wettergründen.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Dann fällt das Fitnessstudio heute ja wieder aus. \"Wegen dem Wetter\".",
+  "updatedAt": "2026-10-15T21:37:26.335Z"
+ },
+ "se-de-a4d1d192a969": {
+  "level": "10",
+  "key": "evening",
+  "path": "now_10.evening[+]",
+  "text": "Irgendwo schunkeln jetzt wieder Erwachsene mit Pappnase. Freiwillig.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:26:48.412Z"
+ },
+ "se-de-a5ec4f6ef12a": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Und deine Sommerreifen sind natürlich schon drauf.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "Und deine Sommerreifen sind natürlich noch drauf.",
+  "updatedAt": "2026-10-15T21:43:18.035Z"
+ },
+ "se-de-aa4ce72e46f0": {
+  "level": "11",
+  "key": "off",
+  "path": "flavour_11.off[+]",
+  "text": "Trag's dir in den Kalender ein. Viel anderes steht ja nicht drin.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:41:05.767Z"
+ },
+ "se-de-acc60a64deff": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "Da hätt ich heute auch frei nehmen können.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:36:24.850Z"
+ },
+ "se-de-ae0fddd7c388": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "Ohne {G} siehst du auch nicht besser aus.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:41:59.534Z"
+ },
+ "se-de-ae2e0876c6b7": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Im Freibad ist die Schlange an der Pommesbude wieder länger als das Becken.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:29:51.264Z"
+ },
+ "se-de-b0f9f3cf8c11": {
+  "level": "11",
+  "key": "offon",
+  "path": "flavour_11.offon[+]",
+  "text": "Soll ich's dir auf einen Zettel schreiben?",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:41:16.084Z"
+ },
+ "se-de-b76526c4d568": {
+  "level": "10",
+  "key": "cool",
+  "path": "now_10.cool[+]",
+  "text": "Andere Bilderrahmen zeigen die Enkel am Strand. Ich zeig eine Jacke.",
+  "source": "candidate",
+  "batch": "Now: cool",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "the trmnl could also be showing images of grandkids via other reciped.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:26:17.045Z"
+ },
+ "se-de-c4a725a2e9d8": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "Auf mich hörst du doch erst, wenn die Socken nass sind.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [],
+  "note": "now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy",
+  "edit": "Auf mich hörst du doch erst, wenn die Socken schon nass sind.",
+  "updatedAt": "2026-10-15T21:42:40.700Z"
+ },
+ "se-de-cc3ffd5ad3eb": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:33:32.783Z"
+ },
+ "se-de-cccfda5aba94": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "Und bedanken tust du dich nachher wieder bei deinem Handy.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:42:08.117Z"
+ },
+ "se-de-d210b9aa3d35": {
+  "level": "10",
+  "key": "offon",
+  "path": "flavour_10.offon[+]",
+  "text": "Kaum ist's mal schön, ist's auch schon wieder vorbei. Wie alles.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "robotic"
+  ],
+  "note": "does not flow with the forecast line.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:34:17.616Z"
+ },
+ "se-de-d6076b7ecb55": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Kaum steht der Zwetschgenkuchen draußen, sind die Wespen da. Vor den Gästen.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "i like the idea. but it's not flowing right yet.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:31:34.249Z"
+ },
+ "se-de-dca273d72b1c": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Dann sitzen die Ersten wieder draußen im Café, als wär's Juli. Mit Decke.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:33:48.383Z"
+ },
+ "se-de-e04c834dc028": {
+  "level": "11",
+  "key": "offon",
+  "path": "flavour_11.offon[+]",
+  "text": "Zwischendurch fühlst du dich wie im Urlaub. Am Abend bist du dann wieder du.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:41:23.736Z"
+ },
+ "se-de-e35fb092bc3e": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Morgen erzählst du dann allen, wie du dich durchgekämpft hast. Bis zum Bäcker.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Morgen erzählst du dann allen, wie du dich durchgekämpft hast. Bis zum Sofa.",
+  "updatedAt": "2026-10-15T21:43:32.186Z"
+ },
+ "se-de-e3e9b9f74bab": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Pünktlich wie sonst nichts in diesem Land.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:34:33.183Z"
+ },
+ "se-de-e5af67d194f8": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Aber um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank.",
+  "updatedAt": "2026-10-15T21:40:33.536Z"
+ },
+ "se-de-f041d3157963": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Und am Handy tippst du wieder mit der Nasenspitze. Sehr elegant.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Das Handy bedienst du wieder mit der Nasenspitze. Sehr elegant.",
+  "updatedAt": "2026-10-15T21:37:51.469Z"
+ },
+ "se-de-f18c7fb541cc": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "Einen hättest du ja. Im Büro.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:42:50.184Z"
+ },
+ "se-de-f494e320be78": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Die Bahn tut dann wieder, als hätt's seit hundert Jahren nicht geschneit.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "robotic"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:35:41.619Z"
+ },
+ "se-de-f67be35d480e": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Der Nachbar schaufelt dann wieder um sechs Uhr früh. Damit's auch alle hören.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:35:54.750Z"
+ },
+ "se-de-f8c75ae3a9a2": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Also Tür zu. Die Straße heizen wir nicht mit.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "unclear"
+  ],
+  "note": "i like the idea. not sure if \"tür zu\" works. that would imply that you are pening the door right now? the trmnl might be sitting on your desk next to you.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:25:20.028Z"
+ },
+ "se-de-fb8102bce1f4": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Die hängt dann wieder im Flur. Die hat's wenigstens warm.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:34:42.916Z"
+ },
+ "se-de-feb8a158a3c3": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Den Tag hast du also überstanden. Wie, will ich gar nicht wissen.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:38:29.417Z"
+ },
+ "se-de-ff8b22783571": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "Im April unterschreib ich so was übrigens nicht.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:35:10.583Z"
+ },
  "vf-de-033025ea273c": {
   "level": "10",
   "key": "warming",

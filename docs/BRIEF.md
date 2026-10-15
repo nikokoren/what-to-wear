@@ -239,6 +239,39 @@ new".
   on a schedule", "weather doesn't dress", "a neutral palette"? Plain
   images over clever ones.
 
+### What rounds 12 and 13 added (follow-ups, seasons, riffs)
+
+Round 12: 104 follow-ups and answers. Round 13: 157 lines from two
+writers riffing on a scout's notes about the other language. English 0
+stars, 31 keeps, 50 out; German 5 stars, 22 keeps, 49 out.
+
+- **The follow-ups that land are short and answer the forecast line.**
+  All five German stars of round 13 sit under "what you're wearing works
+  all day" or "the layer comes off": „Da hätt ich heute auch frei nehmen
+  können.“, „Dann kann ja nur noch alles andere schiefgehen.“, „Ob's dir
+  steht, ist eine andere Frage.“, „Zumindest bis zum ersten
+  Kaffeefleck.“, „Wohin damit, ist dann dein Problem. Ich sag nur das
+  Wetter an.“ The owner's edits cut lines to their sharpest half and
+  make them about "you" ("I'll know" → "I know you").
+- **Scenes from elsewhere don't follow.** A follow-up that opens a new
+  scene ("Somewhere a neighbour just picked up a drill", the pool's chip
+  stand, the commute) reads as disconnected, however good the scene.
+  English "somewhere, someone…" observations went out almost to a line.
+- **Riffs travel badly.** Most ideas carried over from the other language
+  were vetoed; the seasonal ones held up best (asparagus prices, the
+  Brenner jam, Christmas trees on the pavement, "dark since four",
+  browsing flights in January).
+- **Don't time a line on something the screen can't know.** "You'll
+  enjoy it right up to the first sneeze" is wrong once the sneeze has
+  happened, and the screen can't tell. Cut that kind of line.
+- **Don't assume where the reader is or what they're doing.** „Also Tür
+  zu“ implies the door is open right now; the screen may sit on a desk.
+  Nor that the TRMNL shows only this recipe: other frames showing the
+  grandchildren could be this one.
+- **The garment changes** (jacket, sweater, winter coat, hat and scarf):
+  follow-ups to a layer coming off or going on say `{GP}`/`{G}` or list
+  the garments they fit.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

@@ -14980,6 +14980,1246 @@
   "edit": "",
   "updatedAt": "2026-10-10T14:04:10.377Z"
  },
+ "se-en-00cf6e0307d2": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Straight onto the back of a chair. You'll find {GP} next week.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:36.801Z"
+ },
+ "se-en-01dfc1b7a256": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "You'll end up loitering in the freezer aisle. Again.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "You'll probably end up loitering in the freezer aisle. Again.",
+  "updatedAt": "2026-10-15T21:54:13.320Z"
+ },
+ "se-en-04aa5e6d58f9": {
+  "level": "11",
+  "key": "offon",
+  "path": "flavour_11.offon[+]",
+  "text": "By midday you'll doubt me. By tonight you'll apologise.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:56:47.868Z"
+ },
+ "se-en-0841db5507d9": {
+  "level": "11",
+  "key": "nice",
+  "path": "now_11.nice[+]",
+  "text": "You'll enjoy it right up to the first sneeze.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "unclear"
+  ],
+  "note": "too hard t time that right. after the first sneeze the line does not work any more and we have no way of telling that that already happenend. i'd cut all of these types of sentences.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:55:54.118Z"
+ },
+ "se-en-0dd0b5799d65": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "So if today goes badly, you can't blame the weather.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:23.419Z"
+ },
+ "se-en-14273f86c00b": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "Or borrow someone's later and keep it for a year.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:17.955Z"
+ },
+ "se-en-1682a09d9088": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "So you can stop staring into the wardrobe now.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:36.968Z"
+ },
+ "se-en-1778e9d813f8": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "You'll call it a blizzard. It'll be a dusting.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:46.235Z"
+ },
+ "se-en-1857096190e8": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Cue the bread-and-milk panic. Nobody's ever explained the milk.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:02.402Z"
+ },
+ "se-en-1a4001805928": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "Set it and forget it, like your gym membership.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:41.952Z"
+ },
+ "se-en-1ce6a624ab1b": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "I'd say it in a warmer colour, but I only have grey.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:44:18.501Z"
+ },
+ "se-en-2502e95988d4": {
+  "level": "10",
+  "key": "snow",
+  "path": "now_10.snow[+]",
+  "text": "A bit of snow and everything closes. I'm now the most reliable service in town.",
+  "source": "candidate",
+  "batch": "Now: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:08.285Z"
+ },
+ "se-en-2924d80bc24f": {
+  "level": "10",
+  "key": "cold",
+  "path": "now_10.cold[+]",
+  "text": "Someone will say spring's just around the corner. It's a long corner.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:44:24.984Z"
+ },
+ "se-en-305cd899a1b6": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "You'll drink half the water, then lug the warm half around all day.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:54:19.251Z"
+ },
+ "se-en-31a042b7a7de": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "That's your outfit sorted. The rest of your life, less so.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:29.702Z"
+ },
+ "se-en-31a7730125bb": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "You'll text someone later to bring {GP}. Again.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:23.968Z"
+ },
+ "se-en-33e4ced9401e": {
+  "level": "10",
+  "key": "wet",
+  "path": "now_10.wet[+]",
+  "text": "Somewhere a barbecue is going ahead under an umbrella. Out of spite.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "not funny"
+  ],
+  "note": "i like the idea, but this is not hitting right.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:52:19.552Z"
+ },
+ "se-en-37d060d80efa": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "I stay cool to the touch. A seatbelt buckle can't say that.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:47:13.351Z"
+ },
+ "se-en-3c918d68330c": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Everyone will be nine for an hour, then ninety on the ice.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:19.838Z"
+ },
+ "se-en-3cfe6f91e3a1": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "By water I mean water. Not beer, however cold.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "And by water I mean water. Not beer, even if it's nice and cold.",
+  "updatedAt": "2026-10-15T21:54:48.453Z"
+ },
+ "se-en-3e6e9f80ab78": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "Somewhere a neighbour just picked up a drill. For the rest of the evening.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:46:14.985Z"
+ },
+ "se-en-41ea672d4538": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "Perfect for browsing flights somewhere warm and booking nothing. Again.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:52:36.768Z"
+ },
+ "se-en-4310e6ae5ab9": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "Unlike your phone battery.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:47.885Z"
+ },
+ "se-en-45f79b76aaf8": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "Then be smug at everyone sheltering in doorways. You learned that from me.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:50:03.535Z"
+ },
+ "se-en-4b4c0567a2d7": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "Finally, a reason to cancel the plans you were dreading.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:55.669Z"
+ },
+ "se-en-4e0406db781a": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Sounds silly right now. That's exactly how it gets you.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:49:39.085Z"
+ },
+ "se-en-500a6e713332": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "Everyone still remembers the last time you didn't.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:31.568Z"
+ },
+ "se-en-54a1b5d45f07": {
+  "level": "11",
+  "key": "hot",
+  "path": "flavour_11.hot[+]",
+  "text": "You'll find shade, then complain it's the wrong shade.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:55:01.503Z"
+ },
+ "se-en-5dec85e894b9": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Or keep {GP} on out of loyalty and quietly cook.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:43.687Z"
+ },
+ "se-en-5e4de7a4ce76": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "Best decision you'll make all day, and I made it.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:35.269Z"
+ },
+ "se-en-5e81c91ce909": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "The first afternoon without {GP} in months. Try not to make a speech.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:55.101Z"
+ },
+ "se-en-603b859583a0": {
+  "level": "10",
+  "key": "offon",
+  "path": "flavour_10.offon[+]",
+  "text": "Off and on again. It fixes most things, me included.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Off and on again. That fixes most things, me included.",
+  "updatedAt": "2026-10-15T21:49:11.738Z"
+ },
+ "se-en-6070e1ba70f1": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "And there's plenty of it. It's been dark since about four.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:46:32.851Z"
+ },
+ "se-en-69e3a1a90d69": {
+  "level": "11",
+  "key": "offon",
+  "path": "flavour_11.offon[+]",
+  "text": "You'll put {GP} back on later with the face of someone who was warned.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:56:55.103Z"
+ },
+ "se-en-6e6944772399": {
+  "level": "10",
+  "key": "cool",
+  "path": "now_10.cool[+]",
+  "text": "The yearly heating war has begun. I'm Switzerland, but flatter.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:45:02.802Z"
+ },
+ "se-en-6eba7b8f4231": {
+  "level": "11",
+  "key": "nice",
+  "path": "now_11.nice[+]",
+  "text": "Perfect day. I had someone more deserving in mind.",
+  "source": "candidate",
+  "batch": "Now: nice",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:55:59.819Z"
+ },
+ "se-en-721f282c5f1a": {
+  "level": "11",
+  "key": "cool",
+  "path": "now_11.cool[+]",
+  "text": "Great leaf-raking weather. The leaves aren't worried.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:53:19.452Z"
+ },
+ "se-en-742778b308b5": {
+  "level": "10",
+  "key": "evening",
+  "path": "flavour_10.evening[+]",
+  "text": "The trains are another story.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:46:42.202Z"
+ },
+ "se-en-7ad2f3b404c4": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_10.snow[+]",
+  "text": "Somewhere, a school is already drafting the snow-day email.",
+  "source": "candidate",
+  "batch": "Follow-up: snow",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:27.452Z"
+ },
+ "se-en-7cdd61294040": {
+  "level": "10",
+  "key": "wet",
+  "path": "now_10.wet[+]",
+  "text": "Wet leaves on every pavement. Someone's about to do an involuntary dance.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:52:26.468Z"
+ },
+ "se-en-80e7533ffd72": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "My most-read sentence all week. Also my most ignored.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:50:22.785Z"
+ },
+ "se-en-836ecfd47b35": {
+  "level": "10",
+  "key": "cold",
+  "path": "now_10.cold[+]",
+  "text": "Someone's scraping ice off a car with a credit card. Best use it's had all month.",
+  "source": "candidate",
+  "batch": "Now: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:44:32.068Z"
+ },
+ "se-en-8551b8f01d97": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Somewhere, someone in shorts didn't read this.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:44:41.851Z"
+ },
+ "se-en-8557adf7100b": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Somewhere, the year's first barbecue is being lit. Badly.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:11.618Z"
+ },
+ "se-en-898c7b8c0be0": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "So 'I'll go out once it warms up' means you're staying in.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:52:45.018Z"
+ },
+ "se-en-8ebad52253c2": {
+  "level": "11",
+  "key": "snow",
+  "path": "now_11.snow[+]",
+  "text": "Somewhere a snowman has more personality than you. It's mostly carrot.",
+  "source": "candidate",
+  "batch": "Now: snow",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:03.835Z"
+ },
+ "se-en-8efaecbddeef": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "That umbrella will do more for your hair than any conditioner.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:36.403Z"
+ },
+ "se-en-8f9d5b70139c": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "First outing for {G} since spring. Brace yourself for the pockets.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:49:47.120Z"
+ },
+ "se-en-92cfdb29c3d3": {
+  "level": "11",
+  "key": "cold",
+  "path": "now_11.cold[+]",
+  "text": "By the time you've got all that on, I'll need recharging.",
+  "source": "candidate",
+  "batch": "Now: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:52:50.718Z"
+ },
+ "se-en-94930a50790f": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "Summer, as advertised.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic"
+  ],
+  "note": "not flowing well with the forecast.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:50:41.235Z"
+ },
+ "se-en-971ad7b356e7": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Somewhere a neighbour's washing machine is just starting its spin.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:18.452Z"
+ },
+ "se-en-9be660358821": {
+  "level": "11",
+  "key": "steady",
+  "path": "flavour_11.steady[+]",
+  "text": "Now you just need somewhere to go in it.",
+  "source": "candidate",
+  "batch": "Follow-up: steady",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:42.002Z"
+ },
+ "se-en-9d62cf95e7b1": {
+  "level": "10",
+  "key": "steady",
+  "path": "flavour_10.steady[+]",
+  "text": "In spring, that practically makes me a miracle worker.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:51:56.168Z"
+ },
+ "se-en-a18cf81d097c": {
+  "level": "10",
+  "key": "offon",
+  "path": "flavour_10.offon[+]",
+  "text": "Two outfit changes in one day. Very pop star of you.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:49:18.601Z"
+ },
+ "se-en-a594cb61f20c": {
+  "level": "11",
+  "key": "offon",
+  "path": "flavour_11.offon[+]",
+  "text": "Off, then back on by tonight. You do love an on-again, off-again thing.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:08.235Z"
+ },
+ "se-en-a772e7406246": {
+  "level": "10",
+  "key": "hot",
+  "path": "now_10.hot[+]",
+  "text": "Today the bus smells of everyone on board. Lucky I don't have a nose.",
+  "source": "candidate",
+  "batch": "Now: hot",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:47:18.702Z"
+ },
+ "se-en-a8d646835c25": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "You'll see the fridge light a few more times before bed, I'm guessing.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:24.902Z"
+ },
+ "se-en-aeecbfe901d1": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_11.snow[+]",
+  "text": "You stopped finding it pretty about two snowfalls ago.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:11.385Z"
+ },
+ "se-en-b1590e230201": {
+  "level": "11",
+  "key": "wet",
+  "path": "now_11.wet[+]",
+  "text": "Look at that sky. It's doing your Monday face.",
+  "source": "candidate",
+  "batch": "Now: wet",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:58:46.654Z"
+ },
+ "se-en-b4aa62fe7687": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Later you'll be the only one with {GP}. You'll mention it. Often.",
+  "source": "candidate",
+  "batch": "Follow-up: on",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:49:52.451Z"
+ },
+ "se-en-c03a8d6cc521": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Every patch of shade out there will soon have someone guarding it.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "robotic",
+   "unclear"
+  ],
+  "note": "not flowing well with the forecast.",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:47:50.101Z"
+ },
+ "se-en-c110fd22b021": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "You'll still lose a fight with it at the first gust.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:57:42.335Z"
+ },
+ "se-en-c114da53ee1f": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Your group chat will spend the rest of it picking a restaurant.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:53:33.351Z"
+ },
+ "se-en-c3a78d0920ab": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Now, dinner. You haven't thought about dinner, have you.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:53:45.618Z"
+ },
+ "se-en-c3eda54f17b6": {
+  "level": "10",
+  "key": "cool",
+  "path": "now_10.cool[+]",
+  "text": "Socks-and-sandals weather. Someone out there has waited all year for this.",
+  "source": "candidate",
+  "batch": "Now: cool",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "wrong fact",
+   "unclear"
+  ],
+  "note": "how is cool socks and sandals weather?",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:45:48.301Z"
+ },
+ "se-en-c5971185841e": {
+  "level": "11",
+  "key": "cold",
+  "path": "flavour_11.cold[+]",
+  "text": "You'll come home and hug the radiator like it's family.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:52:57.601Z"
+ },
+ "se-en-c6249e2095d9": {
+  "level": "11",
+  "key": "off",
+  "path": "flavour_11.off[+]",
+  "text": "The second you take {GP} off, you'll act like you're at the beach.",
+  "source": "candidate",
+  "batch": "Follow-up: off",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:56:40.369Z"
+ },
+ "se-en-c7da1512a2dd": {
+  "level": "10",
+  "key": "rain",
+  "path": "flavour_10.rain[+]",
+  "text": "That was in bold. For me, that's shouting.",
+  "source": "candidate",
+  "batch": "Follow-up: rain",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:50:51.318Z"
+ },
+ "se-en-c83a5267fb80": {
+  "level": "11",
+  "key": "evening",
+  "path": "flavour_11.evening[+]",
+  "text": "Your 'five minutes on the sofa' will probably cover the rest of it.",
+  "source": "candidate",
+  "batch": "Follow-up: evening",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:53:55.485Z"
+ },
+ "se-en-ceccbe1dee41": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_10.cold[+]",
+  "text": "Someone will say 'at least it's a dry cold'. All day.",
+  "source": "candidate",
+  "batch": "Follow-up: cold",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:44:47.701Z"
+ },
+ "se-en-d4c01ea908ba": {
+  "level": "10",
+  "key": "evening",
+  "path": "now_10.evening[+]",
+  "text": "Light till late again, so someone will be mowing at nine.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:46:53.785Z"
+ },
+ "se-en-d80a8a6fe011": {
+  "level": "10",
+  "key": "offon",
+  "path": "flavour_10.offon[+]",
+  "text": "I'll redraw you both times. No extra charge.",
+  "source": "candidate",
+  "batch": "Follow-up: offon",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:49:30.668Z"
+ },
+ "se-en-d9e3316104ed": {
+  "level": "10",
+  "key": "hot",
+  "path": "now_10.hot[+]",
+  "text": "Someone will say 'it's not the heat, it's the humidity'. It's both.",
+  "source": "candidate",
+  "batch": "Now: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:47:57.284Z"
+ },
+ "se-en-daba75fa7800": {
+  "level": "10",
+  "key": "cool",
+  "path": "now_10.cool[+]",
+  "text": "Somebody will post a photo of one orange leaf and call it autumn.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:46:01.168Z"
+ },
+ "se-en-db07586ed83a": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "You'll spend the rest of it saying you're going to bed.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:56:28.802Z"
+ },
+ "se-en-e2ec30c8122b": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Plenty left for 'one more episode'. And the three after that.",
+  "source": "candidate",
+  "batch": "Follow-up: night",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:56:34.636Z"
+ },
+ "se-en-eb05cc2e1f3e": {
+  "level": "10",
+  "key": "hot",
+  "path": "flavour_10.hot[+]",
+  "text": "Iced coffee isn't water. I checked the spelling.",
+  "source": "candidate",
+  "batch": "Follow-up: hot",
+  "round": "2026-10-seasons",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:48:03.668Z"
+ },
+ "se-en-ed463cd03ec3": {
+  "level": "11",
+  "key": "nice",
+  "path": "now_11.nice[+]",
+  "text": "Everyone else is away somewhere nice. You're reading a weather screen.",
+  "source": "candidate",
+  "batch": "Seasonal",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Everyone else is away somewhere nice. You're reading a weather forecast.",
+  "updatedAt": "2026-10-15T21:56:21.803Z"
+ },
+ "se-en-edf1d6c5f3bc": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Three outfits in one day, and you'll still say you've got nothing to wear.",
+  "source": "candidate",
+  "batch": "Drawings",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:47:01.268Z"
+ },
+ "se-en-f0d98bce88d1": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Three outfits in one day. The laundry basket will hear about this.",
+  "source": "candidate",
+  "batch": "Drawings",
+  "round": "2026-10-seasons",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:47:05.935Z"
+ },
+ "se-en-f6a8fa54dc39": {
+  "level": "11",
+  "key": "cold",
+  "path": "now_11.cold[+]",
+  "text": "Bundled up like that, you've never looked better. Funny, that.",
+  "source": "candidate",
+  "batch": "Now: cold",
+  "round": "2026-10-seasons",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-15T21:53:09.052Z"
+ },
  "vf-en-03b38791b8dc": {
   "level": "11",
   "key": "wet",
