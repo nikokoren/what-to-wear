@@ -33,26 +33,6 @@ after the fact + flavour block and the picture.
 {%- endcomment %}
 {%- comment %} The drawings are the What to Wear Next? switch (next_on, set in the fact + flavour block). {%- endcomment %}
 {%- assign visual_forecast = next_on -%}
-{%- comment %}
-A sarcastic line with no forecast line above it: a line that answers the
-fact ("that layer") points at nothing. Those screens (two or three
-drawings without the words, and the outfit alone) draw from the mood's
-What to Wear Next pool (flavour_vf_10 / _11: lines that work alone, and
-lines written for the drawings), rotated like the words (text_rot).
-Theme days and topical lines keep theirs; no pool, the usual line.
-{%- endcomment %}
-{%- assign alone_line = '' -%}
-{%- if is_error == false and texts_ok and sarcasm_level != '0' and fl_theme != true and flavour_topical != true -%}
-  {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
-  {%- assign vf_pool = texts[vf_key][mood] -%}
-  {%- if vf_pool -%}
-    {%- assign vf_n = vf_pool | size -%}
-    {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
-    {%- assign alone_line = vf_pool[vf_i] -%}
-  {%- endif -%}
-{%- endif -%}
-{%- assign alone_flavour = flavour_line -%}
-{%- if alone_line != '' -%}{%- assign alone_flavour = alone_line -%}{%- endif -%}
 {%- assign panel_n = 1 -%}
 {%- assign panel_slugs = '' -%}
 {%- assign panel_labels = '' -%}
@@ -281,13 +261,23 @@ Theme days and topical lines keep theirs; no pool, the usual line.
         {%- assign panel_fact = sl[si] -%}
       {%- endif -%}
     {%- endif -%}
-    {%- if sarcasm_level != '0' -%}
-      {%- assign panel_flavour = flavour_line -%}
-      {%- comment %} Two or three drawings and no forecast line: a line that stands alone (below). {%- endcomment %}
-      {%- if panel_n > 1 and forecast_on == false and alone_line != '' -%}
-        {%- assign panel_flavour = alone_line -%}
+    {%- comment %}
+    Two or three drawings and no forecast line: the change is on screen as
+    drawings, so the mood's lines written for them (flavour_vf_10 / _11,
+    review round 10) join the now lines. Theme days and topical lines keep
+    theirs. Every view shows flavour_line.
+    {%- endcomment %}
+    {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
+      {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
+      {%- assign vf_pool = texts[vf_key][mood] -%}
+      {%- if vf_pool -%}
+        {%- if fl_now_pool -%}{%- assign vf_pool = vf_pool | concat: fl_now_pool -%}{%- endif -%}
+        {%- assign vf_n = vf_pool | size -%}
+        {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
+        {%- assign flavour_line = vf_pool[vf_i] -%}
       {%- endif -%}
     {%- endif -%}
+    {%- assign panel_flavour = flavour_line -%}
   {%- endif -%}
 {%- endif -%}
 {%- assign panel_slug_list = panel_slugs | split: '|' -%}

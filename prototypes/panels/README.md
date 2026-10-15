@@ -27,15 +27,32 @@ first beta.
 
 | Forecast | What to Wear Next? | Sarcasm Off | Sarcasm On / 11 |
 |---|---|---|---|
-| off | off | the outfit now | plus a line that stands alone |
-| on | off | outfit, forecast line | plus the sarcastic line |
-| off | on | the day's outfits; "works all day" when steady | plus a line that stands alone (the usual line under "works all day") |
-| on | on | the day's outfits and the forecast line | plus the sarcastic line |
+| off | off | the outfit now | plus a now line |
+| on | off | outfit, forecast line | plus a now line, or the day's on a day that changes |
+| off | on | the day's outfits; "works all day" when steady | plus a now line, or one written for the drawings |
+| on | on | the day's outfits and the forecast line | plus a now line, or the day's |
 
-"A line that stands alone" is the mood's What to Wear Next pool
-(`flavour_vf_10` / `_11`), since there's no forecast line for a line to
-answer; a mood without one falls back to the usual line (docs/TODO.md
-item 13).
+**Which sarcastic line** (October 2026, after the owner saw a cool-day
+joke, "You'll call it 'crisp'…", under a T-shirt on a day that warms
+up): by what's on screen, not by the shape of the day.
+
+- **Now lines** (`now_10` / `now_11`) go by what the Now drawing shows:
+  snow or rain while it falls, night (22:00), evening (18:00), hot,
+  cold, nice, cool. They stand alone and agree with the drawing, so
+  every screen can show them, the outfit alone included.
+- **The day's lines** (`flavour_10` / `_11`, by the day's mood:
+  warming, cooling, fickle, rain later…) may be about a change, so they
+  join only when the change is on screen: the forecast line on a day
+  that changes.
+- **Lines for the drawings** (`flavour_vf_10` / `_11`) join only with two
+  or three drawings and no forecast line.
+- Whichever join, they're mixed with the now lines and rotate by the
+  hour. Warming and cooling days no longer borrow the cool lines.
+
+Until the rework round sorts every line, the now pools are each mood's
+lines minus the ones round 10 voted "needs the fact"
+(`build_pools.py`, `build_now`). `test_switch.py` pins which pool shows
+where, and the owner's screen.
 
 Saved values don't move: Forecast keeps its key, and "Yes", "No", old
 spellings, true/false and no value at all all read right (the shared

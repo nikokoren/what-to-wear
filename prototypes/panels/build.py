@@ -116,21 +116,16 @@ def build_view(view, v):
     words_n = v.get("words_n", v["words"])
     a = []
     a.append("""{%- comment %}
-The words. Forecast on: the forecast line and the sarcastic line, with or
-without the drawings. Only the drawings: "works all day" on one, and a
-line that stands alone. Neither: the outfit, and at On and 11 a line that
-stands alone.
+The words. Forecast on: the forecast line, with or without the drawings.
+Only the drawings: "works all day" on one. The sarcastic line is the same
+for every screen (flavour_line): the blocks pick it for what's on screen.
 {%- endcomment %}
 {%- assign w_fact = '' -%}
-{%- assign w_flavour = '' -%}
+{%- assign w_flavour = flavour_line -%}
 {%- if forecast_on and fact_line != '' -%}
   {%- assign w_fact = fact_line -%}
-  {%- assign w_flavour = flavour_line -%}
 {%- elsif visual_forecast -%}
   {%- assign w_fact = panel_fact -%}
-  {%- assign w_flavour = panel_flavour -%}
-{%- else -%}
-  {%- assign w_flavour = alone_flavour -%}
 {%- endif -%}
 {%- assign has_words = false -%}
 {%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}

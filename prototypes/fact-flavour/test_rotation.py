@@ -54,7 +54,8 @@ DATE = "2026-06-10"
 day = [render(DATE, h) for h in range(7, 17)]
 mood = day[0][2]
 expect("a steady daytime mood", mood == "nice" and all(d[2] == mood for d in day))
-pool = TEXTS["en"]["flavour_10"][mood]
+# A steady day shows the "now" lines for what the drawing shows.
+pool = TEXTS["en"].get("now_10", {}).get(mood) or TEXTS["en"]["flavour_10"][mood]
 
 # A new sarcastic line every hour, and the fact wording moves too.
 expect("the sarcastic line changes every hour", all(day[i][1] != day[i + 1][1] for i in range(len(day) - 1)))

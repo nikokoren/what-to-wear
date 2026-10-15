@@ -1307,6 +1307,8 @@ Reads only what the scenario logic above already worked out.
 {%- assign fact_line = '' -%}
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
+{%- assign now_mood = '' -%}
+{%- assign fl_now_pool = nil -%}
 {%- assign flavour_topical = false -%}
 {%- comment %}
 The two switches (config/settings.next.yaml):
@@ -1454,20 +1456,48 @@ current time moves every 15 minutes, so the merge variables change.
     {%- comment %} ...or a steady, cool jacket day. {%- endcomment %}
     {%- assign mood = 'cool' -%}
   {%- endif -%}
+  {%- comment %}
+  What the Now drawing shows, for the "now" lines (now_10 / now_11): they
+  stand alone and agree with the drawing, so they fit every screen, the
+  outfit alone included. Rain and snow only while they fall: that's when
+  the drawing has them.
+  {%- endcomment %}
+  {%- if is_now_snow == 1 -%}
+    {%- assign now_mood = 'snow' -%}
+  {%- elsif is_now_precip == 1 -%}
+    {%- assign now_mood = 'wet' -%}
+  {%- elsif local_hour >= 22 -%}
+    {%- assign now_mood = 'night' -%}
+  {%- elsif local_hour >= 18 -%}
+    {%- assign now_mood = 'evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign now_mood = 'hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign now_mood = 'cold' -%}
+  {%- elsif band_rank >= 4 -%}
+    {%- assign now_mood = 'nice' -%}
+  {%- else -%}
+    {%- assign now_mood = 'cool' -%}
+  {%- endif -%}
   {%- if sarcasm_level != '0' -%}
     {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
     {%- assign fl_lib = texts[fl_key] -%}
-    {%- assign fl_pool = fl_lib[mood] -%}
+    {%- assign now_key = 'now_' | append: sarcasm_level -%}
+    {%- assign fl_now_pool = texts[now_key][now_mood] -%}
+    {%- unless fl_now_pool -%}{%- assign fl_now_pool = fl_lib[now_mood] -%}{%- endunless -%}
     {%- comment %}
-    Ordinary days share: warming and cooling also draw from the cool pool,
-    whose lines are about an unremarkable day and fit any of the three.
+    The day's lines (the mood's pool) may be about a change, so they only
+    join when the change is on screen: here, the forecast line on a day
+    that changes. Then they mix with the now lines. Two or three drawings
+    without words get theirs in the panels block. Otherwise: now lines.
     {%- endcomment %}
-    {%- if mood == 'warming' or mood == 'cooling' -%}
-      {%- assign fl_cool = fl_lib['cool'] -%}
-      {%- if fl_pool and fl_cool -%}
-        {%- assign fl_pool = fl_pool | concat: fl_cool -%}
-      {%- elsif fl_cool -%}
-        {%- assign fl_pool = fl_cool -%}
+    {%- assign fl_pool = fl_now_pool -%}
+    {%- assign fl_day_pool = fl_lib[mood] -%}
+    {%- if forecast_on and fact_line != '' and is_steady == false and fl_day_pool -%}
+      {%- if fl_now_pool -%}
+        {%- assign fl_pool = fl_day_pool | concat: fl_now_pool -%}
+      {%- else -%}
+        {%- assign fl_pool = fl_day_pool -%}
       {%- endif -%}
     {%- endif -%}
     {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
@@ -1635,26 +1665,6 @@ after the fact + flavour block and the picture.
 {%- endcomment %}
 {%- comment %} The drawings are the What to Wear Next? switch (next_on, set in the fact + flavour block). {%- endcomment %}
 {%- assign visual_forecast = next_on -%}
-{%- comment %}
-A sarcastic line with no forecast line above it: a line that answers the
-fact ("that layer") points at nothing. Those screens (two or three
-drawings without the words, and the outfit alone) draw from the mood's
-What to Wear Next pool (flavour_vf_10 / _11: lines that work alone, and
-lines written for the drawings), rotated like the words (text_rot).
-Theme days and topical lines keep theirs; no pool, the usual line.
-{%- endcomment %}
-{%- assign alone_line = '' -%}
-{%- if is_error == false and texts_ok and sarcasm_level != '0' and fl_theme != true and flavour_topical != true -%}
-  {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
-  {%- assign vf_pool = texts[vf_key][mood] -%}
-  {%- if vf_pool -%}
-    {%- assign vf_n = vf_pool | size -%}
-    {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
-    {%- assign alone_line = vf_pool[vf_i] -%}
-  {%- endif -%}
-{%- endif -%}
-{%- assign alone_flavour = flavour_line -%}
-{%- if alone_line != '' -%}{%- assign alone_flavour = alone_line -%}{%- endif -%}
 {%- assign panel_n = 1 -%}
 {%- assign panel_slugs = '' -%}
 {%- assign panel_labels = '' -%}
@@ -1883,13 +1893,23 @@ Theme days and topical lines keep theirs; no pool, the usual line.
         {%- assign panel_fact = sl[si] -%}
       {%- endif -%}
     {%- endif -%}
-    {%- if sarcasm_level != '0' -%}
-      {%- assign panel_flavour = flavour_line -%}
-      {%- comment %} Two or three drawings and no forecast line: a line that stands alone (below). {%- endcomment %}
-      {%- if panel_n > 1 and forecast_on == false and alone_line != '' -%}
-        {%- assign panel_flavour = alone_line -%}
+    {%- comment %}
+    Two or three drawings and no forecast line: the change is on screen as
+    drawings, so the mood's lines written for them (flavour_vf_10 / _11,
+    review round 10) join the now lines. Theme days and topical lines keep
+    theirs. Every view shows flavour_line.
+    {%- endcomment %}
+    {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
+      {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
+      {%- assign vf_pool = texts[vf_key][mood] -%}
+      {%- if vf_pool -%}
+        {%- if fl_now_pool -%}{%- assign vf_pool = vf_pool | concat: fl_now_pool -%}{%- endif -%}
+        {%- assign vf_n = vf_pool | size -%}
+        {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
+        {%- assign flavour_line = vf_pool[vf_i] -%}
       {%- endif -%}
     {%- endif -%}
+    {%- assign panel_flavour = flavour_line -%}
   {%- endif -%}
 {%- endif -%}
 {%- assign panel_slug_list = panel_slugs | split: '|' -%}

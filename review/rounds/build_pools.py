@@ -262,9 +262,10 @@ def build_visual(doc, lang, decisions):
     """Round 10: per mood, the lines that work without the fact, plus new ones.
 
     A "needs the fact" (a veto in this round) keeps a line off Visual
-    Forecast only. Warming and cooling take cool's lines too, as the words
-    do. Nothing is written until the round has votes: without these pools
-    the panels show the usual line.
+    Forecast only. Nothing is written until the round has votes: without
+    these pools the panels show the usual line. (Warming and cooling used
+    to take cool's lines too; a cool joke under a T-shirt drawing showed
+    why not. The cool lines are now lines (build_now).)
     """
     path = REPO / "review" / "rounds" / f"{VISUAL}.json"
     votes = {}
@@ -284,8 +285,6 @@ def build_visual(doc, lang, decisions):
             if mood == "cool":
                 continue
             base = list(pools.get(mood, []))
-            if mood in ("warming", "cooling"):
-                base += [t for t in pools.get("cool", []) if t not in base]
             alone = [t for t in base if t not in needs]
             n["kept off"] += len(base) - len(alone)
             new = []
@@ -298,6 +297,33 @@ def build_visual(doc, lang, decisions):
             if new or alone:
                 vf[mood] = new + [t for t in alone if t not in new]
         doc[f"flavour_vf_{level}"] = vf
+    return n
+
+
+NOW_MOODS = ["snow", "wet", "night", "evening", "hot", "cold", "nice", "cool"]
+
+
+def build_now(doc, lang, decisions):
+    """The "now" lines: picked by what the Now drawing shows, so they stand
+    alone and agree with it on every screen (the outfit alone, one drawing,
+    or under the forecast line and the drawings, mixed with the day's).
+
+    Until the rework round sorts every line, each now mood takes that
+    mood's lines minus the ones round 10 voted "needs the fact"; nice,
+    cool, evening and night weren't asked then and take theirs whole.
+    """
+    needs = {(d["path"].split("[")[0], d["text"]) for d in decisions.values()
+             if d.get("round") == VISUAL and d.get("verdict") == "veto"}
+    n = collections.Counter()
+    for level in ("10", "11"):
+        pools = doc.get(f"flavour_{level}", {})
+        now = {}
+        for mood in NOW_MOODS:
+            lines = [t for t in pools.get(mood, []) if (f"flavour_{level}.{mood}", t) not in needs]
+            if lines:
+                now[mood] = lines
+                n["lines"] += len(lines)
+        doc[f"now_{level}"] = now
     return n
 
 
@@ -360,6 +386,8 @@ def main():
         visual = build_visual(doc, lang, decisions)
         if visual:
             print(f"{lang} Visual Forecast: {visual['new']} new lines, {visual['kept off']} kept off")
+        now = build_now(doc, lang, decisions)
+        print(f"{lang} now lines: {now['lines']}")
         write_new = apply_write_new(doc, lang, decisions)
         if write_new:
             print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))

@@ -34,12 +34,12 @@ FEELS = [9, 9, 8, 8, 8, 9, 10, 11, 12, 14, 17, 20, 22, 23, 24, 24, 23, 22, 21, 2
 STEADY = [15] * 24
 
 
-def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None):
+def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None, hour=7):
     feels = feels or FEELS
     hours = [f"{DATE}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
-            "current": {"time": f"{DATE}T07:30", "temperature_2m": feels[7],
-                        "apparent_temperature": feels[7], "weather_code": 0},
+            "current": {"time": f"{DATE}T{hour:02d}:30", "temperature_2m": feels[hour],
+                        "apparent_temperature": feels[hour], "weather_code": 0},
             "hourly": {"time": hours, "temperature_2m": feels, "apparent_temperature": feels,
                        "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
     cfg = {"language": lang, "sarcasm_level": sarcasm, "lat_lon": "48.2,16.4", "show_bottom_bar": "on"}
@@ -48,7 +48,7 @@ def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None):
     if nxt is not None:
         cfg["what_to_wear_next"] = nxt
     d = dt.date.fromisoformat(DATE)
-    ts = calendar.timegm((d.year, d.month, d.day, 7, 30, 0)) - OFFSET
+    ts = calendar.timegm((d.year, d.month, d.day, hour, 30, 0)) - OFFSET
     ctx = {"trmnl": {"plugin_settings": {"custom_fields_values": cfg}, "system": {"timestamp_utc": ts},
                      "user": {"utc_offset": OFFSET}, "device": {"width": 800}},
            "IDX_0": data, "IDX_1": TEXTS[lang]}
@@ -97,16 +97,51 @@ for view in VIEWS:
     expect(f"next only on a steady day: one drawing, 'works all day' ({view})",
            PANELS not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
 
-# A line that stands alone wherever no forecast line is shown.
-VF = {m: ["STANDS ALONE"] for m in ("wet", "warming", "cooling", "cold", "fickle", "hot", "snow", "nice", "cool")}
-TEXTS["en"]["flavour_vf_10"] = VF
-expect("drawings without words: the line that stands alone", "STANDS ALONE" in render(False, nxt=True))
-expect("outfit alone: the line that stands alone", "STANDS ALONE" in render(False))
-expect("forecast on: the usual line", "STANDS ALONE" not in render(True))
-expect("both on: the usual line, which answers the forecast line", "STANDS ALONE" not in render(True, nxt=True))
-expect("one drawing with 'works all day': the usual line", "STANDS ALONE" not in render(False, feels=STEADY, nxt=True))
-del TEXTS["en"]["flavour_vf_10"]
-expect("no pool: the usual line", WORDS in render(False, nxt=True))
+# Which sarcastic line: "now" lines (by what the Now drawing shows) on every
+# screen; the day's lines only with the forecast line on a day that changes;
+# the lines for the drawings only with two or three drawings and no words.
+MOODS = ("wet", "warming", "cooling", "cold", "fickle", "hot", "snow", "nice", "cool", "evening", "night")
+saved = {k: TEXTS["en"].get(k) for k in ("now_10", "flavour_10", "flavour_vf_10")}
+TEXTS["en"]["now_10"] = {m: ["NOW LINE"] for m in MOODS}
+TEXTS["en"]["flavour_10"] = {m: ["DAY LINE"] for m in MOODS}
+TEXTS["en"]["flavour_vf_10"] = {m: ["DRAWINGS LINE"] for m in MOODS}
+
+
+def line(html):
+    return next((t for t in ("NOW LINE", "DAY LINE", "DRAWINGS LINE") if t in html), None)
+
+
+def lines_over_hours(**kw):
+    """The sarcastic lines a changing day shows from 7:00 to 10:00 (they rotate by the hour)."""
+    out = set()
+    for h in (7, 8, 9, 10):
+        out.add(line(render(hour=h, **kw)))
+    return out
+
+
+expect("outfit alone: only now lines", lines_over_hours(field=False) == {"NOW LINE"})
+expect("forecast on, a changing day: the day's and now lines", lines_over_hours(field=True) == {"NOW LINE", "DAY LINE"})
+expect("forecast on, a steady day: now lines", line(render(True, feels=STEADY)) == "NOW LINE")
+expect("drawings without words: lines for the drawings and now lines, never the day's",
+       lines_over_hours(field=False, nxt=True) == {"NOW LINE", "DRAWINGS LINE"})
+expect("both on: the day's and now lines, never the drawings'", lines_over_hours(field=True, nxt=True) == {"NOW LINE", "DAY LINE"})
+expect("one drawing with 'works all day': now lines", line(render(False, feels=STEADY, nxt=True)) == "NOW LINE")
+for k, v in saved.items():
+    if v is None:
+        TEXTS["en"].pop(k, None)
+    else:
+        TEXTS["en"][k] = v
+
+# The owner's screen (October 2026): a day that warms up, T-shirt and shorts
+# already, sarcasm 11, no words: "You'll call it 'crisp'..." from the cool
+# lines contradicted the drawing. Now lines go by the Now drawing.
+WARMING = [16, 16, 16, 17, 18, 19, 20, 22, 24, 25, 26, 27, 28, 29, 30, 30, 29, 28, 27, 26, 25, 24, 23, 22]
+nice = set(TEXTS["en"]["now_11"]["nice"]) | set(TEXTS["en"]["now_11"].get("hot", []))
+cool_only = set(TEXTS["en"]["flavour_11"]["cool"]) - nice
+for h in (7, 9, 11, 13):
+    for field, nxt in ((False, False), (False, True)):
+        html = render(field, sarcasm="11", feels=WARMING, hour=h, nxt=nxt)
+        expect(f"warm now at {h}:00 ({field}, {nxt}): no cool-day line", not any(t in html for t in cool_only))
 
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:

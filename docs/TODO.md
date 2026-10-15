@@ -58,7 +58,9 @@ to pick it up cold.
    the logic still checks three of their keys (`shorts_early`, the
    "perfect" variants, `wet_again`): move those checks to the new pools
    first. The beta (`beta/`, `tools/build_beta.py`) gets by meanwhile by
-   keeping one line per list.
+   keeping one line per list. The now pools (item 13) duplicate lines of
+   the day pools until the rework round sorts them: English is 102 KB,
+   German 113 KB minified now.
 6. **Item 3, the text**: in progress. The tip becomes a fact line plus a
    flavour line; voice, fact style and most pools are decided by four
    rounds of votes (`review/README.md`). Round 5 (variants) is synced
@@ -239,25 +241,27 @@ to pick it up cold.
      and the old location fields aren't in the spec: presumably they
      keep their places (location first, the title bar last).
    - **German** labels and descriptions for all five.
-13. **Before shipping: extend the What to Wear Next pools.** With the
-   new form, a sarcastic line shows without the forecast line (item
-   12), so it has to stand alone: on the outfit-alone screen and on
-   What to Wear Next. The pools for that (`flavour_vf_10`, `_11`)
-   were written to stand alone, but hold (October 2026):
-   - **Only the moods that change during the day:** cold, cooling,
-     fickle, hot, snow, warming, wet. None for nice, cool, evening or
-     night, which an outfit-alone screen shows often. Those fall back
-     to the mood's usual line, which may answer a fact that isn't
-     there.
-   - **Thin pools:** English fickle 3 at On and 2 at 11, German
-     warming 2 and cooling 3 at On.
-
-   Write the four missing moods in both languages and both levels,
-   and fill the thin ones; the outfit-alone screen has one drawing,
-   so no lines about the later outfits there. Item 11's lines for the
-   day with no more changes may be the same lines for nice and cool.
-   New lines go through a review round when the owner wants one,
-   with item 14 in place first.
+13. **Next: rework the sarcastic lines, so each makes sense on its own.**
+   The owner, seeing them alone in the beta: they need context, the
+   forecast line they were written to answer, and the shape of the day
+   they were picked by ("You'll call it 'crisp'…", a cool-day joke,
+   under a T-shirt on a day that warms up).
+   - **Done (October 2026): the markup picks by what's on screen.** Now
+     lines (`now_10` / `now_11`, by what the Now drawing shows) on every
+     screen; the day's lines only with the forecast line on a day that
+     changes; lines for the drawings only with two or three drawings
+     and no words; mixed, by the hour. Details in
+     `prototypes/panels/README.md` ("Which sarcastic line"). Interim now
+     pools: each mood's lines minus round 10's "needs the fact".
+   - **Next: the round.** Sort every line into now (stands alone, agrees
+     with the drawing) or day/drawings (about a change); rewrite or drop
+     what needs context; fill the gaps: German cool at On has one now
+     line, English fickle and German warming/cooling are thin; item 11's
+     lines for the day with no more changes; later the lines about the
+     sky (item 7: fog, overcast) as now lines. Keep one wording per joke:
+     with the hourly rotation, round 5's reworded twins can show in
+     back-to-back hours. Each line on the page under the drawing it
+     would show with; "Write new" (item 14) is ready.
 14. **Done (October 2026): "Write new", a veto that drops both.** The
    owner: a veto that keeps the old line isn't always right; sometimes
    neither should stay, and what's wanted is completely new lines.
