@@ -166,15 +166,24 @@ to pick it up cold.
      option. Beta forks with "visual" saved have to switch it on.
    - **Four combinations now, not three.** Both off: the outfit
      alone. Forecast only: the words. Next only: the drawings. Both
-     on: to decide (the drawings with the fact line? the drawings
-     win?).
-   - **Sarcasm without the written forecast.** Today the sarcastic line
-     shows only with the forecast on, and the form hides Sarcasm when
-     Forecast is off. The new description promises it either way, so
+     on (owner's decision): the drawings and the forecast line, so
+     the sarcastic line there can be the usual one, which answers it.
+   - **Sarcasm without the written forecast** (owner's decision: it
+     still works). Today the sarcastic line shows only with the
+     forecast on, and the form hides Sarcasm when Forecast is off. So
      the outfit-alone screen gets a sarcastic line too: room in the
-     layout, and lines that don't answer a fact (the Visual Forecast
-     pools were written to stand alone). Drop the
-     `conditional_validation` that hides it.
+     layout, and lines that don't answer a fact. The What to Wear Next
+     pools (`flavour_vf_10`, `_11`) were written to stand alone; to
+     see whether they need extending. What they hold now (October
+     2026): only the moods that change during the day (cold, cooling,
+     fickle, hot, snow, warming, wet), none for nice, cool, evening or
+     night, which an outfit-alone screen shows often; and some are
+     thin (English fickle 3 at On and 2 at 11, German warming 2 and
+     cooling 3 at On). Drop the `conditional_validation` that hides
+     Sarcasm.
+   - **Visual Forecast is now called What to Wear Next** everywhere it
+     shows: the form, the about text and changelog, `beta/README.md`.
+     Keys and pool names in the code can stay.
    - **Sarcasm default Off** (live default is On). Saved values stay;
      only new installs start without it, unless TRMNL fills in
      defaults for existing installs (the same check as the note on
