@@ -1302,6 +1302,20 @@ Reads only what the scenario logic above already worked out.
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
 {%- assign flavour_topical = false -%}
+{%- comment %}
+Which wording shows changes every hour, not once a day, so a day whose
+weather doesn't change still reads differently in the afternoon. Each
+pool takes (text_rot + its own offset) mod its size. Day and hour are
+multiplied by primes larger than any pool (101, 103: coprime with every
+size up to 100), so each step lands somewhere else in the pool instead
+of on the next line, every line comes round, and someone who looks at
+7:00 every morning sees the whole pool over the days, not a subset.
+The screen changes when TRMNL next regenerates it: the weather's
+current time moves every 15 minutes, so the merge variables change.
+{%- endcomment %}
+{%- assign text_rot = local_days | times: 101 -%}
+{%- assign text_rot_h = local_hour | times: 103 -%}
+{%- assign text_rot = text_rot | plus: text_rot_h -%}
 {%- if is_error == false and show_future_suggestions == 'on' and texts_ok and texts.facts -%}
   {%- assign F = texts.facts -%}
   {%- if is_steady -%}
@@ -1331,15 +1345,15 @@ Reads only what the scenario logic above already worked out.
     {%- assign f_gv = F.garments_verb[fgi] -%}
   {%- endif -%}
   {%- comment %}
-  Each situation has several wordings, rotated by day like the flavour
-  line but on their own offsets, so a run of the same weather doesn't
-  show the same words, and fact and flavour don't repeat as a pair.
+  Each situation has several wordings, rotated by the hour like the
+  flavour line (text_rot) but on their own offsets, so a run of the same
+  weather doesn't show the same words.
   {%- endcomment %}
   {%- assign f_temp = '' -%}
   {%- assign f_list = F[f_key] -%}
   {%- if f_list -%}
     {%- assign f_n = f_list | size -%}
-    {%- assign f_vi = local_days | plus: 2 | modulo: f_n -%}
+    {%- assign f_vi = text_rot | plus: 2 | modulo: f_n -%}
     {%- assign f_temp = f_list[f_vi] -%}
   {%- endif -%}
   {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
@@ -1355,7 +1369,7 @@ Reads only what the scenario logic above already worked out.
     {%- assign p_list = F[pk] -%}
     {%- if p_list -%}
       {%- assign p_n = p_list | size -%}
-      {%- assign p_vi = local_days | plus: 3 | modulo: p_n -%}
+      {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
       {%- assign f_precip = p_list[p_vi] | replace: '{WHENP}', when_precip -%}
     {%- endif -%}
   {%- endif -%}
@@ -1444,7 +1458,7 @@ Reads only what the scenario logic above already worked out.
     {%- endif -%}
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}
-      {%- assign fl_i = local_days | plus: 5 | modulo: fl_n -%}
+      {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
       {%- assign flavour_line = fl_pool[fl_i] -%}
     {%- endif -%}
 
@@ -1823,7 +1837,7 @@ after the fact + flavour block and the picture.
       {%- assign sl = texts.facts[sk] -%}
       {%- if sl -%}
         {%- assign sn = sl | size -%}
-        {%- assign si = local_days | plus: 2 | modulo: sn -%}
+        {%- assign si = text_rot | plus: 2 | modulo: sn -%}
         {%- assign panel_fact = sl[si] -%}
       {%- endif -%}
     {%- endif -%}
@@ -1833,7 +1847,7 @@ after the fact + flavour block and the picture.
       Two or three panels show no fact line, so a sarcastic line that
       answers it ("that layer") points at nothing. Those days draw from the
       mood's Visual Forecast pool (flavour_vf_10 / _11: lines that work
-      alone, and lines written for the drawings), rotated like the words.
+      alone, and lines written for the drawings), rotated like the words (text_rot).
       Theme days and topical lines keep theirs; no pool, the usual line.
       {%- endcomment %}
       {%- if panel_n > 1 and fl_theme == false and flavour_topical == false -%}
@@ -1841,7 +1855,7 @@ after the fact + flavour block and the picture.
         {%- assign vf_pool = texts[vf_key][mood] -%}
         {%- if vf_pool -%}
           {%- assign vf_n = vf_pool | size -%}
-          {%- assign vf_i = local_days | plus: 5 | modulo: vf_n -%}
+          {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
           {%- assign panel_flavour = vf_pool[vf_i] -%}
         {%- endif -%}
       {%- endif -%}

@@ -135,21 +135,29 @@ to pick it up cold.
    have no italic, so the browser would slant them, which looks rough
    in 1-bit. Item 4 rules out our own CSS, so: is there a framework way,
    and does it read well on the OG and the X?
-10. **Top priority (owner, October 2026): rotate the texts while the
-   forecast stays the same.** It's also what the lines about the sky
-   (item 7) need: they may only show while their weather is happening. What
-   happens now: every pool rotates by day only (the fact on day + 2,
-   the rain fact on day + 3, the sarcastic line and Visual Forecast's
-   on day + 5, a topical line every third day), so a day whose weather
-   doesn't change shows the same words from morning to night. The
-   owner wants it livelier: rotate facts and sarcastic lines through
-   their pools during the day too. To work out: the step (each hour,
-   each refresh), keeping fact and sarcastic line from repeating as a
-   pair, and whether TRMNL regenerates often enough (it skips a screen
-   when the merge variables haven't changed, see `docs/MIGRATION.md`;
-   Open-Meteo's current time moves every 15 minutes). Check what more
-   frequent changes cost on the device. The repeat numbers in item 7
-   assume one text a day.
+10. **Done (October 2026): the texts change every hour.** The owner
+   wanted it livelier, and the lines about the sky (item 7) need it: they
+   may only show while their weather is happening. The fact wording, the
+   rain fact, the sarcastic line and Visual Forecast's now pick their line
+   by `text_rot` = day x 101 + hour x 103 (`prototypes/fact-flavour/
+   block.liquid`), each on its own offset, instead of by day. The primes
+   are larger than any pool, so an hour on lands elsewhere in the pool
+   (it doesn't read as a cycle), every line comes round, and someone who
+   looks at 7:00 every morning still sees the whole pool over the days.
+   `test_rotation.py` pins it, and that every pool stays under 101 lines.
+   Topical lines (parked) keep their every-third-day rhythm.
+   - **TRMNL regenerates** when the merge variables change, and
+     Open-Meteo's current time moves every 15 minutes, so a refresh after
+     the hour turns shows the hour's lines. How often depends on the
+     user's refresh rate; nothing new is fetched, so it costs nothing.
+   - **Repeats:** for someone who looks once a morning, nothing changes
+     (`repeat_report.py` at 7:00, London, New York, Minneapolis, Phoenix,
+     Vienna: identical to the daily rotation, the flavour line 71% seen
+     in the last 30 days in both languages): how often a line comes back
+     is set by the size of its pool. Someone who looks several times a
+     day now sees new lines, and goes through a pool faster (three
+     glances a day see a 15-line pool in five days): more reason for
+     bigger pools and the lines about the sky (item 7).
 11. **Later, beta feedback: the day with no more changes.** In Visual
    Forecast, a day whose outfit holds until tomorrow gets one drawing,
    a "works all day" fact ("What you have on works from now until
