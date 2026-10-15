@@ -52,6 +52,8 @@ def render(field, view="full", sarcasm="10", lang="en", feels=None):
 
 
 failures = []
+PANELS = 'data-wtw="panels"'
+WORDS = 'data-wtw="words"'
 
 
 def expect(name, ok):
@@ -61,23 +63,23 @@ def expect(name, ok):
 
 for view in VIEWS:
     html = render("visual", view)
-    expect(f"visual draws panels ({view})", "wtw-panels" in html)
+    expect(f"visual draws panels ({view})", PANELS in html)
     expect(f"visual puts 'from' on the later time ({view})", ">from " in html)
     expect(f"visual has no fact line on a changing day ({view})", 'class="font--bold"' not in html)
     for field in ("Yes", "yes", "YES", None):
         html = render(field, view)
-        expect(f"{field!r} keeps the words ({view})", "wtw-panels" not in html and 'class="font--bold"' in html)
+        expect(f"{field!r} keeps the words ({view})", PANELS not in html and 'class="font--bold"' in html)
     html = render("No", view)
-    expect(f"'No' shows the outfit alone ({view})", "wtw-panels" not in html and 'class="font--bold"' not in html)
+    expect(f"'No' shows the outfit alone ({view})", PANELS not in html and 'class="font--bold"' not in html)
 
 html = render("visual", sarcasm="0")
-expect("visual at sarcasm Off has no words on a changing day", "wtw-panels" in html and 'wtw-words"' not in html)
+expect("visual at sarcasm Off has no words on a changing day", PANELS in html and WORDS not in html)
 html = render("visual", sarcasm="10")
-expect("visual at sarcasm On adds the sarcastic line", 'wtw-words"' in html)
+expect("visual at sarcasm On adds the sarcastic line", WORDS in html)
 for view in VIEWS:
     html = render("visual", view, feels=STEADY)
     expect(f"visual on a steady day is the text view with 'works all day' ({view})",
-           "wtw-panels" not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
+           PANELS not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
 # Two or three panels draw from the Visual Forecast pool when there is one.
 VF = {m: ["VISUAL FORECAST LINE"] for m in ("wet", "warming", "cooling", "cold", "fickle", "hot", "snow")}
 TEXTS["en"]["flavour_vf_10"] = VF
@@ -86,6 +88,10 @@ expect("the words keep the usual line", "VISUAL FORECAST LINE" not in render("Ye
 expect("one panel keeps the usual line", "VISUAL FORECAST LINE" not in render("visual", feels=STEADY))
 del TEXTS["en"]["flavour_vf_10"]
 expect("no pool: the usual line", "VISUAL FORECAST LINE" not in render("visual"))
+# Framework classes only: no CSS of our own anywhere in the views.
+for view in VIEWS:
+    src = (BUILD / "views" / f"{view}.liquid").read_text(encoding="utf-8")
+    expect(f"no <style> or style= in {view}", "<style" not in src and " style=" not in src)
 html = render("visual", lang="de")
 expect("German Visual Forecast says 'ab'", ">ab " in html and ">Jetzt<" in html)
 

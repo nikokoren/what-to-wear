@@ -35,17 +35,18 @@ to pick it up cold.
    launch). Sarcastic line with two or three panels: its own pool of
    lines that work without the fact plus lines written for the drawings
    (review round 10, then `build_pools.py`).
-4. **Completely rewrite the whole thing in TRMNL's native framework
-   only, before going live.** The owner: "I can't put this out like
-   this." The Visual Forecast views carry a hand-written `<style>` block
-   (16 rules from the template in `prototypes/panels/build.py`: container
-   units, CSS variables, the overlapping drawings, times that wrap, words
-   that clamp themselves); everything must come from the framework's own
-   classes, the way the text views already do. Expect to give some things
-   up or find framework equivalents: the overlap, the wrapping times, and
-   the words fitting themselves (TRMNL's content limiter hides them on the
-   X, see `prototypes/panels/README.md`). Re-run the fit check over every
-   view, device and orientation after.
+4. **Done (October 2026): the views in TRMNL's framework classes
+   only.** The owner: "I can't put this out like this" about the
+   hand-written `<style>` block the Visual Forecast views carried. Now
+   every view, in every mode (Visual Forecast, words, no forecast), comes
+   from one template in `prototypes/panels/build.py` with no `<style>`
+   and no inline style (`test_switch.py` checks). The overlap is a column
+   narrower than its drawing; sizes are shares of the view (`w--[…cqw]`,
+   `h--max-[…cqh]`, `aspect--1/1`). At the same time, from the owner's
+   beta testing: the single drawing was small next to the space left, so
+   it now grows into what the words leave (full view on the OG 247 to
+   332 px). Fit check over 3,136 screens: clean. Details in
+   `prototypes/panels/README.md`. Still to see on a real device (item 2).
 5. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching

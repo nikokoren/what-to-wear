@@ -112,8 +112,8 @@ def verify(shared, view, full, trimmed):
                         raise SystemExit(f"trimmed texts change the screen: {lang} {args} sarcasm {sarcasm} {forecast}")
                     checked += 1
                     seen.add(a)
-                    panels += 'class="wtw-panels"' in a
-                    words += 'class="font--bold"' in a
+                    panels += 'data-wtw="panels"' in a
+                    words += 'data-wtw="words"' in a
                     errors += 'alt="Error"' in a
     # Identical is only proof if the screens are real and varied: no error
     # screens, panels on the days that change, words on most.

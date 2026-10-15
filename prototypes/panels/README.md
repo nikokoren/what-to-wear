@@ -70,44 +70,70 @@ On 7:00 readings in London, Vienna and New York over a year: one panel
 
 ## Views
 
-**One panel is the text view** people know, at the live sizes (the
-drawing at 60% of the view's height, the words in the live view's size),
-with the "works all day" fact and the sarcastic line. The first beta
-drew it through the panels template, a little smaller than live and with
-smaller words; the owner found it "tiny".
+Every screen, in every forecast mode (Visual Forecast, words, none),
+comes from one template in `build.py`, **in TRMNL's framework classes
+only**: no `<style>`, no inline style (`test_switch.py` checks). Sizes
+are shares of the view: TRMNL's `layout` is a size container, so
+`w--[40cqw]` and `h--max-[66cqh]` mean 40% of its width and 66% of its
+height.
 
-**Two or three panels** come from one template in `build.py`:
+**One drawing** (a steady day, the words view, no forecast) is as big as
+the view allows. Its box is a square as wide as the view
+(`aspect--1/1 w--[100cqw]`) that gives up height to the words, since
+images shrink in a flex column, down to 40% of the height. So the
+drawing fills what the words leave, and stays right above them when the
+width is what limits it (the portrait views). The owner found the
+earlier one, fixed at 60% of the height as live, small next to the space
+left on screen. On a steady day on the OG: full view 247 to 332 px,
+half view standing tall 224 to 326, the quarter 146 to 173 (183 to 205
+in portrait), the half view lying wide in portrait 183 to 248; lying
+wide in landscape it already had the full height (173). Lying wide with words (the half view on its
+side, the quarter), it stands beside them at the view's full height. Its
+box (52% of the width) is wider than its column (36%) and overflows it
+on both sides: the drawing's transparent sides don't push the words away.
+
+**Two or three drawings** look as they did in the prototype, rebuilt in
+classes:
 
 - In a row, the time always under the drawing; the half view lying wide
   puts the words beside them; only the half view standing tall (240 by
   800 on the OG) stacks them, one under the other.
-- **Neighbours overlap by a quarter.** The drawings are transparent and
-  the figure takes about 55% of the square (the two old wide-umbrella
-  drawings up to 95%: their rain reaches into the neighbour's empty
-  side), so a row of three is 2.5 drawings wide instead of three plus
-  gaps. With more height for the row too, on the OG in landscape: full
-  view 218 to 279 px, half view lying wide 131 to 149 px, quarter about
-  the same (96 px with words, 131 without).
+- **Neighbours overlap by a quarter.** Each panel is a column 3/4 as
+  wide as its drawing, with the drawing centred in it and overflowing it
+  on both sides (a flex column centres an item wider than itself). The
+  drawings are transparent and the figure takes about 55% of the square
+  (the two old wide-umbrella drawings up to 95%: their rain reaches into
+  the neighbour's empty side), so the figure stays in its column and a
+  row of three is 2.5 drawings wide instead of three plus gaps.
+- A drawing's box is square and capped in height (`aspect--1/1` with
+  `h--max-[…cqh]`): as big as the smaller of its share of the width and
+  the cap, the time right under it.
 - The drawings stay square, as drawn (owner, after comparing with a 2:3
   crop).
 - The words are the live view's size, except in the two tightest spots
   on the OG (the portrait half-tall column and the quarter), a step
-  smaller, since the panels can't use TRMNL's limiter to step down.
+  smaller.
 - The times are larger on the X (`lg:label--xlarge`, `lg:label--large`
-  in the quarter). A time gets its share of the row and wraps to "from"
-  over "3 pm" when it needs more.
+  in the quarter); "Now" is bold and underlined (`<b><u>`). A time wraps
+  to "from" over "3 pm" when its column is too narrow.
 
 The words don't use TRMNL's content limiter. On the X the screen is
 scaled up with a CSS transform, and the limiter adds the drawings'
-scaled height to the layout's unscaled one: with the panels above it,
-it found 10 px left and hid the line. The words fit themselves instead
-(they shrink in the column and clamp at four lines each). The live
-views escape it only because there the sum goes negative, which turns
-the limiter off.
+scaled height to the layout's unscaled one: with the drawings above it,
+it found 10 px left and hid the line. The words take their natural
+height instead, and the drawings make room.
 
-Every mock day was checked in every language, sarcasm level, device,
-orientation and view (448 screens) for words cut off, times touching
-and anything spilling out of the view: none.
+`data-wtw="panels"` and `data-wtw="words"` mark the row of drawings and
+the words for the tests; they style nothing.
+
+Fit check (October 2026): every mock day in both languages, Visual
+Forecast, words and no forecast, sarcasm Off, On and 11, OG and X,
+landscape and portrait, every view, as rendered and again with the
+longest fact and the longest sarcastic line swapped in (3,136 screens):
+no words cut off or past the title bar, no figure cut or off the side,
+no neighbouring figures overlapping, no times touching. The times
+touched in the portrait quarter until each got a small margin
+(`mx--1`).
 
 ## Open
 

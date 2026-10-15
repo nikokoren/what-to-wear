@@ -1,89 +1,74 @@
-{%- if visual_forecast and panel_n > 1 -%}
+{%- comment %} The words: the forecast in words, or Visual Forecast's. {%- endcomment %}
+{%- assign w_fact = '' -%}
+{%- assign w_flavour = '' -%}
+{%- if visual_forecast -%}
+  {%- assign w_fact = panel_fact -%}
+  {%- assign w_flavour = panel_flavour -%}
+{%- elsif show_future_suggestions == 'on' and fact_line != '' -%}
+  {%- assign w_fact = fact_line -%}
+  {%- assign w_flavour = flavour_line -%}
+{%- endif -%}
 {%- assign has_words = false -%}
-{%- if panel_fact != '' or panel_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
-{%- if has_words -%}{%- assign ih = 66 -%}{%- assign ihs = 66 -%}{%- else -%}{%- assign ih = 80 -%}{%- assign ihs = 80 -%}{%- endif -%}
-{%- assign vgaps = panel_n | minus: 1 | times: 2 -%}
-{%- comment %} Neighbours overlap by a quarter: a row of n is n - (n-1)/4 drawings wide. {%- endcomment %}
-{%- assign den = panel_n | times: 0.75 | plus: 0.25 -%}
-<style>
-  /* The view is the measure: every cq unit below is a share of it. */
-  .wtw-box { container-type: size; width: 100%; height: 100%; }
-  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 94cqw; --w: min(calc(var(--pw) / {{ den }}), var(--ih)); }
-  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
-  .wtw-panel { display: flex; flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
-  .wtw-panel img { aspect-ratio: 1; object-fit: contain; width: var(--w); height: auto; }
-  /* The drawings stand in the middle of transparent squares (the figure
-     takes about 55% of the width), so neighbours overlap by a quarter
-     instead of sitting a gap apart: the drawings come out bigger. */
-  .wtw-panel + .wtw-panel { margin-left: calc(var(--w) * -0.25); }
-  /* A time gets its share of the row, less a margin, and wraps to "from"
-     over "3 pm" when it needs more (the hours have a no-break space). */
-  .wtw-panel .label { max-width: calc(var(--w) * 0.68); text-align: center; justify-content: center; }
-  .wtw-now .label { font-weight: 700; text-decoration: underline; }
-  /* The words fit themselves: TRMNL's content limiter miscounts on the X
-     (it measures the drawings scaled up, the space not) and hides them. */
-  .wtw-words { width: 92cqw; flex: 0 1 auto; min-height: 0; overflow: hidden; }
-  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
-  
-  
-</style>
-<div class="wtw-box">
-<div class="layout layout--col layout--center gap--small wtw-day{% if has_words %} wtw-side{% endif %}">
-  {%- if is_error %}
+{%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
+{%- assign n = 1 -%}
+{%- if visual_forecast -%}{%- assign n = panel_n -%}{%- endif -%}
+{%- if is_error %}
+<div class="layout layout--col layout--center">
+  <div class="richtext richtext--center gap w--max-[100cqw]">
     <img class="image image--contain h--[60cqh]" src="{{ sprite_url }}" alt="Error">
-    <div class="content content--center text--center content--base" data-content-limiter="true"><p>{{ error_headline }}</p></div>
-  {%- else %}
-  <div class="wtw-panels">
+    <div class="content content--center text--center w--max-[100cqw] content--base lg:content--large" data-content-limiter="true">
+      <p>{{ error_message }}</p>
+    </div>
+  </div>
+</div>
+{%- elsif n == 1 %}
+{%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_wrap = '' -%}{%- assign c_image = 'image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[40cqh]' -%}{%- assign c_words = 'w--[96cqw] content--xlarge lg:content--xxlarge' -%}
+<div class="{{ c_outer }}">
+  {%- if c_wrap != '' %}<div class="{{ c_wrap }}">{%- endif %}
+  <img class="{{ c_image }}" src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'" alt="Outfit">
+  {%- if c_wrap != '' %}</div>{%- endif %}
+  {%- if has_words %}
+  <div class="content content--center text--center {{ c_words }}" data-wtw="words">
+    {%- if w_fact != '' %}<p class="font--bold">{{ w_fact }}</p>{%- endif %}
+    {%- if w_flavour != '' %}<p>{{ w_flavour }}</p>{%- endif %}
+  </div>
+  {%- endif %}
+</div>
+{%- else %}
+{%- if n == 2 -%}
+  {%- if has_words -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[40cqw]' -%}{%- assign c_image = 'w--[54cqw] h--max-[66cqh]' -%}{%- assign c_words = 'w--[92cqw] content--xlarge lg:content--xxlarge' -%}
+  {%- else -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[40cqw]' -%}{%- assign c_image = 'w--[54cqw] h--max-[80cqh]' -%}{%- assign c_words = 'w--[92cqw] content--xlarge lg:content--xxlarge' -%}
+  {%- endif -%}
+{%- else -%}
+  {%- if has_words -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[28cqw]' -%}{%- assign c_image = 'w--[38cqw] h--max-[66cqh]' -%}{%- assign c_words = 'w--[92cqw] content--xlarge lg:content--xxlarge' -%}
+  {%- else -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[28cqw]' -%}{%- assign c_image = 'w--[38cqw] h--max-[80cqh]' -%}{%- assign c_words = 'w--[92cqw] content--xlarge lg:content--xxlarge' -%}
+  {%- endif -%}
+{%- endif -%}
+<div class="{{ c_outer }}">
+  <div class="{{ c_row }}" data-wtw="panels">
     {%- for slug in panel_slug_list %}
-    <figure class="wtw-panel{% if forloop.first %} wtw-now{% endif %}">
-      <img class="image image-dither" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
-      {%- if panel_n > 1 %}<span class="label lg:label--xlarge">{{ panel_label_list[forloop.index0] }}</span>{%- endif %}
-    </figure>
+    <div class="flex flex--col gap--small {{ c_panel }}">
+      <img class="image image--contain image-dither aspect--1/1 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+      <span class="label text--center mx--1 lg:label--xlarge">{% if forloop.first %}<b><u>{{ panel_label_list[0] }}</u></b>{% else %}{{ panel_label_list[forloop.index0] }}{% endif %}</span>
+    </div>
     {%- endfor %}
   </div>
   {%- if has_words %}
-  <div class="content content--center text--center content--xlarge lg:content--xxlarge wtw-words">
-    {%- if panel_fact != '' %}<p class="font--bold">{{ panel_fact }}</p>{%- endif %}
-    {%- if panel_flavour != '' %}<p>{{ panel_flavour }}</p>{%- endif %}
+  <div class="content content--center text--center {{ c_words }}" data-wtw="words">
+    {%- if w_fact != '' %}<p class="font--bold">{{ w_fact }}</p>{%- endif %}
+    {%- if w_flavour != '' %}<p>{{ w_flavour }}</p>{%- endif %}
   </div>
   {%- endif %}
-  {%- endif %}
 </div>
-</div>
+{%- endif %}
 
 {%- if show_bottom_bar == 'on' -%}
   <div class="title_bar">
     <span class="title">What to Wear</span>
     <span class="instance">{{ location_label }}</span>
   </div>
-{%- endif -%}
-{%- else -%}
-{%- if visual_forecast -%}{%- assign fact_line = panel_fact -%}{%- assign flavour_line = panel_flavour -%}{%- endif -%}
-{%- assign show_tip = false -%}
-{%- if show_future_suggestions == 'on' and fact_line != '' -%}{%- assign show_tip = true -%}{%- endif -%}
-<div class="layout layout--col layout--center">
-  <div class="richtext richtext--center gap w--max-[100cqw]">
-  {%- if is_error %}
-    <img class="image image--contain h--[60cqh]" src="{{ sprite_url }}" alt="Error">
-    <div class="content content--center text--center w--max-[100cqw] content--large lg:content--xlarge" data-content-limiter="true">
-      <p>{{ error_message }}</p>
-    </div>
-  {%- else %}
-    <img class="image image--contain image-dither {% if show_tip %}h--[60cqh]{% else %}h--[100cqh]{% endif %}"
-      src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'" alt="Outfit">
-    {%- if show_tip %}
-    <div class="content outfit-tip content--center text--center w--max-[100cqw] content--xlarge lg:content--xxlarge" data-content-limiter="true">
-      <p class="font--bold">{{ fact_line }}</p>{%- if flavour_line != '' %}<p>{{ flavour_line }}</p>{%- endif %}
-    </div>
-    {%- endif %}
-  {%- endif %}
-  </div>
-</div>
-
-{%- if show_bottom_bar == 'on' -%}
-  <div class="title_bar">
-    <span class="title">What to Wear</span>
-    <span class="instance">{{ location_label }}</span>
-  </div>
-{%- endif -%}
 {%- endif -%}

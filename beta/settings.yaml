@@ -2,6 +2,10 @@
 # beta fork now and to replace config/settings.yaml when the redesign
 # ships. TRMNL is still edited by hand.
 #
+# To be redone before shipping, to the owner's spec in docs/TODO.md
+# (item 12): five fields in a new order, Visual Forecast as its own
+# on/off field, no field for topical lines.
+#
 # What changed from settings.yaml, and why none of it moves a saved value:
 #
 #   show_future_suggestions  Same key, same "Yes" and "No". A third value,
