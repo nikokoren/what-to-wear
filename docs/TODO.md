@@ -252,7 +252,20 @@ to pick it up cold.
      and no words; mixed, by the hour. Details in
      `prototypes/panels/README.md` ("Which sarcastic line"). Interim now
      pools: each mood's lines minus round 10's "needs the fact".
-   - **Round 11 is on the review page** (`2026-10-alone`, 350 lines,
+   - **Round 11 synced (October 2026).** 350 lines voted; pools rebuilt.
+     Its lesson (docs/BRIEF.md): two kinds of line. **Done:** under the
+     forecast line only follow-ups (flavour_*), everywhere else standalone
+     lines (now_*, alone_*, with the drawings flavour_vf_*); month tags
+     ("{M:10,11}…", build_pools puts them in front, the markup skips a
+     line out of season). Day lines the owner called "fine on its own"
+     moved to alone_*.
+   - **Next: round 12.** Follow-ups per situation (warming, cooling,
+     fickle, rain coming, steady…) in both languages and levels: the
+     pools are nearly empty (German has 1 to 3 per mood); the 41 "Write
+     new" spots (review/rewrite/); month tags for the seasonal lines
+     (first cold spell, first snow); "Three outfits" only on days with
+     three different drawings.
+   - **Round 11 was on the review page** (`2026-10-alone`, 350 lines,
      review/README.md). Then: sync, build_pools, beta. Its plan was: sort every line into now (stands alone, agrees
      with the drawing) or day/drawings (about a change); rewrite or drop
      what needs context; fill the gaps: German cool at On has one now

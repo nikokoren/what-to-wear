@@ -174,30 +174,12 @@
     ]
   },
   "flavour_10": {
-    "nice": [
-      "Easy day to forecast. I'll still take the credit.",
-      "Not my hardest forecast. I'm taking the credit anyway."
-    ],
-    "cool": [
-      "I've had firmware updates more exciting than today.",
-      "Other screens get to show paintings. I get today's weather.",
-      "Somewhere a screen is showing a Monet. And all you get is this."
-    ],
     "warming": [
       "Thrilling stuff. I'm on the edge of my frame.",
-      "Gripping weather. I can barely stay in my frame.",
-      "Later it warms up, and I get to be right again. Best part of my day."
+      "Gripping weather. I can barely stay in my frame."
     ],
     "wet": [
-      "Nothing gets me looked at like a chance of rain.",
-      "Rain or not, my humour stays bone dry.",
-      "A chance of rain, and suddenly everyone checks on me."
-    ],
-    "cooling": [
-      "Later it cools off. I saw that coming. I see everything coming."
-    ],
-    "fickle": [
-      "Warm, then cold again. The weather can't commit either."
+      "Rain or not, my humour stays bone dry."
     ],
     "theme_ny": [
       "I don't do New Year's resolutions. I was perfect last year too.",
@@ -218,9 +200,6 @@
     ]
   },
   "flavour_11": {
-    "cool": [
-      "Today's as surprising as your usual coffee order."
-    ],
     "warming": [
       "Taking that layer off might be the highlight of your day.",
       "You'll overheat a little before you admit I was right.",
@@ -233,14 +212,14 @@
       "Carrying a layer you don't need yet. How very grown-up.",
       "Leave it behind and you'll think of me later. Not fondly.",
       "You'll put it on later and act like it was your idea.",
-      "Bringing a layer you won't need for hours. Look at you, prepared.",
-      "You'll be cold by tonight and tell everyone it came out of nowhere."
+      "Bringing a layer you won't need for hours. Look at you, prepared."
     ],
     "fickle": [
-      "Complaining it's warm, then that it isn't. You've got range.",
       "I give it even odds you lose that layer by tonight.",
-      "Today's weather has more mood swings than you. Barely.",
       "Fifty-fifty that layer goes missing by tonight."
+    ],
+    "evening": [
+      "You'll read all this, then do what you were going to anyway."
     ],
     "theme_ny": [
       "You'll call this New Year your year. You said that last year."
@@ -440,7 +419,6 @@
     ],
     "evening": [
       "Wondering where the day went? I watched. You weren't busy.",
-      "You'll read all this, then do what you were going to anyway.",
       "Another evening, another walk past me. No thanks, as usual.",
       "If you're going out, try to look better than this."
     ],
@@ -450,6 +428,42 @@
       "You checked the weather at this hour. For what, exactly?",
       "Bed's right there and you're choosing me. I'm touched.",
       "You've looked at me a lot today. Go to bed."
+    ]
+  },
+  "alone_10": {
+    "nice": [
+      "Easy day to forecast. I'll still take the credit.",
+      "Not my hardest forecast. I'm taking the credit anyway."
+    ],
+    "cool": [
+      "I've had firmware updates more exciting than today.",
+      "Other screens get to show paintings. I get today's weather.",
+      "Somewhere a screen is showing a Monet. And all you get is this."
+    ],
+    "wet": [
+      "Nothing gets me looked at like a chance of rain.",
+      "A chance of rain, and suddenly everyone checks on me."
+    ],
+    "warming": [
+      "Later it warms up, and I get to be right again. Best part of my day."
+    ],
+    "cooling": [
+      "Later it cools off. I saw that coming. I see everything coming."
+    ],
+    "fickle": [
+      "Warm, then cold again. The weather can't commit either."
+    ]
+  },
+  "alone_11": {
+    "cool": [
+      "Today's as surprising as your usual coffee order."
+    ],
+    "fickle": [
+      "Complaining it's warm, then that it isn't. You've got range.",
+      "Today's weather has more mood swings than you. Barely."
+    ],
+    "cooling": [
+      "You'll be cold by tonight and tell everyone it came out of nowhere."
     ]
   }
 }

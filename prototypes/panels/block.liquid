@@ -264,17 +264,34 @@ after the fact + flavour block and the picture.
     {%- comment %}
     Two or three drawings and no forecast line: the change is on screen as
     drawings, so the mood's lines written for them (flavour_vf_10 / _11,
-    review round 10) join the now lines. Theme days and topical lines keep
+    review round 10) join the standalone lines. Theme days and topical lines keep
     theirs. Every view shows flavour_line.
     {%- endcomment %}
     {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
       {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
       {%- assign vf_pool = texts[vf_key][mood] -%}
       {%- if vf_pool -%}
-        {%- if fl_now_pool -%}{%- assign vf_pool = vf_pool | concat: fl_now_pool -%}{%- endif -%}
+        {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
-        {%- assign flavour_line = vf_pool[vf_i] -%}
+        {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
+        {%- assign vf_month = ',' | append: today_month | append: ',' -%}
+        {%- for k in (1..vf_n) -%}
+          {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- if vf_cand contains '{M:' -%}
+            {%- assign vf_tag = vf_cand | split: '}' | first | remove: '{M:' -%}
+            {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}
+            {%- if vf_tags contains vf_month -%}
+              {%- assign vf_prefix = '{M:' | append: vf_tag | append: '}' -%}
+              {%- assign flavour_line = vf_cand | remove_first: vf_prefix -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign flavour_line = vf_cand -%}
+            {%- break -%}
+          {%- endif -%}
+          {%- assign vf_i = vf_i | plus: 1 | modulo: vf_n -%}
+        {%- endfor -%}
       {%- endif -%}
     {%- endif -%}
     {%- assign panel_flavour = flavour_line -%}

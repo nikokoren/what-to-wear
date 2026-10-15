@@ -306,7 +306,9 @@ ALONE = "2026-10-alone"
 
 def apply_alone(doc, lang, decisions):
     """Round 11: every sarcastic line sorted into where it can show (now,
-    day, drawings) and voted there. Once the round has votes, the now, day
+    day, drawings) and voted there. Day lines then split by the owner's
+    notes into follow-ups (flavour_*, under the forecast line) and
+    standalone ones (alone_*). Once the round has votes, the now, day
     and drawings pools are rebuilt from it: a current line stays (in the
     pool its row names) unless vetoed, a new one goes in only if kept;
     starred lines first, the owner's edits applied. Theme pools stay."""
@@ -326,11 +328,22 @@ def apply_alone(doc, lang, decisions):
             continue
         text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or row["text"]
         section, mood = row["path"].split(".", 1)
+        # The owner's notes (round 11) sort by the forecast line: a day line
+        # "fine on its own" that doesn't flow under it is a standalone line
+        # (alone_*); a line that doesn't work on its own is a follow-up.
+        note = (d.get("note") or "").lower().replace("’", "'")
+        level = section.rsplit("_", 1)[1]
+        if section.startswith("flavour_") and not section.startswith("flavour_vf") and "fine on it" in note:
+            section = f"alone_{level}"
+            n["standalone (owner's note)"] += 1
+        elif section.startswith("now_") and "on it's own does not work" in note:
+            section = f"flavour_{level}"
+            n["follow-up (owner's note)"] += 1
         pools[section][mood].append((verdict != "star", text))
         n["in"] += 1
     for level in ("10", "11"):
         themes = {k: v for k, v in doc.get(f"flavour_{level}", {}).items() if k.startswith("theme_")}
-        for section in (f"now_{level}", f"flavour_{level}", f"flavour_vf_{level}"):
+        for section in (f"now_{level}", f"alone_{level}", f"flavour_{level}", f"flavour_vf_{level}"):
             new = {}
             for mood, entries in pools[section].items():
                 texts = []

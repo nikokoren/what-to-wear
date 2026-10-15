@@ -213,6 +213,32 @@ starred, 69 vetoed, nearly all "not funny").
   trotzdem in kurzen Hosen rum". The screen doesn't know; it guesses.
 - **When two rounds vote the same line, the later vote stands.**
 
+### What round 11 added (the lines on their own)
+
+Every sarcastic line shown where it can appear (now lines alone under
+their drawing, day lines under the forecast line). 350 lines, 41 "Write
+new".
+
+- **Two kinds of sarcastic line** (owner, October 2026). Under the
+  forecast line, a line has to **build on it**: the ones that worked pick
+  up what it said and twist it ("Taking that layer off might be the
+  highlight of your day", "You'll put it on later and act like it was
+  your idea", "Fifty-fifty that layer goes missing by tonight"). A line
+  that is "fine on its own" reads as disconnected there ("sarcasm and
+  forecast aren't flowing together"), and one that answers the forecast
+  makes no sense without it ("You'll read all this, then do what you
+  were going to anyway"). So: **follow-ups** only under the forecast
+  line, written per situation; **standalone lines** everywhere else (the
+  outfit alone, the drawings).
+- **Seasonal lines.** Some only work at the start of the season ("every
+  year everyone's surprised it's cold" is wrong in February; the boots
+  still in the basement only at the first snow). A line can carry the
+  months it shows in.
+- **Twins are fine.** The owner kept both wordings of most round 5 twins.
+- **Say what it means.** "Unclear" came with questions: what's "refresh
+  on a schedule", "weather doesn't dress", "a neutral palette"? Plain
+  images over clever ones.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

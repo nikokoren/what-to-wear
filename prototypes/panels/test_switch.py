@@ -97,37 +97,47 @@ for view in VIEWS:
     expect(f"next only on a steady day: one drawing, 'works all day' ({view})",
            PANELS not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
 
-# Which sarcastic line: "now" lines (by what the Now drawing shows) on every
-# screen; the day's lines only with the forecast line on a day that changes;
-# the lines for the drawings only with two or three drawings and no words.
+# Which sarcastic line (round 11): under the forecast line only follow-ups
+# (flavour_10, by the day's mood); everywhere else standalone lines: now lines
+# (now_10, by the Now drawing) and the day's standalone lines (alone_10);
+# with two or three drawings and no words, the lines for the drawings too.
 MOODS = ("wet", "warming", "cooling", "cold", "fickle", "hot", "snow", "nice", "cool", "evening", "night")
-saved = {k: TEXTS["en"].get(k) for k in ("now_10", "flavour_10", "flavour_vf_10")}
+KEYS = ("now_10", "alone_10", "flavour_10", "flavour_vf_10")
+saved = {k: TEXTS["en"].get(k) for k in KEYS}
 TEXTS["en"]["now_10"] = {m: ["NOW LINE"] for m in MOODS}
-TEXTS["en"]["flavour_10"] = {m: ["DAY LINE"] for m in MOODS}
+TEXTS["en"]["alone_10"] = {m: ["ALONE LINE"] for m in MOODS}
+TEXTS["en"]["flavour_10"] = {m: ["FOLLOW-UP LINE"] for m in MOODS}
 TEXTS["en"]["flavour_vf_10"] = {m: ["DRAWINGS LINE"] for m in MOODS}
+MARKERS = ("NOW LINE", "ALONE LINE", "FOLLOW-UP LINE", "DRAWINGS LINE")
 
 
 def line(html):
-    return next((t for t in ("NOW LINE", "DAY LINE", "DRAWINGS LINE") if t in html), None)
+    return next((t for t in MARKERS if t in html), None)
 
 
 def lines_over_hours(**kw):
     """The sarcastic lines from 7:00 to 12:00 (they rotate by the hour)."""
-    out = set()
-    for h in (7, 8, 9, 10, 11, 12):
-        out.add(line(render(hour=h, **kw)))
-    return out
+    return {line(render(hour=h, **kw)) for h in (7, 8, 9, 10, 11, 12)}
 
 
-expect("outfit alone: only now lines", lines_over_hours(field=False) == {"NOW LINE"})
-expect("forecast on, a changing day: the day's and now lines", lines_over_hours(field=True) == {"NOW LINE", "DAY LINE"})
-expect("a steady day: the day's lines too (nothing changes), with or without words",
-       lines_over_hours(field=True, feels=STEADY) == {"NOW LINE", "DAY LINE"}
-       and lines_over_hours(field=False, feels=STEADY) == {"NOW LINE", "DAY LINE"})
-expect("drawings without words: lines for the drawings and now lines, never the day's",
-       lines_over_hours(field=False, nxt=True) == {"NOW LINE", "DRAWINGS LINE"})
-expect("both on: the day's and now lines, never the drawings'", lines_over_hours(field=True, nxt=True) == {"NOW LINE", "DAY LINE"})
-expect("one drawing with 'works all day': now and the day's lines", lines_over_hours(field=False, feels=STEADY, nxt=True) == {"NOW LINE", "DAY LINE"})
+STANDALONE = {"NOW LINE", "ALONE LINE"}
+expect("forecast on, a changing day: only follow-ups", lines_over_hours(field=True) == {"FOLLOW-UP LINE"})
+expect("forecast on, a steady day: only follow-ups", lines_over_hours(field=True, feels=STEADY) == {"FOLLOW-UP LINE"})
+expect("both on: only follow-ups", lines_over_hours(field=True, nxt=True) == {"FOLLOW-UP LINE"})
+expect("outfit alone: standalone lines", lines_over_hours(field=False) == STANDALONE)
+expect("outfit alone, a steady day: standalone lines", lines_over_hours(field=False, feels=STEADY) == STANDALONE)
+expect("drawings without words: drawings and standalone lines",
+       lines_over_hours(field=False, nxt=True) == STANDALONE | {"DRAWINGS LINE"})
+expect("one drawing with 'works all day': standalone lines", lines_over_hours(field=False, feels=STEADY, nxt=True) == STANDALONE)
+# No follow-ups for the mood: the standalone lines, under the forecast line too.
+TEXTS["en"]["flavour_10"] = {}
+expect("no follow-ups: standalone lines", lines_over_hours(field=True) <= STANDALONE)
+# Month tags: a line shows only in its months; otherwise the next line.
+TEXTS["en"]["flavour_10"] = {m: ["{M:01,02}WINTER LINE", "FOLLOW-UP LINE"] for m in MOODS}
+expect("a June day skips a January line", all("WINTER LINE" not in render(True, hour=h) and "{M:" not in render(True, hour=h) for h in range(7, 13)))
+TEXTS["en"]["flavour_10"] = {m: ["{M:05,06,07}SUMMER LINE", "FOLLOW-UP LINE"] for m in MOODS}
+expect("a June day shows a June line, tag stripped", any("SUMMER LINE" in render(True, hour=h) for h in range(7, 13))
+       and not any("{M:" in render(True, hour=h) for h in range(7, 13)))
 for k, v in saved.items():
     if v is None:
         TEXTS["en"].pop(k, None)
@@ -139,7 +149,11 @@ for k, v in saved.items():
 # lines contradicted the drawing. Now lines go by the Now drawing.
 WARMING = [16, 16, 16, 17, 18, 19, 20, 22, 24, 25, 26, 27, 28, 29, 30, 30, 29, 28, 27, 26, 25, 24, 23, 22]
 nice = set(TEXTS["en"]["now_11"]["nice"]) | set(TEXTS["en"]["now_11"].get("hot", []))
-cool_only = set(TEXTS["en"]["flavour_11"]["cool"]) - nice
+cool_lines = set()
+for key in ("now_11", "alone_11", "flavour_11"):
+    cool_lines |= set(TEXTS["en"].get(key, {}).get("cool", []))
+cool_only = cool_lines - nice
+expect("the regression test has cool lines to look for", any("crisp" in t for t in cool_only))
 for h in (7, 9, 11, 13):
     for field, nxt in ((False, False), (False, True)):
         html = render(field, sarcasm="11", feels=WARMING, hour=h, nxt=nxt)

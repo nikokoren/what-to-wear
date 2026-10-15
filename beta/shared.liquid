@@ -1309,6 +1309,8 @@ Reads only what the scenario logic above already worked out.
 {%- assign mood = '' -%}
 {%- assign now_mood = '' -%}
 {%- assign fl_now_pool = nil -%}
+{%- assign fl_alone_all = nil -%}
+{%- assign today_month = today_md | slice: 0, 2 -%}
 {%- assign flavour_topical = false -%}
 {%- comment %}
 The two switches (config/settings.next.yaml):
@@ -1482,26 +1484,29 @@ current time moves every 15 minutes, so the merge variables change.
   {%- if sarcasm_level != '0' -%}
     {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
     {%- assign fl_lib = texts[fl_key] -%}
-    {%- assign now_key = 'now_' | append: sarcasm_level -%}
-    {%- assign fl_now_pool = texts[now_key][now_mood] -%}
-    {%- unless fl_now_pool -%}{%- assign fl_now_pool = fl_lib[now_mood] -%}{%- endunless -%}
     {%- comment %}
-    The day's lines (the mood's pool) are about the shape of the day: a
-    change, or a day without one ("Easy day to forecast"). They join when
-    that's true on screen: the forecast line on a day that changes, or a
-    steady day. Then they mix with the now lines. Two or three drawings
-    without words get theirs in the panels block. Otherwise: now lines.
+    Two kinds of sarcastic line (owner, round 11). Under the forecast line,
+    follow-ups (flavour_10 / _11, by the day's mood): they build on what it
+    said ("Taking that layer off might be the highlight of your day").
+    Everywhere else, standalone lines: the now lines (now_10 / _11, by what
+    the Now drawing shows) and the day's own standalone lines (alone_10 /
+    _11, by the day's mood: "Later it cools off. I saw that coming"). Two
+    or three drawings add theirs in the panels block. No follow-ups for
+    the mood: the standalone lines.
     {%- endcomment %}
-    {%- assign fl_pool = fl_now_pool -%}
-    {%- assign fl_day_pool = fl_lib[mood] -%}
-    {%- assign fl_day_shown = is_steady -%}
-    {%- if forecast_on and fact_line != '' -%}{%- assign fl_day_shown = true -%}{%- endif -%}
-    {%- if fl_day_shown and fl_day_pool -%}
-      {%- if fl_now_pool -%}
-        {%- assign fl_pool = fl_day_pool | concat: fl_now_pool -%}
-      {%- else -%}
-        {%- assign fl_pool = fl_day_pool -%}
-      {%- endif -%}
+    {%- assign now_key = 'now_' | append: sarcasm_level -%}
+    {%- assign alone_key = 'alone_' | append: sarcasm_level -%}
+    {%- assign fl_now_pool = texts[now_key][now_mood] -%}
+    {%- assign fl_alone_pool = texts[alone_key][mood] -%}
+    {%- assign fl_alone_all = fl_now_pool -%}
+    {%- if fl_alone_pool and fl_now_pool -%}
+      {%- assign fl_alone_all = fl_alone_pool | concat: fl_now_pool -%}
+    {%- elsif fl_alone_pool -%}
+      {%- assign fl_alone_all = fl_alone_pool -%}
+    {%- endif -%}
+    {%- assign fl_pool = fl_alone_all -%}
+    {%- if forecast_on and fact_line != '' and fl_lib[mood] -%}
+      {%- assign fl_pool = fl_lib[mood] -%}
     {%- endif -%}
     {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
     {%- assign fl_theme = false -%}
@@ -1515,7 +1520,28 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}
       {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
-      {%- assign flavour_line = fl_pool[fl_i] -%}
+      {%- comment %}
+      A line may carry the months it shows in, as a tag build_pools.py puts
+      in front: "{M:10,11}Every year everyone's surprised…". In another
+      month the next line of the pool shows instead.
+      {%- endcomment %}
+      {%- assign fl_month = ',' | append: today_month | append: ',' -%}
+      {%- for k in (1..fl_n) -%}
+        {%- assign fl_cand = fl_pool[fl_i] -%}
+        {%- if fl_cand contains '{M:' -%}
+          {%- assign fl_tag = fl_cand | split: '}' | first | remove: '{M:' -%}
+          {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
+          {%- if fl_tags contains fl_month -%}
+            {%- assign fl_prefix = '{M:' | append: fl_tag | append: '}' -%}
+            {%- assign flavour_line = fl_cand | remove_first: fl_prefix -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign flavour_line = fl_cand -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
+      {%- endfor -%}
     {%- endif -%}
 
     {%- comment %}
@@ -1899,17 +1925,34 @@ after the fact + flavour block and the picture.
     {%- comment %}
     Two or three drawings and no forecast line: the change is on screen as
     drawings, so the mood's lines written for them (flavour_vf_10 / _11,
-    review round 10) join the now lines. Theme days and topical lines keep
+    review round 10) join the standalone lines. Theme days and topical lines keep
     theirs. Every view shows flavour_line.
     {%- endcomment %}
     {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
       {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
       {%- assign vf_pool = texts[vf_key][mood] -%}
       {%- if vf_pool -%}
-        {%- if fl_now_pool -%}{%- assign vf_pool = vf_pool | concat: fl_now_pool -%}{%- endif -%}
+        {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
-        {%- assign flavour_line = vf_pool[vf_i] -%}
+        {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
+        {%- assign vf_month = ',' | append: today_month | append: ',' -%}
+        {%- for k in (1..vf_n) -%}
+          {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- if vf_cand contains '{M:' -%}
+            {%- assign vf_tag = vf_cand | split: '}' | first | remove: '{M:' -%}
+            {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}
+            {%- if vf_tags contains vf_month -%}
+              {%- assign vf_prefix = '{M:' | append: vf_tag | append: '}' -%}
+              {%- assign flavour_line = vf_cand | remove_first: vf_prefix -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign flavour_line = vf_cand -%}
+            {%- break -%}
+          {%- endif -%}
+          {%- assign vf_i = vf_i | plus: 1 | modulo: vf_n -%}
+        {%- endfor -%}
       {%- endif -%}
     {%- endif -%}
     {%- assign panel_flavour = flavour_line -%}
