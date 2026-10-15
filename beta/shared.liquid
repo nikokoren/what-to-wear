@@ -1486,14 +1486,17 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign fl_now_pool = texts[now_key][now_mood] -%}
     {%- unless fl_now_pool -%}{%- assign fl_now_pool = fl_lib[now_mood] -%}{%- endunless -%}
     {%- comment %}
-    The day's lines (the mood's pool) may be about a change, so they only
-    join when the change is on screen: here, the forecast line on a day
-    that changes. Then they mix with the now lines. Two or three drawings
+    The day's lines (the mood's pool) are about the shape of the day: a
+    change, or a day without one ("Easy day to forecast"). They join when
+    that's true on screen: the forecast line on a day that changes, or a
+    steady day. Then they mix with the now lines. Two or three drawings
     without words get theirs in the panels block. Otherwise: now lines.
     {%- endcomment %}
     {%- assign fl_pool = fl_now_pool -%}
     {%- assign fl_day_pool = fl_lib[mood] -%}
-    {%- if forecast_on and fact_line != '' and is_steady == false and fl_day_pool -%}
+    {%- assign fl_day_shown = is_steady -%}
+    {%- if forecast_on and fact_line != '' -%}{%- assign fl_day_shown = true -%}{%- endif -%}
+    {%- if fl_day_shown and fl_day_pool -%}
       {%- if fl_now_pool -%}
         {%- assign fl_pool = fl_day_pool | concat: fl_now_pool -%}
       {%- else -%}

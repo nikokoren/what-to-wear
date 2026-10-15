@@ -56,7 +56,7 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|fact|topical)_(\d+))\.([a-z0-9_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|now|fact|topical)_(\d+))\.([a-z0-9_]+)$")
 PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
@@ -178,7 +178,7 @@ def flavour_context(lang, doc, key, text):
 def context(lang, doc, section, key, text):
     """What the device shows for this line: drawing, full tip, pairing."""
     kind, level = section.rsplit("_", 1)
-    if kind in ("flavour", "flavour_vf"):
+    if kind in ("flavour", "flavour_vf", "now"):
         return flavour_context(lang, doc, key, text)
     if kind == "topical":
         # A topical line takes the flavour slot on an ordinary day; the

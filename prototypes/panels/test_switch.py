@@ -112,20 +112,22 @@ def line(html):
 
 
 def lines_over_hours(**kw):
-    """The sarcastic lines a changing day shows from 7:00 to 10:00 (they rotate by the hour)."""
+    """The sarcastic lines from 7:00 to 12:00 (they rotate by the hour)."""
     out = set()
-    for h in (7, 8, 9, 10):
+    for h in (7, 8, 9, 10, 11, 12):
         out.add(line(render(hour=h, **kw)))
     return out
 
 
 expect("outfit alone: only now lines", lines_over_hours(field=False) == {"NOW LINE"})
 expect("forecast on, a changing day: the day's and now lines", lines_over_hours(field=True) == {"NOW LINE", "DAY LINE"})
-expect("forecast on, a steady day: now lines", line(render(True, feels=STEADY)) == "NOW LINE")
+expect("a steady day: the day's lines too (nothing changes), with or without words",
+       lines_over_hours(field=True, feels=STEADY) == {"NOW LINE", "DAY LINE"}
+       and lines_over_hours(field=False, feels=STEADY) == {"NOW LINE", "DAY LINE"})
 expect("drawings without words: lines for the drawings and now lines, never the day's",
        lines_over_hours(field=False, nxt=True) == {"NOW LINE", "DRAWINGS LINE"})
 expect("both on: the day's and now lines, never the drawings'", lines_over_hours(field=True, nxt=True) == {"NOW LINE", "DAY LINE"})
-expect("one drawing with 'works all day': now lines", line(render(False, feels=STEADY, nxt=True)) == "NOW LINE")
+expect("one drawing with 'works all day': now and the day's lines", lines_over_hours(field=False, feels=STEADY, nxt=True) == {"NOW LINE", "DAY LINE"})
 for k, v in saved.items():
     if v is None:
         TEXTS["en"].pop(k, None)

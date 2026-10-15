@@ -301,6 +301,47 @@ def build_visual(doc, lang, decisions):
 
 
 NOW_MOODS = ["snow", "wet", "night", "evening", "hot", "cold", "nice", "cool"]
+ALONE = "2026-10-alone"
+
+
+def apply_alone(doc, lang, decisions):
+    """Round 11: every sarcastic line sorted into where it can show (now,
+    day, drawings) and voted there. Once the round has votes, the now, day
+    and drawings pools are rebuilt from it: a current line stays (in the
+    pool its row names) unless vetoed, a new one goes in only if kept;
+    starred lines first, the owner's edits applied. Theme pools stay."""
+    path = REPO / "review" / "rounds" / f"{ALONE}.json"
+    votes = {(d["path"].split("[")[0], d["text"]): d for d in decisions.values() if d.get("round") == ALONE}
+    if not path.exists() or not votes:
+        return collections.Counter()
+    n = collections.Counter()
+    pools = collections.defaultdict(lambda: collections.defaultdict(list))
+    for row in json.loads(path.read_text(encoding="utf-8"))["lines"]:
+        if row["lang"] != lang:
+            continue
+        d = votes.get((row["path"], row["text"])) or {}
+        verdict = d.get("verdict", "")
+        if verdict in ("veto", "rewrite") or (row.get("new") and verdict not in ("star", "keep")):
+            n["out" if verdict else "new, not kept"] += 1
+            continue
+        text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or row["text"]
+        section, mood = row["path"].split(".", 1)
+        pools[section][mood].append((verdict != "star", text))
+        n["in"] += 1
+    for level in ("10", "11"):
+        themes = {k: v for k, v in doc.get(f"flavour_{level}", {}).items() if k.startswith("theme_")}
+        for section in (f"now_{level}", f"flavour_{level}", f"flavour_vf_{level}"):
+            new = {}
+            for mood, entries in pools[section].items():
+                texts = []
+                for _, t in sorted(entries, key=lambda e: e[0]):
+                    if t not in texts:
+                        texts.append(t)
+                new[mood] = texts
+            if section == f"flavour_{level}":
+                new.update(themes)
+            doc[section] = new
+    return n
 
 
 def build_now(doc, lang, decisions):
@@ -388,6 +429,9 @@ def main():
             print(f"{lang} Visual Forecast: {visual['new']} new lines, {visual['kept off']} kept off")
         now = build_now(doc, lang, decisions)
         print(f"{lang} now lines: {now['lines']}")
+        alone = apply_alone(doc, lang, decisions)
+        if alone:
+            print(f"{lang} round 11: " + ", ".join(f"{v} {k}" for k, v in alone.items()))
         write_new = apply_write_new(doc, lang, decisions)
         if write_new:
             print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))

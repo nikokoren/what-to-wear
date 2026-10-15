@@ -54,8 +54,8 @@ DATE = "2026-06-10"
 day = [render(DATE, h) for h in range(7, 17)]
 mood = day[0][2]
 expect("a steady daytime mood", mood == "nice" and all(d[2] == mood for d in day))
-# A steady day shows the "now" lines for what the drawing shows.
-pool = TEXTS["en"].get("now_10", {}).get(mood) or TEXTS["en"]["flavour_10"][mood]
+# A steady day mixes the day's lines with the now lines, as block.liquid does.
+pool = TEXTS["en"]["flavour_10"].get(mood, []) + (TEXTS["en"].get("now_10", {}).get(mood) or [])
 
 # A new sarcastic line every hour, and the fact wording moves too.
 expect("the sarcastic line changes every hour", all(day[i][1] != day[i + 1][1] for i in range(len(day) - 1)))
@@ -67,10 +67,10 @@ expect("same words at :00 and :59", render(DATE, 9, 0) == render(DATE, 9, 59))
 # Someone who only looks at 7:00 sees the whole pool over the days.
 d0 = dt.date.fromisoformat(DATE)
 mornings = {render((d0 + dt.timedelta(days=i)).isoformat(), 7)[1] for i in range(len(pool))}
-expect(f"every 7:00 line over {len(pool)} days ({len(mornings)} of {len(pool)})", mornings == set(pool))
+expect(f"every 7:00 line over {len(pool)} days ({len(mornings)} of {len(set(pool))})", mornings == set(pool))
 
 # Never the next line in the pool: an hour on lands elsewhere.
-idx = [pool.index(d[1]) for d in day]
+idx = [pool.index(d[1]) for d in day]  # first index of the line in the mixed pool
 expect("an hour on isn't simply the next line", any((b - a) % len(pool) != 1 for a, b in zip(idx, idx[1:])))
 
 # The primes (101, 103) must be larger than every pool, merged pools included.
