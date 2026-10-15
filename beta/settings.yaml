@@ -1,29 +1,43 @@
 # TRMNL form fields for the redesign: the whole form, to paste into the
 # beta fork now and to replace config/settings.yaml when the redesign
-# ships. TRMNL is still edited by hand.
+# ships. TRMNL is still edited by hand. The owner's spec (October 2026,
+# docs/TODO.md item 12): Language, Do you run cold or warm?, Forecast,
+# What to Wear Next?, Sarcasm, in that order, with these labels.
 #
-# To be redone before shipping, to the owner's spec in docs/TODO.md
-# (item 12): five fields in a new order, Visual Forecast as its own
-# on/off field, no field for topical lines.
+# What changed from settings.yaml, and why no saved value moves:
 #
-# What changed from settings.yaml, and why none of it moves a saved value:
+#   show_future_suggestions  Same key, now on/off (boolean: true/false).
+#                            Saved "Yes"/"No" still work: the markup reads
+#                            no/false/0 as off and anything else as on, and
+#                            no longer uses `default:` for this field (it
+#                            would turn a saved false into "yes"). Check in
+#                            the beta: how does the on/off field show a
+#                            saved "No"? If it shows it as on, a user who
+#                            then saves the form switches the forecast on;
+#                            then this stays a select with "Yes"/"No".
+#   what_to_wear_next        New, on/off, default off: the drawings (it was
+#                            Visual Forecast, a third Forecast value,
+#                            "visual", in the first beta; a fork with that
+#                            saved still gets the drawings without words).
+#                            Both switches can be on: drawings and words.
+#   sarcasm_level            Same key and values, default now Off. Saved
+#                            values stay; installs with none keep On, as
+#                            before (the markup's fallback). It works in
+#                            every mode now, the outfit alone included, so
+#                            nothing hides it any more.
+#   topical_lines            Gone: jokes about current events come with
+#                            sarcasm when they're picked up again (they are
+#                            parked, docs/TODO.md item 8; until then the
+#                            markup shows none, as it does with no value).
+#   temp_preference, language  Same keys, values and defaults; new labels.
+#   latitude, longitude      Same keys, in a collapsed group.
 #
-#   show_future_suggestions  Same key, same "Yes" and "No". A third value,
-#                            "visual", turns on Visual Forecast (the day's
-#                            outfits side by side), so the words and the
-#                            pictures can't both be on. Markup from before
-#                            reads anything but no/false/0 as on, so if
-#                            this form ships first, "visual" shows words.
-#   sarcasm_level            Same key and values; the label now says it
-#                            works with words and Visual Forecast alike.
-#   topical_lines            New (was prototypes/fact-flavour/settings-topical.yaml).
-#   latitude, longitude      Same keys, now in a collapsed group.
+# The on/off fields are `optional: true`: a required checkbox can't be
+# saved unticked.
 #
-# conditional_validation only hides fields in the form; their saved values
-# stay, and the markup never needs them while hidden (no forecast: no words
-# at all; sarcasm off: no sarcastic line, so no topical one). The `when`
-# values and the shape are from TRMNL's docs, untested: build the same rule
-# once in TRMNL's visual form builder and compare before relying on it.
+# German: the field names have no German version in TRMNL's form (only
+# description-de); the Language hint is help_text in English and
+# description-de in German.
 #
 # Adding a language means adding an option to the `language` field below
 # AND shipping lang/<code>.json. See docs/TRANSLATING.md.
@@ -31,9 +45,11 @@
   field_type: author_bio
   name: About this plugin
   # Before shipping: add the release to the changelog below, e.g.
-  # "v1.3.0 – <date> New: Visual Forecast. Pick it under Forecast and the
-  # day's outfits line up side by side: what to wear now, and from when
-  # the next one fits, until the evening. ..." plus the German entry.
+  # "v1.3.0 – <date> New: What to Wear Next. Switch it on and the day's
+  # outfits line up side by side: what to wear now, and from when the
+  # next one fits, until the evening. ..." plus the German entry.
+  # And a contact method, in both languages: the Language field's hint
+  # sends people here to offer translations, and there is none yet.
   description: "Getting out the door has never been this easy!<br>Your TRMNL now reads your local weather forecast and tells you exactly what to wear.<br>Keep it simple with the perfect outfit for right now, or turn on future hints for clothing suggestions based on upcoming weather changes. Choose a kid-friendly tone or dial the sarcasm all the way up to eleven.<br>Comes with 30+ hand-drawn outfits, including festive themes that unlock throughout the year.<br>Install (don't Fork!) to automatically receive new outfits and updates.<br><br>v1.2.0 – 2026-09-03
 New light jacket outfit for the gap between hoodie and puffer, plus an extra cold band so freezing and properly freezing finally look different. Future hints now name the layer you're actually wearing and add the timing, so you know when the jacket comes off or the sweatshirt goes back on. All three tones rewritten: neutral got warmer, sarcastic got more range, and eleven got a narrator who makes it personal.<br>v1.1.0 – 2026-01-23 What to Wear now speaks Deutsch. Added German future outfit suggestions and expanded the English text library with more variety across future weather conditions and sarcasm levels.<br> <br>v1.0.1 - 2025-11-26 Time is now calculated based on coordinates, not local time of device. Dedicated to everyone using TRMNL to dissociate into a sunny mini-vacation."
   category: "life,environment"
@@ -51,64 +67,20 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   description: Optional. Name will be shown in the bottom bar
   optional: true
   description-de: "Optional. Name wird in der Fußleiste angezeigt"
-- keyname: show_future_suggestions
-  field_type: select
-  name: Forecast
-  description: "What's coming later today: in words, or as Visual Forecast (new), the day's outfits side by side from now until the evening. Off keeps it to what to wear right now."
-  description-de: "Was später am Tag kommt: in Worten oder als Visual Forecast (neu), die Outfits des Tages nebeneinander, von jetzt bis zum Abend. Aus zeigt nur, was du gerade anziehen solltest."
-  default: "Yes"
-  options:
-  - "Off: just what to wear now": "No"
-  - "In words": "Yes"
-  - "Visual Forecast (new)": "visual"
-  conditional_validation:
-  - when: "No"
-    hidden:
-    - sarcasm_level
-    - topical_lines
 - keyname: language
   field_type: select
-  name: In what language should the clothing suggestions be shown?
+  name: Language
+  help_text: "Don't see your preferred language and want to help me translate? Reach out via the contact method linked in the about section above."
+  description-de: "Deine Sprache fehlt und du würdest beim Übersetzen helfen? Melde dich über den Kontakt, der oben unter „About this plugin“ verlinkt ist."
   default: "en"
   options:
   - English: "en"
   - German: "de"
-  description-de: "In welcher Sprache sollen die Kleidungsvorschläge angezeigt werden?"
-- keyname: sarcasm_level
-  field_type: select
-  name: Sarcasm
-  description: "A sarcastic line under the forecast, in words or Visual Forecast alike. Off, on, or up to 11."
-  description-de: "Ein sarkastischer Satz unter der Vorhersage, in Worten wie im Visual Forecast. Aus, an, oder auf 11 gedreht."
-  default: "10"
-  options:
-  - "Off": 0
-  - "On": 10
-  - 11: 11
-  conditional_validation:
-  - when: 0
-    hidden:
-    - topical_lines
-- keyname: topical_lines
-  field_type: select
-  name: Jokes about current events
-  description: "Now and then the sarcastic line is about something in the news: sport, records, the clocks changing. Never politics, crime or tragedies."
-  description-de: "Ab und zu geht der sarkastische Satz um etwas Aktuelles: Sport, Rekorde, die Zeitumstellung. Nie Politik, Verbrechen oder Unglücke."
-  default: "on"
-  optional: true
-  options:
-  - "Off": "off"
-  - "On": "on"
-  # New installs get the default, "on". Installs from before the field have
-  # no value saved, and the markup treats no value as off, so nobody who
-  # installed the plugin for the weather starts seeing news jokes unasked.
-  # Check this in TRMNL's editor before shipping: if TRMNL fills in the
-  # default for existing installs too, change the default to "off".
-  # optional: true because the field can be hidden, and a hidden required
-  # field can fail the form's check on save (TRMNL's docs).
 - keyname: temp_preference
   field_type: select
-  name: Do you run cold or warm?
-  description: "Optional. Shifts every outfit suggestion up or down the scale to match how you actually feel the cold."
+  name: Do you run cold or warm? (New!)
+  description: "Adjust clothing suggestions to match how you experience the temperature."
+  description-de: "Passt die Kleidungsvorschläge daran an, wie du Temperaturen empfindest."
   default: "0"
   optional: true
   options:
@@ -117,8 +89,31 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   - "Average": 0
   - "I run warm": 2
   - "I'm always hot": 4
-  description-de: "Optional. Verschiebt alle Kleidungsvorschläge nach oben oder unten, je nachdem, wie du Kälte tatsächlich empfindest."
   # Words, not degrees, and one uniform shift: see config/settings.yaml.
+- keyname: show_future_suggestions
+  field_type: boolean
+  name: Forecast
+  description: "Show a written summary of upcoming weather changes and what to wear."
+  description-de: "Zeigt in Worten, welche Wetteränderungen kommen und was du dann anziehen solltest."
+  default: true
+  optional: true
+- keyname: what_to_wear_next
+  field_type: boolean
+  name: What to Wear Next? (New!)
+  description: "Preview upcoming outfit changes with dressed figurines and the times you'll need them."
+  description-de: "Zeigt mit angezogenen Figuren, welche Outfits heute noch kommen und ab wann du sie brauchst."
+  default: false
+  optional: true
+- keyname: sarcasm_level
+  field_type: select
+  name: Sarcasm
+  description: "Turn the sarcasm off, on, or crank it up to 11. Expect commentary on the weather, what's coming, and your questionable life choices, regardless of whether the written forecast is enabled."
+  description-de: "Sarkasmus aus, an oder auf 11 gedreht. Rechne mit Kommentaren zum Wetter, zu dem, was kommt, und zu deinen fragwürdigen Lebensentscheidungen, auch wenn die Vorhersage in Worten aus ist."
+  default: "0"
+  options:
+  - "Off": 0
+  - "On": 10
+  - 11: 11
 - keyname: show_bottom_bar
   field_type: select
   name: Title bar

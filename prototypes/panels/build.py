@@ -49,18 +49,27 @@ ANCHOR = "{%- comment %}\n============ THE PICTURE"
 # The words take their natural height. No content limiter: on the X it
 # measures the drawings scaled up and the space not, and hides the words.
 VIEWS = {
-    "full": dict(words="content--xlarge lg:content--xxlarge", label="lg:label--xlarge", ih_words=66, ih_bare=80),
+    "full": dict(words="content--xlarge lg:content--xxlarge", label="lg:label--xlarge", ih_words=66, ih_bare=80,
+                 ih_fact=50, words_fact="content--large lg:content--xlarge"),
     "half_horizontal": dict(words="content--large lg:content--xlarge", label="lg:label--xlarge", ih_words=62, ih_bare=78,
+                            ih_fact=48, words_fact="content--base lg:content--large",
                             side=True, side_ih=84),
     "half_vertical": dict(words="content--large lg:content--xlarge", words_n="content--base lg:content--xlarge",
-                          label="lg:label--xlarge", ih_words=62, ih_bare=78, stack=dict(words=70, bare=86)),
+                          label="lg:label--xlarge", ih_words=62, ih_bare=78, stack=dict(fact=58, words=70, bare=86),
+                          ih_fact=50, words_fact="content--base lg:content--large"),
     "quadrant": dict(words="content--base lg:content--large", words_n="content--small lg:content--large",
-                     label="lg:label--large", ih_words=54, ih_bare=74, side_one=True),
+                     label="lg:label--large", ih_words=54, ih_bare=74, side_one=True,
+                     ih_fact=42, words_fact="content--small lg:content--base"),
 }
 ROW = 94        # the row of two or three drawings, in view width
 SIDE_ROW = 60   # the same, with the words beside it (side_words wide)
 SIDE_WORDS = 34
+SIDE_ROW_FACT, SIDE_WORDS_FACT = 50, 46   # with the forecast line too, the words get more room
 ONE_MIN = 40    # one drawing never gets less of the height than this
+# Two or three drawings with the forecast line under or beside them (both
+# switches on) get a lower cap (ih_fact) and words a size smaller
+# (words_fact): the forecast line and the sarcastic line are two to five
+# lines.
 # One drawing beside the words: its column, its box, and the words' width.
 ONE_SIDE = (36, 52, 60)
 # A stacked panel's time, with its gap, in view height: OG, X.
@@ -106,15 +115,22 @@ def build_view(view, v):
     side, side_one, stack = v.get("side", False), v.get("side_one", False), v.get("stack")
     words_n = v.get("words_n", v["words"])
     a = []
-    a.append("""{%- comment %} The words: the forecast in words, or Visual Forecast's. {%- endcomment %}
+    a.append("""{%- comment %}
+The words. Forecast on: the forecast line and the sarcastic line, with or
+without the drawings. Only the drawings: "works all day" on one, and a
+line that stands alone. Neither: the outfit, and at On and 11 a line that
+stands alone.
+{%- endcomment %}
 {%- assign w_fact = '' -%}
 {%- assign w_flavour = '' -%}
-{%- if visual_forecast -%}
-  {%- assign w_fact = panel_fact -%}
-  {%- assign w_flavour = panel_flavour -%}
-{%- elsif show_future_suggestions == 'on' and fact_line != '' -%}
+{%- if forecast_on and fact_line != '' -%}
   {%- assign w_fact = fact_line -%}
   {%- assign w_flavour = flavour_line -%}
+{%- elsif visual_forecast -%}
+  {%- assign w_fact = panel_fact -%}
+  {%- assign w_flavour = panel_flavour -%}
+{%- else -%}
+  {%- assign w_flavour = alone_flavour -%}
 {%- endif -%}
 {%- assign has_words = false -%}
 {%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
@@ -155,23 +171,28 @@ def build_view(view, v):
         return round(img * 0.75), round(img)
     for k in (2, 3):
         a.append(("{%- if n == 2 -%}\n" if k == 2 else "{%- else -%}\n"))
-        for words_on in (True, False):
-            a.append("  {%- if has_words -%}\n" if words_on else "  {%- else -%}\n")
-            ih = v["ih_words"] if words_on else v["ih_bare"]
+        # Three cases: the forecast line under the drawings (both switches on),
+        # only the sarcastic line, no words.
+        for case in ("fact", "words", "bare"):
+            a.append({"fact": "  {%- if w_fact != '' -%}\n", "words": "  {%- elsif has_words -%}\n",
+                      "bare": "  {%- else -%}\n"}[case])
+            ih = {"fact": v["ih_fact"], "words": v["ih_words"], "bare": v["ih_bare"]}[case]
+            wclass = v["words_fact"] if case == "fact" else words_n
             col, img = sizes(ROW, k)
             panel = f"w--[{col}cqw]"
             image = f"w--[{img}cqw] h--max-[{ih}cqh]"
             outer = "layout layout--col gap--small"
             row = "flex flex--row gap--none"
-            words = f"w--[92cqw] {words_n}"
-            if side and words_on:
-                scol, simg = sizes(SIDE_ROW, k)
+            words = f"w--[92cqw] {wclass}"
+            if side and case != "bare":
+                srow, swords = (SIDE_ROW_FACT, SIDE_WORDS_FACT) if case == "fact" else (SIDE_ROW, SIDE_WORDS)
+                scol, simg = sizes(srow, k)
                 outer = "layout layout--row portrait:layout--col gap"
                 panel = f"w--[{scol}cqw] portrait:w--[{col}cqw]"
                 image = f"w--[{simg}cqw] h--max-[{v['side_ih']}cqh] portrait:w--[{img}cqw] portrait:h--max-[{ih}cqh]"
-                words = f"w--[{SIDE_WORDS}cqw] portrait:w--[92cqw] {words_n}"
+                words = f"w--[{swords}cqw] portrait:w--[92cqw] {wclass}"
             if stack:
-                total = stack["words" if words_on else "bare"]
+                total = stack[case]
                 caps = [int((total - (k - 1) * 2 - k * lbl) / k) for lbl in STACK_LABEL]
                 row += " portrait:flex--col"
                 panel += " portrait:w--[100cqw]"

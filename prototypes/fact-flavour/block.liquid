@@ -14,6 +14,23 @@ Reads only what the scenario logic above already worked out.
 {%- assign mood = '' -%}
 {%- assign flavour_topical = false -%}
 {%- comment %}
+The two switches (config/settings.next.yaml):
+  Forecast            show_future_suggestions, the field that was there:
+                      "Yes"/"No" saved before, true/false now. The words.
+  What to Wear Next?  what_to_wear_next, true/false: the drawings.
+Both can be on. The first beta had the drawings as a third Forecast value,
+"visual": a fork with that saved keeps drawings without words.
+The sarcastic line no longer needs either: it shows at On and 11 even on
+the outfit alone.
+{%- endcomment %}
+{%- assign forecast_on = false -%}
+{%- if show_future_suggestions == 'on' and sfs_check != 'visual' -%}{%- assign forecast_on = true -%}{%- endif -%}
+{%- assign next_check = trmnl.plugin_settings.custom_fields_values.what_to_wear_next | append: '' | downcase | strip -%}
+{%- assign next_on = false -%}
+{%- if next_check == 'true' or next_check == 'on' or next_check == 'yes' or next_check == '1' or sfs_check == 'visual' -%}
+  {%- assign next_on = true -%}
+{%- endif -%}
+{%- comment %}
 Which wording shows changes every hour, not once a day, so a day whose
 weather doesn't change still reads differently in the afternoon. Each
 pool takes (text_rot + its own offset) mod its size. Day and hour are
@@ -27,7 +44,7 @@ current time moves every 15 minutes, so the merge variables change.
 {%- assign text_rot = local_days | times: 101 -%}
 {%- assign text_rot_h = local_hour | times: 103 -%}
 {%- assign text_rot = text_rot | plus: text_rot_h -%}
-{%- if is_error == false and show_future_suggestions == 'on' and texts_ok and texts.facts -%}
+{%- if is_error == false and texts_ok and texts.facts -%}
   {%- assign F = texts.facts -%}
   {%- if is_steady -%}
     {%- if local_hour >= 17 -%}

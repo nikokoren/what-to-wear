@@ -99,7 +99,13 @@ in snow.
 
 {%- comment %} ============ SETTINGS ============ {%- endcomment %}
 {%- assign location_label_raw = trmnl.plugin_settings.custom_fields_values.location_label | default: '' -%}
-{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions | default: 'yes' -%}
+{%- comment %}
+Forecast: "Yes"/"No" as saved for years, true/false from the on/off field
+that replaced the select. No `default:` here: Liquid's default replaces
+false too, which would turn a switched-off forecast back on.
+{%- endcomment %}
+{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions -%}
+{%- if show_future_suggestions_raw == nil or show_future_suggestions_raw == '' -%}{%- assign show_future_suggestions_raw = 'yes' -%}{%- endif -%}
 {%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}
 {%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}
 {%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}
@@ -132,7 +138,7 @@ already has.
 {%- endif -%}
 
 {%- assign show_future_suggestions = 'on' -%}
-{%- assign sfs_check = show_future_suggestions_raw | downcase | strip -%}
+{%- assign sfs_check = show_future_suggestions_raw | append: '' | downcase | strip -%}
 {%- if sfs_check == 'no' or sfs_check == 'false' or sfs_check == '0' -%}
   {%- assign show_future_suggestions = 'off' -%}
 {%- endif -%}

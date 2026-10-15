@@ -1,12 +1,19 @@
-{%- comment %} The words: the forecast in words, or Visual Forecast's. {%- endcomment %}
+{%- comment %}
+The words. Forecast on: the forecast line and the sarcastic line, with or
+without the drawings. Only the drawings: "works all day" on one, and a
+line that stands alone. Neither: the outfit, and at On and 11 a line that
+stands alone.
+{%- endcomment %}
 {%- assign w_fact = '' -%}
 {%- assign w_flavour = '' -%}
-{%- if visual_forecast -%}
-  {%- assign w_fact = panel_fact -%}
-  {%- assign w_flavour = panel_flavour -%}
-{%- elsif show_future_suggestions == 'on' and fact_line != '' -%}
+{%- if forecast_on and fact_line != '' -%}
   {%- assign w_fact = fact_line -%}
   {%- assign w_flavour = flavour_line -%}
+{%- elsif visual_forecast -%}
+  {%- assign w_fact = panel_fact -%}
+  {%- assign w_flavour = panel_flavour -%}
+{%- else -%}
+  {%- assign w_flavour = alone_flavour -%}
 {%- endif -%}
 {%- assign has_words = false -%}
 {%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
@@ -41,13 +48,17 @@
 </div>
 {%- else %}
 {%- if n == 2 -%}
-  {%- if has_words -%}
+  {%- if w_fact != '' -%}
+    {%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[21cqw] portrait:w--[40cqw]' -%}{%- assign c_image = 'w--[29cqw] h--max-[84cqh] portrait:w--[54cqw] portrait:h--max-[48cqh]' -%}{%- assign c_words = 'w--[46cqw] portrait:w--[92cqw] content--base lg:content--large' -%}
+  {%- elsif has_words -%}
     {%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[26cqw] portrait:w--[40cqw]' -%}{%- assign c_image = 'w--[34cqw] h--max-[84cqh] portrait:w--[54cqw] portrait:h--max-[62cqh]' -%}{%- assign c_words = 'w--[34cqw] portrait:w--[92cqw] content--large lg:content--xlarge' -%}
   {%- else -%}
     {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[40cqw]' -%}{%- assign c_image = 'w--[54cqw] h--max-[78cqh]' -%}{%- assign c_words = 'w--[92cqw] content--large lg:content--xlarge' -%}
   {%- endif -%}
 {%- else -%}
-  {%- if has_words -%}
+  {%- if w_fact != '' -%}
+    {%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[15cqw] portrait:w--[28cqw]' -%}{%- assign c_image = 'w--[20cqw] h--max-[84cqh] portrait:w--[38cqw] portrait:h--max-[48cqh]' -%}{%- assign c_words = 'w--[46cqw] portrait:w--[92cqw] content--base lg:content--large' -%}
+  {%- elsif has_words -%}
     {%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[18cqw] portrait:w--[28cqw]' -%}{%- assign c_image = 'w--[24cqw] h--max-[84cqh] portrait:w--[38cqw] portrait:h--max-[62cqh]' -%}{%- assign c_words = 'w--[34cqw] portrait:w--[92cqw] content--large lg:content--xlarge' -%}
   {%- else -%}
     {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none' -%}{%- assign c_panel = 'w--[28cqw]' -%}{%- assign c_image = 'w--[38cqw] h--max-[78cqh]' -%}{%- assign c_words = 'w--[92cqw] content--large lg:content--xlarge' -%}

@@ -20,23 +20,28 @@ the current outfit.
 
 ## The switch
 
-One field, not a new one: the forecast field (`show_future_suggestions`)
-gets a third value next to "Yes" and "No", `visual`, labelled "Visual
-Forecast (new)". Words and pictures are two ways of showing the same
-forecast, so they can't both be on, and a separate on/off would have
-made "forecast off, Visual Forecast on" a setting that means nothing.
-The whole form is `config/settings.next.yaml`.
+Two on/off switches (owner's spec, October 2026; the whole form is
+`config/settings.next.yaml`). It's called **What to Wear Next?** in the
+form; it was Visual Forecast, a third value of the Forecast field, in the
+first beta.
 
-| Forecast | Sarcasm Off | Sarcasm On / 11 |
-|---|---|---|
-| Off ("No") | the outfit now | (sarcasm hidden in the form) |
-| In words ("Yes") | outfit, fact line | plus the sarcastic line |
-| Visual Forecast ("visual") | the day's outfits; "works all day" when steady | plus the sarcastic line |
+| Forecast | What to Wear Next? | Sarcasm Off | Sarcasm On / 11 |
+|---|---|---|---|
+| off | off | the outfit now | plus a line that stands alone |
+| on | off | outfit, forecast line | plus the sarcastic line |
+| off | on | the day's outfits; "works all day" when steady | plus a line that stands alone (the usual line under "works all day") |
+| on | on | the day's outfits and the forecast line | plus the sarcastic line |
 
-Saved values don't move: "Yes", "No", old spellings and no value at all
-keep the words, and markup from before reads "visual" as on, so the
-form can ship before the markup. Each view is `{% if visual_forecast %}`
-the panels `{% else %}` the fact + flavour view.
+"A line that stands alone" is the mood's What to Wear Next pool
+(`flavour_vf_10` / `_11`), since there's no forecast line for a line to
+answer; a mood without one falls back to the usual line (docs/TODO.md
+item 13).
+
+Saved values don't move: Forecast keeps its key, and "Yes", "No", old
+spellings, true/false and no value at all all read right (the shared
+markup no longer puts a `default:` on it, which would turn false into
+"yes"). The first beta's "visual" still gets the drawings without words.
+Markup from before ignores What to Wear Next?, so the form can ship first.
 
 ## The rules
 
@@ -113,6 +118,11 @@ classes:
 - The words are the live view's size, except in the two tightest spots
   on the OG (the portrait half-tall column and the quarter), a step
   smaller.
+- **With the forecast line too** (both switches on), the forecast line
+  and the sarcastic line are two to five lines, so the drawings get a
+  lower cap and the words are a size smaller (`ih_fact`, `words_fact`
+  in `build.py`; the half view lying wide gives the words half its
+  width). On the OG in the full view: 205 px instead of 279.
 - The times are larger on the X (`lg:label--xlarge`, `lg:label--large`
   in the quarter); "Now" is bold and underlined with the framework's own classes
   (`font--bold label--underline`: a dotted line on the OG, a thin grey
@@ -134,7 +144,10 @@ Forecast, words and no forecast, sarcasm Off, On and 11, OG and X,
 landscape and portrait, every view, as rendered and again with the
 longest fact and the longest sarcastic line swapped in (3,136 screens):
 no words cut off or past the title bar, no figure cut or off the side,
-no neighbouring figures overlapping, no times touching. The times
+no neighbouring figures overlapping, no times touching. Then, for the
+two switches, both on (drawings, forecast line and sarcastic line) and
+the outfit alone with a sarcastic line, at every sarcasm level (2,240
+screens): clean once both-on got its own sizes. The times
 touched in the portrait quarter until each got a small margin
 (`mx--1`).
 

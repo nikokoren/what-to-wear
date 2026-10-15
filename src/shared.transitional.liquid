@@ -9,11 +9,11 @@ Rollout step 1; see docs/MIGRATION.md.
 
 {%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/sprites/' -%}{%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
 
-{%- assign location_label_raw = trmnl.plugin_settings.custom_fields_values.location_label | default: '' -%}{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions | default: 'yes' -%}{%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}{%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}{%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}{%- assign temp_preference_raw = trmnl.plugin_settings.custom_fields_values.temp_preference | default: '0' -%}
+{%- assign location_label_raw = trmnl.plugin_settings.custom_fields_values.location_label | default: '' -%}{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions -%}{%- if show_future_suggestions_raw == nil or show_future_suggestions_raw == '' -%}{%- assign show_future_suggestions_raw = 'yes' -%}{%- endif -%}{%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}{%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}{%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}{%- assign temp_preference_raw = trmnl.plugin_settings.custom_fields_values.temp_preference | default: '0' -%}
 
 {%- assign temp_shift = 0 -%}{%- assign tp_check = temp_preference_raw | strip -%}{%- if tp_check == '-4' or tp_check == '-2' or tp_check == '2' or tp_check == '4' -%}{%- assign temp_shift = tp_check | plus: 0 -%}{%- endif -%}
 
-{%- assign show_future_suggestions = 'on' -%}{%- assign sfs_check = show_future_suggestions_raw | downcase | strip -%}{%- if sfs_check == 'no' or sfs_check == 'false' or sfs_check == '0' -%}{%- assign show_future_suggestions = 'off' -%}{%- endif -%}
+{%- assign show_future_suggestions = 'on' -%}{%- assign sfs_check = show_future_suggestions_raw | append: '' | downcase | strip -%}{%- if sfs_check == 'no' or sfs_check == 'false' or sfs_check == '0' -%}{%- assign show_future_suggestions = 'off' -%}{%- endif -%}
 
 {%- assign lang = language_raw | downcase | strip -%}{%- if lang == '' -%}{%- assign lang = 'en' -%}{%- endif -%}
 

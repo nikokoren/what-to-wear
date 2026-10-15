@@ -22,7 +22,8 @@ is about 100.6 KB even minified):
 
 Before writing anything, every day shape below is rendered with the full
 and with the trimmed texts, in both languages, at every sarcasm level,
-with the forecast in words and as Visual Forecast. The build stops unless
+with both switches (Forecast, What to Wear Next) in all four
+combinations. Topical lines are parked and left out. The build stops unless
 the screens are identical.
 """
 
@@ -80,7 +81,7 @@ HOURS = (7, 19, 22)
 OFFSET = 3600
 
 
-def context(texts, date, hour, shape, lang, sarcasm, forecast):
+def context(texts, date, hour, shape, lang, sarcasm, forecast, nxt):
     feels, probs, codes = SHAPES[shape]
     times = [f"{date}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
@@ -89,7 +90,7 @@ def context(texts, date, hour, shape, lang, sarcasm, forecast):
             "hourly": {"time": times, "temperature_2m": feels, "apparent_temperature": feels,
                        "precipitation_probability": probs, "weather_code": codes}}
     cfg = {"language": lang, "sarcasm_level": sarcasm, "show_future_suggestions": forecast,
-           "lat_lon": "48.2,16.4", "show_bottom_bar": "on", "topical_lines": "on"}
+           "what_to_wear_next": nxt, "lat_lon": "48.2,16.4", "show_bottom_bar": "on", "topical_lines": "on"}
     d = dt.date.fromisoformat(date)
     ts = calendar.timegm((d.year, d.month, d.day, hour, 30, 0)) - OFFSET
     return {"trmnl": {"plugin_settings": {"custom_fields_values": cfg}, "system": {"timestamp_utc": ts},
@@ -105,11 +106,12 @@ def verify(shared, view, full, trimmed):
     for lang in ("en", "de"):
         for args in ((d, h, s) for d in DATES for h in HOURS for s in SHAPES):
             for sarcasm in ("0", "10", "11"):
-                for forecast in ("Yes", "visual"):
-                    a = page.render(**context(full[lang], *args, lang, sarcasm, forecast))
-                    b = page.render(**context(trimmed[lang], *args, lang, sarcasm, forecast))
+                # The two switches, Forecast and What to Wear Next, in all four combinations.
+                for forecast, nxt in ((True, False), (True, True), (False, True), (False, False)):
+                    a = page.render(**context(full[lang], *args, lang, sarcasm, forecast, nxt))
+                    b = page.render(**context(trimmed[lang], *args, lang, sarcasm, forecast, nxt))
                     if a != b:
-                        raise SystemExit(f"trimmed texts change the screen: {lang} {args} sarcasm {sarcasm} {forecast}")
+                        raise SystemExit(f"trimmed texts change the screen: {lang} {args} sarcasm {sarcasm} {forecast} {nxt}")
                     checked += 1
                     seen.add(a)
                     panels += 'data-wtw="panels"' in a
@@ -127,6 +129,9 @@ def main():
     panels_build.main()
     shared = (BUILD / "shared.liquid").read_text(encoding="utf-8")
     full = {l: json.loads((BUILD / "lang" / f"{l}.json").read_text(encoding="utf-8")) for l in ("en", "de")}
+    # Topical lines are parked (docs/TODO.md item 8): the beta ships none, so
+    # a fork that still has the old field switched on shows none either.
+    full = {l: {k: v for k, v in doc.items() if not k.startswith("topical_")} for l, doc in full.items()}
     trimmed = {l: {k: (trim(v) if k in OLD_POOLS else v) for k, v in doc.items()} for l, doc in full.items()}
 
     n = verify(shared, (BUILD / "views" / "full.liquid").read_text(encoding="utf-8"), full, trimmed)

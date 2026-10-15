@@ -30,10 +30,10 @@ to pick it up cold.
    on the left, then each change, at most three, today only, never
    tomorrow. Decided: square drawings as drawn, the time under every
    drawing, "from" on every later time ("Now · from 1 pm · from
-   7 pm"), larger times on the X. Settings: it is "Visual Forecast", a
-   third value of the forecast field, so nothing saved moves
-   (`config/settings.next.yaml`, the whole form for the beta and the
-   launch). Sarcastic line with two or three panels: its own pool of
+   7 pm"), larger times on the X. Settings: it is "What to Wear Next?",
+   its own on/off switch next to Forecast (item 12,
+   `config/settings.next.yaml`). Sarcastic line with no forecast line
+   above it: its own pool of
    lines that work without the fact plus lines written for the drawings
    (review round 10, then `build_pools.py`).
 4. **Done (October 2026): the views in TRMNL's framework classes
@@ -173,8 +173,14 @@ to pick it up cold.
    both. Where it's picked: the one-panel branch of
    `prototypes/panels/block.liquid` ("this works all day") and the
    words view's steady fact in `prototypes/fact-flavour/block.liquid`.
-12. **Before shipping: the new form.** The owner's spec (October
-   2026), these fields, these labels and descriptions, in this order:
+12. **Built (October 2026), to check in the beta: the new form.** In
+   `config/settings.next.yaml` and the beta; how the switches combine is
+   in `prototypes/panels/README.md` ("The switch"), pinned by
+   `test_switch.py`. Left: the checks in `beta/README.md` ("What to
+   try": a saved "No" in the new on/off field, and whether TRMNL fills
+   in defaults for an existing install), a contact method in the about
+   text, and the owner's read of the German descriptions. The owner's
+   spec, these fields, these labels and descriptions, in this order:
    1. **Language.** Hint: "Don't see your preferred language and want
       to help me translate? Reach out via the contact method linked in
       the about section above."

@@ -18,22 +18,41 @@ A panel is a stretch of the day, from one change to the next:
     its own panel while there is room, and otherwise wets the panel it
     falls in.
 
-Text: one panel says "this works all day" (a steady fact wording) and
-adds the sarcastic line at On and 11. Two or three panels show only the
-sarcastic line, and nothing at Off.
+Text: with the Forecast switch on, the forecast line and the sarcastic
+line, as in words. With only this one: one panel says "this works all
+day" (a steady fact wording) and adds the sarcastic line at On and 11;
+two or three panels show only a sarcastic line that stands alone, and
+nothing at Off.
 
-The switch is the third value of the forecast field, "visual" (Visual
-Forecast, config/settings.next.yaml); "Yes" keeps the forecast in words
-and "No" turns it off. Markup from before this reads anything but
-no/false/0 as on, so a form that ships first falls back to the words.
+The switch is What to Wear Next? (what_to_wear_next, on/off,
+config/settings.next.yaml), read in the fact + flavour block (next_on).
+Markup from before this ignores the field and shows the words.
 
 Appended to the end of the shared markup by prototypes/panels/build.py,
 after the fact + flavour block and the picture.
 {%- endcomment %}
-{%- assign visual_forecast = false -%}
-{%- if show_future_suggestions == 'on' and sfs_check == 'visual' -%}
-  {%- assign visual_forecast = true -%}
+{%- comment %} The drawings are the What to Wear Next? switch (next_on, set in the fact + flavour block). {%- endcomment %}
+{%- assign visual_forecast = next_on -%}
+{%- comment %}
+A sarcastic line with no forecast line above it: a line that answers the
+fact ("that layer") points at nothing. Those screens (two or three
+drawings without the words, and the outfit alone) draw from the mood's
+What to Wear Next pool (flavour_vf_10 / _11: lines that work alone, and
+lines written for the drawings), rotated like the words (text_rot).
+Theme days and topical lines keep theirs; no pool, the usual line.
+{%- endcomment %}
+{%- assign alone_line = '' -%}
+{%- if is_error == false and texts_ok and sarcasm_level != '0' and fl_theme != true and flavour_topical != true -%}
+  {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
+  {%- assign vf_pool = texts[vf_key][mood] -%}
+  {%- if vf_pool -%}
+    {%- assign vf_n = vf_pool | size -%}
+    {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
+    {%- assign alone_line = vf_pool[vf_i] -%}
+  {%- endif -%}
 {%- endif -%}
+{%- assign alone_flavour = flavour_line -%}
+{%- if alone_line != '' -%}{%- assign alone_flavour = alone_line -%}{%- endif -%}
 {%- assign panel_n = 1 -%}
 {%- assign panel_slugs = '' -%}
 {%- assign panel_labels = '' -%}
@@ -54,7 +73,7 @@ after the fact + flavour block and the picture.
   {%- assign cur_rank = band_rank -%}
   {%- assign cur_wet = is_now_precip -%}
   {%- assign cur_snow = is_now_snow -%}
-  {%- if show_future_suggestions == 'on' and has_future_window and rank_hi_list -%}
+  {%- if has_future_window and rank_hi_list -%}
     {%- for r in rank_hi_list -%}
       {%- assign k = forloop.index0 -%}
       {%- assign i = start_index | plus: k -%}
@@ -244,7 +263,7 @@ after the fact + flavour block and the picture.
   {%- assign panel_n = panel_slugs | split: '|' | size -%}
 
   {%- comment %} Words: "this works all day" for one panel; the sarcastic line at On and 11. {%- endcomment %}
-  {%- if show_future_suggestions == 'on' and texts_ok -%}
+  {%- if texts_ok -%}
     {%- if panel_n == 1 and texts.facts -%}
       {%- if local_hour >= 17 -%}
         {%- assign sk = 'steady_evening' -%}
@@ -264,21 +283,9 @@ after the fact + flavour block and the picture.
     {%- endif -%}
     {%- if sarcasm_level != '0' -%}
       {%- assign panel_flavour = flavour_line -%}
-      {%- comment %}
-      Two or three panels show no fact line, so a sarcastic line that
-      answers it ("that layer") points at nothing. Those days draw from the
-      mood's Visual Forecast pool (flavour_vf_10 / _11: lines that work
-      alone, and lines written for the drawings), rotated like the words (text_rot).
-      Theme days and topical lines keep theirs; no pool, the usual line.
-      {%- endcomment %}
-      {%- if panel_n > 1 and fl_theme == false and flavour_topical == false -%}
-        {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
-        {%- assign vf_pool = texts[vf_key][mood] -%}
-        {%- if vf_pool -%}
-          {%- assign vf_n = vf_pool | size -%}
-          {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
-          {%- assign panel_flavour = vf_pool[vf_i] -%}
-        {%- endif -%}
+      {%- comment %} Two or three drawings and no forecast line: a line that stands alone (below). {%- endcomment %}
+      {%- if panel_n > 1 and forecast_on == false and alone_line != '' -%}
+        {%- assign panel_flavour = alone_line -%}
       {%- endif -%}
     {%- endif -%}
   {%- endif -%}
