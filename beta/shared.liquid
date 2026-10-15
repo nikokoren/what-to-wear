@@ -1504,9 +1504,32 @@ current time moves every 15 minutes, so the merge variables change.
     {%- elsif fl_alone_pool -%}
       {%- assign fl_alone_all = fl_alone_pool -%}
     {%- endif -%}
+    {%- comment %}
+    A follow-up goes by what the forecast line says, not by the mood: a
+    cold day's line may say it stays cold or that the coat comes off. Ten
+    groups, each one message: rain, snow (the umbrella or the snow; a
+    rain sentence comes last when there are two), off (a layer comes off
+    later), on (a layer is needed later), offon (off, then back on), hot,
+    steady, cold, evening, night.
+    {%- endcomment %}
+    {%- assign fu_key = '' -%}
+    {%- if f_precip != '' -%}
+      {%- if pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
+    {%- else -%}
+      {%- case f_key -%}
+        {%- when 'steady_evening' -%}
+          {%- if local_hour >= 22 -%}{%- assign fu_key = 'night' -%}{%- else -%}{%- assign fu_key = 'evening' -%}{%- endif -%}
+        {%- when 'steady_hot', 'w_water', 'c_relief' -%}{%- assign fu_key = 'hot' -%}
+        {%- when 'steady_cold' -%}{%- assign fu_key = 'cold' -%}
+        {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
+        {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+      {%- endcase -%}
+    {%- endif -%}
     {%- assign fl_pool = fl_alone_all -%}
-    {%- if forecast_on and fact_line != '' and fl_lib[mood] -%}
-      {%- assign fl_pool = fl_lib[mood] -%}
+    {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
+      {%- assign fl_pool = fl_lib[fu_key] -%}
     {%- endif -%}
     {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
     {%- assign fl_theme = false -%}
@@ -1939,6 +1962,15 @@ after the fact + flavour block and the picture.
         {%- assign vf_month = ',' | append: today_month | append: ',' -%}
         {%- for k in (1..vf_n) -%}
           {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}
+          {%- if vf_cand contains '{3}' -%}
+            {%- assign vf_slugs = panel_slugs | split: '|' -%}
+            {%- if panel_n == 3 and vf_slugs[0] != vf_slugs[2] -%}
+              {%- assign vf_cand = vf_cand | remove_first: '{3}' -%}
+            {%- else -%}
+              {%- assign vf_cand = '{M:00}' -%}
+            {%- endif -%}
+          {%- endif -%}
           {%- if vf_cand contains '{M:' -%}
             {%- assign vf_tag = vf_cand | split: '}' | first | remove: '{M:' -%}
             {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}

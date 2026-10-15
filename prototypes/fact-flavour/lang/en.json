@@ -174,11 +174,11 @@
     ]
   },
   "flavour_10": {
-    "warming": [
+    "off": [
       "Thrilling stuff. I'm on the edge of my frame.",
       "Gripping weather. I can barely stay in my frame."
     ],
-    "wet": [
+    "rain": [
       "Rain or not, my humour stays bone dry."
     ],
     "theme_ny": [
@@ -200,7 +200,7 @@
     ]
   },
   "flavour_11": {
-    "warming": [
+    "off": [
       "Taking that layer off might be the highlight of your day.",
       "You'll overheat a little before you admit I was right.",
       "Today you're your own coat rack. Congratulations.",
@@ -208,13 +208,13 @@
       "That layer coming off could be the peak of your day.",
       "Today you're a coat rack with legs. Well done."
     ],
-    "cooling": [
+    "on": [
       "Carrying a layer you don't need yet. How very grown-up.",
       "Leave it behind and you'll think of me later. Not fondly.",
       "You'll put it on later and act like it was your idea.",
       "Bringing a layer you won't need for hours. Look at you, prepared."
     ],
-    "fickle": [
+    "offon": [
       "I give it even odds you lose that layer by tonight.",
       "Fifty-fifty that layer goes missing by tonight."
     ],

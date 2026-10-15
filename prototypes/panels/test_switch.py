@@ -106,7 +106,8 @@ KEYS = ("now_10", "alone_10", "flavour_10", "flavour_vf_10")
 saved = {k: TEXTS["en"].get(k) for k in KEYS}
 TEXTS["en"]["now_10"] = {m: ["NOW LINE"] for m in MOODS}
 TEXTS["en"]["alone_10"] = {m: ["ALONE LINE"] for m in MOODS}
-TEXTS["en"]["flavour_10"] = {m: ["FOLLOW-UP LINE"] for m in MOODS}
+GROUPS = ("rain", "snow", "off", "on", "offon", "hot", "steady", "cold", "evening", "night")
+TEXTS["en"]["flavour_10"] = {g: ["FOLLOW-UP LINE"] for g in GROUPS}
 TEXTS["en"]["flavour_vf_10"] = {m: ["DRAWINGS LINE"] for m in MOODS}
 MARKERS = ("NOW LINE", "ALONE LINE", "FOLLOW-UP LINE", "DRAWINGS LINE")
 
@@ -133,11 +134,27 @@ expect("one drawing with 'works all day': standalone lines", lines_over_hours(fi
 TEXTS["en"]["flavour_10"] = {}
 expect("no follow-ups: standalone lines", lines_over_hours(field=True) <= STANDALONE)
 # Month tags: a line shows only in its months; otherwise the next line.
-TEXTS["en"]["flavour_10"] = {m: ["{M:01,02}WINTER LINE", "FOLLOW-UP LINE"] for m in MOODS}
+TEXTS["en"]["flavour_10"] = {g: ["{M:01,02}WINTER LINE", "FOLLOW-UP LINE"] for g in GROUPS}
 expect("a June day skips a January line", all("WINTER LINE" not in render(True, hour=h) and "{M:" not in render(True, hour=h) for h in range(7, 13)))
-TEXTS["en"]["flavour_10"] = {m: ["{M:05,06,07}SUMMER LINE", "FOLLOW-UP LINE"] for m in MOODS}
+TEXTS["en"]["flavour_10"] = {g: ["{M:05,06,07}SUMMER LINE", "FOLLOW-UP LINE"] for g in GROUPS}
 expect("a June day shows a June line, tag stripped", any("SUMMER LINE" in render(True, hour=h) for h in range(7, 13))
        and not any("{M:" in render(True, hour=h) for h in range(7, 13)))
+# Follow-ups go by what the forecast line says: a cold morning whose line says
+# the coat comes off gets the "off" lines, not cold ones.
+TEXTS["en"]["flavour_10"] = {g: [f"GROUP {g.upper()}"] for g in GROUPS}
+COLD_THEN_MILD = [-4, -4, -4, -4, -3, -3, -2, -1, 1, 3, 6, 9, 12, 14, 15, 15, 14, 12, 10, 8, 6, 4, 2, 1]
+html = render(True, feels=COLD_THEN_MILD, hour=7)
+expect("a cold morning that warms: the 'off' follow-ups", "GROUP OFF" in html)
+expect("a steady day: the 'steady' follow-ups", "GROUP STEADY" in render(True, feels=STEADY))
+# "{3}": only with three different drawings.
+TEXTS["en"]["flavour_vf_10"] = {m: ["{3}THREE LINE"] for m in MOODS}
+TEXTS["en"]["now_10"] = {m: ["NOW LINE"] for m in MOODS}
+TEXTS["en"]["alone_10"] = {}
+ARC = [2, 2, 2, 2, 2, 3, 4, 5, 7, 10, 13, 15, 16, 16, 15, 13, 10, 7, 5, 4, 3, 3, 2, 2]
+UP = [2, 2, 2, 2, 2, 3, 4, 6, 9, 13, 17, 21, 24, 26, 27, 27, 26, 25, 24, 23, 22, 21, 20, 19]
+expect("jacket, sweater, jacket: no 'three outfits' line", all("THREE LINE" not in render(False, feels=ARC, hour=h, nxt=True) for h in (8, 9)))
+expect("three different outfits: the 'three outfits' line can show",
+       any("THREE LINE" in render(False, feels=UP, hour=h, nxt=True) for h in range(7, 10)))
 for k, v in saved.items():
     if v is None:
         TEXTS["en"].pop(k, None)

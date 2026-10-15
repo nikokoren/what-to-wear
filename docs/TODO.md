@@ -259,7 +259,9 @@ to pick it up cold.
      ("{M:10,11}…", build_pools puts them in front, the markup skips a
      line out of season). Day lines the owner called "fine on its own"
      moved to alone_*.
-   - **Next: round 12.** Follow-ups per situation (warming, cooling,
+   - **Round 12 is on the review page** (`2026-10-follow`, 104 lines,
+     review/README.md). Follow-ups are now keyed by what the forecast
+     line says (ten groups, `fu_key`), not by mood. Its plan was: Follow-ups per situation (warming, cooling,
      fickle, rain coming, steady…) in both languages and levels: the
      pools are nearly empty (German has 1 to 3 per mood); the 41 "Write
      new" spots (review/rewrite/); month tags for the seasonal lines

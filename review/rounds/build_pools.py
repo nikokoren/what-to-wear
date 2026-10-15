@@ -302,6 +302,11 @@ def build_visual(doc, lang, decisions):
 
 NOW_MOODS = ["snow", "wet", "night", "evening", "hot", "cold", "nice", "cool"]
 ALONE = "2026-10-alone"
+FOLLOW = "2026-10-follow"
+# Follow-ups go by what the forecast line says (block.liquid, fu_key), not
+# by the mood: round 11's day lines are renamed to the group they follow.
+MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
+                 "evening": "evening", "night": "night", "nice": "steady", "cool": "steady", "cold": "cold", "hot": "hot"}
 
 
 def apply_alone(doc, lang, decisions):
@@ -352,8 +357,54 @@ def apply_alone(doc, lang, decisions):
                         texts.append(t)
                 new[mood] = texts
             if section == f"flavour_{level}":
+                grouped = {}
+                for mood, texts in new.items():
+                    grouped.setdefault(MOOD_TO_GROUP.get(mood, mood), []).extend(t for t in texts)
+                new = {k: list(dict.fromkeys(v)) for k, v in grouped.items()}
                 new.update(themes)
             doc[section] = new
+    return n
+
+
+def apply_follow(doc, lang, decisions):
+    """Round 12: follow-ups by what the forecast line says, new lines for the
+    "Write new" spots, month tags and the three-drawings tag. Applied once
+    the round has votes. New lines go in only if kept; a kept month
+    question puts "{M:..}" in front of its line wherever it is; "three"
+    rows get "{3}" (only with three different drawings)."""
+    path = REPO / "review" / "rounds" / f"{FOLLOW}.json"
+    votes = {(d["path"].split("[")[0], d["text"]): d for d in decisions.values() if d.get("round") == FOLLOW}
+    if not path.exists() or not votes:
+        return collections.Counter()
+    n = collections.Counter()
+    for row in json.loads(path.read_text(encoding="utf-8"))["lines"]:
+        if row["lang"] != lang:
+            continue
+        d = votes.get((row["path"], row["text"])) or {}
+        verdict = d.get("verdict", "")
+        section, key = row["path"].split(".", 1)
+        if row.get("ask") == "months":
+            if verdict in ("star", "keep"):
+                tag = "{M:" + row["months"] + "}"
+                for pools in (doc.get(s2, {}) for s2 in list(doc) if s2.split("_")[0] in ("now", "alone", "flavour")):
+                    for k2, texts in pools.items():
+                        if isinstance(texts, list) and row["text"] in texts:
+                            texts[texts.index(row["text"])] = tag + row["text"]
+                            n["month tags"] += 1
+            continue
+        if verdict not in ("star", "keep"):
+            n["new, not kept" if not verdict or verdict == "" else "out"] += 1
+            continue
+        text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or row["text"]
+        if row.get("months"):
+            text = "{M:" + row["months"] + "}" + text
+        if row.get("three"):
+            text = "{3}" + text
+        pool = doc.setdefault(section, {}).setdefault(key, [])
+        if text not in pool:
+            # starred lines first
+            pool.insert(0, text) if verdict == "star" else pool.append(text)
+            n["in"] += 1
     return n
 
 
@@ -445,6 +496,9 @@ def main():
         alone = apply_alone(doc, lang, decisions)
         if alone:
             print(f"{lang} round 11: " + ", ".join(f"{v} {k}" for k, v in alone.items()))
+        follow = apply_follow(doc, lang, decisions)
+        if follow:
+            print(f"{lang} round 12: " + ", ".join(f"{v} {k}" for k, v in follow.items()))
         write_new = apply_write_new(doc, lang, decisions)
         if write_new:
             print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))

@@ -173,15 +173,15 @@
     ]
   },
   "flavour_10": {
-    "cooling": [
+    "on": [
       "Nachher sagt wieder jeder: Ganz schön frisch geworden.",
       "Gleich heißt's wieder überall: Ist aber frisch geworden.",
       "Abends ist's dann wieder frisch, und keiner hat's am Schirm. Außer mir."
     ],
-    "wet": [
+    "rain": [
       "Nass wird's. War ja klar."
     ],
-    "fickle": [
+    "offon": [
       "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
       "So ein Hin und Her hält ja kein Mensch aus.",
       "Zu warm, zu kalt, zu warm. Zum Meckern reicht's immer."
@@ -204,14 +204,14 @@
     ]
   },
   "flavour_11": {
-    "warming": [
+    "off": [
       "Bitte nicht wieder die Ärmel um den Bauch knoten.",
       "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht."
     ],
-    "cooling": [
+    "on": [
       "Als ob dein Schrank sowas hergibt."
     ],
-    "fickle": [
+    "offon": [
       "An, aus, wieder an. Wie deine Beziehungen.",
       "An, aus, an. Kennst du ja aus der Liebe."
     ],

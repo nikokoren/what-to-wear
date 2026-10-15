@@ -156,8 +156,8 @@ def waiting(lang, known, rows):
     for d in known.values():
         if d.get("verdict") in ("star", "keep"):
             row = rows.get((d.get("round", ""), lang, d.get("text", ""))) or {}
-            if row.get("answers"):
-                answered.add(row["answers"])
+            answers = row.get("answers") or []
+            answered.update([answers] if isinstance(answers, str) else answers)
     return [(i, d) for i, d in sorted(known.items()) if d.get("verdict") == "rewrite" and i not in answered]
 
 

@@ -335,6 +335,20 @@ stays where its set says. Veto: out. Write new: out, and new lines for
 that spot. `build_pools.py` rebuilds the pools from the votes: current
 lines stay unless vetoed, new ones only if kept.
 
+## Round 12: follow-ups
+
+`2026-10-follow.json` (`make_round12.py`, ids `fu-…`), 104 lines. Round
+11's lesson: under the forecast line a sarcastic line has to build on it.
+The markup picks those follow-ups by what the forecast line says (ten
+groups: rain, snow, off, on, offon, hot, steady, cold, evening, night;
+`block.liquid`, `fu_key`), not by the mood. On the page each sits under
+its forecast line. Also: new lines for all 41 "Write new" spots of round
+11 (`answers`), and "Months?" for seasonal lines (first cold weeks,
+first snow, Glühwein season, the start of summer): "Only in these
+months" tags them (`{M:..}`, the markup skips them out of season).
+"Three outfits for one day" comes back with `{3}`: only with three
+different drawings.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

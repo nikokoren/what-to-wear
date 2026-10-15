@@ -355,7 +355,8 @@ function renderScreen(r) {
 const VERDICT_LABELS = { star: "Star", keep: "Keep", veto: "Veto", rewrite: "Write new" };
 // A line that would replace another: "Write new" takes both out.
 function verdictLabel(r, v) { return v === "rewrite" && r && r.replaces && r.replaces !== "*" ? "Veto both" : VERDICT_LABELS[v]; }
-const ASK_LABELS = { alone: { keep: "Works without the fact", veto: "Needs the fact" } };
+const ASK_LABELS = { alone: { keep: "Works without the fact", veto: "Needs the fact" },
+  months: { keep: "Only in these months", veto: "All year" } };
 function renderVerdicts(r) {
   const ask = r && ASK_LABELS[r.ask];
   for (const b of document.querySelectorAll(".v")) {

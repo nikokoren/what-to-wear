@@ -278,6 +278,15 @@ after the fact + flavour block and the picture.
         {%- assign vf_month = ',' | append: today_month | append: ',' -%}
         {%- for k in (1..vf_n) -%}
           {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}
+          {%- if vf_cand contains '{3}' -%}
+            {%- assign vf_slugs = panel_slugs | split: '|' -%}
+            {%- if panel_n == 3 and vf_slugs[0] != vf_slugs[2] -%}
+              {%- assign vf_cand = vf_cand | remove_first: '{3}' -%}
+            {%- else -%}
+              {%- assign vf_cand = '{M:00}' -%}
+            {%- endif -%}
+          {%- endif -%}
           {%- if vf_cand contains '{M:' -%}
             {%- assign vf_tag = vf_cand | split: '}' | first | remove: '{M:' -%}
             {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}
