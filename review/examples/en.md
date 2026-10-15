@@ -42,9 +42,18 @@ Do not edit by hand; vote on the page instead.
 
 - This evening it gets cold enough for a hat, scarf and gloves.
 
+## cold · dry
+
+- Grey was my look long before winter tried it.
+- I was grey before winter made it cool.
+- I'm staying in here where it's warm.
+- My only weakness is the cold. Kidding, I don't have one.
+
 ## cold · sarcastic
 
 - Shoulders at ear height all day. So graceful.
+- Staring at me longer won't make it warmer.
+- You'll make that noise once you're outside. You know the one.
 - Your nose will turn a colour I can't even display.
 
 ## cool · dry
@@ -55,11 +64,14 @@ Do not edit by hand; vote on the page instead.
 
 - Nothing special out there. You'll blend right in.
 - Nothing special out there. You'll blend right in.
+- Nothing special out there. You'll blend right in.
 - Same jacket, same route. You wild thing.
 - Unremarkable out there. You'll fit right in.
 - You'll call it 'crisp' like you go hiking or something.
 - You'll call it 'crisp' like you go hiking or something.
 - You'll call it 'fresh' to sound like an outdoors person.
+- You'll call today 'crisp' like you go hiking or something.
+- You'll call today 'fresh' to sound like an outdoors person.
 
 ## cooling · sarcastic
 
@@ -78,6 +90,7 @@ Do not edit by hand; vote on the page instead.
 
 - I'll sit this one out in your nice shady hallway.
 - I'll sit this one out in your nice shady hallway.
+- I'll sit this one out in your nice shady hallway.
 - No sweat here. One of the perks of being a screen.
 - Somebody cranked the outside too high. Wasn't me.
 - Somebody cranked the outside too high. Wasn't me.
@@ -87,20 +100,27 @@ Do not edit by hand; vote on the page instead.
 
 - Remember wishing for summer? This is what you get.
 - Remember wishing for summer? This is what you get.
+- Remember wishing for summer? This is what you get.
 - You'll search 'ice cream near me' later. Twice.
 
 ## nice · dry
 
 - I'm a screen on a wall. Even I'd go outside today.
+- I'm a screen, and even I'd go outside today.
 - Lovely out there. I'll stay in here, refreshing.
+- Lovely out. I'll be here, refreshing.
 - Lovely out. I'll be here, refreshing.
 - On days like this you barely look at me. Fair enough.
 
 ## nice · sarcastic
 
 - A good day for pretending you'll go for a run.
+- A good day for pretending you'll go for a run.
+- I'm stuck here. What's keeping you in today?
 - Perfect weather to talk about going for a run.
 - Perfect weather to talk about going for a run.
+- Perfect weather to talk about going for a run.
+- Perfect weather. I can't leave the house. What's your excuse?
 - Perfect weather. I can't leave the wall. What's your excuse?
 
 ## night · dry
@@ -109,6 +129,9 @@ Do not edit by hand; vote on the page instead.
 
 ## night · sarcastic
 
+- Still up? I'm a screen and even I'm tired.
+- Tomorrow-you is already annoyed with tonight-you.
+- You checked the weather at this hour. For what, exactly?
 - You've looked at me a lot today. Go to bed.
 
 ## p_drier_snow · plain
@@ -171,6 +194,7 @@ Do not edit by hand; vote on the page instead.
 ## snow · sarcastic
 
 - Don't fall. I have no way of getting help.
+- Snow in the forecast. You'll be surprised anyway.
 
 ## steady · plain
 
@@ -230,8 +254,12 @@ Do not edit by hand; vote on the page instead.
 ## warming · sarcastic
 
 - Taking that layer off might be the highlight of your day.
+- Taking that layer off might be the highlight of your day.  
+  _here sarcasm and the forecast work well together_
 - You'll overheat a little before you admit I was right.
 - You'll overheat a little before you admit I was right.
+- You'll overheat a little before you admit I was right.  
+  _here sarcasm and forecast work well together_
 
 ## wet · dry
 
@@ -245,6 +273,11 @@ Do not edit by hand; vote on the page instead.
 
 ## wet · sarcastic
 
+- The umbrella's right there in the forecast. You'll still forget it.
+- Try to bring the umbrella home. Unlike the last three.
+- You'll check the forecast, nod, and leave the umbrella anyway.
 - You'll double-check on your phone. As if it knows better.
 - You'll double-check on your phone. As if it knows better.
+- You'll double-check on your phone. As if it knows better.
+- You'll still check your phone. As if it knows something I don't.
 - You'll still check your phone. As if it knows something I don't.

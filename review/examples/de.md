@@ -27,14 +27,19 @@ Do not edit by hand; vote on the page instead.
 
 - Bei der Kälte schmeckt sogar Glühwein.
 - Bei der Kälte schmeckt sogar Glühwein.
+- Bei der Kälte schmeckt sogar Glühwein.
+- Gleich reißt wieder einer zum Stoßlüften alle Fenster auf.
+- Irgendein Depp läuft vermutlich trotzdem in kurzen Hosen rum.
 - Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.
 - Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.  
   _I like it, keep it, but this might sound boring after a bit. Great for the first cold day in a while or something like that._
 - Polarluft hat uns fest im Griff. Klingt dramatisch, ist es auch.
 - Saukalt. Mehr fällt mir dazu nicht ein.
 - Saukalt. Mehr fällt mir dazu nicht ein.
+- Saukalt. Mehr fällt mir dazu nicht ein.
 - Saukalt. Mehr gibt's nicht zu sagen.
 - Saukalt. Mehr gibt's nicht zu sagen.
+- „Kälte härtet ab“, sagen die mit der Heizung auf fünf.
 - „Kälte härtet ab“, sagen die mit der Heizung auf fünf.
 
 ## cold · sarcastic
@@ -42,6 +47,10 @@ Do not edit by hand; vote on the page instead.
 - Bis du fertig angezogen bist, blühen schon die Krokusse.
 - Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Dick eingepackt gefällst du mir am besten. Man sieht weniger.
+- Dick eingepackt gefällst du mir am besten. Man sieht weniger.
+- Egal wann: Du frierst.
+- Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.
+- Gut eingemummelt siehst du am besten aus. Weniger sichtbar.
 - Gut eingemummelt siehst du am besten aus. Weniger sichtbar.
 - Ich hab dir extra den Schal gestrickt. Trag ihn auch.
 - Kalte Füße kriegst du heut nicht nur vor Entscheidungen.
@@ -60,6 +69,10 @@ Do not edit by hand; vote on the page instead.
 - Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.
 - Perfekt zum Fensterputzen. Nur so ein Hinweis.
 
+## evening · dry
+
+- Pünktlich zum Feierabend fällt wieder eine S-Bahn aus.
+
 ## fickle · dry
 
 - Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
@@ -69,19 +82,28 @@ Do not edit by hand; vote on the page instead.
 ## hot · dry
 
 - Gleich kommt wieder: „Früher war es auch schon heiß.“
+- Gleich kommt wieder: „Früher war es auch schon heiß.“
 - Im Baumarkt gibt's wieder keinen Ventilator mehr.
 - In der Bahn riecht's heute nach jedem Einzelnen.
+- Jetzt meckern, und im Januar wünschen sich alle wieder den Sommer zurück.
 
 ## mild · sarcastic
 
 - Ich könnte dir jetzt was von Luftdruck erzählen. Du hörst eh nicht zu.
 
+## nice · dry
+
+- Die Ersten stehen schon wieder mit der Grillzange auf dem Balkon.
+
 ## nice · sarcastic
 
 - Bei so einem Wetter hab ich früher den ganzen Garten gemacht.
+- Dieses Wetter hast du dir eigentlich nicht verdient.
+- Geh raus, sonst wirst du so grau wie ich.
 - Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.
 - Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
 - So ein Wetter hätten sich andere mehr verdient.
+- Traumwetter, und du guckst wie an einem Montag.
 
 ## night · sarcastic
 
@@ -135,6 +157,8 @@ Do not edit by hand; vote on the page instead.
 - Die Bahn hat bestimmt schon aufgegeben.
 - Drei Flocken, und schon heißt's wieder Schneechaos.
 - Drei Flocken, und schon heißt's wieder Schneechaos.
+- Drei Flocken, und schon heißt's wieder Schneechaos.
+- Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.
@@ -142,6 +166,7 @@ Do not edit by hand; vote on the page instead.
 ## snow · sarcastic
 
 - Du auf Glatteis. Ich hol schon mal Popcorn.
+- Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.
 - Neben dir wirkt jeder Schneemann lebendig.
 
 ## steady · plain
@@ -202,15 +227,21 @@ Do not edit by hand; vote on the page instead.
 
 - Alle starren wieder aufs Regenradar. Als ob das was hilft.
 - Alle starren wieder aufs Regenradar. Als ob das was hilft.
+- Alle starren wieder aufs Regenradar. Als ob das was hilft.
 - Die Schnecken freuen sich. Immerhin wer.
 - Nass ist's. War ja klar.
 - Regen. Mal wieder. Was sonst.
+- Regen. Mal wieder. Was sonst.
 - Regen. Wieder. Natürlich.
 - Und schon wieder ein Tief. Ich kann nichts dafür.
+- „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
 - „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
 
 ## wet · sarcastic
 
 - Endlich passt das Wetter mal zu deinem Gesicht.
+- Endlich passt das Wetter mal zu deinem Gesicht.
+- Um deine Frisur ist's eh nicht schade.
 - Wenn du nass wirst, sag nicht, ich hätt's nicht gesagt.
+- Wenn du nass wirst, war's wieder meine Schuld. Klar.
 - Wenn du nass wirst, war's wieder meine Schuld. Klar.
