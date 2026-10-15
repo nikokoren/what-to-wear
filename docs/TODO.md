@@ -134,6 +134,61 @@ to pick it up cold.
    both. Where it's picked: the one-panel branch of
    `prototypes/panels/block.liquid` ("this works all day") and the
    words view's steady fact in `prototypes/fact-flavour/block.liquid`.
+12. **Before shipping: the new form.** The owner's spec (October
+   2026), these fields, these labels and descriptions, in this order:
+   1. **Language.** Hint: "Don't see your preferred language and want
+      to help me translate? Reach out via the contact method linked in
+      the about section above."
+   2. **Do you run cold or warm? (New!)** "Adjust clothing suggestions
+      to match how you experience the temperature." Options as now,
+      default Average.
+   3. **Forecast.** "Show a written summary of upcoming weather changes
+      and what to wear." On or off, default on.
+   4. **What to Wear Next? (New!)** "Preview upcoming outfit changes
+      with dressed figurines and the times you'll need them." On or
+      off, default off. This is Visual Forecast, renamed.
+   5. **Sarcasm.** "Turn the sarcasm off, on, or crank it up to 11.
+      Expect commentary on the weather, what's coming, and your
+      questionable life choices, regardless of whether the written
+      forecast is enabled." Off · On · 11, default Off.
+
+   And no field for jokes about current events (`topical_lines`):
+   turning sarcasm on opts in to them.
+
+   What it means for `config/settings.next.yaml`, the markup and the
+   ~500 installs:
+   - **Forecast stays `show_future_suggestions`**, so saved choices
+     carry over. Live values are "Yes" and "No"; check what TRMNL's
+     on/off field does with a saved "No" (the markup already reads
+     anything but no/false/0 as on). If it can't read them, keep a
+     select with two options.
+   - **What to Wear Next? is a new key**, replacing the "visual"
+     option. Beta forks with "visual" saved have to switch it on.
+   - **Four combinations now, not three.** Both off: the outfit
+     alone. Forecast only: the words. Next only: the drawings. Both
+     on: to decide (the drawings with the fact line? the drawings
+     win?).
+   - **Sarcasm without the written forecast.** Today the sarcastic line
+     shows only with the forecast on, and the form hides Sarcasm when
+     Forecast is off. The new description promises it either way, so
+     the outfit-alone screen gets a sarcastic line too: room in the
+     layout, and lines that don't answer a fact (the Visual Forecast
+     pools were written to stand alone). Drop the
+     `conditional_validation` that hides it.
+   - **Sarcasm default Off** (live default is On). Saved values stay;
+     only new installs start without it, unless TRMNL fills in
+     defaults for existing installs (the same check as the note on
+     `topical_lines`).
+   - **Topical lines on with sarcasm.** The markup's check for
+     `topical_lines == 'on'` becomes sarcasm On or 11. Existing
+     installs with sarcasm On, most of them because it was the
+     default, start seeing them when this ships.
+   - **The language hint** points to a contact method "in the about
+     section above": the about text has none yet, and needs one; it
+     stays the first field. Location, location name, the title bar
+     and the old location fields aren't in the spec: presumably they
+     keep their places (location first, the title bar last).
+   - **German** labels and descriptions for all five.
 
 ## 1. Rethink the clothing system and the temperature bands
 
