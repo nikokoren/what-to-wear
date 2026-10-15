@@ -12,8 +12,9 @@ to pick it up cold.
   and the old drawings in the repo root; `lang/` and `sprites/` are
   unchanged.
 - Running on `main` now: the weekly `topical-prune` workflow (a no-op
-  until topical lines ship in `lang/`) and the "Topical scout" routine,
-  which reads the `topical` skill from `main`.
+  until topical lines ship in `lang/`). The "Topical scout" routine
+  (reads the `topical` skill from `main`) is paused since 15 October
+  2026, with topical lines (item 8).
 - Item 1 is decided and coded; the 19 drawings are next.
 - Item 3 (the text) is well along in the prototype; see item 5 below.
 
@@ -118,7 +119,8 @@ to pick it up cold.
    didn't land, and the owner doesn't want the focus on them now.
    Everything stays in place to pick up later; nothing new is written
    for them, and they don't ship with the text (no `topical_*` pools in
-   `lang/`, so nothing shows). What was built: On and 11 lines about current events, written with
+   `lang/`, so nothing shows). The weekly "Topical scout" routine is
+   paused (15 October 2026); switch it back on to resume. What was built: On and 11 lines about current events, written with
    Claude whenever something happens, each with a date window so it
    rotates in and out by itself. Built in the prototype (markup, opt-in
    field, review rounds, add and prune tool, weekly prune job, the
