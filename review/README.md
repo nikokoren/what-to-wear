@@ -314,6 +314,27 @@ line without them. Then `python3 tools/build_beta.py`.
 
 No more voting rounds for now (owner, 10 October).
 
+## Round 11: the lines on their own
+
+`2026-10-alone.json` (`make_round11.py`, ids `al-…`), 350 lines. The
+owner, seeing the sarcastic lines alone in the beta: they need context.
+The line is now picked by what's on screen (`prototypes/panels/README.md`,
+"Which sarcastic line"), so every current line is sorted into where it
+can show and voted there:
+
+- **Now** (`now_10` / `now_11`, by the Now drawing): alone under its
+  drawing. Must make sense with nothing else on screen.
+- **Day** (`flavour_10` / `_11`): about the day's shape, a change or a
+  steady day. Under the forecast line.
+- **Drawings** (`flavour_vf_10` / `_11`): with the two or three drawings.
+
+Round 5's reworded twins are flagged ("keep one wording": with the
+hourly rotation they can show in back-to-back hours), and 37 new lines
+fill the thin now pools (English cool at On had none). Keep: the line
+stays where its set says. Veto: out. Write new: out, and new lines for
+that spot. `build_pools.py` rebuilds the pools from the votes: current
+lines stay unless vetoed, new ones only if kept.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

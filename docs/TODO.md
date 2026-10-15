@@ -252,7 +252,8 @@ to pick it up cold.
      and no words; mixed, by the hour. Details in
      `prototypes/panels/README.md` ("Which sarcastic line"). Interim now
      pools: each mood's lines minus round 10's "needs the fact".
-   - **Next: the round.** Sort every line into now (stands alone, agrees
+   - **Round 11 is on the review page** (`2026-10-alone`, 350 lines,
+     review/README.md). Then: sync, build_pools, beta. Its plan was: sort every line into now (stands alone, agrees
      with the drawing) or day/drawings (about a change); rewrite or drop
      what needs context; fill the gaps: German cool at On has one now
      line, English fickle and German warming/cooling are thin; item 11's
