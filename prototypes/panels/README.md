@@ -114,7 +114,10 @@ classes:
   on the OG (the portrait half-tall column and the quarter), a step
   smaller.
 - The times are larger on the X (`lg:label--xlarge`, `lg:label--large`
-  in the quarter); "Now" is bold and underlined (`<b><u>`). A time wraps
+  in the quarter); "Now" is bold and underlined with the framework's own classes
+  (`font--bold label--underline`: a dotted line on the OG, a thin grey
+  one on the X; the OG's pixel font is already bold, so the bold barely
+  shows there). A time wraps
   to "from" over "3 pm" when its column is too narrow.
 
 The words don't use TRMNL's content limiter. On the X the screen is

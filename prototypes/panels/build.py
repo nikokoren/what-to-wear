@@ -186,7 +186,7 @@ def build_view(view, v):
     {%- for slug in panel_slug_list %}
     <div class="flex flex--col gap--small {{ c_panel }}">
       <img class="image image--contain image-dither aspect--1/1 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
-      <span class="label text--center mx--1 LABEL">{% if forloop.first %}<b><u>{{ panel_label_list[0] }}</u></b>{% else %}{{ panel_label_list[forloop.index0] }}{% endif %}</span>
+      <span class="label text--center mx--1 LABEL{% if forloop.first %} font--bold label--underline{% endif %}">{{ panel_label_list[forloop.index0] }}</span>
     </div>
     {%- endfor %}
   </div>""".replace("LABEL", v["label"]) + WORDS + "\n</div>\n{%- endif %}\n")

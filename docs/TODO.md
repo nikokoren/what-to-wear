@@ -92,6 +92,22 @@ to pick it up cold.
    shuffled order instead of in sequence, so a pool never reads as a
    cycle; lines keyed to the weekday, the season or the run of weather
    ("third grey day in a row"); and the topical lines (item 7) earlier.
+   **Lines about the sky** (owner, October 2026): sarcastic lines about
+   what the weather is doing, not just what to wear, for more variety.
+   His example from Carrot Weather, not to copy: "I sent you this fog."
+   What we have for free: Open-Meteo's `weather_code`, now and hourly,
+   is already in the data (clear, cloudy, overcast, fog, drizzle, rain,
+   freezing rain, snow, thunderstorm, hail). Wind isn't (it would need
+   `wind_speed_10m` in the polling URL). How often, at 6 to 7 am in 2024
+   (station data, `tools/climate/`; Open-Meteo's model codes may differ):
+   overcast 40 to 50% in London, Cologne, Frankfurt, Munich, Hamburg and
+   Amsterdam; fog 14% in Zurich, 12% in Los Angeles, 8% in Paris, 1 to 6%
+   elsewhere; clear 30 to 45% in Phoenix, Dallas, Minneapolis and
+   Stockholm. To work out: pools by condition at both levels and in both
+   languages, and how they share the day with the mood's line and the
+   topical one (e.g. now and then, like topical lines, only while the
+   condition holds now: fog lifts by noon, see item 10); lines must agree
+   with the drawing and never claim rain the drawing doesn't show.
 8. **Topical lines**: On and 11 lines about current events, written with
    Claude whenever something happens, each with a date window so it
    rotates in and out by itself. Built in the prototype (markup, opt-in
