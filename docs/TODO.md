@@ -103,12 +103,22 @@ to pick it up cold.
    overcast 40 to 50% in London, Cologne, Frankfurt, Munich, Hamburg and
    Amsterdam; fog 14% in Zurich, 12% in Los Angeles, 8% in Paris, 1 to 6%
    elsewhere; clear 30 to 45% in Phoenix, Dallas, Minneapolis and
-   Stockholm. To work out: pools by condition at both levels and in both
-   languages, and how they share the day with the mood's line and the
-   topical one (e.g. now and then, like topical lines, only while the
-   condition holds now: fog lifts by noon, see item 10); lines must agree
-   with the drawing and never claim rain the drawing doesn't show.
-8. **Topical lines**: On and 11 lines about current events, written with
+   Stockholm. Decided (owner, October 2026):
+   - **Only while it's happening.** A line about fog shows only while
+     there's fog now; otherwise it makes no sense. So these lines need
+     the texts to change during the day (item 10), which comes first.
+   - **Mixed in at random** with the mood's lines as the day goes on,
+     no fixed share or slot.
+   - **Rain and snow only with their drawing**: a rain or snow line
+     shows only while the drawing has the rain or the snow. There are no
+     fog or overcast drawings, so everything else is looser: it shows
+     when the condition is strong enough right now (thick fog, fully
+     overcast, a real thunderstorm, not a passing cloud).
+8. **Parked (owner, October 2026): topical lines.** The first drafts
+   didn't land, and the owner doesn't want the focus on them now.
+   Everything stays in place to pick up later; nothing new is written
+   for them, and they don't ship with the text (no `topical_*` pools in
+   `lang/`, so nothing shows). What was built: On and 11 lines about current events, written with
    Claude whenever something happens, each with a date window so it
    rotates in and out by itself. Built in the prototype (markup, opt-in
    field, review rounds, add and prune tool, weekly prune job, the
@@ -123,7 +133,9 @@ to pick it up cold.
    have no italic, so the browser would slant them, which looks rough
    in 1-bit. Item 4 rules out our own CSS, so: is there a framework way,
    and does it read well on the OG and the X?
-10. **Later: rotate the texts while the forecast stays the same.** What
+10. **Top priority (owner, October 2026): rotate the texts while the
+   forecast stays the same.** It's also what the lines about the sky
+   (item 7) need: they may only show while their weather is happening. What
    happens now: every pool rotates by day only (the fact on day + 2,
    the rain fact on day + 3, the sarcastic line and Visual Forecast's
    on day + 5, a topical line every third day), so a day whose weather
@@ -170,7 +182,8 @@ to pick it up cold.
       forecast is enabled." Off · On · 11, default Off.
 
    And no field for jokes about current events (`topical_lines`):
-   turning sarcasm on opts in to them.
+   turning sarcasm on opts in to them. (Topical lines are parked, item
+   8: no field, and nothing shows until they're picked up again.)
 
    What it means for `config/settings.next.yaml`, the markup and the
    ~500 installs:
@@ -199,7 +212,8 @@ to pick it up cold.
      only new installs start without it, unless TRMNL fills in
      defaults for existing installs (the same check as the note on
      `topical_lines`).
-   - **Topical lines on with sarcasm.** The markup's check for
+   - **Topical lines on with sarcasm** (when they're picked up again,
+     item 8). The markup's check for
      `topical_lines == 'on'` becomes sarcasm On or 11. Existing
      installs with sarcasm On, most of them because it was the
      default, start seeing them when this ships.
