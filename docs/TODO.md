@@ -258,28 +258,23 @@ to pick it up cold.
    day with no more changes may be the same lines for nice and cool.
    New lines go through a review round when the owner wants one,
    with item 14 in place first.
-14. **Before the next review round: a veto that drops both.** Today a
-   veto on a rewording keeps the original (round 9: "A veto keeps the
-   original"), and when every wording of a fact is vetoed the first
-   one stays "until there's a new one" (`apply_reread` in
-   `review/rounds/build_pools.py`). The owner: that isn't always
-   right; sometimes neither the new line nor the old one should stay,
-   and what's wanted is completely new lines, not another variation.
-   - **On the page** (`review/page.html`): a second veto, e.g. "Veto
-     both" (on rows that replace a line) or "Write new" (anywhere),
-     next to Veto, with its own key. Room for a short note on what's
-     wanted instead; the tags (too long, not funny, …) help too.
-   - **In the build:** it takes the original out as well. If that
-     leaves a pool empty, the old line still shows until new ones are
-     voted in, so a screen never goes blank, but it's listed as
-     waiting.
-   - **After a sync:** a list of the slots that need new lines (which
-     pool, the screen it's for, the vetoed lines and the note), and
-     the vetoed lines go into `review/dont/` so new ones don't echo
-     them. New lines for those slots, written fresh, open the next
-     round.
-   - Once built, the owner can go over round 9's vetoes and mark the
-     ones that were meant as both.
+14. **Done (October 2026): "Write new", a veto that drops both.** The
+   owner: a veto that keeps the old line isn't always right; sometimes
+   neither should stay, and what's wanted is completely new lines.
+   - **On the page:** a fourth verdict, "Write new" (`W`), "Veto both" on
+     a line that would replace another. It stays on the line and opens
+     the note for what's wanted instead. Counted as a veto in the key
+     list; its own filter.
+   - **In the build** (`build_pools.py`, `apply_write_new`, last): the
+     line and the one it would have replaced are out; a pool is never
+     emptied (its last line stays and is reported).
+   - **After a sync:** `review/rewrite/<lang>.md` lists every spot
+     waiting for new lines (screen, what's out, the note, the vote's id);
+     both lines go on the "don't" list. A new row with `"answers": "<id>"`
+     that gets kept takes the spot off the list.
+   - `tools/test_write_new.py` pins it. The review page gets it with the
+     next round (it isn't republished before then). Round 9's vetoes can
+     be re-marked as "Write new" then, if the owner wants.
 
 ## 1. Rethink the clothing system and the temperature bands
 

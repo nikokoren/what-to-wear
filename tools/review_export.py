@@ -36,6 +36,11 @@ show an edit live (round 8, the re-read):
     "ask": "alone"              a yes/no instead of a verdict (round 10:
                                 "works without the fact" / "needs the fact")
     "hint": "..."               Claude's guess, shown under the screen
+    "replaces": "..."           the line this one would replace ("*": every
+                                wording of the situation); on the page,
+                                "Write new" reads "Veto both" then
+    "answers": "<id>"           the "Write new" vote this new line answers
+                                (review/rewrite/<lang>.md lists them)
 
 Every row carries a stable id: language plus a hash of the text. A line
 that moves index keeps its decision; a line whose text changes is a new
@@ -236,7 +241,8 @@ def rows_from_candidates(cand_path):
         r = row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
                 "candidate", c.get("batch", ""))
         # A round can say exactly what the screen shows next to its line.
-        for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier", "panels", "ask", "hint"):
+        for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier", "panels", "ask", "hint",
+                      "replaces", "answers"):
             if field in c:
                 r[field] = c[field]
         if data.get("idPrefix"):

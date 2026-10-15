@@ -29,6 +29,13 @@ How lines get written, judged and kept. The writer's side is in
    screen follows as you type, the time words and garments fill in, and
    Enter saves the change as a keep of the new words. The key list counts stars,
    keeps and vetoes and warns before a key is vetoed empty.
+
+   **Write new** (`W`) is a veto that asks for more: the line is out,
+   nothing like it should come back, and that spot gets completely new
+   lines. On a line that would replace another (a rewording), it reads
+   **Veto both**: the original goes too. It stays on the line and opens
+   the note, for what the new lines should do instead (`Esc` leaves the
+   note, `J` moves on).
 4. **Sync.** Ask Claude to sync the review. It reads the votes from the
    page's database (or use the page's "Save decisions file") and runs:
 
@@ -38,7 +45,11 @@ How lines get written, judged and kept. The writer's side is in
    ```
 
    That updates `review/decisions/`, `review/examples/` and `review/dont/`
-   in the repo, and writes a fix file: vetoed shipped lines are deleted,
+   in the repo, lists the "Write new" spots still waiting for new lines in
+   `review/rewrite/<lang>.md` (with what the screen shows there, what's
+   out and the note; the next round answers each with `"answers": "<id>"`
+   on its new rows, and a kept answer takes the spot off the list), and
+   writes a fix file: vetoed shipped lines are deleted,
    starred or kept candidates appended. `apply_review.py` refuses any fix
    whose line changed since the vote, and never deletes a key's last line.
 5. **Check and ship.** `validate_lang.py`, `check_combinations.py`,

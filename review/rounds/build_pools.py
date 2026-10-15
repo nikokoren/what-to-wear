@@ -11,7 +11,10 @@ Seasonal pools (theme_*) are built from the votes like the moods; a
 theme line nobody has voted on yet (the first prototype's Christmas
 placeholders) stays until it is voted.
 
-Round 8 (the re-read) comes last: every line the beta ships, voted
+"Write new" votes (any round) come last of all: the line and the one it
+would have replaced are taken out (apply_write_new).
+
+Round 8 (the re-read) comes after the voices: every line the beta ships, voted
 again, some reworded on the page. A veto takes the line out, the owner's
 edit replaces it; a fact keeps at least one wording.
 
@@ -181,7 +184,7 @@ def apply_reread(doc, decisions):
         out = []
         for t in texts:
             d = votes.get((section, key, t))
-            if d and d["verdict"] == "veto":
+            if d and d["verdict"] in ("veto", "rewrite"):
                 n["vetoed"] += 1
                 continue
             if d and d.get("edit"):
@@ -212,7 +215,7 @@ def apply_reread(doc, decisions):
             kept = []
             for t in topical:
                 d = votes.get((f"topical_{level}", "topical", t["text"]))
-                if d and d["verdict"] == "veto":
+                if d and d["verdict"] in ("veto", "rewrite"):
                     n["vetoed"] += 1
                     continue
                 if d and d.get("edit"):
@@ -357,7 +360,43 @@ def main():
         visual = build_visual(doc, lang, decisions)
         if visual:
             print(f"{lang} Visual Forecast: {visual['new']} new lines, {visual['kept off']} kept off")
+        write_new = apply_write_new(doc, lang, decisions)
+        if write_new:
+            print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def apply_write_new(doc, lang, decisions):
+    """Every round: "Write new" takes the line out, and the line it would have
+    replaced. Last, so nothing an earlier step adds brings them back. A pool
+    is never emptied: its last line stays until new ones are kept, and is
+    reported (review/rewrite/<lang>.md lists what's waiting)."""
+    rows = {}
+    for f in sorted((REPO / "review" / "rounds").glob("*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        if isinstance(data, dict) and isinstance(data.get("lines"), list):
+            for line in data["lines"]:
+                rows[(data.get("round", ""), line.get("lang", ""), line.get("text", ""))] = line
+    n = collections.Counter()
+    for d in decisions.values():
+        if d.get("verdict") != "rewrite" or "." not in d.get("path", ""):
+            continue
+        section, key = d["path"].split("[")[0].split(".", 1)
+        pool = (doc.get(section) or {}).get(key)
+        if not isinstance(pool, list):
+            continue
+        row = rows.get((d.get("round", ""), lang, d.get("text", ""))) or {}
+        out = {d["text"], EDIT_FIX.get(d.get("edit"), d.get("edit")) or d["text"]}
+        if row.get("replaces") and row["replaces"] != "*":
+            out.add(row["replaces"])
+        for t in out:
+            if t in pool and len(pool) > 1:
+                pool.remove(t)
+                n["taken out"] += 1
+            elif t in pool:
+                print(f"  {section}.{key}: {t!r} stays, the last line, until new ones are kept")
+                n["waiting"] += 1
+    return n
 
 
 if __name__ == "__main__":
