@@ -1,0 +1,437 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.rain",
+   "text": "Sonst kaufst du wieder einen am Bahnhof. Der hält bis zur ersten Böe.",
+   "answers": [
+    "fu-de-464190658c29"
+   ],
+   "idea": "D17"
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Andere spüren so was im Knie. Ich im Akku.",
+   "idea": "D7"
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Im April unterschreib ich so was übrigens nicht.",
+   "months": "04"
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Auf mich hörst du doch erst, wenn die Socken nass sind.",
+   "answers": [
+    "fu-de-5ceac18997a2"
+   ]
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Glauben wirst du's erst dem Regenradar. Weil's bunt ist.",
+   "idea": "D16"
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Einen hättest du ja. Im Büro."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Dann ist draußen alles schwarzweiß wie ich. Komisch, da beschwert sich keiner.",
+   "idea": "D15"
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Die Bahn tut dann wieder, als hätt's seit hundert Jahren nicht geschneit.",
+   "answers": [
+    "fu-de-7169808d5bf3"
+   ]
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Der Nachbar schaufelt dann wieder um sechs Uhr früh. Damit's auch alle hören.",
+   "answers": [
+    "fu-de-28338fc9c3b3"
+   ]
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Früher lag der Schnee meterhoch, erzählen die Alten. Da waren sie halt kleiner."
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "Und deine Sommerreifen sind natürlich schon drauf.",
+   "months": "03,04"
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "Morgen erzählst du dann allen, wie du dich durchgekämpft hast. Bis zum Bäcker."
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "Und du kratzt dann wieder nur ein Guckloch frei. Wie im Panzer."
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Und schon sind wieder alle gut gelaunt. Unerträglich.",
+   "answers": [
+    "al-de-ee48eb1587c6"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+   "answers": [
+    "fu-de-2f7e01059b7f"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Dann sitzen die Ersten wieder draußen im Café, als wär's Juli. Mit Decke.",
+   "answers": [
+    "fu-de-2a322039ae72"
+   ],
+   "months": "03,04"
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "Trag's dir in den Kalender ein. Viel anderes steht ja nicht drin.",
+   "idea": "D12"
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "Dann sieht endlich jeder, was du drunter anhast. Das von gestern.",
+   "garments": [
+    "coat",
+    "jacket",
+    "hoodie"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Die hängt dann wieder im Flur. Die hat's wenigstens warm.",
+   "answers": [
+    "fu-de-d103743e1732"
+   ],
+   "garments": [
+    "jacket",
+    "coat"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Pünktlich wie sonst nichts in diesem Land.",
+   "answers": [
+    "fu-de-846df8debdf5"
+   ]
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Und bedanken tust du dich nachher wieder bei deinem Handy.",
+   "answers": [
+    "fu-de-ede920391c1a",
+    "al-de-3ec4402a46f4"
+   ],
+   "idea": "D3"
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Ohne {G} siehst du auch nicht besser aus.",
+   "answers": [
+    "fu-de-a6401c334466",
+    "al-de-c63e80b31f40"
+   ],
+   "garments": [
+    "jacket",
+    "coat",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Vorausgesetzt, die geht nach Weihnachten noch zu.",
+   "garments": [
+    "jacket",
+    "coat"
+   ],
+   "months": "01"
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Kaum ist's mal schön, ist's auch schon wieder vorbei. Wie alles.",
+   "answers": [
+    "fu-de-9df558276b56"
+   ]
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Die Wärme hält's heute wie ein Beamter: kommt spät, geht früh."
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "Zwischendurch fühlst du dich wie im Urlaub. Am Abend bist du dann wieder du.",
+   "answers": [
+    "al-de-1500f3dab84c",
+    "al-de-1f633d85128d",
+    "fu-de-9b85a57a7b63"
+   ]
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "Soll ich's dir auf einen Zettel schreiben?",
+   "answers": [
+    "al-de-38f7804356ce",
+    "al-de-4b134e3a656d"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Im Schatten ist übrigens schon alles besetzt. Mit Handtüchern.",
+   "answers": [
+    "fu-de-deccfafba7ad"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Und in der Bahn fällt wieder die Klimaanlage aus. Darauf ist Verlass.",
+   "idea": "D1"
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Im Freibad ist die Schlange an der Pommesbude wieder länger als das Becken.",
+   "months": "06,07,08"
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "Dir macht die Hitze nichts aus, sagst du. Unter den Armen sieht's anders aus.",
+   "answers": [
+    "fu-de-d0321098b2cc"
+   ]
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "Und heute Abend bist du wieder rot wie ein Hummer. Aber nur auf einer Seite."
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "Und im Schatten ist's dir dann wieder zu frisch. Wetten?"
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Da hätt ich heute auch frei nehmen können."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Dann kann ja nur noch alles andere schiefgehen."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Früher hat man dafür aus dem Fenster geschaut."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Der Laubbläser vom Nachbarn hält auch den ganzen Tag durch.",
+   "months": "10,11"
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "Ob's dir steht, ist eine andere Frage.",
+   "answers": [
+    "fu-de-3f9dd7519808"
+   ]
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "Zumindest bis zum ersten Kaffeefleck."
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "Mehr kann ich für dich heute nicht tun."
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "Auch für die Joggingrunde, die du dann doch nicht drehst.",
+   "idea": "D2"
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Also Tür zu. Die Straße heizen wir nicht mit."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Immerhin bleibt das Bier auf dem Balkon kalt."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
+   "months": "01",
+   "idea": "D8"
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "Drinnen bleibst du ja sowieso. Wie im Sommer."
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "Dann fällt das Fitnessstudio heute ja wieder aus. Aus Wettergründen."
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "Und am Handy tippst du wieder mit der Nasenspitze. Sehr elegant.",
+   "idea": "D18"
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Jetzt fehlt nur noch die passende Laune.",
+   "answers": [
+    "fu-de-4c755141861f"
+   ]
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Was den Abend selbst angeht: alle Angaben ohne Gewähr."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Gefühlt ist ja schon seit halb fünf Abend.",
+   "months": "11,12,01"
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Nicht, dass du heute noch auf irgendwen hören würdest.",
+   "idea": "D13"
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Verderben kann den Abend jetzt nur noch einer. Du."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Das war übrigens das einzige Lob für heute."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Den Tag hast du also überstanden. Wie, will ich gar nicht wissen."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Fürs Bett reicht übrigens auch der Schlafanzug."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Abend, sagen die Jungen dazu. Für mich ist das längst Nacht."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Also für die zehn Minuten, bis du auf dem Sofa einschläfst."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank."
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Die Jacke hast du schon ein paar Jahre, oder? Sieht man.",
+   "answers": [
+    "al-de-2b3e85392ed2"
+   ]
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Erst sitzt du vorm Ventilator, dann jammerst du über Zugluft.",
+   "answers": [
+    "al-de-ee52197dd001"
+   ],
+   "idea": "D1"
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Heute klebst du am Stuhl fest. Wie immer, nur diesmal wörtlich.",
+   "answers": [
+    "fu-de-673b503b046c"
+   ]
+  },
+  {
+   "path": "now_11.nice",
+   "text": "„Man müsste mal wieder was unternehmen.“ Sagst du seit drei Sommern.",
+   "answers": [
+    "al-de-88026c93fc93"
+   ],
+   "idea": "D2"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Heute gehst du sicher wieder in Wanderschuhen zum Bäcker.",
+   "answers": [
+    "fu-de-db7f95efa7a2"
+   ],
+   "idea": "D2"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Lebkuchen im September. Eine Frechheit. Ich nehm trotzdem zwei Packungen.",
+   "months": "09",
+   "idea": "D9"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Kaum steht der Zwetschgenkuchen draußen, sind die Wespen da. Vor den Gästen.",
+   "months": "08,09"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Ein Kilo Spargel kostet jetzt wieder so viel wie früher meine Miete.",
+   "months": "04,05,06"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Bei dem Wetter fahren alle ins Grüne und halten dort ihr Handy in die Luft.",
+   "idea": "D11"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Vor den Eisheiligen pflanzt keiner was. Die einzige Regel, an die sich alle halten.",
+   "months": "05"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Die Schultüten sind wieder größer als die Kinder. Bei mir gab's einen Apfel.",
+   "months": "08,09"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Andere Bilderrahmen zeigen die Enkel am Strand. Ich zeig eine Jacke.",
+   "idea": "D14"
+  },
+  {
+   "path": "now_10.hot",
+   "text": "Am Brenner stehen sie jetzt wieder zwölf Stunden. Für eine Woche Gardasee.",
+   "months": "07,08"
+  },
+  {
+   "path": "now_10.wet",
+   "text": "Nasses Laub ist glatter als Glatteis. Gestreut wird trotzdem nicht.",
+   "months": "10,11"
+  },
+  {
+   "path": "now_11.cold",
+   "text": "Vom Plätzchenteig kommt wieder die Hälfte nie im Ofen an. Ich schau dich an.",
+   "months": "12",
+   "idea": "D10"
+  },
+  {
+   "path": "now_10.evening",
+   "text": "Irgendwo schunkeln jetzt wieder Erwachsene mit Pappnase. Freiwillig.",
+   "months": "01,02"
+  },
+  {
+   "path": "now_10.night",
+   "text": "Ich bin vermutlich der Einzige hier, der nachts keinen Strom verschwendet.",
+   "idea": "D6"
+  },
+  {
+   "path": "now_10.night",
+   "text": "Schönheitsschlaf brauch ich keinen mehr. Da ist nichts mehr zu retten.",
+   "idea": "D19"
+  }
+ ]
+}

@@ -1520,8 +1520,9 @@ current time moves every 15 minutes, so the merge variables change.
     cold day's line may say it stays cold or that the coat comes off. Ten
     groups, each one message: rain, snow (the umbrella or the snow; a
     rain sentence comes last when there are two), off (a layer comes off
-    later), on (a layer is needed later), offon (off, then back on), hot,
-    steady, cold, evening, night.
+    later), on (a layer is needed later), offon (off, then back on), hot
+    (the line says water), steady, cold, evening, night. The heat easing
+    a little (c_relief) says no water: the standalone lines.
     {%- endcomment %}
     {%- assign fu_key = '' -%}
     {%- if f_precip != '' -%}
@@ -1530,7 +1531,7 @@ current time moves every 15 minutes, so the merge variables change.
       {%- case f_key -%}
         {%- when 'steady_evening' -%}
           {%- if local_hour >= 22 -%}{%- assign fu_key = 'night' -%}{%- else -%}{%- assign fu_key = 'evening' -%}{%- endif -%}
-        {%- when 'steady_hot', 'w_water', 'c_relief' -%}{%- assign fu_key = 'hot' -%}
+        {%- when 'steady_hot', 'w_water' -%}{%- assign fu_key = 'hot' -%}
         {%- when 'steady_cold' -%}{%- assign fu_key = 'cold' -%}
         {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
         {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}

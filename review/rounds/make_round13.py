@@ -147,6 +147,8 @@ def main():
             if item.get("answers"):
                 row["answers"] = item["answers"]
                 hints.append("Answers a “Write new”")
+            if item.get("hint"):
+                hints.append(item["hint"])
             if item.get("idea"):
                 hints.append("A riff on an idea from the other language")
             if hints:
