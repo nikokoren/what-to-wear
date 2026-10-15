@@ -34,7 +34,7 @@ FEELS = [9, 9, 8, 8, 8, 9, 10, 11, 12, 14, 17, 20, 22, 23, 24, 24, 23, 22, 21, 2
 STEADY = [15] * 24
 
 
-def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None, hour=7):
+def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None, hour=7, lat=None):
     feels = feels or FEELS
     hours = [f"{DATE}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
@@ -42,6 +42,8 @@ def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None, ho
                         "apparent_temperature": feels[hour], "weather_code": 0},
             "hourly": {"time": hours, "temperature_2m": feels, "apparent_temperature": feels,
                        "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
+    if lat is not None:
+        data["latitude"] = lat
     cfg = {"language": lang, "sarcasm_level": sarcasm, "lat_lon": "48.2,16.4", "show_bottom_bar": "on"}
     if field is not None:
         cfg["show_future_suggestions"] = field
@@ -139,6 +141,13 @@ expect("a June day skips a January line", all("WINTER LINE" not in render(True, 
 TEXTS["en"]["flavour_10"] = {g: ["{M:05,06,07}SUMMER LINE", "FOLLOW-UP LINE"] for g in GROUPS}
 expect("a June day shows a June line, tag stripped", any("SUMMER LINE" in render(True, hour=h) for h in range(7, 13))
        and not any("{M:" in render(True, hour=h) for h in range(7, 13)))
+# South of the equator the seasons run six months on: in June, Sydney gets
+# the December lines and not the June ones; Vienna, with its latitude, not.
+TEXTS["en"]["flavour_10"] = {g: ["{M:12}DECEMBER LINE", "{M:06}JUNE LINE"] for g in GROUPS}
+south = {render(True, hour=h, lat=-33.9) for h in range(7, 13)}
+north = {render(True, hour=h, lat=48.2) for h in range(7, 13)}
+expect("June in Sydney: the December line", all("DECEMBER LINE" in h and "JUNE LINE" not in h for h in south))
+expect("June in Vienna: the June line", all("JUNE LINE" in h and "DECEMBER LINE" not in h for h in north))
 # Follow-ups go by what the forecast line says: a cold morning whose line says
 # the coat comes off gets the "off" lines, not cold ones.
 TEXTS["en"]["flavour_10"] = {g: [f"GROUP {g.upper()}"] for g in GROUPS}
@@ -155,6 +164,27 @@ UP = [2, 2, 2, 2, 2, 3, 4, 6, 9, 13, 17, 21, 24, 26, 27, 27, 26, 25, 24, 23, 22,
 expect("jacket, sweater, jacket: no 'three outfits' line", all("THREE LINE" not in render(False, feels=ARC, hour=h, nxt=True) for h in (8, 9)))
 expect("three different outfits: the 'three outfits' line can show",
        any("THREE LINE" in render(False, feels=UP, hour=h, nxt=True) for h in range(7, 10)))
+# The garment the forecast line names: {GP} its pronoun, {G} the garment;
+# "{W:...}" lines only for the garments they list. The cool morning above:
+# the jacket comes off at 7:00 and 8:00, from 9:00 the line is about the
+# sweater ("ihn" in German), and the jacket-only line stays away.
+TEXTS["en"]["flavour_10"] = {g: ["{W:jacket}JACKET ONLY", "OFF {GP} | {G}"] for g in GROUPS}
+expect("the jacket comes off: the jacket line, or 'it', 'the jacket'",
+       all("JACKET ONLY" in render(True, hour=h) or "OFF it | the jacket" in render(True, hour=h) for h in (7, 8)))
+shown = {render(True, hour=h) for h in range(9, 13)}
+expect("a sweater: no jacket-only line", not any("JACKET ONLY" in h for h in shown))
+expect("a sweater: 'it', 'the sweater'", any("OFF it | the sweater" in h for h in shown))
+expect("no garment placeholder left over", not any("{G" in h or "{W:" in h for h in shown))
+TEXTS["en"]["flavour_10"] = {g: ["{W:hoodie,jacket}SWEATER OR JACKET", "OTHER"] for g in GROUPS}
+expect("a sweater: the line for sweaters can show",
+       any("SWEATER OR JACKET" in render(True, hour=h) for h in range(9, 13)))
+expect("a steady day names no garment: no garment line", not any(
+    "SWEATER OR JACKET" in render(True, feels=STEADY, hour=h) for h in range(7, 13)))
+de_saved = TEXTS["de"].get("flavour_10")
+TEXTS["de"]["flavour_10"] = {g: ["AUS {GP}"] for g in GROUPS}
+expect("German: the sweater is 'ihn'",
+       all("AUS ihn" in render(True, lang="de", hour=h) for h in range(9, 13)))
+TEXTS["de"]["flavour_10"] = de_saved
 for k, v in saved.items():
     if v is None:
         TEXTS["en"].pop(k, None)

@@ -275,7 +275,7 @@ after the fact + flavour block and the picture.
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
         {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
-        {%- assign vf_month = ',' | append: today_month | append: ',' -%}
+        {%- assign vf_month = ',' | append: season_month | append: ',' -%}
         {%- for k in (1..vf_n) -%}
           {%- assign vf_cand = vf_pool[vf_i] -%}
           {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}

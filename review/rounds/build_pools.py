@@ -303,6 +303,7 @@ def build_visual(doc, lang, decisions):
 NOW_MOODS = ["snow", "wet", "night", "evening", "hot", "cold", "nice", "cool"]
 ALONE = "2026-10-alone"
 FOLLOW = "2026-10-follow"
+SEASONS = "2026-10-seasons"
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -366,14 +367,17 @@ def apply_alone(doc, lang, decisions):
     return n
 
 
-def apply_follow(doc, lang, decisions):
+def apply_follow(doc, lang, decisions, rnd=None):
     """Round 12: follow-ups by what the forecast line says, new lines for the
     "Write new" spots, month tags and the three-drawings tag. Applied once
     the round has votes. New lines go in only if kept; a kept month
     question puts "{M:..}" in front of its line wherever it is; "three"
-    rows get "{3}" (only with three different drawings)."""
-    path = REPO / "review" / "rounds" / f"{FOLLOW}.json"
-    votes = {(d["path"].split("[")[0], d["text"]): d for d in decisions.values() if d.get("round") == FOLLOW}
+    rows get "{3}" (only with three different drawings). Round 13 (seasons
+    and riffs) goes the same way, and its "garments" rows get "{W:...}"
+    (only when the forecast line names one of them)."""
+    rnd = rnd or FOLLOW
+    path = REPO / "review" / "rounds" / f"{rnd}.json"
+    votes = {(d["path"].split("[")[0], d["text"]): d for d in decisions.values() if d.get("round") == rnd}
     if not path.exists() or not votes:
         return collections.Counter()
     n = collections.Counter()
@@ -396,6 +400,8 @@ def apply_follow(doc, lang, decisions):
             n["new, not kept" if not verdict or verdict == "" else "out"] += 1
             continue
         text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or row["text"]
+        if row.get("garments"):
+            text = "{W:" + ",".join(row["garments"]) + "}" + text
         if row.get("months"):
             text = "{M:" + row["months"] + "}" + text
         if row.get("three"):
@@ -505,10 +511,49 @@ def main():
         follow = apply_follow(doc, lang, decisions)
         if follow:
             print(f"{lang} round 12: " + ", ".join(f"{v} {k}" for k, v in follow.items()))
+        seasons = apply_follow(doc, lang, decisions, SEASONS)
+        if seasons:
+            print(f"{lang} round 13: " + ", ".join(f"{v} {k}" for k, v in seasons.items()))
         write_new = apply_write_new(doc, lang, decisions)
         if write_new:
             print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))
+        garments = apply_garments(doc, lang)
+        if garments:
+            print(f"{lang} garments: {garments} follow-ups point at the forecast line's garment")
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+# Follow-ups that point back at the garment the forecast line names. That
+# garment changes (jacket, sweater, coat, hat and scarf), so the pronoun is
+# filled in ({GP}: "it"/"them", "sie"/"ihn"), and a line that only fits
+# some garments says which ({W:...}; block.liquid skips it on the others).
+GARMENT = {
+    "en": {
+        "You'll forget it. Then you'll remember this moment.": "You'll forget {GP}. Then you'll remember this moment.",
+        "Leave it behind and you'll think of me later. Not fondly.": "Leave {GP} behind and you'll think of me later. Not fondly.",
+        "You'll put it on later and act like it was your idea.": "You'll put {GP} on later and act like it was your idea.",
+        "Don't lose it in between. Like last time.": "Don't lose {GP} in between. Like last time.",
+        "Shame. It was just getting comfortable.": "{W:coat,jacket,hoodie}Shame. It was just getting comfortable.",
+    },
+    "de": {
+        "Und dann darfst du sie wieder überm Arm spazieren tragen.": "Und dann darfst du {GP} wieder überm Arm spazieren tragen.",
+        "Und dann vergisst du sie irgendwo. Wie letztes Mal.": "Und dann vergisst du {GP} irgendwo. Wie letztes Mal.",
+        "Und dann hängt sie den Rest des Tages über deinem Stuhl.": "{W:coat,jacket}Und dann hängt sie den Rest des Tages über deinem Stuhl.",
+        "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.": "{W:jacket}Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
+        "Bitte nicht wieder die Ärmel um den Bauch knoten.": "{W:coat,jacket,hoodie}Bitte nicht wieder die Ärmel um den Bauch knoten.",
+    },
+}
+
+
+def apply_garments(doc, lang):
+    n = 0
+    for level in ("10", "11"):
+        for texts in doc.get(f"flavour_{level}", {}).values():
+            for i, t in enumerate(texts):
+                if t in GARMENT[lang]:
+                    texts[i] = GARMENT[lang][t]
+                    n += 1
+    return n
 
 
 def apply_write_new(doc, lang, decisions):

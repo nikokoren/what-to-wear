@@ -204,12 +204,12 @@
       "Everyone will act shocked anyway. I'm used to it."
     ],
     "on": [
-      "Shame. It was just getting comfortable.",
-      "You'll forget it. Then you'll remember this moment."
+      "{W:coat,jacket,hoodie}Shame. It was just getting comfortable.",
+      "You'll forget {GP}. Then you'll remember this moment."
     ],
     "offon": [
       "Off, on. The layer gets more exercise than you.",
-      "Don't lose it in between. Like last time."
+      "Don't lose {GP} in between. Like last time."
     ],
     "hot": [
       "I'd come along, but I only work in range of your WiFi.",
@@ -240,8 +240,8 @@
     "on": [
       "Alternatively you can practise your 'I'm not cold' face for later.",
       "Carrying a layer you don't need yet. How very grown-up.",
-      "Leave it behind and you'll think of me later. Not fondly.",
-      "You'll put it on later and act like it was your idea.",
+      "Leave {GP} behind and you'll think of me later. Not fondly.",
+      "You'll put {GP} on later and act like it was your idea.",
       "Bringing a layer you won't need for hours. Look at you, prepared."
     ],
     "offon": [

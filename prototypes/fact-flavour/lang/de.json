@@ -205,7 +205,7 @@
       "Weihnachten. Die Gans hat heute den schlechtesten Tag von allen."
     ],
     "off": [
-      "Und dann darfst du sie wieder überm Arm spazieren tragen."
+      "Und dann darfst du {GP} wieder überm Arm spazieren tragen."
     ],
     "hot": [
       "Wasser, hab ich gesagt. Bier zählt nicht."
@@ -227,10 +227,10 @@
   },
   "flavour_11": {
     "off": [
-      "Bitte nicht wieder die Ärmel um den Bauch knoten.",
-      "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
-      "Und dann vergisst du sie irgendwo. Wie letztes Mal.",
-      "Und dann hängt sie den Rest des Tages über deinem Stuhl."
+      "{W:coat,jacket,hoodie}Bitte nicht wieder die Ärmel um den Bauch knoten.",
+      "{W:jacket}Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
+      "Und dann vergisst du {GP} irgendwo. Wie letztes Mal.",
+      "{W:coat,jacket}Und dann hängt sie den Rest des Tages über deinem Stuhl."
     ],
     "on": [
       "Als ob dein Schrank sowas hergibt."

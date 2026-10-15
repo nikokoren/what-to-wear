@@ -1311,6 +1311,17 @@ Reads only what the scenario logic above already worked out.
 {%- assign fl_now_pool = nil -%}
 {%- assign fl_alone_all = nil -%}
 {%- assign today_month = today_md | slice: 0, 2 -%}
+{%- comment %}
+Month tags ({M:..}) name the northern season. South of the equator the
+seasons run six months on, so a December line about the cold shows there
+in June. The latitude comes with the weather data.
+{%- endcomment %}
+{%- assign season_month = today_month -%}
+{%- assign wx_lat = IDX_0.latitude | default: 0 | plus: 0 -%}
+{%- if wx_lat < 0 -%}
+  {%- assign sm = today_month | plus: 5 | modulo: 12 | plus: 1 -%}
+  {%- if sm < 10 -%}{%- assign season_month = '0' | append: sm -%}{%- else -%}{%- assign season_month = sm | append: '' -%}{%- endif -%}
+{%- endif -%}
 {%- assign flavour_topical = false -%}
 {%- comment %}
 The two switches (config/settings.next.yaml):
@@ -1527,6 +1538,31 @@ current time moves every 15 minutes, so the merge variables change.
         {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
       {%- endcase -%}
     {%- endif -%}
+    {%- comment %}
+    The garment the forecast line names, for follow-ups that point back at
+    it: {GP} its pronoun ("it"/"them", "sie"/"ihn"), {G} the garment. A
+    line may also say which garments it fits: "{W:coat,jacket}…" (slugs
+    scarf, coat, jacket, hoodie). Such lines are skipped on a forecast
+    line that names no garment, or another one.
+    {%- endcomment %}
+    {%- assign fu_gi = -1 -%}
+    {%- case f_key -%}
+      {%- when 'w_scarf', 'c_scarf' -%}{%- assign fu_gi = 0 -%}
+      {%- when 'w_coat', 'c_coat' -%}{%- assign fu_gi = 1 -%}
+      {%- when 'w_jacket', 'c_jacket' -%}{%- assign fu_gi = 2 -%}
+      {%- when 'w_hoodie', 'c_hoodie' -%}{%- assign fu_gi = 3 -%}
+      {%- when 'arc_warmer', 'arc_level', 'arc_colder' -%}
+        {%- if f_g != '' -%}{%- assign fu_gi = band_rank | minus: 1 -%}{%- endif -%}
+    {%- endcase -%}
+    {%- assign fu_g = '' -%}
+    {%- assign fu_gp = '' -%}
+    {%- assign fu_gs = '' -%}
+    {%- if fu_gi >= 0 -%}
+      {%- assign fu_g = F.garments[fu_gi] -%}
+      {%- assign fu_gp = F.garments_pron[fu_gi] -%}
+      {%- assign fu_slugs = 'scarf,coat,jacket,hoodie' | split: ',' -%}
+      {%- assign fu_gs = ',' | append: fu_slugs[fu_gi] | append: ',' -%}
+    {%- endif -%}
     {%- assign fl_pool = fl_alone_all -%}
     {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
       {%- assign fl_pool = fl_lib[fu_key] -%}
@@ -1548,19 +1584,31 @@ current time moves every 15 minutes, so the merge variables change.
       in front: "{M:10,11}Every year everyone's surprised…". In another
       month the next line of the pool shows instead.
       {%- endcomment %}
-      {%- assign fl_month = ',' | append: today_month | append: ',' -%}
+      {%- assign fl_month = ',' | append: season_month | append: ',' -%}
       {%- for k in (1..fl_n) -%}
         {%- assign fl_cand = fl_pool[fl_i] -%}
+        {%- assign fl_ok = true -%}
         {%- if fl_cand contains '{M:' -%}
-          {%- assign fl_tag = fl_cand | split: '}' | first | remove: '{M:' -%}
+          {%- assign fl_tag = fl_cand | split: '{M:' | last | split: '}' | first -%}
           {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
-          {%- if fl_tags contains fl_month -%}
-            {%- assign fl_prefix = '{M:' | append: fl_tag | append: '}' -%}
-            {%- assign flavour_line = fl_cand | remove_first: fl_prefix -%}
-            {%- break -%}
+          {%- unless fl_tags contains fl_month -%}{%- assign fl_ok = false -%}{%- endunless -%}
+          {%- assign fl_prefix = '{M:' | append: fl_tag | append: '}' -%}
+          {%- assign fl_cand = fl_cand | remove_first: fl_prefix -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{W:' -%}
+          {%- assign fl_tag = fl_cand | split: '{W:' | last | split: '}' | first -%}
+          {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
+          {%- if fu_gs == '' -%}
+            {%- assign fl_ok = false -%}
+          {%- else -%}
+            {%- unless fl_tags contains fu_gs -%}{%- assign fl_ok = false -%}{%- endunless -%}
           {%- endif -%}
-        {%- else -%}
-          {%- assign flavour_line = fl_cand -%}
+          {%- assign fl_prefix = '{W:' | append: fl_tag | append: '}' -%}
+          {%- assign fl_cand = fl_cand | remove_first: fl_prefix -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{G' and fu_g == '' -%}{%- assign fl_ok = false -%}{%- endif -%}
+        {%- if fl_ok -%}
+          {%- assign flavour_line = fl_cand | replace: '{GP}', fu_gp | replace: '{G}', fu_g -%}
           {%- break -%}
         {%- endif -%}
         {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
@@ -1959,7 +2007,7 @@ after the fact + flavour block and the picture.
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
         {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
-        {%- assign vf_month = ',' | append: today_month | append: ',' -%}
+        {%- assign vf_month = ',' | append: season_month | append: ',' -%}
         {%- for k in (1..vf_n) -%}
           {%- assign vf_cand = vf_pool[vf_i] -%}
           {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}

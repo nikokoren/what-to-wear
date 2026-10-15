@@ -349,6 +349,31 @@ months" tags them (`{M:..}`, the markup skips them out of season).
 "Three outfits for one day" comes back with `{3}`: only with three
 different drawings.
 
+## Round 13: seasons and riffs
+
+`2026-10-seasons.json` (`make_round13.py`, ids `se-…`). Round 12 left the
+follow-up groups thin (steady, hot and evening worst), with the owner's
+notes saying many didn't flow from the forecast line. Three writers:
+
+- **The scout** reads both languages' kept and starred lines and writes
+  notes for each writer on ideas that work in the other language and
+  haven't been tried in theirs: described, never quoted, so the writer
+  riffs on the idea instead of translating it.
+- **The English and the German writer**, each reading only their own
+  language and the scout's notes, fill the follow-up groups, answer the
+  "Write new" spots, and write seasonal lines with month ranges.
+
+Raw output in `2026-10-seasons/<lang>.json`, notes in
+`2026-10-seasons/notes_for_<lang>.md`. New in the markup:
+
+- **Garments in follow-ups.** The off, on and offon forecast lines name a
+  garment that changes from day to day (jacket, sweater, winter coat, hat
+  and scarf). A follow-up says `{GP}` for its pronoun ("it"/"them",
+  "sie"/"ihn") or `{G}` for the garment, or lists the garments it fits
+  (`{W:jacket,coat}`); it's skipped on a forecast line that names another.
+- **Seasons south of the equator.** Month tags name the northern season;
+  with a southern latitude in the weather data, the month runs six on.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
