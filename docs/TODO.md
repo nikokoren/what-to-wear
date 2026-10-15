@@ -94,7 +94,7 @@ to pick it up cold.
    ("third grey day in a row"); and the topical lines (item 7) earlier.
    **Lines about the sky** (owner, October 2026): sarcastic lines about
    what the weather is doing, not just what to wear, for more variety.
-   His example from Carrot Weather, not to copy: "I sent you this fog."
+   The owner's example from Carrot Weather, not to copy: "I sent you this fog."
    What we have for free: Open-Meteo's `weather_code`, now and hourly,
    is already in the data (clear, cloudy, overcast, fog, drizzle, rain,
    freezing rain, snow, thunderstorm, hail). Wind isn't (it would need
