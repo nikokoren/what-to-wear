@@ -176,10 +176,12 @@
   "flavour_10": {
     "off": [
       "Thrilling stuff. I'm on the edge of my frame.",
-      "Gripping weather. I can barely stay in my frame."
+      "Gripping weather. I can barely stay in my frame.",
+      "Peeling off a layer: the closest today gets to drama."
     ],
     "rain": [
-      "Rain or not, my humour stays bone dry."
+      "Rain or not, my humour stays bone dry.",
+      "Bring it back, too. I'm keeping count."
     ],
     "theme_ny": [
       "I don't do New Year's resolutions. I was perfect last year too.",
@@ -197,6 +199,33 @@
     "theme_xmas": [
       "Of all the Christmas decorations, I'm the only one that knows the forecast.",
       "Merry Christmas. Unlike the tree, I'll still be up in February."
+    ],
+    "snow": [
+      "Everyone will act shocked anyway. I'm used to it."
+    ],
+    "on": [
+      "Shame. It was just getting comfortable.",
+      "You'll forget it. Then you'll remember this moment."
+    ],
+    "offon": [
+      "Off, on. The layer gets more exercise than you.",
+      "Don't lose it in between. Like last time."
+    ],
+    "hot": [
+      "I'd come along, but I only work in range of your WiFi.",
+      "Stay in the shade. It's where all the cool screens hang out."
+    ],
+    "cold": [
+      "All day. I checked twice, out of pure spite."
+    ],
+    "evening": [
+      "Whatever the evening brings, the outfit won't be the problem."
+    ],
+    "night": [
+      "It also works for bed, I'm told."
+    ],
+    "steady": [
+      "The one forecast I could do in my sleep. If I slept."
     ]
   },
   "flavour_11": {
@@ -209,6 +238,7 @@
       "Today you're a coat rack with legs. Well done."
     ],
     "on": [
+      "Alternatively you can practise your 'I'm not cold' face for later.",
       "Carrying a layer you don't need yet. How very grown-up.",
       "Leave it behind and you'll think of me later. Not fondly.",
       "You'll put it on later and act like it was your idea.",
@@ -232,6 +262,20 @@
       "Your relatives will ask about your plans this Christmas. Have some.",
       "The Christmas walk after lunch is the only exercise you'll get. Enjoy it.",
       "You'll say the Christmas cookies were for guests. There were no guests."
+    ],
+    "rain": [
+      "You'll leave it by the door anyway. I know you.",
+      "I said umbrella. You heard 'my hood will do'."
+    ],
+    "snow": [
+      "And you'll still call it 'unexpected'."
+    ],
+    "cold": [
+      "All day. So no, you can't wait it out.",
+      "No use checking again in an hour, I won't change my mind."
+    ],
+    "night": [
+      "It works for the couch too, which is where this is going."
     ]
   },
   "topical_11": [
@@ -302,7 +346,9 @@
       "Lovely out. I'll be here, refreshing.",
       "Today the weather looks almost as good as I do.",
       "Lovely out there. I'll stay in here, refreshing.",
-      "The weather's showing off. I know the feeling."
+      "The weather's showing off. I know the feeling.",
+      "Sunny days, you walk right past me. I've stopped taking it personally. Mostly.",
+      "Weather this nice makes my job easy. I'll still act busy."
     ],
     "cold": [
       "I was grey before winter made it cool.",
@@ -319,7 +365,8 @@
       "Someone turned the outside up too far. Don't look at me.",
       "Flat, pale and cool. I'm built for days like this.",
       "No sweat here. One of the perks of being a screen.",
-      "Somebody cranked the outside too high. Wasn't me."
+      "Somebody cranked the outside too high. Wasn't me.",
+      "I'm the one thing in the house not making it any warmer."
     ],
     "wet": [
       "I don't get wet. Perks of living indoors.",
@@ -331,7 +378,8 @@
       "Staying dry is easy when you live indoors.",
       "As an umbrella I'd be useless. Beautiful, but useless.",
       "You won't get a sad little cloud icon from me. I've got artistic integrity.",
-      "Rain makes it all glossy out there. I prefer matte."
+      "Rain makes it all glossy out there. I prefer matte.",
+      "On rainy days, everyone checks me twice. I'm not complaining."
     ],
     "snow": [
       "I've never seen snow. Describe it to me later.",
@@ -350,7 +398,8 @@
       "I don't need beauty sleep. Clearly.",
       "No blue light from me. I'm the screen that lets you sleep.",
       "Beauty sleep? Clearly I don't need any.",
-      "I'm the one screen that won't keep you up. You're welcome."
+      "I'm the one screen that won't keep you up. You're welcome.",
+      "I'll hold this picture all night without using any power. Take that smartphone."
     ],
     "cool": [
       "I'd wear a jacket too, if I had arms. And somewhere to go.",
@@ -375,7 +424,9 @@
       "You'll call today 'crisp' like you go hiking or something.",
       "Unremarkable out there. You'll fit right in.",
       "Your jacket gets out more than you do.",
-      "You'll zip the jacket to your chin and call it a style."
+      "You'll zip the jacket to your chin and call it a style.",
+      "Same jacket, same route, same podcast. Living dangerously.",
+      "You'd describe today as 'fine'. You describe everything as 'fine'."
     ],
     "cold": [
       "You'll make that noise once you're outside. You know the one.",
@@ -390,7 +441,7 @@
       "'It's not that cold,' you'll say. Your ears won't agree."
     ],
     "hot": [
-      "Remember wishing for summer? This is what you get.",
+      "{M:05,06,07}Remember wishing for summer? This is what you get.",
       "Anything flat can be a fan today. Not me, please.",
       "I don't sweat. You will.",
       "You asked for warm weather. Careful what you wish for.",
@@ -420,7 +471,8 @@
     "evening": [
       "Wondering where the day went? I watched. You weren't busy.",
       "Another evening, another walk past me. No thanks, as usual.",
-      "If you're going out, try to look better than this."
+      "If you're going out, try to look better than this.",
+      "Another evening of you walking past me like I don't do anything."
     ],
     "night": [
       "Still up? I'm a screen and even I'm tired.",

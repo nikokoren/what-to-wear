@@ -24,7 +24,7 @@ TEXTS = {l: json.loads((PROTO / "lang" / f"{l}.json").read_text(encoding="utf-8"
 OFFSET = 7200
 
 
-def render(date, hour, minute=30, temp=18, lang="en", sarcasm="10"):
+def render(date, hour, minute=30, temp=18, lang="en", sarcasm="10", forecast="yes"):
     """A steady day (same weather all day), read at date hour:minute local time."""
     hours = [f"{date}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
@@ -32,7 +32,7 @@ def render(date, hour, minute=30, temp=18, lang="en", sarcasm="10"):
                         "apparent_temperature": temp, "weather_code": 0},
             "hourly": {"time": hours, "temperature_2m": [temp] * 24, "apparent_temperature": [temp] * 24,
                        "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
-    cfg = {"language": lang, "sarcasm_level": sarcasm, "show_future_suggestions": "yes", "lat_lon": "48.2,16.4"}
+    cfg = {"language": lang, "sarcasm_level": sarcasm, "show_future_suggestions": forecast, "lat_lon": "48.2,16.4"}
     d = dt.date.fromisoformat(date)
     ts = calendar.timegm((d.year, d.month, d.day, hour, minute, 0)) - OFFSET
     ctx = {"trmnl": {"plugin_settings": {"custom_fields_values": cfg}, "system": {"timestamp_utc": ts},
@@ -51,23 +51,30 @@ def expect(name, ok):
 
 
 DATE = "2026-06-10"
-day = [render(DATE, h) for h in range(7, 17)]
-mood = day[0][2]
-expect("a steady daytime mood", mood == "nice" and all(d[2] == mood for d in day))
-# With the forecast line on screen the line is a follow-up (block.liquid);
-# no follow-ups for the mood, the standalone lines.
-pool = TEXTS["en"]["flavour_10"].get(mood) or ((TEXTS["en"].get("alone_10", {}).get(mood) or []) + (TEXTS["en"].get("now_10", {}).get(mood) or []))
+# With the forecast line on screen the line is a follow-up to it (a steady
+# day: the "steady" group, standalone lines while that group is empty).
+on = [render(DATE, h) for h in range(7, 17)]
+mood = on[0][2]
+expect("a steady daytime mood", mood == "nice" and all(d[2] == mood for d in on))
+expect("the fact wording changes during the day", len({d[0] for d in on}) > 1)
+standalone = (TEXTS["en"].get("alone_10", {}).get(mood) or []) + (TEXTS["en"].get("now_10", {}).get(mood) or [])
+steady = TEXTS["en"]["flavour_10"].get("steady") or standalone
+expect("under a steady forecast line, a steady follow-up", all(d[1] in steady for d in on))
 
-# A new sarcastic line every hour, and the fact wording moves too.
+# The rotation itself, on the standalone lines (forecast off: the biggest pool).
+day = [render(DATE, h, forecast="no") for h in range(7, 17)]
+pool = standalone
+
+# A new sarcastic line every hour.
 expect("the sarcastic line changes every hour", all(day[i][1] != day[i + 1][1] for i in range(len(day) - 1)))
-expect("the fact wording changes during the day", len({d[0] for d in day}) > 1)
 
 # The same all through the hour.
 expect("same words at :00 and :59", render(DATE, 9, 0) == render(DATE, 9, 59))
+expect("same words at :00 and :59, forecast off", render(DATE, 9, 0, forecast="no") == render(DATE, 9, 59, forecast="no"))
 
 # Someone who only looks at 7:00 sees the whole pool over the days.
 d0 = dt.date.fromisoformat(DATE)
-mornings = {render((d0 + dt.timedelta(days=i)).isoformat(), 7)[1] for i in range(len(pool))}
+mornings = {render((d0 + dt.timedelta(days=i)).isoformat(), 7, forecast="no")[1] for i in range(len(pool))}
 expect(f"every 7:00 line over {len(pool)} days ({len(mornings)} of {len(set(pool))})", mornings == set(pool))
 
 # Never the next line in the pool: an hour on lands elsewhere.

@@ -179,12 +179,14 @@
       "Abends ist's dann wieder frisch, und keiner hat's am Schirm. Außer mir."
     ],
     "rain": [
-      "Nass wird's. War ja klar."
+      "Nass wird's. War ja klar.",
+      "Und bring ihn auch wieder heim. Im Fundbüro liegen schon genug."
     ],
     "offon": [
       "Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.",
       "So ein Hin und Her hält ja kein Mensch aus.",
-      "Zu warm, zu kalt, zu warm. Zum Meckern reicht's immer."
+      "Zu warm, zu kalt, zu warm. Zum Meckern reicht's immer.",
+      "Also nicht wieder irgendwo liegen lassen."
     ],
     "theme_krampus": [
       "Am Krampustag ist endlich mal einer schlechter gelaunt als ich."
@@ -201,19 +203,42 @@
     ],
     "theme_xmas": [
       "Weihnachten. Die Gans hat heute den schlechtesten Tag von allen."
+    ],
+    "off": [
+      "Und dann darfst du sie wieder überm Arm spazieren tragen."
+    ],
+    "hot": [
+      "Wasser, hab ich gesagt. Bier zählt nicht."
+    ],
+    "steady": [
+      "Wenn doch alles so einfach wär.",
+      "Langweilig."
+    ],
+    "cold": [
+      "Da hilft auch kein Jammern."
+    ],
+    "evening": [
+      "Am Outfit liegt's also nicht, wenn der Abend nix wird."
+    ],
+    "night": [
+      "Für die Couch passt's sowieso.",
+      "Der restliche Abend ist um die Uhrzeit eh nicht mehr lang."
     ]
   },
   "flavour_11": {
     "off": [
       "Bitte nicht wieder die Ärmel um den Bauch knoten.",
-      "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht."
+      "Und dann wieder die Jacke um die Hüfte binden? Bitte nicht.",
+      "Und dann vergisst du sie irgendwo. Wie letztes Mal.",
+      "Und dann hängt sie den Rest des Tages über deinem Stuhl."
     ],
     "on": [
       "Als ob dein Schrank sowas hergibt."
     ],
     "offon": [
       "An, aus, wieder an. Wie deine Beziehungen.",
-      "An, aus, an. Kennst du ja aus der Liebe."
+      "An, aus, an. Kennst du ja aus der Liebe.",
+      "Ausziehen kannst du. Wiederfinden ist dein Problem."
     ],
     "theme_krampus": [
       "Ich hab dem Krampus deine Adresse nicht gegeben. Noch nicht.",
@@ -234,6 +259,21 @@
     "theme_xmas": [
       "Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.",
       "Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr."
+    ],
+    "rain": [
+      "Und lass ihn nicht wieder in der Bahn liegen."
+    ],
+    "snow": [
+      "Du wirst trotzdem so tun, als hätt's dir keiner gesagt."
+    ],
+    "hot": [
+      "Wasser mitnehmen, hab ich gesagt. Nicht Eiskaffee."
+    ],
+    "cold": [
+      "Du kannst also aufhören, mich alle fünf Minuten anzuglotzen."
+    ],
+    "night": [
+      "Der restliche Abend war vor einer Stunde. Ab ins Bett."
     ]
   },
   "topical_11": [
@@ -275,7 +315,7 @@
     ],
     "snow": [
       "Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.",
-      "Schnee kommt. Deine Stiefel sind natürlich noch im Keller."
+      "{M:10,11,12}Schnee kommt. Deine Stiefel sind natürlich noch im Keller."
     ],
     "wet": [
       "Den Schirm siehst du. Mitnehmen wirst du ihn trotzdem nicht."
@@ -297,18 +337,18 @@
       "Wieder Wetter, bei dem dir irgendwo eine Oma „Zieh dir was über, du verkühlst dich!“ hinterherruft."
     ],
     "cold": [
-      "Bei der Kälte schmeckt sogar Glühwein.",
+      "{M:11,12,01}Bei der Kälte schmeckt sogar Glühwein.",
       "Gleich reißt wieder einer zum Stoßlüften alle Fenster auf.",
       "Irgendein Depp läuft vermutlich trotzdem in kurzen Hosen rum.",
       "Saukalt. Mehr fällt mir dazu nicht ein.",
       "„Kälte härtet ab“, sagen die mit der Heizung auf fünf.",
-      "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+      "{M:10,11,12}Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
       "Saukalt. Mehr gibt's nicht zu sagen.",
       "Bei dem Wetter hätt die Oma keinen ohne Mütze aus dem Haus gelassen.",
       "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
       "Und dann gibt's Leute, die sagen, sie mögen den Winter.",
-      "Bei der Kälte trinkt man sogar freiwillig Glühwein.",
-      "Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.",
+      "{M:11,12,01}Bei der Kälte trinkt man sogar freiwillig Glühwein.",
+      "{M:10,11,12}Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.",
       "Und gleich wird trotzdem wieder stoßgelüftet.",
       "Einer läuft vermutlich trotzdem gerade in Shorts rum. Einen gibt's immer.",
       "Und dann gibt's Leute, die den Winter mögen. Angeblich."
@@ -400,7 +440,8 @@
       "Heut ist der Schatten dein bester Freund. Dein einziger.",
       "Jeder Weg ist dir heut zu weit. Also wie immer.",
       "Gleich fragst du wieder alle, ob ihnen auch so warm ist.",
-      "Heute ist dir jeder Meter zu viel. Also ein normaler Tag."
+      "Heute ist dir jeder Meter zu viel. Also ein normaler Tag.",
+      "Du hast bestimmt wieder kein Wasser dabei."
     ],
     "wet": [
       "Endlich passt das Wetter mal zu deinem Gesicht.",
@@ -445,7 +486,8 @@
       "„Nur noch eine Folge.“ Das war vor zwei Folgen.",
       "Gute Nacht. Und schnarch bitte nicht wieder so.",
       "So spät noch wach? Ab ins Bett mit dir.",
-      "Um die Zeit noch den Wetterbericht checken. Hut ab."
+      "Um die Zeit noch den Wetterbericht checken. Hut ab.",
+      "Um die Zeit fängst du wieder mit „Weißt du, was ich glaube?“ an. Nein. Schlaf."
     ]
   },
   "alone_10": {},

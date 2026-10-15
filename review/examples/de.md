@@ -105,6 +105,10 @@ Do not edit by hand; vote on the page instead.
 - So ein Wetter hätten sich andere mehr verdient.
 - Traumwetter, und du guckst wie an einem Montag.
 
+## night · dry
+
+- Für die Couch passt's sowieso.
+
 ## night · sarcastic
 
 - Finger weg vom Kühlschrank. Ich seh alles.
@@ -173,6 +177,10 @@ Do not edit by hand; vote on the page instead.
 
 - Mit dem, was du anhast, kommst du gut durch den Tag.
 - Was du anhast, passt bis zum Abend.
+
+## steady · dry
+
+- Wenn doch alles so einfach wär.
 
 ## steady_cold · plain
 

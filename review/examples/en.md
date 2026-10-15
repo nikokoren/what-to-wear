@@ -134,6 +134,10 @@ Do not edit by hand; vote on the page instead.
 - You checked the weather at this hour. For what, exactly?
 - You've looked at me a lot today. Go to bed.
 
+## on · sarcastic
+
+- Alternatively you can practise your 'I'm not cold' face for later.
+
 ## p_drier_snow · plain
 
 - It stops snowing later.
@@ -253,13 +257,13 @@ Do not edit by hand; vote on the page instead.
 
 ## warming · sarcastic
 
-- Taking that layer off might be the highlight of your day.
 - Taking that layer off might be the highlight of your day.  
   _here sarcasm and the forecast work well together_
-- You'll overheat a little before you admit I was right.
-- You'll overheat a little before you admit I was right.
+- Taking that layer off might be the highlight of your day.
 - You'll overheat a little before you admit I was right.  
   _here sarcasm and forecast work well together_
+- You'll overheat a little before you admit I was right.
+- You'll overheat a little before you admit I was right.
 
 ## wet · dry
 

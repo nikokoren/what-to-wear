@@ -400,6 +400,12 @@ def apply_follow(doc, lang, decisions):
             text = "{M:" + row["months"] + "}" + text
         if row.get("three"):
             text = "{3}" + text
+        note = (d.get("note") or "").lower().replace("its own", "it's own")
+        if section.startswith("now_") and "on it's own" in note and "not" in note:
+            # a now line the owner kept but found doesn't stand alone: it
+            # follows the forecast line instead, in its mood's group
+            section, key = "flavour_" + section.split("_")[1], MOOD_TO_GROUP[key]
+            n["follow-up (owner's note)"] += 1
         pool = doc.setdefault(section, {}).setdefault(key, [])
         if text not in pool:
             # starred lines first
