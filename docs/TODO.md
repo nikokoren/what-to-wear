@@ -172,15 +172,9 @@ to pick it up cold.
      still works). Today the sarcastic line shows only with the
      forecast on, and the form hides Sarcasm when Forecast is off. So
      the outfit-alone screen gets a sarcastic line too: room in the
-     layout, and lines that don't answer a fact. The What to Wear Next
-     pools (`flavour_vf_10`, `_11`) were written to stand alone; to
-     see whether they need extending. What they hold now (October
-     2026): only the moods that change during the day (cold, cooling,
-     fickle, hot, snow, warming, wet), none for nice, cool, evening or
-     night, which an outfit-alone screen shows often; and some are
-     thin (English fickle 3 at On and 2 at 11, German warming 2 and
-     cooling 3 at On). Drop the `conditional_validation` that hides
-     Sarcasm.
+     layout, and lines that don't answer a fact: the What to Wear Next
+     pools, extended (item 13). Drop the `conditional_validation` that
+     hides Sarcasm.
    - **Visual Forecast is now called What to Wear Next** everywhere it
      shows: the form, the about text and changelog, `beta/README.md`.
      Keys and pool names in the code can stay.
@@ -198,6 +192,24 @@ to pick it up cold.
      and the old location fields aren't in the spec: presumably they
      keep their places (location first, the title bar last).
    - **German** labels and descriptions for all five.
+13. **Before shipping: extend the What to Wear Next pools.** With the
+   new form, a sarcastic line shows without the forecast line (item
+   12), so it has to stand alone: on the outfit-alone screen and on
+   What to Wear Next. The pools for that (`flavour_vf_10`, `_11`)
+   were written to stand alone, but hold (October 2026):
+   - **Only the moods that change during the day:** cold, cooling,
+     fickle, hot, snow, warming, wet. None for nice, cool, evening or
+     night, which an outfit-alone screen shows often. Those fall back
+     to the mood's usual line, which may answer a fact that isn't
+     there.
+   - **Thin pools:** English fickle 3 at On and 2 at 11, German
+     warming 2 and cooling 3 at On.
+
+   Write the four missing moods in both languages and both levels,
+   and fill the thin ones; the outfit-alone screen has one drawing,
+   so no lines about the later outfits there. Item 11's lines for the
+   day with no more changes may be the same lines for nice and cool.
+   New lines go through a review round when the owner wants one.
 
 ## 1. Rethink the clothing system and the temperature bands
 
