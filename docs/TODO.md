@@ -209,7 +209,30 @@ to pick it up cold.
    and fill the thin ones; the outfit-alone screen has one drawing,
    so no lines about the later outfits there. Item 11's lines for the
    day with no more changes may be the same lines for nice and cool.
-   New lines go through a review round when the owner wants one.
+   New lines go through a review round when the owner wants one,
+   with item 14 in place first.
+14. **Before the next review round: a veto that drops both.** Today a
+   veto on a rewording keeps the original (round 9: "A veto keeps the
+   original"), and when every wording of a fact is vetoed the first
+   one stays "until there's a new one" (`apply_reread` in
+   `review/rounds/build_pools.py`). The owner: that isn't always
+   right; sometimes neither the new line nor the old one should stay,
+   and what's wanted is completely new lines, not another variation.
+   - **On the page** (`review/page.html`): a second veto, e.g. "Veto
+     both" (on rows that replace a line) or "Write new" (anywhere),
+     next to Veto, with its own key. Room for a short note on what's
+     wanted instead; the tags (too long, not funny, …) help too.
+   - **In the build:** it takes the original out as well. If that
+     leaves a pool empty, the old line still shows until new ones are
+     voted in, so a screen never goes blank, but it's listed as
+     waiting.
+   - **After a sync:** a list of the slots that need new lines (which
+     pool, the screen it's for, the vetoed lines and the note), and
+     the vetoed lines go into `review/dont/` so new ones don't echo
+     them. New lines for those slots, written fresh, open the next
+     round.
+   - Once built, the owner can go over round 9's vetoes and mark the
+     ones that were meant as both.
 
 ## 1. Rethink the clothing system and the temperature bands
 
