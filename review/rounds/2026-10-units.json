@@ -1,0 +1,4444 @@
+{
+ "round": "2026-10-units",
+ "idPrefix": "un",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "No layer to carry today. Both hands free for snacks.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "hint": "One sentence, no second line"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "What you're wearing works all day, no changes. || You'd make a decent screen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "This outfit works all day. || The one forecast I could do in my sleep. If I slept.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "You're dressed right for the whole day. || So you can stop staring into the wardrobe now.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "What you have on lasts the whole day. || Unlike your phone battery.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "Nothing to add or take off all day. || My shortest forecast, and my favourite.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "What you have on is right for the whole day. || Don't let it go to your head.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "Nothing changes all day. || You'll check again anyway. I'll say the same thing, just as nicely.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "This outfit is fine all day. || 'Fine' is the highest praise I give.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "Nothing changes all day, so you won't hear from me again. || I don't do push notifications anyway.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "Today needs nothing more than what you have on. || A rare thing for me to say about anyone.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "You're set for the whole day. || So if today goes badly, you can't blame the weather.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "What you're wearing works all day. || Now you just need somewhere to go in it.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "No changes all day. || One less reason to be late. You'll find another.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "Nothing extra needed all day. || You'll still pack something, just in case. In case of what?",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "What you have on works for the whole day. || You've worn worse for longer.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "This outfit is good all day. || You've already decided it isn't, haven't you.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "What you're wearing works all day. || Longest commitment you'll make this week.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "Nothing changes all day. || So any drama today is your own work.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "You're dressed for the whole day. || Whatever you were going to complain about, it isn't this.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "No changes all day, so there's nothing to forget. || You'll manage something anyway.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "The weather stays put all day. || So will you, probably.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "The weather does nothing new all day. || The most reliable thing you'll deal with today, then.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "What you're wearing works for the rest of the evening. || Whatever the evening brings, the outfit won't be the problem.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "Nothing changes for the rest of the evening. || And there's plenty of it. It's been dark since about four.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "months": "11,12,01",
+   "hint": "Seasonal: only Nov–Jan"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "Nothing changes for the rest of the evening. || Unlike the TV, I won't ask if you're still watching.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "You're fine as you are for the rest of the evening. || Rare words from me. Enjoy them.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "No more weather news tonight. You're dressed for the rest of the evening. || I'll go back to looking decorative.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "What you have on works for the rest of the evening. || I'll be quiet now. The other screens in here won't.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_evening",
+   "text": "Nothing to change for the rest of the evening. || My work here is done. Not that I'll stop.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "You're dressed right for the rest of the evening. || Plenty of evening left for not answering that message.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "What you're wearing works for the rest of the evening. || You'll read all this, then do what you were going to anyway.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "The rest of the evening needs nothing more than this. || Your 'five minutes on the sofa' will probably cover it.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "You'll be comfortable in this for the rest of the evening. || You'll probably spend half of it choosing what to watch.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "Nothing changes for the rest of the evening. || Plenty of time to start something you won't finish.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "You can wear this for the rest of the evening. || You were going to anyway.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "The weather won't change for the rest of the evening. || You'll still blame it if your plans fall through.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_evening",
+   "text": "No changes for the rest of the evening. || You'll still check me again in an hour. I'll still say this.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_night",
+   "text": "What you're wearing works for the rest of the evening. || It also works for bed, I'm told.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_night",
+   "text": "Nothing changes for the rest of the night. || Not that anyone will see it at this hour. Except me.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_night",
+   "text": "No more weather tonight. || I'm the one screen in here that won't keep you up. You're welcome.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_night",
+   "text": "What you have on is fine for the rest of the night. || Including the bit on the sofa you'll call 'resting my eyes'.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_night",
+   "text": "Nothing to change before bed. || Well, one thing. But that's up to you.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_night",
+   "text": "This works for the rest of the evening. || It works for the couch too, which is where this is going.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_night",
+   "text": "You can wear this for the rest of the night. || You could even go to bed in it. I know you have before.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_night",
+   "text": "Nothing changes tonight. || You'll scroll in bed for an hour and call it winding down.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_night",
+   "text": "The weather's done for the night. || You checked anyway. For what, exactly?",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_night",
+   "text": "Nothing changes before morning. || Tomorrow-you is already annoyed with tonight-you.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "It stays this cold all day. || All day. I checked twice, out of pure spite.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "No warming up today. || If the sun shows up, it's purely decorative.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "It's cold all day. || You'll say 'it's freezing' twenty times anyway.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "The cold doesn't budge all day. || You'll keep everything on indoors for ten minutes, 'just to warm up'.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "It doesn't get any warmer today. || Staring at me longer won't change that.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "It stays this cold the whole day. || I'm staying in here where it's warm.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "Expect the cold to last all day. || Your nose will turn a colour I can't even display.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_cold",
+   "text": "It's cold all day. || My only weakness is the cold. Kidding, I don't have one.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "It stays this cold all day. || So no, you can't wait it out.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "It doesn't get any warmer today. || No use checking again in an hour, I won't change my mind.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "It's cold all day. || You'll come home and hug the radiator like it's family.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "No warming up today. || You'll see your breath and pretend you're a dragon. Don't deny it.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "The cold stays all day. || You'll pull your sleeves over your hands and call them gloves.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "It's this cold the whole day. || You'll walk twice as fast. Still not cardio.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "Expect the cold to last all day. || You'll make that noise once you're outside. You know the one.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_cold",
+   "text": "It stays cold all day. || Perfect for browsing flights somewhere warm and booking nothing. Again.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "months": "01,02",
+   "hint": "Seasonal: only Jan–Feb"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "It's hot all day, so drink water and find shade. || Finally, a use for the fancy bottle you bought to drink more water.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "It's hot all day. Bring water and look for shade. || The shade is where all the cool screens hang out.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "The heat stays all day. Water, and shade wherever you find it. || Even a strip the width of a lamppost.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "It's hot all day: keep water with you and stay in the shade. || Not me, thanks. Water and I don't get along.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "It's hot all day. Water and shade help. || I'll sit this one out in your nice shady hallway.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "Hot all day, so drink water and stay out of the sun. || No sweat here. One of the perks of being a screen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady_hot",
+   "text": "No break from the heat today, so water and shade it is. || Thin, pale and cool. I was made for this.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "It's hot all day, so drink water and find shade. || And by water I mean water. Not beer, even if it's cold.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "The heat lasts all day. Stay in the shade and drink water. || You'll find shade, then complain it's the wrong shade.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "Hot all day, so water and shade. || You'll probably end up loitering in the freezer aisle. Again.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "No break from the heat today. Drink water, find shade. || And somehow you'll still burn the back of your neck.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "It stays hot all day. Water and shade, please. || You'll say 'I'm not built for this' at least once. You're right.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "It's hot all day. Bring water and stay in the shade. || Remember wishing for summer? This is what you get.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "Hot all day: drink water and look for shade. || You'll search 'ice cream near me' later. Twice.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "It's hot all day, so drink water and stay in the shade. || You'll manage the shade. The water, we'll see.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch frei nehmen können.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Dann kann ja nur noch alles andere schiefgehen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Heute ändert sich nichts, was du anhast, passt den ganzen Tag. || Für so eine Ansage bin ich eigentlich überqualifiziert.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag, und mehr hab ich heute auch nicht zu sagen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "hint": "One sentence, no second line"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Dein Outfit passt heute den ganzen Tag. || Wenn doch alles so einfach wär.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Dann bin ich heute wohl nur Deko.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Ich hab extra nach einem Haken gesucht. Es gibt keinen. Ärgerlich.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Wenigstens das Wetter ist heute mal unkompliziert.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Heute gibt's nichts umzuziehen, was du anhast, passt den ganzen Tag. || Merk dir den Tag. So pflegeleicht bin ich selten.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Beschwerden nehm ich trotzdem gern entgegen. Ich hab ja Zeit.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Ich hätt's gern spannender gemacht, aber das Wetter spielt nicht mit.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Heute hab ich also nichts zu meckern. Über das Wetter.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Ob's dir steht, ist eine andere Frage.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Zumindest bis zum ersten Kaffeefleck.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Dann kannst du heute ja nichts falsch machen. Theoretisch.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Mehr kann ich für dich heute nicht tun.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Du musst dich heute nicht umziehen, was du anhast, passt den ganzen Tag. || Hättest du sowieso nicht gemacht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Auch für die Joggingrunde, die du dann doch nicht drehst.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Das ist heute vermutlich das Einzige, was bei dir passt.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Damit hast du die einzige richtige Entscheidung des Tages schon hinter dir.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Glück gehabt. Nachgedacht hast du dabei ja nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "So, wie du angezogen bist, kommst du durch den ganzen Tag. || Wie du das sonst schaffst, ist mir ein Rätsel.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Wettermäßig passt, was du anhast, den ganzen Tag. || Modisch reden wir lieber nicht drüber.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Am Outfit liegt's also nicht, wenn der Abend nichts wird.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Jetzt fehlt nur noch die passende Laune.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Gut so. Für Überraschungen bin ich schon zu müde.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Am Wetter ändert sich heute Abend nichts, was du anhast, passt. || Schade. Ein bisschen Sturm hätt ich noch vertragen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Den ganzen Abend passt, was du anhast. || Das war's von mir. Mehr Abendprogramm hab ich nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Ich hab heute auch nichts mehr vor. Ich hab nie was vor.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Für den Rest des Abends passt, was du anhast. || Sonst passt heute ja nicht viel, aber das schon.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Mehr Gutes hab ich heute nicht mehr auf Lager.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Für ein Kompliment reicht's trotzdem nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Gratuliere. Das war die einfachste Entscheidung deines Abends.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Umziehen musst du dich also nicht. Wobei, eine Idee wär's.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Das Wetter ist heute so abwechslungsreich wie dein Kleiderschrank.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Du schaust trotzdem noch dreimal nach. Ich kenn dich.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Für den Rest des Abends passt, was du anhast. || Das Wetter gibt sich heute mehr Mühe als du.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Dein Abend hängt jetzt also nur noch an deiner Laune. Viel Glück.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_evening",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Mehr als „passt“ fällt mir so spät auch nicht mehr ein.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den Rest des Abends. || Der ist um die Uhrzeit sowieso nicht mehr lang.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Für die Couch passt's sowieso.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_night",
+   "text": "Am Wetter ändert sich heute Nacht nichts mehr, was du anhast, passt. || Das sag ich jetzt nur noch aus Pflichtgefühl.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Also so wie immer.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_night",
+   "text": "Was du anhast, passt für den Rest des Abends. || Der war übrigens vor einer Stunde. Ab ins Bett.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Also für die zehn Minuten, bis du auf dem Sofa einschläfst.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Auch für den dritten Gang zum Kühlschrank.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust, frag ich lieber nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_night",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist eine Drohung.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Da hilft auch kein Jammern.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Die Kälte hält den ganzen Tag an. || Da bleibt immerhin das Bier auf dem Balkon schön kühl.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag kalt. || Also gilt wieder: Fenster zu, wir heizen nicht für draußen!",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Wärmer wird's heute den ganzen Tag nicht. || Meine Laune übrigens auch nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Wer jetzt „herrlich frisch“ sagt, kriegt von mir keinen Wetterbericht mehr.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "months": "01",
+   "hint": "Seasonal: only Jan"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Die Kälte bleibt heute den ganzen Tag. || Wie Besuch, der nicht merkt, dass er gehen soll.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Dann hast du ja den ganzen Tag ein Gesprächsthema.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es wird den ganzen Tag nicht wärmer. || Du kannst also aufhören, mich alle fünf Minuten anzuglotzen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Das Handy bedienst du wieder mit der Nasenspitze. Sehr elegant.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag kalt. || Wie dein Kaffee, den du wieder irgendwo stehen gelassen hast.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_cold",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt. Bier zählt nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie die Geranien.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. Für dich und für die Flasche.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "hint": "One sentence, no second line"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Es bleibt den ganzen Tag heiß, also Wasser mit und ab in den Schatten. || Ich bleib drinnen. Aber ich hab ja keine Wahl.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || In der Bahn fällt dann die Klimaanlage aus. Wegen Hitze.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Zum Meckern ist es mir heute zu heiß. Fast.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß: genug Wasser trinken, im Schatten bleiben und nicht über die Hitze reden. Ich weiß es schon.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.",
+   "hint": "One sentence, no second line"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser ist übrigens das Durchsichtige.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Trinken, nicht nur rumtragen. Ich kenn dich.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Da ist's dir dann wieder zu frisch. Wetten?",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Heute bleibt's heiß, trink Wasser und meide die pralle Sonne. || Heute Abend bist du trotzdem wieder rot wie ein Hummer.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Heute bleibt's heiß. Bleib im Schatten und trink Wasser, bevor du Durst hast. || Sonst kippst du wieder um.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Heute bleibt's heiß, trink viel Wasser und such dir Schatten. || Und komm mir nicht mit „Ich hab keinen Durst“.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Kaffee zählt nicht als Wasser. Auch nicht mit Eis.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Unit: steady_hot",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing."
+  }
+ ]
+}

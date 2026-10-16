@@ -408,6 +408,16 @@ the longest and shortest day; `block.liquid`, "Special days"), and round
 15's last "Write new" spots. Every line names its day, so it works under
 "works all day" and alone under the drawing.
 
+## Round 17: units
+
+`2026-10-units.json` (`make_round17.py`, ids `un-…`), 164 lines: the
+forecast sentence and its joke written together ("fact || joke", or one
+sentence with both), voted as one. The owner found two separately picked
+lines don't flow. Steady days first (all day, evening, night, cold, hot);
+layers and rain follow. `build_pools.py` puts kept units in
+`units_10`/`units_11`; the markup shows one wherever a situation has some.
+Raw output in `2026-10-units/`.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
