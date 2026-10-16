@@ -294,6 +294,29 @@ to pick it up cold.
    - `tools/test_write_new.py` pins it. The review page gets it with the
      next round (it isn't republished before then). Round 9's vetoes can
      be re-marked as "Write new" then, if the owner wants.
+15. **Done (October 2026): big swings into shorts weather.** A reader in
+   Colorado: freezing at dawn, shorts weather by afternoon, long pants
+   all day on the screen. Three hours or more of shorts weather now make
+   a shorts day however cold it starts: the coat now, shorts in the
+   later drawings, and the forecast line says to go out in shorts
+   (`shorts_swing`, `shorts_swing_back`; THE LONG-PANTS RULE in
+   `src/shared.liquid`). Pinned in `tools/logic_test.py` and
+   `prototypes/panels/test_switch.py`.
+16. **Next: other weather outliers** (rendered 16 October 2026):
+   - **The reverse swing** (a "blue norther"): 24 °C at 8 am, freezing
+     by 3 pm. Shorts now, then "bring the winter coat". The legs rule
+     only looks at warm weather; three hours or more at coat weather
+     should mean long pants at the door.
+   - **Dangerous heat:** 37 °C at 9 am climbing to 43 °C reads "Some
+     relief from the heat tonight" because the evening's easing wins the
+     story. Above about 35 °C the water and shade line should win.
+   - **Freezing rain** (codes 56, 57, 66, 67) counts as rain: umbrella
+     advice, no word about ice.
+   - **Thunderstorms** (95 to 99) count as rain too.
+   - **Extreme cold:** everything at −5 °C or below is one outfit, so
+     −30 °C reads like −6 °C.
+   - **Wind** isn't fetched; feels-like covers the wind chill, but not
+     an umbrella in a gale.
 
 ## 1. Rethink the clothing system and the temperature bands
 
