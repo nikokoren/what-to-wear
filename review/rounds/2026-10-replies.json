@@ -4418,6 +4418,32 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.shorts_swing",
+   "text": "Wear shorts today and keep {G} on for the cold start. {WHEN} it's shorts weather.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.shorts_swing_back",
    "text": "Shorts weather {WHEN}, and you'll want a layer back {WHEN2}. Go with shorts and keep {G} with you.",
    "role": "fact",
@@ -4469,6 +4495,32 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.shorts_swing_back",
+   "text": "Wear shorts and keep {G} with you. It's warm {WHEN}, then cooler again {WHEN2}.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.pants_swing",
    "text": "It's shorts weather now, but it turns cold {WHEN}. Wear long pants and bring a warm coat.",
    "role": "fact",
@@ -4491,6 +4543,58 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.pants_swing",
+   "text": "Wear long pants today, even though it's warm now. Cold weather arrives {WHEN}, so bring a warm coat.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.pants_swing",
+   "text": "A cold front comes through {WHEN}. Wear long pants and take a warm coat, even if it feels warm now.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "new": true,
+   "hint": "New wording"
   },
   {
    "lang": "en",
@@ -4519,6 +4623,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.heat_danger",
+   "text": "The heat is dangerous today. Keep drinking water, stay in the shade and avoid the midday sun.",
+   "role": "fact",
+   "batch": "Forecast: heat",
+   "sprite": "extreme_heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: dangerous heat, above 34 C feels-like for two hours or more. Leads with water and shade, whatever else the day does.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.heat_danger",
+   "text": "Drink water often and stay in the shade. Today's heat is dangerous, especially at midday.",
+   "role": "fact",
+   "batch": "Forecast: heat",
+   "sprite": "extreme_heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: dangerous heat, above 34 C feels-like for two hours or more. Leads with water and shade, whatever else the day does.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_wetter_ice",
    "text": "Freezing rain {WHENP} makes roads and pavements icy. Take the umbrella and watch your step.",
    "role": "fact",
@@ -4541,6 +4697,58 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_ice",
+   "text": "Take the umbrella. Freezing rain {WHENP} makes the pavements icy, so walk carefully.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_ice",
+   "text": "{WHENP} there's freezing rain and the roads turn icy. Bring the umbrella and take it slowly.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
   },
   {
    "lang": "en",
@@ -4569,6 +4777,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.p_wetter_storm",
+   "text": "There's a thunderstorm {WHENP}. Take the umbrella, and head indoors while it thunders.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_storm",
+   "text": "Bring the umbrella for the thunderstorm {WHENP}, and get inside when it starts.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_wetter_long_ice",
    "text": "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.",
    "role": "fact",
@@ -4594,6 +4854,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Freezing rain begins {WHENP} and doesn't stop. Expect icy pavements and take the umbrella.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_wetter_long_storm",
    "text": "Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella and stay inside while it thunders.",
    "role": "fact",
@@ -4615,7 +4927,59 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (108 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "A thunderstorm arrives {WHENP} and the rain stays after it. Take the umbrella and stay indoors during the thunder.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (114 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella, and get inside while it thunders.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (109 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "en",
@@ -4644,6 +5008,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "There might be freezing rain {WHENP}. That would mean ice, so take the umbrella and tread carefully.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "Freezing rain could come {WHENP}, and with it ice. Take the umbrella to be safe.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_wetter_maybe_storm",
    "text": "A thunderstorm is possible {WHENP}, so the umbrella's worth taking.",
    "role": "fact",
@@ -4666,6 +5082,58 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "There could be a thunderstorm {WHENP}. Take the umbrella, just in case.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "A thunderstorm {WHENP} isn't certain, but bring the umbrella. If it thunders, get inside.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
   },
   {
    "lang": "en",
@@ -4694,6 +5162,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "It's freezing rain all day, so the pavements stay icy. Walk carefully and keep the umbrella with you.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
+   "new": true,
+   "hint": "New wording · Long (101 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "The freezing rain keeps going all day and leaves ice everywhere. Bring the umbrella and go slowly.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_stays_wet_storm",
    "text": "Rain and thunderstorms all day. Bring the umbrella and stay inside while it thunders.",
    "role": "fact",
@@ -4716,6 +5236,58 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now and all day.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "Thunderstorms come and go all day. Take the umbrella and stay indoors when it thunders.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now and all day.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "It's wet and stormy all day. Bring the umbrella, and get inside whenever it thunders.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now and all day.",
+   "new": true,
+   "hint": "New wording"
   },
   {
    "lang": "en",
@@ -4744,6 +5316,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.p_drier_ice",
+   "text": "Take the umbrella for now. The freezing rain stops later, but the pavements stay icy.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_ice",
+   "text": "Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_drier_storm",
    "text": "The rain and thunder stop later, but you'll want the umbrella for now.",
    "role": "fact",
@@ -4769,6 +5393,58 @@
   },
   {
    "lang": "en",
+   "path": "fact_0.p_drier_storm",
+   "text": "Take the umbrella for now. The thunderstorm passes later.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_storm",
+   "text": "The thunderstorm moves on later. For now, keep the umbrella and get inside while it thunders.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
    "path": "fact_0.p_wet_again_ice",
    "text": "The freezing rain stops for a while, then comes back {WHENP}. Expect ice and keep the umbrella with you.",
    "role": "fact",
@@ -4790,7 +5466,59 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (104 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and mind the ice.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_ice",
+   "text": "The freezing rain pauses later and returns {WHENP}. The pavements stay icy, so keep the umbrella and go slowly.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (111 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "en",
@@ -4816,6 +5544,58 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "The rain takes a break, but a thunderstorm follows {WHENP}. Keep the umbrella and get inside when it hits.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (106 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (101 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "en",
@@ -5509,6 +6289,446 @@
     "se-en-f6a8fa54dc39"
    ],
    "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Your knees will have opinions this morning. Ignore them.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Warm on top, shorts below. You'll look like you couldn't decide.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Trust me. I've never had cold legs.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Brave call. Correct, but brave.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "You'll spend the first hour explaining your legs.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Your legs will go a lovely blotchy colour. Briefly.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "You'll doubt me for the first hour. Then you won't admit it.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "It's shorts weather this afternoon. Go with shorts and keep the jacket for the way out.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Very PE teacher of you. Still the right call.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Yes, a coat. Yes, I can see the sun too.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "The sun's lying to you. I'm not.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "I've seen the afternoon. You haven't.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "A coat on a shorts morning. Odd now, smug later.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "You'll want to argue. Your legs will side with me later.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "You'll carry the coat like a grudge. Then wear it like a hug.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Check another app if you like. It'll say the same thing, in colour.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Later you'll say 'where did that come from?' From here. This morning.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "For once, staying in with me is the sensible choice.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "I'm staying in the shade too. I recommend the company.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "I'll handle the forecast. You handle refilling that bottle.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Plenty of water today. Not the sip-and-forget kind.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Do nothing at midday. Finally, a plan you're good at.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "You'll forget to drink, then wonder about the headache. Drink now.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Refill the bottle before it's empty. You never do.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Not a day for proving anything. Sit in the shade and drink.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Walk like you're carrying a very full cup of coffee.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "If you're late, blame the ice. It's the one excuse I'll back.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Move like me today: slowly, and not at all if possible.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Hold on to the umbrella. Hold on to the railing more.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "You'll say 'it's not that bad'. Say it slowly, while walking slowly.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Today you're allowed to walk like your gran. Encouraged, even.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Whatever you'd normally run for today, let it go.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "You'll look at your phone while walking. Not today.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Film it from inside. The thunder sounds just as good.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Don't unplug me. I'm on battery and I'm not scared.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "When it thunders, swap the umbrella for a roof.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "I'll stay in for this one. Then again, I always do.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "You'll count the seconds after every flash. From inside, please.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "You'll say you love a good storm. From indoors, you do.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "You'll still check the radar every five minutes. I'm hurt, frankly.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "You'll pretend the thunder didn't make you jump.",
+   "role": "flavour",
+   "new": true
   },
   {
    "lang": "de",
@@ -10148,6 +11368,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.shorts_swing",
+   "text": "Zieh ruhig gleich Shorts an. {WHEN} wird's warm genug, bis dahin reicht die warme Schicht drüber.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing",
+   "text": "Noch ist's kalt, aber {WHEN} wird's Shorts-Wetter. Also zieh gleich Shorts an und nimm die warme Schicht nur für den Weg.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.shorts_swing_back",
    "text": "{WHEN} ist Shorts-Wetter, {WHEN2} brauchst du wieder eine Schicht mehr. Zieh trotzdem schon jetzt Shorts an.",
    "role": "fact",
@@ -10203,6 +11479,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.shorts_swing_back",
+   "text": "Shorts lohnen sich heute, {WHEN} wird's warm genug. Die warme Schicht nimmst du mit, {WHEN2} brauchst du sie wieder.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} wird's warm genug für Shorts, also zieh sie gleich an. Die warme Schicht kommt mit, {WHEN2} wird's wieder kühl.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.pants_swing",
    "text": "Gerade ist Shorts-Wetter, aber {WHEN} wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
    "role": "fact",
@@ -10227,6 +11559,62 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.pants_swing",
+   "text": "Lass die Shorts heute weg, {WHEN} wird's kalt. Zieh lange Hosen an und pack eine warme Jacke ein.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.pants_swing",
+   "text": "Jetzt fühlt's sich nach Shorts an, doch {WHEN} kommt eine Kaltfront. Lange Hosen sind heute besser, und eine warme Jacke muss mit.",
+   "role": "fact",
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "new": true,
+   "hint": "New wording"
   },
   {
    "lang": "de",
@@ -10257,6 +11645,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.heat_danger",
+   "text": "Die Hitze ist heute gefährlich. Trink regelmäßig Wasser, such dir Schatten und bleib mittags aus der Sonne.",
+   "role": "fact",
+   "batch": "Forecast: heat",
+   "sprite": "extreme_heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: dangerous heat, above 34 C feels-like for two hours or more. Leads with water and shade, whatever else the day does.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.heat_danger",
+   "text": "Bei dieser Hitze geht Wasser vor: genug trinken, im Schatten bleiben und mittags nicht in die pralle Sonne.",
+   "role": "fact",
+   "batch": "Forecast: heat",
+   "sprite": "extreme_heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: dangerous heat, above 34 C feels-like for two hours or more. Leads with water and shade, whatever else the day does.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.p_wetter_ice",
    "text": "{WHENP} kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
    "role": "fact",
@@ -10280,7 +11724,63 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (117 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_ice",
+   "text": "Nimm den Schirm mit, {WHENP} kommt gefrierender Regen. Danach ist's überall glatt, also geh vorsichtig.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (103 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_ice",
+   "text": "{WHENP} droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (102 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "de",
@@ -10311,6 +11811,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.p_wetter_storm",
+   "text": "Nimm den Schirm mit, {WHENP} gibt's ein Gewitter. Wenn's donnert, geh lieber rein.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_storm",
+   "text": "{WHENP} kommt ein Gewitter. Pack den Schirm ein und such dir ein Dach, sobald es donnert.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.p_wetter_long_ice",
    "text": "{WHENP} setzt gefrierender Regen ein und hört nicht mehr auf. Rechne mit Glatteis und nimm den Schirm mit.",
    "role": "fact",
@@ -10334,7 +11890,63 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (106 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "{WHENP} beginnt gefrierender Regen, und der hält an. Straßen und Gehwege werden glatt, nimm den Schirm mit und geh vorsichtig.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (126 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Nimm den Schirm mit: {WHENP} fängt gefrierender Regen an und bleibt. Pass auf, es wird spiegelglatt.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
   },
   {
    "lang": "de",
@@ -10361,7 +11973,63 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (109 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "{WHENP} ziehen Gewitter auf, danach regnet's weiter. Nimm den Schirm mit und geh bei Donner nach drinnen.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (105 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "Nimm den Schirm mit: {WHENP} beginnt Regen mit Gewittern, und der bleibt. Solange es donnert, bist du drinnen besser aufgehoben.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (128 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "de",
@@ -10392,6 +12060,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "{WHENP} könnte gefrierender Regen fallen. Dann wird's glatt, also pack lieber den Schirm ein und geh vorsichtig.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (112 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "Vielleicht kommt {WHENP} gefrierender Regen. Nimm sicherheitshalber den Schirm mit und rechne mit glatten Wegen.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (112 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.p_wetter_maybe_storm",
    "text": "{WHENP} ist ein Gewitter möglich, ein Schirm schadet nicht.",
    "role": "fact",
@@ -10419,6 +12143,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "Vielleicht gibt's {WHENP} ein Gewitter. Nimm den Schirm mit, und wenn's donnert, geh rein.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "{WHENP} kann ein Gewitter aufziehen. Mit Schirm bist du vorbereitet, bei Donner aber drinnen besser aufgehoben.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "new": true,
+   "hint": "New wording · Long (111 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.p_stays_wet_ice",
    "text": "Den ganzen Tag gefrierender Regen, Straßen und Gehwege sind glatt. Nimm den Schirm mit und geh langsam.",
    "role": "fact",
@@ -10442,7 +12222,63 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (103 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "Der gefrierende Regen hält den ganzen Tag an, überall ist es glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
+   "new": true,
+   "hint": "New wording · Long (107 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "Heute bleibt's bei gefrierendem Regen und Glatteis. Behalt den Schirm dabei und lass dir auf dem Gehweg Zeit.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
+   "new": true,
+   "hint": "New wording · Long (109 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "de",
@@ -10473,6 +12309,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "Regen und Gewitter halten den ganzen Tag an. Behalt den Schirm dabei und geh rein, wenn's donnert.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now and all day.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "Heute gewittert's immer wieder, und der Regen hört nicht auf. Nimm den Schirm mit und such dir bei Donner ein Dach.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now and all day.",
+   "new": true,
+   "hint": "New wording · Long (115 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.p_drier_ice",
    "text": "Der gefrierende Regen hört später auf, das Glatteis bleibt. Bis dahin brauchst du den Schirm.",
    "role": "fact",
@@ -10497,6 +12389,62 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_ice",
+   "text": "Der gefrierende Regen hört später auf, glatt bleibt's aber. Bis dahin hilft der Schirm, und geh vorsichtig.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording · Long (107 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_ice",
+   "text": "Noch fällt gefrierender Regen, also nimm den Schirm mit. Auch wenn er später aufhört, bleiben die Wege glatt.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording · Long (109 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "de",
@@ -10527,6 +12475,62 @@
   },
   {
    "lang": "de",
+   "path": "fact_0.p_drier_storm",
+   "text": "Noch gewittert's, aber später ist es vorbei. Bis dahin brauchst du den Schirm, und bei Donner bleib drinnen.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording · Long (108 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_storm",
+   "text": "Das Gewitter zieht später ab. Nimm bis dahin den Schirm mit und geh rein, solange es donnert.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "new": true,
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
    "path": "fact_0.p_wet_again_ice",
    "text": "Der gefrierende Regen macht später eine Pause, {WHENP} kommt er zurück. Rechne mit Glatteis und behalt den Schirm dabei.",
    "role": "fact",
@@ -10550,7 +12554,63 @@
    },
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
-   "hint": "The only wording: a veto keeps it until a new one is kept"
+   "hint": "Long (120 characters): after a temperature sentence it may not fit · The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Der gefrierende Regen hört später kurz auf, {WHENP} kommt er zurück. Behalt den Schirm dabei, glatt bleibt's die ganze Zeit.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (124 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Gefrierender Regen jetzt, dann eine Pause und {WHENP} wieder. Der Schirm bleibt dabei, und auf den Gehwegen ist's glatt.",
+   "role": "fact",
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (120 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "de",
@@ -10578,6 +12638,62 @@
    "under": "",
    "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
    "hint": "The only wording: a veto keeps it until a new one is kept"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "Der Regen hört später kurz auf, {WHENP} kommt ein Gewitter. Behalt den Schirm dabei und geh rein, wenn's donnert.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (113 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "Jetzt regnet's, später ist kurz Ruhe, und {WHENP} kommt ein Gewitter. Behalt den Schirm und geh bei Donner rein.",
+   "role": "fact",
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "new": true,
+   "hint": "New wording · Long (112 characters): after a temperature sentence it may not fit"
   },
   {
    "lang": "de",
@@ -11297,6 +13413,446 @@
     "fu-de-db7f95efa7a2"
    ],
    "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Wer dich jetzt sieht, hält dich für verrückt. Diesmal zu Unrecht.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Ja, wirklich. Ich hab mich nicht verschrieben.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at On: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Schön ist das nicht. Aber richtig.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Du wolltest doch immer mal was Mutiges machen.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Und bitte kein Jammern auf dem Weg. Du hast's ja gelesen.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Dass du auf mich hörst, glaub ich erst, wenn ich dich in Shorts seh.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Jacke über Shorts, wie der Paketbote. Nur langsamer.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Sieht nicht danach aus, ich weiß. Dafür gibt's ja mich.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Die in kurzen Hosen lachen jetzt noch.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Mit der Jacke unterm Arm siehst du jetzt komisch aus. Später schlau.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Ich weiß, ich mach mich heute unbeliebt.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Einmal im Leben bist du rechtzeitig vorbereitet. Genieß es.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Später bist du dann der Einzige, der nicht friert. Gewöhn dich nicht dran.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Deine Beine sieht heute also keiner. Ist auch besser so.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Dein „Mir ist nie kalt“ hebst du dir für einen anderen Tag auf.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute mein ich das ganz ohne Grant.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Ich sag's auch dreimal, wenn's sein muss.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Ich bleib auch drinnen. Hab ja keine Wahl.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Meckern kannst du später. Erst trinken.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Ich weiß, du hältst Hitze aus. Heute musst du's nicht beweisen.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Kaffee ist übrigens kein Wasser. Auch nicht mit Eis.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Trink, bevor du Durst hast. Du merkst den sonst wieder zu spät.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute darfst du sogar faul im Schatten liegen. Mit meinem Segen.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Festhalten kann ich dich leider nicht. Also langsam.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute bin ich gern ein Bildschirm. Ich muss nirgends hin.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Eilig hat's heute nur, wer hinfallen will.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Langsam gehen kannst du ja. Heute hast du endlich einen Grund.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute ist Zuspätkommen ausnahmsweise vernünftig.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Und heute bitte nicht beim Gehen aufs Handy starren.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute bist du ausnahmsweise nicht der Langsamste. Heute sind's alle.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Und unter einem Baum ist nicht drinnen.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Der Schirm hilft gegen Regen. Gegen Blitze hilft nur drinnen.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Spannend wird's heute nur am Himmel. Schau's dir von drinnen an.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Fotografier's bitte durchs Fenster. Das Foto wird sowieso nichts.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Zählen zwischen Blitz und Donner kannst du ja. Bis drei immerhin.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Wenn's donnert, gehst du rein. Nicht „gleich“, sondern sofort.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Dein „Das zieht vorbei“ hat schon öfter nicht gestimmt.",
+   "role": "flavour",
+   "new": true
   }
  ]
 }

@@ -131,6 +131,8 @@ def main():
                         hints.append("Leaves out " + ", ".join(missing))
                 elif (lang, text) in earlier:
                     row["earlier"] = earlier[(lang, text)]
+                if key.startswith("p_") and len(text) > 100:
+                    hints.append(f"Long ({len(text)} characters): after a temperature sentence it may not fit")
                 if len(facts.get(key, [])) == 1 and not new:
                     hints.append("The only wording: a veto keeps it until a new one is kept")
                 if hints:
