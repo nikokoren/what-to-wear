@@ -13,11 +13,13 @@
       "it"
     ],
     "steady": [
+      "This outfit works all day.",
       "What you're wearing works for the whole day.",
       "You're dressed right for the whole day.",
       "What you have on is perfect.",
       "You can wear this all day without changing a thing.",
-      "You'll be comfortable in this for the whole day."
+      "You'll be comfortable in this for the whole day.",
+      "You're set for the whole day."
     ],
     "steady_evening": [
       "What you're wearing works for the rest of the evening.",
@@ -29,6 +31,8 @@
       "You'll be comfortable in this for the rest of the evening."
     ],
     "steady_hot": [
+      "It's hot the whole day, so drink plenty of water and find shade.",
+      "The heat lasts all day. Keep water with you and stay in the shade.",
       "The heat doesn't let up today. Drink water and find some shade.",
       "It stays hot all day, so bring water and look for shade.",
       "It's hot all day. Bring water and stay in the shade.",
@@ -36,6 +40,7 @@
       "No break from the heat today. Water and shade help."
     ],
     "steady_cold": [
+      "It's this cold the whole day.",
       "It doesn't get any warmer today.",
       "It stays this cold all day.",
       "It's cold all day.",
@@ -150,7 +155,9 @@
       "It starts cool, but it's shorts weather {WHEN}.",
       "A cool start, then shorts weather {WHEN}.",
       "It's cool now, but {WHEN} it's warm enough for shorts.",
-      "It's a bit cool for shorts now, but {WHEN} you'll be glad of them."
+      "It's a bit cool for shorts now, but {WHEN} you'll be glad of them.",
+      "Shorts could be worth it today. It's cool now, but warm {WHEN}.",
+      "{WHEN} it's warm enough for shorts, so think about wearing them now."
     ],
     "p_wetter": [
       "There's a short shower {WHENP}. Have the umbrella with you.",
@@ -186,12 +193,14 @@
       "The rain doesn't stop today, so take the umbrella."
     ],
     "p_drier": [
+      "Take the umbrella for now. The rain stops {WHENSTOP}.",
       "It keeps raining for a while, then stops. Take the umbrella.",
       "The rain stops later, but you'll want the umbrella for now.",
       "Take the umbrella for now. The rain stops later.",
       "The rain eases off later, but bring the umbrella for now.",
       "Later the rain stops. For now, keep the umbrella with you.",
-      "The rain is here for now but stops later, so bring the umbrella."
+      "The rain is here for now but stops later, so bring the umbrella.",
+      "The rain stops {WHENSTOP}, but you'll want the umbrella before that."
     ],
     "p_wet_again": [
       "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away.",
@@ -199,7 +208,8 @@
       "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you.",
       "It keeps raining for now, then takes a break. It's back {WHENP}, so keep the umbrella.",
       "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you.",
-      "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella."
+      "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella.",
+      "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella with you."
     ],
     "p_snow_coming": [
       "Snow moves in {WHENP}.",
@@ -218,6 +228,8 @@
       "There's no break in the snow today."
     ],
     "p_drier_snow": [
+      "It stops snowing {WHENSTOP}.",
+      "The snow stops {WHENSTOP}.",
       "The snow stops later.",
       "It stops snowing later.",
       "The snow eases off later.",
@@ -226,6 +238,7 @@
       "Later on the snow stops."
     ],
     "p_wet_again_snow": [
+      "The snow stops {WHENSTOP} and starts again {WHENP}.",
       "The snow stops for a while later, then comes back {WHENP}.",
       "It keeps snowing for now, then takes a break. It's back {WHENP}.",
       "Snow for now, then a break, then more snow {WHENP}.",
@@ -234,14 +247,21 @@
       "After a break later on, the snow returns {WHENP}."
     ],
     "shorts_swing": [
-      "Shorts weather arrives {WHEN}, so think about wearing shorts now and keep {G} just for the start."
+      "Shorts weather arrives {WHEN}, so think about wearing shorts now and keep {G} just for the start.",
+      "{WHEN} it's shorts weather. Maybe wear shorts but keep {G} for the cold start.",
+      "Shorts could work today. {WHEN} it's warm, and {G} alone could get you through the cold start.",
+      "It's warm enough for shorts {WHEN}. Think about it, with {G} on top for now."
     ],
     "shorts_swing_back": [
-      "Shorts weather {WHEN}, and you'll want a layer back {WHEN2}. Go with shorts and keep {G} with you."
+      "You could think about wearing shorts instead. It's warm {WHEN}, but bring {G} for {WHEN2}.",
+      "Shorts might work today: warm {WHEN}, cooler {WHEN2}. Keep {G} with you either way.",
+      "{WHEN} it's shorts weather, but {WHEN2} it cools down again. If you go with shorts, definitely keep {G} handy."
     ],
     "pants_swing": [
       "It's shorts weather now, but it turns cold {WHEN}. Maybe wear long pants and bring a warmer layer.",
-      "Maybe put on long pants today, even though it's warm now. Cold weather arrives {WHEN}, so maybe bring a warm coat."
+      "Maybe put on long pants today, even though it's warm now. Cold weather arrives {WHEN}, so maybe bring a warm coat.",
+      "Cold weather is coming {WHEN}, so long pants and a warm coat might be wise.",
+      "{WHEN} it's coat weather. Long pants and a warm coat are worth thinking about."
     ],
     "heat_danger": [
       "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
@@ -256,7 +276,8 @@
     "p_wetter_long_ice": [
       "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.",
       "Freezing rain begins {WHENP} and doesn't stop. Expect icy pavements and take the umbrella.",
-      "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly."
+      "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.",
+      "Freezing rain sets in {WHENP} and stays, so roads and pavements may be icy. Walk carefully."
     ],
     "p_wetter_maybe_ice": [
       "Freezing rain is possible {WHENP}. If it comes, it gets icy, so take the umbrella.",
@@ -271,22 +292,28 @@
     "p_drier_ice": [
       "The freezing rain stops later, but the ice stays. Take the umbrella for now and watch your step.",
       "Take the umbrella for now. The freezing rain stops later, but the pavements stay icy.",
-      "Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully."
+      "Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully.",
+      "The freezing rain stops {WHENSTOP}, but pavements may stay icy.",
+      "The freezing rain stops {WHENSTOP}. Roads and pavements may stay icy, so walk carefully."
     ],
     "p_wet_again_ice": [
       "The freezing rain stops for a while, then comes back {WHENP}. Expect ice and keep the umbrella with you.",
       "Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and mind the ice.",
-      "The freezing rain pauses later and returns {WHENP}. The pavements may stay icy, so keep the umbrella and go slowly."
+      "The freezing rain pauses later and returns {WHENP}. The pavements may stay icy, so keep the umbrella and go slowly.",
+      "The freezing rain stops {WHENSTOP} and returns {WHENP}. Pavements may be icy all day, so walk carefully."
     ],
     "p_wetter_storm": [
       "There's a thunderstorm {WHENP}. Take the umbrella, and head indoors while it thunders.",
-      "Bring the umbrella for the thunderstorm {WHENP}, and get inside when it starts."
+      "Bring the umbrella for the thunderstorm {WHENP}, and get inside when it starts.",
+      "There's a thunderstorm {WHENP}. If you can, be indoors when it hits."
     ],
     "p_wetter_long_storm": [
       "Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella and stay inside while it thunders.",
-      "{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella, and get inside while it thunders."
+      "{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella, and get inside while it thunders.",
+      "Thunderstorms move in {WHENP}. Stay inside while it thunders, and take the umbrella for the rain that follows."
     ],
     "p_wetter_maybe_storm": [
+      "A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.",
       "There could be a thunderstorm {WHENP}. Take the umbrella, just in case.",
       "A thunderstorm is possible {WHENP}, so the umbrella's worth taking."
     ],
@@ -296,13 +323,17 @@
       "It's wet and stormy all day. Bring the umbrella, and get inside whenever it thunders."
     ],
     "p_drier_storm": [
+      "Thunder for now, so stay indoors if you can. The storm clears {WHENSTOP}.",
+      "The thunderstorm passes {WHENSTOP}. Until it does, stay inside if you can.",
       "The rain and thunder stop later, but you'll want the umbrella for now.",
       "Take the umbrella for now. The thunderstorm passes later.",
       "The thunderstorm moves on later. For now, keep the umbrella and get inside while it thunders."
     ],
     "p_wet_again_storm": [
+      "The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can.",
       "The rain stops for a while, then a thunderstorm comes {WHENP}. Keep the umbrella with you.",
-      "After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts."
+      "After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts.",
+      "A thunderstorm comes {WHENP}, after a short dry spell. Try to be indoors for that one."
     ]
   },
   "flavour_10": {
@@ -340,7 +371,8 @@
       "Everyone will act shocked anyway. I'm used to it.",
       "Somewhere, a school is already drafting the snow-day email.",
       "I've never once slipped on ice. Never left the house, either.",
-      "You'll say it won't settle. You say that every time."
+      "You'll say it won't settle. You say that every time.",
+      "You'll go out just to hear it crunch. Admit it."
     ],
     "on": [
       "That's your one reminder. I don't do push notifications.",
@@ -367,7 +399,8 @@
       "All day. I checked twice, out of pure spite.",
       "Somewhere, someone in shorts didn't read this.",
       "You'll say 'it's freezing' twenty times today.",
-      "If the sun shows up today, it's purely decorative."
+      "If the sun shows up today, it's purely decorative.",
+      "You'll keep the coat on inside for ten minutes, 'just to warm up'."
     ],
     "evening": [
       "Whatever the evening brings, the outfit won't be the problem.",
@@ -394,19 +427,24 @@
     "pants": [
       "Yes, a coat. Yes, I can see the sun too. Just do it.",
       "The sun's lying to you. I'm not.",
-      "I've seen the afternoon. You haven't."
+      "I've seen the afternoon. You haven't.",
+      "You'll feel overdressed at first. Then very well informed."
     ],
     "scorch": [
       "For once, staying in with me is the sensible choice.",
-      "I'll handle the forecast. You handle refilling that bottle."
+      "I'll handle the forecast. You handle refilling that bottle.",
+      "The coolest spot in the house is the floor. I won't tell anyone."
     ],
     "ice": [
       "Walk like you're carrying a very full cup of coffee.",
       "If you're late, blame the ice. It's the one excuse I'll back.",
-      "Move like me today: slowly, and not at all if possible."
+      "Move like me today: slowly, and not at all if possible.",
+      "Small steps today. Trust me, even though I haven't taken steps in years."
     ],
     "storm": [
-      "I'll stay in for this one. Then again, I always do."
+      "If the power goes out, I'll still be here, showing this.",
+      "I'll stay in for this one. Then again, I always do.",
+      "All that flashing. Some of us manage fine without a backlight."
     ]
   },
   "flavour_11": {
@@ -416,7 +454,8 @@
       "Today you're your own coat rack. Congratulations.",
       "You'll be a bit too warm before you admit I was right.",
       "That layer coming off could be the peak of your day.",
-      "Today you're a coat rack with legs. Well done."
+      "Today you're a coat rack with legs. Well done.",
+      "{W:jacket,coat,hoodie,scarf}You'll announce 'it's actually warm' to people who are also outside."
     ],
     "on": [
       "Alternatively you can practise your 'I'm not cold' face for later.",
@@ -471,13 +510,16 @@
       "You'll pull your sleeves over your hands and call them gloves."
     ],
     "night": [
-      "It works for the couch too, which is where this is going."
+      "It works for the couch too, which is where this is going.",
+      "You could even go to bed in it. I know you have before.",
+      "You'll scroll in bed for an hour and call it winding down."
     ],
     "hot": [
       "And by water I mean water. Not beer, even if it's nice and cold.",
       "You'll probably end up loitering in the freezer aisle. Again.",
       "You'll find shade, then complain it's the wrong shade.",
-      "And somehow you'll still burn the back of your neck."
+      "And somehow you'll still burn the back of your neck.",
+      "You'll say 'I'm not built for this' at least once. You're right."
     ],
     "steady": [
       "So if today goes badly, you can't blame the weather.",
@@ -644,7 +686,9 @@
     "cool": [
       "I'd wear a jacket too, if I had arms. And somewhere to go.",
       "Perfectly forgettable out there. Unlike me.",
-      "{M:09,10,11}That jacket pocket still has a tissue from spring. Used, probably."
+      "{M:09,10,11}That jacket pocket still has a tissue from spring. Used, probably.",
+      "The jacket pocket pat-down: keys, phone, wallet. Then again, slower.",
+      "You call this your good jacket. It's your only jacket."
     ]
   },
   "now_11": {

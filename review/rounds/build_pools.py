@@ -103,6 +103,11 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    "Überleg dir ne kurze hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.": "Überleg dir, ne kurze Hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.",
+    "{WHEN} wird's kalt. Überleg dir lange Hosen anzuziehen und eine warme Schicht mitzunehmen.": "{WHEN} wird's kalt. Überleg dir, lange Hosen anzuziehen und eine warme Schicht mitzunehmen.",
+    'Schön. Dann musst du dir nur noch eine Ausrede ausdenken warum du schon wieder so lange wach bist.': 'Schön. Dann musst du dir nur noch eine Ausrede ausdenken, warum du schon wieder so lange wach bist.',
+    "You could think about wear shorts instead. It's warm {WHEN}, but bring {G} for {WHEN2}.": "You could think about wearing shorts instead. It's warm {WHEN}, but bring {G} for {WHEN2}.",
+    'You could go even to bed in it. I know you have before.': 'You could even go to bed in it. I know you have before.',
     "Ich sag's auch dreimal, wenn's sein muss. Schatten Schatten Schatten": "Ich sag's auch dreimal, wenn's sein muss. Schatten, Schatten, Schatten.",
     'Meckern kannst du später. Erst mal nen schluck Wasser trinken.': 'Meckern kannst du später. Erst mal einen Schluck Wasser trinken.',
     'Eine Sorge weniger. Aber dir fällt bestimmt was neues ein.': 'Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.',

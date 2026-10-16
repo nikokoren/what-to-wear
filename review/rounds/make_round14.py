@@ -33,6 +33,10 @@ ROUND = "2026-10-replies"
 # The big swing (October 2026): a cold morning, three hours or more of
 # shorts weather later. New situations, so they're not in round 8's list.
 FACT_CTX = dict(r8.FACT_CTX, **{
+    # The Now drawing shows the weather as it is (round 14): long pants on a
+    # cool morning, whatever the line suggests.
+    "shorts_early": ("tee_pants_dry", "warming", "A cool morning in long-pants weather that turns into shorts "
+                     "weather; the line suggests shorts, the drawing shows long pants."),
     "shorts_swing": ("coat_dry", "warming", "New: a cold morning with three hours or more of shorts weather later "
                      "(a reader in Colorado). The drawing keeps the coat; go out in shorts anyway."),
     "shorts_swing_back": ("coat_dry", "fickle", "New: the same, and the evening wants a layer back. "

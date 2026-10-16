@@ -5,138 +5,6 @@ kept line answers yet. Write completely new lines for each spot,
 not variations of what's out (it's all in `review/dont/`), and give
 each new row `"answers": "<id>"` in the next round's file.
 
-## fact_0.p_wet_again_storm
-
-- **Out:** The rain takes a break, but a thunderstorm follows {WHENP}. Keep the umbrella and get inside when it hits.
-  **Tags:** unclear
-  **On screen:** drawing jacket_rain
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.
-  **Answers:** `rp-en-76e1681366e3` (2026-10-replies)
-
-## fact_0.p_wetter_long_storm
-
-- **Out:** A thunderstorm arrives {WHENP} and the rain stays after it. Take the umbrella and stay indoors during the thunder.
-  **Tags:** unclear
-  **On screen:** drawing jacket_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.
-  **Answers:** `rp-en-8e2a7cda8a97` (2026-10-replies)
-
-## fact_0.p_wetter_maybe_storm
-
-- **Out:** A thunderstorm {WHENP} isn't certain, but bring the umbrella. If it thunders, get inside.
-  **Tags:** unclear, robotic, too long
-  **On screen:** drawing jacket_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.
-  **Answers:** `rp-en-a45505dcf0f2` (2026-10-replies)
-
-## fact_0.p_wetter_storm
-
-- **Out:** A thunderstorm comes through {WHENP}. Bring the umbrella and get inside when it hits.
-  **Wanted instead:** bring the umbrella, but then go inside when it hits... why bring the umbrella then?
-  **Tags:** unclear
-  **On screen:** drawing jacket_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.
-  **Answers:** `rp-en-942ddcad8fdf` (2026-10-replies)
-
-## fact_0.pants_swing
-
-- **Out:** A cold front comes through {WHEN}. Wear long pants and take a warm coat, even if it feels warm now.
-  **Tags:** too long
-  **On screen:** drawing tee_pants_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.
-  **Answers:** `rp-en-ec280b9c82cb` (2026-10-replies)
-
-## fact_0.shorts_early
-
-- **Out:** {WHEN} it's shorts weather, so they're worth a cool start.
-  **Wanted instead:** plus, here too. the image we're showing isnt right. it should be pants. iirc
-  **Tags:** robotic, unclear
-  **On screen:** drawing tee_shorts_dry; under it: “Thrilling stuff. I'm on the edge of my frame.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Shorts drawn on a cool morning that turns into shorts weather.
-  **Answers:** `rp-en-c4b592377d99` (2026-10-replies)
-- **Out:** Shorts feel cool at first, but {WHEN} they're just right.
-  **Wanted instead:** here too. the image we're showing isnt right. it should be pants. iirc
-  **Tags:** unclear
-  **On screen:** drawing tee_shorts_dry; under it: “Thrilling stuff. I'm on the edge of my frame.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Shorts drawn on a cool morning that turns into shorts weather.
-  **Answers:** `rp-en-cd872e0ed538` (2026-10-replies)
-
-## fact_0.shorts_swing
-
-- **Out:** It's shorts weather {WHEN}. Go with shorts and keep {G} for the way out.
-  **Wanted instead:** here too. the image we're showing isnt right. it should be pants. iirc
-  **Tags:** unclear
-  **On screen:** drawing coat_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.
-  **Answers:** `rp-en-3d11c238695f` (2026-10-replies)
-- **Out:** Wear shorts today and keep {G} on for the cold start. {WHEN} it's shorts weather.
-  **Wanted instead:** here too. the image we're showing isnt right. it should be pants. iirc
-  **Tags:** too long, robotic, unclear
-  **On screen:** drawing coat_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.
-  **Answers:** `rp-en-7172117c3a8b` (2026-10-replies)
-
-## fact_0.shorts_swing_back
-
-- **Out:** Wear shorts and keep {G} with you. It's warm {WHEN}, then cooler again {WHEN2}.
-  **Wanted instead:** if it's colder again this evening, maybe shorts arent the right move? how warm will it actually be? maybe we need to refine the behavior here. or the phrasings.
-  **Tags:** unclear
-  **On screen:** drawing coat_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.
-  **Answers:** `rp-en-639841d32d48` (2026-10-replies)
-- **Out:** Shorts weather {WHEN}, and you'll want a layer back {WHEN2}. Go with shorts and keep {G} with you.
-  **Wanted instead:** here too.
-  **Tags:** unclear
-  **On screen:** drawing coat_dry
-  **What it's for:** Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.
-  **Answers:** `rp-en-7a66928543c3` (2026-10-replies)
-
-## fact_0.steady
-
-- **Out:** That outfit will see you through the whole day.
-  **Tags:** too long, robotic
-  **On screen:** drawing sweater_dry; under it: “The one forecast I could do in my sleep. If I slept.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's "works all day".
-  **Answers:** `rp-en-32c3e2f2c24d` (2026-10-replies)
-- **Out:** What you have on works from now until tonight.
-  **Wanted instead:** this seems to imply that there is a change later tonight?
-  **Tags:** unclear
-  **On screen:** drawing sweater_dry; under it: “The one forecast I could do in my sleep. If I slept.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's "works all day".
-  **Answers:** `rp-en-f9c4c466c555` (2026-10-replies)
-
-## fact_0.steady_cold
-
-- **Out:** It stays this cold until tonight.
-  **Wanted instead:** this seems to indicate that there is a change tonight?
-  **Tags:** unclear
-  **On screen:** drawing coat_dry; under it: “All day. I checked twice, out of pure spite.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.
-  **Answers:** `rp-en-153b917fc097` (2026-10-replies)
-
-## fact_0.steady_hot
-
-- **Out:** The whole day is hot, so carry water and keep to the shade.
-  **Wanted instead:** "keep to the shade"?
-  **Tags:** robotic
-  **On screen:** drawing heat_dry; under it: “I'd come along, but I only work in range of your WiFi.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Steady heat, before 17:00.
-  **Answers:** `rp-en-3b02ae06b384` (2026-10-replies)
-- **Out:** It stays hot until tonight, so drink plenty and find shade.
-  **Wanted instead:** "until tonight" implies that there is a change tonight. is that true in all cases?
-  **Tags:** unclear
-  **On screen:** drawing heat_dry; under it: “I'd come along, but I only work in range of your WiFi.”
-  **What it's for:** Forecast line, the same at every sarcasm level. Steady heat, before 17:00.
-  **Answers:** `rp-en-9e054f0ccabf` (2026-10-replies)
-
-## flavour_10.cold
-
-- **Out:** Your phone will claim it's dead at thirty percent. Drama queen.
-  **Tags:** not funny, unclear
-  **On screen:** drawing coat_dry; above it: “It stays this cold all day.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-1026571f4b4d` (2026-10-replies)
-
 ## flavour_10.evening
 
 - **Out:** Also fine for a Christmas party. The dancing's out of my hands.
@@ -144,14 +12,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “What you're wearing works for the rest of the evening.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
   **Answers:** `rp-en-0b902a8b328c` (2026-10-replies)
-
-## flavour_10.ice
-
-- **Out:** Hold on to the umbrella. Hold on to the railing more.
-  **Tags:** robotic, not funny
-  **On screen:** drawing jacket_dry; above it: “Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-020f12b0a2e7` (2026-10-replies)
 
 ## flavour_10.night
 
@@ -168,14 +28,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “You can take the sweater off this afternoon.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
   **Answers:** `rp-en-81f060ebb9c4` (2026-10-replies)
-
-## flavour_10.pants
-
-- **Out:** A coat on a shorts morning. Odd now, smug later.
-  **Tags:** robotic, unclear
-  **On screen:** drawing tee_pants_dry; above it: “It's shorts weather now, but it turns cold this afternoon. Wear long pants and bring a warm coat.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-064cfc5e2e14` (2026-10-replies)
 
 ## flavour_10.rain
 
@@ -203,33 +55,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing extreme_heat_dry; above it: “Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.
   **Answers:** `rp-en-820d2cf92f6d` (2026-10-replies)
-- **Out:** I'm staying in the shade too. I recommend the company.
-  **Tags:** not funny
-  **On screen:** drawing extreme_heat_dry; above it: “Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-838e72ab9e4d` (2026-10-replies)
-
-## flavour_10.snow
-
-- **Out:** Pretty through the window. Less pretty inside your shoe.
-  **Tags:** not funny
-  **On screen:** drawing coat_dry; above it: “It starts snowing this afternoon.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-42a5d72f8898` (2026-10-replies)
-
-## flavour_10.storm
-
-- **Out:** Film it from inside. The thunder sounds just as good.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-2bbc4b958677` (2026-10-replies)
-- **Out:** Don't unplug me. I'm on battery and I'm not scared.
-  **Wanted instead:** unplug me from what?
-  **Tags:** not funny, unclear
-  **On screen:** drawing jacket_dry; above it: “A thunderstorm comes through this afternoon. Bring the umbrella and get inside when it hits.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-e59aebff92b7` (2026-10-replies)
 
 ## flavour_11.evening
 
@@ -239,14 +64,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
   **Answers:** `rp-en-2bef94de3974` (2026-10-replies)
 
-## flavour_11.hot
-
-- **Out:** You'll press the bottle to your forehead more than you drink from it.
-  **Tags:** not funny
-  **On screen:** drawing heat_dry; above it: “It stays hot all day, so bring water and look for shade.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-64543a36ac88` (2026-10-replies)
-
 ## flavour_11.ice
 
 - **Out:** You'll say 'it's not that bad'. Say it slowly, while walking slowly.
@@ -254,33 +71,3 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.”
   **What it's for:** New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
   **Answers:** `rp-en-4e1ab0c99855` (2026-10-replies)
-
-## flavour_11.night
-
-- **Out:** The rest of the evening. Not the rest of the night. Bed.
-  **Tags:** not funny, robotic
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the rest of the evening.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-df61dfbc0240` (2026-10-follow)
-
-## flavour_11.off
-
-- **Out:** You'll carry it around all afternoon like a trophy.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “You can take the jacket off this afternoon.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
-  **Answers:** `fu-en-239e1d4134a0` (2026-10-follow)
-
-## now_10.cool
-
-- **Out:** Keys? Jacket pocket. You'll check everywhere else first.
-  **Wanted instead:** i like the direction, but the line doesnt fully land for me.
-  **On screen:** drawing jacket_dry
-  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `rp-en-ed99c949e136` (2026-10-replies)
-- **Out:** Socks-and-sandals weather. Someone out there has waited all year for this.
-  **Wanted instead:** how is cool socks and sandals weather?
-  **Tags:** wrong fact, unclear
-  **On screen:** drawing jacket_dry
-  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `se-en-c3eda54f17b6` (2026-10-seasons)

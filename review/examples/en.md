@@ -188,6 +188,7 @@ Do not edit by hand; vote on the page instead.
 ## p_drier · plain
 
 - It keeps raining for a while, then stops. Take the umbrella.
+- Take the umbrella for now. The rain stops {WHENSTOP}.
 - The rain eases off later, but bring the umbrella for now.
 - The rain stops later, but you'll want the umbrella for now.
 
@@ -195,14 +196,18 @@ Do not edit by hand; vote on the page instead.
 
 - It stops snowing later.
 - It stops snowing later.
+- It stops snowing {WHENSTOP}.
 - The snow eases off later.
 - The snow eases off later.
 - The snow stops later.
 - The snow stops later.
+- The snow stops {WHENSTOP}.
 
 ## p_drier_storm · plain
 
 - The rain and thunder stop later, but you'll want the umbrella for now.
+- The thunderstorm passes {WHENSTOP}. Until it does, stay inside if you can.
+- Thunder for now, so stay indoors if you can. The storm clears {WHENSTOP}.
 
 ## p_snow_coming · plain
 
@@ -245,10 +250,12 @@ Do not edit by hand; vote on the page instead.
 
 - Snow for now, then a break, then more snow {WHENP}.
 - The snow stops for a while later, then comes back {WHENP}.
+- The snow stops {WHENSTOP} and starts again {WHENP}.
 
 ## p_wet_again_storm · plain
 
 - The rain stops for a while, then a thunderstorm comes {WHENP}. Keep the umbrella with you.
+- The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can.
 
 ## p_wetter · plain
 
@@ -280,6 +287,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_wetter_maybe_storm · plain
 
+- A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.
 - There could be a thunderstorm {WHENP}. Take the umbrella, just in case.
 
 ## pants · sarcastic
@@ -319,6 +327,7 @@ Do not edit by hand; vote on the page instead.
 
 ## steady · plain
 
+- This outfit works all day.
 - What you're wearing works for the whole day.
 
 ## steady · dry
@@ -331,6 +340,7 @@ Do not edit by hand; vote on the page instead.
 - It stays this cold all day.
 - It stays this cold all day.
 - It's cold all day.
+- It's this cold the whole day.
 
 ## steady_evening · plain
 
@@ -341,8 +351,14 @@ Do not edit by hand; vote on the page instead.
 - It stays hot all day, so bring water and look for shade.
 - It's hot all day. Bring water and stay in the shade.
 - It's hot all day. Bring water and stay in the shade.
+- It's hot the whole day, so drink plenty of water and find shade.
 - No break from the heat today. Water and shade help.
 - The heat doesn't let up today. Drink water and find some shade.
+- The heat lasts all day. Keep water with you and stay in the shade.
+
+## storm · dry
+
+- If the power goes out, I'll still be here, showing this.
 
 ## storm · sarcastic
 

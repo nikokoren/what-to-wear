@@ -218,8 +218,7 @@ for lang, word in (("en", "shorts"), ("de", "Shorts")):
     expect(f"{lang}: a Colorado morning, the coat now", slugs[:1] == ["coat_dry"])
     expect(f"{lang}: a Colorado morning, shorts later", "tee_shorts_dry" in slugs and "tee_pants_dry" not in slugs)
     words = re.sub(r"<[^>]+>", " ", html)
-    expect(f"{lang}: a Colorado morning, the forecast says shorts", f"{word} an" in words or "wear shorts" in words.lower()
-           or "go with shorts" in words.lower())
+    expect(f"{lang}: a Colorado morning, the forecast says shorts", re.search(r"shorts|kurze hose", words.lower()) is not None)
     expect(f"{lang}: a Colorado morning, no placeholder left", "{" not in words)
 # Two hours of shorts weather from a cold start: long pants, as before.
 BRIEF = [-3, -3, -4, -4, -4, -3, -2, 0, 4, 9, 14, 19, 22, 23, 25, 25, 23, 20, 18, 13, 9, 6, 4, 2]

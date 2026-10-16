@@ -133,6 +133,7 @@ Do not edit by hand; vote on the page instead.
 
 ## ice · sarcastic
 
+- Elegant gehst du ja sowieso nicht. Heute fällt's wenigstens nicht auf.
 - Und heute bitte nicht beim Gehen aufs Handy starren.
 
 ## mild · sarcastic
@@ -177,11 +178,26 @@ Do not edit by hand; vote on the page instead.
 
 - Der Regen lässt später nach, für jetzt brauchst du den Schirm.
 - Nimm den Schirm mit, der Regen hört erst später auf.
+- Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf.
+- {WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm.
+
+## p_drier_ice · plain
+
+- Vorsicht, Glatteis. Der gefrierende Regen hört erst {WHENSTOP} auf, glatt bleibt's auch danach.
+- Vorsicht, Glatteis: Der gefrierende Regen hört erst später auf, und die Wege bleiben danach glatt.
 
 ## p_drier_snow · plain
 
 - Der Schnee hört später auf.
+- Der Schneefall hört {WHENSTOP} auf.
 - Später hört's auf zu schneien.
+- {WHENSTOP} hört's auf zu schneien.
+
+## p_drier_storm · plain
+
+- Das Gewitter zieht {WHENSTOP} ab. Bis dahin bist du drinnen am sichersten.
+- Noch gewittert's, später zieht es ab. Bis dahin bist du drinnen am sichersten.
+- Noch gewittert's, {WHENSTOP} ist es vorbei. Solange es donnert, bleib lieber drinnen.
 
 ## p_snow_coming · plain
 
@@ -205,6 +221,20 @@ Do not edit by hand; vote on the page instead.
 - Heute hört's nicht auf zu schneien.
 - Heute schneit's ohne Unterbrechung.
 - Schnee bis zum Abend.
+
+## p_wet_again · plain
+
+- {WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. Behalt den Schirm bei dir.
+
+## p_wet_again_snow · plain
+
+- Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien.
+- Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's wieder.
+- {WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los.
+
+## p_wet_again_storm · plain
+
+- Der Regen hört {WHENSTOP} auf, aber {WHENP} kommt ein Gewitter. Dann bist du drinnen am sichersten.
 
 ## p_wetter · plain
 
@@ -286,6 +316,7 @@ Do not edit by hand; vote on the page instead.
 
 ## steady · plain
 
+- Dein Outfit passt heute den ganzen Tag.
 - Mit dem, was du anhast, kommst du gut durch den Tag.
 - Was du anhast, passt bis zum Abend.
 - Was du anhast, passt für den ganzen Tag.
@@ -308,10 +339,13 @@ Do not edit by hand; vote on the page instead.
 ## steady_cold · plain
 
 - Die Kälte bleibt den ganzen Tag.
+- Die Kälte hält heute den ganzen Tag an.
 - Es bleibt den ganzen Tag so kalt.
+- Kalt bleibt's heute, und zwar den ganzen Tag.
 
 ## steady_evening · plain
 
+- Dein Outfit passt den ganzen Abend.
 - Was du anhast, passt für den ganzen Abend.
 - Was du anhast, passt für den ganzen Abend.
 
