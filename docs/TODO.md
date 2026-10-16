@@ -26,6 +26,16 @@ Before release: the 19 drawings (below), a contact method in the About
 text (`config/settings.next.yaml`), the owner's read of the 2.0 changelog
 in both languages, then build, merge, tag `v2.0.0`, and the three steps.
 
+**On hold (16 October 2026):** the owner found the forecast sentence and
+the sarcastic line still don't flow together, even on a plain "works all
+day". Fix first: **units**. With sarcasm on, each forecast sentence and its
+joke are written and voted as one ("fact || joke", or one sentence with
+both); the screen never combines two separate picks. Sarcasm off keeps the
+plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
+(`units_10`/`units_11` in the texts); a situation without units works as
+before, so they arrive a family at a time: steady days (round 17,
+`review/rounds/make_round17.py`), then layers, then rain.
+
 ### Open, in order
 
 1. **Draw the 19 sprites** (item 1). Replace the files in `sprites/` on

@@ -296,6 +296,13 @@ storms). A much better round: 200 stars, 329 keeps.
   hands free for snacks.", "That's your one reminder. I don't do push
   notifications."
 
+- **The forecast and its joke are one unit (round 17).** Two lines picked
+  separately don't talk to each other: „Was du anhast, passt für den
+  ganzen Abend.“ then „Dein Handy kriegt heut wieder mehr Blicke als ich.“
+  With sarcasm on, write the forecast sentence and its joke together
+  ("fact || joke"), or as one sentence. The forecast part still states the
+  forecast plainly; the joke lands only because of that sentence.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it
