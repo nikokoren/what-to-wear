@@ -103,6 +103,15 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    "Ich sag's auch dreimal, wenn's sein muss. Schatten Schatten Schatten": "Ich sag's auch dreimal, wenn's sein muss. Schatten, Schatten, Schatten.",
+    'Meckern kannst du später. Erst mal nen schluck Wasser trinken.': 'Meckern kannst du später. Erst mal einen Schluck Wasser trinken.',
+    'Eine Sorge weniger. Aber dir fällt bestimmt was neues ein.': 'Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.',
+    'Dein „Das zieht vorbei“ hat hat noch nie gestimmt.': 'Dein „Das zieht vorbei“ hat noch nie gestimmt.',
+    "Lebkuchen im September. Sowas hätt's früher nicht gegeben sagst du wieder und kaufst trotzdem heimlich zwei Packungen.": "Lebkuchen im September. „So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen.",
+    "Noch ist's kühl, aber {WHEN} kannst du in Shorts rum laufen.": "Noch ist's kühl, aber {WHEN} kannst du in Shorts rumlaufen.",
+    'Aber bitte nicht Jammern, dass es dir zu kalt ist.': 'Aber bitte nicht jammern, dass es dir zu kalt ist.',
+    'After a dry spell, a thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts.': 'After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts.',
+    'Take the umbrella along for the rainshower {WHENP}.': 'Take the umbrella along for the rain shower {WHENP}.',
     'Dann fällt das Fitnessstudio heute ja wieder aus. "Wegen dem Wetter".': "Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.",
     "Gleichträumst du wieder vom Süden. Dann fahr halt endlich hin.": "Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.",
     "Es bleibt bis zum Abend Heiß. Nimm Wasser mit und bleib im Schatten.": "Es bleibt bis zum Abend heiß. Nimm Wasser mit und bleib im Schatten.",

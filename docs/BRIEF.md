@@ -272,6 +272,30 @@ stars, 31 keeps, 50 out; German 5 stars, 22 keeps, 49 out.
   follow-ups to a layer coming off or going on say `{GP}`/`{G}` or list
   the garments they fit.
 
+### What round 14 added (replies, forecast wordings, weather outliers)
+
+622 lines: every forecast wording again with new ones, follow-ups, and
+the new situations (big swings, cold fronts, dangerous heat, ice,
+storms). A much better round: 200 stars, 329 keeps.
+
+- **Suggest, don't command, on the big swings.** The owner's edits soften
+  the shorts and long-pants advice ("think about wearing shorts",
+  "maybe wear long pants", „Überleg dir …“, „eventuell“). Those lines
+  were also too long and too complex: one idea, short.
+- **The Now drawing is the weather right now.** The suggestion (shorts on
+  a cold morning, long pants before a cold front) is the forecast line's,
+  never the drawing's.
+- **Storm and ice wordings lead with the danger.** "Bring the umbrella,
+  then get inside when it hits: why the umbrella?" The ice warning is
+  about the ice, not the umbrella; the thunder part must not be tacked
+  on. Hedge what's uncertain ("may be icy").
+- **"Until tonight" implies a change tonight.** A steady day's wording
+  says all day.
+- **Short replies keep winning** under the forecast line: „Wenigstens das
+  Wetter ist heute mal unkompliziert.“, "No layer to carry today. Both
+  hands free for snacks.", "That's your one reminder. I don't do push
+  notifications."
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

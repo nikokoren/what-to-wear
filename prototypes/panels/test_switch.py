@@ -226,19 +226,20 @@ BRIEF = [-3, -3, -4, -4, -4, -3, -2, 0, 4, 9, 14, 19, 22, 23, 25, 25, 23, 20, 18
 html = render(True, feels=BRIEF, hour=7, nxt=True)
 expect("two hours of shorts weather: long pants", "tee_shorts_dry" not in html and "shorts" not in re.sub(r"<[^>]+>|sprites/[a-z_]+", " ", html).lower())
 
-# A cold front (24 C at 8 am, freezing by 3 pm): long pants at the door,
-# and the forecast line says why.
+# A cold front (24 C at 8 am, freezing by 3 pm): the drawing shows the
+# shorts weather it is now; the forecast line suggests long pants.
 NORTH = [20, 20, 19, 19, 19, 20, 21, 23, 24, 25, 25, 22, 14, 8, 4, 2, 1, 0, -1, -2, -2, -3, -3, -3]
-for lang, word in (("en", "long pants"), ("de", "lange Hosen")):
+for lang, word in (("en", "long pants"), ("de", "lange Hose")):
     html = render(True, feels=NORTH, hour=8, nxt=True, lang=lang)
     slugs = re.findall(r"([a-z_]+_dry)\.png", html)
-    expect(f"{lang}: a cold front, long pants now", slugs[:1] == ["tee_pants_dry"])
+    expect(f"{lang}: a cold front, the drawing as it is now", slugs[:1] == ["tee_pants_dry"])
     expect(f"{lang}: a cold front, the forecast says long pants", word in html)
 # Dangerous heat (37 C at 9 am, 43 C by 2 pm): water and shade lead, not
 # the evening's easing.
 HEAT = [30, 29, 29, 28, 28, 29, 31, 33, 35, 37, 39, 41, 42, 43, 43, 42, 41, 39, 37, 35, 34, 33, 32, 31]
-for lang, word in (("en", "Dangerous heat"), ("de", "gefährlich heiß")):
-    expect(f"{lang}: dangerous heat leads", all(word in render(True, feels=HEAT, hour=h, lang=lang) for h in (9, 12, 15)))
+for lang, word in (("en", "dangerous"), ("de", "gefährlich")):
+    expect(f"{lang}: dangerous heat leads",
+           all(word in render(True, feels=HEAT, hour=h, lang=lang).lower() for h in (9, 12, 15)))
 # Freezing rain in the window: the ice warning. A thunderstorm: the storm
 # wording. Freezing rain wins when both come.
 COLD = [-2] * 24

@@ -528,19 +528,20 @@ single contains test instead of a chained and/or condition.
         cool part   hours from now until shorts weather starts
         warm part   hours of shorts weather in the window
 
-      If the cool part is no longer than the warm part, draw shorts now:
-      a bit cool for a while beats sweating all afternoon. A shorts day
-      that only arrives late keeps the long pants. The worst case is
-      shorts at the bottom of rank 5 (18 C feels-like) for a few hours.
+      If the cool part is no longer than the warm part, suggest shorts
+      now: a bit cool for a while beats sweating all afternoon. A shorts
+      day that only arrives late keeps the long pants.
+
+      The Now drawing always shows what the weather calls for right now
+      (owner, October 2026): the forecast line makes the suggestion, the
+      drawing doesn't. Later drawings on a shorts day show shorts.
 
       Big swings (owner, October 2026, from a reader in Colorado): three
       hours or more of shorts weather and the legs are shorts, however
       cold the morning. Better cold for a bit on the way out than sitting
-      in jeans all afternoon. From long-pants weather that draws shorts
-      now; from anything colder the Now drawing keeps its coat or jacket
-      (there is no coat-over-shorts drawing), the later drawings show
-      shorts (shorts_day), and the forecast line says to go out in shorts
-      (shorts_swing, where the language has it).
+      in jeans all afternoon. The Now drawing keeps what's right now, the
+      later drawings show shorts, and the forecast line suggests going
+      out in shorts (shorts_swing, where the language has it).
       {%- endcomment %}
       {%- assign shorts_idx = -1 -%}
       {%- assign shorts_hours = 0 -%}
@@ -560,18 +561,15 @@ single contains test instead of a chained and/or condition.
         {%- assign cool_hours = shorts_idx | minus: now_index -%}
         {%- if cool_hours <= shorts_hours or shorts_hours >= 3 -%}
           {%- assign shorts_early = true -%}
-          {%- assign band_rank = 6 -%}
-          {%- assign band = band_name_list[5] -%}
-          {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
         {%- endif -%}
       {%- endif -%}
 
       {%- comment %}
       The other way round, a cold front: shorts weather now and three hours
-      or more at coat weather later. Long pants at the door (the T-shirt
-      and long pants drawn now), and the forecast line says why
-      (pants_swing, where the language has it). Getting cold costs more
-      than being warm, so this wins over shorts drawn early.
+      or more at coat weather later. The forecast line suggests long
+      pants at the door (pants_swing, where the language has it); the
+      drawing shows today's shorts weather as it is. Getting cold costs
+      more than being warm, so this wins over shorts early.
       Dangerous heat: two hours or more above 34 C feels-like
       (extreme_heat). The forecast line leads with water and shade
       (heat_danger), whatever else the day does.
@@ -589,12 +587,12 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
         {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
       {%- endfor -%}
-      {%- if band_rank >= 6 and cold_hours >= 3 -%}
+      {%- comment %} Liquid reads and/or right to left, so the two cases are spelled out. {%- endcomment %}
+      {%- assign legs_short = shorts_early -%}
+      {%- if band_rank >= 6 -%}{%- assign legs_short = true -%}{%- endif -%}
+      {%- if legs_short and cold_hours >= 3 -%}
         {%- assign pants_swing = true -%}
         {%- assign shorts_early = false -%}
-        {%- assign band_rank = 5 -%}
-        {%- assign band = band_name_list[4] -%}
-        {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
       {%- endif -%}
       {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
 
@@ -921,7 +919,7 @@ single contains test instead of a chained and/or condition.
     {%- elsif shorts_early and texts_ok -%}
       {%- assign se_key = 'temp_' | append: sarcasm_level -%}
       {%- assign se_lib = texts[se_key] -%}
-      {%- if se_lib['shorts_early'] -%}
+      {%- if se_lib['shorts_early'] or texts.facts.shorts_early -%}
         {%- assign temp_scenario = 'shorts_early' -%}
         {%- assign primary_idx = shorts_idx -%}
       {%- endif -%}

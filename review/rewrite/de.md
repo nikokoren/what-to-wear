@@ -5,239 +5,267 @@ kept line answers yet. Write completely new lines for each spot,
 not variations of what's out (it's all in `review/dont/`), and give
 each new row `"answers": "<id>"` in the next round's file.
 
-## flavour_10.cold
+## fact_0.p_drier_ice
 
-- **Out:** Also Tür zu. Die Straße heizen wir nicht mit.
-  **Wanted instead:** i like the idea. not sure if "tür zu" works. that would imply that you are pening the door right now? the trmnl might be sitting on your desk next to you.
+- **Out:** Der gefrierende Regen hört später auf, das Glatteis bleibt. Bis dahin brauchst du den Schirm.
+  **Wanted instead:** weird sentence structure. focus on the glatteis and the gefrierende regen warning here, not the umbrella.
   **Tags:** unclear
-  **On screen:** drawing coat_dry; above it: “Es bleibt den ganzen Tag so kalt.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it.
-  **Answers:** `se-de-f8c75ae3a9a2` (2026-10-seasons)
+  **On screen:** drawing jacket_rain
+  **What it's for:** Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.
+  **Answers:** `rp-de-6f766f8b90ca` (2026-10-replies)
 
-## flavour_10.evening
+## fact_0.p_drier_snow
 
-- **Out:** Gefühlt ist ja schon seit halb fünf Abend.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
-  **Answers:** `se-de-212f32cc4183` (2026-10-seasons)
+- **Out:** Vorerst schneit's weiter, später ist Schluss damit.
+  **Tags:** robotic
+  **On screen:** drawing coat_snow
+  **What it's for:** Forecast line, the same at every sarcasm level. Snowing now, stops later.
+  **Answers:** `rp-de-eab471716ac0` (2026-10-replies)
+
+## fact_0.p_drier_storm
+
+- **Out:** Noch gewittert's, aber später ist es vorbei. Bis dahin brauchst du den Schirm, und bei Donner bleib drinnen.
+  **Wanted instead:** the donner part seems tacked on. rework to better integrate the thunder warning
+  **Tags:** robotic
+  **On screen:** drawing jacket_rain
+  **What it's for:** Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.
+  **Answers:** `rp-de-88ade1716ce9` (2026-10-replies)
+
+## fact_0.p_wet_again_snow
+
+- **Out:** Heute schneit's mit Unterbrechung: jetzt, und {WHENP} wieder.
+  **Tags:** robotic
+  **On screen:** drawing coat_snow
+  **What it's for:** Forecast line, the same at every sarcasm level. Snowing now, stops, comes back.
+  **Answers:** `rp-de-4ce4abf7f20e` (2026-10-replies)
+- **Out:** Jetzt Schnee, dann eine Pause und {WHENP} wieder Schnee.
+  **Tags:** robotic
+  **On screen:** drawing coat_snow
+  **What it's for:** Forecast line, the same at every sarcasm level. Snowing now, stops, comes back.
+  **Answers:** `rp-de-b37a5bc94d86` (2026-10-replies)
+
+## fact_0.p_wetter_long
+
+- **Out:** {WHENP} beginnt ein Landregen, also nimm besser den Schirm mit.
+  **Tags:** unclear
+  **On screen:** drawing jacket_dry; under it: “Nass wird's. War ja klar.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Rain later, and it stays. Shown alone; after a change, it follows that sentence.
+  **Answers:** `rp-de-efc53a2044e8` (2026-10-replies)
+
+## fact_0.shorts_swing
+
+- **Out:** {WHEN} ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.
+  **Wanted instead:** i like the direction, but it still seems a bit complicated.
+  **Tags:** robotic, too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.
+  **Answers:** `rp-de-4aea965b70d8` (2026-10-replies)
+- **Out:** Noch ist's kalt, aber {WHEN} wird's Shorts-Wetter. Also zieh gleich Shorts an und nimm die warme Schicht nur für den Weg.
+  **Wanted instead:** good start, but still a bit too complex
+  **Tags:** too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.
+  **Answers:** `rp-de-c8c023ac9316` (2026-10-replies)
+- **Out:** Zieh ruhig gleich Shorts an. {WHEN} wird's warm genug, bis dahin reicht die warme Schicht drüber.
+  **Wanted instead:** good start. might still profit from a second go around to fine tune
+  **Tags:** too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.
+  **Answers:** `rp-de-e90fd31055dc` (2026-10-replies)
+- **Out:** {WHEN} ist Shorts-Wetter. Also gleich Shorts anziehen und die warme Schicht nur für den Anfang.
+  **Wanted instead:** good start, might profit from a second look to make it easier to read
+  **Tags:** too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.
+  **Answers:** `rp-de-f72a3badc228` (2026-10-replies)
+
+## fact_0.shorts_swing_back
+
+- **Out:** Shorts lohnen sich heute, {WHEN} wird's warm genug. Die warme Schicht nimmst du mit, {WHEN2} brauchst du sie wieder.
+  **Wanted instead:** these are a good start, but still too complex t read
+  **Tags:** too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.
+  **Answers:** `rp-de-1d2fe7dad56d` (2026-10-replies)
+- **Out:** {WHEN} ist Shorts-Wetter, {WHEN2} brauchst du wieder eine Schicht mehr. Zieh trotzdem schon jetzt Shorts an.
+  **Wanted instead:** good start, still very complex and long
+  **Tags:** too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.
+  **Answers:** `rp-de-3f0c72d9e161` (2026-10-replies)
+- **Out:** {WHEN} ist Shorts-Wetter, {WHEN2} wird's wieder frischer. Shorts an, und die warme Schicht mitnehmen.
+  **Wanted instead:** good start, still too complex. take antoher look
+  **Tags:** too long, unclear
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.
+  **Answers:** `rp-de-6c69db1fa3c7` (2026-10-replies)
+- **Out:** {WHEN} wird's warm genug für Shorts, also zieh sie gleich an. Die warme Schicht kommt mit, {WHEN2} wird's wieder kühl.
+  **Wanted instead:** good start, still too complex. take antoher look
+  **Tags:** unclear, too long
+  **On screen:** drawing coat_dry
+  **What it's for:** Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.
+  **Answers:** `rp-de-7aebfc690f52` (2026-10-replies)
+
+## fact_0.steady
+
+- **Out:** Deine Kleidung passt zum Wetter, und das bleibt den ganzen Tag so.
+  **Tags:** too long
+  **On screen:** drawing sweater_dry; under it: “Dann kann ja nur noch alles andere schiefgehen.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's "works all day".
+  **Answers:** `rp-de-af355f128a0d` (2026-10-replies)
+- **Out:** Du bist für den ganzen Tag richtig angezogen.
+  **Tags:** robotic
+  **On screen:** drawing sweater_dry; under it: “Dann kann ja nur noch alles andere schiefgehen.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's "works all day".
+  **Answers:** `rp-de-be6c61b5f41a` (2026-10-replies)
+
+## fact_0.steady_cold
+
+- **Out:** An der Kälte ändert sich heute nichts.
+  **Tags:** robotic
+  **On screen:** drawing coat_dry; under it: “Da hilft auch kein Jammern.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.
+  **Answers:** `rp-de-042eec739e25` (2026-10-replies)
+- **Out:** Heute wird's nicht wärmer.
+  **Tags:** unclear
+  **On screen:** drawing coat_dry; under it: “Da hilft auch kein Jammern.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.
+  **Answers:** `rp-de-7e371f0a2751` (2026-10-replies)
+- **Out:** Mit milderem Wetter ist heute nicht mehr zu rechnen.
+  **Tags:** unclear
+  **On screen:** drawing coat_dry; under it: “Da hilft auch kein Jammern.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.
+  **Answers:** `rp-de-fa4276bbbbdf` (2026-10-replies)
+
+## fact_0.steady_evening
+
+- **Out:** Heute Abend kannst du so bleiben, wie du angezogen bist.
+  **Tags:** too long
+  **On screen:** drawing jacket_dry; under it: “Am Outfit liegt's also nicht, wenn der Abend nix wird.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Nothing changes, from 17:00.
+  **Answers:** `rp-de-c2ea8930f02f` (2026-10-replies)
+- **Out:** Du bist für den Abend richtig angezogen.
+  **Tags:** robotic
+  **On screen:** drawing jacket_dry; under it: “Am Outfit liegt's also nicht, wenn der Abend nix wird.”
+  **What it's for:** Forecast line, the same at every sarcasm level. Nothing changes, from 17:00.
+  **Answers:** `rp-de-ee0484b79ad1` (2026-10-replies)
 
 ## flavour_10.hot
 
-- **Out:** Und trotzdem stehen gleich wieder alle in der prallen Sonne vor der Eisdiele.
+- **Out:** Nur ist der Schatten schon wieder reserviert. Mit Handtüchern.
   **Tags:** not funny
   **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-deccfafba7ad` (2026-10-follow)
+  **Answers:** `rp-de-edc4ddc258ed` (2026-10-replies)
 - **Out:** Im Schatten ist übrigens schon alles besetzt. Mit Handtüchern.
   **Wanted instead:** i like the idea, but the phrasing isnt flowing well with the forecast. i tried my luck with rephrasing but am still not 100% happy
   **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
   **Answers:** `se-de-498ddaa47dd7` (2026-10-seasons)
-- **Out:** Und in der Bahn fällt wieder die Klimaanlage aus. Darauf ist Verlass.
-  **Wanted instead:** now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy
-  **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
-  **Answers:** `se-de-86da3bf6e8b9` (2026-10-seasons)
 
-## flavour_10.night
+## flavour_10.ice
 
-- **Out:** Fürs Bett reicht übrigens auch der Schlafanzug.
+- **Out:** Eilig hat's heute nur, wer hinfallen will.
+  **Tags:** not funny, robotic
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-807e72f94980` (2026-10-replies)
+- **Out:** Festhalten kann ich dich leider nicht. Also langsam.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-943ebd8e3212` (2026-10-replies)
+
+## flavour_10.pants
+
+- **Out:** Die in kurzen Hosen lachen jetzt noch.
+  **Tags:** not funny, unclear
+  **On screen:** drawing tee_pants_dry; above it: “Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Jacke mit.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-90c4c23c7cfb` (2026-10-replies)
+
+## flavour_10.scorch
+
+- **Out:** Heute mein ich das ganz ohne Grant.
+  **Tags:** not funny
+  **On screen:** drawing extreme_heat_dry; above it: “Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-9ff1ee175996` (2026-10-replies)
+
+## flavour_10.storm
+
+- **Out:** Spannend wird's heute nur am Himmel. Schau's dir von drinnen an.
+  **Tags:** not funny, unclear
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-118daa47676a` (2026-10-replies)
+- **Out:** Der Schirm hilft gegen Regen. Gegen Blitze hilft nur drinnen.
+  **Wanted instead:** i like the direction, but that doesnt work as is in german.
+  **Tags:** not funny, unclear, robotic
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag zieht ein Gewitter durch. Nimm den Schirm mit und geh rein, wenn's losgeht.”
+  **What it's for:** New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-c95ef84f7140` (2026-10-replies)
+
+## flavour_11.evening
+
+- **Out:** Das ist vermutlich mehr, als man über deinen Tag sagen kann.
   **Tags:** not funny
   **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.
-  **Answers:** `se-de-6dbb82ad7913` (2026-10-seasons)
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-44815a206418` (2026-10-replies)
+- **Out:** Die Sachen halten also durch. Bei dir bin ich mir nicht so sicher.
+  **Tags:** not funny, robotic, unclear
+  **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-f5d0beefe6e8` (2026-10-replies)
 
-## flavour_10.off
+## flavour_11.ice
 
-- **Out:** Ein Grund zum Meckern weniger. Ich find schon einen neuen.
-  **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kann die Jacke weg.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-2a322039ae72` (2026-10-follow)
-- **Out:** Und schon sind wieder alle gut gelaunt. Unerträglich.
-  **Wanted instead:** why are they all gut gelaunt? the weather is cool.
+- **Out:** Heute ist Zuspätkommen ausnahmsweise vernünftig.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-89d7bf36fe78` (2026-10-replies)
+- **Out:** Heute bist du ausnahmsweise nicht der Langsamste. Heute sind's alle.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-d4da1f45236d` (2026-10-replies)
+
+## flavour_11.night
+
+- **Out:** Auch noch fürs dritte „Ich geh gleich ins Bett“.
   **Tags:** not funny, unclear
-  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kann die Jacke weg.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
-  **Answers:** `se-de-51180f41294c` (2026-10-seasons)
-
-## flavour_10.offon
-
-- **Out:** An, aus, an. Wie die Heizung im Büro.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-9df558276b56` (2026-10-follow)
-- **Out:** Kaum ist's mal schön, ist's auch schon wieder vorbei. Wie alles.
-  **Wanted instead:** does not flow with the forecast line.
-  **Tags:** not funny, robotic
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.
-  **Answers:** `se-de-d210b9aa3d35` (2026-10-seasons)
-
-## flavour_10.on
-
-- **Out:** Abends hat's dann wieder keiner dabei. Außer dir, hoffentlich.
-  **Tags:** not funny
-  **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-d103743e1732` (2026-10-follow)
-
-## flavour_10.rain
-
-- **Out:** Kapuze zählt nicht. Hab ich extra so gesagt.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-464190658c29` (2026-10-follow)
-
-## flavour_10.snow
-
-- **Out:** Angesagt hab ich's. Den Winterdienst ruf ich trotzdem nicht an.
-  **Tags:** not funny
-  **On screen:** drawing coat_dry; above it: “Heute Nachmittag soll es schneien.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-28338fc9c3b3` (2026-10-follow)
-- **Out:** Und morgen sind trotzdem wieder alle überrascht.
-  **Wanted instead:** surprised about what?
-  **On screen:** drawing coat_dry; above it: “Heute Nachmittag soll es schneien.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-7169808d5bf3` (2026-10-follow)
-- **Out:** Die Bahn tut dann wieder, als hätt's seit hundert Jahren nicht geschneit.
-  **Tags:** not funny, robotic
-  **On screen:** drawing coat_dry; above it: “Heute Nachmittag soll es schneien.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.
-  **Answers:** `se-de-f494e320be78` (2026-10-seasons)
-
-## flavour_10.warming
-
-- **Out:** Mittags hocken wieder alle in der Sonne wie die Eidechsen.
-  **Wanted instead:** the two lines here contradict each other. the fact line talks about removing the jacket in the afternoon and the sarcasm text talks about midday
-  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kann die Jacke weg.”
-  **What it's for:** New: sarcastic line at On. A day line (warming): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-ee48eb1587c6` (2026-10-alone)
-
-## flavour_11.cooling
-
-- **Out:** Nachher frierst du und tust, als hätt dich keiner gewarnt.
-  **Wanted instead:** again. the forecast text and the sarcasm text arent working together. they are often just repeating the info, and not building off of each other.
-  **Tags:** unclear
-  **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
-  **What it's for:** New: sarcastic line at 11. A day line (cooling): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-3ec4402a46f4` (2026-10-alone)
-
-## flavour_11.fickle
-
-- **Out:** Heute trägst du die Jacke mehr spazieren als am Leib.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** Sarcastic line at 11. A day line (fickle): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-1500f3dab84c` (2026-10-alone)
-- **Out:** Heut muss man mitdenken. Schlecht für dich.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** Sarcastic line at 11. A day line (fickle): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-1f633d85128d` (2026-10-alone)
-- **Out:** Heute muss man mitdenken. Pech für dich.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** Sarcastic line at 11. A day line (fickle): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-38f7804356ce` (2026-10-alone)
-- **Out:** Wennst heut alles richtig machst, schreib ich's mir auf.
-  **Wanted instead:** sarcasm and forecast arent flowing together.
-  **Tags:** not funny
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** Sarcastic line at 11. A day line (fickle): shows only under the forecast line on a day that changes, or on a steady day. Here with the forecast line it sits under.
-  **Answers:** `al-de-4b134e3a656d` (2026-10-alone)
-
-## flavour_11.hot
-
-- **Out:** Du suchst dir eh wieder den einzigen Platz ohne Schatten.
-  **Wanted instead:** does not flow with the forecast line
+  **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-4870f40f150e` (2026-10-replies)
+- **Out:** Im Gegensatz zu deinem Schlafrhythmus.
+  **Wanted instead:** not working well with the forecast line
   **Tags:** not funny, unclear
-  **On screen:** drawing heat_dry; above it: “Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-d0321098b2cc` (2026-10-follow)
+  **On screen:** drawing jacket_dry; above it: “Was du anhast, passt für den restlichen Abend.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-89481a3919c1` (2026-10-replies)
 
-## flavour_11.offon
+## flavour_11.shorts
 
-- **Out:** Du ziehst es aus, und am Abend weißt du nicht mehr, wo's ist.
-  **Wanted instead:** does not flow well witht he forecast line
-  **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-9b85a57a7b63` (2026-10-follow)
-
-## flavour_11.on
-
-- **Out:** Und später stehst du wieder bibbernd an der Haltestelle und tust überrascht.
-  **Wanted instead:** does not flow well with the forecast line
-  **Tags:** not funny, robotic
-  **On screen:** drawing sweater_dry; above it: “Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-ede920391c1a` (2026-10-follow)
-
-## flavour_11.rain
-
-- **Out:** Den nimmst du eh nicht mit. Ich sag's trotzdem, damit ich später recht hab.
-  **Wanted instead:** does not flow well with the forecast line
-  **Tags:** robotic
-  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
-  **Answers:** `fu-de-5ceac18997a2` (2026-10-follow)
-- **Out:** Auf mich hörst du doch erst, wenn die Socken nass sind.
-  **Wanted instead:** now flowing well with the forecast.i tried my luck with rephrasing it. still not 100% happy
-  **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.
-  **Answers:** `se-de-c4a725a2e9d8` (2026-10-seasons)
-
-## now_10.nice
-
-- **Out:** Lebkuchen im September. Eine Frechheit. Ich nehm trotzdem zwei Packungen.
-  **Wanted instead:** i need some help refineing the phrasing
-  **Tags:** unclear
-  **On screen:** drawing tee_pants_dry
-  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `se-de-06338d78f732` (2026-10-seasons)
-- **Out:** Kaum steht der Zwetschgenkuchen draußen, sind die Wespen da. Vor den Gästen.
-  **Wanted instead:** i like the idea. but it's not flowing right yet.
-  **Tags:** not funny
-  **On screen:** drawing tee_pants_dry
-  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `se-de-d6076b7ecb55` (2026-10-seasons)
-
-## now_10.night
-
-- **Out:** Schönheitsschlaf brauch ich keinen mehr. Da ist nichts mehr zu retten.
-  **Wanted instead:** does not fit with other texts where the screen is beautiful. rephrased it to go against the user, but then it might be a level 11
-  **Tags:** unclear
-  **On screen:** drawing jacket_dry
-  **What it's for:** New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `se-de-5ad53bc0b53e` (2026-10-seasons)
+- **Out:** Jacke über Shorts, wie der Paketbote. Nur langsamer.
+  **Wanted instead:** i dont get the joke.
+  **Tags:** not funny, unclear
+  **On screen:** drawing coat_dry; above it: “Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.
+  **Answers:** `rp-de-ca24c35f7ffc` (2026-10-replies)
 
 ## now_11.hot
 
-- **Out:** Du wirst heut wieder alle fragen, ob ihnen auch so heiß ist.
-  **Tags:** not funny
-  **On screen:** drawing heat_dry
-  **What it's for:** Sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `al-de-ee52197dd001` (2026-10-alone)
 - **Out:** Deine Laune schmilzt heute schneller als dein Eis.
   **Wanted instead:** does your mood melt?
   **Tags:** not funny, unclear
   **On screen:** drawing heat_dry
   **What it's for:** New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
   **Answers:** `fu-de-673b503b046c` (2026-10-follow)
-
-## now_11.nice
-
-- **Out:** Traumwetter, und du suchst trotzdem schon die erste Wolke.
-  **Wanted instead:** why?
-  **Tags:** unclear
-  **On screen:** drawing tee_pants_dry
-  **What it's for:** New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
-  **Answers:** `fu-de-db7f95efa7a2` (2026-10-follow)
+- **Out:** Füße in den Wassereimer, und du nennst es Wellness.
+  **Wanted instead:** i like the direction, but it's not working in german.
+  **Tags:** not funny, robotic, unclear
+  **On screen:** drawing heat_dry
+  **What it's for:** New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `rp-de-c23d806731f3` (2026-10-replies)

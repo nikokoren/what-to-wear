@@ -201,15 +201,17 @@ def main():
     # hours against eleven warm ones, so shorts now
     early = [18] * 7 + [20, 21, 23, 25, 26, 27, 28, 28, 28, 27, 27, 26, 26, 25, 25, 24, 22]
     got = run(env, 20, early, [0] * 24, 7)
-    expect("shorts weather most of the day", got, band="tee_shorts",
-           sprite_slug="tee_shorts_dry", scenario="perfect")
+    # the drawing shows what's right now (owner, October 2026); the
+    # suggestion is the forecast line's
+    expect("shorts weather most of the day", got, band="tee_pants",
+           sprite_slug="tee_pants_dry", scenario="perfect")
     # the same morning, but shorts weather only from 15:00 to 19:00: more
     # cool hours than warm ones, but three hours or more of shorts weather
     # win anyway (the big-swing rule, October 2026), so shorts now
     late = [18] * 7 + [20, 20, 21, 21, 22, 22, 22, 23, 25, 26, 26, 25, 23, 22, 21, 20, 19]
     got = run(env, 20, late, [0] * 24, 7)
-    expect("four late hours of shorts weather", got, band="tee_shorts",
-           sprite_slug="tee_shorts_dry", scenario="perfect")
+    expect("four late hours of shorts weather", got, band="tee_pants",
+           sprite_slug="tee_pants_dry", scenario="perfect")
     # only two hours of shorts weather, late: long pants
     brief = [18] * 7 + [20, 20, 21, 21, 22, 22, 22, 23, 23, 25, 26, 23, 22, 21, 20, 19, 18]
     got = run(env, 20, brief, [0] * 24, 7)

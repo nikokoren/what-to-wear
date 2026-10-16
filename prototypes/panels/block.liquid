@@ -67,10 +67,12 @@ after the fact + flavour block and the picture.
         {%- assign new_rank = lo -%}
       {%- endif -%}
       {%- comment %} A shorts day (THE LONG-PANTS RULE): once it's warm, the legs are shorts. {%- endcomment %}
-      {%- if new_rank == 5 and shorts_swing or new_rank == 5 and shorts_early -%}
-        {%- assign new_rank = 6 -%}
-      {%- endif -%}
-      {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
+      {%- assign shorts_day = shorts_swing -%}
+      {%- if shorts_early -%}{%- assign shorts_day = true -%}{%- endif -%}
+      {%- if shorts_day -%}
+        {%- comment %} The Now drawing stays as it is; from the first shorts hour on, shorts. {%- endcomment %}
+        {%- if new_rank == 5 and cur_rank != 5 -%}{%- assign new_rank = 6 -%}{%- endif -%}
+      {%- elsif cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
         {%- assign new_rank = cur_rank -%}
       {%- endif -%}
 

@@ -294,7 +294,7 @@ to pick it up cold.
    - `tools/test_write_new.py` pins it. The review page gets it with the
      next round (it isn't republished before then). Round 9's vetoes can
      be re-marked as "Write new" then, if the owner wants.
-15. **Done (October 2026): big swings into shorts weather.** A reader in
+15. **Done (October 2026): big swings into shorts weather.** Since round 14 the Now drawing shows the weather as it is now and only the forecast line suggests shorts or long pants (owner); later drawings on a shorts day show shorts. Open: on a day that turns cold again in the evening, is shorts still the right call (owner, round 14)? A reader in
    Colorado: freezing at dawn, shorts weather by afternoon, long pants
    all day on the screen. Three hours or more of shorts weather now make
    a shorts day however cold it starts: the coat now, shorts in the
