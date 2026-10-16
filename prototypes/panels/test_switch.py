@@ -35,14 +35,14 @@ FEELS = [9, 9, 8, 8, 8, 9, 10, 11, 12, 14, 17, 20, 22, 23, 24, 24, 23, 22, 21, 2
 STEADY = [15] * 24
 
 
-def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None, hour=7, lat=None):
+def render(field, view="full", sarcasm="10", lang="en", feels=None, nxt=None, hour=7, lat=None, probs=None, codes=None):
     feels = feels or FEELS
     hours = [f"{DATE}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
             "current": {"time": f"{DATE}T{hour:02d}:30", "temperature_2m": feels[hour],
-                        "apparent_temperature": feels[hour], "weather_code": 0},
+                        "apparent_temperature": feels[hour], "weather_code": (codes or [0] * 24)[hour]},
             "hourly": {"time": hours, "temperature_2m": feels, "apparent_temperature": feels,
-                       "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
+                       "precipitation_probability": probs or [0] * 24, "weather_code": codes or [0] * 24}}
     if lat is not None:
         data["latitude"] = lat
     cfg = {"language": lang, "sarcasm_level": sarcasm, "lat_lon": "48.2,16.4", "show_bottom_bar": "on"}
@@ -225,6 +225,40 @@ for lang, word in (("en", "shorts"), ("de", "Shorts")):
 BRIEF = [-3, -3, -4, -4, -4, -3, -2, 0, 4, 9, 14, 19, 22, 23, 25, 25, 23, 20, 18, 13, 9, 6, 4, 2]
 html = render(True, feels=BRIEF, hour=7, nxt=True)
 expect("two hours of shorts weather: long pants", "tee_shorts_dry" not in html and "shorts" not in re.sub(r"<[^>]+>|sprites/[a-z_]+", " ", html).lower())
+
+# A cold front (24 C at 8 am, freezing by 3 pm): long pants at the door,
+# and the forecast line says why.
+NORTH = [20, 20, 19, 19, 19, 20, 21, 23, 24, 25, 25, 22, 14, 8, 4, 2, 1, 0, -1, -2, -2, -3, -3, -3]
+for lang, word in (("en", "long pants"), ("de", "lange Hosen")):
+    html = render(True, feels=NORTH, hour=8, nxt=True, lang=lang)
+    slugs = re.findall(r"([a-z_]+_dry)\.png", html)
+    expect(f"{lang}: a cold front, long pants now", slugs[:1] == ["tee_pants_dry"])
+    expect(f"{lang}: a cold front, the forecast says long pants", word in html)
+# Dangerous heat (37 C at 9 am, 43 C by 2 pm): water and shade lead, not
+# the evening's easing.
+HEAT = [30, 29, 29, 28, 28, 29, 31, 33, 35, 37, 39, 41, 42, 43, 43, 42, 41, 39, 37, 35, 34, 33, 32, 31]
+for lang, word in (("en", "Dangerous heat"), ("de", "gefährlich heiß")):
+    expect(f"{lang}: dangerous heat leads", all(word in render(True, feels=HEAT, hour=h, lang=lang) for h in (9, 12, 15)))
+# Freezing rain in the window: the ice warning. A thunderstorm: the storm
+# wording. Freezing rain wins when both come.
+COLD = [-2] * 24
+RAIN_PM = [0] * 14 + [80] * 4 + [0] * 6
+
+
+def says(html, pattern):
+    return re.search(pattern, re.sub(r"<[^>]+>", " ", html), re.I) is not None
+
+
+for lang, ice, storm in (("en", r"\bic[ey]\b", r"thunder"), ("de", r"glatt", r"gewitter")):
+    html = render(True, feels=COLD, hour=8, lang=lang, probs=RAIN_PM, codes=[0] * 14 + [66] * 4 + [0] * 6)
+    expect(f"{lang}: freezing rain later, the ice warning", says(html, ice))
+    html = render(True, feels=FEELS, hour=8, lang=lang, probs=RAIN_PM, codes=[0] * 14 + [95] * 4 + [0] * 6)
+    expect(f"{lang}: a thunderstorm later, the storm wording", says(html, storm))
+    html = render(True, feels=FEELS, hour=8, lang=lang, probs=RAIN_PM, codes=[0] * 14 + [61] * 4 + [0] * 6)
+    expect(f"{lang}: plain rain, no ice or storm", not says(html, ice) and not says(html, storm))
+    both = [0] * 14 + [66, 66, 95, 95] + [0] * 6
+    expect(f"{lang}: freezing rain and thunder, the ice warning",
+           says(render(True, feels=COLD, hour=8, lang=lang, probs=RAIN_PM, codes=both), ice))
 
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:

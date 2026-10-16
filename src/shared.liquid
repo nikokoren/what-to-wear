@@ -312,6 +312,7 @@ single contains test instead of a chained and/or condition.
 {%- assign temp_c = 0 -%}
 {%- assign wmo = 0 -%}
 {%- assign is_now_precip = 0 -%}
+{%- assign heat_danger = false -%}
 {%- assign is_now_snow = 0 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
@@ -564,6 +565,38 @@ single contains test instead of a chained and/or condition.
           {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
         {%- endif -%}
       {%- endif -%}
+
+      {%- comment %}
+      The other way round, a cold front: shorts weather now and three hours
+      or more at coat weather later. Long pants at the door (the T-shirt
+      and long pants drawn now), and the forecast line says why
+      (pants_swing, where the language has it). Getting cold costs more
+      than being warm, so this wins over shorts drawn early.
+      Dangerous heat: two hours or more above 34 C feels-like
+      (extreme_heat). The forecast line leads with water and shade
+      (heat_danger), whatever else the day does.
+      {%- endcomment %}
+      {%- assign pants_swing = false -%}
+      {%- assign pants_idx = -1 -%}
+      {%- assign cold_hours = 0 -%}
+      {%- assign scorch_hours = 0 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
+        {%- if rv <= 2 -%}
+          {%- assign cold_hours = cold_hours | plus: 1 -%}
+          {%- if pants_idx < 0 -%}{%- assign pants_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
+        {%- endif -%}
+        {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if band_rank >= 6 and cold_hours >= 3 -%}
+        {%- assign pants_swing = true -%}
+        {%- assign shorts_early = false -%}
+        {%- assign band_rank = 5 -%}
+        {%- assign band = band_name_list[4] -%}
+        {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+      {%- endif -%}
+      {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
 
       {%- comment %}
       Two different cold spells, kept apart because they tell different
@@ -821,7 +854,8 @@ single contains test instead of a chained and/or condition.
 
       1. a dip before the peak. It is the first thing the reader walks
          into, and getting cold is the one mistake with a real cost.
-      1b. a big swing into shorts weather (THE LONG-PANTS RULE): go out
+      1b. a cold front out of shorts weather: long pants at the door.
+      1c. a big swing into shorts weather (THE LONG-PANTS RULE): go out
          in shorts, keep the warm layer for the way out; with the
          evening wanting a layer back, say that too. Only where the
          language has the wording (texts.facts), else the stories below.
@@ -840,6 +874,9 @@ single contains test instead of a chained and/or condition.
     {%- if dip_key != '' -%}
       {%- assign temp_scenario = dip_key -%}
       {%- assign primary_idx = dip_idx -%}
+    {%- elsif pants_swing and texts.facts.pants_swing -%}
+      {%- assign temp_scenario = 'pants_swing' -%}
+      {%- assign primary_idx = pants_idx -%}
     {%- elsif shorts_swing and texts.facts.shorts_swing -%}
       {%- assign temp_scenario = 'shorts_swing' -%}
       {%- assign primary_idx = shorts_idx -%}

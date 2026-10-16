@@ -37,21 +37,39 @@ FACT_CTX = dict(r8.FACT_CTX, **{
                      "(a reader in Colorado). The drawing keeps the coat; go out in shorts anyway."),
     "shorts_swing_back": ("coat_dry", "fickle", "New: the same, and the evening wants a layer back. "
                           "{WHEN} is shorts weather, {WHEN2} the layer."),
+    "pants_swing": ("tee_pants_dry", "cooling", "New: a cold front. Shorts weather now, three hours or more of coat "
+                    "weather later: long pants at the door."),
+    "heat_danger": ("extreme_heat_dry", "hot", "New: dangerous heat, above 34 C feels-like for two hours or more. "
+                    "Leads with water and shade, whatever else the day does."),
+})
+# Freezing rain (an ice warning) and thunderstorms: variants of the six rain
+# situations, shown when the window has those weather codes.
+for base, (sprite, mood, meaning) in list(r8.FACT_CTX.items()):
+    if base.startswith("p_") and "snow" not in base:
+        FACT_CTX[base + "_ice"] = (sprite, mood, "New: freezing rain, the ice warning. " + meaning)
+        FACT_CTX[base + "_storm"] = (sprite, mood, "New: a thunderstorm. " + meaning)
+r13.r12.GROUP_CTX.update({
+    "shorts": ("shorts_swing", "coat_dry", "go out in shorts on a cold morning: shorts weather later"),
+    "pants": ("pants_swing", "tee_pants_dry", "long pants on a shorts morning: a cold front later"),
+    "scorch": ("heat_danger", "extreme_heat_dry", "dangerous heat: water and shade. Never undercut the advice"),
+    "ice": ("p_wetter_ice", "jacket_dry", "freezing rain: icy roads and pavements. Never undercut the advice"),
+    "storm": ("p_wetter_storm", "jacket_dry", "a thunderstorm: the umbrella, inside while it thunders"),
 })
 
 
 def follow_group(key):
     """The follow-up group that sits under a forecast wording (block.liquid, fu_key)."""
     if key.startswith("p_"):
-        return "snow" if "snow" in key else "rain"
+        return "ice" if key.endswith("_ice") else "storm" if key.endswith("_storm") else \
+            "snow" if "snow" in key else "rain"
     return {"steady": "steady", "steady_evening": "evening", "steady_hot": "hot", "w_water": "hot",
-            "steady_cold": "cold", "arc_warmer": "off", "shorts_early": "off", "shorts_swing": "off",
-            "shorts_swing_back": "offon",
+            "steady_cold": "cold", "arc_warmer": "off", "shorts_early": "off", "shorts_swing": "shorts",
+            "shorts_swing_back": "shorts", "pants_swing": "pants", "heat_danger": "scorch",
             "arc_level": "offon", "arc_colder": "offon"}.get(key) or \
         ("off" if key.startswith("w_") else "on" if key.startswith("c_") and key != "c_relief" else None)
 
 
-FAMILY = {"steady": "steady", "evening": "steady", "hot": "heat", "cold": "steady", "off": "a layer comes off",
+FAMILY = {"shorts": "big swings", "pants": "big swings", "scorch": "heat", "ice": "ice", "storm": "storms", "steady": "steady", "evening": "steady", "hot": "heat", "cold": "steady", "off": "a layer comes off",
           "on": "a layer goes on", "offon": "off, then on", "rain": "rain", "snow": "snow", None: "heat"}
 
 

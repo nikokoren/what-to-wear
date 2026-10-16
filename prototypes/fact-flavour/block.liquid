@@ -75,6 +75,8 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign f_key = temp_scenario -%}
     {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
   {%- endif -%}
+  {%- comment %} Dangerous heat leads with water and shade, whatever else the day does. {%- endcomment %}
+  {%- if heat_danger and F.heat_danger -%}{%- assign f_key = 'heat_danger' -%}{%- endif -%}
   {%- comment %}
   The garment on screen, for the arc keys: {G} the garment, {GP} its
   pronoun, {GV} garment with its verb (German agrees "kann"/"können").
@@ -109,6 +111,30 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if is_now_snow == 1 -%}
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+    {%- else -%}
+      {%- comment %}
+      Freezing rain in the window (WMO 56, 57, 66, 67): the ice warning.
+      A thunderstorm (95, 96, 99): the storm wording. Each where the
+      situation has one; freezing rain first.
+      {%- endcomment %}
+      {%- assign p_ice = false -%}
+      {%- assign p_storm = false -%}
+      {%- assign wx_codes = ',' | append: wmo | append: ',' -%}
+      {%- if has_future_window and codes -%}
+        {%- for i in (start_index..end_index) -%}
+          {%- assign pi = probs[i] | default: 0 | plus: 0 -%}
+          {%- if pi >= RAIN_LOW -%}{%- assign wx_codes = wx_codes | append: codes[i] | append: ',' -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if wx_codes contains ',56,' or wx_codes contains ',57,' or wx_codes contains ',66,' or wx_codes contains ',67,' -%}{%- assign p_ice = true -%}{%- endif -%}
+      {%- if wx_codes contains ',95,' or wx_codes contains ',96,' or wx_codes contains ',99,' -%}{%- assign p_storm = true -%}{%- endif -%}
+      {%- assign pki = pk | append: '_ice' -%}
+      {%- assign pkt = pk | append: '_storm' -%}
+      {%- if p_ice and F[pki] -%}
+        {%- assign pk = pki -%}
+      {%- elsif p_storm and F[pkt] -%}
+        {%- assign pk = pkt -%}
+      {%- endif -%}
     {%- endif -%}
     {%- assign p_list = F[pk] -%}
     {%- if p_list -%}
@@ -232,7 +258,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- endcomment %}
     {%- assign fu_key = '' -%}
     {%- if f_precip != '' -%}
-      {%- if pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
+      {%- if pk contains '_ice' -%}{%- assign fu_key = 'ice' -%}{%- elsif pk contains '_storm' -%}{%- assign fu_key = 'storm' -%}{%- elsif pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
     {%- else -%}
       {%- case f_key -%}
         {%- when 'steady_evening' -%}
@@ -242,8 +268,10 @@ current time moves every 15 minutes, so the merge variables change.
         {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
         {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
         {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
-        {%- when 'arc_level', 'arc_colder', 'shorts_swing_back' -%}{%- assign fu_key = 'offon' -%}
-        {%- when 'shorts_swing' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'shorts_swing', 'shorts_swing_back' -%}{%- assign fu_key = 'shorts' -%}
+        {%- when 'pants_swing' -%}{%- assign fu_key = 'pants' -%}
+        {%- when 'heat_danger' -%}{%- assign fu_key = 'scorch' -%}
       {%- endcase -%}
     {%- endif -%}
     {%- comment %}
@@ -271,6 +299,15 @@ current time moves every 15 minutes, so the merge variables change.
       {%- assign fu_slugs = 'scarf,coat,jacket,hoodie' | split: ',' -%}
       {%- assign fu_gs = ',' | append: fu_slugs[fu_gi] | append: ',' -%}
     {%- endif -%}
+    {%- comment %} A new group with no lines yet borrows its neighbour's. {%- endcomment %}
+    {%- unless fl_lib[fu_key] -%}
+      {%- case fu_key -%}
+        {%- when 'ice', 'storm' -%}{%- assign fu_key = 'rain' -%}
+        {%- when 'shorts' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'pants' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'scorch' -%}{%- assign fu_key = 'hot' -%}
+      {%- endcase -%}
+    {%- endunless -%}
     {%- assign fl_pool = fl_alone_all -%}
     {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
       {%- assign fl_pool = fl_lib[fu_key] -%}

@@ -600,6 +600,294 @@
   {
    "path": "fact_0.shorts_swing_back",
    "text": "{WHEN} ist Shorts-Wetter, {WHEN2} wird's wieder frischer. Shorts an, und die warme Schicht mitnehmen."
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Zieh ruhig gleich Shorts an. {WHEN} wird's warm genug, bis dahin reicht die warme Schicht drüber."
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Noch ist's kalt, aber {WHEN} wird's Shorts-Wetter. Also zieh gleich Shorts an und nimm die warme Schicht nur für den Weg."
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "Shorts lohnen sich heute, {WHEN} wird's warm genug. Die warme Schicht nimmst du mit, {WHEN2} brauchst du sie wieder."
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} wird's warm genug für Shorts, also zieh sie gleich an. Die warme Schicht kommt mit, {WHEN2} wird's wieder kühl."
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "Lass die Shorts heute weg, {WHEN} wird's kalt. Zieh lange Hosen an und pack eine warme Jacke ein."
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "Jetzt fühlt's sich nach Shorts an, doch {WHEN} kommt eine Kaltfront. Lange Hosen sind heute besser, und eine warme Jacke muss mit."
+  },
+  {
+   "path": "fact_0.heat_danger",
+   "text": "Die Hitze ist heute gefährlich. Trink regelmäßig Wasser, such dir Schatten und bleib mittags aus der Sonne."
+  },
+  {
+   "path": "fact_0.heat_danger",
+   "text": "Bei dieser Hitze geht Wasser vor: genug trinken, im Schatten bleiben und mittags nicht in die pralle Sonne."
+  },
+  {
+   "path": "fact_0.p_wetter_ice",
+   "text": "Nimm den Schirm mit, {WHENP} kommt gefrierender Regen. Danach ist's überall glatt, also geh vorsichtig."
+  },
+  {
+   "path": "fact_0.p_wetter_ice",
+   "text": "{WHENP} droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam."
+  },
+  {
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "{WHENP} beginnt gefrierender Regen, und der hält an. Straßen und Gehwege werden glatt, nimm den Schirm mit und geh vorsichtig."
+  },
+  {
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Nimm den Schirm mit: {WHENP} fängt gefrierender Regen an und bleibt. Pass auf, es wird spiegelglatt."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "{WHENP} könnte gefrierender Regen fallen. Dann wird's glatt, also pack lieber den Schirm ein und geh vorsichtig."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "Vielleicht kommt {WHENP} gefrierender Regen. Nimm sicherheitshalber den Schirm mit und rechne mit glatten Wegen."
+  },
+  {
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "Der gefrierende Regen hält den ganzen Tag an, überall ist es glatt. Nimm den Schirm mit und geh vorsichtig."
+  },
+  {
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "Heute bleibt's bei gefrierendem Regen und Glatteis. Behalt den Schirm dabei und lass dir auf dem Gehweg Zeit."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Der gefrierende Regen hört später auf, glatt bleibt's aber. Bis dahin hilft der Schirm, und geh vorsichtig."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Noch fällt gefrierender Regen, also nimm den Schirm mit. Auch wenn er später aufhört, bleiben die Wege glatt."
+  },
+  {
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Der gefrierende Regen hört später kurz auf, {WHENP} kommt er zurück. Behalt den Schirm dabei, glatt bleibt's die ganze Zeit."
+  },
+  {
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Gefrierender Regen jetzt, dann eine Pause und {WHENP} wieder. Der Schirm bleibt dabei, und auf den Gehwegen ist's glatt."
+  },
+  {
+   "path": "fact_0.p_wetter_storm",
+   "text": "Nimm den Schirm mit, {WHENP} gibt's ein Gewitter. Wenn's donnert, geh lieber rein."
+  },
+  {
+   "path": "fact_0.p_wetter_storm",
+   "text": "{WHENP} kommt ein Gewitter. Pack den Schirm ein und such dir ein Dach, sobald es donnert."
+  },
+  {
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "{WHENP} ziehen Gewitter auf, danach regnet's weiter. Nimm den Schirm mit und geh bei Donner nach drinnen."
+  },
+  {
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "Nimm den Schirm mit: {WHENP} beginnt Regen mit Gewittern, und der bleibt. Solange es donnert, bist du drinnen besser aufgehoben."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "Vielleicht gibt's {WHENP} ein Gewitter. Nimm den Schirm mit, und wenn's donnert, geh rein."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "{WHENP} kann ein Gewitter aufziehen. Mit Schirm bist du vorbereitet, bei Donner aber drinnen besser aufgehoben."
+  },
+  {
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "Regen und Gewitter halten den ganzen Tag an. Behalt den Schirm dabei und geh rein, wenn's donnert."
+  },
+  {
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "Heute gewittert's immer wieder, und der Regen hört nicht auf. Nimm den Schirm mit und such dir bei Donner ein Dach."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Noch gewittert's, aber später ist es vorbei. Bis dahin brauchst du den Schirm, und bei Donner bleib drinnen."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Das Gewitter zieht später ab. Nimm bis dahin den Schirm mit und geh rein, solange es donnert."
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "Der Regen hört später kurz auf, {WHENP} kommt ein Gewitter. Behalt den Schirm dabei und geh rein, wenn's donnert."
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "Jetzt regnet's, später ist kurz Ruhe, und {WHENP} kommt ein Gewitter. Behalt den Schirm und geh bei Donner rein."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Wer dich jetzt sieht, hält dich für verrückt. Diesmal zu Unrecht."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Ja, wirklich. Ich hab mich nicht verschrieben."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Schön ist das nicht. Aber richtig."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Du wolltest doch immer mal was Mutiges machen."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Und bitte kein Jammern auf dem Weg. Du hast's ja gelesen."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Dass du auf mich hörst, glaub ich erst, wenn ich dich in Shorts seh."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Jacke über Shorts, wie der Paketbote. Nur langsamer."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Sieht nicht danach aus, ich weiß. Dafür gibt's ja mich."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Die in kurzen Hosen lachen jetzt noch."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Mit der Jacke unterm Arm siehst du jetzt komisch aus. Später schlau."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Ich weiß, ich mach mich heute unbeliebt."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Einmal im Leben bist du rechtzeitig vorbereitet. Genieß es."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Später bist du dann der Einzige, der nicht friert. Gewöhn dich nicht dran."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Deine Beine sieht heute also keiner. Ist auch besser so."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Dein „Mir ist nie kalt“ hebst du dir für einen anderen Tag auf."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Heute mein ich das ganz ohne Grant."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Ich sag's auch dreimal, wenn's sein muss."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Ich bleib auch drinnen. Hab ja keine Wahl."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Meckern kannst du später. Erst trinken."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Ich weiß, du hältst Hitze aus. Heute musst du's nicht beweisen."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Kaffee ist übrigens kein Wasser. Auch nicht mit Eis."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Trink, bevor du Durst hast. Du merkst den sonst wieder zu spät."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Heute darfst du sogar faul im Schatten liegen. Mit meinem Segen."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Festhalten kann ich dich leider nicht. Also langsam."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Heute bin ich gern ein Bildschirm. Ich muss nirgends hin."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Eilig hat's heute nur, wer hinfallen will."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Langsam gehen kannst du ja. Heute hast du endlich einen Grund."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Heute ist Zuspätkommen ausnahmsweise vernünftig."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Und heute bitte nicht beim Gehen aufs Handy starren."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Heute bist du ausnahmsweise nicht der Langsamste. Heute sind's alle."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Und unter einem Baum ist nicht drinnen."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Der Schirm hilft gegen Regen. Gegen Blitze hilft nur drinnen."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Spannend wird's heute nur am Himmel. Schau's dir von drinnen an."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Fotografier's bitte durchs Fenster. Das Foto wird sowieso nichts."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Zählen zwischen Blitz und Donner kannst du ja. Bis drei immerhin."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Wenn's donnert, gehst du rein. Nicht „gleich“, sondern sofort."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Dein „Das zieht vorbei“ hat schon öfter nicht gestimmt."
   }
  ]
 }

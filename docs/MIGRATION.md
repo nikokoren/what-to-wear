@@ -39,9 +39,12 @@ which nothing is sending yet.
 Verify in the editor with Force Refresh, then wait for the update to
 propagate to installed users. Give it a day.
 
-> The transitional file is 94 KB against TRMNL's 100 KB ceiling, because it
-> carries the embedded phrasing *and* the new code path. It is generated —
-> `python3 tools/build_transitional.py` — and CI fails if it is stale.
+> The transitional file is 91 KB against TRMNL's 100 KB ceiling, because it
+> carries the embedded phrasing *and* the new code path. Since October 2026
+> it embeds five wordings per situation, not all of them
+> (`EMBEDDED_PER_KEY`): they only serve a device until its texts polling
+> URL lands. It is generated — `python3 tools/build_transitional.py` — and
+> CI fails if it is stale.
 
 ## Step 2 — add the texts polling URL
 

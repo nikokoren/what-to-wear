@@ -46,9 +46,16 @@ def liquid_escape(text):
     return text
 
 
+# The embedded copies serve a device only until its texts polling URL lands,
+# so they keep a few wordings per situation, not all of them: what keeps
+# this build under the 100 KB ceiling as the markup grows (October 2026).
+EMBEDDED_PER_KEY = 5
+
+
 def build_capture(name, library):
     entries = []
     for key, lines in library.items():
+        lines = lines[:EMBEDDED_PER_KEY]
         for line in lines:
             liquid_escape(line)
         entries.append(f"{key}::" + "||".join(lines))

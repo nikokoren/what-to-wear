@@ -177,6 +177,48 @@
     ],
     "shorts_swing_back": [
       "Shorts weather {WHEN}, and you'll want a layer back {WHEN2}. Go with shorts and keep {G} with you."
+    ],
+    "pants_swing": [
+      "It's shorts weather now, but it turns cold {WHEN}. Wear long pants and bring a warm coat."
+    ],
+    "heat_danger": [
+      "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun."
+    ],
+    "p_wetter_ice": [
+      "Freezing rain {WHENP} makes roads and pavements icy. Take the umbrella and watch your step."
+    ],
+    "p_wetter_long_ice": [
+      "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly."
+    ],
+    "p_wetter_maybe_ice": [
+      "Freezing rain is possible {WHENP}. If it comes, it gets icy, so take the umbrella."
+    ],
+    "p_stays_wet_ice": [
+      "Freezing rain all day, and the roads and pavements are icy. Take the umbrella and go slowly."
+    ],
+    "p_drier_ice": [
+      "The freezing rain stops later, but the ice stays. Take the umbrella for now and watch your step."
+    ],
+    "p_wet_again_ice": [
+      "The freezing rain stops for a while, then comes back {WHENP}. Expect ice and keep the umbrella with you."
+    ],
+    "p_wetter_storm": [
+      "A thunderstorm comes through {WHENP}. Bring the umbrella and get inside when it hits."
+    ],
+    "p_wetter_long_storm": [
+      "Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella and stay inside while it thunders."
+    ],
+    "p_wetter_maybe_storm": [
+      "A thunderstorm is possible {WHENP}, so the umbrella's worth taking."
+    ],
+    "p_stays_wet_storm": [
+      "Rain and thunderstorms all day. Bring the umbrella and stay inside while it thunders."
+    ],
+    "p_drier_storm": [
+      "The rain and thunder stop later, but you'll want the umbrella for now."
+    ],
+    "p_wet_again_storm": [
+      "The rain stops for a while, then a thunderstorm comes {WHENP}. Keep the umbrella with you."
     ]
   },
   "flavour_10": {

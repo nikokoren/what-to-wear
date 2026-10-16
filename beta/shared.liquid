@@ -312,6 +312,7 @@ single contains test instead of a chained and/or condition.
 {%- assign temp_c = 0 -%}
 {%- assign wmo = 0 -%}
 {%- assign is_now_precip = 0 -%}
+{%- assign heat_danger = false -%}
 {%- assign is_now_snow = 0 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
@@ -564,6 +565,38 @@ single contains test instead of a chained and/or condition.
           {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
         {%- endif -%}
       {%- endif -%}
+
+      {%- comment %}
+      The other way round, a cold front: shorts weather now and three hours
+      or more at coat weather later. Long pants at the door (the T-shirt
+      and long pants drawn now), and the forecast line says why
+      (pants_swing, where the language has it). Getting cold costs more
+      than being warm, so this wins over shorts drawn early.
+      Dangerous heat: two hours or more above 34 C feels-like
+      (extreme_heat). The forecast line leads with water and shade
+      (heat_danger), whatever else the day does.
+      {%- endcomment %}
+      {%- assign pants_swing = false -%}
+      {%- assign pants_idx = -1 -%}
+      {%- assign cold_hours = 0 -%}
+      {%- assign scorch_hours = 0 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
+        {%- if rv <= 2 -%}
+          {%- assign cold_hours = cold_hours | plus: 1 -%}
+          {%- if pants_idx < 0 -%}{%- assign pants_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
+        {%- endif -%}
+        {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if band_rank >= 6 and cold_hours >= 3 -%}
+        {%- assign pants_swing = true -%}
+        {%- assign shorts_early = false -%}
+        {%- assign band_rank = 5 -%}
+        {%- assign band = band_name_list[4] -%}
+        {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+      {%- endif -%}
+      {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
 
       {%- comment %}
       Two different cold spells, kept apart because they tell different
@@ -821,7 +854,8 @@ single contains test instead of a chained and/or condition.
 
       1. a dip before the peak. It is the first thing the reader walks
          into, and getting cold is the one mistake with a real cost.
-      1b. a big swing into shorts weather (THE LONG-PANTS RULE): go out
+      1b. a cold front out of shorts weather: long pants at the door.
+      1c. a big swing into shorts weather (THE LONG-PANTS RULE): go out
          in shorts, keep the warm layer for the way out; with the
          evening wanting a layer back, say that too. Only where the
          language has the wording (texts.facts), else the stories below.
@@ -840,6 +874,9 @@ single contains test instead of a chained and/or condition.
     {%- if dip_key != '' -%}
       {%- assign temp_scenario = dip_key -%}
       {%- assign primary_idx = dip_idx -%}
+    {%- elsif pants_swing and texts.facts.pants_swing -%}
+      {%- assign temp_scenario = 'pants_swing' -%}
+      {%- assign primary_idx = pants_idx -%}
     {%- elsif shorts_swing and texts.facts.shorts_swing -%}
       {%- assign temp_scenario = 'shorts_swing' -%}
       {%- assign primary_idx = shorts_idx -%}
@@ -1403,6 +1440,8 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign f_key = temp_scenario -%}
     {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
   {%- endif -%}
+  {%- comment %} Dangerous heat leads with water and shade, whatever else the day does. {%- endcomment %}
+  {%- if heat_danger and F.heat_danger -%}{%- assign f_key = 'heat_danger' -%}{%- endif -%}
   {%- comment %}
   The garment on screen, for the arc keys: {G} the garment, {GP} its
   pronoun, {GV} garment with its verb (German agrees "kann"/"können").
@@ -1437,6 +1476,30 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if is_now_snow == 1 -%}
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+    {%- else -%}
+      {%- comment %}
+      Freezing rain in the window (WMO 56, 57, 66, 67): the ice warning.
+      A thunderstorm (95, 96, 99): the storm wording. Each where the
+      situation has one; freezing rain first.
+      {%- endcomment %}
+      {%- assign p_ice = false -%}
+      {%- assign p_storm = false -%}
+      {%- assign wx_codes = ',' | append: wmo | append: ',' -%}
+      {%- if has_future_window and codes -%}
+        {%- for i in (start_index..end_index) -%}
+          {%- assign pi = probs[i] | default: 0 | plus: 0 -%}
+          {%- if pi >= RAIN_LOW -%}{%- assign wx_codes = wx_codes | append: codes[i] | append: ',' -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if wx_codes contains ',56,' or wx_codes contains ',57,' or wx_codes contains ',66,' or wx_codes contains ',67,' -%}{%- assign p_ice = true -%}{%- endif -%}
+      {%- if wx_codes contains ',95,' or wx_codes contains ',96,' or wx_codes contains ',99,' -%}{%- assign p_storm = true -%}{%- endif -%}
+      {%- assign pki = pk | append: '_ice' -%}
+      {%- assign pkt = pk | append: '_storm' -%}
+      {%- if p_ice and F[pki] -%}
+        {%- assign pk = pki -%}
+      {%- elsif p_storm and F[pkt] -%}
+        {%- assign pk = pkt -%}
+      {%- endif -%}
     {%- endif -%}
     {%- assign p_list = F[pk] -%}
     {%- if p_list -%}
@@ -1560,7 +1623,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- endcomment %}
     {%- assign fu_key = '' -%}
     {%- if f_precip != '' -%}
-      {%- if pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
+      {%- if pk contains '_ice' -%}{%- assign fu_key = 'ice' -%}{%- elsif pk contains '_storm' -%}{%- assign fu_key = 'storm' -%}{%- elsif pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
     {%- else -%}
       {%- case f_key -%}
         {%- when 'steady_evening' -%}
@@ -1570,8 +1633,10 @@ current time moves every 15 minutes, so the merge variables change.
         {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
         {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
         {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
-        {%- when 'arc_level', 'arc_colder', 'shorts_swing_back' -%}{%- assign fu_key = 'offon' -%}
-        {%- when 'shorts_swing' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'shorts_swing', 'shorts_swing_back' -%}{%- assign fu_key = 'shorts' -%}
+        {%- when 'pants_swing' -%}{%- assign fu_key = 'pants' -%}
+        {%- when 'heat_danger' -%}{%- assign fu_key = 'scorch' -%}
       {%- endcase -%}
     {%- endif -%}
     {%- comment %}
@@ -1599,6 +1664,15 @@ current time moves every 15 minutes, so the merge variables change.
       {%- assign fu_slugs = 'scarf,coat,jacket,hoodie' | split: ',' -%}
       {%- assign fu_gs = ',' | append: fu_slugs[fu_gi] | append: ',' -%}
     {%- endif -%}
+    {%- comment %} A new group with no lines yet borrows its neighbour's. {%- endcomment %}
+    {%- unless fl_lib[fu_key] -%}
+      {%- case fu_key -%}
+        {%- when 'ice', 'storm' -%}{%- assign fu_key = 'rain' -%}
+        {%- when 'shorts' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'pants' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'scorch' -%}{%- assign fu_key = 'hot' -%}
+      {%- endcase -%}
+    {%- endunless -%}
     {%- assign fl_pool = fl_alone_all -%}
     {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
       {%- assign fl_pool = fl_lib[fu_key] -%}
