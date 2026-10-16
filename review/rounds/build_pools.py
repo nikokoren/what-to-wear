@@ -173,11 +173,13 @@ def build_facts(doc, lang, decisions, round_lines):
     for key, value in facts.items():
         if key.startswith("garments"):
             continue
-        first = value[0] if isinstance(value, list) else value
-        first = FACT_EDIT.get(first, first)
+        # The whole list as it stands, not just its first wording: later
+        # rounds (14 on) add and reorder wordings, and the passes after this
+        # one take out what's voted out, so a second run changes nothing.
+        have = [FACT_EDIT.get(t, t) for t in (value if isinstance(value, list) else [value])]
         inverse = {v: k for k, v in FACT_EDIT.items()}
         more = sorted(kept.get(key, []), key=lambda t: order.get((f"fact_0.{key}", inverse.get(t, t)), 0))
-        facts[key] = [first] + [t for t in more if t != first]
+        facts[key] = list(dict.fromkeys(have + more))
     return sum(len(v) for k, v in facts.items() if not k.startswith("garments"))
 
 
@@ -315,6 +317,7 @@ ALONE = "2026-10-alone"
 FOLLOW = "2026-10-follow"
 SEASONS = "2026-10-seasons"
 REPLIES = "2026-10-replies"
+POLISH = "2026-10-polish"
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -531,6 +534,12 @@ def main():
         replies = apply_follow(doc, lang, decisions, REPLIES)
         if replies:
             print(f"{lang} round 14: " + ", ".join(f"{v} {k}" for k, v in replies.items()))
+        facts15 = apply_facts(doc, lang, decisions, POLISH)
+        if facts15:
+            print(f"{lang} round 15 forecast: " + ", ".join(f"{v} {k}" for k, v in facts15.items()))
+        polish = apply_follow(doc, lang, decisions, POLISH)
+        if polish:
+            print(f"{lang} round 15: " + ", ".join(f"{v} {k}" for k, v in polish.items()))
         write_new = apply_write_new(doc, lang, decisions)
         if write_new:
             print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))
