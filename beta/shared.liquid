@@ -994,6 +994,108 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- endfor -%}
     {%- endif -%}
   {%- endif -%}
+    {%- assign sp_pool = nil -%}
+  {%- assign sp_kind = '' -%}
+  {%- assign sp_fact = '' -%}
+  {%- assign sp_lib_key = 'flavour_' | append: sarcasm_level -%}
+  {%- assign sp_lib = texts[sp_lib_key] -%}
+  {%- assign sp_ok = false -%}
+  {%- if f_key == 'steady' or f_key == 'steady_evening' -%}{%- assign sp_ok = true -%}{%- endif -%}
+  {%- if sarcasm_level != '0' and sp_lib and is_steady and f_precip == '' and sp_ok -%}
+    {%- assign th_key = 'theme_' | append: active_theme -%}
+    {%- if active_theme != '' and sp_lib[th_key] -%}
+      {%- assign sp_pool = sp_lib[th_key] -%}
+      {%- assign sp_kind = 'theme' -%}
+    {%- else -%}
+      {%- assign day_key = '' -%}
+      {%- assign dmon = today_md | slice: 0, 2 -%}
+      {%- assign dday = today_md | slice: 3, 2 | plus: 0 -%}
+      {%- assign tz_probe = ',' | append: IDX_0.timezone | append: ',' -%}
+      {%- assign dst_rule = '' -%}
+      {%- if tz_probe contains ',Europe/' -%}{%- assign dst_rule = 'eu' -%}{%- endif -%}
+      {%- if ',Europe/Moscow,Europe/Minsk,Europe/Istanbul,Europe/Kaliningrad,Europe/Samara,Europe/Volgograd,Europe/Saratov,Europe/Ulyanovsk,Europe/Astrakhan,Europe/Kirov,' contains tz_probe -%}{%- assign dst_rule = '' -%}{%- endif -%}
+      {%- if ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Anchorage,America/Juneau,America/Boise,America/Detroit,America/Indiana/Indianapolis,America/Kentucky/Louisville,America/Toronto,America/Montreal,America/Vancouver,America/Edmonton,America/Winnipeg,America/Halifax,America/St_Johns,America/Moncton,' contains tz_probe -%}{%- assign dst_rule = 'na' -%}{%- endif -%}
+      {%- if dst_rule == 'eu' -%}
+        {%- if dmon == '03' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if dmon == '03' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if today_md == '04-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if dmon == '10' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- if dmon == '10' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- if today_md == '11-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+      {%- elsif dst_rule == 'na' -%}
+        {%- if dmon == '03' and weekday_idx == 0 -%}
+          {%- if dday >= 8 and dday <= 14 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- elsif dmon == '03' and weekday_idx == 1 -%}
+          {%- if dday >= 9 and dday <= 15 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- elsif dmon == '11' and weekday_idx == 0 -%}
+          {%- if dday <= 7 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- elsif dmon == '11' and weekday_idx == 1 -%}
+          {%- if dday >= 2 and dday <= 8 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if day_key == '' -%}
+        {%- if today_md == '06-21' -%}
+          {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
+        {%- elsif today_md == '12-21' -%}
+          {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}
+        {%- elsif weekday_idx == 1 and local_hour < 12 -%}
+          {%- assign day_key = 'monday' -%}
+        {%- elsif weekday_idx == 5 and local_hour >= 12 -%}
+          {%- assign day_key = 'friday' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign dk = 'day_' | append: day_key -%}
+      {%- assign dhalf = local_hour | modulo: 2 -%}
+            {%- assign dmin = 1 -%}
+      {%- if day_key == 'monday' or day_key == 'friday' -%}{%- assign dmin = 3 -%}{%- endif -%}
+      {%- assign dn = sp_lib[dk] | size -%}
+      {%- if day_key != '' and dhalf == 0 and dn >= dmin -%}
+        {%- assign sp_pool = sp_lib[dk] -%}
+        {%- assign sp_kind = 'day' -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if sp_pool and texts.facts.steady_special -%}
+      {%- assign sp_list = texts.facts.steady_special -%}
+      {%- assign sp_n = sp_list | size -%}
+      {%- assign sp_i = text_rot | plus: 2 | modulo: sp_n -%}
+      {%- assign sp_fact = sp_list[sp_i] -%}
+      {%- assign f_temp = sp_fact -%}
+    {%- endif -%}
+  {%- endif -%}
+    {%- assign unit_joke = nil -%}
+  {%- assign u_lib_key = 'units_' | append: sarcasm_level -%}
+  {%- assign u_lib = texts[u_lib_key] -%}
+  {%- if sarcasm_level != '0' and u_lib and sp_pool == nil -%}
+    {%- assign u_key = f_key -%}
+    {%- if f_precip != '' -%}{%- assign u_key = pk -%}{%- endif -%}
+    {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
+    {%- assign u_pool = u_lib[u_key] -%}
+    {%- if u_pool -%}
+      {%- assign u_n = u_pool | size -%}
+      {%- assign u_i = text_rot | plus: 7 | modulo: u_n -%}
+      {%- assign u_month = ',' | append: season_month | append: ',' -%}
+      {%- for k in (1..u_n) -%}
+        {%- assign u_cand = u_pool[u_i] -%}
+        {%- assign u_ok = true -%}
+        {%- if u_cand contains '{M:' -%}
+          {%- assign u_tag = u_cand | split: '{M:' | last | split: '}' | first -%}
+          {%- assign u_tags = ',' | append: u_tag | append: ',' -%}
+          {%- unless u_tags contains u_month -%}{%- assign u_ok = false -%}{%- endunless -%}
+          {%- assign u_prefix = '{M:' | append: u_tag | append: '}' -%}
+          {%- assign u_cand = u_cand | remove_first: u_prefix -%}
+        {%- endif -%}
+        {%- if u_cand contains '{WHENSTOP}' and when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- if u_ok -%}
+          {%- assign u_parts = u_cand | split: ' || ' -%}
+          {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
+          {%- assign unit_joke = u_parts[1] | default: '' | strip -%}
+          {%- if f_precip != '' -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign u_i = u_i | plus: 1 | modulo: u_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
   {%- if is_steady and f_precip != '' -%}
     {%- assign fact_line = f_precip -%}
   {%- elsif f_precip != '' -%}
@@ -1123,59 +1225,9 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- assign fl_pool = fl_lib[fu_key] -%}
     {%- endif -%}
         {%- assign fl_theme = false -%}
-    {%- if is_steady and active_theme != '' -%}
-      {%- assign th_key = 'theme_' | append: active_theme -%}
-      {%- if fl_lib[th_key] -%}
-        {%- assign fl_pool = fl_lib[th_key] -%}
-        {%- assign fl_theme = true -%}
-      {%- endif -%}
-    {%- endif -%}
-        {%- if is_steady and fl_theme == false -%}
-      {%- assign day_key = '' -%}
-      {%- assign dmon = today_md | slice: 0, 2 -%}
-      {%- assign dday = today_md | slice: 3, 2 | plus: 0 -%}
-      {%- assign tz_probe = ',' | append: IDX_0.timezone | append: ',' -%}
-      {%- assign dst_rule = '' -%}
-      {%- if tz_probe contains ',Europe/' -%}{%- assign dst_rule = 'eu' -%}{%- endif -%}
-      {%- if ',Europe/Moscow,Europe/Minsk,Europe/Istanbul,Europe/Kaliningrad,Europe/Samara,Europe/Volgograd,Europe/Saratov,Europe/Ulyanovsk,Europe/Astrakhan,Europe/Kirov,' contains tz_probe -%}{%- assign dst_rule = '' -%}{%- endif -%}
-      {%- if ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Anchorage,America/Juneau,America/Boise,America/Detroit,America/Indiana/Indianapolis,America/Kentucky/Louisville,America/Toronto,America/Montreal,America/Vancouver,America/Edmonton,America/Winnipeg,America/Halifax,America/St_Johns,America/Moncton,' contains tz_probe -%}{%- assign dst_rule = 'na' -%}{%- endif -%}
-      {%- if dst_rule == 'eu' -%}
-        {%- if dmon == '03' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- if dmon == '03' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- if today_md == '04-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- if dmon == '10' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- if dmon == '10' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- if today_md == '11-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-      {%- elsif dst_rule == 'na' -%}
-        {%- if dmon == '03' and weekday_idx == 0 -%}
-          {%- if dday >= 8 and dday <= 14 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- elsif dmon == '03' and weekday_idx == 1 -%}
-          {%- if dday >= 9 and dday <= 15 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- elsif dmon == '11' and weekday_idx == 0 -%}
-          {%- if dday <= 7 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- elsif dmon == '11' and weekday_idx == 1 -%}
-          {%- if dday >= 2 and dday <= 8 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- endif -%}
-      {%- endif -%}
-      {%- if day_key == '' -%}
-        {%- if today_md == '06-21' -%}
-          {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
-        {%- elsif today_md == '12-21' -%}
-          {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}
-        {%- elsif weekday_idx == 1 and local_hour < 12 -%}
-          {%- assign day_key = 'monday' -%}
-        {%- elsif weekday_idx == 5 and local_hour >= 12 -%}
-          {%- assign day_key = 'friday' -%}
-        {%- endif -%}
-      {%- endif -%}
-      {%- assign dk = 'day_' | append: day_key -%}
-      {%- assign dhalf = local_hour | modulo: 2 -%}
-            {%- assign dmin = 1 -%}
-      {%- if day_key == 'monday' or day_key == 'friday' -%}{%- assign dmin = 3 -%}{%- endif -%}
-      {%- assign dn = fl_lib[dk] | size -%}
-      {%- if day_key != '' and dhalf == 0 and dn >= dmin -%}
-        {%- assign fl_pool = fl_lib[dk] -%}
-      {%- endif -%}
+    {%- if sp_pool -%}
+      {%- assign fl_pool = sp_pool -%}
+      {%- if sp_kind == 'theme' -%}{%- assign fl_theme = true -%}{%- endif -%}
     {%- endif -%}
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}
@@ -1209,6 +1261,9 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- endif -%}
         {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
       {%- endfor -%}
+    {%- endif -%}
+        {%- if unit_joke != nil and forecast_on and fact_line != '' and fl_theme == false -%}
+      {%- assign flavour_line = unit_joke -%}
     {%- endif -%}
 
         {%- assign topical_raw = trmnl.plugin_settings.custom_fields_values.topical_lines | default: 'off' | downcase | strip -%}
@@ -1511,6 +1566,11 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign sn = sl | size -%}
         {%- assign si = text_rot | plus: 2 | modulo: sn -%}
         {%- assign panel_fact = sl[si] -%}
+      {%- endif -%}
+            {%- if sp_fact != '' -%}{%- assign panel_fact = sp_fact -%}{%- endif -%}
+      {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
+        {%- assign panel_fact = f_temp -%}
+        {%- assign flavour_line = unit_joke -%}
       {%- endif -%}
     {%- endif -%}
         {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}

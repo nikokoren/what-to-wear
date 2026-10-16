@@ -30,6 +30,9 @@
       "You can wear this for the rest of the evening without changing a thing.",
       "You'll be comfortable in this for the rest of the evening."
     ],
+    "steady_special": [
+      "What you're wearing works for the rest of the day."
+    ],
     "steady_hot": [
       "It's hot the whole day, so drink plenty of water and find shade.",
       "The heat lasts all day. Keep water with you and stay in the shade.",
@@ -897,6 +900,98 @@
     ],
     "cooling": [
       "You'll be cold by tonight and tell everyone it came out of nowhere."
+    ]
+  },
+  "units_10": {
+    "steady": [
+      "This outfit is fine all day. || 'Fine' is the highest praise I give.",
+      "What you have on is right for the whole day. || Don't let it go to your head.",
+      "Nothing to add or take off all day. || My shortest forecast, and my favourite.",
+      "What you have on lasts the whole day. || Unlike your phone battery.",
+      "No layer to carry today. That means you have both hands free for snacks.",
+      "This outfit works all day. || The one forecast I could do in my sleep.",
+      "You're dressed right for the whole day. || So you can stop staring into the wardrobe now.",
+      "Nothing changes all day. || You'll check again anyway. I'll say the same thing, just less politely.",
+      "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
+      "Today needs nothing more than what you have on. || A rare thing for me to say about anyone."
+    ],
+    "steady_evening": [
+      "You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote.",
+      "What you're wearing works for the rest of the evening. || Whatever the evening brings, the outfit won't be the problem.",
+      "You're fine as you are for the rest of the evening. || Rare words from me. Enjoy them.",
+      "You're dressed for the rest of the evening. || I'll go back to looking decorative.",
+      "Nothing to change for the rest of the evening. || My work here is done. Not that I'll stop."
+    ],
+    "steady_night": [
+      "What you have on is fine for the rest of the night. || Including the bit on the sofa you'll call 'resting my eyes'."
+    ],
+    "steady_cold": [
+      "It's cold all day. || My only weakness is the cold. Kidding, I don't have one.",
+      "It stays this cold the whole day. || I'm staying in here where it's warm.",
+      "It doesn't get any warmer today. || Staring at me longer won't change that.",
+      "It stays this cold all day. || All day. I checked twice, out of pure spite.",
+      "No warming up today. || If the sun shows up, it's purely decorative.",
+      "Expect the cold to last all day. || Your nose will turn a colour I can't even display."
+    ],
+    "steady_hot": [
+      "The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.",
+      "It's hot all day, so drink water and find shade. || Finally, a use for the fancy bottle you bought to drink more water.",
+      "The heat stays all day. Water, and shade wherever you find it. || Even a strip the width of a lamppost.",
+      "It's hot all day: keep water with you and stay in the shade. || Not me, thanks. Water and I don't get along.",
+      "It's hot all day. Water and shade help. || I'll sit this one out in your nice shady room.",
+      "Hot all day, so drink water and stay out of the sun. || No sweat here. One of the perks of being a screen.",
+      "No break from the heat today, so water and shade it is. || Thin, pale and cool. I was not made for this."
+    ]
+  },
+  "units_11": {
+    "steady": [
+      "What you have on works for the whole day. || You've worn worse for longer.",
+      "You're set for the whole day. || So if today goes badly, you can't blame the weather.",
+      "What you're wearing works all day. || Now you just need somewhere to go in it.",
+      "No changes all day. || One less reason to be late. You'll find another.",
+      "Nothing extra needed all day. || You'll still pack something, just in case. In case of what?",
+      "This outfit is good all day. || You've already decided it isn't, haven't you.",
+      "What you're wearing works all day. || Longest commitment you'll make this week.",
+      "Nothing changes all day. || So any drama today is your own work.",
+      "You're dressed for the whole day. || Whatever you were going to complain about, it isn't this.",
+      "No changes all day, so there's nothing to forget. || You'll manage something anyway.",
+      "The weather stays put all day. || So will you, probably."
+    ],
+    "steady_evening": [
+      "You can wear this for the rest of the evening. || You were going to anyway.",
+      "You'll be comfortable in this for the rest of the evening. || You'll probably spend half of it choosing what to watch.",
+      "What you're wearing works for the rest of the evening. || You'll read all this, then do what you were going to anyway.",
+      "You're dressed right for the rest of the evening. || Plenty of evening left for not answering that message.",
+      "Nothing changes for the rest of the evening. || Plenty of time to start something you won't finish.",
+      "The weather won't change for the rest of the evening. || You'll still blame it if your plans fall through.",
+      "No changes for the rest of the evening. || You'll still check me again in an hour. I'll still say this."
+    ],
+    "steady_night": [
+      "Nothing changes tonight. || You'll scroll in bed for an hour and call it winding down.",
+      "This works for the rest of the evening. || It works for the couch too, which is where this is going.",
+      "You can wear this for the rest of the night. || You could even go to bed in it. I know you have before.",
+      "The weather's done for the night. || You checked anyway. For what, exactly?",
+      "Nothing changes before morning. || Tomorrow-you is already annoyed with tonight-you."
+    ],
+    "steady_cold": [
+      "{M:01,02}It stays cold all day. || Perfect for browsing flights somewhere warm and booking nothing. Again.",
+      "It's this cold the whole day. || You'll walk twice as fast. Still not cardio.",
+      "No warming up today. || You'll see your breath and pretend you're a dragon. Don't deny it.",
+      "It's cold all day. || You'll come home and hug the radiator like it's family.",
+      "It doesn't get any warmer today. || No use checking again in an hour, I won't change my mind.",
+      "It stays this cold all day. || So no, you can't wait it out.",
+      "The cold stays all day. || You'll pull your sleeves over your hands and call them gloves.",
+      "Expect the cold to last all day. || You'll make that noise once you're outside. You know the one."
+    ],
+    "steady_hot": [
+      "Hot all day: drink water and look for shade. || You'll search 'ice cream near me' later. Twice.",
+      "It's hot all day. Bring water and stay in the shade. || Remember wishing for summer? This is what you get.",
+      "It stays hot all day. Water and shade, please. || You'll say 'I'm not built for this' at least once. You're right.",
+      "No break from the heat today. Drink water, find shade. || And somehow you'll still burn the back of your neck.",
+      "Hot all day, so water and shade. || You'll probably end up loitering in the freezer aisle. Again.",
+      "The heat lasts all day. Stay in the shade and drink water. || You'll find shade, then complain it's the wrong shade.",
+      "It's hot all day, so drink water and find shade. || And by water I mean water. Not beer, even if it's cold.",
+      "It's hot all day, so drink water and stay in the shade. || You'll manage the shade. The water, we'll see."
     ]
   }
 }

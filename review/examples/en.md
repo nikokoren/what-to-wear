@@ -333,6 +333,15 @@ Do not edit by hand; vote on the page instead.
 ## steady · dry
 
 - No layer to carry today. Both hands free for snacks.
+- No layer to carry today. That means you have both hands free for snacks.
+- Nothing to add or take off all day. || My shortest forecast, and my favourite.
+- This outfit is fine all day. || 'Fine' is the highest praise I give.
+- What you have on is right for the whole day. || Don't let it go to your head.
+- What you have on lasts the whole day. || Unlike your phone battery.
+
+## steady · sarcastic
+
+- What you have on works for the whole day. || You've worn worse for longer.
 
 ## steady_cold · plain
 
@@ -342,9 +351,34 @@ Do not edit by hand; vote on the page instead.
 - It's cold all day.
 - It's this cold the whole day.
 
+## steady_cold · dry
+
+- It doesn't get any warmer today. || Staring at me longer won't change that.
+- It stays this cold the whole day. || I'm staying in here where it's warm.
+- It's cold all day. || My only weakness is the cold. Kidding, I don't have one.
+
+## steady_cold · sarcastic
+
+- It doesn't get any warmer today. || No use checking again in an hour, I won't change my mind.
+- It stays cold all day. || Perfect for browsing flights somewhere warm and booking nothing. Again.
+- It's cold all day. || You'll come home and hug the radiator like it's family.
+- It's this cold the whole day. || You'll walk twice as fast. Still not cardio.
+- No warming up today. || You'll see your breath and pretend you're a dragon. Don't deny it.
+
 ## steady_evening · plain
 
 - What you're wearing works for the rest of the evening.
+
+## steady_evening · dry
+
+- You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote.
+
+## steady_evening · sarcastic
+
+- What you're wearing works for the rest of the evening. || You'll read all this, then do what you were going to anyway.
+- You can wear this for the rest of the evening. || You were going to anyway.
+- You'll be comfortable in this for the rest of the evening. || You'll probably spend half of it choosing what to watch.
+- You're dressed right for the rest of the evening. || Plenty of evening left for not answering that message.
 
 ## steady_hot · plain
 
@@ -355,6 +389,24 @@ Do not edit by hand; vote on the page instead.
 - No break from the heat today. Water and shade help.
 - The heat doesn't let up today. Drink water and find some shade.
 - The heat lasts all day. Keep water with you and stay in the shade.
+
+## steady_hot · dry
+
+- It's hot all day, so drink water and find shade. || Finally, a use for the fancy bottle you bought to drink more water.
+- The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.
+
+## steady_hot · sarcastic
+
+- Hot all day, so water and shade. || You'll probably end up loitering in the freezer aisle. Again.
+- Hot all day: drink water and look for shade. || You'll search 'ice cream near me' later. Twice.
+- It stays hot all day. Water and shade, please. || You'll say 'I'm not built for this' at least once. You're right.
+- It's hot all day. Bring water and stay in the shade. || Remember wishing for summer? This is what you get.
+- No break from the heat today. Drink water, find shade. || And somehow you'll still burn the back of your neck.
+- The heat lasts all day. Stay in the shade and drink water. || You'll find shade, then complain it's the wrong shade.
+
+## steady_night · sarcastic
+
+- Nothing changes tonight. || You'll scroll in bed for an hour and call it winding down.
 
 ## storm · dry
 

@@ -217,3 +217,11 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-f73dc8201cb3` (2026-10-days)
+
+## unit_10.steady_evening
+
+- **Out:** Nothing changes for the rest of the evening. || And there's plenty of it. It's been dark since about four.
+  **Tags:** unclear
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-en-3238bb654636` (2026-10-units)

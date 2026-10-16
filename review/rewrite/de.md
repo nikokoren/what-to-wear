@@ -180,3 +180,47 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-de-cc365bc6fcc4` (2026-10-days)
+
+## unit_10.steady_cold
+
+- **Out:** Wärmer wird's heute den ganzen Tag nicht. || Meine Laune übrigens auch nicht.
+  **Wanted instead:** Does a Laune really get warmer?
+  **Tags:** unclear, not funny
+  **On screen:** drawing coat_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-de-0226450260c5` (2026-10-units)
+
+## unit_10.steady_evening
+
+- **Out:** Für den Rest des Abends passt, was du anhast. || Sonst passt heute ja nicht viel, aber das schon.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-de-9eb265baf10a` (2026-10-units)
+- **Out:** Was du anhast, passt den ganzen Abend. || Ich hab heute auch nichts mehr vor. Ich hab nie was vor.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Nothing changes, from 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-de-ea2ddf176734` (2026-10-units)
+
+## unit_10.steady_hot
+
+- **Out:** Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || In der Bahn fällt dann die Klimaanlage aus. Wegen Hitze.
+  **Wanted instead:** Does not flow right
+  **Tags:** not funny
+  **On screen:** drawing heat_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-de-bb9c51ab7a21` (2026-10-units)
+- **Out:** Heute bleibt's heiß: genug Wasser trinken, im Schatten bleiben und nicht über die Hitze reden. Ich weiß es schon.
+  **Tags:** not funny
+  **On screen:** drawing heat_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-de-c9a4a487618a` (2026-10-units)
+
+## unit_10.steady_night
+
+- **Out:** Was du anhast, passt für den Rest des Abends. || Der ist um die Uhrzeit sowieso nicht mehr lang.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, and with What to Wear Next's single drawing.
+  **Answers:** `un-de-a25c4724c8a3` (2026-10-units)

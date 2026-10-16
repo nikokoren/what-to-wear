@@ -168,25 +168,100 @@ current time moves every 15 minutes, so the merge variables change.
     {%- endif -%}
   {%- endif -%}
   {%- comment %}
+  SPECIAL DAYS. A seasonal theme day, or a special day (round 16) every
+  other hour: the clock change (that Sunday and the Monday after; Europe,
+  the US and Canada, by the forecast's time zone), the longest and
+  shortest day (swapped south of the equator), Monday mornings and Friday
+  afternoons. A theme day wins. Only on a dry day whose weather doesn't
+  change and isn't cold or hot (owner, round 17): there the weather's own
+  unit has the say. The day's lines were written and voted under "works
+  all day", so they come with one fixed forecast sentence that holds at
+  any hour (facts.steady_special), never a separately picked one: the
+  line and its sentence are a unit too.
+  {%- endcomment %}
+  {%- assign sp_pool = nil -%}
+  {%- assign sp_kind = '' -%}
+  {%- assign sp_fact = '' -%}
+  {%- assign sp_lib_key = 'flavour_' | append: sarcasm_level -%}
+  {%- assign sp_lib = texts[sp_lib_key] -%}
+  {%- assign sp_ok = false -%}
+  {%- if f_key == 'steady' or f_key == 'steady_evening' -%}{%- assign sp_ok = true -%}{%- endif -%}
+  {%- if sarcasm_level != '0' and sp_lib and is_steady and f_precip == '' and sp_ok -%}
+    {%- assign th_key = 'theme_' | append: active_theme -%}
+    {%- if active_theme != '' and sp_lib[th_key] -%}
+      {%- assign sp_pool = sp_lib[th_key] -%}
+      {%- assign sp_kind = 'theme' -%}
+    {%- else -%}
+      {%- assign day_key = '' -%}
+      {%- assign dmon = today_md | slice: 0, 2 -%}
+      {%- assign dday = today_md | slice: 3, 2 | plus: 0 -%}
+      {%- assign tz_probe = ',' | append: IDX_0.timezone | append: ',' -%}
+      {%- assign dst_rule = '' -%}
+      {%- if tz_probe contains ',Europe/' -%}{%- assign dst_rule = 'eu' -%}{%- endif -%}
+      {%- if ',Europe/Moscow,Europe/Minsk,Europe/Istanbul,Europe/Kaliningrad,Europe/Samara,Europe/Volgograd,Europe/Saratov,Europe/Ulyanovsk,Europe/Astrakhan,Europe/Kirov,' contains tz_probe -%}{%- assign dst_rule = '' -%}{%- endif -%}
+      {%- if ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Anchorage,America/Juneau,America/Boise,America/Detroit,America/Indiana/Indianapolis,America/Kentucky/Louisville,America/Toronto,America/Montreal,America/Vancouver,America/Edmonton,America/Winnipeg,America/Halifax,America/St_Johns,America/Moncton,' contains tz_probe -%}{%- assign dst_rule = 'na' -%}{%- endif -%}
+      {%- if dst_rule == 'eu' -%}
+        {%- if dmon == '03' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if dmon == '03' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if today_md == '04-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if dmon == '10' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- if dmon == '10' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- if today_md == '11-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+      {%- elsif dst_rule == 'na' -%}
+        {%- if dmon == '03' and weekday_idx == 0 -%}
+          {%- if dday >= 8 and dday <= 14 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- elsif dmon == '03' and weekday_idx == 1 -%}
+          {%- if dday >= 9 and dday <= 15 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- elsif dmon == '11' and weekday_idx == 0 -%}
+          {%- if dday <= 7 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- elsif dmon == '11' and weekday_idx == 1 -%}
+          {%- if dday >= 2 and dday <= 8 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if day_key == '' -%}
+        {%- if today_md == '06-21' -%}
+          {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
+        {%- elsif today_md == '12-21' -%}
+          {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}
+        {%- elsif weekday_idx == 1 and local_hour < 12 -%}
+          {%- assign day_key = 'monday' -%}
+        {%- elsif weekday_idx == 5 and local_hour >= 12 -%}
+          {%- assign day_key = 'friday' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign dk = 'day_' | append: day_key -%}
+      {%- assign dhalf = local_hour | modulo: 2 -%}
+      {%- comment %} Mondays and Fridays come every week: not until there are three lines to rotate. {%- endcomment %}
+      {%- assign dmin = 1 -%}
+      {%- if day_key == 'monday' or day_key == 'friday' -%}{%- assign dmin = 3 -%}{%- endif -%}
+      {%- assign dn = sp_lib[dk] | size -%}
+      {%- if day_key != '' and dhalf == 0 and dn >= dmin -%}
+        {%- assign sp_pool = sp_lib[dk] -%}
+        {%- assign sp_kind = 'day' -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if sp_pool and texts.facts.steady_special -%}
+      {%- assign sp_list = texts.facts.steady_special -%}
+      {%- assign sp_n = sp_list | size -%}
+      {%- assign sp_i = text_rot | plus: 2 | modulo: sp_n -%}
+      {%- assign sp_fact = sp_list[sp_i] -%}
+      {%- assign f_temp = sp_fact -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- comment %}
   UNITS (owner, October 2026): with sarcasm on, a forecast sentence and its
   joke written and voted together, "fact || joke" (texts units_10 /
   units_11, by situation; no joke when the sentence carries it). Where the
   situation has units, the screen shows one instead of a forecast wording
   plus a separately picked reply, so the two always fit. On a day that
   changes and rains, the unit is for the rain sentence, which comes last.
-  A theme day keeps the plain wording and its own lines. Situations
-  without units yet work as before.
+  A theme or special day has its own (SPECIAL DAYS). Situations without
+  units yet work as before.
   {%- endcomment %}
   {%- assign unit_joke = nil -%}
   {%- assign u_lib_key = 'units_' | append: sarcasm_level -%}
   {%- assign u_lib = texts[u_lib_key] -%}
-  {%- assign u_theme = false -%}
-  {%- if is_steady and active_theme != '' -%}
-    {%- assign u_tk = 'theme_' | append: active_theme -%}
-    {%- assign u_fl = 'flavour_' | append: sarcasm_level -%}
-    {%- if texts[u_fl][u_tk] -%}{%- assign u_theme = true -%}{%- endif -%}
-  {%- endif -%}
-  {%- if sarcasm_level != '0' and u_lib and u_theme == false -%}
+  {%- if sarcasm_level != '0' and u_lib and sp_pool == nil -%}
     {%- assign u_key = f_key -%}
     {%- if f_precip != '' -%}{%- assign u_key = pk -%}{%- endif -%}
     {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
@@ -397,69 +472,11 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
       {%- assign fl_pool = fl_lib[fu_key] -%}
     {%- endif -%}
-    {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
+    {%- comment %} A theme day or a special day (SPECIAL DAYS, above the units). {%- endcomment %}
     {%- assign fl_theme = false -%}
-    {%- if is_steady and active_theme != '' -%}
-      {%- assign th_key = 'theme_' | append: active_theme -%}
-      {%- if fl_lib[th_key] -%}
-        {%- assign fl_pool = fl_lib[th_key] -%}
-        {%- assign fl_theme = true -%}
-      {%- endif -%}
-    {%- endif -%}
-    {%- comment %}
-    Special days (round 16), on a day with nothing else to say and every
-    other hour, so the weather keeps its say: the clock change (that Sunday
-    and the Monday after; Europe, the US and Canada, by the forecast's time
-    zone), the longest and shortest day (swapped south of the equator),
-    Monday mornings and Friday afternoons. A seasonal theme day wins.
-    {%- endcomment %}
-    {%- if is_steady and fl_theme == false -%}
-      {%- assign day_key = '' -%}
-      {%- assign dmon = today_md | slice: 0, 2 -%}
-      {%- assign dday = today_md | slice: 3, 2 | plus: 0 -%}
-      {%- assign tz_probe = ',' | append: IDX_0.timezone | append: ',' -%}
-      {%- assign dst_rule = '' -%}
-      {%- if tz_probe contains ',Europe/' -%}{%- assign dst_rule = 'eu' -%}{%- endif -%}
-      {%- if ',Europe/Moscow,Europe/Minsk,Europe/Istanbul,Europe/Kaliningrad,Europe/Samara,Europe/Volgograd,Europe/Saratov,Europe/Ulyanovsk,Europe/Astrakhan,Europe/Kirov,' contains tz_probe -%}{%- assign dst_rule = '' -%}{%- endif -%}
-      {%- if ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Anchorage,America/Juneau,America/Boise,America/Detroit,America/Indiana/Indianapolis,America/Kentucky/Louisville,America/Toronto,America/Montreal,America/Vancouver,America/Edmonton,America/Winnipeg,America/Halifax,America/St_Johns,America/Moncton,' contains tz_probe -%}{%- assign dst_rule = 'na' -%}{%- endif -%}
-      {%- if dst_rule == 'eu' -%}
-        {%- if dmon == '03' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- if dmon == '03' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- if today_md == '04-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- if dmon == '10' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- if dmon == '10' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- if today_md == '11-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-      {%- elsif dst_rule == 'na' -%}
-        {%- if dmon == '03' and weekday_idx == 0 -%}
-          {%- if dday >= 8 and dday <= 14 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- elsif dmon == '03' and weekday_idx == 1 -%}
-          {%- if dday >= 9 and dday <= 15 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
-        {%- elsif dmon == '11' and weekday_idx == 0 -%}
-          {%- if dday <= 7 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- elsif dmon == '11' and weekday_idx == 1 -%}
-          {%- if dday >= 2 and dday <= 8 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
-        {%- endif -%}
-      {%- endif -%}
-      {%- if day_key == '' -%}
-        {%- if today_md == '06-21' -%}
-          {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
-        {%- elsif today_md == '12-21' -%}
-          {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}
-        {%- elsif weekday_idx == 1 and local_hour < 12 -%}
-          {%- assign day_key = 'monday' -%}
-        {%- elsif weekday_idx == 5 and local_hour >= 12 -%}
-          {%- assign day_key = 'friday' -%}
-        {%- endif -%}
-      {%- endif -%}
-      {%- assign dk = 'day_' | append: day_key -%}
-      {%- assign dhalf = local_hour | modulo: 2 -%}
-      {%- comment %} Mondays and Fridays come every week: not until there are three lines to rotate. {%- endcomment %}
-      {%- assign dmin = 1 -%}
-      {%- if day_key == 'monday' or day_key == 'friday' -%}{%- assign dmin = 3 -%}{%- endif -%}
-      {%- assign dn = fl_lib[dk] | size -%}
-      {%- if day_key != '' and dhalf == 0 and dn >= dmin -%}
-        {%- assign fl_pool = fl_lib[dk] -%}
-      {%- endif -%}
+    {%- if sp_pool -%}
+      {%- assign fl_pool = sp_pool -%}
+      {%- if sp_kind == 'theme' -%}{%- assign fl_theme = true -%}{%- endif -%}
     {%- endif -%}
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}

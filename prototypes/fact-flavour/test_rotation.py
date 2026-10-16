@@ -59,7 +59,10 @@ expect("a steady daytime mood", mood == "nice" and all(d[2] == mood for d in on)
 expect("the fact wording changes during the day", len({d[0] for d in on}) > 1)
 standalone = (TEXTS["en"].get("alone_10", {}).get(mood) or []) + (TEXTS["en"].get("now_10", {}).get(mood) or [])
 steady = TEXTS["en"]["flavour_10"].get("steady") or standalone
-expect("under a steady forecast line, a steady follow-up", all(d[1] in steady for d in on))
+# Or a unit's joke: the steady day's units (round 17) carry their own, and
+# a one-sentence unit has none.
+steady = steady + [u.split(" || ")[1] if " || " in u else "" for u in TEXTS["en"].get("units_10", {}).get("steady", [])]
+expect("under a steady forecast line, a steady follow-up or a unit's joke", all(d[1] in steady for d in on))
 
 # The rotation itself, on the standalone lines (forecast off: the biggest pool).
 day = [render(DATE, h, forecast="no") for h in range(7, 17)]

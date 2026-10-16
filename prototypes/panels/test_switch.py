@@ -98,15 +98,18 @@ expect("next only, sarcasm On: the sarcastic line", WORDS in render(False, nxt=T
 for view in VIEWS:
     html = render(False, view, feels=STEADY, nxt=True)
     expect(f"next only on a steady day: one drawing, 'works all day' ({view})",
-           PANELS not in html and any(t in html for t in TEXTS["en"]["facts"]["steady"]))
+           PANELS not in html and any(t.split(" || ")[0].replace("'", "&#39;") in html or t.split(" || ")[0] in html
+                                      for t in TEXTS["en"]["facts"]["steady"] + TEXTS["en"].get("units_10", {}).get("steady", [])))
 
 # Which sarcastic line (round 11): under the forecast line only follow-ups
 # (flavour_10, by the day's mood); everywhere else standalone lines: now lines
 # (now_10, by the Now drawing) and the day's standalone lines (alone_10);
 # with two or three drawings and no words, the lines for the drawings too.
 MOODS = ("wet", "warming", "cooling", "cold", "fickle", "hot", "snow", "nice", "cool", "evening", "night")
-KEYS = ("now_10", "alone_10", "flavour_10", "flavour_vf_10")
+KEYS = ("now_10", "alone_10", "flavour_10", "flavour_vf_10", "units_10")
 saved = {k: TEXTS["en"].get(k) for k in KEYS}
+# Without units: a situation that has some shows one instead (tested below).
+TEXTS["en"].pop("units_10", None)
 TEXTS["en"]["now_10"] = {m: ["NOW LINE"] for m in MOODS}
 TEXTS["en"]["alone_10"] = {m: ["ALONE LINE"] for m in MOODS}
 GROUPS = ("rain", "snow", "off", "on", "offon", "hot", "steady", "cold", "evening", "night")
@@ -348,6 +351,27 @@ expect("units: a rainy steady day, the rain's unit",
 html = render(True, feels=STEADY, hour=19)
 expect("units: one sentence with both, no second line", "ONE SENTENCE WITH BOTH." in words_of(html) and html.count("<p") == 1)
 expect("units: a day without units for its situation works as before", "UNIT" not in render(True, hour=7))
+
+# A special day comes with its fixed sentence (facts.steady_special), never
+# a unit's or a separately picked one; on a cold or hot day, or a rainy one,
+# the weather's own unit has the say (owner, round 17).
+saved_fl = TEXTS["en"]["flavour_10"]
+TEXTS["en"]["flavour_10"] = dict(saved_fl, day_monday=["MONDAY A.", "MONDAY B.", "MONDAY C."])
+TEXTS["en"]["units_10"]["steady_cold"] = ["COLD UNIT. || COLD JOKE."]
+special = TEXTS["en"]["facts"]["steady_special"][0]
+DATE = "2026-10-19"  # a Monday
+html = render(True, feels=STEADY, hour=8)
+expect("special day, forecast on: the fixed sentence and the day's line",
+       special in html and "MONDAY" in html and "UNIT" not in html)
+html = render(False, feels=STEADY, hour=8, nxt=True)
+expect("special day, one drawing: the fixed sentence and the day's line", special in html and "MONDAY" in html)
+expect("special day, the odd hour: the unit", "UNIT FACT. UNIT JOKE." in words_of(render(True, feels=STEADY, hour=9)))
+html = render(True, feels=[0] * 24, hour=8)
+expect("special day on a cold day: the cold unit", "COLD UNIT. COLD JOKE." in words_of(html) and "MONDAY" not in html)
+html = render(True, feels=STEADY, hour=8, probs=[0] * 14 + [80] * 3 + [0] * 7, codes=[0] * 14 + [61] * 3 + [0] * 7)
+expect("special day on a rainy day: the rain's unit", "RAIN JOKE." in words_of(html) and "MONDAY" not in html)
+DATE = "2026-06-10"
+TEXTS["en"]["flavour_10"] = saved_fl
 for k, v in saved_units.items():
     if v is None:
         TEXTS["en"].pop(k, None)

@@ -272,6 +272,7 @@ after the fact + flavour block and the picture.
       steady day (UNITS there), its sentence in place of "works all day"
       and its own joke. Not when rain or snow decided the unit.
       {%- endcomment %}
+      {%- if sp_fact != '' -%}{%- assign panel_fact = sp_fact -%}{%- endif -%}
       {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
         {%- assign panel_fact = f_temp -%}
         {%- assign flavour_line = unit_joke -%}

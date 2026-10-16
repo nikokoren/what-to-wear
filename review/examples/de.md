@@ -326,7 +326,12 @@ Do not edit by hand; vote on the page instead.
 
 - Da hätt ich heute auch frei nehmen können.
 - Dann kann ja nur noch alles andere schiefgehen.
+- Dein Outfit passt heute den ganzen Tag. || Wenn doch alles so einfach wär.
 - Für so eine Ansage bin ich eigentlich überqualifiziert.
+- Heute ändert sich nichts, was du anhast, passt den ganzen Tag. || Für so eine Ansage bin ich eigentlich überqualifiziert.
+- Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch frei nehmen können.
+- Was du anhast, passt den ganzen Tag. || Dann bin ich heute wohl nur Deko.
+- Was du anhast, passt den ganzen Tag. || Wenigstens das Wetter ist heute mal unkompliziert.
 - Wenn doch alles so einfach wär.
 
 ## steady · sarcastic
@@ -334,6 +339,12 @@ Do not edit by hand; vote on the page instead.
 - Dann kannst du heute ja nichts falsch machen. Theoretisch.
 - Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.
 - Ob's dir steht, ist eine andere Frage.
+- Was du anhast, passt den ganzen Tag. || Auch für die Joggingrunde, die du dann doch nicht drehst.
+- Was du anhast, passt den ganzen Tag. || Damit hast du die einzige richtige Entscheidung des Tages schon hinter dir.
+- Was du anhast, passt den ganzen Tag. || Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.
+- Was du anhast, passt den ganzen Tag. || Mehr kann ich für dich heute nicht tun.
+- Was du anhast, passt den ganzen Tag. || Ob's dir steht, ist eine andere Frage.
+- Wettermäßig passt, was du anhast, den ganzen Tag. || Modisch reden wir lieber nicht drüber.
 - Zumindest bis zum ersten Kaffeefleck.
 
 ## steady_cold · plain
@@ -343,17 +354,54 @@ Do not edit by hand; vote on the page instead.
 - Es bleibt den ganzen Tag so kalt.
 - Kalt bleibt's heute, und zwar den ganzen Tag.
 
+## steady_cold · dry
+
+- Die Kälte hält den ganzen Tag an. || Da bleibt immerhin das Bier auf dem Balkon schön kühl.
+- Es bleibt den ganzen Tag so kalt. || Da hilft auch kein Jammern.
+- Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist eine Drohung.
+- Es bleibt den ganzen Tag so kalt. || Wer jetzt „herrlich frisch“ sagt, kriegt von mir keinen Wetterbericht mehr.
+
+## steady_cold · sarcastic
+
+- Es bleibt den ganzen Tag so kalt. || Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.
+- Es bleibt den ganzen Tag so kalt. || Dann hast du ja den ganzen Tag ein Gesprächsthema.
+- Es bleibt den ganzen Tag so kalt. || Das Handy bedienst du wieder mit der Nasenspitze. Sehr elegant.
+- Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.
+- Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.
+- Es wird den ganzen Tag nicht wärmer. || Du kannst also aufhören, mich alle fünf Minuten anzuglotzen.
+- Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.
+
 ## steady_evening · plain
 
 - Dein Outfit passt den ganzen Abend.
 - Was du anhast, passt für den ganzen Abend.
 - Was du anhast, passt für den ganzen Abend.
 
+## steady_evening · dry
+
+- Was du anhast, passt den ganzen Abend. || Gut so. Für Überraschungen bin ich schon zu müde.
+
+## steady_evening · sarcastic
+
+- Was du anhast, passt den ganzen Abend. || Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.
+- Was du anhast, passt den ganzen Abend. || Für ein Kompliment reicht's trotzdem nicht.
+
 ## steady_hot · plain
 
 - Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.
 - Es bleibt bis zum Abend heiß. Nimm Wasser mit und bleib im Schatten.
 - Heute bleibt's heiß. Trink genug Wasser und meide die pralle Sonne.
+
+## steady_hot · sarcastic
+
+- Heute bleibt's heiß, trink viel Wasser und such dir Schatten. || Und komm mir nicht mit „Ich hab keinen Durst“.
+
+## steady_night · sarcastic
+
+- Was du anhast, passt für den Rest der Nacht. || Also für die zehn Minuten, bis du auf dem Sofa einschläfst.
+- Was du anhast, passt für den Rest der Nacht. || Auch für den dritten Gang zum Kühlschrank.
+- Was du anhast, passt für den Rest der Nacht. || Um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank.
+- Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust, frag ich lieber nicht.
 
 ## storm · sarcastic
 
