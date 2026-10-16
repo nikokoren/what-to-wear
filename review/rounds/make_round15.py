@@ -31,9 +31,42 @@ ROUND = "2026-10-polish"
 STOP_KEYS = ("p_drier", "p_wet_again")
 
 
-def main():
-    if r13.voted_already(ROUND):
-        raise SystemExit(f"{ROUND} has votes; not rebuilding it")
+DAY_CTX = {
+    "theme_ghd": "Groundhog Day, 2 February", "theme_pi": "Pi Day, 14 March", "theme_easter": "Easter Sunday",
+    "theme_force": "Star Wars Day, 4 May", "theme_bike": "World Bicycle Day, 3 June",
+    "theme_tdf": "the Tour de France, 1 to 23 July (every steady day for three weeks)",
+    "theme_okt": "Oktoberfest, 20 September to 5 October",
+    "day_monday": "Monday mornings, before noon", "day_friday": "Friday afternoons, from noon",
+    "day_dst_spring": "the Sunday the clocks go forward, and the Monday after",
+    "day_dst_fall": "the Sunday the clocks go back, and the Monday after",
+    "day_longest": "the longest day of the year", "day_shortest": "the shortest day of the year",
+}
+
+
+def special_row(lang, item, doc, base):
+    """A theme day or special day line: on a steady day, under "works all
+    day", or alone under the drawing (round 16)."""
+    section, key = item["path"].split(".")
+    level = section.rsplit("_", 1)[1]
+    facts = doc["facts"]
+    fact = r8.sentence_case(r8.fill(facts["steady"][0], r8.fills(lang, facts["steady"][0], base, facts)))
+    when = DAY_CTX.get(key, key)
+    row = {"lang": lang, "path": item["path"], "text": item["text"], "role": "flavour", "new": True,
+           "sprite": "sweater_dry", "fact": fact, "batch": ("Theme: " if key.startswith("theme_") else "Day: ") + key.split("_", 1)[1],
+           "meaning": f"New sarcastic line at {r13.LEVEL[level]}: {when}. "
+                      "Shows on a day whose weather doesn't change, under \"works all day\" or alone under the drawing."}
+    hints = ["Every other hour on the day"] if key.startswith("day_") else []
+    if item.get("answers"):
+        row["answers"] = item["answers"]
+        hints.append("Answers a “Write new”")
+    if hints:
+        row["hint"] = " · ".join(hints)
+    return row
+
+
+def main(rnd=ROUND, prefix="po"):
+    if r13.voted_already(rnd):
+        raise SystemExit(f"{rnd} has votes; not rebuilding it")
     lines = []
     for lang in ("en", "de"):
         doc = json.loads((r8.PROTO / f"{lang}.json").read_text(encoding="utf-8"))
@@ -44,12 +77,15 @@ def main():
         existing = {t for s, pools in doc.items() if isinstance(pools, dict) and s != "facts"
                     for v in pools.values() if isinstance(v, list) for t in v if isinstance(t, str)}
         seen = set()
-        for item in json.loads((HERE / ROUND / f"{lang}.json").read_text(encoding="utf-8"))["lines"]:
+        for item in json.loads((HERE / rnd / f"{lang}.json").read_text(encoding="utf-8"))["lines"]:
             text = item["text"] = item["text"].strip()
             if text in seen or text in voted or text in existing:
                 print(f"  {lang} skipped, already there: {text}")
                 continue
             seen.add(text)
+            if item["path"].split(".")[1].startswith(("theme_", "day_")):
+                lines.append(special_row(lang, item, doc, base))
+                continue
             if not item["path"].startswith("fact_0."):
                 lines.append(r13.flavour_row(lang, item, doc, base))
                 continue
@@ -81,8 +117,8 @@ def main():
                           "under": r14.under_line(doc, group, fills),
                           "meaning": "Forecast line, the same at every sarcasm level. " + meaning,
                           "hint": " · ".join(hints)})
-    out = {"round": ROUND, "idPrefix": "po", "lines": lines}
-    path = HERE / f"{ROUND}.json"
+    out = {"round": rnd, "idPrefix": prefix, "lines": lines}
+    path = HERE / f"{rnd}.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     by = {}
     for r in lines:
