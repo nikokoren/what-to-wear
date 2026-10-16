@@ -156,6 +156,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
 {%- assign wmo = 0 -%}
 {%- assign is_now_precip = 0 -%}
 {%- assign heat_danger = false -%}
+{%- assign stop_idx = -1 -%}
 {%- assign is_now_snow = 0 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
@@ -376,6 +377,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- assign back_best = 0 -%}
       {%- assign back_peak = 0 -%}
       {%- assign back_idx = -1 -%}
+            {%- assign stop_idx = -1 -%}
+      {%- assign stop_try = -1 -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
         {%- if pv > peak_rain -%}
@@ -410,8 +413,10 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
           {%- endif -%}
         {%- elsif pv < RAIN_LOW -%}
           {%- assign dry_run = dry_run | plus: 1 -%}
+          {%- if dry_run == 1 -%}{%- assign stop_try = i -%}{%- endif -%}
           {%- if dry_run >= 2 -%}
             {%- assign gap_found = true -%}
+            {%- assign stop_idx = stop_try -%}
           {%- endif -%}
         {%- else -%}
           {%- assign dry_run = 0 -%}
@@ -962,11 +967,31 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign pk = pkt -%}
       {%- endif -%}
     {%- endif -%}
+        {%- assign when_stop = '' -%}
+    {%- if stop_idx >= 0 and is_now_precip == 1 -%}
+      {%- assign sgap = stop_idx | minus: now_index -%}
+      {%- assign sh = local_hour | plus: sgap -%}
+      {%- if sh > 23 -%}{%- assign sh = 23 -%}{%- endif -%}
+      {%- assign sb = HOUR_BUCKET[sh] | plus: 0 -%}
+      {%- if sb == now_bucket and sgap >= 1 and sgap <= 3 -%}
+        {%- assign sgi = sgap | minus: 1 -%}
+        {%- assign when_stop = RELATIVE[sgi] -%}
+      {%- else -%}
+        {%- assign when_stop = BUCKETS[sb] -%}
+      {%- endif -%}
+    {%- endif -%}
     {%- assign p_list = F[pk] -%}
     {%- if p_list -%}
       {%- assign p_n = p_list | size -%}
       {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
-      {%- assign f_precip = p_list[p_vi] | replace: '{WHENP}', when_precip -%}
+      {%- for k in (1..p_n) -%}
+        {%- assign p_cand = p_list[p_vi] -%}
+        {%- unless p_cand contains '{WHENSTOP}' and when_stop == '' -%}
+          {%- assign f_precip = p_cand | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
+          {%- break -%}
+        {%- endunless -%}
+        {%- assign p_vi = p_vi | plus: 1 | modulo: p_n -%}
+      {%- endfor -%}
     {%- endif -%}
   {%- endif -%}
   {%- if is_steady and f_precip != '' -%}

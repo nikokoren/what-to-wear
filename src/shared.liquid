@@ -313,6 +313,7 @@ single contains test instead of a chained and/or condition.
 {%- assign wmo = 0 -%}
 {%- assign is_now_precip = 0 -%}
 {%- assign heat_danger = false -%}
+{%- assign stop_idx = -1 -%}
 {%- assign is_now_snow = 0 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
@@ -645,6 +646,9 @@ single contains test instead of a chained and/or condition.
       {%- assign back_best = 0 -%}
       {%- assign back_peak = 0 -%}
       {%- assign back_idx = -1 -%}
+      {%- comment %} When the rain stops: the first dry hour of the first dry break (for {WHENSTOP}). {%- endcomment %}
+      {%- assign stop_idx = -1 -%}
+      {%- assign stop_try = -1 -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
         {%- if pv > peak_rain -%}
@@ -679,8 +683,10 @@ single contains test instead of a chained and/or condition.
           {%- endif -%}
         {%- elsif pv < RAIN_LOW -%}
           {%- assign dry_run = dry_run | plus: 1 -%}
+          {%- if dry_run == 1 -%}{%- assign stop_try = i -%}{%- endif -%}
           {%- if dry_run >= 2 -%}
             {%- assign gap_found = true -%}
+            {%- assign stop_idx = stop_try -%}
           {%- endif -%}
         {%- else -%}
           {%- assign dry_run = 0 -%}

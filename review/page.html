@@ -199,7 +199,7 @@ function remember() { try { localStorage.setItem("wtw-review-ui", JSON.stringify
 function editOf(r) { const d = decisions.get(r.id); return d && d.edit || ""; }
 // The wording on screen: what is being typed, else the saved edit, else the line as written.
 function wordingOf(r) { return draft && draft.id === r.id ? draft.text : (editOf(r) || r.text); }
-const PLACEHOLDERS = ["{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"];
+const PLACEHOLDERS = ["{WHENSTOP}", "{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"];
 function fillsOf(r) { return ui.time === "hours" && r.fillsAlt ? r.fillsAlt : (r.fills || {}); }
 function fill(text, fills) { for (const k of PLACEHOLDERS) text = text.split(k).join(fills[k] || ""); return text.replace(/\s+/g, " ").trim(); }
 // As the markup does it: every sentence starts with a capital.

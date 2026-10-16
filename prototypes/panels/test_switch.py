@@ -281,6 +281,18 @@ for h in (8, 9):
         expect(f"the same layer first and last at {h}:30: no 'extra layer' line", "VF COOLING" not in html)
 TEXTS["en"]["flavour_vf_11"] = saved_vf
 
+# {WHENSTOP}: when the rain falling now stops. Raining until 11, dry after:
+# a wording with the stop time says it; with no dry break in the window
+# (rain all day) such a wording is skipped for one without it.
+saved_facts = TEXTS["en"]["facts"]
+TEXTS["en"]["facts"] = dict(saved_facts, p_drier=["STOPS {WHENSTOP}."], p_stays_wet=["ALL DAY {WHENSTOP}.", "ALL DAY."])
+WET_AM = [90] * 11 + [0] * 13
+html = render(True, feels=STEADY, hour=8, probs=WET_AM, codes=[61] * 11 + [0] * 13)
+expect("rain stopping: the stop time", says(html, r"STOPS (in three hours|around midday)\."))
+html = render(True, feels=STEADY, hour=8, probs=[90] * 24, codes=[61] * 24)
+expect("rain all day: no stop time, the other wording", says(html, r"ALL DAY\.") and "{WHENSTOP}" not in html)
+TEXTS["en"]["facts"] = saved_facts
+
 # A texts file older than the markup (the texts URL behind: a fork's pinned
 # commit, or jsDelivr serving an old @main for a while after a release): no
 # now or day pools, its lines by the day's mood, and no "cooling" ones. A

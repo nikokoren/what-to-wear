@@ -156,7 +156,7 @@ def fill(text, doc, garment_rank=3):
 
 def fill_with(text, fills):
     """A template with a round's own placeholder words (round 8)."""
-    for k in ("{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"):
+    for k in ("{WHENSTOP}", "{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"):
         text = text.replace(k, fills.get(k, ""))
     return re.sub(r"  +", " ", text).strip()
 

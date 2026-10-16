@@ -136,11 +136,35 @@ current time moves every 15 minutes, so the merge variables change.
         {%- assign pk = pkt -%}
       {%- endif -%}
     {%- endif -%}
+    {%- comment %}
+    {WHENSTOP}: when the rain or snow falling now stops, from the first dry
+    break. A wording that says it is skipped when there's no such time.
+    {%- endcomment %}
+    {%- assign when_stop = '' -%}
+    {%- if stop_idx >= 0 and is_now_precip == 1 -%}
+      {%- assign sgap = stop_idx | minus: now_index -%}
+      {%- assign sh = local_hour | plus: sgap -%}
+      {%- if sh > 23 -%}{%- assign sh = 23 -%}{%- endif -%}
+      {%- assign sb = HOUR_BUCKET[sh] | plus: 0 -%}
+      {%- if sb == now_bucket and sgap >= 1 and sgap <= 3 -%}
+        {%- assign sgi = sgap | minus: 1 -%}
+        {%- assign when_stop = RELATIVE[sgi] -%}
+      {%- else -%}
+        {%- assign when_stop = BUCKETS[sb] -%}
+      {%- endif -%}
+    {%- endif -%}
     {%- assign p_list = F[pk] -%}
     {%- if p_list -%}
       {%- assign p_n = p_list | size -%}
       {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
-      {%- assign f_precip = p_list[p_vi] | replace: '{WHENP}', when_precip -%}
+      {%- for k in (1..p_n) -%}
+        {%- assign p_cand = p_list[p_vi] -%}
+        {%- unless p_cand contains '{WHENSTOP}' and when_stop == '' -%}
+          {%- assign f_precip = p_cand | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
+          {%- break -%}
+        {%- endunless -%}
+        {%- assign p_vi = p_vi | plus: 1 | modulo: p_n -%}
+      {%- endfor -%}
     {%- endif -%}
   {%- endif -%}
   {%- if is_steady and f_precip != '' -%}

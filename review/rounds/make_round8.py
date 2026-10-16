@@ -80,7 +80,7 @@ GARMENT = 2  # the jacket: the arc rows draw it
 def fills(lang, text, base, facts, alt=False):
     """Placeholder -> words, the way the markup fills them on a typical day."""
     b, rel = base["buckets"], base["relative"]
-    f = {"{WHEN2}": b[3], "{WHEN}": b[1] if "{WHEN2}" in text else b[2], "{WHENP}": b[2],
+    f = {"{WHEN2}": b[3], "{WHEN}": b[1] if "{WHEN2}" in text else b[2], "{WHENP}": b[2], "{WHENSTOP}": b[1],
          "{G}": facts["garments"][GARMENT], "{GP}": facts["garments_pron"][GARMENT]}
     if "garments_verb" in facts:
         f["{GV}"] = facts["garments_verb"][GARMENT]
@@ -92,7 +92,7 @@ def fills(lang, text, base, facts, alt=False):
 
 
 def fill(text, f):
-    for k in ("{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"):
+    for k in ("{WHENSTOP}", "{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"):
         text = text.replace(k, f.get(k, ""))
     return " ".join(text.split())
 
