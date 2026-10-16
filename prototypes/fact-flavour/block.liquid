@@ -248,6 +248,17 @@ current time moves every 15 minutes, so the merge variables change.
       {%- assign fl_alone_all = fl_alone_pool -%}
     {%- endif -%}
     {%- comment %}
+    A texts file from before the now and day pools (13 October 2026): its
+    lines are still by the day's mood. That happens when the texts URL is
+    behind the markup (a fork's pinned commit, or jsDelivr still serving
+    an old @main for a few hours after a release). Without this, two
+    screens in three had no sarcastic line.
+    {%- endcomment %}
+    {%- if fl_alone_all == nil and texts[now_key] == nil -%}
+      {%- comment %} Those files have no "cooling" lines: cooling days drew from "cool". {%- endcomment %}
+      {%- if fl_lib[mood] -%}{%- assign fl_alone_all = fl_lib[mood] -%}{%- else -%}{%- assign fl_alone_all = fl_lib['cool'] -%}{%- endif -%}
+    {%- endif -%}
+    {%- comment %}
     A follow-up goes by what the forecast line says, not by the mood: a
     cold day's line may say it stays cold or that the coat comes off. Ten
     groups, each one message: rain, snow (the umbrella or the snow; a

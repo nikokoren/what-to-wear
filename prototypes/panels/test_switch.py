@@ -260,6 +260,24 @@ for lang, ice, storm in (("en", r"\bic[ey]\b", r"thunder"), ("de", r"glatt", r"g
     expect(f"{lang}: freezing rain and thunder, the ice warning",
            says(render(True, feels=COLD, hour=8, lang=lang, probs=RAIN_PM, codes=both), ice))
 
+# A texts file older than the markup (the texts URL behind: a fork's pinned
+# commit, or jsDelivr serving an old @main for a while after a release): no
+# now or day pools, its lines by the day's mood, and no "cooling" ones. A
+# sarcastic line still shows on every screen.
+import copy
+OLD = copy.deepcopy(TEXTS["en"])
+for k in [k for k in OLD if k.startswith(("now_", "alone_"))]:
+    del OLD[k]
+for level in ("10", "11"):
+    OLD[f"flavour_{level}"] = {m: [f"OLD {m.upper()}"] for m in ("nice", "cool", "warming", "cold", "hot", "wet", "snow", "fickle", "evening", "night")}
+saved_en = TEXTS["en"]
+TEXTS["en"] = OLD
+pairs = [(render(fc, feels=f, hour=h, nxt=nx), render(fc, feels=f, hour=h, nxt=nx, sarcasm="0"))
+         for f in (FEELS, STEADY, CO, NORTH) for h in (7, 10, 13, 19)
+         for fc, nx in ((False, True), (True, True), (True, False), (False, False))]
+expect("an older texts file: a sarcastic line on every screen", all(on != off for on, off in pairs))
+TEXTS["en"] = saved_en
+
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:
     src = (BUILD / "views" / f"{view}.liquid").read_text(encoding="utf-8")
