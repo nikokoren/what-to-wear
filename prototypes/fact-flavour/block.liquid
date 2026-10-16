@@ -356,6 +356,57 @@ current time moves every 15 minutes, so the merge variables change.
         {%- assign fl_theme = true -%}
       {%- endif -%}
     {%- endif -%}
+    {%- comment %}
+    Special days (round 16), on a day with nothing else to say and every
+    other hour, so the weather keeps its say: the clock change (that Sunday
+    and the Monday after; Europe, the US and Canada, by the forecast's time
+    zone), the longest and shortest day (swapped south of the equator),
+    Monday mornings and Friday afternoons. A seasonal theme day wins.
+    {%- endcomment %}
+    {%- if is_steady and fl_theme == false -%}
+      {%- assign day_key = '' -%}
+      {%- assign dmon = today_md | slice: 0, 2 -%}
+      {%- assign dday = today_md | slice: 3, 2 | plus: 0 -%}
+      {%- assign tz_probe = ',' | append: IDX_0.timezone | append: ',' -%}
+      {%- assign dst_rule = '' -%}
+      {%- if tz_probe contains ',Europe/' -%}{%- assign dst_rule = 'eu' -%}{%- endif -%}
+      {%- if ',Europe/Moscow,Europe/Minsk,Europe/Istanbul,Europe/Kaliningrad,Europe/Samara,Europe/Volgograd,Europe/Saratov,Europe/Ulyanovsk,Europe/Astrakhan,Europe/Kirov,' contains tz_probe -%}{%- assign dst_rule = '' -%}{%- endif -%}
+      {%- if ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Anchorage,America/Juneau,America/Boise,America/Detroit,America/Indiana/Indianapolis,America/Kentucky/Louisville,America/Toronto,America/Montreal,America/Vancouver,America/Edmonton,America/Winnipeg,America/Halifax,America/St_Johns,America/Moncton,' contains tz_probe -%}{%- assign dst_rule = 'na' -%}{%- endif -%}
+      {%- if dst_rule == 'eu' -%}
+        {%- if dmon == '03' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if dmon == '03' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if today_md == '04-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- if dmon == '10' and dday >= 25 and weekday_idx == 0 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- if dmon == '10' and dday >= 26 and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- if today_md == '11-01' and weekday_idx == 1 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+      {%- elsif dst_rule == 'na' -%}
+        {%- if dmon == '03' and weekday_idx == 0 -%}
+          {%- if dday >= 8 and dday <= 14 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- elsif dmon == '03' and weekday_idx == 1 -%}
+          {%- if dday >= 9 and dday <= 15 -%}{%- assign day_key = 'dst_spring' -%}{%- endif -%}
+        {%- elsif dmon == '11' and weekday_idx == 0 -%}
+          {%- if dday <= 7 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- elsif dmon == '11' and weekday_idx == 1 -%}
+          {%- if dday >= 2 and dday <= 8 -%}{%- assign day_key = 'dst_fall' -%}{%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if day_key == '' -%}
+        {%- if today_md == '06-21' -%}
+          {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
+        {%- elsif today_md == '12-21' -%}
+          {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}
+        {%- elsif weekday_idx == 1 and local_hour < 12 -%}
+          {%- assign day_key = 'monday' -%}
+        {%- elsif weekday_idx == 5 and local_hour >= 12 -%}
+          {%- assign day_key = 'friday' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign dk = 'day_' | append: day_key -%}
+      {%- assign dhalf = local_hour | modulo: 2 -%}
+      {%- if day_key != '' and dhalf == 0 and fl_lib[dk] -%}
+        {%- assign fl_pool = fl_lib[dk] -%}
+      {%- endif -%}
+    {%- endif -%}
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}
       {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}

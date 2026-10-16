@@ -292,6 +292,36 @@ html = render(True, feels=STEADY, hour=8, probs=[90] * 24, codes=[61] * 24)
 expect("rain all day: no stop time, the other wording", says(html, r"ALL DAY\.") and "{WHENSTOP}" not in html)
 TEXTS["en"]["facts"] = saved_facts
 
+# Special days (round 16), on a steady day and every other hour: the clock
+# change (that Sunday and the Monday after; Europe, the US and Canada),
+# the longest and shortest day (swapped in the south), Monday mornings,
+# Friday afternoons.
+from liquid import Environment as _Env
+DAYENV = _Env().from_string(SHARED + "\n@@{{ day_key }}")
+
+
+def day_key(date, hour, tz="Europe/Vienna", lat=48.2):
+    hours = [f"{date}T{h:02d}:00" for h in range(24)]
+    data = {"utc_offset_seconds": OFFSET, "timezone": tz, "latitude": lat,
+            "current": {"time": f"{date}T{hour:02d}:30", "temperature_2m": 15, "apparent_temperature": 15, "weather_code": 0},
+            "hourly": {"time": hours, "temperature_2m": [15] * 24, "apparent_temperature": [15] * 24,
+                       "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
+    cfg = {"language": "en", "sarcasm_level": "10", "lat_lon": "48.2,16.4", "show_future_suggestions": True}
+    d = dt.date.fromisoformat(date)
+    ts = calendar.timegm((d.year, d.month, d.day, hour, 30, 0)) - OFFSET
+    return DAYENV.render(trmnl={"plugin_settings": {"custom_fields_values": cfg}, "system": {"timestamp_utc": ts},
+                                "user": {"utc_offset": OFFSET}, "device": {"width": 800}},
+                         IDX_0=data, IDX_1=TEXTS["en"]).split("@@")[-1].strip()
+
+
+for date, hour, tz, want in (("2026-10-19", 8, "Europe/Vienna", "monday"), ("2026-10-19", 14, "Europe/Vienna", ""),
+                             ("2026-10-23", 14, "Europe/Vienna", "friday"), ("2026-10-25", 10, "Europe/Vienna", "dst_fall"),
+                             ("2027-03-29", 8, "Europe/Vienna", "dst_spring"), ("2026-11-02", 8, "America/Denver", "dst_fall"),
+                             ("2026-11-02", 8, "America/Phoenix", "monday"), ("2027-03-14", 10, "America/New_York", "dst_spring"),
+                             ("2027-06-21", 10, "Europe/Vienna", "longest")):
+    expect(f"special day {date} {hour}:30 {tz}: {want or 'none'}", day_key(date, hour, tz) == want)
+expect("the longest day in Sydney is the shortest", day_key("2027-06-21", 10, "Australia/Sydney", -33.9) == "shortest")
+
 # A texts file older than the markup (the texts URL behind: a fork's pinned
 # commit, or jsDelivr serving an old @main for a while after a release): no
 # now or day pools, its lines by the day's mood, and no "cooling" ones. A

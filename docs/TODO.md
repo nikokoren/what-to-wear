@@ -302,6 +302,24 @@ to pick it up cold.
    (`shorts_swing`, `shorts_swing_back`; THE LONG-PANTS RULE in
    `src/shared.liquid`). Pinned in `tools/logic_test.py` and
    `prototypes/panels/test_switch.py`.
+17. **Later (owner, October 2026; not now): the UV index.** Sunscreen
+   advice on bright days, in the forecast line and in the sarcastic line,
+   with a setting to switch those lines on or off. Needs `uv_index` (and
+   probably `uv_index_clear_sky`) added to the weather polling URL, which
+   reaches every user, and a new on/off field in the form (optional, like
+   the other switches, so saved settings keep working). Decide the
+   threshold (WHO: 3 moderate, 6 high, 8 very high), which hours count
+   (midday, not 8 am), and how it combines with dangerous heat.
+18. **Round 16 (October 2026): special days.** Lines for the seven theme
+   days that had drawings but no lines (Groundhog Day, Pi Day, Easter,
+   Star Wars Day, World Bicycle Day, the Tour de France, Oktoberfest),
+   and new "day" lines: the clock change (that Sunday and the Monday
+   after; Europe, the US and Canada, by the forecast's time zone), the
+   longest and shortest day (swapped in the south), Monday mornings and
+   Friday afternoons. They show on a steady day, every other hour
+   (`block.liquid`, "Special days"; `test_switch.py` pins the dates).
+   Left for later from the same list: fog and drizzle as their own
+   lines (item 7), yesterday's comparison and wind (polling URL).
 16. **Next: other weather outliers** (rendered 16 October 2026):
    - **The reverse swing** (a "blue norther"): 24 °C at 8 am, freezing
      by 3 pm. Shorts now, then "bring the winter coat". The legs rule
