@@ -364,6 +364,10 @@ Do not edit by hand; vote on the page instead.
 
 - You'll still check the radar every five minutes. I'm hurt, frankly.
 
+## theme_ghd · dry
+
+- Today a rodent does my job, and gets a crowd. Pathetic.
+
 ## theme_ny · dry
 
 - I don't do New Year's resolutions. I was perfect last year too.

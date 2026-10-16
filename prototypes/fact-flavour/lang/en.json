@@ -342,7 +342,8 @@
       "Gripping weather. I can barely stay in my frame.",
       "Peeling off a layer: the closest today gets to drama.",
       "Or keep {GP} on out of loyalty and quietly cook.",
-      "{W:jacket,coat,hoodie,scarf}I'd take a layer off too, but mine are glued on."
+      "{W:jacket,coat,hoodie,scarf}I'd take a layer off too, but mine are glued on.",
+      "{W:hoodie}Try not to get stuck halfway, arms up. I can't come and help."
     ],
     "rain": [
       "Rain or not, my humour stays bone dry.",
@@ -404,7 +405,8 @@
     ],
     "evening": [
       "Whatever the evening brings, the outfit won't be the problem.",
-      "{M:11,12,01}And there's plenty of it. It's been dark since about four."
+      "{M:11,12,01}And there's plenty of it. It's been dark since about four.",
+      "That leaves the evening free for losing the remote."
     ],
     "night": [
       "It also works for bed, I'm told.",
@@ -445,6 +447,44 @@
       "If the power goes out, I'll still be here, showing this.",
       "I'll stay in for this one. Then again, I always do.",
       "All that flashing. Some of us manage fine without a backlight."
+    ],
+    "theme_ghd": [
+      "Today a rodent does my job, and gets a crowd. Pathetic.",
+      "I'll be here long after the groundhog's in bed."
+    ],
+    "theme_pi": [
+      "I'm a rectangle, so I'll be sitting this one out.",
+      "Today's forecast: exactly one outfit. No decimals."
+    ],
+    "theme_easter": [
+      "Happy Easter. Unlike the eggs, the forecast isn't hidden.",
+      "Happy Easter. One egg will turn up in July. There's always one."
+    ],
+    "theme_force": [
+      "These are the clothes you're looking for.",
+      "I have a bad feeling about this. Kidding. It's fine."
+    ],
+    "theme_tdf": [
+      "The Tour riders get a rest day. I don't. Not that I'm complaining."
+    ],
+    "theme_okt": [
+      "Someone has to stay sober and do the forecast.",
+      "So would a dirndl, apparently."
+    ],
+    "day_monday": [
+      "Monday morning. At least one of us is fully charged.",
+      "Monday. I don't do weekends, so I don't see what the fuss is about."
+    ],
+    "day_friday": [
+      "No weekends for me, but no Mondays either. Fair trade.",
+      "My weekend plans: be right, the whole time.",
+      "Weekend plans? The outfit's ready. That's my part done."
+    ],
+    "day_dst_fall": [
+      "An extra hour this weekend. I'd ask what you did with it, but I know."
+    ],
+    "day_longest": [
+      "I look my best in daylight. There's loads of that today."
     ]
   },
   "flavour_11": {
@@ -474,7 +514,8 @@
       "Plenty of evening left for not answering that message.",
       "You'll read all this, then do what you were going to anyway.",
       "Your 'five minutes on the sofa' will probably cover the rest of it.",
-      "You'll probably spend half of it choosing what to watch."
+      "You'll probably spend half of it choosing what to watch.",
+      "Plenty of time to start something you won't finish."
     ],
     "theme_ny": [
       "You'll call this New Year your year. You said that last year."
@@ -550,6 +591,56 @@
     "storm": [
       "You'll still check the radar every five minutes. I'm hurt, frankly.",
       "You'll pretend the thunder didn't make you jump."
+    ],
+    "theme_ghd": [
+      "Same outfit as yesterday, probably. Very on theme.",
+      "You'll make a Groundhog Day joke today. The same one as last year.",
+      "A groundhog is having a better day than you.",
+      "You'd make a good groundhog: pop out, look around, go back in."
+    ],
+    "theme_pi": [
+      "Pi Day, because it's 3/14. You'll pretend you knew that."
+    ],
+    "theme_force": [
+      "Go and say 'May the fourth be with you' to someone who hates it.",
+      "You'll do the voice. Please don't do the voice.",
+      "You still can't name the films in order, can you."
+    ],
+    "theme_bike": [
+      "That exercise bike makes a lovely clothes rack."
+    ],
+    "theme_tdf": [
+      "You watch the Tour for the castles and the scenery. Admit it."
+    ],
+    "day_monday": [
+      "You've already started counting the days to the weekend.",
+      "You hit snooze, didn't you. More than once.",
+      "You said you'd have an early night yesterday.",
+      "Monday morning, and you're reading this before coffee. Bold.",
+      "Same face as last Monday. Very consistent."
+    ],
+    "day_friday": [
+      "You'll say you'll get up early tomorrow. You won't.",
+      "The weekend plans are 'we'll see', aren't they.",
+      "This weekend you'll finally sort out that drawer. Sure.",
+      "You'll leave the laundry until Sunday night. Again."
+    ],
+    "day_dst_spring": [
+      "You'll blame the lost hour all week. It was one hour."
+    ],
+    "day_dst_fall": [
+      "An extra hour of sleep, and you spent it on your phone.",
+      "Clocks changed back. You'll wake up early anyway and resent it.",
+      "Your oven clock will be wrong until spring. You know it."
+    ],
+    "day_longest": [
+      "Longest day of the year and you'll still say you ran out of time.",
+      "Longest day of the year and you'll spend it indoors. With me.",
+      "You'll say 'it's still so light' at ten."
+    ],
+    "day_shortest": [
+      "Shortest day of the year and you'll still waste most of it.",
+      "You'll say 'it's dark already' four times."
     ]
   },
   "topical_11": [

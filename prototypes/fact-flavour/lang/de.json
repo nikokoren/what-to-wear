@@ -445,6 +445,37 @@
       "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich.",
       "Unter einem Baum ist nicht drinnen.",
       "Dein einziger Blitzableiter bist du selbst. Also rein, wenn's donnert."
+    ],
+    "theme_ghd": [
+      "Und täglich grüßt das Murmeltier. Heute sogar offiziell.",
+      "Heute sagt ein Murmeltier das Wetter an. Dem hören alle zu. Mir nie."
+    ],
+    "theme_easter": [
+      "Das letzte Ei findest du wieder erst im Juni.",
+      "Ab Dienstag gibt's die Schokohasen zum halben Preis. Nur so."
+    ],
+    "theme_force": [
+      "Früher hieß das bei uns einfach 4. Mai.",
+      "In einer weit, weit entfernten Galaxis ist das Wetter auch nicht besser."
+    ],
+    "theme_okt": [
+      "Eine Maß kostet so viel wie früher ein ganzes Wochenende.",
+      "Morgen erzählt wieder jeder, er hätt nur zwei Maß gehabt.",
+      "„Ein Prosit der Gemütlichkeit“ läuft jetzt wieder alle zehn Minuten."
+    ],
+    "day_friday": [
+      "Jetzt tun alle, als hätten sie die ganze Woche durchgearbeitet.",
+      "Jetzt planen alle ein Wochenende, das dann doch auf dem Sofa endet.",
+      "Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch.",
+      "Im Supermarkt ist's wieder so voll, als käm der Weltuntergang."
+    ],
+    "day_dst_fall": [
+      "Endlich wieder dunkel um fünf. Hat mir gefehlt.",
+      "Eine Stunde mehr, und ich weiß nicht, wohin damit."
+    ],
+    "day_shortest": [
+      "Ab morgen wird's heller. Langsam. Sehr langsam.",
+      "Ich mach's wie die Sonne und halt mich heute kurz."
     ]
   },
   "flavour_11": {
@@ -565,6 +596,31 @@
       "Fotografier's bitte durchs Fenster. Das Foto wird sowieso nichts.",
       "Zählen zwischen Blitz und Donner kannst du ja. Bis drei immerhin.",
       "Dein „Das zieht vorbei“ hat noch nie gestimmt."
+    ],
+    "theme_easter": [
+      "Du isst vom Schokohasen wieder zuerst die Ohren. Ganz schön brutal."
+    ],
+    "theme_force": [
+      "Du machst bestimmt wieder die Yoda-Stimme. Lass es."
+    ],
+    "theme_okt": [
+      "Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt."
+    ],
+    "day_monday": [
+      "Heute fällt deine Laune wenigstens nicht auf.",
+      "Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell."
+    ],
+    "day_friday": [
+      "Dein Wochenendprogramm: viel vornehmen, nichts machen.",
+      "Am Montag weißt du wieder nicht, wo das Wochenende hin ist.",
+      "Ruh dich am Wochenende gut aus. Von was auch immer.",
+      "Am Wochenende machst du das Gleiche wie sonst. Nur in Jogginghose."
+    ],
+    "day_dst_spring": [
+      "Die fehlende Stunde sieht man dir an."
+    ],
+    "day_dst_fall": [
+      "Jetzt bist du eine Stunde zu früh dran. Einmal im Jahr."
     ]
   },
   "topical_11": [

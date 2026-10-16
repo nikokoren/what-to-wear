@@ -5,6 +5,32 @@ kept line answers yet. Write completely new lines for each spot,
 not variations of what's out (it's all in `review/dont/`), and give
 each new row `"answers": "<id>"` in the next round's file.
 
+## flavour_10.day_longest
+
+- **Out:** Längster Tag des Jahres. Ab morgen geht's wieder bergab.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: the longest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-40e28295c6a2` (2026-10-days)
+
+## flavour_10.day_monday
+
+- **Out:** Montag. Wer den erfunden hat, war bestimmt Frühaufsteher.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-5d7d515b9c30` (2026-10-days)
+- **Out:** Montagmorgen. Ich bin auch noch nicht ganz da. Dabei schlaf ich nie.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-ef818351bbce` (2026-10-days)
+- **Out:** Montagmorgen. Heute ist der Kaffee wichtiger als meine Vorhersage.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-f75c7c4ba8c4` (2026-10-days)
+
 ## flavour_10.pants
 
 - **Out:** Die in kurzen Hosen lachen jetzt noch.
@@ -22,6 +48,87 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.
   **Answers:** `rp-de-c95ef84f7140` (2026-10-replies)
 
+## flavour_10.theme_okt
+
+- **Out:** Oktoberfest. Heißt so, obwohl's im September anfängt. Typisch.
+  **Tags:** robotic
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Oktoberfest, 20 September to 5 October. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-1acaa4cd90dd` (2026-10-days)
+- **Out:** Oktoberfest. Und plötzlich hat jeder eine Lederhose. Auch in Hamburg.
+  **Tags:** robotic
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Oktoberfest, 20 September to 5 October. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-420be7dea882` (2026-10-days)
+- **Out:** Oktoberfest. Ich bleib nüchtern. Einer muss ja das Wetter ansagen.
+  **Tags:** robotic, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Oktoberfest, 20 September to 5 October. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-c2ce76ab1c6d` (2026-10-days)
+
+## flavour_10.theme_pi
+
+- **Out:** Pi-Tag. Ich kann's bis zur zweiten Nachkommastelle. Reicht auch.
+  **Tags:** robotic, too long, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Pi Day, 14 March. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-74a7c78714e0` (2026-10-days)
+- **Out:** Pi-Tag. Ein Feiertag für Leute mit Taschenrechner in der Hemdtasche.
+  **Tags:** robotic, not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: Pi Day, 14 March. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-e146a06ca32d` (2026-10-days)
+
+## flavour_10.theme_tdf
+
+- **Out:** Tour de France. Der Kommentator erzählt wieder vier Stunden lang was über Schlösser.
+  **Tags:** robotic, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-69bd842ac4f1` (2026-10-days)
+- **Out:** Tour de France. Drei Wochen lang schauen Leute anderen Leuten beim Schwitzen zu.
+  **Tags:** not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at On: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-76e9e6bbff45` (2026-10-days)
+
+## flavour_11.day_dst_spring
+
+- **Out:** Zeitumstellung. Deine Ausrede fürs Zuspätkommen gilt aber nur heute.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the Sunday the clocks go forward, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-c3c8b6acb719` (2026-10-days)
+
+## flavour_11.day_longest
+
+- **Out:** Längster Tag des Jahres. So viel Tageslicht, und du bist vermutlich drinnen.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the longest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-8d061aa2864b` (2026-10-days)
+
+## flavour_11.day_monday
+
+- **Out:** Montag. Du siehst aus wie Montag.
+  **Tags:** robotic, not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-39c751b6078d` (2026-10-days)
+
+## flavour_11.day_shortest
+
+- **Out:** Kürzester Tag des Jahres. Zum Glück, so viel hattest du ja nicht vor.
+  **Tags:** robotic, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the shortest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-6d2893dbc8bc` (2026-10-days)
+- **Out:** Kürzester Tag des Jahres. Für dich die perfekte Länge.
+  **Tags:** robotic, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the shortest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-91750aa3bb86` (2026-10-days)
+
 ## flavour_11.ice
 
 - **Out:** Heute ist Zuspätkommen ausnahmsweise vernünftig.
@@ -29,3 +136,47 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “Heute Nachmittag kommt gefrierender Regen, dann wird's auf Straßen und Gehwegen glatt. Nimm den Schirm mit und geh vorsichtig.”
   **What it's for:** New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
   **Answers:** `rp-de-89d7bf36fe78` (2026-10-replies)
+
+## flavour_11.theme_force
+
+- **Out:** Star-Wars-Tag. Die Macht ist mit dir? Die Motivation jedenfalls nicht.
+  **Tags:** not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: Star Wars Day, 4 May. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-5cdafde2dc47` (2026-10-days)
+- **Out:** Star-Wars-Tag. Du wärst übrigens Sturmtruppler. Die treffen auch nie was.
+  **Tags:** not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: Star Wars Day, 4 May. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-718739ab6513` (2026-10-days)
+
+## flavour_11.theme_pi
+
+- **Out:** Pi-Tag. Ein Feiertag für alle, die in Mathe aufgepasst haben. Also nicht für dich.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: Pi Day, 14 March. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-d8f0076fad44` (2026-10-days)
+- **Out:** Pi-Tag. Drei Komma eins vier. Weiter kommst du auch nicht, oder?
+  **Tags:** not funny, robotic, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: Pi Day, 14 March. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-fcb76299eab7` (2026-10-days)
+
+## flavour_11.theme_tdf
+
+- **Out:** Tour de France. Ein gepunktetes Trikot hast du auch. Vom Ketchup.
+  **Tags:** not funny, robotic, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-66020a299d72` (2026-10-days)
+- **Out:** Tour de France. Bis Ende Juli bist du wieder Radsportexperte.
+  **Tags:** robotic, not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-9e1acee1aaae` (2026-10-days)
+- **Out:** Tour de France. Du schaust drei Stunden zu und nennst das Ausdauersport.
+  **Tags:** robotic, not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
+  **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-de-cc365bc6fcc4` (2026-10-days)

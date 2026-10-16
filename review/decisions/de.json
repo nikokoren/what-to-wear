@@ -20834,6 +20834,1874 @@
   "edit": "Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter.",
   "updatedAt": "2026-10-10T09:11:25.553Z"
  },
+ "sd-de-0234365fb119": {
+  "level": "11",
+  "key": "theme_force",
+  "path": "flavour_11.theme_force[+]",
+  "text": "Möge die Macht mit dir sein. Bei dir braucht sie Verstärkung.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:23:07.826Z"
+ },
+ "sd-de-03c155a3a034": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Ostersonntag. Die Schokoeier hast du vermutlich schon beim Verstecken gegessen.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:40.176Z"
+ },
+ "sd-de-04c0bb5b2337": {
+  "level": "10",
+  "key": "theme_ghd",
+  "path": "flavour_10.theme_ghd[+]",
+  "text": "Heute sagt ein Murmeltier das Wetter an. Dem hören alle zu. Mir nie.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:52.325Z"
+ },
+ "sd-de-04e23e764d54": {
+  "level": "11",
+  "key": "day_dst_fall",
+  "path": "flavour_11.day_dst_fall[+]",
+  "text": "Die Uhren gehen zurück. Du gehst ja sowieso immer eine Stunde nach.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:20.142Z"
+ },
+ "sd-de-08c9bf192082": {
+  "level": "11",
+  "key": "theme_bike",
+  "path": "flavour_11.theme_bike[+]",
+  "text": "Weltfahrradtag. Dein Rad hat vermutlich einen Platten. Seit letztem Sommer.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:19.641Z"
+ },
+ "sd-de-09bb96043e25": {
+  "level": "11",
+  "key": "day_dst_spring",
+  "path": "flavour_11.day_dst_spring[+]",
+  "text": "Uhren vorgestellt. Du bist jetzt offiziell eine Stunde hinterher. Also wie immer.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:50.575Z"
+ },
+ "sd-de-0c3b4c3dab42": {
+  "level": "11",
+  "key": "ice",
+  "path": "flavour_11.ice[+]",
+  "text": "Heute bist du nicht ungeschickt, heute ist's glatt. Merk dir den Unterschied.",
+  "source": "candidate",
+  "batch": "Follow-up: ice",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:15.009Z"
+ },
+ "sd-de-0c5a71e58834": {
+  "level": "10",
+  "key": "theme_tdf",
+  "path": "flavour_10.theme_tdf[+]",
+  "text": "Tour de France. Im Fernsehen läuft wieder stundenlang Landschaft mit Fahrrad.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:35.292Z"
+ },
+ "sd-de-0f1bee0a781b": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Heute gibt's bei dir sicher wieder Pizza. Wie jeden Freitag.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:20:14.593Z"
+ },
+ "sd-de-10137b81b5d1": {
+  "level": "11",
+  "key": "day_longest",
+  "path": "flavour_11.day_longest[+]",
+  "text": "Längster Tag des Jahres. Mehr Zeit, um nichts zu erledigen.",
+  "source": "candidate",
+  "batch": "Day: longest",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:20:58.976Z"
+ },
+ "sd-de-11b9be45bd19": {
+  "level": "10",
+  "key": "theme_ghd",
+  "path": "flavour_10.theme_ghd[+]",
+  "text": "Murmeltiertag. Für mich ist das jeden Tag.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:55.409Z"
+ },
+ "sd-de-1734f81a6b0d": {
+  "level": "11",
+  "key": "day_dst_fall",
+  "path": "flavour_11.day_dst_fall[+]",
+  "text": "Winterzeit. Dunkel um fünf. Deine Ausrede für den Rest des Jahres.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:26.376Z"
+ },
+ "sd-de-1acaa4cd90dd": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Heißt so, obwohl's im September anfängt. Typisch.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:17:13.393Z"
+ },
+ "sd-de-1b9e21fe0217": {
+  "level": "10",
+  "key": "theme_bike",
+  "path": "flavour_10.theme_bike[+]",
+  "text": "Weltfahrradtag. Und der Radweg ist wieder zugeparkt.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:29.975Z"
+ },
+ "sd-de-1ca9de180f62": {
+  "level": "10",
+  "key": "theme_pi",
+  "path": "flavour_10.theme_pi[+]",
+  "text": "Pi-Tag. Ich rechne heute nichts aus. Das Wetter bleibt ja, wie es ist.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:06.309Z"
+ },
+ "sd-de-1fa66d5c489e": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Morgen erzählt wieder jeder, er hätt nur zwei Maß gehabt.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Morgen erzählt wieder jeder, er hätt nur zwei Maß gehabt.",
+  "updatedAt": "2026-10-16T14:17:23.644Z"
+ },
+ "sd-de-20afb78586cd": {
+  "level": "10",
+  "key": "theme_easter",
+  "path": "flavour_10.theme_easter[+]",
+  "text": "Ostersonntag. Ab Dienstag gibt's die Schokohasen zum halben Preis. Nur so.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Ab Dienstag gibt's die Schokohasen zum halben Preis. Nur so.",
+  "updatedAt": "2026-10-16T14:15:49.143Z"
+ },
+ "sd-de-232272fb199d": {
+  "level": "11",
+  "key": "day_dst_fall",
+  "path": "flavour_11.day_dst_fall[+]",
+  "text": "Zeitumstellung. Jetzt bist du eine Stunde zu früh dran. Einmal im Jahr.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Jetzt bist du eine Stunde zu früh dran. Einmal im Jahr.",
+  "updatedAt": "2026-10-16T14:19:37.727Z"
+ },
+ "sd-de-242975a5b594": {
+  "level": "11",
+  "key": "theme_okt",
+  "path": "flavour_11.theme_okt[+]",
+  "text": "Oktoberfest. Du sagst wieder „nur eine Maß“. Ich zähl mit.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:07.676Z"
+ },
+ "sd-de-246d1649497d": {
+  "level": "10",
+  "key": "day_friday",
+  "path": "flavour_10.day_friday[+]",
+  "text": "Freitag. Die Woche ist fast geschafft. Gemocht hab ich sie trotzdem nicht.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:13:02.442Z"
+ },
+ "sd-de-2479e4fc1af8": {
+  "level": "10",
+  "key": "theme_easter",
+  "path": "flavour_10.theme_easter[+]",
+  "text": "Ostersonntag. Das letzte Ei findet man sowieso erst im Juni.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Das letzte Ei findest du wieder erst im Juni.",
+  "updatedAt": "2026-10-16T14:16:04.493Z"
+ },
+ "sd-de-258cb38b795b": {
+  "level": "10",
+  "key": "theme_force",
+  "path": "flavour_10.theme_force[+]",
+  "text": "Star-Wars-Tag. Ein Lichtschwert hätt ich gern. Ich hab nicht mal Licht.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:23.242Z"
+ },
+ "sd-de-25a41dd0d537": {
+  "level": "10",
+  "key": "theme_ghd",
+  "path": "flavour_10.theme_ghd[+]",
+  "text": "Murmeltiertag. Ich sag heute einfach wieder das Gleiche.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:58.975Z"
+ },
+ "sd-de-25f696502b2d": {
+  "level": "11",
+  "key": "theme_bike",
+  "path": "flavour_11.theme_bike[+]",
+  "text": "Am Weltfahrradtag radelst du sicher wieder zur Eisdiele und nennst es Training.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:27.260Z"
+ },
+ "sd-de-27233ffa51a3": {
+  "level": "11",
+  "key": "day_longest",
+  "path": "flavour_11.day_longest[+]",
+  "text": "Heute ist der längste Tag. Deine To-do-Liste ist trotzdem länger.",
+  "source": "candidate",
+  "batch": "Day: longest",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:02.342Z"
+ },
+ "sd-de-27ef7d2a21d2": {
+  "level": "10",
+  "key": "theme_pi",
+  "path": "flavour_10.theme_pi[+]",
+  "text": "Pi-Tag. Eine Zahl ohne Ende. Wie meine Liste mit Beschwerden.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:11.909Z"
+ },
+ "sd-de-2ddb35020b84": {
+  "level": "10",
+  "key": "day_shortest",
+  "path": "flavour_10.day_shortest[+]",
+  "text": "Kürzester Tag des Jahres. Ab morgen wird's heller. Langsam. Sehr langsam.",
+  "source": "candidate",
+  "batch": "Day: shortest",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Ab morgen wird's heller. Langsam. Sehr langsam.",
+  "updatedAt": "2026-10-16T14:14:54.143Z"
+ },
+ "sd-de-2f4a9e936c06": {
+  "level": "10",
+  "key": "day_dst_spring",
+  "path": "flavour_10.day_dst_spring[+]",
+  "text": "Sommerzeit. Eine Stunde weniger, und trotzdem wird's nicht früher Sommer.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:12:40.858Z"
+ },
+ "sd-de-3108013bf4e4": {
+  "level": "11",
+  "key": "day_monday",
+  "path": "flavour_11.day_monday[+]",
+  "text": "Montag. Was hast du am Wochenende eigentlich gemacht? Ach, lass.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:14.676Z"
+ },
+ "sd-de-3123b2a8900d": {
+  "level": "10",
+  "key": "day_dst_spring",
+  "path": "flavour_10.day_dst_spring[+]",
+  "text": "Eine Stunde weniger seit der Zeitumstellung. Merken tut man's bis Mittwoch.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:12:47.309Z"
+ },
+ "sd-de-31b1cd6edf10": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Ostersonntag. Die Fastenzeit hast du vermutlich am Aschermittwoch schon abgebrochen.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:44.426Z"
+ },
+ "sd-de-34d81e7a03b5": {
+  "level": "11",
+  "key": "day_dst_spring",
+  "path": "flavour_11.day_dst_spring[+]",
+  "text": "Sommerzeit. Eine Stunde weniger, und du hast trotzdem nichts verpasst.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:54.959Z"
+ },
+ "sd-de-37198074dd40": {
+  "level": "11",
+  "key": "theme_tdf",
+  "path": "flavour_11.theme_tdf[+]",
+  "text": "Tour de France. Du würdest im Windschatten fahren. Wie sonst auch.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:25:05.409Z"
+ },
+ "sd-de-39175304e7a3": {
+  "level": "10",
+  "key": "day_friday",
+  "path": "flavour_10.day_friday[+]",
+  "text": "Freitag. Im Supermarkt ist's wieder so voll, als käm der Weltuntergang.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Im Supermarkt ist's wieder so voll, als käm der Weltuntergang.",
+  "updatedAt": "2026-10-16T14:13:11.827Z"
+ },
+ "sd-de-392544a1003e": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Das jetzt ist nur die Vorschau. Der Hauptfilm heißt Kaltfront.",
+  "source": "candidate",
+  "batch": "Follow-up: pants",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:18.342Z"
+ },
+ "sd-de-39c751b6078d": {
+  "level": "11",
+  "key": "day_monday",
+  "path": "flavour_11.day_monday[+]",
+  "text": "Montag. Du siehst aus wie Montag.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:20.375Z"
+ },
+ "sd-de-3aafa40f5cdf": {
+  "level": "10",
+  "key": "theme_easter",
+  "path": "flavour_10.theme_easter[+]",
+  "text": "Ostern. Der Hase bringt die Eier, und ich krieg wieder nichts.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:08.309Z"
+ },
+ "sd-de-40d72e1a6f6c": {
+  "level": "10",
+  "key": "theme_tdf",
+  "path": "flavour_10.theme_tdf[+]",
+  "text": "Tour de France. Die fahren heute zweihundert Kilometer. Ich steh nur rum.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:39.343Z"
+ },
+ "sd-de-40e28295c6a2": {
+  "level": "10",
+  "key": "day_longest",
+  "path": "flavour_10.day_longest[+]",
+  "text": "Längster Tag des Jahres. Ab morgen geht's wieder bergab.",
+  "source": "candidate",
+  "batch": "Day: longest",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:13:56.908Z"
+ },
+ "sd-de-420be7dea882": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Und plötzlich hat jeder eine Lederhose. Auch in Hamburg.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic"
+  ],
+  "note": "",
+  "edit": "Und plötzlich hat jeder eine Lederhose. Auch in Hamburg.",
+  "updatedAt": "2026-10-16T14:17:32.475Z"
+ },
+ "sd-de-4321bede69f0": {
+  "level": "10",
+  "key": "day_dst_fall",
+  "path": "flavour_10.day_dst_fall[+]",
+  "text": "Die Uhren sind zurückgestellt. Eine Stunde mehr Tag, und ich weiß nicht, wohin damit.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Eine Stunde mehr, und ich weiß nicht, wohin damit.",
+  "updatedAt": "2026-10-16T14:12:20.959Z"
+ },
+ "sd-de-48bd1beb9da5": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Ruh dich am Wochenende gut aus. Von was auch immer.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Ruh dich am Wochenende gut aus. Von was auch immer.",
+  "updatedAt": "2026-10-16T14:20:21.310Z"
+ },
+ "sd-de-48eb82c6140f": {
+  "level": "11",
+  "key": "day_monday",
+  "path": "flavour_11.day_monday[+]",
+  "text": "Montagmorgen. Deine Vorsätze vom Sonntagabend sind schon wieder weg, oder?",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:27.776Z"
+ },
+ "sd-de-4f315ff7a2e2": {
+  "level": "10",
+  "key": "day_friday",
+  "path": "flavour_10.day_friday[+]",
+  "text": "Freitag. Jetzt planen alle ein Wochenende, das dann doch auf dem Sofa endet.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Jetzt planen alle ein Wochenende, das dann doch auf dem Sofa endet.",
+  "updatedAt": "2026-10-16T14:13:20.710Z"
+ },
+ "sd-de-502802ce3591": {
+  "level": "10",
+  "key": "theme_force",
+  "path": "flavour_10.theme_force[+]",
+  "text": "Möge die Macht mit dir sein. Das Wetter ist es heute schon.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:29.259Z"
+ },
+ "sd-de-56db1d9be06e": {
+  "level": "11",
+  "key": "day_monday",
+  "path": "flavour_11.day_monday[+]",
+  "text": "Montag. Heute fällt deine Laune wenigstens nicht auf.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Heute fällt deine Laune wenigstens nicht auf.",
+  "updatedAt": "2026-10-16T14:21:33.693Z"
+ },
+ "sd-de-5725b0eaa80c": {
+  "level": "10",
+  "key": "day_longest",
+  "path": "flavour_10.day_longest[+]",
+  "text": "Heute ist der längste Tag. Für mich sind alle gleich lang, ich bin immer an.",
+  "source": "candidate",
+  "batch": "Day: longest",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:04.925Z"
+ },
+ "sd-de-5c97d308adfa": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Der Schirm ist für den Regen. Für den Blitz ist er eher eine Einladung.",
+  "source": "candidate",
+  "batch": "Follow-up: storm",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:22.892Z"
+ },
+ "sd-de-5cdafde2dc47": {
+  "level": "11",
+  "key": "theme_force",
+  "path": "flavour_11.theme_force[+]",
+  "text": "Star-Wars-Tag. Die Macht ist mit dir? Die Motivation jedenfalls nicht.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "Die Macht ist mit dir? Die Motivation jedenfalls nicht.",
+  "updatedAt": "2026-10-16T14:23:20.842Z"
+ },
+ "sd-de-5d7d515b9c30": {
+  "level": "10",
+  "key": "day_monday",
+  "path": "flavour_10.day_monday[+]",
+  "text": "Montag. Wer den erfunden hat, war bestimmt Frühaufsteher.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:16.859Z"
+ },
+ "sd-de-66020a299d72": {
+  "level": "11",
+  "key": "theme_tdf",
+  "path": "flavour_11.theme_tdf[+]",
+  "text": "Tour de France. Ein gepunktetes Trikot hast du auch. Vom Ketchup.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:25:11.943Z"
+ },
+ "sd-de-69bd842ac4f1": {
+  "level": "10",
+  "key": "theme_tdf",
+  "path": "flavour_10.theme_tdf[+]",
+  "text": "Tour de France. Der Kommentator erzählt wieder vier Stunden lang was über Schlösser.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:50.409Z"
+ },
+ "sd-de-6d2893dbc8bc": {
+  "level": "11",
+  "key": "day_shortest",
+  "path": "flavour_11.day_shortest[+]",
+  "text": "Kürzester Tag des Jahres. Zum Glück, so viel hattest du ja nicht vor.",
+  "source": "candidate",
+  "batch": "Day: shortest",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:53.225Z"
+ },
+ "sd-de-6dcb8e35aa1a": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. „Ein Prosit der Gemütlichkeit“ läuft jetzt wieder alle zehn Minuten.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "„Ein Prosit der Gemütlichkeit“ läuft jetzt wieder alle zehn Minuten.",
+  "updatedAt": "2026-10-16T14:17:41.294Z"
+ },
+ "sd-de-70824f76eae8": {
+  "level": "11",
+  "key": "theme_okt",
+  "path": "flavour_11.theme_okt[+]",
+  "text": "Oktoberfest. Auf der Bank tanzen kannst du. Gerade stehen danach nicht.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:12.143Z"
+ },
+ "sd-de-70a006bf1435": {
+  "level": "11",
+  "key": "theme_okt",
+  "path": "flavour_11.theme_okt[+]",
+  "text": "Oktoberfest. Du singst wieder „Atemlos“ mit. Und kannst nur den Refrain.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:19.476Z"
+ },
+ "sd-de-718739ab6513": {
+  "level": "11",
+  "key": "theme_force",
+  "path": "flavour_11.theme_force[+]",
+  "text": "Star-Wars-Tag. Du wärst übrigens Sturmtruppler. Die treffen auch nie was.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "Du wärst übrigens Sturmtruppler. Die treffen auch nie was.",
+  "updatedAt": "2026-10-16T14:23:38.808Z"
+ },
+ "sd-de-71bf972fc0e9": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Ab jetzt reagierst du auf nichts mehr. Also wie sonst, nur offiziell.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:20:25.409Z"
+ },
+ "sd-de-71fa0c9e0a70": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Ostersonntag. Beim Eiersuchen bist du vermutlich wieder langsamer als die Kinder.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:48.576Z"
+ },
+ "sd-de-73b53cef7b00": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Am Montag weißt du wieder nicht, wo das Wochenende hin ist.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Am Montag weißt du wieder nicht, wo das Wochenende hin ist.",
+  "updatedAt": "2026-10-16T14:20:33.094Z"
+ },
+ "sd-de-74a7c78714e0": {
+  "level": "10",
+  "key": "theme_pi",
+  "path": "flavour_10.theme_pi[+]",
+  "text": "Pi-Tag. Ich kann's bis zur zweiten Nachkommastelle. Reicht auch.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "too long",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:19.726Z"
+ },
+ "sd-de-74c3d3b53ab5": {
+  "level": "10",
+  "key": "day_shortest",
+  "path": "flavour_10.day_shortest[+]",
+  "text": "Kürzester Tag des Jahres. Ich mach's wie die Sonne und halt mich heute kurz.",
+  "source": "candidate",
+  "batch": "Day: shortest",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Ich mach's wie die Sonne und halt mich heute kurz.",
+  "updatedAt": "2026-10-16T14:15:02.760Z"
+ },
+ "sd-de-76e9e6bbff45": {
+  "level": "10",
+  "key": "theme_tdf",
+  "path": "flavour_10.theme_tdf[+]",
+  "text": "Tour de France. Drei Wochen lang schauen Leute anderen Leuten beim Schwitzen zu.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:58.892Z"
+ },
+ "sd-de-79f1cc2e7f69": {
+  "level": "11",
+  "key": "theme_ghd",
+  "path": "flavour_11.theme_ghd[+]",
+  "text": "Murmeltiertag. Du merkst den Unterschied zu sonst vermutlich nicht.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:23:50.192Z"
+ },
+ "sd-de-7a964ce55257": {
+  "level": "10",
+  "key": "day_monday",
+  "path": "flavour_10.day_monday[+]",
+  "text": "Montag. Auf den hat sich wieder keiner gefreut. Ich auch nicht.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:23.242Z"
+ },
+ "sd-de-7f4f7e2a0ef6": {
+  "level": "11",
+  "key": "day_dst_spring",
+  "path": "flavour_11.day_dst_spring[+]",
+  "text": "Die Uhren sind vorgestellt. Die fehlende Stunde sieht man dir an.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Die fehlende Stunde sieht man dir an.",
+  "updatedAt": "2026-10-16T14:20:02.194Z"
+ },
+ "sd-de-83a5f9af2260": {
+  "level": "10",
+  "key": "day_dst_fall",
+  "path": "flavour_10.day_dst_fall[+]",
+  "text": "Die Uhren gehen eine Stunde zurück. Ich hätt lieber den Sommer zurück.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:12:26.058Z"
+ },
+ "sd-de-844024464929": {
+  "level": "11",
+  "key": "theme_tdf",
+  "path": "flavour_11.theme_tdf[+]",
+  "text": "Tour de France. Die fahren über die Alpen. Du nimmst den Aufzug.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:25:16.542Z"
+ },
+ "sd-de-88a3ce3182d5": {
+  "level": "10",
+  "key": "theme_bike",
+  "path": "flavour_10.theme_bike[+]",
+  "text": "Weltfahrradtag. Ich fahr nicht mit, ich hab nicht mal Beine.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:33.809Z"
+ },
+ "sd-de-8965dc9f5f48": {
+  "level": "10",
+  "key": "theme_force",
+  "path": "flavour_10.theme_force[+]",
+  "text": "In einer weit, weit entfernten Galaxis ist das Wetter auch nicht besser.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:34.425Z"
+ },
+ "sd-de-8c559b3bbfce": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Am Wochenende machst du das Gleiche wie sonst. Nur in Jogginghose.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Am Wochenende machst du das Gleiche wie sonst. Nur in Jogginghose.",
+  "updatedAt": "2026-10-16T14:20:41.911Z"
+ },
+ "sd-de-8d061aa2864b": {
+  "level": "11",
+  "key": "day_longest",
+  "path": "flavour_11.day_longest[+]",
+  "text": "Längster Tag des Jahres. So viel Tageslicht, und du bist vermutlich drinnen.",
+  "source": "candidate",
+  "batch": "Day: longest",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:09.676Z"
+ },
+ "sd-de-8de10f87d9f5": {
+  "level": "10",
+  "key": "day_monday",
+  "path": "flavour_10.day_monday[+]",
+  "text": "Montag. Das Wetter kann nichts dafür. Ich auch nicht.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:27.725Z"
+ },
+ "sd-de-91750aa3bb86": {
+  "level": "11",
+  "key": "day_shortest",
+  "path": "flavour_11.day_shortest[+]",
+  "text": "Kürzester Tag des Jahres. Für dich die perfekte Länge.",
+  "source": "candidate",
+  "batch": "Day: shortest",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:59.325Z"
+ },
+ "sd-de-94f864a57b27": {
+  "level": "10",
+  "key": "day_dst_spring",
+  "path": "flavour_10.day_dst_spring[+]",
+  "text": "Die Uhren gehen eine Stunde vor. Ich merk's nicht, ich bin ein Bildschirm. Du schon.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:12:52.176Z"
+ },
+ "sd-de-97db8929acdc": {
+  "level": "10",
+  "key": "theme_bike",
+  "path": "flavour_10.theme_bike[+]",
+  "text": "Am Weltfahrradtag fährt jeder plötzlich Rad. Morgen steht's wieder im Keller.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:38.792Z"
+ },
+ "sd-de-9e1acee1aaae": {
+  "level": "11",
+  "key": "theme_tdf",
+  "path": "flavour_11.theme_tdf[+]",
+  "text": "Tour de France. Bis Ende Juli bist du wieder Radsportexperte.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:25:22.009Z"
+ },
+ "sd-de-9f0b8f2612d9": {
+  "level": "11",
+  "key": "theme_bike",
+  "path": "flavour_11.theme_bike[+]",
+  "text": "Weltfahrradtag. Dein Heimtrainer ist übrigens kein Kleiderständer.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:32.793Z"
+ },
+ "sd-de-9f476df92b60": {
+  "level": "11",
+  "key": "day_monday",
+  "path": "flavour_11.day_monday[+]",
+  "text": "Montagmorgen. Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell.",
+  "updatedAt": "2026-10-16T14:21:40.360Z"
+ },
+ "sd-de-a358144d955c": {
+  "level": "10",
+  "key": "day_friday",
+  "path": "flavour_10.day_friday[+]",
+  "text": "Freitagnachmittag. Jetzt tun alle, als hätten sie die ganze Woche durchgearbeitet.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Jetzt tun alle, als hätten sie die ganze Woche durchgearbeitet.",
+  "updatedAt": "2026-10-16T14:13:30.860Z"
+ },
+ "sd-de-a85340ae1f78": {
+  "level": "11",
+  "key": "theme_ghd",
+  "path": "flavour_11.theme_ghd[+]",
+  "text": "Heute ist Murmeltiertag. Das Murmeltier kommt wenigstens einmal im Jahr raus.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:23:53.808Z"
+ },
+ "sd-de-aa0c2abcc028": {
+  "level": "10",
+  "key": "day_longest",
+  "path": "flavour_10.day_longest[+]",
+  "text": "Längster Tag des Jahres. Die Lebkuchen sind schon unterwegs.",
+  "source": "candidate",
+  "batch": "Day: longest",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:09.092Z"
+ },
+ "sd-de-aa471fbae7e2": {
+  "level": "11",
+  "key": "theme_ghd",
+  "path": "flavour_11.theme_ghd[+]",
+  "text": "Und täglich grüßt das Murmeltier. Kennst du ja aus deinem Alltag.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:23:57.376Z"
+ },
+ "sd-de-aab92bb1653d": {
+  "level": "11",
+  "key": "theme_force",
+  "path": "flavour_11.theme_force[+]",
+  "text": "Star-Wars-Tag. Du machst bestimmt wieder die Yoda-Stimme. Lass es.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Du machst bestimmt wieder die Yoda-Stimme. Lass es.",
+  "updatedAt": "2026-10-16T14:23:46.611Z"
+ },
+ "sd-de-ad9caf8747ce": {
+  "level": "11",
+  "key": "theme_pi",
+  "path": "flavour_11.theme_pi[+]",
+  "text": "Pi ist unendlich. Deine Geduld leider nicht. Schönen Pi-Tag.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:40.326Z"
+ },
+ "sd-de-b273c4277739": {
+  "level": "11",
+  "key": "theme_tdf",
+  "path": "flavour_11.theme_tdf[+]",
+  "text": "Tour de France. Du fährst trotzdem wieder mit dem Auto zum Bäcker.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:25:26.193Z"
+ },
+ "sd-de-b54236b6ff12": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Dein Wochenendprogramm: viel vornehmen, nichts machen.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Dein Wochenendprogramm: viel vornehmen, nichts machen.",
+  "updatedAt": "2026-10-16T14:20:47.727Z"
+ },
+ "sd-de-c04401feb54e": {
+  "level": "10",
+  "key": "theme_ghd",
+  "path": "flavour_10.theme_ghd[+]",
+  "text": "Und täglich grüßt das Murmeltier. Heute sogar offiziell.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:17:03.526Z"
+ },
+ "sd-de-c2ce76ab1c6d": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Ich bleib nüchtern. Einer muss ja das Wetter ansagen.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "Ich bleib nüchtern. Einer muss ja das Wetter ansagen.",
+  "updatedAt": "2026-10-16T14:17:50.759Z"
+ },
+ "sd-de-c33da4da0a3b": {
+  "level": "10",
+  "key": "day_shortest",
+  "path": "flavour_10.day_shortest[+]",
+  "text": "Heute ist der kürzeste Tag. Endlich mal einer, der schnell vorbei ist.",
+  "source": "candidate",
+  "batch": "Day: shortest",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:07.392Z"
+ },
+ "sd-de-c3c8b6acb719": {
+  "level": "11",
+  "key": "day_dst_spring",
+  "path": "flavour_11.day_dst_spring[+]",
+  "text": "Zeitumstellung. Deine Ausrede fürs Zuspätkommen gilt aber nur heute.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:20:08.226Z"
+ },
+ "sd-de-c48c0c32c61d": {
+  "level": "10",
+  "key": "theme_force",
+  "path": "flavour_10.theme_force[+]",
+  "text": "Star-Wars-Tag. Früher hieß das bei uns einfach 4. Mai.",
+  "source": "candidate",
+  "batch": "Theme: force",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Früher hieß das bei uns einfach 4. Mai.",
+  "updatedAt": "2026-10-16T14:16:44.310Z"
+ },
+ "sd-de-c6b69f89a7d2": {
+  "level": "10",
+  "key": "theme_bike",
+  "path": "flavour_10.theme_bike[+]",
+  "text": "Weltfahrradtag. Früher hieß das einfach: zur Schule fahren.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:15:42.142Z"
+ },
+ "sd-de-c7915a254018": {
+  "level": "10",
+  "key": "day_dst_spring",
+  "path": "flavour_10.day_dst_spring[+]",
+  "text": "Die Uhren sind vorgestellt. Die Stunde Schlaf ist weg, und keiner gibt sie zurück.",
+  "source": "candidate",
+  "batch": "Day: dst_spring",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:12:57.009Z"
+ },
+ "sd-de-cc365bc6fcc4": {
+  "level": "11",
+  "key": "theme_tdf",
+  "path": "flavour_11.theme_tdf[+]",
+  "text": "Tour de France. Du schaust drei Stunden zu und nennst das Ausdauersport.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:25:31.860Z"
+ },
+ "sd-de-d1a0097ea4d9": {
+  "level": "10",
+  "key": "theme_easter",
+  "path": "flavour_10.theme_easter[+]",
+  "text": "Ostern. Früher hat man Eier selber gefärbt. Heute kauft man sie bunt.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:16:15.142Z"
+ },
+ "sd-de-d1df3132efc9": {
+  "level": "11",
+  "key": "theme_pi",
+  "path": "flavour_11.theme_pi[+]",
+  "text": "Pi-Tag. Du rundest bestimmt wieder auf drei.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:43.976Z"
+ },
+ "sd-de-d3e25e64719b": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Eine Maß kostet jetzt so viel wie früher ein ganzes Wochenende.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Eine Maß kostet so viel wie früher ein ganzes Wochenende.",
+  "updatedAt": "2026-10-16T14:18:01.160Z"
+ },
+ "sd-de-d7600516bb3f": {
+  "level": "10",
+  "key": "day_dst_fall",
+  "path": "flavour_10.day_dst_fall[+]",
+  "text": "Winterzeit. Endlich wieder dunkel um fünf. Hat mir gefehlt.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Endlich wieder dunkel um fünf. Hat mir gefehlt.",
+  "updatedAt": "2026-10-16T14:12:32.094Z"
+ },
+ "sd-de-d7c49efdc1d1": {
+  "level": "11",
+  "key": "day_dst_fall",
+  "path": "flavour_11.day_dst_fall[+]",
+  "text": "Uhren zurückgestellt. Kommst du trotzdem zu spät, liegt's nicht an der Uhr.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:45.675Z"
+ },
+ "sd-de-d8f0076fad44": {
+  "level": "11",
+  "key": "theme_pi",
+  "path": "flavour_11.theme_pi[+]",
+  "text": "Pi-Tag. Ein Feiertag für alle, die in Mathe aufgepasst haben. Also nicht für dich.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:49.676Z"
+ },
+ "sd-de-ddbada1580b7": {
+  "level": "11",
+  "key": "theme_okt",
+  "path": "flavour_11.theme_okt[+]",
+  "text": "Oktoberfest. Morgen hast du wieder einen Kater und schiebst's aufs Hendl.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:23.426Z"
+ },
+ "sd-de-de4f5f95abf7": {
+  "level": "11",
+  "key": "theme_ghd",
+  "path": "flavour_11.theme_ghd[+]",
+  "text": "Am Murmeltiertag würd das Murmeltier lieber weiterschlafen. Wie du.",
+  "source": "candidate",
+  "batch": "Theme: ghd",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:01.409Z"
+ },
+ "sd-de-e0ba62ca060c": {
+  "level": "10",
+  "key": "theme_tdf",
+  "path": "flavour_10.theme_tdf[+]",
+  "text": "Tour de France. Das Gelbe Trikot will jeder. Ich hab nicht mal Farbe.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:04.059Z"
+ },
+ "sd-de-e146a06ca32d": {
+  "level": "10",
+  "key": "theme_pi",
+  "path": "flavour_10.theme_pi[+]",
+  "text": "Pi-Tag. Ein Feiertag für Leute mit Taschenrechner in der Hemdtasche.",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:18:29.992Z"
+ },
+ "sd-de-e568c1387eb3": {
+  "level": "10",
+  "key": "theme_tdf",
+  "path": "flavour_10.theme_tdf[+]",
+  "text": "Tour de France. Ich halt zu den Ausreißern. Die kommen sowieso nie durch.",
+  "source": "candidate",
+  "batch": "Theme: tdf",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:19:11.142Z"
+ },
+ "sd-de-e6de6c9847da": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Ostersonntag. Du isst vom Hasen wieder zuerst die Ohren. Ganz schön brutal.",
+  "source": "candidate",
+  "batch": "Theme: easter",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Du isst vom Schokohasen wieder zuerst die Ohren. Ganz schön brutal.",
+  "updatedAt": "2026-10-16T14:23:03.445Z"
+ },
+ "sd-de-e84b8c399bc9": {
+  "level": "10",
+  "key": "day_dst_fall",
+  "path": "flavour_10.day_dst_fall[+]",
+  "text": "Zeitumstellung. Hunde und Kleinkinder halten sich nicht dran.",
+  "source": "candidate",
+  "batch": "Day: dst_fall",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:12:35.842Z"
+ },
+ "sd-de-e8be23a5f904": {
+  "level": "11",
+  "key": "theme_okt",
+  "path": "flavour_11.theme_okt[+]",
+  "text": "Oktoberfest. Du kommst wieder nicht ins Zelt. Ich will gar nicht erst.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:27.726Z"
+ },
+ "sd-de-e9b545f95837": {
+  "level": "10",
+  "key": "day_monday",
+  "path": "flavour_10.day_monday[+]",
+  "text": "Montag. Die ganze Woche liegt noch vor uns. Ich sag's nur.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:32.109Z"
+ },
+ "sd-de-ef818351bbce": {
+  "level": "10",
+  "key": "day_monday",
+  "path": "flavour_10.day_monday[+]",
+  "text": "Montagmorgen. Ich bin auch noch nicht ganz da. Dabei schlaf ich nie.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:37.392Z"
+ },
+ "sd-de-f066fc574a90": {
+  "level": "11",
+  "key": "day_monday",
+  "path": "flavour_11.day_monday[+]",
+  "text": "Montag. Wer dich heute nach deinem Wochenende fragt, will's nicht wirklich wissen.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:21:46.359Z"
+ },
+ "sd-de-f34f6b4b5a2a": {
+  "level": "11",
+  "key": "theme_bike",
+  "path": "flavour_11.theme_bike[+]",
+  "text": "Weltfahrradtag. Bergauf schiebst du sowieso.",
+  "source": "candidate",
+  "batch": "Theme: bike",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:35.292Z"
+ },
+ "sd-de-f75c7c4ba8c4": {
+  "level": "10",
+  "key": "day_monday",
+  "path": "flavour_10.day_monday[+]",
+  "text": "Montagmorgen. Heute ist der Kaffee wichtiger als meine Vorhersage.",
+  "source": "candidate",
+  "batch": "Day: monday",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:14:45.592Z"
+ },
+ "sd-de-f916bc7e3b5c": {
+  "level": "10",
+  "key": "day_friday",
+  "path": "flavour_10.day_friday[+]",
+  "text": "Freitag. Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch.",
+  "updatedAt": "2026-10-16T14:13:40.443Z"
+ },
+ "sd-de-fb4b5505e2a9": {
+  "level": "10",
+  "key": "day_friday",
+  "path": "flavour_10.day_friday[+]",
+  "text": "Freitag. Am Wochenende hab ich übrigens nicht frei. Nur so.",
+  "source": "candidate",
+  "batch": "Day: friday",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:13:50.308Z"
+ },
+ "sd-de-fcb76299eab7": {
+  "level": "11",
+  "key": "theme_pi",
+  "path": "flavour_11.theme_pi[+]",
+  "text": "Pi-Tag. Drei Komma eins vier. Weiter kommst du auch nicht, oder?",
+  "source": "candidate",
+  "batch": "Theme: pi",
+  "round": "2026-10-days",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "robotic",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:24:59.976Z"
+ },
+ "sd-de-ff17ef5b2ffe": {
+  "level": "11",
+  "key": "day_shortest",
+  "path": "flavour_11.day_shortest[+]",
+  "text": "Heute ist der kürzeste Tag. „War schon dunkel“ gilt also ab vier.",
+  "source": "candidate",
+  "batch": "Day: shortest",
+  "round": "2026-10-days",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T14:22:09.142Z"
+ },
+ "sd-de-ff92a5288e05": {
+  "level": "11",
+  "key": "theme_okt",
+  "path": "flavour_11.theme_okt[+]",
+  "text": "Oktoberfest. Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.",
+  "source": "candidate",
+  "batch": "Theme: okt",
+  "round": "2026-10-days",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.",
+  "updatedAt": "2026-10-16T14:24:33.945Z"
+ },
  "se-de-01ded478000d": {
   "level": "11",
   "key": "steady",

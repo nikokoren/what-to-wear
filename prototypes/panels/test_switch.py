@@ -317,9 +317,11 @@ def day_key(date, hour, tz="Europe/Vienna", lat=48.2):
 for date, hour, tz, want in (("2026-10-19", 8, "Europe/Vienna", "monday"), ("2026-10-19", 14, "Europe/Vienna", ""),
                              ("2026-10-23", 14, "Europe/Vienna", "friday"), ("2026-10-25", 10, "Europe/Vienna", "dst_fall"),
                              ("2027-03-29", 8, "Europe/Vienna", "dst_spring"), ("2026-11-02", 8, "America/Denver", "dst_fall"),
-                             ("2026-11-02", 8, "America/Phoenix", "monday"), ("2027-03-14", 10, "America/New_York", "dst_spring"),
+                             ("2026-11-02", 8, "America/Phoenix", "monday"), ("2028-03-12", 10, "America/New_York", "dst_spring"),
                              ("2027-06-21", 10, "Europe/Vienna", "longest")):
     expect(f"special day {date} {hour}:30 {tz}: {want or 'none'}", day_key(date, hour, tz) == want)
+expect("Pi Day and the US clock change on one day (14 March 2027): the theme wins",
+       day_key("2027-03-14", 10, "America/New_York") == "")
 expect("the longest day in Sydney is the shortest", day_key("2027-06-21", 10, "Australia/Sydney", -33.9) == "shortest")
 
 # A texts file older than the markup (the texts URL behind: a fork's pinned

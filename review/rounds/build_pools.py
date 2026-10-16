@@ -103,6 +103,8 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    "You've already started to counted the days to the weekend.": "You've already started counting the days to the weekend.",
+    "You'd be good Groundhog : pop out, look around, go back in.": "You'd make a good groundhog: pop out, look around, go back in.",
     "Überleg dir ne kurze hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.": "Überleg dir, ne kurze Hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.",
     "{WHEN} wird's kalt. Überleg dir lange Hosen anzuziehen und eine warme Schicht mitzunehmen.": "{WHEN} wird's kalt. Überleg dir, lange Hosen anzuziehen und eine warme Schicht mitzunehmen.",
     'Schön. Dann musst du dir nur noch eine Ausrede ausdenken warum du schon wieder so lange wach bist.': 'Schön. Dann musst du dir nur noch eine Ausrede ausdenken, warum du schon wieder so lange wach bist.',

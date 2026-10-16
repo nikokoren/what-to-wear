@@ -403,7 +403,11 @@ current time moves every 15 minutes, so the merge variables change.
       {%- endif -%}
       {%- assign dk = 'day_' | append: day_key -%}
       {%- assign dhalf = local_hour | modulo: 2 -%}
-      {%- if day_key != '' and dhalf == 0 and fl_lib[dk] -%}
+      {%- comment %} Mondays and Fridays come every week: not until there are three lines to rotate. {%- endcomment %}
+      {%- assign dmin = 1 -%}
+      {%- if day_key == 'monday' or day_key == 'friday' -%}{%- assign dmin = 3 -%}{%- endif -%}
+      {%- assign dn = fl_lib[dk] | size -%}
+      {%- if day_key != '' and dhalf == 0 and dn >= dmin -%}
         {%- assign fl_pool = fl_lib[dk] -%}
       {%- endif -%}
     {%- endif -%}

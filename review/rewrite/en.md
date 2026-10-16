@@ -5,13 +5,80 @@ kept line answers yet. Write completely new lines for each spot,
 not variations of what's out (it's all in `review/dont/`), and give
 each new row `"answers": "<id>"` in the next round's file.
 
-## flavour_10.evening
+## flavour_10.day_dst_fall
 
-- **Out:** Also fine for a Christmas party. The dancing's out of my hands.
-  **Tags:** not funny, unclear
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the rest of the evening.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-0b902a8b328c` (2026-10-replies)
+- **Out:** The clocks went back. An extra hour, and I spent it refreshing.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Sunday the clocks go back, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-8affc0a081cd` (2026-10-days)
+- **Out:** Clocks went back. If you're early for everything today, that's why.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Sunday the clocks go back, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-f8fe0e8493d2` (2026-10-days)
+
+## flavour_10.day_dst_spring
+
+- **Out:** One hour less this weekend. Don't look at me, I didn't take it.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Sunday the clocks go forward, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-4f2903fc3655` (2026-10-days)
+- **Out:** The clocks went forward. I'd say 'feel refreshed', but I don't lie.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Sunday the clocks go forward, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-7e0a4ffec82f` (2026-10-days)
+- **Out:** Clocks forward, an hour gone. I didn't notice. I don't sleep.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Sunday the clocks go forward, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-939dc3f30015` (2026-10-days)
+- **Out:** Clocks forward. Lighter evenings soon. You paid for them in sleep.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Sunday the clocks go forward, and the Monday after. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-98fa3f0b113b` (2026-10-days)
+
+## flavour_10.day_longest
+
+- **Out:** Longest day of the year. From tomorrow, it's all downhill. Enjoy.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the longest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-93597c48728a` (2026-10-days)
+
+## flavour_10.day_monday
+
+- **Out:** Monday. I look exactly as good as I did on Friday.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-4659ac775c65` (2026-10-days)
+- **Out:** Monday. I've never had the Sunday-night dread. Sounds awful.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-46919b46addb` (2026-10-days)
+- **Out:** Monday. The weekend went by in about four minutes, didn't it.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-776edd3e5727` (2026-10-days)
+- **Out:** Monday morning. I'm the only thing in the house not annoyed about it.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-99fc0296ece2` (2026-10-days)
+
+## flavour_10.day_shortest
+
+- **Out:** Shortest day of the year. It improves from tomorrow. You're welcome.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the shortest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-e1b679198142` (2026-10-days)
 
 ## flavour_10.night
 
@@ -20,14 +87,6 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “What you're wearing works for the rest of the evening.”
   **What it's for:** New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.
   **Answers:** `rp-en-f3c635d1dffb` (2026-10-replies)
-
-## flavour_10.off
-
-- **Out:** Then out come the arms. Nearly as pale as me.
-  **Tags:** robotic
-  **On screen:** drawing sweater_dry; above it: “You can take the sweater off this afternoon.”
-  **What it's for:** New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-81f060ebb9c4` (2026-10-replies)
 
 ## flavour_10.rain
 
@@ -56,13 +115,71 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.
   **Answers:** `rp-en-820d2cf92f6d` (2026-10-replies)
 
-## flavour_11.evening
+## flavour_10.theme_bike
 
-- **Out:** The rest of your clothes are still on the chair, I assume.
-  **Tags:** not funny, unclear
-  **On screen:** drawing jacket_dry; above it: “What you're wearing works for the rest of the evening.”
-  **What it's for:** New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.
-  **Answers:** `rp-en-2bef94de3974` (2026-10-replies)
+- **Out:** World Bicycle Day. The outfit works on a bike too.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: World Bicycle Day, 3 June. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-49a81c1c4736` (2026-10-days)
+- **Out:** World Bicycle Day. I've never cycled. Never had a flat tyre, either.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: World Bicycle Day, 3 June. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-db008e32ab1a` (2026-10-days)
+
+## flavour_10.theme_force
+
+- **Out:** Star Wars Day. My only Jedi skill: knowing what you should wear.
+  **Wanted instead:** speak like yoda for may the 4th
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Star Wars Day, 4 May. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-087cb63c929c` (2026-10-days)
+- **Out:** May the fourth be with you. I sense no disturbance in the forecast.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Star Wars Day, 4 May. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-0a3a04065f27` (2026-10-days)
+
+## flavour_10.theme_pi
+
+- **Out:** Pi Day. I could show you the digits, but I'd run out of screen.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Pi Day, 14 March. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-0da251416ba9` (2026-10-days)
+- **Out:** Happy Pi Day. I've done the maths for today. You can have the pie.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: Pi Day, 14 March. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-311071098596` (2026-10-days)
+
+## flavour_10.theme_tdf
+
+- **Out:** It's Tour de France time. Lycra is optional for the rest of us.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-368e6af63bff` (2026-10-days)
+- **Out:** Tour de France riders eat about six dinners a day. Don't get ideas.
+  **Tags:** too long
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-4af808b683fc` (2026-10-days)
+- **Out:** The Tour riders change jerseys more often than you'll change today.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at On: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-b0baabb25850` (2026-10-days)
+
+## flavour_11.day_monday
+
+- **Out:** Monday. You'll ask someone about their weekend and not listen.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at 11: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-40a9ea608d79` (2026-10-days)
 
 ## flavour_11.ice
 
@@ -71,3 +188,32 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry; above it: “Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.”
   **What it's for:** New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
   **Answers:** `rp-en-4e1ab0c99855` (2026-10-replies)
+
+## flavour_11.theme_easter
+
+- **Out:** You'll eat a chocolate egg before breakfast and call it tradition.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at 11: Easter Sunday. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-dba0386713cf` (2026-10-days)
+
+## flavour_11.theme_force
+
+- **Out:** Star Wars Day. You'd turn to the dark side for a biscuit.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at 11: Star Wars Day, 4 May. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-6f31fea39bba` (2026-10-days)
+
+## flavour_11.theme_tdf
+
+- **Out:** Tour de France. You'll pretend you understand the points jersey.
+  **Tags:** robotic
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-a0d18c7db6ae` (2026-10-days)
+- **Out:** Tour de France. You'll watch three hours of it and call it cardio.
+  **Tags:** robotic
+  **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
+  **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
+  **Answers:** `sd-en-f73dc8201cb3` (2026-10-days)
