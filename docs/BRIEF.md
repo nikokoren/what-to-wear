@@ -303,6 +303,11 @@ storms). A much better round: 200 stars, 329 keeps.
   ("fact || joke"), or as one sentence. The forecast part still states the
   forecast plainly; the joke lands only because of that sentence.
 
+- **Where the screen is: "room", never a hallway (round 17).** The
+  screen's spot in the home is "room" in English; `build_pools.py` turns
+  any "hallway" into "room". In German keep it just as open: „drinnen“,
+  „hier drin“, never a named room for where the screen hangs.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

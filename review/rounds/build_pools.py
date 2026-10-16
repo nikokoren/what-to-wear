@@ -569,7 +569,36 @@ def main():
         garments = apply_garments(doc, lang)
         if garments:
             print(f"{lang} garments: {garments} follow-ups point at the forecast line's garment")
+        words = apply_words(doc, lang)
+        if words:
+            print(f"{lang} words: {words} lines reworded")
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+# Words the owner wants changed in every line, now and in later rounds
+# (round 17): the screen's spot in the home is "room" in English, never a
+# hallway. Applied last, so lines from any round pick it up.
+WORDS = {"en": [("hallway", "room")]}
+
+
+def apply_words(doc, lang):
+    changed = 0
+    for pools in doc.values():
+        if not isinstance(pools, dict):
+            continue
+        for pool in pools.values():
+            if not isinstance(pool, list):
+                continue
+            for i, text in enumerate(pool):
+                if not isinstance(text, str):
+                    continue
+                new = text
+                for old, repl in WORDS.get(lang, []):
+                    new = new.replace(old, repl).replace(old.capitalize(), repl.capitalize())
+                if new != text:
+                    pool[i] = new
+                    changed += 1
+    return changed
 
 
 # Follow-ups that point back at the garment the forecast line names. That
