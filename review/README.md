@@ -426,6 +426,14 @@ for the days a layer comes off or goes on (`w_*`, `c_*`, `arc_*`,
 What to Wear Next's two or three (or none). Plus round 17's "Write new"
 units and English late-night units. Raw output in `2026-10-layers/`.
 
+## Round 19: rain units
+
+`2026-10-rain.json` (`make_round19.py`, ids `rn-…`): units for the rain
+and snow sentences (`p_*`, not the ice and thunderstorm variants), which
+come last on screen, alone or after a temperature sentence; plus top-ups
+so every steady and layer situation reaches three units (the screen
+needs two). Raw output in `2026-10-rain/`.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

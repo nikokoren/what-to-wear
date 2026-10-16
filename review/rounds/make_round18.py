@@ -38,13 +38,21 @@ PANELS = {
     "c_hoodie": ("tee_pants_dry", "sweater_dry"), "c_relief": ("heat_dry", "tee_shorts_dry"),
     "arc_warmer": ("jacket_dry", "sweater_dry"), "arc_level": ("jacket_dry", "sweater_dry", "jacket_dry"),
     "arc_colder": ("jacket_dry", "sweater_dry", "coat_dry"), "shorts_early": ("tee_pants_dry", "tee_shorts_dry"),
+    # Round 19: rain and snow.
+    "p_wetter": ("jacket_dry", "jacket_rain"), "p_wetter_long": ("jacket_dry", "jacket_rain"),
+    "p_wetter_maybe": ("jacket_dry", "jacket_rain"), "p_drier": ("jacket_rain", "jacket_dry"),
+    "p_wet_again": ("jacket_rain", "jacket_dry", "jacket_rain"), "p_snow_coming": ("coat_dry", "coat_snow"),
+    "p_drier_snow": ("coat_snow", "coat_dry"), "p_wet_again_snow": ("coat_snow", "coat_dry", "coat_snow"),
 }
+# The rain or snow sentence comes last: on a day whose temperature also
+# changes, a temperature sentence comes first (block.liquid, UNITS).
+RAIN_HINT = "After a temperature sentence on a day that also changes"
 LABELS = {"en": ("Now", "from noon", "from 6 pm"), "de": ("Jetzt", "ab Mittag", "ab 18 Uhr")}
 
 
-def main():
-    if r13.voted_already(ROUND):
-        raise SystemExit(f"{ROUND} has votes; not rebuilding it")
+def main(rnd=ROUND, prefix="ly"):
+    if r13.voted_already(rnd):
+        raise SystemExit(f"{rnd} has votes; not rebuilding it")
     lines = []
     for lang in ("en", "de"):
         doc = json.loads((r8.PROTO / f"{lang}.json").read_text(encoding="utf-8"))
@@ -52,7 +60,7 @@ def main():
         facts = doc["facts"]
         existing = {t for lv in ("10", "11") for v in doc.get(f"units_{lv}", {}).values() for t in v}
         seen = set()
-        for item in json.loads((HERE / ROUND / f"{lang}.json").read_text(encoding="utf-8"))["lines"]:
+        for item in json.loads((HERE / rnd / f"{lang}.json").read_text(encoding="utf-8"))["lines"]:
             text = item["text"].strip()
             if text in seen or text in existing:
                 print(f"  {lang} skipped, already there: {text}")
@@ -73,6 +81,10 @@ def main():
                    "meaning": f"New at {r13.LEVEL[level]}: the forecast sentence and its joke as one. {meaning} "
                               "Shows under the written forecast, with or without What to Wear Next's drawings above."}
             hints = [] if joke else ["One sentence, no second line"]
+            if key.startswith("p_"):
+                hints.append(RAIN_HINT)
+                if "{WHENSTOP}" in text:
+                    hints.append("Says when it stops; only shows when there's a stop time")
             if key in PANELS:
                 row["panels"] = [{"sprite": s, "label": LABELS[lang][i]} for i, s in enumerate(PANELS[key])]
                 hints.append("Also shows without the drawings")
@@ -88,8 +100,8 @@ def main():
             if hints:
                 row["hint"] = " · ".join(hints)
             lines.append(row)
-    out = {"round": ROUND, "idPrefix": "ly", "lines": lines}
-    path = HERE / f"{ROUND}.json"
+    out = {"round": rnd, "idPrefix": prefix, "lines": lines}
+    path = HERE / f"{rnd}.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     by = {}
     for r in lines:

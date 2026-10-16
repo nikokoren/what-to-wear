@@ -333,6 +333,7 @@ POLISH = "2026-10-polish"
 DAYS = "2026-10-days"
 UNITS = "2026-10-units"
 LAYERS = "2026-10-layers"  # round 18: units for the layer days
+RAIN = "2026-10-rain"  # round 19: units for rain and snow, and top-ups
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -566,6 +567,9 @@ def main():
         layers = apply_follow(doc, lang, decisions, LAYERS)
         if layers:
             print(f"{lang} round 18 (units): " + ", ".join(f"{v} {k}" for k, v in layers.items()))
+        rain = apply_follow(doc, lang, decisions, RAIN)
+        if rain:
+            print(f"{lang} round 19 (units): " + ", ".join(f"{v} {k}" for k, v in rain.items()))
         for level in ("10", "11"):
             if not doc[f"units_{level}"]:
                 del doc[f"units_{level}"]

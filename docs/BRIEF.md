@@ -308,6 +308,14 @@ storms). A much better round: 200 stars, 329 keeps.
   any "hallway" into "room". In German keep it just as open: „drinnen“,
   „hier drin“, never a named room for where the screen hangs.
 
+- **Predicting the reader's mishaps doesn't land (round 18).** "You'll
+  bring two of the three", the lost left glove, „Vergessen wirst du ihn
+  trotzdem“, „Und dann jammerst du in zwei Schichten“: vetoed. What
+  worked answers the forecast sentence itself („Hauptsache, du hast was
+  zum Meckern.“, "Hat hair or cold ears. Your choice."). And the owner
+  cuts explanations: „Die meide ich das ganze Jahr.“ without „Ich bin ein
+  Bildschirm.“
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it
