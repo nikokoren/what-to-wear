@@ -351,6 +351,13 @@ expect("units: a rainy steady day, the rain's unit",
 html = render(True, feels=STEADY, hour=19)
 expect("units: one sentence with both, no second line", "ONE SENTENCE WITH BOTH." in words_of(html) and html.count("<p") == 1)
 expect("units: a day without units for its situation works as before", "UNIT" not in render(True, hour=7))
+for k in ("w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_water", "shorts_early", "arc_warmer"):
+    TEXTS["en"]["units_10"][k] = ["LAYER {WHEN}. || LAYER JOKE {WHEN}."]
+html = render(True, hour=7)
+expect("units: a layer day's unit, its time words filled in both halves",
+       "LAYER JOKE " in html and "{" not in words_of(html))
+for k in ("w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_water", "shorts_early", "arc_warmer"):
+    del TEXTS["en"]["units_10"][k]
 
 # A special day comes with its fixed sentence (facts.steady_special), never
 # a unit's or a separately picked one; on a cold or hot day, or a rainy one,

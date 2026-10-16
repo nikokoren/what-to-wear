@@ -1088,7 +1088,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- if u_ok -%}
           {%- assign u_parts = u_cand | split: ' || ' -%}
           {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
-          {%- assign unit_joke = u_parts[1] | default: '' | strip -%}
+          {%- assign unit_joke = u_parts[1] | default: '' | strip | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
           {%- if f_precip != '' -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
           {%- break -%}
         {%- endif -%}

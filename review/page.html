@@ -207,14 +207,14 @@ function sentenceCase(t) { return t.replace(/(^|[.!?]\s+)(\p{Ll})/gu, (m, a, c) 
 function placeholdersIn(t) { return new Set(t.match(/\{[A-Z0-9]+\}/g) || []); }
 // The two paragraphs on the mock screen, and which one is being rated.
 function compose(r) {
-  if (r.panels) return { bold: "", plain: fill(wordingOf(r), fillsOf(r)), judged: "" };
-  if (r.role === "fact") return { bold: sentenceCase(fill(wordingOf(r), fillsOf(r))), plain: r.under || "", judged: "bold" };
-  if (r.role === "flavour") return { bold: r.fact || "", plain: fill(wordingOf(r), fillsOf(r)), judged: "plain" };
-  // A unit: the forecast sentence and its joke written together, "fact || joke"; both are rated.
+  // A unit: the forecast sentence and its joke written together, "fact || joke"; both are rated (with or without drawings above).
   if (r.role === "unit") {
     const [fact, joke = ""] = wordingOf(r).split(" || ");
     return { bold: sentenceCase(fill(fact, fillsOf(r))), plain: fill(joke, fillsOf(r)), judged: "" };
   }
+  if (r.panels) return { bold: "", plain: fill(wordingOf(r), fillsOf(r)), judged: "" };
+  if (r.role === "fact") return { bold: sentenceCase(fill(wordingOf(r), fillsOf(r))), plain: r.under || "", judged: "bold" };
+  if (r.role === "flavour") return { bold: r.fact || "", plain: fill(wordingOf(r), fillsOf(r)), judged: "plain" };
   return { bold: r.fact || "", plain: ui.showPair && r.pair ? r.pair : r.tip, judged: r.fact ? "plain" : "" };
 }
 function verdictOf(r) { const d = decisions.get(r.id); return d && d.verdict || ""; }
