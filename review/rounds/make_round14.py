@@ -30,6 +30,14 @@ import make_round13 as r13  # noqa: E402
 
 REPO = HERE.parent.parent
 ROUND = "2026-10-replies"
+# The big swing (October 2026): a cold morning, three hours or more of
+# shorts weather later. New situations, so they're not in round 8's list.
+FACT_CTX = dict(r8.FACT_CTX, **{
+    "shorts_swing": ("coat_dry", "warming", "New: a cold morning with three hours or more of shorts weather later "
+                     "(a reader in Colorado). The drawing keeps the coat; go out in shorts anyway."),
+    "shorts_swing_back": ("coat_dry", "fickle", "New: the same, and the evening wants a layer back. "
+                          "{WHEN} is shorts weather, {WHEN2} the layer."),
+})
 
 
 def follow_group(key):
@@ -37,7 +45,8 @@ def follow_group(key):
     if key.startswith("p_"):
         return "snow" if "snow" in key else "rain"
     return {"steady": "steady", "steady_evening": "evening", "steady_hot": "hot", "w_water": "hot",
-            "steady_cold": "cold", "arc_warmer": "off", "shorts_early": "off",
+            "steady_cold": "cold", "arc_warmer": "off", "shorts_early": "off", "shorts_swing": "off",
+            "shorts_swing_back": "offon",
             "arc_level": "offon", "arc_colder": "offon"}.get(key) or \
         ("off" if key.startswith("w_") else "on" if key.startswith("c_") and key != "c_relief" else None)
 
@@ -82,7 +91,7 @@ def main():
                 new_facts.setdefault(key, []).append(item["text"])
             else:
                 flavour.append(item)
-        for key, (sprite, _, meaning) in r8.FACT_CTX.items():
+        for key, (sprite, _, meaning) in FACT_CTX.items():
             group = follow_group(key)
             for text in facts.get(key, []) + new_facts.get(key, []):
                 new = text not in facts.get(key, [])

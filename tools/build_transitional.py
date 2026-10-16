@@ -171,7 +171,7 @@ def main():
     for old, new, label in [
         ("{%- if band_rank <= 4 and texts_ok -%}", "{%- if band_rank <= 4 -%}", "band guard"),
         ("{%- if temp_scenario != '' and texts_ok -%}", "{%- if temp_scenario != '' -%}", "temp token guard"),
-        ("{%- if is_arc and texts_ok -%}", "{%- if is_arc -%}", "arc guard"),
+        ("{%- if two_hinges and texts_ok -%}", "{%- if two_hinges -%}", "arc guard"),
         ("{%- if wants_whenp and texts_ok -%}", "{%- if wants_whenp -%}", "whenp guard"),
         (
             "{%- if is_error == false and show_future_suggestions == 'on' and texts_ok -%}",

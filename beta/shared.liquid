@@ -531,6 +531,15 @@ single contains test instead of a chained and/or condition.
       a bit cool for a while beats sweating all afternoon. A shorts day
       that only arrives late keeps the long pants. The worst case is
       shorts at the bottom of rank 5 (18 C feels-like) for a few hours.
+
+      Big swings (owner, October 2026, from a reader in Colorado): three
+      hours or more of shorts weather and the legs are shorts, however
+      cold the morning. Better cold for a bit on the way out than sitting
+      in jeans all afternoon. From long-pants weather that draws shorts
+      now; from anything colder the Now drawing keeps its coat or jacket
+      (there is no coat-over-shorts drawing), the later drawings show
+      shorts (shorts_day), and the forecast line says to go out in shorts
+      (shorts_swing, where the language has it).
       {%- endcomment %}
       {%- assign shorts_idx = -1 -%}
       {%- assign shorts_hours = 0 -%}
@@ -542,9 +551,13 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
       {%- endfor -%}
       {%- assign shorts_early = false -%}
+      {%- assign shorts_swing = false -%}
+      {%- if band_rank <= 4 and shorts_hours >= 3 -%}
+        {%- assign shorts_swing = true -%}
+      {%- endif -%}
       {%- if band_rank == 5 and shorts_idx >= 0 -%}
         {%- assign cool_hours = shorts_idx | minus: now_index -%}
-        {%- if cool_hours <= shorts_hours -%}
+        {%- if cool_hours <= shorts_hours or shorts_hours >= 3 -%}
           {%- assign shorts_early = true -%}
           {%- assign band_rank = 6 -%}
           {%- assign band = band_name_list[5] -%}
@@ -808,6 +821,10 @@ single contains test instead of a chained and/or condition.
 
       1. a dip before the peak. It is the first thing the reader walks
          into, and getting cold is the one mistake with a real cost.
+      1b. a big swing into shorts weather (THE LONG-PANTS RULE): go out
+         in shorts, keep the warm layer for the way out; with the
+         evening wanting a layer back, say that too. Only where the
+         language has the wording (texts.facts), else the stories below.
       2. an arc: a layer comes off and the evening wants one back. Needs
          something you can actually take off, so w_water plus a cooling
          key is not an arc - there is nothing to shed, so the evening
@@ -823,6 +840,20 @@ single contains test instead of a chained and/or condition.
     {%- if dip_key != '' -%}
       {%- assign temp_scenario = dip_key -%}
       {%- assign primary_idx = dip_idx -%}
+    {%- elsif shorts_swing and texts.facts.shorts_swing -%}
+      {%- assign temp_scenario = 'shorts_swing' -%}
+      {%- assign primary_idx = shorts_idx -%}
+      {%- comment %} The evening wants more than a T-shirt: the first hour after the peak below shorts and long-pants weather, as the drawings show it. {%- endcomment %}
+      {%- assign swing_back_idx = -1 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign hr = start_index | plus: forloop.index0 -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- if swing_back_idx < 0 and hr > max_temp_idx and rv <= 4 -%}{%- assign swing_back_idx = hr -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if swing_back_idx >= 0 -%}
+        {%- assign temp_scenario = 'shorts_swing_back' -%}
+        {%- assign secondary_idx = swing_back_idx -%}
+      {%- endif -%}
     {%- elsif warm_removable and after_key != '' -%}
       {%- if after_rank < band_rank -%}
         {%- assign temp_scenario = 'arc_colder' -%}
@@ -917,8 +948,10 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment %} arc second token, always a bucket {%- endcomment %}
-    {%- if is_arc and texts_ok -%}
+    {%- comment %} arc second token, always a bucket (also the big swing's layer back on) {%- endcomment %}
+    {%- assign two_hinges = is_arc -%}
+    {%- if temp_scenario == 'shorts_swing_back' -%}{%- assign two_hinges = true -%}{%- endif -%}
+    {%- if two_hinges and texts_ok -%}
       {%- assign gap2 = secondary_idx | minus: now_index -%}
       {%- assign th2 = local_hour | plus: gap2 -%}
       {%- if th2 > 23 -%}{%- assign th2 = 23 -%}{%- endif -%}
@@ -1368,6 +1401,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- endif -%}
   {%- else -%}
     {%- assign f_key = temp_scenario -%}
+    {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
   {%- endif -%}
   {%- comment %}
   The garment on screen, for the arc keys: {G} the garment, {GP} its
@@ -1536,7 +1570,8 @@ current time moves every 15 minutes, so the merge variables change.
         {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
         {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
         {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
-        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'arc_level', 'arc_colder', 'shorts_swing_back' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'shorts_swing' -%}{%- assign fu_key = 'off' -%}
       {%- endcase -%}
     {%- endif -%}
     {%- comment %}
@@ -1552,7 +1587,7 @@ current time moves every 15 minutes, so the merge variables change.
       {%- when 'w_coat', 'c_coat' -%}{%- assign fu_gi = 1 -%}
       {%- when 'w_jacket', 'c_jacket' -%}{%- assign fu_gi = 2 -%}
       {%- when 'w_hoodie', 'c_hoodie' -%}{%- assign fu_gi = 3 -%}
-      {%- when 'arc_warmer', 'arc_level', 'arc_colder' -%}
+      {%- when 'arc_warmer', 'arc_level', 'arc_colder', 'shorts_swing', 'shorts_swing_back' -%}
         {%- if f_g != '' -%}{%- assign fu_gi = band_rank | minus: 1 -%}{%- endif -%}
     {%- endcase -%}
     {%- assign fu_g = '' -%}
@@ -1743,7 +1778,8 @@ A panel is a stretch of the day, from one change to the next:
     hour at RAIN_HIGH is enough: a shower counts, as in the text), or
     two dry hours ending it;
   - tee_pants and tee_shorts count as one outfit later in the day: legs
-    are decided at the door;
+    are decided at the door. On a shorts day (three hours or more of
+    shorts weather, THE LONG-PANTS RULE) the warm drawings are shorts;
   - the "now" panel shows rain only if it is falling now; a later panel
     shows it if it starts with that panel, or anywhere inside it once
     panels are merged;
@@ -1797,6 +1833,10 @@ after the fact + flavour block and the picture.
         {%- assign new_rank = hi -%}
       {%- elsif lo < cur_rank -%}
         {%- assign new_rank = lo -%}
+      {%- endif -%}
+      {%- comment %} A shorts day (THE LONG-PANTS RULE): once it's warm, the legs are shorts. {%- endcomment %}
+      {%- if new_rank == 5 and shorts_swing or new_rank == 5 and shorts_early -%}
+        {%- assign new_rank = 6 -%}
       {%- endif -%}
       {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
         {%- assign new_rank = cur_rank -%}

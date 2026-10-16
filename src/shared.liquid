@@ -531,6 +531,15 @@ single contains test instead of a chained and/or condition.
       a bit cool for a while beats sweating all afternoon. A shorts day
       that only arrives late keeps the long pants. The worst case is
       shorts at the bottom of rank 5 (18 C feels-like) for a few hours.
+
+      Big swings (owner, October 2026, from a reader in Colorado): three
+      hours or more of shorts weather and the legs are shorts, however
+      cold the morning. Better cold for a bit on the way out than sitting
+      in jeans all afternoon. From long-pants weather that draws shorts
+      now; from anything colder the Now drawing keeps its coat or jacket
+      (there is no coat-over-shorts drawing), the later drawings show
+      shorts (shorts_day), and the forecast line says to go out in shorts
+      (shorts_swing, where the language has it).
       {%- endcomment %}
       {%- assign shorts_idx = -1 -%}
       {%- assign shorts_hours = 0 -%}
@@ -542,9 +551,13 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
       {%- endfor -%}
       {%- assign shorts_early = false -%}
+      {%- assign shorts_swing = false -%}
+      {%- if band_rank <= 4 and shorts_hours >= 3 -%}
+        {%- assign shorts_swing = true -%}
+      {%- endif -%}
       {%- if band_rank == 5 and shorts_idx >= 0 -%}
         {%- assign cool_hours = shorts_idx | minus: now_index -%}
-        {%- if cool_hours <= shorts_hours -%}
+        {%- if cool_hours <= shorts_hours or shorts_hours >= 3 -%}
           {%- assign shorts_early = true -%}
           {%- assign band_rank = 6 -%}
           {%- assign band = band_name_list[5] -%}
@@ -808,6 +821,10 @@ single contains test instead of a chained and/or condition.
 
       1. a dip before the peak. It is the first thing the reader walks
          into, and getting cold is the one mistake with a real cost.
+      1b. a big swing into shorts weather (THE LONG-PANTS RULE): go out
+         in shorts, keep the warm layer for the way out; with the
+         evening wanting a layer back, say that too. Only where the
+         language has the wording (texts.facts), else the stories below.
       2. an arc: a layer comes off and the evening wants one back. Needs
          something you can actually take off, so w_water plus a cooling
          key is not an arc - there is nothing to shed, so the evening
@@ -823,6 +840,20 @@ single contains test instead of a chained and/or condition.
     {%- if dip_key != '' -%}
       {%- assign temp_scenario = dip_key -%}
       {%- assign primary_idx = dip_idx -%}
+    {%- elsif shorts_swing and texts.facts.shorts_swing -%}
+      {%- assign temp_scenario = 'shorts_swing' -%}
+      {%- assign primary_idx = shorts_idx -%}
+      {%- comment %} The evening wants more than a T-shirt: the first hour after the peak below shorts and long-pants weather, as the drawings show it. {%- endcomment %}
+      {%- assign swing_back_idx = -1 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign hr = start_index | plus: forloop.index0 -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- if swing_back_idx < 0 and hr > max_temp_idx and rv <= 4 -%}{%- assign swing_back_idx = hr -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if swing_back_idx >= 0 -%}
+        {%- assign temp_scenario = 'shorts_swing_back' -%}
+        {%- assign secondary_idx = swing_back_idx -%}
+      {%- endif -%}
     {%- elsif warm_removable and after_key != '' -%}
       {%- if after_rank < band_rank -%}
         {%- assign temp_scenario = 'arc_colder' -%}
@@ -917,8 +948,10 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment %} arc second token, always a bucket {%- endcomment %}
-    {%- if is_arc and texts_ok -%}
+    {%- comment %} arc second token, always a bucket (also the big swing's layer back on) {%- endcomment %}
+    {%- assign two_hinges = is_arc -%}
+    {%- if temp_scenario == 'shorts_swing_back' -%}{%- assign two_hinges = true -%}{%- endif -%}
+    {%- if two_hinges and texts_ok -%}
       {%- assign gap2 = secondary_idx | minus: now_index -%}
       {%- assign th2 = local_hour | plus: gap2 -%}
       {%- if th2 > 23 -%}{%- assign th2 = 23 -%}{%- endif -%}

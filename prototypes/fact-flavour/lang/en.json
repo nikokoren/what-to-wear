@@ -171,6 +171,12 @@
       "The snow stops for a while later, then comes back {WHENP}.",
       "It keeps snowing for now, then takes a break. It's back {WHENP}.",
       "Snow for now, then a break, then more snow {WHENP}."
+    ],
+    "shorts_swing": [
+      "It's shorts weather {WHEN}. Go with shorts and keep {G} for the way out."
+    ],
+    "shorts_swing_back": [
+      "Shorts weather {WHEN}, and you'll want a layer back {WHEN2}. Go with shorts and keep {G} with you."
     ]
   },
   "flavour_10": {

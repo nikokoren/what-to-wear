@@ -377,6 +377,18 @@ Raw output in `2026-10-seasons/<lang>.json`, notes in
   new; German 5 stars, 22 keeps, 37 vetoes, 12 Write new. Lessons in
   `docs/BRIEF.md` ("What rounds 12 and 13 added").
 
+## Round 14: replies and forecast wordings
+
+`2026-10-replies.json` (`make_round14.py`, ids `rp-…`), 452 lines. Every
+forecast wording in the pools back for a vote, with two or three new
+ones per situation beside them, and the big swing's two new situations
+(`shorts_swing`, `shorts_swing_back`: a cold morning with three hours or
+more of shorts weather). Then follow-ups for the thin groups and new
+lines for every "Write new" spot, written to copy round 13's stars:
+short replies to the forecast line. Raw output in `2026-10-replies/`.
+A veto or Write new on a forecast wording takes it out, never a
+situation's last; an edit replaces it (`build_pools.py`, apply_facts).
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

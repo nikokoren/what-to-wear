@@ -73,6 +73,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- endif -%}
   {%- else -%}
     {%- assign f_key = temp_scenario -%}
+    {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
   {%- endif -%}
   {%- comment %}
   The garment on screen, for the arc keys: {G} the garment, {GP} its
@@ -241,7 +242,8 @@ current time moves every 15 minutes, so the merge variables change.
         {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
         {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
         {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
-        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'arc_level', 'arc_colder', 'shorts_swing_back' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'shorts_swing' -%}{%- assign fu_key = 'off' -%}
       {%- endcase -%}
     {%- endif -%}
     {%- comment %}
@@ -257,7 +259,7 @@ current time moves every 15 minutes, so the merge variables change.
       {%- when 'w_coat', 'c_coat' -%}{%- assign fu_gi = 1 -%}
       {%- when 'w_jacket', 'c_jacket' -%}{%- assign fu_gi = 2 -%}
       {%- when 'w_hoodie', 'c_hoodie' -%}{%- assign fu_gi = 3 -%}
-      {%- when 'arc_warmer', 'arc_level', 'arc_colder' -%}
+      {%- when 'arc_warmer', 'arc_level', 'arc_colder', 'shorts_swing', 'shorts_swing_back' -%}
         {%- if f_g != '' -%}{%- assign fu_gi = band_rank | minus: 1 -%}{%- endif -%}
     {%- endcase -%}
     {%- assign fu_g = '' -%}

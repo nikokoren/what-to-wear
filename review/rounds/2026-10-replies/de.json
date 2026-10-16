@@ -1,0 +1,605 @@
+{
+ "round": "2026-10-replies",
+ "lines": [
+  {
+   "path": "fact_0.steady",
+   "text": "Heute kannst du den ganzen Tag so bleiben, wie du angezogen bist."
+  },
+  {
+   "path": "fact_0.steady",
+   "text": "Deine Kleidung passt zum Wetter, und das bleibt den ganzen Tag so."
+  },
+  {
+   "path": "fact_0.steady_evening",
+   "text": "Heute Abend kannst du so bleiben, wie du angezogen bist."
+  },
+  {
+   "path": "fact_0.steady_evening",
+   "text": "Am Wetter ändert sich heute Abend nichts mehr, deine Kleidung passt."
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "Heute bleibt's heiß. Trink genug Wasser und meide die pralle Sonne."
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten."
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "Es wird heute nicht kühler, also nimm genug Wasser mit und bleib, wo's geht, im Schatten."
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "Bis zum Abend wird's nicht milder."
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "An der Kälte ändert sich heute nichts."
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "Mit milderem Wetter ist heute nicht mehr zu rechnen."
+  },
+  {
+   "path": "fact_0.w_scarf",
+   "text": "{WHEN} brauchst du Mütze, Schal und Handschuhe nicht mehr."
+  },
+  {
+   "path": "fact_0.w_scarf",
+   "text": "Mütze, Schal und Handschuhe kannst du {WHEN} einpacken."
+  },
+  {
+   "path": "fact_0.w_scarf",
+   "text": "{WHEN} wird's wärmer, da kannst du Mütze, Schal und Handschuhe ausziehen."
+  },
+  {
+   "path": "fact_0.w_coat",
+   "text": "{WHEN} wird's mild genug, um die Winterjacke auszuziehen."
+  },
+  {
+   "path": "fact_0.w_coat",
+   "text": "Mit der Winterjacke ist {WHEN} Schluss, dann wird's wärmer."
+  },
+  {
+   "path": "fact_0.w_jacket",
+   "text": "{WHEN} wird's mild genug, um die Jacke auszuziehen."
+  },
+  {
+   "path": "fact_0.w_jacket",
+   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer."
+  },
+  {
+   "path": "fact_0.w_hoodie",
+   "text": "{WHEN} wird's mild genug, um den Pulli auszuziehen."
+  },
+  {
+   "path": "fact_0.w_hoodie",
+   "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer."
+  },
+  {
+   "path": "fact_0.w_water",
+   "text": "{WHEN} ziehen die Temperaturen kräftig an, also denk an genug Wasser."
+  },
+  {
+   "path": "fact_0.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit."
+  },
+  {
+   "path": "fact_0.w_water",
+   "text": "{WHEN} wird's heiß, da gehört eine Flasche Wasser in die Tasche."
+  },
+  {
+   "path": "fact_0.c_scarf",
+   "text": "{WHEN} brauchst du Mütze, Schal und Handschuhe, also nimm sie mit."
+  },
+  {
+   "path": "fact_0.c_scarf",
+   "text": "{WHEN} wird's richtig kalt, dann willst du Mütze, Schal und Handschuhe dabeihaben."
+  },
+  {
+   "path": "fact_0.c_scarf",
+   "text": "Denk an Mütze, Schal und Handschuhe, {WHEN} wird's ungemütlich kalt."
+  },
+  {
+   "path": "fact_0.c_coat",
+   "text": "{WHEN} brauchst du die Winterjacke, also nimm sie mit."
+  },
+  {
+   "path": "fact_0.c_coat",
+   "text": "Lass die Winterjacke nicht zu Hause, {WHEN} wird's richtig kalt."
+  },
+  {
+   "path": "fact_0.c_coat",
+   "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran."
+  },
+  {
+   "path": "fact_0.c_jacket",
+   "text": "{WHEN} brauchst du eine Jacke, also nimm eine mit."
+  },
+  {
+   "path": "fact_0.c_jacket",
+   "text": "{WHEN} wird's kühl, dann bist du froh über eine Jacke."
+  },
+  {
+   "path": "fact_0.c_hoodie",
+   "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit."
+  },
+  {
+   "path": "fact_0.c_hoodie",
+   "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli."
+  },
+  {
+   "path": "fact_0.c_relief",
+   "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht."
+  },
+  {
+   "path": "fact_0.c_relief",
+   "text": "{WHEN} ist das Schlimmste der Hitze vorbei, es bleibt aber warm."
+  },
+  {
+   "path": "fact_0.arc_warmer",
+   "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute."
+  },
+  {
+   "path": "fact_0.arc_warmer",
+   "text": "{WHEN} {GV} weg, danach wird's nicht mehr kühl genug für {GP}."
+  },
+  {
+   "path": "fact_0.arc_warmer",
+   "text": "{WHEN} {GV} weg, und anziehen musst du {GP} heute nicht mehr."
+  },
+  {
+   "path": "fact_0.arc_level",
+   "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler."
+  },
+  {
+   "path": "fact_0.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler."
+  },
+  {
+   "path": "fact_0.arc_level",
+   "text": "{WHEN} {GV} weg, bis es {WHEN2} wieder abkühlt."
+  },
+  {
+   "path": "fact_0.arc_colder",
+   "text": "{WHEN} {GV} weg. {WHEN2} wird's so kalt, dass du {GP} und noch eine Schicht brauchst."
+  },
+  {
+   "path": "fact_0.arc_colder",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter als am Morgen. Nimm eine Schicht mehr mit."
+  },
+  {
+   "path": "fact_0.arc_colder",
+   "text": "{WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu was Warmes, {WHEN2} wird's richtig kühl."
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in Shorts gehen."
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "Lass dich vom kühlen Start nicht täuschen, {WHEN} reichen Shorts."
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "Jetzt noch frisch, {WHEN} wird's ein Tag für kurze Hosen."
+  },
+  {
+   "path": "fact_0.p_wetter",
+   "text": "Pack den Schirm ein, {WHENP} wird's kurz nass."
+  },
+  {
+   "path": "fact_0.p_wetter",
+   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken."
+  },
+  {
+   "path": "fact_0.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit."
+  },
+  {
+   "path": "fact_0.p_wetter_long",
+   "text": "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein."
+  },
+  {
+   "path": "fact_0.p_wetter_long",
+   "text": "{WHENP} beginnt ein Landregen, also nimm besser den Schirm mit."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe",
+   "text": "Ob's {WHENP} regnet, ist nicht sicher. Der Schirm kann trotzdem mit."
+  },
+  {
+   "path": "fact_0.p_stays_wet",
+   "text": "Der Regen hält den ganzen Tag an, der Schirm bleibt also dabei."
+  },
+  {
+   "path": "fact_0.p_stays_wet",
+   "text": "Eine Regenpause gibt's heute nicht, nimm den Schirm mit."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "Erst brauchst du noch den Schirm, später wird's trocken."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "Noch regnet's, aber später hört es auf. Bis dahin hilft der Schirm."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "Nimm den Schirm mit, auch wenn der Regen später abzieht."
+  },
+  {
+   "path": "fact_0.p_wet_again",
+   "text": "Der Regen hört später auf, aber nur kurz. {WHENP} regnet's wieder, also behalt den Schirm."
+  },
+  {
+   "path": "fact_0.p_wet_again",
+   "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder, dazwischen bleibt's trocken."
+  },
+  {
+   "path": "fact_0.p_snow_coming",
+   "text": "Rechne {WHENP} mit Schnee."
+  },
+  {
+   "path": "fact_0.p_snow_coming",
+   "text": "{WHENP} setzt Schneefall ein."
+  },
+  {
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "Der Schneefall hält den ganzen Tag an."
+  },
+  {
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "Heute schneit's ohne Unterbrechung."
+  },
+  {
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "Es schneit weiter, bis der Tag vorbei ist."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "Noch schneit's, aber später hört es auf."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "Vorerst schneit's weiter, später ist Schluss damit."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "Später wird's trocken, bis dahin schneit's."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Heute schneit's mit Unterbrechung: jetzt, und {WHENP} wieder."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Auf den Schnee jetzt folgt eine Pause, {WHENP} kommt neuer dazu."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Vorausgesetzt, du weißt noch, wo er ist.",
+   "answers": [
+    "fu-de-464190658c29"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Den Satz könnt ich inzwischen im Schlaf aufsagen."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Und zwar aufgespannt. Unterm Arm hilft er nichts."
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Am besten nicht wieder den mit der kaputten Speiche.",
+   "answers": [
+    "fu-de-5ceac18997a2"
+   ]
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Aber auf mich hörst du ja erst mit nassen Socken.",
+   "answers": [
+    "se-de-c4a725a2e9d8"
+   ]
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Bevor du's sagst: Nein, das ist nicht nur Niesel."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.",
+   "answers": [
+    "fu-de-28338fc9c3b3"
+   ]
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "answers": [
+    "fu-de-7169808d5bf3"
+   ]
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Freu dich nicht zu früh. Bald ist das alles grauer Matsch.",
+   "answers": [
+    "se-de-f494e320be78"
+   ]
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "Gleich fühlst du dich wieder wie zwölf. Siehst halt nicht so aus."
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "Und nein, deswegen fällt die Arbeit nicht aus."
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "Dann ist draußen endlich alles so blass wie du."
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Aber nicht vorher. Ich seh das.",
+   "answers": [
+    "fu-de-2a322039ae72"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Dann darfst du dich kurz freuen. Aber übertreib's nicht.",
+   "answers": [
+    "se-de-51180f41294c"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Hier drin merk ich davon natürlich wieder nichts.",
+   "answers": [
+    "al-de-ee48eb1587c6"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Wär ja auch zu schön gewesen, wenn's gehalten hätte.",
+   "answers": [
+    "fu-de-d103743e1732"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Ich weiß, jetzt sieht's nicht danach aus. Ich hab trotzdem recht."
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Und du überlegst schon, ob's nicht auch ohne geht. Seh ich doch.",
+   "answers": [
+    "fu-de-ede920391c1a"
+   ]
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Das war das erste Mal. Bei dir muss ich's ja dreimal sagen.",
+   "answers": [
+    "al-de-3ec4402a46f4"
+   ]
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Da lohnt sich das Ausziehen ja fast nicht.",
+   "answers": [
+    "fu-de-9df558276b56"
+   ]
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Früher hat man sich einmal am Tag angezogen. Einmal!",
+   "answers": [
+    "se-de-d210b9aa3d35"
+   ]
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich.",
+   "answers": [
+    "fu-de-9b85a57a7b63",
+    "al-de-1500f3dab84c"
+   ]
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "Extra einfach formuliert. Für dich.",
+   "answers": [
+    "al-de-1f633d85128d",
+    "al-de-38f7804356ce",
+    "al-de-4b134e3a656d"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Mehr sag ich dazu nicht. Ich bin ja nicht deine Mutter.",
+   "answers": [
+    "fu-de-deccfafba7ad"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Nur ist der Schatten schon wieder reserviert. Mit Handtüchern.",
+   "answers": [
+    "se-de-498ddaa47dd7"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "An solchen Tagen fällt in der Bahn die Klimaanlage aus. Wegen Hitze.",
+   "answers": [
+    "se-de-86da3bf6e8b9"
+   ]
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "Wasser ist übrigens das Durchsichtige.",
+   "answers": [
+    "fu-de-d0321098b2cc"
+   ]
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "Trinken, nicht nur rumtragen. Ich kenn dich."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Dann bin ich heute wohl nur Deko."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Für so eine Ansage bin ich eigentlich überqualifiziert."
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel."
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "Dann kannst du heute ja nichts falsch machen. Theoretisch."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Also gilt heute wieder: Wir heizen nicht für draußen.",
+   "answers": [
+    "se-de-f8c75ae3a9a2"
+   ]
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Das ist keine Vorhersage, das ist eine Drohung."
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "Deine schlechte Laune hat heute ausnahmsweise mal einen Grund."
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "Dann hast du ja den ganzen Tag ein Gesprächsthema."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Schade eigentlich. Ein bisschen Sturm hätt ich heute noch vertragen.",
+   "answers": [
+    "se-de-212f32cc4183"
+   ]
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Wenigstens das Wetter ist heute mal unkompliziert."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Gut so. Für Überraschungen bin ich abends zu alt."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Das ist vermutlich mehr, als man über deinen Tag sagen kann."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Die Sachen halten also durch. Bei dir bin ich mir nicht so sicher."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Eine Sorge weniger. Bleiben dir ja noch genug."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Das sag ich jetzt nur noch aus Pflichtgefühl.",
+   "answers": [
+    "se-de-6dbb82ad7913"
+   ]
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Ehrlich gesagt hätt ich's dir auch morgen sagen können."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Mehr als „passt“ fällt mir so spät auch nicht mehr ein."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Im Gegensatz zu deinem Schlafrhythmus."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Auch noch fürs dritte „Ich geh gleich ins Bett“."
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Lebkuchen im September. Gab's früher nicht. Und du kaufst zwei Packungen.",
+   "answers": [
+    "se-de-06338d78f732"
+   ],
+   "months": "09"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Zum Zwetschgenkuchen kommen die Wespen wieder pünktlicher als jeder Gast.",
+   "answers": [
+    "se-de-d6076b7ecb55"
+   ],
+   "months": "08,09"
+  },
+  {
+   "path": "now_10.night",
+   "text": "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.",
+   "answers": [
+    "se-de-5ad53bc0b53e"
+   ]
+  },
+  {
+   "path": "now_11.night",
+   "text": "Schönheitsschlaf brauchst du keinen mehr. Bei dir ist nichts zu retten."
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Heute schwitzt du wieder an Stellen, von denen ich nichts wissen will.",
+   "answers": [
+    "al-de-ee52197dd001"
+   ]
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Füße in den Wassereimer, und du nennst es Wellness.",
+   "answers": [
+    "fu-de-673b503b046c"
+   ]
+  },
+  {
+   "path": "now_11.nice",
+   "text": "An so einem Tag könnte man dich glatt mal lächeln sehen. Könnte.",
+   "answers": [
+    "fu-de-db7f95efa7a2"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "{WHEN} ist Shorts-Wetter. Also gleich Shorts anziehen und die warme Schicht nur für den Anfang."
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} ist Shorts-Wetter, {WHEN2} wird's wieder frischer. Shorts an, und die warme Schicht mitnehmen."
+  }
+ ]
+}

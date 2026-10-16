@@ -14,6 +14,7 @@ without words. The sarcastic line shows at On and 11 in every mode.
 import calendar
 import datetime as dt
 import json
+import re
 import pathlib
 import sys
 
@@ -205,6 +206,25 @@ for h in (7, 9, 11, 13):
     for field, nxt in ((False, False), (False, True)):
         html = render(field, sarcasm="11", feels=WARMING, hour=h, nxt=nxt)
         expect(f"warm now at {h}:00 ({field}, {nxt}): no cool-day line", not any(t in html for t in cool_only))
+
+# Big swings (a reader in Colorado): freezing at dawn, shorts weather from
+# 1 pm to 5 pm. Three hours or more of it and the legs are shorts: the Now
+# drawing keeps the coat, the later drawings show shorts, and the forecast
+# line says to go out in shorts, and that a layer comes back this evening.
+CO = [-3, -3, -4, -4, -4, -3, -2, 0, 4, 9, 14, 19, 23, 26, 27, 27, 26, 23, 18, 13, 9, 6, 4, 2]
+for lang, word in (("en", "shorts"), ("de", "Shorts")):
+    html = render(True, feels=CO, hour=7, nxt=True, lang=lang)
+    slugs = re.findall(r"([a-z_]+_dry)\.png", html)
+    expect(f"{lang}: a Colorado morning, the coat now", slugs[:1] == ["coat_dry"])
+    expect(f"{lang}: a Colorado morning, shorts later", "tee_shorts_dry" in slugs and "tee_pants_dry" not in slugs)
+    words = re.sub(r"<[^>]+>", " ", html)
+    expect(f"{lang}: a Colorado morning, the forecast says shorts", f"{word} an" in words or "wear shorts" in words.lower()
+           or "go with shorts" in words.lower())
+    expect(f"{lang}: a Colorado morning, no placeholder left", "{" not in words)
+# Two hours of shorts weather from a cold start: long pants, as before.
+BRIEF = [-3, -3, -4, -4, -4, -3, -2, 0, 4, 9, 14, 19, 22, 23, 25, 25, 23, 20, 18, 13, 9, 6, 4, 2]
+html = render(True, feels=BRIEF, hour=7, nxt=True)
+expect("two hours of shorts weather: long pants", "tee_shorts_dry" not in html and "shorts" not in re.sub(r"<[^>]+>|sprites/[a-z_]+", " ", html).lower())
 
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:

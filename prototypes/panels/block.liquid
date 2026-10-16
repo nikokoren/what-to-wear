@@ -10,7 +10,8 @@ A panel is a stretch of the day, from one change to the next:
     hour at RAIN_HIGH is enough: a shower counts, as in the text), or
     two dry hours ending it;
   - tee_pants and tee_shorts count as one outfit later in the day: legs
-    are decided at the door;
+    are decided at the door. On a shorts day (three hours or more of
+    shorts weather, THE LONG-PANTS RULE) the warm drawings are shorts;
   - the "now" panel shows rain only if it is falling now; a later panel
     shows it if it starts with that panel, or anywhere inside it once
     panels are merged;
@@ -64,6 +65,10 @@ after the fact + flavour block and the picture.
         {%- assign new_rank = hi -%}
       {%- elsif lo < cur_rank -%}
         {%- assign new_rank = lo -%}
+      {%- endif -%}
+      {%- comment %} A shorts day (THE LONG-PANTS RULE): once it's warm, the legs are shorts. {%- endcomment %}
+      {%- if new_rank == 5 and shorts_swing or new_rank == 5 and shorts_early -%}
+        {%- assign new_rank = 6 -%}
       {%- endif -%}
       {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
         {%- assign new_rank = cur_rank -%}

@@ -170,6 +170,12 @@
       "Der Schnee macht später eine Pause, {WHENP} schneit's aber wieder.",
       "Erstmal schneit's weiter, dann ist Pause, und {WHENP} geht es wieder los.",
       "Jetzt Schnee, dann eine Pause und {WHENP} wieder Schnee."
+    ],
+    "shorts_swing": [
+      "{WHEN} ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg."
+    ],
+    "shorts_swing_back": [
+      "{WHEN} ist Shorts-Wetter, {WHEN2} brauchst du wieder eine Schicht mehr. Zieh trotzdem schon jetzt Shorts an."
     ]
   },
   "flavour_10": {
