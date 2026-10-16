@@ -389,6 +389,15 @@ short replies to the forecast line. Raw output in `2026-10-replies/`.
 A veto or Write new on a forecast wording takes it out, never a
 situation's last; an edit replaces it (`build_pools.py`, apply_facts).
 
+## Round 15: polish
+
+`2026-10-polish.json` (`make_round15.py`, ids `po-…`), 105 lines: every
+"Write new" spot of round 14, the big-swing wordings again (soft and
+short; the owner keeps the shorts suggestion on days that cool again),
+wordings that say when the rain or snow stops (`{WHENSTOP}`), storm and
+ice wordings that lead with the danger, and follow-ups for the groups
+still under three lines. Raw output in `2026-10-polish/`.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

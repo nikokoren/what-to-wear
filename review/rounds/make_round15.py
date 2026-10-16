@@ -72,7 +72,10 @@ def main():
                 hints.append("Says when it stops; only shows when there's a stop time")
             if key.startswith("p_") and len(text) > 100:
                 hints.append(f"Long ({len(text)} characters): after a temperature sentence it may not fit")
+            if item.get("answers"):
+                hints.append("Answers a “Write new”")
             lines.append({"lang": lang, "path": f"fact_0.{key}", "text": text, "role": "fact", "new": True,
+                          **({"answers": item["answers"]} if item.get("answers") else {}),
                           "batch": f"Forecast: {r14.FAMILY[group]}", "sprite": sprite,
                           "fills": fills, "fillsAlt": r8.fills(lang, text, base, facts, alt=True),
                           "under": r14.under_line(doc, group, fills),
