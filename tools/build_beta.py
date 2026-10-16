@@ -31,6 +31,7 @@ import calendar
 import datetime as dt
 import importlib.util
 import json
+import re
 import pathlib
 import shutil
 import sys
@@ -125,9 +126,20 @@ def verify(shared, view, full, trimmed):
     return checked
 
 
+COMMENT = re.compile(r"\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}\n?", re.DOTALL)
+HEADER = """{%- comment %}
+What to Wear, beta. Built by tools/build_beta.py from src/shared.liquid and
+prototypes/; the comments explaining it are there. Don't edit by hand.
+{%- endcomment %}
+"""
+
+
 def main():
     panels_build.main()
-    shared = (BUILD / "shared.liquid").read_text(encoding="utf-8")
+    # The comments stay in src/ and prototypes/; the pasted markup drops
+    # them (TRMNL's 100 KB ceiling), and what's verified below is what ships.
+    shared = COMMENT.sub("", (BUILD / "shared.liquid").read_text(encoding="utf-8"))
+    shared = HEADER + re.sub(r"\n{3,}", "\n\n", shared).lstrip("\n")
     full = {l: json.loads((BUILD / "lang" / f"{l}.json").read_text(encoding="utf-8")) for l in ("en", "de")}
     # Topical lines are parked (docs/TODO.md item 8): the beta ships none, so
     # a fork that still has the old field switched on shows none either.
@@ -142,7 +154,7 @@ def main():
             shutil.rmtree(OUT / sub, ignore_errors=True)
     (OUT / "views").mkdir(parents=True, exist_ok=True)
     (OUT / "lang").mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(BUILD / "shared.liquid", OUT / "shared.liquid")
+    (OUT / "shared.liquid").write_text(shared, encoding="utf-8")
     for view in sorted((BUILD / "views").glob("*.liquid")):
         shutil.copyfile(view, OUT / "views" / view.name)
     for lang, doc in trimmed.items():

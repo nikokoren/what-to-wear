@@ -1,109 +1,21 @@
 {%- comment %}
-================================================================
-WHAT TO WEAR, v3 - shared markup
-================================================================
-
-All user-facing phrasing now lives outside this file, in
-lang/<code>.json, fetched as the SECOND polling URL. See
-docs/MIGRATION.md before changing the plugin's polling config,
-because the order of the two rollout steps matters.
-
-Polling URL box must contain exactly two lines:
-
-  https://api.open-meteo.com/v1/forecast?latitude=...&timezone=auto
-  https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@main/lang/{{ language | default: 'en' }}.json
-
-This file reads the weather from either shape:
-  one URL   -> current / hourly at the root
-  two URLs  -> IDX_0.current / IDX_0.hourly, texts in IDX_1
-so it renders correctly before and after the polling URL changes,
-whichever order those two updates reach a device.
-
-If the texts payload is missing or 404s, today_tip comes out empty
-and the views simply hide the tip line. The sprite still renders.
-
-SPRITES
-The outfit set lives in sprites/ on main, one finished PNG per case:
-  sprites/<outfit>_<dry|rain|snow>.png           the plain outfit
-  sprites/<theme>_<outfit>_<dry|rain|snow>.png   a themed version
-with <outfit> one of BAND_NAMES below. _rain adds the umbrella and _snow
-draws snow falling (only for the outfits in SNOW_OUTFITS), both only when
-it is raining or snowing now. Rain or snow later is the words' job. The old flat files in the repo root belong to the
-published recipe and are not used here.
-================================================================
+What to Wear, beta. Built by tools/build_beta.py from src/shared.liquid and
+prototypes/; the comments explaining it are there. Don't edit by hand.
 {%- endcomment %}
-
-
-{%- comment %} ============ TUNING ============ {%- endcomment %}
 {%- assign MIN_DELTA = 2 -%}
 {%- assign RAIN_LOW = 25 -%}
 {%- assign RAIN_HIGH = 50 -%}
 {%- assign DAY_END_HOUR = 21 -%}
-{%- comment %}
-Characters the tip may occupy before it starts crowding the sprite. Used
-to pick which of a scenario's interchangeable precipitation lines to pair
-with the temperature line. Measured against the OG device at title--large.
-{%- endcomment %}
 {%- assign TIP_BUDGET = 165 -%}
 
-{%- comment %}
-============ THE BAND LADDER ============
-The upper edge of each band in apparent degrees C, cold to warm. Seven
-edges make eight bands; anything above the last edge is the eighth.
-
-This string is the only place the ladder is written down. It used to be
-three hand-copied if/elsif chains -- one for the current temperature, one
-for the forecast high, one for the forecast low -- and they had drifted
-apart at three thresholds: freezing ended at 3 in one and 0 in the others,
-cold at 10 against 7, mild at 19 against 20.
-
-That is not cosmetic. A day going from 12 to 8 put the current reading in
-cool and the forecast low in cool as well, because 8 is over that ladder's
-7, so no band change was detected and the tip said the weather was holding
-steady while the drawing showed a hoodie and the reader needed a jacket.
-The dead zones were 0-3, 7-10 and 19-20, which is most of a European
-winter afternoon.
-
-Each step is one decision at the door. Edges were placed with
-tools/climate/ (three years of hourly data where the devices are) and are
-meant to be tuned here by hand:
-
-  1 bundled       <= -5   winter coat, hat, scarf, gloves
-  2 coat          -5..5   winter coat
-  3 jacket        5..12   jacket over long sleeves
-  4 sweater      12..18   sweater or hoodie
-  5 tee_pants    18..24   t-shirt, long pants
-  6 tee_shorts   24..30   t-shirt, shorts
-  7 heat         30..34   tank top, sandals
-  8 extreme_heat   > 34   tank top, sun hat, water
-
-Bands 5 and 6 have the same top layer, so moving between them is not a
-layer coming off or going on - see THE LONG-PANTS RULE for how the legs
-are decided instead.
-{%- endcomment %}
 {%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}
 {%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}
-{%- comment %}
-Outfits with a snow drawing. At the default setting snow only falls on
-bundled and coat (tools/climate/: 72% and 28%); jacket is for "Do you run
-cold or warm?" shifting a snowy day warmer. An outfit not listed draws dry
-in snow.
-{%- endcomment %}
 {%- assign SNOW_OUTFITS = ',bundled,coat,jacket,' -%}
 
-
-{%- comment %} ============ SPRITE BASES ============ {%- endcomment %}
 {%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/sprites/' -%}
 {%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
 
-
-{%- comment %} ============ SETTINGS ============ {%- endcomment %}
 {%- assign location_label_raw = trmnl.plugin_settings.custom_fields_values.location_label | default: '' -%}
-{%- comment %}
-Forecast: "Yes"/"No" as saved for years, true/false from the on/off field
-that replaced the select. No `default:` here: Liquid's default replaces
-false too, which would turn a switched-off forecast back on.
-{%- endcomment %}
 {%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions -%}
 {%- if show_future_suggestions_raw == nil or show_future_suggestions_raw == '' -%}{%- assign show_future_suggestions_raw = 'yes' -%}{%- endif -%}
 {%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}
@@ -111,26 +23,6 @@ false too, which would turn a switched-off forecast back on.
 {%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}
 {%- assign temp_preference_raw = trmnl.plugin_settings.custom_fields_values.temp_preference | default: '0' -%}
 
-{%- comment %}
-============ PERSONAL THERMOSTAT ============
-Degrees C added to every temperature before it meets the ladder. Negative
-means the reader feels colder than the forecast says, so the day is banded
-colder and the outfit comes out warmer.
-
-A uniform shift is deliberate, and it is what makes this setting safe to
-expose. Adding the same number to every reading cannot reorder the edges,
-so the bands can never overlap or swap order no matter what is in the
-field -- there is nothing to validate, because a bad state is not
-representable. Letting anyone name seven thresholds would need ordering
-checks, and a form that can be saved in a broken state eventually is.
-
-Differences survive the shift untouched, so MIN_DELTA and every arc
-comparison behave exactly as before. Nothing on screen shows a temperature,
-so shifting is invisible except in which outfit gets drawn.
-
-Absent or unparseable is 0, which is the behaviour every existing install
-already has.
-{%- endcomment %}
 {%- assign temp_shift = 0 -%}
 {%- assign tp_check = temp_preference_raw | strip -%}
 {%- if tp_check == '-4' or tp_check == '-2' or tp_check == '2' or tp_check == '4' -%}
@@ -156,12 +48,6 @@ already has.
 
 {%- assign location_label = location_label_raw -%}
 
-
-{%- comment %}
-============ DATA SOURCES ============
-IDX_0 only exists once a second polling URL is configured. Testing
-for it is what lets one copy of this markup serve both shapes.
-{%- endcomment %}
 {%- assign texts = nil -%}
 {%- if IDX_0 -%}
   {%- assign cw = IDX_0.current -%}
@@ -174,7 +60,6 @@ for it is what lets one copy of this markup serve both shapes.
   {%- assign wx_offset = utc_offset_seconds -%}
 {%- endif -%}
 
-{%- comment %} A texts payload that did not parse has no meta.code. {%- endcomment %}
 {%- assign texts_ok = false -%}
 {%- if texts.meta.code -%}
   {%- assign texts_ok = true -%}
@@ -182,8 +67,6 @@ for it is what lets one copy of this markup serve both shapes.
 
 {%- assign now_time = cw.time -%}
 
-
-{%- comment %} ============ DATA PRESENCE ============ {%- endcomment %}
 {%- assign is_error = false -%}
 {%- assign error_message = '' -%}
 {%- assign error_headline = '' -%}
@@ -196,19 +79,6 @@ for it is what lets one copy of this markup serve both shapes.
   {%- assign error_key = 'error_hourly' -%}
 {%- endif -%}
 
-{%- comment %}
-============ NO LOCATION IS NOT A WEATHER OUTAGE ============
-With no coordinates the polling URL asks Open-Meteo for latitude= and
-longitude=, which answers 200 with a zero-byte body rather than an error.
-That lands here as a missing payload and used to read "Please try again
-later", which is advice that can never work: waiting does not set a
-location. Say what would actually fix it.
-
-Both fields are read, because an install predating lat_lon still has its
-coordinates in latitude/longitude and the polling URL falls back to them.
-If either holds anything, a missing payload is a real outage and keeps the
-ordinary message.
-{%- endcomment %}
 {%- assign has_location = false -%}
 {%- assign lat_lon_set = trmnl.plugin_settings.custom_fields_values.lat_lon | default: '' | strip -%}
 {%- assign latitude_set = trmnl.plugin_settings.custom_fields_values.latitude | default: '' | strip -%}
@@ -227,12 +97,7 @@ ordinary message.
       {%- assign error_headline = texts.ui.error_location_short -%}
     {%- endif -%}
   {%- endif -%}
-  {%- comment %}
-  Hardcoded fallback: the texts payload is exactly what may be
-  missing when the weather payload is missing too, and an error
-  screen with no words on it helps nobody.
-  {%- endcomment %}
-  {%- if error_message == '' or error_message == nil -%}
+    {%- if error_message == '' or error_message == nil -%}
     {%- if lang == 'de' -%}
       {%- if error_key == 'error_location' -%}
         {%- assign error_message = 'Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.' -%}
@@ -261,17 +126,10 @@ ordinary message.
   {%- endif -%}
 {%- endif -%}
 
-
-{%- comment %} ============ SHARED TIME ============ {%- endcomment %}
 {%- assign local_hour = 12 -%}
 {%- assign today_md = '01-01' -%}
 {%- assign today_year = '2026' -%}
 
-{%- comment %}
-Local means the forecast location's clock. Open-Meteo states that offset
-outright (utc_offset_seconds, from timezone=auto); the device's own offset
-is only the fallback, for a payload that somehow lacks it.
-{%- endcomment %}
 {%- assign epoch_utc = trmnl.system.timestamp_utc | default: 0 | plus: 0 -%}
 {%- assign day_offset = trmnl.user.utc_offset | default: 0 | plus: 0 -%}
 {%- if wx_offset != nil -%}
@@ -289,26 +147,11 @@ is only the fallback, for a payload that somehow lacks it.
   {%- assign today_year = local_secs | date: '%Y' -%}
 {%- endif -%}
 
-{%- comment %}
-Day number on the LOCAL calendar. It drives the weekday (Thanksgiving) and
-which line of a scenario rotates in. Counting UTC days instead switched
-Thanksgiving on at 19:00 on Wednesday in New York and off at 19:00 on the
-day itself, and changed the tip mid-morning in Sydney.
-{%- endcomment %}
 {%- assign local_days = local_secs | divided_by: 86400 -%}
 
-
-
-{%- comment %}
-============ WEATHER CODE TABLES ============
-Comma wrapped so 5 cannot match inside 51, and evaluated with a
-single contains test instead of a chained and/or condition.
-{%- endcomment %}
 {%- assign RAIN_CODES = ',51,53,55,56,57,61,63,65,66,67,80,81,82,95,96,99,' -%}
 {%- assign SNOW_CODES = ',71,73,75,77,85,86,' -%}
 
-
-{%- comment %} ============ DEFAULTS ============ {%- endcomment %}
 {%- assign temp_c = 0 -%}
 {%- assign wmo = 0 -%}
 {%- assign is_now_precip = 0 -%}
@@ -338,14 +181,9 @@ single contains test instead of a chained and/or condition.
 {%- assign garment_n = '' -%}
 {%- assign garment_a = '' -%}
 
-
 {%- if is_error == false -%}
 
-  {%- comment %}
-  Air temperature is the fallback for a missing feels-like reading. A bare
-  default of 0 would band a null as freezing and draw a puffer in July.
-  {%- endcomment %}
-  {%- assign temp_c = cw.apparent_temperature | default: cw.temperature_2m | default: 0 | plus: 0 -%}
+    {%- assign temp_c = cw.apparent_temperature | default: cw.temperature_2m | default: 0 | plus: 0 -%}
   {%- assign wmo = cw.weather_code | default: 0 | plus: 0 -%}
 
   {%- assign wmo_probe = ',' | append: wmo | append: ',' -%}
@@ -356,16 +194,7 @@ single contains test instead of a chained and/or condition.
     {%- assign is_now_snow = 1 -%}
   {%- endif -%}
 
-  {%- comment %}
-  ============ BAND LADDER ============
-  Walk BAND_EDGES and take the first edge the temperature fits under.
-  Falling off the end is the eighth band. The same three lines do the
-  forecast high and low further down, off the same string, which is the
-  point -- see the note on BAND_EDGES above for what drifting copies cost.
-
-  Ranks 1-8 are the outfits listed with BAND_EDGES above.
-  {%- endcomment %}
-  {%- assign band_edge_list = BAND_EDGES | split: ',' -%}
+    {%- assign band_edge_list = BAND_EDGES | split: ',' -%}
   {%- assign band_name_list = BAND_NAMES | split: ',' -%}
 
   {%- assign temp_banded = temp_c | plus: temp_shift -%}
@@ -380,8 +209,7 @@ single contains test instead of a chained and/or condition.
   {%- assign band_idx = band_rank | minus: 1 -%}
   {%- assign band = band_name_list[band_idx] -%}
 
-  {%- comment %} Suffix from the code, not the band. {%- endcomment %}
-  {%- assign precip_suffix = 'dry' -%}
+    {%- assign precip_suffix = 'dry' -%}
   {%- if is_now_snow == 1 -%}
     {%- assign precip_suffix = 'snow' -%}
   {%- elsif is_now_precip == 1 -%}
@@ -389,13 +217,7 @@ single contains test instead of a chained and/or condition.
   {%- endif -%}
   {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
 
-  {%- comment %}
-  ============ ANCHOR THE HOURLY INDEX ============
-  Match hourly.time against current.time rather than assuming
-  index == hour of day. Falls back to local_hour if no match,
-  which reproduces the old v2 behaviour.
-  {%- endcomment %}
-  {%- assign now_index = -1 -%}
+    {%- assign now_index = -1 -%}
   {%- if now_time and h.time -%}
     {%- assign now_stamp = now_time | slice: 0, 13 -%}
     {%- for t in h.time -%}
@@ -409,8 +231,7 @@ single contains test instead of a chained and/or condition.
     {%- assign now_index = local_hour -%}
   {%- endif -%}
 
-  {%- comment %} ============ FORECAST WINDOW ============ {%- endcomment %}
-  {%- assign cutoff_hour = DAY_END_HOUR -%}
+    {%- assign cutoff_hour = DAY_END_HOUR -%}
   {%- assign min_cutoff = local_hour | plus: 3 -%}
   {%- if min_cutoff > cutoff_hour -%}
     {%- assign cutoff_hour = min_cutoff -%}
@@ -437,35 +258,10 @@ single contains test instead of a chained and/or condition.
     {%- if start_index <= end_index -%}
       {%- assign has_future_window = true -%}
 
-      {%- comment %}
-      ============ TWO HOUR PERSISTENCE ============
-      A band change only counts if it holds for two consecutive hours, the
-      same rule the rain test below has always used. So each hour is read
-      as a pair with the hour after it:
-
-        held_hi = the warmth the pair sustains  (the lower of the two)
-        held_lo = the cold the pair sustains    (the higher of the two)
-
-      Before this, one reading was enough. A 1.5 degree dip at sunrise
-      crossed an edge and outranked the whole day: at 05:30 a reader in a
-      light jacket was told to fetch the winter coat for a single hour,
-      and never heard that the jacket comes off this afternoon.
-
-      The last hour of the window pairs with the hour after it when the
-      payload has one, so a drop that starts at 21:00 still counts.
-
-      Each pair is ranked once here, off the same BAND_EDGES as the
-      current reading, and kept as comma lists indexed from start_index.
-      {%- endcomment %}
-      {%- assign held_lo_csv = '' -%}
+            {%- assign held_lo_csv = '' -%}
       {%- assign rank_hi_csv = '' -%}
       {%- assign rank_lo_csv = '' -%}
-      {%- comment %}
-      The day's sustained peak is tracked on the way through. If nothing
-      beats the current reading the peak is "now", which makes everything
-      after it the cooling side.
-      {%- endcomment %}
-      {%- assign max_temp_future = temp_c -%}
+            {%- assign max_temp_future = temp_c -%}
       {%- assign max_temp_idx = now_index -%}
       {%- assign up_rank = band_rank -%}
       {%- for i in (start_index..end_index) -%}
@@ -479,12 +275,7 @@ single contains test instead of a chained and/or condition.
           {%- if tn > held_lo -%}{%- assign held_lo = tn -%}{%- endif -%}
         {%- endif -%}
 
-        {%- comment %}
-        Both ranked in one walk: the edges ascend, so a value's rank is one
-        more than the number of edges it is above - the same answer as the
-        first-edge-it-fits-under walk used for the current reading.
-        {%- endcomment %}
-        {%- assign hi_banded = held_hi | plus: temp_shift -%}
+                {%- assign hi_banded = held_hi | plus: temp_shift -%}
         {%- assign lo_banded = held_lo | plus: temp_shift -%}
         {%- assign r_hi = 1 -%}
         {%- assign r_lo = 1 -%}
@@ -500,11 +291,7 @@ single contains test instead of a chained and/or condition.
           {%- assign up_rank = r_hi -%}
         {%- endif -%}
 
-        {%- comment %}
-        Separator BEFORE every item but the first. A trailing comma splits
-        into an extra empty item in some Liquid engines and not others.
-        {%- endcomment %}
-        {%- unless forloop.first -%}
+                {%- unless forloop.first -%}
           {%- assign held_lo_csv = held_lo_csv | append: ',' -%}
           {%- assign rank_hi_csv = rank_hi_csv | append: ',' -%}
           {%- assign rank_lo_csv = rank_lo_csv | append: ',' -%}
@@ -517,33 +304,7 @@ single contains test instead of a chained and/or condition.
       {%- assign rank_hi_list = rank_hi_csv | split: ',' -%}
       {%- assign rank_lo_list = rank_lo_csv | split: ',' -%}
 
-      {%- comment %}
-      ============ THE LONG-PANTS RULE ============
-      Every other layer comes off, but legs are decided once, at the door.
-      Someone told "long pants" on a morning that turns into shorts weather
-      is stuck in them all afternoon. So when it is long-pants weather now
-      (rank 5) and the day warms into shorts weather (rank 6 or above, held
-      two hours like every other change), compare the two stretches:
-
-        cool part   hours from now until shorts weather starts
-        warm part   hours of shorts weather in the window
-
-      If the cool part is no longer than the warm part, suggest shorts
-      now: a bit cool for a while beats sweating all afternoon. A shorts
-      day that only arrives late keeps the long pants.
-
-      The Now drawing always shows what the weather calls for right now
-      (owner, October 2026): the forecast line makes the suggestion, the
-      drawing doesn't. Later drawings on a shorts day show shorts.
-
-      Big swings (owner, October 2026, from a reader in Colorado): three
-      hours or more of shorts weather and the legs are shorts, however
-      cold the morning. Better cold for a bit on the way out than sitting
-      in jeans all afternoon. The Now drawing keeps what's right now, the
-      later drawings show shorts, and the forecast line suggests going
-      out in shorts (shorts_swing, where the language has it).
-      {%- endcomment %}
-      {%- assign shorts_idx = -1 -%}
+            {%- assign shorts_idx = -1 -%}
       {%- assign shorts_hours = 0 -%}
       {%- for r in rank_hi_list -%}
         {%- assign rv = r | plus: 0 -%}
@@ -564,17 +325,7 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
       {%- endif -%}
 
-      {%- comment %}
-      The other way round, a cold front: shorts weather now and three hours
-      or more at coat weather later. The forecast line suggests long
-      pants at the door (pants_swing, where the language has it); the
-      drawing shows today's shorts weather as it is. Getting cold costs
-      more than being warm, so this wins over shorts early.
-      Dangerous heat: two hours or more above 34 C feels-like
-      (extreme_heat). The forecast line leads with water and shade
-      (heat_danger), whatever else the day does.
-      {%- endcomment %}
-      {%- assign pants_swing = false -%}
+            {%- assign pants_swing = false -%}
       {%- assign pants_idx = -1 -%}
       {%- assign cold_hours = 0 -%}
       {%- assign scorch_hours = 0 -%}
@@ -587,8 +338,7 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
         {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
       {%- endfor -%}
-      {%- comment %} Liquid reads and/or right to left, so the two cases are spelled out. {%- endcomment %}
-      {%- assign legs_short = shorts_early -%}
+            {%- assign legs_short = shorts_early -%}
       {%- if band_rank >= 6 -%}{%- assign legs_short = true -%}{%- endif -%}
       {%- if legs_short and cold_hours >= 3 -%}
         {%- assign pants_swing = true -%}
@@ -596,15 +346,7 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
       {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
 
-      {%- comment %}
-      Two different cold spells, kept apart because they tell different
-      stories. One global minimum used to stand for both, so a cold hour
-      before the peak hid the evening drop after it.
-
-        dip    before the peak, measured down from now
-        after  after the peak, measured down from the peak
-      {%- endcomment %}
-      {%- assign dip_min = temp_c -%}
+            {%- assign dip_min = temp_c -%}
       {%- assign dip_rank = band_rank -%}
       {%- assign after_min = max_temp_future -%}
       {%- assign after_rank = up_rank -%}
@@ -626,18 +368,7 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
       {%- endfor -%}
 
-      {%- comment %}
-      Two tier rain. Qualifies when either two consecutive hours
-      reach RAIN_LOW or any single hour reaches RAIN_HIGH. This is
-      what kills the summer convection false positives that a flat
-      20 percent threshold produced.
-
-      The same pass looks for a dry break: two consecutive hours under
-      RAIN_LOW. When it is raining now, that break is the difference
-      between "this clears", "this never lets up" and "this stops and
-      comes back", and the rain after the break is judged on its own.
-      {%- endcomment %}
-      {%- assign run_len = 0 -%}
+            {%- assign run_len = 0 -%}
       {%- assign best_run = 0 -%}
       {%- assign dry_run = 0 -%}
       {%- assign gap_found = false -%}
@@ -695,12 +426,7 @@ single contains test instead of a chained and/or condition.
         {%- assign rain_returns = true -%}
       {%- endif -%}
 
-      {%- comment %}
-      Snow anywhere in the window. Needs weather_code in the HOURLY list of
-      the polling URL; without it this never fires and a snowy afternoon
-      reads as rain and gets an umbrella.
-      {%- endcomment %}
-      {%- if codes != nil -%}
+            {%- if codes != nil -%}
         {%- for i in (start_index..end_index) -%}
           {%- assign c_probe = ',' | append: codes[i] | append: ',' -%}
           {%- if SNOW_CODES contains c_probe -%}
@@ -713,36 +439,14 @@ single contains test instead of a chained and/or condition.
     {%- endif -%}
   {%- endif -%}
 
-
   {%- if has_future_window -%}
 
-    {%- comment %}
-    ============ GARMENT FROM THE CURRENT BAND ============
-    The text names the garment ON SCREEN and says what happens to it.
-
-    band 1 bundled     -> the scarf (and hat, gloves) come off
-    band 2 coat        -> the coat comes off
-    band 3 jacket      -> the jacket comes off
-    band 4 sweater     -> the sweater comes off (lines say hoodie)
-    band 5-8           -> t-shirt or tank top, nothing left to remove
-
-    Cooling names the garment of the DESTINATION band, because that
-    is the thing to put in the bag.
-
-    Bands 5 and 6 share a top layer: moving between them is a matter of
-    legs, which THE LONG-PANTS RULE settles at the door, so it produces
-    no hint. w_sweatshirt and c_sweatshirt are no longer used.
-
-    Garment wording comes from the language file so translators can
-    get the article and case right for their language.
-    {%- endcomment %}
-    {%- assign GARMENTS_N = texts.garments.n -%}
+        {%- assign GARMENTS_N = texts.garments.n -%}
     {%- assign GARMENTS_A = texts.garments.a -%}
     {%- assign WKEYS = 'w_scarf,w_coat,w_jacket,w_hoodie' | split: ',' -%}
     {%- assign CKEYS = 'c_scarf,c_coat,c_jacket,c_hoodie' | split: ',' -%}
 
-    {%- comment %} what is on screen right now {%- endcomment %}
-    {%- assign garment_n = '' -%}
+        {%- assign garment_n = '' -%}
     {%- assign garment_a = '' -%}
     {%- if band_rank <= 4 and texts_ok -%}
       {%- assign gi = band_rank | minus: 1 -%}
@@ -750,8 +454,7 @@ single contains test instead of a chained and/or condition.
       {%- assign garment_a = GARMENTS_A[gi] -%}
     {%- endif -%}
 
-    {%- comment %} ---- warming: name what comes off ---- {%- endcomment %}
-    {%- assign delta_up = max_temp_future | minus: temp_c -%}
+        {%- assign delta_up = max_temp_future | minus: temp_c -%}
     {%- assign warm_key = '' -%}
     {%- assign warm_removable = false -%}
     {%- if delta_up >= MIN_DELTA and up_rank > band_rank -%}
@@ -765,14 +468,12 @@ single contains test instead of a chained and/or condition.
           {%- assign warm_key = WKEYS[wi] -%}
           {%- assign warm_removable = true -%}
         {%- elsif up_rank >= 7 -%}
-          {%- comment %} t-shirt or tank already, nothing to shed {%- endcomment %}
-          {%- assign warm_key = 'w_water' -%}
+                    {%- assign warm_key = 'w_water' -%}
         {%- endif -%}
       {%- endunless -%}
     {%- endif -%}
 
-    {%- comment %} ---- cooling, either side of the peak: name what to bring ---- {%- endcomment %}
-    {%- assign dip_key = '' -%}
+        {%- assign dip_key = '' -%}
     {%- assign delta_dip = temp_c | minus: dip_min -%}
     {%- if delta_dip >= MIN_DELTA and dip_rank < band_rank -%}
       {%- assign same_class = false -%}
@@ -806,19 +507,7 @@ single contains test instead of a chained and/or condition.
       {%- endunless -%}
     {%- endif -%}
 
-    {%- comment %}
-    ============ WHEN, ON THE CLOCK ============
-    The time a line names is the hour the band is CROSSED, read off the
-    held series - not the hour of the peak or the trough. The extreme is
-    usually the last hour of the window in the evening, so naming it said
-    "tonight" about a jacket that was needed from 15:00.
-
-      comes off   first held_hi above the current class
-      bring       first held_lo inside the destination band
-      back on     first held_lo after the peak back at the current band
-                  (or the dip's band, when the day ends warmer)
-    {%- endcomment %}
-    {%- assign off_rank = band_rank | plus: 1 -%}
+        {%- assign off_rank = band_rank | plus: 1 -%}
     {%- if band_rank == 5 -%}
       {%- assign off_rank = 7 -%}
     {%- endif -%}
@@ -847,26 +536,7 @@ single contains test instead of a chained and/or condition.
     {%- if bring_idx < 0 -%}{%- assign bring_idx = after_idx -%}{%- endif -%}
     {%- if back_on_idx < 0 -%}{%- assign back_on_idx = after_idx -%}{%- endif -%}
 
-    {%- comment %}
-    Which story wins:
-
-      1. a dip before the peak. It is the first thing the reader walks
-         into, and getting cold is the one mistake with a real cost.
-      1b. a cold front out of shorts weather: long pants at the door.
-      1c. a big swing into shorts weather (THE LONG-PANTS RULE): go out
-         in shorts, keep the warm layer for the way out; with the
-         evening wanting a layer back, say that too. Only where the
-         language has the wording (texts.facts), else the stories below.
-      2. an arc: a layer comes off and the evening wants one back. Needs
-         something you can actually take off, so w_water plus a cooling
-         key is not an arc - there is nothing to shed, so the evening
-         simply wins.
-      3. cooling after the peak.
-      4. warming.
-      5. shorts drawn early by THE LONG-PANTS RULE, if the language has
-         lines for it; otherwise the day reads as steady.
-    {%- endcomment %}
-    {%- assign primary_idx = 0 -%}
+        {%- assign primary_idx = 0 -%}
     {%- assign secondary_idx = 0 -%}
 
     {%- if dip_key != '' -%}
@@ -878,8 +548,7 @@ single contains test instead of a chained and/or condition.
     {%- elsif shorts_swing and texts.facts.shorts_swing -%}
       {%- assign temp_scenario = 'shorts_swing' -%}
       {%- assign primary_idx = shorts_idx -%}
-      {%- comment %} The evening wants more than a T-shirt: the first hour after the peak below shorts and long-pants weather, as the drawings show it. {%- endcomment %}
-      {%- assign swing_back_idx = -1 -%}
+            {%- assign swing_back_idx = -1 -%}
       {%- for r in rank_lo_list -%}
         {%- assign hr = start_index | plus: forloop.index0 -%}
         {%- assign rv = r | plus: 0 -%}
@@ -900,14 +569,7 @@ single contains test instead of a chained and/or condition.
       {%- assign primary_idx = warm_idx -%}
       {%- assign secondary_idx = back_on_idx -%}
     {%- elsif after_key != '' and after_rank >= band_rank and band_rank <= 4 -%}
-      {%- comment %}
-      The evening wants back only what's on now: the jacket now, a little
-      warmer around midday, the jacket again tonight. Too small a rise to
-      count as warming (MIN_DELTA), but the drawings show the jacket off
-      in between, and "bring a jacket" to someone wearing one is wrong.
-      It's the arc: off, and back on.
-      {%- endcomment %}
-      {%- assign temp_scenario = 'arc_level' -%}
+            {%- assign temp_scenario = 'arc_level' -%}
       {%- assign primary_idx = warm_idx -%}
       {%- assign secondary_idx = back_on_idx -%}
     {%- elsif after_key != '' -%}
@@ -930,16 +592,7 @@ single contains test instead of a chained and/or condition.
       {%- assign is_arc = true -%}
     {%- endif -%}
 
-    {%- comment %}
-    ============ PRECIP SCENARIO ============
-    While it is raining now:
-      nothing qualifies, or a dry break with nothing behind it -> drier
-      a dry break, then rain that qualifies on its own          -> wet_again
-      no dry break of two hours anywhere                        -> stays_wet
-    'stays_wet' used to fire on any later rain at all, so a wet morning
-    and a wet evening with eight dry hours between them read "no gaps".
-    {%- endcomment %}
-    {%- assign precip_idx = 0 -%}
+        {%- assign precip_idx = 0 -%}
     {%- if future_has_snow and is_now_snow == 0 -%}
       {%- assign precip_scenario = 'snow_coming' -%}
       {%- assign precip_idx = first_snow_idx -%}
@@ -968,19 +621,13 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment %} Time wording also comes from the language file. {%- endcomment %}
-    {%- assign BUCKETS = texts.buckets -%}
+        {%- assign BUCKETS = texts.buckets -%}
     {%- assign RELATIVE = texts.relative -%}
-    {%- comment %}
-    Which of the five BUCKETS an hour of the day falls in:
-    morning to 10, midday 11-13, afternoon 14-16, evening 17-19, night 20+.
-    {%- endcomment %}
-    {%- assign HOUR_BUCKET = '0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,3,3,3,4,4,4,4' | split: ',' -%}
+        {%- assign HOUR_BUCKET = '0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,3,3,3,4,4,4,4' | split: ',' -%}
 
     {%- assign now_bucket = HOUR_BUCKET[local_hour] | plus: 0 -%}
 
-    {%- comment %} primary temp token {%- endcomment %}
-    {%- if temp_scenario != '' and texts_ok -%}
+        {%- if temp_scenario != '' and texts_ok -%}
       {%- assign gap = primary_idx | minus: now_index -%}
       {%- assign th = local_hour | plus: gap -%}
       {%- if th > 23 -%}{%- assign th = 23 -%}{%- endif -%}
@@ -994,21 +641,14 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment %} arc second token, always a bucket (also the big swing's layer back on) {%- endcomment %}
-    {%- assign two_hinges = is_arc -%}
+        {%- assign two_hinges = is_arc -%}
     {%- if temp_scenario == 'shorts_swing_back' -%}{%- assign two_hinges = true -%}{%- endif -%}
     {%- if two_hinges and texts_ok -%}
       {%- assign gap2 = secondary_idx | minus: now_index -%}
       {%- assign th2 = local_hour | plus: gap2 -%}
       {%- if th2 > 23 -%}{%- assign th2 = 23 -%}{%- endif -%}
       {%- assign tb2 = HOUR_BUCKET[th2] | plus: 0 -%}
-      {%- comment %}
-      If both hinges land in the same bucket there is no two part
-      story to tell. Nudge the second to 'tonight' when that is
-      actually later, otherwise emit nothing and let the picker
-      choose an arc line that carries no time token at all.
-      {%- endcomment %}
-      {%- if tb2 == when_temp_bucket -%}
+            {%- if tb2 == when_temp_bucket -%}
         {%- if when_temp_bucket < 4 -%}
           {%- assign when_temp2 = BUCKETS[4] -%}
         {%- else -%}
@@ -1019,11 +659,7 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment %}
-    'stays_wet' does not contain the substring 'wetter', so the
-    contains test is safe.
-    {%- endcomment %}
-    {%- assign wants_whenp = false -%}
+        {%- assign wants_whenp = false -%}
     {%- if precip_scenario contains 'wetter' -%}
       {%- assign wants_whenp = true -%}
     {%- endif -%}
@@ -1056,16 +692,10 @@ single contains test instead of a chained and/or condition.
 
 {%- endif -%}
 
-
-{%- comment %} ============ SEASONAL THEMES ============ {%- endcomment %}
 {%- assign active_theme = '' -%}
 {%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
 {%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
 {%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
-{%- comment %}
-Easter Sunday, by the anonymous Gregorian computus. Integer arithmetic
-only, which Liquid's divided_by gives us when both sides are whole.
-{%- endcomment %}
 {%- assign ey = today_year | plus: 0 -%}
 {%- assign ea = ey | modulo: 19 -%}
 {%- assign eb = ey | divided_by: 100 -%}
@@ -1099,60 +729,12 @@ only, which Liquid's divided_by gives us when both sides are whole.
 {%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
 {%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
 
-{%- comment %}
-Theme whitelist: the outfits a theme has a finished drawing for, as
-,<outfit>_<dry|rain>, entries, or 'ALL' once all 16 exist. A theme with
-an empty list still gets its themed words over the plain outfit; a list
-naming art that was never drawn shows a broken image all day, which is
-why tools/check_sprites.py checks every entry against sprites/.
-
-The new outfit set has no themed drawings yet. To add one, in the same
-commit as its artwork, wrap the line below in a case on active_theme with
-a branch per theme, e.g. xmas -> ',coat_dry,coat_rain,'.
-{%- endcomment %}
 {%- assign theme_whitelist = '' -%}
 
-
-
-
-{%- comment %}
-============ WHICH KIND OF NOTHING ============
-'perfect' - the day holds steady - is by far the most common outcome:
-roughly half of all renders, measured over a year of real weather. One
-generic line therefore carries more traffic than everything else put
-together, and it has to serve a -8C morning and a 34C afternoon alike.
-Two of those readings were plainly wrong:
-
-  - it skews late. The forecast window shrinks as the day ends, so a
-    steady evening is the single commonest state of all, and lines like
-    "one outfit covers the whole day" were rendering at 20:00.
-  - at the top of the scale it said "nothing changes today" during a
-    heatwave, which is true and useless.
-
-So the bare key is refined into the variant the day actually is. Each
-falls back to plain 'perfect' when a language has not written it, which
-keeps every existing and future translation working with the one key.
-{%- endcomment %}
-{%- comment %}
-is_steady means "the temperature has nothing to say today", whichever
-variant of that we end up naming. Everything downstream tests this rather
-than the scenario string, because the moment 'perfect' could become
-'perfect_evening' or 'theme_xmas', a string comparison silently stopped
-matching and the tip started pairing a nothing-is-happening sentence with a
-rain fragment - exactly the join the original markup existed to prevent.
-{%- endcomment %}
 {%- assign is_steady = false -%}
 {%- if scenario == 'perfect' -%}
   {%- assign is_steady = true -%}
-  {%- comment %}
-  Candidates in order, first one the language has written wins. A themed
-  day with nothing to advise is the one moment the plugin can just enjoy
-  itself - and it only ever replaces 'perfect', so real advice is never
-  displaced by a joke about Christmas. A theme the language has no line
-  for falls through to the evening / hot / cold variant rather than all
-  the way to plain 'perfect'.
-  {%- endcomment %}
-  {%- assign variant_csv = '' -%}
+    {%- assign variant_csv = '' -%}
   {%- if active_theme != '' -%}
     {%- assign variant_csv = 'theme_' | append: active_theme -%}
   {%- endif -%}
@@ -1174,26 +756,6 @@ rain fragment - exactly the join the original markup existed to prevent.
   {%- endfor -%}
 {%- endif -%}
 
-{%- comment %}
-================================================================
-BUILD THE HINT
-================================================================
-Lines come from lang/<code>.json. Structure:
-
-  temp_<level>.<scenario>     array of interchangeable lines
-  precip_<level>.<scenario>   standalone form
-  precip_<level>.<scenario>_j joined form, used when a temp clause
-                              already opened the sentence
-
-Tokens a line may carry:
-  {WHEN}   temp clause, first hinge, carries its own preposition
-  {WHEN2}  arc keys only, second hinge, bucket form
-  {WHENP}  precip clause, standalone form only
-  {GARMENT}  / {GARMENTA}  nominative / accusative, from the
-                           CURRENT band so they match the sprite
-
-See docs/TRANSLATING.md for the full contract.
-{%- endcomment %}
 {%- assign temp_clause = '' -%}
 {%- assign precip_clause = '' -%}
 {%- assign today_tip = '' -%}
@@ -1209,11 +771,7 @@ See docs/TRANSLATING.md for the full contract.
     {%- if n > 0 -%}
       {%- assign idx = local_days | modulo: n -%}
       {%- assign temp_clause = t_arr[idx] -%}
-      {%- comment %}
-      If the resolver gave us nothing, fall back to the first line
-      in the array that carries no time token.
-      {%- endcomment %}
-      {%- assign need_plain = false -%}
+            {%- assign need_plain = false -%}
       {%- if when_temp == '' or when_temp == nil -%}
         {%- assign need_plain = true -%}
       {%- endif -%}
@@ -1231,23 +789,13 @@ See docs/TRANSLATING.md for the full contract.
     {%- endif -%}
   {%- endif -%}
 
-  {%- comment %}
-  Substituted here, while the temperature clause is final and before the
-  precipitation line is chosen, so the length test below measures the
-  sentence that actually renders rather than one still full of tokens.
-  {%- endcomment %}
-  {%- assign temp_clause = temp_clause | replace: '{GARMENT}', garment_n -%}
+    {%- assign temp_clause = temp_clause | replace: '{GARMENT}', garment_n -%}
   {%- assign temp_clause = temp_clause | replace: '{GARMENTA}', garment_a -%}
   {%- assign temp_clause = temp_clause | replace: '{WHEN2}', when_temp2 -%}
   {%- assign temp_clause = temp_clause | replace: '{WHEN}', when_temp -%}
   {%- assign temp_clause = temp_clause | replace: '  ', ' ' | strip -%}
 
-  {%- comment %}
-  wet_again is optional in a language file. Without it, say the true half -
-  the rain stops - rather than nothing, because no rain clause at all
-  leaves a steady-day line that may promise "no umbrella" mid-shower.
-  {%- endcomment %}
-  {%- if precip_scenario == 'wet_again' -%}
+    {%- if precip_scenario == 'wet_again' -%}
     {%- assign wa_lib_key = 'precip_' | append: sarcasm_level -%}
     {%- assign wa_lib = texts[wa_lib_key] -%}
     {%- unless wa_lib['wet_again'] -%}
@@ -1256,12 +804,7 @@ See docs/TRANSLATING.md for the full contract.
   {%- endif -%}
 
   {%- if precip_scenario != '' -%}
-    {%- comment %}
-    Standalone form when there is no temp hinge, joined fragment
-    when there is. This is what stops 'Nothing comes off, nothing
-    goes on. Take the umbrella.' from ever rendering.
-    {%- endcomment %}
-    {%- if is_steady -%}
+        {%- if is_steady -%}
       {%- assign p_key = precip_scenario -%}
     {%- else -%}
       {%- assign p_key = precip_scenario | append: '_j' -%}
@@ -1274,25 +817,8 @@ See docs/TRANSLATING.md for the full contract.
     {%- if p_arr -%}
       {%- assign pn = p_arr | size -%}
       {%- if pn > 0 -%}
-        {%- comment %}
-        ============ FITTING THE PAIR ON THE SCREEN ============
-        On a day with both a temperature hinge and rain, these two
-        sentences render as one tip. Each half is written and reviewed on
-        its own, so nothing stops a long one meeting another long one and
-        overflowing the layout.
-
-        Start at the rotating index, so the pairing still varies day to
-        day and does not cycle in lockstep with the temperature line, then
-        walk forward to the first alternative that fits the space the
-        temperature clause left. Every line in the array says the same
-        thing, so taking a later one costs nothing.
-
-        If none fit, take the shortest and let it be tight rather than
-        dropping the rain warning, which is the part someone acts on.
-        {%- endcomment %}
-        {%- if is_steady -%}
-          {%- comment %} the temp clause is discarded below, so it costs nothing {%- endcomment %}
-          {%- assign room = TIP_BUDGET -%}
+                {%- if is_steady -%}
+                    {%- assign room = TIP_BUDGET -%}
         {%- else -%}
           {%- assign room = TIP_BUDGET | minus: temp_clause.size | minus: 1 -%}
         {%- endif -%}
@@ -1333,27 +859,7 @@ See docs/TRANSLATING.md for the full contract.
 
   {%- assign today_tip = today_tip | strip -%}
 
-  {%- comment %}
-  ============ SENTENCE CASE ============
-  The time phrases are stored lowercase, because most of the time they land
-  mid-sentence: "the jacket comes off this afternoon". But German fronts time
-  adverbials as a matter of normal word order - "Heute Abend regnet es" is
-  simply how the sentence goes - and 129 German lines do exactly that. Left
-  alone, those render "heute Abend regnet es" with a lowercase opening, which
-  reads as a typo rather than as a style.
-
-  Banning the construction would be fighting the language, so instead the
-  finished tip gets its sentence starts capitalised here. Doing it after
-  substitution rather than before means it is language-agnostic: any future
-  translation that fronts a time phrase is handled without knowing anything
-  about it.
-  {%- endcomment %}
-  {%- comment %}
-  Sentences end in . ! or ? - a German line asking "stimmt's?" before a
-  fronted time phrase rendered "stimmt's? heute Abend ..." when only ". "
-  counted. The mark stays on the sentence it ends; ^^ is just a cut point.
-  {%- endcomment %}
-  {%- assign marked = today_tip | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
+      {%- assign marked = today_tip | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
   {%- assign sentences = marked | split: '^^' -%}
   {%- assign cased = '' -%}
   {%- for sentence in sentences -%}
@@ -1371,18 +877,6 @@ See docs/TRANSLATING.md for the full contract.
 
 {%- endif -%}
 
-
-{%- comment %}
-============ PROTOTYPE: FACT + FLAVOUR ============
-Two lines instead of one. The fact line is built from short templates,
-a few wordings per situation, and is the same at every sarcasm level. The flavour
-line carries the personality: picked by the mood of the day, never
-asked to carry a fact, absent at sarcasm 0.
-
-Inserted by prototypes/fact-flavour/build.py ahead of THE PICTURE,
-after the old hint is built, so both can be rendered side by side.
-Reads only what the scenario logic above already worked out.
-{%- endcomment %}
 {%- assign fact_line = '' -%}
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
@@ -1390,11 +884,6 @@ Reads only what the scenario logic above already worked out.
 {%- assign fl_now_pool = nil -%}
 {%- assign fl_alone_all = nil -%}
 {%- assign today_month = today_md | slice: 0, 2 -%}
-{%- comment %}
-Month tags ({M:..}) name the northern season. South of the equator the
-seasons run six months on, so a December line about the cold shows there
-in June. The latitude comes with the weather data.
-{%- endcomment %}
 {%- assign season_month = today_month -%}
 {%- assign wx_lat = IDX_0.latitude | default: 0 | plus: 0 -%}
 {%- if wx_lat < 0 -%}
@@ -1402,16 +891,6 @@ in June. The latitude comes with the weather data.
   {%- if sm < 10 -%}{%- assign season_month = '0' | append: sm -%}{%- else -%}{%- assign season_month = sm | append: '' -%}{%- endif -%}
 {%- endif -%}
 {%- assign flavour_topical = false -%}
-{%- comment %}
-The two switches (config/settings.next.yaml):
-  Forecast            show_future_suggestions, the field that was there:
-                      "Yes"/"No" saved before, true/false now. The words.
-  What to Wear Next?  what_to_wear_next, true/false: the drawings.
-Both can be on. The first beta had the drawings as a third Forecast value,
-"visual": a fork with that saved keeps drawings without words.
-The sarcastic line no longer needs either: it shows at On and 11 even on
-the outfit alone.
-{%- endcomment %}
 {%- assign forecast_on = false -%}
 {%- if show_future_suggestions == 'on' and sfs_check != 'visual' -%}{%- assign forecast_on = true -%}{%- endif -%}
 {%- assign next_check = trmnl.plugin_settings.custom_fields_values.what_to_wear_next | append: '' | downcase | strip -%}
@@ -1419,17 +898,6 @@ the outfit alone.
 {%- if next_check == 'true' or next_check == 'on' or next_check == 'yes' or next_check == '1' or sfs_check == 'visual' -%}
   {%- assign next_on = true -%}
 {%- endif -%}
-{%- comment %}
-Which wording shows changes every hour, not once a day, so a day whose
-weather doesn't change still reads differently in the afternoon. Each
-pool takes (text_rot + its own offset) mod its size. Day and hour are
-multiplied by primes larger than any pool (101, 103: coprime with every
-size up to 100), so each step lands somewhere else in the pool instead
-of on the next line, every line comes round, and someone who looks at
-7:00 every morning sees the whole pool over the days, not a subset.
-The screen changes when TRMNL next regenerates it: the weather's
-current time moves every 15 minutes, so the merge variables change.
-{%- endcomment %}
 {%- assign text_rot = local_days | times: 101 -%}
 {%- assign text_rot_h = local_hour | times: 103 -%}
 {%- assign text_rot = text_rot | plus: text_rot_h -%}
@@ -1449,13 +917,8 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign f_key = temp_scenario -%}
     {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
   {%- endif -%}
-  {%- comment %} Dangerous heat leads with water and shade, whatever else the day does. {%- endcomment %}
-  {%- if heat_danger and F.heat_danger -%}{%- assign f_key = 'heat_danger' -%}{%- endif -%}
-  {%- comment %}
-  The garment on screen, for the arc keys: {G} the garment, {GP} its
-  pronoun, {GV} garment with its verb (German agrees "kann"/"können").
-  {%- endcomment %}
-  {%- assign f_g = '' -%}
+    {%- if heat_danger and F.heat_danger -%}{%- assign f_key = 'heat_danger' -%}{%- endif -%}
+    {%- assign f_g = '' -%}
   {%- assign f_gp = '' -%}
   {%- assign f_gv = '' -%}
   {%- if band_rank <= 4 -%}
@@ -1464,12 +927,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign f_gp = F.garments_pron[fgi] -%}
     {%- assign f_gv = F.garments_verb[fgi] -%}
   {%- endif -%}
-  {%- comment %}
-  Each situation has several wordings, rotated by the hour like the
-  flavour line (text_rot) but on their own offsets, so a run of the same
-  weather doesn't show the same words.
-  {%- endcomment %}
-  {%- assign f_temp = '' -%}
+    {%- assign f_temp = '' -%}
   {%- assign f_list = F[f_key] -%}
   {%- if f_list -%}
     {%- assign f_n = f_list | size -%}
@@ -1481,17 +939,11 @@ current time moves every 15 minutes, so the merge variables change.
   {%- assign f_precip = '' -%}
   {%- if precip_scenario != '' -%}
     {%- assign pk = 'p_' | append: precip_scenario -%}
-    {%- comment %} Snowing now: the snow wording, where the situation has one. {%- endcomment %}
-    {%- if is_now_snow == 1 -%}
+        {%- if is_now_snow == 1 -%}
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
     {%- else -%}
-      {%- comment %}
-      Freezing rain in the window (WMO 56, 57, 66, 67): the ice warning.
-      A thunderstorm (95, 96, 99): the storm wording. Each where the
-      situation has one; freezing rain first.
-      {%- endcomment %}
-      {%- assign p_ice = false -%}
+            {%- assign p_ice = false -%}
       {%- assign p_storm = false -%}
       {%- assign wx_codes = ',' | append: wmo | append: ',' -%}
       {%- if has_future_window and codes -%}
@@ -1540,25 +992,17 @@ current time moves every 15 minutes, so the merge variables change.
   {%- endfor -%}
   {%- assign fact_line = cased -%}
 
-  {%- comment %} The mood of the day, for the flavour line. First match wins. {%- endcomment %}
-  {%- assign temp_prefix = temp_scenario | slice: 0, 2 -%}
+    {%- assign temp_prefix = temp_scenario | slice: 0, 2 -%}
   {%- if precip_scenario == 'snow_coming' or is_now_snow == 1 -%}
     {%- assign mood = 'snow' -%}
   {%- elsif precip_scenario != '' -%}
     {%- assign mood = 'wet' -%}
   {%- elsif is_steady and local_hour >= 22 -%}
-    {%- comment %} Only this late may a line mention bed: at 19:00 people check before going out. {%- endcomment %}
-    {%- assign mood = 'night' -%}
+        {%- assign mood = 'night' -%}
   {%- elsif is_steady and local_hour >= 18 -%}
     {%- assign mood = 'evening' -%}
   {%- elsif is_arc and temp_scenario != 'arc_warmer' -%}
-    {%- comment %}
-    Only an arc that wants the layer back. When the evening stays warmer
-    than the morning, the fact says "can come off and stay off", and
-    "Erst zu warm, dann zu kalt" or "An, aus, wieder an" would contradict
-    it: that day falls through to hot or warming.
-    {%- endcomment %}
-    {%- assign mood = 'fickle' -%}
+        {%- assign mood = 'fickle' -%}
   {%- elsif band_rank >= 7 or up_rank >= 7 -%}
     {%- assign mood = 'hot' -%}
   {%- elsif band_rank <= 2 -%}
@@ -1566,22 +1010,13 @@ current time moves every 15 minutes, so the merge variables change.
   {%- elsif is_steady and band_rank >= 4 -%}
     {%- assign mood = 'nice' -%}
   {%- elsif temp_prefix == 'c_' -%}
-    {%- comment %} An ordinary day, split by what it actually does: a layer is needed later... {%- endcomment %}
-    {%- assign mood = 'cooling' -%}
+        {%- assign mood = 'cooling' -%}
   {%- elsif temp_scenario != '' -%}
-    {%- comment %} ...something comes off later (the commonest of all)... {%- endcomment %}
-    {%- assign mood = 'warming' -%}
+        {%- assign mood = 'warming' -%}
   {%- else -%}
-    {%- comment %} ...or a steady, cool jacket day. {%- endcomment %}
-    {%- assign mood = 'cool' -%}
+        {%- assign mood = 'cool' -%}
   {%- endif -%}
-  {%- comment %}
-  What the Now drawing shows, for the "now" lines (now_10 / now_11): they
-  stand alone and agree with the drawing, so they fit every screen, the
-  outfit alone included. Rain and snow only while they fall: that's when
-  the drawing has them.
-  {%- endcomment %}
-  {%- if is_now_snow == 1 -%}
+    {%- if is_now_snow == 1 -%}
     {%- assign now_mood = 'snow' -%}
   {%- elsif is_now_precip == 1 -%}
     {%- assign now_mood = 'wet' -%}
@@ -1601,17 +1036,7 @@ current time moves every 15 minutes, so the merge variables change.
   {%- if sarcasm_level != '0' -%}
     {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
     {%- assign fl_lib = texts[fl_key] -%}
-    {%- comment %}
-    Two kinds of sarcastic line (owner, round 11). Under the forecast line,
-    follow-ups (flavour_10 / _11, by the day's mood): they build on what it
-    said ("Taking that layer off might be the highlight of your day").
-    Everywhere else, standalone lines: the now lines (now_10 / _11, by what
-    the Now drawing shows) and the day's own standalone lines (alone_10 /
-    _11, by the day's mood: "Later it cools off. I saw that coming"). Two
-    or three drawings add theirs in the panels block. No follow-ups for
-    the mood: the standalone lines.
-    {%- endcomment %}
-    {%- assign now_key = 'now_' | append: sarcasm_level -%}
+        {%- assign now_key = 'now_' | append: sarcasm_level -%}
     {%- assign alone_key = 'alone_' | append: sarcasm_level -%}
     {%- assign fl_now_pool = texts[now_key][now_mood] -%}
     {%- assign fl_alone_pool = texts[alone_key][mood] -%}
@@ -1621,27 +1046,10 @@ current time moves every 15 minutes, so the merge variables change.
     {%- elsif fl_alone_pool -%}
       {%- assign fl_alone_all = fl_alone_pool -%}
     {%- endif -%}
-    {%- comment %}
-    A texts file from before the now and day pools (13 October 2026): its
-    lines are still by the day's mood. That happens when the texts URL is
-    behind the markup (a fork's pinned commit, or jsDelivr still serving
-    an old @main for a few hours after a release). Without this, two
-    screens in three had no sarcastic line.
-    {%- endcomment %}
-    {%- if fl_alone_all == nil and texts[now_key] == nil -%}
-      {%- comment %} Those files have no "cooling" lines: cooling days drew from "cool". {%- endcomment %}
-      {%- if fl_lib[mood] -%}{%- assign fl_alone_all = fl_lib[mood] -%}{%- else -%}{%- assign fl_alone_all = fl_lib['cool'] -%}{%- endif -%}
+        {%- if fl_alone_all == nil and texts[now_key] == nil -%}
+            {%- if fl_lib[mood] -%}{%- assign fl_alone_all = fl_lib[mood] -%}{%- else -%}{%- assign fl_alone_all = fl_lib['cool'] -%}{%- endif -%}
     {%- endif -%}
-    {%- comment %}
-    A follow-up goes by what the forecast line says, not by the mood: a
-    cold day's line may say it stays cold or that the coat comes off. Ten
-    groups, each one message: rain, snow (the umbrella or the snow; a
-    rain sentence comes last when there are two), off (a layer comes off
-    later), on (a layer is needed later), offon (off, then back on), hot
-    (the line says water), steady, cold, evening, night. The heat easing
-    a little (c_relief) says no water: the standalone lines.
-    {%- endcomment %}
-    {%- assign fu_key = '' -%}
+        {%- assign fu_key = '' -%}
     {%- if f_precip != '' -%}
       {%- if pk contains '_ice' -%}{%- assign fu_key = 'ice' -%}{%- elsif pk contains '_storm' -%}{%- assign fu_key = 'storm' -%}{%- elsif pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
     {%- else -%}
@@ -1659,14 +1067,7 @@ current time moves every 15 minutes, so the merge variables change.
         {%- when 'heat_danger' -%}{%- assign fu_key = 'scorch' -%}
       {%- endcase -%}
     {%- endif -%}
-    {%- comment %}
-    The garment the forecast line names, for follow-ups that point back at
-    it: {GP} its pronoun ("it"/"them", "sie"/"ihn"), {G} the garment. A
-    line may also say which garments it fits: "{W:coat,jacket}…" (slugs
-    scarf, coat, jacket, hoodie). Such lines are skipped on a forecast
-    line that names no garment, or another one.
-    {%- endcomment %}
-    {%- assign fu_gi = -1 -%}
+        {%- assign fu_gi = -1 -%}
     {%- case f_key -%}
       {%- when 'w_scarf', 'c_scarf' -%}{%- assign fu_gi = 0 -%}
       {%- when 'w_coat', 'c_coat' -%}{%- assign fu_gi = 1 -%}
@@ -1684,8 +1085,7 @@ current time moves every 15 minutes, so the merge variables change.
       {%- assign fu_slugs = 'scarf,coat,jacket,hoodie' | split: ',' -%}
       {%- assign fu_gs = ',' | append: fu_slugs[fu_gi] | append: ',' -%}
     {%- endif -%}
-    {%- comment %} A new group with no lines yet borrows its neighbour's. {%- endcomment %}
-    {%- unless fl_lib[fu_key] -%}
+        {%- unless fl_lib[fu_key] -%}
       {%- case fu_key -%}
         {%- when 'ice', 'storm' -%}{%- assign fu_key = 'rain' -%}
         {%- when 'shorts' -%}{%- assign fu_key = 'off' -%}
@@ -1697,8 +1097,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
       {%- assign fl_pool = fl_lib[fu_key] -%}
     {%- endif -%}
-    {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
-    {%- assign fl_theme = false -%}
+        {%- assign fl_theme = false -%}
     {%- if is_steady and active_theme != '' -%}
       {%- assign th_key = 'theme_' | append: active_theme -%}
       {%- if fl_lib[th_key] -%}
@@ -1709,12 +1108,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if fl_pool -%}
       {%- assign fl_n = fl_pool | size -%}
       {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
-      {%- comment %}
-      A line may carry the months it shows in, as a tag build_pools.py puts
-      in front: "{M:10,11}Every year everyone's surprised…". In another
-      month the next line of the pool shows instead.
-      {%- endcomment %}
-      {%- assign fl_month = ',' | append: season_month | append: ',' -%}
+            {%- assign fl_month = ',' | append: season_month | append: ',' -%}
       {%- for k in (1..fl_n) -%}
         {%- assign fl_cand = fl_pool[fl_i] -%}
         {%- assign fl_ok = true -%}
@@ -1745,32 +1139,11 @@ current time moves every 15 minutes, so the merge variables change.
       {%- endfor -%}
     {%- endif -%}
 
-    {%- comment %}
-    ============ TOPICAL LINES ============
-    Lines about current events, written with the owner and voted like the
-    rest (.claude/skills/topical). Each carries a window and shows only
-    inside it, so an expired line needs no republish; tools/topical.py
-    prunes it from the file later.
-
-      {"text": "...", "from": "2026-10-25", "until": "2026-10-29",
-       "region": "UK,IE", "moods": "cold,wet"}
-
-    region and moods are optional. A line shows on the first day of its
-    window and then about one day in three, rotating with whatever else
-    is active; the other days keep the mood's line, so a week of one joke
-    doesn't wear thin. A seasonal theme day keeps its own lines. Off
-    unless the topical_lines field is "on": installs from before the field
-    have no value, so they never see news they didn't ask for.
-    {%- endcomment %}
-    {%- assign topical_raw = trmnl.plugin_settings.custom_fields_values.topical_lines | default: 'off' | downcase | strip -%}
+        {%- assign topical_raw = trmnl.plugin_settings.custom_fields_values.topical_lines | default: 'off' | downcase | strip -%}
     {%- assign tp_key = 'topical_' | append: sarcasm_level -%}
     {%- assign tp_list = texts[tp_key] -%}
     {%- if topical_raw == 'on' and fl_theme == false and tp_list -%}
-      {%- comment %}
-      Region from the forecast's own time zone (Open-Meteo, timezone=auto),
-      which follows the device's location, not the account's.
-      {%- endcomment %}
-      {%- if IDX_0 -%}{%- assign tp_tz = IDX_0.timezone | default: '' -%}{%- else -%}{%- assign tp_tz = timezone | default: '' -%}{%- endif -%}
+            {%- if IDX_0 -%}{%- assign tp_tz = IDX_0.timezone | default: '' -%}{%- else -%}{%- assign tp_tz = timezone | default: '' -%}{%- endif -%}
       {%- assign tp_probe = ',' | append: tp_tz | append: ',' -%}
       {%- assign tp_region = '' -%}
       {%- assign US_ZONES = ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Phoenix,America/Anchorage,America/Detroit,America/Boise,America/Juneau,America/Sitka,America/Nome,America/Yakutat,America/Metlakatla,America/Adak,America/Menominee,Pacific/Honolulu,' -%}
@@ -1826,13 +1199,6 @@ current time moves every 15 minutes, so the merge variables change.
   {%- endif -%}
 {%- endif -%}
 
-
-{%- comment %}
-============ THE PICTURE ============
-Rain and snow are drawn only while they fall. An umbrella on a dry
-morning looked like a broken screen next to words saying the rain starts
-later; the words carry what's coming.
-{%- endcomment %}
 {%- assign snow_probe = ',' | append: band | append: ',' -%}
 {%- if weather_slug contains '_snow' -%}
   {%- unless SNOW_OUTFITS contains snow_probe -%}
@@ -1852,49 +1218,9 @@ later; the words carry what's coming.
   {%- assign fallback_sprite_url = error_sprite_url -%}
 {%- else -%}
   {%- assign sprite_url = sprite_base_url | append: sprite_slug | append: '.png' -%}
-  {%- comment %}
-  fallback_sprite_url is always the plain, unthemed sprite. The
-  display markup can use it for an onerror fallback:
-  <img src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'">
-  {%- endcomment %}
-  {%- assign fallback_sprite_url = sprite_base_url | append: weather_slug | append: '.png' -%}
+    {%- assign fallback_sprite_url = sprite_base_url | append: weather_slug | append: '.png' -%}
 {%- endif -%}
 
-{%- comment %}
-============ PROTOTYPE: OUTFIT PANELS ============
-The day as equal panels, left to right: what to wear now, then at each
-change. One panel when nothing changes. Today only: the forecast window
-ends at DAY_END_HOUR, and nothing about tomorrow is ever drawn.
-
-A panel is a stretch of the day, from one change to the next:
-  - a change is an outfit band crossed for two hours running (the
-    same rank lists the text logic uses), rain or snow starting (one
-    hour at RAIN_HIGH is enough: a shower counts, as in the text), or
-    two dry hours ending it;
-  - tee_pants and tee_shorts count as one outfit later in the day: legs
-    are decided at the door. On a shorts day (three hours or more of
-    shorts weather, THE LONG-PANTS RULE) the warm drawings are shorts;
-  - the "now" panel shows rain only if it is falling now; a later panel
-    shows it if it starts with that panel, or anywhere inside it once
-    panels are merged;
-  - at most three panels. Outfit changes win; a rain change only gets
-    its own panel while there is room, and otherwise wets the panel it
-    falls in.
-
-Text: with the Forecast switch on, the forecast line and the sarcastic
-line, as in words. With only this one: one panel says "this works all
-day" (a steady fact wording) and adds the sarcastic line at On and 11;
-two or three panels show only a sarcastic line that stands alone, and
-nothing at Off.
-
-The switch is What to Wear Next? (what_to_wear_next, on/off,
-config/settings.next.yaml), read in the fact + flavour block (next_on).
-Markup from before this ignores the field and shows the words.
-
-Appended to the end of the shared markup by prototypes/panels/build.py,
-after the fact + flavour block and the picture.
-{%- endcomment %}
-{%- comment %} The drawings are the What to Wear Next? switch (next_on, set in the fact + flavour block). {%- endcomment %}
 {%- assign visual_forecast = next_on -%}
 {%- assign panel_n = 1 -%}
 {%- assign panel_slugs = '' -%}
@@ -1906,8 +1232,7 @@ after the fact + flavour block and the picture.
   {%- assign p_now = PN.now | default: 'Now' -%}
   {%- assign p_from = PN.from | default: 'from' -%}
 
-  {%- comment %} Every change, in order: hour index, kind (T outfit, P rain), and the state after it. {%- endcomment %}
-  {%- assign b_idx = '' -%}
+    {%- assign b_idx = '' -%}
   {%- assign b_kind = '' -%}
   {%- assign b_rank = '' -%}
   {%- assign b_wet = '' -%}
@@ -1928,12 +1253,10 @@ after the fact + flavour block and the picture.
       {%- elsif lo < cur_rank -%}
         {%- assign new_rank = lo -%}
       {%- endif -%}
-      {%- comment %} A shorts day (THE LONG-PANTS RULE): once it's warm, the legs are shorts. {%- endcomment %}
-      {%- assign shorts_day = shorts_swing -%}
+            {%- assign shorts_day = shorts_swing -%}
       {%- if shorts_early -%}{%- assign shorts_day = true -%}{%- endif -%}
       {%- if shorts_day -%}
-        {%- comment %} The Now drawing stays as it is; from the first shorts hour on, shorts. {%- endcomment %}
-        {%- if new_rank == 5 and cur_rank != 5 -%}{%- assign new_rank = 6 -%}{%- endif -%}
+                {%- if new_rank == 5 and cur_rank != 5 -%}{%- assign new_rank = 6 -%}{%- endif -%}
       {%- elsif cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
         {%- assign new_rank = cur_rank -%}
       {%- endif -%}
@@ -1943,8 +1266,7 @@ after the fact + flavour block and the picture.
       {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
       {%- assign new_wet = cur_wet -%}
       {%- assign new_snow = cur_snow -%}
-      {%- comment %} One likely hour starts it (a shower counts, as in the text); only two dry hours end it. {%- endcomment %}
-      {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
+            {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
         {%- assign new_wet = 1 -%}
         {%- assign new_snow = 0 -%}
         {%- if codes -%}
@@ -1978,13 +1300,7 @@ after the fact + flavour block and the picture.
     {%- endfor -%}
   {%- endif -%}
 
-  {%- comment %}
-  Pick at most two changes, at least two hours apart. Outfit changes
-  first: of two within two hours the later one wins, since it's where
-  the day settles. Then rain changes, while there is room and nothing
-  chosen is within two hours. keep2 is a 0/1 string over all changes.
-  {%- endcomment %}
-  {%- assign bi = b_idx | split: ',' -%}
+    {%- assign bi = b_idx | split: ',' -%}
   {%- assign bk = b_kind | split: ',' -%}
   {%- assign br = b_rank | split: ',' -%}
   {%- assign bw = b_wet | split: ',' -%}
@@ -2035,8 +1351,7 @@ after the fact + flavour block and the picture.
     {%- assign keep2 = keep2 | append: flag -%}
   {%- endfor -%}
 
-  {%- comment %} The panels: the now panel, then one per kept change. A dropped rain start wets the panel it falls in. {%- endcomment %}
-  {%- assign p_rank = band_rank | append: '' -%}
+    {%- assign p_rank = band_rank | append: '' -%}
   {%- assign p_wet = is_now_precip | append: '' -%}
   {%- assign p_snow = is_now_snow | append: '' -%}
   {%- assign p_hour = '' -%}
@@ -2051,8 +1366,7 @@ after the fact + flavour block and the picture.
       {%- assign hr = h.time[bix] | slice: 11, 2 | plus: 0 -%}
       {%- assign p_hour = p_hour | append: ',' | append: hr -%}
     {%- elsif bw[idx0] == '1' -%}
-      {%- comment %} Rain starting inside the current last panel: mark it wet. {%- endcomment %}
-      {%- assign wl = p_wet | split: ',' -%}
+            {%- assign wl = p_wet | split: ',' -%}
       {%- assign sl = p_snow | split: ',' -%}
       {%- assign last = wl | size | minus: 1 -%}
       {%- if last > 0 -%}
@@ -2093,12 +1407,10 @@ after the fact + flavour block and the picture.
       {%- assign label = p_now -%}
     {%- else -%}
       {%- assign hn = ph[n0] | plus: 0 -%}
-      {%- comment %} Each later panel holds from its time on: "from 1 pm", "ab 13 Uhr". {%- endcomment %}
-      {%- assign label = PN.hours[hn] | default: hn -%}
+            {%- assign label = PN.hours[hn] | default: hn -%}
       {%- assign label = p_from | append: ' ' | append: label -%}
     {%- endif -%}
-    {%- comment %} Two panels that would look the same are one. {%- endcomment %}
-    {%- assign this_slug = pband | append: '_' | append: suffix -%}
+        {%- assign this_slug = pband | append: '_' | append: suffix -%}
     {%- if this_slug != prev_slug -%}
       {%- unless forloop.first -%}
         {%- assign panel_slugs = panel_slugs | append: '|' -%}
@@ -2111,8 +1423,7 @@ after the fact + flavour block and the picture.
   {%- endfor -%}
   {%- assign panel_n = panel_slugs | split: '|' | size -%}
 
-  {%- comment %} Words: "this works all day" for one panel; the sarcastic line at On and 11. {%- endcomment %}
-  {%- if texts_ok -%}
+    {%- if texts_ok -%}
     {%- if panel_n == 1 and texts.facts -%}
       {%- if local_hour >= 17 -%}
         {%- assign sk = 'steady_evening' -%}
@@ -2130,20 +1441,9 @@ after the fact + flavour block and the picture.
         {%- assign panel_fact = sl[si] -%}
       {%- endif -%}
     {%- endif -%}
-    {%- comment %}
-    Two or three drawings and no forecast line: the change is on screen as
-    drawings, so the mood's lines written for them (flavour_vf_10 / _11,
-    review round 10) join the standalone lines. Theme days and topical lines keep
-    theirs. Every view shows flavour_line.
-    {%- endcomment %}
-    {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
+        {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
       {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
-      {%- comment %}
-      The drawings' line goes by what the drawings show: the same outfit
-      first and last is off-and-on-again (no extra layer to bring), a
-      colder last one is cooling, a warmer one warming.
-      {%- endcomment %}
-      {%- assign vf_mood = mood -%}
+            {%- assign vf_mood = mood -%}
       {%- if mood == 'cooling' or mood == 'warming' or mood == 'fickle' -%}
         {%- assign vf_first = pr | first | plus: 0 -%}
         {%- assign vf_last = pr | last | plus: 0 -%}
@@ -2160,12 +1460,10 @@ after the fact + flavour block and the picture.
         {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
-        {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
-        {%- assign vf_month = ',' | append: season_month | append: ',' -%}
+                {%- assign vf_month = ',' | append: season_month | append: ',' -%}
         {%- for k in (1..vf_n) -%}
           {%- assign vf_cand = vf_pool[vf_i] -%}
-          {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}
-          {%- if vf_cand contains '{3}' -%}
+                    {%- if vf_cand contains '{3}' -%}
             {%- assign vf_slugs = panel_slugs | split: '|' -%}
             {%- if panel_n == 3 and vf_slugs[0] != vf_slugs[2] -%}
               {%- assign vf_cand = vf_cand | remove_first: '{3}' -%}
