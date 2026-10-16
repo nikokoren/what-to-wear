@@ -1,0 +1,490 @@
+{
+ "round": "2026-10-days",
+ "lines": [
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Und täglich grüßt das Murmeltier. Heute sogar offiziell."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Murmeltiertag. Für mich ist das jeden Tag."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Heute sagt ein Murmeltier das Wetter an. Dem hören alle zu. Mir nie."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Murmeltiertag. Ich sag heute einfach wieder das Gleiche."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Murmeltiertag. Du merkst den Unterschied zu sonst vermutlich nicht."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Und täglich grüßt das Murmeltier. Kennst du ja aus deinem Alltag."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Heute ist Murmeltiertag. Das Murmeltier kommt wenigstens einmal im Jahr raus."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Am Murmeltiertag würd das Murmeltier lieber weiterschlafen. Wie du."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi-Tag. Ich kann's bis zur zweiten Nachkommastelle. Reicht auch."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi-Tag. Ein Feiertag für Leute mit Taschenrechner in der Hemdtasche."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi-Tag. Eine Zahl ohne Ende. Wie meine Liste mit Beschwerden."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi-Tag. Ich rechne heute nichts aus. Das Wetter bleibt ja, wie es ist."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi-Tag. Drei Komma eins vier. Weiter kommst du auch nicht, oder?"
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi-Tag. Ein Feiertag für alle, die in Mathe aufgepasst haben. Also nicht für dich."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi ist unendlich. Deine Geduld leider nicht. Schönen Pi-Tag."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi-Tag. Du rundest bestimmt wieder auf drei."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostern. Der Hase bringt die Eier, und ich krieg wieder nichts."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostersonntag. Das letzte Ei findet man sowieso erst im Juni."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostersonntag. Ab Dienstag gibt's die Schokohasen zum halben Preis. Nur so."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostern. Früher hat man Eier selber gefärbt. Heute kauft man sie bunt."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Ostersonntag. Beim Eiersuchen bist du vermutlich wieder langsamer als die Kinder."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Ostersonntag. Du isst vom Hasen wieder zuerst die Ohren. Ganz schön brutal."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Ostersonntag. Die Fastenzeit hast du vermutlich am Aschermittwoch schon abgebrochen."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Ostersonntag. Die Schokoeier hast du vermutlich schon beim Verstecken gegessen."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Möge die Macht mit dir sein. Das Wetter ist es heute schon."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Früher hieß das bei uns einfach 4. Mai."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "In einer weit, weit entfernten Galaxis ist das Wetter auch nicht besser."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Ein Lichtschwert hätt ich gern. Ich hab nicht mal Licht."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Möge die Macht mit dir sein. Bei dir braucht sie Verstärkung."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star-Wars-Tag. Du machst bestimmt wieder die Yoda-Stimme. Lass es."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star-Wars-Tag. Die Macht ist mit dir? Die Motivation jedenfalls nicht."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star-Wars-Tag. Du wärst übrigens Sturmtruppler. Die treffen auch nie was."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "Weltfahrradtag. Ich fahr nicht mit, ich hab nicht mal Beine."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "Weltfahrradtag. Und der Radweg ist wieder zugeparkt."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "Weltfahrradtag. Früher hieß das einfach: zur Schule fahren."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "Am Weltfahrradtag fährt jeder plötzlich Rad. Morgen steht's wieder im Keller."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "Weltfahrradtag. Dein Rad hat vermutlich einen Platten. Seit letztem Sommer."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "Weltfahrradtag. Dein Heimtrainer ist übrigens kein Kleiderständer."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "Am Weltfahrradtag radelst du sicher wieder zur Eisdiele und nennst es Training."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "Weltfahrradtag. Bergauf schiebst du sowieso."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Drei Wochen lang schauen Leute anderen Leuten beim Schwitzen zu."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Das Gelbe Trikot will jeder. Ich hab nicht mal Farbe."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Die fahren heute zweihundert Kilometer. Ich steh nur rum."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Im Fernsehen läuft wieder stundenlang Landschaft mit Fahrrad."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Der Kommentator erzählt wieder vier Stunden lang was über Schlösser."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Ich halt zu den Ausreißern. Die kommen sowieso nie durch."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Du schaust drei Stunden zu und nennst das Ausdauersport."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Bis Ende Juli bist du wieder Radsportexperte."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Die fahren über die Alpen. Du nimmst den Aufzug."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Ein gepunktetes Trikot hast du auch. Vom Ketchup."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Du fährst trotzdem wieder mit dem Auto zum Bäcker."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Du würdest im Windschatten fahren. Wie sonst auch."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Heißt so, obwohl's im September anfängt. Typisch."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Eine Maß kostet jetzt so viel wie früher ein ganzes Wochenende."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Und plötzlich hat jeder eine Lederhose. Auch in Hamburg."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Ich bleib nüchtern. Einer muss ja das Wetter ansagen."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Morgen erzählt wieder jeder, er hätt nur zwei Maß gehabt."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. „Ein Prosit der Gemütlichkeit“ läuft jetzt wieder alle zehn Minuten."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Du sagst wieder „nur eine Maß“. Ich zähl mit."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Auf der Bank tanzen kannst du. Gerade stehen danach nicht."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Du singst wieder „Atemlos“ mit. Und kannst nur den Refrain."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Morgen hast du wieder einen Kater und schiebst's aufs Hendl."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Du kommst wieder nicht ins Zelt. Ich will gar nicht erst."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montag. Das Wetter kann nichts dafür. Ich auch nicht."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montag. Die ganze Woche liegt noch vor uns. Ich sag's nur."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Ich bin auch noch nicht ganz da. Dabei schlaf ich nie."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montag. Wer den erfunden hat, war bestimmt Frühaufsteher."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montag. Auf den hat sich wieder keiner gefreut. Ich auch nicht."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Heute ist der Kaffee wichtiger als meine Vorhersage."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Montag. Du siehst aus wie Montag."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Montagmorgen. Deine Vorsätze vom Sonntagabend sind schon wieder weg, oder?"
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Montag. Was hast du am Wochenende eigentlich gemacht? Ach, lass."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Montag. Wer dich heute nach deinem Wochenende fragt, will's nicht wirklich wissen."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Montag. Heute fällt deine Laune wenigstens nicht auf."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Montagmorgen. Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Freitag. Die Woche ist fast geschafft. Gemocht hab ich sie trotzdem nicht."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Freitagnachmittag. Jetzt tun alle, als hätten sie die ganze Woche durchgearbeitet."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Freitag. Am Wochenende hab ich übrigens nicht frei. Nur so."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Freitag. Jetzt planen alle ein Wochenende, das dann doch auf dem Sofa endet."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Freitag. Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Freitag. Im Supermarkt ist's wieder so voll, als käm der Weltuntergang."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Dein Wochenendprogramm: viel vornehmen, nichts machen."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Ab jetzt reagierst du auf nichts mehr. Also wie sonst, nur offiziell."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Am Montag weißt du wieder nicht, wo das Wochenende hin ist."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Ruh dich am Wochenende gut aus. Von was auch immer."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Am Wochenende machst du das Gleiche wie sonst. Nur in Jogginghose."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Heute gibt's bei dir sicher wieder Pizza. Wie jeden Freitag."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Die Uhren sind vorgestellt. Die Stunde Schlaf ist weg, und keiner gibt sie zurück."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Sommerzeit. Eine Stunde weniger, und trotzdem wird's nicht früher Sommer."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Die Uhren gehen eine Stunde vor. Ich merk's nicht, ich bin ein Bildschirm. Du schon."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Eine Stunde weniger seit der Zeitumstellung. Merken tut man's bis Mittwoch."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Die Uhren sind vorgestellt. Die fehlende Stunde sieht man dir an."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Zeitumstellung. Deine Ausrede fürs Zuspätkommen gilt aber nur heute."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Sommerzeit. Eine Stunde weniger, und du hast trotzdem nichts verpasst."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Uhren vorgestellt. Du bist jetzt offiziell eine Stunde hinterher. Also wie immer."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die Uhren gehen eine Stunde zurück. Ich hätt lieber den Sommer zurück."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Winterzeit. Endlich wieder dunkel um fünf. Hat mir gefehlt."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die Uhren sind zurückgestellt. Eine Stunde mehr Tag, und ich weiß nicht, wohin damit."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Zeitumstellung. Hunde und Kleinkinder halten sich nicht dran."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Uhren zurückgestellt. Kommst du trotzdem zu spät, liegt's nicht an der Uhr."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Zeitumstellung. Jetzt bist du eine Stunde zu früh dran. Einmal im Jahr."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Winterzeit. Dunkel um fünf. Deine Ausrede für den Rest des Jahres."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Die Uhren gehen zurück. Du gehst ja sowieso immer eine Stunde nach."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Ab morgen geht's wieder bergab."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Heute ist der längste Tag. Für mich sind alle gleich lang, ich bin immer an."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Die Lebkuchen sind schon unterwegs."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Längster Tag des Jahres. So viel Tageslicht, und du bist vermutlich drinnen."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Längster Tag des Jahres. Mehr Zeit, um nichts zu erledigen."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Heute ist der längste Tag. Deine To-do-Liste ist trotzdem länger."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Ab morgen wird's heller. Langsam. Sehr langsam."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Heute ist der kürzeste Tag. Endlich mal einer, der schnell vorbei ist."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Ich mach's wie die Sonne und halt mich heute kurz."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Kürzester Tag des Jahres. Für dich die perfekte Länge."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Kürzester Tag des Jahres. Zum Glück, so viel hattest du ja nicht vor."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Heute ist der kürzeste Tag. „War schon dunkel“ gilt also ab vier."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Das jetzt ist nur die Vorschau. Der Hauptfilm heißt Kaltfront.",
+   "answers": [
+    "rp-de-90c4c23c7cfb"
+   ]
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Der Schirm ist für den Regen. Für den Blitz ist er eher eine Einladung.",
+   "answers": [
+    "rp-de-c95ef84f7140"
+   ]
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Heute bist du nicht ungeschickt, heute ist's glatt. Merk dir den Unterschied.",
+   "answers": [
+    "rp-de-89d7bf36fe78"
+   ]
+  }
+ ]
+}
