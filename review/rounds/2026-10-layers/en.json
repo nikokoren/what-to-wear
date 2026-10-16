@@ -1,0 +1,402 @@
+{
+ "lines": [
+  {
+   "path": "unit_10.w_jacket",
+   "text": "The jacket can come off {WHEN}. || I'd take a layer off too, but mine are glued on."
+  },
+  {
+   "path": "unit_10.w_jacket",
+   "text": "It warms up {WHEN}, so the jacket can come off. || Peeling off a layer: the closest today gets to drama."
+  },
+  {
+   "path": "unit_10.w_jacket",
+   "text": "{WHEN} you won't need the jacket any more. || Or keep it on out of loyalty and quietly cook."
+  },
+  {
+   "path": "unit_10.w_jacket",
+   "text": "You can take the jacket off {WHEN}. || Check the pockets first. Your keys are in there."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "The jacket can come off {WHEN}. || Taking it off might be the highlight of your day."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "{WHEN} it's warm enough to lose the jacket. || And 'lose' is the word. You know your track record."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "Once it warms up {WHEN}, the jacket can come off. || You'll be a bit too warm before you admit I was right."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "You can take the jacket off {WHEN}. || You'll announce 'it's actually warm' to people who are also outside."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "The sweater can come off {WHEN}. || Try not to get stuck halfway, arms up. I can't come and help."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "You can take the sweater off {WHEN}. || Thrilling stuff. I'm on the edge of my frame."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "You'll be fine without the sweater {WHEN}. || And 'fine' is high praise, coming from me."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "It warms up {WHEN}, so the sweater can come off. || Folded in the bag, or balled up in the bag. Your call."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "You can take the sweater off {WHEN}. || Today you're your own coat rack. Congratulations."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "The sweater can come off {WHEN}. || That could be the peak of your day."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "The sweater can come off {WHEN}. || Whatever's under it hasn't seen daylight in a while."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} it's warm enough to lose the sweater. || You'll leave it wherever you take it off. I know you."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "Bring a jacket. It cools down {WHEN}. || That's your one reminder. I don't do push notifications."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "It cools down {WHEN}, so bring a jacket. || Shame. It was just getting comfortable."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "Take a jacket along. You'll want it {WHEN}. || It'll come out of the bag looking slept in. Still counts."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "It gets cooler {WHEN}, so take a jacket along. || Later you'll pull it on and say 'ah, that's better'. Out loud."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "Bring a jacket. It cools down {WHEN}. || You'll put it on later and act like it was your idea."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "Take a jacket along. You'll want it {WHEN}. || Leave it behind and you'll think of me later. Not fondly."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "A sweater won't do {WHEN}, so bring a jacket. || Or borrow someone's later and keep it for a year."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "It cools down {WHEN}, so bring a jacket. || Carrying a layer you don't need yet. How very grown-up."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "Pack a sweater. You'll be glad to have it {WHEN}. || Glad is a strong word. Less cold, anyway."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "It cools down {WHEN}, so bring a sweater. || It'll come out of the bag looking a bit sorry for itself. Still counts."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "{WHEN} it gets cool enough for a sweater. || Which one is up to you. I do weather, not taste."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "Bring a sweater. It cools down {WHEN}. || I'll only say it once. I'm a screen, not your mother."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "Bring a sweater. It cools down {WHEN}. || Alternatively you can practise your 'I'm not cold' face for later."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you won't need for hours. Look at you, prepared."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "It cools down {WHEN}, so bring a sweater. || You'll forget it. Then you'll remember this moment."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps won't."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "The hat, scarf and gloves can come off {WHEN}. || That's three things to lose instead of one. Good luck."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "You can take off the hat, scarf and gloves {WHEN}. || Finally, you can use your phone without biting a glove off."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "{WHEN} it's mild enough to lose the hat, scarf and gloves. || 'Mild'. You'll be calling it practically spring."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "The hat, scarf and gloves can come off {WHEN}. || Three pockets, three things. You'll find two of them."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "{WHEN} you won't need the hat, scarf and gloves any more. || You'll keep the hat on anyway. It's hiding something."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "It warms up {WHEN}, so the hat, scarf and gloves can come off. || Today you're a coat rack with legs. Well done."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "The winter coat can come off {WHEN}. || Then you carry it. It weighs about as much as a small child."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "You can take the winter coat off {WHEN}. || Gripping weather. I can barely stay in my frame."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} you can do without the winter coat. || You'll miss the pockets, though."
+  },
+  {
+   "path": "unit_11.w_coat",
+   "text": "The winter coat can come off {WHEN}. || You'll overheat a little before you admit I was right."
+  },
+  {
+   "path": "unit_11.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || You'll take it off and remember what you're wearing under it."
+  },
+  {
+   "path": "unit_11.w_coat",
+   "text": "{WHEN} it's warm enough to lose the winter coat. || Not that you'll ever manage to fold it."
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || Finally, a use for the fancy bottle you bought to drink more water."
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "Take a bottle of water. The heat arrives {WHEN}. || Not for me, thanks. Water and I don't get along."
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "It heats up {WHEN}, so take water with you. || Somebody's about to crank the outside too high. Not me."
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || And by water I mean water. Not beer, even if it's nice and cold."
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "{WHEN} it's properly hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right."
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "You'll want water {WHEN}, when the heat comes in. || You'll want ice cream more. Have the water first."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "Take a hat, scarf and gloves along. You'll want them {WHEN}. || All three. I'm not haggling."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Hat hair or cold ears. Choose."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "{WHEN} the coat isn't enough on its own. Bring a hat, scarf and gloves. || You'll look like a parcel. A warm parcel."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "Bring a hat, scarf and gloves. It gets colder {WHEN}. || You'll bring two of the three. You always do."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "It gets colder {WHEN}, so bring a hat, scarf and gloves. || You'll say hats don't suit you. Neither do red ears."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "Take a hat, scarf and gloves along. You'll want them {WHEN}. || Two odd gloves still count. Wear them."
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || Carrying it until then counts as exercise. Barely."
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || Yes, the big one. The one that doesn't fit in any bag."
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} a jacket won't be enough, so bring the winter coat. || The jacket will try. Bless it."
+  },
+  {
+   "path": "unit_11.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || You'll say 'it's not that cold' right up until it is."
+  },
+  {
+   "path": "unit_11.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || Carrying it now looks odd. Freezing later looks worse."
+  },
+  {
+   "path": "unit_11.c_coat",
+   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || You've done it before. We both remember."
+  },
+  {
+   "path": "unit_10.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || I'd call it relief. You'll call it 'still too hot'."
+  },
+  {
+   "path": "unit_10.c_relief",
+   "text": "It cools off a little {WHEN}, but stays warm. || A little. Don't get excited."
+  },
+  {
+   "path": "unit_10.c_relief",
+   "text": "Some relief from the heat {WHEN}, but it stays warm. || I'll take the credit for that. Nobody else will."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} the worst of the heat is over, but it stays warm. || You'll still complain about the best of it."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "It's not as hot {WHEN}, but still warm. || You'll say it's 'cooled right down'. It hasn't."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || So you can stop sticking to things. Mostly."
+  },
+  {
+   "path": "unit_10.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'."
+  },
+  {
+   "path": "unit_10.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || I'd say goodbye, but you'll see {GP} tomorrow."
+  },
+  {
+   "path": "unit_10.arc_warmer",
+   "text": "{G} can come off {WHEN} and stays off. || You'll say 'it's got a bit chilly' later. Not chilly enough."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || You'll put {GP} back on later anyway, just to argue with me."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "You can take {G} off {WHEN}. Even later on, you won't need {GP}. || You'll still carry {GP} around all day. Some people can't let go."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || You'll want {GP} back. Wanting isn't needing."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Off and on again. That fixes most things, me included."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}. || Handy means with you. Not 'somewhere you'll remember later'."
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Fifty-fifty {GP} goes missing in between."
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || Then you'll say 'it's turned chilly' like it's news to you."
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || Two outfit changes in one day. Very pop star of you."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Carry it all, then wear it all."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || The warm bit is a trick."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || You'll come home in more layers than you left in."
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || You'll bring the layer and lose {G}."
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || You'll call it overkill. Then you'll wear it."
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || 'Maybe' is me being polite. Bring it."
+  },
+  {
+   "path": "unit_10.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || Maybe go with shorts. Your knees will have opinions for a while."
+  },
+  {
+   "path": "unit_10.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || Shorts now might be the brave call. Correct, but brave."
+  },
+  {
+   "path": "unit_10.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || Trust me. I've never had cold legs."
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || Maybe go for shorts. You'll spend the first hour explaining your legs."
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "{WHEN} it's warm enough for shorts, so think about wearing them now. || Very PE teacher of you. Still the right call."
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || You'll doubt me for the first hour. Then you won't admit I was right."
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "What you have on works for the rest of the evening. || Whoever you see tonight, nobody will be better forecast.",
+   "answers": [
+    "un-en-3238bb654636"
+   ]
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "Your outfit holds for the rest of the evening. || I'll keep refreshing anyway. It's a hobby.",
+   "answers": [
+    "un-en-3238bb654636"
+   ]
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "You're dressed right for the rest of the night. || So that's not what's keeping you up."
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "What you're wearing works until bed. || Whenever that is. I've stopped guessing."
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "Nothing more from the weather tonight. || I'll tell you the rest in the morning. Assuming you're up."
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "The weather settles down for the night. || Worth a try."
+  }
+ ]
+}
