@@ -1,0 +1,534 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Today a rodent does my job, and gets a crowd."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Over and over? Amateur. I've done it for years. Happy Groundhog Day."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Happy Groundhog Day. I'll be here long after the groundhog's in bed."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Nobody has ever asked the groundhog about umbrellas."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Groundhog Day. Same outfit as yesterday, probably. Very on theme."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "You'll make a Groundhog Day joke today. The same one as last year."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Groundhog Day, and a groundhog is having a bigger day than you."
+  },
+  {
+   "path": "flavour_11.theme_ghd",
+   "text": "Groundhog Day. You'd be good at it: pop out, look around, go back in."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. I'm a rectangle, so I'll be sitting this one out."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. I could show you the digits, but I'd run out of screen."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. Today's forecast: exactly one outfit. No decimals."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Happy Pi Day. I've done the maths for today. You can have the pie."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. You know three digits and you'll say all of them today."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. You'll eat pie and call it maths."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. It never ends, a bit like your unread messages."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day, because it's 3/14. You'll pretend you knew that."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. Unlike the eggs, the forecast isn't hidden."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "The Easter bunny and I both work today. Only one of us hops."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. I'm the only screen in here with no chocolate on it."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. One egg will turn up in July. There's always one."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "You'll eat a chocolate egg before breakfast and call it tradition."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "You'll find the Easter chocolate faster than any child."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Your diet starts again Monday. Like last Monday."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. You'll bite the ears off first. Everyone does."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "These are the clothes you're looking for. Happy Star Wars Day."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "May the fourth be with you. I sense no disturbance in the forecast."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star Wars Day. My only Jedi skill: knowing what you should wear."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star Wars Day. I have a bad feeling about this. Kidding. It's fine."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "You'll say 'May the fourth be with you' to someone who hates it."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'll do the voice. Please don't do the voice."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "May the fourth. You still can't name the films in order, can you."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'd turn to the dark side for a biscuit."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. I've never cycled. Never had a flat tyre, either."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. The outfit works on a bike too."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. The forecast's the same at any speed."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. No pedals, no wheels and no complaints. That's me."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Your bike's tyres are flat, I'm guessing."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You'll mean to ride it. You'll mean it all day."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. That exercise bike makes a lovely clothes rack."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You'll say you'll cycle more. From next week."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Every rider has a team car. You have me."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France riders eat about six dinners a day. Don't get ideas."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "The Tour riders change jerseys more often than you'll change today."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Two hundred kilometres for the Tour riders today. One outfit for you."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "It's Tour de France time. Lycra is optional for the rest of us."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "The Tour riders get a rest day. I don't. Not that I'm complaining."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You'll watch three hours of it and call it cardio."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "You'll nap through the Tour's sprint finish. You do every year."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You'll pretend you understand the points jersey."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "The Tour riders go over mountains. You'll take the lift up one floor."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "You watch the Tour for the castles and the scenery. Admit it."
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Three weeks of the Tour: other people exercising. Your favourite."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. The forecast stays steady. Everyone else, less so."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Somewhere there's a pretzel bigger than me. I'm fine."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "It's Oktoberfest. I don't do the chicken dance. I don't do any dance."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Someone has to stay sober and do the forecast."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Your outfit works today. So would a dirndl, apparently."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. One full stein weighs more than I do. Think about that."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'll sing along in a language you don't speak."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'll order a pretzel and call it dinner."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'll say 'just the one'. It comes in litres."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'll wear the hat once and keep it for ten years."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Your German improves with every glass. It doesn't."
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'll toast so hard you spill half of it. Every time."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. At least one of us is fully charged."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday. I look exactly as good as I did on Friday."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. I'm the only thing in the house not annoyed about it."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday. The weekend went by in about four minutes, didn't it."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday. I don't do weekends, so I don't see what the fuss is about."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday. I've never had the Sunday-night dread. Sounds awful."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Monday. You've already counted the days to the weekend."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Monday morning. You hit snooze, didn't you. More than once."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Monday. You said you'd have an early night yesterday."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Monday morning, and you're reading this before coffee. Bold."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Monday morning. Same face as last Monday. Very consistent."
+  },
+  {
+   "path": "flavour_11.day_monday",
+   "text": "Monday. You'll ask someone about their weekend and not listen."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday. No weekends for me, but no Mondays either. Fair trade."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. Everyone slows down. I'm e-ink, I was already slow."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. Whatever happens tonight, I wasn't there."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday. My weekend plans: be right, the whole time."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday. Weekend plans? The outfit's ready. That's my part done."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. The slowest hours of the week, and I see every one."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Friday afternoon. You've been 'nearly done' since lunch."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Friday. You'll say you'll get up early tomorrow. You won't."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Friday afternoon. The weekend plans are 'we'll see', aren't they."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Friday. This weekend you'll finally sort out that drawer. Sure."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Friday afternoon. You'll call Saturday 'a reset'. It'll be a nap."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Friday. You'll leave the laundry until Sunday night. Again."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Clocks forward, an hour gone. I didn't notice. I don't sleep."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "One hour less this weekend. Don't look at me, I didn't take it."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Clocks forward. Lighter evenings soon. You paid for them in sleep."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. I'd say 'feel refreshed', but I don't lie."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks forward. You'll blame the lost hour all week. It was one hour."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks forward. You'll be late for something and call it jet lag."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks forward. You're running an hour behind. So, normal, plus one."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks forward. You'll check three clocks and trust none of them."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "The clocks went back. An extra hour, and I spent it refreshing."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "An extra hour this weekend. I'd ask what you did with it, but I know."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Clocks back. An hour you didn't earn. Don't spend it all at once."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Clocks went back. If you're early for everything today, that's why."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks back. An extra hour of sleep, and you spent it on your phone."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. You'll wake up early anyway and resent it."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks back. Your oven clock will be wrong until spring. You know it."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks back. You'll talk about that extra hour like it was a holiday."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year. I look my best in daylight. There's loads."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year. From tomorrow, it's all downhill. Enjoy."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year, and your outfit lasts all of it. Value."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. You'll still say you ran out of time."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. You'll spend the light indoors. With me."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. You'll say 'it's still so light' at ten."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. Turn a light on later. I can't glow."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. It improves from tomorrow. You're welcome."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. Blink and you'll miss it. I don't blink."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. You'll still waste most of it."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. You'll say 'it's dark already' four times."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. You'll spend the light on other screens. Noted."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "That leaves the evening free for losing the remote.",
+   "answers": [
+    "rp-en-0b902a8b328c"
+   ]
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Good. One less thing to lie awake thinking about.",
+   "answers": [
+    "rp-en-f3c635d1dffb"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Try not to get stuck halfway, arms up. I can't come and help.",
+   "answers": [
+    "rp-en-81f060ebb9c4"
+   ],
+   "garments": [
+    "hoodie"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "And afterwards you'll open it to dry and trip over it.",
+   "answers": [
+    "fu-en-3c6bdbfdd863"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "You'll try to open it with one hand, like in films. It won't.",
+   "answers": [
+    "rp-en-56e4f3fc7279"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "You'll judge the rain by other people's umbrellas.",
+   "answers": [
+    "se-en-94930a50790f"
+   ]
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "You and the houseplants both need watering today. I don't.",
+   "answers": [
+    "rp-en-820d2cf92f6d"
+   ]
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Plenty of time to start something you won't finish.",
+   "answers": [
+    "rp-en-2bef94de3974"
+   ]
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Arriving upright counts as an achievement today. I'll allow it.",
+   "answers": [
+    "rp-en-4e1ab0c99855"
+   ]
+  }
+ ]
+}
