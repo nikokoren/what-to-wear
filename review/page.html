@@ -210,6 +210,11 @@ function compose(r) {
   if (r.panels) return { bold: "", plain: fill(wordingOf(r), fillsOf(r)), judged: "" };
   if (r.role === "fact") return { bold: sentenceCase(fill(wordingOf(r), fillsOf(r))), plain: r.under || "", judged: "bold" };
   if (r.role === "flavour") return { bold: r.fact || "", plain: fill(wordingOf(r), fillsOf(r)), judged: "plain" };
+  // A unit: the forecast sentence and its joke written together, "fact || joke"; both are rated.
+  if (r.role === "unit") {
+    const [fact, joke = ""] = wordingOf(r).split(" || ");
+    return { bold: sentenceCase(fill(fact, fillsOf(r))), plain: fill(joke, fillsOf(r)), judged: "" };
+  }
   return { bold: r.fact || "", plain: ui.showPair && r.pair ? r.pair : r.tip, judged: r.fact ? "plain" : "" };
 }
 function verdictOf(r) { const d = decisions.get(r.id); return d && d.verdict || ""; }

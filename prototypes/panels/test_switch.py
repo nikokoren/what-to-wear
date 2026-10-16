@@ -324,6 +324,36 @@ expect("Pi Day and the US clock change on one day (14 March 2027): the theme win
        day_key("2027-03-14", 10, "America/New_York") == "")
 expect("the longest day in Sydney is the shortest", day_key("2027-06-21", 10, "Australia/Sydney", -33.9) == "shortest")
 
+# Units (owner, October 2026): with sarcasm on, a forecast sentence and its
+# joke written together. Where a situation has units, the screen shows one
+# (forecast on, or What to Wear Next with one drawing); sarcasm off keeps
+# the plain wording; the outfit alone keeps its standalone line; a rainy
+# steady day takes the rain's unit.
+saved_units = {k: TEXTS["en"].get(k) for k in ("units_10", "units_11")}
+TEXTS["en"]["units_10"] = {"steady": ["UNIT FACT. || UNIT JOKE."], "p_wetter": ["UNIT RAIN {WHENP}. || RAIN JOKE."],
+                           "steady_evening": ["ONE SENTENCE WITH BOTH."]}
+
+
+def words_of(html):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
+
+
+expect("units: forecast on, a steady day", "UNIT FACT. UNIT JOKE." in words_of(render(True, feels=STEADY, hour=10)))
+expect("units: one drawing, forecast off", "UNIT FACT. UNIT JOKE." in words_of(render(False, feels=STEADY, hour=10, nxt=True)))
+expect("units: sarcasm off, the plain wording", "UNIT" not in render(True, feels=STEADY, hour=10, sarcasm="0"))
+expect("units: the outfit alone, no unit", "UNIT" not in render(False, feels=STEADY, hour=10))
+expect("units: a rainy steady day, the rain's unit",
+       "UNIT RAIN this afternoon. RAIN JOKE." in words_of(render(True, feels=STEADY, hour=8, probs=[0] * 14 + [80] * 3 + [0] * 7,
+                                                                  codes=[0] * 14 + [61] * 3 + [0] * 7)))
+html = render(True, feels=STEADY, hour=19)
+expect("units: one sentence with both, no second line", "ONE SENTENCE WITH BOTH." in words_of(html) and html.count("<p") == 1)
+expect("units: a day without units for its situation works as before", "UNIT" not in render(True, hour=7))
+for k, v in saved_units.items():
+    if v is None:
+        TEXTS["en"].pop(k, None)
+    else:
+        TEXTS["en"][k] = v
+
 # A texts file older than the markup (the texts URL behind: a fork's pinned
 # commit, or jsDelivr serving an old @main for a while after a release): no
 # now or day pools, its lines by the day's mood, and no "cooling" ones. A

@@ -267,6 +267,15 @@ after the fact + flavour block and the picture.
         {%- assign si = text_rot | plus: 2 | modulo: sn -%}
         {%- assign panel_fact = sl[si] -%}
       {%- endif -%}
+      {%- comment %}
+      One drawing and sarcasm on: the unit the fact block picked for this
+      steady day (UNITS there), its sentence in place of "works all day"
+      and its own joke. Not when rain or snow decided the unit.
+      {%- endcomment %}
+      {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
+        {%- assign panel_fact = f_temp -%}
+        {%- assign flavour_line = unit_joke -%}
+      {%- endif -%}
     {%- endif -%}
     {%- comment %}
     Two or three drawings and no forecast line: the change is on screen as

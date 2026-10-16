@@ -56,7 +56,7 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|now|fact|topical)_(\d+))\.([a-z0-9_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|now|fact|topical|unit)_(\d+))\.([a-z0-9_]+)$")
 PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
@@ -251,6 +251,12 @@ def rows_from_candidates(cand_path):
             r["fact"] = ""
             r["tip"] = sentence_case(fill_with(c["text"], r.get("fills", {})))
             r["tooLong"] = len(r["tip"]) + 1 + len(r.get("under", "")) > 200
+        elif r.get("role") == "unit":
+            # The forecast sentence and its joke, written and voted as one:
+            # "fact || joke" (the joke may be absent: one sentence with both).
+            fact, _, joke = c["text"].partition(" || ")
+            r["tip"] = c["text"]
+            r["tooLong"] = len(fill_with(fact, r.get("fills", {}))) + 1 + len(joke) > 200
         elif r.get("role") == "flavour":
             r["tip"] = c["text"]
             r["tooLong"] = len(r.get("fact", "")) + 1 + len(r["tip"]) > 200

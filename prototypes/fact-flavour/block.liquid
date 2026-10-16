@@ -167,6 +167,56 @@ current time moves every 15 minutes, so the merge variables change.
       {%- endfor -%}
     {%- endif -%}
   {%- endif -%}
+  {%- comment %}
+  UNITS (owner, October 2026): with sarcasm on, a forecast sentence and its
+  joke written and voted together, "fact || joke" (texts units_10 /
+  units_11, by situation; no joke when the sentence carries it). Where the
+  situation has units, the screen shows one instead of a forecast wording
+  plus a separately picked reply, so the two always fit. On a day that
+  changes and rains, the unit is for the rain sentence, which comes last.
+  A theme day keeps the plain wording and its own lines. Situations
+  without units yet work as before.
+  {%- endcomment %}
+  {%- assign unit_joke = nil -%}
+  {%- assign u_lib_key = 'units_' | append: sarcasm_level -%}
+  {%- assign u_lib = texts[u_lib_key] -%}
+  {%- assign u_theme = false -%}
+  {%- if is_steady and active_theme != '' -%}
+    {%- assign u_tk = 'theme_' | append: active_theme -%}
+    {%- assign u_fl = 'flavour_' | append: sarcasm_level -%}
+    {%- if texts[u_fl][u_tk] -%}{%- assign u_theme = true -%}{%- endif -%}
+  {%- endif -%}
+  {%- if sarcasm_level != '0' and u_lib and u_theme == false -%}
+    {%- assign u_key = f_key -%}
+    {%- if f_precip != '' -%}{%- assign u_key = pk -%}{%- endif -%}
+    {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
+    {%- assign u_pool = u_lib[u_key] -%}
+    {%- if u_pool -%}
+      {%- assign u_n = u_pool | size -%}
+      {%- assign u_i = text_rot | plus: 7 | modulo: u_n -%}
+      {%- assign u_month = ',' | append: season_month | append: ',' -%}
+      {%- for k in (1..u_n) -%}
+        {%- assign u_cand = u_pool[u_i] -%}
+        {%- assign u_ok = true -%}
+        {%- if u_cand contains '{M:' -%}
+          {%- assign u_tag = u_cand | split: '{M:' | last | split: '}' | first -%}
+          {%- assign u_tags = ',' | append: u_tag | append: ',' -%}
+          {%- unless u_tags contains u_month -%}{%- assign u_ok = false -%}{%- endunless -%}
+          {%- assign u_prefix = '{M:' | append: u_tag | append: '}' -%}
+          {%- assign u_cand = u_cand | remove_first: u_prefix -%}
+        {%- endif -%}
+        {%- if u_cand contains '{WHENSTOP}' and when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- if u_ok -%}
+          {%- assign u_parts = u_cand | split: ' || ' -%}
+          {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
+          {%- assign unit_joke = u_parts[1] | default: '' | strip -%}
+          {%- if f_precip != '' -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign u_i = u_i | plus: 1 | modulo: u_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
   {%- if is_steady and f_precip != '' -%}
     {%- assign fact_line = f_precip -%}
   {%- elsif f_precip != '' -%}
@@ -448,6 +498,10 @@ current time moves every 15 minutes, so the merge variables change.
         {%- endif -%}
         {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
       {%- endfor -%}
+    {%- endif -%}
+    {%- comment %} A unit's own joke, under its own forecast sentence (UNITS above). {%- endcomment %}
+    {%- if unit_joke != nil and forecast_on and fact_line != '' and fl_theme == false -%}
+      {%- assign flavour_line = unit_joke -%}
     {%- endif -%}
 
     {%- comment %}

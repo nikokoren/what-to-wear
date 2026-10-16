@@ -326,6 +326,7 @@ SEASONS = "2026-10-seasons"
 REPLIES = "2026-10-replies"
 POLISH = "2026-10-polish"
 DAYS = "2026-10-days"
+UNITS = "2026-10-units"
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -434,6 +435,9 @@ def apply_follow(doc, lang, decisions, rnd=None):
             # follows the forecast line instead, in its mood's group
             section, key = "flavour_" + section.split("_")[1], MOOD_TO_GROUP[key]
             n["follow-up (owner's note)"] += 1
+        if section.startswith("unit_"):
+            # a forecast sentence and its joke, written together: texts units_10 / units_11
+            section = "units_" + section.split("_")[1]
         pool = doc.setdefault(section, {}).setdefault(key, [])
         if text not in pool:
             # starred lines first
@@ -548,6 +552,14 @@ def main():
         polish = apply_follow(doc, lang, decisions, POLISH)
         if polish:
             print(f"{lang} round 15: " + ", ".join(f"{v} {k}" for k, v in polish.items()))
+        for level in ("10", "11"):
+            doc[f"units_{level}"] = {}  # rebuilt from the votes every run
+        units = apply_follow(doc, lang, decisions, UNITS)
+        if units:
+            print(f"{lang} round 17 (units): " + ", ".join(f"{v} {k}" for k, v in units.items()))
+        for level in ("10", "11"):
+            if not doc[f"units_{level}"]:
+                del doc[f"units_{level}"]
         days = apply_follow(doc, lang, decisions, DAYS)
         if days:
             print(f"{lang} round 16: " + ", ".join(f"{v} {k}" for k, v in days.items()))
