@@ -418,6 +418,14 @@ layers and rain follow. `build_pools.py` puts kept units in
 `units_10`/`units_11`; the markup shows one wherever a situation has some.
 Raw output in `2026-10-units/`.
 
+## Round 18: layer units
+
+`2026-10-layers.json` (`make_round18.py`, ids `ly-…`), 202 lines: units
+for the days a layer comes off or goes on (`w_*`, `c_*`, `arc_*`,
+`shorts_early`), shown under their drawings because they can sit under
+What to Wear Next's two or three (or none). Plus round 17's "Write new"
+units and English late-night units. Raw output in `2026-10-layers/`.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
