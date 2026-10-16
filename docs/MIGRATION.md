@@ -1,5 +1,39 @@
 # Rolling this out without breaking anyone
 
+## 2.0 (owner's decisions, October 2026)
+
+Two steps, the texts URL pinned to a version tag, and the merge to `main`
+once the 19 drawings are in. Everything below this section is the plan
+for the earlier refactor; the reasoning (why the order matters, who is
+affected) still holds.
+
+**Build the release** once the drawings are on the branch:
+
+```bash
+python3 tools/build_release.py 2.0.0 --date <release date>
+```
+
+It writes `release/2.0.0/` (commit it: the texts URL serves
+`release/2.0.0/lang/` from the tag) and checks that step 1 on today's
+single polling URL shows a drawing and words on every screen, that step 1
+with both URLs renders exactly what step 3 renders, and that each markup
+file is under 100 KB. `release/2.0.0/README.md` has the steps:
+
+1. **Markup, views and form.** `step1/shared.liquid` is the 2.0 markup
+   that also reads today's single-URL shape and carries the old wording
+   (two variants per situation) for devices without the texts URL yet.
+   They show the 2.0 drawings with the old one-line tip.
+2. **Polling URL.** Weather, then the texts at `@v2.0.0`. Push the tag
+   first and open the URL in a browser.
+3. **Slim markup.** `shared.liquid`, the same without the old wording.
+
+Later text updates: a new tag and a new texts URL, so markup and texts
+never drift apart (the mismatch that hid sarcastic lines on the beta).
+
+---
+
+## The earlier plan
+
 The refactor moves all phrasing out of the shared markup and into
 `lang/<code>.json`, fetched as a second polling URL. That is two changes to
 the plugin — new markup, new polling config — and TRMNL delivers them

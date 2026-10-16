@@ -10,6 +10,14 @@ for every screen (flavour_line): the blocks pick it for what's on screen.
 {%- elsif visual_forecast -%}
   {%- assign w_fact = panel_fact -%}
 {%- endif -%}
+{%- comment %}
+No texts file with the forecast wordings (a device that has this markup
+but not yet the texts polling URL, rollout step 1): the old one-line tip,
+from the copies the transitional markup carries.
+{%- endcomment %}
+{%- if w_fact == '' and w_flavour == '' and texts.facts == nil and show_future_suggestions == 'on' and today_tip != '' -%}
+  {%- assign w_flavour = today_tip -%}
+{%- endif -%}
 {%- assign has_words = false -%}
 {%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
 {%- assign n = 1 -%}

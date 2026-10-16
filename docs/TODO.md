@@ -18,6 +18,14 @@ to pick it up cold.
 - Item 1 is decided and coded; the 19 drawings are next.
 - Item 3 (the text) is well along in the prototype; see item 5 below.
 
+### Rollout 2.0 (owner, October 2026)
+
+Two steps, texts URL pinned to a version tag, merge to `main` once the
+drawings are in. `tools/build_release.py` and `docs/MIGRATION.md` ("2.0").
+Before release: the 19 drawings (below), a contact method in the About
+text (`config/settings.next.yaml`), the owner's read of the 2.0 changelog
+in both languages, then build, merge, tag `v2.0.0`, and the three steps.
+
 ### Open, in order
 
 1. **Draw the 19 sprites** (item 1). Replace the files in `sprites/` on

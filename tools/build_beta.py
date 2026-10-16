@@ -164,7 +164,8 @@ def main():
             raise SystemExit(f"beta/lang/{lang}.json is {size} bytes, too close to TRMNL's 100 KB limit")
         (OUT / "lang" / f"{lang}.json").write_text(text, encoding="utf-8")
         print(f"beta/lang/{lang}.json: {size // 1000} KB (full, minified: {len(minified(full[lang]).encode()) // 1000} KB)")
-    shutil.copyfile(REPO / "config" / "settings.next.yaml", OUT / "settings.yaml")
+    form = (REPO / "config" / "settings.next.yaml").read_text(encoding="utf-8").replace("RELEASE_DATE", "beta")
+    (OUT / "settings.yaml").write_text(form, encoding="utf-8")
     markup = (OUT / "shared.liquid").stat().st_size
     if markup > LIMIT:
         raise SystemExit(f"beta/shared.liquid is {markup} bytes, over TRMNL's 100 KB markup limit")
