@@ -305,6 +305,7 @@ NOW_MOODS = ["snow", "wet", "night", "evening", "hot", "cold", "nice", "cool"]
 ALONE = "2026-10-alone"
 FOLLOW = "2026-10-follow"
 SEASONS = "2026-10-seasons"
+REPLIES = "2026-10-replies"
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -383,7 +384,7 @@ def apply_follow(doc, lang, decisions, rnd=None):
         return collections.Counter()
     n = collections.Counter()
     for row in json.loads(path.read_text(encoding="utf-8"))["lines"]:
-        if row["lang"] != lang:
+        if row["lang"] != lang or row.get("role") == "fact":
             continue
         d = votes.get((row["path"], row["text"])) or {}
         verdict = d.get("verdict", "")
@@ -515,6 +516,12 @@ def main():
         seasons = apply_follow(doc, lang, decisions, SEASONS)
         if seasons:
             print(f"{lang} round 13: " + ", ".join(f"{v} {k}" for k, v in seasons.items()))
+        facts14 = apply_facts(doc, lang, decisions, REPLIES)
+        if facts14:
+            print(f"{lang} round 14 forecast: " + ", ".join(f"{v} {k}" for k, v in facts14.items()))
+        replies = apply_follow(doc, lang, decisions, REPLIES)
+        if replies:
+            print(f"{lang} round 14: " + ", ".join(f"{v} {k}" for k, v in replies.items()))
         write_new = apply_write_new(doc, lang, decisions)
         if write_new:
             print(f"{lang} write new: " + ", ".join(f"{v} {k}" for k, v in write_new.items()))
@@ -554,6 +561,49 @@ def apply_garments(doc, lang):
                 if t in GARMENT[lang]:
                     texts[i] = GARMENT[lang][t]
                     n += 1
+    return n
+
+
+def apply_facts(doc, lang, decisions, rnd):
+    """Round 14: every forecast wording voted again, new ones beside them. A
+    veto or Write new takes a wording out (never a situation's last one), an
+    edit replaces it, a kept new wording goes in after the others."""
+    path = REPO / "review" / "rounds" / f"{rnd}.json"
+    votes = {(d["path"].split("[")[0], d["text"]): d for d in decisions.values() if d.get("round") == rnd}
+    if not path.exists() or not votes:
+        return collections.Counter()
+    n = collections.Counter()
+    facts = doc["facts"]
+    rows = json.loads(path.read_text(encoding="utf-8"))["lines"]
+    # new wordings first, so a vetoed last wording can make way for one
+    for row in sorted(rows, key=lambda r: not r.get("new")):
+        if row["lang"] != lang or row.get("role") != "fact":
+            continue
+        key = row["path"].split(".", 1)[1]
+        d = votes.get((row["path"], row["text"])) or {}
+        verdict = d.get("verdict", "")
+        text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or row["text"]
+        texts = facts.setdefault(key, [])
+        if row.get("new"):
+            if verdict in ("star", "keep") and text not in texts:
+                texts.insert(0, text) if verdict == "star" else texts.append(text)
+                n["new in"] += 1
+            continue
+        if row["text"] not in texts:
+            continue
+        if verdict in ("veto", "rewrite"):
+            if len(texts) > 1:
+                texts.remove(row["text"])
+                n["out"] += 1
+            else:
+                print(f"  facts.{key}: its only wording is vetoed; it stays until a new one is kept")
+        elif text != row["text"]:
+            i = texts.index(row["text"])
+            if text in texts:
+                texts.pop(i)
+            else:
+                texts[i] = text
+            n["edited"] += 1
     return n
 
 

@@ -88,7 +88,69 @@ def follow_row(lang, level, group, item, doc, base):
     return row, hints
 
 
+def flavour_row(lang, item, doc, base):
+    """One writer's row as the review page shows it."""
+    text, path = item["text"], item["path"]
+    section, key = path.split(".")
+    level = section.rsplit("_", 1)[1]
+    if "{G" in text and not (section.startswith("flavour_") and key in ("off", "on", "offon")):
+        raise SystemExit(f"{lang}: {{G}}/{{GP}} only in off, on, offon follow-ups: {path} {text}")
+    for g in item.get("garments") or []:
+        if g not in GARMENTS:
+            raise SystemExit(f"{lang}: unknown garment {g}: {text}")
+    hints = []
+    if section.startswith("flavour_vf"):
+        sprite, fact, panels = r11.screen(lang, "vf", key, doc, base)
+        row = {"path": path, "sprite": sprite, "fact": fact, "batch": "Drawings",
+               "meaning": r11.meaning("vf", key, level, new=True)}
+        if item.get("three"):
+            # three different outfits, the only days it shows
+            labels = [p["label"] for p in r11.screen(lang, "vf", "fickle", doc, base)[2]]
+            row["sprite"] = "coat_dry"
+            row["panels"] = [{"sprite": s, "label": l} for s, l in
+                             zip(("coat_dry", "jacket_dry", "tee_pants_dry"), labels)]
+            hints.append("Only with three different drawings")
+        elif panels:
+            row["panels"] = panels
+    elif section.startswith("now"):
+        sprite, fact, _ = r11.screen(lang, "now", key, doc, base)
+        row = {"path": path, "sprite": sprite, "fact": fact, "batch": f"Now: {key}",
+               "meaning": r11.meaning("now", key, level, new=True)}
+    elif section.startswith("flavour_") and key in r12.GROUP_CTX:
+        row, hints = follow_row(lang, level, key, item, doc, base)
+    else:
+        raise SystemExit(f"{lang}: unknown path {path}")
+    row = {"lang": lang, **row, "text": text, "role": "flavour", "new": True}
+    if item.get("months"):
+        row["months"] = item["months"]
+        row["batch"] = "Seasonal"
+        hints.insert(0, f"Seasonal: only {months_named(item['months'])}")
+    if item.get("garments"):
+        row["garments"] = item["garments"]
+    if item.get("three"):
+        row["three"] = True
+    if item.get("answers"):
+        row["answers"] = item["answers"]
+        hints.append("Answers a “Write new”")
+    if item.get("hint"):
+        hints.append(item["hint"])
+    if item.get("idea"):
+        hints.append("A riff on an idea from the other language")
+    if hints:
+        row["hint"] = " · ".join(hints)
+    return row
+
+
+def voted_already(rnd):
+    """A round with votes is history: building it again would drop every line
+    that's in the pools now (they all look like duplicates)."""
+    return any(d.get("round") == rnd for lang in ("en", "de")
+               for d in json.loads((REPO / "review" / "decisions" / f"{lang}.json").read_text(encoding="utf-8")).values())
+
+
 def main():
+    if voted_already(ROUND):
+        raise SystemExit(f"{ROUND} has votes; not rebuilding it")
     lines = []
     for lang in ("en", "de"):
         doc = json.loads((r8.PROTO / f"{lang}.json").read_text(encoding="utf-8"))
@@ -106,54 +168,7 @@ def main():
                 print(f"  {lang} skipped, already there: {text}")
                 continue
             seen.add(text)
-            section, key = path.split(".")
-            level = section.rsplit("_", 1)[1]
-            if "{G" in text and not (section.startswith("flavour_") and key in ("off", "on", "offon")):
-                raise SystemExit(f"{lang}: {{G}}/{{GP}} only in off, on, offon follow-ups: {path} {text}")
-            for g in item.get("garments") or []:
-                if g not in GARMENTS:
-                    raise SystemExit(f"{lang}: unknown garment {g}: {text}")
-            hints = []
-            if section.startswith("flavour_vf"):
-                sprite, fact, panels = r11.screen(lang, "vf", key, doc, base)
-                row = {"path": path, "sprite": sprite, "fact": fact, "batch": "Drawings",
-                       "meaning": r11.meaning("vf", key, level, new=True)}
-                if item.get("three"):
-                    # three different outfits, the only days it shows
-                    labels = [p["label"] for p in r11.screen(lang, "vf", "fickle", doc, base)[2]]
-                    row["sprite"] = "coat_dry"
-                    row["panels"] = [{"sprite": s, "label": l} for s, l in
-                                     zip(("coat_dry", "jacket_dry", "tee_pants_dry"), labels)]
-                    hints.append("Only with three different drawings")
-                elif panels:
-                    row["panels"] = panels
-            elif section.startswith("now"):
-                sprite, fact, _ = r11.screen(lang, "now", key, doc, base)
-                row = {"path": path, "sprite": sprite, "fact": fact, "batch": f"Now: {key}",
-                       "meaning": r11.meaning("now", key, level, new=True)}
-            elif section.startswith("flavour_") and key in r12.GROUP_CTX:
-                row, hints = follow_row(lang, level, key, item, doc, base)
-            else:
-                raise SystemExit(f"{lang}: unknown path {path}")
-            row = {"lang": lang, **row, "text": text, "role": "flavour", "new": True}
-            if item.get("months"):
-                row["months"] = item["months"]
-                row["batch"] = "Seasonal"
-                hints.insert(0, f"Seasonal: only {months_named(item['months'])}")
-            if item.get("garments"):
-                row["garments"] = item["garments"]
-            if item.get("three"):
-                row["three"] = True
-            if item.get("answers"):
-                row["answers"] = item["answers"]
-                hints.append("Answers a “Write new”")
-            if item.get("hint"):
-                hints.append(item["hint"])
-            if item.get("idea"):
-                hints.append("A riff on an idea from the other language")
-            if hints:
-                row["hint"] = " · ".join(hints)
-            lines.append(row)
+            lines.append(flavour_row(lang, item, doc, base))
     out = {"round": ROUND, "idPrefix": "se", "lines": lines}
     path = HERE / f"{ROUND}.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
