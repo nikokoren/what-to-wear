@@ -274,7 +274,24 @@ after the fact + flavour block and the picture.
     {%- endcomment %}
     {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
       {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
-      {%- assign vf_pool = texts[vf_key][mood] -%}
+      {%- comment %}
+      The drawings' line goes by what the drawings show: the same outfit
+      first and last is off-and-on-again (no extra layer to bring), a
+      colder last one is cooling, a warmer one warming.
+      {%- endcomment %}
+      {%- assign vf_mood = mood -%}
+      {%- if mood == 'cooling' or mood == 'warming' or mood == 'fickle' -%}
+        {%- assign vf_first = pr | first | plus: 0 -%}
+        {%- assign vf_last = pr | last | plus: 0 -%}
+        {%- if vf_first == vf_last -%}
+          {%- assign vf_mood = 'fickle' -%}
+        {%- elsif vf_last < vf_first -%}
+          {%- assign vf_mood = 'cooling' -%}
+        {%- else -%}
+          {%- assign vf_mood = 'warming' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign vf_pool = texts[vf_key][vf_mood] -%}
       {%- if vf_pool -%}
         {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}

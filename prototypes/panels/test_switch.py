@@ -260,6 +260,26 @@ for lang, ice, storm in (("en", r"\bic[ey]\b", r"thunder"), ("de", r"glatt", r"g
     expect(f"{lang}: freezing rain and thunder, the ice warning",
            says(render(True, feels=COLD, hour=8, lang=lang, probs=RAIN_PM, codes=both), ice))
 
+# The jacket now, a little warmer around midday, the jacket again tonight:
+# too small a rise to count as warming, but the drawings show the jacket
+# off in between. Not "bring a jacket" (it's on), and the drawings' line
+# never asks for an extra layer.
+SMALL = [12] * 10 + [13, 13, 13, 13] + [12, 11, 10, 10, 9, 9, 8, 8, 8, 8]
+for h in (8, 9):
+    html = render(True, feels=SMALL, hour=h, nxt=True)
+    slugs = re.findall(r"([a-z_]+_dry)\.png", html)
+    words = re.sub(r"<[^>]+>", " ", html)
+    expect(f"jacket, sweater, jacket at {h}:30: no 'bring a jacket'",
+           slugs[:3] != ["jacket_dry", "sweater_dry", "jacket_dry"] or not re.search(r"(bring|take) a jacket", words))
+saved_vf = TEXTS["en"].get("flavour_vf_11")
+TEXTS["en"]["flavour_vf_11"] = {m: [f"VF {m.upper()}"] for m in ("cooling", "warming", "fickle", "wet", "snow")}
+for h in (8, 9):
+    html = render(False, feels=SMALL, hour=h, nxt=True, sarcasm="11")
+    slugs = re.findall(r"([a-z_]+_dry)\.png", html)
+    if len(slugs) >= 3 and slugs[0] == slugs[2]:
+        expect(f"the same layer first and last at {h}:30: no 'extra layer' line", "VF COOLING" not in html)
+TEXTS["en"]["flavour_vf_11"] = saved_vf
+
 # A texts file older than the markup (the texts URL behind: a fork's pinned
 # commit, or jsDelivr serving an old @main for a while after a release): no
 # now or day pools, its lines by the day's mood, and no "cooling" ones. A

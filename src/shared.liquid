@@ -901,6 +901,17 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
       {%- assign primary_idx = warm_idx -%}
       {%- assign secondary_idx = back_on_idx -%}
+    {%- elsif after_key != '' and after_rank >= band_rank and band_rank <= 4 -%}
+      {%- comment %}
+      The evening wants back only what's on now: the jacket now, a little
+      warmer around midday, the jacket again tonight. Too small a rise to
+      count as warming (MIN_DELTA), but the drawings show the jacket off
+      in between, and "bring a jacket" to someone wearing one is wrong.
+      It's the arc: off, and back on.
+      {%- endcomment %}
+      {%- assign temp_scenario = 'arc_level' -%}
+      {%- assign primary_idx = warm_idx -%}
+      {%- assign secondary_idx = back_on_idx -%}
     {%- elsif after_key != '' -%}
       {%- assign temp_scenario = after_key -%}
       {%- assign primary_idx = bring_idx -%}
