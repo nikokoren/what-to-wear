@@ -875,13 +875,19 @@
       "Was du anhast, passt den ganzen Abend. || Jetzt fehlt nur noch die passende Laune.",
       "Am Wetter ändert sich heute Abend nichts, was du anhast, passt. || Schade. Ein bisschen Sturm hätt ich noch vertragen.",
       "Was du anhast, passt den ganzen Abend. || Das war's von mir. Mehr Abendprogramm hab ich nicht zu bieten.",
-      "Was du anhast, passt den ganzen Abend. || Mehr Gutes hab ich heute nicht mehr auf Lager."
+      "Was du anhast, passt den ganzen Abend. || Mehr Gutes hab ich heute nicht mehr auf Lager.",
+      "Was du anhast, passt den ganzen Abend. || Dann kann ich ja jetzt in Ruhe grantig sein.",
+      "Was du anhast, passt den ganzen Abend. || Das Wetter hat schon Feierabend. Nur ich muss noch.",
+      "Was du anhast, passt den ganzen Abend. || Schöner wird der Abend dadurch aber auch nicht.",
+      "Was du anhast, passt den ganzen Abend. || Spannender wird's heute nur noch beim Tatort."
     ],
     "steady_night": [
       "Was du anhast, passt für den Rest der Nacht. || Mehr als „passt“ fällt mir so spät auch nicht mehr ein.",
       "Was du anhast, passt für den Rest der Nacht. || Für die Couch passt's sowieso.",
       "Am Wetter ändert sich heute Nacht nichts mehr, was du anhast, passt. || Das ist ne Ausnahme, eigentlich hab ich schon Feierabend.",
-      "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Gute Nacht."
+      "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Gute Nacht.",
+      "Was du anhast, passt für den Rest der Nacht. || Ich bin um die Uhrzeit nur noch aus Höflichkeit an.",
+      "Was du anhast, passt für den Rest der Nacht. || Ich schau trotzdem noch mal nach. Einer muss ja wach bleiben."
     ],
     "steady_cold": [
       "Es bleibt den ganzen Tag so kalt. || Wer jetzt „herrlich frisch“ sagt, kriegt von mir keinen Wetterbericht mehr.",
@@ -890,7 +896,9 @@
       "Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist eine Drohung.",
       "Es bleibt den ganzen Tag kalt. || Also gilt wieder: Fenster zu, wir heizen nicht für draußen!",
       "{M:01}Es bleibt den ganzen Tag so kalt. || Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
-      "Die Kälte bleibt heute den ganzen Tag. || Wie Besuch, der nicht merkt, dass er gehen soll."
+      "Die Kälte bleibt heute den ganzen Tag. || Wie Besuch, der nicht merkt, dass er gehen soll.",
+      "Es bleibt den ganzen Tag so kalt. || Der Winterspeck darf also bleiben.",
+      "Es bleibt den ganzen Tag so kalt. || Heute ist die Heizung die Einzige, die richtig arbeitet."
     ],
     "steady_hot": [
       "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.",
@@ -898,7 +906,73 @@
       "Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie die Geranien.",
       "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Für dich und für die Flasche.",
       "Es bleibt den ganzen Tag heiß, also nimm Wasser mit und ab in den Schatten. || Ich bleib drinnen. Aber ich hab ja keine Wahl.",
-      "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Zum Meckern ist es mir heute zu heiß. Fast."
+      "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Zum Meckern ist es mir heute zu heiß. Fast.",
+      "Heute bleibt's heiß, trink genug Wasser und meide die pralle Sonne. || Die meide ich das ganze Jahr.",
+      "Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt übrigens mehr als ein Schluck zum Mittagessen."
+    ],
+    "w_jacket": [
+      "{WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+      "{WHEN} kann die Jacke weg. || Und dann darfst du sie wieder überm Arm spazieren tragen.",
+      "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht."
+    ],
+    "w_hoodie": [
+      "{WHEN} kannst du den Pulli ausziehen. || Aber nicht vorher. Ich seh das.",
+      "{WHEN} kann der Pulli weg. || Hier drin merk ich davon natürlich wieder nichts.",
+      "{WHEN} wird's wärmer, dann kann der Pulli weg. || Ich sag's nur. Ausziehen musst du ihn selber.",
+      "{WHEN} kannst du den Pulli ausziehen. || Die Haare stehen danach wieder in alle Richtungen. Ist halt so."
+    ],
+    "c_jacket": [
+      "Nimm eine Jacke mit, {WHEN} kühlt's ab. || Wär ja auch zu schön gewesen, wenn's gehalten hätte.",
+      "Nimm eine Jacke mit, {WHEN} kühlt's ab. || Ich weiß, jetzt sieht's nicht danach aus. Ich hab trotzdem recht.",
+      "{WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke. || Pünktlich wie sonst nichts in diesem Land.",
+      "{WHEN} wird's kühl, dann bist du froh über eine Jacke. || Bedanken kannst du dich dann bei mir. Tut aber keiner."
+    ],
+    "c_hoodie": [
+      "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Nachher sagt wieder jeder: Ganz schön frisch geworden.",
+      "Pack einen Pulli ein, {WHEN} wird's kühler. || Ich sag's lieber jetzt. Später hört mir sowieso keiner zu.",
+      "{WHEN} wird's frisch genug für einen Pulli. || Die Oma hätt's dir schon heute früh gesagt. Ich sag's halt jetzt.",
+      "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich, sag ich. Ich will ja nicht schuld sein."
+    ],
+    "c_scarf": [
+      "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe. || Alle drei. Ich hab nachgezählt.",
+      "Pack Mütze, Schal und Handschuhe ein, {WHEN} wird's kälter. || Die Oma wär stolz auf mich.",
+      "Denk an Mütze, Schal und Handschuhe, {WHEN} wird's ungemütlich kalt. || So wie ich, nur eben draußen."
+    ],
+    "c_coat": [
+      "{WHEN} wird's kälter, da braucht's die Winterjacke. || Da hilft auch kein Jammern.",
+      "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt bei mir: Ich mein's ernst."
+    ],
+    "w_scarf": [
+      "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Die Mützenfrisur bleibt dir allerdings noch eine Weile."
+    ],
+    "w_coat": [
+      "{WHEN} kann die Winterjacke weg. || Freu dich nicht zu früh. Das ist noch kein Frühling.",
+      "{WHEN} kannst du die Winterjacke ausziehen. || Ich hab's gewusst, bevor du's gemerkt hast. Wie immer."
+    ],
+    "w_water": [
+      "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.",
+      "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+      "{WHEN} wird's heiß, pack lieber Wasser ein. || Aber stell's nicht in die Sonne. Warmes Wasser schmeckt scheiße."
+    ],
+    "c_relief": [
+      "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Etwas. Mehr Erleichterung gibt's von mir heute nicht.",
+      "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehm ist ein großes Wort. Ich sag lieber: weniger schlimm."
+    ],
+    "arc_warmer": [
+      "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Mitschleppen musst du {GP} dann trotzdem.",
+      "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Eine klare Ansage. Kommt bei mir selten vor, genieß es."
+    ],
+    "arc_level": [
+      "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
+      "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied."
+    ],
+    "arc_colder": [
+      "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern.",
+      "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || So ein Hin und Her hält ja kein Mensch aus."
+    ],
+    "shorts_early": [
+      "Noch ist's kühl, aber {WHEN} kannst du in Shorts rumlaufen. || Kannst. Nicht musst. Ich sag's nur.",
+      "Jetzt noch frisch, {WHEN} wird's warm genug für kurze Hosen. || Früher hätt man dazu einfach Sommer gesagt."
     ]
   },
   "units_11": {
@@ -950,6 +1024,70 @@
       "Heute bleibt's heiß. Bleib im Schatten und trink Wasser, bevor du Durst hast. || Sonst kippst du wieder um.",
       "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
       "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Kaffee zählt nicht als Wasser. Auch nicht mit Eis."
+    ],
+    "w_jacket": [
+      "{WHEN} kann die Jacke weg. || Und dann wieder um die Hüfte binden? Bitte nicht.",
+      "{WHEN} kannst du die Jacke ausziehen. || Und dann vergisst du sie irgendwo. Wie letztes Mal.",
+      "{WHEN} kann die Jacke weg. || Dann sieht jeder, was du drunter anhast. Das Gleiche wie gestern."
+    ],
+    "w_hoodie": [
+      "{WHEN} kann der Pulli weg. || Bitte nicht wieder die Ärmel um den Bauch knoten.",
+      "{WHEN} kann der Pulli weg. || Was drunter ist, hast du dir heute früh hoffentlich gut überlegt.",
+      "{WHEN} wird's wärmer, dann kann der Pulli weg. || Ehrlich gesagt hätt ich ihn gar nicht erst angezogen.",
+      "{WHEN} kannst du den Pulli ausziehen. || Und zwar ohne Kampf, bitte. Das sieht jedes Mal aus wie Ringen."
+    ],
+    "c_jacket": [
+      "Nimm eine Jacke mit, {WHEN} kühlt's ab. || Und du überlegst schon, ob's nicht auch ohne geht. Seh ich doch.",
+      "{WHEN} brauchst du eine Jacke, also nimm eine mit. || Bei dir muss ich's sicher wieder dreimal sagen.",
+      "Pack eine Jacke ein, {WHEN} wird's kühler. || Als ob dein Schrank sowas hergibt.",
+      "{WHEN} wird's kühl, dann bist du froh über eine Jacke. || Froh warst du schon lang nicht mehr. Ich bin gespannt."
+    ],
+    "c_hoodie": [
+      "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens.",
+      "{WHEN} wird's kühl, dann bist du froh über einen Pulli. || Und ich bin froh, wenn du dann nicht jammerst.",
+      "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Zum Anziehen. Nicht zum Um-den-Bauch-Knoten."
+    ],
+    "c_scarf": [
+      "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe. || Die Mütze steht dir nicht. Setz sie trotzdem auf.",
+      "{WHEN} brauchst du Mütze, Schal und Handschuhe, also nimm sie mit. || Beide Handschuhe, wenn's geht."
+    ],
+    "c_coat": [
+      "{WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.",
+      "Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ja, die dicke. Ich weiß, wie du drin aussiehst.",
+      "{M:01}{WHEN} brauchst du die Winterjacke, also nimm sie mit. || Vorausgesetzt, sie geht nach den Feiertagen noch zu."
+    ],
+    "w_scarf": [
+      "{WHEN} können Mütze, Schal und Handschuhe weg. || Dann sieht man wieder deine Frisur. Schade eigentlich.",
+      "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Drei Sachen auf einmal merken. Das wird schwer für dich.",
+      "Mütze, Schal und Handschuhe kannst du {WHEN} einpacken. || Die Handschuhe findest du dann im Frühling wieder."
+    ],
+    "w_coat": [
+      "{WHEN} kann die Winterjacke weg. || Dann sieht man wieder, was du den ganzen Winter gegessen hast.",
+      "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Und dann stopfst du sie in eine viel zu kleine Tasche."
+    ],
+    "w_water": [
+      "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser ist übrigens das Durchsichtige.",
+      "{WHEN} wird's heiß, pack lieber Wasser ein. || Trinken, nicht nur rumtragen. Ich kenn dich.",
+      "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Kaffee zählt übrigens nicht als Wasser. Auch nicht mit Eis."
+    ],
+    "c_relief": [
+      "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Du jammerst trotzdem weiter. Nur etwas leiser.",
+      "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehmer als du jedenfalls."
+    ],
+    "arc_warmer": [
+      "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Endlich mal was, das bei dir hält."
+    ],
+    "arc_level": [
+      "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist dein Problem.",
+      "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich.",
+      "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze."
+    ],
+    "arc_colder": [
+      "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Extra einfach formuliert. Für dich."
+    ],
+    "shorts_early": [
+      "Jetzt ist's noch kühl, aber {WHEN} ist es warm genug für Shorts. || Ob du das der Welt antun willst, musst du selber wissen.",
+      "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken."
     ]
   }
 }

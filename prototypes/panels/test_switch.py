@@ -185,10 +185,13 @@ expect("a sweater: the line for sweaters can show",
 expect("a steady day names no garment: no garment line", not any(
     "SWEATER OR JACKET" in render(True, feels=STEADY, hour=h) for h in range(7, 13)))
 de_saved = TEXTS["de"].get("flavour_10")
+de_units = TEXTS["de"].pop("units_10", None)
 TEXTS["de"]["flavour_10"] = {g: ["AUS {GP}"] for g in GROUPS}
 expect("German: the sweater is 'ihn'",
        all("AUS ihn" in render(True, lang="de", hour=h) for h in range(9, 13)))
 TEXTS["de"]["flavour_10"] = de_saved
+if de_units:
+    TEXTS["de"]["units_10"] = de_units
 for k, v in saved.items():
     if v is None:
         TEXTS["en"].pop(k, None)
@@ -333,8 +336,8 @@ expect("the longest day in Sydney is the shortest", day_key("2027-06-21", 10, "A
 # the plain wording; the outfit alone keeps its standalone line; a rainy
 # steady day takes the rain's unit.
 saved_units = {k: TEXTS["en"].get(k) for k in ("units_10", "units_11")}
-TEXTS["en"]["units_10"] = {"steady": ["UNIT FACT. || UNIT JOKE."], "p_wetter": ["UNIT RAIN {WHENP}. || RAIN JOKE."],
-                           "steady_evening": ["ONE SENTENCE WITH BOTH."]}
+TEXTS["en"]["units_10"] = {"steady": ["UNIT FACT. || UNIT JOKE."] * 2, "p_wetter": ["UNIT RAIN {WHENP}. || RAIN JOKE."] * 2,
+                           "steady_evening": ["ONE SENTENCE WITH BOTH."] * 2}
 
 
 def words_of(html):
@@ -351,8 +354,11 @@ expect("units: a rainy steady day, the rain's unit",
 html = render(True, feels=STEADY, hour=19)
 expect("units: one sentence with both, no second line", "ONE SENTENCE WITH BOTH." in words_of(html) and html.count("<p") == 1)
 expect("units: a day without units for its situation works as before", "UNIT" not in render(True, hour=7))
+TEXTS["en"]["units_10"]["steady"] = ["UNIT FACT. || UNIT JOKE."]
+expect("units: one unit alone isn't used", "UNIT" not in render(True, feels=STEADY, hour=10))
+TEXTS["en"]["units_10"]["steady"] = ["UNIT FACT. || UNIT JOKE."] * 2
 for k in ("w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_water", "shorts_early", "arc_warmer"):
-    TEXTS["en"]["units_10"][k] = ["LAYER {WHEN}. || LAYER JOKE {WHEN}."]
+    TEXTS["en"]["units_10"][k] = ["LAYER {WHEN}. || LAYER JOKE {WHEN}."] * 2
 html = render(True, hour=7)
 expect("units: a layer day's unit, its time words filled in both halves",
        "LAYER JOKE " in html and "{" not in words_of(html))
@@ -364,7 +370,7 @@ for k in ("w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_water", "shorts_early"
 # the weather's own unit has the say (owner, round 17).
 saved_fl = TEXTS["en"]["flavour_10"]
 TEXTS["en"]["flavour_10"] = dict(saved_fl, day_monday=["MONDAY A.", "MONDAY B.", "MONDAY C."])
-TEXTS["en"]["units_10"]["steady_cold"] = ["COLD UNIT. || COLD JOKE."]
+TEXTS["en"]["units_10"]["steady_cold"] = ["COLD UNIT. || COLD JOKE."] * 2
 special = TEXTS["en"]["facts"]["steady_special"][0]
 DATE = "2026-10-19"  # a Monday
 html = render(True, feels=STEADY, hour=8)

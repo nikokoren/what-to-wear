@@ -28,6 +28,14 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} wird's kalt genug für die Winterjacke.
 - {WHEN} wird's kälter, da braucht's die Winterjacke.
 
+## c_coat · dry
+
+- {WHEN} wird's kälter, da braucht's die Winterjacke. || Da hilft auch kein Jammern.
+
+## c_coat · sarcastic
+
+- {WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
+
 ## c_hoodie · plain
 
 - Nimm einen Pulli mit, heute Abend kühlt's ab.
@@ -38,6 +46,10 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} brauchst du einen Pulli, also nimm einen mit.
 - {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.
 - {WHEN} wird's frisch genug für einen Pulli.
+
+## c_hoodie · sarcastic
+
+- Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens.
 
 ## c_jacket · plain
 
@@ -454,6 +466,10 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} wird's mild genug, um die Jacke auszuziehen.
 - {WHEN} wird's wärmer, dann kann die Jacke weg.
 - {WHEN} wird's wärmer, dann kann die Jacke weg.
+
+## w_jacket · dry
+
+- {WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
 
 ## w_scarf · plain
 

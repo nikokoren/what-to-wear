@@ -1070,8 +1070,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- if f_precip != '' -%}{%- assign u_key = pk -%}{%- endif -%}
     {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
     {%- assign u_pool = u_lib[u_key] -%}
-    {%- if u_pool -%}
-      {%- assign u_n = u_pool | size -%}
+        {%- assign u_n = u_pool | size -%}
+    {%- if u_pool and u_n >= 2 -%}
       {%- assign u_i = text_rot | plus: 7 | modulo: u_n -%}
       {%- assign u_month = ',' | append: season_month | append: ',' -%}
       {%- for k in (1..u_n) -%}

@@ -10,6 +10,10 @@ Do not edit by hand; vote on the page instead.
 - You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.
 - {G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.
 
+## arc_colder · sarcastic
+
+- You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || 'Maybe' is me being polite. Bring it.
+
 ## arc_level · plain
 
 - Take the jacket off around midday, put it back on tonight.
@@ -26,6 +30,10 @@ Do not edit by hand; vote on the page instead.
 - You can take {G} off {WHEN}. You won't need {GP} again after that.
 - {G} can come off {WHEN}, and you won't need {GP} again today.
 - {G} comes off {WHEN}. It cools a little later, but you won't need {GP} back.
+
+## arc_warmer · dry
+
+- Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'.
 
 ## c_coat · plain
 
@@ -48,6 +56,10 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} it gets cool enough for a sweater.
 - {WHEN} it gets cool enough for a sweater.
 - {WHEN} short sleeves won't be enough, so bring a sweater.
+
+## c_hoodie · dry
+
+- {WHEN} it gets cool enough for a sweater. || Which one is up to you. I do weather, not taste.
 
 ## c_jacket · plain
 
@@ -320,6 +332,10 @@ Do not edit by hand; vote on the page instead.
 
 - A cool start, then shorts weather around midday.
 
+## shorts_early · dry
+
+- Shorts could be worth it today. It's cool now, but warm {WHEN}. || I’d say ‘Trust me’. but I've never had cold legs.
+
 ## snow · sarcastic
 
 - Don't fall. I have no way of getting help.
@@ -452,6 +468,10 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} it's warm enough to lose the sweater.
 - {WHEN} it's warm enough to lose the sweater.
 
+## w_hoodie · sarcastic
+
+- The sweater can come off {WHEN}. || That could be the peak of your day.
+
 ## w_jacket · plain
 
 - The jacket can come off around midday.
@@ -459,6 +479,10 @@ Do not edit by hand; vote on the page instead.
 - The jacket can come off {WHEN}.
 - You can take the jacket off {WHEN}.
 - You can take the jacket off {WHEN}.
+
+## w_jacket · sarcastic
+
+- {WHEN} it's warm enough to lose the jacket. || And 'lose' is the word. You know your track record.
 
 ## w_scarf · plain
 
@@ -473,6 +497,10 @@ Do not edit by hand; vote on the page instead.
 ## w_water · plain
 
 - It heats up {WHEN}, so take water with you.
+
+## w_water · dry
+
+- It gets hot {WHEN}, so bring water. || Finally, a use for the fancy bottle you bought to drink more water.
 
 ## warming · sarcastic
 

@@ -103,6 +103,11 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    # Round 18 edits.
+    "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I’d say ‘Trust me’. but I've never had cold legs.": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'd say \"trust me\", but I've never had cold legs.",
+    "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hosen. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.": "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.",
+    "{WHEN} kann der Pulli weg. || Was drunter ist, hast du dir heute früh hoffentlich gut überlegt": "{WHEN} kann der Pulli weg. || Was drunter ist, hast du dir heute früh hoffentlich gut überlegt.",
+    "{WHEN} wird's wärmer, dann kann der Pulli weg. || Ich sag’s nur. Ausziehen musst du ihn selber.": "{WHEN} wird's wärmer, dann kann der Pulli weg. || Ich sag's nur. Ausziehen musst du ihn selber.",
     "You've already started to counted the days to the weekend.": "You've already started counting the days to the weekend.",
     "You'd be good Groundhog : pop out, look around, go back in.": "You'd make a good groundhog: pop out, look around, go back in.",
     "Überleg dir ne kurze hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.": "Überleg dir, ne kurze Hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.",
