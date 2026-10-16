@@ -398,6 +398,16 @@ wordings that say when the rain or snow stops (`{WHENSTOP}`), storm and
 ice wordings that lead with the danger, and follow-ups for the groups
 still under three lines. Raw output in `2026-10-polish/`.
 
+## Round 16: special days
+
+`2026-10-days.json` (`make_round16.py`, ids `sd-…`), 244 lines: the seven
+theme days that had drawings but no lines (Groundhog Day, Pi Day, Easter,
+Star Wars Day, World Bicycle Day, the Tour de France, Oktoberfest), the
+new special days (Monday mornings, Friday afternoons, both clock changes,
+the longest and shortest day; `block.liquid`, "Special days"), and round
+15's last "Write new" spots. Every line names its day, so it works under
+"works all day" and alone under the drawing.
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
