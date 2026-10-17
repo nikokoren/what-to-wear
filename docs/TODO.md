@@ -36,6 +36,38 @@ plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
 before, so they arrive a family at a time: steady days (round 17,
 `review/rounds/make_round17.py`), then layers, then rain.
 
+### Next review batch (owner, October 2026)
+
+One batch, with the round 20 setup (data-built brief, four candidates
+per line, a critic, then the vote):
+
+1. **The US English rewrites** (below).
+2. **Fresh topics the owner picked**, as follow-ups, standalone lines
+   or units wherever they fit the situation:
+   - English: "feels like" (the recipe dresses by it); the phone's
+     weather app as the screen's rival; weather small talk; weather lore
+     (red sky at night, April showers); early dark (November to January,
+     month-tagged); the one person in shorts in February; "too hot" two
+     days after "when's summer coming"; pumpkin spice (September,
+     October).
+   - German: Bauernregeln and Lostage; der Wetterfrosch (the screen as
+     its successor); Föhn as the all-purpose excuse (never claiming
+     today is a Föhn day); Kreislauf in the heat; Wetterfühligkeit;
+     Ruhezeiten (someone's mower on a Sunday, never the reader's);
+     Saturday's freshly washed car before the rain; Hausschuhe; Wetter-App
+     gegen Wetterbericht (a new angle, not the Regenradar again).
+3. **New special days for the dated ones** (markup: `block.liquid`,
+   SPECIAL DAYS, like Pi Day): St Swithin's Day (15 July, en);
+   Eisheilige (11 to 15 May), Siebenschläfer (27 June), Hundstage
+   (23 July to 23 August) and Altweibersommer (late September), de.
+   Schafskälte has no fixed date: month-tag it to June instead.
+
+Leave alone: topics already well mined (Bahn, Schneechaos, Regenradar,
+Zugluft, Oma; e-ink and grey, fans and ice-cream vans) and the ones
+mostly vetoed (Übergangsjacke, nature calendar, group chats). Humidity
+(„schwül“, "muggy"), wind and pollen need weather data the recipe
+doesn't fetch yet.
+
 ### US English (owner, October 2026)
 
 English is US English: spelling (color, gray, favorite, humor,
