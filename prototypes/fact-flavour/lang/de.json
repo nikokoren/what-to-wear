@@ -913,7 +913,9 @@
       "{M:01}Es bleibt den ganzen Tag so kalt. || Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
       "Die Kälte bleibt heute den ganzen Tag. || Wie Besuch, der nicht merkt, dass er gehen soll.",
       "Es bleibt den ganzen Tag so kalt. || Der Winterspeck darf also bleiben.",
-      "Es bleibt den ganzen Tag so kalt. || Heute ist die Heizung die Einzige, die richtig arbeitet."
+      "Es bleibt den ganzen Tag so kalt. || Heute ist die Heizung die Einzige, die richtig arbeitet.",
+      "Es bleibt den ganzen Tag so kalt. || Höher gedreht wird nicht. Hoffen wir, dass die Nachbarn heizen.",
+      "Es bleibt den ganzen Tag so kalt. || Die Heizung bleibt, wo sie ist. Wir haben ja keinen Geldbaum im Garten stehen."
     ],
     "steady_hot": [
       "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.",
@@ -1027,7 +1029,7 @@
       "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Festlegen tu ich mich nicht. Sonst bin hinterher wieder ich schuld.",
       "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht. || Vielleicht. Mehr Verbindlichkeit gibt's heute nicht.",
       "Ob's {WHENP} regnet, ist nicht sicher. Der Schirm kann trotzdem mit. || Sicher ist bei mir nur die schlechte Laune.",
-      "{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Einfach um sich abzusichern. Weicheier."
+      "{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit sind sie immer fein raus. Feiglinge."
     ],
     "p_wet_again": [
       "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Dazwischen weiß keiner, wohin mit dem nassen Ding.",

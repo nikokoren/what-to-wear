@@ -103,6 +103,10 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    # Round 21, the owner's picks from Claude's fine-tuning.
+    "The sun's on half days until February. In this economy?": "The sun's on half days until February. Must be nice.",
+    '"Today\'s forecast is brought to you by... " Just kidding. I don\'t do ads.': "This forecast is brought to you by… nobody. I don't do ads.",
+    '{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Einfach um sich abzusichern. Weicheier.': '{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit sind sie immer fein raus. Feiglinge.',
     # Round 21 edits.
     'Deine Sommersachen sind sicher schon im Keller oder?': 'Deine Sommersachen sind sicher schon im Keller, oder?',
     'Das wetter ist zwar scheiße, aber immerhin musst du bei mir nicht zwanzig Werbebanner wegklicken um das herauszufinden.': 'Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.',
@@ -593,6 +597,9 @@ def main():
         topics = apply_follow(doc, lang, decisions, TOPICS)
         if topics:
             print(f"{lang} round 21: " + ", ".join(f"{v} {k}" for k, v in topics.items()))
+        owner_units = apply_owner_units(doc, lang)
+        if owner_units:
+            print(f"{lang} round 21: {owner_units} units the owner chose in chat")
         replaced = apply_replaces(doc, lang, decisions, TOPICS)
         if replaced:
             print(f"{lang} round 21: {replaced} lines replaced by their rewrites")
@@ -632,6 +639,26 @@ def apply_replaces(doc, lang, decisions, rnd):
             pool.remove(row["replaces"])
             done += 1
     return done
+
+
+# Units the owner chose in chat for round 21's "Write new" spots, from
+# Claude's fine-tuning of their own edits.
+OWNER_UNITS = [
+    ("en", "11", "c_hoodie", "{M:09,10}{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall."),
+    ("en", "10", "p_wetter_long", "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I'd lie down too, if I could."),
+    ("de", "10", "steady_cold", "Es bleibt den ganzen Tag so kalt. || Höher gedreht wird nicht. Hoffen wir, dass die Nachbarn heizen."),
+    ("de", "10", "steady_cold", "Es bleibt den ganzen Tag so kalt. || Die Heizung bleibt, wo sie ist. Wir haben ja keinen Geldbaum im Garten stehen."),
+]
+
+
+def apply_owner_units(doc, lang):
+    n = 0
+    for l, level, key, text in OWNER_UNITS:
+        pool = doc.setdefault(f"units_{level}", {}).setdefault(key, [])
+        if l == lang and text not in pool:
+            pool.append(text)
+            n += 1
+    return n
 
 
 # Words the owner wants changed in every line, now and in later rounds

@@ -814,7 +814,7 @@
       "Strangers will say 'nice day, huh?' like it's news."
     ],
     "cool": [
-      "\"Today's forecast is brought to you by... \" Just kidding. I don't do ads.",
+      "This forecast is brought to you by… nobody. I don't do ads.",
       "You'll call today 'fresh' to sound like an outdoors person.",
       "Nothing special out there. You'll blend right in.",
       "You'll call today 'crisp' like you go hiking or something.",
@@ -868,7 +868,7 @@
       "Don't fall. I have no way of getting help."
     ],
     "evening": [
-      "{M:11,12,01}The sun's on half days until February. In this economy?",
+      "{M:11,12,01}The sun's on half days until February. Must be nice.",
       "Wondering where the day went? I watched. You weren't busy.",
       "Another evening, another walk past me. No thanks, as usual.",
       "If you're going out, try to look better than this.",
@@ -1037,7 +1037,8 @@
     "p_wetter_long": [
       "{WHENP} the rain sets in for good. Bring the umbrella. || 'For good' meaning today. I don't do forever.",
       "Rain arrives {WHENP} and stays, so take the umbrella. || Tonight I'm the only thing in here that won't need drying.",
-      "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass', but I'm honest."
+      "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass', but I'm honest.",
+      "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I'd lie down too, if I could."
     ],
     "p_stays_wet": [
       "It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.",
@@ -1150,7 +1151,8 @@
     "c_hoodie": [
       "Bring a sweater. It cools down {WHEN}. || Alternatively you can practice your 'I'm not cold' face for later.",
       "Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you won't need for hours. Look at you, prepared.",
-      "It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps will give you away."
+      "It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps will give you away.",
+      "{M:09,10}{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall."
     ],
     "w_scarf": [
       "It warms up {WHEN}, so the hat, scarf and gloves can come off. || Today you're a coat rack with legs. Well done.",
