@@ -24,7 +24,7 @@ TEXTS = {l: json.loads((PROTO / "lang" / f"{l}.json").read_text(encoding="utf-8"
 OFFSET = 7200
 
 
-def render(date, hour, minute=30, temp=18, lang="en", sarcasm="10", forecast="yes"):
+def render(date, hour, minute=30, temp=21, lang="en", sarcasm="10", forecast="yes"):
     """A steady day (same weather all day), read at date hour:minute local time."""
     hours = [f"{date}T{h:02d}:00" for h in range(24)]
     data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",

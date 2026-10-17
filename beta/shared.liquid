@@ -883,6 +883,10 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
 {%- endif -%}
 
 {%- assign fact_line = '' -%}
+{%- assign nice_now = false -%}
+{%- if band_rank == 5 or band_rank == 6 -%}
+  {%- if wmo <= 2 -%}{%- assign nice_now = true -%}{%- endif -%}
+{%- endif -%}
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
 {%- assign now_mood = '' -%}
@@ -1134,7 +1138,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- assign mood = 'hot' -%}
   {%- elsif band_rank <= 2 -%}
     {%- assign mood = 'cold' -%}
-  {%- elsif is_steady and band_rank >= 4 -%}
+  {%- elsif is_steady and nice_now -%}
     {%- assign mood = 'nice' -%}
   {%- elsif temp_prefix == 'c_' -%}
         {%- assign mood = 'cooling' -%}
@@ -1155,7 +1159,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- assign now_mood = 'hot' -%}
   {%- elsif band_rank <= 2 -%}
     {%- assign now_mood = 'cold' -%}
-  {%- elsif band_rank >= 4 -%}
+  {%- elsif nice_now -%}
     {%- assign now_mood = 'nice' -%}
   {%- else -%}
     {%- assign now_mood = 'cool' -%}

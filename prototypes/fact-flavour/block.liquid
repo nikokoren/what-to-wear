@@ -10,6 +10,16 @@ after the old hint is built, so both can be rendered side by side.
 Reads only what the scenario logic above already worked out.
 {%- endcomment %}
 {%- assign fact_line = '' -%}
+{%- comment %}
+Nice weather (owner, October 2026: 15 C and cloudy said „Traumwetter“):
+T-shirt weather, 18 to 30 C feels-like (the T-shirt bands), under a
+clear or partly cloudy sky (weather codes 0 to 2). Sweater weather, or
+overcast or fog, is the cool mood.
+{%- endcomment %}
+{%- assign nice_now = false -%}
+{%- if band_rank == 5 or band_rank == 6 -%}
+  {%- if wmo <= 2 -%}{%- assign nice_now = true -%}{%- endif -%}
+{%- endif -%}
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
 {%- assign now_mood = '' -%}
@@ -339,7 +349,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign mood = 'hot' -%}
   {%- elsif band_rank <= 2 -%}
     {%- assign mood = 'cold' -%}
-  {%- elsif is_steady and band_rank >= 4 -%}
+  {%- elsif is_steady and nice_now -%}
     {%- assign mood = 'nice' -%}
   {%- elsif temp_prefix == 'c_' -%}
     {%- comment %} An ordinary day, split by what it actually does: a layer is needed later... {%- endcomment %}
@@ -369,7 +379,7 @@ current time moves every 15 minutes, so the merge variables change.
     {%- assign now_mood = 'hot' -%}
   {%- elsif band_rank <= 2 -%}
     {%- assign now_mood = 'cold' -%}
-  {%- elsif band_rank >= 4 -%}
+  {%- elsif nice_now -%}
     {%- assign now_mood = 'nice' -%}
   {%- else -%}
     {%- assign now_mood = 'cool' -%}

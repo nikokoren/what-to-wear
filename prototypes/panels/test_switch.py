@@ -409,6 +409,24 @@ pairs = [(render(fc, feels=f, hour=h, nxt=nx), render(fc, feels=f, hour=h, nxt=n
 expect("an older texts file: a sarcastic line on every screen", all(on != off for on, off in pairs))
 TEXTS["en"] = saved_en
 
+# Nice weather (owner, October 2026: 15 C and cloudy said „Traumwetter“):
+# T-shirt weather under a clear or partly cloudy sky; not sweater weather,
+# not overcast.
+saved_now = TEXTS["en"].get("now_10")
+saved_alone = TEXTS["en"].get("alone_10")
+TEXTS["en"]["now_10"] = {m: [f"MOOD {m.upper()}."] for m in MOODS}
+TEXTS["en"].pop("alone_10", None)
+def now_line(feels, code):
+    return words_of(render(False, feels=[feels] * 24, hour=11, codes=[code] * 24))
+expect("15 C and overcast: not nice", "MOOD NICE" not in now_line(15, 3))
+expect("15 C and sunny: not nice (sweater weather)", "MOOD NICE" not in now_line(15, 0))
+expect("22 C and overcast: not nice", "MOOD NICE" not in now_line(22, 3))
+expect("22 C and fog: not nice", "MOOD NICE" not in now_line(22, 45))
+expect("22 C, partly cloudy: nice", "MOOD NICE" in now_line(22, 2))
+TEXTS["en"]["now_10"] = saved_now
+if saved_alone is not None:
+    TEXTS["en"]["alone_10"] = saved_alone
+
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:
     src = (BUILD / "views" / f"{view}.liquid").read_text(encoding="utf-8")
