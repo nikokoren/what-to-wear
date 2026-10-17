@@ -434,6 +434,22 @@ come last on screen, alone or after a temperature sentence; plus top-ups
 so every steady and layer situation reaches three units (the screen
 needs two). Raw output in `2026-10-rain/`.
 
+A weak round: 96 of 200 kept (rounds 17 and 18: 78% and 77%). English
+37 of 101, German 59 of 99. Why, from the votes:
+- Rounds 17 and 18 leaned on re-pairing jokes already starred or kept
+  (round 17 about half). This round English reused three; new jokes kept
+  34% in English, 60% in German, reused ones nearly all.
+- After round 18 the English writer was told the winners "answer the
+  forecast sentence" and turned that into wordplay on its words ("Moves
+  in. Like it's paying rent.", "As opposed to the other kind of
+  shower."): vetoed.
+- "Like your X" jabs at the reader („Wie deine Witze.“, „Wie deine
+  Diät.“, "Keeps going, like your excuses"): vetoed.
+- The top-ups were the situations that had already failed twice.
+What was kept: the screen's own view („Ich nicht.“, "Good day to be a
+screen. Bad day to be a sock.") and shared everyday truths (Schneechaos
+at five centimetres, "The novelty lasts about an hour.").
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

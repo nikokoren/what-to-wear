@@ -316,6 +316,14 @@ storms). A much better round: 200 stars, 329 keeps.
   cuts explanations: „Die meide ich das ganze Jahr.“ without „Ich bin ein
   Bildschirm.“
 
+- **No wordplay on the forecast's words, no "like your X" (round 19).**
+  "Moves in. Like it's paying rent.", „Wie deine Witze.“, "Keeps going,
+  like your excuses": vetoed, nearly all. "Answer the forecast" means
+  answer what it means for the day, not pun on a word in it. What kept:
+  the screen's own view („Ich nicht.“, "Good day to be a screen. Bad day
+  to be a sock.") and everyday truths everyone shares („Drei Flocken, und
+  schon heißt's wieder Schneechaos.“, "The novelty lasts about an hour.").
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it
