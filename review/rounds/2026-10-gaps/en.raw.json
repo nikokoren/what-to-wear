@@ -18,35 +18,35 @@
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus a layer. || A round trip for {GP}, and the evening brings a friend."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus a layer. || A round trip for {GP}. The evening brings a friend."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus a layer. || Off, on, plus one. I wear nothing all day. I recommend it."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus a layer. || Off, on, plus one. I wear nothing. I recommend it."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "You can take {G} off {WHEN}. Bring a layer to wear with {GP} {WHEN2}. || The warm part is short. The cold part isn't. Pack for that one."
+   "text": "You can take {G} off {WHEN}. Bring a layer for {WHEN2}. || The warm part is short. The cold part isn't. Pack for that one."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with a layer on top. || The warm bit is a loan. The evening collects, with interest."
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with a layer on top. || The warm bit is a loan. The evening collects."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, plus a layer. || You come home in more than you left in. Evenings do that."
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, plus a layer. || You come home wearing more than you left in."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus a layer. || From in here every evening looks warmer than it is. I go by the numbers."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus a layer. || Evenings look warmer from inside. I go by numbers."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "You can take {G} off {WHEN}. Bring a layer to wear with {GP} {WHEN2}. || Two forecasts in two sentences. Nobody gets more for their money."
+   "text": "You can take {G} off {WHEN}. Bring a layer for {WHEN2}. || Two forecasts in two sentences. Nobody gets more for their money."
   },
   {
    "path": "unit_10.arc_colder",
-   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with a layer on top. || The day can't make up its mind. I can. Bring the layer."
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with a layer on top. || The day can't make up its mind. I can."
   },
   {
    "path": "unit_10.p_wetter",
@@ -54,7 +54,7 @@
   },
   {
    "path": "unit_10.p_wetter",
-   "text": "There's a shower {WHENP}, so bring the umbrella. || Everyone without one ends up in a doorway, looking at their phone."
+   "text": "There's a shower {WHENP}, so bring the umbrella. || Everyone without one ends up in a doorway, on their phone."
   },
   {
    "path": "unit_10.p_wetter",
@@ -82,11 +82,11 @@
   },
   {
    "path": "unit_10.p_wetter_maybe",
-   "text": "Rain {WHENP} is possible, not likely. The umbrella is up to you. || I said 'not likely'. If it rains, I said 'possible'."
+   "text": "Rain is possible {WHENP}, not likely. Umbrella's up to you. || I said 'not likely'. If it rains, I said 'possible'."
   },
   {
    "path": "unit_10.p_wetter_maybe",
-   "text": "There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || The clouds haven't decided. I won't decide for them."
+   "text": "There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || The clouds haven't decided. I'm not pushing them."
   },
   {
    "path": "unit_10.p_wetter_maybe",
@@ -126,11 +126,11 @@
   },
   {
    "path": "unit_10.p_drier",
-   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Then everything's wet and shiny and acts like nothing happened."
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Then everything's wet and shiny and acts innocent."
   },
   {
    "path": "unit_10.p_drier",
-   "text": "The rain stops later, but bring the umbrella for now. || The worst bit comes first. The rest of the day can only improve."
+   "text": "The rain stops later, but bring the umbrella for now. || The worst bit comes first. After that it only improves."
   },
   {
    "path": "unit_10.p_drier",
@@ -150,11 +150,11 @@
   },
   {
    "path": "unit_10.p_drier",
-   "text": "The rain eases off later, but bring the umbrella for now. || Then the whole street shakes out its umbrellas at once."
+   "text": "The rain eases off later. Take the umbrella for now. || Then the whole street shakes out its umbrellas at once."
   },
   {
    "path": "unit_10.p_drier",
-   "text": "It rains for a while, then stops. Take the umbrella. || From in here I just watch the numbers drop. Very satisfying."
+   "text": "It rains for a while, then stops. Take the umbrella. || In here I just watch the numbers drop. Very satisfying."
   },
   {
    "path": "unit_10.p_drier",
@@ -162,15 +162,15 @@
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || I saw the second round coming. It's my one job."
+   "text": "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || I saw round two coming. It's my one job."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || The dry bit is when everyone runs their errands at once."
+   "text": "It rains, stops, and starts again {WHENP}. Keep the umbrella. || The dry bit is when everyone runs errands at once."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "Rain now, a dry spell, then more {WHENP}. Keep the umbrella. || The umbrella won't get time to dry. It's used to that."
+   "text": "Rain now, a dry spell, then more {WHENP}. Keep the umbrella. || The umbrella won't get time to dry. It's used to it."
   },
   {
    "path": "unit_10.p_wet_again",
@@ -178,7 +178,7 @@
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella. || Two times in one sentence. I'm on form today."
+   "text": "The rain stops {WHENSTOP} and is back {WHENP}. Keep the umbrella. || Two times in one sentence. I'm on form."
   },
   {
    "path": "unit_10.p_wet_again",
@@ -186,27 +186,27 @@
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "Later the rain takes a break. It's back {WHENP}. Keep the umbrella. || Wet, dry, wet. Not exciting, but I respect a pattern."
+   "text": "Later the rain takes a break. It's back {WHENP}. Keep the umbrella. || Wet, dry, wet. Dull, but I respect a pattern."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It won't go back in its cover today. It never fitted anyway."
+   "text": "It rains, stops, and starts again {WHENP}. Keep the umbrella. || It won't fit back in its cover today. It never did."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella. || One forecast, two rains. Nobody can say I skimp."
+   "text": "The rain stops {WHENSTOP} and is back {WHENP}. Keep the umbrella. || One forecast, two rains. I don't skimp."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "Rain now, a dry spell, then more {WHENP}. Keep the umbrella. || The sky keeps changing its mind. I don't. That's why I'm the forecast."
+   "text": "Rain now, a dry spell, then more {WHENP}. Keep the umbrella. || The sky keeps changing its mind. I don't."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "The rain pauses later, but it's back {WHENP}. Keep the umbrella. || A short dry bit in the middle. The best part of the day, briefly."
+   "text": "The rain pauses later, but it's back {WHENP}. Keep the umbrella. || The dry middle bit is the best part. Briefly."
   },
   {
    "path": "unit_10.p_wet_again",
-   "text": "Later the rain takes a break. It's back {WHENP}. Keep the umbrella. || Weather like this is why rooms were invented."
+   "text": "The rain pauses later, but it's back {WHENP}. Keep the umbrella. || Weather like this is why rooms were invented."
   },
   {
    "path": "unit_10.p_snow_coming",
@@ -350,7 +350,7 @@
   },
   {
    "path": "unit_11.p_wetter",
-   "text": "{WHENP} there's a shower, so the umbrella comes along. || Rain that can't commit to a whole day. I respect it, a little."
+   "text": "{WHENP} there's a shower, so the umbrella comes along. || Rain that can't commit to a whole day. I almost respect it."
   },
   {
    "path": "unit_11.p_wetter",
@@ -358,7 +358,7 @@
   },
   {
    "path": "unit_11.p_wetter",
-   "text": "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop doorway, pretending to browse."
+   "text": "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop, pretending to browse."
   },
   {
    "path": "unit_11.p_wetter",
@@ -386,11 +386,11 @@
   },
   {
    "path": "unit_11.p_wetter_long",
-   "text": "Rain sets in {WHENP} and doesn't let up. Pack the umbrella. || After that it's indoor weather. I've had that all my life."
+   "text": "Rain sets in {WHENP} and stays. Pack the umbrella. || After that it's indoor weather. I've had it all my life."
   },
   {
    "path": "unit_11.p_wetter_long",
-   "text": "Once it starts raining {WHENP}, it keeps going. Bring the umbrella. || The kind of rain that turns every bus into a sauna."
+   "text": "Once the rain starts {WHENP}, it keeps going. Take the umbrella. || The kind of rain that turns every bus into a sauna."
   },
   {
    "path": "unit_11.p_wetter_long",
@@ -398,11 +398,11 @@
   },
   {
    "path": "unit_11.p_wetter_long",
-   "text": "{WHENP} the rain sets in for good. Bring the umbrella. || After that, every puddle is permanent until further notice."
+   "text": "{WHENP} the rain sets in for good. Bring the umbrella. || From then on, puddles are permanent until further notice."
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "Rain {WHENP} is possible, not likely. The umbrella is up to you. || Up to you. That's how most of your bad decisions start."
+   "text": "Rain is possible {WHENP}, not likely. Umbrella's up to you. || Which is how most of your bad decisions start."
   },
   {
    "path": "unit_11.p_wetter_maybe",
@@ -414,15 +414,15 @@
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || The odds are on your side. The odds have been wrong before."
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || The odds are on your side. Odds have been wrong before."
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "It could rain {WHENP}. Take the umbrella to be safe. || A bit of rain is the price of going outside. I wouldn't know."
+   "text": "It could rain {WHENP}. Take the umbrella to be safe. || Rain is the price of going outside. I wouldn't know."
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "Rain {WHENP} is possible, not likely. The umbrella is up to you. || I've done my part. The rest is between you and the clouds."
+   "text": "Rain is possible {WHENP}, not likely. Umbrella's up to you. || I've done my bit. Now it's you versus the clouds."
   },
   {
    "path": "unit_11.p_wetter_maybe",
@@ -430,7 +430,7 @@
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || I'd call it 'probably not'. I'm right about 'probably' a lot."
+   "text": "Rain is possible {WHENP}. Maybe take the umbrella. || I'd say 'probably not'. I'm good at 'probably'."
   },
   {
    "path": "unit_11.p_wetter_maybe",
@@ -470,7 +470,7 @@
   },
   {
    "path": "unit_11.p_stays_wet",
-   "text": "It rains all day, so bring the umbrella. || Nothing dries today. Not the pavement, not your shoes, not the umbrella."
+   "text": "It rains all day, so bring the umbrella. || Nothing dries today. Not shoes, not pavements, not umbrellas."
   },
   {
    "path": "unit_11.p_stays_wet",
@@ -486,7 +486,7 @@
   },
   {
    "path": "unit_11.p_drier",
-   "text": "Later the rain stops. For now, keep the umbrella handy. || The good weather arrives late. I'm told that's fashionable."
+   "text": "Later the rain stops. For now, keep the umbrella handy. || The good weather turns up late. Fashionably, I'm told."
   },
   {
    "path": "unit_11.p_drier",
@@ -494,7 +494,7 @@
   },
   {
    "path": "unit_11.p_drier",
-   "text": "The rain stops later. Bring the umbrella for now. || The dry part comes second. Patience isn't your strength, I know."
+   "text": "The rain stops later. Bring the umbrella for now. || The dry part comes second. Patience isn't your strength."
   },
   {
    "path": "unit_11.p_drier",
@@ -506,7 +506,7 @@
   },
   {
    "path": "unit_11.p_drier",
-   "text": "It rains for a while, then stops. Take the umbrella. || The sky will look sorry afterwards. It won't actually apologise."
+   "text": "It rains for a while, then stops. Take the umbrella. || The sky looks sorry afterwards. It never apologises."
   },
   {
    "path": "unit_11.p_drier",
@@ -518,23 +518,23 @@
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || A sequel nobody asked for. That's never stopped a sequel."
+   "text": "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || A sequel nobody asked for. Sequels never care."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "Rain now, a dry spell, then more {WHENP}. Keep the umbrella. || The sun gets a cameo. Don't build your plans around it."
+   "text": "Rain now, a dry spell, then more {WHENP}. Keep the umbrella. || The sun gets a cameo. Don't plan around it."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain takes a break, but it's back {WHENP}. Keep the umbrella. || I'll be here for all of it. Dry for all of it, too."
+   "text": "The rain takes a break, but it's back {WHENP}. Keep the umbrella. || I'll be here for all of it. Dry, too."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "Later the rain takes a break. It's back {WHENP}. Keep the umbrella. || Wet, dry, wet. Your coat will need a lie-down."
+   "text": "Later the rain takes a break. It's back {WHENP}. Keep the umbrella. || Wet, dry, wet. Your coat needs a lie-down."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella. || I've given you the gap to the minute. Use it or don't."
+   "text": "The rain stops {WHENSTOP} and is back {WHENP}. Keep the umbrella. || I've given you the gap to the minute. Use it."
   },
   {
    "path": "unit_11.p_wet_again",
@@ -542,23 +542,23 @@
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain takes a break, but it's back {WHENP}. Keep the umbrella. || Rain with an interval. Like a play nobody's enjoying."
+   "text": "The rain takes a break, but it's back {WHENP}. Keep the umbrella. || Rain with an interval. A play nobody's enjoying."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella. || One dry gap. Spend it well, there's only the one."
+   "text": "The rain stops {WHENSTOP} and is back {WHENP}. Keep the umbrella. || One dry gap. Spend it well."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || Open, close, open. It's a workout, technically."
+   "text": "It rains, stops, and starts again {WHENP}. Keep the umbrella. || Open, close, open. It's a workout, technically."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain pauses later, but it's back {WHENP}. Keep the umbrella. || A rainy day with a tea break. Union rules, presumably."
+   "text": "The rain pauses later, but it's back {WHENP}. Keep the umbrella. || A rainy day with a tea break. Union rules."
   },
   {
    "path": "unit_11.p_wet_again",
-   "text": "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || If I were the rain, I'd have left for good. I have standards."
+   "text": "Rain now, a break, then more {WHENP}. Keep the umbrella. || Rain that leaves and comes back. I'd have more pride."
   },
   {
    "path": "unit_11.p_snow_coming",
@@ -642,7 +642,7 @@
   },
   {
    "path": "unit_11.p_wet_again_snow",
-   "text": "The snow pauses later, then comes back {WHENP}. || Winter doesn't know when to stop. Only when to pause, which is worse."
+   "text": "The snow pauses later, then comes back {WHENP}. || Winter doesn't know when to stop. Only when to pause."
   },
   {
    "path": "unit_11.p_wet_again_snow",
