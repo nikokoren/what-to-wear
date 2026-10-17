@@ -13277,6 +13277,1549 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:08:09.511Z"
  },
+ "rn-en-0019850fa46c": {
+  "level": "10",
+  "key": "p_wet_again",
+  "path": "unit_10.p_wet_again[+]",
+  "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || The rain gets a break. The umbrella doesn't.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:08:40.689Z"
+ },
+ "rn-en-03fa7162c7c0": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "The rain is here for now but stops later, so bring the umbrella. || It stops later. Your hair won't recover that fast.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:12.197Z"
+ },
+ "rn-en-04fec0000d23": {
+  "level": "10",
+  "key": "c_scarf",
+  "path": "unit_10.c_scarf[+]",
+  "text": "{WHEN} it gets cold enough for a hat, scarf and gloves. || Cold enough. I measured. Well, a satellite did.",
+  "source": "candidate",
+  "batch": "Unit: c_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "{WHEN} it gets cold enough for a hat, scarf and gloves. || I measured. Well, a satellite did.",
+  "updatedAt": "2026-10-16T23:22:44.957Z"
+ },
+ "rn-en-05d36a06d944": {
+  "level": "10",
+  "key": "p_drier",
+  "path": "unit_10.p_drier[+]",
+  "text": "The rain stops later, but you'll want the umbrella for now. || Then you'll have a wet umbrella and nowhere to put it.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:23:02.572Z"
+ },
+ "rn-en-08061f2eabbd": {
+  "level": "10",
+  "key": "p_wetter_long",
+  "path": "unit_10.p_wetter_long[+]",
+  "text": "Rain arrives {WHENP} and stays, so take the umbrella. || Tonight I'm the only thing in here that won't need drying.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:10:22.407Z"
+ },
+ "rn-en-09c67729f8ca": {
+  "level": "11",
+  "key": "p_snow_coming",
+  "path": "unit_11.p_snow_coming[+]",
+  "text": "It starts snowing {WHENP}. || You'll check out of the window every ten minutes. I'll be over here, correct.",
+  "source": "candidate",
+  "batch": "Unit: p_snow_coming",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:37:08.126Z"
+ },
+ "rn-en-0c8c8ade9531": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "The heat eases {WHEN}, but it stays warm. || It eases. Your mood might too. No promises.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "The heat eases {WHEN}, but it stays warm. || Your mood might ease too. No promises.",
+  "updatedAt": "2026-10-17T08:26:12.643Z"
+ },
+ "rn-en-0f10ad860832": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || On top, not instead. I know you.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:20:29.421Z"
+ },
+ "rn-en-0f7ab014a5ff": {
+  "level": "10",
+  "key": "p_snow_coming",
+  "path": "unit_10.p_snow_coming[+]",
+  "text": "Snow moves in {WHENP}. || Moves in. Like it's paying rent.",
+  "source": "candidate",
+  "batch": "Unit: p_snow_coming",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:24:30.117Z"
+ },
+ "rn-en-1272183590e6": {
+  "level": "11",
+  "key": "c_coat",
+  "path": "unit_11.c_coat[+]",
+  "text": "Have the winter coat with you. You'll need it {WHEN}. || With you. Not on the hook, looking at you.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:25:44.187Z"
+ },
+ "rn-en-1395bf9d78a6": {
+  "level": "11",
+  "key": "shorts_early",
+  "path": "unit_11.shorts_early[+]",
+  "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || Could. Or go long and complain all afternoon. Your call.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:43:48.676Z"
+ },
+ "rn-en-15873b9a5c5d": {
+  "level": "10",
+  "key": "p_drier_snow",
+  "path": "unit_10.p_drier_snow[+]",
+  "text": "It's snowing now, but it stops later. || So the pretty part has a deadline.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:23:56.203Z"
+ },
+ "rn-en-16aa5caa7515": {
+  "level": "10",
+  "key": "p_wetter_maybe",
+  "path": "unit_10.p_wetter_maybe[+]",
+  "text": "It could rain {WHENP}. Take the umbrella to be safe. || It's a small chance. Small chances have soaked better people.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:11:00.247Z"
+ },
+ "rn-en-1a663c113fbc": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || Two snowfalls in one day. I'll take the credit for both.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:09:13.656Z"
+ },
+ "rn-en-1c57062f3b44": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "There's no dry spell today. Bring the umbrella. || Except in here. I'm the dry spell.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:07:11.146Z"
+ },
+ "rn-en-23e6fa3717f3": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{G} can come off {WHEN} and stays off. || Stays off. I'm not changing my mind about this one.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{G} can come off {WHEN} and stays off. || I'm not changing my mind about this one.",
+  "updatedAt": "2026-10-16T23:21:10.601Z"
+ },
+ "rn-en-268194b9728b": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "It rains all day, so bring the umbrella. || The washing stays in today. So do I, but that's normal.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "rewrite",
+  "tags": [
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:07:26.464Z"
+ },
+ "rn-en-26b41df3a13b": {
+  "level": "11",
+  "key": "p_stays_wet_snow",
+  "path": "unit_11.p_stays_wet_snow[+]",
+  "text": "There's no break in the snow today. || Not even for you.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:40:54.225Z"
+ },
+ "rn-en-296e26951a01": {
+  "level": "11",
+  "key": "p_wetter",
+  "path": "unit_11.p_wetter[+]",
+  "text": "There's a shower passing through {WHENP}, so bring the umbrella. || It passes through. You'll take it personally.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:52.377Z"
+ },
+ "rn-en-2c5feef45f75": {
+  "level": "10",
+  "key": "p_stays_wet_snow",
+  "path": "unit_10.p_stays_wet_snow[+]",
+  "text": "It's snowing all day. || I've never been out in it. I hear it's overrated after the first hour.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It's snowing all day. || I've never been out in it. I hear it's overrated.",
+  "updatedAt": "2026-10-17T08:08:10.235Z"
+ },
+ "rn-en-314b5ca3abb4": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "The rain lasts all day, so keep the umbrella with you. || All day means all day. Not 'until I'm bored of carrying it'.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:40:19.490Z"
+ },
+ "rn-en-3342070e1dd0": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Maybe. If you don't, it definitely will.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:43:15.067Z"
+ },
+ "rn-en-3423b2681f97": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "The hat, scarf and gloves can come off {WHEN}. || All at once is a lot of excitement. Pace yourself.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:13:46.875Z"
+ },
+ "rn-en-34e6d7a6ff1e": {
+  "level": "10",
+  "key": "p_snow_coming",
+  "path": "unit_10.p_snow_coming[+]",
+  "text": "{WHENP} it starts to snow. || Before that, it's just cold. After, it's cold and pretty.",
+  "source": "candidate",
+  "batch": "Unit: p_snow_coming",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:24:38.666Z"
+ },
+ "rn-en-35d4151c9e4e": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "It keeps snowing for now, then takes a break. It's back {WHENP}. || It takes one break. You'll take three.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:34.005Z"
+ },
+ "rn-en-37d4822a43cf": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "The snow stops later. || That's when the wet socks start.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:38.045Z"
+ },
+ "rn-en-39f2366469b6": {
+  "level": "10",
+  "key": "p_drier",
+  "path": "unit_10.p_drier[+]",
+  "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || On time, if I have anything to do with it. I don't, but still.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:23:18.387Z"
+ },
+ "rn-en-40edf8e4b21c": {
+  "level": "10",
+  "key": "p_stays_wet_snow",
+  "path": "unit_10.p_stays_wet_snow[+]",
+  "text": "It snows all day. || All day. The novelty lasts about an hour.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It snows all day. || The novelty lasts about an hour.",
+  "updatedAt": "2026-10-17T08:08:20.839Z"
+ },
+ "rn-en-44a5d92fc0e1": {
+  "level": "11",
+  "key": "p_snow_coming",
+  "path": "unit_11.p_snow_coming[+]",
+  "text": "Snow moves in {WHENP}. || Finally, a reason to cancel the plans you were dreading.",
+  "source": "candidate",
+  "batch": "Unit: p_snow_coming",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:37:13.944Z"
+ },
+ "rn-en-44cbd4e7cdc2": {
+  "level": "10",
+  "key": "p_wetter_long",
+  "path": "unit_10.p_wetter_long[+]",
+  "text": "{WHENP} the rain sets in for good. Bring the umbrella. || 'For good' meaning today. I don't do forever.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:10:33.788Z"
+ },
+ "rn-en-45be25b3e769": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "It rains all day, so bring the umbrella. || All day. So no, waiting ten minutes won't help.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:40:35.063Z"
+ },
+ "rn-en-46bc020ffea9": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "The rain doesn't stop today, so take the umbrella. || Neither will your complaining. At least the rain has an excuse.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:40:45.412Z"
+ },
+ "rn-en-4713b851d071": {
+  "level": "11",
+  "key": "p_wetter",
+  "path": "unit_11.p_wetter[+]",
+  "text": "A shower comes through {WHENP}, so take the umbrella. || It's a short one. Long enough to ruin your hair, though.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:00.288Z"
+ },
+ "rn-en-499b65e195e4": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || The break is just long enough to start believing it's over.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:39.968Z"
+ },
+ "rn-en-4b81c8670010": {
+  "level": "10",
+  "key": "p_wetter_long",
+  "path": "unit_10.p_wetter_long[+]",
+  "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || It doesn't let up. I don't either. We get on well.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:10:43.905Z"
+ },
+ "rn-en-4c88311cc5a6": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || It has more stamina than you. Most things do.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:30.187Z"
+ },
+ "rn-en-4dec290987ee": {
+  "level": "11",
+  "key": "w_coat",
+  "path": "unit_11.w_coat[+]",
+  "text": "{WHEN} you can do without the winter coat. || You can. Whether you will is your business.",
+  "source": "candidate",
+  "batch": "Unit: w_coat",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:44:18.610Z"
+ },
+ "rn-en-4fa65f9ea39e": {
+  "level": "11",
+  "key": "shorts_early",
+  "path": "unit_11.shorts_early[+]",
+  "text": "It's cool now, but {WHEN} it's warm enough for shorts. || Maybe shorts. Your legs could use the daylight, frankly.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It's cool now, but {WHEN} it's warm enough for shorts. || Your legs could use the daylight, frankly.",
+  "updatedAt": "2026-10-17T08:44:03.406Z"
+ },
+ "rn-en-51cd73aa3ecd": {
+  "level": "11",
+  "key": "p_wetter",
+  "path": "unit_11.p_wetter[+]",
+  "text": "Bring the umbrella. There's a shower {WHENP}. || Yes, the folding one that won't fold. That one.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:10.453Z"
+ },
+ "rn-en-590397774eeb": {
+  "level": "11",
+  "key": "p_wetter",
+  "path": "unit_11.p_wetter[+]",
+  "text": "There's a short shower {WHENP}. Have the umbrella with you. || With you means in your hand. Not in the other bag.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:15.567Z"
+ },
+ "rn-en-5b0f43a13bc6": {
+  "level": "10",
+  "key": "p_drier",
+  "path": "unit_10.p_drier[+]",
+  "text": "The rain stops {WHENSTOP}, but you'll want the umbrella before that. || I'll let you know when. Well, I just did.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:23:28.768Z"
+ },
+ "rn-en-5ff4f2b716a6": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad of them. || Chilly now, glad later. Like most good decisions.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:11:48.175Z"
+ },
+ "rn-en-62673bb7d17c": {
+  "level": "11",
+  "key": "arc_colder",
+  "path": "unit_11.arc_colder[+]",
+  "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || And no, a hot drink isn't a layer.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || And no, a hot drink isn't an extra layer.",
+  "updatedAt": "2026-10-17T08:25:24.670Z"
+ },
+ "rn-en-62a54b5437e5": {
+  "level": "11",
+  "key": "c_coat",
+  "path": "unit_11.c_coat[+]",
+  "text": "{WHEN} it gets cold enough for the winter coat. || Cold enough for you to admit it, even.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:25:54.589Z"
+ },
+ "rn-en-68461891e4f9": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || The day ends colder. Like my jokes.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:20:33.419Z"
+ },
+ "rn-en-68806d351610": {
+  "level": "11",
+  "key": "w_water",
+  "path": "unit_11.w_water[+]",
+  "text": "Take a bottle of water. The heat arrives {WHEN}. || A full one. Not the one with a sip left in it since Tuesday.",
+  "source": "candidate",
+  "batch": "Unit: w_water",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:44:48.023Z"
+ },
+ "rn-en-68f0d281bd03": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "Rain arrives {WHENP} and stays, so take the umbrella. || Staying in was your plan anyway. Now you have a reason.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:39.503Z"
+ },
+ "rn-en-6a159831df94": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "You can take {G} off {WHEN}. Even later on, you won't need {GP}. || Even later. I checked the whole day. You're welcome.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:21:54.177Z"
+ },
+ "rn-en-6df01f14711d": {
+  "level": "11",
+  "key": "p_stays_wet_snow",
+  "path": "unit_11.p_stays_wet_snow[+]",
+  "text": "The snow keeps coming all day. || And you'll still call it 'unexpected'.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:04.288Z"
+ },
+ "rn-en-702d0057b04d": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Plus. I don't say 'plus' lightly.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:20:40.252Z"
+ },
+ "rn-en-7514cfd27f61": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || 'Something warm'. I trust you. A bit.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:20:47.316Z"
+ },
+ "rn-en-75a234f78093": {
+  "level": "10",
+  "key": "p_wet_again",
+  "path": "unit_10.p_wet_again[+]",
+  "text": "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella. || Fold it and it rains. That's the rule.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-rain",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:08:48.608Z"
+ },
+ "rn-en-772e0aab2345": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "It's raining all day. Bring the umbrella. || Your hair has already lost. Make peace with it.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:40:50.093Z"
+ },
+ "rn-en-7896c7bb072c": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "After a break later on, the snow returns {WHENP}. || Like you to the fridge.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:48.488Z"
+ },
+ "rn-en-7adaa5239683": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "The snow pauses later and starts again {WHENP}. || It's taking a breather. I don't need those.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:09:17.969Z"
+ },
+ "rn-en-7dd034f9fd03": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || After that, you're just carrying {GP} around for company.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "You can take {G} off {WHEN}. || After that, you're just carrying {GP} around for company.",
+  "updatedAt": "2026-10-16T23:22:19.929Z"
+ },
+ "rn-en-839c9edcdb50": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "Snow for now, then a break, then more snow {WHENP}. || Part two is always the slushier one.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:09:24.005Z"
+ },
+ "rn-en-84f0ab582eb3": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "A shower comes through {WHENP}, so take the umbrella. || It's only passing through. Don't take it personally.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:09:29.853Z"
+ },
+ "rn-en-8685f4eefedd": {
+  "level": "10",
+  "key": "p_stays_wet_snow",
+  "path": "unit_10.p_stays_wet_snow[+]",
+  "text": "It won't stop snowing today. || That's my forecast. I don't do 'it'll ease off' to be nice.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:08:30.499Z"
+ },
+ "rn-en-874688f3d939": {
+  "level": "11",
+  "key": "w_coat",
+  "path": "unit_11.w_coat[+]",
+  "text": "The winter coat can come off {WHEN}. || Then you're just a person carrying a duvet.",
+  "source": "candidate",
+  "batch": "Unit: w_coat",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:44:24.339Z"
+ },
+ "rn-en-924a7175cb5c": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "Take the umbrella along for the rain shower {WHENP}. || As opposed to the other kind of shower. I'm thorough.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:09:41.838Z"
+ },
+ "rn-en-9269dee28fed": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "It could rain {WHENP}. Take the umbrella to be safe. || 'To be safe' isn't a phrase you use much, I've noticed.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:43:24.095Z"
+ },
+ "rn-en-9546b71b2d60": {
+  "level": "10",
+  "key": "p_wetter_long",
+  "path": "unit_10.p_wetter_long[+]",
+  "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass', but I'm honest.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:10:49.865Z"
+ },
+ "rn-en-9748d3a543a8": {
+  "level": "10",
+  "key": "p_drier",
+  "path": "unit_10.p_drier[+]",
+  "text": "Take the umbrella for now. The rain stops later. || For now. Later it's just a stick you carry around.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:23:45.638Z"
+ },
+ "rn-en-97e94352866e": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || Keeps going, like your excuses for not taking it.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:46.052Z"
+ },
+ "rn-en-98004770dd09": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "The snow stops {WHENSTOP}. || I'd say 'enjoy it while it lasts', but I've given you the exact time.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:50.312Z"
+ },
+ "rn-en-9f336f3616b6": {
+  "level": "11",
+  "key": "p_stays_wet_snow",
+  "path": "unit_11.p_stays_wet_snow[+]",
+  "text": "It snows all day. || You stopped finding it pretty about two snowfalls ago.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:11.704Z"
+ },
+ "rn-en-a2839c1bd4fa": {
+  "level": "11",
+  "key": "w_scarf",
+  "path": "unit_11.w_scarf[+]",
+  "text": "You can take off the hat, scarf and gloves {WHEN}. || And finally, people get to see your face again. Brace them.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:44:28.547Z"
+ },
+ "rn-en-aab7413e6642": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "The rain eases off later, but bring the umbrella for now. || You'll get it out just as it stops. That's the deal.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:17.846Z"
+ },
+ "rn-en-ad96aac6af20": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "Take the umbrella. The rain keeps going all day. || I'd sing about it, but I don't do sound. Lucky you.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:07:37.370Z"
+ },
+ "rn-en-b559998c88eb": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "{WHEN} it gets a little less hot. Still warm, though. || Less hot. Not cool. Calm down.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:26:32.655Z"
+ },
+ "rn-en-b5a9f3b0b74f": {
+  "level": "10",
+  "key": "p_snow_coming",
+  "path": "unit_10.p_snow_coming[+]",
+  "text": "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.",
+  "source": "candidate",
+  "batch": "Unit: p_snow_coming",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:07:01.917Z"
+ },
+ "rn-en-bad4ab003a64": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "Later on the snow stops. || Then you'll miss it. Briefly.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:59.327Z"
+ },
+ "rn-en-bfdc94ef95ea": {
+  "level": "10",
+  "key": "c_scarf",
+  "path": "unit_10.c_scarf[+]",
+  "text": "It gets colder {WHEN}, so bring a hat, scarf and gloves. || I'd join you, but nothing fits a rectangle.",
+  "source": "candidate",
+  "batch": "Unit: c_scarf",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:22:54.823Z"
+ },
+ "rn-en-c0a1e992c9b4": {
+  "level": "11",
+  "key": "p_snow_coming",
+  "path": "unit_11.p_snow_coming[+]",
+  "text": "Expect snow {WHENP}. || You'll be surprised anyway.",
+  "source": "candidate",
+  "batch": "Unit: p_snow_coming",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:37:22.594Z"
+ },
+ "rn-en-c589a385e5c8": {
+  "level": "10",
+  "key": "w_jacket",
+  "path": "unit_10.w_jacket[+]",
+  "text": "The jacket can come off {WHEN}. || 'Can'. I'm not forcing anything. I'm a screen, not a parent.",
+  "source": "candidate",
+  "batch": "Unit: w_jacket",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "The jacket can come off {WHEN}. || I'm not forcing anything. I'm a screen, not a parent.",
+  "updatedAt": "2026-10-17T08:12:34.078Z"
+ },
+ "rn-en-c9889ac73008": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you. || Not 'stays wherever you had lunch'.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:20.157Z"
+ },
+ "rn-en-c9bf6640ba69": {
+  "level": "11",
+  "key": "c_scarf",
+  "path": "unit_11.c_scarf[+]",
+  "text": "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || The hat you think looks silly. It does. Wear it anyway.",
+  "source": "candidate",
+  "batch": "Unit: c_scarf",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Yes, that hat looks silly. Wear it anyway.",
+  "updatedAt": "2026-10-17T08:27:23.595Z"
+ },
+ "rn-en-c9d394d12ae5": {
+  "level": "11",
+  "key": "w_scarf",
+  "path": "unit_11.w_scarf[+]",
+  "text": "The hat, scarf and gloves can come off {WHEN}. || Yes, all three. You can manage three. Probably.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:44:34.441Z"
+ },
+ "rn-en-cc2a453f94b6": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || A bit. Long enough to think you've won.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:27.589Z"
+ },
+ "rn-en-d1acb938735a": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "Later the rain stops. For now, keep the umbrella with you. || Later you can tell everyone it cleared up. I told you first.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:21.998Z"
+ },
+ "rn-en-d214e4f0f23b": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole sentence.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.",
+  "updatedAt": "2026-10-17T08:26:46.666Z"
+ },
+ "rn-en-d8f65f9eac47": {
+  "level": "11",
+  "key": "arc_colder",
+  "path": "unit_11.arc_colder[+]",
+  "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || Bring it, then wear it. Two separate skills.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:25:33.745Z"
+ },
+ "rn-en-d9342b4c47b8": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "{WHENP} the rain sets in for good. Bring the umbrella. || For good. Not for your hair.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:42:48.783Z"
+ },
+ "rn-en-d9672dcf28db": {
+  "level": "10",
+  "key": "p_wetter_maybe",
+  "path": "unit_10.p_wetter_maybe[+]",
+  "text": "Rain is possible {WHENP}, so maybe take the umbrella. || I'm leaving this one with you. I have a reputation to protect.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:11:05.163Z"
+ },
+ "rn-en-db8440246787": {
+  "level": "11",
+  "key": "w_scarf",
+  "path": "unit_11.w_scarf[+]",
+  "text": "It warms up {WHEN}, so the hat, scarf and gloves can come off. || Your hair's been under that hat for hours. Good luck.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:44:39.507Z"
+ },
+ "rn-en-dccb0dab66e4": {
+  "level": "11",
+  "key": "w_water",
+  "path": "unit_11.w_water[+]",
+  "text": "It heats up {WHEN}, so take water with you. || Water. The clear stuff. You've seen it.",
+  "source": "candidate",
+  "batch": "Unit: w_water",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It heats up {WHEN}, so take water with you. || The clear stuff. You've seen it.",
+  "updatedAt": "2026-10-17T08:45:02.481Z"
+ },
+ "rn-en-dfe8a4b818d2": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "You might get some rain {WHENP}, so the umbrella could come in handy. || So could most of what's in your bag. Allegedly.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:43:37.160Z"
+ },
+ "rn-en-e21a9a90b22a": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. Says the screen indoors.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. Nut that’s easy for me to say. I don’t freeze.",
+  "updatedAt": "2026-10-17T08:12:17.950Z"
+ },
+ "rn-en-e252f65fa47d": {
+  "level": "10",
+  "key": "p_drier_snow",
+  "path": "unit_10.p_drier_snow[+]",
+  "text": "It stops snowing {WHENSTOP}. || Right on time. I like a snowfall that keeps its word.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:24:12.702Z"
+ },
+ "rn-en-ed233eaef970": {
+  "level": "10",
+  "key": "p_drier_snow",
+  "path": "unit_10.p_drier_snow[+]",
+  "text": "The snow stops later. || The slush doesn't. That's on its own schedule.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-16T23:24:21.451Z"
+ },
+ "rn-en-eeccd08c75bb": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "{WHEN} you won't need the hat, scarf and gloves any more. || Any more today. Don't give them away.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:14:02.624Z"
+ },
+ "rn-en-f4dcaa77b4fa": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella with you. || That dry bit is half-time.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:41:31.275Z"
+ },
+ "rn-en-f559ba74c1a9": {
+  "level": "10",
+  "key": "p_wet_again",
+  "path": "unit_10.p_wet_again[+]",
+  "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella with you. || Two parts. The umbrella's in both.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:08:57.375Z"
+ },
+ "rn-en-f8358679242e": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:07:49.698Z"
+ },
+ "rn-en-f85067709635": {
+  "level": "10",
+  "key": "w_jacket",
+  "path": "unit_10.w_jacket[+]",
+  "text": "It warms up {WHEN}, so the jacket can come off. || Over one arm, then. Very catalogue model of you.",
+  "source": "candidate",
+  "batch": "Unit: w_jacket",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:13:38.426Z"
+ },
+ "rn-en-f86e9caed26f": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Waiting it out is an option. Not a good one, but you like those.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:31.480Z"
+ },
+ "rn-en-f94abe5e06b2": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "Bring the umbrella. There's a shower {WHENP}. || One shower. I could have made it sound dramatic. I chose not to.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:09:51.186Z"
+ },
+ "rn-en-fa259d5edbf0": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "There's a short shower {WHENP}. Have the umbrella with you. || Short, so it'll be over just as you get it open.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "There's a short shower {WHENP}. Have the umbrella with you. || It'll be over just as you get it open.",
+  "updatedAt": "2026-10-17T08:10:14.411Z"
+ },
+ "rn-en-fc6c6c2705cb": {
+  "level": "11",
+  "key": "c_scarf",
+  "path": "unit_11.c_scarf[+]",
+  "text": "{WHEN} it gets cold enough for a hat, scarf and gloves. || Cold enough that your nose will match your mood.",
+  "source": "candidate",
+  "batch": "Unit: c_scarf",
+  "round": "2026-10-rain",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T08:36:07.649Z"
+ },
+ "rn-en-fd48649a91f5": {
+  "level": "10",
+  "key": "p_wetter_maybe",
+  "path": "unit_10.p_wetter_maybe[+]",
+  "text": "It might rain {WHENP}, so an umbrella wouldn't hurt. || It won't hurt. Carrying it all day might, a bit.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-rain",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "It might rain {WHENP}, so an umbrella wouldn't hurt. || Carrying it all day might, actually.",
+  "updatedAt": "2026-10-17T08:11:42.309Z"
+ },
  "rp-en-017efe08a55b": {
   "level": "0",
   "key": "shorts_early",

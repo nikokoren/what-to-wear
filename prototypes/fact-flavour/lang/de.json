@@ -940,14 +940,20 @@
     ],
     "c_coat": [
       "{WHEN} wird's kälter, da braucht's die Winterjacke. || Da hilft auch kein Jammern.",
-      "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt bei mir: Ich mein's ernst."
+      "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt bei mir: Ich mein's ernst.",
+      "{WHEN} wird's kalt genug für die Winterjacke. || Ich hätt's auch schonender sagen können. Wollte ich aber nicht.",
+      "Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ich sag das nicht zum Spaß."
     ],
     "w_scarf": [
-      "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Die Mützenfrisur bleibt dir allerdings noch eine Weile."
+      "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Man erkennt dich dann sogar wieder.",
+      "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Die Mützenfrisur bleibt dir allerdings noch eine Weile.",
+      "{WHEN} können Mütze, Schal und Handschuhe weg. || Die Oma hätt sie dir trotzdem drangelassen."
     ],
     "w_coat": [
       "{WHEN} kann die Winterjacke weg. || Freu dich nicht zu früh. Das ist noch kein Frühling.",
-      "{WHEN} kannst du die Winterjacke ausziehen. || Ich hab's gewusst, bevor du's gemerkt hast. Wie immer."
+      "{WHEN} kannst du die Winterjacke ausziehen. || Ich hab's gewusst, bevor du's gemerkt hast. Wie immer.",
+      "{WHEN} kann die Winterjacke weg. || Dann bist du gleich zwei Kilo leichter. Zumindest gefühlt.",
+      "{WHEN} ist es warm, dann brauchst du keine Winterjacke mehr. || Mehr gute Nachrichten hab ich heute nicht."
     ],
     "w_water": [
       "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.",
@@ -964,7 +970,8 @@
     ],
     "arc_level": [
       "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
-      "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied."
+      "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.",
+      "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ob sich das Ausziehen lohnt, musst du selber wissen."
     ],
     "arc_colder": [
       "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern.",
@@ -973,6 +980,53 @@
     "shorts_early": [
       "Noch ist's kühl, aber {WHEN} kannst du in Shorts rumlaufen. || Kannst. Nicht musst. Ich sag's nur.",
       "Jetzt noch frisch, {WHEN} wird's warm genug für kurze Hosen. || Früher hätt man dazu einfach Sommer gesagt."
+    ],
+    "p_wetter": [
+      "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Ein kurzer. Aber lang genug, um sich drüber aufzuregen.",
+      "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Vorausgesetzt, du weißt noch, wo er ist.",
+      "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und dann heißt es wieder „Es gibt kein schlechtes Wetter.“ Doch, gibt's."
+    ],
+    "p_wetter_long": [
+      "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. || Die Schnecken freuen sich. Immerhin wer.",
+      "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Den Satz könnt ich im Schlaf aufsagen.",
+      "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Gemütlich wird's höchstens drinnen."
+    ],
+    "p_stays_wet": [
+      "Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Alle starren trotzdem aufs Regenradar. Als ob das was hilft.",
+      "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Mit auch nicht viel, aber immerhin.",
+      "Der Regen hält den ganzen Tag an, der Schirm bleibt also dabei. || Und bring ihn wieder heim. Im Fundbüro liegen genug."
+    ],
+    "p_drier": [
+      "Erst brauchst du noch den Schirm, später wird's trocken. || Trocken, hab ich gesagt. Von schön war nicht die Rede.",
+      "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Ich hab mir die Uhrzeit auch nicht ausgesucht.",
+      "Noch regnet's, aber später hört es auf. Bis dahin hilft der Schirm. || Mehr Hoffnung hab ich heute nicht im Angebot."
+    ],
+    "p_wetter_maybe": [
+      "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Festlegen tu ich mich nicht. Sonst bin hinterher wieder ich schuld.",
+      "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht. || Vielleicht. Mehr Verbindlichkeit gibt's heute nicht.",
+      "Ob's {WHENP} regnet, ist nicht sicher. Der Schirm kann trotzdem mit. || Sicher ist bei mir nur die schlechte Laune."
+    ],
+    "p_wet_again": [
+      "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm bleibt also dabei. || Der Regen macht Pause. Ich nicht.",
+      "Der Regen hört später auf, aber nur kurz. {WHENP} regnet's wieder, also behalt den Schirm. || Kurz. Wie meine Geduld."
+    ],
+    "p_snow_coming": [
+      "{WHENP} soll es schneien. || Drei Flocken, und schon heißt's wieder Schneechaos.",
+      "Rechne {WHENP} mit Schnee. || Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.",
+      "{WHENP} fängt's an zu schneien. || Schön ist so ein Schnee ja. Die ersten zehn Minuten."
+    ],
+    "p_stays_wet_snow": [
+      "Der Schneefall hält den ganzen Tag an. || Die Bahn hat bestimmt schon aufgegeben.",
+      "Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.",
+      "Heute hört's nicht auf zu schneien. || Freu dich nicht zu früh. Bald ist das alles grauer Matsch."
+    ],
+    "p_drier_snow": [
+      "Noch schneit's, aber später hört es auf. || Schade eigentlich. Ich hatte mich grad dran gewöhnt.",
+      "Der Schneefall lässt später nach. || Ich nicht."
+    ],
+    "p_wet_again_snow": [
+      "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Ich hab mir das auch nicht ausgesucht.",
+      "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's wieder. || Kurz Ruhe. Mehr gönnt mir heute keiner."
     ]
   },
   "units_11": {
@@ -1049,7 +1103,9 @@
     ],
     "c_scarf": [
       "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe. || Die Mütze steht dir nicht. Setz sie trotzdem auf.",
-      "{WHEN} brauchst du Mütze, Schal und Handschuhe, also nimm sie mit. || Beide Handschuhe, wenn's geht."
+      "{WHEN} brauchst du Mütze, Schal und Handschuhe, also nimm sie mit. || Beide Handschuhe, wenn's geht.",
+      "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe. || Dann siehst du aus wie ein Bankräuber. Steht dir.",
+      "Pack Mütze, Schal und Handschuhe ein, {WHEN} wird's kälter. || Am besten die Mütze mit dem Bommel. Ich weiß, dass du eine hast."
     ],
     "c_coat": [
       "{WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.",
@@ -1063,7 +1119,8 @@
     ],
     "w_coat": [
       "{WHEN} kann die Winterjacke weg. || Dann sieht man wieder, was du den ganzen Winter gegessen hast.",
-      "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Und dann stopfst du sie in eine viel zu kleine Tasche."
+      "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Und dann stopfst du sie in eine viel zu kleine Tasche.",
+      "{WHEN} wird's mild genug, um die Winterjacke auszuziehen. || Für dich ist das ja schon ein Ereignis."
     ],
     "w_water": [
       "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser ist übrigens das Durchsichtige.",
@@ -1075,7 +1132,8 @@
       "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehmer als du jedenfalls."
     ],
     "arc_warmer": [
-      "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Endlich mal was, das bei dir hält."
+      "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Endlich mal was, das bei dir hält.",
+      "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Das hältst sogar du durch."
     ],
     "arc_level": [
       "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist dein Problem.",
@@ -1083,11 +1141,46 @@
       "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze."
     ],
     "arc_colder": [
-      "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Extra einfach formuliert. Für dich."
+      "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Extra einfach formuliert. Für dich.",
+      "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Mehr Planung, als du sonst in eine ganze Woche steckst.",
+      "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Gänsehaut zählt nicht als Schicht."
     ],
     "shorts_early": [
       "Jetzt ist's noch kühl, aber {WHEN} ist es warm genug für Shorts. || Ob du das der Welt antun willst, musst du selber wissen.",
-      "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken."
+      "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.",
+      "Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter. || Überleg dir das gut. Ich hab deine Knie schon gesehen."
+    ],
+    "p_wetter": [
+      "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Endlich passt das Wetter mal zu deinem Gesicht.",
+      "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Um deine Frisur ist's sowieso nicht schade.",
+      "Nimm den Schirm mit, {WHENP} kommt ein Regenschauer. || Bevor du's sagst: Nein, das sind nicht nur ein paar Tropfen.",
+      "Pack den Schirm ein, {WHENP} wird's kurz nass. || Glauben wirst du's erst dem Regenradar. Weil's bunt ist."
+    ],
+    "p_wetter_long": [
+      "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Wenn du nass wirst, war's wieder meine Schuld. Klar.",
+      "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Aber auf mich hörst du ja erst mit nassen Socken."
+    ],
+    "p_stays_wet": [
+      "Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Oder bleib drin. Darin bist du ja geübt.",
+      "Regen bis zum Abend, der Schirm sollte wirklich mit. || Wirklich, hab ich gesagt. Nicht „Ach, das geht schon“."
+    ],
+    "p_drier": [
+      "Noch regnet's, aber später hört es auf. Bis dahin hilft der Schirm. || Gegen deine Laune hilft er leider nicht.",
+      "Der Regen lässt später nach, für jetzt brauchst du aber einen Schirm. || Für deine Frisur ist's sowieso zu spät."
+    ],
+    "p_wetter_maybe": [
+      "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht. || Dir schadet ein bisschen Regen vermutlich auch nicht.",
+      "{WHENP} ist Regen möglich, nimm lieber den Schirm mit. || Möglich ist bei dir ja vieles. Passieren tut selten was."
+    ],
+    "p_snow_coming": [
+      "{WHENP} soll es schneien. || Ich sag's dir, und du bist trotzdem überrascht. Jedes Mal.",
+      "Mach dich auf Schnee gefasst, {WHENP} geht's los. || Gleich fühlst du dich wieder wie zwölf. Siehst halt nicht so aus.",
+      "{WHENP} kommt Schnee. || Dann ist draußen endlich alles so blass wie du."
+    ],
+    "p_stays_wet_snow": [
+      "Es schneit den ganzen Tag. || Und nein, deswegen fällt die Arbeit nicht aus.",
+      "Heute hört's nicht auf zu schneien. || Du wirst trotzdem so tun, als hätt's dir keiner gesagt.",
+      "Es schneit weiter, bis der Tag vorbei ist. || Morgen erzählst du allen, wie du dich durchgekämpft hast. Bis zum Sofa."
     ]
   }
 }

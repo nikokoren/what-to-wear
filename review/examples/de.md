@@ -205,6 +205,10 @@ Do not edit by hand; vote on the page instead.
 - Später hört's auf zu schneien.
 - {WHENSTOP} hört's auf zu schneien.
 
+## p_drier_snow · dry
+
+- Noch schneit's, aber später hört es auf. || Schade eigentlich. Ich hatte mich grad dran gewöhnt.
+
 ## p_drier_storm · plain
 
 - Das Gewitter zieht {WHENSTOP} ab. Bis dahin bist du drinnen am sichersten.
@@ -218,6 +222,10 @@ Do not edit by hand; vote on the page instead.
 - {WHENP} fängt's an zu schneien.
 - {WHENP} soll es schneien.
 
+## p_snow_coming · sarcastic
+
+- {WHENP} soll es schneien. || Ich sag's dir, und du bist trotzdem überrascht. Jedes Mal.
+
 ## p_stays_wet · plain
 
 - Eine Regenpause gibt's heute nicht, nimm den Schirm mit.
@@ -226,6 +234,10 @@ Do not edit by hand; vote on the page instead.
 - Regen bis zum Abend, der Schirm muss mit.
 - Regen bis zum Abend, der Schirm sollte wirklich mit.
 
+## p_stays_wet · dry
+
+- Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Alle starren trotzdem aufs Regenradar. Als ob das was hilft.
+
 ## p_stays_wet_snow · plain
 
 - Der Schneefall hält den ganzen Tag an.
@@ -233,6 +245,11 @@ Do not edit by hand; vote on the page instead.
 - Heute hört's nicht auf zu schneien.
 - Heute schneit's ohne Unterbrechung.
 - Schnee bis zum Abend.
+
+## p_stays_wet_snow · dry
+
+- Der Schneefall hält den ganzen Tag an. || Die Bahn hat bestimmt schon aufgegeben.
+- Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.
 
 ## p_wet_again · plain
 
@@ -257,6 +274,10 @@ Do not edit by hand; vote on the page instead.
 - {WHENP} kommt ein Schauer, also nimm den Schirm mit.
 - {WHENP} regnet's kurz. Mit Schirm bleibst du trocken.
 - {WHENP} zieht ein Regenschauer durch, pack also den Schirm ein.
+
+## p_wetter · sarcastic
+
+- {WHENP} kommt ein Schauer, also nimm den Schirm mit. || Endlich passt das Wetter mal zu deinem Gesicht.
 
 ## p_wetter_ice · plain
 
@@ -478,6 +499,10 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} brauchst du Mütze, Schal und Handschuhe nicht mehr.
 - {WHEN} können Mütze, Schal und Handschuhe weg.
 - {WHEN} wird's mild genug, dann können Mütze, Schal und Handschuhe wieder runter.
+
+## w_scarf · dry
+
+- {WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Man erkennt dich dann sogar wieder.
 
 ## w_water · plain
 

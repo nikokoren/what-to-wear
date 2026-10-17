@@ -103,6 +103,8 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    # Round 19 edits.
+    "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. Nut that’s easy for me to say. I don’t freeze.": "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze.",
     # Round 18 edits.
     "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I’d say ‘Trust me’. but I've never had cold legs.": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'd say \"trust me\", but I've never had cold legs.",
     "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hosen. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.": "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.",

@@ -947,7 +947,8 @@
     ],
     "w_jacket": [
       "The jacket can come off {WHEN}. || I'd take a layer off too, but mine are glued on.",
-      "{WHEN} you won't need the jacket any more. || Or keep it on out of loyalty and quietly cook."
+      "{WHEN} you won't need the jacket any more. || Or keep it on out of loyalty and quietly cook.",
+      "The jacket can come off {WHEN}. || I'm not forcing anything. I'm a screen, not a parent."
     ],
     "w_hoodie": [
       "The sweater can come off {WHEN}. || Try not to get stuck halfway, arms up. I can't come and help.",
@@ -983,7 +984,8 @@
     ],
     "c_scarf": [
       "Take a hat, scarf and gloves along. You'll want them {WHEN}. || All three. I'm not haggling.",
-      "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Hat hair or cold ears. Your choice."
+      "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Hat hair or cold ears. Your choice.",
+      "It gets colder {WHEN}, so bring a hat, scarf and gloves. || I'd join you, but nothing fits a rectangle."
     ],
     "c_coat": [
       "Bring the winter coat. It gets colder {WHEN}. || Carrying it until then counts as exercise. Barely.",
@@ -996,7 +998,9 @@
       "Some relief from the heat {WHEN}, but it stays warm. || I'll take the credit for that. Nobody else will."
     ],
     "arc_warmer": [
-      "Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'."
+      "Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'.",
+      "{G} can come off {WHEN} and stays off. || I'm not changing my mind about this one.",
+      "You can take {G} off {WHEN}. || After that, you're just carrying {GP} around for company."
     ],
     "arc_level": [
       "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
@@ -1005,7 +1009,43 @@
     ],
     "shorts_early": [
       "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'd say \"trust me\", but I've never had cold legs.",
-      "A cool start, then shorts weather {WHEN}. || Shorts now might be the brave call. Correct, but brave."
+      "A cool start, then shorts weather {WHEN}. || Shorts now might be the brave call. Correct, but brave.",
+      "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze."
+    ],
+    "p_wetter": [
+      "There's a short shower {WHENP}. Have the umbrella with you. || It'll be over just as you get it open."
+    ],
+    "p_wetter_long": [
+      "{WHENP} the rain sets in for good. Bring the umbrella. || 'For good' meaning today. I don't do forever.",
+      "Rain arrives {WHENP} and stays, so take the umbrella. || Tonight I'm the only thing in here that won't need drying.",
+      "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass', but I'm honest."
+    ],
+    "p_stays_wet": [
+      "It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.",
+      "Take the umbrella. The rain keeps going all day. || I'd sing about it, but I don't do sound. Lucky you."
+    ],
+    "p_wetter_maybe": [
+      "It might rain {WHENP}, so an umbrella wouldn't hurt. || Carrying it all day might, actually.",
+      "It could rain {WHENP}. Take the umbrella to be safe. || It's a small chance. Small chances have soaked better people."
+    ],
+    "p_snow_coming": [
+      "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud."
+    ],
+    "p_stays_wet_snow": [
+      "It snows all day. || The novelty lasts about an hour.",
+      "It won't stop snowing today. || That's my forecast. I don't do 'it'll ease off' to be nice.",
+      "It's snowing all day. || I've never been out in it. I hear it's overrated."
+    ],
+    "p_drier_snow": [
+      "The snow stops later. || The slush doesn't. That's on its own schedule.",
+      "It stops snowing {WHENSTOP}. || Right on time. I like a snowfall that keeps its word."
+    ],
+    "p_wet_again_snow": [
+      "Snow for now, then a break, then more snow {WHENP}. || Part two is always the slushier one.",
+      "The snow stops {WHENSTOP} and starts again {WHENP}. || Two snowfalls in one day. I'll take the credit for both."
+    ],
+    "arc_colder": [
+      "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || On top, not instead. I know you."
     ]
   },
   "units_11": {
@@ -1089,18 +1129,23 @@
     ],
     "w_water": [
       "It gets hot {WHEN}, so bring water. || And by water I mean water. Not beer, even if it's nice and cold.",
-      "{WHEN} it's properly hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right."
+      "{WHEN} it's properly hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right.",
+      "Take a bottle of water. The heat arrives {WHEN}. || A full one. Not the one with a sip left in it since Tuesday.",
+      "It heats up {WHEN}, so take water with you. || The clear stuff. You've seen it."
     ],
     "c_scarf": [
       "It gets colder {WHEN}, so bring a hat, scarf and gloves. || You'll say hats don't suit you. Neither do red ears.",
-      "Take a hat, scarf and gloves along. You'll want them {WHEN}. || Two odd gloves still count. Wear them."
+      "Take a hat, scarf and gloves along. You'll want them {WHEN}. || Two odd gloves still count. Wear them.",
+      "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Yes, that hat looks silly. Wear it anyway."
     ],
     "c_coat": [
       "Bring the winter coat. It gets colder {WHEN}. || You'll say 'it's not that cold' right up until it is.",
       "Don't leave the winter coat behind. You'll want it {WHEN}. || You've done it before. We both remember."
     ],
     "c_relief": [
-      "The heat eases {WHEN}, but it stays warm. || So you can stop sticking to things. Mostly."
+      "The heat eases {WHEN}, but it stays warm. || So you can stop sticking to things. Mostly.",
+      "The heat eases {WHEN}, but it stays warm. || Your mood might ease too. No promises.",
+      "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast."
     ],
     "arc_warmer": [
       "{G} can come off {WHEN}, and you won't need {GP} again today. || You'll put {GP} back on later anyway, just to argue with me.",
@@ -1114,11 +1159,31 @@
     ],
     "arc_colder": [
       "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || 'Maybe' is me being polite. Bring it.",
-      "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || You'll call it overkill. Then you'll wear it."
+      "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || You'll call it overkill. Then you'll wear it.",
+      "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || And no, a hot drink isn't an extra layer."
     ],
     "shorts_early": [
       "{WHEN} it's warm enough for shorts, so think about putting some on now. || Very PE teacher of you. Still the right call.",
-      "A cool start, then shorts weather {WHEN}. || You'll doubt me for the first hour. Then you won't admit I was right."
+      "A cool start, then shorts weather {WHEN}. || You'll doubt me for the first hour. Then you won't admit I was right.",
+      "It's cool now, but {WHEN} it's warm enough for shorts. || Your legs could use the daylight, frankly."
+    ],
+    "p_wetter_long": [
+      "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || It has more stamina than you. Most things do.",
+      "Rain arrives {WHENP} and stays, so take the umbrella. || Staying in was your plan anyway. Now you have a reason."
+    ],
+    "p_stays_wet": [
+      "It rains all day, so bring the umbrella. || All day. So no, waiting ten minutes won't help."
+    ],
+    "p_drier": [
+      "Take the umbrella for now. The rain stops {WHENSTOP}. || Waiting it out is an option. Not a good one, but you like those."
+    ],
+    "p_snow_coming": [
+      "Expect snow {WHENP}. || You'll be surprised anyway.",
+      "Snow moves in {WHENP}. || Finally, a reason to cancel the plans you were dreading."
+    ],
+    "p_stays_wet_snow": [
+      "{M:01,02,03}It snows all day. || You stopped finding it pretty about two snowfalls ago.",
+      "There's no break in the snow today. || Not even for you."
     ]
   }
 }

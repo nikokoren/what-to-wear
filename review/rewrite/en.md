@@ -217,3 +217,19 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-f73dc8201cb3` (2026-10-days)
+
+## unit_10.p_stays_wet
+
+- **Out:** It rains all day, so bring the umbrella. || The washing stays in today. So do I, but that's normal.
+  **Tags:** unclear
+  **On screen:** drawing jacket_rain
+  **What it's for:** New at On: the forecast sentence and its joke as one. Raining now and all day. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `rn-en-268194b9728b` (2026-10-rain)
+
+## unit_10.p_wet_again
+
+- **Out:** Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella. || Fold it and it rains. That's the rule.
+  **Tags:** not funny, unclear
+  **On screen:** drawing jacket_rain
+  **What it's for:** New at On: the forecast sentence and its joke as one. Raining now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `rn-en-75a234f78093` (2026-10-rain)
