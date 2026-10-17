@@ -57,10 +57,9 @@ per line, a critic, then the vote):
      Saturday's freshly washed car before the rain; Hausschuhe; Wetter-App
      gegen Wetterbericht (a new angle, not the Regenradar again).
 3. **New special days for the dated ones** (markup: `block.liquid`,
-   SPECIAL DAYS, like Pi Day): St Swithin's Day (15 July, en);
-   Eisheilige (11 to 15 May), Siebenschläfer (27 June), Hundstage
-   (23 July to 23 August) and Altweibersommer (late September), de.
-   Schafskälte has no fixed date: month-tag it to June instead.
+   SPECIAL DAYS, like Pi Day): Eisheilige (11 to 15 May) and
+   Altweibersommer (late September), de. Cut by the owner as not widely
+   understood: St Swithin's Day, Siebenschläfer, Hundstage, Schafskälte.
 
 Leave alone: topics already well mined (Bahn, Schneechaos, Regenradar,
 Zugluft, Oma; e-ink and grey, fans and ice-cream vans) and the ones
