@@ -450,6 +450,16 @@ What was kept: the screen's own view („Ich nicht.“, "Good day to be a
 screen. Bad day to be a sock.") and shared everyday truths (Schneechaos
 at five centimetres, "The novelty lasts about an hour.").
 
+## Round 20: gap units
+
+`2026-10-gaps.json` (`make_round20.py`, ids `gp-…`), 92 lines: the slots
+still under three units, with a new setup after round 19. Fresh writers
+with a short brief built from the data (`2026-10-gaps/brief_<lang>.md`),
+four candidates per unit needed (`<lang>.raw.json`: en 172, de 88), and
+a critic (`2026-10-gaps/critic.md`) that cut them to one more than
+needed per slot, or fewer when the rest were weak (`<lang>.json`: en 57,
+de 35).
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
