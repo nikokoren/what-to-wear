@@ -2,7 +2,7 @@
  "lines": [
   {
    "path": "unit_11.steady",
-   "text": "Dein Outfit passt heute den ganzen Tag. || „…ändert sich das Wetter, oder es bleibt, wie es ist.“ So eine Vorhersage hätt ich auch gern.",
+   "text": "Dein Outfit passt den ganzen Tag. || „…oder es bleibt, wie es ist.“ Mit so einer Regel läge ich auch nie daneben.",
    "topic": "Bauernregeln"
   },
   {
@@ -18,7 +18,7 @@
   },
   {
    "path": "unit_11.p_wetter_long",
-   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. || Die Siebenschläfer-Regel droht dir sieben Wochen. Ich nur den Rest des Tages.",
+   "text": "{WHENP} kommt Regen, und der bleibt. || Die Siebenschläfer-Regel droht dir sieben Wochen. Ich nur den Rest des Tages.",
    "topic": "Bauernregeln",
    "months": "06,07"
   },
@@ -34,7 +34,7 @@
   },
   {
    "path": "unit_10.p_wetter",
-   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Das Morgenrot hätte es dir auch verraten. Dafür hättest du aber früh aufstehen müssen.",
+   "text": "{WHENP} regnet's kurz. Nimm den Schirm mit. || Das Morgenrot hätte es dir auch verraten. Wenn du so früh wach wärst.",
    "topic": "Bauernregeln"
   },
   {
@@ -44,7 +44,7 @@
   },
   {
    "path": "unit_11.steady",
-   "text": "Dein Outfit passt heute den ganzen Tag. || Früher hat das ein Frosch im Glas gemacht. Der hat dafür Fliegen gekriegt. Ich krieg Staub.",
+   "text": "Dein Outfit passt den ganzen Tag. || Früher hat das ein Frosch im Glas gemacht. Der kriegte Fliegen, ich krieg Staub.",
    "topic": "der Wetterfrosch"
   },
   {
@@ -84,7 +84,7 @@
   },
   {
    "path": "unit_11.w_jacket",
-   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Südlich der Donau ist jetzt wieder der Föhn schuld. An was auch immer.",
+   "text": "Mit der Jacke ist {WHEN} Schluss. || Südlich der Donau ist jetzt wieder der Föhn schuld. An was auch immer.",
    "topic": "Föhn"
   },
   {
@@ -94,12 +94,12 @@
   },
   {
    "path": "unit_10.w_hoodie",
-   "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer. || Ob's Föhn ist, steht hier nicht. Die Ausrede fürs Kopfweh such dir selber.",
+   "text": "Mit dem Pulli ist {WHEN} Schluss. || Ob's Föhn ist, steht hier nicht. Die Ausrede fürs Kopfweh such dir selber.",
    "topic": "Föhn"
   },
   {
    "path": "unit_11.arc_level",
-   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Rauf, runter, rauf. Und wer Kopfweh kriegt, war's natürlich der Föhn.",
+   "text": "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Und wer davon Kopfweh kriegt, war's natürlich der Föhn.",
    "topic": "Föhn"
   },
   {
@@ -109,22 +109,22 @@
   },
   {
    "path": "unit_10.w_coat",
-   "text": "{WHEN} wird's mild genug für ohne Winterjacke. || Mild im Winter, und in Bayern greift schon jemand zur Kopfwehtablette. Aus Prinzip.",
+   "text": "{WHEN} kann die Winterjacke weg. || Mild im Winter? In Bayern hat jetzt schon jemand Föhn-Kopfweh. Aus Prinzip.",
    "topic": "Föhn"
   },
   {
    "path": "now_10.cool",
-   "text": "Südlich der Donau ist der Föhn schuld. Nördlich davon muss man sich was anderes einfallen lassen.",
+   "text": "Südlich der Donau ist der Föhn schuld. Nördlich braucht man eine andere Ausrede.",
    "topic": "Föhn"
   },
   {
    "path": "unit_11.arc_warmer",
-   "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Föhn hin oder her: Wer heute schlecht drauf ist, war's gestern auch schon.",
+   "text": "{WHEN} {GV} weg, für den Rest des Tages. || Föhn hin oder her: Wer heute schlecht drauf ist, war's gestern auch.",
    "topic": "Föhn"
   },
   {
    "path": "now_11.hot",
-   "text": "Gleich kommt wieder: „Bei der Hitze hab ich's mit dem Kreislauf.“ Jeden Sommer, seit zwanzig Jahren.",
+   "text": "Gleich kommt wieder: „Bei der Hitze hab ich's mit dem Kreislauf.“ Wie jeden Sommer.",
    "topic": "Kreislauf"
   },
   {
@@ -149,27 +149,27 @@
   },
   {
    "path": "unit_11.w_water",
-   "text": "Noch geht's, aber {WHEN} wird's heiß. || Dann kommt der Kreislauf, dann die schweren Beine, dann „So heiß war's noch nie“.",
+   "text": "{WHEN} wird's heiß. || Erst der Kreislauf, dann die schweren Beine, dann „So heiß war's noch nie“.",
    "topic": "Kreislauf"
   },
   {
    "path": "unit_10.steady_hot",
-   "text": "Die Hitze lässt den ganzen Tag nicht nach. || Mit Kreislauf darf man heute früher aus dem Büro. Behaupten zumindest alle.",
+   "text": "Die Hitze bleibt den ganzen Tag. || Mit Kreislauf darf man heute früher aus dem Büro. Behaupten zumindest alle.",
    "topic": "Kreislauf"
   },
   {
    "path": "unit_11.c_relief",
-   "text": "{WHEN} ist das Schlimmste der Hitze vorbei. || Dann erholt sich auch der Kreislauf. Erstaunlich schnell, wenn's nichts mehr zum Jammern gibt.",
+   "text": "{WHEN} ist das Schlimmste der Hitze vorbei. || Dann erholt sich auch der Kreislauf. Erstaunlich schnell.",
    "topic": "Kreislauf"
   },
   {
    "path": "unit_11.arc_level",
-   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Ideal für alle, die wetterfühlig sind, wenn's ihnen gerade passt.",
+   "text": "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Ideal für alle, die wetterfühlig sind, wenn's ihnen passt.",
    "topic": "Wetterfühligkeit"
   },
   {
    "path": "unit_10.c_jacket",
-   "text": "{WHEN} brauchst du eine Jacke, also nimm eine mit. || Wetterfühlig bin ich nicht. Ich sag's nur vorher und bin hinterher schuld.",
+   "text": "{WHEN} brauchst du eine Jacke. || Wetterfühlig bin ich nicht. Ich sag's nur vorher und bin hinterher schuld.",
    "topic": "Wetterfühligkeit"
   },
   {
@@ -179,12 +179,12 @@
   },
   {
    "path": "unit_11.w_hoodie",
-   "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer. || Wärmer, kälter, egal: Wer wetterfühlig ist, hat immer einen Grund.",
+   "text": "Mit dem Pulli ist {WHEN} Schluss. || Wärmer, kälter, egal: Wer wetterfühlig ist, hat immer einen Grund.",
    "topic": "Wetterfühligkeit"
   },
   {
    "path": "unit_10.c_coat",
-   "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Und schon ist halb Deutschland wetterfühlig. Die andere Hälfte war's vorher schon.",
+   "text": "{WHEN} ist die Winterjacke dran. || Und schon ist halb Deutschland wetterfühlig. Die andere Hälfte war's vorher schon.",
    "topic": "Wetterfühligkeit"
   },
   {
@@ -199,17 +199,17 @@
   },
   {
    "path": "unit_11.c_hoodie",
-   "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Wetterfühlig ist, wer das vorher spürt. Alle anderen lesen's hier und tun nur so.",
+   "text": "{WHEN} brauchst du einen Pulli. || Wetterfühlig ist, wer das vorher spürt. Alle anderen lesen's hier und tun nur so.",
    "topic": "Wetterfühligkeit"
   },
   {
    "path": "unit_11.steady",
-   "text": "Dein Outfit passt heute den ganzen Tag. || Perfektes Wetter für irgendeinen Laubbläser. Am liebsten um acht, wenn alle noch schlafen.",
+   "text": "Dein Outfit passt den ganzen Tag. || Perfektes Wetter für irgendeinen Laubbläser. Am liebsten um acht, wenn alle schlafen.",
    "topic": "Ruhezeiten"
   },
   {
    "path": "now_10.nice",
-   "text": "Bei dem Wetter mäht jemand den Rasen. Und jemand anders schreibt schon den Zettel fürs Treppenhaus.",
+   "text": "Rasenmähwetter. Einer mäht, der andere schreibt schon den Zettel fürs Treppenhaus.",
    "topic": "Ruhezeiten"
   },
   {
@@ -235,7 +235,7 @@
   },
   {
    "path": "unit_10.steady_cold",
-   "text": "Kalt bleibt's heute, den ganzen Tag. || Wenigstens bleibt der Rasenmäher in der Garage. Irgendwas Gutes muss die Kälte ja haben.",
+   "text": "Kalt bleibt's den ganzen Tag. || Immerhin bleibt der Rasenmäher in der Garage. Irgendwas Gutes muss die Kälte haben.",
    "topic": "Ruhezeiten"
   },
   {
@@ -245,22 +245,22 @@
   },
   {
    "path": "unit_11.p_wetter",
-   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Irgendwer hat heute sein Auto gewaschen. Ohne den wär der Regen gar nicht gekommen.",
+   "text": "{WHENP} regnet's kurz. || Irgendwer hat heute sein Auto gewaschen. Ohne den wär der Regen gar nicht gekommen.",
    "topic": "das frisch gewaschene Auto"
   },
   {
    "path": "unit_10.p_wetter_long",
-   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. || Irgendwo glänzt noch ein frisch poliertes Auto. Nicht mehr lange.",
+   "text": "{WHENP} kommt Regen, und der bleibt. || Irgendwo glänzt noch ein frisch poliertes Auto. Nicht mehr lange.",
    "topic": "das frisch gewaschene Auto"
   },
   {
    "path": "unit_11.p_wetter_long",
-   "text": "{WHENP} kommt Regen, und der bleibt. Nimm den Schirm mit. || Wer Regen will, wäscht sein Auto. Das klappt zuverlässiger als ich.",
+   "text": "{WHENP} kommt Regen, und der bleibt. || Wer Regen will, wäscht sein Auto. Das klappt zuverlässiger als ich.",
    "topic": "das frisch gewaschene Auto"
   },
   {
    "path": "now_11.wet",
-   "text": "Regen. Irgendwo steht jemand neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+   "text": "Regen. Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
    "topic": "das frisch gewaschene Auto"
   },
   {
@@ -270,7 +270,7 @@
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Ob's regnet, hängt davon ab, ob gerade jemand sein Auto wäscht.",
+   "text": "{WHENP} ist ein Schauer drin. || Ob's regnet, hängt davon ab, ob gerade jemand sein Auto wäscht.",
    "topic": "das frisch gewaschene Auto"
   },
   {
@@ -280,12 +280,12 @@
   },
   {
    "path": "unit_11.p_drier",
-   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Dann wäscht wieder jemand sein Auto, und alles geht von vorn los.",
+   "text": "Der Regen hört erst {WHENSTOP} auf. || Dann wäscht wieder jemand sein Auto, und alles geht von vorn los.",
    "topic": "das frisch gewaschene Auto"
   },
   {
    "path": "unit_11.steady_cold",
-   "text": "Kalt bleibt's heute, den ganzen Tag. || Drinnen gilt die Hausschuhpflicht. Die Regel ist älter als das Haus und wird nicht diskutiert.",
+   "text": "Kalt bleibt's den ganzen Tag. || Drinnen gilt Hausschuhpflicht. Die Regel ist älter als das Haus und nicht verhandelbar.",
    "topic": "Hausschuhe",
    "months": "11,12,01,02"
   },
@@ -303,7 +303,7 @@
   },
   {
    "path": "unit_10.steady_cold",
-   "text": "Kalt bleibt's heute, den ganzen Tag. || Wer drinnen ohne Hausschuhe rumläuft, holt sich was weg. Sagt jede Oma, also stimmt's.",
+   "text": "Kalt bleibt's den ganzen Tag. || Wer ohne Hausschuhe rumläuft, holt sich was weg. Sagt jede Oma, also stimmt's.",
    "topic": "Hausschuhe",
    "months": "11,12,01,02"
   },
@@ -333,12 +333,12 @@
   },
   {
    "path": "unit_11.p_wetter_maybe",
-   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Die App sagt dreißig Prozent. Was das heißt, weiß sie selber nicht.",
+   "text": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was das heißt, weiß sie selber nicht.",
    "topic": "Wetter-App gegen Wetterbericht"
   },
   {
    "path": "unit_10.p_wetter_maybe",
-   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Im Radio heißt das „vereinzelte Schauer“. Damit liegen die nie falsch.",
+   "text": "{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit liegen die nie falsch.",
    "topic": "Wetter-App gegen Wetterbericht"
   },
   {
@@ -363,7 +363,7 @@
   },
   {
    "path": "unit_10.p_wetter_maybe",
-   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Früher kam das nach der Tagesschau. Heute von mir, und genauso vage.",
+   "text": "{WHENP} ist ein Schauer drin. || Früher kam das nach der Tagesschau. Heute von mir, und genauso vage.",
    "topic": "Wetter-App gegen Wetterbericht"
   },
   {
@@ -373,7 +373,7 @@
   },
   {
    "path": "now_11.nice",
-   "text": "Altweibersommer. Der Sommer kommt noch mal vorbei, wenn die Sommersachen schon im Keller sind.",
+   "text": "Altweibersommer. Der Sommer kommt noch mal, wenn die Sommersachen schon im Keller sind.",
    "topic": "Altweibersommer",
    "months": "09,10"
   },
@@ -397,7 +397,7 @@
   },
   {
    "path": "now_10.nice",
-   "text": "Altweibersommer. Draußen glänzen die Spinnweben in der Sonne. Hier drin heißt das: Staubwischen vergessen.",
+   "text": "Altweibersommer. Draußen glänzen Spinnweben in der Sonne. Hier drin heißt das Staub.",
    "topic": "Altweibersommer",
    "months": "09,10"
   },
@@ -445,7 +445,7 @@
   },
   {
    "path": "flavour_11.day_eisheilige",
-   "text": "Eisheilige. Irgendwer hat seine Geranien schon im April rausgestellt und betet jetzt zur Kalten Sophie.",
+   "text": "Eisheilige. Wer die Geranien schon draußen hat, betet jetzt zur Kalten Sophie.",
    "topic": "Eisheilige",
    "months": "05"
   },
@@ -469,7 +469,7 @@
   },
   {
    "path": "flavour_10.day_eisheilige",
-   "text": "Eisheilige. Gut, dass ich drin bleiben darf. Die Tomaten müssen bis nach der Kalten Sophie warten.",
+   "text": "Eisheilige. Ich bleib sowieso drin. Die Tomaten müssen bis nach der Kalten Sophie warten.",
    "topic": "Eisheilige",
    "months": "05"
   },
@@ -487,7 +487,7 @@
   },
   {
    "path": "flavour_11.day_eisheilige",
-   "text": "Eisheilige. Wer seine Tomaten schon draußen hat, will das jetzt bestimmt nicht hören.",
+   "text": "Eisheilige. Der Baumarkt verkauft dir die Tomatenpflanzen trotzdem schon seit April.",
    "topic": "Eisheilige",
    "months": "05"
   }
