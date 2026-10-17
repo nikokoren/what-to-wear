@@ -1,0 +1,137 @@
+{
+ "lines": [
+  {
+   "path": "unit_11.c_coat",
+   "text": "You'll want the winter coat {WHEN}. || Yes, the number looks fine. The number isn't going outside.",
+   "topic": "feels like"
+  },
+  {
+   "path": "now_11.cold",
+   "text": "Nobody believes 'feels like' until they're outside. I believe it from in here.",
+   "topic": "feels like"
+  },
+  {
+   "path": "now_11.cold",
+   "text": "It feels colder than it is. I can't feel a thing, and I'm still right.",
+   "topic": "feels like"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Your app gives it a percentage so it can't be wrong. I give advice.",
+   "topic": "the weather app"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Your phone now predicts rain. While it's raining. Visionary.",
+   "topic": "the weather app"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "I do one thing. Your phone does weather between ads.",
+   "topic": "the weather app"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Strangers will say 'nice day, huh?' like it's news. I published it this morning.",
+   "topic": "weather small talk"
+  },
+  {
+   "path": "unit_11.steady_hot",
+   "text": "Hot all day: drink water and look for shade. || 'Hot enough for you?' Every stranger, all day. I said it once.",
+   "topic": "weather small talk"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Nice out. That's your whole conversation with the neighbors sorted.",
+   "topic": "weather small talk"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I have better data and no knee.",
+   "topic": "weather lore"
+  },
+  {
+   "path": "unit_10.p_wetter_long",
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I don't need cows.",
+   "topic": "weather lore"
+  },
+  {
+   "path": "now_10.wet",
+   "text": "April showers. Folk wisdom nailed one month and retired.",
+   "topic": "weather lore",
+   "months": "04"
+  },
+  {
+   "path": "now_11.evening",
+   "text": "Dark since half past four. The day clocked out before you did.",
+   "topic": "early dark",
+   "months": "11,12,01"
+  },
+  {
+   "path": "now_11.evening",
+   "text": "The sun's on half days until February. I'm still on full shifts.",
+   "topic": "early dark",
+   "months": "11,12,01"
+  },
+  {
+   "path": "now_11.evening",
+   "text": "Dark by half past four, and I don't even light up. Good luck.",
+   "topic": "early dark",
+   "months": "11,12,01"
+  },
+  {
+   "path": "now_10.cold",
+   "text": "Coat weather. Except for the one guy in shorts. There's always one guy.",
+   "topic": "the one person in shorts in February",
+   "months": "12,01,02"
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "You can take the jacket off {WHEN}. || The shorts guy never had one on. He'll want you to know.",
+   "topic": "the one person in shorts in February",
+   "months": "12,01,02"
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || The man who wore shorts all February will say he called it.",
+   "topic": "the one person in shorts in February",
+   "months": "02,03"
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || Everyone wanted summer. Nobody asked for the afternoon.",
+   "topic": "'too hot', two days after 'when's summer coming'",
+   "months": "06,07,08"
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Last month: 'when's summer coming?' Now: 'too hot.' I don't take requests.",
+   "topic": "'too hot', two days after 'when's summer coming'",
+   "months": "06,07,08"
+  },
+  {
+   "path": "now_10.hot",
+   "text": "Hot. The 'when's summer coming' crowd has gone strangely quiet.",
+   "topic": "'too hot', two days after 'when's summer coming'",
+   "months": "06,07,08"
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual weather.",
+   "topic": "pumpkin spice",
+   "months": "09,10"
+  },
+  {
+   "path": "unit_10.steady",
+   "text": "This outfit works all day. || No pumpkin in the forecast. It's in everything else.",
+   "topic": "pumpkin spice",
+   "months": "09,10"
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice is on its second lap.",
+   "topic": "pumpkin spice",
+   "months": "09,10"
+  }
+ ]
+}
