@@ -1,0 +1,495 @@
+{
+ "lines": [
+  {
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt heute den ganzen Tag. || „…ändert sich das Wetter, oder es bleibt, wie es ist.“ So eine Vorhersage hätt ich auch gern.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Regen. Irgendeine Bauernregel hat das bestimmt gewusst. Hinterher wissen die es immer.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Ist der Mai kühl und nass, freut sich der Bauer. Du bist aber kein Bauer.",
+   "topic": "Bauernregeln",
+   "months": "05"
+  },
+  {
+   "path": "unit_11.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. || Die Siebenschläfer-Regel droht dir sieben Wochen. Ich nur den Rest des Tages.",
+   "topic": "Bauernregeln",
+   "months": "06,07"
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Dafür braucht's weder Bauernregel noch mich. Ein Blick aus dem Fenster reicht.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Liegt eine Bauernregel daneben, lachen alle. Lieg ich daneben, wird geflucht.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "unit_10.p_wetter",
+   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Das Morgenrot hätte es dir auch verraten. Dafür hättest du aber früh aufstehen müssen.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Fliegen die Schwalben tief, kommt Regen. Einem Vogel glaubt man mehr als mir.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt heute den ganzen Tag. || Früher hat das ein Frosch im Glas gemacht. Der hat dafür Fliegen gekriegt. Ich krieg Staub.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Mein Vorgänger war ein Frosch im Einmachglas. Viel besser hab ich's auch nicht getroffen.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "„Wetterfrosch“ sagt ihr zu den Leuten im Fernsehen. Zu mir sagt ihr gar nichts.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "unit_11.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Der Frosch im Glas hätte jetzt Winterstarre. Ich muss trotzdem arbeiten.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Beschwerden über die Vorhersage bitte an den Frosch. Der hatte den Job vor mir.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "Dein Outfit passt den ganzen Abend. || Der Wetterfrosch hatte wenigstens eine Glasscheibe zwischen sich und euch.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Früher Frosch im Glas, heute ich. Der Fortschritt: Ich meckere zurück.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "unit_11.steady_night",
+   "text": "Dein Outfit passt den ganzen Abend. || Den Frosch hat um die Uhrzeit keiner mehr gefragt. Der durfte schlafen.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Südlich der Donau ist jetzt wieder der Föhn schuld. An was auch immer.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Ihr schiebt eure Laune auf den Föhn. Ich hab keinen Föhn. Ich bin einfach so.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer. || Ob's Föhn ist, steht hier nicht. Die Ausrede fürs Kopfweh such dir selber.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Rauf, runter, rauf. Und wer Kopfweh kriegt, war's natürlich der Föhn.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Bei Föhn ist man gereizt, heißt es. Und was ist eure Ausrede an den anderen Tagen?",
+   "topic": "Föhn"
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} wird's mild genug für ohne Winterjacke. || Mild im Winter, und in Bayern greift schon jemand zur Kopfwehtablette. Aus Prinzip.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Südlich der Donau ist der Föhn schuld. Nördlich davon muss man sich was anderes einfallen lassen.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Föhn hin oder her: Wer heute schlecht drauf ist, war's gestern auch schon.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Gleich kommt wieder: „Bei der Hitze hab ich's mit dem Kreislauf.“ Jeden Sommer, seit zwanzig Jahren.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_11.steady_hot",
+   "text": "Die Hitze lässt den ganzen Tag nicht nach. || Wer's mit dem Kreislauf hat, erzählt's bitte wem anders. Ich hab keinen.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Ab dann hat's das halbe Büro wieder mit dem Kreislauf.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "now_10.hot",
+   "text": "Über dreißig Grad. Der deutsche Kreislauf meldet sich traditionell als Erster.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Ich hab keinen Kreislauf, nur ein Netzteil. Und selbst das jammert weniger als ihr.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. || Dann kommt der Kreislauf, dann die schweren Beine, dann „So heiß war's noch nie“.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_10.steady_hot",
+   "text": "Die Hitze lässt den ganzen Tag nicht nach. || Mit Kreislauf darf man heute früher aus dem Büro. Behaupten zumindest alle.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} ist das Schlimmste der Hitze vorbei. || Dann erholt sich auch der Kreislauf. Erstaunlich schnell, wenn's nichts mehr zum Jammern gibt.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Ideal für alle, die wetterfühlig sind, wenn's ihnen gerade passt.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "{WHEN} brauchst du eine Jacke, also nimm eine mit. || Wetterfühlig bin ich nicht. Ich sag's nur vorher und bin hinterher schuld.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Wetterfühlig sind komischerweise immer die, die gerade keine Lust haben.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer. || Wärmer, kälter, egal: Wer wetterfühlig ist, hat immer einen Grund.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Und schon ist halb Deutschland wetterfühlig. Die andere Hälfte war's vorher schon.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} und was Warmes dazu. || Für Wetterfühlige ist so ein Tag wie Weihnachten.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "„Ich bin halt wetterfühlig.“ Ich auch. Ich fühl jedes Wetter. Beruflich.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Wetterfühlig ist, wer das vorher spürt. Alle anderen lesen's hier und tun nur so.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt heute den ganzen Tag. || Perfektes Wetter für irgendeinen Laubbläser. Am liebsten um acht, wenn alle noch schlafen.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Bei dem Wetter mäht jemand den Rasen. Und jemand anders schreibt schon den Zettel fürs Treppenhaus.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Sonne, Mittagsruhe, und trotzdem kreischt irgendwo eine Heckenschere.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "Dein Outfit passt den ganzen Abend. || Es ist Nachtruhe. Ich halt mich dran. Als Einziger, wie immer.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Einer bläst das Laub zum Nachbarn, der Nachbar bläst es zurück. So geht deutscher Herbst.",
+   "topic": "Ruhezeiten",
+   "months": "10,11"
+  },
+  {
+   "path": "unit_11.steady",
+   "text": "Was du anhast, passt den ganzen Tag. || Ruhig wird's trotzdem nicht. Irgendwo bohrt immer jemand, am liebsten sonntags.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Wenigstens bleibt der Rasenmäher in der Garage. Irgendwas Gutes muss die Kälte ja haben.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Herrlicher Tag. Ich hör schon den ersten Rasenmäher. Und ich hab nicht mal Ohren.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "unit_11.p_wetter",
+   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Irgendwer hat heute sein Auto gewaschen. Ohne den wär der Regen gar nicht gekommen.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_10.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. || Irgendwo glänzt noch ein frisch poliertes Auto. Nicht mehr lange.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_11.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der bleibt. Nimm den Schirm mit. || Wer Regen will, wäscht sein Auto. Das klappt zuverlässiger als ich.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Regen. Irgendwo steht jemand neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_10.p_wetter",
+   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und genau jetzt fährt irgendwer stolz aus der Waschanlage.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Ob's regnet, hängt davon ab, ob gerade jemand sein Auto wäscht.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "now_10.wet",
+   "text": "Regen. Das Auto, das gestern jemand zwei Stunden poliert hat, sieht aus wie vorher.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_11.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Dann wäscht wieder jemand sein Auto, und alles geht von vorn los.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_11.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Drinnen gilt die Hausschuhpflicht. Die Regel ist älter als das Haus und wird nicht diskutiert.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "now_10.cold",
+   "text": "Kalter Boden. Wer jetzt barfuß läuft, kriegt den Satz mit der Blasenentzündung zu hören.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "now_11.cold",
+   "text": "Alle kriegen Hausschuhe. Ich krieg nicht mal eine Decke.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Wer drinnen ohne Hausschuhe rumläuft, holt sich was weg. Sagt jede Oma, also stimmt's.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "now_11.cold",
+   "text": "Bei der Kälte kriegt jeder Gast Hausschuhe. Ob er will oder nicht.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Der Held des Tages sind die Lammfell-Hausschuhe. Ich bin nur Statist.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "now_10.cold",
+   "text": "Draußen Winterjacke, drinnen Hausschuhe. Dazwischen nur Gejammer.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Die Heizung wird trotzdem nicht höher gedreht. Dafür gibt's ja Hausschuhe.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Die App sagt dreißig Prozent. Was das heißt, weiß sie selber nicht.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Im Radio heißt das „vereinzelte Schauer“. Damit liegen die nie falsch.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Es regnet. Irgendeine Wetter-App zeigt gerade trotzdem eine Sonne an.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_10.wet",
+   "text": "Regen. Der Wetterbericht hat's gestern Abend gesagt, die App erst vor fünf Minuten.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || App sagt Sonne, Fernsehen sagt Regen. Und wenn's schiefgeht, bin wieder ich schuld.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Kostenlose Wetter-App, zwanzig Werbebanner, und trotzdem nass.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin, also lieber den Schirm einpacken. || Früher kam das nach der Tagesschau. Heute von mir, und genauso vage.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_10.wet",
+   "text": "Regen. Jetzt wird wieder die App gewechselt, bis eine Sonne zeigt.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Altweibersommer. Der Sommer kommt noch mal vorbei, wenn die Sommersachen schon im Keller sind.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Altweibersommer. Ich hab's nicht so genannt, also beschwer dich nicht bei mir.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Altweibersommer. Biergartenwetter, und der Biergarten hat schon zu.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Altweibersommer. Genieß ihn. Ich kenn den November.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Altweibersommer. Draußen glänzen die Spinnweben in der Sonne. Hier drin heißt das: Staubwischen vergessen.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Altweibersommer. Ein paar Tage tut der Herbst so, als hätte er ein Herz.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Die Heizung läuft schon, und draußen ist T-Shirt-Wetter. Typisch Altweibersommer.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Altweibersommer. Der letzte schöne Tag, bevor wieder alle übers Grau jammern.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Die Tomaten bleiben drin, egal wie schön's draußen aussieht.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Die einzigen Heiligen, auf die jeder Gärtner hört.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Ich kann noch so oft mild ansagen, gegen fünf Heilige komm ich nicht an.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Der letzte Frost hat noch einen Termin frei.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Irgendwer hat seine Geranien schon im April rausgestellt und betet jetzt zur Kalten Sophie.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Die Kalte Sophie kommt noch. Pünktlicher als die Bahn.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Dir passt's, aber die Tomaten bleiben trotzdem im Haus.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Vor den Eisheiligen pflanzen ist in Deutschland so verpönt wie bei Rot über die Ampel.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Gut, dass ich drin bleiben darf. Die Tomaten müssen bis nach der Kalten Sophie warten.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Kein Frost in Sicht, aber vor dem 15. verspreche ich gar nichts.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Kein Gärtner traut dem Wetter vor Mitte Mai. Mir trauen sie ja auch nicht.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Wer seine Tomaten schon draußen hat, will das jetzt bestimmt nicht hören.",
+   "topic": "Eisheilige",
+   "months": "05"
+  }
+ ]
+}
