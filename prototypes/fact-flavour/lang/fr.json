@@ -1,0 +1,16 @@
+{
+  "facts": {
+    "garments": [
+      "le bonnet et l'écharpe",
+      "le manteau d'hiver",
+      "la veste",
+      "le pull"
+    ],
+    "garments_pron": [
+      "les",
+      "le",
+      "la",
+      "le"
+    ]
+  }
+}

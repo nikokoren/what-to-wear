@@ -36,6 +36,35 @@ plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
 before, so they arrive a family at a time: steady days (round 17,
 `review/rounds/make_round17.py`), then layers, then rain.
 
+### French, as 2.1 (owner, October 2026)
+
+France only. The plumbing is in (base strings in `lang/fr.json`: errors,
+time words, garments; the drawing labels in `prototypes/panels/lang/fr.json`,
+„Maintenant“ and „dès 13 h“; garments and their pronouns in
+`prototypes/fact-flavour/lang/fr.json`; the error screen in `src/shared.liquid`).
+Not offered in the form yet: a French reader would get no words.
+
+To do, in order:
+1. **The voice: the râleur.** The Parisian national sport of complaining,
+   kin to the Grantler, written in French from scratch, never translated.
+   Write a short voice sheet with the owner first, like docs/BRIEF.md's
+   "Who is talking".
+2. **Forecast wordings** (238 in German), checked by a native reader:
+   time words, garment articles, and pronoun elision ({GP} before a
+   consonant: „le remettre“, never „le enlever“).
+3. **The current-weather and standalone lines, then units** (steady,
+   layers, rain), with the round 20 setup: data-built brief, four
+   candidates per line, a critic, then the vote.
+4. **French theme days:** Galette des rois, Chandeleur, Poisson d'avril,
+   14 juillet, Beaujolais nouveau (Krampus and Oktoberfest stay German).
+   Avoid regional words (France only: dîner is the evening meal).
+5. **A French review page**, separate from the owner's, so a French
+   reviewer's votes never touch the English and German ones; stamp each
+   vote with who cast it.
+6. **Ship:** "Français" in the form (`config/settings.next.yaml`), the
+   About text and changelog in French, "fr" in the language lists of
+   `prototypes/panels/build.py` and `tools/build_beta.py`.
+
 ### Open, in order
 
 1. **Draw the 19 sprites** (item 1). Replace the files in `sprites/` on

@@ -233,7 +233,19 @@ ordinary message.
   screen with no words on it helps nobody.
   {%- endcomment %}
   {%- if error_message == '' or error_message == nil -%}
-    {%- if lang == 'de' -%}
+    {%- if lang == 'fr' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'Aucun lieu choisi. Ouvre les réglages et choisis-en un.' -%}
+        {%- assign error_headline = 'Aucun lieu choisi' -%}
+      {%- else -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Impossible de récupérer la météo. Réessaie plus tard.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Impossible de charger les prévisions. Réessaie plus tard.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Météo illisible' -%}
+      {%- endif -%}
+    {%- elsif lang == 'de' -%}
       {%- if error_key == 'error_location' -%}
         {%- assign error_message = 'Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.' -%}
         {%- assign error_headline = 'Kein Ort eingestellt' -%}
