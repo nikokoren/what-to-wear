@@ -36,6 +36,18 @@ plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
 before, so they arrive a family at a time: steady days (round 17,
 `review/rounds/make_round17.py`), then layers, then rain.
 
+### Error screen wording (owner, October 2026)
+
+When the weather can't be loaded, say it will try again on its own:
+"Weather data couldn't be loaded. We'll try again with the next
+refresh." German uses TRMNL's own word for a refresh, „Aktualisierung“
+(as in the device settings): „Wetterdaten konnten nicht geladen werden.
+Wir versuchen es bei der nächsten Aktualisierung erneut.“ French to
+match. The places: `ui.error_current` / `ui.error_hourly` (and the short
+headlines) in `lang/*.json`, and the built-in fallback copies in
+`src/shared.liquid` (the error-screen block, en/de/fr). The location
+error stays as it is: that one needs the reader to act.
+
 ### French, as 2.1 (owner, October 2026)
 
 France only. The plumbing is in (base strings in `lang/fr.json`: errors,
