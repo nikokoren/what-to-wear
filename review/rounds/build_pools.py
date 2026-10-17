@@ -103,6 +103,13 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    # Round 20 edits. The first-snow line: the screen can't know when it
+    # last snowed, so it's limited to the months the first snow comes in.
+    "Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters.": "{M:10,11,12}Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters.",
+    "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch Mühsam.": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch mühsam.",
+    "Rain {WHENP} is possible but not likely. The umbrella's up to you. || I'd said 'not likely'. But i'm not the one dealing with the consequences.": "Rain {WHENP} is possible but not likely. The umbrella's up to you. || I said 'not likely'. But I'm not the one dealing with the consequences.",
+    "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not' but i don't have to deal with the consequences.": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
+    "Jetzt noch frisch, {WHEN} ist warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.": "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
     # Round 19 edits.
     "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. Nut that’s easy for me to say. I don’t freeze.": "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze.",
     # Round 18 edits.

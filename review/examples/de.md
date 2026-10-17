@@ -255,6 +255,10 @@ Do not edit by hand; vote on the page instead.
 
 - {WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. Behalt den Schirm bei dir.
 
+## p_wet_again · dry
+
+- Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Dazwischen weiß keiner, wohin mit dem nassen Ding.
+
 ## p_wet_again_snow · plain
 
 - Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien.
@@ -301,6 +305,11 @@ Do not edit by hand; vote on the page instead.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 - {WHENP} könnte es regnen, ein Schirm schadet nicht.
+
+## p_wetter_maybe · sarcastic
+
+- {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.
+- {WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.
 
 ## p_wetter_maybe_ice · plain
 

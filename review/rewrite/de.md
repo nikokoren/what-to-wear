@@ -180,3 +180,42 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-de-cc365bc6fcc4` (2026-10-days)
+
+## unit_11.arc_warmer
+
+- **Out:** {WHEN} {GV} weg, und dabei bleibt's dann für heute. || Hab ich dir gern gesagt. Kommt nicht wieder vor.
+  **Wanted instead:** what is that supposed to mean?
+  **Tags:** unclear
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at 11: the forecast sentence and its joke as one. The jacket comes off and stays off: the evening is still warmer than now. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-de-4de4491b7041` (2026-10-gaps)
+
+## unit_11.c_relief
+
+- **Out:** {WHEN} wird's angenehmer, aber es bleibt warm. || Ich hab heute so oft „Hitze“ gesagt, ich kann's nicht mehr hören.
+  **Wanted instead:** joke does not make sense
+  **Tags:** not funny, unclear
+  **On screen:** drawing heat_dry
+  **What it's for:** New at 11: the forecast sentence and its joke as one. The heat breaks, but it stays warm. Nothing to bring. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-de-70a00d2ede54` (2026-10-gaps)
+
+## unit_11.p_drier_snow
+
+- **Out:** {WHENSTOP} hört's auf zu schneien. || Dann sieht man wieder, wer seinen Gehweg nicht geräumt hat.
+  **Wanted instead:** how is that funny?
+  **Tags:** not funny, unclear
+  **On screen:** drawing coat_snow
+  **What it's for:** New at 11: the forecast sentence and its joke as one. Snowing now, stops later. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-de-195a875a40f8` (2026-10-gaps)
+- **Out:** Der Schneefall hört {WHENSTOP} auf. || Von oben kommt dann nichts mehr. Vom Dach schon noch.
+  **Wanted instead:** no flow, not funny
+  **Tags:** not funny
+  **On screen:** drawing coat_snow
+  **What it's for:** New at 11: the forecast sentence and its joke as one. Snowing now, stops later. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-de-2e8b7d7f17bb` (2026-10-gaps)
+- **Out:** Es schneit noch eine Weile, dann hört's auf. || Weiß bleibt's genau bis zum ersten Hund.
+  **Wanted instead:** no good rythm.
+  **Tags:** not funny, robotic
+  **On screen:** drawing coat_snow
+  **What it's for:** New at 11: the forecast sentence and its joke as one. Snowing now, stops later. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-de-6932d36dbf96` (2026-10-gaps)

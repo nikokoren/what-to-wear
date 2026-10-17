@@ -11393,6 +11393,533 @@
   "edit": "",
   "updatedAt": "2026-10-15T20:09:16.214Z"
  },
+ "gp-de-01dc31081d6b": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der neue deckt wenigstens den grauen Matsch von vorhin zu.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:59:12.624Z"
+ },
+ "gp-de-0750ef9f6cee": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "Der Regen macht später eine Pause, {WHENP} kommt er zurück. || In der Pause sagt garantiert einer: „Na also.“",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:24:45.672Z"
+ },
+ "gp-de-0fb971340ee6": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Der hilft heute bis zur Hüfte. Darunter bist du auf dich gestellt.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:24:30.239Z"
+ },
+ "gp-de-0ffd7fcc9707": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist Arbeit.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch Mühsam.",
+  "updatedAt": "2026-10-17T09:25:48.658Z"
+ },
+ "gp-de-162d2b3caa37": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber wieder. || Geräumt wird trotzdem nur einmal. Nämlich gar nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:25:53.739Z"
+ },
+ "gp-de-17d8f360f50a": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Zweimal hab ich's angesagt. Das dritte Mal kostet extra.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:26:21.222Z"
+ },
+ "gp-de-195a875a40f8": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "{WHENSTOP} hört's auf zu schneien. || Dann sieht man wieder, wer seinen Gehweg nicht geräumt hat.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-gaps",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "how is that funny?",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:23:37.739Z"
+ },
+ "gp-de-2608004bd290": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-gaps",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:35:08.826Z"
+ },
+ "gp-de-2e8b7d7f17bb": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "Der Schneefall hört {WHENSTOP} auf. || Von oben kommt dann nichts mehr. Vom Dach schon noch.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-gaps",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "no flow, not funny",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:23:53.388Z"
+ },
+ "gp-de-3168c72ccc8e": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Das Beste, was ich heute zu sagen hab. Danach wird's langweilig.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:43:16.526Z"
+ },
+ "gp-de-3666f60da34d": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Reicht für einen Weg. Für den Rückweg nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:24:52.005Z"
+ },
+ "gp-de-3ff2804e8198": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Trocken wird er heute jedenfalls nicht mehr.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Trocken wird er heute auf jeden Fall nicht mehr.",
+  "updatedAt": "2026-10-17T09:25:11.423Z"
+ },
+ "gp-de-4de4491b7041": {
+  "level": "11",
+  "key": "arc_warmer",
+  "path": "unit_11.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Hab ich dir gern gesagt. Kommt nicht wieder vor.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-gaps",
+  "verdict": "rewrite",
+  "tags": [
+   "unclear"
+  ],
+  "note": "what is that supposed to mean?",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:22:03.156Z"
+ },
+ "gp-de-52ca77090d3e": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. || Wer sagt, das zieht schnell durch, lügt.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:34:54.643Z"
+ },
+ "gp-de-5b57f74a91fe": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "Der Schnee macht später eine Pause, {WHENP} schneit's wieder. || Der Winterdienst räumt dann umsonst. Weiß er nur noch nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:59:28.541Z"
+ },
+ "gp-de-5c0c45d75549": {
+  "level": "10",
+  "key": "p_wet_again",
+  "path": "unit_10.p_wet_again[+]",
+  "text": "Später hört der Regen eine Weile auf, {WHENP} geht's wieder los. || Auf dem Regenradar sieht die Lücke immer länger aus.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:44:17.610Z"
+ },
+ "gp-de-6932d36dbf96": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "Es schneit noch eine Weile, dann hört's auf. || Weiß bleibt's genau bis zum ersten Hund.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-gaps",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "robotic"
+  ],
+  "note": "no good rythm.",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:24:15.556Z"
+ },
+ "gp-de-70a00d2ede54": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Ich hab heute so oft „Hitze“ gesagt, ich kann's nicht mehr hören.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-10-gaps",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "joke does not make sense",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:22:30.389Z"
+ },
+ "gp-de-83613183a1f1": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Die Uhrzeit ist geschätzt. Beschwerden bitte an den Himmel.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:22:44.072Z"
+ },
+ "gp-de-92fc801fe67a": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "Nimm den Schirm mit, der Regen hört erst später auf. || Danach trägst du ihn nass durch die Gegend. Gern geschehen.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Nimm den Schirm mit, der Regen hört erst später auf. || Danach trägst du ihn nass durch die Gegend. Wunderbar.",
+  "updatedAt": "2026-10-17T09:23:03.041Z"
+ },
+ "gp-de-9746fccb9708": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_maybe",
+  "round": "2026-10-gaps",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:35:14.160Z"
+ },
+ "gp-de-9df46fd57d4b": {
+  "level": "10",
+  "key": "c_relief",
+  "path": "unit_10.c_relief[+]",
+  "text": "Die Hitze lässt {WHEN} nach, aber es bleibt warm. || Der Ventilator darf trotzdem noch nicht in Rente.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:43:42.593Z"
+ },
+ "gp-de-9e57a2ae4168": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Ab da bin ich eigentlich überflüssig. Ich bleib trotzdem an.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Ab da bin ich eigentlich überflüssig. Ich bleib trotzdem.",
+  "updatedAt": "2026-10-17T09:43:37.094Z"
+ },
+ "gp-de-a07329faa83e": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "Noch schneit's, aber später hört es auf. || Die Freude über Schnee hält eh keine Stunde. Passt also.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:24:23.422Z"
+ },
+ "gp-de-b3ec2ed84575": {
+  "level": "10",
+  "key": "p_wet_again",
+  "path": "unit_10.p_wet_again[+]",
+  "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Dazwischen weiß keiner, wohin mit dem nassen Ding.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-gaps",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:59:03.190Z"
+ },
+ "gp-de-ba35dd247d09": {
+  "level": "10",
+  "key": "p_drier_snow",
+  "path": "unit_10.p_drier_snow[+]",
+  "text": "Der Schnee hört später auf. || Die Salzränder an den Schuhen bleiben bis März.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:43:59.193Z"
+ },
+ "gp-de-c2638ec1a388": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "Eine Regenpause gibt's heute nicht, nimm den Schirm mit. || Grau in grau. Du fällst heute also gar nicht auf.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-10-gaps",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:24:40.572Z"
+ },
+ "gp-de-c2c6c3e787d9": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Wenn's warm ist, glaubt man so was nie.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Wenn's warm ist, glaubst du mir sowas nie.",
+  "updatedAt": "2026-10-17T09:42:50.045Z"
+ },
+ "gp-de-d9db02879bda": {
+  "level": "10",
+  "key": "p_drier_snow",
+  "path": "unit_10.p_drier_snow[+]",
+  "text": "Später wird's trocken, bis dahin schneit's. || In den Nachrichten bleibt's trotzdem noch drei Tage das Thema.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:44:11.760Z"
+ },
+ "gp-de-daabf7d6224d": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:34:43.760Z"
+ },
+ "gp-de-e5b5f9cddbf2": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder und noch eine Schicht. || Hier drin bleibt's gleich. Nur so als Angebot.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder und noch eine Schicht. || Hier drin bleibt's gemütlich. Nur so als Info.",
+  "updatedAt": "2026-10-17T09:43:08.244Z"
+ },
+ "gp-de-e7856b27113a": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Aprilwetter. Egal, was der Kalender sagt.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:25:18.740Z"
+ },
+ "gp-de-eb3e167e0b8e": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "Jetzt noch frisch, {WHEN} ist Shorts-Wetter. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Jetzt noch frisch, {WHEN} ist warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
+  "updatedAt": "2026-10-17T10:00:11.109Z"
+ },
+ "gp-de-ecc87989bd2a": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Den Rest vom Tag kannst du abhaken. Viel verpasst du nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:35:03.393Z"
+ },
+ "gp-de-f78f482b43af": {
+  "level": "10",
+  "key": "c_relief",
+  "path": "unit_10.c_relief[+]",
+  "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Gut. Den ganzen Tag „heiß“ ansagen strengt auch mich an.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-10-gaps",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T09:43:53.609Z"
+ },
  "ly-de-01eb79cae210": {
   "level": "10",
   "key": "c_coat",

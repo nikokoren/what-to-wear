@@ -970,7 +970,8 @@
     ],
     "w_scarf": [
       "The hat, scarf and gloves can come off {WHEN}. || That's three things to lose instead of one. Good luck.",
-      "{WHEN} it's mild enough to lose the hat, scarf and gloves. || 'Mild'. You'll be calling it practically spring."
+      "{WHEN} it's mild enough to lose the hat, scarf and gloves. || 'Mild'. You'll be calling it practically spring.",
+      "You can take off the hat, scarf and gloves {WHEN}. || The coat stays. Let's not get carried away."
     ],
     "w_coat": [
       "The winter coat can come off {WHEN}. || Then you carry it. It weighs about as much as a small child.",
@@ -1013,7 +1014,8 @@
       "It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze."
     ],
     "p_wetter": [
-      "There's a short shower {WHENP}. Have the umbrella with you. || It'll be over just as you get it open."
+      "There's a short shower {WHENP}. Have the umbrella with you. || It'll be over just as you get it open.",
+      "Bring the umbrella. There's a shower {WHENP}. || Hours of carrying for minutes of use. Still a good deal."
     ],
     "p_wetter_long": [
       "{WHENP} the rain sets in for good. Bring the umbrella. || 'For good' meaning today. I don't do forever.",
@@ -1022,14 +1024,19 @@
     ],
     "p_stays_wet": [
       "It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.",
-      "Take the umbrella. The rain keeps going all day. || I'd sing about it, but I don't do sound. Lucky you."
+      "Take the umbrella. The rain keeps going all day. || I'd sing about it, but I don't do sound. Lucky you.",
+      "It rains all day, so bring the umbrella. || The kind of day you put the lights on at noon."
     ],
     "p_wetter_maybe": [
       "It might rain {WHENP}, so an umbrella wouldn't hurt. || Carrying it all day might, actually.",
-      "It could rain {WHENP}. Take the umbrella to be safe. || It's a small chance. Small chances have soaked better people."
+      "It could rain {WHENP}. Take the umbrella to be safe. || It's a small chance. Small chances have soaked better people.",
+      "Rain {WHENP} is possible but not likely. The umbrella's up to you. || I said 'not likely'. But I'm not the one dealing with the consequences.",
+      "It might rain {WHENP}, so an umbrella wouldn't hurt. || Low odds. I'd take that bet, but I won't get wet either way."
     ],
     "p_snow_coming": [
-      "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud."
+      "Snow starts {WHENP}. || Five centimetres and everyone forgets how to drive.",
+      "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.",
+      "{M:10,11,12}Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters."
     ],
     "p_stays_wet_snow": [
       "It snows all day. || The novelty lasts about an hour.",
@@ -1046,6 +1053,13 @@
     ],
     "arc_colder": [
       "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || On top, not instead. I know you."
+    ],
+    "p_drier": [
+      "The rain stops {WHENSTOP}, but you'll want the umbrella before that. || That's all the good news that I have for today."
+    ],
+    "p_wet_again": [
+      "The rain pauses later, but it's back {WHENP}. Keep the umbrella. || Weather like this is why rooms were invented.",
+      "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || I saw round two coming. It's my one job."
     ]
   },
   "units_11": {
@@ -1121,7 +1135,10 @@
       "It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps will give you away."
     ],
     "w_scarf": [
-      "It warms up {WHEN}, so the hat, scarf and gloves can come off. || Today you're a coat rack with legs. Well done."
+      "It warms up {WHEN}, so the hat, scarf and gloves can come off. || Today you're a coat rack with legs. Well done.",
+      "The hat, scarf and gloves can come off {WHEN}. || You can hear people again. Not always an improvement.",
+      "The hat, scarf and gloves can come off {WHEN}. || A very modest striptease. The coat stays on, thank goodness.",
+      "{WHEN} you won't need the hat, scarf and gloves any more. || That's as much good news as winter is allowed to give."
     ],
     "w_coat": [
       "The winter coat can come off {WHEN}. || You'll overheat a little before you admit I was right.",
@@ -1169,7 +1186,8 @@
     ],
     "p_wetter_long": [
       "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || It has more stamina than you. Most things do.",
-      "Rain arrives {WHENP} and stays, so take the umbrella. || Staying in was your plan anyway. Now you have a reason."
+      "Rain arrives {WHENP} and stays, so take the umbrella. || Staying in was your plan anyway. Now you have a reason.",
+      "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life."
     ],
     "p_stays_wet": [
       "It rains all day, so bring the umbrella. || All day. So no, waiting ten minutes won't help."
@@ -1179,11 +1197,34 @@
     ],
     "p_snow_coming": [
       "Expect snow {WHENP}. || You'll be surprised anyway.",
-      "Snow moves in {WHENP}. || Finally, a reason to cancel the plans you were dreading."
+      "Snow moves in {WHENP}. || Finally, a reason to cancel the plans you were dreading.",
+      "{WHENP} it starts to snow. || Every sled in the neighbourhood just got its hopes up."
     ],
     "p_stays_wet_snow": [
       "{M:01,02,03}It snows all day. || You stopped finding it pretty about two snowfalls ago.",
-      "There's no break in the snow today. || Not even for you."
+      "There's no break in the snow today. || Not even for you.",
+      "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day."
+    ],
+    "p_wetter": [
+      "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop, pretending to browse.",
+      "Bring the umbrella. There's a shower {WHENP}. || Not enough rain to fill a puddle. Plenty to fill a shoe."
+    ],
+    "p_wetter_maybe": [
+      "There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || Your small umbrella exists for exactly this forecast.",
+      "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
+      "Rain is possible {WHENP}, so maybe take the umbrella. || I've done my bit. Now it's you versus the clouds."
+    ],
+    "p_wet_again": [
+      "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something."
+    ],
+    "p_drier_snow": [
+      "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in about a day.",
+      "It stops snowing later. || After that, the snow has nothing to do but get in the way."
+    ],
+    "p_wet_again_snow": [
+      "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
+      "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow.",
+      "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the gritters can feel useful."
     ]
   }
 }

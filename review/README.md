@@ -460,6 +460,14 @@ a critic (`2026-10-gaps/critic.md`) that cut them to one more than
 needed per slot, or fewer when the rest were weak (`<lang>.json`: en 57,
 de 35).
 
+Result: 45 of 92 kept (en 27 of 57, de 18 of 35), about round 19's rate.
+The critic cut the volume, not the miss rate. The brief's "everyday
+truths" turned into gentle observation with no bite ("Then every car
+wears a white hat for a few days.", the owner: "where's the sarcasm?"),
+and several German jokes needed explaining („Was soll das heißen?“, "no
+flow"). The owner's edits pulled jokes back to the screen's own stake
+("…but I'm not the one dealing with the consequences.").
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude

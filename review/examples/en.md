@@ -231,6 +231,10 @@ Do not edit by hand; vote on the page instead.
 - Snow starts {WHENP}.
 - There's snow on the way {WHENP}.
 
+## p_snow_coming · dry
+
+- Snow starts {WHENP}. || Five centimetres and everyone forgets how to drive.
+
 ## p_stays_wet · plain
 
 - It rains all day, so bring the umbrella.
@@ -257,6 +261,10 @@ Do not edit by hand; vote on the page instead.
 - The rain pauses later but picks up again {WHENP}, so don't put the umbrella away.
 - The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you.
 - The rain takes a break, then comes back this afternoon. Keep the umbrella.
+
+## p_wet_again · dry
+
+- The rain pauses later, but it's back {WHENP}. Keep the umbrella. || Weather like this is why rooms were invented.
 
 ## p_wet_again_snow · plain
 

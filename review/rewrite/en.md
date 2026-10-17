@@ -218,6 +218,15 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-f73dc8201cb3` (2026-10-days)
 
+## unit_10.arc_colder
+
+- **Out:** {G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Evenings look warmer from inside. I go by numbers.
+  **Wanted instead:** help me fine tune that
+  **Tags:** unclear
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. The jacket comes off; the evening is colder than now: jacket back, plus a layer. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-en-bf510372ab64` (2026-10-gaps)
+
 ## unit_10.p_stays_wet
 
 - **Out:** It rains all day, so bring the umbrella. || The washing stays in today. So do I, but that's normal.
@@ -233,3 +242,12 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_rain
   **What it's for:** New at On: the forecast sentence and its joke as one. Raining now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.
   **Answers:** `rn-en-75a234f78093` (2026-10-rain)
+
+## unit_10.p_wetter
+
+- **Out:** There's a short shower {WHENP}. Have the umbrella with you. || Short showers are the ones nobody takes an umbrella for.
+  **Wanted instead:** whe'res the sarcsm?
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `gp-en-ea0278e5987e` (2026-10-gaps)
