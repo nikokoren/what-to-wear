@@ -344,6 +344,7 @@ UNITS = "2026-10-units"
 LAYERS = "2026-10-layers"  # round 18: units for the layer days
 RAIN = "2026-10-rain"  # round 19: units for rain and snow, and top-ups
 GAPS = "2026-10-gaps"  # round 20: the slots still under three units
+TOPICS = "2026-10-topics"  # round 21: fresh topics, US English rewrites
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -583,6 +584,12 @@ def main():
         gaps = apply_follow(doc, lang, decisions, GAPS)
         if gaps:
             print(f"{lang} round 20 (units): " + ", ".join(f"{v} {k}" for k, v in gaps.items()))
+        topics = apply_follow(doc, lang, decisions, TOPICS)
+        if topics:
+            print(f"{lang} round 21: " + ", ".join(f"{v} {k}" for k, v in topics.items()))
+        replaced = apply_replaces(doc, lang, decisions, TOPICS)
+        if replaced:
+            print(f"{lang} round 21: {replaced} lines replaced by their rewrites")
         for level in ("10", "11"):
             if not doc[f"units_{level}"]:
                 del doc[f"units_{level}"]
@@ -601,10 +608,34 @@ def main():
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def apply_replaces(doc, lang, decisions, rnd):
+    """A kept rewrite ("replaces" in the round file) takes the old line out."""
+    path = REPO / "review" / "rounds" / f"{rnd}.json"
+    if not path.exists():
+        return 0
+    rows = {(r["lang"], r["text"]): r for r in json.loads(path.read_text(encoding="utf-8"))["lines"] if r.get("replaces")}
+    done = 0
+    for d in decisions.values():
+        row = rows.get((lang, d.get("text")))
+        if d.get("round") != rnd or not row or d.get("verdict") not in ("star", "keep"):
+            continue
+        section, key = row["path"].split("[")[0].split(".", 1)
+        section = section.replace("unit_", "units_")
+        pool = doc.get(section, {}).get(key, [])
+        if row["replaces"] in pool:
+            pool.remove(row["replaces"])
+            done += 1
+    return done
+
+
 # Words the owner wants changed in every line, now and in later rounds
 # (round 17): the screen's spot in the home is "room" in English, never a
-# hallway. Applied last, so lines from any round pick it up.
-WORDS = {"en": [("hallway", "room")]}
+# hallway; and US English. Applied last, so lines from any round pick it up.
+WORDS = {"en": [("hallway", "room"),
+               # US English (owner, October 2026): spelling and words.
+               ("colour", "color"), ("grey", "gray"), ("humour", "humor"), ("favourite", "favorite"),
+               ("neighbourhood", "neighborhood"), ("practise", "practice"),
+               ("pavements", "sidewalks"), ("pavement", "sidewalk")]}
 
 
 def apply_words(doc, lang):

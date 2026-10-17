@@ -50,6 +50,46 @@ RAIN_HINT = "After a temperature sentence on a day that also changes"
 LABELS = {"en": ("Now", "from noon", "from 6 pm"), "de": ("Jetzt", "ab Mittag", "ab 18 Uhr")}
 
 
+def unit_row(lang, item, doc, base):
+    """A unit's row as the review page shows it."""
+    facts = doc["facts"]
+    text = item["text"].strip()
+    section, key = item["path"].split(".")
+    level = section.rsplit("_", 1)[1]
+    sprite, _, meaning = r17.EXTRA.get(key) or r14.FACT_CTX[key]
+    fact, _, joke = text.partition(" || ")
+    allowed = set(re.findall(r"\{[A-Z0-9]+\}", " ".join(facts.get(key, [])))) | {"{GP}", "{G}"}
+    extra = set(re.findall(r"\{[A-Z0-9]+\}", text)) - allowed
+    if extra:
+        raise SystemExit(f"{lang} {key}: placeholder {sorted(extra)} not allowed here: {text}")
+    row = {"lang": lang, "path": item["path"], "text": text, "role": "unit", "new": True,
+           "sprite": sprite, "fills": r8.fills(lang, text, base, facts),
+           "fillsAlt": r8.fills(lang, text, base, facts, alt=True),
+           "batch": f"Unit: {key}",
+           "meaning": f"New at {r13.LEVEL[level]}: the forecast sentence and its joke as one. {meaning} "
+                      "Shows under the written forecast, with or without What to Wear Next's drawings above."}
+    hints = [] if joke else ["One sentence, no second line"]
+    if key.startswith("p_"):
+        hints.append(RAIN_HINT)
+        if "{WHENSTOP}" in text:
+            hints.append("Says when it stops; only shows when there's a stop time")
+    if key in PANELS:
+        row["panels"] = [{"sprite": s, "label": LABELS[lang][i]} for i, s in enumerate(PANELS[key])]
+        hints.append("Also shows without the drawings")
+        missing = [p for p in re.findall(r"\{[A-Z0-9]+\}", facts[key][0]) if p not in fact]
+        if missing:
+            hints.append("Leaves out " + ", ".join(missing))
+    if item.get("months"):
+        row["months"] = item["months"]
+        hints.append("Seasonal: only " + r13.months_named(item["months"]))
+    if item.get("answers"):
+        row["answers"] = item["answers"]
+        hints.append("Answers a “Write new”")
+    if hints:
+        row["hint"] = " · ".join(hints)
+    return row
+
+
 def main(rnd=ROUND, prefix="ly"):
     if r13.voted_already(rnd):
         raise SystemExit(f"{rnd} has votes; not rebuilding it")
@@ -66,39 +106,7 @@ def main(rnd=ROUND, prefix="ly"):
                 print(f"  {lang} skipped, already there: {text}")
                 continue
             seen.add(text)
-            section, key = item["path"].split(".")
-            level = section.rsplit("_", 1)[1]
-            sprite, _, meaning = r17.EXTRA.get(key) or r14.FACT_CTX[key]
-            fact, _, joke = text.partition(" || ")
-            allowed = set(re.findall(r"\{[A-Z0-9]+\}", " ".join(facts.get(key, [])))) | {"{GP}", "{G}"}
-            extra = set(re.findall(r"\{[A-Z0-9]+\}", text)) - allowed
-            if extra:
-                raise SystemExit(f"{lang} {key}: placeholder {sorted(extra)} not allowed here: {text}")
-            row = {"lang": lang, "path": item["path"], "text": text, "role": "unit", "new": True,
-                   "sprite": sprite, "fills": r8.fills(lang, text, base, facts),
-                   "fillsAlt": r8.fills(lang, text, base, facts, alt=True),
-                   "batch": f"Unit: {key}",
-                   "meaning": f"New at {r13.LEVEL[level]}: the forecast sentence and its joke as one. {meaning} "
-                              "Shows under the written forecast, with or without What to Wear Next's drawings above."}
-            hints = [] if joke else ["One sentence, no second line"]
-            if key.startswith("p_"):
-                hints.append(RAIN_HINT)
-                if "{WHENSTOP}" in text:
-                    hints.append("Says when it stops; only shows when there's a stop time")
-            if key in PANELS:
-                row["panels"] = [{"sprite": s, "label": LABELS[lang][i]} for i, s in enumerate(PANELS[key])]
-                hints.append("Also shows without the drawings")
-                missing = [p for p in re.findall(r"\{[A-Z0-9]+\}", facts[key][0]) if p not in fact]
-                if missing:
-                    hints.append("Leaves out " + ", ".join(missing))
-            if item.get("months"):
-                row["months"] = item["months"]
-                hints.append("Seasonal: only " + r13.months_named(item["months"]))
-            if item.get("answers"):
-                row["answers"] = item["answers"]
-                hints.append("Answers a “Write new”")
-            if hints:
-                row["hint"] = " · ".join(hints)
+            row = unit_row(lang, item, doc, base)
             lines.append(row)
     out = {"round": rnd, "idPrefix": prefix, "lines": lines}
     path = HERE / f"{rnd}.json"

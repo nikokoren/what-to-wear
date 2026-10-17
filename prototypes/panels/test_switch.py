@@ -327,10 +327,12 @@ for date, hour, tz, want in (("2026-10-19", 8, "Europe/Vienna", "monday"), ("202
                              ("2026-10-23", 14, "Europe/Vienna", "friday"), ("2026-10-25", 10, "Europe/Vienna", "dst_fall"),
                              ("2027-03-29", 8, "Europe/Vienna", "dst_spring"), ("2026-11-02", 8, "America/Denver", "dst_fall"),
                              ("2026-11-02", 8, "America/Phoenix", "monday"), ("2028-03-12", 10, "America/New_York", "dst_spring"),
-                             ("2027-06-21", 10, "Europe/Vienna", "longest")):
+                             ("2027-06-21", 10, "Europe/Vienna", "longest"), ("2027-05-12", 10, "Europe/Vienna", "eisheilige"),
+                             ("2027-05-16", 10, "Europe/Vienna", "")):
     expect(f"special day {date} {hour}:30 {tz}: {want or 'none'}", day_key(date, hour, tz) == want)
 expect("Pi Day and the US clock change on one day (14 March 2027): the theme wins",
        day_key("2027-03-14", 10, "America/New_York") == "")
+expect("no Eisheilige south of the equator", day_key("2027-05-12", 10, "Australia/Sydney", -33.9) == "")
 expect("the longest day in Sydney is the shortest", day_key("2027-06-21", 10, "Australia/Sydney", -33.9) == "shortest")
 
 # Units (owner, October 2026): with sarcasm on, a forecast sentence and its

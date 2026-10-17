@@ -40,6 +40,7 @@ DAY_CTX = {
     "day_dst_spring": "the Sunday the clocks go forward, and the Monday after",
     "day_dst_fall": "the Sunday the clocks go back, and the Monday after",
     "day_longest": "the longest day of the year", "day_shortest": "the shortest day of the year",
+    "day_eisheilige": "die Eisheiligen, 11 to 15 May: the last frost risk, gardeners wait to plant",
 }
 
 

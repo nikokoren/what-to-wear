@@ -272,15 +272,18 @@
       "Drink water often and stay in the shade. Today's heat is dangerous, especially at midday."
     ],
     "p_wetter_ice": [
-      "Freezing rain {WHENP} makes roads and pavements icy. Take the umbrella and watch your step.",
-      "Take the umbrella. Freezing rain {WHENP} makes the pavements icy, so walk carefully.",
-      "{WHENP} there's freezing rain and the roads turn icy. Bring the umbrella and take it slowly."
+      "Freezing rain {WHENP} makes roads and sidewalks icy. Take the umbrella and watch your step.",
+      "Take the umbrella. Freezing rain {WHENP} makes the sidewalks icy, so walk carefully.",
+      "{WHENP} there's freezing rain and the roads turn icy. Bring the umbrella and take it slowly.",
+      "Take the umbrella. Freezing rain {WHENP} makes the sidewalks icy, so walk carefully."
     ],
     "p_wetter_long_ice": [
+      "Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.",
       "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.",
-      "Freezing rain begins {WHENP} and doesn't stop. Expect icy pavements and take the umbrella.",
+      "Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.",
       "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.",
-      "Freezing rain sets in {WHENP} and stays, so roads and pavements may be icy. Walk carefully."
+      "Freezing rain sets in {WHENP} and stays, so roads and sidewalks may be icy. Walk carefully.",
+      "Freezing rain sets in {WHENP} and stays, so roads and sidewalks may be icy. Walk carefully."
     ],
     "p_wetter_maybe_ice": [
       "Freezing rain is possible {WHENP}. If it comes, it gets icy, so take the umbrella.",
@@ -288,22 +291,28 @@
       "Freezing rain could come {WHENP}, and with it ice. Take the umbrella to be safe."
     ],
     "p_stays_wet_ice": [
-      "Freezing rain all day, and the roads and pavements may be icy. Take the umbrella and go slowly.",
-      "It's freezing rain all day, so the pavements stay icy. Walk carefully and keep the umbrella with you.",
-      "The freezing rain keeps going all day and leaves ice everywhere. Bring the umbrella and go slowly."
+      "Freezing rain all day, and the roads and sidewalks may be icy. Take the umbrella and go slowly.",
+      "It's freezing rain all day, so the sidewalks stay icy. Walk carefully and keep the umbrella with you.",
+      "The freezing rain keeps going all day and leaves ice everywhere. Bring the umbrella and go slowly.",
+      "It's freezing rain all day, so the sidewalks stay icy. Walk carefully and keep the umbrella with you."
     ],
     "p_drier_ice": [
       "The freezing rain stops later, but the ice stays. Take the umbrella for now and watch your step.",
-      "Take the umbrella for now. The freezing rain stops later, but the pavements stay icy.",
+      "Take the umbrella for now. The freezing rain stops later, but the sidewalks stay icy.",
       "Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully.",
-      "The freezing rain stops {WHENSTOP}, but pavements may stay icy.",
-      "The freezing rain stops {WHENSTOP}. Roads and pavements may stay icy, so walk carefully."
+      "The freezing rain stops {WHENSTOP}, but sidewalks may stay icy.",
+      "The freezing rain stops {WHENSTOP}. Roads and sidewalks may stay icy, so walk carefully.",
+      "Take the umbrella for now. The freezing rain stops later, but the sidewalks stay icy.",
+      "The freezing rain stops {WHENSTOP}, but sidewalks may stay icy.",
+      "The freezing rain stops {WHENSTOP}. Roads and sidewalks may stay icy, so walk carefully."
     ],
     "p_wet_again_ice": [
       "The freezing rain stops for a while, then comes back {WHENP}. Expect ice and keep the umbrella with you.",
       "Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and mind the ice.",
-      "The freezing rain pauses later and returns {WHENP}. The pavements may stay icy, so keep the umbrella and go slowly.",
-      "The freezing rain stops {WHENSTOP} and returns {WHENP}. Pavements may be icy all day, so walk carefully."
+      "The freezing rain pauses later and returns {WHENP}. The sidewalks may stay icy, so keep the umbrella and go slowly.",
+      "The freezing rain stops {WHENSTOP} and returns {WHENP}. Sidewalks may be icy all day, so walk carefully.",
+      "The freezing rain pauses later and returns {WHENP}. The sidewalks may stay icy, so keep the umbrella and go slowly.",
+      "The freezing rain stops {WHENSTOP} and returns {WHENP}. Sidewalks may be icy all day, so walk carefully."
     ],
     "p_wetter_storm": [
       "There's a thunderstorm {WHENP}. Take the umbrella, and head indoors while it thunders.",
@@ -349,7 +358,7 @@
       "{W:hoodie}Try not to get stuck halfway, arms up. I can't come and help."
     ],
     "rain": [
-      "Rain or not, my humour stays bone dry.",
+      "Rain or not, my humor stays bone dry.",
       "Bring it back, too. I'm keeping count.",
       "Then be smug at everyone sheltering in doorways. You learned that from me.",
       "Open it outside, please. I can't afford the bad luck."
@@ -501,7 +510,7 @@
       "{W:jacket,coat,hoodie,scarf}You'll announce 'it's actually warm' to people who are also outside."
     ],
     "on": [
-      "Alternatively you can practise your 'I'm not cold' face for later.",
+      "Alternatively you can practice your 'I'm not cold' face for later.",
       "Carrying a layer you don't need yet. How very grown-up.",
       "Leave {GP} behind and you'll think of me later. Not fondly.",
       "You'll put {GP} on later and act like it was your idea.",
@@ -574,12 +583,12 @@
     ],
     "shorts": [
       "You'll spend the first hour explaining your legs.",
-      "Your legs will go a lovely blotchy colour. Briefly.",
+      "Your legs will go a lovely blotchy color. Briefly.",
       "You'll doubt me for the first hour. Then you won't admit I was right.",
       "Very PE teacher of you. Still the right call."
     ],
     "pants": [
-      "Check another app if you like. It'll say the same thing, in colour.",
+      "Check another app if you like. It'll say the same thing, in color.",
       "You'll want to argue. Your legs will side with me later.",
       "Later you'll say 'where did that come from?' From here. This morning."
     ],
@@ -723,10 +732,10 @@
       "Weather this nice makes my job easy. I'll still act busy."
     ],
     "cold": [
-      "I was grey before winter made it cool.",
+      "I was gray before winter made it cool.",
       "I'm staying in here where it's warm.",
       "My only weakness is the cold. Kidding, I don't have one.",
-      "Grey was my look long before winter tried it.",
+      "Gray was my look long before winter tried it.",
       "My battery hates the cold too. We're bonding.",
       "I'd lend you some warmth, but I run cool on principle.",
       "Someone's scraping ice off a car with a credit card. Best use it's had all month.",
@@ -816,7 +825,7 @@
       "Reading this slowly won't make it any warmer.",
       "The cold will make you go twice your usual walking speed today. Still not exercise.",
       "You'll say it's not that cold. Your face will disagree.",
-      "Your nose will turn a colour I can't even display.",
+      "Your nose will turn a color I can't even display.",
       "That coat up there? Wear it. I worked hard on it.",
       "You'll walk twice as fast today. Still not cardio.",
       "'It's not that cold,' you'll say. Your ears won't agree.",
@@ -906,7 +915,7 @@
     "steady": [
       "This outfit is fine all day. || 'Fine' is the highest praise I give.",
       "What you have on is right for the whole day. || Don't let it go to your head.",
-      "Nothing to add or take off all day. || My shortest forecast, and my favourite.",
+      "Nothing to add or take off all day. || My shortest forecast, and my favorite.",
       "What you have on lasts the whole day. || Unlike your phone battery.",
       "No layer to carry today. That means you have both hands free for snacks.",
       "This outfit works all day. || The one forecast I could do in my sleep.",
@@ -934,7 +943,7 @@
       "It doesn't get any warmer today. || Staring at me longer won't change that.",
       "It stays this cold all day. || All day. I checked twice, out of pure spite.",
       "No warming up today. || If the sun shows up, it's purely decorative.",
-      "Expect the cold to last all day. || Your nose will turn a colour I can't even display."
+      "Expect the cold to last all day. || Your nose will turn a color I can't even display."
     ],
     "steady_hot": [
       "The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.",
@@ -1130,7 +1139,7 @@
       "It cools down {WHEN}, so bring a jacket. || Carrying a layer you don't need yet. How very grown-up."
     ],
     "c_hoodie": [
-      "Bring a sweater. It cools down {WHEN}. || Alternatively you can practise your 'I'm not cold' face for later.",
+      "Bring a sweater. It cools down {WHEN}. || Alternatively you can practice your 'I'm not cold' face for later.",
       "Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you won't need for hours. Look at you, prepared.",
       "It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps will give you away."
     ],
@@ -1198,7 +1207,7 @@
     "p_snow_coming": [
       "Expect snow {WHENP}. || You'll be surprised anyway.",
       "Snow moves in {WHENP}. || Finally, a reason to cancel the plans you were dreading.",
-      "{WHENP} it starts to snow. || Every sled in the neighbourhood just got its hopes up."
+      "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up."
     ],
     "p_stays_wet_snow": [
       "{M:01,02,03}It snows all day. || You stopped finding it pretty about two snowfalls ago.",

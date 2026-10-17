@@ -1,0 +1,86 @@
+{
+ "round": "2026-10-topics",
+ "idPrefix": "tp",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "unit_10.p_snow_coming",
+   "text": "Snow starts {WHENP}. || Two inches and everyone forgets how to drive.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "US English",
+   "meaning": "New at On: the forecast sentence and its joke as one. Snow later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from noon"
+    }
+   ],
+   "hint": "US English rewrite of: Five centimetres and everyone forgets how to drive.",
+   "replaces": "Snow starts {WHENP}. || Five centimetres and everyone forgets how to drive."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "US English",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Snowing now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "coat_snow",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from noon"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "US English rewrite of: The break is mainly so the gritters can feel useful.",
+   "replaces": "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the gritters can feel useful."
+  }
+ ]
+}

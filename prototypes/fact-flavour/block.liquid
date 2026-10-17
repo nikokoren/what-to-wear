@@ -182,7 +182,8 @@ current time moves every 15 minutes, so the merge variables change.
   other hour: the clock change (that Sunday and the Monday after; Europe,
   the US and Canada, by the forecast's time zone), the longest and
   shortest day (swapped south of the equator), Monday mornings and Friday
-  afternoons. A theme day wins. Only on a dry day whose weather doesn't
+  afternoons; die Eisheiligen, 11 to 15 May (north only). A theme day
+  wins. Only on a dry day whose weather doesn't
   change and isn't cold or hot (owner, round 17): there the weather's own
   unit has the say. The day's lines were written and voted under "works
   all day", so they come with one fixed forecast sentence that holds at
@@ -229,7 +230,10 @@ current time moves every 15 minutes, so the merge variables change.
         {%- endif -%}
       {%- endif -%}
       {%- if day_key == '' -%}
-        {%- if today_md == '06-21' -%}
+        {%- if today_md >= '05-11' and today_md <= '05-15' and wx_lat >= 0 -%}
+          {%- comment %} Die Eisheiligen (owner, October 2026): the last frost risk, north only. {%- endcomment %}
+          {%- assign day_key = 'eisheilige' -%}
+        {%- elsif today_md == '06-21' -%}
           {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
         {%- elsif today_md == '12-21' -%}
           {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}
