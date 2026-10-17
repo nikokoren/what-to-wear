@@ -290,6 +290,7 @@ TEXTS["en"]["flavour_vf_11"] = saved_vf
 # a wording with the stop time says it; with no dry break in the window
 # (rain all day) such a wording is skipped for one without it.
 saved_facts = TEXTS["en"]["facts"]
+units_saved = TEXTS["en"].pop("units_10", None)  # the plain wordings, not a unit's
 TEXTS["en"]["facts"] = dict(saved_facts, p_drier=["STOPS {WHENSTOP}."], p_stays_wet=["ALL DAY {WHENSTOP}.", "ALL DAY."])
 WET_AM = [90] * 11 + [0] * 13
 html = render(True, feels=STEADY, hour=8, probs=WET_AM, codes=[61] * 11 + [0] * 13)
@@ -297,6 +298,8 @@ expect("rain stopping: the stop time", says(html, r"STOPS (in three hours|around
 html = render(True, feels=STEADY, hour=8, probs=[90] * 24, codes=[61] * 24)
 expect("rain all day: no stop time, the other wording", says(html, r"ALL DAY\.") and "{WHENSTOP}" not in html)
 TEXTS["en"]["facts"] = saved_facts
+if units_saved:
+    TEXTS["en"]["units_10"] = units_saved
 
 # Special days (round 16), on a steady day and every other hour: the clock
 # change (that Sunday and the Monday after; Europe, the US and Canada),
