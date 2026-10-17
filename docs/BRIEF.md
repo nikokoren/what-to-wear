@@ -324,6 +324,10 @@ storms). A much better round: 200 stars, 329 keeps.
   to be a sock.") and everyday truths everyone shares („Drei Flocken, und
   schon heißt's wieder Schneechaos.“, "The novelty lasts about an hour.").
 
+- **English is US English (owner, October 2026).** Color, gray,
+  favorite, neighborhood; sidewalk, apartment, salt trucks; inches in
+  jokes about snow. Temperatures stay as the screen shows them.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

@@ -36,6 +36,21 @@ plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
 before, so they arrive a family at a time: steady days (round 17,
 `review/rounds/make_round17.py`), then layers, then rain.
 
+### US English (owner, October 2026)
+
+English is US English: spelling (color, gray, favorite, humor,
+neighborhood, practice as a verb), words (salt trucks, not gritters;
+sidewalk, not pavement; apartment, not flat; fall next to autumn) and
+units in the jokes (inches, not centimetres: "Five centimetres and
+everyone forgets how to drive" needs "Two inches…"). A first scan of
+the beta texts found about 15 lines to fix. Two parts:
+1. **The next rewrite round** fixes them (the owner votes the reworded
+   lines), and its brief says US English (now in docs/BRIEF.md).
+2. **Before release**, check all English texts again (`lang/en.json`,
+   the beta texts, the About text and changelog in
+   `config/settings.next.yaml`, the error screen copies in
+   `src/shared.liquid`).
+
 ### Error screen wording (owner, October 2026)
 
 When the weather can't be loaded, say it will try again on its own:
