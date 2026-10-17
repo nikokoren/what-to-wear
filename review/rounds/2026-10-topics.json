@@ -81,6 +81,1288 @@
    ],
    "hint": "US English rewrite of: The break is mainly so the gritters can feel useful.",
    "replaces": "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the gritters can feel useful."
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.c_coat",
+   "text": "You'll want the winter coat {WHEN}. || Yes, the number looks fine. The number isn't going outside.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: feels like",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Cools to coat weather: the winter coat needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from noon"
+    }
+   ],
+   "hint": "Also shows without the drawings"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.cold",
+   "sprite": "coat_dry",
+   "fact": "",
+   "batch": "Topic: feels like",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Nobody believes 'feels like' until they're outside. I believe it from in here.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "now_11.cold",
+   "sprite": "coat_dry",
+   "fact": "",
+   "batch": "Topic: feels like",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "It feels colder than it is. I can't feel a thing, and I'm still right.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Your app gives it a percentage so it can't be wrong. I give advice.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: the weather app",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.wet",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "batch": "Topic: the weather app",
+   "meaning": "New: sarcastic line at 11. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Your phone now predicts rain. While it's raining. Visionary.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "now_11.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: the weather app",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "I do one thing. Your phone does weather between ads.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "now_11.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: weather small talk",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Strangers will say 'nice day, huh?' like it's news. I published it this morning.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady_hot",
+   "text": "Hot all day: drink water and look for shade. || 'Hot enough for you?' Every stranger, all day. I said it once.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: weather small talk",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above."
+  },
+  {
+   "lang": "en",
+   "path": "now_10.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: weather small talk",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Nice out. That's your whole conversation with the neighbors sorted.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I have better data and no knee.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: weather lore",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_wetter_long",
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I don't need cows.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: weather lore",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.wet",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "batch": "Topic: weather lore",
+   "meaning": "New: sarcastic line at On. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "April showers. Folk wisdom nailed one month and retired.",
+   "role": "flavour",
+   "new": true,
+   "months": "04",
+   "hint": "Seasonal: only Apr"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.evening",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: early dark",
+   "meaning": "New: sarcastic line at 11. A now line: 18:00 to 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Dark since half past four. The day clocked out before you did.",
+   "role": "flavour",
+   "new": true,
+   "months": "11,12,01",
+   "hint": "Seasonal: only Nov–Jan"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.evening",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: early dark",
+   "meaning": "New: sarcastic line at 11. A now line: 18:00 to 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "The sun's on half days until February. I'm still on full shifts.",
+   "role": "flavour",
+   "new": true,
+   "months": "11,12,01",
+   "hint": "Seasonal: only Nov–Jan"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.evening",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: early dark",
+   "meaning": "New: sarcastic line at 11. A now line: 18:00 to 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Dark by half past four, and I don't even light up. Good luck.",
+   "role": "flavour",
+   "new": true,
+   "months": "11,12,01",
+   "hint": "Seasonal: only Nov–Jan"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.cold",
+   "sprite": "coat_dry",
+   "fact": "",
+   "batch": "Topic: the one person in shorts in February",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Coat weather. Except for the one guy in shorts. There's always one guy.",
+   "role": "flavour",
+   "new": true,
+   "months": "12,01,02",
+   "hint": "Seasonal: only Dec–Feb"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.w_jacket",
+   "text": "You can take the jacket off {WHEN}. || The shorts guy never had one on. He'll want you to know.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: the one person in shorts in February",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Warms up: the jacket comes off. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "12,01,02",
+   "hint": "Also shows without the drawings · Seasonal: only Dec–Feb"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || The man who wore shorts all February will say he called it.",
+   "role": "unit",
+   "new": true,
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: the one person in shorts in February",
+   "meaning": "New at 11: the forecast sentence and its joke as one. A cool morning in long-pants weather that turns into shorts weather; the line suggests shorts, the drawing shows long pants. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "tee_shorts_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "02,03",
+   "hint": "Also shows without the drawings · Seasonal: only Feb–Mar"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || Everyone wanted summer. Nobody asked for the afternoon.",
+   "role": "unit",
+   "new": true,
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: 'too hot', two days after 'when's summer coming'",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Climbs into heat. Nothing left to take off. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "06,07,08",
+   "hint": "Also shows without the drawings · Seasonal: only Jun–Aug"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.hot",
+   "sprite": "heat_dry",
+   "fact": "",
+   "batch": "Topic: 'too hot', two days after 'when's summer coming'",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Last month: 'when's summer coming?' Now: 'too hot.' I don't take requests.",
+   "role": "flavour",
+   "new": true,
+   "months": "06,07,08",
+   "hint": "Seasonal: only Jun–Aug"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.hot",
+   "sprite": "heat_dry",
+   "fact": "",
+   "batch": "Topic: 'too hot', two days after 'when's summer coming'",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Hot. The 'when's summer coming' crowd has gone strangely quiet.",
+   "role": "flavour",
+   "new": true,
+   "months": "06,07,08",
+   "hint": "Seasonal: only Jun–Aug"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.c_hoodie",
+   "text": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual weather.",
+   "role": "unit",
+   "new": true,
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: pumpkin spice",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Cools to sweater weather: a sweater needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "09,10",
+   "hint": "Also shows without the drawings · Seasonal: only Sep–Oct"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.steady",
+   "text": "This outfit works all day. || No pumpkin in the forecast. It's in everything else.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: pumpkin spice",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "months": "09,10",
+   "hint": "Seasonal: only Sep–Oct"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.c_jacket",
+   "text": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice is on its second lap.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Topic: pumpkin spice",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Cools to jacket weather: a jacket needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "09,10",
+   "hint": "Also shows without the drawings · Seasonal: only Sep–Oct"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt den ganzen Tag. || „…oder es bleibt, wie es ist.“ Mit so einer Regel läge ich auch nie daneben.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Bauernregeln",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above."
+  },
+  {
+   "lang": "de",
+   "path": "now_11.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: Bauernregeln",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Liegt eine Bauernregel daneben, lachen alle. Lieg ich daneben, wird geflucht.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: Bauernregeln",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Fliegen die Schwalben tief, kommt Regen. Einem Vogel glaubt man mehr als mir.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt den ganzen Tag. || Früher hat das ein Frosch im Glas gemacht. Der kriegte Fliegen, ich krieg Staub.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: der Wetterfrosch",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above."
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Der Frosch im Glas hätte jetzt Winterstarre. Ich muss trotzdem arbeiten.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: der Wetterfrosch",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above."
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: der Wetterfrosch",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Beschwerden über die Vorhersage bitte an den Frosch. Der hatte den Job vor mir.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "now_11.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: Föhn",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Ihr schiebt eure Laune auf den Föhn. Ich hab keinen Föhn. Ich bin einfach so.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.w_hoodie",
+   "text": "Mit dem Pulli ist {WHEN} Schluss. || Ob's Föhn ist, steht hier nicht. Die Ausrede fürs Kopfweh such dir selber.",
+   "role": "unit",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Föhn",
+   "meaning": "New at On: the forecast sentence and its joke as one. Warms up: the sweater comes off. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "tee_pants_dry",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: Föhn",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Bei Föhn ist man gereizt, heißt es. Und was ist eure Ausrede an den anderen Tagen?",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.steady_hot",
+   "text": "Die Hitze lässt den ganzen Tag nicht nach. || Wer's mit dem Kreislauf hat, erzählt's bitte wem anders. Ich hab keinen.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Kreislauf",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above."
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Ab dann hat's das halbe Büro wieder mit dem Kreislauf.",
+   "role": "unit",
+   "new": true,
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Kreislauf",
+   "meaning": "New at On: the forecast sentence and its joke as one. Climbs into heat. Nothing left to take off. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "heat_dry",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} ist das Schlimmste der Hitze vorbei. || Dann erholt sich auch der Kreislauf. Erstaunlich schnell.",
+   "role": "unit",
+   "new": true,
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Kreislauf",
+   "meaning": "New at 11: the forecast sentence and its joke as one. The heat breaks, but it stays warm. Nothing to bring. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "heat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "tee_shorts_dry",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} ist die Winterjacke dran. || Und schon ist halb Deutschland wetterfühlig. Die andere Hälfte war's vorher schon.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Wetterfühligkeit",
+   "meaning": "New at On: the forecast sentence and its joke as one. Cools to coat weather: the winter coat needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.arc_colder",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} und was Warmes dazu. || Für Wetterfühlige ist so ein Tag wie Weihnachten.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Wetterfühligkeit",
+   "meaning": "New at 11: the forecast sentence and its joke as one. The jacket comes off; the evening is colder than now: jacket back, plus a layer. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "ab Mittag"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "ab 18 Uhr"
+    }
+   ],
+   "hint": "Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: Wetterfühligkeit",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "„Ich bin halt wetterfühlig.“ Ich auch. Ich fühl jedes Wetter. Beruflich.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "now_10.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: Ruhezeiten",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Rasenmähwetter. Einer mäht, der andere schreibt schon den Zettel fürs Treppenhaus.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "now_11.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Topic: Ruhezeiten",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Einer bläst das Laub zum Nachbarn, der Nachbar bläst es zurück.",
+   "role": "flavour",
+   "new": true,
+   "months": "10,11",
+   "hint": "Seasonal: only Oct–Nov"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: Ruhezeiten",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Herrlicher Tag. Ich hör schon den ersten Rasenmäher. Und ich hab nicht mal Ohren.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der bleibt. || Wer Regen will, wäscht sein Auto. Das klappt zuverlässiger als ich.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: das frisch gewaschene Auto",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.wet",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "batch": "Topic: das frisch gewaschene Auto",
+   "meaning": "New: sarcastic line at 11. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Regen. Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Ob's regnet, hängt davon ab, ob gerade jemand sein Auto wäscht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: das frisch gewaschene Auto",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cold",
+   "sprite": "coat_dry",
+   "fact": "",
+   "batch": "Topic: Hausschuhe",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Kalter Boden. Wer jetzt barfuß läuft, kriegt den Satz mit der Blasenentzündung zu hören.",
+   "role": "flavour",
+   "new": true,
+   "months": "11,12,01,02",
+   "hint": "Seasonal: only Nov–Feb"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.cold",
+   "sprite": "coat_dry",
+   "fact": "",
+   "batch": "Topic: Hausschuhe",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Alle kriegen Hausschuhe. Ich krieg nicht mal eine Decke.",
+   "role": "flavour",
+   "new": true,
+   "months": "11,12,01,02",
+   "hint": "Seasonal: only Nov–Feb"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Die Heizung wird trotzdem nicht höher gedreht. Dafür gibt's ja Hausschuhe.",
+   "role": "unit",
+   "new": true,
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Hausschuhe",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "months": "11,12,01,02",
+   "hint": "Seasonal: only Nov–Feb"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was das heißt, weiß sie selber nicht.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Wetter-App gegen Wetterbericht",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit liegen die nie falsch.",
+   "role": "unit",
+   "new": true,
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Topic: Wetter-App gegen Wetterbericht",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.wet",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "batch": "Topic: Wetter-App gegen Wetterbericht",
+   "meaning": "New: sarcastic line at 11. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Kostenlose Wetter-App, zwanzig Werbebanner, und trotzdem nass.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "de",
+   "path": "now_11.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: Altweibersommer",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Altweibersommer. Der Sommer kommt noch mal, wenn die Sommersachen schon im Keller sind.",
+   "role": "flavour",
+   "new": true,
+   "months": "09,10",
+   "hint": "Seasonal: only Sep–Oct"
+  },
+  {
+   "lang": "de",
+   "path": "now_10.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: Altweibersommer",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Altweibersommer. Biergartenwetter, und der Biergarten hat schon zu.",
+   "role": "flavour",
+   "new": true,
+   "months": "09,10",
+   "hint": "Seasonal: only Sep–Oct"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Topic: Altweibersommer",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Altweibersommer. Genieß ihn. Ich kenn den November.",
+   "role": "flavour",
+   "new": true,
+   "months": "09,10",
+   "hint": "Seasonal: only Sep–Oct"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Ich kann noch so oft mild ansagen, gegen fünf Heilige komm ich nicht an.",
+   "role": "flavour",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fact": "Dein Outfit passt heute den ganzen Tag.",
+   "batch": "Topic: Eisheilige",
+   "meaning": "New sarcastic line at 11: die Eisheiligen, 11 to 15 May: the last frost risk, gardeners wait to plant. Shows on a day whose weather doesn't change, under \"works all day\" or alone under the drawing.",
+   "hint": "Every other hour on the day"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Wer die Geranien schon draußen hat, betet jetzt zur Kalten Sophie.",
+   "role": "flavour",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fact": "Dein Outfit passt heute den ganzen Tag.",
+   "batch": "Topic: Eisheilige",
+   "meaning": "New sarcastic line at 11: die Eisheiligen, 11 to 15 May: the last frost risk, gardeners wait to plant. Shows on a day whose weather doesn't change, under \"works all day\" or alone under the drawing.",
+   "hint": "Every other hour on the day"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Kein Frost in Sicht, aber vor dem 15. verspreche ich gar nichts.",
+   "role": "flavour",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fact": "Dein Outfit passt heute den ganzen Tag.",
+   "batch": "Topic: Eisheilige",
+   "meaning": "New sarcastic line at 11: die Eisheiligen, 11 to 15 May: the last frost risk, gardeners wait to plant. Shows on a day whose weather doesn't change, under \"works all day\" or alone under the drawing.",
+   "hint": "Every other hour on the day"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Der Baumarkt verkauft dir die Tomatenpflanzen trotzdem schon seit April.",
+   "role": "flavour",
+   "new": true,
+   "sprite": "sweater_dry",
+   "fact": "Dein Outfit passt heute den ganzen Tag.",
+   "batch": "Topic: Eisheilige",
+   "meaning": "New sarcastic line at 11: die Eisheiligen, 11 to 15 May: the last frost risk, gardeners wait to plant. Shows on a day whose weather doesn't change, under \"works all day\" or alone under the drawing.",
+   "hint": "Every other hour on the day"
   }
  ]
 }

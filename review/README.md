@@ -478,3 +478,14 @@ the round file (`<yyyy-mm>-topical-<slug>.json`, set T), then
 `2026-10-topical-clocks`, the clocks going back: 2 of 9 kept in each
 language, all at 11. Most vetoes were "missing the context": a line has
 to name the event itself, because nothing else on the screen does.
+
+## Round 21: fresh topics
+
+`2026-10-topics.json` (`make_round21.py`, ids `tp-…`), 60 lines: the
+topics the owner picked (en: feels like, the weather app, small talk,
+weather lore, early dark, shorts in February, "too hot", pumpkin spice;
+de: Bauernregeln, Wetterfrosch, Föhn, Kreislauf, Wetterfühligkeit,
+Ruhezeiten, the washed car, Hausschuhe, App gegen Wetterbericht,
+Altweibersommer, and Eisheilige as a special day), as units and now
+lines; round 20's setup (fresh writers, critic: en 24 of 64, de 34 of
+92). Plus two US English rewrites that replace their old lines when kept.
