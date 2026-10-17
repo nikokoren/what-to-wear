@@ -279,8 +279,8 @@
     ],
     "p_wetter_long_ice": [
       "Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.",
-      "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.",
       "Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.",
+      "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.",
       "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.",
       "Freezing rain sets in {WHENP} and stays, so roads and sidewalks may be icy. Walk carefully.",
       "Freezing rain sets in {WHENP} and stays, so roads and sidewalks may be icy. Walk carefully."
@@ -729,7 +729,8 @@
       "Lovely out there. I'll stay in here, refreshing.",
       "The weather's showing off. I know the feeling.",
       "Sunny days, you walk right past me. I've stopped taking it personally. Mostly.",
-      "Weather this nice makes my job easy. I'll still act busy."
+      "Weather this nice makes my job easy. I'll still act busy.",
+      "\"Nice out.\" That's your whole conversation with the neighbors sorted."
     ],
     "cold": [
       "I was gray before winter made it cool.",
@@ -739,7 +740,8 @@
       "My battery hates the cold too. We're bonding.",
       "I'd lend you some warmth, but I run cool on principle.",
       "Someone's scraping ice off a car with a credit card. Best use it's had all month.",
-      "{M:02,03}Someone will say spring's just around the corner. It's a long corner."
+      "{M:02,03}Someone will say spring's just around the corner. It's a long corner.",
+      "{M:12,01,02}Coat weather. Except for the one guy in shorts. There's always one guy."
     ],
     "hot": [
       "I'll sit this one out in your nice shady room.",
@@ -750,7 +752,8 @@
       "No sweat here. One of the perks of being a screen.",
       "Somebody cranked the outside too high. Wasn't me.",
       "I'm the one thing in the house not making it any warmer.",
-      "Today the bus smells of everyone on board. Lucky I don't have a nose."
+      "Today the bus smells of everyone on board. Lucky I don't have a nose.",
+      "{M:06,07,08}The 'when's summer coming' crowd has gone strangely quiet."
     ],
     "wet": [
       "I don't get wet. Perks of living indoors.",
@@ -764,7 +767,8 @@
       "You won't get a sad little cloud icon from me. I've got artistic integrity.",
       "Rain makes it all glossy out there. I prefer matte.",
       "On rainy days, everyone checks me twice. I'm not complaining.",
-      "Umbrella up, and one shoulder will still get soaked. Every time."
+      "Umbrella up, and one shoulder will still get soaked. Every time.",
+      "{M:04}Folk wisdom nailed one month and retired."
     ],
     "snow": [
       "I've never seen snow. Describe it to me later.",
@@ -806,9 +810,11 @@
       "If you stay in, I'll act like I didn't notice.",
       "One short walk today, and we'll hear about it for weeks.",
       "Perfect day. I had someone more deserving in mind.",
-      "{M:07,08}Everyone else is away somewhere nice. You're reading a weather forecast."
+      "{M:07,08}Everyone else is away somewhere nice. You're reading a weather forecast.",
+      "Strangers will say 'nice day, huh?' like it's news."
     ],
     "cool": [
+      "\"Today's forecast is brought to you by... \" Just kidding. I don't do ads.",
       "You'll call today 'fresh' to sound like an outdoors person.",
       "Nothing special out there. You'll blend right in.",
       "You'll call today 'crisp' like you go hiking or something.",
@@ -862,6 +868,7 @@
       "Don't fall. I have no way of getting help."
     ],
     "evening": [
+      "{M:11,12,01}The sun's on half days until February. In this economy?",
       "Wondering where the day went? I watched. You weren't busy.",
       "Another evening, another walk past me. No thanks, as usual.",
       "If you're going out, try to look better than this.",
@@ -922,7 +929,8 @@
       "You're dressed right for the whole day. || So you can stop staring into the wardrobe now.",
       "Nothing changes all day. || You'll check again anyway. I'll say the same thing, just less politely.",
       "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
-      "Today needs nothing more than what you have on. || A rare thing for me to say about anyone."
+      "Today needs nothing more than what you have on. || A rare thing for me to say about anyone.",
+      "{M:09,10}This outfit works all day. || No pumpkin in the forecast. It's in everything else, though."
     ],
     "steady_evening": [
       "You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote.",
@@ -1043,9 +1051,9 @@
       "It might rain {WHENP}, so an umbrella wouldn't hurt. || Low odds. I'd take that bet, but I won't get wet either way."
     ],
     "p_snow_coming": [
-      "Snow starts {WHENP}. || Five centimetres and everyone forgets how to drive.",
       "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.",
-      "{M:10,11,12}Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters."
+      "{M:10,11,12}Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters.",
+      "Snow starts {WHENP}. || And everyone forgets how to drive."
     ],
     "p_stays_wet_snow": [
       "It snows all day. || The novelty lasts about an hour.",
@@ -1136,7 +1144,8 @@
     "c_jacket": [
       "Bring a jacket. It cools down {WHEN}. || You'll put it on later and act like it was your idea.",
       "Take a jacket along. You'll want it {WHEN}. || Leave it behind and you'll think of me later. Not fondly.",
-      "It cools down {WHEN}, so bring a jacket. || Carrying a layer you don't need yet. How very grown-up."
+      "It cools down {WHEN}, so bring a jacket. || Carrying a layer you don't need yet. How very grown-up.",
+      "{M:09,10}A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August."
     ],
     "c_hoodie": [
       "Bring a sweater. It cools down {WHEN}. || Alternatively you can practice your 'I'm not cold' face for later.",
@@ -1221,7 +1230,9 @@
     "p_wetter_maybe": [
       "There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || Your small umbrella exists for exactly this forecast.",
       "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
-      "Rain is possible {WHENP}, so maybe take the umbrella. || I've done my bit. Now it's you versus the clouds."
+      "Rain is possible {WHENP}, so maybe take the umbrella. || I've done my bit. Now it's you versus the clouds.",
+      "Rain is possible {WHENP}, so maybe take the umbrella. || Your app gives it a percentage so it can't be wrong. I give advice.",
+      "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him."
     ],
     "p_wet_again": [
       "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something."
@@ -1231,9 +1242,9 @@
       "It stops snowing later. || After that, the snow has nothing to do but get in the way."
     ],
     "p_wet_again_snow": [
+      "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.",
       "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
-      "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow.",
-      "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the gritters can feel useful."
+      "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow."
     ]
   }
 }

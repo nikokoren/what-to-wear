@@ -181,6 +181,23 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-de-cc365bc6fcc4` (2026-10-days)
 
+## now_10.cold
+
+- **Out:** Kalter Boden. Wer jetzt barfuß läuft, kriegt den Satz mit der Blasenentzündung zu hören.
+  **Wanted instead:** i like it. but i think the grammar might need some last tweaking.
+  **Tags:** robotic
+  **On screen:** drawing coat_dry
+  **What it's for:** New: sarcastic line at On. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `tp-de-0b58ac336e4e` (2026-10-topics)
+
+## unit_10.steady_cold
+
+- **Out:** Es bleibt den ganzen Tag so kalt. || Die Heizung wird trotzdem nicht höher gedreht. Dafür gibt's ja Hausschuhe.
+  **Wanted instead:** Maybe some other phrasings work better, like i dont have a bag full of money laying around, or wir sind her ja nicht im schlaraffenland. or maybe a riff on. hopefully the neighbors crank up their heat and we can profit off of that. there might be a few different versions that are good in there. give it a go.
+  **On screen:** drawing coat_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `tp-de-980e87957e7c` (2026-10-topics)
+
 ## unit_11.arc_warmer
 
 - **Out:** {WHEN} {GV} weg, und dabei bleibt's dann für heute. || Hab ich dir gern gesagt. Kommt nicht wieder vor.

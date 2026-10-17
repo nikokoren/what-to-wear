@@ -308,6 +308,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_wetter_maybe · sarcastic
 
+- {WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.
 - {WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.
 

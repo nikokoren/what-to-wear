@@ -103,6 +103,12 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    # Round 21 edits.
+    'Deine Sommersachen sind sicher schon im Keller oder?': 'Deine Sommersachen sind sicher schon im Keller, oder?',
+    'Das wetter ist zwar scheiße, aber immerhin musst du bei mir nicht zwanzig Werbebanner wegklicken um das herauszufinden.': 'Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.',
+    '"Nice out". That\'s your whole conversation with the neighbors sorted.': '"Nice out." That\'s your whole conversation with the neighbors sorted.',
+    'Mit dem Pulli ist {WHEN} Schluss. || Wenn du jetzt wieder Kopfweh bekommst heißts dann "Das Föhnwetter ist schuld". Sicher.': "Mit dem Pulli ist {WHEN} Schluss. || Wenn du dann wieder Kopfweh kriegst, war's natürlich der Föhn. Sicher.",
+    "This outfit works all day. || No pumpkin in the forecast. It's in everything else though.": "This outfit works all day. || No pumpkin in the forecast. It's in everything else, though.",
     # Round 20 edits. The first-snow line: the screen can't know when it
     # last snowed, so it's limited to the months the first snow comes in.
     "Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters.": "{M:10,11,12}Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters.",

@@ -27214,6 +27214,398 @@
   "edit": "",
   "updatedAt": "2026-10-15T21:53:09.052Z"
  },
+ "tp-en-01367110ba7a": {
+  "level": "11",
+  "key": "steady_hot",
+  "path": "unit_11.steady_hot[+]",
+  "text": "Hot all day: drink water and look for shade. || 'Hot enough for you?' Every stranger, all day. I said it once.",
+  "source": "candidate",
+  "batch": "Topic: weather small talk",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T19:13:13.403Z"
+ },
+ "tp-en-0278292f99f5": {
+  "level": "11",
+  "key": "wet",
+  "path": "now_11.wet[+]",
+  "text": "Your phone now predicts rain. While it's raining. Visionary.",
+  "source": "candidate",
+  "batch": "Topic: the weather app",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T19:13:43.086Z"
+ },
+ "tp-en-055ba029a38e": {
+  "level": "11",
+  "key": "w_water",
+  "path": "unit_11.w_water[+]",
+  "text": "It gets hot {WHEN}, so bring water. || Everyone wanted summer. Nobody asked for the afternoon.",
+  "source": "candidate",
+  "batch": "Topic: 'too hot', two days after 'when's summer coming'",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T19:13:35.953Z"
+ },
+ "tp-en-0b975820d39d": {
+  "level": "11",
+  "key": "cold",
+  "path": "now_11.cold[+]",
+  "text": "Nobody believes 'feels like' until they're outside. I believe it from in here.",
+  "source": "candidate",
+  "batch": "Topic: feels like",
+  "round": "2026-10-topics",
+  "verdict": "rewrite",
+  "tags": [],
+  "note": "help me fine tune this",
+  "edit": "Nobody believes me until they're outside. I know my feels like temperature people.",
+  "updatedAt": "2026-10-17T18:42:34.122Z"
+ },
+ "tp-en-174ab32e2d36": {
+  "level": "11",
+  "key": "w_jacket",
+  "path": "unit_11.w_jacket[+]",
+  "text": "You can take the jacket off {WHEN}. || The shorts guy never had one on. He'll want you to know.",
+  "source": "candidate",
+  "batch": "Topic: the one person in shorts in February",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T19:13:27.753Z"
+ },
+ "tp-en-18781406bfad": {
+  "level": "10",
+  "key": "wet",
+  "path": "now_10.wet[+]",
+  "text": "April showers. Folk wisdom nailed one month and retired.",
+  "source": "candidate",
+  "batch": "Topic: weather lore",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Folk wisdom nailed one month and retired.",
+  "updatedAt": "2026-10-17T18:39:14.342Z"
+ },
+ "tp-en-259e3ef5bd09": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.",
+  "source": "candidate",
+  "batch": "US English",
+  "round": "2026-10-topics",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:45:16.756Z"
+ },
+ "tp-en-299f56efc2d8": {
+  "level": "10",
+  "key": "cold",
+  "path": "now_10.cold[+]",
+  "text": "Coat weather. Except for the one guy in shorts. There's always one guy.",
+  "source": "candidate",
+  "batch": "Topic: the one person in shorts in February",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:36:12.439Z"
+ },
+ "tp-en-312223edb89a": {
+  "level": "11",
+  "key": "hot",
+  "path": "now_11.hot[+]",
+  "text": "Last month: 'when's summer coming?' Now: 'too hot.' I don't take requests.",
+  "source": "candidate",
+  "batch": "Topic: 'too hot', two days after 'when's summer coming'",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "robotic"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:44:48.257Z"
+ },
+ "tp-en-446f0cbc00ea": {
+  "level": "11",
+  "key": "evening",
+  "path": "now_11.evening[+]",
+  "text": "Dark since half past four. The day clocked out before you did.",
+  "source": "candidate",
+  "batch": "Topic: early dark",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:44:04.273Z"
+ },
+ "tp-en-4c1949dd3ed2": {
+  "level": "10",
+  "key": "hot",
+  "path": "now_10.hot[+]",
+  "text": "Hot. The 'when's summer coming' crowd has gone strangely quiet.",
+  "source": "candidate",
+  "batch": "Topic: 'too hot', two days after 'when's summer coming'",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "The 'when's summer coming' crowd has gone strangely quiet.",
+  "updatedAt": "2026-10-17T18:36:35.024Z"
+ },
+ "tp-en-65140935786b": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I have better data and no knee.",
+  "source": "candidate",
+  "batch": "Topic: weather lore",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.",
+  "updatedAt": "2026-10-17T18:45:43.175Z"
+ },
+ "tp-en-72a407042deb": {
+  "level": "11",
+  "key": "p_wetter_maybe",
+  "path": "unit_11.p_wetter_maybe[+]",
+  "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Your app gives it a percentage so it can't be wrong. I give advice.",
+  "source": "candidate",
+  "batch": "Topic: the weather app",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:45:55.007Z"
+ },
+ "tp-en-7b45c8814bd7": {
+  "level": "11",
+  "key": "shorts_early",
+  "path": "unit_11.shorts_early[+]",
+  "text": "It starts cool, but it's shorts weather {WHEN}. || The man who wore shorts all February will say he called it.",
+  "source": "candidate",
+  "batch": "Topic: the one person in shorts in February",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "It starts cool, but it's shorts weather {WHEN}. || The guy who wore shorts all February will say he called it.",
+  "updatedAt": "2026-10-17T19:13:03.436Z"
+ },
+ "tp-en-824aeffc15c7": {
+  "level": "10",
+  "key": "p_wetter_long",
+  "path": "unit_10.p_wetter_long[+]",
+  "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I don't need cows.",
+  "source": "candidate",
+  "batch": "Topic: weather lore",
+  "round": "2026-10-topics",
+  "verdict": "rewrite",
+  "tags": [
+   "robotic",
+   "unclear",
+   "too long"
+  ],
+  "note": "i like the direction, but this might be too long?",
+  "edit": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I'd lay down too if i could.",
+  "updatedAt": "2026-10-17T18:38:38.172Z"
+ },
+ "tp-en-84e972fef30c": {
+  "level": "11",
+  "key": "evening",
+  "path": "now_11.evening[+]",
+  "text": "Dark by half past four, and I don't even light up. Good luck.",
+  "source": "candidate",
+  "batch": "Topic: early dark",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:44:10.023Z"
+ },
+ "tp-en-8a6ad53f915f": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "This outfit works all day. || No pumpkin in the forecast. It's in everything else.",
+  "source": "candidate",
+  "batch": "Topic: pumpkin spice",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "This outfit works all day. || No pumpkin in the forecast. It's in everything else though.",
+  "updatedAt": "2026-10-17T18:38:53.006Z"
+ },
+ "tp-en-affffba9f3cc": {
+  "level": "11",
+  "key": "evening",
+  "path": "now_11.evening[+]",
+  "text": "The sun's on half days until February. I'm still on full shifts.",
+  "source": "candidate",
+  "batch": "Topic: early dark",
+  "round": "2026-10-topics",
+  "verdict": "star",
+  "tags": [],
+  "note": "help me fine tune this",
+  "edit": "The sun's on half days until February. In this economy?",
+  "updatedAt": "2026-10-17T18:44:40.589Z"
+ },
+ "tp-en-b5e7f67dd26f": {
+  "level": "11",
+  "key": "nice",
+  "path": "now_11.nice[+]",
+  "text": "Strangers will say 'nice day, huh?' like it's news. I published it this morning.",
+  "source": "candidate",
+  "batch": "Topic: weather small talk",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Strangers will say 'nice day, huh?' like it's news.",
+  "updatedAt": "2026-10-17T18:45:08.008Z"
+ },
+ "tp-en-baa31dcdb48c": {
+  "level": "11",
+  "key": "c_jacket",
+  "path": "unit_11.c_jacket[+]",
+  "text": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice is on its second lap.",
+  "source": "candidate",
+  "batch": "Topic: pumpkin spice",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.",
+  "updatedAt": "2026-10-17T18:41:36.725Z"
+ },
+ "tp-en-c5d4c71c17b7": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Nice out. That's your whole conversation with the neighbors sorted.",
+  "source": "candidate",
+  "batch": "Topic: weather small talk",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "\"Nice out\". That's your whole conversation with the neighbors sorted.",
+  "updatedAt": "2026-10-17T18:36:53.391Z"
+ },
+ "tp-en-d10fa4cc34fa": {
+  "level": "11",
+  "key": "c_coat",
+  "path": "unit_11.c_coat[+]",
+  "text": "You'll want the winter coat {WHEN}. || Yes, the number looks fine. The number isn't going outside.",
+  "source": "candidate",
+  "batch": "Topic: feels like",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:39:36.373Z"
+ },
+ "tp-en-d3b93841b8f6": {
+  "level": "11",
+  "key": "cold",
+  "path": "now_11.cold[+]",
+  "text": "It feels colder than it is. I can't feel a thing, and I'm still right.",
+  "source": "candidate",
+  "batch": "Topic: feels like",
+  "round": "2026-10-topics",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-17T18:42:51.490Z"
+ },
+ "tp-en-d595ff169450": {
+  "level": "10",
+  "key": "p_snow_coming",
+  "path": "unit_10.p_snow_coming[+]",
+  "text": "Snow starts {WHENP}. || Two inches and everyone forgets how to drive.",
+  "source": "candidate",
+  "batch": "US English",
+  "round": "2026-10-topics",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Snow starts {WHENP}. || And everyone forgets how to drive.",
+  "updatedAt": "2026-10-17T18:37:13.025Z"
+ },
+ "tp-en-d9c85757af1c": {
+  "level": "11",
+  "key": "cool",
+  "path": "now_11.cool[+]",
+  "text": "I do one thing. Your phone does weather between ads.",
+  "source": "candidate",
+  "batch": "Topic: the weather app",
+  "round": "2026-10-topics",
+  "verdict": "star",
+  "tags": [],
+  "note": "help me fine tune this",
+  "edit": "\"Today's forecast is brought to you by... \" Just kidding. I don't do ads.",
+  "updatedAt": "2026-10-17T18:43:54.540Z"
+ },
+ "tp-en-de6ea2dc41b5": {
+  "level": "11",
+  "key": "c_hoodie",
+  "path": "unit_11.c_hoodie[+]",
+  "text": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual weather.",
+  "source": "candidate",
+  "batch": "Topic: pumpkin spice",
+  "round": "2026-10-topics",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "i like the direction, but this is a bit confusing",
+  "edit": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual Fall.",
+  "updatedAt": "2026-10-17T18:41:06.090Z"
+ },
  "un-en-00e6fdda3fb1": {
   "level": "10",
   "key": "steady_hot",

@@ -111,6 +111,8 @@ Do not edit by hand; vote on the page instead.
 
 ## cool · sarcastic
 
+- "Today's forecast is brought to you by... " Just kidding. I don't do ads.  
+  _help me fine tune this_
 - Nothing special out there. You'll blend right in.
 - Nothing special out there. You'll blend right in.
 - Nothing special out there. You'll blend right in.
@@ -130,6 +132,8 @@ Do not edit by hand; vote on the page instead.
 ## evening · sarcastic
 
 - Plenty of evening left for not answering that message.
+- The sun's on half days until February. In this economy?  
+  _help me fine tune this_
 - You'll read all this, then do what you were going to anyway.
 
 ## fickle · sarcastic
@@ -271,6 +275,10 @@ Do not edit by hand; vote on the page instead.
 - Snow for now, then a break, then more snow {WHENP}.
 - The snow stops for a while later, then comes back {WHENP}.
 - The snow stops {WHENSTOP} and starts again {WHENP}.
+
+## p_wet_again_snow · sarcastic
+
+- It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.
 
 ## p_wet_again_storm · plain
 

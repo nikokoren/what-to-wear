@@ -218,6 +218,14 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-f73dc8201cb3` (2026-10-days)
 
+## now_11.cold
+
+- **Out:** Nobody believes 'feels like' until they're outside. I believe it from in here.
+  **Wanted instead:** help me fine tune this
+  **On screen:** drawing coat_dry
+  **What it's for:** New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.
+  **Answers:** `tp-en-0b975820d39d` (2026-10-topics)
+
 ## unit_10.arc_colder
 
 - **Out:** {G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Evenings look warmer from inside. I go by numbers.
@@ -251,3 +259,21 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing jacket_dry
   **What it's for:** New at On: the forecast sentence and its joke as one. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.
   **Answers:** `gp-en-ea0278e5987e` (2026-10-gaps)
+
+## unit_10.p_wetter_long
+
+- **Out:** Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I don't need cows.
+  **Wanted instead:** i like the direction, but this might be too long?
+  **Tags:** robotic, unclear, too long
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at On: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `tp-en-824aeffc15c7` (2026-10-topics)
+
+## unit_11.c_hoodie
+
+- **Out:** {WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual weather.
+  **Wanted instead:** i like the direction, but this is a bit confusing
+  **Tags:** not funny, unclear
+  **On screen:** drawing tee_pants_dry
+  **What it's for:** New at 11: the forecast sentence and its joke as one. Cools to sweater weather: a sweater needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `tp-en-de6ea2dc41b5` (2026-10-topics)
