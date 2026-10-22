@@ -355,6 +355,7 @@ LAYERS = "2026-10-layers"  # round 18: units for the layer days
 RAIN = "2026-10-rain"  # round 19: units for rain and snow, and top-ups
 GAPS = "2026-10-gaps"  # round 20: the slots still under three units
 TOPICS = "2026-10-topics"  # round 21: fresh topics, US English rewrites
+FINAL = "2026-10-final"  # round 22: the read-through of every live text
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -615,6 +616,9 @@ def main():
         garments = apply_garments(doc, lang)
         if garments:
             print(f"{lang} garments: {garments} follow-ups point at the forecast line's garment")
+        final = apply_final(doc, lang, decisions)
+        if final:
+            print(f"{lang} round 22 (read-through): " + ", ".join(f"{v} {k}" for k, v in final.items()))
         words = apply_words(doc, lang)
         if words:
             print(f"{lang} words: {words} lines reworded")
@@ -639,6 +643,41 @@ def apply_replaces(doc, lang, decisions, rnd):
             pool.remove(row["replaces"])
             done += 1
     return done
+
+
+def apply_final(doc, lang, decisions):
+    """Round 22, the read-through: a veto or "Write new" takes a live line
+    out (a forecast situation keeps its last wording), an edit replaces it
+    (its month and garment tags kept). Runs after every other round."""
+    path = REPO / "review" / "rounds" / f"{FINAL}.json"
+    if not path.exists():
+        return {}
+    rows = collections.defaultdict(list)
+    for r in json.loads(path.read_text(encoding="utf-8"))["lines"]:
+        if r["lang"] == lang:
+            rows[r["text"]].append(r)
+    done = collections.Counter()
+    for d in decisions.values():
+        if d.get("round") != FINAL:
+            continue
+        verdict, edit = d.get("verdict"), EDIT_FIX.get(d.get("edit"), d.get("edit"))
+        for r in rows.get(d["text"], []):
+            for where in r["where"]:
+                section, key = where.split(".", 1)
+                pool = doc.get(section, {}).get(key)
+                if not pool or r["live"] not in pool:
+                    continue
+                if verdict in ("veto", "rewrite"):
+                    if section == "facts" and len(pool) == 1:
+                        done["kept, last wording"] += 1
+                        continue
+                    pool.remove(r["live"])
+                    done["out"] += 1
+                elif edit and edit != r["text"]:
+                    tags = r["live"][: len(r["live"]) - len(r["text"])] if r["live"].endswith(r["text"]) else ""
+                    pool[pool.index(r["live"])] = tags + edit
+                    done["edited"] += 1
+    return dict(done)
 
 
 # Units the owner chose in chat for round 21's "Write new" spots, from

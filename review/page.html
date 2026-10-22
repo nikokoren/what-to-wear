@@ -93,6 +93,8 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
 .fillhelp .warn { color: var(--warn); font-weight: 600 }
 .meta .earlier { font-style: italic }
 .meta .hint { font-style: italic; color: var(--accent) }
+.meta .was-star { font-weight: 700; color: var(--star); background: var(--star-bg); padding: 1px 8px; border-radius: 10px }
+.device.was-star { box-shadow: 0 0 0 4px var(--star) }
 /* Visual Forecast: the day's drawings in a row, the time under each. */
 .screen .pnl { display: flex; justify-content: center; align-items: flex-start; gap: 1%; height: 62%; max-width: 100% }
 .screen .pnl figure { margin: 0; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 2% }
@@ -124,6 +126,10 @@ textarea { width: 100%; min-height: 54px; resize: vertical; font: 14px var(--bod
     <div class="group">
       <span class="label">Show</span>
       <div class="seg" id="f-state"></div>
+    </div>
+    <div class="group" id="g-prev" hidden>
+      <span class="label">Earlier vote</span>
+      <div class="seg" id="f-prev"></div>
     </div>
     <div class="group" id="g-time" hidden>
       <span class="label">Time words in the preview</span>
@@ -189,7 +195,7 @@ const TAGS = ["robotic", "too long", "not funny", "wrong garment", "wrong fact",
 const ROWS = DATA.rows;
 const decisions = new Map();          // id -> decision doc
 let db = null, coll = null;
-const ui = { lang: "all", level: "all", batch: "all", state: "open", key: DATA.focus || null, idx: 0, showPair: false, time: "part" };
+const ui = { lang: "all", level: "all", batch: "all", state: "open", prev: "all", key: DATA.focus || null, idx: 0, showPair: false, time: "part" };
 try { Object.assign(ui, JSON.parse(localStorage.getItem("wtw-review-ui") || "{}"), { idx: 0, showPair: false }); } catch (e) {}
 const $ = (id) => document.getElementById(id);
 let draft = null;                     // { id, text } while the wording box is being typed in
@@ -220,7 +226,8 @@ function compose(r) {
 function verdictOf(r) { const d = decisions.get(r.id); return d && d.verdict || ""; }
 function baseFilter(r) {
   return (ui.lang === "all" || r.lang === ui.lang) && (ui.level === "all" || r.level === ui.level) &&
-    (ui.batch === "all" || r.batch === ui.batch);
+    (ui.batch === "all" || r.batch === ui.batch) &&
+    (ui.prev === "all" || (ui.prev === "star") === !!r.starred);
 }
 function queue() {
   return ROWS.filter((r) => baseFilter(r) && (!ui.key || r.key === ui.key) && (r.id === pinned ||
@@ -282,6 +289,10 @@ function render() {
   if (!batches.includes(ui.batch)) ui.batch = "all";
   if (batches.length) seg($("f-batch"), [["all", "All"], ...batches.map((b) => [b, b])], "batch");
   seg($("f-state"), [["open", "Not rated"], ["all", "All"], ["star", "Starred"], ["keep", "Kept"], ["veto", "Vetoed"], ["rewrite", "Write new"], ["edited", "Edited"]], "state");
+  // Lines starred in an earlier round (the final read-through): a badge, a gold frame, a filter.
+  const prev = ROWS.some((r) => r.starred);
+  $("g-prev").hidden = !prev;
+  if (prev) seg($("f-prev"), [["all", "All"], ["star", "★ Starred before"], ["no", "Not starred"]], "prev");
   const timed = ROWS.some((r) => r.fillsAlt);
   $("g-time").hidden = !timed;
   if (timed) seg($("f-time"), [["part", "Part of day"], ["hours", "Hours ahead"]], "time");
@@ -351,6 +362,8 @@ function renderScreen(r) {
   ];
   if (r.source === "candidate") meta.push(["", r.batch ? "set " + r.batch : "new candidate"]);
   $("meta").replaceChildren(...meta.map(([tag, text]) => { const e = document.createElement(tag || "span"); e.textContent = text; return e; }));
+  $("screen").parentElement.classList.toggle("was-star", !!r.starred);
+  if (r.starred) { const e = document.createElement("span"); e.className = "was-star"; e.textContent = "★ Starred before"; $("meta").prepend(e); }
   if (r.earlier) { const e = document.createElement("span"); e.className = "earlier"; e.textContent = "earlier: " + r.earlier; $("meta").append(e); }
   if (r.hint) { const e = document.createElement("span"); e.className = "hint"; e.textContent = r.hint; $("meta").append(e); }
   if (r.role ? length > 200 : r.tooLong) { const w = document.createElement("span"); w.className = "warn"; w.textContent = "Too long for the small views"; $("meta").append(w); }

@@ -36,6 +36,7 @@ show an edit live (round 8, the re-read):
     "ask": "alone"              a yes/no instead of a verdict (round 10:
                                 "works without the fact" / "needs the fact")
     "hint": "..."               Claude's guess, shown under the screen
+    "starred": true             starred in an earlier round (round 22's read-through)
     "replaces": "..."           the line this one would replace ("*": every
                                 wording of the situation); on the page,
                                 "Write new" reads "Veto both" then
@@ -56,7 +57,7 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|now|fact|topical|unit)_(\d+))\.([a-z0-9_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|now|alone|fact|topical|unit)_(\d+))\.([a-z0-9_]+)$")
 PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
@@ -242,7 +243,7 @@ def rows_from_candidates(cand_path):
                 "candidate", c.get("batch", ""))
         # A round can say exactly what the screen shows next to its line.
         for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier", "panels", "ask", "hint",
-                      "replaces", "answers"):
+                      "replaces", "answers", "starred"):
             if field in c:
                 r[field] = c[field]
         if data.get("idPrefix"):

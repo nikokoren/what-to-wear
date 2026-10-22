@@ -489,3 +489,14 @@ Ruhezeiten, the washed car, Hausschuhe, App gegen Wetterbericht,
 Altweibersommer, and Eisheilige as a special day), as units and now
 lines; round 20's setup (fresh writers, critic: en 24 of 64, de 34 of
 92). Plus two US English rewrites that replace their old lines when kept.
+
+## Round 22: the read-through
+
+`2026-10-final.json` (`make_round22.py`, ids `fn-…`), 1,608 lines: every
+live 2.0 text in both languages (forecast wordings, follow-ups, lines for
+the drawings, now and standalone lines, units, theme and special days),
+before release. Lines starred in an earlier round carry `"starred"`: the
+page shows a gold badge and frame and has an "Earlier vote" filter.
+`build_pools.py` applies it last (`apply_final`): a veto or "Write new"
+takes a line out (a forecast situation keeps its last wording), an edit
+replaces it.
