@@ -36,6 +36,23 @@ plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
 before, so they arrive a family at a time: steady days (round 17,
 `review/rounds/make_round17.py`), then layers, then rain.
 
+### Bug: drawings and sarcastic line disagree (owner, 23 October 2026)
+
+After the read-through (round 22), not before. Seen on the beta: two
+drawings, dry now and rain from 21:00, with „Draußen passiert nichts.
+Kennst du ja von deinen Samstagen.“ With two or three drawings and no
+forecast line, the pool mixes the few lines written for the drawings
+(flavour_vf, 1 to 3 per mood) with the current-weather lines (now_*),
+which only know the moment. Plan:
+1. Two or three drawings: no now_* lines; only drawing lines and the
+   day lines (alone_*). Until there are enough, the owner picks the
+   fallback: no line, or today's mix.
+2. Finer drawing situations by first and last drawing: rain later, rain
+   stops, snow later, snow stops, a layer off, a layer on, off and back
+   on, three outfits.
+3. Write them with the round 20 setup, about four per situation and
+   level.
+
 ### Next review batch (owner, October 2026)
 
 One batch, with the round 20 setup (data-built brief, four candidates
