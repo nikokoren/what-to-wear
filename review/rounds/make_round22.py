@@ -58,6 +58,15 @@ def starred_texts(lang):
             out.add(d["text"])
             if d.get("edit"):
                 out.add(d["edit"])
+    # A starred line reworded since (US spelling, the owner's notes) keeps its star.
+    import build_pools as bp
+    for s in list(out):
+        new = s
+        for old, repl in bp.WORDS.get(lang, []):
+            new = new.replace(old, repl).replace(old.capitalize(), repl.capitalize())
+        fact, sep, joke = new.partition(" || ")
+        new = bp.NOTES_REWRITE.get(lang, {}).get(fact, fact) + sep + joke
+        out.add(new)
     return out
 
 
@@ -96,40 +105,45 @@ def row_for(lang, section, key, live, doc, base):
     return row
 
 
+def live_rows(lang):
+    """Every live 2.0 text of a language as review rows, starred ones marked."""
+    doc = json.loads((r8.PROTO / f"{lang}.json").read_text(encoding="utf-8"))
+    base = json.loads((REPO / "lang" / f"{lang}.json").read_text(encoding="utf-8"))
+    stars = starred_texts(lang)
+    lines, seen = [], {}
+    for key, wordings in doc["facts"].items():
+        if key.startswith("garments") or not isinstance(wordings, list):
+            continue
+        for w in wordings:
+            item = split_tags(w)
+            lines.append(dict(fact_row(lang, key, item["text"], doc, base), live=w, where=[f"facts.{key}"]))
+    for section in SECTIONS:
+        for key, pool in doc.get(section, {}).items():
+            for live in pool:
+                where = f"{section}.{key}"
+                if (live, where) in seen:
+                    continue
+                seen[(live, where)] = True
+                row = row_for(lang, section, key, live, doc, base)
+                lines.append(dict(row, live=live, where=[where]))
+    for r in lines:
+        if r["text"] in stars or r["live"] in stars:
+            r["starred"] = True
+        if r["live"].startswith("{AM}") or "{AM}" in r["live"][:20]:
+            r["hint"] = ((r.get("hint") or "") + " · Only before noon").lstrip(" ·")
+    return lines
+
+
 def main():
     if r13.voted_already(ROUND):
         raise SystemExit(f"{ROUND} has votes; not rebuilding it")
-    lines = []
-    for lang in ("en", "de"):
-        doc = json.loads((r8.PROTO / f"{lang}.json").read_text(encoding="utf-8"))
-        base = json.loads((REPO / "lang" / f"{lang}.json").read_text(encoding="utf-8"))
-        stars = starred_texts(lang)
-        seen = {}
-        for key, wordings in doc["facts"].items():
-            if key.startswith("garments") or not isinstance(wordings, list):
-                continue
-            for w in wordings:
-                lines.append(dict(fact_row(lang, key, w, doc, base), live=w, where=[f"facts.{key}"]))
-        for section in SECTIONS:
-            for key, pool in doc.get(section, {}).items():
-                for live in pool:
-                    where = f"{section}.{key}"
-                    if (live, where) in seen:
-                        continue
-                    seen[(live, where)] = True
-                    row = row_for(lang, section, key, live, doc, base)
-                    lines.append(dict(row, live=live, where=[where]))
-        for r in lines:
-            if r["lang"] == lang and (r["text"] in stars or r["live"] in stars):
-                r["starred"] = True
-    # one row per (lang, text, path): the page keys votes by text
+    lines = live_rows("en") + live_rows("de")
     out = {"round": ROUND, "idPrefix": "fn", "lines": lines}
     path = HERE / f"{ROUND}.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for lang in ("en", "de"):
         mine = [r for r in lines if r["lang"] == lang]
         print(f"{lang}: {len(mine)} lines, {sum(1 for r in mine if r.get('starred'))} starred before")
-
 
 if __name__ == "__main__":
     main()

@@ -376,6 +376,7 @@ RAIN = "2026-10-rain"  # round 19: units for rain and snow, and top-ups
 GAPS = "2026-10-gaps"  # round 20: the slots still under three units
 TOPICS = "2026-10-topics"  # round 21: fresh topics, US English rewrites
 FINAL = "2026-10-final"  # round 22: the read-through of every live text
+FINAL2 = "2026-10-final2"  # round 23: the English read-through, German rewrites
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -639,6 +640,14 @@ def main():
         final = apply_final(doc, lang, decisions)
         if final:
             print(f"{lang} round 22 (read-through): " + ", ".join(f"{v} {k}" for k, v in final.items()))
+        if lang == "en":
+            final2 = apply_final(doc, lang, decisions, FINAL2)
+            if final2:
+                print(f"{lang} round 23 (read-through): " + ", ".join(f"{v} {k}" for k, v in final2.items()))
+        else:
+            rewrites = apply_follow(doc, lang, decisions, FINAL2)
+            if rewrites:
+                print(f"{lang} round 23 (rewrites): " + ", ".join(f"{v} {k}" for k, v in rewrites.items()))
         notes = apply_notes(doc, lang)
         if notes:
             print(f"{lang} owner's notes: " + ", ".join(f"{v} {k}" for k, v in notes.items()))
@@ -693,20 +702,21 @@ def apply_replaces(doc, lang, decisions, rnd):
     return done
 
 
-def apply_final(doc, lang, decisions):
+def apply_final(doc, lang, decisions, rnd=None):
     """Round 22, the read-through: a veto or "Write new" takes a live line
     out (a forecast situation keeps its last wording), an edit replaces it
     (its month and garment tags kept). Runs after every other round."""
-    path = REPO / "review" / "rounds" / f"{FINAL}.json"
+    rnd = rnd or FINAL
+    path = REPO / "review" / "rounds" / f"{rnd}.json"
     if not path.exists():
         return {}
     rows = collections.defaultdict(list)
     for r in json.loads(path.read_text(encoding="utf-8"))["lines"]:
-        if r["lang"] == lang:
+        if r["lang"] == lang and r.get("live"):
             rows[r["text"]].append(r)
     done = collections.Counter()
     for d in decisions.values():
-        if d.get("round") != FINAL:
+        if d.get("round") != rnd:
             continue
         verdict, edit = d.get("verdict"), EDIT_FIX.get(d.get("edit"), d.get("edit"))
         for r in rows.get(d["text"], []):

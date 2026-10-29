@@ -53,8 +53,8 @@
     ],
     "w_scarf": [
       "You'll be fine without the scarf {WHEN}.",
-      "It warms up {WHEN}, so the scarf can come off.",
       "{WHEN} you won't need the scarf any more.",
+      "It warms up {WHEN}, so the scarf can come off.",
       "The scarf can come off {WHEN}.",
       "You can take off the scarf {WHEN}.",
       "{WHEN} it's mild enough to lose the scarf."
@@ -93,8 +93,8 @@
     ],
     "c_scarf": [
       "The cold sets in {WHEN}, so pack a scarf.",
-      "Take a scarf along. You'll want it {WHEN}.",
       "{WHEN} the coat isn't enough on its own. Bring a scarf.",
+      "Take a scarf along. You'll want it {WHEN}.",
       "It gets colder {WHEN}, so bring a scarf.",
       "{WHEN} it gets cold enough for a scarf.",
       "Bring a scarf. It gets colder {WHEN}."
