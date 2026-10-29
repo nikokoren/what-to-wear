@@ -312,6 +312,9 @@ after the fact + flavour block and the picture.
         {%- assign vf_month = ',' | append: season_month | append: ',' -%}
         {%- for k in (1..vf_n) -%}
           {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- if vf_cand contains '{AM}' -%}
+            {%- if local_hour >= 12 -%}{%- assign vf_cand = '{M:00}' -%}{%- else -%}{%- assign vf_cand = vf_cand | remove: '{AM}' -%}{%- endif -%}
+          {%- endif -%}
           {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}
           {%- if vf_cand contains '{3}' -%}
             {%- assign vf_slugs = panel_slugs | split: '|' -%}

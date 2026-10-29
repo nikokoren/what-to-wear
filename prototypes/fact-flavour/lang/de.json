@@ -1,19 +1,19 @@
 {
   "facts": {
     "garments": [
-      "Mütze und Schal",
+      "der Schal",
       "die Winterjacke",
       "die Jacke",
       "der Pulli"
     ],
     "garments_verb": [
-      "können Mütze und Schal",
+      "kann der Schal",
       "kann die Winterjacke",
       "kann die Jacke",
       "kann der Pulli"
     ],
     "garments_pron": [
-      "sie",
+      "ihn",
       "sie",
       "sie",
       "ihn"
@@ -95,7 +95,7 @@
     "c_scarf": [
       "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt.",
       "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal.",
-      "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.",
+      "{WHEN} wird's kalt genug für den Schal.",
       "Pack deinen Schal ein, {WHEN} wird's kälter.",
       "{WHEN} brauchst du eine extra warme Schicht, also nimm eventuell einen Schal mit.",
       "{WHEN} wird's richtig kalt, da solltest du eine extra warme Schicht, wie einen Schal, dabeihaben."
@@ -262,9 +262,10 @@
       "Vielleicht doch lieber ne lange Hose? {WHEN} kommt eine Kaltfront."
     ],
     "heat_danger": [
-      "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
-      "Die Hitze ist heute gefährlich. Trink regelmäßig Wasser, such dir Schatten und bleib mittags aus der Sonne.",
-      "Heute wird's heiß. Immer dran denken: genug trinken, im Schatten bleiben und mittags nicht in die pralle Sonne."
+      "{AM}Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+      "{AM}Die Hitze ist heute gefährlich. Trink regelmäßig Wasser, such dir Schatten und bleib mittags aus der Sonne.",
+      "{AM}Heute wird's heiß. Immer dran denken: genug trinken, im Schatten bleiben und mittags nicht in die pralle Sonne.",
+      "Die Hitze ist heute gefährlich. Trink viel Wasser und bleib im Schatten."
     ],
     "p_wetter_ice": [
       "{WHENP} droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam.",
@@ -320,9 +321,9 @@
       "Heute gewittert's immer wieder, und der Regen hört nicht auf. Nimm den Schirm mit."
     ],
     "p_drier_storm": [
+      "Noch gewittert's, {WHENSTOP} ist es vorbei.",
       "Das Gewitter zieht {WHENSTOP} ab.",
-      "Noch gewittert's, {WHENSTOP} ist es vorbei. Solange es donnert, bleib lieber drinnen.",
-      "Noch gewittert's, später zieht es ab. Bis dahin bist du drinnen am sichersten.",
+      "Noch gewittert's, später zieht es ab.",
       "Regen und Gewitter hören später auf, bis dahin brauchst du den Schirm.",
       "Das Gewitter zieht später ab. Nimm bis dahin den Schirm mit und pass auf, solange es blitzt."
     ],
@@ -411,7 +412,7 @@
       "Freu dich nicht zu früh. Bald ist das alles grauer Matsch."
     ],
     "shorts": [
-      "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+      "{AM}Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
       "Wer dich dann sieht, hält dich für verrückt. Diesmal zu Unrecht.",
       "Ja, wirklich. Ich sag sowas nicht zum Spaß.",
       "Stylisch ist das nicht. Aber praktisch."

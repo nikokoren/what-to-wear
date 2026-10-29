@@ -433,6 +433,23 @@ TEXTS["en"]["now_10"] = saved_now
 if saved_alone is not None:
     TEXTS["en"]["alone_10"] = saved_alone
 
+# The owner's notes (round 22): a known stop time means only the wordings
+# that say it; "{AM}" wordings only before noon.
+saved_facts = TEXTS["en"]["facts"]
+units_saved = TEXTS["en"].pop("units_10", None)
+TEXTS["en"]["facts"] = dict(saved_facts, p_drier=["STOPS {WHENSTOP}.", "STOPS LATER."],
+                            steady=["{AM}MORNING ONLY.", "ANY TIME."])
+WET_AM = [90] * 11 + [0] * 13
+stops = {words_of(render(True, feels=STEADY, hour=h, probs=WET_AM, codes=[61] * 11 + [0] * 13)) for h in (7, 8, 9)}
+expect("stop time known: never the vague wording", not any("STOPS LATER" in s for s in stops) and any("STOPS" in s for s in stops))
+mornings = [words_of(render(True, feels=STEADY, hour=h)) for h in range(6, 12)]
+afternoons = [words_of(render(True, feels=STEADY, hour=h)) for h in range(12, 17)]
+expect("{AM} wording: shows in the morning", any("MORNING ONLY." in s for s in mornings) and not any("{AM}" in s for s in mornings))
+expect("{AM} wording: never after noon", not any("MORNING ONLY" in s for s in afternoons) and all("ANY TIME." in s for s in afternoons))
+TEXTS["en"]["facts"] = saved_facts
+if units_saved:
+    TEXTS["en"]["units_10"] = units_saved
+
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:
     src = (BUILD / "views" / f"{view}.liquid").read_text(encoding="utf-8")

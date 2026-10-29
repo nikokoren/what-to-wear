@@ -38,23 +38,13 @@ before, so they arrive a family at a time: steady days (round 17,
 
 ### From the German read-through (owner, round 22)
 
-The owner's notes on how the screen behaves, for after the English
-read-through:
-1. **Stop times.** „Der Schnee hört später auf.“ / „Es schneit noch eine
-   Weile, dann hört's auf.“: "what's the value?" Proposal: when the stop
-   time is known, show only wordings with {WHENSTOP}; the vague ones only
-   when it isn't (or drop them).
-2. **"Mittags" only in the morning.** Heat wordings that say to stay out
-   of the midday sun („meide die Mittagssonne“) make no sense after noon.
-   Proposal: a tag for morning-only wordings, like {M:} for months.
-3. **The scarf.** For the extra-cold layer, the drawing adds a scarf only
-   (the sprite already wears a beanie and gloves in the step before), so
-   the wordings say „Schal“ alone; the owner edited the German ones that
-   way. English to match in the English read-through; the drawing with
-   the 19 sprites.
-4. **Thunderstorms.** Less "get inside": the owner cut the stay-inside
-   parts from the German storm wordings ("a bit of lightning somewhere
-   isn't that dangerous"). English to match.
+Done in both languages, without a vote (the owner's call): a known stop
+time shows only the wordings that say it (block.liquid); "{AM}" marks
+midday-sun wordings, shown only before noon, with one afternoon wording
+for dangerous heat; the scarf alone is the extra-cold layer (wordings,
+garment name and pronoun; units joking about hats or gloves dropped);
+no "get inside" in storm wordings. All in `build_pools.py`
+(`apply_notes`), so later rebuilds keep them. Still open:
 5. **Groups the vote emptied** (de), now falling back: theme_nikolo and
    theme_xmas at On, the storm follow-ups at On (the rain ones show),
    Eisheilige at 11 (it has no lines now at either level: the day doesn't

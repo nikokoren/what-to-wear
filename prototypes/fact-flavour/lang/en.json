@@ -1,13 +1,13 @@
 {
   "facts": {
     "garments": [
-      "the hat and scarf",
+      "the scarf",
       "the winter coat",
       "the jacket",
       "the sweater"
     ],
     "garments_pron": [
-      "them",
+      "it",
       "it",
       "it",
       "it"
@@ -52,12 +52,12 @@
       "Expect the cold to last all day."
     ],
     "w_scarf": [
-      "You'll be fine without the hat, scarf and gloves {WHEN}.",
-      "{WHEN} you won't need the hat, scarf and gloves any more.",
-      "It warms up {WHEN}, so the hat, scarf and gloves can come off.",
-      "The hat, scarf and gloves can come off {WHEN}.",
-      "You can take off the hat, scarf and gloves {WHEN}.",
-      "{WHEN} it's mild enough to lose the hat, scarf and gloves."
+      "You'll be fine without the scarf {WHEN}.",
+      "It warms up {WHEN}, so the scarf can come off.",
+      "{WHEN} you won't need the scarf any more.",
+      "The scarf can come off {WHEN}.",
+      "You can take off the scarf {WHEN}.",
+      "{WHEN} it's mild enough to lose the scarf."
     ],
     "w_coat": [
       "The winter coat can come off {WHEN}.",
@@ -92,12 +92,12 @@
       "You'll want water {WHEN}, when the heat comes in."
     ],
     "c_scarf": [
-      "The cold sets in {WHEN}, so pack a hat, scarf and gloves.",
-      "{WHEN} the coat isn't enough on its own. Bring a hat, scarf and gloves.",
-      "Take a hat, scarf and gloves along. You'll want them {WHEN}.",
-      "It gets colder {WHEN}, so bring a hat, scarf and gloves.",
-      "{WHEN} it gets cold enough for a hat, scarf and gloves.",
-      "Bring a hat, scarf and gloves. It gets colder {WHEN}."
+      "The cold sets in {WHEN}, so pack a scarf.",
+      "Take a scarf along. You'll want it {WHEN}.",
+      "{WHEN} the coat isn't enough on its own. Bring a scarf.",
+      "It gets colder {WHEN}, so bring a scarf.",
+      "{WHEN} it gets cold enough for a scarf.",
+      "Bring a scarf. It gets colder {WHEN}."
     ],
     "c_coat": [
       "Don't leave the winter coat behind. You'll want it {WHEN}.",
@@ -267,9 +267,10 @@
       "{WHEN} it's coat weather. Long pants and a warm coat are worth thinking about."
     ],
     "heat_danger": [
-      "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
-      "The heat is dangerous today. Keep drinking water, stay in the shade and avoid the midday sun.",
-      "Drink water often and stay in the shade. Today's heat is dangerous, especially at midday."
+      "{AM}Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+      "{AM}The heat is dangerous today. Keep drinking water, stay in the shade and avoid the midday sun.",
+      "{AM}Drink water often and stay in the shade. Today's heat is dangerous, especially at midday.",
+      "Dangerous heat today. Keep drinking water and stay in the shade."
     ],
     "p_wetter_ice": [
       "Freezing rain {WHENP} makes roads and sidewalks icy. Take the umbrella and watch your step.",
@@ -315,37 +316,37 @@
       "The freezing rain stops {WHENSTOP} and returns {WHENP}. Sidewalks may be icy all day, so walk carefully."
     ],
     "p_wetter_storm": [
-      "There's a thunderstorm {WHENP}. Take the umbrella, and head indoors while it thunders.",
-      "Bring the umbrella for the thunderstorm {WHENP}, and get inside when it starts.",
-      "There's a thunderstorm {WHENP}. If you can, be indoors when it hits."
+      "There's a thunderstorm {WHENP}. Take the umbrella.",
+      "Bring the umbrella for the thunderstorm {WHENP}.",
+      "There's a thunderstorm {WHENP}, so keep the umbrella handy."
     ],
     "p_wetter_long_storm": [
-      "Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella and stay inside while it thunders.",
-      "{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella, and get inside while it thunders.",
-      "Thunderstorms move in {WHENP}. Stay inside while it thunders, and take the umbrella for the rain that follows."
+      "Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella.",
+      "{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella.",
+      "Thunderstorms move in {WHENP}. Take the umbrella for the rain that follows."
     ],
     "p_wetter_maybe_storm": [
-      "A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.",
+      "A thunderstorm is possible {WHENP}. An umbrella wouldn't hurt.",
       "There could be a thunderstorm {WHENP}. Take the umbrella, just in case.",
       "A thunderstorm is possible {WHENP}, so the umbrella's worth taking."
     ],
     "p_stays_wet_storm": [
-      "Rain and thunderstorms all day. Bring the umbrella and stay inside while it thunders.",
-      "Thunderstorms come and go all day. Take the umbrella and stay indoors when it thunders.",
-      "It's wet and stormy all day. Bring the umbrella, and get inside whenever it thunders."
+      "Rain and thunderstorms all day. Bring the umbrella.",
+      "Thunderstorms come and go all day. Take the umbrella.",
+      "It's wet and stormy all day. Bring the umbrella."
     ],
     "p_drier_storm": [
-      "Thunder for now, so stay indoors if you can. The storm clears {WHENSTOP}.",
-      "The thunderstorm passes {WHENSTOP}. Until it does, stay inside if you can.",
+      "Thunder for now. The storm clears {WHENSTOP}.",
+      "The thunderstorm passes {WHENSTOP}. Keep the umbrella until then.",
       "The rain and thunder stop later, but you'll want the umbrella for now.",
       "Take the umbrella for now. The thunderstorm passes later.",
-      "The thunderstorm moves on later. For now, keep the umbrella and get inside while it thunders."
+      "The thunderstorm moves on later. For now, keep the umbrella handy."
     ],
     "p_wet_again_storm": [
-      "The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can.",
+      "The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Keep the umbrella.",
       "The rain stops for a while, then a thunderstorm comes {WHENP}. Keep the umbrella with you.",
-      "After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts.",
-      "A thunderstorm comes {WHENP}, after a short dry spell. Try to be indoors for that one."
+      "After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella.",
+      "A thunderstorm comes {WHENP}, after a short dry spell. Keep the umbrella close."
     ]
   },
   "flavour_10": {
@@ -593,7 +594,7 @@
       "Later you'll say 'where did that come from?' From here. This morning."
     ],
     "scorch": [
-      "Do nothing at midday. Finally, a plan you're good at.",
+      "{AM}Do nothing at midday. Finally, a plan you're good at.",
       "You'll forget to drink, then wonder where the headache came from.",
       "Not a day for proving anything. Sit in the shade and drink."
     ],
@@ -986,9 +987,8 @@
       "Bring a sweater. It cools down {WHEN}. || I'll only say it once. I'm a screen, not your mother."
     ],
     "w_scarf": [
-      "The hat, scarf and gloves can come off {WHEN}. || That's three things to lose instead of one. Good luck.",
-      "{WHEN} it's mild enough to lose the hat, scarf and gloves. || 'Mild'. You'll be calling it practically spring.",
-      "You can take off the hat, scarf and gloves {WHEN}. || The coat stays. Let's not get carried away."
+      "{WHEN} it's mild enough to lose the scarf. || 'Mild'. You'll be calling it practically spring.",
+      "You can take off the scarf {WHEN}. || The coat stays. Let's not get carried away."
     ],
     "w_coat": [
       "The winter coat can come off {WHEN}. || Then you carry it. It weighs about as much as a small child.",
@@ -1001,9 +1001,7 @@
       "It heats up {WHEN}, so take water with you. || Somebody's about to crank the outside too high. Not me."
     ],
     "c_scarf": [
-      "Take a hat, scarf and gloves along. You'll want them {WHEN}. || All three. I'm not haggling.",
-      "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Hat hair or cold ears. Your choice.",
-      "It gets colder {WHEN}, so bring a hat, scarf and gloves. || I'd join you, but nothing fits a rectangle."
+      "It gets colder {WHEN}, so bring a scarf. || I'd join you, but nothing fits a rectangle."
     ],
     "c_coat": [
       "Bring the winter coat. It gets colder {WHEN}. || Carrying it until then counts as exercise. Barely.",
@@ -1155,10 +1153,9 @@
       "{M:09,10}{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall."
     ],
     "w_scarf": [
-      "It warms up {WHEN}, so the hat, scarf and gloves can come off. || Today you're a coat rack with legs. Well done.",
-      "The hat, scarf and gloves can come off {WHEN}. || You can hear people again. Not always an improvement.",
-      "The hat, scarf and gloves can come off {WHEN}. || A very modest striptease. The coat stays on, thank goodness.",
-      "{WHEN} you won't need the hat, scarf and gloves any more. || That's as much good news as winter is allowed to give."
+      "It warms up {WHEN}, so the scarf can come off. || Today you're a coat rack with legs. Well done.",
+      "The scarf can come off {WHEN}. || A very modest striptease. The coat stays on, thank goodness.",
+      "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give."
     ],
     "w_coat": [
       "The winter coat can come off {WHEN}. || You'll overheat a little before you admit I was right.",
@@ -1169,11 +1166,6 @@
       "{WHEN} it's properly hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right.",
       "Take a bottle of water. The heat arrives {WHEN}. || A full one. Not the one with a sip left in it since Tuesday.",
       "It heats up {WHEN}, so take water with you. || The clear stuff. You've seen it."
-    ],
-    "c_scarf": [
-      "It gets colder {WHEN}, so bring a hat, scarf and gloves. || You'll say hats don't suit you. Neither do red ears.",
-      "Take a hat, scarf and gloves along. You'll want them {WHEN}. || Two odd gloves still count. Wear them.",
-      "The cold sets in {WHEN}, so pack a hat, scarf and gloves. || Yes, that hat looks silly. Wear it anyway."
     ],
     "c_coat": [
       "Bring the winter coat. It gets colder {WHEN}. || You'll say 'it's not that cold' right up until it is.",

@@ -107,10 +107,22 @@ current time moves every 15 minutes, so the merge variables change.
   {%- endcomment %}
   {%- assign f_temp = '' -%}
   {%- assign f_list = F[f_key] -%}
-  {%- if f_list -%}
+  {%- comment %}
+  "{AM}" in front: a wording that only fits before noon ("keep out of the
+  midday sun", owner, round 22). After noon the next wording shows.
+  {%- endcomment %}
+  {%- if f_list and f_list.size > 0 -%}
     {%- assign f_n = f_list | size -%}
     {%- assign f_vi = text_rot | plus: 2 | modulo: f_n -%}
-    {%- assign f_temp = f_list[f_vi] -%}
+    {%- for k in (1..f_n) -%}
+      {%- assign f_cand = f_list[f_vi] -%}
+      {%- unless f_cand contains '{AM}' and local_hour >= 12 -%}
+        {%- assign f_temp = f_cand | remove: '{AM}' -%}
+        {%- break -%}
+      {%- endunless -%}
+      {%- assign f_vi = f_vi | plus: 1 | modulo: f_n -%}
+    {%- endfor -%}
+    {%- if f_temp == '' -%}{%- assign f_temp = f_list[0] | remove: '{AM}' -%}{%- endif -%}
   {%- endif -%}
   {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
   {%- assign f_temp = f_temp | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
@@ -164,12 +176,25 @@ current time moves every 15 minutes, so the merge variables change.
       {%- endif -%}
     {%- endif -%}
     {%- assign p_list = F[pk] -%}
-    {%- if p_list -%}
+    {%- comment %}
+    When the stop time is known, only the wordings that say it: „hört
+    später auf“ is for when it isn't (owner, round 22).
+    {%- endcomment %}
+    {%- assign p_joined = p_list | join: '|' -%}
+    {%- assign p_need_stop = false -%}
+    {%- if when_stop != '' and p_joined contains '{WHENSTOP}' -%}{%- assign p_need_stop = true -%}{%- endif -%}
+    {%- if p_list and p_list.size > 0 -%}
       {%- assign p_n = p_list | size -%}
       {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
       {%- for k in (1..p_n) -%}
         {%- assign p_cand = p_list[p_vi] -%}
-        {%- unless p_cand contains '{WHENSTOP}' and when_stop == '' -%}
+        {%- assign p_skip = false -%}
+        {%- if p_cand contains '{WHENSTOP}' -%}
+          {%- if when_stop == '' -%}{%- assign p_skip = true -%}{%- endif -%}
+        {%- elsif p_need_stop -%}
+          {%- assign p_skip = true -%}
+        {%- endif -%}
+        {%- unless p_skip -%}
           {%- assign f_precip = p_cand | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
           {%- break -%}
         {%- endunless -%}
@@ -295,7 +320,16 @@ current time moves every 15 minutes, so the merge variables change.
           {%- assign u_prefix = '{M:' | append: u_tag | append: '}' -%}
           {%- assign u_cand = u_cand | remove_first: u_prefix -%}
         {%- endif -%}
-        {%- if u_cand contains '{WHENSTOP}' and when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- if u_cand contains '{WHENSTOP}' -%}
+          {%- if when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- elsif when_stop != '' -%}
+          {%- comment %} A known stop time: only units that say it; none, and the plain wording shows. {%- endcomment %}
+          {%- if u_key contains 'drier' or u_key contains 'wet_again' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- endif -%}
+        {%- if u_cand contains '{AM}' -%}
+          {%- if local_hour >= 12 -%}{%- assign u_ok = false -%}{%- endif -%}
+          {%- assign u_cand = u_cand | remove: '{AM}' -%}
+        {%- endif -%}
         {%- if u_ok -%}
           {%- assign u_parts = u_cand | split: ' || ' -%}
           {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
@@ -506,6 +540,10 @@ current time moves every 15 minutes, so the merge variables change.
       {%- for k in (1..fl_n) -%}
         {%- assign fl_cand = fl_pool[fl_i] -%}
         {%- assign fl_ok = true -%}
+        {%- if fl_cand contains '{AM}' -%}
+          {%- if local_hour >= 12 -%}{%- assign fl_ok = false -%}{%- endif -%}
+          {%- assign fl_cand = fl_cand | remove: '{AM}' -%}
+        {%- endif -%}
         {%- if fl_cand contains '{M:' -%}
           {%- assign fl_tag = fl_cand | split: '{M:' | last | split: '}' | first -%}
           {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}

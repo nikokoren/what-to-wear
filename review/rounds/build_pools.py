@@ -25,6 +25,7 @@ the template rotates through (the first wording stays first).
 """
 
 import collections
+import re
 import json
 import pathlib
 
@@ -638,6 +639,9 @@ def main():
         final = apply_final(doc, lang, decisions)
         if final:
             print(f"{lang} round 22 (read-through): " + ", ".join(f"{v} {k}" for k, v in final.items()))
+        notes = apply_notes(doc, lang)
+        if notes:
+            print(f"{lang} owner's notes: " + ", ".join(f"{v} {k}" for k, v in notes.items()))
         moved = apply_owner_moves(doc, lang)
         if moved:
             print(f"{lang}: {moved} lines moved where they belong")
@@ -902,6 +906,58 @@ def apply_write_new(doc, lang, decisions):
                 print(f"  {section}.{key}: {t!r} stays, the last line, until new ones are kept")
                 n["waiting"] += 1
     return n
+
+
+
+# The owner's notes from the German read-through, applied to both languages
+# without a vote (round 22): the scarf alone as the extra-cold layer, no
+# "get inside" in storm wordings, midday-sun wordings only before noon
+# ("{AM}", block.liquid) with one afternoon wording for dangerous heat.
+NOTES_REWRITE = {'en': {"You'll be fine without the hat, scarf and gloves {WHEN}.": "You'll be fine without the scarf {WHEN}.", "{WHEN} you won't need the hat, scarf and gloves any more.": "{WHEN} you won't need the scarf any more.", 'It warms up {WHEN}, so the hat, scarf and gloves can come off.': 'It warms up {WHEN}, so the scarf can come off.', 'The hat, scarf and gloves can come off {WHEN}.': 'The scarf can come off {WHEN}.', 'You can take off the hat, scarf and gloves {WHEN}.': 'You can take off the scarf {WHEN}.', "{WHEN} it's mild enough to lose the hat, scarf and gloves.": "{WHEN} it's mild enough to lose the scarf.", 'The cold sets in {WHEN}, so pack a hat, scarf and gloves.': 'The cold sets in {WHEN}, so pack a scarf.', "{WHEN} the coat isn't enough on its own. Bring a hat, scarf and gloves.": "{WHEN} the coat isn't enough on its own. Bring a scarf.", "Take a hat, scarf and gloves along. You'll want them {WHEN}.": "Take a scarf along. You'll want it {WHEN}.", 'It gets colder {WHEN}, so bring a hat, scarf and gloves.': 'It gets colder {WHEN}, so bring a scarf.', '{WHEN} it gets cold enough for a hat, scarf and gloves.': '{WHEN} it gets cold enough for a scarf.', 'Bring a hat, scarf and gloves. It gets colder {WHEN}.': 'Bring a scarf. It gets colder {WHEN}.', "There's a thunderstorm {WHENP}. Take the umbrella, and head indoors while it thunders.": "There's a thunderstorm {WHENP}. Take the umbrella.", 'Bring the umbrella for the thunderstorm {WHENP}, and get inside when it starts.': 'Bring the umbrella for the thunderstorm {WHENP}.', "There's a thunderstorm {WHENP}. If you can, be indoors when it hits.": "There's a thunderstorm {WHENP}, so keep the umbrella handy.", 'Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella and stay inside while it thunders.': 'Thunderstorms start {WHENP}, and the rain keeps going. Bring the umbrella.', '{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella, and get inside while it thunders.': '{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella.', 'Thunderstorms move in {WHENP}. Stay inside while it thunders, and take the umbrella for the rain that follows.': 'Thunderstorms move in {WHENP}. Take the umbrella for the rain that follows.', 'A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.': "A thunderstorm is possible {WHENP}. An umbrella wouldn't hurt.", 'Rain and thunderstorms all day. Bring the umbrella and stay inside while it thunders.': 'Rain and thunderstorms all day. Bring the umbrella.', 'Thunderstorms come and go all day. Take the umbrella and stay indoors when it thunders.': 'Thunderstorms come and go all day. Take the umbrella.', "It's wet and stormy all day. Bring the umbrella, and get inside whenever it thunders.": "It's wet and stormy all day. Bring the umbrella.", 'Thunder for now, so stay indoors if you can. The storm clears {WHENSTOP}.': 'Thunder for now. The storm clears {WHENSTOP}.', 'The thunderstorm passes {WHENSTOP}. Until it does, stay inside if you can.': 'The thunderstorm passes {WHENSTOP}. Keep the umbrella until then.', 'The thunderstorm moves on later. For now, keep the umbrella and get inside while it thunders.': 'The thunderstorm moves on later. For now, keep the umbrella handy.', 'The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can.': 'The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Keep the umbrella.', 'After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts.': 'After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella.', 'A thunderstorm comes {WHENP}, after a short dry spell. Try to be indoors for that one.': 'A thunderstorm comes {WHENP}, after a short dry spell. Keep the umbrella close.'}, 'de': {"{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.": "{WHEN} wird's kalt genug für den Schal.", "Noch gewittert's, {WHENSTOP} ist es vorbei. Solange es donnert, bleib lieber drinnen.": "Noch gewittert's, {WHENSTOP} ist es vorbei.", "Noch gewittert's, später zieht es ab. Bis dahin bist du drinnen am sichersten.": "Noch gewittert's, später zieht es ab."}}
+NOTES_DROP = {'en': ["That's three things to lose instead of one. Good luck.", "All three. I'm not haggling.", 'Hat hair or cold ears. Your choice.', 'You can hear people again. Not always an improvement.', "You'll say hats don't suit you. Neither do red ears.", 'Two odd gloves still count. Wear them.', 'Yes, that hat looks silly. Wear it anyway.']}
+NOTES_GARMENTS = {'en': {'garments': ('the hat and scarf', 'the scarf'), 'garments_pron': (0, 'it')}, 'de': {'garments': ('Mütze und Schal', 'der Schal'), 'garments_pron': (0, 'ihn'), 'garments_verb': ('können Mütze und Schal', 'kann der Schal')}}
+NOTES_AM = {'en': ["Do nothing at midday. Finally, a plan you're good at."], 'de': ['Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.']}
+NOTES_PM_HEAT = {'en': 'Dangerous heat today. Keep drinking water and stay in the shade.', 'de': 'Die Hitze ist heute gefährlich. Trink viel Wasser und bleib im Schatten.'}
+MIDDAY = re.compile(r"midday|noon|mittag", re.I)
+
+
+def apply_notes(doc, lang):
+    n = collections.Counter()
+    rew, drop = NOTES_REWRITE.get(lang, {}), NOTES_DROP.get(lang, [])
+    for section, pools in doc.items():
+        if not isinstance(pools, dict):
+            continue
+        for key, pool in pools.items():
+            if not isinstance(pool, list) or key.startswith("garments"):
+                continue
+            out = []
+            for line in pool:
+                fact, sep, joke = line.partition(" || ")
+                tags = re.match(r"^((?:\{M:[^}]*\}|\{W:[^}]*\}|\{3\}|\{AM\})*)", fact).group(1)
+                body = fact[len(tags):]
+                if joke in drop:
+                    n["dropped"] += 1
+                    continue
+                if body in rew:
+                    fact = tags + rew[body]
+                    n["reworded"] += 1
+                line = fact + sep + joke
+                plain = re.sub(r"^(\{M:[^}]*\}|\{W:[^}]*\}|\{3\}|\{AM\})*", "", line)
+                am = (section == "facts" and key == "heat_danger" and MIDDAY.search(line)) or plain in NOTES_AM.get(lang, [])
+                if am and "{AM}" not in line:
+                    line = "{AM}" + line
+                    n["morning only"] += 1
+                out.append(line)
+            pools[key] = out
+    heat = doc["facts"].get("heat_danger")
+    if heat is not None and NOTES_PM_HEAT[lang] not in heat:
+        heat.append(NOTES_PM_HEAT[lang])
+        n["afternoon heat wording"] += 1
+    for key, (old, new) in NOTES_GARMENTS.get(lang, {}).items():
+        lst = doc["facts"].get(key)
+        if lst and (lst[0] == old or old == 0):
+            lst[0] = new
+    return dict(n)
 
 
 if __name__ == "__main__":

@@ -31,7 +31,7 @@ import make_round18 as r18  # noqa: E402
 
 REPO = HERE.parent.parent
 ROUND = "2026-10-final"
-TAG = re.compile(r"^((?:\{M:[^}]*\}|\{W:[^}]*\}|\{3\})*)(.*)$", re.S)
+TAG = re.compile(r"^((?:\{M:[^}]*\}|\{W:[^}]*\}|\{3\}|\{AM\})*)(.*)$", re.S)
 SECTIONS = ("flavour_10", "flavour_11", "flavour_vf_10", "flavour_vf_11", "now_10", "now_11",
             "alone_10", "alone_11", "units_10", "units_11")
 
