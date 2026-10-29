@@ -4,7 +4,7 @@ The redesign as one fork: the fact line and the sarcastic line, Visual
 Forecast, jokes about current events, and the new form. Everything here
 is built by `python3 tools/build_beta.py`; don't edit it by hand.
 
-**Current beta: `@9d567a7`** (the commit to put in the texts URL below).
+**Current beta: `@dc9cdbd`** (the commit to put in the texts URL below).
 
 ## Setting up the fork
 
@@ -16,7 +16,7 @@ is built by `python3 tools/build_beta.py`; don't edit it by hand.
 
    ```
    https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
-   https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@9d567a7/beta/lang/{{ language | default: 'en' }}.json
+   https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@dc9cdbd/beta/lang/{{ language | default: 'en' }}.json
    ```
 
    No `#` anywhere: in a URL it starts a fragment, which never reaches
