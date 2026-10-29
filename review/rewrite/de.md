@@ -137,6 +137,15 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.
   **Answers:** `rp-de-89d7bf36fe78` (2026-10-replies)
 
+## flavour_11.off
+
+- **Out:** Bitte nicht wieder die Ärmel um den Bauch knoten.
+  **Wanted instead:** phrase currently specifically mentions the arms of the garment, that does not work as a universal phrase for all layers.
+  **Tags:** wrong garment
+  **On screen:** drawing coat_dry; above it: “Heute Nachmittag wird's mild genug, um die Winterjacke auszuziehen.”
+  **What it's for:** New follow-up at 11: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.
+  **Answers:** `fn-de-4e4d8c2bc235` (2026-10-final)
+
 ## flavour_11.theme_force
 
 - **Out:** Star-Wars-Tag. Die Macht ist mit dir? Die Motivation jedenfalls nicht.

@@ -242,9 +242,10 @@ for lang, word in (("en", "long pants"), ("de", "lange Hose")):
 # Dangerous heat (37 C at 9 am, 43 C by 2 pm): water and shade lead, not
 # the evening's easing.
 HEAT = [30, 29, 29, 28, 28, 29, 31, 33, 35, 37, 39, 41, 42, 43, 43, 42, 41, 39, 37, 35, 34, 33, 32, 31]
-for lang, word in (("en", "dangerous"), ("de", "gefährlich")):
+# Water leads (the owner reworded one German wording without „gefährlich“).
+for lang, word in (("en", r"dangerous"), ("de", r"gefährlich|trink")):
     expect(f"{lang}: dangerous heat leads",
-           all(word in render(True, feels=HEAT, hour=h, lang=lang).lower() for h in (9, 12, 15)))
+           all(re.search(word, render(True, feels=HEAT, hour=h, lang=lang).lower()) for h in (9, 12, 15)))
 # Freezing rain in the window: the ice warning. A thunderstorm: the storm
 # wording. Freezing rain wins when both come.
 COLD = [-2] * 24
@@ -255,7 +256,7 @@ def says(html, pattern):
     return re.search(pattern, re.sub(r"<[^>]+>", " ", html), re.I) is not None
 
 
-for lang, ice, storm in (("en", r"\bic[ey]\b", r"thunder"), ("de", r"glatt", r"gewitter")):
+for lang, ice, storm in (("en", r"\bic[ey]\b", r"thunder"), ("de", r"glatt|gefrierend", r"gewitter")):
     html = render(True, feels=COLD, hour=8, lang=lang, probs=RAIN_PM, codes=[0] * 14 + [66] * 4 + [0] * 6)
     expect(f"{lang}: freezing rain later, the ice warning", says(html, ice))
     html = render(True, feels=FEELS, hour=8, lang=lang, probs=RAIN_PM, codes=[0] * 14 + [95] * 4 + [0] * 6)

@@ -254,7 +254,7 @@ current time moves every 15 minutes, so the merge variables change.
         {%- assign sp_kind = 'day' -%}
       {%- endif -%}
     {%- endif -%}
-    {%- if sp_pool and texts.facts.steady_special -%}
+    {%- if sp_pool and texts.facts.steady_special.size > 0 -%}
       {%- assign sp_list = texts.facts.steady_special -%}
       {%- assign sp_n = sp_list | size -%}
       {%- assign sp_i = text_rot | plus: 2 | modulo: sp_n -%}
@@ -493,7 +493,8 @@ current time moves every 15 minutes, so the merge variables change.
       {%- assign fl_pool = sp_pool -%}
       {%- if sp_kind == 'theme' -%}{%- assign fl_theme = true -%}{%- endif -%}
     {%- endif -%}
-    {%- if fl_pool -%}
+    {%- comment %} An empty pool (every line voted out) must not reach the modulo below. {%- endcomment %}
+    {%- if fl_pool and fl_pool.size > 0 -%}
       {%- assign fl_n = fl_pool | size -%}
       {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
       {%- comment %}

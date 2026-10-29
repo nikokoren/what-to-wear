@@ -6,7 +6,10 @@ Do not edit by hand; vote on the page instead.
 
 ## arc_colder · plain
 
+- {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit.
+- {WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt.
 - {WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu was Warmes, {WHEN2} wird's richtig kühl.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.
 
 ## arc_level · plain
@@ -15,25 +18,55 @@ Do not edit by hand; vote on the page instead.
 - Gegen Mittag kann die Jacke weg. Heute Nacht brauchst du sie aber wieder.
 - {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
 - {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
+- {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
+- {WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler.
+- {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
 - {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
 - {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
 - {WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.
+- {WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
+
+## arc_level · dry
+
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.
+
+## arc_warmer · plain
+
+- {WHEN} {GV} runter, und dabei bleibt's dann für heute.
+- {WHEN} {GV} runter, und zwar für den Rest des Tages.
+- {WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr.
+
+## arc_warmer · dry
+
+- {WHEN} {GV} weg, und dabei bleibt's dann für heute. || Eine klare Ansage. Kommt bei mir selten vor, genieß es.
+- {WHEN} {GV} weg, und zwar für den Rest des Tages. || Mitschleppen musst du {GP} dann trotzdem.
 
 ## c_coat · plain
 
 - Nimm die Winterjacke mit, {WHEN} wird's kälter.
+- Nimm die Winterjacke mit, {WHEN} wird's kälter.
+- {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran.
 - {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran.
 - {WHEN} wird's kalt genug für die Winterjacke.
+- {WHEN} wird's kalt genug für die Winterjacke.
+- {WHEN} wird's kälter, da brauchst du dann die Winterjacke.
 - {WHEN} wird's kälter, da braucht's die Winterjacke.
 
 ## c_coat · dry
 
+- Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ich sag das nicht zum Spaß.
+- {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt: Ich mein's ernst, einpacken!
+- {WHEN} wird's kälter, da brauchst du dann die Winterjacke. || Da hilft auch kein Jammern.
 - {WHEN} wird's kälter, da braucht's die Winterjacke. || Da hilft auch kein Jammern.
 
 ## c_coat · sarcastic
 
+- Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ja, die dicke. Ich weiß, wie du drin aussiehst.
+- {WHEN} brauchst du die Winterjacke, also nimm sie mit. || Vorausgesetzt, sie geht nach den Feiertagen noch zu.
+- {WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
 - {WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
 
 ## c_hoodie · plain
@@ -41,61 +74,132 @@ Do not edit by hand; vote on the page instead.
 - Nimm einen Pulli mit, heute Abend kühlt's ab.
 - Nimm einen Pulli mit, {WHEN} kühlt's ab.
 - Nimm einen Pulli mit, {WHEN} kühlt's ab.
+- Nimm einen Pulli mit, {WHEN} kühlt's ab.
 - Pack einen Pulli ein, heute Abend wird's kühler.
 - Pack einen Pulli ein, {WHEN} wird's kühler.
+- Pack einen Pulli ein, {WHEN} wird's kühler.
+- {WHEN} brauchst du einen Pulli, also nimm einen mit.
 - {WHEN} brauchst du einen Pulli, also nimm einen mit.
 - {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.
+- {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.
 - {WHEN} wird's frisch genug für einen Pulli.
+- {WHEN} wird's frisch genug für einen Pulli.
+- {WHEN} wird's kühl, dann bist du froh über einen Pulli.
+
+## c_hoodie · dry
+
+- Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar.
 
 ## c_hoodie · sarcastic
 
 - Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens.
+- {WHEN} brauchst du einen Pulli, also nimm einen mit. || Zum Anziehen. Nicht zum Um-den-Bauch-Knoten.
 
 ## c_jacket · plain
 
 - Nimm eine Jacke mit, heute Abend kühlt's ab.
 - Nimm eine Jacke mit, {WHEN} kühlt's ab.
+- Nimm eine Jacke mit, {WHEN} kühlt's ab.
+- Pack eine Jacke ein, {WHEN} wird's etwas kühler.
 - Pack eine Jacke ein, {WHEN} wird's kühler.
 - Pack eine Jacke ein, {WHEN} wird's kühler.
 - {WHEN} brauchst du eine Jacke, also nimm eine mit.
+- {WHEN} brauchst du eine Jacke, also nimm eine mit.
+- {WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke.
 - {WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke.
 - {WHEN} wird's frisch genug für eine Jacke.
+- {WHEN} wird's frisch genug für eine Jacke.
+- {WHEN} wird's kühl, dann bist du froh über eine Jacke.
+
+## c_jacket · dry
+
+- Nimm eine Jacke mit, {WHEN} kühlt's ab. || Ich weiß, jetzt sieht's nicht danach aus. Ich hab trotzdem recht.
+- Nimm eine Jacke mit, {WHEN} kühlt's ab. || Wär ja auch zu schön gewesen, wenn's gehalten hätte.
+- {WHEN} wird's kühl, dann bist du froh über eine Jacke. || Wär echt mal Zeit für ein Dankeschön.
+
+## c_jacket · sarcastic
+
+- {WHEN} brauchst du eine Jacke, also nimm eine mit. || Bei dir muss ich's sicher wieder dreimal sagen.
 
 ## c_relief · plain
 
 - Die Hitze lässt {WHEN} nach, aber es bleibt warm.
+- Die Hitze lässt {WHEN} nach, aber es bleibt warm.
 - {WHEN} ist das Schlimmste der Hitze vorbei, es bleibt aber warm.
+- {WHEN} ist die schlimmste Hitze überstanden, es bleibt aber warm.
+- {WHEN} kühlt's ein bisschen ab, warm bleibt's trotzdem.
+- {WHEN} lässt die Hitze etwas nach, aber es bleibt warm.
+- {WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht.
 - {WHEN} wird's angenehmer, aber es bleibt warm.
+- {WHEN} wird's angenehmer, aber es bleibt warm.
+
+## c_relief · dry
+
+- {WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Mehr gute Nachrichten gibt's heute nicht.
+
+## c_relief · sarcastic
+
+- {WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Du jammerst trotzdem weiter. Nur etwas leiser.
 
 ## c_scarf · plain
 
 - Denk an Mütze, Schal und Handschuhe, {WHEN} wird's ungemütlich kalt.
+- Denk an deinen Schal, {WHEN} wird's ungemütlich kalt.
+- Pack deinen Schal ein, {WHEN} wird's kälter.
 - {WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.
+- {WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.  
+  _here I am thinking of just adding the schal to the image. so we'd need to cut the other clothing items out of that text. the sprite will already be wearing a beanie and gloves in the previous state. but we dont have to reference that specifically anywhere. the scarf is just an easy way to visualize: it's going to be extra fucking cold. deal with it in whatever way works for you. probably extra layers underneath too. but we can't see and visualize those, therefore the extra outer layer._
 - {WHEN} wird's kälter, da brauchst du vermutlich Mütze, Schal und Handschuhe.
+- {WHEN} wird's kälter, da brauchst du vermutlich einen Schal.
+- {WHEN} wird's richtig kalt, da solltest du eine extra warme Schicht, wie einen Schal, dabeihaben.
 
 ## cold · dry
 
+- Bei dem Wetter hätt die Oma keinen ohne Mütze aus dem Haus gelassen.
 - Bei der Kälte schmeckt sogar Glühwein.
 - Bei der Kälte schmeckt sogar Glühwein.
 - Bei der Kälte schmeckt sogar Glühwein.
+- Bei der Kälte schmeckt sogar Glühwein.
+- Bei der Kälte trinkt man sogar freiwillig Glühwein.
+- Da bleibt immerhin das Bier auf dem Balkon schön kühl.
+- Da hilft auch kein Jammern.
+- Das ist keine Vorhersage, das ist eine Drohung.
+- Einer läuft vermutlich trotzdem gerade in kurzer Hose rum. Einen gibt's immer.
+- Fenster zu, wir heizen nicht für draußen!
+- Gleich reißt wieder einer zum Stoßlüften alle Fenster auf.
 - Gleich reißt wieder einer zum Stoßlüften alle Fenster auf.
 - Irgendein Depp läuft vermutlich trotzdem in kurzen Hosen rum.
+- Irgendein Depp läuft vermutlich trotzdem in kurzen Hosen rum.
+- Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.
 - Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.
 - Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.  
   _I like it, keep it, but this might sound boring after a bit. Great for the first cold day in a while or something like that._
+- Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.
+- Kälte ist gesund, sagen immer die, die drinnen sitzen.
 - Polarluft hat uns fest im Griff. Klingt dramatisch, ist es auch.
 - Saukalt. Mehr fällt mir dazu nicht ein.
 - Saukalt. Mehr fällt mir dazu nicht ein.
 - Saukalt. Mehr fällt mir dazu nicht ein.
+- Saukalt. Mehr fällt mir dazu nicht ein.
 - Saukalt. Mehr gibt's nicht zu sagen.
 - Saukalt. Mehr gibt's nicht zu sagen.
+- Saukalt. Mehr gibt's nicht zu sagen.
+- So halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.
+- Und dann gibt's Leute, die den Winter mögen. Angeblich.
+- Und dann gibt's Leute, die sagen, sie mögen den Winter.
+- Und gleich wird trotzdem wieder stoßgelüftet.
+- „Kälte härtet ab“, sagen die mit der Heizung auf fünf.
 - „Kälte härtet ab“, sagen die mit der Heizung auf fünf.
 - „Kälte härtet ab“, sagen die mit der Heizung auf fünf.
 
 ## cold · sarcastic
 
 - Bis du fertig angezogen bist, blühen schon die Krokusse.
+- Dann hast du ja den ganzen Tag ein Gesprächsthema.
+- Deine Hände sind heut fast so kalt wie dein Herz.
 - Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.
+- Den Gästen bietest du wieder Hausschuhe an, und was ist mit mir? Ich krieg nicht mal eine Decke.
+- Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Dick eingepackt gefällst du mir am besten. Man sieht weniger.
 - Dick eingepackt gefällst du mir am besten. Man sieht weniger.
@@ -103,49 +207,115 @@ Do not edit by hand; vote on the page instead.
 - Gleich träumst du wieder vom Süden. Dann fahr halt endlich hin.
 - Gut eingemummelt siehst du am besten aus. Weniger sichtbar.
 - Gut eingemummelt siehst du am besten aus. Weniger sichtbar.
+- Gut eingemummelt siehst du am besten aus. Weniger sichtbar.
 - Ich hab dir extra den Schal gestrickt. Trag ihn auch.
 - Kalte Füße kriegst du heut nicht nur vor Entscheidungen.
 - Kein Rekord, aber kalt genug für deinen ersten Schnupfen.
 - Ohne Handschuhe? Deine Finger hassen dich jetzt schon.
+- Ohne Mütze rausgehen und dann jammern. Kennen wir schon.
+- Und du nimmst wieder die dünne Jacke. Na dann viel Spaß.
 
 ## cool · dry
 
+- Beschwerden über die Vorhersage bitte an den Wetterfrosch. Ich geb die Infos nur weiter.
+- Juhuu! Gleich wird im Büro wieder um die Heizung gestritten.
 - Wetter für Leute, die beim Essen „passt schon“ sagen.
 
 ## cool · sarcastic
 
+- Die Jacke hast du schon ein paar Jahre, oder? Sieht man.
+- Draußen passiert nichts. Kennst du ja von deinen Samstagen.
+- Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.
 - Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.
 - Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.
+- Heut bist du mal passend angezogen. Am Rest arbeiten wir noch.
+- Ideales Fensterputzwetter. Deine hätten's nötig.
 - Ideales Fensterputzwetter. Deine hätten's nötig.
 - Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.
+- Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.
 - Perfekt zum Fensterputzen. Nur so ein Hinweis.
+- Perfekt zum Fensterputzen. Nur so ein Hinweis.
+
+## day_dst_fall · dry
+
+- Eine Stunde mehr, und ich weiß nicht, wohin damit.
+- Endlich wieder dunkel um fünf. Das hat mir echt gefehlt.
+
+## day_friday · dry
+
+- Im Supermarkt ist's wieder so voll, als käm der Weltuntergang.
+- Jetzt reden wieder über ihre Wochenendpläne, und enden dann doch wieder auf dem Sofa.
+- Jetzt tun alle, als hätten sie die ganze Woche durchgearbeitet.
+- Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch.
+
+## day_monday · sarcastic
+
+- Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell.
+
+## day_shortest · dry
+
+- Ab morgen wird's heller. Langsam. Seeeeehr langsam.
+- Ich mach's wie die Sonne und halt mich heute kurz.
 
 ## evening · dry
 
+- Am Outfit liegt's also nicht, wenn der Abend nix wird.
+- Gleich bohrt garantiert wieder irgendein Nachbar in der Wand rum.
+- Gut so. Für Überraschungen bin ich schon zu müde.
+- Jetzt fehlt nur noch die passende Laune.
+- Jetzt stehen wieder alle im Stau und nennen es Feierabend.
 - Pünktlich zum Feierabend fällt wieder eine S-Bahn aus.
+- Pünktlich zum Feierabend fällt wieder eine S-Bahn aus.
+- Schade eigentlich. Ein bisschen Abwechslung hätt ich heute noch vertragen.
 - Wenigstens das Wetter ist heute mal unkompliziert.
+- Wenigstens das Wetter ist heute mal unkompliziert.
+
+## evening · sarcastic
+
+- Bitte heute Abend mal ein anderes Thema als das Wetter.
+- Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.
+- Feierabend. Jetzt lass mich in Ruhe.
+- Für den Abend reicht's. Für ein Kompliment nicht.
+- Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.
 
 ## fickle · dry
 
+- Drei Bilder für einen Tag. Ich bin doch kein Daumenkino.
 - Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
 - Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
 - Wechselhaft. Das sagen wir Wetterfrösche, wenn wir's selber nicht wissen.
 
 ## hot · dry
 
+- Bald schwitzt du im Stehen. Ein Traum.
+- Bei der Hitze ist mir sogar das Meckern zu anstrengend.
 - Gleich kommt wieder: „Früher war es auch schon heiß.“
 - Gleich kommt wieder: „Früher war es auch schon heiß.“
+- Gleich kommt wieder: „Früher war es auch schon heiß“. Nein Günter, einfach Nein.
+- Heute kommen vermutlich wieder alle drauf, dass sie immer noch keine Ventilatoren haben und stürmen den Baumarkt.
 - Im Baumarkt gibt's wieder keinen Ventilator mehr.
+- In der Bahn kann man heute wieder seine Mitmenschen riechen.
+- In der Bahn riecht's heute nach jedem Einzelnen.
 - In der Bahn riecht's heute nach jedem Einzelnen.
 - Jetzt meckern, und im Januar wünschen sich alle wieder den Sommer zurück.
+- Jetzt meckern, und im Januar wünschen sich alle wieder den Sommer zurück.
+- Mehr sag ich dazu nicht. Ich bin ja nicht deine Mutter.
+- Und an solchen Tagen fällt in der Bahn wieder die Klimaanlage aus. Wegen Hitze.
+- Und bei der Hitze stellen sich Leute dann noch an den Grill. Faszinierend.
+- Und im Winter wieder jammern, dass es zu kalt ist. Schon klar.
+- Wasser, hab ich gesagt. Bier zählt nicht.
+- Zum Meckern ist es mir heute zu heiß. Fast.
 
 ## ice · dry
 
+- Gott sei Dank hab ich heute keine Pläne.
+- Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.
 - Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.
 
 ## ice · sarcastic
 
 - Elegant gehst du ja sowieso nicht. Heute fällt's wenigstens nicht auf.
+- Und heute bitte nicht beim Gehen aufs Handy starren.
 - Und heute bitte nicht beim Gehen aufs Handy starren.
 
 ## mild · sarcastic
@@ -154,59 +324,117 @@ Do not edit by hand; vote on the page instead.
 
 ## nice · dry
 
+- Bei dem Wetter fahren alle ins Grüne und starren dann dort auf ihr Handy. Sinnvoll.
+- Bei dem Wetter fällt selbst mir schlechte Laune schwer.
+- Da hat man einmal Biergartenwetter, und der Biergarten hat schon zu. Verdammt.
 - Die Ersten stehen schon wieder mit der Grillzange auf dem Balkon.
+- Die Ersten stehen schon wieder mit der Grillzange auf dem Balkon.
+- Gleich kommt wieder Dieter mit dem Rasenmäher um die Ecke. BRRRRRRRRRRRRRRR
+- Heute gibt's nichts auszusetzen. Das ärgert mich.
 
 ## nice · sarcastic
 
 - Bei so einem Wetter hab ich früher den ganzen Garten gemacht.
+- Bestes Wetter, und du schaust trotzdem drein wie Montag.
 - Dieses Wetter hast du dir eigentlich nicht verdient.
+- Dieses Wetter hast du dir eigentlich nicht verdient.
+- Geh raus, sonst wirst du so grau wie ich.
 - Geh raus, sonst wirst du so grau wie ich.
 - Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.
 - Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
+- Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
 - So ein Wetter hätten sich andere mehr verdient.
+- So ein Wetter hätten sich andere mehr verdient.
+- Traumwetter, und du guckst wie an einem Montag.
 - Traumwetter, und du guckst wie an einem Montag.
 
 ## night · dry
 
+- Das sag ich jetzt nur noch aus Pflichtgefühl. Eigentlich hab ich schon Feierabend.
 - Für die Couch passt's sowieso.
+- Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?
 - Mehr als „passt“ fällt mir so spät auch nicht mehr ein.
+- Mehr als „passt“ fällt mir so spät auch nicht mehr ein.
+- Nachts kann ich wenigstens ungestört grantig sein.
+- Nachts stört mich wenigstens keiner beim Grummeln.
 - Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.
+- Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.
+- So spät mach ich nur noch das Nötigste. Wie immer eigentlich.
 
 ## night · sarcastic
 
 - Finger weg vom Kühlschrank. Ich seh alles.
+- Finger weg vom Kühlschrank. Ich seh alles.
 - Noch eine Folge, sagst du. Seit drei Folgen.
 - Schon wieder so spät? Ab ins Bett.
 - So spät noch wach? Ab ins Bett mit dir.
+- So spät noch wach? Ab ins Bett mit dir.
+- Um die Uhrzeit noch aufs Wetter schauen. Respekt.
 - Und jetzt nicht wieder an den Kühlschrank.
+- „Nur noch eine Folge.“ Das war vor zwei Folgen.
 - „Nur noch eine Folge.“ Das war vor zwei Folgen.
 
 ## off · dry
 
 - Dann darfst du dich kurz freuen. Aber übertreib's nicht.
+- Dann darfst du dich kurz freuen. Aber übertreib's nicht.
+- Hier drin merk ich davon natürlich wieder nichts.
+- Und dann darfst du {GP} wieder überm Arm spazieren tragen.
 - Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+- Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+
+## offon · dry
+
+- Also nicht wieder irgendwo liegen lassen.
+- Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.
+
+## on · dry
+
+- Ich weiß, jetzt sieht's nicht danach aus. Ich hab trotzdem recht.
+- Wär ja auch zu schön gewesen, wenn's gehalten hätte.
+
+## on · sarcastic
+
+- Vorausgesetzt, deine geht nach den Feiertagen noch zu.
 
 ## p_drier · plain
 
+- Der Regen hört später auf, bis dahin brauchst du den Schirm.
 - Der Regen lässt später nach, für jetzt brauchst du den Schirm.
+- Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm.
+- Nimm den Schirm mit, der Regen hört erst später auf.
 - Nimm den Schirm mit, der Regen hört erst später auf.
 - Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf.
+- Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf.
 - {WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm.
+- {WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm.
+
+## p_drier · dry
+
+- Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Jammer nicht. Ich hab mir den Tag auch anders vorgestellt.
 
 ## p_drier_ice · plain
 
+- Der gefrierende Regen hört später auf, glatt bleibt's aber. Bis dahin hilft der Schirm, aber sei vorsichtig.
+- Vorsicht, Glatteis! Der gefrierende Regen hört erst {WHENSTOP} auf. Glatt bleibt's auch danach.
 - Vorsicht, Glatteis. Der gefrierende Regen hört erst {WHENSTOP} auf, glatt bleibt's auch danach.
 - Vorsicht, Glatteis: Der gefrierende Regen hört erst später auf, und die Wege bleiben danach glatt.
+- Vorsicht, Glatteis: Der gefrierende Regen hört erst später auf, und die Wege sind auch danach glatt.
+- {WHENSTOP} hört der gefrierende Regen auf. Die Wege können auch danach noch glatt sein, also sei vorsichtig.
 
 ## p_drier_snow · plain
 
 - Der Schnee hört später auf.
 - Der Schneefall hört {WHENSTOP} auf.
+- Der Schneefall hört {WHENSTOP} auf.
 - Später hört's auf zu schneien.
+- {WHENSTOP} hört's auf zu schneien.
 - {WHENSTOP} hört's auf zu schneien.
 
 ## p_drier_snow · dry
 
+- Der Schnee hört später auf. || Die Salzränder an den Schuhen bleiben bis März.
+- Noch schneit's, aber später hört es auf. || Schade eigentlich. Ich hatte mich grad dran gewöhnt.
 - Noch schneit's, aber später hört es auf. || Schade eigentlich. Ich hatte mich grad dran gewöhnt.
 
 ## p_drier_storm · plain
@@ -218,9 +446,20 @@ Do not edit by hand; vote on the page instead.
 ## p_snow_coming · plain
 
 - Mach dich auf Schnee gefasst, {WHENP} geht's los.
+- Mach dich auf Schnee gefasst, {WHENP} geht's los.
+- Rechne {WHENP} mit Schnee.
 - Rechne {WHENP} mit Schnee.
 - {WHENP} fängt's an zu schneien.
+- {WHENP} fängt's an zu schneien.
+- {WHENP} setzt Schneefall ein.
 - {WHENP} soll es schneien.
+- {WHENP} soll es schneien.
+
+## p_snow_coming · dry
+
+- Rechne {WHENP} mit Schnee. || Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.
+- {WHENP} fängt's an zu schneien. || Schön ist der Schnee ja. Die ersten zehn Minuten.
+- {WHENP} soll es schneien. || Drei Flocken, und schon heißt's wieder Schneechaos.
 
 ## p_snow_coming · sarcastic
 
@@ -228,28 +467,48 @@ Do not edit by hand; vote on the page instead.
 
 ## p_stays_wet · plain
 
+- Der Regen hält den ganzen Tag an. Der Schirm bleibt also bei dir.
 - Eine Regenpause gibt's heute nicht, nimm den Schirm mit.
+- Eine Regenpause gibt's heute nicht. Nimm den Schirm mit.
 - Heute hört's nicht auf zu regnen, also Schirm mitnehmen.
 - Heute hört's nicht auf zu regnen, nimm den Schirm mit.
+- Heute hört's nicht auf zu regnen. Nimm den Schirm mit.
 - Regen bis zum Abend, der Schirm muss mit.
 - Regen bis zum Abend, der Schirm sollte wirklich mit.
+- Regen bis zum Abend. Der Schirm sollte wirklich mit.
 
 ## p_stays_wet · dry
 
 - Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Alle starren trotzdem aufs Regenradar. Als ob das was hilft.
 
+## p_stays_wet_ice · plain
+
+- Den ganzen Tag gefrierender Regen, Straßen und Gehwege sind glatt. Nimm den Schirm mit und pass auf.
+
 ## p_stays_wet_snow · plain
 
 - Der Schneefall hält den ganzen Tag an.
+- Der Schneefall hält den ganzen Tag an.
+- Es schneit den ganzen Tag so weiter.
+- Es schneit den ganzen Tag.
 - Es schneit den ganzen Tag.
 - Heute hört's nicht auf zu schneien.
+- Heute hört's nicht auf zu schneien.
 - Heute schneit's ohne Unterbrechung.
+- Heute schneit's ohne Unterbrechung.
+- Schnee bis zum Abend.
 - Schnee bis zum Abend.
 
 ## p_stays_wet_snow · dry
 
 - Der Schneefall hält den ganzen Tag an. || Die Bahn hat bestimmt schon aufgegeben.
+- Der Schneefall hält den ganzen Tag an. || Die Bahn hat bestimmt schon aufgegeben.
 - Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.
+- Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.
+
+## p_stays_wet_snow · sarcastic
+
+- Es schneit weiter, bis der Tag vorbei ist. || Morgen erzählst du allen, wie du dich durchgekämpft hast. Bis zum Sofa.
 
 ## p_wet_again · plain
 
@@ -258,12 +517,20 @@ Do not edit by hand; vote on the page instead.
 ## p_wet_again · dry
 
 - Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Dazwischen weiß keiner, wohin mit dem nassen Ding.
+- Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Dazwischen weiß keiner, wohin mit dem nassen Ding.
 
 ## p_wet_again_snow · plain
 
 - Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien.
+- Der Schneefall hört später kurz auf, {WHENP} geht es weiter.
+- Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter.
 - Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's wieder.
 - {WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los.
+- {WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los.
+
+## p_wet_again_snow · dry
+
+- {WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Schau nicht so. Ich hab mir das auch nicht ausgesucht.
 
 ## p_wet_again_storm · plain
 
@@ -273,14 +540,21 @@ Do not edit by hand; vote on the page instead.
 
 - Nimm den Schirm mit, heute Nachmittag kommt ein Schauer.
 - Nimm den Schirm mit, {WHENP} kommt ein Regenschauer.
+- Nimm den Schirm mit, {WHENP} kommt ein Regenschauer.
 - Pack den Schirm ein, {WHENP} wird's kurz nass.
 - Schirm nicht vergessen, {WHENP} kommt ein Regenschauer.
+- Schirm nicht vergessen, {WHENP} kommt ein Regenschauer.
+- {WHENP} kommt ein Schauer, also nimm den Schirm mit.
 - {WHENP} kommt ein Schauer, also nimm den Schirm mit.
 - {WHENP} regnet's kurz. Mit Schirm bleibst du trocken.
+- {WHENP} regnet's kurz. Mit Schirm bleibst du trocken.
+- {WHENP} zieht ein Regenschauer durch, pack also den Schirm ein.
 - {WHENP} zieht ein Regenschauer durch, pack also den Schirm ein.
 
 ## p_wetter · sarcastic
 
+- Pack den Schirm ein, {WHENP} wird's kurz nass. || Glauben wirst du's erst dem Regenradar. Weil's bunt ist.
+- {WHENP} kommt ein Schauer, also nimm den Schirm mit. || Endlich passt das Wetter mal zu deinem Gesicht.
 - {WHENP} kommt ein Schauer, also nimm den Schirm mit. || Endlich passt das Wetter mal zu deinem Gesicht.
 
 ## p_wetter_ice · plain
@@ -294,156 +568,335 @@ Do not edit by hand; vote on the page instead.
 - Nimm den Schirm mit, heute Nachmittag fängt's an zu regnen, und zwar länger.
 - Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger.
 - {WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit.
+- {WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit.
+
+## p_wetter_long · sarcastic
+
+- {WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Aber auf mich hörst du ja erst mit nassen Socken.
+- {WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Den Rest vom Tag kannst du abhaken. Viel verpasst du nicht.
+- {WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Wenn du nass wirst, war's wieder meine Schuld. Klar.
+
+## p_wetter_long_ice · plain
+
+- {WHENP} setzt gefrierender Regen ein und hört nicht mehr auf. Rechne mit Glatteis und nimm den Schirm mit.
 
 ## p_wetter_maybe · plain
 
 - Heute Nachmittag kann's regnen. Mit Schirm bist du auf der sicheren Seite.
+- Ob's {WHENP} regnet, ist nicht ganz sicher. Der Schirm schadet vermutlich nicht.
 - Vielleicht regnet's heute Nachmittag. Der Schirm schadet nicht.
 - Vielleicht regnet's {WHENP}. Der Schirm schadet nicht.
 - {WHENP} ist Regen möglich, nimm lieber den Schirm mit.
+- {WHENP} ist Regen möglich. Nimm lieber den Schirm mit.
 - {WHENP} ist ein Schauer drin, also lieber den Schirm einpacken.
+- {WHENP} ist eventuell ein Schauer drin, also lieber den Schirm einpacken.
+- {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite.
 - {WHENP} könnte es regnen, ein Schirm schadet nicht.
+- {WHENP} könnte es regnen. Ein Schirm schadet nicht.
+
+## p_wetter_maybe · dry
+
+- Ob's {WHENP} regnet, ist nicht sicher. Der Schirm kann trotzdem mit. || Sicher ist bei mir nur die schlechte Laune.
+- {WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit sind sie immer fein raus. Feiglinge.
 
 ## p_wetter_maybe · sarcastic
 
 - {WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.
+- {WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.
+- {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.
+- {WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.
 - {WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.
 
 ## p_wetter_maybe_ice · plain
 
+- Vielleicht kommt {WHENP} gefrierender Regen. Nimm sicherheitshalber den Schirm mit.
 - {WHENP} ist gefrierender Regen möglich, dann wird's glatt. Ein Schirm schadet nicht.
 
 ## p_wetter_maybe_storm · plain
 
+- Vielleicht gibt's {WHENP} ein Gewitter. Nimm den Schirm mit.
 - {WHENP} ist ein Gewitter möglich, ein Schirm schadet nicht.
+- {WHENP} ist ein Gewitter möglich. Ein Schirm schadet nicht.
+- {WHENP} kann ein Gewitter aufziehen. Mit Schirm bist du gut vorbereitet.
 
 ## p_wetter_storm · plain
 
+- Nimm den Schirm mit, {WHENP} gibt's ein Gewitter.
 - Nimm den Schirm mit, {WHENP} gibt's ein Gewitter. Wenn's donnert, geh lieber rein.
+- {WHENP} kommt ein Gewitter. Pack den Schirm ein.
+- {WHENP} zieht ein Gewitter durch. Nimm den Schirm mit.
+
+## pants · sarcastic
+
+- Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
+
+## pants_swing · plain
+
+- Vielleicht doch lieber ne lange Hose? {WHEN} kommt eine Kaltfront.
 
 ## rain · dry
 
 - Vorausgesetzt, du weißt noch, wo er ist.
+
+## rain · sarcastic
+
+- Glauben wirst du's erst dem Regenradar. Weil's bunt ist.
+
+## scorch · dry
+
+- Ich sag's auch dreimal, wenn's sein muss. Schatten, Schatten, Schatten.
+
+## scorch · sarcastic
+
+- Heute darfst du sogar faul im Schatten liegen. Meinen Segen hast du.
+
+## shorts · sarcastic
+
+- Aber bitte nicht jammern, dass es dir zu kalt ist.
+- Du wolltest doch immer mal was Mutiges tun.
 
 ## shorts_early · plain
 
 - Frischer Start, gegen Mittag wird's warm genug für Shorts.
 - Gerade ist's noch frisch, aber {WHEN} wird's warm genug für Shorts.
 - Gerade ist's noch frisch, aber {WHEN} wird's warm genug für Shorts.
+- Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen.
 - Jetzt noch kühl, gegen Mittag ist es Shorts-Wetter.
+
+## shorts_early · sarcastic
+
+- Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter. || Überleg dir das gut. Ich hab deine Knie schon gesehen.
+- Jetzt ist's noch kühl, aber {WHEN} ist es warm genug für Shorts. || Ob du das der Welt antun willst, musst du selber wissen.
+
+## shorts_swing · plain
+
+- Es lohnt sich eventuell schon jetzt kurze Hosen anzuziehen, {WHEN} wird's warm.
+- {WHEN} wird's warm. Überleg dir, gleich ne kurze Hose anzuziehen.
+
+## shorts_swing_back · plain
+
+- Überleg dir, ne kurze Hose anzuziehen, {WHEN} wird's warm. Die warme Schicht solltest du aber trotzdem mitnehmen.
 
 ## snow · dry
 
 - Der Hausmeister hat wieder seinen großen Tag.
+- Der Schneepflug kommt wieder erst, wenn alles getaut ist.
 - Die Bahn hat bestimmt schon aufgegeben.
 - Die Bahn hat bestimmt schon aufgegeben.
+- Die Bahn hat bestimmt schon aufgegeben.
 - Drei Flocken, und schon heißt's wieder Schneechaos.
 - Drei Flocken, und schon heißt's wieder Schneechaos.
 - Drei Flocken, und schon heißt's wieder Schneechaos.
+- Drei Flocken, und schon heißt's wieder Schneechaos.
+- Freu dich nicht zu früh. Bald ist das alles grauer Matsch.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
+- Fünf Zentimeter, und im Radio heißt's Schneechaos.
+- Gleich fährt keine Bahn mehr, wetten?
 - Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.
 - Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.
+- Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.
+- Schneeketten hat natürlich wieder keiner dabei.
+- Schön ist der Schnee ja. Die ersten zehn Minuten.
 - Schön ist so ein Schnee ja. Die ersten zehn Minuten.
 
 ## snow · sarcastic
 
 - Dann ist draußen endlich alles so blass wie du.
+- Dann ist draußen endlich alles so blass wie du.
 - Du auf Glatteis. Ich hol schon mal Popcorn.
+- Du auf Glatteis. Ich hol schon mal Popcorn.
+- Du und Glatteis. Das wird wieder was.
+- Du wirst trotzdem so tun, als hätt's dir keiner gesagt.
 - Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.
+- Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.
+- Jeder Schneemann hat heute mehr Ausstrahlung als du.
+- Neben dir wirkt jeder Schneemann lebendig.
 - Neben dir wirkt jeder Schneemann lebendig.
 
 ## steady · plain
 
 - Dein Outfit passt heute den ganzen Tag.
+- Dein Outfit passt heute den ganzen Tag.
 - Mit dem, was du anhast, kommst du gut durch den Tag.
 - Was du anhast, passt bis zum Abend.
+- Was du anhast, passt bis zum Abend.
 - Was du anhast, passt für den ganzen Tag.
+- Was du anhast, passt für den ganzen Tag.
+- Was du anhast, passt für den restlichen Tag.
 - Was du anhast, passt für den restlichen Tag.
 
 ## steady · dry
 
 - Da hätt ich heute auch frei nehmen können.
+- Da hätt ich heute auch frei nehmen können.
+- Dann bin ich heute wohl wieder nur Deko.
+- Dann kann ja nur noch alles andere schiefgehen.
 - Dann kann ja nur noch alles andere schiefgehen.
 - Dein Outfit passt heute den ganzen Tag. || Wenn doch alles so einfach wär.
+- Dein Outfit passt heute den ganzen Tag. || Wenn doch alles so einfach wär.
+- Für so eine Ansage bin ich eigentlich überqualifiziert.
 - Für so eine Ansage bin ich eigentlich überqualifiziert.
 - Heute ändert sich nichts, was du anhast, passt den ganzen Tag. || Für so eine Ansage bin ich eigentlich überqualifiziert.
+- Heute ändert sich nichts, was du anhast, passt den ganzen Tag. || Für so eine Ansage bin ich eigentlich überqualifiziert.
+- Laaaaaangweilig.
+- Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch frei nehmen können.
 - Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch frei nehmen können.
 - Was du anhast, passt den ganzen Tag. || Dann bin ich heute wohl nur Deko.
+- Was du anhast, passt den ganzen Tag. || Dann bin ich heute wohl wieder nur Deko.
+- Was du anhast, passt den ganzen Tag. || Dann kann ja nur noch alles andere schiefgehen.
+- Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.
+- Was du anhast, passt den ganzen Tag. || Ich hätt's gern spannender gemacht, aber das Wetter spielt nicht mit.
+- Was du anhast, passt den ganzen Tag. || Mehr hab ich heute auch nicht zu sagen.
+- Was du anhast, passt den ganzen Tag. || Wenigstens das Wetter ist heute mal unkompliziert.
 - Was du anhast, passt den ganzen Tag. || Wenigstens das Wetter ist heute mal unkompliziert.
 - Wenn doch alles so einfach wär.
+- Wenn nur immer so einfach wär.
 
 ## steady · sarcastic
 
+- Auch für die Joggingrunde, die du dann doch nicht drehst.
 - Dann kannst du heute ja nichts falsch machen. Theoretisch.
+- Dann kannst du heute ja nichts falsch machen. Theoretisch.
+- Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.
+- Du musst dich heute nicht umziehen, was du anhast, passt den ganzen Tag. || Hättest du sowieso nicht gemacht.
+- Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.
 - Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.
 - Ob's dir steht, ist eine andere Frage.
+- Ob's dir steht, ist eine andere Frage.
+- Was du anhast, passt den ganzen Tag. || Auch für die Joggingrunde, die du dann doch nicht drehst.
 - Was du anhast, passt den ganzen Tag. || Auch für die Joggingrunde, die du dann doch nicht drehst.
 - Was du anhast, passt den ganzen Tag. || Damit hast du die einzige richtige Entscheidung des Tages schon hinter dir.
+- Was du anhast, passt den ganzen Tag. || Damit hast du die einzige richtige Entscheidung des Tages schon hinter dir.
+- Was du anhast, passt den ganzen Tag. || Glück gehabt. Nachgedacht hast du dabei ja nicht.
+- Was du anhast, passt den ganzen Tag. || Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.
 - Was du anhast, passt den ganzen Tag. || Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.
 - Was du anhast, passt den ganzen Tag. || Mehr kann ich für dich heute nicht tun.
+- Was du anhast, passt den ganzen Tag. || Mehr kann ich für dich heute nicht tun.
 - Was du anhast, passt den ganzen Tag. || Ob's dir steht, ist eine andere Frage.
+- Was du anhast, passt den ganzen Tag. || Ob's dir steht, ist eine andere Frage.
+- Was du anhast, passt den ganzen Tag. || Zumindest bis zum ersten Kaffeefleck.
 - Wettermäßig passt, was du anhast, den ganzen Tag. || Modisch reden wir lieber nicht drüber.
+- Zumindest bis zum ersten Kaffeefleck.
 - Zumindest bis zum ersten Kaffeefleck.
 
 ## steady_cold · plain
 
 - Die Kälte bleibt den ganzen Tag.
+- Die Kälte bleibt den ganzen Tag.
+- Die Kälte hält heute den ganzen Tag an.
 - Die Kälte hält heute den ganzen Tag an.
 - Es bleibt den ganzen Tag so kalt.
+- Es bleibt den ganzen Tag so kalt.
+- Kalt bleibt's heute, und zwar den ganzen Tag.
 - Kalt bleibt's heute, und zwar den ganzen Tag.
 
 ## steady_cold · dry
 
 - Die Kälte hält den ganzen Tag an. || Da bleibt immerhin das Bier auf dem Balkon schön kühl.
+- Die Kälte hält den ganzen Tag an. || Da bleibt immerhin das Bier auf dem Balkon schön kühl.
 - Es bleibt den ganzen Tag so kalt. || Da hilft auch kein Jammern.
+- Es bleibt den ganzen Tag so kalt. || Da hilft auch kein Jammern.
+- Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist ein Versprechen.
 - Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist eine Drohung.
+- Es bleibt den ganzen Tag so kalt. || Heute ist die Heizung die Einzige, die richtig arbeitet.
+- Es bleibt den ganzen Tag so kalt. || Höher gedreht wird nicht. Hoffen wir, dass die Nachbarn heizen.
+- Es bleibt den ganzen Tag so kalt. || Wer jetzt „herrlich frisch“ sagt, kriegt von mir keinen Wetterbericht mehr.
 - Es bleibt den ganzen Tag so kalt. || Wer jetzt „herrlich frisch“ sagt, kriegt von mir keinen Wetterbericht mehr.
 
 ## steady_cold · sarcastic
 
+- Es bleibt den ganzen Tag kalt. || Wie dein Kaffee, den du wieder irgendwo stehen gelassen hast.
+- Es bleibt den ganzen Tag so kalt. || Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.
 - Es bleibt den ganzen Tag so kalt. || Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.
 - Es bleibt den ganzen Tag so kalt. || Dann hast du ja den ganzen Tag ein Gesprächsthema.
+- Es bleibt den ganzen Tag so kalt. || Dann hast du ja den ganzen Tag ein Gesprächsthema.
+- Es bleibt den ganzen Tag so kalt. || Das Handy bedienst du heute wieder mit der Nasenspitze. Sehr elegant.
 - Es bleibt den ganzen Tag so kalt. || Das Handy bedienst du wieder mit der Nasenspitze. Sehr elegant.
 - Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.
+- Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.
+- Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.
 - Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.
 - Es wird den ganzen Tag nicht wärmer. || Du kannst also aufhören, mich alle fünf Minuten anzuglotzen.
+- Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.
 - Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.
 
 ## steady_evening · plain
 
+- Am Wetter ändert sich heute Abend nichts mehr, deine Kleidung passt.
 - Dein Outfit passt den ganzen Abend.
+- Dein Outfit passt den ganzen Abend.
+- Mit dem, was du anhast, kommst du gut durch den Abend.
 - Was du anhast, passt für den ganzen Abend.
 - Was du anhast, passt für den ganzen Abend.
+- Was du anhast, passt für den ganzen Abend.
+- Was du anhast, passt für den restlichen Abend.
 
 ## steady_evening · dry
 
+- Was du anhast, passt den ganzen Abend. || Am Outfit liegt's also nicht, wenn der Abend nichts wird.
+- Was du anhast, passt den ganzen Abend. || Gut so. Für Überraschungen bin ich schon zu müde.
 - Was du anhast, passt den ganzen Abend. || Gut so. Für Überraschungen bin ich schon zu müde.
 
 ## steady_evening · sarcastic
 
+- Für den Rest des Abends passt, was du anhast. || Das Wetter gibt sich heute mehr Mühe als du.
+- Was du anhast, passt den ganzen Abend. || Das Wetter ist heute so abwechslungsreich wie dein Kleiderschrank.
+- Was du anhast, passt den ganzen Abend. || Dein Abend hängt jetzt also nur noch an deiner Laune. Viel Glück.
+- Was du anhast, passt den ganzen Abend. || Du schaust trotzdem noch dreimal nach. Ich kenn dich.
+- Was du anhast, passt den ganzen Abend. || Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.
 - Was du anhast, passt den ganzen Abend. || Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.
 - Was du anhast, passt den ganzen Abend. || Für ein Kompliment reicht's trotzdem nicht.
+- Was du anhast, passt den ganzen Abend. || Für ein Kompliment reicht's trotzdem nicht.
+- Was du anhast, passt den ganzen Abend. || Gratuliere. Das war die einfachste Entscheidung deines Abends.
+- Was du anhast, passt den ganzen Abend. || Umziehen musst du dich also nicht. Wobei, eine Idee wär's.
 
 ## steady_hot · plain
 
 - Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.
+- Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.
 - Es bleibt bis zum Abend heiß. Nimm Wasser mit und bleib im Schatten.
+- Es bleibt bis zum Abend heiß. Nimm Wasser mit und bleib im Schatten.
+- Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.
 - Heute bleibt's heiß. Trink genug Wasser und meide die pralle Sonne.
+- Heute bleibt's heiß. Trink genug Wasser und meide die pralle Sonne.
+
+## steady_hot · dry
+
+- Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt mehr als ein Schluck zum Mittagessen.
+- Es bleibt den ganzen Tag heiß, also nimm Wasser mit und ab in den Schatten. || Ich bleib drinnen. Aber ich hab ja keine Wahl.
+- Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Für dich und für die Flasche.
+- Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.
+- Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Zum Meckern ist es mir heute zu heiß. Fast.
+- Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.
+- Heute bleibt's heiß, trink genug Wasser und meide die pralle Sonne. || Die meide ich das ganze Jahr.
 
 ## steady_hot · sarcastic
 
+- Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Trinken, nicht nur rumtragen. Ich kenn dich.
+- Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser ist übrigens das Durchsichtige.
+- Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Da ist's dir dann wieder zu frisch. Wetten?
 - Heute bleibt's heiß, trink viel Wasser und such dir Schatten. || Und komm mir nicht mit „Ich hab keinen Durst“.
+- Heute bleibt's heiß, trink viel Wasser und such dir Schatten. || Und komm mir nicht mit „Ich hab keinen Durst“.
+- Heute bleibt's heiß. Bleib im Schatten und trink Wasser, bevor du Durst hast. || Sonst kippst du wieder um.
+
+## steady_night · dry
+
+- Was du anhast, passt für den Rest der Nacht. || Ich bin um die Uhrzeit nur noch aus Höflichkeit an.
+- Was du anhast, passt für den Rest der Nacht. || Mehr als „passt“ fällt mir so spät auch nicht mehr ein.
 
 ## steady_night · sarcastic
 
 - Was du anhast, passt für den Rest der Nacht. || Also für die zehn Minuten, bis du auf dem Sofa einschläfst.
+- Was du anhast, passt für den Rest der Nacht. || Also für die zehn Minuten, bis du wieder auf dem Sofa einschläfst.
+- Was du anhast, passt für den Rest der Nacht. || Auch für den dritten Gang zum Kühlschrank.
 - Was du anhast, passt für den Rest der Nacht. || Auch für den dritten Gang zum Kühlschrank.
 - Was du anhast, passt für den Rest der Nacht. || Um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank.
+- Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust versteh ich nicht, aber okay.
 - Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust, frag ich lieber nicht.
 
 ## storm · sarcastic
@@ -451,16 +904,46 @@ Do not edit by hand; vote on the page instead.
 - Fotografier's bitte durchs Fenster. Das Foto wird sowieso nichts.
 - Wenn's donnert, gehst du rein. Nicht „gleich“, sondern sofort.
 
+## theme_force · dry
+
+- In einer weit, weit entfernten Galaxis ist das Wetter auch nicht besser.
+
+## theme_ghd · dry
+
+- Heute sagt ein Murmeltier das Wetter an. Dem hören alle zu. Mir nie.
+- Und täglich grüßt das Murmeltier. Heute sogar offiziell.
+
 ## theme_krampus · dry
 
 - Krampustag. Endlich ist mal einer schlechter gelaunt als ich.
 
+## theme_krampus · sarcastic
+
+- Ich hab dem Krampus deine Adresse nicht gegeben. Noch nicht.
+
+## theme_nikolo · sarcastic
+
+- Der Nikolaus hat in deinem Stiefel bestimmt nur Kohle gelassen.
+- Du hast deine Schuhe für den Nikolaus rausgestellt? In deinem Alter?
+
 ## theme_ny · sarcastic
 
+- Beim Bleigießen wird deine Zukunft sicher wieder 'ne Kartoffel. Wie immer.
+- Deine Neujahrsvorsätze hast du bis zum Zehnten sicher schon wieder vergessen. Ich kenn dich.
 - Deine Neujahrsvorsätze sind bis zum Zehnten vergessen. Ich kenn dich.
+- Deine Neujahrsvorsätze sind bis zum Zehnten vergessen. Ich kenn dich.
+
+## theme_okt · sarcastic
+
+- Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.
+
+## theme_spooky · sarcastic
+
+- Wenn's klingelt, bist du heute plötzlich wieder nicht zu Hause. Typisch.
 
 ## theme_xmas · sarcastic
 
+- Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.
 - Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr.
 
 ## topical · sarcastic
@@ -471,43 +954,78 @@ Do not edit by hand; vote on the page instead.
 
 - Gegen Mittag wird's wärmer, dann kann die Winterjacke weg.
 - {WHEN} kann die Winterjacke weg.
+- {WHEN} kann die Winterjacke weg.
+- {WHEN} wird's mild genug, um die Winterjacke auszuziehen.
 - {WHEN} wird's mild genug, um die Winterjacke auszuziehen.
 - {WHEN} wird's wärmer, dann kann die Winterjacke weg.
 - {WHEN} wird's wärmer, dann kann die Winterjacke weg.
+- {WHEN} wird's wärmer, dann kann die Winterjacke weg.
+
+## w_coat · sarcastic
+
+- {WHEN} kann die Winterjacke weg. || Dann sieht man wieder, was du den ganzen Winter gegessen hast.
 
 ## w_hoodie · plain
 
 - Gegen Mittag kannst du den Pulli ausziehen.
 - Gegen Mittag wird's wärmer, dann kann der Pulli weg.
 - Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer.
+- Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer.
+- {WHEN} kann der Pulli weg.
 - {WHEN} kann der Pulli weg.
 - {WHEN} kannst du den Pulli ausziehen.
+- {WHEN} kannst du den Pulli ausziehen.
+- {WHEN} wird's mild genug, um den Pulli auszuziehen.
 - {WHEN} wird's mild genug, um den Pulli auszuziehen.
 - {WHEN} wird's wärmer, dann kann der Pulli weg.
 - {WHEN} wird's wärmer, dann kann der Pulli weg.
+- {WHEN} wird's wärmer, dann kann der Pulli weg.
+
+## w_hoodie · sarcastic
+
+- {WHEN} kann der Pulli weg. || Bitte nicht wieder die Ärmel um den Bauch knoten.
+- {WHEN} kann der Pulli weg. || Was drunter ist, hast du dir heute früh hoffentlich gut überlegt.
 
 ## w_jacket · plain
 
 - Gegen Mittag kannst du die Jacke ausziehen.
 - Gegen Mittag wird's wärmer, dann kann die Jacke weg.
 - Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer.
+- Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer.
+- {WHEN} ist es warm genug, dann brauchst du keine Jacke mehr.
 - {WHEN} ist es warm genug, dann brauchst du keine Jacke mehr.
 - {WHEN} kann die Jacke weg.
+- {WHEN} kann die Jacke weg.
+- {WHEN} kannst du die Jacke ausziehen.
 - {WHEN} kannst du die Jacke ausziehen.
 - {WHEN} wird's mild genug, um die Jacke auszuziehen.
+- {WHEN} wird's mild genug, um die Jacke auszuziehen.
+- {WHEN} wird's wärmer, dann kann die Jacke weg.
 - {WHEN} wird's wärmer, dann kann die Jacke weg.
 - {WHEN} wird's wärmer, dann kann die Jacke weg.
 
 ## w_jacket · dry
 
+- {WHEN} kann die Jacke weg. || Und dann darfst du sie wieder überm Arm spazieren tragen.
 - {WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+- {WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+- {WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht.
+
+## w_jacket · sarcastic
+
+- {WHEN} kann die Jacke weg. || Dann sieht jeder, was du drunter anhast. Das Gleiche wie gestern.
+- {WHEN} kann die Jacke weg. || Und dann wieder um die Hüfte binden? Bitte nicht.
 
 ## w_scarf · plain
 
+- Den Schal kannst du {WHEN} wegpacken.
 - Gegen Mittag kannst du Mütze, Schal und Handschuhe ablegen.
 - Mütze, Schal und Handschuhe kannst du {WHEN} einpacken.
 - {WHEN} brauchst du Mütze, Schal und Handschuhe nicht mehr.
+- {WHEN} kann der Schal weg.
+- {WHEN} kannst du den Schal ablegen.
 - {WHEN} können Mütze, Schal und Handschuhe weg.
+- {WHEN} wird's mild genug, dann kann der Schal wieder runter.
 - {WHEN} wird's mild genug, dann können Mütze, Schal und Handschuhe wieder runter.
 
 ## w_scarf · dry
@@ -518,28 +1036,56 @@ Do not edit by hand; vote on the page instead.
 
 - Gegen Mittag wird's heiß, also Wasser einpacken.
 - Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit.
+- Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit.
+- {WHEN} kommt die Hitze, nimm genug zu trinken mit.
 - {WHEN} kommt die Hitze, nimm genug zu trinken mit.
 - {WHEN} wird's richtig heiß, nimm Wasser mit.
+- {WHEN} wird's richtig heiß, nimm Wasser mit.
+
+## w_water · dry
+
+- {WHEN} wird's heiß, pack lieber Wasser ein. || Aber stell's nicht in die Sonne. Warmes Wasser schmeckt scheiße.
 
 ## wet · dry
 
+- Alle rennen bei Regen, als wär's vorne trockener.
 - Alle starren wieder aufs Regenradar. Als ob das was hilft.
 - Alle starren wieder aufs Regenradar. Als ob das was hilft.
 - Alle starren wieder aufs Regenradar. Als ob das was hilft.
+- Alle starren wieder aufs Regenradar. Als ob das was hilft.
+- Das Regenradar hat heute mehr Zuschauer als jede Serie.
+- Die Schnecken freuen sich. Immerhin wer.
 - Die Schnecken freuen sich. Immerhin wer.
 - Nass ist's. War ja klar.
+- Nass. Wer hätte das gedacht.
+- Regen. Mal wieder. Was sonst.
 - Regen. Mal wieder. Was sonst.
 - Regen. Mal wieder. Was sonst.
 - Regen. Wieder. Natürlich.
 - Und schon wieder ein Tief. Ich kann nichts dafür.
 - „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
 - „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
+- „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
 
 ## wet · sarcastic
 
+- Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.
+- Das Wetter passt heute endlich zu deiner Laune.
+- Den Schirm siehst du. Mitnehmen wirst du ihn trotzdem nicht.
+- Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.
+- Du gehst sicher trotzdem ohne Schirm los. Typisch.
 - Endlich passt das Wetter mal zu deinem Gesicht.
 - Endlich passt das Wetter mal zu deinem Gesicht.
+- Endlich passt das Wetter mal zu deinem Gesicht.
+- Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.
+- Nachher bitte nicht wieder den Flur volltropfen.
+- Tropf mir nachher bloß nicht wieder alles voll.
+- Um deine Frisur ist's eh nicht schade.
 - Um deine Frisur ist's eh nicht schade.
 - Wenn du nass wirst, sag nicht, ich hätt's nicht gesagt.
 - Wenn du nass wirst, war's wieder meine Schuld. Klar.
 - Wenn du nass wirst, war's wieder meine Schuld. Klar.
+- Wenn du nass wirst, war's wieder meine Schuld. Klar.
+- Wer ohne Schirm raus geht, braucht nachher nicht jammern.
+- Wie viele Schirme hast du dieses Jahr schon wieder irgendwo liegen lassen?
+- Wie viele Schirme hast du heuer eigentlich schon verlegt?

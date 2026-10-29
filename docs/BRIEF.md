@@ -328,6 +328,13 @@ storms). A much better round: 200 stars, 329 keeps.
   favorite, neighborhood; sidewalk, apartment, salt trucks; inches in
   jokes about snow. Temperatures stay as the screen shows them.
 
+- **Round 22, the German read-through.** Don't assume how the reader
+  lives (the tumble dryer „irgendwo im Haus“: not everyone rents a flat).
+  Don't call a broad time precise (*pünktlich* next to „heute
+  Nachmittag“). A guess anyone could make isn't a forecast boast („Abends
+  ist's dann wieder frisch … Außer mir.“). Garments: a joke about sleeves
+  doesn't fit every layer. Storms: no "get inside" lectures.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it

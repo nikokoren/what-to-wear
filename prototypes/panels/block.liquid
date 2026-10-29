@@ -262,7 +262,7 @@ after the fact + flavour block and the picture.
         {%- assign sk = 'steady' -%}
       {%- endif -%}
       {%- assign sl = texts.facts[sk] -%}
-      {%- if sl -%}
+      {%- if sl and sl.size > 0 -%}
         {%- assign sn = sl | size -%}
         {%- assign si = text_rot | plus: 2 | modulo: sn -%}
         {%- assign panel_fact = sl[si] -%}
@@ -304,7 +304,7 @@ after the fact + flavour block and the picture.
         {%- endif -%}
       {%- endif -%}
       {%- assign vf_pool = texts[vf_key][vf_mood] -%}
-      {%- if vf_pool -%}
+      {%- if vf_pool and vf_pool.size > 0 -%}
         {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}

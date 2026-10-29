@@ -36,6 +36,31 @@ plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
 before, so they arrive a family at a time: steady days (round 17,
 `review/rounds/make_round17.py`), then layers, then rain.
 
+### From the German read-through (owner, round 22)
+
+The owner's notes on how the screen behaves, for after the English
+read-through:
+1. **Stop times.** „Der Schnee hört später auf.“ / „Es schneit noch eine
+   Weile, dann hört's auf.“: "what's the value?" Proposal: when the stop
+   time is known, show only wordings with {WHENSTOP}; the vague ones only
+   when it isn't (or drop them).
+2. **"Mittags" only in the morning.** Heat wordings that say to stay out
+   of the midday sun („meide die Mittagssonne“) make no sense after noon.
+   Proposal: a tag for morning-only wordings, like {M:} for months.
+3. **The scarf.** For the extra-cold layer, the drawing adds a scarf only
+   (the sprite already wears a beanie and gloves in the step before), so
+   the wordings say „Schal“ alone; the owner edited the German ones that
+   way. English to match in the English read-through; the drawing with
+   the 19 sprites.
+4. **Thunderstorms.** Less "get inside": the owner cut the stay-inside
+   parts from the German storm wordings ("a bit of lightning somewhere
+   isn't that dangerous"). English to match.
+5. **Groups the vote emptied** (de), now falling back: theme_nikolo and
+   theme_xmas at On, the storm follow-ups at On (the rain ones show),
+   Eisheilige at 11 (it has no lines now at either level: the day doesn't
+   show), the drawings' warming line at On, units w_scarf and arc_warmer
+   at 11 (the separate pick shows).
+
 ### Bug: drawings and sarcastic line disagree (owner, 23 October 2026)
 
 After the read-through (round 22), not before. Seen on the beta: two

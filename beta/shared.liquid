@@ -1072,7 +1072,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign sp_kind = 'day' -%}
       {%- endif -%}
     {%- endif -%}
-    {%- if sp_pool and texts.facts.steady_special -%}
+    {%- if sp_pool and texts.facts.steady_special.size > 0 -%}
       {%- assign sp_list = texts.facts.steady_special -%}
       {%- assign sp_n = sp_list | size -%}
       {%- assign sp_i = text_rot | plus: 2 | modulo: sp_n -%}
@@ -1247,7 +1247,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- assign fl_pool = sp_pool -%}
       {%- if sp_kind == 'theme' -%}{%- assign fl_theme = true -%}{%- endif -%}
     {%- endif -%}
-    {%- if fl_pool -%}
+        {%- if fl_pool and fl_pool.size > 0 -%}
       {%- assign fl_n = fl_pool | size -%}
       {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
             {%- assign fl_month = ',' | append: season_month | append: ',' -%}
@@ -1580,7 +1580,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign sk = 'steady' -%}
       {%- endif -%}
       {%- assign sl = texts.facts[sk] -%}
-      {%- if sl -%}
+      {%- if sl and sl.size > 0 -%}
         {%- assign sn = sl | size -%}
         {%- assign si = text_rot | plus: 2 | modulo: sn -%}
         {%- assign panel_fact = sl[si] -%}
@@ -1606,7 +1606,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- endif -%}
       {%- endif -%}
       {%- assign vf_pool = texts[vf_key][vf_mood] -%}
-      {%- if vf_pool -%}
+      {%- if vf_pool and vf_pool.size > 0 -%}
         {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}
         {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}

@@ -103,6 +103,25 @@ EDIT = {
 }
 # Round 8: typos in the owner's edits, corrected (the wording is theirs).
 EDIT_FIX = {
+    # Round 22 (German read-through) edits.
+    'Jetzt ists noch frisch, {WHEN} passen aber kurze Hosen besser.': "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser.",
+    'Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust versteh ich nicht, aber okay.': 'Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust, versteh ich nicht, aber okay.',
+    'Wehe du nimmst sie schon vorher ab.': 'Wehe, du nimmst sie schon vorher ab.',
+    'Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm bleibt also dabei. || Der Regen bekommt ne Pause während ich hier schufte.': 'Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm bleibt also dabei. || Der Regen bekommt ne Pause, während ich hier schufte.',
+    '{WHEN} brauchst du eine extra warme Schicht, also nimm also eventuell einen Schal mit.': '{WHEN} brauchst du eine extra warme Schicht, also nimm eventuell einen Schal mit.',
+    'Jetzt reden wieder über ihre Wochenendpläne, und enden dann doch wieder auf dem Sofa.': 'Jetzt reden wieder alle über ihre Wochenendpläne und landen dann doch wieder auf dem Sofa.',
+    'Du gerne auch was Schöneres anziehen.': 'Du kannst gerne auch was Schöneres anziehen.',
+    'Ich habs für dich extra einfach formuliert.': "Ich hab's für dich extra einfach formuliert.",
+    'Schon wieder regen. War ja klar.': 'Schon wieder Regen. War ja klar.',
+    '{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Ich habs für dich extra simpel formuliert.': "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.",
+    "{WHEN} wird's wärmer, da kannst den Schal abnehmen.": "{WHEN} wird's wärmer, da kannst du den Schal abnehmen.",
+    'Heute kommen vermutlich wieder alle drauf, dass sie immer noch keine Ventilatoren haben und stürmen den Baumarkt.': 'Heute kommen vermutlich wieder alle drauf, dass sie immer noch keine Ventilatoren haben, und stürmen den Baumarkt.',
+    "Jetzt Gefrierender Regen, dann eine Pause und {WHENP} geht's weiter. Der Schirm bleibt dabei.": "Jetzt gefrierender Regen, dann eine Pause, und {WHENP} geht's weiter. Der Schirm bleibt dabei.",
+    "Jetzt fühlt's sich nach kurze Hosen Wetter an, doch {WHEN} kommt eine Kaltfront. Lange Hosen sind heute besser, und eine warme Schicht muss mit.": "Jetzt fühlt's sich nach Kurze-Hosen-Wetter an, doch {WHEN} kommt eine Kaltfront. Lange Hosen sind heute besser, und eine warme Schicht muss mit.",
+    'Gleich kommt wieder: „Früher war es auch schon heiß“. Nein Günter, einfach Nein.': "Gleich kommt wieder: „Früher war's auch schon heiß.“ Nein, Günter. Einfach nein.",
+    "Es lohnt sich eventuell schon jetzt kurze Hosen anzuziehen, {WHEN} wird's warm.": "Es lohnt sich eventuell, schon jetzt kurze Hosen anzuziehen, {WHEN} wird's warm.",
+    'Deine Beine haben lang keine Sonne gesehen. Versuch niemanden zu blenden.': 'Deine Beine haben lang keine Sonne gesehen. Versuch, niemanden zu blenden.',
+    '{WHEN} wird\'s angenehmer, aber es bleibt warm. || Eigentlich meine ich "weniger schlimm".': "{WHEN} wird's angenehmer, aber es bleibt warm. || Eigentlich meine ich „weniger schlimm“.",
     # Round 21, the owner's picks from Claude's fine-tuning.
     "The sun's on half days until February. In this economy?": "The sun's on half days until February. Must be nice.",
     '"Today\'s forecast is brought to you by... " Just kidding. I don\'t do ads.': "This forecast is brought to you by… nobody. I don't do ads.",
@@ -619,6 +638,31 @@ def main():
         final = apply_final(doc, lang, decisions)
         if final:
             print(f"{lang} round 22 (read-through): " + ", ".join(f"{v} {k}" for k, v in final.items()))
+        moved = apply_owner_moves(doc, lang)
+        if moved:
+            print(f"{lang}: {moved} lines moved where they belong")
+        # Two edits can land on the same words: each line once.
+        for pools in doc.values():
+            if isinstance(pools, dict):
+                for key, v in pools.items():
+                    # garments, garments_pron, garments_verb go by position
+                    if isinstance(v, list) and not key.startswith("garments"):
+                        pools[key] = list(dict.fromkeys(v))
+        # " || " splits a unit; anywhere else the screen would print it.
+        for section, pools in doc.items():
+            if not section.startswith("units") and section != "facts" and isinstance(pools, dict):
+                for key, v in pools.items():
+                    for line in v if isinstance(v, list) else []:
+                        if isinstance(line, str) and "||" in line:
+                            raise SystemExit(f"{lang} {section}.{key}: ' || ' outside a unit: {line}")
+        # A group whose every line was voted out goes, so the screen falls
+        # back to its neighbour's (block.liquid); an empty list would reach
+        # a modulo by zero there.
+        for section, pools in doc.items():
+            if section != "facts" and isinstance(pools, dict):
+                for key in [k for k, v in pools.items() if isinstance(v, list) and not v]:
+                    del pools[key]
+                    print(f"{lang}: {section}.{key} is empty, removed")
         words = apply_words(doc, lang)
         if words:
             print(f"{lang} words: {words} lines reworded")
@@ -688,6 +732,27 @@ OWNER_UNITS = [
     ("de", "10", "steady_cold", "Es bleibt den ganzen Tag so kalt. || Höher gedreht wird nicht. Hoffen wir, dass die Nachbarn heizen."),
     ("de", "10", "steady_cold", "Es bleibt den ganzen Tag so kalt. || Die Heizung bleibt, wo sie ist. Wir haben ja keinen Geldbaum im Garten stehen."),
 ]
+
+
+# Lines that belong somewhere else (round 22, the owner's notes): the
+# swallows' rule only when rain is coming, so a unit for a short shower.
+OWNER_MOVES = [
+    ("de", "now_10", "cool", "\"Fliegen die Schwalben tief, kommt Regen\". || Ja sicher, einem Vogel glaubt man wieder mehr als mir.",
+     "units_10", "p_wetter", "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || „Fliegen die Schwalben tief, kommt Regen.“ Ja sicher, einem Vogel glaubt man wieder mehr als mir."),
+]
+
+
+def apply_owner_moves(doc, lang):
+    n = 0
+    for l, sec, key, old, new_sec, new_key, new in OWNER_MOVES:
+        pool = doc.get(sec, {}).get(key, [])
+        if l == lang and old in pool:
+            pool.remove(old)
+            target = doc.setdefault(new_sec, {}).setdefault(new_key, [])
+            if new not in target:
+                target.append(new)
+            n += 1
+    return n
 
 
 def apply_owner_units(doc, lang):
