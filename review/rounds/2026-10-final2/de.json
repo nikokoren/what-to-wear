@@ -1,0 +1,312 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Pankratius, Servatius, Bonifatius. Klingt nach Anwaltskanzlei."
+  },
+  {
+   "path": "flavour_10.day_eisheilige",
+   "text": "Eisheilige. Auf den Fensterbänken stehen die Tomaten Schlange."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Wer jetzt noch rausmuss, hat einen Hund. Oder Ärger."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Ab jetzt läuft hier nur noch die Spätausgabe. Gleicher Inhalt, schlechtere Laune."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Das Wetter überlegt's sich nachher anders. Ich nicht."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Mitschleppen ist lästig. Frieren ist lästiger."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Die Sonne jetzt ist ein Lockangebot."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Die Kaltfront meldet sich nicht vorher an. Außer bei mir."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Die Wetter-Apps schicken jetzt wieder Warnungen im Minutentakt. Ich sag's einmal."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Fällt irgendwo der Strom aus, ist mir das egal. Ich hab Akku."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Bei Gewitter hat die Oma früher alle Stecker gezogen. Ich hätt endlich mal Ruhe gehabt."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaus. Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaus. Lob und Tadel aus dem goldenen Buch. Mach ich jeden Tag, ohne Buch."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Heute arbeiten nur noch ich und der Backofen."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Der Braten ist im Ofen, der Streit ist in Vorbereitung."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Zwei Wochen lang ist eine Maß um zehn Uhr früh ganz normal."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Bei dem Wetter ist das Zelt voll. Bei jedem anderen übrigens auch."
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Zähl mal alle fünf auf. Ich warte."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. „Nur auf ein Bier.“ Wer's glaubt."
+  },
+  {
+   "path": "flavour_11.day_friday",
+   "text": "Freitag. Das Wochenende hat noch nicht angefangen, und du bist schon müde davon."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Falls du heute doch noch was vorhast. Ich lach schon mal vor."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Den Rest des Abends schaust du eh auf einen anderen Bildschirm. Schon gut."
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "Und du freust dich, als hättest du selbst was dafür getan."
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "Ausziehen kannst du. Zusammenlegen eher nicht."
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "Ab dann kannst du nichts mehr aufs Wetter schieben."
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Dein Immunsystem hat schon genug mit dir zu tun."
+  },
+  {
+   "path": "flavour_11.on",
+   "text": "Abhärtung hast du dir ausgedacht. Dein Körper weiß davon nichts."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Ja, es ist warm. Nein, nicht den ganzen Tag. Nein, ich diskutier das nicht."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Shorts jetzt, frieren später. Klingt nach deinem üblichen Plan."
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Wasserdicht ist deine Jacke übrigens nur laut Etikett."
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Dir ist das Wetter egal? Deinen Schuhen nicht."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Heute bist du mal nicht der Lauteste. Ausnahmsweise."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Bei jedem Donner zusammenzucken und dann so tun, als wär nichts. Kenn ich."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Wenn's blitzt, ist das kein Fotograf. So berühmt bist du nicht."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Das Wetter wird besser. Die Leute gleich lauter."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Zum Schluss ist's warm. Mehr Happy End biet ich normalerweise nicht."
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Heute schaut keiner auf mich. Die schauen alle aus dem Fenster."
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Heute ist sogar der Paketbote gut gelaunt. Der Kerl macht mir Angst."
+  },
+  {
+   "path": "now_10.night",
+   "text": "Beleuchtung hab ich keine. Nachts häng ich also ganz umsonst hier."
+  },
+  {
+   "path": "now_10.night",
+   "text": "Um die Zeit sind nur noch der Kühlschrank und ich wach. Und der brummt."
+  },
+  {
+   "path": "now_11.night",
+   "text": "Finger weg vom Warenkorb. Um die Zeit kaufst du nur Unsinn."
+  },
+  {
+   "path": "now_11.night",
+   "text": "Hör auf, um die Uhrzeit Symptome zu googeln. Du hast nichts. Vermutlich."
+  },
+  {
+   "path": "now_11.snow",
+   "text": "Die Schuhe mit Profil, bitte. Nicht die schicken."
+  },
+  {
+   "path": "now_11.snow",
+   "text": "Der Schnee dämpft jeden Lärm. Sogar deinen."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Erst freundlich, dann gemein. Das Wetter lernt von mir."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "{WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt. || Ja, das ist viel Zeug für einen Tag. Beschwer dich beim Wetter."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Heute trägst du's mehr, als du's anhast."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Daheim nützt's dir nichts. Da bin nur ich, und ich frier nicht."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Der Pulli wiegt nichts. Das Gejammer später schon."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Den dicken musst du nicht nehmen. Ich bin ja kein Unmensch."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Der Winter klopft an. Ich mach nicht auf."
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Die Kälte hält heute den ganzen Tag an. || Draußen rauchen heute auch die Nichtraucher."
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Heute dampft jeder beim Reden. Endlich sieht man mal, wie viel heiße Luft dabei ist."
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "Mit dem, was du anhast, kommst du gut durch den Abend. || Um die Zeit bin ich nur noch ein Testbild mit Meinung."
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den restlichen Abend. || Ab hier wird's nur noch dunkel. Das kann ich auch ohne Vorhersage."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Ab dann schwitzt jeder in der Bahn, der's nicht gelesen hat."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} kannst du die Winterjacke ausziehen. || Die Winterjacke hat dann frei. Ich nicht."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer. || Und schon ist er zu warm zum Tragen und zu groß für die Tasche."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "{WHEN} wird's mild genug, um den Pulli auszuziehen. || Das Wetter wird freundlich. Ich bleib, wie ich bin."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "{WHEN} kann der Schal weg. || Der Mantel bleibt aber. Ich will ja nicht übermütig werden."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "Den Schal kannst du {WHEN} wegpacken. || Ein Schal weniger. Das ist bei mir schon fast gute Laune."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || Ab dann musst du nur noch in der Sonne gut aussehen. Viel Erfolg."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Einmal entscheiden und durchziehen. Das Wetter kann's. Du übst noch."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Dein Deo hat trotzdem schon aufgegeben."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Die Ausrede für deine schlechte Laune geht dir langsam aus."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Nein, das Halstuch zählt nicht. Das ist Deko."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Ein Schnupfen ist bei dir ja immer gleich eine Lungenentzündung."
+  },
+  {
+   "path": "unit_11.p_snow_coming",
+   "text": "{WHENP} setzt Schneefall ein. || Schnee macht alles schön. Fast alles. Stell dich nicht davor."
+  },
+  {
+   "path": "unit_11.p_snow_coming",
+   "text": "{WHENP} kommt Schnee. || Schneeflocken mit der Zunge fangen ist in deinem Alter übrigens kein Hobby."
+  },
+  {
+   "path": "unit_11.steady_night",
+   "text": "Mit dem, was du anhast, kommst du gut durch den Abend. || Ich frag nicht, warum du noch angezogen bist. Ich will's nicht wissen."
+  },
+  {
+   "path": "unit_11.steady_night",
+   "text": "Was du anhast, passt für den ganzen Abend. || Auch für die Party, auf die du nicht eingeladen bist."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} kann der Pulli weg. || Der Pulli ist erleichtert. Glaub mir."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} wird es warm genug, dann brauchst du keinen Pulli mehr. || Dein Lieblingspulli darf dann endlich in die Wäsche. Wir haben ihn alle oft genug gesehen."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "{WHEN} kann der Schal weg. || Der Schal hat dann frei. Bei dem Gesicht darüber hat er sich's verdient."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "Den Schal kannst du {WHEN} wegpacken. || Riech lieber nicht dran. Der war den ganzen Winter um deinen Hals."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "{WHEN} kannst du den Schal ablegen. || Und bitte nicht wieder in den Mantelärmel stopfen. Du bist nicht mehr in der Grundschule."
+  }
+ ]
+}

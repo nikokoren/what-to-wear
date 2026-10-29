@@ -500,3 +500,12 @@ page shows a gold badge and frame and has an "Earlier vote" filter.
 `build_pools.py` applies it last (`apply_final`): a veto or "Write new"
 takes a line out (a forecast situation keeps its last wording), an edit
 replaces it.
+
+## Round 23: the English read-through, the German rewrites
+
+`2026-10-final2.json` (`make_round23.py`, ids `f2-…`): every live English
+text (788, built from today's texts; 210 starred before, including lines
+reworded since), applied like round 22; and 77 new German lines for the
+slots the German read-through emptied or thinned (brief
+`2026-10-final2/brief_de.md`, a fresh writer: 237 candidates, a critic:
+77), added if kept.
