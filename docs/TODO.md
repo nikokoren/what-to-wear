@@ -167,7 +167,15 @@ To do, in order:
 
 ### Open, in order
 
-1. **Draw the 19 sprites** (item 1). Replace the files in `sprites/` on
+1. **Draw the 19 sprites** (item 1). Seen on the beta (owner, October
+   2026): text and drawing disagree wherever two placeholders are the
+   same picture: „der Regen hört erst in einer Stunde auf“ under a dry
+   bundled figure, and two identical drawings side by side ("Jetzt",
+   "ab 22 Uhr"). The logic is right; the art isn't there yet. These pairs
+   are byte-identical today, so draw them first: bundled_rain (= bundled_dry),
+   coat_rain (= coat_dry), jacket_snow (= jacket_dry), tee_shorts_dry
+   (= tee_pants_dry: shorts weather shows long pants), tee_shorts_rain
+   (= tee_pants_rain), extreme_heat_rain (= heat_rain). Replace the files in `sprites/` on
    `main`; `python3 tools/check_sprites.py` lists the placeholders left.
    This is what blocks shipping.
 2. **Check the new views in TRMNL's editor**, original TRMNL and X,
