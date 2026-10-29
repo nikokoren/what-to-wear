@@ -455,8 +455,8 @@ def apply_follow(doc, lang, decisions, rnd=None):
         return collections.Counter()
     n = collections.Counter()
     for row in json.loads(path.read_text(encoding="utf-8"))["lines"]:
-        if row["lang"] != lang or row.get("role") == "fact":
-            continue
+        if row["lang"] != lang or row.get("role") == "fact" or row.get("live"):
+            continue  # a live line under read-through is apply_final's
         d = votes.get((row["path"], row["text"])) or {}
         verdict = d.get("verdict", "")
         section, key = row["path"].split(".", 1)
@@ -640,11 +640,10 @@ def main():
         final = apply_final(doc, lang, decisions)
         if final:
             print(f"{lang} round 22 (read-through): " + ", ".join(f"{v} {k}" for k, v in final.items()))
-        if lang == "en":
-            final2 = apply_final(doc, lang, decisions, FINAL2)
-            if final2:
-                print(f"{lang} round 23 (read-through): " + ", ".join(f"{v} {k}" for k, v in final2.items()))
-        else:
+        final2 = apply_final(doc, lang, decisions, FINAL2)
+        if final2:
+            print(f"{lang} round 23 (read-through): " + ", ".join(f"{v} {k}" for k, v in final2.items()))
+        if lang == "de":
             rewrites = apply_follow(doc, lang, decisions, FINAL2)
             if rewrites:
                 print(f"{lang} round 23 (rewrites): " + ", ".join(f"{v} {k}" for k, v in rewrites.items()))

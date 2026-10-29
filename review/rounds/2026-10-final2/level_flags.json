@@ -1,0 +1,498 @@
+[
+ {
+  "where": "flavour_10.offon",
+  "text": "Off, on. The layer gets more exercise than you.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Jabs at the reader's lack of exercise; an 11 line.",
+  "lang": "en"
+ },
+ {
+  "where": "flavour_10.offon",
+  "text": "Don't lose {GP} in between. Like last time.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "'Like last time' needles the reader's past mistake; 11 has the same lost-layer jokes.",
+  "lang": "en"
+ },
+ {
+  "where": "flavour_10.steady",
+  "text": "Set it and forget it, like your gym membership.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Mocks the reader's unused gym membership, a personal habit jab.",
+  "lang": "en"
+ },
+ {
+  "where": "flavour_10.ice",
+  "text": "Walk like you're carrying a very full cup of coffee.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "Plain, friendly walking advice with no sarcasm.",
+  "lang": "en"
+ },
+ {
+  "where": "flavour_11.scorch",
+  "text": "Not a day for proving anything. Sit in the shade and drink.",
+  "level": "11",
+  "flag": "not_sarcastic",
+  "why": "Straight heat advice; no edge and not aimed at the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "flavour_vf_10.fickle",
+  "text": "Three outfits in one day, and you'll still say you've got nothing to wear.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Teases the reader's own wardrobe complaint; a personal jab.",
+  "lang": "en"
+ },
+ {
+  "where": "now_10.cool",
+  "text": "You call this your good jacket. It's your only jacket.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Jabs at the reader owning only one jacket; personal, and close to their means.",
+  "lang": "en"
+ },
+ {
+  "where": "now_11.nice",
+  "text": "Perfect day. I had someone more deserving in mind.",
+  "level": "11",
+  "flag": "too_harsh",
+  "why": "Says the reader doesn't deserve a nice day; an attack on their worth.",
+  "lang": "en"
+ },
+ {
+  "where": "now_11.evening",
+  "text": "If you're going out, try to look better than this.",
+  "level": "11",
+  "flag": "too_harsh",
+  "why": "Goes after the reader's looks.",
+  "lang": "en"
+ },
+ {
+  "where": "units_10.steady",
+  "text": "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Mocks the reader's unused gym membership, a personal habit jab.",
+  "lang": "en"
+ },
+ {
+  "where": "units_10.arc_level",
+  "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Same jab at the reader's lack of exercise; belongs at 11.",
+  "lang": "en"
+ },
+ {
+  "where": "units_10.p_stays_wet",
+  "text": "It rains all day, so bring the umbrella. || The kind of day you put the lights on at noon.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "Merely describes a gloomy day; no sarcastic turn.",
+  "lang": "en"
+ },
+ {
+  "where": "units_10.p_snow_coming",
+  "text": "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "Warm and pleasant ('a bit proud'), not sarcastic.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.w_hoodie",
+  "text": "The sweater can come off {WHEN}. || Whatever's under it hasn't seen daylight in a while.",
+  "level": "11",
+  "flag": "too_harsh",
+  "why": "Implies the reader's body is pasty and unseen; about looks.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.c_jacket",
+  "text": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Pumpkin-spice observation, not about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.c_hoodie",
+  "text": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "About pumpkin spice and the screen, not the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.w_scarf",
+  "text": "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "A general remark about winter; no jab at the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.c_relief",
+  "text": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Jokes about the forecast wording, not the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.shorts_early",
+  "text": "It's cool now, but {WHEN} it's warm enough for shorts. || Your legs could use the daylight, frankly.",
+  "level": "11",
+  "flag": "too_harsh",
+  "why": "Jabs at how the reader's legs look.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wetter_long",
+  "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || It has more stamina than you. Most things do.",
+  "level": "11",
+  "flag": "too_harsh",
+  "why": "'Most things have more stamina than you' goes after the reader's body and worth.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wetter_long",
+  "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "About the screen living indoors; no turn on the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_snow_coming",
+  "text": "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Cute line about sleds; pleasant, not about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_stays_wet_snow",
+  "text": "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "General novelty-of-snow line (also used at On); not about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wetter",
+  "text": "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop, pretending to browse.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "About other people in shops, not the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wetter_maybe",
+  "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Screen-centred shrug, near-duplicate of an On line; no jab at the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wetter_maybe",
+  "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Fond line about Grandpa's knee; no edge and not about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wet_again",
+  "text": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Personifies the rain; not about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_drier_snow",
+  "text": "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in about a day.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "General snow observation; no jab at the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_drier_snow",
+  "text": "It stops snowing later. || After that, the snow has nothing to do but get in the way.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "About the snow, not the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wet_again_snow",
+  "text": "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Mild compliment to winter; nothing about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "units_11.p_wet_again_snow",
+  "text": "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Screen admiring the forecast's structure; not about the reader.",
+  "lang": "en"
+ },
+ {
+  "where": "flavour_10.night",
+  "text": "Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Jabs at the reader's couch-bound evening; that belongs at 11.",
+  "lang": "de"
+ },
+ {
+  "where": "now_10.nice",
+  "text": "Bei dem Wetter fällt selbst mir schlechte Laune schwer.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "Merely pleasant: the screen admits the weather lifts its mood, no bite.",
+  "lang": "de"
+ },
+ {
+  "where": "now_10.nice",
+  "text": "„So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen Lebkuchen im September.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Mocks the reader's own hypocrisy (sagst du ... kaufst heimlich); an 11-style jab, and Lebkuchen in September does not fit a 'nice' now-line.",
+  "lang": "de"
+ },
+ {
+  "where": "now_10.night",
+  "text": "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Implies the reader's looks need damage control; a personal looks jab for On.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.nice",
+  "text": "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Lawnmower noise joke is about a neighbour, not the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.cool",
+  "text": "Hörst du das? Horst hat wieder den Laubbläser angeschmissen. BRRRRRRRRRRRRRRRRRRRRRRRRRR",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Leaf-blower joke is about Horst, not the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.wet",
+  "text": "Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "About someone with a freshly washed car, not the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.wet",
+  "text": "Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Jab at weather sites with ads, not at the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.night",
+  "text": "Schon wieder so spät? Ab ins Bett.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "'Ab ins Bett' is a motherly nudge, no real edge.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.night",
+  "text": "So spät noch wach? Ab ins Bett mit dir.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Same motherly bedtime nudge, no edge.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.night",
+  "text": "Schönheitsschlaf brauchst du ja keinen mehr. Bei dir ist nichts zu retten.",
+  "level": "11",
+  "flag": "too_harsh",
+  "why": "Says the reader's looks are beyond saving, which goes at worth/looks rather than habits.",
+  "lang": "de"
+ },
+ {
+  "where": "units_10.steady",
+  "text": "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "'So pflegeleicht bist du selten' is a direct dig at the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "units_10.steady_night",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Gute Nacht.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "'Ich geh jetzt in den Ruhemodus. Gute Nacht.' is just a friendly sign-off.",
+  "lang": "de"
+ },
+ {
+  "where": "units_10.steady_cold",
+  "text": "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck.",
+  "level": "10",
+  "flag": "too_harsh",
+  "why": "Body jab at On level; it is the owner's own 'Winterspeck' example of too harsh, still live here.",
+  "lang": "de"
+ },
+ {
+  "where": "units_10.shorts_early",
+  "text": "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
+  "level": "10",
+  "flag": "too_personal_for_10",
+  "why": "Pale-legs dig at the reader; the softened twin of an 11 line.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.steady",
+  "text": "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Frog/PETA joke about the screen's job, nothing about the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.steady_hot",
+  "text": "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Says lazing in the shade is sensible; mild, almost kind, no jab.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wetter_maybe",
+  "text": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Mocks weather apps, not the reader; fits On.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wetter_maybe",
+  "text": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Screen admits it doesn't know; no turn on the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wetter_maybe",
+  "text": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Generic Murphy's-law line, not about the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wet_again",
+  "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Trocken wird er heute auf jeden Fall nicht mehr.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Observation about the umbrella, no jab at the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wet_again",
+  "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Aprilwetter. Egal, was der Kalender sagt.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "'Aprilwetter' remark is about the weather only.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wet_again_snow",
+  "text": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Dry weather observation, not personal.",
+  "lang": "de"
+ },
+ {
+  "where": "units_11.p_wet_again_snow",
+  "text": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch mühsam.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "General remark about second snowfall, not about the reader.",
+  "lang": "de"
+ },
+ {
+  "where": "flavour_10.day_eisheilige",
+  "text": "Eisheilige. Auf den Fensterbänken stehen die Tomaten Schlange.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "Cute, informative image (tomatoes queuing), no edge.",
+  "lang": "de"
+ },
+ {
+  "where": "now_11.snow",
+  "text": "Die Schuhe mit Profil, bitte. Nicht die schicken.",
+  "level": "11",
+  "flag": "too_mild_for_11",
+  "why": "Mostly plain advice about shoes; barely any edge.",
+  "lang": "de"
+ },
+ {
+  "where": "unit_10.c_scarf",
+  "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen.",
+  "level": "10",
+  "flag": "not_sarcastic",
+  "why": "Reads as folk advice, no sarcasm in it.",
+  "lang": "de"
+ },
+ {
+  "lang": "en",
+  "where": "flavour_10.offon",
+  "text": "Two outfit changes in one day. Very pop star of you.",
+  "level": "10",
+  "flag": "both_levels",
+  "why": "also used at the other level; keep it at one"
+ },
+ {
+  "lang": "en",
+  "where": "units_11.arc_level",
+  "text": "Two outfit changes in one day. Very pop star of you.",
+  "level": "11",
+  "flag": "both_levels",
+  "why": "also used at the other level; keep it at one"
+ },
+ {
+  "lang": "en",
+  "where": "now_11.cold",
+  "text": "Your nose will turn a color I can't even display.",
+  "level": "11",
+  "flag": "both_levels",
+  "why": "also used at the other level; keep it at one"
+ },
+ {
+  "lang": "en",
+  "where": "units_10.steady_cold",
+  "text": "Your nose will turn a color I can't even display.",
+  "level": "10",
+  "flag": "both_levels",
+  "why": "also used at the other level; keep it at one"
+ }
+]

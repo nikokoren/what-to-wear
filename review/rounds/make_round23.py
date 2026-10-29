@@ -30,10 +30,33 @@ REPO = HERE.parent.parent
 ROUND = "2026-10-final2"
 
 
+def add_level_notes(lines):
+    """The level check (owner, before the German reread): each flag a note under its line."""
+    flags = HERE / ROUND / "level_flags.json"
+    if not flags.exists():
+        return
+    label = {"too_personal_for_10": "Level check: a personal jab, belongs at 11?",
+             "too_mild_for_11": "Level check: not about you, fits On better?",
+             "not_sarcastic": "Level check: not sarcastic",
+             "too_harsh": "Level check: goes after looks or worth",
+             "both_levels": "Level check: the same joke at On and 11"}
+    by = {}
+    for f in json.loads(flags.read_text(encoding="utf-8")):
+        by.setdefault((f["lang"], f["where"].replace("unit_", "units_")), []).append(f)
+    for r in lines:
+        where = r["where"][0] if r.get("where") else r["path"].replace("unit_", "units_")
+        for f in by.get((r["lang"], where), []):
+            joke = f["text"].split(" || ")[-1].lstrip("| ").strip()
+            if joke and joke in r["text"]:
+                r["hint"] = ((r.get("hint") or "") + " · " + label[f["flag"]] + " (" + f["why"] + ")").lstrip(" ·")
+                r["batch"] = "Level check"
+
+
 def main():
     if r13.voted_already(ROUND):
         raise SystemExit(f"{ROUND} has votes; not rebuilding it")
-    lines = r22.live_rows("en")
+    lines = r22.live_rows("en") + r22.live_rows("de")
+
     doc = json.loads((r8.PROTO / "de.json").read_text(encoding="utf-8"))
     base = json.loads((REPO / "lang" / "de.json").read_text(encoding="utf-8"))
     src = HERE / ROUND / "de.json"
@@ -45,10 +68,14 @@ def main():
             row["new"] = True
             row["batch"] = "New: " + item["path"].split(".", 1)[1]
             new.append(row)
+    add_level_notes(lines + new)
     out = {"round": ROUND, "idPrefix": "f2", "lines": lines + new}
     (HERE / f"{ROUND}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"en: {len(lines)} lines to read, {sum(1 for r in lines if r.get('starred'))} starred before")
-    print(f"de: {len(new)} new lines")
+    for l in ("en", "de"):
+        mine = [r for r in lines if r["lang"] == l]
+        print(f"{l}: {len(mine)} lines to read, {sum(1 for r in mine if r.get('starred'))} starred before, "
+              f"{sum(1 for r in mine if r.get('batch') == 'Level check')} with a level-check note")
+    print(f"de: {len(new)} new lines, {sum(1 for r in new if r.get('batch') == 'Level check')} with a level-check note")
 
 
 if __name__ == "__main__":
