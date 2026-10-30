@@ -1,0 +1,412 @@
+{
+ "lines": [
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "There's freezing rain all day, so expect ice on roads and sidewalks. Take the umbrella and take your time."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Watch for ice today. The freezing rain lasts all day, so walk slowly and keep the umbrella with you."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "The freezing rain doesn't let up today, and the ground may turn icy. Take the umbrella and mind your step."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Expect icy sidewalks all day from the freezing rain. Bring the umbrella and go carefully."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Roads and steps may be slippery all day with freezing rain. Take the umbrella and walk slowly."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "It's an icy day, with freezing rain from start to finish. Bring the umbrella and watch your footing."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "The sidewalks may be icy all day, with freezing rain that doesn't stop. Walk carefully and take the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "There's no break in the freezing rain today, so the ground may stay icy. Walk carefully and take the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Freezing rain falls all day and may coat everything in ice. Take the umbrella and go slowly."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Freezing rain all day, so two things: the umbrella for the rain, slow steps for the ice.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Slippery all day. The freezing rain keeps falling and turning to ice, so take the umbrella and small steps.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Icy sidewalks all day? Yes, with freezing rain that doesn't stop. Take the umbrella and go slowly.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Thunderstorms keep rolling through all day, so keep the umbrella with you."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "It's a stormy day, with thunder and rain from start to finish. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "There's thunder and rain all day today. Take the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "The rain doesn't stop today, and there's thunder with it. Take the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "It rains all day, and thunderstorms roll through now and then. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Stormy weather all day: rain, with thunder now and then. Take the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Thunderstorms hang around all day, so expect rain throughout. Keep the umbrella handy."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "There's no dry spell today, and the rain brings thunder too. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Expect a stormy day from start to finish. Take the umbrella."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Thunder, rain, and more of both, all day long. Bring the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "All day, the same thing: rain and thunderstorms. Bring the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Rain all day, and it's the thundery kind. Bring the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Watch for ice {WHENP}, when a short spell of freezing rain comes through. Take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "A short burst of freezing rain {WHENP} may leave the sidewalks icy. Bring the umbrella and walk carefully."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "There's a bit of freezing rain {WHENP}, and sidewalks may be icy after it. Take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Expect a spell of freezing rain {WHENP}. It's short, but the ice may stay, so take the umbrella and go slowly."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "{WHENP} a quick round of freezing rain may turn the ground icy. Take the umbrella and mind your step."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Freezing rain comes through {WHENP}. It doesn't last long, but it can leave ice behind, so take the umbrella and walk carefully."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Sidewalks may get icy {WHENP} from a short spell of freezing rain. Take the umbrella and go carefully."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Brief freezing rain {WHENP} can make the roads slippery. Bring the umbrella and take your time."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Take care {WHENP}: a short spell of freezing rain may leave ice on the sidewalks. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "The freezing rain {WHENP} is brief. The ice it leaves may not be, so take the umbrella and walk carefully.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Short rain, lasting ice: freezing rain {WHENP} may leave the sidewalks slippery. Take the umbrella and go slowly.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Mind the ground {WHENP}. A short freezing rain may make it icy, so bring the umbrella too.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} it turns stormy, and the rain stays after the thunder. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Expect thunderstorms {WHENP}, then rain for the rest of the day. Take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "It starts thundering {WHENP}, and the rain keeps falling after that. Keep the umbrella with you."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "A long stretch of rain begins {WHENP}, starting with thunder. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "There's thunder {WHENP}, and after it the rain settles in. Take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Once the thunderstorms start {WHENP}, the rain doesn't let up. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "A thunderstorm rolls in {WHENP}, and the rest of the day stays wet. Take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Stormy weather sets in {WHENP}. The thunder passes, but the rain stays. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Thunderstorms arrive {WHENP} and leave steady rain behind. Keep the umbrella handy."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Thunder first, then rain that lasts. It all starts {WHENP}, so bring the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "The thunder {WHENP} won't last. The rain after it will, so take the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Keep the umbrella with you for the rest of the day. Thunderstorms arrive {WHENP}, and the rain stays.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "There's a small chance of freezing rain {WHENP}, which could make sidewalks icy. Bring the umbrella and watch your step."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Freezing rain {WHENP} isn't likely, but it could leave icy patches. Take the umbrella, just in case."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Watch out for ice {WHENP}. Freezing rain is possible, though not likely. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "{WHENP} a bit of freezing rain could turn the ground slippery. Take the umbrella and go carefully."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Some freezing rain may come {WHENP}, so the sidewalks could get icy. Walk carefully, and the umbrella wouldn't hurt."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "There's a chance of freezing rain {WHENP}. Sidewalks could get slick, so take the umbrella and go slowly."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Roads could turn icy {WHENP} from a chance of freezing rain. Take the umbrella, just in case."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Freezing rain {WHENP} is unlikely, but not ruled out. Bring the umbrella and keep an eye out for ice."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Icy patches are possible {WHENP} from a little freezing rain. Keep the umbrella with you and step carefully."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Low odds, real ice: freezing rain is possible {WHENP}. Take the umbrella and walk carefully.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Probably not, but possible: freezing rain {WHENP}, and ice with it. Take the umbrella and keep an eye on the ground.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Keep an eye on the sidewalks {WHENP}. A chance of freezing rain could make them icy, so take the umbrella too.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "A thunderstorm might come through {WHENP}. Bring the umbrella to be safe."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "There's a small chance of a thunderstorm {WHENP}, so the umbrella could be useful."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Thunder is possible {WHENP}, though not likely. The umbrella is up to you."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "You might hear thunder {WHENP}. Keep the umbrella with you."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "It probably stays dry, but a thunderstorm could pop up {WHENP}. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "{WHENP} a thunderstorm may roll through. An umbrella is worth having."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "There's a chance of thunder and rain {WHENP}. Take the umbrella to be safe."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "A stray thunderstorm could show up {WHENP}. Take the umbrella in case it does."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "The odds are low, but a thunderstorm {WHENP} is possible. The umbrella could come in handy."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Probably dry, maybe a thunderstorm {WHENP}. The umbrella covers the maybe.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Odds are low for a thunderstorm {WHENP}, but not zero. Bring the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "No promises either way: a thunderstorm is possible {WHENP}. An umbrella keeps you covered.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "A short thunderstorm passes through {WHENP}. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Expect a brief thunderstorm {WHENP}, so take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "{WHENP} there's a quick thunderstorm. Keep the umbrella with you."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "A thunderstorm blows through {WHENP}, but it doesn't last long. Take the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "There's thunder and a burst of rain {WHENP}. Have the umbrella with you."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "A thunderstorm rolls by {WHENP}. Take the umbrella for the rain that comes with it."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Thunder and rain come {WHENP}, then it's over. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "It turns stormy for a while {WHENP}. Have the umbrella ready."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "A brief storm with thunder hits {WHENP}. Bring the umbrella."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Short but loud: a thunderstorm {WHENP}. Take the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Mostly dry, except for a thunderstorm {WHENP}. Bring the umbrella for that part.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "The umbrella is for {WHENP}, when a short thunderstorm comes through.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "It's warm enough for shorts {WHEN}, but it cools off {WHEN2}. Maybe try shorts, and bring {G} for later."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Think about shorts for the warm part {WHEN}. It cools off {WHEN2}, so take {G} along."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "{WHEN} it's warm enough for shorts. {WHEN2} it cools off, so {G} is worth bringing."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Shorts could be a good call {WHEN}. {WHEN2} it gets cooler, so keep {G} nearby."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Maybe go with shorts, since it's warm {WHEN}. Bring {G}, though. It cools off {WHEN2}."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "It gets warm enough for shorts {WHEN}, then cooler {WHEN2}. Shorts might still work, with {G} on hand."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Shorts weather arrives {WHEN} but doesn't last. If you try shorts, take {G} for {WHEN2}."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "You might be fine in shorts today. It's warm {WHEN}, and {G} helps when it cools {WHEN2}."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Shorts are an option {WHEN}, when it's warm. It cools off again {WHEN2}, so take {G}."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Shorts or long pants: your call today. It's warm {WHEN} and cools off {WHEN2}, so take {G} along too.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Take {G} for {WHEN2}, when it cools off. Until then, it's warm enough for shorts {WHEN}.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Today has a warm stretch {WHEN} that may suit shorts, and a cooler one {WHEN2} that suits {G}.",
+   "wild": true
+  }
+ ]
+}
