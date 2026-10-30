@@ -69,16 +69,19 @@ def main():
             item["text"] = item["text"].strip()
             row = r21.row_for("de", item, doc, base)
             row["new"] = True
-            row["batch"] = "New: " + item["path"].split(".", 1)[1]
+            row["batch"] = "New German lines"
             new.append(row)
     add_level_notes(lines + new)
+    # The new lines stay together in one batch, level-check note or not.
+    for row in new:
+        row["batch"] = "New German lines"
     out = {"round": ROUND, "idPrefix": "f2", "lines": lines + new}
     (HERE / f"{ROUND}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for l in ("en", "de"):
         mine = [r for r in lines if r["lang"] == l]
         print(f"{l}: {len(mine)} lines to read, {sum(1 for r in mine if r.get('starred'))} starred before, "
               f"{sum(1 for r in mine if r.get('batch') == 'Level check')} with a level-check note")
-    print(f"de: {len(new)} new lines, {sum(1 for r in new if r.get('batch') == 'Level check')} with a level-check note")
+    print(f"de: {len(new)} new lines, {sum(1 for r in new if 'Level check' in r.get('hint', ''))} with a level-check note")
 
 
 if __name__ == "__main__":
