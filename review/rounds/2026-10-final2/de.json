@@ -6,7 +6,7 @@
   },
   {
    "path": "flavour_10.day_eisheilige",
-   "text": "Eisheilige. Auf den Fensterbänken stehen die Tomaten Schlange."
+   "text": "Eisheilige. Auf den Fensterbänken warten die Tomaten, bis ein paar Heilige ihr Okay geben."
   },
   {
    "path": "flavour_10.night",
@@ -169,7 +169,7 @@
    "text": "Hör auf, um die Uhrzeit Symptome zu googeln. Du hast nichts. Vermutlich."
   },
   {
-   "path": "now_11.snow",
+   "path": "now_10.snow",
    "text": "Die Schuhe mit Profil, bitte. Nicht die schicken."
   },
   {
@@ -202,7 +202,7 @@
   },
   {
    "path": "unit_10.c_scarf",
-   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen."
+   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen. Und tut so, als wär das Absicht."
   },
   {
    "path": "unit_10.c_scarf",

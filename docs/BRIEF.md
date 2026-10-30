@@ -25,6 +25,13 @@ Only the flavour line has a voice; sarcasm Off shows the fact alone.
 | On (`10`) | sarcastic, dry |
 | `11` | sarcastic and personal: it's about you |
 
+The level check (owner, October 2026): **at 11, looks are fair game**,
+and so is worth ("I had someone more deserving in mind"). A personal jab
+at On belongs at 11; a line at 11 that isn't about you belongs at On;
+each joke sits at one level only. `LEVEL_FIXES` in
+`review/rounds/build_pools.py` moved or rewrote the lines the check
+caught.
+
 ### What the first voice audition settled (October 2026)
 
 From 160 votes and the owner's notes (`review/decisions/`):

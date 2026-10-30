@@ -31,24 +31,27 @@ ROUND = "2026-10-final2"
 
 
 def add_level_notes(lines):
-    """The level check (owner, before the German reread): each flag a note under its line."""
-    flags = HERE / ROUND / "level_flags.json"
-    if not flags.exists():
-        return
-    label = {"too_personal_for_10": "Level check: a personal jab, belongs at 11?",
-             "too_mild_for_11": "Level check: not about you, fits On better?",
-             "not_sarcastic": "Level check: not sarcastic",
-             "too_harsh": "Level check: goes after looks or worth",
-             "both_levels": "Level check: the same joke at On and 11"}
-    by = {}
-    for f in json.loads(flags.read_text(encoding="utf-8")):
-        by.setdefault((f["lang"], f["where"].replace("unit_", "units_")), []).append(f)
+    """The level check, as the owner settled it: each line it moved or
+    rewrote gets a note saying so (build_pools.LEVEL_FIXES)."""
+    import build_pools as bp
+    lv = {"10": "On", "11": "11"}
+    notes = []
+    for lang, src, old, dst, new in bp.LEVEL_FIXES:
+        if dst is None:
+            continue
+        a, b = src.split(".")[0][-2:], dst.split(".")[0][-2:]
+        label = f"Level check: moved here from {lv[a]}" if a != b else f"Level check: rewritten to fit {lv[b]}"
+        notes.append((lang, dst, new or old, label))
+    # Never live before this round: the new German lines it caught.
+    notes += [("de", "now_10.snow", "Die Schuhe mit Profil, bitte. Nicht die schicken.", "Level check: moved here from 11"),
+              ("de", "flavour_10.day_eisheilige", "bis ein paar Heilige ihr Okay geben", "Level check: rewritten to fit On"),
+              ("de", "units_10.c_scarf", "Und tut so, als wär das Absicht.", "Level check: rewritten to fit On")]
     for r in lines:
         where = r["where"][0] if r.get("where") else r["path"].replace("unit_", "units_")
-        for f in by.get((r["lang"], where), []):
-            joke = f["text"].split(" || ")[-1].lstrip("| ").strip()
-            if joke and joke in r["text"]:
-                r["hint"] = ((r.get("hint") or "") + " · " + label[f["flag"]] + " (" + f["why"] + ")").lstrip(" ·")
+        for lang, dst, text, label in notes:
+            joke = text.split(" || ")[-1]
+            if r["lang"] == lang and where == dst and joke in r["text"]:
+                r["hint"] = ((r.get("hint") or "") + " · " + label).lstrip(" ·")
                 r["batch"] = "Level check"
 
 

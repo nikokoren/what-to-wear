@@ -509,3 +509,11 @@ reworded since), applied like round 22; and 77 new German lines for the
 slots the German read-through emptied or thinned (brief
 `2026-10-final2/brief_de.md`, a fresh writer: 237 candidates, a critic:
 77), added if kept.
+
+The level check (owner: "drop the no looks limit for 11"): of the 62
+flags, 36 lines moved to the other level (same situation), 16 were
+rewritten where they stand (not sarcastic, or a move would leave 11
+with fewer than two units for the situation), 2 jokes that sat at both
+levels stay at On only, and 6 flagged for looks or worth at 11 stay.
+`LEVEL_FIXES` in `build_pools.py`; the page notes each line it touched
+("Level check" batch).

@@ -2928,7 +2928,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off, and is wanted back in the evening.",
    "live": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.",
    "where": [
@@ -2959,7 +2959,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off, and is wanted back in the evening.",
    "live": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.",
    "where": [
@@ -2990,7 +2990,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off, and is wanted back in the evening.",
    "live": "Take {G} off {WHEN}, put {GP} back on {WHEN2}.",
    "where": [
@@ -3020,7 +3020,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off, and is wanted back in the evening.",
    "live": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.",
    "where": [
@@ -3051,7 +3051,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off, and is wanted back in the evening.",
    "live": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}.",
    "where": [
@@ -3081,7 +3081,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off, and is wanted back in the evening.",
    "live": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}.",
    "where": [
@@ -3111,7 +3111,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off; the evening is colder than now: jacket back, plus a layer.",
    "live": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top.",
    "where": [
@@ -3142,7 +3142,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off; the evening is colder than now: jacket back, plus a layer.",
    "live": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.",
    "where": [
@@ -3173,7 +3173,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off; the evening is colder than now: jacket back, plus a layer.",
    "live": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.",
    "where": [
@@ -3204,7 +3204,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off; the evening is colder than now: jacket back, plus a layer.",
    "live": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}.",
    "where": [
@@ -3234,7 +3234,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Off, on. The layer gets more exercise than you.",
+   "under": "Off and on again. That fixes most things, me included.",
    "meaning": "Forecast line, the same at every sarcasm level. The jacket comes off; the evening is colder than now: jacket back, plus a layer.",
    "live": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top.",
    "where": [
@@ -5950,7 +5950,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
    "live": "Freezing rain {WHENP} makes roads and sidewalks icy. Take the umbrella and watch your step.",
    "where": [
@@ -5980,7 +5980,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
    "live": "Take the umbrella. Freezing rain {WHENP} makes the sidewalks icy, so walk carefully.",
    "where": [
@@ -6010,7 +6010,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
    "live": "{WHENP} there's freezing rain and the roads turn icy. Bring the umbrella and take it slowly.",
    "where": [
@@ -6040,7 +6040,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
    "live": "Take the umbrella. Freezing rain {WHENP} makes the sidewalks icy, so walk carefully.",
    "where": [
@@ -6070,7 +6070,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.",
    "where": [
@@ -6101,7 +6101,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.",
    "where": [
@@ -6132,7 +6132,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
    "live": "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.",
    "where": [
@@ -6163,7 +6163,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.",
    "where": [
@@ -6194,7 +6194,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain sets in {WHENP} and stays, so roads and sidewalks may be icy. Walk carefully.",
    "where": [
@@ -6224,7 +6224,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain sets in {WHENP} and stays, so roads and sidewalks may be icy. Walk carefully.",
    "where": [
@@ -6254,7 +6254,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain is possible {WHENP}. If it comes, it gets icy, so take the umbrella.",
    "where": [
@@ -6284,7 +6284,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
    "live": "There might be freezing rain {WHENP}. That would mean ice, so take the umbrella and tread carefully.",
    "where": [
@@ -6314,7 +6314,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
    "live": "Freezing rain could come {WHENP}, and with it ice. Take the umbrella to be safe.",
    "where": [
@@ -6344,7 +6344,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
    "live": "Freezing rain all day, and the roads and sidewalks may be icy. Take the umbrella and go slowly.",
    "where": [
@@ -6374,7 +6374,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
    "live": "It's freezing rain all day, so the sidewalks stay icy. Walk carefully and keep the umbrella with you.",
    "where": [
@@ -6404,7 +6404,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
    "live": "The freezing rain keeps going all day and leaves ice everywhere. Bring the umbrella and go slowly.",
    "where": [
@@ -6434,7 +6434,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now and all day.",
    "live": "It's freezing rain all day, so the sidewalks stay icy. Walk carefully and keep the umbrella with you.",
    "where": [
@@ -6464,7 +6464,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "The freezing rain stops later, but the ice stays. Take the umbrella for now and watch your step.",
    "where": [
@@ -6494,7 +6494,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "Take the umbrella for now. The freezing rain stops later, but the sidewalks stay icy.",
    "where": [
@@ -6524,7 +6524,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully.",
    "where": [
@@ -6554,7 +6554,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "The freezing rain stops {WHENSTOP}, but sidewalks may stay icy.",
    "where": [
@@ -6584,7 +6584,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "The freezing rain stops {WHENSTOP}. Roads and sidewalks may stay icy, so walk carefully.",
    "where": [
@@ -6614,7 +6614,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "Take the umbrella for now. The freezing rain stops later, but the sidewalks stay icy.",
    "where": [
@@ -6644,7 +6644,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "The freezing rain stops {WHENSTOP}, but sidewalks may stay icy.",
    "where": [
@@ -6674,7 +6674,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
    "live": "The freezing rain stops {WHENSTOP}. Roads and sidewalks may stay icy, so walk carefully.",
    "where": [
@@ -6704,7 +6704,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
    "live": "The freezing rain stops for a while, then comes back {WHENP}. Expect ice and keep the umbrella with you.",
    "where": [
@@ -6734,7 +6734,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
    "live": "Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and mind the ice.",
    "where": [
@@ -6764,7 +6764,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
    "live": "The freezing rain pauses later and returns {WHENP}. The sidewalks may stay icy, so keep the umbrella and go slowly.",
    "where": [
@@ -6794,7 +6794,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
    "live": "The freezing rain stops {WHENSTOP} and returns {WHENP}. Sidewalks may be icy all day, so walk carefully.",
    "where": [
@@ -6824,7 +6824,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
    "live": "The freezing rain pauses later and returns {WHENP}. The sidewalks may stay icy, so keep the umbrella and go slowly.",
    "where": [
@@ -6854,7 +6854,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "under": "Walk like you're carrying a very full cup of coffee.",
+   "under": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
    "live": "The freezing rain stops {WHENSTOP} and returns {WHENP}. Sidewalks may be icy all day, so walk carefully.",
    "where": [
@@ -7956,40 +7956,6 @@
    "path": "flavour_10.offon",
    "sprite": "jacket_dry",
    "fact": "The jacket can come off around midday, but you'll want it back this evening.",
-   "batch": "Level check",
-   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
-   "text": "Off, on. The layer gets more exercise than you.",
-   "role": "flavour",
-   "live": "Off, on. The layer gets more exercise than you.",
-   "where": [
-    "flavour_10.offon"
-   ],
-   "hint": "Level check: a personal jab, belongs at 11? (Jabs at the reader's lack of exercise; an 11 line.)"
-  },
-  {
-   "lang": "en",
-   "path": "flavour_10.offon",
-   "sprite": "jacket_dry",
-   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
-   "batch": "Level check",
-   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
-   "fills": {
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "text": "Don't lose {GP} in between. Like last time.",
-   "role": "flavour",
-   "hint": "The garment fills in from the forecast line · Level check: a personal jab, belongs at 11? ('Like last time' needles the reader's past mistake; 11 has the same lost-layer jokes.)",
-   "live": "Don't lose {GP} in between. Like last time.",
-   "where": [
-    "flavour_10.offon"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "flavour_10.offon",
-   "sprite": "jacket_dry",
-   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
    "batch": "Follow-up: offon",
    "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
    "text": "Off and on again. That fixes most things, me included.",
@@ -8004,15 +7970,14 @@
    "path": "flavour_10.offon",
    "sprite": "jacket_dry",
    "fact": "The jacket can come off around midday, but you'll want it back this evening.",
-   "batch": "Level check",
+   "batch": "Follow-up: offon",
    "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
    "text": "Two outfit changes in one day. Very pop star of you.",
    "role": "flavour",
    "live": "Two outfit changes in one day. Very pop star of you.",
    "where": [
     "flavour_10.offon"
-   ],
-   "hint": "Level check: the same joke at On and 11 (also used at the other level; keep it at one)"
+   ]
   },
   {
    "lang": "en",
@@ -8291,21 +8256,6 @@
    "path": "flavour_10.steady",
    "sprite": "tee_pants_dry",
    "fact": "This outfit works all day.",
-   "batch": "Level check",
-   "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
-   "text": "Set it and forget it, like your gym membership.",
-   "role": "flavour",
-   "live": "Set it and forget it, like your gym membership.",
-   "where": [
-    "flavour_10.steady"
-   ],
-   "hint": "Level check: a personal jab, belongs at 11? (Mocks the reader's unused gym membership, a personal habit jab.)"
-  },
-  {
-   "lang": "en",
-   "path": "flavour_10.steady",
-   "sprite": "tee_pants_dry",
-   "fact": "This outfit works all day.",
    "batch": "Follow-up: steady",
    "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
    "text": "So you can stop staring into the wardrobe now.",
@@ -8491,13 +8441,13 @@
    "fact": "Freezing rain this afternoon makes roads and sidewalks icy. Take the umbrella and watch your step.",
    "batch": "Level check",
    "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
-   "text": "Walk like you're carrying a very full cup of coffee.",
+   "text": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "role": "flavour",
-   "live": "Walk like you're carrying a very full cup of coffee.",
+   "live": "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't.",
    "where": [
     "flavour_10.ice"
    ],
-   "hint": "Level check: not sarcastic (Plain, friendly walking advice with no sarcasm.)"
+   "hint": "Level check: rewritten to fit On"
   },
   {
    "lang": "en",
@@ -9097,6 +9047,40 @@
   },
   {
    "lang": "en",
+   "path": "flavour_11.offon",
+   "sprite": "jacket_dry",
+   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
+   "batch": "Level check",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
+   "text": "Off, on. The layer gets more exercise than you.",
+   "role": "flavour",
+   "live": "Off, on. The layer gets more exercise than you.",
+   "where": [
+    "flavour_11.offon"
+   ],
+   "hint": "Level check: moved here from On"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.offon",
+   "sprite": "jacket_dry",
+   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
+   "batch": "Level check",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
+   "fills": {
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "text": "Don't lose {GP} in between. Like last time.",
+   "role": "flavour",
+   "hint": "The garment fills in from the forecast line · Level check: moved here from On",
+   "live": "Don't lose {GP} in between. Like last time.",
+   "where": [
+    "flavour_11.offon"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "flavour_11.evening",
    "sprite": "jacket_dry",
    "fact": "What you're wearing works for the rest of the evening.",
@@ -9653,6 +9637,21 @@
   },
   {
    "lang": "en",
+   "path": "flavour_11.steady",
+   "sprite": "tee_pants_dry",
+   "fact": "This outfit works all day.",
+   "batch": "Level check",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
+   "text": "Set it and forget it, like your gym membership.",
+   "role": "flavour",
+   "live": "Set it and forget it, like your gym membership.",
+   "where": [
+    "flavour_11.steady"
+   ],
+   "hint": "Level check: moved here from On"
+  },
+  {
+   "lang": "en",
    "path": "flavour_11.shorts",
    "sprite": "coat_dry",
    "fact": "Shorts weather arrives this afternoon, so think about wearing shorts now and keep the jacket just for the start.",
@@ -9786,13 +9785,13 @@
    "fact": "{AM}Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
    "batch": "Level check",
    "meaning": "New follow-up at 11: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
-   "text": "Not a day for proving anything. Sit in the shade and drink.",
+   "text": "Not a day for proving anything. Not that you were going to.",
    "role": "flavour",
-   "live": "Not a day for proving anything. Sit in the shade and drink.",
+   "live": "Not a day for proving anything. Not that you were going to.",
    "where": [
     "flavour_11.scorch"
    ],
-   "hint": "Level check: not sarcastic (Straight heat advice; no edge and not aimed at the reader.)"
+   "hint": "Level check: rewritten to fit 11"
   },
   {
    "lang": "en",
@@ -10372,36 +10371,6 @@
    "path": "flavour_vf_10.fickle",
    "sprite": "coat_dry",
    "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.",
-   "panels": [
-    {
-     "sprite": "coat_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "jacket_dry",
-     "label": "from 1 pm"
-    },
-    {
-     "sprite": "tee_pants_dry",
-     "label": "from 7 pm"
-    }
-   ],
-   "text": "Three outfits in one day, and you'll still say you've got nothing to wear.",
-   "role": "flavour",
-   "three": true,
-   "hint": "Only with three different drawings · Level check: a personal jab, belongs at 11? (Teases the reader's own wardrobe complaint; a personal jab.)",
-   "live": "{3}Three outfits in one day, and you'll still say you've got nothing to wear.",
-   "where": [
-    "flavour_vf_10.fickle"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "flavour_vf_10.fickle",
-   "sprite": "coat_dry",
-   "fact": "",
    "batch": "Drawings",
    "meaning": "New: sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.",
    "panels": [
@@ -10549,6 +10518,36 @@
     "flavour_vf_11.wet"
    ],
    "starred": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_11.fickle",
+   "sprite": "coat_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at 11. About the drawings: shows only with two or three of them (fickle day), no forecast line.",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "tee_pants_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "text": "Three outfits in one day, and you'll still say you've got nothing to wear.",
+   "role": "flavour",
+   "three": true,
+   "hint": "Only with three different drawings · Level check: moved here from On",
+   "live": "{3}Three outfits in one day, and you'll still say you've got nothing to wear.",
+   "where": [
+    "flavour_vf_11.fickle"
+   ]
   },
   {
    "lang": "en",
@@ -11390,21 +11389,6 @@
   },
   {
    "lang": "en",
-   "path": "now_10.cool",
-   "sprite": "jacket_dry",
-   "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "You call this your good jacket. It's your only jacket.",
-   "role": "flavour",
-   "live": "You call this your good jacket. It's your only jacket.",
-   "where": [
-    "now_10.cool"
-   ],
-   "hint": "Level check: a personal jab, belongs at 11? (Jabs at the reader owning only one jacket; personal, and close to their means.)"
-  },
-  {
-   "lang": "en",
    "path": "now_11.nice",
    "sprite": "tee_pants_dry",
    "fact": "",
@@ -11538,15 +11522,14 @@
    "path": "now_11.nice",
    "sprite": "tee_pants_dry",
    "fact": "",
-   "batch": "Level check",
+   "batch": "Now: nice",
    "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Perfect day. I had someone more deserving in mind.",
    "role": "flavour",
    "live": "Perfect day. I had someone more deserving in mind.",
    "where": [
     "now_11.nice"
-   ],
-   "hint": "Level check: goes after looks or worth (Says the reader doesn't deserve a nice day; an attack on their worth.)"
+   ]
   },
   {
    "lang": "en",
@@ -11710,6 +11693,21 @@
   },
   {
    "lang": "en",
+   "path": "now_11.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "You call this your good jacket. It's your only jacket.",
+   "role": "flavour",
+   "live": "You call this your good jacket. It's your only jacket.",
+   "where": [
+    "now_11.cool"
+   ],
+   "hint": "Level check: moved here from On"
+  },
+  {
+   "lang": "en",
    "path": "now_11.cold",
    "sprite": "coat_dry",
    "fact": "",
@@ -11793,22 +11791,6 @@
    "where": [
     "now_11.cold"
    ]
-  },
-  {
-   "lang": "en",
-   "path": "now_11.cold",
-   "sprite": "coat_dry",
-   "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Your nose will turn a color I can't even display.",
-   "role": "flavour",
-   "live": "Your nose will turn a color I can't even display.",
-   "where": [
-    "now_11.cold"
-   ],
-   "starred": true,
-   "hint": "Level check: the same joke at On and 11 (also used at the other level; keep it at one)"
   },
   {
    "lang": "en",
@@ -12259,15 +12241,14 @@
    "path": "now_11.evening",
    "sprite": "jacket_dry",
    "fact": "",
-   "batch": "Level check",
+   "batch": "Now: evening",
    "meaning": "New: sarcastic line at 11. A now line: 18:00 to 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "If you're going out, try to look better than this.",
    "role": "flavour",
    "live": "If you're going out, try to look better than this.",
    "where": [
     "now_11.evening"
-   ],
-   "hint": "Level check: goes after looks or worth (Goes after the reader's looks.)"
+   ]
   },
   {
    "lang": "en",
@@ -12796,36 +12777,6 @@
   {
    "lang": "en",
    "path": "unit_10.steady",
-   "text": "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
-   "role": "unit",
-   "sprite": "sweater_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "live": "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
-   "where": [
-    "units_10.steady"
-   ],
-   "hint": "Level check: a personal jab, belongs at 11? (Mocks the reader's unused gym membership, a personal habit jab.)"
-  },
-  {
-   "lang": "en",
-   "path": "unit_10.steady",
    "text": "Today needs nothing more than what you have on. || A rare thing for me to say about anyone.",
    "role": "unit",
    "sprite": "sweater_dry",
@@ -13315,13 +13266,12 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "batch": "Level check",
+   "batch": "Unit: steady_cold",
    "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.",
    "live": "Expect the cold to last all day. || Your nose will turn a color I can't even display.",
    "where": [
     "units_10.steady_cold"
-   ],
-   "hint": "Level check: the same joke at On and 11 (also used at the other level; keep it at one)"
+   ]
   },
   {
    "lang": "en",
@@ -13970,6 +13920,47 @@
   },
   {
    "lang": "en",
+   "path": "unit_10.c_jacket",
+   "text": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.",
+   "role": "unit",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Cools to jacket weather: a jacket needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "sweater_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "09,10",
+   "hint": "Also shows without the drawings · Seasonal: only Sep–Oct · Level check: moved here from 11",
+   "live": "{M:09,10}A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.",
+   "where": [
+    "units_10.c_jacket"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "unit_10.c_hoodie",
    "text": "{WHEN} it gets cool enough for a sweater. || Which one is up to you. I do weather, not taste.",
    "role": "unit",
@@ -14131,6 +14122,47 @@
   },
   {
    "lang": "en",
+   "path": "unit_10.c_hoodie",
+   "text": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall.",
+   "role": "unit",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Cools to sweater weather: a sweater needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "sweater_dry",
+     "label": "from noon"
+    }
+   ],
+   "months": "09,10",
+   "hint": "Also shows without the drawings · Seasonal: only Sep–Oct · Level check: moved here from 11",
+   "live": "{M:09,10}{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall.",
+   "where": [
+    "units_10.c_hoodie"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "unit_10.w_scarf",
    "text": "{WHEN} it's mild enough to lose the scarf. || 'Mild'. You'll be calling it practically spring.",
    "role": "unit",
@@ -14205,6 +14237,46 @@
    ],
    "hint": "Also shows without the drawings",
    "live": "You can take off the scarf {WHEN}. || The coat stays. Let's not get carried away.",
+   "where": [
+    "units_10.w_scarf"
+   ]
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.w_scarf",
+   "text": "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.",
+   "role": "unit",
+   "sprite": "bundled_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Warms up: hat, scarf and gloves come off, the coat stays. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "bundled_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from noon"
+    }
+   ],
+   "hint": "Also shows without the drawings · Level check: moved here from 11",
+   "live": "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.",
    "where": [
     "units_10.w_scarf"
    ]
@@ -14732,6 +14804,46 @@
   },
   {
    "lang": "en",
+   "path": "unit_10.c_relief",
+   "text": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.",
+   "role": "unit",
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. The heat breaks, but it stays warm. Nothing to bring. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "heat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "tee_shorts_dry",
+     "label": "from noon"
+    }
+   ],
+   "hint": "Also shows without the drawings · Level check: moved here from 11",
+   "live": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.",
+   "where": [
+    "units_10.c_relief"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "unit_10.arc_warmer",
    "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'.",
    "role": "unit",
@@ -14849,50 +14961,6 @@
    "live": "You can take {G} off {WHEN}. || After that, you're just carrying {GP} around for company.",
    "where": [
     "units_10.arc_warmer"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "unit_10.arc_level",
-   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "around midday",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "around midday",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at On: the forecast sentence and its joke as one. The jacket comes off, and is wanted back in the evening. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "sweater_dry",
-     "label": "from noon"
-    },
-    {
-     "sprite": "jacket_dry",
-     "label": "from 6 pm"
-    }
-   ],
-   "hint": "Also shows without the drawings · Level check: a personal jab, belongs at 11? (Same jab at the reader's lack of exercise; belongs at 11.)",
-   "live": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
-   "where": [
-    "units_10.arc_level"
    ]
   },
   {
@@ -15345,6 +15413,46 @@
   },
   {
    "lang": "en",
+   "path": "unit_10.p_wetter_long",
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life.",
+   "role": "unit",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life.",
+   "where": [
+    "units_10.p_wetter_long"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "unit_10.p_stays_wet",
    "text": "It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.",
    "role": "unit",
@@ -15406,7 +15514,7 @@
   {
    "lang": "en",
    "path": "unit_10.p_stays_wet",
-   "text": "It rains all day, so bring the umbrella. || The kind of day you put the lights on at noon.",
+   "text": "It rains all day, so bring the umbrella. || Lights on at noon. Somebody will call it cozy.",
    "role": "unit",
    "sprite": "jacket_rain",
    "fills": {
@@ -15427,8 +15535,8 @@
    },
    "batch": "Level check",
    "meaning": "New at On: the forecast sentence and its joke as one. Raining now and all day. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "hint": "After a temperature sentence on a day that also changes · Level check: not sarcastic (Merely describes a gloomy day; no sarcastic turn.)",
-   "live": "It rains all day, so bring the umbrella. || The kind of day you put the lights on at noon.",
+   "hint": "After a temperature sentence on a day that also changes · Level check: rewritten to fit On",
+   "live": "It rains all day, so bring the umbrella. || Lights on at noon. Somebody will call it cozy.",
    "where": [
     "units_10.p_stays_wet"
    ]
@@ -15595,8 +15703,88 @@
   },
   {
    "lang": "en",
+   "path": "unit_10.p_wetter_maybe",
+   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
+   "role": "unit",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
+   "where": [
+    "units_10.p_wetter_maybe"
+   ]
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.",
+   "role": "unit",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.",
+   "where": [
+    "units_10.p_wetter_maybe"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "unit_10.p_snow_coming",
-   "text": "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.",
+   "text": "Snow starts {WHENP}. || The prettiest forecast I do all year. You're welcome.",
    "role": "unit",
    "sprite": "coat_dry",
    "fills": {
@@ -15627,8 +15815,8 @@
      "label": "from noon"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not sarcastic (Warm and pleasant ('a bit proud'), not sarcastic.)",
-   "live": "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: rewritten to fit On",
+   "live": "Snow starts {WHENP}. || The prettiest forecast I do all year. You're welcome.",
    "where": [
     "units_10.p_snow_coming"
    ]
@@ -15710,6 +15898,46 @@
    ],
    "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings",
    "live": "Snow starts {WHENP}. || And everyone forgets how to drive.",
+   "where": [
+    "units_10.p_snow_coming"
+   ]
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_snow_coming",
+   "text": "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up.",
+   "role": "unit",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Snow later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from noon"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up.",
    "where": [
     "units_10.p_snow_coming"
    ]
@@ -15800,6 +16028,36 @@
    "meaning": "New at On: the forecast sentence and its joke as one. Snowing now and all day. Shows under the written forecast, with or without What to Wear Next's drawings above.",
    "hint": "After a temperature sentence on a day that also changes",
    "live": "It's snowing all day. || I've never been out in it. I hear it's overrated.",
+   "where": [
+    "units_10.p_stays_wet_snow"
+   ]
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_stays_wet_snow",
+   "text": "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Snowing now and all day. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "hint": "After a temperature sentence on a day that also changes · Level check: moved here from 11",
+   "live": "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.",
    "where": [
     "units_10.p_stays_wet_snow"
    ]
@@ -15974,6 +16232,50 @@
   },
   {
    "lang": "en",
+   "path": "unit_10.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Snowing now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "coat_snow",
+     "label": "Now"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from noon"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: moved here from 11",
+   "live": "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
+   "where": [
+    "units_10.p_wet_again_snow"
+   ]
+  },
+  {
+   "lang": "en",
    "path": "unit_10.arc_colder",
    "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || On top, not instead. I know you.",
    "role": "unit",
@@ -16141,6 +16443,50 @@
    ],
    "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings",
    "live": "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || I saw round two coming. It's my one job.",
+   "where": [
+    "units_10.p_wet_again"
+   ]
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_wet_again",
+   "text": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something.",
+   "role": "unit",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Raining now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_rain",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from noon"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "from 6 pm"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something.",
    "where": [
     "units_10.p_wet_again"
    ]
@@ -16464,6 +16810,36 @@
    "where": [
     "units_11.steady"
    ]
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.steady",
+   "text": "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
+   "role": "unit",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "batch": "Level check",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "live": "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
+   "where": [
+    "units_11.steady"
+   ],
+   "hint": "Level check: moved here from On"
   },
   {
    "lang": "en",
@@ -17559,7 +17935,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "batch": "Level check",
+   "batch": "Unit: w_hoodie",
    "meaning": "New at 11: the forecast sentence and its joke as one. Warms up: the sweater comes off. Shows under the written forecast, with or without What to Wear Next's drawings above.",
    "panels": [
     {
@@ -17571,7 +17947,7 @@
      "label": "from noon"
     }
    ],
-   "hint": "Also shows without the drawings · Level check: goes after looks or worth (Implies the reader's body is pasty and unseen; about looks.)",
+   "hint": "Also shows without the drawings",
    "live": "The sweater can come off {WHEN}. || Whatever's under it hasn't seen daylight in a while.",
    "where": [
     "units_11.w_hoodie"
@@ -17739,47 +18115,6 @@
   },
   {
    "lang": "en",
-   "path": "unit_11.c_jacket",
-   "text": "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.",
-   "role": "unit",
-   "sprite": "sweater_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Cools to jacket weather: a jacket needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "sweater_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "jacket_dry",
-     "label": "from noon"
-    }
-   ],
-   "months": "09,10",
-   "hint": "Also shows without the drawings · Seasonal: only Sep–Oct · Level check: not about you, fits On better? (Pumpkin-spice observation, not about the reader.)",
-   "live": "{M:09,10}A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.",
-   "where": [
-    "units_11.c_jacket"
-   ]
-  },
-  {
-   "lang": "en",
    "path": "unit_11.c_hoodie",
    "text": "Bring a sweater. It cools down {WHEN}. || Alternatively you can practice your 'I'm not cold' face for later.",
    "role": "unit",
@@ -17900,47 +18235,6 @@
   },
   {
    "lang": "en",
-   "path": "unit_11.c_hoodie",
-   "text": "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall.",
-   "role": "unit",
-   "sprite": "tee_pants_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Cools to sweater weather: a sweater needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "tee_pants_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "sweater_dry",
-     "label": "from noon"
-    }
-   ],
-   "months": "09,10",
-   "hint": "Also shows without the drawings · Seasonal: only Sep–Oct · Level check: not about you, fits On better? (About pumpkin spice and the screen, not the reader.)",
-   "live": "{M:09,10}{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall.",
-   "where": [
-    "units_11.c_hoodie"
-   ]
-  },
-  {
-   "lang": "en",
    "path": "unit_11.w_scarf",
    "text": "It warms up {WHEN}, so the scarf can come off. || Today you're a coat rack with legs. Well done.",
    "role": "unit",
@@ -18015,46 +18309,6 @@
    ],
    "hint": "Also shows without the drawings",
    "live": "The scarf can come off {WHEN}. || A very modest striptease. The coat stays on, thank goodness.",
-   "where": [
-    "units_11.w_scarf"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "unit_11.w_scarf",
-   "text": "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.",
-   "role": "unit",
-   "sprite": "bundled_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Warms up: hat, scarf and gloves come off, the coat stays. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "bundled_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "coat_dry",
-     "label": "from noon"
-    }
-   ],
-   "hint": "Also shows without the drawings · Level check: not about you, fits On better? (A general remark about winter; no jab at the reader.)",
-   "live": "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.",
    "where": [
     "units_11.w_scarf"
    ]
@@ -18461,46 +18715,6 @@
   },
   {
    "lang": "en",
-   "path": "unit_11.c_relief",
-   "text": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.",
-   "role": "unit",
-   "sprite": "heat_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. The heat breaks, but it stays warm. Nothing to bring. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "heat_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "tee_shorts_dry",
-     "label": "from noon"
-    }
-   ],
-   "hint": "Also shows without the drawings · Level check: not about you, fits On better? (Jokes about the forecast wording, not the reader.)",
-   "live": "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.",
-   "where": [
-    "units_11.c_relief"
-   ]
-  },
-  {
-   "lang": "en",
    "path": "unit_11.arc_warmer",
    "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || You'll put {GP} back on later anyway, just to argue with me.",
    "role": "unit",
@@ -18710,7 +18924,7 @@
   {
    "lang": "en",
    "path": "unit_11.arc_level",
-   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || Two outfit changes in one day. Very pop star of you.",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
    "role": "unit",
    "sprite": "jacket_dry",
    "fills": {
@@ -18745,8 +18959,8 @@
      "label": "from 6 pm"
     }
    ],
-   "hint": "Also shows without the drawings · Level check: the same joke at On and 11 (also used at the other level; keep it at one)",
-   "live": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || Two outfit changes in one day. Very pop star of you.",
+   "hint": "Also shows without the drawings · Level check: moved here from On",
+   "live": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
    "where": [
     "units_11.arc_level"
    ]
@@ -18986,7 +19200,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "batch": "Level check",
+   "batch": "Unit: shorts_early",
    "meaning": "New at 11: the forecast sentence and its joke as one. A cool morning in long-pants weather that turns into shorts weather; the line suggests shorts, the drawing shows long pants. Shows under the written forecast, with or without What to Wear Next's drawings above.",
    "panels": [
     {
@@ -18998,7 +19212,7 @@
      "label": "from noon"
     }
    ],
-   "hint": "Also shows without the drawings · Level check: goes after looks or worth (Jabs at how the reader's legs look.)",
+   "hint": "Also shows without the drawings",
    "live": "It's cool now, but {WHEN} it's warm enough for shorts. || Your legs could use the daylight, frankly.",
    "where": [
     "units_11.shorts_early"
@@ -19026,7 +19240,7 @@
     "{G}": "the jacket",
     "{GP}": "it"
    },
-   "batch": "Level check",
+   "batch": "Unit: p_wetter_long",
    "meaning": "New at 11: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
    "panels": [
     {
@@ -19038,7 +19252,7 @@
      "label": "from noon"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: goes after looks or worth ('Most things have more stamina than you' goes after the reader's body and worth.)",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings",
    "live": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || It has more stamina than you. Most things do.",
    "where": [
     "units_11.p_wetter_long"
@@ -19080,46 +19294,6 @@
    ],
    "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings",
    "live": "Rain arrives {WHENP} and stays, so take the umbrella. || Staying in was your plan anyway. Now you have a reason.",
-   "where": [
-    "units_11.p_wetter_long"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "unit_11.p_wetter_long",
-   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "from noon"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (About the screen living indoors; no turn on the reader.)",
-   "live": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life.",
    "where": [
     "units_11.p_wetter_long"
    ]
@@ -19276,46 +19450,6 @@
   },
   {
    "lang": "en",
-   "path": "unit_11.p_snow_coming",
-   "text": "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up.",
-   "role": "unit",
-   "sprite": "coat_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Snow later. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "coat_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "coat_snow",
-     "label": "from noon"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Cute line about sleds; pleasant, not about the reader.)",
-   "live": "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up.",
-   "where": [
-    "units_11.p_snow_coming"
-   ]
-  },
-  {
-   "lang": "en",
    "path": "unit_11.p_stays_wet_snow",
    "text": "It snows all day. || You stopped finding it pretty about two snowfalls ago.",
    "role": "unit",
@@ -19377,38 +19511,8 @@
   },
   {
    "lang": "en",
-   "path": "unit_11.p_stays_wet_snow",
-   "text": "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.",
-   "role": "unit",
-   "sprite": "coat_snow",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Snowing now and all day. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "hint": "After a temperature sentence on a day that also changes · Level check: not about you, fits On better? (General novelty-of-snow line (also used at On); not about the reader.)",
-   "live": "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.",
-   "where": [
-    "units_11.p_stays_wet_snow"
-   ]
-  },
-  {
-   "lang": "en",
    "path": "unit_11.p_wetter",
-   "text": "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop, pretending to browse.",
+   "text": "A shower comes through {WHENP}, so take the umbrella. || Or spend it in a shop, pretending to browse. You know the drill.",
    "role": "unit",
    "sprite": "jacket_dry",
    "fills": {
@@ -19439,8 +19543,8 @@
      "label": "from noon"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (About other people in shops, not the reader.)",
-   "live": "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop, pretending to browse.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: rewritten to fit 11",
+   "live": "A shower comes through {WHENP}, so take the umbrella. || Or spend it in a shop, pretending to browse. You know the drill.",
    "where": [
     "units_11.p_wetter"
    ]
@@ -19528,46 +19632,6 @@
   {
    "lang": "en",
    "path": "unit_11.p_wetter_maybe",
-   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "from noon"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Screen-centred shrug, near-duplicate of an On line; no jab at the reader.)",
-   "live": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.",
-   "where": [
-    "units_11.p_wetter_maybe"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "unit_11.p_wetter_maybe",
    "text": "Rain is possible {WHENP}, so maybe take the umbrella. || I've done my bit. Now it's you versus the clouds.",
    "role": "unit",
    "sprite": "jacket_dry",
@@ -19647,92 +19711,8 @@
   },
   {
    "lang": "en",
-   "path": "unit_11.p_wetter_maybe",
-   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Now"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "from noon"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Fond line about Grandpa's knee; no edge and not about the reader.)",
-   "live": "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.",
-   "where": [
-    "units_11.p_wetter_maybe"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "unit_11.p_wet_again",
-   "text": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something.",
-   "role": "unit",
-   "sprite": "jacket_rain",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Raining now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_rain",
-     "label": "Now"
-    },
-    {
-     "sprite": "jacket_dry",
-     "label": "from noon"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "from 6 pm"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Personifies the rain; not about the reader.)",
-   "live": "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something.",
-   "where": [
-    "units_11.p_wet_again"
-   ]
-  },
-  {
-   "lang": "en",
    "path": "unit_11.p_drier_snow",
-   "text": "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in about a day.",
+   "text": "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in a day. Like most of your plans.",
    "role": "unit",
    "sprite": "coat_snow",
    "fills": {
@@ -19763,8 +19743,8 @@
      "label": "from noon"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (General snow observation; no jab at the reader.)",
-   "live": "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in about a day.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: rewritten to fit 11",
+   "live": "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in a day. Like most of your plans.",
    "where": [
     "units_11.p_drier_snow"
    ]
@@ -19772,7 +19752,7 @@
   {
    "lang": "en",
    "path": "unit_11.p_drier_snow",
-   "text": "It stops snowing later. || After that, the snow has nothing to do but get in the way.",
+   "text": "It stops snowing later. || After that, the snow just lies around getting in the way. You two would get along.",
    "role": "unit",
    "sprite": "coat_snow",
    "fills": {
@@ -19803,8 +19783,8 @@
      "label": "from noon"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (About the snow, not the reader.)",
-   "live": "It stops snowing later. || After that, the snow has nothing to do but get in the way.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: rewritten to fit 11",
+   "live": "It stops snowing later. || After that, the snow just lies around getting in the way. You two would get along.",
    "where": [
     "units_11.p_drier_snow"
    ]
@@ -19857,7 +19837,7 @@
   {
    "lang": "en",
    "path": "unit_11.p_wet_again_snow",
-   "text": "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
+   "text": "The snow pauses later and starts again {WHENP}. || Beginning, middle, more snow. Better structure than your week.",
    "role": "unit",
    "sprite": "coat_snow",
    "fills": {
@@ -19892,52 +19872,8 @@
      "label": "from 6 pm"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (Mild compliment to winter; nothing about the reader.)",
-   "live": "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.",
-   "where": [
-    "units_11.p_wet_again_snow"
-   ]
-  },
-  {
-   "lang": "en",
-   "path": "unit_11.p_wet_again_snow",
-   "text": "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow.",
-   "role": "unit",
-   "sprite": "coat_snow",
-   "fills": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "this afternoon",
-    "{WHENP}": "this afternoon",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "this evening",
-    "{WHEN}": "in two hours",
-    "{WHENP}": "in two hours",
-    "{WHENSTOP}": "around midday",
-    "{G}": "the jacket",
-    "{GP}": "it"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Snowing now, stops, comes back. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "coat_snow",
-     "label": "Now"
-    },
-    {
-     "sprite": "coat_dry",
-     "label": "from noon"
-    },
-    {
-     "sprite": "coat_snow",
-     "label": "from 6 pm"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (Screen admiring the forecast's structure; not about the reader.)",
-   "live": "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: rewritten to fit 11",
+   "live": "The snow pauses later and starts again {WHENP}. || Beginning, middle, more snow. Better structure than your week.",
    "where": [
     "units_11.p_wet_again_snow"
    ]
@@ -27958,22 +27894,6 @@
    "path": "flavour_10.night",
    "sprite": "jacket_dry",
    "fact": "Dein Outfit passt den ganzen Abend.",
-   "batch": "Level check",
-   "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
-   "text": "Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?",
-   "role": "flavour",
-   "hint": "Shown from 22:00 · Level check: a personal jab, belongs at 11? (Jabs at the reader's couch-bound evening; that belongs at 11.)",
-   "live": "Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?",
-   "where": [
-    "flavour_10.night"
-   ],
-   "starred": true
-  },
-  {
-   "lang": "de",
-   "path": "flavour_10.night",
-   "sprite": "jacket_dry",
-   "fact": "Dein Outfit passt den ganzen Abend.",
    "batch": "Follow-up: night",
    "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
    "text": "Das sag ich jetzt nur noch aus Pflichtgefühl. Eigentlich hab ich schon Feierabend.",
@@ -29095,6 +29015,22 @@
   },
   {
    "lang": "de",
+   "path": "flavour_11.night",
+   "sprite": "jacket_dry",
+   "fact": "Dein Outfit passt den ganzen Abend.",
+   "batch": "Level check",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "text": "Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?",
+   "role": "flavour",
+   "hint": "Shown from 22:00 · Level check: moved here from On",
+   "live": "Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?",
+   "where": [
+    "flavour_11.night"
+   ],
+   "starred": true
+  },
+  {
+   "lang": "de",
    "path": "flavour_11.steady",
    "sprite": "tee_pants_dry",
    "fact": "Dein Outfit passt heute den ganzen Tag.",
@@ -29866,14 +29802,13 @@
    "fact": "",
    "batch": "Level check",
    "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Bei dem Wetter fällt selbst mir schlechte Laune schwer.",
+   "text": "Bei dem Wetter fällt selbst mir schlechte Laune schwer. Aber ich geb nicht auf.",
    "role": "flavour",
-   "live": "Bei dem Wetter fällt selbst mir schlechte Laune schwer.",
+   "live": "Bei dem Wetter fällt selbst mir schlechte Laune schwer. Aber ich geb nicht auf.",
    "where": [
     "now_10.nice"
    ],
-   "starred": true,
-   "hint": "Level check: not sarcastic (Merely pleasant: the screen admits the weather lifts its mood, no bite.)"
+   "hint": "Level check: rewritten to fit On"
   },
   {
    "lang": "de",
@@ -29953,22 +29888,6 @@
    "path": "now_10.nice",
    "sprite": "tee_pants_dry",
    "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "„So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen Lebkuchen im September.",
-   "role": "flavour",
-   "months": "09",
-   "hint": "Seasonal: only Sep · Level check: a personal jab, belongs at 11? (Mocks the reader's own hypocrisy (sagst du ... kaufst heimlich); an 11-style jab, and Lebkuchen in September does not fit a 'nice' now-line.)",
-   "live": "{M:09}„So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen Lebkuchen im September.",
-   "where": [
-    "now_10.nice"
-   ]
-  },
-  {
-   "lang": "de",
-   "path": "now_10.nice",
-   "sprite": "tee_pants_dry",
-   "fact": "",
    "batch": "Now: nice",
    "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Gleich kommt wieder Dieter mit dem Rasenmäher um die Ecke. BRRRRRRRRRRRRRRR",
@@ -29995,6 +29914,21 @@
     "now_10.nice"
    ],
    "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "now_10.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR",
+   "role": "flavour",
+   "live": "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR",
+   "where": [
+    "now_10.nice"
+   ],
+   "hint": "Level check: moved here from 11"
   },
   {
    "lang": "de",
@@ -30053,6 +29987,22 @@
     "now_10.cool"
    ],
    "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Hörst du das? Horst hat wieder den Laubbläser angeschmissen. BRRRRRRRRRRRRRRRRRRRRRRRRRR",
+   "role": "flavour",
+   "months": "10,11",
+   "hint": "Seasonal: only Oct–Nov · Level check: moved here from 11",
+   "live": "{M:10,11}Hörst du das? Horst hat wieder den Laubbläser angeschmissen. BRRRRRRRRRRRRRRRRRRRRRRRRRR",
+   "where": [
+    "now_10.cool"
+   ]
   },
   {
    "lang": "de",
@@ -30586,6 +30536,38 @@
   },
   {
    "lang": "de",
+   "path": "now_10.wet",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at On. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+   "role": "flavour",
+   "live": "Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+   "where": [
+    "now_10.wet"
+   ],
+   "starred": true,
+   "hint": "Level check: moved here from 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_10.wet",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at On. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.",
+   "role": "flavour",
+   "live": "Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.",
+   "where": [
+    "now_10.wet"
+   ],
+   "starred": true,
+   "hint": "Level check: moved here from 11"
+  },
+  {
+   "lang": "de",
    "path": "now_10.snow",
    "sprite": "coat_snow",
    "fact": "",
@@ -30780,22 +30762,6 @@
    "path": "now_10.night",
    "sprite": "jacket_dry",
    "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.",
-   "role": "flavour",
-   "live": "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.",
-   "where": [
-    "now_10.night"
-   ],
-   "starred": true,
-   "hint": "Level check: a personal jab, belongs at 11? (Implies the reader's looks need damage control; a personal looks jab for On.)"
-  },
-  {
-   "lang": "de",
-   "path": "now_10.night",
-   "sprite": "jacket_dry",
-   "fact": "",
    "batch": "Now: night",
    "meaning": "New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Nachts kann ich wenigstens ungestört grantig sein.",
@@ -30849,6 +30815,38 @@
     "now_10.night"
    ],
    "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "now_10.night",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Schon wieder so spät? Ab ins Bett.",
+   "role": "flavour",
+   "live": "Schon wieder so spät? Ab ins Bett.",
+   "where": [
+    "now_10.night"
+   ],
+   "starred": true,
+   "hint": "Level check: moved here from 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_10.night",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "So spät noch wach? Ab ins Bett mit dir.",
+   "role": "flavour",
+   "live": "So spät noch wach? Ab ins Bett mit dir.",
+   "where": [
+    "now_10.night"
+   ],
+   "starred": true,
+   "hint": "Level check: moved here from 11"
   },
   {
    "lang": "de",
@@ -31015,21 +31013,6 @@
    "path": "now_11.nice",
    "sprite": "tee_pants_dry",
    "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR",
-   "role": "flavour",
-   "live": "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR",
-   "where": [
-    "now_11.nice"
-   ],
-   "hint": "Level check: not about you, fits On better? (Lawnmower noise joke is about a neighbour, not the reader.)"
-  },
-  {
-   "lang": "de",
-   "path": "now_11.nice",
-   "sprite": "tee_pants_dry",
-   "fact": "",
    "batch": "Seasonal",
    "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Deine Sommersachen sind sicher schon im Keller, oder?",
@@ -31037,6 +31020,22 @@
    "months": "09,10",
    "hint": "Seasonal: only Sep–Oct",
    "live": "{M:09,10}Deine Sommersachen sind sicher schon im Keller, oder?",
+   "where": [
+    "now_11.nice"
+   ]
+  },
+  {
+   "lang": "de",
+   "path": "now_11.nice",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "„So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen Lebkuchen im September.",
+   "role": "flavour",
+   "months": "09",
+   "hint": "Seasonal: only Sep · Level check: moved here from On",
+   "live": "{M:09}„So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen Lebkuchen im September.",
    "where": [
     "now_11.nice"
    ]
@@ -31159,22 +31158,6 @@
     "now_11.cool"
    ],
    "starred": true
-  },
-  {
-   "lang": "de",
-   "path": "now_11.cool",
-   "sprite": "jacket_dry",
-   "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Hörst du das? Horst hat wieder den Laubbläser angeschmissen. BRRRRRRRRRRRRRRRRRRRRRRRRRR",
-   "role": "flavour",
-   "months": "10,11",
-   "hint": "Seasonal: only Oct–Nov · Level check: not about you, fits On better? (Leaf-blower joke is about Horst, not the reader.)",
-   "live": "{M:10,11}Hörst du das? Horst hat wieder den Laubbläser angeschmissen. BRRRRRRRRRRRRRRRRRRRRRRRRRR",
-   "where": [
-    "now_11.cool"
-   ]
   },
   {
    "lang": "de",
@@ -31660,38 +31643,6 @@
   },
   {
    "lang": "de",
-   "path": "now_11.wet",
-   "sprite": "jacket_rain",
-   "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
-   "role": "flavour",
-   "live": "Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
-   "where": [
-    "now_11.wet"
-   ],
-   "starred": true,
-   "hint": "Level check: not about you, fits On better? (About someone with a freshly washed car, not the reader.)"
-  },
-  {
-   "lang": "de",
-   "path": "now_11.wet",
-   "sprite": "jacket_rain",
-   "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.",
-   "role": "flavour",
-   "live": "Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.",
-   "where": [
-    "now_11.wet"
-   ],
-   "starred": true,
-   "hint": "Level check: not about you, fits On better? (Jab at weather sites with ads, not at the reader.)"
-  },
-  {
-   "lang": "de",
    "path": "now_11.snow",
    "sprite": "coat_snow",
    "fact": "",
@@ -31954,22 +31905,6 @@
    "path": "now_11.night",
    "sprite": "jacket_dry",
    "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "Schon wieder so spät? Ab ins Bett.",
-   "role": "flavour",
-   "live": "Schon wieder so spät? Ab ins Bett.",
-   "where": [
-    "now_11.night"
-   ],
-   "starred": true,
-   "hint": "Level check: not about you, fits On better? ('Ab ins Bett' is a motherly nudge, no real edge.)"
-  },
-  {
-   "lang": "de",
-   "path": "now_11.night",
-   "sprite": "jacket_dry",
-   "fact": "",
    "batch": "Now: night",
    "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Um die Uhrzeit noch aufs Wetter schauen. Respekt.",
@@ -32029,22 +31964,6 @@
    "path": "now_11.night",
    "sprite": "jacket_dry",
    "fact": "",
-   "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
-   "text": "So spät noch wach? Ab ins Bett mit dir.",
-   "role": "flavour",
-   "live": "So spät noch wach? Ab ins Bett mit dir.",
-   "where": [
-    "now_11.night"
-   ],
-   "starred": true,
-   "hint": "Level check: not about you, fits On better? (Same motherly bedtime nudge, no edge.)"
-  },
-  {
-   "lang": "de",
-   "path": "now_11.night",
-   "sprite": "jacket_dry",
-   "fact": "",
    "batch": "Now: night",
    "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Um die Zeit noch den Wetterbericht checken. Hut ab.",
@@ -32059,15 +31978,30 @@
    "path": "now_11.night",
    "sprite": "jacket_dry",
    "fact": "",
-   "batch": "Level check",
+   "batch": "Now: night",
    "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Schönheitsschlaf brauchst du ja keinen mehr. Bei dir ist nichts zu retten.",
    "role": "flavour",
    "live": "Schönheitsschlaf brauchst du ja keinen mehr. Bei dir ist nichts zu retten.",
    "where": [
     "now_11.night"
+   ]
+  },
+  {
+   "lang": "de",
+   "path": "now_11.night",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Level check",
+   "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.",
+   "role": "flavour",
+   "live": "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.",
+   "where": [
+    "now_11.night"
    ],
-   "hint": "Level check: goes after looks or worth (Says the reader's looks are beyond saving, which goes at worth/looks rather than habits.)"
+   "starred": true,
+   "hint": "Level check: moved here from On"
   },
   {
    "lang": "de",
@@ -32296,39 +32230,6 @@
   {
    "lang": "de",
    "path": "unit_10.steady",
-   "text": "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.",
-   "role": "unit",
-   "sprite": "sweater_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "live": "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.",
-   "where": [
-    "units_10.steady"
-   ],
-   "starred": true,
-   "hint": "Level check: a personal jab, belongs at 11? ('So pflegeleicht bist du selten' is a direct dig at the reader.)"
-  },
-  {
-   "lang": "de",
-   "path": "unit_10.steady",
    "text": "Was du anhast, passt den ganzen Tag. || Beschwerden nehm ich trotzdem gern entgegen. Ich hab ja Zeit.",
    "role": "unit",
    "sprite": "sweater_dry",
@@ -32419,6 +32320,39 @@
    "where": [
     "units_10.steady"
    ]
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady",
+   "text": "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.",
+   "role": "unit",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "live": "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.",
+   "where": [
+    "units_10.steady"
+   ],
+   "starred": true,
+   "hint": "Level check: moved here from 11"
   },
   {
    "lang": "de",
@@ -32829,7 +32763,7 @@
   {
    "lang": "de",
    "path": "unit_10.steady_night",
-   "text": "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Gute Nacht.",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein.",
    "role": "unit",
    "sprite": "jacket_dry",
    "fills": {
@@ -32852,11 +32786,11 @@
    },
    "batch": "Level check",
    "meaning": "New at On: the forecast sentence and its joke as one. Nothing changes, from 22:00: the evening wording, late. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "live": "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Gute Nacht.",
+   "live": "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein.",
    "where": [
     "units_10.steady_night"
    ],
-   "hint": "Level check: not sarcastic ('Ich geh jetzt in den Ruhemodus. Gute Nacht.' is just a friendly sign-off.)"
+   "hint": "Level check: rewritten to fit On"
   },
   {
    "lang": "de",
@@ -33081,38 +33015,6 @@
    "where": [
     "units_10.steady_cold"
    ]
-  },
-  {
-   "lang": "de",
-   "path": "unit_10.steady_cold",
-   "text": "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck.",
-   "role": "unit",
-   "sprite": "coat_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at On: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "live": "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck.",
-   "where": [
-    "units_10.steady_cold"
-   ],
-   "hint": "Level check: goes after looks or worth (Body jab at On level; it is the owner's own 'Winterspeck' example of too harsh, still live here.)"
   },
   {
    "lang": "de",
@@ -33463,6 +33365,38 @@
     "units_10.steady_hot"
    ],
    "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
+   "role": "unit",
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "live": "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
+   "where": [
+    "units_10.steady_hot"
+   ],
+   "hint": "Level check: moved here from 11"
   },
   {
    "lang": "de",
@@ -35181,48 +35115,6 @@
   },
   {
    "lang": "de",
-   "path": "unit_10.shorts_early",
-   "text": "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
-   "role": "unit",
-   "sprite": "tee_pants_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at On: the forecast sentence and its joke as one. A cool morning in long-pants weather that turns into shorts weather; the line suggests shorts, the drawing shows long pants. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "tee_pants_dry",
-     "label": "Jetzt"
-    },
-    {
-     "sprite": "tee_shorts_dry",
-     "label": "ab Mittag"
-    }
-   ],
-   "hint": "Also shows without the drawings · Level check: a personal jab, belongs at 11? (Pale-legs dig at the reader; the softened twin of an 11 line.)",
-   "live": "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
-   "where": [
-    "units_10.shorts_early"
-   ]
-  },
-  {
-   "lang": "de",
    "path": "unit_10.p_wetter",
    "text": "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Ein kurzer. Aber lang genug, um sich drüber zu ärgern.",
    "role": "unit",
@@ -35903,6 +35795,135 @@
    ],
    "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings",
    "live": "{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit sind sie immer fein raus. Feiglinge.",
+   "where": [
+    "units_10.p_wetter_maybe"
+   ],
+   "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.",
+   "role": "unit",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.",
+   "where": [
+    "units_10.p_wetter_maybe"
+   ],
+   "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.",
+   "role": "unit",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.",
+   "where": [
+    "units_10.p_wetter_maybe"
+   ],
+   "starred": true
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.",
+   "role": "unit",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at On: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "jacket_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "jacket_rain",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: moved here from 11",
+   "live": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.",
    "where": [
     "units_10.p_wetter_maybe"
    ],
@@ -36951,7 +36972,7 @@
   {
    "lang": "de",
    "path": "unit_11.steady",
-   "text": "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.",
+   "text": "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.",
    "role": "unit",
    "sprite": "sweater_dry",
    "fills": {
@@ -36974,12 +36995,12 @@
    },
    "batch": "Level check",
    "meaning": "New at 11: the forecast sentence and its joke as one. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\". Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "live": "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.",
+   "live": "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.",
    "where": [
     "units_11.steady"
    ],
    "starred": true,
-   "hint": "Level check: not about you, fits On better? (Frog/PETA joke about the screen's job, nothing about the reader.)"
+   "hint": "Level check: moved here from On"
   },
   {
    "lang": "de",
@@ -37621,6 +37642,38 @@
   },
   {
    "lang": "de",
+   "path": "unit_11.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck.",
+   "role": "unit",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at 11: the forecast sentence and its joke as one. Steady cold (coat or more), before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "live": "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck.",
+   "where": [
+    "units_11.steady_cold"
+   ],
+   "hint": "Level check: moved here from On"
+  },
+  {
+   "lang": "de",
    "path": "unit_11.steady_hot",
    "text": "Heute bleibt's heiß, trink viel Wasser und such dir Schatten. || Und komm mir nicht mit „Ich hab keinen Durst“.",
    "role": "unit",
@@ -37809,38 +37862,6 @@
     "units_11.steady_hot"
    ],
    "starred": true
-  },
-  {
-   "lang": "de",
-   "path": "unit_11.steady_hot",
-   "text": "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
-   "role": "unit",
-   "sprite": "heat_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Steady heat, before 17:00. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "live": "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.",
-   "where": [
-    "units_11.steady_hot"
-   ],
-   "hint": "Level check: not about you, fits On better? (Says lazing in the shade is sensible; mild, almost kind, no jab.)"
   },
   {
    "lang": "de",
@@ -39342,6 +39363,48 @@
   },
   {
    "lang": "de",
+   "path": "unit_11.shorts_early",
+   "text": "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
+   "role": "unit",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "batch": "Level check",
+   "meaning": "New at 11: the forecast sentence and its joke as one. A cool morning in long-pants weather that turns into shorts weather; the line suggests shorts, the drawing shows long pants. Shows under the written forecast, with or without What to Wear Next's drawings above.",
+   "panels": [
+    {
+     "sprite": "tee_pants_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "tee_shorts_dry",
+     "label": "ab Mittag"
+    }
+   ],
+   "hint": "Also shows without the drawings · Level check: moved here from On",
+   "live": "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
+   "where": [
+    "units_11.shorts_early"
+   ]
+  },
+  {
+   "lang": "de",
    "path": "unit_11.p_wetter",
    "text": "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Endlich passt das Wetter mal zu deinem Gesicht.",
    "role": "unit",
@@ -39832,135 +39895,6 @@
   {
    "lang": "de",
    "path": "unit_11.p_wetter_maybe",
-   "text": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Jetzt"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "ab Mittag"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Mocks weather apps, not the reader; fits On.)",
-   "live": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.",
-   "where": [
-    "units_11.p_wetter_maybe"
-   ],
-   "starred": true
-  },
-  {
-   "lang": "de",
-   "path": "unit_11.p_wetter_maybe",
-   "text": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Jetzt"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "ab Mittag"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Screen admits it doesn't know; no turn on the reader.)",
-   "live": "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.",
-   "where": [
-    "units_11.p_wetter_maybe"
-   ],
-   "starred": true
-  },
-  {
-   "lang": "de",
-   "path": "unit_11.p_wetter_maybe",
-   "text": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.",
-   "role": "unit",
-   "sprite": "jacket_dry",
-   "fills": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "heute Nachmittag",
-    "{WHENP}": "heute Nachmittag",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "fillsAlt": {
-    "{WHEN2}": "heute Abend",
-    "{WHEN}": "in zwei Stunden",
-    "{WHENP}": "in zwei Stunden",
-    "{WHENSTOP}": "gegen Mittag",
-    "{G}": "die Jacke",
-    "{GP}": "sie",
-    "{GV}": "kann die Jacke"
-   },
-   "batch": "Level check",
-   "meaning": "New at 11: the forecast sentence and its joke as one. Rain possible later, not likely. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.",
-   "panels": [
-    {
-     "sprite": "jacket_dry",
-     "label": "Jetzt"
-    },
-    {
-     "sprite": "jacket_rain",
-     "label": "ab Mittag"
-    }
-   ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Level check: not about you, fits On better? (Generic Murphy's-law line, not about the reader.)",
-   "live": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.",
-   "where": [
-    "units_11.p_wetter_maybe"
-   ],
-   "starred": true
-  },
-  {
-   "lang": "de",
-   "path": "unit_11.p_wetter_maybe",
    "text": "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht. || Dir schadet ein bisschen Regen vermutlich eh nicht.",
    "role": "unit",
    "sprite": "jacket_dry",
@@ -40226,7 +40160,7 @@
   {
    "lang": "de",
    "path": "unit_11.p_wet_again",
-   "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Trocken wird er heute auf jeden Fall nicht mehr.",
+   "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Zweimal an dasselbe denken. Für dich ist das sportlich.",
    "role": "unit",
    "sprite": "jacket_rain",
    "fills": {
@@ -40263,8 +40197,8 @@
      "label": "ab 18 Uhr"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (Observation about the umbrella, no jab at the reader.)",
-   "live": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Trocken wird er heute auf jeden Fall nicht mehr.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: rewritten to fit 11",
+   "live": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Zweimal an dasselbe denken. Für dich ist das sportlich.",
    "where": [
     "units_11.p_wet_again"
    ]
@@ -40272,7 +40206,7 @@
   {
    "lang": "de",
    "path": "unit_11.p_wet_again",
-   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Aprilwetter. Egal, was der Kalender sagt.",
+   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der kommt zurück. Anders als dein Schirm, wenn du ihn irgendwo stehen lässt.",
    "role": "unit",
    "sprite": "jacket_rain",
    "fills": {
@@ -40309,8 +40243,8 @@
      "label": "ab 18 Uhr"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Says when it stops; only shows when there's a stop time · Also shows without the drawings · Level check: not about you, fits On better? ('Aprilwetter' remark is about the weather only.)",
-   "live": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Aprilwetter. Egal, was der Kalender sagt.",
+   "hint": "After a temperature sentence on a day that also changes · Says when it stops; only shows when there's a stop time · Also shows without the drawings · Level check: rewritten to fit 11",
+   "live": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der kommt zurück. Anders als dein Schirm, wenn du ihn irgendwo stehen lässt.",
    "where": [
     "units_11.p_wet_again"
    ]
@@ -40318,7 +40252,7 @@
   {
    "lang": "de",
    "path": "unit_11.p_wet_again_snow",
-   "text": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht.",
+   "text": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht.",
    "role": "unit",
    "sprite": "coat_snow",
    "fills": {
@@ -40355,8 +40289,8 @@
      "label": "ab 18 Uhr"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (Dry weather observation, not personal.)",
-   "live": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: rewritten to fit 11",
+   "live": "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht.",
    "where": [
     "units_11.p_wet_again_snow"
    ]
@@ -40364,7 +40298,7 @@
   {
    "lang": "de",
    "path": "unit_11.p_wet_again_snow",
-   "text": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch mühsam.",
+   "text": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch, der zweite nur noch mühsam. Kennst du ja aus deinen Beziehungen.",
    "role": "unit",
    "sprite": "coat_snow",
    "fills": {
@@ -40401,8 +40335,8 @@
      "label": "ab 18 Uhr"
     }
    ],
-   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: not about you, fits On better? (General remark about second snowfall, not about the reader.)",
-   "live": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch mühsam.",
+   "hint": "After a temperature sentence on a day that also changes · Also shows without the drawings · Leaves out {WHENSTOP} · Level check: rewritten to fit 11",
+   "live": "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch, der zweite nur noch mühsam. Kennst du ja aus deinen Beziehungen.",
    "where": [
     "units_11.p_wet_again_snow"
    ]
@@ -40422,14 +40356,14 @@
   {
    "lang": "de",
    "path": "flavour_10.day_eisheilige",
-   "text": "Eisheilige. Auf den Fensterbänken stehen die Tomaten Schlange.",
+   "text": "Eisheilige. Auf den Fensterbänken warten die Tomaten, bis ein paar Heilige ihr Okay geben.",
    "role": "flavour",
    "new": true,
    "sprite": "sweater_dry",
    "fact": "Dein Outfit passt heute den ganzen Tag.",
    "batch": "Level check",
    "meaning": "New sarcastic line at On: die Eisheiligen, 11 to 15 May: the last frost risk, gardeners wait to plant. Shows on a day whose weather doesn't change, under \"works all day\" or alone under the drawing.",
-   "hint": "Every other hour on the day · Level check: not sarcastic (Cute, informative image (tomatoes queuing), no edge.)"
+   "hint": "Every other hour on the day · Level check: rewritten to fit On"
   },
   {
    "lang": "de",
@@ -40900,15 +40834,15 @@
   },
   {
    "lang": "de",
-   "path": "now_11.snow",
+   "path": "now_10.snow",
    "sprite": "coat_snow",
    "fact": "",
    "batch": "Level check",
-   "meaning": "New: sarcastic line at 11. A now line: it's snowing now: the drawing has the snow. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "meaning": "New: sarcastic line at On. A now line: it's snowing now: the drawing has the snow. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
    "text": "Die Schuhe mit Profil, bitte. Nicht die schicken.",
    "role": "flavour",
    "new": true,
-   "hint": "Level check: not about you, fits On better? (Mostly plain advice about shoes; barely any edge.)"
+   "hint": "Level check: moved here from 11"
   },
   {
    "lang": "de",
@@ -41174,7 +41108,7 @@
   {
    "lang": "de",
    "path": "unit_10.c_scarf",
-   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen.",
+   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen. Und tut so, als wär das Absicht.",
    "role": "unit",
    "new": true,
    "sprite": "coat_dry",
@@ -41208,7 +41142,7 @@
      "label": "ab Mittag"
     }
    ],
-   "hint": "Also shows without the drawings · Level check: not sarcastic (Reads as folk advice, no sarcasm in it.)"
+   "hint": "Also shows without the drawings · Level check: rewritten to fit On"
   },
   {
    "lang": "de",

@@ -653,6 +653,9 @@ def main():
         moved = apply_owner_moves(doc, lang)
         if moved:
             print(f"{lang}: {moved} lines moved where they belong")
+        level = apply_level_fixes(doc, lang)
+        if level:
+            print(f"{lang} level check: " + ", ".join(f"{v} {k}" for k, v in level.items()))
         # Two edits can land on the same words: each line once.
         for pools in doc.values():
             if isinstance(pools, dict):
@@ -966,6 +969,130 @@ def apply_notes(doc, lang):
         lst = doc["facts"].get(key)
         if lst and (lst[0] == old or old == 0):
             lst[0] = new
+    return dict(n)
+
+
+
+# The level check (owner, October 2026, before the German reread): looks
+# are fair game at 11. A personal jab at On moves to 11 and a line at 11
+# that isn't about you moves to On, same situation; where a move would
+# leave a situation at 11 with fewer than two units, or the line isn't
+# sarcastic at all, it is rewritten where it stands; a joke at both
+# levels stays at the one it fits. (lang, from, line, to, new line):
+# to None drops it, new line None keeps the words.
+LEVEL_FIXES = [
+    # English: personal jabs at On, to 11.
+    ("en", "flavour_10.offon", "Off, on. The layer gets more exercise than you.", "flavour_11.offon", None),
+    ("en", "flavour_10.offon", "Don't lose {GP} in between. Like last time.", "flavour_11.offon", None),
+    ("en", "flavour_10.steady", "Set it and forget it, like your gym membership.", "flavour_11.steady", None),
+    ("en", "flavour_vf_10.fickle", "Three outfits in one day, and you'll still say you've got nothing to wear.", "flavour_vf_11.fickle", None),
+    ("en", "now_10.cool", "You call this your good jacket. It's your only jacket.", "now_11.cool", None),
+    ("en", "units_10.steady", "One outfit covers the whole day. || Set it and forget it, like your gym membership.", "units_11.steady", None),
+    ("en", "units_10.arc_level", "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.", "units_11.arc_level", None),
+    # English: not about you at 11, to On.
+    ("en", "units_11.c_jacket", "A sweater won't do {WHEN}, so bring a jacket. || Fall is finally here. Pumpkin spice has been here since August.", "units_10.c_jacket", None),
+    ("en", "units_11.c_hoodie", "{WHEN} it gets cool enough for a sweater. || Pumpkin spice showed up in August. I wait for actual fall.", "units_10.c_hoodie", None),
+    ("en", "units_11.w_scarf", "{WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.", "units_10.w_scarf", None),
+    ("en", "units_11.c_relief", "It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.", "units_10.c_relief", None),
+    ("en", "units_11.p_wetter_long", "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || After that it's indoor weather. I've had it all my life.", "units_10.p_wetter_long", None),
+    ("en", "units_11.p_snow_coming", "{WHENP} it starts to snow. || Every sled in the neighborhood just got its hopes up.", "units_10.p_snow_coming", None),
+    ("en", "units_11.p_stays_wet_snow", "It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.", "units_10.p_stays_wet_snow", None),
+    ("en", "units_11.p_wetter_maybe", "Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.", "units_10.p_wetter_maybe", None),
+    ("en", "units_11.p_wetter_maybe", "Rain is possible {WHENP}, so maybe take the umbrella. || Grandpa's knee says rain too. I trust him.", "units_10.p_wetter_maybe", None),
+    ("en", "units_11.p_wet_again", "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something.", "units_10.p_wet_again", None),
+    ("en", "units_11.p_wet_again_snow", "Snow for now, then a break, then more snow {WHENP}. || A second coat. Winter's thorough, I'll give it that.", "units_10.p_wet_again_snow", None),
+    # English: rewritten where they stand.
+    ("en", "units_11.p_wetter", "A shower comes through {WHENP}, so take the umbrella. || Everyone without one is in a shop, pretending to browse.", "units_11.p_wetter",
+     "A shower comes through {WHENP}, so take the umbrella. || Or spend it in a shop, pretending to browse. You know the drill."),
+    ("en", "units_11.p_drier_snow", "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in about a day.", "units_11.p_drier_snow",
+     "It's snowing now, but it stops later. || Then it goes from 'magical' to 'still here?' in a day. Like most of your plans."),
+    ("en", "units_11.p_drier_snow", "It stops snowing later. || After that, the snow has nothing to do but get in the way.", "units_11.p_drier_snow",
+     "It stops snowing later. || After that, the snow just lies around getting in the way. You two would get along."),
+    ("en", "units_11.p_wet_again_snow", "The snow pauses later and starts again {WHENP}. || I like a forecast with structure. Beginning, middle, more snow.", "units_11.p_wet_again_snow",
+     "The snow pauses later and starts again {WHENP}. || Beginning, middle, more snow. Better structure than your week."),
+    ("en", "flavour_10.ice", "Walk like you're carrying a very full cup of coffee.", "flavour_10.ice",
+     "Walk like you're carrying a very full cup of coffee. Graceful is optional. Upright isn't."),
+    ("en", "flavour_11.scorch", "Not a day for proving anything. Sit in the shade and drink.", "flavour_11.scorch",
+     "Not a day for proving anything. Not that you were going to."),
+    ("en", "units_10.p_stays_wet", "It rains all day, so bring the umbrella. || The kind of day you put the lights on at noon.", "units_10.p_stays_wet",
+     "It rains all day, so bring the umbrella. || Lights on at noon. Somebody will call it cozy."),
+    ("en", "units_10.p_snow_coming", "Snow starts {WHENP}. || The prettiest forecast I do all year. I'm a bit proud.", "units_10.p_snow_coming",
+     "Snow starts {WHENP}. || The prettiest forecast I do all year. You're welcome."),
+    # English: the same joke at both levels stays at On.
+    ("en", "units_11.arc_level", "Two outfit changes in one day. Very pop star of you.", None, None),
+    ("en", "now_11.cold", "Your nose will turn a color I can't even display.", None, None),
+    # German: personal jabs at On, to 11.
+    ("de", "flavour_10.night", "Mehr als auf der Couch liegen hattest du sowieso nicht vor, oder?", "flavour_11.night", None),
+    ("de", "now_10.nice", "„So was hätt's früher nicht gegeben“, sagst du wieder und kaufst trotzdem heimlich zwei Packungen Lebkuchen im September.", "now_11.nice", None),
+    ("de", "now_10.night", "Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.", "now_11.night", None),
+    ("de", "units_10.steady", "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten.", "units_11.steady", None),
+    ("de", "units_10.steady_cold", "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck.", "units_11.steady_cold", None),
+    ("de", "units_10.shorts_early", "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.", "units_11.shorts_early", None),
+    # German: not about you at 11, to On.
+    ("de", "now_11.nice", "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR", "now_10.nice", None),
+    ("de", "now_11.cool", "Hörst du das? Horst hat wieder den Laubbläser angeschmissen. BRRRRRRRRRRRRRRRRRRRRRRRRRR", "now_10.cool", None),
+    ("de", "now_11.wet", "Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.", "now_10.wet", None),
+    ("de", "now_11.wet", "Das Wetter ist zwar scheiße, aber immerhin musst du bei mir keine zwanzig Werbebanner wegklicken, um das herauszufinden.", "now_10.wet", None),
+    ("de", "now_11.night", "Schon wieder so spät? Ab ins Bett.", "now_10.night", None),
+    ("de", "now_11.night", "So spät noch wach? Ab ins Bett mit dir.", "now_10.night", None),
+    ("de", "units_11.steady", "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen.", "units_10.steady", None),
+    ("de", "units_11.steady_hot", "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig.", "units_10.steady_hot", None),
+    ("de", "units_11.p_wetter_maybe", "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.", "units_10.p_wetter_maybe", None),
+    ("de", "units_11.p_wetter_maybe", "{WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.", "units_10.p_wetter_maybe", None),
+    ("de", "units_11.p_wetter_maybe", "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Nimmst du ihn mit, regnet's nicht. So läuft das.", "units_10.p_wetter_maybe", None),
+    # German: rewritten where they stand (moving these would leave 11
+    # with fewer than two units for the situation).
+    ("de", "units_11.p_wet_again", "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Trocken wird er heute auf jeden Fall nicht mehr.", "units_11.p_wet_again",
+     "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Zweimal an dasselbe denken. Für dich ist das sportlich."),
+    ("de", "units_11.p_wet_again", "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Aprilwetter. Egal, was der Kalender sagt.", "units_11.p_wet_again",
+     "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der kommt zurück. Anders als dein Schirm, wenn du ihn irgendwo stehen lässt."),
+    ("de", "units_11.p_wet_again_snow", "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht.", "units_11.p_wet_again_snow",
+     "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht."),
+    ("de", "units_11.p_wet_again_snow", "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch. Der zweite ist nur noch mühsam.", "units_11.p_wet_again_snow",
+     "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der erste Schnee ist romantisch, der zweite nur noch mühsam. Kennst du ja aus deinen Beziehungen."),
+    ("de", "now_10.nice", "Bei dem Wetter fällt selbst mir schlechte Laune schwer.", "now_10.nice",
+     "Bei dem Wetter fällt selbst mir schlechte Laune schwer. Aber ich geb nicht auf."),
+    ("de", "units_10.steady_night", "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Gute Nacht.", "units_10.steady_night",
+     "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein."),
+]
+TAGS = re.compile(r"^((?:\{M:[^}]*\}|\{W:[^}]*\}|\{3\}|\{AM\})*)")
+
+
+def apply_level_fixes(doc, lang):
+    """LEVEL_FIXES, matched on the words as the screen shows them (after WORDS)."""
+    n = collections.Counter()
+    for l, src, old, dst, new in LEVEL_FIXES:
+        if l != lang:
+            continue
+        sec, key = src.split(".")
+        pool = doc.get(sec, {}).get(key, [])
+        hit = None
+        for line in pool:
+            tags = TAGS.match(line).group(1)
+            body = line[len(tags):]
+            for o, r in WORDS.get(lang, []):
+                body = body.replace(o, r).replace(o.capitalize(), r.capitalize())
+            if body == old or (" || " not in old and body.endswith(" || " + old)):
+                hit = (line, tags)
+                break
+        if hit is None:
+            continue
+        line, tags = hit
+        if dst is None:
+            pool.remove(line)
+            n["kept at one level"] += 1
+            continue
+        moved = tags + (new or old)
+        dsec, dkey = dst.split(".")
+        target = doc.setdefault(dsec, {}).setdefault(dkey, [])
+        if dst == src:
+            pool[pool.index(line)] = moved
+            n["rewritten"] += 1
+        else:
+            pool.remove(line)
+            if moved not in target:
+                target.append(moved)
+            n["moved"] += 1
     return dict(n)
 
 
