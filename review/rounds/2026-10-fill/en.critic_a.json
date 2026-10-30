@@ -14,6 +14,22 @@
    "wild": true
   },
   {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || The evening has a stricter dress code."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || The evening didn't get the memo about the warm part."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || The warm part has a curfew. An early one."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || The warm part is the weather being polite. Then it's honest."
+  },
+  {
    "path": "units_10.arc_level",
    "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || The weather can't commit. I can. I've held this picture for hours."
   },
