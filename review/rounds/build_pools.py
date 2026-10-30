@@ -377,6 +377,7 @@ GAPS = "2026-10-gaps"  # round 20: the slots still under three units
 TOPICS = "2026-10-topics"  # round 21: fresh topics, US English rewrites
 FINAL = "2026-10-final"  # round 22: the read-through of every live text
 FINAL2 = "2026-10-final2"  # round 23: the English read-through, German rewrites
+FILL = "2026-10-fill"  # round 24: every thin slot to at least four lines
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -651,6 +652,9 @@ def main():
             rewrites = apply_follow(doc, lang, decisions, FINAL2)
             if rewrites:
                 print(f"{lang} round 23 (rewrites): " + ", ".join(f"{v} {k}" for k, v in rewrites.items()))
+        fill = apply_follow(doc, lang, decisions, FILL) + apply_facts(doc, lang, decisions, FILL)
+        if fill:
+            print(f"{lang} round 24 (fill-up): " + ", ".join(f"{v} {k}" for k, v in fill.items()))
         notes = apply_notes(doc, lang)
         if notes:
             print(f"{lang} owner's notes: " + ", ".join(f"{v} {k}" for k, v in notes.items()))
