@@ -542,6 +542,6 @@ four live lines (`2026-10-fill/cells.json`: 117 English, 97 German) gets
 fresh writers (briefs `2026-10-fill/brief_*.md`: the slot's meaning,
 level, live lines, the owner's stars and vetoes there), 12 candidates a
 slot; four critics picked (`*.critic_*.json`, merged into `<lang>.json`):
-787 English, 659 German. Each slot is its own batch with "Fill-up: n
+787 English, 659 German; trimmed on the owner's word to enough to reach four plus two spares (491 English, 396 German). Each slot is its own batch with "Fill-up: n
 live here now". After voting: sync, then `build_pools.py` (FILL) adds
 the kept lines.

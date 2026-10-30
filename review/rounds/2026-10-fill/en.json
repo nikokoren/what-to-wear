@@ -19,10 +19,6 @@
   },
   {
    "path": "units_10.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || The evening didn't get the memo about the warm part."
-  },
-  {
-   "path": "units_10.arc_colder",
    "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || The warm part has a curfew. An early one."
   },
   {
@@ -35,10 +31,6 @@
   },
   {
    "path": "units_10.arc_level",
-   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || The day warms up just long enough to make a point."
-  },
-  {
-   "path": "units_10.arc_level",
    "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || Warm for a while. Don't get attached. I didn't."
   },
   {
@@ -47,24 +39,8 @@
   },
   {
    "path": "units_10.arc_level",
-   "text": "{G} can come off {WHEN}. Keep {GP} handy, you'll want {GP} back {WHEN2}. || A nice middle with cold edges. Nobody ordered that sandwich."
-  },
-  {
-   "path": "units_10.arc_level",
    "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || The weather's version of a nap: warm for a bit, then grumpy.",
    "wild": true
-  },
-  {
-   "path": "units_10.arc_warmer",
-   "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || A forecast with no plot twist. I'm almost disappointed."
-  },
-  {
-   "path": "units_10.arc_warmer",
-   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || The weather got better and stayed better. Mark the date."
-  },
-  {
-   "path": "units_10.arc_warmer",
-   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || The day only gets better. I'm suspicious, but those are the numbers."
   },
   {
    "path": "units_10.arc_warmer",
@@ -73,10 +49,6 @@
   {
    "path": "units_10.arc_warmer",
    "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || The evening tries to look dramatic. It doesn't have the numbers."
-  },
-  {
-   "path": "units_10.arc_warmer",
-   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || Simple forecast. I could have done it with half my pixels."
   },
   {
    "path": "units_10.arc_warmer",
@@ -90,19 +62,6 @@
   {
    "path": "units_10.c_coat",
    "text": "Bring the winter coat. It gets colder {WHEN}. || I'll be in here at room temperature. Smugly."
-  },
-  {
-   "path": "units_10.c_coat",
-   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || The weather saves the bad news for later. I don't. Here it is."
-  },
-  {
-   "path": "units_10.c_coat",
-   "text": "Bring the winter coat. It gets colder {WHEN}. || Winter is sending a preview. The full release comes later.",
-   "months": "10,11"
-  },
-  {
-   "path": "units_10.c_coat",
-   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || I've checked the numbers twice. They didn't get any nicer."
   },
   {
    "path": "units_10.c_coat",
@@ -148,28 +107,12 @@
   },
   {
    "path": "units_10.p_drier_snow",
-   "text": "The snow stops {WHENSTOP}. || Snow, then no snow. Even I could draw that."
-  },
-  {
-   "path": "units_10.p_drier_snow",
    "text": "It stops snowing {WHENSTOP}. || Note the time. I'll be smug about it afterwards.",
    "wild": true
   },
   {
    "path": "units_10.p_stays_wet",
-   "text": "It rains all day, so bring the umbrella. || I'd find you a dry window, but there isn't one. I looked."
-  },
-  {
-   "path": "units_10.p_stays_wet",
    "text": "There's no dry spell today. Bring the umbrella. || Today's forecast was easy. I just held down one key."
-  },
-  {
-   "path": "units_10.p_stays_wet",
-   "text": "The rain lasts all day, so keep the umbrella with you. || Every weather app agrees today. Rare. Depressing, but rare."
-  },
-  {
-   "path": "units_10.p_stays_wet",
-   "text": "The rain lasts all day, so keep the umbrella with you. || The sky is showing a commitment I've never seen from it."
   },
   {
    "path": "units_10.p_stays_wet",
@@ -179,14 +122,6 @@
    "path": "units_10.p_stays_wet",
    "text": "There's no dry spell today. Bring the umbrella. || Rain, all day. That's the whole review. One star.",
    "wild": true
-  },
-  {
-   "path": "units_10.p_wet_again",
-   "text": "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you. || The weather can't decide. I decided for it. Umbrella."
-  },
-  {
-   "path": "units_10.p_wet_again",
-   "text": "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella. || Rain with an encore. Nobody asked for one."
   },
   {
    "path": "units_10.p_wet_again",
@@ -203,27 +138,11 @@
   },
   {
    "path": "units_10.p_wet_again_snow",
-   "text": "The snow pauses later and starts again {WHENP}. || The sky is reloading."
-  },
-  {
-   "path": "units_10.p_wet_again_snow",
    "text": "Snow for now, then a break, then more snow {WHENP}. || Inches now, inches later. The sky pays in installments."
   },
   {
    "path": "units_10.p_wet_again_snow",
    "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || Two rounds of snow, zero rounds of shoveling. For me."
-  },
-  {
-   "path": "units_10.p_wet_again_snow",
-   "text": "It snows for now, takes a break, and starts again {WHENP}. || The break is for applause. Snow always gets some."
-  },
-  {
-   "path": "units_10.p_wet_again_snow",
-   "text": "The snow stops for a while later, then comes back {WHENP}. || Snow that comes back. Finally, some commitment from the weather."
-  },
-  {
-   "path": "units_10.p_wet_again_snow",
-   "text": "It snows for now, takes a break, and starts again {WHENP}. || The sky's out of practice. It needed two tries."
   },
   {
    "path": "units_10.p_wet_again_snow",
@@ -240,19 +159,7 @@
   },
   {
    "path": "units_10.p_wetter",
-   "text": "{WHENP} there's a rainshower, so the umbrella comes along. || Rain on a schedule. The sky's being unusually professional."
-  },
-  {
-   "path": "units_10.p_wetter",
-   "text": "Bring the umbrella. There's a shower {WHENP}. || I'd have skipped it. The sky didn't ask me."
-  },
-  {
-   "path": "units_10.p_wetter",
    "text": "A rain shower comes through {WHENP}, so take the umbrella. || One shower, just to prove the sky still can."
-  },
-  {
-   "path": "units_10.p_wetter",
-   "text": "A rain shower comes through {WHENP}, so take the umbrella. || Dry, wet, dry. The sky couldn't leave a nice day alone."
   },
   {
    "path": "units_10.p_wetter",
@@ -265,36 +172,12 @@
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || 'Could'. I'm being careful. Shorts are a big commitment."
-  },
-  {
-   "path": "units_10.shorts_early",
-   "text": "A cool start, then shorts weather {WHEN}. || Shorts on a cool morning: a plan or a mistake. Today it's a plan."
-  },
-  {
-   "path": "units_10.shorts_early",
    "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad to have them. || The weather is rewarding optimism. That rarely happens."
-  },
-  {
-   "path": "units_10.shorts_early",
-   "text": "It's cool now, but {WHEN} it's warm enough for shorts. || Somebody will wear long pants and roll them up later. Nobody has ever pulled that off."
   },
   {
    "path": "units_10.shorts_early",
    "text": "{WHEN} it's warm enough for shorts, so think about putting them on now. || Legally, I can only suggest.",
    "wild": true
-  },
-  {
-   "path": "units_10.steady_night",
-   "text": "You're dressed right for the rest of the night. || The weather's done for today. I'm still on. Somebody has to be."
-  },
-  {
-   "path": "units_10.steady_night",
-   "text": "What you're wearing works until bed. || The weather's gone quiet. It's the only thing out there that has."
-  },
-  {
-   "path": "units_10.steady_night",
-   "text": "You're dressed right for the rest of the night. || Nothing left to forecast but tomorrow. That's tomorrow's problem."
   },
   {
    "path": "units_10.steady_night",
@@ -306,28 +189,12 @@
   },
   {
    "path": "units_10.steady_night",
-   "text": "What you have on is fine for the rest of the night. || Tonight's forecast: dark, with a chance of darker."
-  },
-  {
-   "path": "units_10.steady_night",
    "text": "You're dressed right for the rest of the night. || End of broadcast. Please enjoy this still image until morning.",
    "wild": true
   },
   {
    "path": "units_10.w_coat",
-   "text": "The winter coat can come off {WHEN}. || Winter is taking a long lunch."
-  },
-  {
-   "path": "units_10.w_coat",
    "text": "{WHEN} it's warm enough to lose the winter coat. || Warm enough. Let's not say warm."
-  },
-  {
-   "path": "units_10.w_coat",
-   "text": "{WHEN} it's warm enough to lose the winter coat. || I'm adjusting nothing. I've been at room temperature all winter."
-  },
-  {
-   "path": "units_10.w_coat",
-   "text": "The winter coat can come off {WHEN}. || The weather's having a weak moment. Those don't last."
   },
   {
    "path": "units_10.w_coat",
@@ -344,40 +211,12 @@
   },
   {
    "path": "units_10.w_jacket",
-   "text": "You can take the jacket off {WHEN}. || The morning was the rough draft."
-  },
-  {
-   "path": "units_10.w_jacket",
-   "text": "The jacket can come off {WHEN}. || The jacket's day ends early. Mine never does."
-  },
-  {
-   "path": "units_10.w_jacket",
    "text": "{WHEN} you won't need the jacket any more. || I predicted this hours ago. I'll be insufferable about it."
-  },
-  {
-   "path": "units_10.w_jacket",
-   "text": "You can take the jacket off {WHEN}. || The day starts cold and gets reasonable. More than most things manage."
-  },
-  {
-   "path": "units_10.w_jacket",
-   "text": "Once it warms up {WHEN}, the jacket can come off. || Warming up takes the weather a whole morning. I'm ready in a refresh."
   },
   {
    "path": "units_10.w_jacket",
    "text": "{WHEN} you won't need the jacket any more. || Jacket, you were fine. Not great. Fine. Dismissed.",
    "wild": true
-  },
-  {
-   "path": "units_10.w_scarf",
-   "text": "It warms up {WHEN}, so the scarf can come off. || Winter loosens its grip. One notch."
-  },
-  {
-   "path": "units_10.w_scarf",
-   "text": "The scarf can come off {WHEN}. || Hardly a heatwave. But I'll report it like one."
-  },
-  {
-   "path": "units_10.w_scarf",
-   "text": "The scarf can come off {WHEN}. || The temperature crept up while nobody was looking. I was looking."
   },
   {
    "path": "units_10.w_scarf",
@@ -394,10 +233,6 @@
   },
   {
    "path": "units_10.w_water",
-   "text": "It gets hot {WHEN}, so bring water. || Then the outside goes into oven mode. No preheat."
-  },
-  {
-   "path": "units_10.w_water",
    "text": "Take a bottle of water. The heat arrives {WHEN}. || The heat arrives on time. Nothing else ever does."
   },
   {
@@ -406,25 +241,8 @@
   },
   {
    "path": "units_10.w_water",
-   "text": "You'll want water {WHEN}, when the heat comes in. || Everyone will discuss it like it's news. It's summer.",
-   "months": "6,7,8"
-  },
-  {
-   "path": "units_10.w_water",
-   "text": "It heats up {WHEN}, so take water with you. || The sidewalk will be hot enough to fry an egg. Someone will try."
-  },
-  {
-   "path": "units_10.w_water",
-   "text": "It gets hot {WHEN}, so bring water. || The cool part of the day is right now. Enjoy it from here."
-  },
-  {
-   "path": "units_10.w_water",
    "text": "It gets hot {WHEN}, so bring water. || Ice cubes everywhere are bracing themselves.",
    "wild": true
-  },
-  {
-   "path": "units_11.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || More layers means less of you on show. Everyone wins."
   },
   {
    "path": "units_11.arc_colder",
@@ -432,28 +250,12 @@
   },
   {
    "path": "units_11.arc_colder",
-   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Shivering isn't a personality. Pick another one."
-  },
-  {
-   "path": "units_11.arc_colder",
    "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Something warm, not something cute. I've seen you choose."
-  },
-  {
-   "path": "units_11.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Spare clothes all day. You're a toddler with a forecast."
-  },
-  {
-   "path": "units_11.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || It ends colder. I checked while you checked the mirror."
   },
   {
    "path": "units_11.arc_colder",
    "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Do you own something warm that isn't a blanket?",
    "wild": true
-  },
-  {
-   "path": "units_11.arc_level",
-   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || All that effort to look the same at the end. You're used to that."
   },
   {
    "path": "units_11.arc_level",
@@ -465,36 +267,12 @@
   },
   {
    "path": "units_11.arc_level",
-   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Simple enough. I kept the instructions short for you."
-  },
-  {
-   "path": "units_11.arc_level",
-   "text": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}. || I've planned your outfit for the whole day. Someone had to."
-  },
-  {
-   "path": "units_11.arc_level",
-   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || So don't get attached to the lighter look. It wasn't working anyway."
-  },
-  {
-   "path": "units_11.arc_level",
    "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}, and in between, try to look like someone who planned it.",
    "wild": true
   },
   {
    "path": "units_11.arc_warmer",
-   "text": "{G} can come off {WHEN} and stays off. || That's {G} sorted. The rest of your look, I can't help with."
-  },
-  {
-   "path": "units_11.arc_warmer",
    "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || The day improves. Whether you do is up to you."
-  },
-  {
-   "path": "units_11.arc_warmer",
-   "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || One less thing for you to look awkward in."
-  },
-  {
-   "path": "units_11.arc_warmer",
-   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || Probably the last clothing decision you'll get right today."
   },
   {
    "path": "units_11.arc_warmer",
@@ -507,15 +285,7 @@
   },
   {
    "path": "units_11.c_coat",
-   "text": "Have the winter coat with you. You'll need it {WHEN}. || Hauling it around is the most you'll lift this week."
-  },
-  {
-   "path": "units_11.c_coat",
    "text": "{WHEN} it gets cold enough for the winter coat. || Toughing it out won't make you look tougher. Just bluer."
-  },
-  {
-   "path": "units_11.c_coat",
-   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || I know it ruins the outfit. The outfit wasn't that good."
   },
   {
    "path": "units_11.c_coat",
@@ -524,10 +294,6 @@
   {
    "path": "units_11.c_coat",
    "text": "Have the winter coat with you. You'll need it {WHEN}. || You'll look like a sleeping bag with opinions. A warm one."
-  },
-  {
-   "path": "units_11.c_coat",
-   "text": "Have the winter coat with you. You'll need it {WHEN}. || Yes, it doubles your width. You've never been shy about taking up space."
   },
   {
    "path": "units_11.c_coat",
@@ -541,23 +307,7 @@
   },
   {
    "path": "units_11.c_hoodie",
-   "text": "Bring a sweater. It cools down {WHEN}. || Pick a nice one. Someone might have to look at you."
-  },
-  {
-   "path": "units_11.c_hoodie",
-   "text": "{WHEN} short sleeves won't be enough, so bring a sweater. || Your arms have been on display long enough. Everyone's ready."
-  },
-  {
-   "path": "units_11.c_hoodie",
    "text": "It gets cooler {WHEN}, so take a sweater along. || Tie it around your shoulders and pretend you own a boat."
-  },
-  {
-   "path": "units_11.c_hoodie",
-   "text": "Bring a sweater. It cools down {WHEN}. || A sweater: the closest thing to a hug you'll get today."
-  },
-  {
-   "path": "units_11.c_hoodie",
-   "text": "{WHEN} short sleeves won't be enough, so bring a sweater. || Even for you, whatever you tell people about running warm."
   },
   {
    "path": "units_11.c_hoodie",
@@ -567,22 +317,6 @@
   {
    "path": "units_11.c_jacket",
    "text": "Bring a jacket. It cools down {WHEN}. || By then it'll be the most put-together part of you."
-  },
-  {
-   "path": "units_11.c_jacket",
-   "text": "Bring a jacket along. You'll want it {WHEN}. || Yes, even if it clashes. Warm beats chic, and chic was never on the table."
-  },
-  {
-   "path": "units_11.c_jacket",
-   "text": "Bring a jacket. It cools down {WHEN}. || Draped over your arm, it'll make you look busier than you are."
-  },
-  {
-   "path": "units_11.c_jacket",
-   "text": "A sweater alone won't do {WHEN}, so bring a jacket. || The sweater was trying its best. So were you, I assume."
-  },
-  {
-   "path": "units_11.c_jacket",
-   "text": "{WHEN} it gets cool enough for a jacket. || Finally, a layer that does something for your shoulders."
   },
   {
    "path": "units_11.c_jacket",
@@ -599,18 +333,6 @@
   },
   {
    "path": "units_11.c_relief",
-   "text": "It cools off a little {WHEN}, but stays warm. || Enough to stop glistening. Not enough to call it a glow-up."
-  },
-  {
-   "path": "units_11.c_relief",
-   "text": "{WHEN} the worst of the heat is over, but it stays warm. || You made it through. Not gracefully, I'd guess."
-  },
-  {
-   "path": "units_11.c_relief",
-   "text": "The heat eases {WHEN}, but it stays warm. || Nothing to bring. Even you can manage that."
-  },
-  {
-   "path": "units_11.c_relief",
    "text": "It cools off a little {WHEN}, but stays warm. || Good news for everyone standing near you."
   },
   {
@@ -624,19 +346,11 @@
   },
   {
    "path": "units_11.p_drier",
-   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || You can hold an umbrella. That's one skill confirmed."
-  },
-  {
-   "path": "units_11.p_drier",
    "text": "It keeps raining for a while, then stops. Take the umbrella. || Wet doesn't suit you. Dry barely does."
   },
   {
    "path": "units_11.p_drier",
    "text": "The rain eases off later, but bring the umbrella for now. || Sprinting between doorways isn't a plan. Not with your cardio."
-  },
-  {
-   "path": "units_11.p_drier",
-   "text": "The rain stops later, but you'll want the umbrella for now. || The rain has an end time. Your bad decisions don't seem to."
   },
   {
    "path": "units_11.p_drier",
@@ -653,10 +367,6 @@
   },
   {
    "path": "units_11.p_drier_snow",
-   "text": "It stops snowing {WHENSTOP}. || Note the time. It's an appointment even you could keep."
-  },
-  {
-   "path": "units_11.p_drier_snow",
    "text": "It's snowing now, but it stops later. || You look great in snowflakes. Everyone does. It's cheating."
   },
   {
@@ -666,10 +376,6 @@
   {
    "path": "units_11.p_drier_snow",
    "text": "It's snowing now, but it stops later. || Pretty while it lasts. You know how that goes."
-  },
-  {
-   "path": "units_11.p_drier_snow",
-   "text": "The snow eases off later. || Enjoy the view from the window. It's better than the one in the mirror."
   },
   {
    "path": "units_11.p_drier_snow",
@@ -686,28 +392,12 @@
   },
   {
    "path": "units_11.p_snow_coming",
-   "text": "Snow moves in {WHENP}. || Go on, tell everyone. You love being the one with news."
-  },
-  {
-   "path": "units_11.p_snow_coming",
-   "text": "Snow starts {WHENP}. || In snow, everyone looks a bit ridiculous. Finally, a level playing field for you."
-  },
-  {
-   "path": "units_11.p_snow_coming",
    "text": "There's snow on the way {WHENP}. || Every snowflake is unique. You'll still be the boring one out there."
-  },
-  {
-   "path": "units_11.p_snow_coming",
-   "text": "Expect snow {WHENP}. || Your winter look is about to get worse. Puffier, at least."
   },
   {
    "path": "units_11.p_snow_coming",
    "text": "Snow starts {WHENP}. || Rate your readiness from one to ten. Now subtract five. That's you.",
    "wild": true
-  },
-  {
-   "path": "units_11.p_stays_wet",
-   "text": "There's no dry spell today. Bring the umbrella. || Today you have an excuse for looking like that. Use it."
   },
   {
    "path": "units_11.p_stays_wet",
@@ -720,10 +410,6 @@
   {
    "path": "units_11.p_stays_wet",
    "text": "The rain doesn't stop today, so take the umbrella. || A day for staying in. You were born for this."
-  },
-  {
-   "path": "units_11.p_stays_wet",
-   "text": "There's no dry spell today. Bring the umbrella. || Today the weather's as reliable as you wish you were."
   },
   {
    "path": "units_11.p_stays_wet",
@@ -744,19 +430,7 @@
   },
   {
    "path": "units_11.p_stays_wet_snow",
-   "text": "The snow keeps coming all day. || By tonight everyone looks like a wet dog. You've got a head start."
-  },
-  {
-   "path": "units_11.p_stays_wet_snow",
    "text": "It's snowing all day. || Perfect light for a photo. Not of you, but the light's perfect."
-  },
-  {
-   "path": "units_11.p_stays_wet_snow",
-   "text": "It's snowing all day. || Gray sky, white ground, pale you. A matching set."
-  },
-  {
-   "path": "units_11.p_stays_wet_snow",
-   "text": "The snow doesn't stop today. || Wrap up warm. Your charm won't do it."
   },
   {
    "path": "units_11.p_stays_wet_snow",
@@ -785,10 +459,6 @@
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you. || Fair warning. Which is more than you give anyone."
-  },
-  {
-   "path": "units_11.p_wet_again",
    "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || Today's recipe: open, close, open. Even you can follow it.",
    "wild": true
   },
@@ -802,15 +472,7 @@
   },
   {
    "path": "units_11.p_wet_again_snow",
-   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || I've timed both. You've never timed anything right in your life."
-  },
-  {
-   "path": "units_11.p_wet_again_snow",
    "text": "The snow stops for a while later, then comes back {WHENP}. || It knows when to leave and when to come back. Two skills you lack."
-  },
-  {
-   "path": "units_11.p_wet_again_snow",
-   "text": "Snow for now, then a break, then more snow {WHENP}. || The break is your window. Use it, if you can be quick for once."
   },
   {
    "path": "units_11.p_wet_again_snow",
@@ -831,19 +493,7 @@
   },
   {
    "path": "units_11.p_wetter",
-   "text": "A rain shower comes through {WHENP}, so take the umbrella. || It's a quick one. Quicker than you've ever been at anything."
-  },
-  {
-   "path": "units_11.p_wetter",
    "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || A short shower won't ruin your look. Your look got there first."
-  },
-  {
-   "path": "units_11.p_wetter",
-   "text": "A rain shower comes through {WHENP}, so take the umbrella. || Getting caught in it isn't romantic. Not with your face."
-  },
-  {
-   "path": "units_11.p_wetter",
-   "text": "{WHENP} there's a rainshower, so the umbrella comes along. || A short shower is the weather being considerate. Take notes."
   },
   {
    "path": "units_11.p_wetter",
@@ -852,19 +502,7 @@
   },
   {
    "path": "units_11.p_wetter_long",
-   "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || You'll call it drizzle. Denial suits you."
-  },
-  {
-   "path": "units_11.p_wetter_long",
    "text": "Rain arrives {WHENP} and stays, so take the umbrella. || Hold it high. It's the most anyone's looked up to you."
-  },
-  {
-   "path": "units_11.p_wetter_long",
-   "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || Good news: rain flatters nobody. You lose nothing."
-  },
-  {
-   "path": "units_11.p_wetter_long",
-   "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || A day like this needs a good attitude. Bring the umbrella instead."
   },
   {
    "path": "units_11.p_wetter_long",
@@ -881,23 +519,7 @@
   },
   {
    "path": "units_11.p_wetter_maybe",
-   "text": "It might rain {WHENP}, so an umbrella wouldn't hurt. || Your luck isn't great, though. I've seen your outfits."
-  },
-  {
-   "path": "units_11.p_wetter_maybe",
-   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || Up to you. That's what worries me."
-  },
-  {
-   "path": "units_11.p_wetter_maybe",
-   "text": "There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || Neither would a mirror check, but here we are."
-  },
-  {
-   "path": "units_11.p_wetter_maybe",
    "text": "Rain is possible {WHENP}, so maybe take the umbrella. || I'd decide for you, but then you'd have nothing to overthink."
-  },
-  {
-   "path": "units_11.p_wetter_maybe",
-   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || Trust your gut. Actually, no. Check your track record first."
   },
   {
    "path": "units_11.p_wetter_maybe",
@@ -910,27 +532,11 @@
   },
   {
    "path": "units_11.shorts_early",
-   "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad to have them. || Whether anyone else is glad to see your knees is another matter."
-  },
-  {
-   "path": "units_11.shorts_early",
-   "text": "It starts cool, but it's shorts weather {WHEN}. || Pale legs on a cool morning. You'll glow. Not in a good way."
-  },
-  {
-   "path": "units_11.shorts_early",
-   "text": "It's cool now, but {WHEN} it's warm enough for shorts. || Long pants would hide more. Hiding things has served you well."
-  },
-  {
-   "path": "units_11.shorts_early",
    "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || A cold first hour builds character. You could use some."
   },
   {
    "path": "units_11.shorts_early",
    "text": "{WHEN} it's warm enough for shorts, so think about putting them on now. || Yes, people will stare for a bit. They'd stare anyway."
-  },
-  {
-   "path": "units_11.shorts_early",
-   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'm only suggesting. Your legs, your shame."
   },
   {
    "path": "units_11.shorts_early",
@@ -943,23 +549,11 @@
   },
   {
    "path": "units_11.w_coat",
-   "text": "The winter coat can come off {WHEN}. || You'll look smaller. Finally, something about you that's understated."
-  },
-  {
-   "path": "units_11.w_coat",
-   "text": "You'll be fine without the winter coat {WHEN}. || Your arms will remember they can move. Your brain, we'll see."
-  },
-  {
-   "path": "units_11.w_coat",
    "text": "The winter coat can come off {WHEN}. || Then you'll stand around holding it like a dead animal. Classy."
   },
   {
    "path": "units_11.w_coat",
    "text": "It warms up {WHEN}, so the winter coat can come off. || Coat off. Now you just need a personality to replace it."
-  },
-  {
-   "path": "units_11.w_coat",
-   "text": "You'll be fine without the winter coat {WHEN}. || Out of the coat, into the light. Brave of you, all things considered."
   },
   {
    "path": "units_11.w_coat",
@@ -972,15 +566,7 @@
   },
   {
    "path": "units_11.w_scarf",
-   "text": "{WHEN} it's mild enough to lose the scarf. || One less thing making you look interesting."
-  },
-  {
-   "path": "units_11.w_scarf",
    "text": "{WHEN} it's mild enough to lose the scarf. || Small progress, but more than you usually make."
-  },
-  {
-   "path": "units_11.w_scarf",
-   "text": "You can take off the scarf {WHEN}. || Your face now goes all the way down to your collar. Bold."
   },
   {
    "path": "units_11.w_scarf",
@@ -1001,28 +587,8 @@
   },
   {
    "path": "facts.p_stays_wet_ice",
-   "text": "Expect icy sidewalks all day from the freezing rain. Bring the umbrella and go carefully."
-  },
-  {
-   "path": "facts.p_stays_wet_ice",
-   "text": "Roads and steps may be slippery all day with freezing rain. Take the umbrella and walk slowly."
-  },
-  {
-   "path": "facts.p_stays_wet_ice",
-   "text": "It's an icy day, with freezing rain from start to finish. Bring the umbrella and watch your footing."
-  },
-  {
-   "path": "facts.p_stays_wet_ice",
-   "text": "There's no break in the freezing rain today, so the ground may stay icy. Walk carefully and take the umbrella."
-  },
-  {
-   "path": "facts.p_stays_wet_ice",
    "text": "Freezing rain all day, so two things: the umbrella for the rain, slow steps for the ice.",
    "wild": true
-  },
-  {
-   "path": "facts.p_stays_wet_storm",
-   "text": "Thunderstorms keep rolling through all day, so keep the umbrella with you."
   },
   {
    "path": "facts.p_stays_wet_storm",
@@ -1030,19 +596,7 @@
   },
   {
    "path": "facts.p_stays_wet_storm",
-   "text": "The rain doesn't stop today, and there's thunder with it. Take the umbrella."
-  },
-  {
-   "path": "facts.p_stays_wet_storm",
    "text": "It rains all day, and thunderstorms roll through now and then. Bring the umbrella."
-  },
-  {
-   "path": "facts.p_stays_wet_storm",
-   "text": "Thunderstorms hang around all day, so expect rain throughout. Keep the umbrella handy."
-  },
-  {
-   "path": "facts.p_stays_wet_storm",
-   "text": "There's no dry spell today, and the rain brings thunder too. Bring the umbrella."
   },
   {
    "path": "facts.p_stays_wet_storm",
@@ -1051,27 +605,11 @@
   },
   {
    "path": "facts.p_wetter_ice",
-   "text": "Watch for ice {WHENP}, when a short spell of freezing rain comes through. Take the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_ice",
    "text": "A short burst of freezing rain {WHENP} may leave the sidewalks icy. Bring the umbrella and walk carefully."
   },
   {
    "path": "facts.p_wetter_ice",
-   "text": "There's a bit of freezing rain {WHENP}, and sidewalks may be icy after it. Take the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_ice",
-   "text": "{WHENP} a quick round of freezing rain may turn the ground icy. Take the umbrella and mind your step."
-  },
-  {
-   "path": "facts.p_wetter_ice",
    "text": "Sidewalks may get icy {WHENP} from a short spell of freezing rain. Take the umbrella and go carefully."
-  },
-  {
-   "path": "facts.p_wetter_ice",
-   "text": "Brief freezing rain {WHENP} can make the roads slippery. Bring the umbrella and take your time."
   },
   {
    "path": "facts.p_wetter_ice",
@@ -1080,27 +618,11 @@
   },
   {
    "path": "facts.p_wetter_long_storm",
-   "text": "{WHENP} it turns stormy, and the rain stays after the thunder. Bring the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_long_storm",
    "text": "Expect thunderstorms {WHENP}, then rain for the rest of the day. Take the umbrella."
   },
   {
    "path": "facts.p_wetter_long_storm",
-   "text": "Once the thunderstorms start {WHENP}, the rain doesn't let up. Bring the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_long_storm",
    "text": "A thunderstorm rolls in {WHENP}, and the rest of the day stays wet. Take the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_long_storm",
-   "text": "Stormy weather sets in {WHENP}. The thunder passes, but the rain stays. Bring the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_long_storm",
-   "text": "Thunderstorms arrive {WHENP} and leave steady rain behind. Keep the umbrella handy."
   },
   {
    "path": "facts.p_wetter_long_storm",
@@ -1109,23 +631,11 @@
   },
   {
    "path": "facts.p_wetter_maybe_ice",
-   "text": "Freezing rain {WHENP} isn't likely, but it could leave icy patches. Take the umbrella, just in case."
-  },
-  {
-   "path": "facts.p_wetter_maybe_ice",
    "text": "Watch out for ice {WHENP}. Freezing rain is possible, though not likely. Bring the umbrella."
   },
   {
    "path": "facts.p_wetter_maybe_ice",
-   "text": "{WHENP} a bit of freezing rain could turn the ground slippery. Take the umbrella and go carefully."
-  },
-  {
-   "path": "facts.p_wetter_maybe_ice",
    "text": "There's a chance of freezing rain {WHENP}. Sidewalks could get slick, so take the umbrella and go slowly."
-  },
-  {
-   "path": "facts.p_wetter_maybe_ice",
-   "text": "Freezing rain {WHENP} is unlikely, but not ruled out. Bring the umbrella and keep an eye out for ice."
   },
   {
    "path": "facts.p_wetter_maybe_ice",
@@ -1142,23 +652,7 @@
   },
   {
    "path": "facts.p_wetter_maybe_storm",
-   "text": "There's a small chance of a thunderstorm {WHENP}, so the umbrella could be useful."
-  },
-  {
-   "path": "facts.p_wetter_maybe_storm",
-   "text": "Thunder is possible {WHENP}, though not likely. The umbrella is up to you."
-  },
-  {
-   "path": "facts.p_wetter_maybe_storm",
-   "text": "You might hear thunder {WHENP}. Keep the umbrella with you."
-  },
-  {
-   "path": "facts.p_wetter_maybe_storm",
    "text": "It probably stays dry, but a thunderstorm could pop up {WHENP}. Bring the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_maybe_storm",
-   "text": "A stray thunderstorm could show up {WHENP}. Take the umbrella in case it does."
   },
   {
    "path": "facts.p_wetter_maybe_storm",
@@ -1171,23 +665,7 @@
   },
   {
    "path": "facts.p_wetter_storm",
-   "text": "{WHENP} there's a quick thunderstorm. Keep the umbrella with you."
-  },
-  {
-   "path": "facts.p_wetter_storm",
    "text": "A thunderstorm blows through {WHENP}, but it doesn't last long. Take the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_storm",
-   "text": "There's thunder and a burst of rain {WHENP}. Have the umbrella with you."
-  },
-  {
-   "path": "facts.p_wetter_storm",
-   "text": "Thunder and rain come {WHENP}, then it's over. Bring the umbrella."
-  },
-  {
-   "path": "facts.p_wetter_storm",
-   "text": "It turns stormy for a while {WHENP}. Have the umbrella ready."
   },
   {
    "path": "facts.p_wetter_storm",
@@ -1200,32 +678,12 @@
   },
   {
    "path": "facts.shorts_swing_back",
-   "text": "{WHEN} it's warm enough for shorts. {WHEN2} it cools off, so {G} is worth bringing."
-  },
-  {
-   "path": "facts.shorts_swing_back",
-   "text": "Shorts could be a good call {WHEN}. {WHEN2} it gets cooler, so keep {G} nearby."
-  },
-  {
-   "path": "facts.shorts_swing_back",
    "text": "Maybe go with shorts, since it's warm {WHEN}. Bring {G}, though. It cools off {WHEN2}."
-  },
-  {
-   "path": "facts.shorts_swing_back",
-   "text": "Shorts weather arrives {WHEN} but doesn't last. If you try shorts, take {G} along. It cools off again {WHEN2}."
-  },
-  {
-   "path": "facts.shorts_swing_back",
-   "text": "You might be fine in shorts today. It's warm {WHEN}, and {G} helps when it cools {WHEN2}."
   },
   {
    "path": "facts.shorts_swing_back",
    "text": "Shorts or long pants: your call today. It's warm {WHEN} and cools off {WHEN2}, so take {G} along too.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.day_dst_fall",
-   "text": "The clocks went back. Sunset now shows up right after lunch, more or less."
   },
   {
    "path": "flavour_10.day_dst_fall",
@@ -1270,16 +728,8 @@
   },
   {
    "path": "flavour_10.day_dst_spring",
-   "text": "The clocks went forward. The forecast is on time. It may be the only thing that is."
-  },
-  {
-   "path": "flavour_10.day_dst_spring",
    "text": "Dear clocks: I'm already on time. Leave me out of this.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.day_friday",
-   "text": "Friday afternoon. The emails get shorter and the sign-offs get happier."
   },
   {
    "path": "flavour_10.day_friday",
@@ -1287,15 +737,7 @@
   },
   {
    "path": "flavour_10.day_friday",
-   "text": "Friday afternoon. Every meeting could have been an email. Every email could have been nothing."
-  },
-  {
-   "path": "flavour_10.day_friday",
    "text": "Friday afternoon. Same weather as Tuesday, but everyone's much nicer about it."
-  },
-  {
-   "path": "flavour_10.day_friday",
-   "text": "Friday afternoon. The weekend forecast is the most-read thing in the country. Mine included."
   },
   {
    "path": "flavour_10.day_friday",
@@ -1325,10 +767,6 @@
   },
   {
    "path": "flavour_10.day_monday",
-   "text": "Monday morning. Coffee sales peak right about now. Not a coincidence."
-  },
-  {
-   "path": "flavour_10.day_monday",
    "text": "Monday morning. 'How was your weekend?' is about to be asked a few million times."
   },
   {
@@ -1341,20 +779,8 @@
   },
   {
    "path": "flavour_10.day_monday",
-   "text": "Monday morning. Fresh week, same me. Some things don't need improving."
-  },
-  {
-   "path": "flavour_10.day_monday",
-   "text": "Monday morning. Someone has already said 'back to the grind' today. Guaranteed."
-  },
-  {
-   "path": "flavour_10.day_monday",
    "text": "Dear Monday: the weather tried. Please try too.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.day_shortest",
-   "text": "Shortest day of the year. The sun's here for a quick visit. Don't get attached."
   },
   {
    "path": "flavour_10.day_shortest",
@@ -1387,18 +813,6 @@
   },
   {
    "path": "flavour_10.evening",
-   "text": "One outfit, start to finish. The weather kept its word. Rare."
-  },
-  {
-   "path": "flavour_10.evening",
-   "text": "That's the whole forecast for tonight. Short, like all my best work."
-  },
-  {
-   "path": "flavour_10.evening",
-   "text": "I could change the forecast for variety. I won't."
-  },
-  {
-   "path": "flavour_10.evening",
    "text": "A steady evening. Which makes me the most interesting thing in the room again."
   },
   {
@@ -1408,27 +822,11 @@
   },
   {
    "path": "flavour_10.ice",
-   "text": "Ice doesn't care how good your shoes are."
-  },
-  {
-   "path": "flavour_10.ice",
    "text": "Every railing in town is suddenly very popular."
   },
   {
    "path": "flavour_10.ice",
-   "text": "Today the salt trucks are the heroes. I'm a close second."
-  },
-  {
-   "path": "flavour_10.ice",
-   "text": "The one day hurrying doesn't get anyone there sooner."
-  },
-  {
-   "path": "flavour_10.ice",
    "text": "Black ice is invisible. I can't see outside either, so assume it's everywhere."
-  },
-  {
-   "path": "flavour_10.ice",
-   "text": "Today every strip of grass is a shortcut worth taking."
   },
   {
    "path": "flavour_10.ice",
@@ -1437,15 +835,7 @@
   },
   {
    "path": "flavour_10.night",
-   "text": "Nothing changes before morning. I'll keep an eye on it so nobody has to."
-  },
-  {
-   "path": "flavour_10.night",
    "text": "Quiet night ahead. Even the weather's turned in."
-  },
-  {
-   "path": "flavour_10.night",
-   "text": "That's the final forecast of the day. No encores."
   },
   {
    "path": "flavour_10.night",
@@ -1462,27 +852,11 @@
   },
   {
    "path": "flavour_10.offon",
-   "text": "The weather can't commit today. I've made my peace with that."
-  },
-  {
-   "path": "flavour_10.offon",
-   "text": "Warm in the middle, cool at both ends. A sandwich of a day."
-  },
-  {
-   "path": "flavour_10.offon",
-   "text": "The weather's doing a round trip today. I'll be here for both legs."
-  },
-  {
-   "path": "flavour_10.offon",
    "text": "I predicted both halves. Most forecasts only manage one."
   },
   {
    "path": "flavour_10.offon",
    "text": "The warmth is a loan. It's due back this evening."
-  },
-  {
-   "path": "flavour_10.offon",
-   "text": "The weather gets warm for a while, then remembers what month it is."
   },
   {
    "path": "flavour_10.offon",
@@ -1496,14 +870,6 @@
   {
    "path": "flavour_10.pants",
    "text": "It's warm now. Emphasis on now."
-  },
-  {
-   "path": "flavour_10.pants",
-   "text": "This morning is the warm-up act. The cold front is the headliner."
-  },
-  {
-   "path": "flavour_10.pants",
-   "text": "Shorts weather with an expiry date. Today's is soon."
   },
   {
    "path": "flavour_10.pants",
@@ -1524,19 +890,7 @@
   },
   {
    "path": "flavour_10.scorch",
-   "text": "The sun's in a mood today. Give it space."
-  },
-  {
-   "path": "flavour_10.scorch",
    "text": "Today the smartest thing outside is a lizard under a rock. Be the lizard."
-  },
-  {
-   "path": "flavour_10.scorch",
-   "text": "Heat this serious doesn't need my commentary. Water. Shade. Done."
-  },
-  {
-   "path": "flavour_10.scorch",
-   "text": "The library has never looked more appealing."
   },
   {
    "path": "flavour_10.scorch",
@@ -1557,24 +911,12 @@
   },
   {
    "path": "flavour_10.shorts",
-   "text": "This is what confidence in a forecast looks like. Mine, specifically."
-  },
-  {
-   "path": "flavour_10.shorts",
-   "text": "Mornings like this one always lose the argument by afternoon."
-  },
-  {
-   "path": "flavour_10.shorts",
    "text": "Shorts: the long game.",
    "wild": true
   },
   {
    "path": "flavour_10.storm",
    "text": "Thunder is just the sky being loud about something I already told you."
-  },
-  {
-   "path": "flavour_10.storm",
-   "text": "Storms make everything dramatic. I stay exactly the same. Calming, really."
   },
   {
    "path": "flavour_10.storm",
@@ -1588,10 +930,6 @@
    "path": "flavour_10.storm",
    "text": "Thunder gets a ten for volume today. Two for subtlety.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.theme_bike",
-   "text": "World Bicycle Day. Cyclists get a holiday and still ride to it."
   },
   {
    "path": "flavour_10.theme_bike",
@@ -1620,19 +958,7 @@
   },
   {
    "path": "flavour_10.theme_easter",
-   "text": "Happy Easter. A rabbit delivers eggs, and people question weather forecasts."
-  },
-  {
-   "path": "flavour_10.theme_easter",
    "text": "Happy Easter. The chocolate bunnies are hollow. Someone should be held accountable."
-  },
-  {
-   "path": "flavour_10.theme_easter",
-   "text": "Happy Easter. Peeps are back. Nobody knows who eats them, but they keep selling."
-  },
-  {
-   "path": "flavour_10.theme_easter",
-   "text": "Happy Easter. It's on a different date every year, and people ask me for long-range forecasts."
   },
   {
    "path": "flavour_10.theme_easter",
@@ -1649,15 +975,7 @@
   },
   {
    "path": "flavour_10.theme_force",
-   "text": "Dressed right, you are. Change it, you must not."
-  },
-  {
-   "path": "flavour_10.theme_force",
    "text": "Do or do not. There is no 'I'll check again in an hour.'"
-  },
-  {
-   "path": "flavour_10.theme_force",
-   "text": "Size matters not. Look at me: small screen, big forecasts."
   },
   {
    "path": "flavour_10.theme_force",
@@ -1669,16 +987,8 @@
   },
   {
    "path": "flavour_10.theme_force",
-   "text": "I am your forecast. Search your feelings. You know it to be true."
-  },
-  {
-   "path": "flavour_10.theme_force",
    "text": "Wrong about the weather, I have never been. Humble, I also am not.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.theme_ghd",
-   "text": "Groundhog Day. Six more weeks of winter, or an early spring. Bold to only offer two options."
   },
   {
    "path": "flavour_10.theme_ghd",
@@ -1690,24 +1000,12 @@
   },
   {
    "path": "flavour_10.theme_ghd",
-   "text": "Groundhog Day. Today everyone explains the movie to someone who hasn't seen it."
-  },
-  {
-   "path": "flavour_10.theme_ghd",
    "text": "Groundhog Day. Winter has never once cared what the groundhog thinks."
-  },
-  {
-   "path": "flavour_10.theme_ghd",
-   "text": "Groundhog Day. A famous forecaster who has never once mentioned the wind."
   },
   {
    "path": "flavour_10.theme_ghd",
    "text": "Groundhog Day. Groundhog Day. Groundhog Day. Okay, I'll stop.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.theme_ny",
-   "text": "Happy New Year. The quietest morning of the year. Everyone's whispering for some reason."
   },
   {
    "path": "flavour_10.theme_ny",
@@ -1719,15 +1017,7 @@
   },
   {
    "path": "flavour_10.theme_ny",
-   "text": "Happy New Year. The year is one day old and my forecast is already holding up."
-  },
-  {
-   "path": "flavour_10.theme_ny",
    "text": "Happy New Year. Somewhere a calendar is going up that will stay on January until June."
-  },
-  {
-   "path": "flavour_10.theme_ny",
-   "text": "Happy New Year. The streets are empty and the glitter is everywhere."
   },
   {
    "path": "flavour_10.theme_ny",
@@ -1740,19 +1030,7 @@
   },
   {
    "path": "flavour_10.theme_okt",
-   "text": "Oktoberfest. Every town has one now, with a polka band from somewhere nearby."
-  },
-  {
-   "path": "flavour_10.theme_okt",
-   "text": "Oktoberfest. The lederhosen come out of the closet for exactly two weeks."
-  },
-  {
-   "path": "flavour_10.theme_okt",
    "text": "Oktoberfest. Everyone's German for a few weeks. The pretzels are the most convincing."
-  },
-  {
-   "path": "flavour_10.theme_okt",
-   "text": "Oktoberfest. Millions of people in tents, and not one of them checking the weather."
   },
   {
    "path": "flavour_10.theme_okt",
@@ -1769,14 +1047,6 @@
   },
   {
    "path": "flavour_10.theme_pi",
-   "text": "Pi Day. Bakeries are thrilled. Math teachers are thrilled. Nobody else noticed."
-  },
-  {
-   "path": "flavour_10.theme_pi",
-   "text": "Pi Day. Today the forecast is exact. Pi has never managed that."
-  },
-  {
-   "path": "flavour_10.theme_pi",
    "text": "Pi Day. The digits go on forever. The pie, sadly, doesn't."
   },
   {
@@ -1785,24 +1055,8 @@
   },
   {
    "path": "flavour_10.theme_pi",
-   "text": "Pi Day. A holiday for a number. Meanwhile, seven has done nothing wrong and gets nothing."
-  },
-  {
-   "path": "flavour_10.theme_pi",
    "text": "Pi Day. Circumference over diameter. I don't know what that means either, but it's on a T-shirt somewhere.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.theme_spooky",
-   "text": "Halloween. The skeletons have been up since September. They're basically neighbors now."
-  },
-  {
-   "path": "flavour_10.theme_spooky",
-   "text": "Halloween. Every house is judged by its candy tonight. Full-size bars are the only real currency."
-  },
-  {
-   "path": "flavour_10.theme_spooky",
-   "text": "Halloween. A bedsheet ghost is the costume version of 'I'll bring the napkins.'"
   },
   {
    "path": "flavour_10.theme_spooky",
@@ -1811,10 +1065,6 @@
   {
    "path": "flavour_10.theme_spooky",
    "text": "Halloween. The stores already have Christmas stuff out. Now that's horror."
-  },
-  {
-   "path": "flavour_10.theme_spooky",
-   "text": "Halloween. If anything in here starts flickering, it isn't me. I don't flicker."
   },
   {
    "path": "flavour_10.theme_spooky",
@@ -1828,14 +1078,6 @@
   {
    "path": "flavour_10.theme_tdf",
    "text": "Tour de France. The riders lose seconds to a crosswind. Imagine needing a forecast that badly."
-  },
-  {
-   "path": "flavour_10.theme_tdf",
-   "text": "Tour de France. The yellow jersey: the one piece of clothing nobody can just buy."
-  },
-  {
-   "path": "flavour_10.theme_tdf",
-   "text": "Tour de France. Three weeks of commentary, and the commentators never run out. Real stamina."
   },
   {
    "path": "flavour_10.theme_tdf",
@@ -1856,14 +1098,6 @@
   },
   {
    "path": "flavour_10.theme_thanks",
-   "text": "Thanksgiving. The turkey's been in the oven since dawn. Some of us don't need preheating."
-  },
-  {
-   "path": "flavour_10.theme_thanks",
-   "text": "Thanksgiving. The parade balloons get more attention than any forecast. I'm not bitter."
-  },
-  {
-   "path": "flavour_10.theme_thanks",
    "text": "Thanksgiving. The cranberry sauce still has the ridges from the can. As tradition demands."
   },
   {
@@ -1872,20 +1106,8 @@
   },
   {
    "path": "flavour_10.theme_thanks",
-   "text": "Thanksgiving. Black Friday starts tomorrow. Or last week, depending on the store."
-  },
-  {
-   "path": "flavour_10.theme_thanks",
    "text": "Thanksgiving, my list: 1. Being right. 2. No dishes. 3. See 1.",
    "wild": true
-  },
-  {
-   "path": "flavour_10.theme_xmas",
-   "text": "Merry Christmas. Hours of wrapping, seconds of unwrapping. Brutal economics."
-  },
-  {
-   "path": "flavour_10.theme_xmas",
-   "text": "Merry Christmas. Santa covers the whole world in one night and never checks the forecast. Reckless."
   },
   {
    "path": "flavour_10.theme_xmas",
@@ -1901,28 +1123,12 @@
   },
   {
    "path": "flavour_10.theme_xmas",
-   "text": "Merry Christmas. A white Christmas turns up in a lot of songs and very few forecasts."
-  },
-  {
-   "path": "flavour_10.theme_xmas",
    "text": "Christmas forecast: scattered wrapping paper, heavy eating, clearing by the 27th.",
    "wild": true
   },
   {
    "path": "flavour_11.day_dst_fall",
    "text": "Clocks went back. An extra hour, and you still look like you need three."
-  },
-  {
-   "path": "flavour_11.day_dst_fall",
-   "text": "Clocks went back. Darker evenings. Finally, lighting that flatters you."
-  },
-  {
-   "path": "flavour_11.day_dst_fall",
-   "text": "Clocks went back. Same outfit, one more hour of it. Lucky everyone."
-  },
-  {
-   "path": "flavour_11.day_dst_fall",
-   "text": "Clocks went back. You'll still say you didn't get a weekend."
   },
   {
    "path": "flavour_11.day_dst_fall",
@@ -1951,28 +1157,12 @@
   },
   {
    "path": "flavour_11.day_dst_spring",
-   "text": "Clocks went forward. You lost an hour you'd have wasted anyway."
-  },
-  {
-   "path": "flavour_11.day_dst_spring",
-   "text": "Clocks went forward. You'll need a second coffee just to look like this."
-  },
-  {
-   "path": "flavour_11.day_dst_spring",
    "text": "Clocks forward. One hour gone. None of it was your best.",
    "wild": true
   },
   {
    "path": "flavour_11.day_longest",
-   "text": "Longest day of the year. The sun's working overtime. You could try a little."
-  },
-  {
-   "path": "flavour_11.day_longest",
    "text": "Longest day of the year. No excuses about the dark today. You'll find others."
-  },
-  {
-   "path": "flavour_11.day_longest",
-   "text": "Longest day of the year. Maximum daylight on that outfit. Bold."
   },
   {
    "path": "flavour_11.day_longest",
@@ -1985,10 +1175,6 @@
   },
   {
    "path": "flavour_11.day_shortest",
-   "text": "Shortest day of the year. Less light on that face. A small mercy."
-  },
-  {
-   "path": "flavour_11.day_shortest",
    "text": "Shortest day of the year. Finally, one that matches your attention span."
   },
   {
@@ -1997,15 +1183,7 @@
   },
   {
    "path": "flavour_11.day_shortest",
-   "text": "Shortest day of the year. You'll call it 'a long day' anyway."
-  },
-  {
-   "path": "flavour_11.day_shortest",
    "text": "Shortest day of the year. From tomorrow it gets lighter. You won't."
-  },
-  {
-   "path": "flavour_11.day_shortest",
-   "text": "Shortest day of the year. The sun's barely trying. Finally, someone at your level."
   },
   {
    "path": "flavour_11.day_shortest",
@@ -2014,19 +1192,11 @@
   },
   {
    "path": "flavour_11.ice",
-   "text": "Slow and careful. Your usual pace, basically."
-  },
-  {
-   "path": "flavour_11.ice",
    "text": "There's no dignified way to cross ice. You never had much to lose."
   },
   {
    "path": "flavour_11.ice",
    "text": "Grab every railing. Clingy is a good look on you today."
-  },
-  {
-   "path": "flavour_11.ice",
-   "text": "Small steps today. You've had plenty of practice not getting far."
   },
   {
    "path": "flavour_11.ice",
@@ -2043,14 +1213,6 @@
   },
   {
    "path": "flavour_11.night",
-   "text": "Bit late to worry how it looks. It was a bit late this morning too."
-  },
-  {
-   "path": "flavour_11.night",
-   "text": "Rest of the night sorted. Shame about tomorrow's face."
-  },
-  {
-   "path": "flavour_11.night",
    "text": "It'll still be fine at two a.m. That's not a dare."
   },
   {
@@ -2059,20 +1221,8 @@
   },
   {
    "path": "flavour_11.night",
-   "text": "Nothing left to dress for tonight. Not that you ever do."
-  },
-  {
-   "path": "flavour_11.night",
-   "text": "The weather's done for today. You could take the hint."
-  },
-  {
-   "path": "flavour_11.night",
    "text": "I'll be here all night, looking good. One of us has to.",
    "wild": true
-  },
-  {
-   "path": "flavour_11.pants",
-   "text": "Nobody was asking to see your knees anyway."
   },
   {
    "path": "flavour_11.pants",
@@ -2084,20 +1234,8 @@
   },
   {
    "path": "flavour_11.pants",
-   "text": "Your knees aren't as young as you think. Long pants."
-  },
-  {
-   "path": "flavour_11.pants",
-   "text": "The sun's out and you want shorts. Adorable. The cold front doesn't care."
-  },
-  {
-   "path": "flavour_11.pants",
    "text": "I'm not saying your legs are the problem. The cold front is. Mostly.",
    "wild": true
-  },
-  {
-   "path": "flavour_11.scorch",
-   "text": "Sitting in the shade isn't lazy today. Enjoy the alibi."
   },
   {
    "path": "flavour_11.scorch",
@@ -2109,15 +1247,7 @@
   },
   {
    "path": "flavour_11.scorch",
-   "text": "The shade is where the smart people are. Go anyway."
-  },
-  {
-   "path": "flavour_11.scorch",
    "text": "Water, not heroics. You were never the heroic type."
-  },
-  {
-   "path": "flavour_11.scorch",
-   "text": "Stay out of the midday sun. A tan won't fix much."
   },
   {
    "path": "flavour_11.scorch",
@@ -2134,19 +1264,7 @@
   },
   {
    "path": "flavour_11.storm",
-   "text": "You'll stand at the window looking dramatic. It doesn't suit you."
-  },
-  {
-   "path": "flavour_11.storm",
-   "text": "You'll say 'that was close' about thunder miles away."
-  },
-  {
-   "path": "flavour_11.storm",
    "text": "The sky's moody today. You can stop competing."
-  },
-  {
-   "path": "flavour_11.storm",
-   "text": "That umbrella makes you look prepared. Enjoy it, it's rare."
   },
   {
    "path": "flavour_11.storm",
@@ -2155,19 +1273,11 @@
   },
   {
    "path": "flavour_11.theme_bike",
-   "text": "World Bicycle Day. You know what Lycra does to you. Please don't."
-  },
-  {
-   "path": "flavour_11.theme_bike",
    "text": "World Bicycle Day. Everyone on two wheels looks smug. You'd look smug and slow."
   },
   {
    "path": "flavour_11.theme_bike",
    "text": "World Bicycle Day. Wherever your bike is, your fitness is right next to it."
-  },
-  {
-   "path": "flavour_11.theme_bike",
-   "text": "World Bicycle Day. Helmet hair is a risk you can't afford."
   },
   {
    "path": "flavour_11.theme_bike",
@@ -2200,10 +1310,6 @@
   },
   {
    "path": "flavour_11.theme_easter",
-   "text": "Happy Easter. Bunny ears would improve you. Just saying."
-  },
-  {
-   "path": "flavour_11.theme_easter",
    "text": "Easter Sunday. All those hidden eggs, and still nobody's looking for you."
   },
   {
@@ -2213,27 +1319,11 @@
   },
   {
    "path": "flavour_11.theme_force",
-   "text": "May the fourth. You think you'd be a Jedi. You'd be an extra."
-  },
-  {
-   "path": "flavour_11.theme_force",
    "text": "May the fourth be with you. Somebody has to be."
   },
   {
    "path": "flavour_11.theme_force",
    "text": "Star Wars Day. You'd make a great stormtrooper. Lots of effort, nothing hit."
-  },
-  {
-   "path": "flavour_11.theme_force",
-   "text": "Star Wars Day. Chewbacca's hair looks better than yours. I'm sorry."
-  },
-  {
-   "path": "flavour_11.theme_force",
-   "text": "Star Wars Day. Your Jedi robe is a bathrobe, and you know it."
-  },
-  {
-   "path": "flavour_11.theme_force",
-   "text": "Star Wars Day. You'll mention the original trilogy like you were there."
   },
   {
    "path": "flavour_11.theme_force",
@@ -2254,21 +1344,12 @@
   },
   {
    "path": "flavour_11.theme_ny",
-   "text": "Happy New Year. A whole new year to look tired in."
-  },
-  {
-   "path": "flavour_11.theme_ny",
    "text": "New Year's Day. Everyone's sharing their year in review. Yours fits on a sticky note."
   },
   {
    "path": "flavour_11.theme_ny",
    "text": "New Year's Day. Resolution check: still horizontal? Right on track.",
    "wild": true
-  },
-  {
-   "path": "flavour_11.theme_okt",
-   "text": "Oktoberfest. Lederhosen are a look. Not your look.",
-   "months": "9,10"
   },
   {
    "path": "flavour_11.theme_okt",
@@ -2311,14 +1392,6 @@
   },
   {
    "path": "flavour_11.theme_pi",
-   "text": "Pi Day. The one math holiday, and you'd still need a calculator."
-  },
-  {
-   "path": "flavour_11.theme_pi",
-   "text": "Pi Day. 3.14. About your score out of ten today."
-  },
-  {
-   "path": "flavour_11.theme_pi",
    "text": "Pi Day. You'll smile at a math joke so people think you got it."
   },
   {
@@ -2344,18 +1417,6 @@
   },
   {
    "path": "flavour_11.theme_spooky",
-   "text": "Halloween. Even the skeletons look more rested than you."
-  },
-  {
-   "path": "flavour_11.theme_spooky",
-   "text": "Halloween. Pumpkins get carved, lit up and admired. You'll get none of those."
-  },
-  {
-   "path": "flavour_11.theme_spooky",
-   "text": "Halloween. The scariest thing in here is probably your hair this morning."
-  },
-  {
-   "path": "flavour_11.theme_spooky",
    "text": "Halloween. I'm pale, flat and I stare. You're two out of three.",
    "wild": true
   },
@@ -2372,16 +1433,6 @@
   {
    "path": "flavour_11.theme_tdf",
    "text": "Tour de France. You'd last about one traffic circle.",
-   "months": "7"
-  },
-  {
-   "path": "flavour_11.theme_tdf",
-   "text": "Tour de France. The riders eat thousands of calories a day. You're keeping up. Minus the riding.",
-   "months": "7"
-  },
-  {
-   "path": "flavour_11.theme_tdf",
-   "text": "Tour de France. Those calves took years of training. Yours took nothing, and it shows.",
    "months": "7"
   },
   {
@@ -2413,10 +1464,6 @@
   },
   {
    "path": "flavour_11.theme_thanks",
-   "text": "Thanksgiving. Someone at the table will bring up politics. Try not to be that someone."
-  },
-  {
-   "path": "flavour_11.theme_thanks",
    "text": "Thanksgiving. The leftovers will last a week. Your gratitude, about an hour."
   },
   {
@@ -2430,23 +1477,7 @@
   },
   {
    "path": "flavour_11.theme_xmas",
-   "text": "Christmas. You'll say 'you shouldn't have'. This time you'll mean it."
-  },
-  {
-   "path": "flavour_11.theme_xmas",
    "text": "Christmas. Your Christmas sweater is ironic. Your waistband isn't."
-  },
-  {
-   "path": "flavour_11.theme_xmas",
-   "text": "Christmas. Board game time. Try to lose gracefully. You've had practice."
-  },
-  {
-   "path": "flavour_11.theme_xmas",
-   "text": "Christmas. Under the mistletoe, you'll be waiting a while."
-  },
-  {
-   "path": "flavour_11.theme_xmas",
-   "text": "Christmas. Someone got you socks again. They've seen how you dress."
   },
   {
    "path": "flavour_11.theme_xmas",
@@ -2455,23 +1486,7 @@
   },
   {
    "path": "alone_10.cool",
-   "text": "Not warm, not cold. The weather's version of 'per my last email'."
-  },
-  {
-   "path": "alone_10.cool",
    "text": "Weather this average could get a job in middle management."
-  },
-  {
-   "path": "alone_10.cool",
-   "text": "Today is the plain toast of weather. I'll still draw it beautifully."
-  },
-  {
-   "path": "alone_10.cool",
-   "text": "Nothing to report. I'll report it anyway, with excellent posture."
-  },
-  {
-   "path": "alone_10.cool",
-   "text": "The weather phoned it in today. I didn't. Look at that jacket."
   },
   {
    "path": "alone_10.cool",
@@ -2496,15 +1511,7 @@
   },
   {
    "path": "alone_11.cool",
-   "text": "Ideal weather for looking busy without breaking a sweat. Your specialty."
-  },
-  {
-   "path": "alone_11.cool",
    "text": "Flat light, no tan, no glow. So, your usual look."
-  },
-  {
-   "path": "alone_11.cool",
-   "text": "A jacket day. The one outfit decision you can't get wrong. Probably."
   },
   {
    "path": "alone_11.cool",
@@ -2525,14 +1532,6 @@
   },
   {
    "path": "alone_10.cooling",
-   "text": "The warm part of today has an expiration date. I've read it."
-  },
-  {
-   "path": "alone_10.cooling",
-   "text": "Nice now, colder later. The weather believes in ending on a low note."
-  },
-  {
-   "path": "alone_10.cooling",
    "text": "Later the sun leaves without saying goodbye. Rude, but on schedule."
   },
   {
@@ -2542,15 +1541,7 @@
   },
   {
    "path": "alone_11.cooling",
-   "text": "By tonight you'll be doing that arms-crossed shiver. Very attractive."
-  },
-  {
-   "path": "alone_11.cooling",
    "text": "Later it gets colder. Your goosebumps will be the most active thing about you."
-  },
-  {
-   "path": "alone_11.cooling",
-   "text": "Later you'll wish you'd listened to me. Get used to that feeling."
   },
   {
    "path": "alone_11.cooling",
@@ -2571,15 +1562,7 @@
   },
   {
    "path": "alone_10.fickle",
-   "text": "The weather's flipping a coin today. Repeatedly."
-  },
-  {
-   "path": "alone_10.fickle",
    "text": "Today's forecast took me three drafts. You get the final one."
-  },
-  {
-   "path": "alone_10.fickle",
-   "text": "The weather changes its mind more than a toddler at a buffet."
   },
   {
    "path": "alone_10.fickle",
@@ -2616,10 +1599,6 @@
   },
   {
    "path": "alone_11.fickle",
-   "text": "You'll spend the day half a step behind the weather. Very on brand."
-  },
-  {
-   "path": "alone_11.fickle",
    "text": "Your outfit has a plot today. More than can be said for you."
   },
   {
@@ -2633,19 +1612,11 @@
   },
   {
    "path": "alone_10.nice",
-   "text": "A T-shirt and no notes. Rare praise from me."
-  },
-  {
-   "path": "alone_10.nice",
    "text": "Perfect weather. Somebody will still say it's too bright."
   },
   {
    "path": "alone_10.nice",
    "text": "Perfect day out there. I give it a seven."
-  },
-  {
-   "path": "alone_10.nice",
-   "text": "No umbrella, no coat, no drama. I've never felt so unnecessary."
   },
   {
    "path": "alone_10.nice",
@@ -2659,10 +1630,6 @@
   {
    "path": "alone_11.nice",
    "text": "The weather looks great today. One of you does, anyway."
-  },
-  {
-   "path": "alone_11.nice",
-   "text": "Perfect day to sit in the sun and call it self-care."
   },
   {
    "path": "alone_11.nice",
@@ -2700,14 +1667,6 @@
   },
   {
    "path": "alone_10.warming",
-   "text": "The afternoon is where the weather keeps its best material."
-  },
-  {
-   "path": "alone_10.warming",
-   "text": "The morning's a draft. The afternoon is the final version."
-  },
-  {
-   "path": "alone_10.warming",
    "text": "Later the day warms up. I don't. Consistency is my whole brand."
   },
   {
@@ -2737,10 +1696,6 @@
   },
   {
    "path": "alone_11.warming",
-   "text": "Warmer later. Your posture might even recover."
-  },
-  {
-   "path": "alone_11.warming",
    "text": "Later the day gets nicer. Pure coincidence. Nothing you did.",
    "wild": true
   },
@@ -2754,19 +1709,7 @@
   },
   {
    "path": "alone_10.wet",
-   "text": "The dog walkers are about to get very philosophical."
-  },
-  {
-   "path": "alone_10.wet",
    "text": "Rain today. Somebody washed their car yesterday. Of course they did."
-  },
-  {
-   "path": "alone_10.wet",
-   "text": "Rain makes everything look like a sad indie movie. I don't do sad."
-  },
-  {
-   "path": "alone_10.wet",
-   "text": "Rain turns every car into a puddle cannon. I'm safely nowhere near a curb."
   },
   {
    "path": "alone_10.wet",
@@ -2784,10 +1727,6 @@
   {
    "path": "alone_11.wet",
    "text": "You'll do the little puddle hop and think it looked graceful."
-  },
-  {
-   "path": "alone_11.wet",
-   "text": "You'll look out the window and sigh like it's personal. It's rain."
   },
   {
    "path": "alone_11.wet",
@@ -2820,10 +1759,6 @@
   },
   {
    "path": "flavour_vf_10.cold",
-   "text": "Cold now, cold later. The weather found a look and stuck with it. Respect."
-  },
-  {
-   "path": "flavour_vf_10.cold",
    "text": "I'd draw something warmer later, but I don't do fiction."
   },
   {
@@ -2842,10 +1777,6 @@
   {
    "path": "flavour_vf_11.cold",
    "text": "The drawings look warm and put-together all day. Aim for one of the two."
-  },
-  {
-   "path": "flavour_vf_11.cold",
-   "text": "Cold all day. A sleeping bag with legs is a look. It's yours today."
   },
   {
    "path": "flavour_vf_11.cold",
@@ -2891,10 +1822,6 @@
   },
   {
    "path": "flavour_vf_11.cooling",
-   "text": "Look at the last drawing. That's you later, but better dressed."
-  },
-  {
-   "path": "flavour_vf_11.cooling",
    "text": "The drawings plan ahead. Try it sometime."
   },
   {
@@ -2909,10 +1836,6 @@
    "path": "flavour_vf_11.cooling",
    "text": "Colder later. A layer can hide a lot. Use it.",
    "wild": true
-  },
-  {
-   "path": "flavour_vf_10.fickle",
-   "text": "Off in the middle, back on at the end. The weather's version of a lunch break."
   },
   {
    "path": "flavour_vf_10.fickle",
@@ -2932,10 +1855,6 @@
   },
   {
    "path": "flavour_vf_10.fickle",
-   "text": "The weather goes out, comes back, and pretends nothing happened."
-  },
-  {
-   "path": "flavour_vf_10.fickle",
    "text": "The middle drawing: brief, warm, gone. Like a long weekend.",
    "wild": true
   },
@@ -2945,23 +1864,7 @@
   },
   {
    "path": "flavour_vf_11.fickle",
-   "text": "The middle drawing is the most fun you'll look all day."
-  },
-  {
-   "path": "flavour_vf_11.fickle",
-   "text": "Back in the first outfit by evening, like nothing happened. You're good at that."
-  },
-  {
-   "path": "flavour_vf_11.fickle",
    "text": "A short warm spell in the middle. Try not to make it your whole personality."
-  },
-  {
-   "path": "flavour_vf_11.fickle",
-   "text": "Same look at the start and the end. Nobody'll notice either time."
-  },
-  {
-   "path": "flavour_vf_11.fickle",
-   "text": "Off, then back on. You'll treat it like an outfit change at the Oscars."
   },
   {
    "path": "flavour_vf_11.fickle",
@@ -2982,24 +1885,12 @@
   },
   {
    "path": "flavour_vf_10.hot",
-   "text": "The heat stays for the whole show. Nobody asked for an encore."
-  },
-  {
-   "path": "flavour_vf_10.hot",
    "text": "Not one cool moment in this lineup. Except me."
-  },
-  {
-   "path": "flavour_vf_10.hot",
-   "text": "The sun's not leaving any of these drawings. Clingy."
   },
   {
    "path": "flavour_vf_10.hot",
    "text": "Today's drawings, ranked by heat: all tied for first.",
    "wild": true
-  },
-  {
-   "path": "flavour_vf_11.hot",
-   "text": "Hot all day. Today's look: shiny."
   },
   {
    "path": "flavour_vf_11.hot",
@@ -3025,14 +1916,6 @@
    "path": "flavour_vf_11.hot",
    "text": "Today you'll be damp in places you didn't know you had.",
    "wild": true
-  },
-  {
-   "path": "flavour_vf_10.nice",
-   "text": "Nice all day. The drawings are basically a vacation slideshow."
-  },
-  {
-   "path": "flavour_vf_10.nice",
-   "text": "Hardly any change between these drawings. I'm calling it minimalism."
   },
   {
    "path": "flavour_vf_10.nice",
@@ -3073,20 +1956,12 @@
   },
   {
    "path": "flavour_vf_11.nice",
-   "text": "Nice weather, small changes. Even you can keep up."
-  },
-  {
-   "path": "flavour_vf_11.nice",
    "text": "Pleasant all day. The weather is putting in more effort than you are."
   },
   {
    "path": "flavour_vf_11.nice",
    "text": "Gorgeous day. Don't stand next to it in photos.",
    "wild": true
-  },
-  {
-   "path": "flavour_vf_10.snow",
-   "text": "Snow in every drawing. The salt trucks finally get their moment."
   },
   {
    "path": "flavour_vf_10.snow",
@@ -3115,10 +1990,6 @@
   },
   {
    "path": "flavour_vf_11.snow",
-   "text": "Snow all day. Nothing hides a bad hair day like a hat. Lucky you."
-  },
-  {
-   "path": "flavour_vf_11.snow",
    "text": "Snow all day. Your winter look is just everything you own, at once."
   },
   {
@@ -3135,24 +2006,12 @@
   },
   {
    "path": "flavour_vf_11.snow",
-   "text": "Snow all day. White everywhere. Your winter pallor finally blends in."
-  },
-  {
-   "path": "flavour_vf_11.snow",
    "text": "Snow all day. You're one carrot away from a snowman.",
    "wild": true
   },
   {
    "path": "flavour_vf_10.warming",
-   "text": "The last drawing is a layer lighter. The weather finally relaxed."
-  },
-  {
-   "path": "flavour_vf_10.warming",
    "text": "Later a layer comes off. The day loosens its tie."
-  },
-  {
-   "path": "flavour_vf_10.warming",
-   "text": "Fewer layers by the last drawing. Progress, the slow kind."
   },
   {
    "path": "flavour_vf_10.warming",
@@ -3173,10 +2032,6 @@
   },
   {
    "path": "flavour_vf_11.warming",
-   "text": "The last drawing takes a layer off. You'll make it look harder than it is."
-  },
-  {
-   "path": "flavour_vf_11.warming",
    "text": "Later you lose a layer. Shame it's not the attitude."
   },
   {
@@ -3186,10 +2041,6 @@
   {
    "path": "flavour_vf_11.warming",
    "text": "Warmer by the last drawing. Your face will finally defrost."
-  },
-  {
-   "path": "flavour_vf_11.warming",
-   "text": "The day warms up later. Your personality stays the same temperature."
   },
   {
    "path": "flavour_vf_11.warming",
@@ -3206,23 +2057,7 @@
   },
   {
    "path": "flavour_vf_10.wet",
-   "text": "The umbrella comes and goes. I'm the only one keeping track."
-  },
-  {
-   "path": "flavour_vf_10.wet",
-   "text": "The umbrella drawing is my best work. Don't tell the others."
-  },
-  {
-   "path": "flavour_vf_10.wet",
-   "text": "The rain has a schedule today. Nobody else got a copy. Except me."
-  },
-  {
-   "path": "flavour_vf_10.wet",
    "text": "Rain for part of the day. For the other part, everyone acts like it never happened."
-  },
-  {
-   "path": "flavour_vf_10.wet",
-   "text": "Rain for part of it. Long enough to ruin a good shoe."
   },
   {
    "path": "flavour_vf_10.wet",
@@ -3235,10 +2070,6 @@
   },
   {
    "path": "flavour_vf_11.wet",
-   "text": "One drawing has an umbrella. It's the best-dressed one, and it's still not you."
-  },
-  {
-   "path": "flavour_vf_11.wet",
    "text": "Rain in part of today. You'll call it 'typical' as if you'd planned otherwise."
   },
   {
@@ -3247,24 +2078,8 @@
   },
   {
    "path": "flavour_vf_11.wet",
-   "text": "Some rain in there. You'll run three steps and give up. Peak athleticism."
-  },
-  {
-   "path": "flavour_vf_11.wet",
-   "text": "Rain comes and goes. Your mood won't follow it. It's bad either way."
-  },
-  {
-   "path": "flavour_vf_11.wet",
    "text": "Rain in some drawings. Wet-dog chic is in, I hear. You're early.",
    "wild": true
-  },
-  {
-   "path": "now_10.evening",
-   "text": "Evening, and the weather's off the clock. I'm not. Never am."
-  },
-  {
-   "path": "now_10.evening",
-   "text": "This is when the delivery drivers get busy. I just sit here, looking sharp."
   },
   {
    "path": "now_10.evening",
@@ -3273,10 +2088,6 @@
   {
    "path": "now_10.evening",
    "text": "Everyone's done pretending to work. I never pretend. I'm always on."
-  },
-  {
-   "path": "now_10.evening",
-   "text": "Today's news is old now. I'm still fresh. Refreshed, technically."
   },
   {
    "path": "now_10.evening",
