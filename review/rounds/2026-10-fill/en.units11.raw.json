@@ -2,7 +2,7 @@
  "lines": [
   {
    "path": "units_11.arc_colder",
-   "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || Enjoy the warm bit. It's the part of today that flatters you most."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Enjoy the warm bit. It flatters you most."
   },
   {
    "path": "units_11.arc_colder",
@@ -18,32 +18,32 @@
   },
   {
    "path": "units_11.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || By then you'll look like you got dressed in the dark. Warm, though."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || By then you'll look dressed in the dark. Warm, though."
   },
   {
    "path": "units_11.arc_colder",
-   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Shivering isn't a personality, whatever you've been telling people."
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Shivering isn't a personality. Pick another one."
   },
   {
    "path": "units_11.arc_colder",
-   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Something warm, not something cute. I've seen you choose before."
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Something warm, not something cute. I've seen you choose."
   },
   {
    "path": "units_11.arc_colder",
-   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || Spare clothes in a bag all day. You're basically a toddler with a forecast."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Spare clothes all day. You're a toddler with a forecast."
   },
   {
    "path": "units_11.arc_colder",
-   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || It ends colder than it started. I checked while you checked the mirror."
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || It ends colder. I checked while you checked the mirror."
   },
   {
    "path": "units_11.arc_colder",
-   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || Layering. Fashion people do it on purpose. You'll do it to stop shivering.",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Fashion people layer on purpose. You'll do it to stop shivering.",
    "wild": true
   },
   {
    "path": "units_11.arc_colder",
-   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Do you own something warm that isn't a blanket? Asking for later.",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Do you own something warm that isn't a blanket?",
    "wild": true
   },
   {
@@ -128,7 +128,7 @@
   },
   {
    "path": "units_11.arc_warmer",
-   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || I've freed you from {G} for the day. Try to look like you deserve it."
+   "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || No more {G} today. Try to look like you deserve it."
   },
   {
    "path": "units_11.arc_warmer",
@@ -627,7 +627,7 @@
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "It keeps raining for now, then takes a break. It's back {WHENP}, so keep the umbrella. || An umbrella all day. Finally, an accessory that makes you look organized."
+   "text": "It keeps raining for now, then takes a break. It's back {WHENP}, so keep the umbrella. || Finally, an accessory that makes you look organized."
   },
   {
    "path": "units_11.p_wet_again",
@@ -651,7 +651,7 @@
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || I don't have an umbrella. I don't need one. I don't need you either, but here we are.",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || I don't need an umbrella. I don't need you either, but here we are.",
    "wild": true
   },
   {
@@ -769,7 +769,7 @@
   },
   {
    "path": "units_11.p_wetter_long",
-   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Anything you meant to do outside, do it before then. Or keep putting it off. That's your strength."
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Do anything outdoors before then. Or keep putting it off. Your strength."
   },
   {
    "path": "units_11.p_wetter_long",
