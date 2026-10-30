@@ -47,8 +47,7 @@ no "get inside" in storm wordings. All in `build_pools.py`
 (`apply_notes`), so later rebuilds keep them. Still open:
 5. **Groups the vote emptied** (de), now falling back: theme_nikolo and
    theme_xmas at On, the storm follow-ups at On (the rain ones show),
-   Eisheilige at 11 (it has no lines now at either level: the day doesn't
-   show), the drawings' warming line at On, units w_scarf and arc_warmer
+   the drawings' warming line at On, units w_scarf and arc_warmer
    at 11 (the separate pick shows).
 
 ### Bug: drawings and sarcastic line disagree (owner, 23 October 2026)
@@ -89,9 +88,10 @@ per line, a critic, then the vote):
      Saturday's freshly washed car before the rain; Hausschuhe; Wetter-App
      gegen Wetterbericht (a new angle, not the Regenradar again).
 3. **New special days for the dated ones** (markup: `block.liquid`,
-   SPECIAL DAYS, like Pi Day): Eisheilige (11 to 15 May) and
-   Altweibersommer (late September), de. Cut by the owner as not widely
-   understood: St Swithin's Day, Siebenschläfer, Hundstage, Schafskälte.
+   SPECIAL DAYS, like Pi Day): Altweibersommer (late September), de. Cut
+   by the owner: St Swithin's Day, Siebenschläfer, Hundstage, Schafskälte
+   (not widely understood), and Eisheilige (October 2026, after its lines
+   were all voted out).
 
 Leave alone: topics already well mined (Bahn, Schneechaos, Regenradar,
 Zugluft, Oma; e-ink and grey, fans and ice-cream vans) and the ones

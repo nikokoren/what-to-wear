@@ -1067,9 +1067,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- endif -%}
       {%- endif -%}
       {%- if day_key == '' -%}
-        {%- if today_md >= '05-11' and today_md <= '05-15' and wx_lat >= 0 -%}
-                    {%- assign day_key = 'eisheilige' -%}
-        {%- elsif today_md == '06-21' -%}
+        {%- if today_md == '06-21' -%}
           {%- if wx_lat < 0 -%}{%- assign day_key = 'shortest' -%}{%- else -%}{%- assign day_key = 'longest' -%}{%- endif -%}
         {%- elsif today_md == '12-21' -%}
           {%- if wx_lat < 0 -%}{%- assign day_key = 'longest' -%}{%- else -%}{%- assign day_key = 'shortest' -%}{%- endif -%}

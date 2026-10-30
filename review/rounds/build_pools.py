@@ -653,6 +653,9 @@ def main():
         moved = apply_owner_moves(doc, lang)
         if moved:
             print(f"{lang}: {moved} lines moved where they belong")
+        # Die Eisheiligen: cut from the recipe by the owner (October 2026).
+        for section in ("flavour_10", "flavour_11"):
+            doc.get(section, {}).pop("day_eisheilige", None)
         level = apply_level_fixes(doc, lang)
         if level:
             print(f"{lang} level check: " + ", ".join(f"{v} {k}" for k, v in level.items()))
