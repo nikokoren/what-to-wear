@@ -640,6 +640,10 @@ def main():
         final = apply_final(doc, lang, decisions)
         if final:
             print(f"{lang} round 22 (read-through): " + ", ".join(f"{v} {k}" for k, v in final.items()))
+        # Round 23 showed the lines as the screen does: after WORDS and the
+        # level check. Its votes apply to those (a second pass for the
+        # lines the level check moved or rewrote).
+        apply_words(doc, lang)
         final2 = apply_final(doc, lang, decisions, FINAL2)
         if final2:
             print(f"{lang} round 23 (read-through): " + ", ".join(f"{v} {k}" for k, v in final2.items()))
@@ -659,6 +663,9 @@ def main():
         level = apply_level_fixes(doc, lang)
         if level:
             print(f"{lang} level check: " + ", ".join(f"{v} {k}" for k, v in level.items()))
+        after = apply_final(doc, lang, decisions, FINAL2)
+        if after:
+            print(f"{lang} round 23 (after the level check): " + ", ".join(f"{v} {k}" for k, v in after.items()))
         # Two edits can land on the same words: each line once.
         for pools in doc.values():
             if isinstance(pools, dict):

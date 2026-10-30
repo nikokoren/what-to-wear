@@ -7,10 +7,27 @@ Do not edit by hand; vote on the page instead.
 ## arc_colder · plain
 
 - {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit.
+- {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit.
+- {WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt.
 - {WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt.
 - {WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu was Warmes, {WHEN2} wird's richtig kühl.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.
+- {WHEN} {GV} weg. {WHEN2} wird's aber so kalt, dass du {GP} und noch eine extra Schicht brauchst.
+- {WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit.
+
+## arc_colder · dry
+
+- {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm also eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern.
+- {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || So ein Hin und Her hält ja niemand aus.
+- {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder und noch eine extra Schicht. || Hier drin bleibt's gemütlich. Nur so als Idee.
+
+## arc_colder · sarcastic
+
+- {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Der Tag erfordert mehr Planung, als du sonst in eine ganze Woche steckst.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.
+- {WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Gänsehaut zählt nicht als Schicht.
 
 ## arc_level · plain
 
@@ -19,53 +36,83 @@ Do not edit by hand; vote on the page instead.
 - {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
 - {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
 - {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
+- {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.
+- {WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler.
 - {WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler.
 - {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
 - {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
 - {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
+- {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.
 - {WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.
 - {WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.
+- {WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.
 
 ## arc_level · dry
 
+- {WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.
 - {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.
+- {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.
+
+## arc_level · sarcastic
+
+- {WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze.
+- {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist meistens dein Problem.
+- {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich.
 
 ## arc_warmer · plain
 
 - {WHEN} {GV} runter, und dabei bleibt's dann für heute.
+- {WHEN} {GV} runter, und dabei bleibt's dann für heute.
 - {WHEN} {GV} runter, und zwar für den Rest des Tages.
+- {WHEN} {GV} runter, und zwar für den Rest des Tages.
+- {WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr.
+- {WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr.
 - {WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr.
 
 ## arc_warmer · dry
 
 - {WHEN} {GV} weg, und dabei bleibt's dann für heute. || Eine klare Ansage. Kommt bei mir selten vor, genieß es.
+- {WHEN} {GV} weg, und dabei bleibt's dann für heute. || Eine klare Ansage. Kommt bei mir selten vor, genieß es.
+- {WHEN} {GV} weg, und zwar für den Rest des Tages. || Ab da interessiert sich wieder niemand für mich.
+- {WHEN} {GV} weg, und zwar für den Rest des Tages. || Mitschleppen musst du {GP} dann trotzdem.
 - {WHEN} {GV} weg, und zwar für den Rest des Tages. || Mitschleppen musst du {GP} dann trotzdem.
 
 ## c_coat · plain
 
 - Nimm die Winterjacke mit, {WHEN} wird's kälter.
 - Nimm die Winterjacke mit, {WHEN} wird's kälter.
+- Nimm die Winterjacke mit, {WHEN} wird's kälter.
+- {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran.
 - {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran.
 - {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran.
 - {WHEN} wird's kalt genug für die Winterjacke.
 - {WHEN} wird's kalt genug für die Winterjacke.
+- {WHEN} wird's kalt genug für die Winterjacke.
+- {WHEN} wird's kälter, da brauchst du dann die Winterjacke.
 - {WHEN} wird's kälter, da brauchst du dann die Winterjacke.
 - {WHEN} wird's kälter, da braucht's die Winterjacke.
 
 ## c_coat · dry
 
 - Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ich sag das nicht zum Spaß.
+- Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ich sag das nicht zum Spaß.
 - {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt: Ich mein's ernst, einpacken!
+- {WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt: Ich mein's ernst, einpacken!
+- {WHEN} wird's kälter, da brauchst du dann die Winterjacke. || Da hilft auch kein Jammern.
 - {WHEN} wird's kälter, da brauchst du dann die Winterjacke. || Da hilft auch kein Jammern.
 - {WHEN} wird's kälter, da braucht's die Winterjacke. || Da hilft auch kein Jammern.
 
 ## c_coat · sarcastic
 
 - Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ja, die dicke. Ich weiß, wie du drin aussiehst.
+- Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ja, die dicke. Ich weiß, wie du drin aussiehst.
 - {WHEN} brauchst du die Winterjacke, also nimm sie mit. || Vorausgesetzt, sie geht nach den Feiertagen noch zu.
+- {WHEN} brauchst du die Winterjacke, also nimm sie mit. || Vorausgesetzt, sie geht nach den Feiertagen noch zu.
+- {WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
 - {WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
 - {WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
 
@@ -75,25 +122,37 @@ Do not edit by hand; vote on the page instead.
 - Nimm einen Pulli mit, {WHEN} kühlt's ab.
 - Nimm einen Pulli mit, {WHEN} kühlt's ab.
 - Nimm einen Pulli mit, {WHEN} kühlt's ab.
+- Nimm einen Pulli mit, {WHEN} kühlt's ab.
 - Pack einen Pulli ein, heute Abend wird's kühler.
 - Pack einen Pulli ein, {WHEN} wird's kühler.
 - Pack einen Pulli ein, {WHEN} wird's kühler.
+- Pack einen Pulli ein, {WHEN} wird's kühler.
+- {WHEN} brauchst du einen Pulli, also nimm einen mit.
 - {WHEN} brauchst du einen Pulli, also nimm einen mit.
 - {WHEN} brauchst du einen Pulli, also nimm einen mit.
 - {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.
 - {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.
+- {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.
 - {WHEN} wird's frisch genug für einen Pulli.
 - {WHEN} wird's frisch genug für einen Pulli.
+- {WHEN} wird's frisch genug für einen Pulli.
+- {WHEN} wird's kühl, dann bist du froh über einen Pulli.
 - {WHEN} wird's kühl, dann bist du froh über einen Pulli.
 
 ## c_hoodie · dry
 
+- Nimm einen Pulli mit, {WHEN} kühlt's ab. || Nachher sagt wieder jeder: Ganz schön frisch geworden.
 - Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar.
+- Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar.
+- {WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich, so wirklich weiß das niemand.
 
 ## c_hoodie · sarcastic
 
 - Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens.
+- Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens.
 - {WHEN} brauchst du einen Pulli, also nimm einen mit. || Zum Anziehen. Nicht zum Um-den-Bauch-Knoten.
+- {WHEN} brauchst du einen Pulli, also nimm einen mit. || Zum Anziehen. Nicht zum Um-den-Bauch-Knoten.
+- {WHEN} wird's kühl, dann bist du froh über einen Pulli. || Und ich bin froh, wenn du dann nicht jammerst.
 
 ## c_jacket · plain
 

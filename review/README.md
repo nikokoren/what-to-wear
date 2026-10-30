@@ -525,3 +525,11 @@ either level), Weihnachten at On (none, falls back), Nikolaus, storm and
 pants at On (one each), and at 11 the units for scarf off and warmer
 later (one each, so the screen uses the plain forecast there). The
 "Write new" spots wait in `review/rewrite/de.md`.
+
+English read-through voted (October 2026): 777 of 786 lines, 545
+starred, 214 kept (67 with the owner's edits), 18 vetoed; plus 52 votes
+on German live lines. Round 23's votes now apply after WORDS and again
+after the level check, since the page showed the lines that way. Owner's
+notes: three `alone_` lines (two fickle at 11, one nice at On) "don't
+work on their own without the What to Wear Next drawings"; and "This
+forecast is brought to you by… nobody" (starred) should find more spots.

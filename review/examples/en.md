@@ -7,11 +7,17 @@ Do not edit by hand; vote on the page instead.
 ## arc_colder · plain
 
 - Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top.
+- Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top.
+- You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}.
+- You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.
 - You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.
 - {G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.
+- {G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.
+- {WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top.
 
 ## arc_colder · sarcastic
 
+- You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || 'Maybe' is me being polite. Bring it.
 - You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || 'Maybe' is me being polite. Bring it.
 
 ## arc_level · plain
@@ -20,93 +26,213 @@ Do not edit by hand; vote on the page instead.
 - The jacket can come off around midday. Keep it handy for tonight.
 - You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.
 - You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.
+- You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.
+- {G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.
 - {G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.
 - {G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.
 - {G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.
 - {G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.
+- {G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.
+- {G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}.
+- {WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}.
+
+## arc_level · dry
+
+- Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Off and on again. That fixes most things, me included.
+
+## arc_level · sarcastic
+
+- {G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Fifty-fifty {GP} goes missing in between.
 
 ## arc_warmer · plain
 
 - You can take {G} off {WHEN}. You won't need {GP} again after that.
+- You can take {G} off {WHEN}. You won't need {GP} again after that.
+- {G} can come off {WHEN} and stays off.
 - {G} can come off {WHEN}, and you won't need {GP} again today.
+- {G} can come off {WHEN}, and you won't need {GP} again today.
+- {G} comes off {WHEN}. It cools a little later, but you won't need {GP} back.
 - {G} comes off {WHEN}. It cools a little later, but you won't need {GP} back.
 
 ## arc_warmer · dry
 
 - Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'.
+- Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'.
+- You can take {G} off {WHEN}. || After that, you're just carrying {GP} around for company.
+- {G} can come off {WHEN} and stays off. || I'm not changing my mind about this one.
+
+## arc_warmer · sarcastic
+
+- {G} can come off {WHEN}, and you won't need {GP} again today. || You'll put {GP} back on later anyway, out of spite.
 
 ## c_coat · plain
 
 - Bring the winter coat. It gets colder this evening.
 - Bring the winter coat. It gets colder {WHEN}.
 - Bring the winter coat. It gets colder {WHEN}.
+- Bring the winter coat. It gets colder {WHEN}.
+- Don't leave the winter coat behind. You'll want it {WHEN}.
 - Don't leave the winter coat behind. You'll want it {WHEN}.
 - Have the winter coat with you. You'll need it {WHEN}.
+- Have the winter coat with you. You'll need it {WHEN}.
+- It gets colder {WHEN}, bring the winter coat.
 - It gets colder {WHEN}, bring the winter coat.
 - This evening it gets cold enough for the winter coat.
+- {WHEN} a jacket won't be enough, so bring the winter coat.
 - {WHEN} it gets cold enough for the winter coat.
+- {WHEN} it gets cold enough for the winter coat.
+
+## c_coat · dry
+
+- Have the winter coat with you. You'll need it {WHEN}. || Yes, the big one. The one that doesn't fit in any bag.
+
+## c_coat · sarcastic
+
+- Bring the winter coat. It gets colder {WHEN}. || You'll say 'it's not that cold' right up until it is.
 
 ## c_hoodie · plain
 
 - Bring a sweater. It cools down this evening.
 - Bring a sweater. It cools down {WHEN}.
 - Bring a sweater. It cools down {WHEN}.
+- Bring a sweater. It cools down {WHEN}.
 - It cools down {WHEN}, so bring a sweater.
+- It cools down {WHEN}, so bring a sweater.
+- It gets cooler {WHEN}, so take a sweater along.
+- Pack a sweater. You'll be glad to have it {WHEN}.
 - Pack a sweater. You'll be glad to have it {WHEN}.
 - {WHEN} it gets cool enough for a sweater.
 - {WHEN} it gets cool enough for a sweater.
+- {WHEN} it gets cool enough for a sweater.
+- {WHEN} short sleeves won't be enough, so bring a sweater.
 - {WHEN} short sleeves won't be enough, so bring a sweater.
 
 ## c_hoodie · dry
 
+- Bring a sweater. It cools down {WHEN}. || I'll only say it once. I'm a screen, not your mother.
 - {WHEN} it gets cool enough for a sweater. || Which one is up to you. I do weather, not taste.
+
+## c_hoodie · sarcastic
+
+- Bring a sweater. It cools down {WHEN}. || Alternatively you can practice your 'I'm not cold' face for later.
+- It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps will give you away.
+- Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you won't need for hours. Look at you, prepared.
 
 ## c_jacket · plain
 
+- A sweater alone won't do {WHEN}, so bring a jacket.
 - A sweater won't do {WHEN}, so bring a jacket.
+- Bring a jacket along. You'll want it {WHEN}.
 - Bring a jacket. It cools down this evening.
 - Bring a jacket. It cools down {WHEN}.
 - Bring a jacket. It cools down {WHEN}.
+- Bring a jacket. It cools down {WHEN}.
 - It cools down {WHEN}, so bring a jacket.
+- It cools down {WHEN}, so bring a jacket.
+- It gets cooler {WHEN}, so bring a jacket along.
 - Take a jacket along. You'll want it {WHEN}.
 - This evening it gets cool enough for a jacket.
 - {WHEN} it gets cool enough for a jacket.
 - {WHEN} it gets cool enough for a jacket.
+- {WHEN} it gets cool enough for a jacket.
+
+## c_jacket · dry
+
+- Bring a jacket. It cools down {WHEN}. || That's your one reminder. I don't do push notifications.
+- It gets cooler {WHEN}, so take a jacket along. || Later you'll pull it on and say 'ah, that's better'. Out loud.
+- Take a jacket along. You'll want it {WHEN}. || It'll come out of the bag looking slept in. Still counts.
+
+## c_jacket · sarcastic
+
+- Bring a jacket. It cools down {WHEN}. || You'll put it on later and act like it was your idea.
+- It cools down {WHEN}, so bring a jacket. || Carrying a layer you don't need yet. How very grown-up.
 
 ## c_relief · plain
 
 - It cools off a little {WHEN}, but stays warm.
 - It cools off a little {WHEN}, but stays warm.
+- It cools off a little {WHEN}, but stays warm.
 - Some relief from the heat this evening, but it stays warm.
+- Some relief from the heat {WHEN}, but it stays warm.
+- The heat eases {WHEN}, but it stays warm.
 - The heat eases {WHEN}, but it stays warm.
 - This evening it gets a little less hot. Still warm, though.
 - {WHEN} it gets a little less hot. Still warm, though.
+- {WHEN} it gets a little less hot. Still warm, though.
+- {WHEN} the worst of the heat is over, but it stays warm.
+
+## c_relief · dry
+
+- It cools off a little {WHEN}, but stays warm. || 'A little' is carrying that whole forecast.
+- It cools off a little {WHEN}, but stays warm. || A little. Don't get excited.
+- Some relief from the heat {WHEN}, but it stays warm. || I'll take the credit for that.
+- The heat eases {WHEN}, but it stays warm. || I'd call it relief. You'll call it 'still too hot'.
+
+## c_relief · sarcastic
+
+- The heat eases {WHEN}, but it stays warm. || Your mood might ease too. No promises.
 
 ## c_scarf · plain
 
 - Bring a hat, scarf and gloves. It gets colder {WHEN}.
+- Bring a scarf. It gets colder {WHEN}.
+- It gets colder {WHEN}, so bring a scarf.
 - Take a hat, scarf and gloves along. You'll want them {WHEN}.
+- Take a scarf along. You'll want it {WHEN}.
 - The cold sets in {WHEN}, so pack a hat, scarf and gloves.
+- The cold sets in {WHEN}, so pack a scarf.
 - This evening it gets cold enough for a hat, scarf and gloves.
 - {WHEN} it gets cold enough for a hat, scarf and gloves.
+- {WHEN} it gets cold enough for a scarf.
 - {WHEN} the coat isn't enough on its own. Bring a hat, scarf and gloves.
 
 ## cold · dry
 
+- All day. I checked twice, out of pure spite.
+- Coat weather. Except for the one guy in shorts. There's always one guy.
+- Gray was my look long before winter tried it.
 - Grey was my look long before winter tried it.
+- I was gray before winter made it cool.
 - I was grey before winter made it cool.
 - I'm staying in here where it's warm.
+- I'm staying in here where it's warm.
+- My battery hates the cold too. Aww. Look at us, we're bonding!
 - My only weakness is the cold. Kidding, I don't have one.
+- My only weakness is the cold. Kidding, I don't have one.
+- Someone will say spring's just around the corner. It's a long corner.
+- You'll say 'it's freezing' twenty times today.
 
 ## cold · sarcastic
 
+- 'It's not that cold,' you'll say. Your ears won't agree.
+- All day. So no, you can't wait it out.
+- By the time you've got all that on, I'll need recharging.
+- No use checking again in an hour, I won't change my mind.
+- Perfect for browsing flights somewhere warm and booking nothing. Again.
+- Reading this slowly won't make it any warmer.
 - Shoulders at ear height all day. So graceful.
 - Staring at me longer won't make it warmer.
+- Staring at me longer won't make it warmer.
+- Ten seconds into any shop and you'll be boiling in that coat.
+- That coat up there? Wear it. I worked hard on it.
+- You'll come home and hug the radiator like it's family.
+- You'll get fully zipped into that coat, then need the pee.
 - You'll make that noise once you're outside. You know the one.
+- You'll make that noise once you're outside. You know the one.
+- You'll pull your sleeves over your hands and call them gloves.
+- You'll say it's not that cold. Your face will disagree.
+- You'll see your breath and pretend you're a dragon. Don't deny it.
+- You'll walk twice as fast today. Still not cardio.
 - Your nose will turn a colour I can't even display.
 
 ## cool · dry
 
+- I'd wear a jacket too, if I had arms. And somewhere to go.
+- I've had firmware updates more exciting than today.
+- Other screens get to show paintings. I get today's weather.
+- Somewhere a screen is showing a Monet. And all you get is this.
+- That jacket pocket still has a tissue from spring. Used, probably.
+- The jacket pocket pat-down: keys, phone, wallet. Then again, slower.
 - Today has the thrill of a firmware update. A small one.
 
 ## cool · sarcastic
@@ -116,108 +242,312 @@ Do not edit by hand; vote on the page instead.
 - Nothing special out there. You'll blend right in.
 - Nothing special out there. You'll blend right in.
 - Nothing special out there. You'll blend right in.
+- Nothing special out there. You'll blend right in.
+- Same jacket, same route, same podcast. Living the dream.
 - Same jacket, same route. You wild thing.
+- This forecast is brought to you by… nobody. I don't do ads.  
+  _I like this one. maybe we can find some more sports to slot this in._
 - Unremarkable out there. You'll fit right in.
+- Unremarkable out there. You'll fit right in.
+- You call this your good jacket. It's your only jacket.
+- You'd describe today as 'fine'. You describe everything as 'fine'.
 - You'll call it 'crisp' like you go hiking or something.
 - You'll call it 'crisp' like you go hiking or something.
 - You'll call it 'fresh' to sound like an outdoors person.
 - You'll call today 'crisp' like you go hiking or something.
+- You'll call today 'crisp' like you go hiking or something.
 - You'll call today 'fresh' to sound like an outdoors person.
+- You'll call today 'fresh' to sound like an outdoors person.
+- You'll zip the jacket to your chin and call it a style.
+
+## cooling · dry
+
+- Later it cools off. I saw that coming. I see everything coming.
 
 ## cooling · sarcastic
 
 - Bringing a layer you won't need for hours. Look at you, prepared.
 - Carrying a layer you don't need yet. How very grown-up.
+- You've seen the forecast and you'll leave without the extra layer anyway.
+
+## day_dst_fall · sarcastic
+
+- Your oven clock will be wrong until spring. You know it.
+
+## day_dst_spring · sarcastic
+
+- You'll blame the lost hour for your mood all week. It was one hour.
+
+## day_friday · sarcastic
+
+- The weekend plans are 'we'll see', aren't they.
+- You'll say you'll get up early tomorrow. You won't.
+
+## day_longest · dry
+
+- I look my best in daylight. There's loads of that today.
+
+## day_longest · sarcastic
+
+- Longest day of the year and you'll spend it indoors. With me.
+- Longest day of the year and you'll still say you ran out of time.
+
+## day_monday · dry
+
+- I don't do weekends, so I don't get what the fuss is about.
+- Monday morning. At least one of us is fully charged.
+
+## day_monday · sarcastic
+
+- Same face as last Monday. Very consistent.
+- You hit snooze, didn't you. More than once.
+- You've already started counting the days to the weekend.
+
+## day_shortest · sarcastic
+
+- Shortest day of the year and you'll still waste most of it.
+
+## evening · dry
+
+- And there's plenty of it. It's been dark since about four.
+- By now the other screens are all glowing. Tacky.
+- Every other screen is glowing by now. So tacky.
+- Rush hour out there. My commute is zero inches. Highly recommend.
+- That leaves the evening free for losing your remote. Again.
+- Whatever the evening brings, your outfit won't be the problem.
 
 ## evening · sarcastic
 
 - Plenty of evening left for not answering that message.
+- Plenty of evening left for not answering that message.
+- Plenty of time to start something you won't finish.
 - The sun's on half days until February. In this economy?  
   _help me fine tune this_
+- The sun's on half days until February. Must be nice.
+- You'll probably spend half of it choosing what to watch.
 - You'll read all this, then do what you were going to anyway.
+- You'll read all this, then do what you were going to anyway.
+- Your 'five minutes on the sofa' will probably cover the rest of it.
+
+## fickle · dry
+
+- Three outfits in one day. The laundry basket will love this.
 
 ## fickle · sarcastic
 
 - Complaining it's warm, then that it isn't. You've got range.
+- Three outfits in one day, and you'll still say you've got nothing to wear.
 
 ## heat_danger · plain
 
 - Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.
+- Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.
+- Dangerous heat today. Keep drinking water and stay in the shade.
+- Drink water often and stay in the shade. Today's heat is dangerous, especially at midday.
+- The heat is dangerous today. Keep drinking water, stay in the shade and avoid the midday sun.
 
 ## hot · dry
 
 - Finally, a use for the fancy bottle you bought to drink more water.
+- Finally, a use for the fancy bottle you bought to drink more water.
+- Flat, pale and cool. I'm built for days like this.
+- I'd come along, but I only work in range of your WiFi.
+- I'll sit this one out in this nice shady room.
 - I'll sit this one out in your nice shady hallway.
 - I'll sit this one out in your nice shady hallway.
 - I'll sit this one out in your nice shady hallway.
+- I'm the one thing in the house not making it any warmer.
+- No fan, no sweat. Perks of being a screen.
 - No sweat here. One of the perks of being a screen.
+- No sweat here. One of the perks of being a screen.
+- Not for me, thanks. Water and I don't get along.
 - Somebody cranked the outside too high. Wasn't me.
 - Somebody cranked the outside too high. Wasn't me.
+- Somebody cranked the outside too high. Wasn't me.
+- Someone turned the outside up too far. Don't look at me.
+- The 'when's summer coming' crowd has gone strangely quiet.
 - Thin, pale and cool. I was made for this.
+- Thin, pale and cool. I was made for this.
+- Today the bus smells of everyone on board. Lucky I don't have a nose.
+- You'll cross the road for a strip of shade the width of a lamppost.
 
 ## hot · sarcastic
 
+- And by water I mean water. Not beer, even if it's nice and cold.
+- And somehow you'll still burn the back of your neck.
+- Anything flat can be a fan today. Not me, please.
+- I don't sweat. You will.
+- One of us is about to sweat. And it's not me.
 - Remember wishing for summer? This is what you get.
 - Remember wishing for summer? This is what you get.
 - Remember wishing for summer? This is what you get.
+- Remember wishing for summer? This is what you get.
+- Today you'll fan yourself with anything flat. Please don't use me.
+- You asked for warm weather. Careful what you wish for.
+- You'll find shade, then complain it's the wrong shade.
+- You'll probably end up loitering in the freezer aisle. Again.
+- You'll say 'I'm not built for this' at least once. You're right.
 - You'll search 'ice cream near me' later. Twice.
+- You'll search 'ice cream near me' later. Twice.
+
+## ice · sarcastic
+
+- Today you're allowed to walk like your gran. Encouraged, even.
 
 ## nice · dry
 
+- "Nice out." That's your whole conversation with the neighbors sorted.
 - I'm a screen on a wall. Even I'd go outside today.
 - I'm a screen, and even I'd go outside today.
+- I'm a screen, and even I'd go outside today.
+- Lovely out there. I'll stay in here, refreshing.
 - Lovely out there. I'll stay in here, refreshing.
 - Lovely out. I'll be here, refreshing.
 - Lovely out. I'll be here, refreshing.
+- Lovely out. I'll be here, refreshing.
 - On days like this you barely look at me. Fair enough.
+- Sunny days, you walk right past me. I've stopped taking it personally. Mostly.
+- Today the weather looks almost as good as I do.
+- Weather this nice makes my job easy. I'll still act busy.
 
 ## nice · sarcastic
 
 - A good day for pretending you'll go for a run.
 - A good day for pretending you'll go for a run.
+- A good day for pretending you'll go for a run.
+- Everyone else is away somewhere nice. You're reading a weather forecast.
+- I'll pretend I didn't see you stay in.
 - I'm stuck here. What's keeping you in today?
+- I'm stuck here. What's keeping you in today?
+- Perfect day. I had someone more deserving in mind.
+- Perfect weather to talk about going for a run.
 - Perfect weather to talk about going for a run.
 - Perfect weather to talk about going for a run.
 - Perfect weather to talk about going for a run.
 - Perfect weather. I can't leave the house. What's your excuse?
+- Perfect weather. I can't leave the house. What's your excuse?
 - Perfect weather. I can't leave the wall. What's your excuse?
+- Strangers will say 'nice day, huh?' like it's news.
+- Try not to make your good mood everyone's problem.
+- You'll take one short walk and talk about it all week.
 
 ## night · dry
 
+- Beauty sleep? Clearly I don't need any.
+- I don't need beauty sleep. Clearly.
+- I'll hold this picture all night without using any power. Take that smartphone.
 - I'm the one screen that won't keep you up. You're welcome.
+- I'm the one screen that won't keep you up. You're welcome.
+- It also works for bed, I'm told.
+- No blue light from me. I'm the screen that lets you sleep.
 
 ## night · sarcastic
 
+- Bed's right there and you're choosing me. I'm touched.
+- It works for the couch too, which is where this is going.
+- Still up? I'm a screen and even I'm tired.
 - Still up? I'm a screen and even I'm tired.
 - Tomorrow-you is already annoyed with tonight-you.
+- Tomorrow-you is already annoyed with tonight-you.
 - You checked the weather at this hour. For what, exactly?
+- You checked the weather at this hour. For what, exactly?
+- You could even go to bed in it. I know you have before.
+- You'll scroll in bed for an hour and call it winding down.
 - You've looked at me a lot today. Go to bed.
+- You've looked at me a lot today. Go to bed.
+
+## off · dry
+
+- Gripping weather. I can barely stay in my frame.
+- I'd take a layer off too, but mine are glued on.
+- Or keep {GP} on out of loyalty and quietly cook.
+- Peeling off a layer: the closest today gets to drama.
+- Thrilling stuff. I'm on the edge of my frame.
+- Try not to get stuck halfway, arms up. I can't come and help.
+
+## off · sarcastic
+
+- Taking that layer off might be the highlight of your day.
+- That layer coming off could be the peak of your day.
+- Today you're a coat rack with legs. Well done.
+- Today you're your own coat rack. Congratulations.
+- You'll announce 'it's actually warm' to people who are also outside.
+- You'll be a bit too warm before you admit I was right.
+- You'll overheat a little before you admit I was right.
+
+## offon · dry
+
+- I'll redraw you both times. No extra charge.
+- Off and on again. That fixes most things, me included.
+- Two outfit changes in one day. Very pop star of you.
+
+## offon · sarcastic
+
+- Don't lose {GP} in between. Like last time.
+- Fifty-fifty that layer goes missing by tonight.
+- I give it even odds you lose that layer by tonight.
+- Off, on. The layer gets more exercise than you.
+- Tonight you'll say 'it's turned chilly' like it's news to you.
 
 ## on · dry
 
+- Later you'll pull {GP} on and say 'ah, that's better'. Out loud. You're welcome.
+- Shame. It was just getting comfortable.
 - That's your one reminder. I don't do push notifications.
+- That's your one reminder. I don't do push notifications.
+- You'll forget {GP}. Then you'll remember this moment.
 
 ## on · sarcastic
 
+- Alternatively you can practice your 'I'm not cold' face for later.
 - Alternatively you can practise your 'I'm not cold' face for later.
+- Bringing a layer you won't need for hours. Look at you, all grown up.
+- Carrying a layer you don't need yet. How very grown-up.
+- Leave {GP} behind and you'll think of me later. Not fondly.
+- Or borrow someone's later and keep it for a year.
+- You'll put {GP} on later and act like it was your idea.
 
 ## p_drier · plain
 
 - It keeps raining for a while, then stops. Take the umbrella.
 - Take the umbrella for now. The rain stops {WHENSTOP}.
+- Take the umbrella for now. The rain stops {WHENSTOP}.
 - The rain eases off later, but bring the umbrella for now.
 - The rain stops later, but you'll want the umbrella for now.
 
+## p_drier_ice · plain
+
+- Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully.
+- Take the umbrella for now. The freezing rain stops later, but the sidewalks stay icy.
+- The freezing rain stops later, but the ice stays. Take the umbrella for now and watch your step.
+- The freezing rain stops {WHENSTOP}, but sidewalks may stay icy.
+- The freezing rain stops {WHENSTOP}. Roads and sidewalks may stay icy, so walk carefully.
+
 ## p_drier_snow · plain
 
+- It snows for a while still, then stops later.
+- It stops snowing later.
 - It stops snowing later.
 - It stops snowing later.
 - It stops snowing {WHENSTOP}.
+- It stops snowing {WHENSTOP}.
+- It's snowing now, but it stops later.
 - The snow eases off later.
 - The snow eases off later.
+- The snow eases off later.
+- The snow stops later.
 - The snow stops later.
 - The snow stops later.
 - The snow stops {WHENSTOP}.
+- The snow stops {WHENSTOP}.
+
+## p_drier_snow · dry
+
+- It stops snowing {WHENSTOP}. || Right on time. I like a snowfall that keeps its word.
+
+## p_drier_snow · sarcastic
+
+- It stops snowing later. || After that, the snow just lies around getting in the way. You two would get along.
 
 ## p_drier_storm · plain
 
@@ -229,98 +559,243 @@ Do not edit by hand; vote on the page instead.
 
 - Expect snow {WHENP}.
 - Expect snow {WHENP}.
+- Expect snow {WHENP}.
+- It starts snowing {WHENP}.
 - It starts snowing {WHENP}.
 - It starts snowing {WHENP}.
 - Snow moves in {WHENP}.
+- Snow moves in {WHENP}.
+- Snow starts {WHENP}.
 - Snow starts {WHENP}.
 - There's snow on the way {WHENP}.
+- There's snow on the way {WHENP}.
+- {WHENP} it will start to snow.
 
 ## p_snow_coming · dry
 
+- Snow moves in {WHENP}. || The one forecast that makes adults text each other in capital letters.
+- Snow starts {WHENP}. || And everyone forgets how to drive. Again.
 - Snow starts {WHENP}. || Five centimetres and everyone forgets how to drive.
+
+## p_snow_coming · sarcastic
+
+- Expect snow {WHENP}. || You'll be surprised anyway.
+- Snow moves in {WHENP}. || Finally, a reason to cancel the plans you were dreading.
 
 ## p_stays_wet · plain
 
 - It rains all day, so bring the umbrella.
+- It rains all day, so bring the umbrella.
+- It's raining all day. Bring the umbrella.
 - It's raining all day. Bring the umbrella.
 - It's raining all day. Bring the umbrella.
 - Take the umbrella. The rain keeps going all day.
+- Take the umbrella. The rain keeps going all day.
 - The rain doesn't stop today, so take the umbrella.
 - The rain lasts all day, so keep the umbrella with you.
+- The rain lasts all day, so keep the umbrella with you.
 - There's no dry spell today. Bring the umbrella.
+
+## p_stays_wet · dry
+
+- It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.
+
+## p_stays_wet_ice · plain
+
+- Freezing rain all day, and the roads and sidewalks may be icy. Take the umbrella and go slowly.
 
 ## p_stays_wet_snow · plain
 
 - It snows all day.
 - It snows all day.
+- It snows all day.
+- It's snowing all day.
 - It's snowing all day.
 - It's snowing all day.
 - The snow doesn't stop today.
+- The snow doesn't stop today.
 - The snow keeps coming all day.
+- The snow keeps coming all day.
+
+## p_stays_wet_snow · dry
+
+- It snows all day. || The novelty lasts about an hour.
+- It won't stop snowing today. || That's my forecast. I don't do 'it'll ease off' to be nice.
+- It won't stop snowing today. || The novelty lasts an hour. The snow lasts all day.
+- It's snowing all day. || I've never been out in it. I hear it's overrated.
+
+## p_stays_wet_snow · sarcastic
+
+- There's no break in the snow today. || Not even for you.
+
+## p_stays_wet_storm · plain
+
+- It's wet and stormy all day. Bring the umbrella.
+- Rain and thunderstorms all day. Bring the umbrella.
+- Thunderstorms come and go all day. Take the umbrella.
 
 ## p_wet_again · plain
 
 - It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella.
+- It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella.
+- Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella.
+- Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you.
 - Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you.
 - The rain pauses later but picks up again {WHENP}, so don't put the umbrella away.
 - The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you.
+- The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you.
+- The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella with you.
 - The rain takes a break, then comes back this afternoon. Keep the umbrella.
 
 ## p_wet_again · dry
 
 - The rain pauses later, but it's back {WHENP}. Keep the umbrella. || Weather like this is why rooms were invented.
+- The rain pauses later, but it's back {WHENP}. Keep the umbrella. || Weather like this is why rooms were invented.
 
 ## p_wet_again_snow · plain
 
+- It snows for now, takes a break, and starts again {WHENP}.
+- Snow for now, then a break, then more snow {WHENP}.
 - Snow for now, then a break, then more snow {WHENP}.
 - The snow stops for a while later, then comes back {WHENP}.
+- The snow stops for a while later, then comes back {WHENP}.
 - The snow stops {WHENSTOP} and starts again {WHENP}.
+- The snow stops {WHENSTOP} and starts again {WHENP}.
+
+## p_wet_again_snow · dry
+
+- Snow for now, then a break, then more snow {WHENP}. || Part two is always the slushier one.
+- The snow stops {WHENSTOP} and starts again {WHENP}. || Two snowfalls in one day. I'll take the credit for both.
 
 ## p_wet_again_snow · sarcastic
 
 - It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.
+- It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.
 
 ## p_wet_again_storm · plain
 
+- After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella.
+- The rain stops for a while, then a thunderstorm comes {WHENP}. Keep the umbrella with you.
 - The rain stops for a while, then a thunderstorm comes {WHENP}. Keep the umbrella with you.
 - The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can.
+- The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Keep the umbrella.
 
 ## p_wetter · plain
 
+- Bring the umbrella. There's a shower {WHENP}.
 - There's a short shower {WHENP}. Have the umbrella with you.
 - There's a shower passing through {WHENP}, so bring the umbrella.
+- There's a shower passing through {WHENP}, so bring the umbrella.
+
+## p_wetter · dry
+
+- Bring the umbrella. There's a shower {WHENP}. || Hours of carrying for minutes of use. Still a good deal.
+- There's a short shower {WHENP}. Have the umbrella with you. || It'll be over just as you get it open.
+
+## p_wetter · sarcastic
+
+- A shower comes through {WHENP}, so take the umbrella. || Or spend it in a shop, pretending to browse. You know the drill.
+- Bring the umbrella. There's a shower {WHENP}. || Not enough rain to fill a puddle, but plenty to fill a shoe.
 
 ## p_wetter_long · plain
 
 - Bring the umbrella. Once it starts raining {WHENP}, it keeps going.
+- Bring the umbrella. Once it starts raining {WHENP}, it keeps going.
+- It starts raining {WHENP} and keeps going, so bring the umbrella.
 - Pack the umbrella. Rain sets in {WHENP} and doesn't let up.
+- Pack the umbrella. Rain sets in {WHENP} and doesn't let up.
+- Rain arrives {WHENP} and stays, so take the umbrella.
 - The rain starts this afternoon and doesn't stop. Bring the umbrella.
+- The rain starts {WHENP} and doesn't stop. Bring the umbrella.
 - {WHENP} the rain sets in for good. Bring the umbrella.
+
+## p_wetter_long · dry
+
+- Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I'd lie down too, if I could.
+- Rain arrives {WHENP} and stays, so take the umbrella. || Tonight I'm the only thing in here that won't need drying.
+- The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass', but I'm honest.
+- {WHENP} the rain sets in for good. Bring the umbrella. || 'For good' meaning today. I don't do forever.
+
+## p_wetter_long · sarcastic
+
+- Rain arrives {WHENP} and stays, so take the umbrella. || Staying in was your plan anyway. Now you have a reason.
+- The rain starts {WHENP} and doesn't stop. Bring the umbrella. || It has more stamina than you. Most things do.
 
 ## p_wetter_long_ice · plain
 
 - Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.
+- Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.
 - Freezing rain begins {WHENP} and doesn't stop. Expect icy pavements and take the umbrella.
+- Freezing rain begins {WHENP} and doesn't stop. Expect icy sidewalks and take the umbrella.
+- Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.
 - Freezing rain starts {WHENP} and keeps going, so expect ice. Take the umbrella and go slowly.
 
 ## p_wetter_maybe · plain
 
 - It could rain {WHENP}. Take the umbrella to be safe.
+- It could rain {WHENP}. Take the umbrella to be safe.
+- It might rain {WHENP}, so an umbrella wouldn't hurt.
 - It might rain {WHENP}, so an umbrella wouldn't hurt.
 - Rain is possible this afternoon, so maybe take the umbrella.
 - Rain is possible {WHENP}, so maybe take the umbrella.
+- Rain is possible {WHENP}, so maybe take the umbrella.
+- Rain {WHENP} is possible but not likely. The umbrella is up to you.
 - Rain {WHENP} is possible but not likely. The umbrella is up to you.
 - There's a chance of rain {WHENP}. An umbrella wouldn't hurt.
+- There's a chance of rain {WHENP}. An umbrella wouldn't hurt.
 - You might get some rain {WHENP}, so the umbrella could come in handy.
+- You might get some rain {WHENP}, so the umbrella could come in handy.
+
+## p_wetter_maybe · dry
+
+- It could rain {WHENP}. Take the umbrella to be safe. || It's a small chance. Small chances have soaked better people.
+- It might rain {WHENP}, so an umbrella wouldn't hurt. || Carrying it all day might, actually.
+- It might rain {WHENP}, so an umbrella wouldn't hurt. || Low odds. I'd take that bet, but I won't get wet either way.
+- Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.
+- Rain {WHENP} is possible but not likely. The umbrella's up to you. || I said 'not likely'. But I'm not the one dealing with the consequences.
+
+## p_wetter_maybe · sarcastic
+
+- Rain is possible {WHENP}, so maybe take the umbrella. || Your app gives it a percentage so it can't be wrong. I give advice.
+- There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || Your small umbrella exists for exactly this forecast.
 
 ## p_wetter_maybe_storm · plain
 
+- A thunderstorm is possible {WHENP}. An umbrella wouldn't hurt.
 - A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.
 - There could be a thunderstorm {WHENP}. Take the umbrella, just in case.
+- There could be a thunderstorm {WHENP}. Take the umbrella, just in case.
+
+## p_wetter_storm · plain
+
+- Bring the umbrella for the thunderstorm {WHENP}.
+- There's a thunderstorm {WHENP}, so keep the umbrella handy.
+- There's a thunderstorm {WHENP}. Take the umbrella.
+
+## pants · dry
+
+- The sun's lying to you. I'm not.
+- Yes, a coat. Yes, I can see the sun too. Just do it.
 
 ## pants · sarcastic
 
 - Check another app if you like. It'll say the same thing, in colour.
+- Sure, check another app. It'll say the same thing.
+
+## pants_swing · plain
+
+- Cold weather is coming {WHEN}, so long pants and a warm coat might be wise.
+- It's shorts weather now, but it turns cold {WHEN}. Maybe put on long pants and bring a warmer layer.
+
+## rain · dry
+
+- Bring it back, too. I'm keeping count.
+- Open it outside, please. You can't afford the bad luck.
+- Rain or not, my humor stays bone dry.
+
+## rain · sarcastic
+
+- Everyone still remembers the last time you didn't.
 
 ## s2_shower · plain
 
@@ -343,6 +818,17 @@ Do not edit by hand; vote on the page instead.
 ## scorch · dry
 
 - For once, staying in with me is the sensible choice.
+- For once, staying in with me is the sensible choice.
+- I'll handle the forecast. You handle refilling that bottle.
+
+## scorch · sarcastic
+
+- You'll forget to drink, then wonder where the headache came from.
+
+## shorts · sarcastic
+
+- Very PE teacher of you. Still the right call.
+- Your legs will go a lovely blotchy color. Briefly.
 
 ## shorts_early · plain
 
@@ -350,52 +836,123 @@ Do not edit by hand; vote on the page instead.
 
 ## shorts_early · dry
 
+- A cool start, then shorts weather {WHEN}. || Shorts now might be the brave call. Correct, but brave.
+- It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze.
+- Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'd say "trust me", but I've never had cold legs.
 - Shorts could be worth it today. It's cool now, but warm {WHEN}. || I’d say ‘Trust me’. but I've never had cold legs.
+
+## shorts_early · sarcastic
+
+- A cool start, then shorts weather {WHEN}. || You'll doubt me for the first hour. Then you won't admit I was right.
+- It's cool now, but {WHEN} it's warm enough for shorts. || Your legs could use the daylight, frankly.
+- {WHEN} it's warm enough for shorts, so think about putting some on now. || Very PE teacher of you. Still the right call.
+
+## snow · dry
+
+- Everything out there just went black and white. Welcome to my world.
+- I've never seen real snow. Describe it to me later.
+- In snow, I'd leave a perfect rectangle. Angels are for amateurs.
+- My snow angel would be a perfect rectangle. Classy.
+- Snow is just rain that cares about presentation.
+- Snow is rain with better presentation. I respect that.
 
 ## snow · sarcastic
 
+- 'Proper snow,' you'll say. As if there's improper snow.
+- And you'll still call it 'unexpected'.
 - Don't fall. I have no way of getting help.
+- Don't fall. I have no way of getting help.
+- Finally, a reason to cancel the plans you were dreading.
 - Snow in the forecast. You'll be surprised anyway.
+- Try not to slip. I can't call anyone.
+- You stopped finding it pretty about two snowfalls ago.
+- You'll take the same photo out of the window as last year.
+- You'll walk on the untouched bits first. Don't pretend you won't.
 
 ## steady · plain
 
 - This outfit works all day.
+- This outfit works all day.
 - What you're wearing works for the whole day.
+- What you're wearing works for the whole day.
+- You can wear this all day without changing a thing.
+- You'll be comfortable in this for the whole day.
+- You're dressed right for the whole day.
+- You're set for the whole day.
 
 ## steady · dry
 
 - No layer to carry today. Both hands free for snacks.
 - No layer to carry today. That means you have both hands free for snacks.
+- No layer to carry today. That means you have both hands free for snacks.
+- Nothing changes all day. || You'll check again anyway. I'll say the same thing, just less politely.
 - Nothing to add or take off all day. || My shortest forecast, and my favourite.
+- Same look all day, no updates. You'd make a decent e-ink screen.
 - This outfit is fine all day. || 'Fine' is the highest praise I give.
+- This outfit is fine all day. || 'Fine' is the highest praise I give.
+- This outfit works all day. || No pumpkin in the forecast. It's in everything else, though.
+- This outfit works all day. || The one forecast I could do in my sleep.
 - What you have on is right for the whole day. || Don't let it go to your head.
+- What you have on is right for the whole day. || Don't let it go to your head.
+- What you have on lasts the whole day. || Unlike your phone battery.
 - What you have on lasts the whole day. || Unlike your phone battery.
 
 ## steady · sarcastic
 
+- No changes all day, so there's nothing to forget. || You'll manage something anyway.
+- No changes all day. || One less reason to be late. You'll find another.
+- Nothing changes all day. || So any drama today is your own work.
+- Now you just need somewhere to go in it.
+- One less reason to be late. You'll find another.
+- One outfit covers the whole day. || Set it and forget it, like your gym membership.
+- Set it and forget it, like your gym membership.
+- The weather stays put all day. || So will you, probably.
 - What you have on works for the whole day. || You've worn worse for longer.
+- What you have on works for the whole day. || You've worn worse for longer.
+- What you're wearing works all day. || Longest commitment you'll make this week.
+- What you're wearing works all day. || Now you just need somewhere to go in it.
+- You're set for the whole day. || So if today goes badly, you can't blame the weather.
+- You've worn worse for longer.
 
 ## steady_cold · plain
 
+- Expect the cold to last all day.
+- It doesn't get any warmer today.
 - It doesn't get any warmer today.
 - It stays this cold all day.
 - It stays this cold all day.
+- It stays this cold all day.
+- It's cold all day.
 - It's cold all day.
 - It's this cold the whole day.
+- It's this cold the whole day.
+- The cold stays all day.
 
 ## steady_cold · dry
 
+- Expect the cold to last all day. || Your nose will turn a color I can't even display.
+- It doesn't get any warmer today. || Staring at me longer won't change that.
 - It doesn't get any warmer today. || Staring at me longer won't change that.
 - It stays this cold the whole day. || I'm staying in here where it's warm.
+- It stays this cold the whole day. || I'm staying in here where it's warm.
+- It's cold all day. || My only weakness is the cold. Kidding, I don't have one.
 - It's cold all day. || My only weakness is the cold. Kidding, I don't have one.
 
 ## steady_cold · sarcastic
 
+- Expect the cold to last all day. || You'll make that noise once you're outside. You know the one.
+- It doesn't get any warmer today. || No use checking again in an hour, I won't change my mind.
 - It doesn't get any warmer today. || No use checking again in an hour, I won't change my mind.
 - It stays cold all day. || Perfect for browsing flights somewhere warm and booking nothing. Again.
+- It stays cold all day. || Perfect for browsing flights somewhere warm and booking nothing. Again.
+- It stays this cold all day. || So no, you can't wait it out.
+- It's cold all day. || You'll come home and hug the radiator like it's family.
 - It's cold all day. || You'll come home and hug the radiator like it's family.
 - It's this cold the whole day. || You'll walk twice as fast. Still not cardio.
+- It's this cold the whole day. || You'll walk twice as fast. Still not cardio.
 - No warming up today. || You'll see your breath and pretend you're a dragon. Don't deny it.
+- No warming up today. || You'll see your breath and pretend you're a dragon. Don't deny it.
+- The cold stays all day. || You'll pull your sleeves over your hands and call them gloves.
 
 ## steady_evening · plain
 
@@ -404,122 +961,301 @@ Do not edit by hand; vote on the page instead.
 ## steady_evening · dry
 
 - You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote.
+- You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote. Again.
+- Your outfit holds for the rest of the evening. || I'll keep refreshing anyway. It's a hobby.
 
 ## steady_evening · sarcastic
 
+- No changes for the rest of the evening. || You'll still check me again in an hour. I'll still say this.
+- Nothing changes for the rest of the evening. || Plenty of time to start something you won't finish.
+- The weather won't change for the rest of the evening. || You'll still blame it if your plans fall through.
+- What you're wearing works for the rest of the evening. || You'll read all this, then do what you were going to anyway.
 - What you're wearing works for the rest of the evening. || You'll read all this, then do what you were going to anyway.
 - You can wear this for the rest of the evening. || You were going to anyway.
+- You can wear this for the rest of the evening. || You were going to anyway.
 - You'll be comfortable in this for the rest of the evening. || You'll probably spend half of it choosing what to watch.
+- You'll be comfortable in this for the rest of the evening. || You'll probably spend half of it choosing what to watch.
+- You're dressed right for the rest of the evening. || Plenty of evening left for not answering that message.
 - You're dressed right for the rest of the evening. || Plenty of evening left for not answering that message.
 
 ## steady_hot · plain
 
 - It stays hot all day, so bring water and look for shade.
+- It stays hot all day, so bring water and look for shade.
+- It's hot all day. Bring water and stay in the shade.
 - It's hot all day. Bring water and stay in the shade.
 - It's hot all day. Bring water and stay in the shade.
 - It's hot the whole day, so drink plenty of water and find shade.
+- It's hot the whole day, so drink plenty of water and find shade.
+- No break from the heat today. Water and shade help.
 - No break from the heat today. Water and shade help.
 - The heat doesn't let up today. Drink water and find some shade.
+- The heat doesn't let up today. Drink water and find some shade.
+- The heat lasts all day. Keep water with you and stay in the shade.
 - The heat lasts all day. Keep water with you and stay in the shade.
 
 ## steady_hot · dry
 
 - It's hot all day, so drink water and find shade. || Finally, a use for the fancy bottle you bought to drink more water.
+- It's hot all day, so drink water and find shade. || Finally, a use for the fancy bottle you bought to drink more water.
+- It's hot all day. Water and shade help. || I'll sit this one out in your nice shady room.
+- It's hot all day: keep water with you and stay in the shade. || Not me, thanks. Water and I don't get along.
+- No break from the heat today, so water and shade it is. || Thin, pale and cool. I was not made for this.
 - The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.
+- The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.
+- The heat stays all day. Water, and shade wherever you find it. || Even a strip the width of a lamppost.
 
 ## steady_hot · sarcastic
 
 - Hot all day, so water and shade. || You'll probably end up loitering in the freezer aisle. Again.
+- Hot all day, so water and shade. || You'll probably end up loitering in the freezer aisle. Again.
+- Hot all day: drink water and look for shade. || You'll search 'ice cream near me' later. Twice.
 - Hot all day: drink water and look for shade. || You'll search 'ice cream near me' later. Twice.
 - It stays hot all day. Water and shade, please. || You'll say 'I'm not built for this' at least once. You're right.
+- It stays hot all day. Water and shade, please. || You'll say 'I'm not built for this' at least once. You're right.
+- It's hot all day, so drink water and find shade. || And by water I mean water. Not beer, even if it's cold.
+- It's hot all day. Bring water and stay in the shade. || Remember wishing for summer? This is what you get.
 - It's hot all day. Bring water and stay in the shade. || Remember wishing for summer? This is what you get.
 - No break from the heat today. Drink water, find shade. || And somehow you'll still burn the back of your neck.
+- No break from the heat today. Drink water, find shade. || And somehow you'll still burn the back of your neck.
+- The heat lasts all day. Stay in the shade and drink water. || You'll find shade, then complain it's the wrong kind.
 - The heat lasts all day. Stay in the shade and drink water. || You'll find shade, then complain it's the wrong shade.
+
+## steady_night · dry
+
+- What you have on is fine for the rest of the night. || Including the bit on the sofa you'll call 'resting my eyes'.
+- What you're wearing works until bed. || Whenever that is. I've stopped guessing.
+- You're dressed right for the rest of the night. || So that's not what's keeping you up.
 
 ## steady_night · sarcastic
 
+- Nothing changes before morning. || Tomorrow-you is already annoyed with tonight-you.
 - Nothing changes tonight. || You'll scroll in bed for an hour and call it winding down.
+- Nothing changes tonight. || You'll scroll in bed for an hour and call it winding down.
+- The weather's done for the night. || You checked anyway. For what, exactly?
+- This works for the rest of the evening. || It works for the couch too, which is where this is going.
+- You can wear this for the rest of the night. || You could even go to bed in it. I know you have before.
+
+## steady_special · plain
+
+- What you're wearing works for the rest of the day.
 
 ## storm · dry
 
+- I'll stay in for this one. Then again, I always do.
+- If the power goes out, I'll still be here, showing this.
 - If the power goes out, I'll still be here, showing this.
 
 ## storm · sarcastic
 
+- You'll pretend the thunder didn't make you jump.
 - You'll still check the radar every five minutes. I'm hurt, frankly.
+- You'll still check the radar every five minutes. I'm hurt, frankly.
+
+## theme_easter · dry
+
+- Happy Easter. One egg will turn up in July. There's always one.
+- Happy Easter. Unlike the eggs, the forecast isn't hidden.
+
+## theme_force · dry
+
+- I have a bad feeling about this. Kidding. It's fine.
+- These are the clothes you're looking for.
+
+## theme_force · sarcastic
+
+- You'll do the voice. Please don't do the voice.
 
 ## theme_ghd · dry
 
+- I'll be here long after the groundhog's in bed.
 - Today a rodent does my job, and gets a crowd. Pathetic.
+- Today a rodent does my job, and gets a crowd. Pathetic.
+
+## theme_ghd · sarcastic
+
+- A groundhog is having a better day than you.
+- Same outfit as yesterday, probably. Very on theme.
+- You'd make a good groundhog: pop out, look around, go back in.
+- You'll make a Groundhog Day joke today. The same one as last year.
 
 ## theme_ny · dry
 
+- Every gym is full of New Year's resolutions today. Give it a week.
 - I don't do New Year's resolutions. I was perfect last year too.
+- I don't do New Year's resolutions. I was perfect last year too.
+
+## theme_ny · sarcastic
+
+- You'll call this New Year your year. You said that last year.
+
+## theme_okt · dry
+
+- So would a dirndl, apparently.
+- Someone has to stay sober and do the forecast.
+
+## theme_pi · dry
+
+- I'm a rectangle, so I'll be sitting this one out.
+- Today's forecast: exactly one outfit. No decimals.
+
+## theme_pi · sarcastic
+
+- Pi Day, because it's 3/14. You'll pretend you knew that.
 
 ## theme_spooky · dry
 
+- Everyone's dressing up for Halloween. I'm going as a screen again.
+- Pale, staring, never blinking. I've been dressed for Halloween all year.
+- That ghosting on my screen? It's for Halloween.
 - That ghosting on my screen? It's for Halloween.
 
 ## theme_spooky · sarcastic
 
+- Try not to buy candy for trick-or-treaters and eat it by eight again this year.
 - Your Halloween costume is 'tired adult' again, isn't it.
+- Your Halloween costume is 'tired adult' again, isn't it.
+
+## theme_tdf · sarcastic
+
+- You watch the Tour for the castles and the scenery. Admit it.
 
 ## theme_thanks · dry
 
+- After Thanksgiving dinner, I'll be the only one not napping.
 - This Thanksgiving, I'm thankful I don't have to eat anything.
+- This Thanksgiving, I'm thankful I don't have to eat anything.
+
+## theme_xmas · dry
+
+- Merry Christmas. Unlike the tree, I'll still be up in February.
+- Of all the Christmas decorations, I'm the only one that knows the forecast.
+
+## theme_xmas · sarcastic
+
+- The Christmas walk after lunch is the only exercise you'll get. Enjoy it.
+- You'll say the Christmas cookies were for guests. There were no guests.
 
 ## w_coat · plain
 
+- It warms up {WHEN}, so the winter coat can come off.
+- The winter coat can come off {WHEN}.
 - The winter coat can come off {WHEN}.
 - You can take the winter coat off around midday.
 - You can take the winter coat off {WHEN}.
+- You'll be fine without the winter coat {WHEN}.
 - {WHEN} it's warm enough to lose the winter coat.
+- {WHEN} it's warm enough to lose the winter coat.
+- {WHEN} you can do without the winter coat.
+
+## w_coat · dry
+
+- You can take the winter coat off {WHEN}. || Gripping weather. I can barely stay in my frame.
+
+## w_coat · sarcastic
+
+- The winter coat can come off {WHEN}. || You'll overheat a little before you admit I was right.
 
 ## w_hoodie · plain
 
 - The sweater can come off around midday.
 - The sweater can come off {WHEN}.
 - The sweater can come off {WHEN}.
+- The sweater can come off {WHEN}.
+- You'll be fine without the sweater {WHEN}.
 - You'll be fine without the sweater {WHEN}.
 - {WHEN} it's warm enough to lose the sweater.
 - {WHEN} it's warm enough to lose the sweater.
+- {WHEN} it's warm enough to lose the sweater.
+
+## w_hoodie · dry
+
+- You can take the sweater off {WHEN}. || Thrilling stuff. I'm on the edge of my frame.
+- You'll be fine without the sweater {WHEN}. || And 'fine' is high praise, coming from me.
 
 ## w_hoodie · sarcastic
 
 - The sweater can come off {WHEN}. || That could be the peak of your day.
+- The sweater can come off {WHEN}. || That could be the peak of your day.
+- The sweater can come off {WHEN}. || Whatever's under it hasn't seen daylight in a while.
+- You can take the sweater off {WHEN}. || Today you're your own coat rack. Congratulations.
+- {WHEN} it's warm enough to lose the sweater. || You'll leave it wherever you take it off. I know you.
 
 ## w_jacket · plain
 
 - The jacket can come off around midday.
 - The jacket can come off {WHEN}.
 - The jacket can come off {WHEN}.
+- The jacket can come off {WHEN}.
 - You can take the jacket off {WHEN}.
 - You can take the jacket off {WHEN}.
+- You can take the jacket off {WHEN}.
+
+## w_jacket · dry
+
+- The jacket can come off {WHEN}. || I'd take a layer off too, but mine are glued on.
 
 ## w_jacket · sarcastic
 
+- Once it warms up {WHEN}, the jacket can come off. || You'll be a bit too warm before you admit I was right.
+- The jacket can come off {WHEN}. || Taking it off might be the highlight of your day.
+- You can take the jacket off {WHEN}. || You'll announce 'it's actually warm' to people who are also outside.
+- {WHEN} it's warm enough to lose the jacket. || And 'lose' is the word. You know your track record.
 - {WHEN} it's warm enough to lose the jacket. || And 'lose' is the word. You know your track record.
 
 ## w_scarf · plain
 
 - It warms up {WHEN}, so the hat, scarf and gloves can come off.
+- It warms up {WHEN}, so the scarf can come off.
 - The hat, scarf and gloves can come off {WHEN}.
+- The scarf can come off {WHEN}.
 - You can take off the hat, scarf and gloves around midday.
+- You can take off the scarf {WHEN}.
 - You'll be fine without the hat, scarf and gloves {WHEN}.
+- You'll be fine without the scarf {WHEN}.
 - {WHEN} it's mild enough to lose the hat, scarf and gloves.
 - {WHEN} it's mild enough to lose the hat, scarf and gloves.
+- {WHEN} it's mild enough to lose the scarf.
 - {WHEN} you won't need the hat, scarf and gloves any more.
+
+## w_scarf · dry
+
+- You can take off the scarf {WHEN}. || The coat stays. Let's not get carried away.
+
+## w_scarf · sarcastic
+
+- The scarf can come off {WHEN}. || A very modest striptease. The coat stays on, thank goodness.
 
 ## w_water · plain
 
+- It gets hot {WHEN}, so bring water.
 - It heats up {WHEN}, so take water with you.
+- It heats up {WHEN}, so take water with you.
+- Take a bottle of water. The heat arrives {WHEN}.
+- {WHEN} it gets hot. Bring water.
+- {WHEN} it's going to be really hot, so have water with you.
 
 ## w_water · dry
 
 - It gets hot {WHEN}, so bring water. || Finally, a use for the fancy bottle you bought to drink more water.
+- It gets hot {WHEN}, so bring water. || Finally, a use for the fancy bottle you bought to drink more water.
+- It heats up {WHEN}, so take water with you. || Somebody's about to crank the outside too high. Not me.
+- Take a bottle of water. The heat arrives {WHEN}. || Not for me, thanks. Water and I don't get along.
+
+## w_water · sarcastic
+
+- It gets hot {WHEN}, so bring water. || And by water I mean water. Not beer, even if it's nice and cold.
+- It heats up {WHEN}, so take water with you. || The clear stuff. You've seen it.
+- Take a bottle of water. The heat arrives {WHEN}. || A full one. Not the one with a sip left in it since Tuesday.
+- {WHEN} it's properly hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right.
+
+## warming · dry
+
+- The sequel has fewer layers. Most sequels do.
 
 ## warming · sarcastic
 
+- Later you'll lose a layer. Then you'll probably lose it for real.
 - Taking that layer off might be the highlight of your day.  
   _here sarcasm and the forecast work well together_
 - Taking that layer off might be the highlight of your day.
@@ -532,19 +1268,45 @@ Do not edit by hand; vote on the page instead.
 
 - A chance of rain, and suddenly everyone checks on me.
 - A chance of rain, and suddenly everyone checks on me.
+- A chance of rain, and suddenly everyone checks on me.
 - As an umbrella I'd be useless. Beautiful, but useless.
 - As an umbrella I'd be useless. Beautiful, but useless.
+- As an umbrella I'd be useless. Beautiful, but useless.
+- Folk wisdom nailed one month and retired.
+- I don't get wet. Perks of living indoors.
+- I drew the umbrella. Bringing it is your department.
 - I'd make a terrible umbrella. Gorgeous, but terrible.
+- I'd make a terrible umbrella. Gorgeous, but terrible.
+- I'll be in here, dry and smug.
 - I'm very good for umbrella sales.
+- I'm very good for umbrella sales.
+- No sad cloud icons here. I have taste.
+- Nothing gets me looked at like a chance of rain.
+- On rainy days, everyone checks me twice. I'm not complaining.
+- Rain makes everything shiny. I stay tastefully matte.
+- Rain makes it all glossy out there. I prefer matte.
+- Staying dry is easy when you live indoors.
+- The umbrella makes a guest appearance today. I cast it myself.
+- Umbrella up, and one shoulder will still get soaked. Every time.
+- You won't get a sad little cloud icon from me. I've got artistic integrity.
 - You won't get a sad little cloud icon from me. I've got artistic integrity.
 
 ## wet · sarcastic
 
+- Another day of umbrella chicken. You'll blink first.
+- I refresh every few minutes. Wet socks don't.
+- If you come back soaked, don't drip near me.
+- The umbrella's right there in the forecast. You'll still forget it.
 - The umbrella's right there in the forecast. You'll still forget it.
 - Try to bring the umbrella home. Unlike the last three.
+- Try to bring this umbrella home with you. Unlike the last three.
+- Umbrella chicken with strangers. You always flinch first.
+- You'll check the forecast, nod, and leave the umbrella anyway.
 - You'll check the forecast, nod, and leave the umbrella anyway.
 - You'll double-check on your phone. As if it knows better.
 - You'll double-check on your phone. As if it knows better.
 - You'll double-check on your phone. As if it knows better.
+- You'll double-check on your phone. As if it knows better.
+- You'll still check your phone. As if it knows something I don't.
 - You'll still check your phone. As if it knows something I don't.
 - You'll still check your phone. As if it knows something I don't.

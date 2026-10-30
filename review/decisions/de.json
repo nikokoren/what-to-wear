@@ -10702,6 +10702,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:32:27.869Z"
  },
+ "f2-de-017a3cb0f8d0": {
+  "level": "0",
+  "key": "c_hoodie",
+  "path": "fact_0.c_hoodie[+]",
+  "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:21.406Z"
+ },
  "f2-de-03397540fb4f": {
   "level": "11",
   "key": "arc_warmer",
@@ -10717,6 +10731,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:21:40.520Z"
+ },
+ "f2-de-04e62cba0730": {
+  "level": "10",
+  "key": "c_hoodie",
+  "path": "unit_10.c_hoodie[+]",
+  "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich, so wirklich weiß das niemand.",
+  "source": "candidate",
+  "batch": "Unit: c_hoodie",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:48.456Z"
  },
  "f2-de-098170ec0951": {
   "level": "11",
@@ -10776,6 +10804,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:40:40.330Z"
  },
+ "f2-de-0e1269b35baf": {
+  "level": "10",
+  "key": "c_coat",
+  "path": "unit_10.c_coat[+]",
+  "text": "{WHEN} wird's kalt genug für die Winterjacke. || Ich hätt's auch netter sagen können. Wollte ich aber nicht.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:35.620Z"
+ },
  "f2-de-0fa15fca7401": {
   "level": "10",
   "key": "pants",
@@ -10791,6 +10833,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:32:33.120Z"
+ },
+ "f2-de-12164b5a6556": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Eine klare Ansage. Kommt bei mir selten vor, genieß es.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:55.590Z"
+ },
+ "f2-de-1440246aced8": {
+  "level": "0",
+  "key": "c_hoodie",
+  "path": "fact_0.c_hoodie[+]",
+  "text": "Pack einen Pulli ein, {WHEN} wird's kühler.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:23.291Z"
  },
  "f2-de-168b618265c0": {
   "level": "10",
@@ -10882,6 +10952,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:41:00.563Z"
  },
+ "f2-de-256199fbb8b8": {
+  "level": "11",
+  "key": "arc_colder",
+  "path": "unit_11.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Gänsehaut zählt nicht als Schicht.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:21.405Z"
+ },
  "f2-de-258f079168b2": {
   "level": "10",
   "key": "night",
@@ -10898,6 +10982,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:28:20.420Z"
  },
+ "f2-de-259162655c04": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:03.371Z"
+ },
  "f2-de-26ddea469760": {
   "level": "10",
   "key": "warming",
@@ -10911,6 +11009,34 @@
   "note": "",
   "edit": "Das Wetter wird besser. Deine Leute gleich lauter.",
   "updatedAt": "2026-10-30T08:42:11.830Z"
+ },
+ "f2-de-280336084b3d": {
+  "level": "0",
+  "key": "arc_colder",
+  "path": "fact_0.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:28.809Z"
+ },
+ "f2-de-29427cec5d8e": {
+  "level": "0",
+  "key": "arc_warmer",
+  "path": "fact_0.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr.",
+  "source": "candidate",
+  "batch": "Forecast: a layer comes off",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:33.441Z"
  },
  "f2-de-2b3c1ed8c545": {
   "level": "11",
@@ -10958,6 +11084,34 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:19:59.820Z"
  },
+ "f2-de-2f0dadbfa67e": {
+  "level": "0",
+  "key": "arc_warmer",
+  "path": "fact_0.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr.",
+  "source": "candidate",
+  "batch": "Forecast: a layer comes off",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:44.687Z"
+ },
+ "f2-de-30c91e8c967a": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Ab da interessiert sich wieder niemand für mich.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:01.242Z"
+ },
  "f2-de-314013caba06": {
   "level": "11",
   "key": "night",
@@ -10971,6 +11125,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:29:14.489Z"
+ },
+ "f2-de-3305cfd2cab4": {
+  "level": "0",
+  "key": "arc_level",
+  "path": "fact_0.arc_level[+]",
+  "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:48.074Z"
  },
  "f2-de-332bece5031d": {
   "level": "10",
@@ -10988,6 +11156,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:33:47.154Z"
  },
+ "f2-de-33d7802c0246": {
+  "level": "11",
+  "key": "arc_level",
+  "path": "unit_11.arc_level[+]",
+  "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:20.190Z"
+ },
  "f2-de-35a67a8b7554": {
   "level": "10",
   "key": "theme_nikolo",
@@ -11001,6 +11183,62 @@
   "note": "",
   "edit": "Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen.",
   "updatedAt": "2026-10-30T08:38:59.463Z"
+ },
+ "f2-de-3cf641c2c872": {
+  "level": "11",
+  "key": "arc_level",
+  "path": "unit_11.arc_level[+]",
+  "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:25.955Z"
+ },
+ "f2-de-3e84444b9b7c": {
+  "level": "0",
+  "key": "arc_level",
+  "path": "fact_0.arc_level[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:50.690Z"
+ },
+ "f2-de-4662a62000bc": {
+  "level": "11",
+  "key": "arc_level",
+  "path": "unit_11.arc_level[+]",
+  "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist meistens dein Problem.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:29.142Z"
+ },
+ "f2-de-469b054124f3": {
+  "level": "0",
+  "key": "arc_warmer",
+  "path": "fact_0.arc_warmer[+]",
+  "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute.",
+  "source": "candidate",
+  "batch": "Forecast: a layer comes off",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:49.573Z"
  },
  "f2-de-47bc35ec2b60": {
   "level": "10",
@@ -11078,6 +11316,20 @@
   "edit": "{WHENP} kommt Schnee. || Schneeflocken mit der Zunge fangen ist in deinem Alter übrigens gesellschaftlich verpönt.",
   "updatedAt": "2026-10-30T08:32:11.418Z"
  },
+ "f2-de-4e936b834715": {
+  "level": "0",
+  "key": "arc_colder",
+  "path": "fact_0.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} wird's aber so kalt, dass du {GP} und noch eine extra Schicht brauchst.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:34.224Z"
+ },
  "f2-de-53a0a55b339a": {
   "level": "11",
   "key": "off",
@@ -11093,6 +11345,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:29:59.920Z"
+ },
+ "f2-de-55342a5a942c": {
+  "level": "0",
+  "key": "c_hoodie",
+  "path": "fact_0.c_hoodie[+]",
+  "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:25.855Z"
  },
  "f2-de-5590e265baaf": {
   "level": "10",
@@ -11182,6 +11448,20 @@
   "edit": "Was du anhast, passt für den ganzen Abend. || Auch für die Party, zu der du nicht eingeladen bist.",
   "updatedAt": "2026-10-30T08:37:28.581Z"
  },
+ "f2-de-6258c2dd7974": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm also eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:52.623Z"
+ },
  "f2-de-6a96573d1f68": {
   "level": "10",
   "key": "day_eisheilige",
@@ -11212,6 +11492,34 @@
   "edit": "Bei jedem Donner zusammenzucken und dann so tun, als wär nichts. Schon klar.",
   "updatedAt": "2026-10-30T08:38:43.215Z"
  },
+ "f2-de-6e14c8b9b3e6": {
+  "level": "0",
+  "key": "arc_colder",
+  "path": "fact_0.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:39.056Z"
+ },
+ "f2-de-703e25952b05": {
+  "level": "11",
+  "key": "c_hoodie",
+  "path": "unit_11.c_hoodie[+]",
+  "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli. || Und ich bin froh, wenn du dann nicht jammerst.",
+  "source": "candidate",
+  "batch": "Unit: c_hoodie",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:59.558Z"
+ },
  "f2-de-7243265ac395": {
   "level": "11",
   "key": "on",
@@ -11225,6 +11533,34 @@
   "note": "",
   "edit": "Dein Immunsystem hat auch so schon genug zu tun. Mach es einfach.",
   "updatedAt": "2026-10-30T08:31:24.785Z"
+ },
+ "f2-de-738961699a47": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:14.773Z"
+ },
+ "f2-de-74a7eb3c6755": {
+  "level": "0",
+  "key": "arc_level",
+  "path": "fact_0.arc_level[+]",
+  "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:52.223Z"
  },
  "f2-de-75ac1f8d4665": {
   "level": "11",
@@ -11241,6 +11577,48 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:38:50.896Z"
+ },
+ "f2-de-78a4024caf9f": {
+  "level": "10",
+  "key": "c_hoodie",
+  "path": "unit_10.c_hoodie[+]",
+  "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Nachher sagt wieder jeder: Ganz schön frisch geworden.",
+  "source": "candidate",
+  "batch": "Unit: c_hoodie",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:50.072Z"
+ },
+ "f2-de-7a97b6e06b93": {
+  "level": "0",
+  "key": "arc_warmer",
+  "path": "fact_0.arc_warmer[+]",
+  "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages.",
+  "source": "candidate",
+  "batch": "Forecast: a layer comes off",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:27:50.758Z"
+ },
+ "f2-de-7af509fc1d6c": {
+  "level": "11",
+  "key": "c_coat",
+  "path": "unit_11.c_coat[+]",
+  "text": "{WHEN} brauchst du die Winterjacke, also nimm sie mit. || Vorausgesetzt, sie geht nach den Feiertagen noch zu.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:49.521Z"
  },
  "f2-de-7e33dc475444": {
   "level": "11",
@@ -11274,6 +11652,34 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:29:53.419Z"
  },
+ "f2-de-832e217d4e7b": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder und noch eine extra Schicht. || Hier drin bleibt's gemütlich. Nur so als Idee.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:56.318Z"
+ },
+ "f2-de-849d1bb5c8b7": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Mitschleppen musst du {GP} dann trotzdem.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:03.173Z"
+ },
  "f2-de-87402043a0c1": {
   "level": "10",
   "key": "w_hoodie",
@@ -11290,6 +11696,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:40:35.846Z"
  },
+ "f2-de-879c88b79d51": {
+  "level": "0",
+  "key": "c_hoodie",
+  "path": "fact_0.c_hoodie[+]",
+  "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:27.541Z"
+ },
  "f2-de-910a6dd43884": {
   "level": "10",
   "key": "arc_level",
@@ -11305,6 +11725,62 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:20:57.903Z"
+ },
+ "f2-de-9205d208480a": {
+  "level": "10",
+  "key": "c_coat",
+  "path": "unit_10.c_coat[+]",
+  "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt: Ich mein's ernst, einpacken!",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:38.972Z"
+ },
+ "f2-de-9247ad9bb526": {
+  "level": "0",
+  "key": "c_coat",
+  "path": "fact_0.c_coat[+]",
+  "text": "Nimm die Winterjacke mit, {WHEN} wird's kälter.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:06.474Z"
+ },
+ "f2-de-93c90124628e": {
+  "level": "11",
+  "key": "c_hoodie",
+  "path": "unit_11.c_hoodie[+]",
+  "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Zum Anziehen. Nicht zum Um-den-Bauch-Knoten.",
+  "source": "candidate",
+  "batch": "Unit: c_hoodie",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:30:06.106Z"
+ },
+ "f2-de-96d0771edf6f": {
+  "level": "0",
+  "key": "c_coat",
+  "path": "fact_0.c_coat[+]",
+  "text": "{WHEN} wird's kalt genug für die Winterjacke.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:09.456Z"
  },
  "f2-de-972b00218c45": {
   "level": "10",
@@ -11454,6 +11930,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:30:35.187Z"
  },
+ "f2-de-a8b064d621a2": {
+  "level": "0",
+  "key": "arc_level",
+  "path": "fact_0.arc_level[+]",
+  "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:56.321Z"
+ },
  "f2-de-aa2a8885012e": {
   "level": "11",
   "key": "rain",
@@ -11467,6 +11957,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:33:19.236Z"
+ },
+ "f2-de-ab916062c63b": {
+  "level": "11",
+  "key": "arc_colder",
+  "path": "unit_11.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:30.542Z"
  },
  "f2-de-ac6e236c342a": {
   "level": "10",
@@ -11497,6 +12001,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:31:35.522Z"
+ },
+ "f2-de-adcd2e624907": {
+  "level": "0",
+  "key": "c_coat",
+  "path": "fact_0.c_coat[+]",
+  "text": "{WHEN} wird's kälter, da brauchst du dann die Winterjacke.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:12.624Z"
+ },
+ "f2-de-af95eb26a4bc": {
+  "level": "0",
+  "key": "arc_level",
+  "path": "fact_0.arc_level[+]",
+  "text": "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:59.691Z"
  },
  "f2-de-b0b8251e885f": {
   "level": "10",
@@ -11558,6 +12090,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:30:18.071Z"
  },
+ "f2-de-b486785b123f": {
+  "level": "0",
+  "key": "arc_colder",
+  "path": "fact_0.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:43.855Z"
+ },
  "f2-de-b985ff2234eb": {
   "level": "11",
   "key": "day_eisheilige",
@@ -11573,6 +12119,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:27:34.636Z"
+ },
+ "f2-de-bb06ad5a68a2": {
+  "level": "11",
+  "key": "c_coat",
+  "path": "unit_11.c_coat[+]",
+  "text": "{WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:52.573Z"
  },
  "f2-de-bd04c3725d9c": {
   "level": "11",
@@ -11634,6 +12194,20 @@
   "edit": "Zwei Wochen lang ist eine Maß um zehn Uhr früh jetzt ganz normal.",
   "updatedAt": "2026-10-30T08:39:35.546Z"
  },
+ "f2-de-c063d541d1a6": {
+  "level": "10",
+  "key": "c_hoodie",
+  "path": "unit_10.c_hoodie[+]",
+  "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar.",
+  "source": "candidate",
+  "batch": "Unit: c_hoodie",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:52.057Z"
+ },
  "f2-de-c57b3c9208a4": {
   "level": "10",
   "key": "c_hoodie",
@@ -11682,6 +12256,64 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:28:58.987Z"
  },
+ "f2-de-ca0fc2782405": {
+  "level": "0",
+  "key": "c_coat",
+  "path": "fact_0.c_coat[+]",
+  "text": "{WHEN} wird's kalt genug für die Winterjacke, also nimm sie, oder eine extra warme Schicht, mit.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [
+   "too long"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:25.189Z"
+ },
+ "f2-de-ce78d6930f9a": {
+  "level": "10",
+  "key": "c_coat",
+  "path": "unit_10.c_coat[+]",
+  "text": "Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ich sag das nicht zum Spaß.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:41.173Z"
+ },
+ "f2-de-d176bc6c3c98": {
+  "level": "11",
+  "key": "arc_colder",
+  "path": "unit_11.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Der Tag erfordert mehr Planung, als du sonst in eine ganze Woche steckst.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:36.607Z"
+ },
+ "f2-de-d3cfa87830c6": {
+  "level": "11",
+  "key": "c_hoodie",
+  "path": "unit_11.c_hoodie[+]",
+  "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens.",
+  "source": "candidate",
+  "batch": "Unit: c_hoodie",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:30:11.088Z"
+ },
  "f2-de-d6fd156e175c": {
   "level": "10",
   "key": "w_coat",
@@ -11726,6 +12358,34 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:39:52.479Z"
  },
+ "f2-de-dad52478fd08": {
+  "level": "11",
+  "key": "c_coat",
+  "path": "unit_11.c_coat[+]",
+  "text": "Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ja, die dicke. Ich weiß, wie du drin aussiehst.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:55.788Z"
+ },
+ "f2-de-dd6c985b7ae4": {
+  "level": "0",
+  "key": "c_coat",
+  "path": "fact_0.c_coat[+]",
+  "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:29.107Z"
+ },
  "f2-de-df02c3f03a04": {
   "level": "11",
   "key": "w_hoodie",
@@ -11741,6 +12401,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:40:50.113Z"
+ },
+ "f2-de-e0c49da2db2f": {
+  "level": "0",
+  "key": "c_hoodie",
+  "path": "fact_0.c_hoodie[+]",
+  "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:30.107Z"
+ },
+ "f2-de-e8d477431cc4": {
+  "level": "0",
+  "key": "c_hoodie",
+  "path": "fact_0.c_hoodie[+]",
+  "text": "{WHEN} wird's frisch genug für einen Pulli.",
+  "source": "candidate",
+  "batch": "Forecast: a layer goes on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:29:32.004Z"
  },
  "f2-de-f21a6958c0f2": {
   "level": "11",
@@ -11758,6 +12446,20 @@
   "edit": "",
   "updatedAt": "2026-10-30T08:33:28.853Z"
  },
+ "f2-de-f2f4812abe11": {
+  "level": "0",
+  "key": "arc_colder",
+  "path": "fact_0.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt.",
+  "source": "candidate",
+  "batch": "Forecast: off, then on",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:25:47.557Z"
+ },
  "f2-de-f389d803c6e6": {
   "level": "11",
   "key": "day_friday",
@@ -11773,6 +12475,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-30T08:27:51.871Z"
+ },
+ "f2-de-f57430096245": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || So ein Hin und Her hält ja niemand aus.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:26:00.104Z"
+ },
+ "f2-de-f7f1f0e5310f": {
+  "level": "10",
+  "key": "c_coat",
+  "path": "unit_10.c_coat[+]",
+  "text": "{WHEN} wird's kälter, da brauchst du dann die Winterjacke. || Da hilft auch kein Jammern.",
+  "source": "candidate",
+  "batch": "Unit: c_coat",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T13:28:42.987Z"
  },
  "f2-de-f8d3b7d54fba": {
   "level": "10",
