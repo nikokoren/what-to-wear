@@ -115,6 +115,7 @@ Do not edit by hand; vote on the page instead.
 ## c_hoodie · sarcastic
 
 - Bring a sweater. It cools down {WHEN}. || Alternatively you can practice your 'I'm not cold' face for later.
+- It gets cooler {WHEN}, so take a sweater along. || Tie it around your shoulders and pretend you own a boat.
 - It gets cooler {WHEN}, so take a sweater along. || You'll say you're fine without it. Your goosebumps will give you away.
 - Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you won't need for hours. Look at you, prepared.
 
@@ -194,6 +195,7 @@ Do not edit by hand; vote on the page instead.
 - Grey was my look long before winter tried it.
 - I was gray before winter made it cool.
 - I was grey before winter made it cool.
+- I'd draw something warmer later, but I don't do fiction.
 - I'm staying in here where it's warm.
 - I'm staying in here where it's warm.
 - My battery hates the cold too. Aww. Look at us, we're bonding!
@@ -234,6 +236,7 @@ Do not edit by hand; vote on the page instead.
 - That jacket pocket still has a tissue from spring. Used, probably.
 - The jacket pocket pat-down: keys, phone, wallet. Then again, slower.
 - Today has the thrill of a firmware update. A small one.
+- Weather this average could get a job in middle management.
 
 ## cool · sarcastic
 
@@ -544,6 +547,7 @@ Do not edit by hand; vote on the page instead.
 ## p_drier_snow · dry
 
 - It stops snowing {WHENSTOP}. || Right on time. I like a snowfall that keeps its word.
+- The snow stops later. || The kids won't take the news well.
 
 ## p_drier_snow · sarcastic
 
@@ -600,6 +604,10 @@ Do not edit by hand; vote on the page instead.
 
 - It's raining all day. Bring the umbrella. || Good day to be a screen. Bad day to be a sock.
 
+## p_stays_wet · sarcastic
+
+- The rain doesn't stop today, so take the umbrella. || A day for staying in. You were born for this.
+
 ## p_stays_wet_ice · plain
 
 - Freezing rain all day, and the roads and sidewalks may be icy. Take the umbrella and go slowly.
@@ -626,6 +634,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_stays_wet_snow · sarcastic
 
+- The snow doesn't stop today. || Next to all that white, you almost look tanned. Almost.
 - There's no break in the snow today. || Not even for you.
 
 ## p_stays_wet_storm · plain
@@ -756,6 +765,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_wetter_maybe · sarcastic
 
+- Rain is possible {WHENP}, so maybe take the umbrella. || I'd decide for you, but then you'd have nothing to overthink.
 - Rain is possible {WHENP}, so maybe take the umbrella. || Your app gives it a percentage so it can't be wrong. I give advice.
 - There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || Your small umbrella exists for exactly this forecast.
 
@@ -840,6 +850,7 @@ Do not edit by hand; vote on the page instead.
 - It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze.
 - Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'd say "trust me", but I've never had cold legs.
 - Shorts could be worth it today. It's cool now, but warm {WHEN}. || I’d say ‘Trust me’. but I've never had cold legs.
+- {WHEN} it's warm enough for shorts, so think about putting them on now. || Legally, I can only suggest.
 
 ## shorts_early · sarcastic
 
@@ -1303,10 +1314,12 @@ Do not edit by hand; vote on the page instead.
 - Umbrella chicken with strangers. You always flinch first.
 - You'll check the forecast, nod, and leave the umbrella anyway.
 - You'll check the forecast, nod, and leave the umbrella anyway.
+- You'll do the little puddle hop and think it looked graceful.
 - You'll double-check on your phone. As if it knows better.
 - You'll double-check on your phone. As if it knows better.
 - You'll double-check on your phone. As if it knows better.
 - You'll double-check on your phone. As if it knows better.
+- You'll hold your bag over your head like that's ever worked.
 - You'll still check your phone. As if it knows something I don't.
 - You'll still check your phone. As if it knows something I don't.
 - You'll still check your phone. As if it knows something I don't.

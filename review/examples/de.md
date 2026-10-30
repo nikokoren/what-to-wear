@@ -195,6 +195,7 @@ Do not edit by hand; vote on the page instead.
 ## c_relief · dry
 
 - {WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Mehr gute Nachrichten gibt's heute nicht.
+- {WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Für Wunder bin ich nicht zuständig.
 
 ## c_relief · sarcastic
 
@@ -254,6 +255,7 @@ Do not edit by hand; vote on the page instead.
 
 ## cold · sarcastic
 
+- Bei der Kälte kriegst du endlich mal Farbe ins Gesicht. Rot, aber immerhin.
 - Bis du fertig angezogen bist, blühen schon die Krokusse.
 - Dann hast du ja den ganzen Tag ein Gesprächsthema.
 - Deine Hände sind heut fast so kalt wie dein Herz.
@@ -296,10 +298,22 @@ Do not edit by hand; vote on the page instead.
 - Perfekt zum Fensterputzen. Nur so ein Hinweis.
 - Perfekt zum Fensterputzen. Nur so ein Hinweis.
 
+## cooling · sarcastic
+
+- Später brauchst du eine Schicht mehr. Heiße Luft allein wärmt halt nicht.
+
 ## day_dst_fall · dry
 
 - Eine Stunde mehr, und ich weiß nicht, wohin damit.
 - Endlich wieder dunkel um fünf. Das hat mir echt gefehlt.
+
+## day_dst_fall · sarcastic
+
+- Eine Stunde mehr. Ich hätt sie an deiner Stelle in die Frisur investiert.
+
+## day_dst_spring · sarcastic
+
+- Eine Stunde früher aufstehen. Für dich ist das quasi Extremsport.
 
 ## day_friday · dry
 
@@ -311,11 +325,17 @@ Do not edit by hand; vote on the page instead.
 ## day_monday · sarcastic
 
 - Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell.
+- Ich war das ganze Wochenende an und seh trotzdem frischer aus als du.
 
 ## day_shortest · dry
 
 - Ab morgen wird's heller. Langsam. Seeeeehr langsam.
 - Ich mach's wie die Sonne und halt mich heute kurz.
+
+## day_shortest · sarcastic
+
+- Ab jetzt geht's aufwärts. Mit dem Tageslicht, nicht mit dir.
+- Heute tut sogar die Sonne nur das Nötigste. Hat sie sich sicher bei dir abgeschaut.
 
 ## evening · dry
 
@@ -335,6 +355,7 @@ Do not edit by hand; vote on the page instead.
 - Bitte heute Abend mal ein anderes Thema als das Wetter.
 - Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.
 - Feierabend. Jetzt lass mich in Ruhe.
+- Für den Abend bist du also fertig angezogen. Fertig aussehen tust du schon länger.
 - Für den Abend reicht's. Für ein Kompliment nicht.
 - Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.
 
@@ -365,6 +386,11 @@ Do not edit by hand; vote on the page instead.
 - Und im Winter wieder jammern, dass es zu kalt ist. Schon klar.
 - Wasser, hab ich gesagt. Bier zählt nicht.
 - Zum Meckern ist es mir heute zu heiß. Fast.
+
+## hot · sarcastic
+
+- Endlich ein Grund, den ganzen Tag nichts zu tun. Als ob du einen gebraucht hättest.
+- Zu heiß zum Denken, sagst du. Als ob's daran läge.
 
 ## ice · dry
 
@@ -397,10 +423,12 @@ Do not edit by hand; vote on the page instead.
 
 - Bei so einem Wetter hab ich früher den ganzen Garten gemacht.
 - Bestes Wetter, und du schaust trotzdem drein wie Montag.
+- Die Sonne scheint heute auf alle, auch auf dich. Sie ist halt nicht wählerisch.
 - Dieses Wetter hast du dir eigentlich nicht verdient.
 - Dieses Wetter hast du dir eigentlich nicht verdient.
 - Geh raus, sonst wirst du so grau wie ich.
 - Geh raus, sonst wirst du so grau wie ich.
+- Heute würde dir Sonne guttun. Ein Friseur auch.
 - Ich hab heute nur gute Nachrichten. Bitte nicht dran gewöhnen.
 - Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
 - Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
@@ -545,7 +573,12 @@ Do not edit by hand; vote on the page instead.
 
 ## p_stays_wet · dry
 
+- Es regnet den ganzen Tag, also nimm den Schirm mit. || Auf einer Skala von eins bis Herbst: Herbst.
 - Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Alle starren trotzdem aufs Regenradar. Als ob das was hilft.
+
+## p_stays_wet · sarcastic
+
+- Regen bis zum Abend. Der Schirm sollte wirklich mit. || Nass siehst du nicht schlechter aus. Aber auch nicht besser.
 
 ## p_stays_wet_ice · plain
 
@@ -571,9 +604,11 @@ Do not edit by hand; vote on the page instead.
 - Der Schneefall hält den ganzen Tag an. || Die Bahn hat bestimmt schon aufgegeben.
 - Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.
+- Heute hört's nicht auf zu schneien. || Romantisch finden das nur die, die nirgends hinmüssen.
 
 ## p_stays_wet_snow · sarcastic
 
+- Der Schneefall hält den ganzen Tag an. || Ich weiß, du wolltest heute was erledigen. Das sagst du allerdings jeden Tag.
 - Es schneit weiter, bis der Tag vorbei ist. || Morgen erzählst du allen, wie du dich durchgekämpft hast. Bis zum Sofa.
 
 ## p_wet_again · plain
@@ -669,6 +704,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_wetter_maybe · sarcastic
 
+- Ob's {WHENP} regnet, ist nicht ganz sicher. Der Schirm schadet vermutlich nicht. || Sicher ist nur, dass du dich so oder so beschwerst.
 - {WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.
 - {WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was genau das heißt, weiß sie selber nicht.
 - {WHENP} kann's regnen. Mit Schirm bist du auf der sicheren Seite. || Übersetzt: Ich weiß es auch nicht.
@@ -693,6 +729,7 @@ Do not edit by hand; vote on the page instead.
 - Nimm den Schirm mit, {WHENP} gibt's ein Gewitter.
 - Nimm den Schirm mit, {WHENP} gibt's ein Gewitter. Wenn's donnert, geh lieber rein.
 - {WHENP} kommt ein Gewitter. Pack den Schirm ein.
+- {WHENP} kommt ein kurzes Gewitter mit Regen. Nimm den Schirm mit.
 - {WHENP} zieht ein Gewitter durch. Nimm den Schirm mit.
 
 ## pants · sarcastic
@@ -764,6 +801,7 @@ Do not edit by hand; vote on the page instead.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Fünf Zentimeter, und im Radio heißt's Schneechaos.
 - Gleich fährt keine Bahn mehr, wetten?
+- Gleich fühlt sich wieder jeder SUV-Fahrer bestätigt.
 - Jetzt hamstern's wieder alle Streusalz, als käm die Eiszeit.
 - Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.
 - Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.
@@ -781,6 +819,7 @@ Do not edit by hand; vote on the page instead.
 - Du wirst trotzdem so tun, als hätt's dir keiner gesagt.
 - Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.
 - Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.
+- Jede Flocke ist einzigartig. Du hattest Pech.
 - Jeder Schneemann hat heute mehr Ausstrahlung als du.
 - Neben dir wirkt jeder Schneemann lebendig.
 - Neben dir wirkt jeder Schneemann lebendig.
@@ -966,6 +1005,10 @@ Do not edit by hand; vote on the page instead.
 - Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust versteh ich nicht, aber okay.
 - Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust, frag ich lieber nicht.
 
+## storm · dry
+
+- Im Freibad pfeift der Bademeister dann wieder alle aus dem Becken. Sein Lieblingsmoment.
+
 ## storm · sarcastic
 
 - Fotografier's bitte durchs Fenster. Das Foto wird sowieso nichts.
@@ -974,11 +1017,21 @@ Do not edit by hand; vote on the page instead.
 ## theme_force · dry
 
 - In einer weit, weit entfernten Galaxis ist das Wetter auch nicht besser.
+- Nur fürs Protokoll: Ich bin nicht dein Vater.
+
+## theme_force · sarcastic
+
+- Die dunkle Seite hätte dich sicher auch nicht genommen.
+- Vor langer Zeit, in einer weit, weit entfernten Galaxis, hast du zuletzt was Sportliches gemacht.
 
 ## theme_ghd · dry
 
 - Heute sagt ein Murmeltier das Wetter an. Dem hören alle zu. Mir nie.
 - Und täglich grüßt das Murmeltier. Heute sogar offiziell.
+
+## theme_ghd · sarcastic
+
+- Wenn das Murmeltier dich sieht, gibt's sicher noch sechs Wochen Winter.
 
 ## theme_krampus · dry
 
@@ -991,6 +1044,7 @@ Do not edit by hand; vote on the page instead.
 ## theme_nikolo · sarcastic
 
 - Der Nikolaus hat in deinem Stiefel bestimmt nur Kohle gelassen.
+- Der Nikolaus hat sich deine Schuhe angeschaut und ist weitergegangen.
 - Du hast deine Schuhe für den Nikolaus rausgestellt? In deinem Alter?
 
 ## theme_ny · sarcastic
@@ -1004,6 +1058,10 @@ Do not edit by hand; vote on the page instead.
 
 - Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.
 
+## theme_spooky · dry
+
+- Buh. So, das war mein Beitrag.
+
 ## theme_spooky · sarcastic
 
 - Wenn's klingelt, bist du heute plötzlich wieder nicht zu Hause. Typisch.
@@ -1011,6 +1069,7 @@ Do not edit by hand; vote on the page instead.
 ## theme_xmas · sarcastic
 
 - Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.
+- Nach dem Essen machst du sicher wieder heimlich den Hosenknopf auf.
 - Weihnachtsspaziergang nach dem Essen? Sagst du jedes Jahr.
 
 ## topical · sarcastic
@@ -1141,6 +1200,7 @@ Do not edit by hand; vote on the page instead.
 - Den Schirm siehst du. Mitnehmen wirst du ihn trotzdem nicht.
 - Du bist nicht aus Zucker, sagt man. Ich wär mir nicht so sicher.
 - Du gehst sicher trotzdem ohne Schirm los. Typisch.
+- Du und der Regen, ihr habt was gemeinsam: Keiner freut sich, wenn ihr kommt.
 - Endlich passt das Wetter mal zu deinem Gesicht.
 - Endlich passt das Wetter mal zu deinem Gesicht.
 - Endlich passt das Wetter mal zu deinem Gesicht.

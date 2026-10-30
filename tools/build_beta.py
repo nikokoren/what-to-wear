@@ -49,6 +49,28 @@ panels_build = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(panels_build)
 
 
+def compact_units(doc):
+    """A unit whose forecast sentence is one of facts[key] ships as "#i ||
+    joke" (block.liquid, UNITS, looks it up): the sentence once, not in
+    every unit. Tagged sentences and one-sentence units stay whole."""
+    out = dict(doc)
+    for section in ("units_10", "units_11"):
+        if section not in doc:
+            continue
+        out[section] = {}
+        for key, pool in doc[section].items():
+            facts = doc.get("facts", {}).get(key, [])
+            lines = []
+            for line in pool:
+                tag = re.match(r"^(\{M:[^}]*\})?", line).group(0)
+                fact, sep, joke = line[len(tag):].partition(" || ")
+                if sep and fact in facts and "{" + "AM}" not in line and not fact.startswith("{"):
+                    line = f"{tag}#{facts.index(fact)} || {joke}"
+                lines.append(line)
+            out[section][key] = lines
+    return out
+
+
 def trim(node):
     """Every key kept, every list cut to its first entry."""
     if isinstance(node, dict):
@@ -144,7 +166,7 @@ def main():
     # Topical lines are parked (docs/TODO.md item 8): the beta ships none, so
     # a fork that still has the old field switched on shows none either.
     full = {l: {k: v for k, v in doc.items() if not k.startswith("topical_")} for l, doc in full.items()}
-    trimmed = {l: {k: (trim(v) if k in OLD_POOLS else v) for k, v in doc.items()} for l, doc in full.items()}
+    trimmed = {l: compact_units({k: (trim(v) if k in OLD_POOLS else v) for k, v in doc.items()}) for l, doc in full.items()}
 
     n = verify(shared, (BUILD / "views" / "full.liquid").read_text(encoding="utf-8"), full, trimmed)
     print(f"verified: {n} screens identical with the trimmed texts")

@@ -481,6 +481,11 @@ def apply_follow(doc, lang, decisions, rnd=None):
         if row.get("three"):
             text = "{3}" + text
         note = (d.get("note") or "").lower().replace("its own", "it's own")
+        if section.startswith("alone_") and "images" in note and ("not" in note or "n't" in note):
+            # kept, but "doesn't work without the What to Wear Next images"
+            # (round 24): with the drawings only
+            section = "flavour_vf_" + section.split("_")[1]
+            n["drawings only (owner's note)"] += 1
         if section.startswith("now_") and "on it's own" in note and "not" in note:
             # a now line the owner kept but found doesn't stand alone: it
             # follows the forecast line instead, in its mood's group
@@ -761,6 +766,9 @@ OWNER_UNITS = [
     ("en", "10", "p_wetter_long", "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Cows lie down before rain, apparently. I'd lie down too, if I could."),
     ("de", "10", "steady_cold", "Es bleibt den ganzen Tag so kalt. || Höher gedreht wird nicht. Hoffen wir, dass die Nachbarn heizen."),
     ("de", "10", "steady_cold", "Es bleibt den ganzen Tag so kalt. || Die Heizung bleibt, wo sie ist. Wir haben ja keinen Geldbaum im Garten stehen."),
+    # Round 24: kept on the page before the trim took them out of the round.
+    ("de", "11", "arc_colder", "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Später dann nicht jammern, ich hab dich gewarnt."),
+    ("de", "11", "arc_colder", "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Die Wärme hast du nicht verdient. Die Kälte schon."),
 ]
 
 
