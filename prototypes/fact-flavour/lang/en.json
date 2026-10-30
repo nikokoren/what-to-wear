@@ -684,6 +684,9 @@
     ],
     "fickle": [
       "{3}Three outfits in one day. The laundry basket will love this."
+    ],
+    "nice": [
+      "Not my hardest forecast. I'm taking the credit anyway."
     ]
   },
   "flavour_vf_11": {
@@ -701,6 +704,8 @@
       "You'll check the forecast, nod, and leave the umbrella anyway."
     ],
     "fickle": [
+      "Today's weather has more mood swings than you. Barely.",
+      "Complaining it's warm, then that it isn't. You've got range.",
       "{3}Three outfits in one day, and you'll still say you've got nothing to wear."
     ]
   },
@@ -865,8 +870,7 @@
   },
   "alone_10": {
     "nice": [
-      "Easy day to forecast. I'll still take the credit.",
-      "Not my hardest forecast. I'm taking the credit anyway."
+      "Easy day to forecast. I'll still take the credit."
     ],
     "cool": [
       "I've had firmware updates more exciting than today.",
@@ -890,10 +894,6 @@
   "alone_11": {
     "cool": [
       "Today's as surprising as your usual coffee order."
-    ],
-    "fickle": [
-      "Complaining it's warm, then that it isn't. You've got range.",
-      "Today's weather has more mood swings than you. Barely."
     ],
     "cooling": [
       "You'll be cold by tonight and tell everyone it came out of nowhere."

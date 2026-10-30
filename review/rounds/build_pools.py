@@ -760,11 +760,19 @@ OWNER_UNITS = [
 ]
 
 
-# Lines that belong somewhere else (round 22, the owner's notes): the
+# Lines that belong somewhere else (the owner's notes): round 22, the
 # swallows' rule only when rain is coming, so a unit for a short shower.
 OWNER_MOVES = [
     ("de", "now_10", "cool", "\"Fliegen die Schwalben tief, kommt Regen\". || Ja sicher, einem Vogel glaubt man wieder mehr als mir.",
      "units_10", "p_wetter", "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || „Fliegen die Schwalben tief, kommt Regen.“ Ja sicher, einem Vogel glaubt man wieder mehr als mir."),
+    # Round 23: "doesn't work on its own without the What to Wear Next
+    # drawings", so only with them.
+    ("en", "alone_11", "fickle", "Today's weather has more mood swings than you. Barely.",
+     "flavour_vf_11", "fickle", "Today's weather has more mood swings than you. Barely."),
+    ("en", "alone_11", "fickle", "Complaining it's warm, then that it isn't. You've got range.",
+     "flavour_vf_11", "fickle", "Complaining it's warm, then that it isn't. You've got range."),
+    ("en", "alone_10", "nice", "Not my hardest forecast. I'm taking the credit anyway.",
+     "flavour_vf_10", "nice", "Not my hardest forecast. I'm taking the credit anyway."),
 ]
 
 
