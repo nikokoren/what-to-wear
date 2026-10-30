@@ -1,0 +1,733 @@
+{
+ "lines": [
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Der Sommer kommt heute nur auf einen Sprung vorbei."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Die Biergärten bleiben trotzdem voll. Mit Decken.",
+   "months": "4,5,6,7,8,9,10"
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Jetzt glaubt mir das keiner. Später alle."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Für solche Tage gibt's das Zwiebelprinzip. Danke für nichts."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Die Jahreszeit weiß nicht, was sie will. Ansagen muss ich's trotzdem."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Kurz Urlaubsgefühl. Dann wieder Deutschland."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Hin und zurück, wie die Pendler. Nur ohne Verspätung."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Halb gute Nachrichten. Mehr ist heute nicht drin."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Typisch. Kaum ist's schön, wird schon wieder abgebaut."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder, und dazwischen tun alle so, als wär Sommer.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ablauf heute: aus, rumtragen, wieder an. Applaus gibt's keinen.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Heute reist {GP} als Handgepäck mit.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Kein Haken, kein Aber. Ich hab dreimal nachgeschaut."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Ausnahmsweise hält sich heute mal einer an seine Ansage. Das Wetter."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Mich fragt ja keiner. Ich hätt's lieber kühl."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Irgendwer behält {GP} vermutlich trotzdem an. Aus Prinzip."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Auf so einen Satz warten manche wochenlang."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || Gleich tun wieder alle so, als hätten sie's geahnt."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Die Ersten jammern dann über die Hitze. Vorsorglich."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || So ein Tag gehört eigentlich gerahmt. Ich wär bereit."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Ein Tag ohne Kleingedrucktes. Ich weiß gar nicht, wohin mit mir."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und zwar endgültig. Also für heute, ich bin ja kein Hellseher.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Wenn das Wetter immer so wär, hätt ich nichts zu tun. Grauenhafte Vorstellung.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Amtlich. Gezeichnet: ich.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} wird's frisch genug für einen Pulli. || Und schon heißt's wieder: Der Sommer war viel zu kurz.",
+   "months": "8,9,10"
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Einen Pulli. Nicht drei. Es wird kühl, nicht Winter."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli. || Froh über einen Pulli. So weit sind wir schon."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Kühl wird's, nicht kalt. Für Drama reicht's nicht."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} wird's frisch genug für einen Pulli. || Frisch. So sagen Leute, die nicht frieren wollen."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Und irgendwer sagt dann wieder: „Geht doch noch.“ Mit blauen Lippen."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Ich brauch keinen. Mich wärmt mein eigenes Gemecker."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Erst Sommer spielen, dann Pulli. Typisch Übergangszeit."
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} wird's frisch genug für einen Pulli. || Passend dazu stehen im Supermarkt schon die Lebkuchen.",
+   "months": "8,9,10"
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Ich sag das jetzt, damit ich's später nicht sagen muss.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} wird's frisch genug für einen Pulli, und für das erste „Brrr“ des Tages.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_hoodie",
+   "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Der Herbst schickt schon mal die Vorhut.",
+   "wild": true,
+   "months": "8,9,10"
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehm heißt: Man klebt nur noch ein bisschen am Stuhl."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} kühlt's ein bisschen ab, warm bleibt's trotzdem. || Gleich sitzen wieder alle auf dem Balkon und nennen das erfrischend."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "Die Hitze lässt {WHEN} nach, aber es bleibt warm. || Hier drin merkt man davon nichts. Mich lüftet ja keiner."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Für Wunder bin ich nicht zuständig."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Geschwitzt wird weiter, nur mit weniger Überzeugung."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} ist die schlimmste Hitze überstanden, es bleibt aber warm. || Die Schlange vor der Eisdiele geht trotzdem bis um die Ecke."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Der Asphalt hat's noch nicht mitbekommen."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} kühlt's ein bisschen ab, warm bleibt's trotzdem. || Gleich sagt wieder einer: „Jetzt lässt sich's aushalten.“ Der hat eine Klimaanlage."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} ist die schlimmste Hitze überstanden, es bleibt aber warm. || Überstanden. Klingt nach Grippe. Fühlt sich auch so an."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || „Endlich kühler!“ Nein. Weniger heiß. Das ist was anderes.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Von „Backofen“ auf „Gewächshaus“ runtergedreht.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "Die Hitze lässt {WHEN} nach, aber es bleibt warm. || Der Sommer nimmt den Fuß vom Gas. Bremsen tut er nicht.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Ungemütlich ist höflich ausgedrückt. Ich war höflich."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kalt genug für den Schal. || Gleich redet wieder jeder von der gefühlten Temperatur. Gefühlt ist's immer schlimmer."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Ich hab keinen Hals. Ein Vorteil, den ich selten erwähne."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kalt genug für den Schal. || Bald sieht man von den meisten Leuten nur noch die Augen."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} brauchst du eine extra warme Schicht, also nimm eventuell einen Schal mit. || Eventuell heißt bei mir: auf jeden Fall."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kalt genug für den Schal. || Ab da ist der Schal kein Accessoire mehr, sondern Notwehr."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Bald riecht der Bus wieder nach Wolle und Erkältung."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kalt genug für den Schal. || Die Abgehärteten nennen das „frisch“. Die frieren auch, nur leiser."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Der Wind findet sowieso immer genau die Lücke am Hals."
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kalt genug für den Schal, und für die ersten Leute, die „Schön knackig!“ sagen.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Zweimal um den Hals. Einmal ist Mode.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_scarf",
+   "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || „Ist doch gar nicht so kalt.“ Noch nicht.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Dann kommen alle raus und tun so, als wär nichts gewesen."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Erst. Das Wort hab ich nicht zum Spaß reingeschrieben."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst später auf. || Ich bin hier drin. Ich hab gut reden."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Jetzt brauchst du noch den Schirm, später wird's trocken. || Später. Das sagen Handwerker auch."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Der Regen hört später auf, bis dahin brauchst du den Schirm. || Wer jetzt schon ohne rausgeht, nennt das vermutlich Abhärtung."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Bis dahin ist der Schirm wichtiger als ich. Das tut weh."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Die Autos fahren danach trotzdem noch durch jede Pfütze."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm. || Danach dampft der Asphalt, und alle sagen: „Riecht das gut.“"
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Jetzt brauchst du noch den Schirm, später wird's trocken. || Die Bank im Park trocknet trotzdem nach ihrem eigenen Plan."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Jetzt brauchst du noch den Schirm, später wird's trocken. Mehr Plan hat das Wetter heute nicht.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || „Hört gleich auf“, sagt jeder, der unterm Vordach wartet.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm. || Ich zähl schon mal runter. Langsam.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "Rechne {WHENP} mit Schnee. || Die Hälfte hat natürlich noch Sommerreifen drauf.",
+   "months": "10,11,12"
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} fängt's an zu schneien. || Gleich schreibt wieder jemand in die Familiengruppe: „Es schneit!“ Mit Foto."
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "Mach dich auf Schnee gefasst, {WHENP} geht's los. || Ob der Winterdienst das auch weiß, ist eine andere Frage."
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} setzt Schneefall ein. || Die Kinder freuen sich, die Autofahrer nicht. Ich fahr zum Glück nirgends hin."
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} kommt Schnee. || Bei den meisten steht die Schneeschaufel jetzt ganz hinten im Keller.",
+   "months": "11,12"
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "Rechne {WHENP} mit Schnee. || Weiße Weihnachten wird's trotzdem nicht. Wird's nie.",
+   "months": "11"
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} soll es schneien. || Für einen Schneemann reicht's vermutlich wieder nicht. Zu nass, wie immer."
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} fängt's an zu schneien. || Ich krieg davon nur die Daten. Ist mir auch lieber so."
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} soll es schneien. || Und schon redet die ganze Straße wieder übers Wetter. Mein Thema."
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} kommt Schnee. || Achtung, Durchsage: Weiß. Bald überall. Dann grau.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "{WHENP} fängt's an zu schneien. || Schnee! So, jetzt hab ich mich auch einmal gefreut. Reicht für den Winter.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_snow_coming",
+   "text": "Mach dich auf Schnee gefasst, {WHENP} geht's los. || Fürs Protokoll: Ich hab's gesagt. Hinterher will's wieder keiner gewusst haben.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Heute riecht jede Bahn nach nassem Hund. Auch ohne Hund."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Regen bis zum Abend. Der Schirm sollte wirklich mit. || Wirklich. Ich sag's sonst nicht so."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Heute hört's nicht auf zu regnen. Nimm den Schirm mit. || „Gut für die Natur“, sagt garantiert wieder einer. Mit trockenen Füßen."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Der Regen hält den ganzen Tag an. Der Schirm bleibt also bei dir. || Ich bleib heute trocken. Einer muss es ja."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Wetter wie im Tatort. Nur ohne Leiche. Hoffentlich."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Heute hört's nicht auf zu regnen. Nimm den Schirm mit. || So stellt man sich den Herbst vor. Leider zu Recht.",
+   "months": "10,11"
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Die Schuhe, die „ein bisschen Regen abkönnen“, finden das heute raus."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Heute fühlt sich jeder Weg doppelt so lang an. Ich hab's gut, ich hab keinen."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Eine Regenpause gibt's heute nicht. Nimm den Schirm mit. || Auch keine kleine. Ich hab mich schon beschwert."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Auf einer Skala von eins bis Herbst: Herbst.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Heute bin ich kein Wetterbericht. Ich bin ein Beileidsschreiben.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Der Regen hält den ganzen Tag an. Der Schirm bleibt also bei dir. || Ihr zwei seid heute ein Paar. Gewöhn dich dran.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Der Schneefall hält den ganzen Tag an. || Alle Autos sehen heute gleich aus. Endlich mal Gerechtigkeit."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Der Schneefall hält den ganzen Tag an. || Heute wird jede Bushaltestelle zum Wartezimmer."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Es schneit den ganzen Tag so weiter. || Morgen beschwert sich wieder einer, dass nicht gestreut war."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Es schneit den ganzen Tag. || Ich hab's gut. Ich muss nicht schippen, nur ansagen."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Heute hört's nicht auf zu schneien. || Romantisch finden das nur die, die nirgends hinmüssen."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Heute schneit's ohne Unterbrechung. || Im Radio sind die Staumeldungen heute länger als die Nachrichten."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Es schneit den ganzen Tag. || Wer gestern noch „Endlich Schnee!“ gerufen hat, wird heute ganz still."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Schnee bis zum Abend. || Bis dahin hat jeder Briefkasten eine Mütze auf."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Es schneit den ganzen Tag so weiter. || Für den Weg zum Bäcker braucht man heute Proviant."
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Heute schneit's ohne Unterbrechung. || Heute klingt alles gedämpft. Sogar mein Gemecker.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Es schneit den ganzen Tag. || Schwarz und weiß. Heute passt das Wetter mal zu mir.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet_snow",
+   "text": "Heute hört's nicht auf zu schneien. || Schippen, warten, schippen. Das Programm für heute.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter. || Wie eine Halbzeitpause. Danach wird's selten besser."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Der Himmel holt nur Luft."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Die Pause reicht genau für ein Foto. Mehr nicht."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Der Schneefall hört später kurz auf, {WHENP} geht es weiter. || Kurz. Bei Schnee heißt das: gerade lang genug zum Hoffen."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Ich hätt's gern in einem Satz gesagt. Das Wetter braucht zwei."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien. || Der Winter hat heute nicht vor, sich kurz zu fassen."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Ein Winter mit Werbeunterbrechung."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter. || In der Ruhe hört man dann jeden Schneeschieber in der Straße."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Nachschub ist also bestellt. Zurückschicken geht nicht."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Der Schneefall hört später kurz auf, {WHENP} geht es weiter. || „Hat's aufgehört?“ Kurz. Freu dich nicht.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Ich sag Bescheid, wenn's wieder losgeht. Ach nein, hab ich ja grad.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Erstmal schneit's weiter, dann ist kurz Pause, und {WHENP} geht es wieder los. Klingt wie mein Arbeitstag, nur kälter.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || Bis dahin tun alle so, als wär's ein schöner Tag."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Die Landwirte freuen sich. Sagen sie zumindest jedes Mal im Fernsehen."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. || Dauerregen. Das Wort allein macht schon schlechte Laune."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Wer Wäsche draußen hängen hat, sollte sich ranhalten."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Und hinterher sagt wieder keiner, dass ich's angekündigt hab."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. || Taschenschirme halten so was nicht lang durch. Die sind eher symbolisch."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || So schnell hört bei uns ja gar nichts auf. Baustellen zum Beispiel."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit. || Nicht mehr heißt: heute nicht. Morgen sehen wir weiter."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger. || Länger. Mehr verrat ich nicht, sonst wird's nur schlimmer."
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Kurzfassung: nass. Langfassung: sehr lange nass.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "{WHENP} fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit. || Wie die Warteschleife beim Amt. Es hört einfach nicht auf.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wetter_long",
+   "text": "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. Bis dahin ist der Tag noch zu retten.",
+   "wild": true
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's frisch, aber {WHEN} ist's warm genug für ne kurze Hose. || Erst frieren, dann schwitzen. Deutscher Frühling halt.",
+   "months": "4,5,6"
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Dann kommen auch wieder die Socken in Sandalen raus. Leider."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Die Beine sind noch winterweiß. Bei allen. Tröstlich.",
+   "months": "4,5,6"
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Ich hätt gern das Problem. Ich hab nicht mal Beine."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Die Ersten haben sie jetzt schon an. Mit Gänsehaut und Überzeugung."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Das Bild zeigt noch die lange. Ich bin halt vorsichtig."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Besser. Nicht schöner. Das hab ich nicht behauptet."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's frisch, aber {WHEN} ist's warm genug für ne kurze Hose. || Der Tag fängt an wie ein Montag und hört auf wie ein Freitag."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Gleich sitzt wieder einer im Café und sagt: „Fast wie in Italien.“"
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. Die Beine haben heute mehr vor als ich.",
+   "wild": true
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Lass dich vom kühlen Start nicht täuschen, spätestens {WHEN} reicht eine kurze Hose. || Kurze Hose. Ich sag's leise, damit's der Morgen nicht hört.",
+   "wild": true
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || „Kurze Hose? Bei dem Wetter?“ Bei dem später, ja.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} kann die Winterjacke weg. || Und schon sitzen die Ersten im T-Shirt vorm Café.",
+   "months": "2,3,4"
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} kannst du die Winterjacke ausziehen. || Mit der dicken Jacke in der Hand sieht jeder aus wie auf dem Weg zur Reinigung."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} kann die Winterjacke weg. || Die Eisdiele macht trotzdem erst im März auf. Ordnung muss sein.",
+   "months": "1,2"
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} wird's mild genug, um die Winterjacke auszuziehen. || Die Mütze bleibt bei manchen trotzdem auf. Aus Misstrauen."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} wird es warm, dann brauchst du keine Winterjacke mehr. || Ab da sieht man wieder Gesichter statt Kapuzen."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} wird's mild genug, um die Winterjacke auszuziehen. || Die Heizung läuft trotzdem auf drei. Aus Gewohnheit."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} kann die Winterjacke weg. || Spätestens dann wird wieder diskutiert, ob das noch normal ist für die Jahreszeit."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Bald taut auch wieder raus, was der Schnee so alles versteckt hat.",
+   "months": "2,3"
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Die Vögel machen dann wieder Krach, als hätten sie was gewonnen.",
+   "months": "2,3,4"
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} kannst du die Winterjacke ausziehen. || „Ist das schon Frühling?“ Frag mich das im Mai.",
+   "wild": true,
+   "months": "1,2,3"
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} kann die Winterjacke weg. || Kurze Durchsage an alle Daunenjacken: Ihr dürft für heute abtreten.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "Mit der Winterjacke ist {WHEN} Schluss, dann wird's nämlich wärmer. || Abschied auf Zeit. Wie bei jeder schlechten Beziehung.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} wird's mild genug, um die Jacke auszuziehen. || Mild. Das Lieblingswort der Wetterleute, wenn ihnen nichts einfällt."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Ab dann weiß wieder keiner, wohin mit den Händen. Die Taschen sind ja weg."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Warm genug. Nicht warm. Den Unterschied merkt man im Schatten."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Und gleich sagt einer: „Jetzt kann's so bleiben.“ Bleibt's aber nicht."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Für mich ändert sich nichts. Ich bin immer gleich angezogen. Nämlich gar nicht."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Die Funktionsjacke hat dann ihre Funktion erfüllt. Gut aussehen gehörte nie dazu."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen. || Endlich wieder Wetter, bei dem keiner meckert. Ich übernehm das."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Dann kommen wieder die Leute raus, die man den Winter über nicht vermisst hat."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} wird's mild genug, um die Jacke auszuziehen. || Die Radler sind dann wieder in der Überzahl. Und in Eile."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Jacke aus, Sonnenbrille auf, Laune bleibt, wie sie ist.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Das Wetter tut heute mal, was es soll. Ich trau ihm trotzdem nicht.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen, und ich kann endlich mal was Nettes sagen. Fast.",
+   "wild": true
+  }
+ ]
+}
