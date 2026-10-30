@@ -1,0 +1,997 @@
+{
+ "lines": [
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. An extra hour, and you still look like you need three."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Dark by five now. You'll take that personally."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Darker evenings. Finally, lighting that flatters you."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Your phone did all the work. You just slept through it."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. That hour went to nothing in particular. Classic you."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Same outfit, one more hour of it. Lucky everyone."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. You'll still say you didn't get a weekend."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "The clocks went back. You had a whole extra hour and still look like this."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. You'll mention it to everyone like you did it yourself."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. What did you do with the extra hour? Exactly.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Notice: the extra hour is non-refundable. You've already used it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Dark by five, so nobody will see that outfit anyway.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Your phone handled it. Your face didn't."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You'll yawn all day like it's a personality."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Lighter evenings are coming, and you'll still stay in."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. I changed in a second. You'll need until Wednesday."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You'll say 'it's really only seven' all day. It isn't."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You lost an hour you'd have wasted anyway."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You'll need a second coffee just to look like this."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Daylight till late now, so everyone gets a better look at you."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. One hour less of today. Not much you'll miss."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Lost: one hour. Found: those bags under your eyes.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks forward. One hour gone. None of it was your best.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Your lost hour isn't coming back. Neither is your Sunday.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Plenty of time to do the one thing you'll do."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. The sun's working overtime. You could try a little."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. No excuses about the dark today. You'll find others."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Maximum daylight on that outfit. Bold."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Lots of light, and you'll still pick the dim corner."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. All that light, and you'll still squint at me."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Bad day to look tired. Lots of witnesses."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. More daylight to see you in. Brave of the sun."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. You'll still nap through some of it."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Today: maximum daylight. Your plans: still minimal.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Midsummer. Some countries dance around a maypole all night. You'll check the weather.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Daylight on you until late. I'm not sure that's a gift.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Less light on that face. A small mercy."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Finally, one that matches your attention span."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. You'll still manage to look tired for all of it."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Not much of it, so don't spend it frowning at me."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Your vitamin D and your enthusiasm, both at record lows."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. You'll call it 'a long day' anyway."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. The dark comes early. Your excuses came earlier."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. From tomorrow it gets lighter. You won't."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. The sun's barely trying. Finally, someone at your level."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. In candlelight, honestly, you look great.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. The sun's doing the bare minimum. Your role model.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Less daylight, fewer people seeing you in it. Everybody wins.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Slow and careful. Your usual pace, basically."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Short, flat-footed steps. Not your best look. Wear it anyway."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "There's no dignified way to cross ice. You never had much to lose."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Elegance is off today. Nobody will notice the difference."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Grab every railing. Clingy is a good look on you today."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Small steps today. You've had plenty of practice not getting far."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Everyone looks silly on ice. For once you'll blend in."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Your penguin walk is ready. Nobody's judging. I'm judging a little."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Go slowly. Nobody was expecting you early anyway."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Shuffling suits you. I've always thought so.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Glamour can wait. It's been waiting a while.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Today the slowest walker out there is the smartest. Your one chance.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Not that anyone's looking at this hour. Lucky."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Bit late to worry how it looks. It was a bit late this morning too."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Rest of the night sorted. Shame about tomorrow's face."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "It'll still be fine at two a.m. That's not a dare."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "The outfit's ready for the rest of the night. Your eyes say otherwise."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "At this hour, the outfit looks better rested than you."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Nothing left to dress for tonight. Not that you ever do."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "The weather's done for today. You could take the hint."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Nobody's going to see it now. Probably for the best."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Good news: nothing changes tonight. That includes you.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "I'll be here all night, looking good. One of us has to.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Night forecast: you, here, later than planned. I'm never wrong.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Yes, long pants. Your legs have had their moment. It was brief."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Nobody was asking to see your knees anyway."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You want shorts. You've wanted a lot of things."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Long pants. Your legs will thank me. You won't, but they will."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Your knees aren't as young as you think. Long pants."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Shorts are tempting, I know. Nobody will miss them."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "The sun's out and you want shorts. Adorable. The cold front doesn't care."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You'll look like the only one who read the forecast. Because you were."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Long pants in sunshine. Tragic for your legs. Great for everyone else."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Your knees have requested long pants. Please don't ignore them again.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Long pants now, and later you get to say 'told you'. Except I said it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "I'm not saying your legs are the problem. The cold front is. Mostly.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Shade's free. Even you can afford it."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Sitting in the shade isn't lazy today. Enjoy the alibi."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Drink before you're thirsty. You've never planned ahead, so start now."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Nobody looks good red and sweaty. You'd be starting from behind anyway."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Sweat isn't a good look. You don't need the extra help."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Keep the bottle with you. It's the one accessory that suits you."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "The shade is where the smart people are. Go anyway."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Water, not heroics. You were never the heroic type."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Stay out of the midday sun. A tan won't fix much."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Today the shade is the cool kids' table. They'll let you sit there. Just today.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Water first, opinions later. You have a lot of opinions.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Shade and water. For once, the advice is easier than you are.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The umbrella won't save your hair. Nothing has so far."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll text someone 'did you hear that?' They did. Everyone did."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Thunder for a while. Finally something louder than your opinions."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll stand at the window looking dramatic. It doesn't suit you."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "A dark, moody sky. Finally an atmosphere that matches you."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll say 'that was close' about thunder miles away."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The sky's moody today. You can stop competing."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll unplug the router and feel like a survivalist."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "That umbrella makes you look prepared. Enjoy it, it's rare."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "If the lights flicker, I'll still be here. You'll still look like that.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The storm's getting more attention than you've had all year.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll film the lightning and get a gray rectangle. I'm a gray rectangle. You could have filmed me.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You know what Lycra does to you. Please don't."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Everyone on two wheels looks smug. You'd look smug and slow."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Wherever your bike is, your fitness is right next to it."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Helmet hair is a risk you can't afford."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Bikes look great in shop windows. On you, less so."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You can still ride one, can't you. It's been a while."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You'll say 'it's like riding a bike' about anything but a bike."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Your helmet still has the price tag on, I bet."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Cyclists will talk about it all day. You'll nod like you own one."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "Happy World Bicycle Day. Your legs asked me to say nothing.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Ring a bell at someone. That's as close as you'll get.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. The bike's free. The courage, I see, costs extra.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Your 'Sunday best' is a clean T-shirt, isn't it."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. Even the bunny has more energy than you this morning."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Your painted eggs probably look like small accidents."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. A grown adult on an egg hunt. Show some dignity. Or win."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. Pastel suits nobody. It suits you even less."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Bunny ears would improve you. Just saying."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. All those hidden eggs, and still nobody's looking for you."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Chocolate bunnies are hollow inside. Don't take it personally."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. Even the eggs got dressed up today. You could try."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. You're not too old for an egg hunt. You're too slow.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. You're the reason the good chocolate gets hidden higher.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Of everyone at the egg hunt, only you brought a strategy. And lost.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "May the fourth. You think you'd be a Jedi. You'd be an extra."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "May the fourth be with you. Somebody has to be."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'd make a great stormtrooper. Lots of effort, nothing hit."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. Chewbacca's hair looks better than yours. I'm sorry."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'd be a Jedi if it didn't involve training. Or getting up."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. Your Jedi robe is a bathrobe, and you know it."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'll mention the original trilogy like you were there."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'd last about four minutes in the Rebel Alliance."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'll quote a line wrong and defend it for ten minutes."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Strong with you, the Force is not. Today, or ever.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. Hairy and grumpy before coffee. Chewbacca, basically.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "These aren't the jokes you're looking for. Then again, you're not who I was looking for either.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Still you. Nobody got an upgrade."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You look like last night won."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Fresh start. Same pajamas, probably."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. A whole new year to look tired in."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. Everyone's sharing their year in review. Yours fits on a sticky note."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You're one year older and it's already showing."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. A new year, and you're starting it on the couch, probably. Traditional."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. Everyone's a 'new me' today. You're sticking with the old one. Bold."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. The gym's full of resolutions. You're not one of them."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. I didn't make a resolution. I didn't need one. Look at me. Now look at you.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. A whole day in, and you haven't changed a thing. Impressive.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. Resolution check: still horizontal? Right on track.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Lederhosen are a look. Not your look.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. The servers carry ten steins at once. You complain about the grocery bags.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Even the pretzels are in better shape than you.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'd look great in a beer tent. It's dark in there.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'd be the one asking if they have anything light.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. The dancing's on the benches. For everyone's sake, stay on the floor.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Long wooden tables full of loud strangers. Your idea of hell, isn't it.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Everyone's suddenly an expert on German beer. You're no exception.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. A dirndl would suit you. I'm lying, but it's a festival.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest starts in September. Finally, an event as badly timed as you.",
+   "wild": true,
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Lederhosen show the knees. Think of the people around you.",
+   "wild": true,
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Thousands of people in one tent, and you'd still find a way to stand alone.",
+   "wild": true,
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Irrational and never-ending, and still easier to follow than you."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Pi goes on forever without repeating itself. Take notes."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Everyone gets to be irrational today. You've had a head start."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. The one math holiday, and you'd still need a calculator."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. You can't cut a pie evenly. You've never tried. You take the bigger slice."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. 3.14. About your score out of ten today."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Circles are perfect. You had to bring the average down somehow."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. You'll smile at a math joke so people think you got it."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Some people know a hundred digits. You know where the bakery is."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "3.14159… You stopped reading at the dot, didn't you.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Happy Pi Day. If you can't say the digits, say 'pie' confidently. It works for most of your life.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Draw a perfect circle. Go on. I'll wait. Forever, it turns out.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. You could go without a costume. People would assume."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. You'll pretend you're not home when the doorbell rings. Same as every day."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. A sheet with two holes again. Effort, as always."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Kids will ask for candy. You'll hand out the kind you don't like."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Even the skeletons look more rested than you."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. The one night you can look like that on purpose."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Pumpkins get carved, lit up and admired. You'll get none of those."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. The scariest thing in here is probably your hair this morning."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Trick or treat? With you, it's always the trick."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. I'm pale, flat and I stare. You're two out of three.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Boo. Sorry, did that work? You look like it worked.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Ghosts, witches, vampires. And you, in a costume nobody can name.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Grown men in Lycra, and they still look better than you in jeans.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You'll tell people you follow the Tour. You follow the highlights.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You'd last about one traffic circle.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. The riders eat thousands of calories a day. You're keeping up. Minus the riding.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Those calves took years of training. Yours took nothing, and it shows.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. A rider crashes, gets up and finishes. You stub a toe and cancel the day.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. They shave their legs for speed. What's your excuse?",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Those riders are made of legs. You're made of snacks.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You know who's in yellow. You couldn't name a single rider.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. The riders get a team car behind them. You'd need a tow truck.",
+   "wild": true,
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. If they gave a jersey for the couch, it'd be yours. In your size, too.",
+   "wild": true,
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Stage twelve? Fourteen? You've lost count. So has your step counter.",
+   "wild": true,
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. The turkey's been dressed with more care than you."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Elastic waistband? Good. You planned ahead for once."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. I'm guessing you're on rolls duty again. They trust you with that much."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Your relatives will notice something about you. Out loud."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. A whole day about gratitude. Your family will do their best with you."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Someone at the table will bring up politics. Try not to be that someone."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. The leftovers will last a week. Your gratitude, about an hour."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Football, food and a nap. Your usual Sunday, with an audience."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Happy Thanksgiving. You'll say grace like you've been practicing. You've been eating the stuffing."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. I'm thankful for one thing: I don't have to sit next to you.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. The parade has giant balloons. You'll match them by four.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. My list of things I'm thankful for: me. Feel free to copy it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. The tree's better dressed than you, and it's a tree."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. You'll say 'you shouldn't have'. This time you'll mean it."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. Santa checked his list twice. Still not sure about you."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Your Christmas sweater is ironic. Your waistband isn't."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Board game time. Try to lose gracefully. You've had practice."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Under the mistletoe, you'll be waiting a while."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Only you could look tired after a day off."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Someone got you socks again. They've seen how you dress."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. A gift card again. They know you so well."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. I didn't get you anything. I'm a screen. What's your excuse?",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. My only wish: you, in better clothes. Not happening.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Everyone's glowing, twinkling, sparkling. You're also here.",
+   "wild": true
+  }
+ ]
+}
