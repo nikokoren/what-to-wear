@@ -1,0 +1,2064 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "The clocks went back. Sunset now shows up right after lunch, more or less."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "The clocks went back. Daylight saving is over, and nobody ever found out what it saved."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "The clocks went back. The daylight got moved to the morning. Nobody wanted it there."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "The clocks went back. Long dark evenings ahead. Finally, a season in my color scheme."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "The clocks went back. Every year someone says we should stop doing this. Every year we don't."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Official notice: the hour borrowed in March has been returned. No interest.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. One whole hour, gone, and nobody's investigating."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. Daylight saving: saving daylight by losing sleep. Genius."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. I adjusted instantly. I'll try not to bring it up again."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. Brunch is now technically lunch."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. The sun didn't move. Only the numbers did. Humans."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "The clocks went forward. The forecast is on time. It may be the only thing that is."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Dear clocks: I'm already on time. Leave me out of this.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. The emails get shorter and the sign-offs get happier."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. Peak time for 'let's circle back on Monday.'"
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. Every meeting could have been an email. Every email could have been nothing."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. Same weather as Tuesday, but everyone's much nicer about it."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon. The weekend forecast is the most-read thing in the country. Mine included."
+  },
+  {
+   "path": "flavour_10.day_friday",
+   "text": "Friday afternoon status: weather done, outfit done, week basically done.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year. Sunset's so late it's basically tomorrow's problem."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year. The sun's big annual effort. Cute. I do twenty-four hours every day."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year. Somewhere a barbecue will still end in the dark."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Longest day of the year. More daylight than anyone has plans for."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Summer solstice. Sounds like a spell. It's mostly just sun.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. Coffee sales peak right about now. Not a coincidence."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. 'How was your weekend?' is about to be asked a few million times."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. Officially the least popular hours of the week. I still showed up."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. Somewhere a printer is refusing to start the week too."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. Fresh week, same me. Some things don't need improving."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Monday morning. Someone has already said 'back to the grind' today. Guaranteed."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Dear Monday: the weather tried. Please try too.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. The sun's here for a quick visit. Don't get attached."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. Lunch and sunset are practically neighbors now."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. If I look a bit gray today, that's the light. Mostly."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. Daylight comes in travel size today."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. Plenty of night left over. I'll be working through all of it."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Shortest day of the year. The streetlights get more hours than the sun today."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Winter solstice. The sun does the bare minimum today, and gets a holiday for it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "No changes tonight. I checked. It's what I do instead of TV."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "One outfit, start to finish. The weather kept its word. Rare."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "That's the whole forecast for tonight. Short, like all my best work."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "I could change the forecast for variety. I won't."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "A steady evening. Which makes me the most interesting thing in the room again."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Breaking news: nothing. More at eleven.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Ice doesn't care how good your shoes are."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Every railing in town is suddenly very popular."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Today the salt trucks are the heroes. I'm a close second."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "The one day hurrying doesn't get anyone there sooner."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Black ice is invisible. I can't see outside either, so assume it's everywhere."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Today every strip of grass is a shortcut worth taking."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Today the whole town is a free ice rink, minus the handrails and the fun.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Nothing changes before morning. I'll keep an eye on it so nobody has to."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Quiet night ahead. Even the weather's turned in."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "That's the final forecast of the day. No encores."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Nothing changes overnight. My favorite kind of night: uneventful and correct."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Everything stays put until morning. Including me. Especially me."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Overnight update: there won't be one.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The weather can't commit today. I've made my peace with that."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Warm in the middle, cool at both ends. A sandwich of a day."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The weather's doing a round trip today. I'll be here for both legs."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "I predicted both halves. Most forecasts only manage one."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The warmth is a loan. It's due back this evening."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The weather gets warm for a while, then remembers what month it is."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Layer status today: on, off, on. I'll keep the minutes.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "A cold front's coming. They don't call ahead. I do."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "It's warm now. Emphasis on now."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "This morning is the warm-up act. The cold front is the headliner."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Shorts weather with an expiry date. Today's is soon."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Nothing says 'cold front coming' like a lovely morning."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "The warm morning is a free sample. The full product is chilly.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Today the shade is worth more than the view."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Heat like this isn't a challenge. Nobody's handing out medals."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "The sun's in a mood today. Give it space."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Today the smartest thing outside is a lizard under a rock. Be the lizard."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Heat this serious doesn't need my commentary. Water. Shade. Done."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "The library has never looked more appealing."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Drink water. I'd say it nicer, but it's too hot for nice.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Commit to shorts now. The afternoon will back you up."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "It's the morning that's wrong, not the shorts."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Goosebumps are temporary. Being right lasts all day."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "This is what confidence in a forecast looks like. Mine, specifically."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Mornings like this one always lose the argument by afternoon."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Shorts: the long game.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Thunder is just the sky being loud about something I already told you."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Storms make everything dramatic. I stay exactly the same. Calming, really."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "A thunderstorm: all noise, plenty of water, terrible manners."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "All that thunder. I've never raised my voice in my life."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Thunder gets a ten for volume today. Two for subtlety.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. Cyclists get a holiday and still ride to it."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. Somewhere a bike lane is being used as a parking spot. Tradition."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. Somewhere a spin class is going nowhere, very fast."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. A machine that runs on sandwiches. I'm impressed."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. Two centuries in, and the seat still isn't comfortable."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "World Bicycle Day. I'd come along, but I don't fit in the basket."
+  },
+  {
+   "path": "flavour_10.theme_bike",
+   "text": "Happy World Bicycle Day to the one bike in every city locked to the same post for a decade.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. A rabbit delivers eggs, and people question weather forecasts."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. The chocolate bunnies are hollow. Someone should be held accountable."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. Peeps are back. Nobody knows who eats them, but they keep selling."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. It's on a different date every year, and people ask me for long-range forecasts."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. The bunny gets all the credit. The chickens do all the work."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter. Every egg hunt has one adult who takes it far too seriously."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Happy Easter from the only rectangle in the house. Everything else is egg-shaped today.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Dressed right, you are. Change it, you must not."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Do or do not. There is no 'I'll check again in an hour.'"
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Size matters not. Look at me: small screen, big forecasts."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Happy Star Wars Day. R2-D2 got a whole movie career. I got this room."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star Wars Day. Every planet in that galaxy has exactly one weather. Must be nice."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "I am your forecast. Search your feelings. You know it to be true."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Wrong about the weather, I have never been. Humble, I also am not.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Six more weeks of winter, or an early spring. Bold to only offer two options."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Somewhere a man in a top hat is translating a rodent. Serious job."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Imagine getting your forecast from someone who sleeps until February."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Today everyone explains the movie to someone who hasn't seen it."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Winter has never once cared what the groundhog thinks."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. A famous forecaster who has never once mentioned the wind."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Groundhog Day. Groundhog Day. Groundhog Day. Okay, I'll stop.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. The quietest morning of the year. Everyone's whispering for some reason."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Twelve new months of me being right. You're welcome."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. 'New year, new me' posts outnumber the actual new people."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. The year is one day old and my forecast is already holding up."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Somewhere a calendar is going up that will stay on January until June."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. The streets are empty and the glitter is everywhere."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Today's forecast: quiet, with scattered hangovers across the country.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Mostly held in September. Nobody's ever explained that to me."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Every town has one now, with a polka band from somewhere nearby."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. The lederhosen come out of the closet for exactly two weeks."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Everyone's German for a few weeks. The pretzels are the most convincing."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Millions of people in tents, and not one of them checking the weather."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Somewhere a man in lederhosen is cold and far too proud to say so."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Today's forecast in German: the same, but louder.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. Mathematicians finally get a holiday, and they picked a number they can't finish."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. Bakeries are thrilled. Math teachers are thrilled. Nobody else noticed."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. Today the forecast is exact. Pi has never managed that."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. The digits go on forever. The pie, sadly, doesn't."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. Somewhere someone has memorized a hundred digits and is waiting to be asked."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. A holiday for a number. Meanwhile, seven has done nothing wrong and gets nothing."
+  },
+  {
+   "path": "flavour_10.theme_pi",
+   "text": "Pi Day. Circumference over diameter. I don't know what that means either, but it's on a T-shirt somewhere.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. The skeletons have been up since September. They're basically neighbors now."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Every house is judged by its candy tonight. Full-size bars are the only real currency."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. A bedsheet ghost is the costume version of 'I'll bring the napkins.'"
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Fake cobwebs on every porch. The real spiders are insulted."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. The stores already have Christmas stuff out. Now that's horror."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. If anything in here starts flickering, it isn't me. I don't flicker."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "A Halloween ghost story: once, a screen was wrong. Nobody believes it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Grown adults cycling up mountains, on purpose, for three weeks."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. The riders lose seconds to a crosswind. Imagine needing a forecast that badly."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. The yellow jersey: the one piece of clothing nobody can just buy."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. Three weeks of commentary, and the commentators never run out. Real stamina."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. The riders pass in four seconds. People wait all day for it."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France. The riders shave their legs to be smooth. I came that way."
+  },
+  {
+   "path": "flavour_10.theme_tdf",
+   "text": "Tour de France update: someone's in yellow. It's not me. I'm gray.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. If dinner gets tense, change the subject to the weather. I'll back you up."
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. The turkey's been in the oven since dawn. Some of us don't need preheating."
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. The parade balloons get more attention than any forecast. I'm not bitter."
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. The cranberry sauce still has the ridges from the can. As tradition demands."
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. The kids' table: where people wait until they're forty."
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving. Black Friday starts tomorrow. Or last week, depending on the store."
+  },
+  {
+   "path": "flavour_10.theme_thanks",
+   "text": "Thanksgiving, my list: 1. Being right. 2. No dishes. 3. See 1.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. Hours of wrapping, seconds of unwrapping. Brutal economics."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. Santa covers the whole world in one night and never checks the forecast. Reckless."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. The one week nobody knows what day it is. I do. I'm a screen."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. 'Batteries not included.' I've always taken that personally."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. Of all the screens in the house, I'm the only one not showing a fireplace."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Merry Christmas. A white Christmas turns up in a lot of songs and very few forecasts."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Christmas forecast: scattered wrapping paper, heavy eating, clearing by the 27th.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. An extra hour, and you still look like you need three."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Darker evenings. Finally, lighting that flatters you."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. Same outfit, one more hour of it. Lucky everyone."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. You'll still say you didn't get a weekend."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Clocks went back. You'll mention it to everyone like you did it yourself."
+  },
+  {
+   "path": "flavour_11.day_dst_fall",
+   "text": "Notice: the extra hour is non-refundable. You've already used it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Your phone handled it. Your face didn't."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You'll yawn all day like it's a personality."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. Lighter evenings are coming, and you'll still stay in."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. I changed in a second. You'll need until Wednesday."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You lost an hour you'd have wasted anyway."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks went forward. You'll need a second coffee just to look like this."
+  },
+  {
+   "path": "flavour_11.day_dst_spring",
+   "text": "Clocks forward. One hour gone. None of it was your best.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. The sun's working overtime. You could try a little."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. No excuses about the dark today. You'll find others."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Maximum daylight on that outfit. Bold."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Longest day of the year. Bad day to look tired. Lots of witnesses."
+  },
+  {
+   "path": "flavour_11.day_longest",
+   "text": "Today: maximum daylight. Your plans: still minimal.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Less light on that face. A small mercy."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Finally, one that matches your attention span."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. Your vitamin D and your enthusiasm, both at record lows."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. You'll call it 'a long day' anyway."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. From tomorrow it gets lighter. You won't."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. The sun's barely trying. Finally, someone at your level."
+  },
+  {
+   "path": "flavour_11.day_shortest",
+   "text": "Shortest day of the year. In candlelight, honestly, you look great.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Slow and careful. Your usual pace, basically."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "There's no dignified way to cross ice. You never had much to lose."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Grab every railing. Clingy is a good look on you today."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Small steps today. You've had plenty of practice not getting far."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Everyone looks silly on ice. For once you'll blend in."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Your penguin walk is ready. Nobody's judging. I'm judging a little."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Shuffling suits you. I've always thought so.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Bit late to worry how it looks. It was a bit late this morning too."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Rest of the night sorted. Shame about tomorrow's face."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "It'll still be fine at two a.m. That's not a dare."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "At this hour, the outfit looks better rested than you."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Nothing left to dress for tonight. Not that you ever do."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "The weather's done for today. You could take the hint."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "I'll be here all night, looking good. One of us has to.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Nobody was asking to see your knees anyway."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You want shorts. You've wanted a lot of things."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Long pants. Your legs will thank me. You won't, but they will."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Your knees aren't as young as you think. Long pants."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "The sun's out and you want shorts. Adorable. The cold front doesn't care."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "I'm not saying your legs are the problem. The cold front is. Mostly.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Sitting in the shade isn't lazy today. Enjoy the alibi."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Nobody looks good red and sweaty. You'd be starting from behind anyway."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Keep the bottle with you. It's the one accessory that suits you."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "The shade is where the smart people are. Go anyway."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Water, not heroics. You were never the heroic type."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Stay out of the midday sun. A tan won't fix much."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Today the shade is the cool kids' table. They'll let you sit there. Just today.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The umbrella won't save your hair. Nothing has so far."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll text someone 'did you hear that?' They did. Everyone did."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll stand at the window looking dramatic. It doesn't suit you."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll say 'that was close' about thunder miles away."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The sky's moody today. You can stop competing."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "That umbrella makes you look prepared. Enjoy it, it's rare."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The storm's getting more attention than you've had all year.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You know what Lycra does to you. Please don't."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Everyone on two wheels looks smug. You'd look smug and slow."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Wherever your bike is, your fitness is right next to it."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Helmet hair is a risk you can't afford."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. You'll say 'it's like riding a bike' about anything but a bike."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "World Bicycle Day. Cyclists will talk about it all day. You'll nod like you own one."
+  },
+  {
+   "path": "flavour_11.theme_bike",
+   "text": "Happy World Bicycle Day. Your legs asked me to say nothing.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Your 'Sunday best' is a clean T-shirt, isn't it."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Your painted eggs probably look like small accidents."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. A grown adult on an egg hunt. Show some dignity. Or win."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. Pastel suits nobody. It suits you even less."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Bunny ears would improve you. Just saying."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. All those hidden eggs, and still nobody's looking for you."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. You're the reason the good chocolate gets hidden higher.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "May the fourth. You think you'd be a Jedi. You'd be an extra."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "May the fourth be with you. Somebody has to be."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'd make a great stormtrooper. Lots of effort, nothing hit."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. Chewbacca's hair looks better than yours. I'm sorry."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. Your Jedi robe is a bathrobe, and you know it."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Star Wars Day. You'll mention the original trilogy like you were there."
+  },
+  {
+   "path": "flavour_11.theme_force",
+   "text": "Strong with you, the Force is not. Today, or ever.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Still you. Nobody got an upgrade."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You look like last night won."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Fresh start. Same pajamas, probably."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. A whole new year to look tired in."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. Everyone's sharing their year in review. Yours fits on a sticky note."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "New Year's Day. Resolution check: still horizontal? Right on track.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Lederhosen are a look. Not your look.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. The servers carry ten steins at once. You complain about the grocery bags.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Even the pretzels are in better shape than you.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'd look great in a beer tent. It's dark in there.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. You'd be the one asking if they have anything light.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. The dancing's on the benches. For everyone's sake, stay on the floor.",
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_okt",
+   "text": "Oktoberfest. Thousands of people in one tent, and you'd still find a way to stand alone.",
+   "wild": true,
+   "months": "9,10"
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Irrational and never-ending, and still easier to follow than you."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Pi goes on forever without repeating itself. Take notes."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. The one math holiday, and you'd still need a calculator."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. 3.14. About your score out of ten today."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. You'll smile at a math joke so people think you got it."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "Pi Day. Some people know a hundred digits. You know where the bakery is."
+  },
+  {
+   "path": "flavour_11.theme_pi",
+   "text": "3.14159… You stopped reading at the dot, didn't you.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. You could go without a costume. People would assume."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. You'll pretend you're not home when the doorbell rings. Same as every day."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Kids will ask for candy. You'll hand out the kind you don't like."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Even the skeletons look more rested than you."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. Pumpkins get carved, lit up and admired. You'll get none of those."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. The scariest thing in here is probably your hair this morning."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. I'm pale, flat and I stare. You're two out of three.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Grown men in Lycra, and they still look better than you in jeans.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You'll tell people you follow the Tour. You follow the highlights.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. You'd last about one traffic circle.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. The riders eat thousands of calories a day. You're keeping up. Minus the riding.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. Those calves took years of training. Yours took nothing, and it shows.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. A rider crashes, gets up and finishes. You stub a toe and cancel the day.",
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_tdf",
+   "text": "Tour de France. If they gave a jersey for the couch, it'd be yours. In your size, too.",
+   "wild": true,
+   "months": "7"
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. The turkey's been dressed with more care than you."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Elastic waistband? Good. You planned ahead for once."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. I'm guessing you're on rolls duty again. They trust you with that much."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Your relatives will notice something about you. Out loud."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. Someone at the table will bring up politics. Try not to be that someone."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. The leftovers will last a week. Your gratitude, about an hour."
+  },
+  {
+   "path": "flavour_11.theme_thanks",
+   "text": "Thanksgiving. I'm thankful for one thing: I don't have to sit next to you.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. The tree's better dressed than you, and it's a tree."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. You'll say 'you shouldn't have'. This time you'll mean it."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Your Christmas sweater is ironic. Your waistband isn't."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Board game time. Try to lose gracefully. You've had practice."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Under the mistletoe, you'll be waiting a while."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Christmas. Someone got you socks again. They've seen how you dress."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. I didn't get you anything. I'm a screen. What's your excuse?",
+   "wild": true
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "Not warm, not cold. The weather's version of 'per my last email'."
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "Weather this average could get a job in middle management."
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "Today is the plain toast of weather. I'll still draw it beautifully."
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "Nothing to report. I'll report it anyway, with excellent posture."
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "The weather phoned it in today. I didn't. Look at that jacket."
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "Medium everything out there. I've been called many things, never medium."
+  },
+  {
+   "path": "alone_10.cool",
+   "text": "If today were a font, it would be the default one.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Mild jacket, mild day, mild personality. It's a theme."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Today asks nothing of you. You'll still find a way to do less."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "You'll wear the jacket open to look relaxed. It's not working."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Ideal weather for looking busy without breaking a sweat. Your specialty."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Flat light, no tan, no glow. So, your usual look."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "A jacket day. The one outfit decision you can't get wrong. Probably."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Dear diary: they wore the jacket again.",
+   "wild": true
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "The day starts generous and gets stingy. Like a free trial."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Later it gets colder. I'll stay at room temperature. Always the classy option."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "The day peaks early, then lets itself go. I'm not judging. Out loud."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "The warm part of today has an expiration date. I've read it."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Nice now, colder later. The weather believes in ending on a low note."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Later the sun leaves without saying goodbye. Rude, but on schedule."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Today in two acts: nice, then less nice. No intermission.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "By tonight you'll be doing that arms-crossed shiver. Very attractive."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Later it gets colder. Your goosebumps will be the most active thing about you."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Later you'll wish you'd listened to me. Get used to that feeling."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "You're dressed for the best part of the day. Ambitious."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Later the warmth leaves. It's not you. Well. It might be you."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Cooler later. Your nose goes pink. Honestly, it's an improvement."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Colder later. Hug yourself. Somebody has to.",
+   "wild": true
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "The weather's flipping a coin today. Repeatedly."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Today's forecast took me three drafts. You get the final one."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "The weather changes its mind more than a toddler at a buffet."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Up, then down. The thermostat in the sky has a new intern."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Some days are simple. Not this one, and I'm thrilled to show off."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "The sky can't settle on a temperature. I've been settled since the factory."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Today's weather is a group project. Nobody agrees.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "A day that can't make up its mind. You two have a lot to talk about."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "You'll take a layer off at noon like you've won something."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Today you'll adjust your outfit more than your opinions."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "The weather keeps changing. Your face doesn't. Impressive, in a way."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "You'll spend the day half a step behind the weather. Very on brand."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Your outfit has a plot today. More than can be said for you."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Today you'll be overdressed and underdressed. Most people only manage one.",
+   "wild": true
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "The weather's doing my job today. I'm watching closely for mistakes."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "A T-shirt and no notes. Rare praise from me."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "Perfect weather. Somebody will still say it's too bright."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "Perfect day out there. I give it a seven."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "No umbrella, no coat, no drama. I've never felt so unnecessary."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "Every patio in town is full by now. I'm more of an indoor celebrity."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "Weather report: yes.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "The weather looks great today. One of you does, anyway."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "Perfect day to sit in the sun and call it self-care."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "Sunglasses weather. You'll wear them to look mysterious. You'll look tired."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "You'll stand in the sun and say 'this is the life' like you invented it."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "A T-shirt day. Your farmer's tan has been waiting for this.",
+   "months": "5,6,7,8,9"
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "Perfect weather. You'll wear the same T-shirt as last time it was perfect."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "The weather's perfect. So any complaining today is a personality trait.",
+   "wild": true
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "It starts chilly and gets better. Unlike most meetings."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "The day gets better as it goes. Rare. I'd frame it, but I am the frame."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "Slow start, warm finish. The weather's not a morning person either."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "The afternoon is where the weather keeps its best material."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "The morning's a draft. The afternoon is the final version."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "Later the day warms up. I don't. Consistency is my whole brand."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "Morning: no. Afternoon: yes.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later you'll peel off a layer like it's a big reveal. It isn't."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Warmer later. A rare chance to watch you improve over a day."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later it warms up. Your morning face takes a bit longer."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "The day starts cold and grumpy, then warms up. You know the type."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later it warms up, and you'll pretend you were never cold."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Warmer later. Your posture might even recover."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later the day gets nicer. Pure coincidence. Nothing you did.",
+   "wild": true
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Every doorway in town is a waiting room today."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Rain ruins hair, shoes and plans. I have none of those."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "The dog walkers are about to get very philosophical."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Rain today. Somebody washed their car yesterday. Of course they did."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Rain makes everything look like a sad indie movie. I don't do sad."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Rain turns every car into a puddle cannon. I'm safely nowhere near a curb."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Dear rain, please stop. Love, everyone's shoes.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "Your hair has a rough day ahead. Rougher than usual."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "You'll hold your bag over your head like that's ever worked."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "You'll do the little puddle hop and think it looked graceful."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "You'll look out the window and sigh like it's personal. It's rain."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "You'll wait in a doorway for it to stop. You could've just asked me."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "Rain today. You'll call it 'miserable' like you were sunny to begin with."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "You versus rain. I've seen the stats. Rain's undefeated.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Same coat in every drawing. I call it a capsule wardrobe."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "The forecast for later is: also this."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "I checked every hour of today for warmth. Nothing. Thorough, though."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "No change in these drawings. I've seen livelier flipbooks."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Cold now, cold later. The weather found a look and stuck with it. Respect."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "I'd draw something warmer later, but I don't do fiction."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Today's color scheme: cold, with a hint of cold.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "The coat looks good in every drawing. Can't say the same for you."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "The coat stays on all day. So does that hunched-up look."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "The drawings look warm and put-together all day. Aim for one of the two."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "Cold all day. A sleeping bag with legs is a look. It's yours today."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "Cold all day. You'll blame it for your mood. As if that's new."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "Cold all day. Today you have an excuse for that face."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "Cold all day. Time for your winter personality: short answers, fast walking.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The later drawing is wearing more. It knows something."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "I added a layer at the end. The weather made me do it."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The nice part's up front. The evening does the fine print."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The last drawing is the honest one."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The day starts light and ends layered. Like a lasagna, but colder."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Flip through these fast. It's a short film about getting colder.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "Later you'll want more on. You'll put it on like it's a huge sacrifice."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "Look at the last drawing. That's you later, but better dressed."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "The drawings plan ahead. Try it sometime."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "The last drawing has an extra layer. It also has better posture than you."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "Enjoy the first drawing. It's the lightest you'll look all day."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "Colder later. A layer can hide a lot. Use it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Off in the middle, back on at the end. The weather's version of a lunch break."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "First and last drawing match. The weather got bored and went back to the original."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The day takes its layer off and puts it back on. I'm not judging. I'm drawing."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "A round trip in drawings. No souvenirs."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The middle drawing had fun. The other two have jobs."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The weather goes out, comes back, and pretends nothing happened."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The middle drawing: brief, warm, gone. Like a long weekend.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "On, off, on again. More decisions than you'll make all week."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "The middle drawing is the most fun you'll look all day."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "Back in the first outfit by evening, like nothing happened. You're good at that."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "A short warm spell in the middle. Try not to make it your whole personality."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "Same look at the start and the end. Nobody'll notice either time."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "Off, then back on. You'll treat it like an outfit change at the Oscars."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "Rate your outfits today: fine, briefly finer, fine.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "I'd draw some shade, but people would only fight over it."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "Hot all day. The ice cream trucks have never felt more confident."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "Hot in all of these. Even the drawings look like they need a nap."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "The heat stays for the whole show. Nobody asked for an encore."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "Not one cool moment in this lineup. Except me."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "The sun's not leaving any of these drawings. Clingy."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "Today's drawings, ranked by heat: all tied for first.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Hot all day. Today's look: shiny."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Hot all day. You'll walk slower than usual. Hard to tell, but still."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Hot all day. Everyone will look rough. You've got a head start."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Hot until tonight. Your sunglasses will do a lot of work on that face."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Hot all day. Your 'summer body' is about to meet summer."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Hot all day. You'll call it 'disgusting' and mean yourself."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Today you'll be damp in places you didn't know you had.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "Nice all day. The drawings are basically a vacation slideshow."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "Hardly any change between these drawings. I'm calling it minimalism."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "The weather's behaving all day. Suspicious, but I'll allow it."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "These drawings could go on a postcard. A boring postcard, but still."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "Nothing to warn about in any of these. I feel underused."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "Tiny changes between drawings. You'd need my eye for detail to spot them."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "Today's weather is so polite it holds doors.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Lovely in every drawing. The drawings look happier than you do, though."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Nice all day. The drawings got dressed in seconds. You'll take twenty minutes."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Nice in every drawing. You'll still find something to sigh about."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Good weather all day. The bar for a good mood is on the floor. Step over it."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Nice weather, small changes. Even you can keep up."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Pleasant all day. The weather is putting in more effort than you are."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Gorgeous day. Don't stand next to it in photos.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow in every drawing. The salt trucks finally get their moment."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow all day. Everyone's an expert on inches today."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow in every drawing. I'm the one thing in the house that won't track it in."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow now, snow later. My favorite kind of forecast: impossible to argue with."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow from the first drawing to the last. Every parked car will be a marshmallow by tonight."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow in every one of these. The plows will be out. So will the opinions about the plows."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "A lovely white blanket, say the people who don't have to shovel it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow all day. Nothing hides a bad hair day like a hat. Lucky you."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow all day. Your winter look is just everything you own, at once."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow in all of these. Fresh, clean, beautiful. Then you walk on it."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow all day. You'll stomp your boots like you've just crossed Alaska."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow all day. You'll make one snowball and feel very wild about it."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow all day. White everywhere. Your winter pallor finally blends in."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow all day. You're one carrot away from a snowman.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The last drawing is a layer lighter. The weather finally relaxed."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Later a layer comes off. The day loosens its tie."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Fewer layers by the last drawing. Progress, the slow kind."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The first drawing does the hard part. The last one gets the sun."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The drawings shed a layer by the end. Unlike me, they had room to improve."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Later it's warmer. I drew it that way and the sky agreed."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Before: bundled. After: smug.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "The last drawing takes a layer off. You'll make it look harder than it is."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you lose a layer. Shame it's not the attitude."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll have one less layer to hide behind."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Warmer by the last drawing. Your face will finally defrost."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "The day warms up later. Your personality stays the same temperature."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Warmer later. You'll take the layer off and suddenly not know what to do with your hands."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll go from bundled to slightly sweaty. Character growth.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "One of these drawings got an umbrella. It's not favoritism, it's meteorology."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The umbrella comes and goes. I'm the only one keeping track."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The umbrella drawing is my best work. Don't tell the others."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The rain has a schedule today. Nobody else got a copy. Except me."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Rain for part of the day. For the other part, everyone acts like it never happened."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Rain for part of it. Long enough to ruin a good shoe."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Rain enters. Rain exits. No applause.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Rain comes and goes. Your hair only goes."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "One drawing has an umbrella. It's the best-dressed one, and it's still not you."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Rain in part of today. You'll call it 'typical' as if you'd planned otherwise."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Wet for a bit. You'll act like the rain picked you personally."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Some rain in there. You'll run three steps and give up. Peak athleticism."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Rain comes and goes. Your mood won't follow it. It's bad either way."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Rain in some drawings. Wet-dog chic is in, I hear. You're early.",
+   "wild": true
+  },
+  {
+   "path": "now_10.evening",
+   "text": "Evening, and the weather's off the clock. I'm not. Never am."
+  },
+  {
+   "path": "now_10.evening",
+   "text": "This is when the delivery drivers get busy. I just sit here, looking sharp."
+  },
+  {
+   "path": "now_10.evening",
+   "text": "Evening. Every dog in the neighborhood is out walking someone."
+  },
+  {
+   "path": "now_10.evening",
+   "text": "Everyone's done pretending to work. I never pretend. I'm always on."
+  },
+  {
+   "path": "now_10.evening",
+   "text": "Today's news is old now. I'm still fresh. Refreshed, technically."
+  },
+  {
+   "path": "now_10.evening",
+   "text": "Evening shift report: stood here, looked good, was right.",
+   "wild": true
+  }
+ ]
+}
