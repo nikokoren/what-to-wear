@@ -47,6 +47,9 @@ def main():
                 continue
             seen.add((where, text))
             section, key = where.split(".", 1)
+            if item.get("months"):
+                # the markup compares two-digit months ("09")
+                item["months"] = ",".join(f"{int(m):02d}" for m in str(item["months"]).split(","))
             if section == "facts":
                 row = r22.fact_row(lang, key, text, doc, base)
             else:
