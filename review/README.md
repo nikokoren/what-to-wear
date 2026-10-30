@@ -545,3 +545,15 @@ slot; four critics picked (`*.critic_*.json`, merged into `<lang>.json`):
 787 English, 659 German; trimmed on the owner's word to enough to reach four plus two spares (491 English, 396 German). Each slot is its own batch with "Fill-up: n
 live here now". After voting: sync, then `build_pools.py` (FILL) adds
 the kept lines.
+
+## Proofreading page (German first)
+
+`tools/make_proofread.py de` builds `review/proofread.html` from
+`review/proofread.template.html` and the live texts: every German line,
+with a short intro for a native-speaker reviewer (what the screen does,
+the levels, what to flag). Published at
+https://claude.ai/artifact/HdTMEeB2qtcxmkyURMpKc1. Flags live in its
+database (`flags`, one document per line id, with reasons, suggestion,
+note, status offen / übernommen / abgelehnt); the "Markiert" tab lists
+them with a word diff for the owner to take or leave. Rebuild and
+republish after a round: the flags stay.

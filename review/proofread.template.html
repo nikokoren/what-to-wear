@@ -1,0 +1,375 @@
+<title>What to Wear Korrektur</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column of texts like an e-ink screen's lines; tabs for reading and for the flags. */
+:root {
+  --paper: #eef0ee; --card: #fbfcfb; --ink: #1d2120; --muted: #5d6764; --rule: #d3d8d5;
+  --flag: #b4471a; --flag-soft: #f6e3d9; --ok: #2f6b4f; --ok-soft: #dcefe5; --no: #7a2c3a; --no-soft: #f2dde1;
+  --ph: #dfe7f1; --ph-ink: #24466e;
+  --serif: "Literata", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #151817; --card: #1d2120; --ink: #e6e9e7; --muted: #9aa49f; --rule: #333a37;
+  --flag: #f08a5d; --flag-soft: #3a2419; --ok: #7fcfa5; --ok-soft: #1c3328; --no: #e894a4; --no-soft: #3a1f25;
+  --ph: #22344a; --ph-ink: #b9d3f2; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #151817; --card: #1d2120; --ink: #e6e9e7; --muted: #9aa49f; --rule: #333a37;
+  --flag: #f08a5d; --flag-soft: #3a2419; --ok: #7fcfa5; --ok-soft: #1c3328; --no: #e894a4; --no-soft: #3a1f25;
+  --ph: #22344a; --ph-ink: #b9d3f2; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 15px/1.5 var(--sans); margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px }
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px }
+header { padding-top: 28px; display: flex; flex-direction: column; gap: 6px }
+h1 { font: 600 28px/1.15 var(--serif); margin: 0; text-wrap: balance }
+.sub { color: var(--muted); margin: 0 }
+details.intro { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 4px 18px }
+details.intro summary { cursor: pointer; font-weight: 600; padding: 12px 0; list-style: none }
+details.intro summary::-webkit-details-marker { display: none }
+details.intro summary::after { content: " ▾"; color: var(--muted) }
+details.intro[open] summary::after { content: " ▴" }
+.intro-body { display: flex; flex-direction: column; gap: 12px; padding-bottom: 16px; max-width: 66ch }
+.intro-body h3 { font: 600 13px/1.3 var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 6px 0 0 }
+.intro-body p, .intro-body ul { margin: 0 }
+.intro-body ul { padding-left: 20px; display: flex; flex-direction: column; gap: 4px }
+.levels { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; align-items: baseline }
+.lv { font: 600 12px/1 var(--sans); padding: 4px 8px; border-radius: 99px; border: 1px solid var(--rule); white-space: nowrap; justify-self: start }
+.example { font-family: var(--serif); background: var(--paper); border-radius: 8px; padding: 10px 12px }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--rule); position: sticky; top: env(safe-area-inset-top, 0px); background: var(--paper); z-index: 5; padding-top: 8px }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper) }
+.tab { font: 500 15px var(--sans); background: none; border: 0; border-bottom: 2px solid transparent; padding: 10px 14px; color: var(--muted); cursor: pointer }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink) }
+.count { font-variant-numeric: tabular-nums; background: var(--flag-soft); color: var(--flag); border-radius: 99px; padding: 1px 8px; font-size: 12px; margin-left: 4px }
+.bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.bar select, .bar input[type="search"] { font: 14px var(--sans); padding: 7px 10px; border: 1px solid var(--rule); border-radius: 8px; background: var(--card); color: var(--ink); min-width: 0 }
+.bar input[type="search"] { flex: 1 1 180px }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden }
+.seg button { font: 13px var(--sans); background: var(--card); color: var(--muted); border: 0; padding: 7px 11px; cursor: pointer }
+.seg button + button { border-left: 1px solid var(--rule) }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper) }
+.meta-line { color: var(--muted); font-size: 13px }
+.notice { background: var(--flag-soft); color: var(--ink); border-radius: 8px; padding: 10px 14px; font-size: 14px }
+.group h2 { font: 600 13px/1.3 var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 18px 0 8px }
+.list { display: flex; flex-direction: column; gap: 8px }
+.row { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px }
+.row.flagged { border-color: var(--flag); box-shadow: inset 3px 0 0 var(--flag) }
+.row-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12px; color: var(--muted) }
+.chip { border: 1px solid var(--rule); border-radius: 99px; padding: 1px 8px; white-space: nowrap }
+.chip.l10 { border-color: var(--muted) }
+.chip.l11 { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.say { font: 17px/1.45 var(--serif); margin: 0; overflow-wrap: anywhere }
+.say .fact { display: block }
+.say .joke { display: block; margin-top: 4px }
+.say .fact + .joke { padding-top: 4px; border-top: 1px dashed var(--rule) }
+.ph { background: var(--ph); color: var(--ph-ink); border-radius: 4px; padding: 0 3px }
+.row-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+button.act { font: 500 13px var(--sans); border: 1px solid var(--rule); background: var(--card); color: var(--ink); border-radius: 8px; padding: 6px 12px; cursor: pointer }
+button.act.primary { background: var(--flag); border-color: var(--flag); color: #fff }
+button.act.okb { background: var(--ok-soft); border-color: var(--ok); color: var(--ok) }
+button.act.nob { background: var(--no-soft); border-color: var(--no); color: var(--no) }
+button.act:disabled { opacity: .5; cursor: default }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--flag); outline-offset: 2px }
+.editor { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--rule); padding-top: 10px }
+.reasons { display: flex; flex-wrap: wrap; gap: 6px }
+.reasons button { font: 13px var(--sans); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 99px; padding: 5px 11px; cursor: pointer }
+.reasons button[aria-pressed="true"] { background: var(--flag); border-color: var(--flag); color: #fff }
+.editor label { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 4px }
+.editor textarea, .editor input { font: 16px/1.4 var(--serif); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); width: 100%; resize: vertical }
+.editor input { font: 14px var(--sans) }
+.flag-card .pair { display: grid; grid-template-columns: 90px 1fr; gap: 6px 12px; align-items: baseline }
+.flag-card .pair > span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em }
+.del { background: var(--no-soft); color: var(--no); text-decoration: line-through; border-radius: 3px }
+.ins { background: var(--ok-soft); color: var(--ok); border-radius: 3px }
+.status { font-weight: 600 }
+.status.offen { color: var(--flag) } .status.übernommen { color: var(--ok) } .status.abgelehnt { color: var(--no) }
+.empty { color: var(--muted); text-align: center; padding: 40px 0 }
+.more { align-self: center }
+@media (max-width: 480px) { .flag-card .pair { grid-template-columns: 1fr } h1 { font-size: 24px } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>What to Wear: Korrekturlesen</h1>
+    <p class="sub" id="sub">Alle deutschen Texte des Displays, zum Prüfen.</p>
+  </header>
+
+  <details class="intro" id="intro" open>
+    <summary>Worum es geht und was zu tun ist</summary>
+    <div class="intro-body">
+      <p><strong>What to Wear</strong> ist eine Erweiterung für TRMNL, ein kleines E-Ink-Display, das zu Hause hängt. Es zeigt als Zeichnung, was man heute anziehen sollte, und sagt in einem Satz, was sich im Lauf des Tages ändert:</p>
+      <p class="example">Die Jacke kann heute Nachmittag weg. Halt sie aber griffbereit, heute Abend brauchst du sie wieder.</p>
+      <p>Wer will, bekommt einen Spruch dazu. Es spricht das Display selbst: ein Grantler, trocken und leicht genervt, in Standarddeutsch ohne Dialekt.</p>
+
+      <h3>Die Sarkasmus-Stufen</h3>
+      <div class="levels">
+        <span class="lv">Aus</span><span>Nur die Vorhersage, kein Spruch.</span>
+        <span class="lv">An</span><span>Sarkastisch und trocken: über das Wetter, die Welt oder das Display selbst. Nie gegen den Leser.</span>
+        <span class="lv" style="background:var(--ink);color:var(--paper);border-color:var(--ink)">11</span><span>Sarkastisch und persönlich: gegen den Leser. Auch das Aussehen ist erlaubt.</span>
+      </div>
+
+      <h3>Die Textarten</h3>
+      <ul>
+        <li><strong>Vorhersage</strong>: der sachliche Satz, gleich auf allen Stufen.</li>
+        <li><strong>Vorhersage + Witz</strong>: Satz und Spruch, zusammen geschrieben. Die gestrichelte Linie trennt sie; auf dem Display stehen sie untereinander.</li>
+        <li><strong>Witz zur Vorhersage</strong>: ein Spruch, der unter einem Vorhersage-Satz steht.</li>
+        <li><strong>Wetter jetzt</strong> und <strong>Unter den Zeichnungen</strong>: Sprüche ohne Vorhersage-Satz, nur unter der Zeichnung (oder unter zwei, drei Zeichnungen für jetzt und später).</li>
+        <li><strong>Sondertag</strong>: Sprüche für bestimmte Tage, etwa Weihnachten oder die Zeitumstellung.</li>
+      </ul>
+
+      <h3>Was du tun sollst</h3>
+      <p>Lies die Texte und markiere jeden, der</p>
+      <ul>
+        <li>grammatisch nicht stimmt,</li>
+        <li>einen Rechtschreib- oder Zeichensetzungsfehler hat,</li>
+        <li>nicht wie natürliches Deutsch klingt („so sagt das keiner“),</li>
+        <li>unklar ist oder irgendwie schief wirkt.</li>
+      </ul>
+      <p>Ob ein Spruch lustig ist, ist hier nicht die Frage. Markiere ihn, wenn er sprachlich hakt.</p>
+      <p><span class="ph">Hervorgehobene Wörter</span> setzt das Display selbst ein: Uhrzeiten („heute Nachmittag“, „ab 15 Uhr“, „in drei Stunden“) und Kleidungsstücke („die Jacke“, „der Schal“, „die Winterjacke“, „der Pulli“). Prüfe, ob der Satz mit allen davon funktioniert.</p>
+      <p>Schreib, wenn du kannst, einen besseren Wortlaut dazu. Was du nicht markierst, gilt als in Ordnung. Deine Markierungen werden sofort gespeichert.</p>
+    </div>
+  </details>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-read" aria-selected="true">Lesen</button>
+    <button class="tab" role="tab" id="tab-flags" aria-selected="false">Markiert <span class="count" id="n-flags">0</span></button>
+  </div>
+
+  <div id="notice" class="notice" hidden></div>
+
+  <section id="view-read" class="wrap" style="gap:12px">
+    <div class="bar">
+      <select id="f-kind" aria-label="Textart"></select>
+      <div class="seg" id="f-level" role="group" aria-label="Stufe">
+        <button data-v="all" aria-pressed="true">Alle</button><button data-v="" aria-pressed="false">Vorhersage</button><button data-v="10" aria-pressed="false">An</button><button data-v="11" aria-pressed="false">11</button>
+      </div>
+      <input type="search" id="f-q" placeholder="Suchen" aria-label="Im Text suchen">
+    </div>
+    <div class="meta-line" id="read-meta"></div>
+    <div id="read-list"></div>
+  </section>
+
+  <section id="view-flags" class="wrap" style="gap:12px" hidden>
+    <div class="bar">
+      <div class="seg" id="f-status" role="group" aria-label="Status">
+        <button data-v="offen" aria-pressed="true">Offen</button><button data-v="übernommen" aria-pressed="false">Übernommen</button><button data-v="abgelehnt" aria-pressed="false">Abgelehnt</button><button data-v="all" aria-pressed="false">Alle</button>
+      </div>
+      <select id="f-reason" aria-label="Grund"></select>
+    </div>
+    <div class="meta-line" id="flag-meta"></div>
+    <div id="flag-list" class="list"></div>
+  </section>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const REASONS = ["Grammatik", "Rechtschreibung / Zeichensetzung", "Klingt unnatürlich", "Unklar", "Passt nicht zur Situation", "Anderes"];
+const LEVEL = { "": "Vorhersage", "10": "An", "11": "11" };
+const BY_ID = Object.fromEntries(DATA.lines.map((l) => [l.id, l]));
+const KINDS = [...new Set(DATA.lines.map((l) => l.kind))];
+const ui = { tab: "read", kind: "all", level: "all", q: "", status: "offen", reason: "all", open: null, shown: 120 };
+let flags = {};          // id -> flag doc
+let db = null, userNs = null, uid = null, canWrite = true, canDecide = false;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function filled(t) { let s = t; for (const [k, v] of Object.entries(DATA.fill)) s = s.split(k).join(v); return s; }
+function marked(t) {
+  let s = esc(t);
+  for (const [k, v] of Object.entries(DATA.fill)) s = s.split(esc(k)).join(`<span class="ph" title="Wird vom Display eingesetzt">${esc(v)}</span>`);
+  return s;
+}
+function sayHtml(l) {
+  return l.fact ? `<span class="fact">${marked(l.fact)}</span><span class="joke">${marked(l.joke)}</span>` : `<span class="joke">${marked(l.joke)}</span>`;
+}
+function chips(l) {
+  const lv = l.level ? `<span class="chip l${l.level}">${LEVEL[l.level]}</span>` : "";
+  return `${lv}<span>${esc(l.kind)}</span><span>·</span><span>${esc(l.label)}</span>` +
+    (l.seasonal ? `<span class="chip">nur zu bestimmten Monaten</span>` : "") + (l.morning ? `<span class="chip">nur vormittags</span>` : "");
+}
+
+function remember() { try { localStorage.setItem("wtw-proof", JSON.stringify({ tab: ui.tab, kind: ui.kind, level: ui.level, status: ui.status, intro: $("intro").open })); } catch (e) {} }
+try { const s = JSON.parse(localStorage.getItem("wtw-proof") || "{}"); Object.assign(ui, { tab: s.tab || ui.tab, kind: s.kind || ui.kind, level: s.level ?? ui.level, status: s.status || ui.status }); if (s.intro === false) $("intro").open = false; } catch (e) {}
+
+function setSeg(el, value) { el.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === value))); }
+
+function renderRead() {
+  const q = ui.q.trim().toLowerCase();
+  const rows = DATA.lines.filter((l) => (ui.kind === "all" || l.kind === ui.kind) && (ui.level === "all" || l.level === ui.level) &&
+    (!q || filled(l.text).toLowerCase().includes(q)));
+  const nFlag = rows.filter((l) => flags[l.id]).length;
+  $("read-meta").textContent = `${rows.length} Texte, davon ${nFlag} markiert`;
+  const parts = []; let last = null;
+  for (const l of rows.slice(0, ui.shown)) {
+    const g = `${l.kind}: ${l.label}`;
+    if (g !== last) { if (last !== null) parts.push(`</div></div>`); parts.push(`<div class="group"><h2>${esc(g)}</h2><div class="list">`); last = g; }
+    parts.push(rowHtml(l));
+  }
+  if (last !== null) parts.push(`</div></div>`);
+  if (!rows.length) parts.push(`<p class="empty">Keine Texte für diese Auswahl.</p>`);
+  if (rows.length > ui.shown) parts.push(`<button class="act more" id="more">Weitere ${Math.min(120, rows.length - ui.shown)} von ${rows.length - ui.shown} anzeigen</button>`);
+  $("read-list").innerHTML = parts.join("");
+  const more = $("more"); if (more) more.onclick = () => { ui.shown += 120; renderRead(); };
+}
+
+function rowHtml(l) {
+  const f = flags[l.id];
+  const open = ui.open === l.id;
+  const btn = canWrite && db ? `<button class="act ${f ? "" : "primary"}" data-edit="${l.id}">${f ? "Markierung ändern" : "Markieren"}</button>` : "";
+  const sum = f ? `<span class="meta-line">Markiert: ${esc((f.reasons || []).join(", ") || "ohne Grund")}${f.suggestion ? " · mit Vorschlag" : ""}</span>` : "";
+  return `<article class="row${f ? " flagged" : ""}" id="r-${l.id}">
+    <div class="row-head">${chips(l)}</div>
+    <p class="say">${sayHtml(l)}</p>
+    <div class="row-actions">${btn}${sum}</div>
+    ${open ? editorHtml(l, f) : ""}
+  </article>`;
+}
+
+function editorHtml(l, f) {
+  const r = new Set(f?.reasons || []);
+  return `<form class="editor" data-form="${l.id}">
+    <div class="reasons" role="group" aria-label="Was stimmt nicht?">${REASONS.map((x) => `<button type="button" data-reason="${esc(x)}" aria-pressed="${r.has(x)}">${esc(x)}</button>`).join("")}</div>
+    <label>Besserer Wortlaut (optional)<textarea id="sug-${l.id}" rows="3">${esc(f?.suggestion ?? filled(l.text).replace(" || ", "\n"))}</textarea></label>
+    <label>Anmerkung (optional)<input id="note-${l.id}" value="${esc(f?.note || "")}" placeholder="z. B. „mit ‚der Schal‘ falsch“"></label>
+    <div class="row-actions">
+      <button class="act primary" type="submit">Speichern</button>
+      <button class="act" type="button" data-cancel="1">Abbrechen</button>
+      ${f ? `<button class="act nob" type="button" data-remove="${l.id}">Markierung entfernen</button>` : ""}
+      <span class="meta-line" id="msg-${l.id}" role="status"></span>
+    </div>
+  </form>`;
+}
+
+function diffHtml(a, b) {
+  const x = a.split(/(\s+)/), y = b.split(/(\s+)/);
+  const m = x.length, n = y.length, t = Array.from({ length: m + 1 }, () => new Int16Array(n + 1));
+  for (let i = m - 1; i >= 0; i--) for (let j = n - 1; j >= 0; j--) t[i][j] = x[i] === y[j] ? t[i + 1][j + 1] + 1 : Math.max(t[i + 1][j], t[i][j + 1]);
+  const out = []; let i = 0, j = 0;
+  while (i < m && j < n) {
+    if (x[i] === y[j]) { out.push(esc(x[i])); i++; j++; }
+    else if (t[i + 1][j] >= t[i][j + 1]) { out.push(`<span class="del">${esc(x[i])}</span>`); i++; }
+    else { out.push(`<span class="ins">${esc(y[j])}</span>`); j++; }
+  }
+  while (i < m) out.push(`<span class="del">${esc(x[i++])}</span>`);
+  while (j < n) out.push(`<span class="ins">${esc(y[j++])}</span>`);
+  return out.join("");
+}
+
+async function renderFlags() {
+  const all = Object.values(flags).filter((f) => f.lang === DATA.lang);
+  $("n-flags").textContent = all.filter((f) => (f.status || "offen") === "offen").length;
+  const reasons = ["all", ...REASONS];
+  $("f-reason").innerHTML = reasons.map((r) => `<option value="${esc(r)}"${r === ui.reason ? " selected" : ""}>${r === "all" ? "Alle Gründe" : esc(r)}</option>`).join("");
+  const rows = all.filter((f) => (ui.status === "all" || (f.status || "offen") === ui.status) && (ui.reason === "all" || (f.reasons || []).includes(ui.reason)))
+    .sort((a, b) => String(a.where).localeCompare(String(b.where)));
+  $("flag-meta").textContent = `${rows.length} von ${all.length} Markierungen`;
+  if (!rows.length) { $("flag-list").innerHTML = `<p class="empty">${all.length ? "Keine Markierungen mit diesem Status." : "Noch nichts markiert."}</p>`; return; }
+  let names = {};
+  if (userNs) { try { names = await userNs.profiles([...new Set(rows.map((f) => f.by).filter(Boolean))]); } catch (e) {} }
+  $("flag-list").innerHTML = rows.map((f) => {
+    const l = BY_ID[f.id] || { kind: "", label: f.where, level: "", fact: "", joke: f.text, text: f.text };
+    const orig = filled(f.text).replace(" || ", "\n");
+    const sug = (f.suggestion || "").trim();
+    const st = f.status || "offen";
+    const who = f.by && names[f.by] ? (names[f.by].name || "Jemand") : "Jemand";
+    const gone = BY_ID[f.id] ? "" : `<span class="chip">Text inzwischen geändert</span>`;
+    return `<article class="row flag-card${st === "offen" ? " flagged" : ""}">
+      <div class="row-head">${chips(l)}${gone}<span class="status ${st}">${st}</span></div>
+      <div class="pair"><span>Original</span><p class="say">${sayHtml(l)}</p>
+        ${sug && sug !== orig ? `<span>Vorschlag</span><p class="say" style="white-space:pre-line">${diffHtml(orig, sug)}</p>` : ""}
+        <span>Grund</span><div>${esc((f.reasons || []).join(", ") || "–")}</div>
+        ${f.note ? `<span>Anmerkung</span><div></div>` : ""}
+        <span>Von</span><div class="who"></div></div>
+      ${canDecide && db ? `<div class="row-actions">
+        <button class="act okb" data-status="übernommen" data-id="${f.id}"${st === "übernommen" ? " disabled" : ""}>Übernehmen</button>
+        <button class="act nob" data-status="abgelehnt" data-id="${f.id}"${st === "abgelehnt" ? " disabled" : ""}>Ablehnen</button>
+        ${st !== "offen" ? `<button class="act" data-status="offen" data-id="${f.id}">Wieder offen</button>` : ""}</div>` : ""}
+    </article>`;
+  }).join("");
+  // other people's words: set as text
+  const cards = $("flag-list").querySelectorAll(".flag-card");
+  rows.forEach((f, k) => {
+    const card = cards[k]; if (!card) return;
+    const who = card.querySelector(".who"); if (who) who.textContent = (f.by && names[f.by]?.name) || "Jemand";
+    if (f.note) { const spans = card.querySelectorAll(".pair > div"); const noteDiv = spans[1]; if (noteDiv) noteDiv.textContent = f.note; }
+  });
+}
+
+function render() {
+  $("tab-read").setAttribute("aria-selected", String(ui.tab === "read"));
+  $("tab-flags").setAttribute("aria-selected", String(ui.tab === "flags"));
+  $("view-read").hidden = ui.tab !== "read";
+  $("view-flags").hidden = ui.tab !== "flags";
+  setSeg($("f-level"), ui.level); setSeg($("f-status"), ui.status);
+  $("f-kind").value = ui.kind;
+  if (ui.tab === "read") renderRead();
+  renderFlags();
+}
+
+$("f-kind").innerHTML = `<option value="all">Alle Textarten</option>` + KINDS.map((k) => `<option value="${esc(k)}">${esc(k)} (${DATA.lines.filter((l) => l.kind === k).length})</option>`).join("");
+$("sub").textContent = `${DATA.lines.length} deutsche Texte, Stand ${new Date().toLocaleDateString("de-DE")}.`;
+$("tab-read").onclick = () => { ui.tab = "read"; remember(); render(); };
+$("tab-flags").onclick = () => { ui.tab = "flags"; remember(); render(); };
+$("f-kind").onchange = (e) => { ui.kind = e.target.value; ui.shown = 120; remember(); render(); };
+$("f-level").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; ui.level = b.dataset.v; ui.shown = 120; remember(); render(); };
+$("f-status").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; ui.status = b.dataset.v; remember(); render(); };
+$("f-reason").onchange = (e) => { ui.reason = e.target.value; renderFlags(); };
+let qTimer; $("f-q").oninput = (e) => { clearTimeout(qTimer); qTimer = setTimeout(() => { ui.q = e.target.value; ui.shown = 120; renderRead(); }, 150); };
+$("intro").addEventListener("toggle", remember);
+
+$("read-list").addEventListener("click", async (e) => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.edit) { ui.open = ui.open === t.dataset.edit ? null : t.dataset.edit; renderRead(); $(`r-${t.dataset.edit}`)?.querySelector("textarea")?.focus(); return; }
+  if (t.dataset.reason) { t.setAttribute("aria-pressed", String(t.getAttribute("aria-pressed") !== "true")); return; }
+  if (t.dataset.cancel) { ui.open = null; renderRead(); return; }
+  if (t.dataset.remove) {
+    const id = t.dataset.remove;
+    try { await db.collection("flags").doc(id).delete(); ui.open = null; } catch (err) { $(`msg-${id}`).textContent = "Konnte nicht entfernt werden. Bitte noch einmal versuchen."; }
+  }
+});
+$("read-list").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target, id = form.dataset.form, l = BY_ID[id];
+  const reasons = [...form.querySelectorAll("[data-reason][aria-pressed='true']")].map((b) => b.dataset.reason);
+  const suggestion = $(`sug-${id}`).value.trim();
+  const note = $(`note-${id}`).value.trim();
+  const unchanged = suggestion === filled(l.text).replace(" || ", "\n");
+  if (!reasons.length && (unchanged || !suggestion) && !note) { $(`msg-${id}`).textContent = "Bitte einen Grund wählen oder einen Vorschlag schreiben."; return; }
+  const prev = flags[id];
+  const doc = { id, lang: DATA.lang, where: l.where, text: l.text, reasons, suggestion: unchanged ? "" : suggestion, note,
+    by: prev?.by || uid || null, at: new Date().toISOString(), status: prev?.status || "offen" };
+  try { await db.collection("flags").doc(id).set(doc); ui.open = null; }
+  catch (err) { $(`msg-${id}`).textContent = err?.code === "invalid_argument" ? "Du kannst hier nichts speichern (nur Lesezugriff)." : "Speichern ging nicht. Bitte noch einmal versuchen."; }
+});
+$("flag-list").addEventListener("click", async (e) => {
+  const b = e.target.closest("button[data-status]"); if (!b || !db) return;
+  b.disabled = true;
+  try { await db.collection("flags").doc(b.dataset.id).update({ status: b.dataset.status, decided: new Date().toISOString() }); }
+  catch (err) { b.disabled = false; }
+});
+
+render();
+
+(async () => {
+  const claude = window.claude;
+  if (!claude?.use) { $("notice").hidden = false; $("notice").textContent = "Markieren geht nur in der geöffneten Seite auf claude.ai."; canWrite = false; render(); return; }
+  [db, userNs] = await Promise.all([claude.use("db"), claude.use("user")]);
+  if (!db) { $("notice").hidden = false; $("notice").textContent = "Markierungen können hier nicht gespeichert werden. Bitte die Seite angemeldet auf claude.ai öffnen."; canWrite = false; render(); return; }
+  if (userNs) {
+    uid = await userNs.id();
+    const w = await userNs.can("data.write");
+    if (w === false) { canWrite = false; $("notice").hidden = false; $("notice").textContent = "Du hast hier nur Lesezugriff. Zum Markieren braucht es Bearbeitungsrechte (Contributor)."; }
+    canDecide = (await userNs.isOwner()) || (await userNs.canEdit());
+  }
+  db.collection("flags").onSnapshot((snap) => {
+    const next = {}; snap.docs.forEach((d) => { const v = d.data(); if (v) next[d.id] = v; });
+    flags = next;
+    if (ui.open) renderFlags(); else render();  // don't wipe a half-written flag
+  }, () => { $("notice").hidden = false; $("notice").textContent = "Die Markierungen konnten nicht geladen werden. Bitte die Seite neu laden."; });
+  render();
+})();
+</script>
