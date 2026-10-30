@@ -46,6 +46,8 @@ PANELS = {
     "fickle": ["coat_dry", ("jacket_dry", 13), ("coat_dry", 19)],
     "hot": ["tee_pants_dry", ("heat_dry", 13)],
     "snow": ["coat_dry", ("coat_snow", 15)],
+    # Round 24: nice weather whose drawings still change a little.
+    "nice": ["tee_pants_dry", ("tee_shorts_dry", 13)],
 }
 
 # Claude's guess: lines that answer the fact line, so make no sense under
