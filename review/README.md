@@ -517,3 +517,11 @@ with fewer than two units for the situation), 2 jokes that sat at both
 levels stay at On only, and 6 flagged for looks or worth at 11 stay.
 `LEVEL_FIXES` in `build_pools.py`; the page notes each line it touched
 ("Level check" batch).
+
+German new lines voted (October 2026): 8 starred, 26 kept (15 with the
+owner's edits), 43 vetoed, almost all "not funny". Not rewritten yet, on
+the owner's word. Still empty or thin in German: Eisheilige (no line at
+either level), Weihnachten at On (none, falls back), Nikolaus, storm and
+pants at On (one each), and at 11 the units for scarf off and warmer
+later (one each, so the screen uses the plain forecast there). The
+"Write new" spots wait in `review/rewrite/de.md`.

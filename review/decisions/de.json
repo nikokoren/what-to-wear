@@ -10686,6 +10686,1170 @@
   "note": "",
   "updatedAt": "2026-10-09T07:13:14.796Z"
  },
+ "f2-de-0155ba953470": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Die Sonne jetzt ist ein Lockangebot.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:32:27.869Z"
+ },
+ "f2-de-03397540fb4f": {
+  "level": "11",
+  "key": "arc_warmer",
+  "path": "unit_11.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || Ab dann musst du nur noch in der Sonne gut aussehen. Viel Erfolg.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:21:40.520Z"
+ },
+ "f2-de-098170ec0951": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Wenn's blitzt, ist das kein Fotograf. So berühmt bist du nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:38:30.913Z"
+ },
+ "f2-de-0b1365d6588b": {
+  "level": "11",
+  "key": "w_scarf",
+  "path": "unit_11.w_scarf[+]",
+  "text": "Den Schal kannst du {WHEN} wegpacken. || Riech lieber nicht dran. Der war den ganzen Winter um deinen Hals.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:41:30.948Z"
+ },
+ "f2-de-0c49dd5cc5e2": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Heute schaut keiner auf mich. Die schauen alle aus dem Fenster.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:27:59.220Z"
+ },
+ "f2-de-0cd2bbe56e95": {
+  "level": "11",
+  "key": "w_hoodie",
+  "path": "unit_11.w_hoodie[+]",
+  "text": "{WHEN} kann der Pulli weg. || Der Pulli ist erleichtert. Glaub mir.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:40:40.330Z"
+ },
+ "f2-de-0fa15fca7401": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Die Kaltfront meldet sich nicht vorher an. Außer bei mir.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:32:33.120Z"
+ },
+ "f2-de-168b618265c0": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Bei Gewitter hat die Oma früher alle Stecker gezogen. Ich hätt endlich mal Ruhe gehabt.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:37:54.045Z"
+ },
+ "f2-de-17bde1ce8efd": {
+  "level": "10",
+  "key": "w_hoodie",
+  "path": "unit_10.w_hoodie[+]",
+  "text": "{WHEN} wird's mild genug, um den Pulli auszuziehen. || Das Wetter wird freundlich. Ich bleib, wie ich bin.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:40:23.016Z"
+ },
+ "f2-de-1a4a4d99d76f": {
+  "level": "11",
+  "key": "w_scarf",
+  "path": "unit_11.w_scarf[+]",
+  "text": "{WHEN} kann der Schal weg. || Der Schal hat dann frei. Bei dem Gesicht darüber hat er sich's verdient.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:41:43.679Z"
+ },
+ "f2-de-1aed8765f3e2": {
+  "level": "10",
+  "key": "w_coat",
+  "path": "unit_10.w_coat[+]",
+  "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Ab dann schwitzt jeder in der Bahn, der's nicht gelesen hat.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:39:59.913Z"
+ },
+ "f2-de-1c0d507c09fe": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. Das Wochenende hat noch nicht angefangen, und du bist schon müde davon.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Das Wochenende hat noch nicht angefangen, und du bist schon müde davon.",
+  "updatedAt": "2026-10-30T08:27:47.654Z"
+ },
+ "f2-de-1cb8abcb8a1b": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "Den Schal kannst du {WHEN} wegpacken. || Ein Schal weniger. Das ist bei mir schon fast gute Laune.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:41:00.563Z"
+ },
+ "f2-de-258f079168b2": {
+  "level": "10",
+  "key": "night",
+  "path": "now_10.night[+]",
+  "text": "Beleuchtung hab ich keine. Nachts häng ich also ganz umsonst hier.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:28:20.420Z"
+ },
+ "f2-de-26ddea469760": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Das Wetter wird besser. Die Leute gleich lauter.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Das Wetter wird besser. Deine Leute gleich lauter.",
+  "updatedAt": "2026-10-30T08:42:11.830Z"
+ },
+ "f2-de-2b3c1ed8c545": {
+  "level": "11",
+  "key": "pants",
+  "path": "flavour_11.pants[+]",
+  "text": "Shorts jetzt, frieren später. Klingt nach deinem üblichen Plan.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:32:37.769Z"
+ },
+ "f2-de-2c01a9139dfe": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag so kalt. || Heute dampft jeder beim Reden. Endlich sieht man mal, wie viel heiße Luft dabei ist.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:33:40.520Z"
+ },
+ "f2-de-2dfa9b0399e0": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Erst freundlich, dann gemein. Das Wetter lernt von mir.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:19:59.820Z"
+ },
+ "f2-de-314013caba06": {
+  "level": "11",
+  "key": "night",
+  "path": "now_11.night[+]",
+  "text": "Finger weg vom Warenkorb. Um die Zeit kaufst du nur Unsinn.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:29:14.489Z"
+ },
+ "f2-de-332bece5031d": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "Die Kälte hält heute den ganzen Tag an. || Draußen rauchen heute auch die Nichtraucher.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:33:47.154Z"
+ },
+ "f2-de-35a67a8b7554": {
+  "level": "10",
+  "key": "theme_nikolo",
+  "path": "flavour_10.theme_nikolo[+]",
+  "text": "Nikolaus. Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen.",
+  "updatedAt": "2026-10-30T08:38:59.463Z"
+ },
+ "f2-de-47bc35ec2b60": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Mit dem, was du anhast, kommst du gut durch den Abend. || Um die Zeit bin ich nur noch ein Testbild mit Meinung.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:33:58.720Z"
+ },
+ "f2-de-49ccdc65813b": {
+  "level": "10",
+  "key": "theme_nikolo",
+  "path": "flavour_10.theme_nikolo[+]",
+  "text": "Nikolaus. Lob und Tadel aus dem goldenen Buch. Mach ich jeden Tag, ohne Buch.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:39:05.513Z"
+ },
+ "f2-de-4a5c231ac2e6": {
+  "level": "11",
+  "key": "c_scarf",
+  "path": "unit_11.c_scarf[+]",
+  "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Ein Schnupfen ist bei dir ja immer gleich eine Lungenentzündung.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:26:47.902Z"
+ },
+ "f2-de-4ca1261f1cd9": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "Wasserdicht ist deine Jacke übrigens nur laut Etikett.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Wasserdicht ist deine Jacke nur laut Etikett.",
+  "updatedAt": "2026-10-30T08:33:09.588Z"
+ },
+ "f2-de-4daba0f02648": {
+  "level": "11",
+  "key": "p_snow_coming",
+  "path": "unit_11.p_snow_coming[+]",
+  "text": "{WHENP} kommt Schnee. || Schneeflocken mit der Zunge fangen ist in deinem Alter übrigens kein Hobby.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "{WHENP} kommt Schnee. || Schneeflocken mit der Zunge fangen ist in deinem Alter übrigens gesellschaftlich verpönt.",
+  "updatedAt": "2026-10-30T08:32:11.418Z"
+ },
+ "f2-de-53a0a55b339a": {
+  "level": "11",
+  "key": "off",
+  "path": "flavour_11.off[+]",
+  "text": "Ausziehen kannst du. Zusammenlegen eher nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:29:59.920Z"
+ },
+ "f2-de-5590e265baaf": {
+  "level": "10",
+  "key": "night",
+  "path": "now_10.night[+]",
+  "text": "Um die Zeit sind nur noch der Kühlschrank und ich wach. Und der brummt.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Um die Zeit sind normalerweise nur noch der Kühlschrank und ich wach.",
+  "updatedAt": "2026-10-30T08:28:43.855Z"
+ },
+ "f2-de-5c0603bba484": {
+  "level": "11",
+  "key": "night",
+  "path": "now_11.night[+]",
+  "text": "Hör auf, um die Uhrzeit Symptome zu googeln. Du hast nichts. Vermutlich.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:29:30.454Z"
+ },
+ "f2-de-5c0ef603f4aa": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Das Wetter überlegt's sich nachher anders. Ich nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:30:25.137Z"
+ },
+ "f2-de-601cdcd7b419": {
+  "level": "10",
+  "key": "theme_xmas",
+  "path": "flavour_10.theme_xmas[+]",
+  "text": "Weihnachten. Heute arbeiten nur noch ich und der Backofen.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:39:41.130Z"
+ },
+ "f2-de-615e59899ee2": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Die Ausrede für deine schlechte Laune geht dir langsam aus.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Die Ausreden für deine schlechte Laune gehen dir langsam aus.",
+  "updatedAt": "2026-10-30T08:25:43.388Z"
+ },
+ "f2-de-61efc29c4f31": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "Was du anhast, passt für den ganzen Abend. || Auch für die Party, auf die du nicht eingeladen bist.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Was du anhast, passt für den ganzen Abend. || Auch für die Party, zu der du nicht eingeladen bist.",
+  "updatedAt": "2026-10-30T08:37:28.581Z"
+ },
+ "f2-de-6a96573d1f68": {
+  "level": "10",
+  "key": "day_eisheilige",
+  "path": "flavour_10.day_eisheilige[+]",
+  "text": "Eisheilige. Pankratius, Servatius, Bonifatius. Klingt nach Anwaltskanzlei.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:27:16.120Z"
+ },
+ "f2-de-6da6ceec925a": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Bei jedem Donner zusammenzucken und dann so tun, als wär nichts. Kenn ich.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Bei jedem Donner zusammenzucken und dann so tun, als wär nichts. Schon klar.",
+  "updatedAt": "2026-10-30T08:38:43.215Z"
+ },
+ "f2-de-7243265ac395": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "Dein Immunsystem hat schon genug mit dir zu tun.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "Dein Immunsystem hat auch so schon genug zu tun. Mach es einfach.",
+  "updatedAt": "2026-10-30T08:31:24.785Z"
+ },
+ "f2-de-75ac1f8d4665": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Heute bist du mal nicht der Lauteste. Ausnahmsweise.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:38:50.896Z"
+ },
+ "f2-de-7e33dc475444": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Falls du heute doch noch was vorhast. Ich lach schon mal vor.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:29:44.437Z"
+ },
+ "f2-de-7eeab4825845": {
+  "level": "11",
+  "key": "night",
+  "path": "flavour_11.night[+]",
+  "text": "Den Rest des Abends schaust du eh auf einen anderen Bildschirm. Schon gut.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:29:53.419Z"
+ },
+ "f2-de-87402043a0c1": {
+  "level": "10",
+  "key": "w_hoodie",
+  "path": "unit_10.w_hoodie[+]",
+  "text": "Mit dem Pulli ist {WHEN} Schluss, dann wird's wärmer. || Und schon ist er zu warm zum Tragen und zu groß für die Tasche.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:40:35.846Z"
+ },
+ "f2-de-910a6dd43884": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Heute trägst du's mehr, als du's anhast.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:20:57.903Z"
+ },
+ "f2-de-972b00218c45": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "{WHEN} kann der Schal weg. || Der Mantel bleibt aber. Ich will ja nicht übermütig werden.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} kann der Schal weg. || Der Mantel bleibt aber. Werd nicht übermütig.",
+  "updatedAt": "2026-10-30T08:41:22.397Z"
+ },
+ "f2-de-9a9833d0e4db": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Bei dem Wetter ist das Zelt voll. Bei jedem anderen übrigens auch.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:39:16.195Z"
+ },
+ "f2-de-9cbb9718e885": {
+  "level": "11",
+  "key": "pants",
+  "path": "flavour_11.pants[+]",
+  "text": "Ja, es ist warm. Nein, nicht den ganzen Tag. Nein, ich diskutier das nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "Nein, ich diskutier das nicht mit dir.",
+  "updatedAt": "2026-10-30T08:32:55.318Z"
+ },
+ "f2-de-9cd5bfc8246e": {
+  "level": "10",
+  "key": "c_hoodie",
+  "path": "unit_10.c_hoodie[+]",
+  "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Den dicken musst du nicht nehmen. Ich bin ja kein Unmensch.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:22:36.153Z"
+ },
+ "f2-de-9f55fe1ac33a": {
+  "level": "11",
+  "key": "off",
+  "path": "flavour_11.off[+]",
+  "text": "Und du freust dich, als hättest du selbst was dafür getan.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:30:10.454Z"
+ },
+ "f2-de-a252bbb55554": {
+  "level": "11",
+  "key": "arc_warmer",
+  "path": "unit_11.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Einmal entscheiden und durchziehen. Das Wetter kann's. Du übst noch.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Einmal entscheiden und durchziehen. Das Wetter kann's. Du musst noch üben.",
+  "updatedAt": "2026-10-30T08:22:17.024Z"
+ },
+ "f2-de-a330b8184a85": {
+  "level": "11",
+  "key": "p_snow_coming",
+  "path": "unit_11.p_snow_coming[+]",
+  "text": "{WHENP} setzt Schneefall ein. || Schnee macht alles schön. Fast alles. Stell dich nicht davor.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:32:20.670Z"
+ },
+ "f2-de-a3e57122c683": {
+  "level": "10",
+  "key": "day_eisheilige",
+  "path": "flavour_10.day_eisheilige[+]",
+  "text": "Eisheilige. Auf den Fensterbänken warten die Tomaten, bis ein paar Heilige ihr Okay geben.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:27:26.887Z"
+ },
+ "f2-de-a6c15634beb9": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Dein Deo hat trotzdem schon aufgegeben.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:26:01.630Z"
+ },
+ "f2-de-a8627756e1c5": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Mitschleppen ist lästig. Frieren ist lästiger.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:30:35.187Z"
+ },
+ "f2-de-aa2a8885012e": {
+  "level": "11",
+  "key": "rain",
+  "path": "flavour_11.rain[+]",
+  "text": "Dir ist das Wetter egal? Deinen Schuhen nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:33:19.236Z"
+ },
+ "f2-de-ac6e236c342a": {
+  "level": "10",
+  "key": "nice",
+  "path": "now_10.nice[+]",
+  "text": "Heute ist sogar der Paketbote gut gelaunt. Der Kerl macht mir Angst.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:28:06.603Z"
+ },
+ "f2-de-ad01c655fe4f": {
+  "level": "11",
+  "key": "on",
+  "path": "flavour_11.on[+]",
+  "text": "Abhärtung hast du dir ausgedacht. Dein Körper weiß davon nichts.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:31:35.522Z"
+ },
+ "f2-de-b0b8251e885f": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Die Wetter-Apps schicken jetzt wieder Warnungen im Minutentakt. Ich sag's einmal.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:38:04.013Z"
+ },
+ "f2-de-b0c7e2ad5e99": {
+  "level": "11",
+  "key": "w_scarf",
+  "path": "unit_11.w_scarf[+]",
+  "text": "{WHEN} kannst du den Schal ablegen. || Und bitte nicht wieder in den Mantelärmel stopfen. Du bist nicht mehr in der Grundschule.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:42:00.363Z"
+ },
+ "f2-de-b18529f28c87": {
+  "level": "10",
+  "key": "snow",
+  "path": "now_10.snow[+]",
+  "text": "Die Schuhe mit Profil, bitte. Nicht die schicken.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:33:24.252Z"
+ },
+ "f2-de-b390d11c9ec3": {
+  "level": "11",
+  "key": "off",
+  "path": "flavour_11.off[+]",
+  "text": "Ab dann kannst du nichts mehr aufs Wetter schieben.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:30:18.071Z"
+ },
+ "f2-de-b985ff2234eb": {
+  "level": "11",
+  "key": "day_eisheilige",
+  "path": "flavour_11.day_eisheilige[+]",
+  "text": "Eisheilige. Zähl mal alle fünf auf. Ich warte.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:27:34.636Z"
+ },
+ "f2-de-bd04c3725d9c": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "Mit dem, was du anhast, kommst du gut durch den Abend. || Ich frag nicht, warum du noch angezogen bist. Ich will's nicht wissen.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:37:45.594Z"
+ },
+ "f2-de-bd53bbece6d2": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Zum Schluss ist's warm. Mehr Happy End biet ich normalerweise nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:42:22.546Z"
+ },
+ "f2-de-bee44e6b3f54": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Daheim nützt's dir nichts. Da bin nur ich, und ich frier nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:21:23.670Z"
+ },
+ "f2-de-c037bc5d09d0": {
+  "level": "10",
+  "key": "theme_okt",
+  "path": "flavour_10.theme_okt[+]",
+  "text": "Oktoberfest. Zwei Wochen lang ist eine Maß um zehn Uhr früh ganz normal.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Zwei Wochen lang ist eine Maß um zehn Uhr früh jetzt ganz normal.",
+  "updatedAt": "2026-10-30T08:39:35.546Z"
+ },
+ "f2-de-c57b3c9208a4": {
+  "level": "10",
+  "key": "c_hoodie",
+  "path": "unit_10.c_hoodie[+]",
+  "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Der Pulli wiegt nichts. Das Gejammer später schon.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:23:30.235Z"
+ },
+ "f2-de-c61f48dc877a": {
+  "level": "10",
+  "key": "c_scarf",
+  "path": "unit_10.c_scarf[+]",
+  "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Der Winter klopft an. Ich mach nicht auf.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:26:19.636Z"
+ },
+ "f2-de-c61f509b892b": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Wer jetzt noch rausmuss, hat einen Hund. Oder Ärger.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:28:58.987Z"
+ },
+ "f2-de-d6fd156e175c": {
+  "level": "10",
+  "key": "w_coat",
+  "path": "unit_10.w_coat[+]",
+  "text": "{WHEN} kannst du die Winterjacke ausziehen. || Die Winterjacke hat dann frei. Ich nicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} kannst du die Winterjacke ausziehen. || Die hat dann frei. Ich nicht.",
+  "updatedAt": "2026-10-30T08:40:15.598Z"
+ },
+ "f2-de-d745a0def95c": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Was du anhast, passt für den restlichen Abend. || Ab hier wird's nur noch dunkel. Das kann ich auch ohne Vorhersage.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Was du anhast, passt für den restlichen Abend. || Ab hier wird's nur noch dunkler. Das kann ich auch ohne Vorhersage.",
+  "updatedAt": "2026-10-30T08:37:14.947Z"
+ },
+ "f2-de-d974d99a25d6": {
+  "level": "10",
+  "key": "theme_xmas",
+  "path": "flavour_10.theme_xmas[+]",
+  "text": "Weihnachten. Der Braten ist im Ofen, der Streit ist in Vorbereitung.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:39:52.479Z"
+ },
+ "f2-de-df02c3f03a04": {
+  "level": "11",
+  "key": "w_hoodie",
+  "path": "unit_11.w_hoodie[+]",
+  "text": "{WHEN} wird es warm genug, dann brauchst du keinen Pulli mehr. || Dein Lieblingspulli darf dann endlich in die Wäsche. Wir haben ihn alle oft genug gesehen.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:40:50.113Z"
+ },
+ "f2-de-f21a6958c0f2": {
+  "level": "11",
+  "key": "snow",
+  "path": "now_11.snow[+]",
+  "text": "Der Schnee dämpft jeden Lärm. Sogar deinen.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:33:28.853Z"
+ },
+ "f2-de-f389d803c6e6": {
+  "level": "11",
+  "key": "day_friday",
+  "path": "flavour_11.day_friday[+]",
+  "text": "Freitag. „Nur auf ein Bier.“ Wer's glaubt.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:27:51.871Z"
+ },
+ "f2-de-f8d3b7d54fba": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Fällt irgendwo der Strom aus, ist mir das egal. Ich hab Akku.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:38:24.113Z"
+ },
+ "f2-de-f917d6ed4b0d": {
+  "level": "10",
+  "key": "night",
+  "path": "flavour_10.night[+]",
+  "text": "Ab jetzt läuft hier nur noch die Spätausgabe. Gleicher Inhalt, schlechtere Laune.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:29:07.470Z"
+ },
+ "f2-de-f98f9699606a": {
+  "level": "11",
+  "key": "c_scarf",
+  "path": "unit_11.c_scarf[+]",
+  "text": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Nein, das Halstuch zählt nicht. Das ist Deko.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Nein, dein Halstuch zählt nicht. Das ist Deko.",
+  "updatedAt": "2026-10-30T08:27:01.920Z"
+ },
+ "f2-de-fd32b12c6ab4": {
+  "level": "10",
+  "key": "c_scarf",
+  "path": "unit_10.c_scarf[+]",
+  "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Wer im Wind den Kragen hochzieht, hat den Schal vergessen. Und tut so, als wär das Absicht.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-30T08:26:34.670Z"
+ },
+ "f2-de-ffd81699776a": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt. || Ja, das ist viel Zeug für einen Tag. Beschwer dich beim Wetter.",
+  "source": "candidate",
+  "batch": "New German lines",
+  "round": "2026-10-final2",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {GV} weg. Pack {GP} trotzdem ein, dazu noch eine extra Schicht, {WHEN2} wird's richtig kalt. || Ja, das ist viel Zeug. Beschwer dich beim Wetter.",
+  "updatedAt": "2026-10-30T08:20:48.505Z"
+ },
  "fn-de-0048dfa32777": {
   "level": "11",
   "key": "p_drier",

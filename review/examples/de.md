@@ -139,6 +139,7 @@ Do not edit by hand; vote on the page instead.
 
 ## c_relief · sarcastic
 
+- {WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Dein Deo hat trotzdem schon aufgegeben.
 - {WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Du jammerst trotzdem weiter. Nur etwas leiser.
 
 ## c_scarf · plain
@@ -146,9 +147,9 @@ Do not edit by hand; vote on the page instead.
 - Denk an Mütze, Schal und Handschuhe, {WHEN} wird's ungemütlich kalt.
 - Denk an deinen Schal, {WHEN} wird's ungemütlich kalt.
 - Pack deinen Schal ein, {WHEN} wird's kälter.
-- {WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.
 - {WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.  
   _here I am thinking of just adding the schal to the image. so we'd need to cut the other clothing items out of that text. the sprite will already be wearing a beanie and gloves in the previous state. but we dont have to reference that specifically anywhere. the scarf is just an easy way to visualize: it's going to be extra fucking cold. deal with it in whatever way works for you. probably extra layers underneath too. but we can't see and visualize those, therefore the extra outer layer._
+- {WHEN} wird's kalt genug für Mütze, Schal und Handschuhe.
 - {WHEN} wird's kälter, da brauchst du vermutlich Mütze, Schal und Handschuhe.
 - {WHEN} wird's kälter, da brauchst du vermutlich einen Schal.
 - {WHEN} wird's richtig kalt, da solltest du eine extra warme Schicht, wie einen Schal, dabeihaben.
@@ -331,6 +332,7 @@ Do not edit by hand; vote on the page instead.
 - Die Ersten stehen schon wieder mit der Grillzange auf dem Balkon.
 - Gleich kommt wieder Dieter mit dem Rasenmäher um die Ecke. BRRRRRRRRRRRRRRR
 - Heute gibt's nichts auszusetzen. Das ärgert mich.
+- Heute ist sogar der Paketbote gut gelaunt. Der Kerl macht mir Angst.
 
 ## nice · sarcastic
 
@@ -365,6 +367,8 @@ Do not edit by hand; vote on the page instead.
 
 - Finger weg vom Kühlschrank. Ich seh alles.
 - Finger weg vom Kühlschrank. Ich seh alles.
+- Finger weg vom Warenkorb. Um die Zeit kaufst du nur Unsinn.
+- Hör auf, um die Uhrzeit Symptome zu googeln. Du hast nichts. Vermutlich.
 - Noch eine Folge, sagst du. Seit drei Folgen.
 - Schon wieder so spät? Ab ins Bett.
 - So spät noch wach? Ab ins Bett mit dir.
@@ -391,10 +395,12 @@ Do not edit by hand; vote on the page instead.
 ## on · dry
 
 - Ich weiß, jetzt sieht's nicht danach aus. Ich hab trotzdem recht.
+- Mitschleppen ist lästig. Frieren ist lästiger.
 - Wär ja auch zu schön gewesen, wenn's gehalten hätte.
 
 ## on · sarcastic
 
+- Dein Immunsystem hat auch so schon genug zu tun. Mach es einfach.
 - Vorausgesetzt, deine geht nach den Feiertagen noch zu.
 
 ## p_drier · plain
@@ -463,6 +469,7 @@ Do not edit by hand; vote on the page instead.
 
 ## p_snow_coming · sarcastic
 
+- {WHENP} kommt Schnee. || Schneeflocken mit der Zunge fangen ist in deinem Alter übrigens gesellschaftlich verpönt.
 - {WHENP} soll es schneien. || Ich sag's dir, und du bist trotzdem überrascht. Jedes Mal.
 
 ## p_stays_wet · plain
@@ -632,6 +639,7 @@ Do not edit by hand; vote on the page instead.
 ## pants · sarcastic
 
 - Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf.
+- Nein, ich diskutier das nicht mit dir.
 
 ## pants_swing · plain
 
