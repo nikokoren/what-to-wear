@@ -533,3 +533,15 @@ after the level check, since the page showed the lines that way. Owner's
 notes: three `alone_` lines (two fickle at 11, one nice at On) "don't
 work on their own without the What to Wear Next drawings"; and "This
 forecast is brought to you by… nobody" (starred) should find more spots.
+
+## Round 24: the fill-up
+
+`2026-10-fill.json` (`make_round24.py`, ids `fl-…`): every slot under
+four live lines (`2026-10-fill/cells.json`: 117 English, 97 German) gets
+5-6 candidates plus one out of the box (hint "Out of the box"). Twelve
+fresh writers (briefs `2026-10-fill/brief_*.md`: the slot's meaning,
+level, live lines, the owner's stars and vetoes there), 12 candidates a
+slot; four critics picked (`*.critic_*.json`, merged into `<lang>.json`):
+787 English, 659 German. Each slot is its own batch with "Fill-up: n
+live here now". After voting: sync, then `build_pools.py` (FILL) adds
+the kept lines.
