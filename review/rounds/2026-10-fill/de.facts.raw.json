@@ -1,0 +1,514 @@
+{
+ "lines": [
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Vorsicht, Glatteis: Der gefrierende Regen hält den ganzen Tag an. Geh langsam und lass dir Zeit."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Heute regnet's den ganzen Tag gefrierend, die Wege bleiben spiegelglatt. Sei draußen vorsichtig."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Achtung, Glatteis! Es fällt den ganzen Tag gefrierender Regen, überall kann es glatt sein."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Gefrierender Regen bis zum Abend, Straßen und Gehwege bleiben glatt. Pass auf, wo du hintrittst."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Der gefrierende Regen hört heute nicht auf. Rechne überall mit Glatteis und geh vorsichtig."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Vorsicht, glatt! Eine Pause vom gefrierenden Regen gibt's heute nicht."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Heute bleibt's den ganzen Tag glatt, der gefrierende Regen hört nicht auf. Geh lieber langsam."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Es regnet den ganzen Tag, und der Regen gefriert auf dem Boden. Vorsicht auf Straßen und Gehwegen."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Den ganzen Tag gefriert der Regen, sobald er unten ankommt. Rechne mit Glatteis und pass auf."
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Gehwege, Treppen, Autos: Heute ist alles glatt. Der gefrierende Regen hält den ganzen Tag an.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Heute ist ein Tag für kleine Schritte. Der gefrierende Regen hört nicht auf, und überall ist es glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_ice",
+   "text": "Lass dir draußen heute doppelt so viel Zeit: Den ganzen Tag fällt gefrierender Regen, und es ist überall glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Gewitter und Regen bis zum Abend, eine Pause gibt's heute nicht."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Den ganzen Tag gewittert's immer wieder, und dazwischen regnet's weiter."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Heute donnert's immer wieder, und der Regen bleibt den ganzen Tag. Der Schirm bleibt also dabei."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Es bleibt den ganzen Tag gewittrig und nass."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Blitz und Donner kommen heute immer wieder, und der Regen hört nicht auf."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Ein Gewitter folgt aufs nächste, dazwischen regnet's durch. Den Schirm brauchst du den ganzen Tag."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Heute ist den ganzen Tag Gewitterwetter, und trocken wird's nicht."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Regen ohne Pause, und zwischendurch immer wieder Gewitter. Das bleibt so bis zum Abend."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Bis zum Abend bleibt's nass, und es kann jederzeit donnern."
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Erst Regen, dann Gewitter, dann wieder Regen: So geht's heute den ganzen Tag.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Rechne heute den ganzen Tag mit Donner. Der Regen hört nicht auf, und Gewitter ziehen immer wieder durch.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_stays_wet_storm",
+   "text": "Heute wird's weder trocken noch ruhig: Regen und Gewitter halten den ganzen Tag an.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Vorsicht, {WHENP} kommt kurz gefrierender Regen. Danach kann es auf den Wegen glatt sein."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "{WHENP} gibt's einen Schauer mit gefrierendem Regen. Rechne danach mit Glatteis."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Achtung, Glatteis: {WHENP} fällt kurz gefrierender Regen. Geh dann lieber langsam."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "{WHENP} kann es durch einen kurzen gefrierenden Regen glatt werden. Pass auf den Gehwegen auf."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Pass {WHENP} auf: Ein kurzer gefrierender Regen macht die Wege glatt."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "{WHENP} gefriert ein kurzer Regenschauer auf dem Boden. Dann wird's glatt, also sei vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Vorsicht, {WHENP} wird's glatt: Ein kurzer gefrierender Regen zieht durch."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "{WHENP} regnet's kurz, und der Regen gefriert. Auf Straßen und Gehwegen kann's dann glatt werden."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Ein kurzer gefrierender Regen kommt {WHENP}. Danach sind die Wege vermutlich glatt, also geh vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Der Regen {WHENP} ist kurz, aber er gefriert. Rechne danach mit glatten Wegen.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Es regnet {WHENP} nur kurz, das reicht aber für Glatteis. Sei auf den Wegen vorsichtig.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_ice",
+   "text": "Glatt wird's {WHENP}, wenn ein kurzer gefrierender Regen durchzieht. Vorsicht vor allem auf Gehwegen und Treppen.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Vorsicht, Glatteis: {WHENP} beginnt gefrierender Regen, und der hält lange an."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "{WHENP} kommt gefrierender Regen, der so schnell nicht aufhört. Die Wege werden glatt, also geh langsam."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "{WHENP} fängt's an, gefrierend zu regnen, und das bleibt so. Rechne mit glatten Straßen und Gehwegen."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Achtung, {WHENP} setzt gefrierender Regen ein, und zwar für länger. Dann wird's überall glatt."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "{WHENP} beginnt ein langer gefrierender Regen. Sei danach auf den Wegen vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Pass auf: {WHENP} kommt gefrierender Regen, und der hält an. Es wird glatt."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "{WHENP} wird's glatt: Gefrierender Regen setzt ein und hört so bald nicht auf."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Der gefrierende Regen kommt {WHENP} und bleibt. Rechne mit Glatteis und lass dir draußen Zeit."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "{WHENP} droht Glatteis, der gefrierende Regen dauert dann länger. Geh vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Noch ist's trocken. {WHENP} kommt gefrierender Regen, und ab dann bleibt's glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Schirm dabei? {WHENP} beginnt gefrierender Regen, und der Rest des Tages wird glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_ice",
+   "text": "Der Teil des Tages, auf den du achten musst, beginnt {WHENP}: gefrierender Regen, und das für länger. Geh dann langsam.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} beginnt Dauerregen, immer wieder mit Gewittern. Pack den Schirm ein."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} wird's gewittrig und nass, und das bleibt dann auch so. Nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} wird's gewittrig, und trocken wird's danach nicht mehr. Nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Rechne {WHENP} mit Gewitter und Regen, der lange anhält. Der Schirm muss mit."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} setzt Regen ein, und es donnert immer wieder. Das zieht sich, also nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Schirm nicht vergessen: {WHENP} kommen Gewitter, und es regnet lange weiter."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} beginnt ein langer Regen mit Blitz und Donner. Pack den Schirm ein."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} zieht ein Gewitter auf, und der Regen dahinter bleibt. Nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "{WHENP} geht's los mit Gewitter und Regen, und so bleibt's dann auch. Der Schirm sollte mit."
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Schirm dabei? {WHENP} kommen Gewitter, und der Regen bleibt danach.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Erst bleibt's trocken. {WHENP} kommt ein Gewitter, und danach hört der Regen nicht mehr auf. Nimm den Schirm mit.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_long_storm",
+   "text": "Der Tag wird {WHENP} gewittrig und bleibt dann nass. Von da an brauchst du den Schirm durchgehend.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "{WHENP} kann's gefrierend regnen. Falls ja, wird's glatt, also sei vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Möglicherweise gibt's {WHENP} gefrierenden Regen. Dann kann es auf den Wegen glatt werden."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Es ist nicht sicher, aber {WHENP} droht gefrierender Regen. Rechne mit glatten Stellen."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "{WHENP} besteht die Gefahr von gefrierendem Regen und Glatteis. Geh lieber vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Ganz ausgeschlossen ist es nicht: {WHENP} kann gefrierender Regen fallen. Achte dann auf glatte Wege."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "{WHENP} ist Glatteis durch gefrierenden Regen nicht ausgeschlossen. Pass lieber auf."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Vorsicht, {WHENP} kann es glatt werden. Gefrierender Regen ist möglich."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Mit etwas Pech kommt {WHENP} gefrierender Regen, dann wird's glatt. Sei auf den Gehwegen lieber vorsichtig."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Es kann sein, dass {WHENP} gefrierender Regen fällt. Dann sind Straßen und Gehwege schnell glatt."
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Wahrscheinlich bleibt's trocken. Falls doch {WHENP} gefrierender Regen kommt, wird's schnell glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Falls es {WHENP} regnet, gefriert der Regen sofort. Dann ist es überall glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_ice",
+   "text": "Behalt {WHENP} die Gehwege im Blick: Gefrierender Regen ist möglich, und dann wird's glatt.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "{WHENP} könnte es gewittern. Pack sicherheitshalber den Schirm ein."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Ein Gewitter ist {WHENP} nicht ausgeschlossen. Der Schirm kann ruhig mit."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Es kann sein, dass {WHENP} ein Gewitter aufzieht. Nimm lieber den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "{WHENP} besteht eine gewisse Gewittergefahr. Nimm lieber den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Mit etwas Pech gibt's {WHENP} ein Gewitter. Pack lieber den Schirm ein."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "{WHENP} ist ein Gewitter drin. Nimm den Schirm vorsichtshalber mit."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Ganz sicher ist es nicht, aber {WHENP} kann's donnern. Der Schirm sollte mit."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "{WHENP} kann's gewittern, wahrscheinlich ist es aber nicht. Nimm den Schirm trotzdem mit."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Stell dich {WHENP} auf ein mögliches Gewitter ein. Mit Schirm bist du auf der sicheren Seite."
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Wahrscheinlich bleibt's ruhig. Für ein mögliches Gewitter {WHENP} nimmst du aber besser den Schirm mit.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Ob {WHENP} wirklich ein Gewitter kommt, ist offen. Den Schirm einzupacken, kostet dich nichts.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_maybe_storm",
+   "text": "Behalt {WHENP} den Himmel im Blick, ein Gewitter ist möglich. Den Schirm nimmst du am besten mit.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Vorsicht, {WHENP} zieht kurz ein Gewitter auf. Der Schirm sollte mit."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "{WHENP} kommt ein kurzes Gewitter mit Regen. Nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Rechne {WHENP} mit einem Gewitter. Lange dauert's nicht, aber der Schirm sollte mit."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "{WHENP} donnert's kurz, und es gibt einen Regenguss. Schirm nicht vergessen."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Schirm nicht vergessen, {WHENP} kommt ein Gewitterschauer."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "{WHENP} gibt's einen kräftigen Gewitterschauer, der schnell wieder vorbei ist. Nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Ein Gewitter ist {WHENP} angesagt, aber nur kurz. Pack den Schirm ein."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "{WHENP} blitzt und donnert es eine Weile. Mit Schirm bleibst du trocken."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Mach dich {WHENP} auf ein kurzes Gewitter gefasst und nimm den Schirm mit."
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Kurz wird's {WHENP} laut: Ein Gewitter zieht durch. Der Schirm sollte mit.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Nimm den Schirm mit, auch wenn's nur kurz ist: {WHENP} gibt's ein Gewitter.",
+   "wild": true
+  },
+  {
+   "path": "facts.p_wetter_storm",
+   "text": "Das Gewitter {WHENP} ist schnell vorbei, den Schirm brauchst du trotzdem.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Jetzt ist's kalt, {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose schon jetzt."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "{WHEN} ist Wetter für kurze Hosen. Vielleicht ziehst du sie gleich an."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Der Morgen ist kalt, {WHEN} wird's aber warm genug für kurze Hosen. Überleg dir, sie gleich anzuziehen."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Vielleicht ist heute gleich ein Tag für kurze Hosen. {WHEN} wird's warm."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Kurze Hosen könnten sich heute lohnen, {WHEN} wird's richtig warm."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "{WHEN} ist's warm genug für Shorts. Eventuell ziehst du sie am besten gleich an."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Noch ist's kalt, {WHEN} aber schon warm. Eventuell reicht heute eine kurze Hose."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Heute passt eventuell die kurze Hose von Anfang an. {WHEN} wird's warm."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "{WHEN} wird's so warm, dass eine kurze Hose passt. Überleg dir, ob du nicht gleich damit losgehst."
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Zweimal umziehen musst du heute nicht. {WHEN} wird's warm, die kurze Hose passt eventuell schon jetzt.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Der kalte Morgen dauert nicht lang, {WHEN} wird's warm. Eventuell lohnt sich die kurze Hose ab jetzt.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing",
+   "text": "Heute geht's von kalt zu richtig warm. {WHEN} ist Kurze-Hosen-Wetter, eventuell lohnt sie sich schon jetzt.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "{WHEN} wird's warm genug für eine kurze Hose, {WHEN2} brauchst du die warme Schicht wieder."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Vielleicht passt heute eine kurze Hose, {WHEN} ist's warm. Die warme Schicht kommt aber mit, {WHEN2} wird's wieder kühl."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "{WHEN} ist's warm, {WHEN2} wieder frisch. Überleg dir eine kurze Hose und nimm die warme Schicht mit."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Eine kurze Hose lohnt sich eventuell, {WHEN} wird's warm. {WHEN2} wird's kühl, also nimm die warme Schicht mit."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Warm wird's {WHEN}, kühl {WHEN2}. Eventuell lohnt sich die kurze Hose, die warme Schicht gehört trotzdem dazu."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "{WHEN} reicht eventuell eine kurze Hose. {WHEN2} brauchst du die warme Schicht wieder."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Überleg dir eine kurze Hose, {WHEN} wird's warm. Die warme Schicht nimm trotzdem mit, {WHEN2} kühlt's ab."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Eine kurze Hose könnte heute passen, {WHEN} wird's warm. Behalt die warme Schicht aber bei dir, {WHEN2} wird's wieder frischer."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "{WHEN} wird's richtig warm, {WHEN2} kühlt's wieder ab. Eventuell lohnt sich trotzdem die kurze Hose, mit der warmen Schicht dabei."
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Lohnt sich heute eine kurze Hose? Eventuell: {WHEN} wird's warm. {WHEN2} brauchst du aber die warme Schicht wieder.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Die warme Schicht bleibt heute dabei, auch wenn eine kurze Hose eventuell passt. {WHEN} wird's warm, {WHEN2} wieder kühl.",
+   "wild": true
+  },
+  {
+   "path": "facts.shorts_swing_back",
+   "text": "Der warme Teil des Tages kommt {WHEN}, dafür lohnt sich eventuell die kurze Hose. {WHEN2} brauchst du die warme Schicht wieder.",
+   "wild": true
+  }
+ ]
+}
