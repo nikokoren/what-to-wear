@@ -1,0 +1,1026 @@
+{
+ "lines": [
+  {
+   "path": "units_11.arc_colder",
+   "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || Enjoy the warm bit. It's the part of today that flatters you most."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || More layers means less of you on show. Everyone wins."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || Two outfits in one day. You struggle with one."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || Bulky, yes. Nobody was looking at you for the outfit anyway."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || By then you'll look like you got dressed in the dark. Warm, though."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Shivering isn't a personality, whatever you've been telling people."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Something warm, not something cute. I've seen you choose before."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || Spare clothes in a bag all day. You're basically a toddler with a forecast."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || It ends colder than it started. I checked while you checked the mirror."
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || Layering. Fashion people do it on purpose. You'll do it to stop shivering.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || Do you own something warm that isn't a blanket? Asking for later.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Three steps, in order. Your most organized day this month.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || All that effort to look the same at the end. You're used to that."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || The one routine you'll actually stick to this week."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Folded over your arm, {GP} still outdresses you."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Simple enough. I kept the instructions short for you."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}. || A few hours without {GP}. Try not to let the freedom go to your head."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}. || Carrying {GP} for hours won't do much for your look. Neither did wearing it."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || Think of the middle as an intermission. The show isn't great either way."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}. || I've planned your outfit for the whole day. Someone had to."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || So don't get attached to the lighter look. It wasn't working anyway."
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}, and in between, try to look like someone who planned it.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || You: 'It's warm now.' Me: 'Keep reading.'",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_level",
+   "text": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}. || Tip: {GP} goes back on the way it came off. I believe in you. Mostly.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "{G} can come off {WHEN} and stays off. || That's {G} sorted. The rest of your look, I can't help with."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || The weather's doing its part. Over to you. No pressure, I've seen your best."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || The day improves. Whether you do is up to you."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || One less thing for you to look awkward in."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || A day that only gets better. Rare for you, so savor it."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || Probably the last clothing decision you'll get right today."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || I've freed you from {G} for the day. Try to look like you deserve it."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || Trust me over your instincts. Your instincts chose that outfit."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "{G} can come off {WHEN} and stays off. || Leave {GP} behind. You're carrying enough already."
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "{G} can come off {WHEN} and stays off, so for once something in your life gets simpler as the day goes on.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || Layer: off. Weather: improving. You: under review.",
+   "wild": true
+  },
+  {
+   "path": "units_11.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || I don't wear layers either, and I look great. Just saying.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || Puffy and unflattering, yes. Still an upgrade on frozen."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || Hauling it around is the most you'll lift this week."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "{WHEN} it gets cold enough for the winter coat. || Toughing it out won't make you look tougher. Just bluer."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || I know it ruins the outfit. The outfit wasn't that good."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "{WHEN} a jacket won't be enough, so bring the winter coat. || The jacket is cuter. You're not cute enough to freeze for it."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || You'll look like a sleeping bag with opinions. A warm one."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "It gets colder {WHEN}, bring the winter coat. || Nobody's impressed by how little you can wear in the cold. Especially not me."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "{WHEN} it gets cold enough for the winter coat. || Your sense of temperature is optimistic. Mine is correct."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || Yes, it doubles your width. You've never been shy about taking up space."
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "It gets colder {WHEN}, bring the winter coat. || You, now: 'I'll be fine.' You, {WHEN}: not fine.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || I'd lend you one, but I don't have arms. Or a coat. Or any sympathy left.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_coat",
+   "text": "Bring the winter coat: {WHEN} it's cold enough that how you look stops mattering. It never mattered much.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "{WHEN} it gets cool enough for a sweater. || You'll post about 'sweater weather' like you invented fall.",
+   "months": "9,10,11"
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "Bring a sweater. It cools down {WHEN}. || Pick a nice one. Someone might have to look at you."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "It cools down {WHEN}, so bring a sweater. || Any sweater will do. You've never let looks stop you before."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "{WHEN} short sleeves won't be enough, so bring a sweater. || Your arms have been on display long enough. Everyone's ready."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "It gets cooler {WHEN}, so take a sweater along. || Tie it around your shoulders and pretend you own a boat."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "Bring a sweater. It cools down {WHEN}. || A sweater: the closest thing to a hug you'll get today."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "Pack a sweater. You'll be glad to have it {WHEN}. || Soft, warm, and it covers most of you. A sweater does a lot for you."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "It gets cooler {WHEN}, so take a sweater along. || Nobody hands out medals for short sleeves {WHEN}."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "{WHEN} short sleeves won't be enough, so bring a sweater. || Even for you, whatever you tell people about running warm."
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "Pack a sweater. You'll be glad to have it {WHEN}. || Later-you says thanks. Now-you is probably rolling their eyes.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "It gets cooler {WHEN}, so take a sweater along. || I've never worn a sweater. I've seen yours. I'm not missing much.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_hoodie",
+   "text": "It cools down {WHEN}, so bring a sweater, preferably one that makes you look like you tried.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "Bring a jacket. It cools down {WHEN}. || By then it'll be the most put-together part of you."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "A sweater alone won't do {WHEN}, so bring a jacket. || Layers. They hide a lot. You'll appreciate that."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "Bring a jacket along. You'll want it {WHEN}. || Yes, even if it clashes. Warm beats chic, and chic was never on the table."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "It gets cooler {WHEN}, so bring a jacket along. || Carry it like you meant to. Confidence is free, and you could use some."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "Bring a jacket. It cools down {WHEN}. || Draped over your arm, it'll make you look busier than you are."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "A sweater alone won't do {WHEN}, so bring a jacket. || The sweater was trying its best. So were you, I assume."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "{WHEN} it gets cool enough for a jacket. || Finally, a layer that does something for your shoulders."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "It cools down {WHEN}, so bring a jacket. || Shivering isn't the look you think it is."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "Bring a jacket. It cools down {WHEN}. || It's one jacket. You've carried heavier grudges."
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "Bring a jacket for {WHEN}. I'd carry it for you, but I have no arms and you have no excuse.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "It cools down {WHEN}, so bring a jacket. || Jacket: five stars. Your judgment: pending.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_jacket",
+   "text": "Bring a jacket along. You'll want it {WHEN}. || Between us, I think the jacket is the best thing you own.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || You'll look less like a melted candle. Slightly less."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "It cools off a little {WHEN}, but stays warm. || Enough to stop glistening. Not enough to call it a glow-up."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "{WHEN} the worst of the heat is over, but it stays warm. || You made it through. Not gracefully, I'd guess."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "It's not as hot {WHEN}, but still warm. || Your face can go back to a normal color. Eventually."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || Nothing to bring. Even you can manage that."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "It cools off a little {WHEN}, but stays warm. || Not cool enough to make you good company yet."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "It cools off a little {WHEN}, but stays warm. || Good news for everyone standing near you."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "Some relief from the heat {WHEN}, but it stays warm. || You'll be almost pleasant again. Almost."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "It's not as hot {WHEN}, but still warm. || Warm suits you better than hot. Low bar, but still."
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || I was never bothered. Some of us are built cool. Some of us are you.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm, so you can stop pretending you love summer.",
+   "wild": true
+  },
+  {
+   "path": "units_11.c_relief",
+   "text": "Some relief from the heat {WHEN}, but it stays warm. || Pro tip: a cold shower. For the heat, and for everyone else's sake.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || You can hold an umbrella. That's one skill confirmed."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "The rain stops later, but you'll want the umbrella for now. || An umbrella makes anyone look purposeful. Give it a go."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "It keeps raining for a while, then stops. Take the umbrella. || Wet doesn't suit you. Dry barely does."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Take the umbrella for now. The rain stops later. || Later. Not the second you step outside. The weather doesn't revolve around you."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "The rain eases off later, but bring the umbrella for now. || Sprinting between doorways isn't a plan. Not with your cardio."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "The rain stops later, but you'll want the umbrella for now. || The rain has an end time. Your bad decisions don't seem to."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Later the rain stops. For now, keep the umbrella with you. || One of you has to look sharp, and it won't be you."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "The rain eases off later, but bring the umbrella for now. || You've survived worse than rain. Your own haircuts, for example."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "It keeps raining for a while, then stops. Take the umbrella. || Rain makes everyone look a bit miserable. Today you won't stand out."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Dry in here, by the way. Dry and good-looking. One of us manages both.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Keep the umbrella with you until the rain stops {WHENSTOP}, which is more commitment than you've shown anything this year.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Later the rain stops. For now, keep the umbrella with you. || Terms and conditions: the umbrella keeps you dry, not interesting.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow stops {WHENSTOP}. || The snow knows when to stop. A rare quality. You might study it."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It's snowing now, but it stops later. || Snow makes everything look better. Almost everything."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}. || Note the time. It's an appointment even you could keep."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It's snowing now, but it stops later. || You look great in snowflakes. Everyone does. It's cheating."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It stops snowing later. || The snow gives up. You beat it to that by years."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow stops later. || Then it turns gray and lumpy. Relatable, I'd guess."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}. || Precise, aren't I? You could try it sometime."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It's snowing now, but it stops later. || Pretty while it lasts. You know how that goes."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow eases off later. || Enjoy the view from the window. It's better than the one in the mirror."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow stops later. || Today's award for quitting while ahead goes to the snow. You were nominated.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It's snowing now, but it stops later. || Step one: look out the window. Step two: say 'wow'. Step three: that's your whole contribution.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}. || One of us in this room knew that. Hint: it's not you.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Expect snow {WHENP}. || Go ahead, panic-buy bread. It's the most decisive you'll be all week."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "There's snow on the way {WHENP}. || A few inches, and you'll act like you survived a polar expedition."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Snow starts {WHENP}. || You're not ready. You're never ready. It's just snow."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Snow moves in {WHENP}. || Go on, tell everyone. You love being the one with news."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Snow starts {WHENP}. || In snow, everyone looks a bit ridiculous. Finally, a level playing field for you."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "It starts snowing {WHENP}. || Wrap up. You're not as hardy as you like to think."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "{WHENP} it will start to snow. || Perfect weather for staying in and calling it 'cozy' instead of 'lazy'."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "There's snow on the way {WHENP}. || Every snowflake is unique. You'll still be the boring one out there."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Expect snow {WHENP}. || Your winter look is about to get worse. Puffier, at least."
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "It starts snowing {WHENP}. || I'll stay in here, perfectly dry and still handsome. Report back.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Snow moves in {WHENP}, which gives you a few hours to look like you own winter clothes.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_snow_coming",
+   "text": "Snow starts {WHENP}. || Rate your readiness from one to ten. Now subtract five. That's you.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "There's no dry spell today. Bring the umbrella. || Today you have an excuse for looking like that. Use it."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "The rain lasts all day, so keep the umbrella with you. || You'll be holding it all day. Finally, something to do with your hands."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It's raining all day. Bring the umbrella. || You won't melt. I checked your specs."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "The rain doesn't stop today, so take the umbrella. || A day for staying in. You were born for this."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It rains all day, so bring the umbrella. || Open it before you step out. You're not quick enough for the other way."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It rains all day, so bring the umbrella. || Go anyway. Damp and late is just your usual, plus water."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "There's no dry spell today. Bring the umbrella. || Today the weather's as reliable as you wish you were."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "The rain lasts all day, so keep the umbrella with you. || Hold it up properly. Your posture could use the practice."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "Take the umbrella. The rain keeps going all day. || Under an umbrella all day, nobody sees your face. Lucky them."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "The rain doesn't stop today, so take the umbrella. || I'd lend you my dry spot in here, but you'd ruin the look.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It rains all day, so the umbrella goes with you everywhere, which is more company than you usually get.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It's raining all day. Bring the umbrella. || Forecast for you: damp, then damper, then grumpy.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "It won't stop snowing today. || Snow muffles everything. Not you, unfortunately."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "The snow doesn't stop today. || Next to all that white, you almost look tanned. Almost."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "The snow keeps coming all day. || By tonight everyone looks like a wet dog. You've got a head start."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "It's snowing all day. || Perfect light for a photo. Not of you, but the light's perfect."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "The snow keeps coming all day. || It covers everything ugly out there. Stand outside long enough, you never know."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "It's snowing all day. || One snowball and you'll need a lie-down. I've seen your arm."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "The snow keeps coming all day. || Footprints fill in fast today. Nobody will know where you went. Not that anyone asked."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "It's snowing all day. || Gray sky, white ground, pale you. A matching set."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "The snow doesn't stop today. || Wrap up warm. Your charm won't do it."
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "It's snowing all day. || I'd build you a snowman, but it would come out better-looking than you. Awkward.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "There's no break in the snow today. || Snow report: deep. You report: shallow, as usual.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_stays_wet_snow",
+   "text": "It snows all day, which gives you the perfect excuse to do exactly as little as you'd planned anyway.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you. || The dry spell isn't an invitation. You read too much into things."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || Putting it away early would be very you. Optimistic and wrong."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you. || Damp, dry, damp. Your look won't improve at any stage."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "It keeps raining for now, then takes a break. It's back {WHENP}, so keep the umbrella. || An umbrella all day. Finally, an accessory that makes you look organized."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you. || Sticking with something all day. New for you, but you'll manage."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || I said 'pauses'. You'll hear 'stops'. You hear what you want."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || One trip, two rains. You've had worse luck. Mostly self-inflicted."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella. || The rain comes back. It's the only thing that keeps coming back for you."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you. || Fair warning. Which is more than you give anyone."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || I don't have an umbrella. I don't need one. I don't need you either, but here we are.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Rain for now, rain again {WHENP}, and in between a dry spell almost as short as your attention span.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || Today's recipe: open, close, open. Even you can follow it.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || Two rounds of snow. You can't handle one with dignity."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}. || The snow gets a second chance to make a first impression. You don't."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "It keeps snowing for now, then takes a break. It's back {WHENP}. || Don't call the break 'spring'. You do this every February.",
+   "months": "2,3"
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || I've timed both. You've never timed anything right in your life."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "It keeps snowing for now, then takes a break. It's back {WHENP}. || The break isn't long enough to make you presentable. Not you."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "The snow stops for a while later, then comes back {WHENP}. || It knows when to leave and when to come back. Two skills you lack."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || The break is your window. Use it, if you can be quick for once."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "It keeps snowing for now, then takes a break. It's back {WHENP}. || More snow than sense out there. You'll fit right in."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || Two snowfalls, one of you. Unfair fight, and the snow's winning."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "The snow takes a break later and comes back {WHENP}. Your motivation only managed the first part.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || You, at the break: 'It's over.' Me: 'Read the whole sentence.'",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || Today's plan: snow, pause, snow. Still better than yours.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || Carrying an umbrella while it's dry. People will think you have your life together."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "There's a short rain shower {WHENP}. Have the umbrella with you. || A short one. You've made bigger fusses about less."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "A rain shower comes through {WHENP}, so take the umbrella. || It's a quick one. Quicker than you've ever been at anything."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || A short shower won't ruin your look. Your look got there first."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "A rain shower comes through {WHENP}, so take the umbrella. || Getting caught in it isn't romantic. Not with your face."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || Small rain, small umbrella, small risk. Even you can do that math."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || A bit of rain won't kill you. Looking damp for the rest of the day might, socially."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "There's a shower passing through {WHENP}, so bring the umbrella. || I'd risk it. But I'm not the one who looks bad wet."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "{WHENP} there's a rainshower, so the umbrella comes along. || A short shower is the weather being considerate. Take notes."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "There's a short rain shower {WHENP}. Have the umbrella with you. || I've never needed an umbrella, or help looking good. You'll want both.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || A) Bring it. B) Get wet. C) Whatever you usually pick.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Bring the umbrella, there's a shower {WHENP}, and no, you can't outrun it. I've seen you hurry.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Anything you meant to do outside, do it before then. Or keep putting it off. That's your strength."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || You'll call it drizzle. Denial suits you."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "Rain arrives {WHENP} and stays, so take the umbrella. || Hold it high. It's the most anyone's looked up to you."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || Good news: rain flatters nobody. You lose nothing."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "{WHENP} the rain sets in for good. Bring the umbrella. || Enjoy the dry bit. It's as good as you'll look today. Low bar."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || A day like this needs a good attitude. Bring the umbrella instead."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || The big umbrella, not the tiny one. You need all the cover you can get."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "{WHENP} the rain sets in for good. Bring the umbrella. || Gray skies for the rest of the day. Finally, lighting that's kind to you."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "Rain arrives {WHENP} and stays, so take the umbrella. || It shows up and doesn't leave. You know the type. You are the type."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'll be in here, dry and smug. You'll be out there, damp and you.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "It rains from {WHENP} on, so bring the umbrella and lower your expectations, which shouldn't take long.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up. || Packing list: umbrella, patience, good attitude. You have one of those.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "It might rain {WHENP}, so an umbrella wouldn't hurt. || Your luck isn't great, though. I've seen your outfits."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || Up to you. That's what worries me."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "There's a chance of rain {WHENP}. An umbrella wouldn't hurt. || Neither would a mirror check, but here we are."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || I'd decide for you, but then you'd have nothing to overthink."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "It could rain {WHENP}. Take the umbrella to be safe. || A wet you is a sad you. A sad you is a lot. Just take it."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "Rain is possible {WHENP}, so maybe take the umbrella. || I'm not saying it'll rain. I'm saying you'd look terrible if it did."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || Trust your gut. Actually, no. Check your track record first."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "It might rain {WHENP}, so an umbrella wouldn't hurt. || If it stays dry, you carried it for nothing. Welcome to most of your efforts."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "It could rain {WHENP}. Take the umbrella to be safe. || Take it. Getting rained on won't make you more interesting."
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you. || Flip a coin. Heads, take it. Tails, take it. You're not great at chance.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "It might rain {WHENP}, so an umbrella wouldn't hurt. || If I had hands, I'd pass it to you. Then I'd wash them.",
+   "wild": true
+  },
+  {
+   "path": "units_11.p_wetter_maybe",
+   "text": "It probably won't rain {WHENP}, but you've built a whole life on 'probably', so take the umbrella.",
+   "wild": true
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad to have them. || Whether anyone else is glad to see your knees is another matter."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || Pale legs on a cool morning. You'll glow. Not in a good way."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "It's cool now, but {WHEN} it's warm enough for shorts. || Long pants would hide more. Hiding things has served you well."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || A cold first hour builds character. You could use some."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad to have them. || Your legs will hate me. Your legs don't get a vote."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "{WHEN} it's warm enough for shorts, so think about putting them on now. || Yes, people will stare for a bit. They'd stare anyway."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || Shorts before it's warm. Brave, and a little sad. Very you."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'm only suggesting. Your legs, your shame."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad to have them. || Shiver now or sweat later. You've done both badly before."
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || I have no legs, so this is unbiased advice. Mostly. I've seen yours.",
+   "wild": true
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || Your legs: 'No.' Me: 'Yes.' You: still deciding.",
+   "wild": true
+  },
+  {
+   "path": "units_11.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || Pros: comfort later. Cons: your legs, in public, now.",
+   "wild": true
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || Nobody will notice. They weren't looking at you in the coat either."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "The winter coat can come off {WHEN}. || You'll look smaller. Finally, something about you that's understated."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "You can take the winter coat off {WHEN}. || The coat comes off and suddenly you're an optimist. Don't get carried away."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "You'll be fine without the winter coat {WHEN}. || Your arms will remember they can move. Your brain, we'll see."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "The winter coat can come off {WHEN}. || Then you'll stand around holding it like a dead animal. Classy."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || Coat off. Now you just need a personality to replace it."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "{WHEN} it's warm enough to lose the winter coat. || Try to look like someone who planned for this. You've had all winter."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || Your inner thermostat was never good. Trust mine."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "You'll be fine without the winter coat {WHEN}. || Out of the coat, into the light. Brave of you, all things considered."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "You can take the winter coat off {WHEN}. || I've never worn a coat. Look how well I turned out. Learn from me.",
+   "wild": true
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "The winter coat comes off {WHEN}, and with it your best excuse for walking like a penguin.",
+   "wild": true
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || Breaking: local person sees own arms for the first time in months.",
+   "wild": true
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "The scarf can come off {WHEN}. || Your neck is back. Nobody missed it, but it's back."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "{WHEN} you won't need the scarf any more. || Three times around your neck was never a look. Now it's not even needed."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "You'll be fine without the scarf {WHEN}. || The scarf was hiding a lot. Not enough, but a lot."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "{WHEN} it's mild enough to lose the scarf. || One less thing making you look interesting."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "{WHEN} you won't need the scarf any more. || One layer down. You're still mostly coat, which is for the best."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "It warms up {WHEN}, so the scarf can come off. || Don't wave it around like you've won something. It got a bit warmer. That's it."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "{WHEN} it's mild enough to lose the scarf. || Small progress, but more than you usually make."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "You can take off the scarf {WHEN}. || Your face now goes all the way down to your collar. Bold."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "You'll be fine without the scarf {WHEN}. || Your chin's been hiding in there for hours. It's allowed out. On probation."
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "The scarf can come off {WHEN}. || I've never needed a scarf. My frame keeps me looking sharp. Yours doesn't.",
+   "wild": true
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "It warms up {WHEN}, so the scarf can come off and your neck can face the public again, as unprepared as ever.",
+   "wild": true
+  },
+  {
+   "path": "units_11.w_scarf",
+   "text": "{WHEN} it's mild enough to lose the scarf. || Your neck: 'Finally.' Everyone else: 'Oh. Your neck.'",
+   "wild": true
+  }
+ ]
+}
