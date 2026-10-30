@@ -143,7 +143,7 @@
       "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}.",
       "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}.",
       "Take {G} off {WHEN}, put {GP} back on {WHEN2}.",
-      "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.",
+      "{G} can come off {WHEN}. Keep {GP} handy, you'll want {GP} back {WHEN2}.",
       "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}.",
       "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}."
     ],
@@ -256,7 +256,7 @@
       "It's warm enough for shorts {WHEN}. Think about it, with {G} on top for now."
     ],
     "shorts_swing_back": [
-      "You could think about wearing shorts instead. It's warm {WHEN}, but bring {G} for {WHEN2}.",
+      "You could think about wearing shorts instead. It's warm {WHEN}, but bring {G}. It cools off again {WHEN2}.",
       "Shorts might work today: warm {WHEN}, cooler {WHEN2}. Keep {G} with you either way.",
       "{WHEN} it's shorts weather, but {WHEN2} it cools down again. If you go with shorts, definitely keep {G} handy."
     ],
@@ -1000,7 +1000,7 @@
     ],
     "arc_level": [
       "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Off and on again. That fixes most things, me included.",
-      "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}. || Handy means with you. Not 'somewhere you'll remember later'."
+      "{G} can come off {WHEN}. Keep {GP} handy, you'll want {GP} back {WHEN2}. || Handy means with you. Not 'somewhere you'll remember later'."
     ],
     "shorts_early": [
       "Shorts could be worth it today. It's cool now, but warm {WHEN}. || I'd say \"trust me\", but I've never had cold legs.",

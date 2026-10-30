@@ -141,7 +141,7 @@
       "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler.",
       "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder.",
       "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder.",
-      "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.",
+      "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder.",
       "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler."
     ],
     "arc_colder": [
@@ -968,7 +968,7 @@
     ],
     "arc_level": [
       "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
-      "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.",
+      "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.",
       "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Daheim nützt's dir nichts. Da bin nur ich, und ich frier nicht."
     ],
     "arc_colder": [

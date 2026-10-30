@@ -47,7 +47,7 @@
   },
   {
    "path": "units_10.arc_level",
-   "text": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}. || A nice middle with cold edges. Nobody ordered that sandwich."
+   "text": "{G} can come off {WHEN}. Keep {GP} handy, you'll want {GP} back {WHEN2}. || A nice middle with cold edges. Nobody ordered that sandwich."
   },
   {
    "path": "units_10.arc_level",
@@ -1212,7 +1212,7 @@
   },
   {
    "path": "facts.shorts_swing_back",
-   "text": "Shorts weather arrives {WHEN} but doesn't last. If you try shorts, take {G} for {WHEN2}."
+   "text": "Shorts weather arrives {WHEN} but doesn't last. If you try shorts, take {G} along. It cools off again {WHEN2}."
   },
   {
    "path": "facts.shorts_swing_back",
