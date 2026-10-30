@@ -182,7 +182,8 @@ def main():
     for lang, doc in trimmed.items():
         text = minified(doc)
         size = len(text.encode("utf-8"))
-        if size > LIMIT * 0.9:
+        # 95 KB (owner, October 2026: was 90; the German texts sit near it)
+        if size > LIMIT * 0.95:
             raise SystemExit(f"beta/lang/{lang}.json is {size} bytes, too close to TRMNL's 100 KB limit")
         (OUT / "lang" / f"{lang}.json").write_text(text, encoding="utf-8")
         print(f"beta/lang/{lang}.json: {size // 1000} KB (full, minified: {len(minified(full[lang]).encode()) // 1000} KB)")

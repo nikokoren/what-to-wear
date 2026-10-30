@@ -723,3 +723,10 @@ are the first candidates for this review.
   only count real users once the refactored markup is live (step 4 of
   the order above); until then, switching the published recipe to two
   polling URLs would break it. Steps are in `worker/README.md`.
+
+### Texts size (owner, October 2026)
+
+TRMNL takes at most 100 KB per polled URL. The build's margin is now 95
+KB (was 90). After round 24 the German texts are 92.9 KB: room for about
+25 more German lines. Before a round that adds more, either cut lines
+or split the texts across two polled URLs (each URL gets its own 100 KB).

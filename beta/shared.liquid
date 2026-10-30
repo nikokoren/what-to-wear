@@ -1117,6 +1117,12 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
           {%- assign u_prefix = '{M:' | append: u_tag | append: '}' -%}
           {%- assign u_cand = u_cand | remove_first: u_prefix -%}
         {%- endif -%}
+                {%- assign u_first = u_cand | slice: 0 -%}
+        {%- if u_first == '#' -%}
+          {%- assign u_ref = u_cand | split: ' || ' -%}
+          {%- assign u_ix = u_ref[0] | remove_first: '#' | plus: 0 -%}
+          {%- assign u_cand = texts.facts[u_key][u_ix] | append: ' || ' | append: u_ref[1] -%}
+        {%- endif -%}
         {%- if u_cand contains '{WHENSTOP}' -%}
           {%- if when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
         {%- elsif when_stop != '' -%}
