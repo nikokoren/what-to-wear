@@ -1,0 +1,414 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.ice",
+   "text": "Lots of windmill arms out there today. Nobody's waving."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "The salt trucks finally get to feel important."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Today the sidewalks are glossier than I am. Rude."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "I can't draw ice. That doesn't make it optional."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Every parked car comes gift-wrapped today. In ice."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Every sidewalk in town is a lawsuit waiting to happen today.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Right now it looks pointless. People said the same about me once."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "It's luggage now. Later it's the best idea I've had."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Half the people out there will leave theirs at home. I'll try not to gloat."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "The day changes its mind later. I knew before it did."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "The weather turns on everyone later. I'd never."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "It's not a layer. It's a told-you-so you can wear.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Everyone in shorts right now has a very educational day ahead."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Sorry to ruin a perfectly good morning. Not that sorry."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Shorts would be great for now. I plan whole days."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "My best advice always looks silly at first. Ask anyone who ignored it."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Today starts like a holiday and ends like a Monday."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I don't make the weather. I just break the bad news early."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I'm not against shorts. I'm against shorts at the wrong end of the day."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I lose a lot of popularity contests on mornings like this."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Local headline later: 'Lovely morning fools everyone in shorts.'",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Long pants don't come off halfway through the day. Not in public, anyway."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Everyone in jeans right now is in for a sweaty day."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "I dress you for most of the day, not the first bit of it."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Shorts on a cold morning: a small act of faith. In me."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Anyone who stares at the shorts can take it up with me."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "This is a forecast, not a dare. It just looks like one.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Thunder sets off half the car alarms on the block. I don't even flicker."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Every dog on the block will spend the thunder under a bed. I respect that."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "The windows will rattle. I won't."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "The sky goes full drama today. I'll stick to plain text."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Every storm, someone finds the flashlight. Never the batteries."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "One crack of thunder and every adult in earshot says 'whoa.'"
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Big storm, small screen. Guess which one stays calm."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Someone will say 'that one was close.' They'll say it about every one."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Weather this loud would normally need a permit.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Happy Star Wars Day. I'd make a lousy lightsaber. Great forecast, though."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Happy Star Wars Day. Stormtroopers never hit anything. I never miss."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star Wars Day: the one day people are nice to droids. I'll take it."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Happy Star Wars Day. I don't need the Force. I have Wi-Fi."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Happy Star Wars Day. The Death Star had one weak spot. I don't have any."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "A long time ago, in a forecast far, far away, I was right. Still am.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Last night's fireworks lasted seconds. I'll hold this picture all day."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "New Year's Day. The leftover champagne is flat now. I've been flat for years, and I look great."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Nothing's open and nobody's up. The weather and I came to work anyway."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Nobody knows the words to 'Auld Lang Syne.' I know the forecast."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "New Year's Day. Confetti will turn up in couches across the country until spring."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "First forecast of the year. I'd frame it, but I'm already a frame.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Long pants today. Nobody will miss your knees."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Later, you'll be the best-dressed person on the street. Enjoy it. It won't happen again."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Long pants and a coat. So, your usual look, with an excuse."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You'd call it shorts weather. You also call yourself a morning person."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Carrying that coat makes you look like someone who listens. Nice disguise."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "I'm not saying shorts would be a mistake. I'm saying I'd enjoy it.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Stay in the shade. It's flattering, and frankly, you could use it."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Treat drinking water like a job. Just not like your actual one."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Coffee doesn't count as water. I know you were hoping."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "The shade won't come to you. I know that's your usual system."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Today's a bad day to be 'not really a water person.'"
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Heat like this makes people slow and cranky. On you, nobody will notice."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Skip the tan today. It wasn't going to work anyway."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "If anyone calls you a wimp for staying in the shade, they're wrong. About that, anyway."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "You're too hot today. First time anyone's said that, isn't it?",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll watch it from the window like it's TV. Honestly, better than what you usually watch."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Thunder: the one thing that gets you to look up from your phone."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Don't worry, lightning goes for things that stand out."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Finally, something in the neighborhood louder than you."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "The sky will get more done today than you will all week."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Every flash, I'll get a good look at you. My least favorite part of the storm.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. You're the only person who actually likes Peeps, aren't you?"
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. Hide things, then forget where. The bunny's got nothing on you."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Lent's over, if you even noticed it started."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. The bunny skipped your place again. Can't imagine why."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Easter Sunday. You'd fit right in at the kids' egg hunt. Same attention span."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. If you were an Easter egg, you'd be found first and eaten last."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Fluffy, a bit round, overfed on candy. I mean the bunny. Mostly."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Today a six-foot rabbit counts as normal. You still don't."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. If I were the Easter bunny, you'd get one jelly bean. A black one.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You'll still be saying that on the 20th. People will stop saying it back."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Dry January, day one. Let's see if there's a day two."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Twelve months to become a new person. Maybe start with the haircut."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You'll call last year 'wild.' I was there. It wasn't."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Did you make it to midnight this time? Don't answer. I know."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You'll make a list of goals. The list will be the goal."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Everyone's starting fresh today. You'll start next week."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Last night's fireworks were the most excitement you've had all year."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Last year was a rough draft. So is this one.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. One scary movie and you'll sleep with the light on. Again."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Halloween. If you carve a pumpkin, it'll look like you. Lopsided."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. Even the lawn skeletons have better posture than you."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. You've been doing the zombie walk all year. Today it counts."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. Vampires wait to be invited in. You know the feeling."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. If a ghost shows up, it's probably looking for someone more interesting.",
+   "wild": true
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. Half your gifts this year are regifts, aren't they?"
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. Santa checked his list twice. You didn't come up either time."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. You'll say 'you shouldn't have.' This time you'll mean it."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. Your gift wrapping looks like a cry for help."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. The Elf on the Shelf watched you for a month. I watched all year. We're not impressed."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. If I could wrap myself, I'd still be the best gift you got.",
+   "wild": true
+  }
+ ]
+}
