@@ -211,9 +211,10 @@ always a time of day rather than "in two hours".
 
 On the seasonal days, the tip can acknowledge the occasion. The theme names
 match the sprite prefixes: `theme_ny`,
-`theme_ghd`, `theme_pi`, `theme_easter`, `theme_force`, `theme_bike`, `theme_tdf`,
-`theme_okt`, `theme_spooky`, `theme_thanks`, `theme_krampus`,
-`theme_nikolo`, `theme_xmas`.
+`theme_ghd`, `theme_easter`, `theme_force`, `theme_spooky`, `theme_thanks`
+(English only), `theme_xmas`. Pi Day, Bike Day, Tour de France, Oktoberfest,
+Krampus and Nikolo were cut, as were the day lines (`day_*`: clock change,
+longest and shortest day, Monday, Friday).
 
 No theme has artwork in the new outfit set yet, so every theme gets its
 themed *words* over the ordinary outfit, which is the intended fallback and

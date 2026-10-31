@@ -1079,7 +1079,6 @@ single contains test instead of a chained and/or condition.
 {%- assign active_theme = '' -%}
 {%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
 {%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
-{%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
 {%- comment %}
 Easter Sunday, by the anonymous Gregorian computus. Integer arithmetic
 only, which Liquid's divided_by gives us when both sides are whole.
@@ -1107,14 +1106,9 @@ only, which Liquid's divided_by gives us when both sides are whole.
 {%- assign easter_md = easter_md | append: easter_day -%}
 {%- if today_md == easter_md -%}{%- assign active_theme = 'easter' -%}{%- endif -%}
 {%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
-{%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
-{%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
-{%- if today_md >= '09-20' and today_md <= '10-05' -%}{%- assign active_theme = 'okt' -%}{%- endif -%}
 {%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
 {%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
 {%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
-{%- if today_md == '12-05' -%}{%- assign active_theme = 'krampus' -%}{%- endif -%}
-{%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
 {%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
 
 {%- comment %}

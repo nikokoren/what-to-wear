@@ -45,8 +45,7 @@ for dangerous heat; the scarf alone is the extra-cold layer (wordings,
 garment name and pronoun; units joking about hats or gloves dropped);
 no "get inside" in storm wordings. All in `build_pools.py`
 (`apply_notes`), so later rebuilds keep them. Still open:
-5. **Groups the vote emptied** (de), now falling back: theme_nikolo and
-   theme_xmas at On, the storm follow-ups at On (the rain ones show),
+5. **Groups the vote emptied** (de), now falling back: theme_xmas at On (theme_nikolo since cut), the storm follow-ups at On (the rain ones show),
    the drawings' warming line at On, units w_scarf and arc_warmer
    at 11 (the separate pick shows).
 
@@ -463,6 +462,11 @@ To do, in order:
    longest and shortest day (swapped in the south), Monday mornings and
    Friday afternoons. They show on a steady day, every other hour
    (`block.liquid`, "Special days"; `test_switch.py` pins the dates).
+   **Cut on 31 October 2026 (owner):** all the day lines (clock change,
+   longest/shortest day, Monday, Friday) and the themes Pi Day, Bike Day,
+   Tour de France, Oktoberfest, Krampus and Nikolo. Kept: New Year,
+   Groundhog Day, Easter, May the 4th, Halloween, Thanksgiving (en),
+   Christmas. `build_pools.py` drops the cut keys at the end of the build.
    Left for later from the same list: fog and drizzle as their own
    lines (item 7), yesterday's comparison and wind (polling URL).
 16. **Next: other weather outliers** (rendered 16 October 2026):

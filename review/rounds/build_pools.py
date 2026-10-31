@@ -668,9 +668,6 @@ def main():
         moved = apply_owner_moves(doc, lang)
         if moved:
             print(f"{lang}: {moved} lines moved where they belong")
-        # Die Eisheiligen: cut from the recipe by the owner (October 2026).
-        for section in ("flavour_10", "flavour_11"):
-            doc.get(section, {}).pop("day_eisheilige", None)
         level = apply_level_fixes(doc, lang)
         if level:
             print(f"{lang} level check: " + ", ".join(f"{v} {k}" for k, v in level.items()))
@@ -709,6 +706,14 @@ def main():
         pruned = apply_prune(doc, lang)
         if pruned:
             print(f"{lang} pruned (proofreader): " + ", ".join(f"{v} {k}" for k, v in pruned.items()))
+        # Last, after every patch that could add to them: special days cut from the recipe by the owner: die Eisheiligen
+        # (October 2026); the clock changes, longest and shortest day,
+        # Monday, Friday, and the themes bike, Krampus, Nikolo, Pi Day,
+        # Oktoberfest and the Tour (November 2026).
+        for section in ("flavour_10", "flavour_11"):
+            for key in [k for k in doc.get(section, {}) if k.startswith("day_")] + [
+                    "theme_bike", "theme_krampus", "theme_nikolo", "theme_pi", "theme_okt", "theme_tdf"]:
+                doc.get(section, {}).pop(key, None)
         if tight:
             print(f"{lang} tightened (owner + proofreader): " + ", ".join(f"{v} {k}" for k, v in tight.items()))
             # an edit can land on a wording a round put back: each line once

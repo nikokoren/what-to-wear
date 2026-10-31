@@ -382,16 +382,6 @@
       "Ob das die Mühe wert ist?",
       "Früher hat man sich einmal am Tag angezogen. Einmal!"
     ],
-    "theme_krampus": [
-      "Heute kommt der Krampus. Endlich mal einer, der schlechter gelaunt ist als ich.",
-      "Beim Krampuslauf erschrecken Erwachsene Kinder und nennen es Tradition.",
-      "Der Krampus arbeitet einen Abend im Jahr und ist trotzdem berühmter als ich. Frechheit."
-    ],
-    "theme_nikolo": [
-      "Die Mandarine vom Nikolaus schmeckt ein bisschen nach Stiefel.",
-      "Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen.",
-      "Stiefel nicht angetroffen. Sendung liegt beim Nachbarn."
-    ],
     "theme_ny": [
       "Erst das Silvesterfeuerwerk, dann der Feinstaub. Prost Neujahr.",
       "Zum Jahreswechsel kann man immer sehen, wer Geld zum Verballern hat.",
@@ -491,43 +481,6 @@
       "In einer weit, weit entfernten Galaxis ist das Wetter auch nicht besser.",
       "Heute zitieren wieder Leute Filme, die sie seit 1983 nicht gesehen haben.",
       "Das ist nicht der Wetterbericht, den du suchst."
-    ],
-    "theme_okt": [
-      "Eine Maß kostet schon wieder so viel wie früher ein ganzes Wochenende.",
-      "„Ein Prosit der Gemütlichkeit“ läuft jetzt wieder alle zehn Minuten.",
-      "Zwei Wochen lang ist eine Maß um zehn Uhr früh jetzt ganz normal.",
-      "Jetzt fahren wieder Leute aus ganz Europa nach München, um in einem Zelt zu sitzen."
-    ],
-    "day_friday": [
-      "Jetzt tun alle, als hätten sie die ganze Woche durchgearbeitet.",
-      "Jetzt reden wieder alle über ihre Wochenendpläne und landen dann doch wieder auf dem Sofa.",
-      "Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch.",
-      "Im Supermarkt ist's wieder so voll, als käm der Weltuntergang."
-    ],
-    "day_dst_fall": [
-      "Abends früher dunkel. Das hat mir echt gefehlt.",
-      "Eine Stunde mehr, und ich weiß nicht, wohin damit.",
-      "Die Uhr im Auto stimmt jetzt wieder. Für ein halbes Jahr.",
-      "Die EU wollte die Zeitumstellung abschaffen. Das war 2018. Danke für nichts."
-    ],
-    "day_shortest": [
-      "Ab morgen wird's heller. Langsam. Seeeeehr langsam.",
-      "Ich mach's wie die Sonne und halt mich heute kurz."
-    ],
-    "day_dst_spring": [
-      "Die Uhr am Herd geht jetzt wieder falsch, für die nächsten sechs Monate.",
-      "Ich hab die Uhr umgestellt, ohne zu murren. Das Murren hol ich jetzt nach.",
-      "Ich hab die fehlende Stunde nicht. Durchsuch mich ruhig."
-    ],
-    "day_longest": [
-      "Heute bleibt's lange hell. Der Nachbar nebenan nutzt jede Minute zum Rasenmähen."
-    ],
-    "day_monday": [
-      "Im Radio sind sie schon wieder gut gelaunt. Verdächtig.",
-      "Im Postfach warten jetzt die Mails, die Freitag um fünf noch rausmussten.",
-      "Gleich sagt wieder einer: „Na, Montag, was?“ Ja. Montag.",
-      "Der Kollege, der „Montag ist auch nur ein Tag“ sagt, ist leider auch schon da.",
-      "Ich bin bis Dienstag nicht ansprechbar. Das Wetter gilt trotzdem."
     ]
   },
   "flavour_11": {
@@ -555,26 +508,12 @@
       "Ich hab's für dich extra einfach formuliert.",
       "Also nicht wieder irgendwo liegen lassen."
     ],
-    "theme_krampus": [
-      "Ich hab dem Krampus deine Adresse nicht gegeben. Noch nicht.",
-      "Ob du brav warst? Der Krampus hat mitgeschrieben."
-    ],
-    "theme_nikolo": [
-      "Der Nikolaus hat sich deine Schuhe angeschaut und ist weitergegangen.",
-      "Der Nikolaus hat in deinem Stiefel bestimmt nur Kohle gelassen.",
-      "Du hast deine Schuhe für den Nikolaus rausgestellt? In deinem Alter?"
-    ],
     "theme_ny": [
       "Beim Bleigießen wird deine Zukunft sicher wieder 'ne Kartoffel. Wie immer.",
       "Deine Neujahrsvorsätze hast du bis zum Zehnten sicher schon wieder vergessen. Ich kenn dich.",
       "Deine Neujahrsvorsätze sind bis zum Zehnten vergessen. Ich kenn dich.",
       "Dein Jahresrückblick passt sicher wieder auf einen Bierdeckel.",
       "Ich hab fürs neue Jahr ein Update bekommen. Du leider nicht."
-    ],
-    "theme_okt": [
-      "Auf dem Oktoberfest ist der Wirt der Einzige, der sich über dich freut.",
-      "Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.",
-      "Deine Tracht ist wieder aus dem Internet. Sieht man."
     ],
     "theme_spooky": [
       "Wenn's klingelt, bist du heute plötzlich wieder nicht zu Hause. Typisch.",
@@ -686,42 +625,6 @@
       "Die dunkle Seite hätte dich sicher auch nicht genommen.",
       "Die Yoda-Stimme du bestimmt wieder machst. Lass es.",
       "Und du atmest beim Treppensteigen wieder wie Darth Vader."
-    ],
-    "day_monday": [
-      "Ich war das ganze Wochenende an und seh trotzdem frischer aus als du.",
-      "Heute fällt deine schlechte Laune wenigstens nicht auf.",
-      "Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell.",
-      "Die Woche hat kaum angefangen, und du bist schon hinterher.",
-      "Deine Frisur hat das Wochenende auch noch nicht verarbeitet.",
-      "Irgendwer freut sich heute sicher, dich wiederzusehen. Ich kenn nur keinen."
-    ],
-    "day_friday": [
-      "Dein Wochenendprogramm: viel vornehmen, nichts machen.",
-      "Am Montag weißt du wieder nicht, wo das Wochenende hin ist.",
-      "Das Wochenende hat noch nicht angefangen, und du bist schon müde davon."
-    ],
-    "day_dst_spring": [
-      "Eine Stunde früher aufstehen. Für dich ist das quasi Extremsport.",
-      "Die fehlende Stunde sieht man dir an.",
-      "Man sieht dich jetzt abends wieder länger. Schade eigentlich.",
-      "Abends ist's jetzt länger hell. Auf dem Sofa merkst du das aber eh nicht."
-    ],
-    "day_dst_fall": [
-      "Eine Stunde mehr. Ich hätt sie an deiner Stelle in die Frisur investiert.",
-      "Heute bist du eine Stunde zu früh dran. Immerhin einmal im Jahr.",
-      "Die Stunde mehr Schlaf steht dir. Nimm ruhig noch ein paar."
-    ],
-    "day_longest": [
-      "Morgen jammerst du sicher schon, dass die Tage wieder kürzer werden.",
-      "Heute siehst du mal fast erholt aus. Liegt am Licht.",
-      "Das Licht reicht bis spät abends. Deine Energie bis Mittag."
-    ],
-    "day_shortest": [
-      "Heute tut sogar die Sonne nur das Nötigste. Hat sie sich sicher bei dir abgeschaut.",
-      "Ab jetzt geht's aufwärts. Mit dem Tageslicht, nicht mit dir.",
-      "Nur ein paar Stunden Tageslicht auf deinem Gesicht. Ein Segen.",
-      "Deine Winterblässe ist heute offiziell begründet.",
-      "Der Tag macht heute früh Schluss. Kann ich verstehen, er hat dich gesehen."
     ],
     "theme_ghd": [
       "Wenn das Murmeltier dich sieht, gibt's sicher noch sechs Wochen Winter.",

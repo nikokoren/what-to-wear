@@ -302,38 +302,8 @@ TEXTS["en"]["facts"] = saved_facts
 if units_saved:
     TEXTS["en"]["units_10"] = units_saved
 
-# Special days (round 16), on a steady day and every other hour: the clock
-# change (that Sunday and the Monday after; Europe, the US and Canada),
-# the longest and shortest day (swapped in the south), Monday mornings,
-# Friday afternoons.
-from liquid import Environment as _Env
-DAYENV = _Env().from_string(SHARED + "\n@@{{ day_key }}")
-
-
-def day_key(date, hour, tz="Europe/Vienna", lat=48.2):
-    hours = [f"{date}T{h:02d}:00" for h in range(24)]
-    data = {"utc_offset_seconds": OFFSET, "timezone": tz, "latitude": lat,
-            "current": {"time": f"{date}T{hour:02d}:30", "temperature_2m": 15, "apparent_temperature": 15, "weather_code": 0},
-            "hourly": {"time": hours, "temperature_2m": [15] * 24, "apparent_temperature": [15] * 24,
-                       "precipitation_probability": [0] * 24, "weather_code": [0] * 24}}
-    cfg = {"language": "en", "sarcasm_level": "10", "lat_lon": "48.2,16.4", "show_future_suggestions": True}
-    d = dt.date.fromisoformat(date)
-    ts = calendar.timegm((d.year, d.month, d.day, hour, 30, 0)) - OFFSET
-    return DAYENV.render(trmnl={"plugin_settings": {"custom_fields_values": cfg}, "system": {"timestamp_utc": ts},
-                                "user": {"utc_offset": OFFSET}, "device": {"width": 800}},
-                         IDX_0=data, IDX_1=TEXTS["en"]).split("@@")[-1].strip()
-
-
-for date, hour, tz, want in (("2026-10-19", 8, "Europe/Vienna", "monday"), ("2026-10-19", 14, "Europe/Vienna", ""),
-                             ("2026-10-23", 14, "Europe/Vienna", "friday"), ("2026-10-25", 10, "Europe/Vienna", "dst_fall"),
-                             ("2027-03-29", 8, "Europe/Vienna", "dst_spring"), ("2026-11-02", 8, "America/Denver", "dst_fall"),
-                             ("2026-11-02", 8, "America/Phoenix", "monday"), ("2028-03-12", 10, "America/New_York", "dst_spring"),
-                             ("2027-06-21", 10, "Europe/Vienna", "longest"), ("2027-05-12", 10, "Europe/Vienna", ""),
-                             ("2027-05-16", 10, "Europe/Vienna", "")):
-    expect(f"special day {date} {hour}:30 {tz}: {want or 'none'}", day_key(date, hour, tz) == want)
-expect("Pi Day and the US clock change on one day (14 March 2027): the theme wins",
-       day_key("2027-03-14", 10, "America/New_York") == "")
-expect("the longest day in Sydney is the shortest", day_key("2027-06-21", 10, "Australia/Sydney", -33.9) == "shortest")
+# Special days: the owner cut the clock changes, the longest and shortest
+# day, Mondays and Fridays (November 2026). Themes stay (below).
 
 # Units (owner, October 2026): with sarcasm on, a forecast sentence and its
 # joke written together. Where a situation has units, the screen shows one
@@ -370,24 +340,30 @@ expect("units: a layer day's unit, its time words filled in both halves",
 for k in ("w_scarf", "w_coat", "w_jacket", "w_hoodie", "w_water", "shorts_early", "arc_warmer"):
     del TEXTS["en"]["units_10"][k]
 
-# A special day comes with its fixed sentence (facts.steady_special), never
+# A theme day comes with its fixed sentence (facts.steady_special), never
 # a unit's or a separately picked one; on a cold or hot day, or a rainy one,
-# the weather's own unit has the say (owner, round 17).
+# the weather's own unit has the say (owner, round 17). Cut special days
+# never show, even with lines in the texts (owner, November 2026).
 saved_fl = TEXTS["en"]["flavour_10"]
-TEXTS["en"]["flavour_10"] = dict(saved_fl, day_monday=["MONDAY A.", "MONDAY B.", "MONDAY C."])
+TEXTS["en"]["flavour_10"] = dict(saved_fl, theme_xmas=["XMAS A.", "XMAS B.", "XMAS C."],
+                                 day_monday=["MONDAY A.", "MONDAY B.", "MONDAY C."],
+                                 day_dst_fall=["CLOCKS A.", "CLOCKS B."], day_longest=["LONGEST A.", "LONGEST B."])
 TEXTS["en"]["units_10"]["steady_cold"] = ["COLD UNIT. || COLD JOKE."] * 2
 special = TEXTS["en"]["facts"]["steady_special"][0]
-DATE = "2026-10-19"  # a Monday
+for DATE, label in (("2026-10-19", "a Monday"), ("2026-10-25", "the clock change"), ("2027-06-21", "the longest day")):
+    html = render(True, feels=STEADY, hour=8)
+    expect(f"cut special day ({label}): no day line, the unit", "MONDAY" not in html and "CLOCKS" not in html
+           and "LONGEST" not in html and "UNIT FACT. UNIT JOKE." in words_of(html))
+DATE = "2026-12-25"
 html = render(True, feels=STEADY, hour=8)
-expect("special day, forecast on: the fixed sentence and the day's line",
-       special in html and "MONDAY" in html and "UNIT" not in html)
+expect("theme day, forecast on: the fixed sentence and the day's line",
+       special in html and "XMAS" in html and "UNIT" not in html)
 html = render(False, feels=STEADY, hour=8, nxt=True)
-expect("special day, one drawing: the fixed sentence and the day's line", special in html and "MONDAY" in html)
-expect("special day, the odd hour: the unit", "UNIT FACT. UNIT JOKE." in words_of(render(True, feels=STEADY, hour=9)))
+expect("theme day, one drawing: the fixed sentence and the day's line", special in html and "XMAS" in html)
 html = render(True, feels=[0] * 24, hour=8)
-expect("special day on a cold day: the cold unit", "COLD UNIT. COLD JOKE." in words_of(html) and "MONDAY" not in html)
+expect("theme day on a cold day: the cold unit", "COLD UNIT. COLD JOKE." in words_of(html) and "XMAS" not in html)
 html = render(True, feels=STEADY, hour=8, probs=[0] * 14 + [80] * 3 + [0] * 7, codes=[0] * 14 + [61] * 3 + [0] * 7)
-expect("special day on a rainy day: the rain's unit", "RAIN JOKE." in words_of(html) and "MONDAY" not in html)
+expect("theme day on a rainy day: the rain's unit", "RAIN JOKE." in words_of(html) and "XMAS" not in html)
 DATE = "2026-06-10"
 TEXTS["en"]["flavour_10"] = saved_fl
 for k, v in saved_units.items():

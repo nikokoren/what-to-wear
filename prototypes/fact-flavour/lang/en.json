@@ -376,14 +376,6 @@
       "New Year's outlook: scattered hangovers across the country.",
       "Twelve new months of me being right. You're welcome."
     ],
-    "theme_pi": [
-      "It's Pi Day. I'm a rectangle, so I'll be sitting this one out.",
-      "Today's forecast: exactly one outfit. No decimals.",
-      "Mathematicians finally get a holiday, and they picked a number they can't finish.",
-      "The digits go on forever. The pie, sadly, doesn't.",
-      "Somewhere someone has memorized a hundred digits and is waiting to be asked.",
-      "Circumference over diameter. I don't know what that means either, but it's on a T-shirt somewhere."
-    ],
     "theme_spooky": [
       "Everyone's dressing up for Halloween. I'm going as a screen again.",
       "Pale, staring, never blinking. I've been dressed for Halloween all year.",
@@ -486,44 +478,6 @@
       "These are the clothes you're looking for.",
       "I have a bad feeling about this. Kidding. It's fine.",
       "Wrong about the weather, I have never been."
-    ],
-    "theme_tdf": [
-      "The Tour riders get a rest day. I don't. Not that I'm complaining.",
-      "Tour de France update: someone's in yellow. It's not me. I'm gray."
-    ],
-    "theme_okt": [
-      "Someone has to stay sober and do the forecast.",
-      "Oktoberfest. Mostly held in September. Nobody's ever explained that to me."
-    ],
-    "day_monday": [
-      "I don't do weekends, so I don't get what the fuss is about.",
-      "Monday morning. Officially the least popular hours of the week. I still showed up.",
-      "Somewhere a printer is refusing to start the week too."
-    ],
-    "day_friday": [
-      "No weekends for me, but no Mondays either. Fair trade.",
-      "My weekend plans: be right, the whole time.",
-      "Weekend plans? The outfit's ready. That's my part done.",
-      "Peak time for 'let's circle back on Monday.'"
-    ],
-    "day_dst_fall": [
-      "The daylight got moved to the morning. Nobody wanted it there.",
-      "Long dark evenings ahead. Finally, a season in my color scheme."
-    ],
-    "day_longest": [
-      "I look my best in daylight. There's loads of that today.",
-      "Today's the sun's big annual effort. Cute. I do twenty-four hours every day."
-    ],
-    "day_dst_spring": [
-      "One whole hour, gone, and nobody's investigating."
-    ],
-    "day_shortest": [
-      "If I look a bit gray today, that's the light. Mostly.",
-      "Daylight comes in travel size today.",
-      "The sun does the bare minimum today, and gets a holiday for it. Unfair."
-    ],
-    "theme_bike": [
-      "Somewhere a spin class is going nowhere, very fast."
     ]
   },
   "flavour_11": {
@@ -578,11 +532,6 @@
     "theme_ny": [
       "You'll call this new year your year. You said that last year.",
       "Resolution check: still horizontal? Right on track."
-    ],
-    "theme_pi": [
-      "3.14159… You stopped reading at the dot, didn't you?",
-      "Pi Day, because it's 3/14. You'll pretend you knew that.",
-      "You'll smile at a math joke so people think you got it."
     ],
     "theme_spooky": [
       "Your Halloween costume is 'tired adult' again, isn't it?",
@@ -674,46 +623,6 @@
       "You'll make a Groundhog Day joke today. The same one as last year.",
       "A groundhog is having a better day than you.",
       "You'd make a good groundhog: pop out, look around, go back in."
-    ],
-    "theme_bike": [
-      "That exercise bike makes a lovely clothes rack."
-    ],
-    "theme_tdf": [
-      "You watch the Tour for the castles and the scenery. Admit it.",
-      "You'll tell people you follow the Tour. You follow the highlights."
-    ],
-    "day_monday": [
-      "You've already started counting the days to the weekend.",
-      "You hit snooze, didn't you? More than once.",
-      "You said you'd have an early night yesterday. How did that work out?",
-      "Monday morning, and you're reading this before coffee. Bold.",
-      "Same face as last Monday. Very consistent.",
-      "Monday morning. At least one of us is fully charged."
-    ],
-    "day_friday": [
-      "You'll say you'll get up early tomorrow. You won't.",
-      "The weekend plans are 'we'll see', aren't they?",
-      "This weekend you'll finally sort out that drawer. Sure.",
-      "You'll leave the laundry until Sunday night. Again."
-    ],
-    "day_dst_spring": [
-      "You'll blame the lost hour for your mood all week. It was one hour."
-    ],
-    "day_dst_fall": [
-      "You got an extra hour of sleep, but spent it on your phone.",
-      "Clocks changed back. You'll wake up early anyway and resent it.",
-      "Your oven clock will be wrong until spring. You know it.",
-      "An extra hour this weekend. I'd ask what you did with it, but I know."
-    ],
-    "day_longest": [
-      "Longest day of the year and you'll still say you ran out of time.",
-      "Longest day of the year and you'll spend it indoors. With me."
-    ],
-    "day_shortest": [
-      "Shortest day of the year and you'll still waste most of it.",
-      "You'll say 'it's dark already' four times today.",
-      "Shortest day of the year. Finally, one that matches your attention span.",
-      "Your vitamin D and your enthusiasm, both at record lows."
     ],
     "theme_thanks": [
       "The turkey's been dressed with more care than you.",
