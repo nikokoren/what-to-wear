@@ -388,25 +388,25 @@
       "Der Krampus arbeitet einen Abend im Jahr und ist trotzdem berühmter als ich. Frechheit."
     ],
     "theme_nikolo": [
-      "Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen.",
       "Die Mandarine vom Nikolaus schmeckt ein bisschen nach Stiefel.",
+      "Die Schoko-Nikoläuse von heute sind die Osterhasen von morgen.",
       "Stiefel nicht angetroffen. Sendung liegt beim Nachbarn."
     ],
     "theme_ny": [
       "Erst das Silvesterfeuerwerk, dann der Feinstaub. Prost Neujahr.",
-      "Ab heute schreibt wieder jeder bis Februar die falsche Jahreszahl.",
-      "Zum Jahreswechsel kann man immer sehen, wer Geld zum Verballern hat."
+      "Zum Jahreswechsel kann man immer sehen, wer Geld zum Verballern hat.",
+      "Ab heute schreibt wieder jeder bis Februar die falsche Jahreszahl."
     ],
     "theme_spooky": [
       "Früher war Reformationstag, da hatte man seine Ruhe.",
-      "Das Gruseligste ist, dass morgen November ist.",
-      "Buh. Mehr Halloween gibt's von mir nicht."
+      "Buh. Mehr Halloween gibt's von mir nicht.",
+      "Das Gruseligste ist, dass morgen November ist."
     ],
     "theme_xmas": [
       "Von den Weihnachtskeksen sind nur noch die übrig, die keiner mag.",
       "Irgendein Weihnachtsgeschenk braucht wieder Batterien, die keiner im Haus hat.",
-      "„Last Christmas“ läuft jetzt seit acht Wochen. Heute passt's wenigstens.",
-      "Mein Weihnachtswunsch: ein bisschen Farbe. Hab ich wieder nicht bekommen."
+      "Mein Weihnachtswunsch: ein bisschen Farbe. Hab ich wieder nicht bekommen.",
+      "„Last Christmas“ läuft jetzt seit acht Wochen. Heute passt's wenigstens."
     ],
     "off": [
       "Und dann darfst du {GP} wieder überm Arm spazieren tragen.",
@@ -571,6 +571,11 @@
       "Dein Jahresrückblick passt sicher wieder auf einen Bierdeckel.",
       "Ich hab fürs neue Jahr ein Update bekommen. Du leider nicht."
     ],
+    "theme_okt": [
+      "Auf dem Oktoberfest ist der Wirt der Einzige, der sich über dich freut.",
+      "Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.",
+      "Deine Tracht ist wieder aus dem Internet. Sieht man."
+    ],
     "theme_spooky": [
       "Wenn's klingelt, bist du heute plötzlich wieder nicht zu Hause. Typisch.",
       "Der Kürbis vor der Tür hat heute mehr Ausdruck im Gesicht als du.",
@@ -681,11 +686,6 @@
       "Die dunkle Seite hätte dich sicher auch nicht genommen.",
       "Die Yoda-Stimme du bestimmt wieder machst. Lass es.",
       "Und du atmest beim Treppensteigen wieder wie Darth Vader."
-    ],
-    "theme_okt": [
-      "Dein Lebkuchenherz sagt „Ich mag dich“. Es lügt.",
-      "Deine Tracht ist wieder aus dem Internet. Sieht man.",
-      "Auf dem Oktoberfest ist der Wirt der Einzige, der sich über dich freut."
     ],
     "day_monday": [
       "Ich war das ganze Wochenende an und seh trotzdem frischer aus als du.",

@@ -344,21 +344,26 @@ storms). A much better round: 200 stars, 329 keeps.
 
 ## Tightening (owner + proofreader, October 2026)
 
-The owner went through every German line with a proofreading agent and
-changed 177 of them (`review/rounds/2026-10-de-tight/changes.md` has every
-before and after). What they fixed is what writers and critics must get
-right the first time, in both languages unless marked.
+The owner went through every line with a proofreading agent: 177 German
+changes and 176 English ones (`review/rounds/2026-10-de-tight/changes.md`
+and `2026-10-en-tight/changes.md` have every before and after). What they
+fixed is what writers and critics must get right the first time, in both
+languages unless marked. Both passes found the same things.
 
 **Forecast sentences say exactly what happens.**
-- One verb per event, the plain one: rain „hört auf“, not „lässt nach“
-  (which could mean it only weakens). A break is „macht eine Pause“, not
-  „hört kurz auf“. English: "stops", "takes a break".
-- Say the state, not its absence: „Es bleibt kalt / heiß“, not „Es wird
-  nicht wärmer“, „Die Hitze lässt nicht nach“, „Bis zum Abend wird's nicht
-  milder“.
+- One verb per event, the plain one: rain „hört auf“ / "stops", not
+  „lässt nach“ / "eases off" (which could mean it only weakens). A break
+  is „macht eine Pause“ / "takes a break", not „hört kurz auf“.
+- Say the state, not its absence: „Es bleibt kalt / heiß“ / "It stays
+  cold today", not „Es wird nicht wärmer“ / "No warming up today", "It
+  doesn't get any warmer".
 - Don't claim more than the forecast knows: „Wege können glatt sein“, „es
-  droht Glatteis“, not „überall ist es glatt“. No weather-service terms
-  the data doesn't give („Kaltfront“): say „wird's kalt“.
+  droht Glatteis“ / "sidewalks may stay icy", "can leave icy patches",
+  not „überall ist es glatt“ / "ice everywhere", "the ice stays". No
+  weather-service terms the data doesn't give („Kaltfront“): say „wird's
+  kalt“. No odds the data doesn't give: a possible shower is "possible",
+  not "possible but not likely" or "it probably stays dry"; no added
+  durations ("a short dry spell").
 - Spell it out instead of hinting: „und der Regen hält länger an“, not
   „und zwar länger“; drop vague add-ons („aber nicht für lange“).
 - A time word must match the placeholder's job: „später abzieht“, not
@@ -369,6 +374,13 @@ right the first time, in both languages unless marked.
 **Jokes: no fixed facts that vary.** „Abends früher dunkel“, not „dunkel
 um fünf“; „Mehrere Bilder“, not „Drei Bilder“ (the screen shows two or
 three); no hour counts of daylight; no numbers the day doesn't guarantee.
+No clock words the change doesn't fix: "at first", "later", "yet", not
+"this morning", "for the first hour", "for hours", "tonight", "at ten",
+"dark since about four". Under the drawings the condition may not last
+all day: "Heat in the forecast", not "Hot all day"; no "in every
+drawing". No season or sky the slot doesn't guarantee: "the cold", not
+"winter" (a scarf comes off in March too); "the warmth's lying to you",
+not "the sun's" (it may be cloudy).
 
 **Name the occasion in special-day lines.** „Weihnachtsgeschenk“, not
 „Geschenk“; „Heute kommt der Krampus“; „Beim Krampuslauf“; „Auf dem
@@ -378,8 +390,12 @@ is about on its own.
 **Level discipline, strictly.** Any line that addresses the reader with a
 nag, an order or a jab is 11: „Wasser, hab ich gesagt, nicht Bier“, „Ab ins
 Bett“, „Vorausgesetzt, du weißt noch, wo er ist“, „Wehe, du …“, „Schau
-nicht so“, „Also nicht wieder irgendwo liegen lassen“. At On the screen
-talks about the weather, other people or itself. 33 lines moved for this.
+nicht so“, „Also nicht wieder irgendwo liegen lassen“; "You'll forget it",
+"Don't let it go to your head", "I'm a screen, not your mother", "So
+that's not what's keeping you up". At On the screen talks about the
+weather, other people or itself. 33 German and 35 English lines moved up
+for this; two English lines moved down because they weren't about the
+reader at all ("This forecast is brought to you by… nobody").
 
 **What got cut:** obscure references (Funkuhren, Föhnwetter); lines that
 lean on an assumption about the reader („Deine Leute“) or the day's timing
@@ -388,6 +404,17 @@ guten Vorsätze“); jokes whose setup restates the forecast („Kurz Sommer im
 Winter.“ in front of the joke); clumsy wordplay („Auf den Schnee jetzt
 folgt eine kurze Pause, … kommt neuer dazu“); a medical brush-off („Du hast
 nichts. Vermutlich.“, replaced).
+
+**English mechanics** (the proofreader's most frequent fixes):
+- US punctuation: periods and commas inside quotes ('fine.', 'it'll
+  pass,'); a question mark on a tag question ("didn't you?", "isn't it?");
+  a comma before a direct address ("Take that, smartphone").
+- US words, not British: grandma (not gran), need to pee (not need the
+  pee), really (not properly), watch your step (not mind your step), a
+  little worse for wear (not sorry for itself), taken care of (not sorted).
+- "Their hopes" for a group of people, not "its".
+- Don't assume the reader's social life: "the whole neighborhood's
+  conversation", not "your whole conversation with the neighbors".
 
 **German mechanics** (the proofreader's most frequent fixes):
 - Comma before „aber“ and around infinitive clauses: „Überleg dir, eine
@@ -413,7 +440,7 @@ nichts. Vermutlich.“, replaced).
    reuse one, or its sentence frame.
 5. **`docs/CRITIC.md`**: the checklist every critic cuts by. Write so
    nothing on it applies.
-6. **`review/rounds/2026-10-de-tight/changes.md`**: the owner's
+6. **`review/rounds/2026-10-<lang>-tight/changes.md`**: the owner's
    tightening pass, every before and after. The patterns are under
    "Tightening" above; check your lines against them before handing over.
 

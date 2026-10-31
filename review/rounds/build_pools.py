@@ -700,9 +700,15 @@ def main():
         words = apply_words(doc, lang)
         if words:
             print(f"{lang} words: {words} lines reworded")
-        tight = apply_de_tight(doc, lang)
+        tight = apply_tight(doc, lang)
         if tight:
             print(f"{lang} tightened (owner + proofreader): " + ", ".join(f"{v} {k}" for k, v in tight.items()))
+            # an edit can land on a wording a round put back: each line once
+            for pools in doc.values():
+                if isinstance(pools, dict):
+                    for key, v in pools.items():
+                        if isinstance(v, list) and not key.startswith("garments"):
+                            pools[key] = list(dict.fromkeys(v))
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
@@ -1139,20 +1145,21 @@ def apply_level_fixes(doc, lang):
 
 
 
-# The German texts tightened by the owner with a proofreading agent
+# The texts tightened by the owner with a proofreading agent
 # (October 2026): their file, 2026-10-de-tight/de.json, as a patch on what
 # the rounds build (patch.json: per situation, edits in place, cuts, and
 # additions; a move to the other level is a cut in one and an addition in
 # the other). Applied last, so later rebuilds keep it; lines from later
 # rounds are untouched.
-DE_TIGHT = REPO / "review" / "rounds" / "2026-10-de-tight" / "patch.json"
+# The English texts got the same pass (2026-10-en-tight).
+TIGHT = {lang: REPO / "review" / "rounds" / f"2026-10-{lang}-tight" / "patch.json" for lang in ("de", "en")}
 
 
-def apply_de_tight(doc, lang):
-    if lang != "de" or not DE_TIGHT.exists():
+def apply_tight(doc, lang):
+    if lang not in TIGHT or not TIGHT[lang].exists():
         return {}
     n = collections.Counter()
-    for item in json.loads(DE_TIGHT.read_text(encoding="utf-8")):
+    for item in json.loads(TIGHT[lang].read_text(encoding="utf-8")):
         section, key = item["where"].split(".", 1)
         pool = doc.setdefault(section, {}).setdefault(key, [])
         for old, new in item["edits"]:
