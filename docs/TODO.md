@@ -734,3 +734,11 @@ TRMNL takes at most 100 KB per polled URL. The build's margin is now 95
 KB (was 90). After round 24 the German texts are 92.9 KB: room for about
 25 more German lines. Before a round that adds more, either cut lines
 or split the texts across two polled URLs (each URL gets its own 100 KB).
+
+Since the theme cut and the German prune (31 October 2026), German is
+78 KB and English 73 KB. **When a language needs more room (owner):**
+first cut the follow-ups (`flavour_10/11`) whose joke repeats one of
+the units for the same situation. Where a situation has two or more
+units, the screen always shows a unit, and with the forecast off no
+follow-up shows at all, so those copies practically never appear.
+Keep the unit; cut the follow-up copy.
