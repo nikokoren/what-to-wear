@@ -83,3 +83,11 @@ Used on a round's candidates after the critic, before the owner votes
   a short reason each.
 - Report how many lines you kept unchanged, fixed and cut, per slot.
   Don't edit other files, don't commit.
+## Units and follow-ups are not duplicates
+
+A unit (`units_10/11`, "sentence || joke") is the forecast-and-joke pair the
+owner voted on, and where a situation has two or more units, the screen
+always shows a unit there. The follow-up pools (`flavour_10/11`) only show
+when there is no unit. So the same joke as a unit and as a follow-up never
+meets on one screen: never cut a unit for repeating a follow-up. (The
+November 2026 prune did; the owner caught it and those 48 units came back.)

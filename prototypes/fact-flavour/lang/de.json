@@ -841,6 +841,12 @@
   "alone_11": {},
   "units_10": {
     "steady": [
+      "Was du anhast, passt den ganzen Tag. || Wenigstens das Wetter ist heute mal unkompliziert.",
+      "Was du anhast, passt den ganzen Tag. || Dann bin ich heute wohl wieder nur Deko.",
+      "Dein Outfit passt heute den ganzen Tag. || Wenn doch alles so einfach wär.",
+      "Heute ändert sich nichts, was du anhast, passt den ganzen Tag. || Für so eine Ansage bin ich eigentlich überqualifiziert.",
+      "Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch freinehmen können.",
+      "Was du anhast, passt den ganzen Tag. || Dann kann ja nur noch alles andere schiefgehen.",
       "Was du anhast, passt den ganzen Tag. || Mehr hab ich heute auch nicht zu sagen.",
       "Was du anhast, passt den ganzen Tag. || Beschwerden nehm ich trotzdem gern entgegen. Ich hab ja Zeit.",
       "Was du anhast, passt den ganzen Tag. || Ich hätt's gern spannender gemacht, aber das Wetter spielt nicht mit.",
@@ -848,6 +854,10 @@
       "Dein Outfit passt den ganzen Tag. || Früher hat meinen Job ein Frosch im Glas gemacht. Da hatte wohl PETA was dagegen."
     ],
     "steady_evening": [
+      "Was du anhast, passt den ganzen Abend. || Gut so. Für Überraschungen bin ich schon zu müde.",
+      "Was du anhast, passt den ganzen Abend. || Am Outfit liegt's also nicht, wenn der Abend nichts wird.",
+      "Was du anhast, passt den ganzen Abend. || Jetzt fehlt nur noch die passende Laune.",
+      "Am Wetter ändert sich heute Abend nichts, was du anhast, passt. || Schade. Ein bisschen Abwechslung wär mal wieder schön.",
       "Was du anhast, passt den ganzen Abend. || Das war's von mir. Mehr Abendprogramm hab ich nicht zu bieten.",
       "Was du anhast, passt den ganzen Abend. || Dann kann ich ja jetzt in Ruhe grantig sein.",
       "Was du anhast, passt den ganzen Abend. || Das Wetter hat schon Feierabend. Nur ich muss noch.",
@@ -856,17 +866,24 @@
     "steady_night": [
       "Was du anhast, passt für den Rest der Nacht. || Mehr als „passt“ fällt mir so spät auch nicht mehr ein.",
       "Was du anhast, passt für den Rest der Nacht. || Für die Couch passt's sowieso.",
+      "Am Wetter ändert sich heute Nacht nichts mehr, was du anhast, passt. || Das ist ne Ausnahme, eigentlich hab ich schon Feierabend.",
       "Was du anhast, passt für den Rest der Nacht. || Ich bin um die Uhrzeit nur noch aus Höflichkeit an.",
       "Was du anhast, passt für den Rest der Nacht. || Für eine dramatische Wendung ist mir das jetzt zu spät."
     ],
     "steady_cold": [
       "Es bleibt den ganzen Tag so kalt. || Wer jetzt „herrlich frisch“ sagt, kriegt von mir keinen Wetterbericht mehr.",
+      "Die Kälte hält den ganzen Tag an. || Da bleibt immerhin das Bier auf dem Balkon schön kühl.",
+      "Es bleibt den ganzen Tag so kalt. || Da hilft auch kein Jammern.",
+      "Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist ein Versprechen.",
+      "Es bleibt den ganzen Tag kalt. || Also Türe und Fenster zu, wir heizen nicht für draußen!",
+      "{M:01}Es bleibt den ganzen Tag so kalt. || Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
       "Es bleibt den ganzen Tag so kalt. || Heute ist die Heizung die Einzige, die richtig arbeitet.",
       "Es bleibt den ganzen Tag so kalt. || Höher gedreht wird nicht. Hoffen wir, dass die Nachbarn heizen.",
       "Es bleibt den ganzen Tag so kalt. || Heute dampft jeder beim Reden. Endlich sieht man mal, wie viel heiße Luft dabei ist."
     ],
     "steady_hot": [
       "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Für dich und für die Flasche.",
+      "Es bleibt den ganzen Tag heiß, also nimm Wasser mit und ab in den Schatten. || Ich bleib drinnen. Aber ich hab ja keine Wahl.",
       "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Zum Meckern ist es mir heute zu heiß. Fast.",
       "Heute bleibt's heiß, trink genug Wasser und meide die pralle Sonne. || Die meide ich das ganze Jahr.",
       "Heute bleibt's heiß, trink genug Wasser und such dir Schatten. || Faul im Schatten liegen ist heute sogar vernünftig."
@@ -888,6 +905,7 @@
       "{WHEN} wird's kühl, dann bist du froh über eine Jacke. || Wär echt mal Zeit für ein Dankeschön."
     ],
     "c_hoodie": [
+      "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Nachher sagt wieder jeder: Ganz schön frisch geworden.",
       "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich. So wirklich weiß das niemand.",
       "Pack einen Pulli ein, {WHEN} wird's kühler. || Und irgendwer sagt dann wieder: „Geht doch noch.“ Mit blauen Lippen.",
       "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Ich brauch keinen. Mich wärmt mein eigenes Gemecker.",
@@ -950,6 +968,7 @@
     ],
     "p_wetter_long": [
       "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. || Die Schnecken freuen sich. Immerhin wer.",
+      "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Den Satz könnt ich im Schlaf aufsagen.",
       "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Gemütlich wird's höchstens hier drinnen.",
       "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || So schnell hört bei uns ja gar nichts auf. Baustellen zum Beispiel.",
       "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Kurzfassung: nass. Langfassung: sehr lange nass."
@@ -987,6 +1006,7 @@
       "Heute hört's nicht auf zu schneien. || Romantisch finden das nur die, die nirgends hinmüssen.",
       "Der Schneefall hält den ganzen Tag an. || Die Bahn hat bestimmt schon aufgegeben.",
       "Es schneit den ganzen Tag. || Fünf Zentimeter, und im Radio heißt's Schneechaos.",
+      "Heute hört's nicht auf zu schneien. || Freu dich nicht zu früh. Bald ist das alles grauer Matsch.",
       "Heute hört's nicht auf zu schneien. || Schippen, warten, schippen. Das Programm für heute."
     ],
     "p_drier_snow": [
@@ -1005,11 +1025,20 @@
     "steady": [
       "Wettermäßig passt, was du anhast, den ganzen Tag. || Modisch reden wir lieber nicht drüber.",
       "Was du anhast, passt den ganzen Tag. || Damit hast du die einzige richtige Entscheidung des Tages schon hinter dir.",
+      "Was du anhast, passt den ganzen Tag. || Auch für die Joggingrunde, die du dann doch nicht drehst.",
+      "Was du anhast, passt den ganzen Tag. || Mehr kann ich für dich heute nicht tun.",
+      "Was du anhast, passt den ganzen Tag. || Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.",
+      "Was du anhast, passt den ganzen Tag. || Ob's dir steht, ist eine andere Frage.",
+      "Was du anhast, passt den ganzen Tag. || Zumindest bis zum ersten Kaffeefleck.",
+      "Was du anhast, passt den ganzen Tag. || Dann kannst du heute ja nichts falsch machen. Theoretisch.",
       "Du musst dich heute nicht umziehen, was du anhast, passt den ganzen Tag. || Hättest du sowieso nicht gemacht.",
       "Was du anhast, passt den ganzen Tag. || Glück gehabt. Nachgedacht hast du dabei ja nicht.",
       "Was du anhast, passt den ganzen Tag. || Den Tag merk ich mir. So pflegeleicht bist du selten."
     ],
     "steady_evening": [
+      "Was du anhast, passt den ganzen Abend. || Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.",
+      "Was du anhast, passt den ganzen Abend. || Für ein Kompliment reicht's trotzdem nicht.",
+      "Was du anhast, passt den ganzen Abend. || Gratuliere. Das war die einfachste Entscheidung deines Abends.",
       "Was du anhast, passt den ganzen Abend. || Umziehen musst du dich also nicht. Wobei, eine Idee wär's.",
       "Was du anhast, passt den ganzen Abend. || Du schaust trotzdem noch dreimal nach. Ich kenn dich.",
       "Für den Rest des Abends passt, was du anhast. || Das Wetter gibt sich heute mehr Mühe als du.",
@@ -1017,27 +1046,39 @@
     ],
     "steady_night": [
       "Was du anhast, passt für den Rest der Nacht. || Warum du jetzt noch aufs Wetter schaust, versteh ich nicht, aber okay.",
+      "Was du anhast, passt für den Rest der Nacht. || Auch für den dritten Gang zum Kühlschrank.",
       "Was du anhast, passt für den Rest der Nacht. || Um die Uhrzeit sieht dich ja sowieso keiner mehr. Gott sei Dank.",
+      "Was du anhast, passt für den Rest der Nacht. || Also für die zehn Minuten, bis du wieder auf dem Sofa einschläfst.",
       "Was du anhast, passt für den Rest der Nacht. || Auch für die Party, zu der du nicht eingeladen bist.",
       "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein."
     ],
     "steady_cold": [
       "Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.",
       "Es bleibt den ganzen Tag so kalt. || Das Handy bedienst du heute wieder mit der Nasenspitze. Sehr elegant.",
+      "Es bleibt den ganzen Tag kalt. || Du kannst also aufhören, mich alle fünf Minuten anzustarren.",
+      "Es bleibt den ganzen Tag so kalt. || Dann hast du ja den ganzen Tag ein Gesprächsthema.",
+      "Es bleibt den ganzen Tag so kalt. || Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.",
+      "Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.",
       "Es bleibt den ganzen Tag kalt. || Wie dein Kaffee, den du wieder irgendwo stehen gelassen hast.",
       "Es bleibt den ganzen Tag so kalt. || Zum Glück hast du schon deinen Winterspeck."
     ],
     "steady_hot": [
       "Heute bleibt's heiß, trink viel Wasser und such dir Schatten. || Und komm mir nicht mit „Ich hab keinen Durst“.",
+      "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser ist übrigens das Durchsichtige.",
       "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Da ist's dir dann wieder zu frisch. Wetten?",
+      "Heute bleibt's heiß, trink Wasser und meide die pralle Sonne. || Heute Abend bist du dann trotzdem wieder rot wie ein Hummer.",
       "Heute bleibt's heiß. Bleib im Schatten und trink Wasser, bevor du Durst hast. || Sonst kippst du wieder um.",
+      "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.",
+      "Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie deine Blumen auf dem Balkon.",
       "Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt mehr als ein Schluck zum Mittagessen."
     ],
     "w_jacket": [
       "{WHEN} kann die Jacke weg. || Und dann wieder um die Hüfte binden? Bitte nicht.",
       "{WHEN} kannst du die Jacke ausziehen. || Und dann vergisst du sie irgendwo. Wie letztes Mal.",
       "{WHEN} kann die Jacke weg. || Dann sieht jeder, was du drunter anhast. Das Gleiche wie gestern.",
-      "{WHEN} kann die Jacke weg. || Ab dann gibt's nichts mehr, was dein Outfit zusammenhält."
+      "{WHEN} kann die Jacke weg. || Ab dann gibt's nichts mehr, was dein Outfit zusammenhält.",
+      "{WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+      "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht."
     ],
     "w_hoodie": [
       "{WHEN} kann der Pulli weg. || Was drunter ist, hast du dir heute früh hoffentlich gut überlegt.",
@@ -1084,8 +1125,10 @@
       "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Jetzt bloß nicht gleich übermütig werden und lächeln."
     ],
     "w_water": [
+      "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser ist übrigens das Durchsichtige.",
       "{WHEN} wird's heiß, pack lieber Wasser ein. || Trinken, nicht nur rumtragen. Ich kenn dich.",
       "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Kaffee zählt übrigens nicht als Wasser. Auch nicht mit Eis.",
+      "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.",
       "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
       "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Gleich hat's das halbe Büro wieder mit dem Kreislauf. Kipp mir ja nicht wieder vom Stuhl!"
     ],
@@ -1100,12 +1143,14 @@
       "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Danach kannst du dich ganz auf deine anderen Probleme konzentrieren."
     ],
     "arc_level": [
+      "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist meistens dein Problem.",
       "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich.",
       "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Dazwischen siehst du kurz aus, als hättest du dein Leben im Griff.",
       "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
       "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Griffbereit, nicht irgendwo. Das ist ein Unterschied."
     ],
     "arc_colder": [
+      "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.",
       "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Der Tag erfordert mehr Planung, als du sonst in eine ganze Woche steckst.",
       "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Gänsehaut zählt nicht als Schicht.",
       "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Die Wärme hast du nicht verdient. Die Kälte schon.",
@@ -1114,6 +1159,7 @@
     ],
     "shorts_early": [
       "Jetzt ist's noch kühl, aber {WHEN} ist es warm genug für Shorts. || Ob du das der Welt antun willst, musst du selber wissen.",
+      "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.",
       "Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter. || Überleg dir das gut. Ich hab deine Knie schon gesehen.",
       "Jetzt noch frisch, {WHEN} ist's warm genug für ne kurze Hose. || Deine Beine kriegen dieses Jahr also doch noch Sonne.",
       "Noch ist's kühl, aber {WHEN} kannst du in kurzer Hose rumlaufen. || Kannst, nicht musst. Schau nicht so verstört."
@@ -1122,7 +1168,8 @@
       "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Endlich passt das Wetter mal zu deinem Gesicht.",
       "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Um deine Frisur ist's sowieso nicht schade.",
       "Nimm den Schirm mit, {WHENP} kommt ein Regenschauer. || Bevor du's sagst: Nein, das sind nicht nur ein paar Tropfen.",
-      "Pack den Schirm ein, {WHENP} wird's kurz nass. || Glauben wirst du's erst dem Regenradar. Weil's bunt ist."
+      "Pack den Schirm ein, {WHENP} wird's kurz nass. || Glauben wirst du's erst dem Regenradar. Weil's bunt ist.",
+      "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Vorausgesetzt, du weißt noch, wo er ist."
     ],
     "p_wetter_long": [
       "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Aber auf mich hörst du ja erst mit nassen Socken.",
@@ -1158,6 +1205,7 @@
     ],
     "p_stays_wet_snow": [
       "Der Schneefall hält den ganzen Tag an. || Ich weiß, du wolltest heute was erledigen. Das sagst du allerdings jeden Tag.",
+      "Es schneit den ganzen Tag. || Und nein, deswegen fällt die Arbeit nicht aus.",
       "Heute hört's nicht auf zu schneien. || Du wirst trotzdem so tun, als hätt's dir keiner gesagt.",
       "Es schneit weiter, bis der Tag vorbei ist. || Morgen erzählst du allen, wie du dich durchgekämpft hast. Bis zum Sofa.",
       "Heute hört's nicht auf zu schneien. || Ich hab nachgeschaut, ob's eine bessere Nachricht gibt. Für dich nicht."
