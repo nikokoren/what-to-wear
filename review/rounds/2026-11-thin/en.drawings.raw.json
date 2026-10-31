@@ -1,0 +1,290 @@
+{
+ "lines": [
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "People will drive like it's their first snow. Every year, it's their first snow."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "The first flake gets a photo. The thousandth gets a complaint."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Every snowflake is unique, apparently. Nobody's checked."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "TV reporters will stand in it and point at it. I cover snow from indoors, like a professional."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow means thrilled dogs and very unthrilled people holding the leashes."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "The salt trucks finally get to feel important."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow makes everything outside quieter. Except the complaining."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow makes kids get up early with no alarm. Science has no explanation."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow: the one time talking about the weather counts as news."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow, and nobody even had to shake me. Take that, snow globes."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Somewhere a school superintendent is about to be loved or hated. No in between."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow is the sky's factory reset.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Every coffee out there is a hand warmer first and a drink second."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Car heaters will warm up right as everyone arrives."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "The outdoor cats are suddenly very interested in being indoor cats."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Today 'I'll just run out quickly' will be said a lot and believed by nobody."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Every office thermostat is about to become a battleground."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "The cold stays put. It's almost as reliable as me."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Every store door will have someone standing just inside it, thawing."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Today's weather has all the warmth of an automated phone line."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Warm places today: inside, inside, and inside. I've been to all three.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The day is generous at first. Then it remembers what month it is.",
+   "months": "10,11,12,1,2,3,4"
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Every 'I'll be fine' said at first gets a second opinion later."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Later the ice cream trucks will be playing their song to nobody.",
+   "months": "5,6,7,8,9"
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The chilly part comes later. Like the bill."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "It cools off later. Suddenly the ice in everyone's drink seems excessive."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Later every outdoor seat goes from 'lucky' to 'brave.'"
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Later every excuse to stay in gets more convincing."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The warm part is short. The cold part has nowhere else to be."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Later the day hits undo on the warm part.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "It warms up just long enough for someone to say 'see, it's nice out.'"
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Today runs like a hotel shower: cold, then perfect, then cold again."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Halfway through, the weather gets generous. Then it checks its bank account."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The warm part in the middle is too short to enjoy and too long to ignore."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The cold steps out for a smoke, then comes right back."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Today's temperature rises and falls like a soufflé. Same disappointment."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The cold is the main show today. The warm part is the commercial break."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The warmth drops by for a bit and doesn't even take its coat off."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Layer off, layer on. Today the weather is doing the hokey pokey.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Later the day gets better without a single software update. Show-off."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The cold is just the opening act. Nobody came to see it."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Later the iced coffee crowd finally gets to look smart."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The cold goes first today. Even the weather likes to get the worst over with."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The weather improves later. It's the only thing today that will."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Today loads like an old web page. The good part shows up last.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The five-dollar umbrellas by the register are back. Built to survive one rain."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Every fresh blowout in town is about to be a waste of money."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The runners will run in it anyway. Then they'll tell everyone."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Rain at some point. Suddenly I'm everyone's favorite screen."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Rain means a sidewalk full of umbrellas, all of them at eye level."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Every windshield wiper in town will be set one speed wrong."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Every parked bike in town is about to get a plastic bag for a hat."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Rain at some point. The yellow 'wet floor' signs finally get their big day."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Water will fall from the sky. Film at eleven.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later it warms up, and you'll act like you arranged it."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "The day gets better later. No pressure to join it."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later it warms up. You'll need a new thing to complain about. You'll manage."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later the layer comes off. It deserves a break from holding you together."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll stretch in the warmth like a cat. A much less elegant cat."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later the day gets nice. Way out of your league."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "You'll call it perfect weather and do nothing with it."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll feel great. Don't worry, it won't show."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you lose a layer and look like a phone without its case: smaller, and a bit sad.",
+   "wild": true
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "You'll hold the umbrella like you're the main character. You're an extra."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Think of the rain as a rinse. You were overdue."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "You'll say you love the rain. You love saying it."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Hood up, you look like a monk who lost a bet."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "If the rain ruins your look, I'll need proof there was one."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "Your umbrella gets out more than you do.",
+   "wild": true
+  }
+ ]
+}
