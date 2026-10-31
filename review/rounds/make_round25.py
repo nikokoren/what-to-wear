@@ -35,6 +35,10 @@ def main():
     lines = []
     for lang in ("en", "de"):
         src = HERE / ROUND / f"{lang}.json"
+        # The proofreader's pass, when there is one (docs/BRIEF.md: writer,
+        # critic, proofreader, owner): its kept lines, fixes shown.
+        if (HERE / ROUND / f"{lang}.proofread.json").exists():
+            src = HERE / ROUND / f"{lang}.proofread.json"
         if not src.exists():
             continue
         doc = json.loads((r8.PROTO / f"{lang}.json").read_text(encoding="utf-8"))
@@ -62,6 +66,8 @@ def main():
             hints.append(f"Fill-up: {cells.get((lang, where), 0)} live here now")
             if item.get("wild"):
                 hints.append("Out of the box")
+            if item.get("was"):
+                hints.append("Proofread from: " + item["was"].split(" || ")[-1])
             row["hint"] = " · ".join(hints)
             lines.append(row)
     out = {"round": ROUND, "idPrefix": "of", "lines": lines}

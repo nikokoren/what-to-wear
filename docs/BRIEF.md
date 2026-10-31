@@ -468,6 +468,14 @@ nichts. Vermutlich.“, replaced).
   given a job (the jacket's "shift", the rain's "calendar"), semicolons,
   ", because" explanations, and repeated sentence frames.
 
+- **Every round goes writer → critic → proofreader → owner** (owner,
+  October 2026, after round 25's German). No line reaches the review page
+  without a proofreading pass in its own language, by a separate agent
+  following `docs/PROOFREAD_DE.md` / `docs/PROOFREAD_EN.md` in candidate
+  mode (the section at their end): it fixes grammar, punctuation and
+  unnatural phrasing in place, and cuts what can't be fixed. Its fixes
+  are recorded beside each line, so the owner sees what changed.
+
 Hard limits that stay: no temperatures in the text, the 165-character
 budget for the full tip (`tools/check_combinations.py`), and the token
 rules in [TRANSLATING.md](TRANSLATING.md).

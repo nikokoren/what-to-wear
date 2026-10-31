@@ -63,3 +63,23 @@ Write one file, `flags_en.json`: a JSON list with one object per flagged line:
 - **`suggestion`:** keep every tag, every placeholder exactly as written (`{WHEN}`, `{G}`, `{GP}` …) and the ` || ` separator. Change only what's needed.
 - **No file edits:** don't edit `en.json` or any other file, and don't commit. Check that the output parses as JSON.
 - **When done:** report how many lines you checked and how many you flagged, per section.
+
+## Candidate mode (every writing round)
+
+Used on a round's candidates after the critic, before the owner votes
+(`docs/BRIEF.md`, "How to write a round"). Everything above applies, plus
+`docs/BRIEF.md` "Tightening" and `docs/CRITIC.md`.
+
+- Input: the critic's file, `review/rounds/<round>/en.json`
+  (`{"lines": [{"path", "text", ...}]}`).
+- For each line: leave it, fix it, or cut it. Fix in place when a small
+  change makes it right (grammar, punctuation, word choice, idiom); keep
+  every tag, placeholder and the ` || ` separator. Cut when it can't be
+  fixed without becoming a different line. Also cut a line that is a weak joke rather than sarcasm, or that needs context the screen doesn't give.
+- Write `review/rounds/<round>/en.proofread.json`: the same format,
+  the kept lines (fixed ones with their new text), and on each fixed line
+  `"was"` (the critic's text) and `"reasons"` (from "Grammar", "Spelling / punctuation", "Not US English", "Unnatural", "Unclear", "Doesn't fit the situation", "Other"). Write
+  `review/rounds/<round>/en.proofread_cuts.json` with the cut lines and
+  a short reason each.
+- Report how many lines you kept unchanged, fixed and cut, per slot.
+  Don't edit other files, don't commit.
