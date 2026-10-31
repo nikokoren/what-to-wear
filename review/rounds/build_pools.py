@@ -706,6 +706,9 @@ def main():
         proofed = apply_proof_fixes(doc, lang)
         if proofed:
             print(f"{lang} proofreading fixes: {proofed}")
+        pruned = apply_prune(doc, lang)
+        if pruned:
+            print(f"{lang} pruned (proofreader): " + ", ".join(f"{v} {k}" for k, v in pruned.items()))
         if tight:
             print(f"{lang} tightened (owner + proofreader): " + ", ".join(f"{v} {k}" for k, v in tight.items()))
             # an edit can land on a wording a round put back: each line once
@@ -1174,6 +1177,32 @@ def apply_proof_fixes(doc, lang):
                             pool[i] = fixes[line]
                             n += 1
     return n
+
+
+# The German prune (owner, November 2026): the proofreader's cuts across
+# all German lines, never a category below four, plus small fixes.
+PRUNE = {"de": REPO / "review" / "rounds" / "2026-11-de-prune" / "cuts.json"}
+
+
+def apply_prune(doc, lang):
+    path = PRUNE.get(lang)
+    if not path or not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    n = collections.Counter()
+    for fix in data.get("fixes", []):
+        section, key = fix["where"].split(".", 1)
+        pool = doc.get(section, {}).get(key, [])
+        if fix["old"] in pool:
+            pool[pool.index(fix["old"])] = fix["new"]
+            n["fixed"] += 1
+    for cut in data.get("cuts", []):
+        section, key = cut["where"].split(".", 1)
+        pool = doc.get(section, {}).get(key, [])
+        if cut["text"] in pool and len(pool) > 4:
+            pool.remove(cut["text"])
+            n["cut"] += 1
+    return dict(n)
 
 
 # The texts tightened by the owner with a proofreading agent
