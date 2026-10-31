@@ -1,0 +1,212 @@
+{
+ "lines": [
+  {
+   "path": "units_10.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || From brutal to just rude."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "You'll sit outside for ten minutes and call yourself 'outdoorsy.'"
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "Days like this, I'm very glad I don't have armpits."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Today the temperature takes the scenic route back to where it started."
+  },
+  {
+   "path": "flavour_vf_10.hot",
+   "text": "Seat belt buckles everywhere are turning into branding irons."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "The weather has nothing left to say today. I, on the other hand, could go on."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "Later it warms up. Turns out the early bird just gets the cold."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "One more layer later, and you'll still find a way to look underdressed."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || A day that peaks early. Plenty of careers can relate."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "The rain stops later, but you'll want the umbrella for now. || Somebody's bad knee saw this coming too. I have better sources."
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "Today you have no weather to blame. Awkward."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "I was into shade before it was popular."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Bedtime story: once upon a time, the weather stayed exactly the same. The end."
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "Weather this nice is terrible for small talk. What's left to complain about?"
+  },
+  {
+   "path": "flavour_vf_10.nice",
+   "text": "The parks will be full of people pretending they do this every weekend."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} it's going to be really hot, so have water with you. || Nothing left to take off. Legally, anyway."
+  },
+  {
+   "path": "flavour_vf_11.snow",
+   "text": "Snow in the forecast. You'll have something to talk about for once."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}. || Then every snow blower on the block starts up at once. Very peaceful."
+  },
+  {
+   "path": "flavour_vf_11.fickle",
+   "text": "The day warms up for a while. Unlike anyone who's met you."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow stops later. || The 'when I was a kid' stories won't, though."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "Bundled up, you almost look mysterious. Just don't talk, it ruins it."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Fortune favors the bare-kneed."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "Later you'll say you're 'not a cold-weather person.' You're not much of a warm-weather one either."
+  },
+  {
+   "path": "now_10.cool",
+   "text": "The yearly 'is it too early for soup?' debate is open."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "The corner store's umbrella prices just went up. My forecasts are still free.",
+   "was": "The corner store's umbrella prices just went up. My forecast are still free.",
+   "reasons": [
+    "Grammar"
+   ]
+  },
+  {
+   "path": "flavour_vf_11.nice",
+   "text": "The drawings barely change. You haven't either, in years."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || A break for the layer. I haven't had one since I was unboxed."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "The cold is a great excuse to cancel plans. Shame you'd need plans first."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || The break is just the sky reloading."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "You'll do a little jog to dodge the rain. Most athletic you'll look all week."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Snow muffles everything. Even the people complaining about it."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || I'll be showing {GP} again later. Reruns are cheaper."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Later it cools off. I could make that sound dramatic, but I'm not a news channel."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Some weather app said 'all day.' I'm not naming names."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "A forecast so easy, even a phone could get it right."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later the cold loses interest in you. Everyone does eventually."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Later it cools off. Time to find out who really 'runs warm.'"
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Of all the screens you'll look at tonight, I'm the only one with nothing to sell."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Today is a microwave burrito. Warm in the middle, cold at both ends."
+  },
+  {
+   "path": "flavour_vf_11.hot",
+   "text": "Your hair will give up in this heat. It's been close for years."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The cold leaves early today. Best guest all year."
+  },
+  {
+   "path": "alone_10.nice",
+   "text": "Good moods everywhere. It's exhausting to watch."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The day gets a little worse later. I'm reporting it, not endorsing it."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "I never drink water and I'm fine. Please don't take me as a role model."
+  },
+  {
+   "path": "flavour_vf_11.cold",
+   "text": "You'll hold a hot drink like it loves you back."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "I love a snow forecast. It's the one time everyone listens."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} it gets hot. Bring water. || Malls are about to get very popular with people who aren't buying anything."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Every pair of 'water-resistant' shoes is about to be tested."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "Take a bottle of water. The heat arrives {WHEN}. || The kind of hot where a fan just moves the problem around."
+  },
+  {
+   "path": "flavour_vf_11.cooling",
+   "text": "Later you'll want a layer and a hug. One of those is easy to find."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Someone will say 'it was warm earlier' like that helps."
+  }
+ ]
+}
