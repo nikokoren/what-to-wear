@@ -700,6 +700,9 @@ def main():
         words = apply_words(doc, lang)
         if words:
             print(f"{lang} words: {words} lines reworded")
+        tight = apply_de_tight(doc, lang)
+        if tight:
+            print(f"{lang} tightened (owner + proofreader): " + ", ".join(f"{v} {k}" for k, v in tight.items()))
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
@@ -1132,6 +1135,38 @@ def apply_level_fixes(doc, lang):
             if moved not in target:
                 target.append(moved)
             n["moved"] += 1
+    return dict(n)
+
+
+
+# The German texts tightened by the owner with a proofreading agent
+# (October 2026): their file, 2026-10-de-tight/de.json, as a patch on what
+# the rounds build (patch.json: per situation, edits in place, cuts, and
+# additions; a move to the other level is a cut in one and an addition in
+# the other). Applied last, so later rebuilds keep it; lines from later
+# rounds are untouched.
+DE_TIGHT = REPO / "review" / "rounds" / "2026-10-de-tight" / "patch.json"
+
+
+def apply_de_tight(doc, lang):
+    if lang != "de" or not DE_TIGHT.exists():
+        return {}
+    n = collections.Counter()
+    for item in json.loads(DE_TIGHT.read_text(encoding="utf-8")):
+        section, key = item["where"].split(".", 1)
+        pool = doc.setdefault(section, {}).setdefault(key, [])
+        for old, new in item["edits"]:
+            if old in pool:
+                pool[pool.index(old)] = new
+                n["edited"] += 1
+        for old in item["cuts"]:
+            if old in pool:
+                pool.remove(old)
+                n["cut or moved"] += 1
+        for new in item["adds"]:
+            if new not in pool:
+                pool.append(new)
+                n["added or moved in"] += 1
     return dict(n)
 
 

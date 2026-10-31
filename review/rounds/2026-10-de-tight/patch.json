@@ -1,0 +1,1098 @@
+[
+ {
+  "where": "facts.arc_colder",
+  "edits": [
+   [
+    "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.",
+    "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder und noch eine weitere Schicht."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.arc_level",
+  "edits": [
+   [
+    "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler.",
+    "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.c_coat",
+  "edits": [
+   [
+    "{WHEN} wird's kalt genug für die Winterjacke. Nimm sie mit, oder zumindest eine warme Schicht.",
+    "{WHEN} wird's kalt genug für die Winterjacke, also nimm sie oder eine extra warme Schicht mit."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_drier",
+  "edits": [
+   [
+    "Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm.",
+    "Der Regen hört später auf, für jetzt brauchst du noch einen Schirm."
+   ],
+   [
+    "Nimm den Schirm mit, auch wenn der Regen bald abzieht.",
+    "Nimm den Schirm mit, auch wenn der Regen später abzieht."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_drier_snow",
+  "edits": [
+   [
+    "Der Schneefall lässt später nach.",
+    "Der Schneefall hört später auf."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_stays_wet_ice",
+  "edits": [
+   [
+    "Den ganzen Tag gefrierender Regen, Straßen und Gehwege sind glatt. Nimm den Schirm mit und pass auf.",
+    "Den ganzen Tag gefrierender Regen, Straßen und Gehwege können glatt sein. Nimm den Schirm mit und pass auf."
+   ],
+   [
+    "Der gefrierende Regen hält den ganzen Tag an, überall ist es glatt. Nimm den Schirm mit und sei vorsichtig.",
+    "Der gefrierende Regen hält den ganzen Tag an, es droht Glatteis. Nimm den Schirm mit und sei vorsichtig."
+   ],
+   [
+    "Der gefrierende Regen hört nicht auf, und überall ist es glatt.",
+    "Der gefrierende Regen hört nicht auf, die Wege können glatt sein."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_wet_again",
+  "edits": [
+   [
+    "Der Regen hört später auf, aber nur kurz. {WHENP} regnet's wieder, also behalt den Schirm.",
+    "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_wet_again_ice",
+  "edits": [
+   [
+    "Der gefrierende Regen hört später kurz auf, {WHENP} kommt er zurück. Behalt den Schirm dabei.",
+    "Der gefrierende Regen hört später auf, {WHENP} kommt er zurück. Behalt den Schirm dabei."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_wet_again_snow",
+  "edits": [
+   [
+    "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter.",
+    "Es schneit noch eine Weile, dann gibt's eine Pause. {WHENP} schneit's weiter."
+   ],
+   [
+    "Erstmal schneit's weiter, dann ist kurz Pause, und {WHENP} geht es wieder los.",
+    "Erstmal schneit's weiter, dann gibt's eine Pause, und {WHENP} geht es wieder los."
+   ],
+   [
+    "Der Schneefall hört später kurz auf, {WHENP} geht es weiter.",
+    "Der Schneefall hört später auf, {WHENP} geht es weiter."
+   ]
+  ],
+  "cuts": [
+   "Auf den Schnee jetzt folgt eine kurze Pause, {WHENP} kommt neuer dazu."
+  ],
+  "adds": [
+   "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder."
+  ]
+ },
+ {
+  "where": "facts.p_wet_again_storm",
+  "edits": [
+   [
+    "Der Regen hört später kurz auf, {WHENP} kommt ein Gewitter. Behalt den Schirm dabei.",
+    "Der Regen hört später auf, {WHENP} kommt ein Gewitter. Behalt den Schirm dabei."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_wetter_long",
+  "edits": [
+   [
+    "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger.",
+    "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und der Regen hält länger an."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.p_wetter_long_ice",
+  "edits": [
+   [
+    "{WHENP} kommt gefrierender Regen, und ab dann bleibt's glatt.",
+    "{WHENP} kommt gefrierender Regen, es droht Glatteis."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.pants_swing",
+  "edits": [
+   [
+    "Gerade passt noch die kurze Hose, aber {WHEN} wird's kalt. Zieh eine lange Hosen an und nimm eine warme Schicht mit.",
+    "Gerade passt noch die kurze Hose, aber {WHEN} wird's kalt. Zieh eine lange Hose an und nimm eine warme Schicht mit."
+   ],
+   [
+    "Jetzt fühlt's sich nach Kurze-Hosen-Wetter an, doch {WHEN} kommt eine Kaltfront. Lange Hosen sind heute besser, und eine warme Schicht muss mit.",
+    "Jetzt fühlt's sich nach Kurze-Hosen-Wetter an, doch {WHEN} wird's kalt. Lange Hosen sind heute besser, und eine warme Schicht muss mit."
+   ],
+   [
+    "Vielleicht doch lieber ne lange Hose? {WHEN} kommt eine Kaltfront.",
+    "Vielleicht doch lieber ne lange Hose? {WHEN} wird's kalt."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.shorts_swing",
+  "edits": [
+   [
+    "Jetzt ist's kalt aber, {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose.",
+    "Jetzt ist's kalt, aber {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose."
+   ],
+   [
+    "Der kalte Morgen dauert nicht lang, {WHEN} wird's warm. Eventuell lohnt sich die kurze Hose.",
+    "Jetzt ist's noch kalt, {WHEN} wird's warm. Eventuell lohnt sich die kurze Hose."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.shorts_swing_back",
+  "edits": [
+   [
+    "Überleg dir eine kurze Hose anzuziehen, {WHEN} wird's warm. Nimm die warme Schicht trotzdem mit, {WHEN2} kühlt's ab.",
+    "Überleg dir, eine kurze Hose anzuziehen, {WHEN} wird's warm. Nimm die warme Schicht trotzdem mit, {WHEN2} kühlt's ab."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.steady",
+  "edits": [
+   [
+    "So, wie du angezogen bist, passt es den ganzen Tag.",
+    "So, wie du angezogen bist, kommst du gut durch den ganzen Tag."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "facts.steady_cold",
+  "edits": [
+   [
+    "Es wird heute den ganzen Tag nicht wärmer.",
+    "Es bleibt heute den ganzen Tag kalt."
+   ]
+  ],
+  "cuts": [
+   "Bis zum Abend wird's nicht milder."
+  ],
+  "adds": [
+   "Es bleibt den ganzen Tag kalt."
+  ]
+ },
+ {
+  "where": "facts.steady_hot",
+  "edits": [
+   [
+    "Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.",
+    "Es bleibt den ganzen Tag heiß. Pack eine Flasche Wasser ein und such dir Schatten."
+   ],
+   [
+    "Es wird heute nicht kühler, also nimm genug Wasser mit und bleib, wenn's geht, im Schatten.",
+    "Es bleibt heute heiß, also nimm genug Wasser mit und bleib, wenn's geht, im Schatten."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.day_dst_fall",
+  "edits": [
+   [
+    "Endlich wieder dunkel um fünf. Das hat mir echt gefehlt.",
+    "Abends früher dunkel. Das hat mir echt gefehlt."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.day_dst_spring",
+  "edits": [
+   [
+    "Ich hab heute Nacht umgestellt, ohne zu murren. Das Murren hol ich jetzt nach.",
+    "Ich hab die Uhr umgestellt, ohne zu murren. Das Murren hol ich jetzt nach."
+   ]
+  ],
+  "cuts": [
+   "Die Funkuhren haben's heute Nacht ganz von allein gemacht. Die Angeber."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.day_monday",
+  "edits": [
+   [
+    "Gleich sagt wieder einer „Na, Montag, was?“. Ja. Montag.",
+    "Gleich sagt wieder einer: „Na, Montag, was?“ Ja. Montag."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.hot",
+  "edits": [],
+  "cuts": [
+   "Wasser, hab ich gesagt. Bier zählt nicht.",
+   "Mehr sag ich dazu nicht. Ich bin ja nicht deine Mutter.",
+   "Sonst hängst du später durch wie deine Blumen am Balkon."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.off",
+  "edits": [],
+  "cuts": [
+   "Dann darfst du dich kurz freuen. Aber übertreib's nicht.",
+   "Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+   "Wehe, du nimmst sie schon vorher ab."
+  ],
+  "adds": [
+   "Ich würde ja mitmachen, aber unter dem Rahmen hab ich nichts an."
+  ]
+ },
+ {
+  "where": "flavour_10.offon",
+  "edits": [],
+  "cuts": [
+   "Also nicht wieder irgendwo liegen lassen."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.on",
+  "edits": [
+   [
+    "Gleich heißt's wieder überall: Ist aber frisch geworden.",
+    "Später heißt's wieder überall: Ist aber frisch geworden."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.pants",
+  "edits": [],
+  "cuts": [
+   "Schau nicht so, ich hab mir das nicht ausgedacht."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.rain",
+  "edits": [],
+  "cuts": [
+   "Vorausgesetzt, du weißt noch, wo er ist.",
+   "Und bring ihn auch wieder heim. Im Fundbüro liegen schon genug."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.scorch",
+  "edits": [],
+  "cuts": [
+   "Erst mal einen Schluck Wasser trinken. Meckern kannst du später."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.shorts",
+  "edits": [],
+  "cuts": [
+   "{AM}Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "Wer dich dann sieht, hält dich für verrückt. Diesmal zu Unrecht.",
+   "Stylisch ist das nicht. Aber praktisch."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.steady",
+  "edits": [
+   [
+    "Da hätt ich heute auch frei nehmen können.",
+    "Da hätt ich heute auch freinehmen können."
+   ],
+   [
+    "Wenn nur immer so einfach wär.",
+    "Wenn's nur immer so einfach wär."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.theme_krampus",
+  "edits": [
+   [
+    "Heute ist endlich mal einer schlechter gelaunt als ich.",
+    "Heute kommt der Krampus. Endlich mal einer, der schlechter gelaunt ist als ich."
+   ],
+   [
+    "Erwachsene erschrecken wieder Kinder und nennen es Tradition.",
+    "Beim Krampuslauf erschrecken Erwachsene Kinder und nennen es Tradition."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.theme_nikolo",
+  "edits": [
+   [
+    "Die Mandarine aus dem Stiefel schmeckt ein bisschen nach Stiefel.",
+    "Die Mandarine vom Nikolaus schmeckt ein bisschen nach Stiefel."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_10.theme_ny",
+  "edits": [],
+  "cuts": [
+   "Und wieder hat niemand seine Raketenreste weggemacht."
+  ],
+  "adds": [
+   "Zum Jahreswechsel kann man immer sehen, wer Geld zum Verballern hat."
+  ]
+ },
+ {
+  "where": "flavour_10.theme_spooky",
+  "edits": [],
+  "cuts": [
+   "Buh. So, das war mein Beitrag."
+  ],
+  "adds": [
+   "Buh. Mehr Halloween gibt's von mir nicht."
+  ]
+ },
+ {
+  "where": "flavour_10.theme_xmas",
+  "edits": [
+   [
+    "In der Keksdose sind nur noch die, die keiner mag.",
+    "Von den Weihnachtskeksen sind nur noch die übrig, die keiner mag."
+   ],
+   [
+    "Irgendein Geschenk braucht wieder Batterien, die keiner im Haus hat.",
+    "Irgendein Weihnachtsgeschenk braucht wieder Batterien, die keiner im Haus hat."
+   ],
+   [
+    "Mein Wunsch: ein Pixel Farbe. Hab ich wieder nicht bekommen.",
+    "Mein Weihnachtswunsch: ein bisschen Farbe. Hab ich wieder nicht bekommen."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_11.day_dst_fall",
+  "edits": [],
+  "cuts": [
+   "Die Uhren hat man heute zurückgestellt. Deinen Kleidungsstil schon vor Jahren."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_11.day_dst_spring",
+  "edits": [
+   [
+    "Abends ist's jetzt länger hell. Am Sofa merkst du das aber eh nicht.",
+    "Abends ist's jetzt länger hell. Auf dem Sofa merkst du das aber eh nicht."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_11.day_shortest",
+  "edits": [],
+  "cuts": [
+   "Ich hätt gern auch nur acht Stunden mit dir."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_11.hot",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Wasser, hab ich gesagt. Bier zählt nicht.",
+   "Mehr sag ich dazu nicht. Ich bin ja nicht deine Mutter.",
+   "Sonst hängst du später durch wie deine Blumen auf dem Balkon."
+  ]
+ },
+ {
+  "where": "flavour_11.off",
+  "edits": [
+   [
+    "{W:coat,jacket,hoodie}Dann sieht jeder, was du drunter anhast: Das gleiche wie gestern.",
+    "{W:coat,jacket,hoodie}Dann sieht jeder, was du drunter anhast: Das Gleiche wie gestern."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "Dann darfst du dich kurz freuen. Aber übertreib's nicht.",
+   "Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+   "{W:scarf,coat,jacket,hoodie}Wehe, du legst {GP} schon vorher ab."
+  ]
+ },
+ {
+  "where": "flavour_11.offon",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Also nicht wieder irgendwo liegen lassen."
+  ]
+ },
+ {
+  "where": "flavour_11.pants",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Schau nicht so, ich hab mir das nicht ausgedacht."
+  ]
+ },
+ {
+  "where": "flavour_11.rain",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Vorausgesetzt, du weißt noch, wo er ist.",
+   "Und bring ihn auch wieder heim. Im Fundbüro liegen schon genug."
+  ]
+ },
+ {
+  "where": "flavour_11.scorch",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Erst mal einen Schluck Wasser trinken. Meckern kannst du später."
+  ]
+ },
+ {
+  "where": "flavour_11.shorts",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Wer dich dann sieht, hält dich für verrückt. Diesmal zu Unrecht.",
+   "Stylisch ist das nicht. Aber praktisch."
+  ]
+ },
+ {
+  "where": "flavour_11.theme_okt",
+  "edits": [
+   [
+    "Der Wirt ist ab heute der Einzige, der sich über dich freut.",
+    "Auf dem Oktoberfest ist der Wirt der Einzige, der sich über dich freut."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_11.theme_xmas",
+  "edits": [
+   [
+    "Nach dem Essen machst du sicher wieder heimlich den Hosenknopf auf.",
+    "Nach dem Weihnachtsessen machst du sicher wieder heimlich den Hosenknopf auf."
+   ],
+   [
+    "Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.",
+    "Du sagst wieder: „Wir schenken uns nichts.“ Nur weil du keine guten Ideen hast."
+   ],
+   [
+    "Du bist das Geschenk? Dann bitte mit Kassenzettel.",
+    "Du bist das Weihnachtsgeschenk? Dann bitte mit Kassenzettel."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_vf_10.cold",
+  "edits": [
+   [
+    "Durchsage: Der Frühling verspätet sich auf unbestimmte Zeit. Grund ist ein vorausfahrender Zug.",
+    "Durchsage: Die Wärme verspätet sich auf unbestimmte Zeit. Grund ist ein vorausfahrender Zug."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_vf_10.fickle",
+  "edits": [
+   [
+    "Drei Bilder für einen Tag. Ich bin doch kein Daumenkino.",
+    "Mehrere Bilder für einen Tag. Ich bin doch kein Daumenkino."
+   ]
+  ],
+  "cuts": [
+   "Mittags wird's kurz warm. Genau so lange, wie die Mittagspause dauert. Verdächtig.",
+   "Mittags will plötzlich wieder jeder draußen essen."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_vf_10.hot",
+  "edits": [
+   [
+    "Heute erzählen dir wieder alle, dass sie zu hause ne Klimaanlage haben. Schön für dich.",
+    "Heute erzählen dir wieder alle, dass sie zu Hause ne Klimaanlage haben. Schön für sie."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "flavour_vf_10.warming",
+  "edits": [],
+  "cuts": [
+   "Das Wetter wird besser. Deine Leute gleich lauter."
+  ],
+  "adds": []
+ },
+ {
+  "where": "flavour_vf_11.fickle",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Zwei Chancen, etwas Passendes anzuhaben. Ich bin gespannt."
+  ]
+ },
+ {
+  "where": "now_10.nice",
+  "edits": [
+   [
+    "{M:04,05,06}Ein Kilo Spargel kostet jetzt wieder so viel wie früher meine Miete.",
+    "{M:04,05,06}Ein Kilo Spargel kostet jetzt wieder so viel wie früher ein Wocheneinkauf."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "now_10.night",
+  "edits": [],
+  "cuts": [
+   "Schon wieder so spät? Ab ins Bett.",
+   "So spät noch wach? Ab ins Bett mit dir."
+  ],
+  "adds": []
+ },
+ {
+  "where": "now_11.cold",
+  "edits": [
+   [
+    "Und du tagträumst schon wieder vom Süden. Dann fahr halt endlich hin!",
+    "Und du träumst schon wieder vom Süden. Dann fahr halt endlich hin!"
+   ],
+   [
+    "Du tagträumst bestimmt schon wieder von Spanien. Dann buch halt endlich!",
+    "Du träumst bestimmt schon wieder von Spanien. Dann buch halt endlich!"
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "now_11.nice",
+  "edits": [
+   [
+    "Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.",
+    "Jetzt passt das Wetter einmal, und du findest sicher trotzdem was."
+   ]
+  ],
+  "cuts": [
+   "Bei Föhnwetter ist man gereizt, heißt es. Und was ist deine Ausrede an den anderen Tagen?"
+  ],
+  "adds": []
+ },
+ {
+  "where": "now_11.night",
+  "edits": [
+   [
+    "Hör auf, um die Uhrzeit Symptome zu googeln. Du hast nichts. Vermutlich.",
+    "Hör auf, um die Uhrzeit Symptome zu googeln. Als ob du noch einen Grund brauchst, schlecht zu schlafen."
+   ],
+   [
+    "\"Noch eine Folge\", sagst du schon seit drei Folgen.",
+    "„Noch eine Folge“, sagst du schon seit drei Folgen."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "Schon wieder so spät? Ab ins Bett.",
+   "So spät noch wach? Ab ins Bett mit dir."
+  ]
+ },
+ {
+  "where": "now_11.snow",
+  "edits": [
+   [
+    "Du und Glatteis. Das wird wieder was.",
+    "Du und Schnee. Das wird wieder was."
+   ],
+   [
+    "Du auf Glatteis. Ich hol schon mal Popcorn.",
+    "Du auf Schnee. Ich hol schon mal Popcorn."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "now_11.wet",
+  "edits": [
+   [
+    "Wer ohne Schirm raus geht, braucht nachher nicht jammern.",
+    "Wer ohne Schirm rausgeht, braucht nachher nicht jammern."
+   ],
+   [
+    "Wie viele Schirme hast du heuer eigentlich schon verlegt?",
+    "Wie viele Schirme hast du dieses Jahr eigentlich schon verlegt?"
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_10.arc_colder",
+  "edits": [],
+  "cuts": [
+   "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm also eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.arc_level",
+  "edits": [],
+  "cuts": [
+   "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
+   "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.",
+   "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Jetzt glaubt mir das keiner. Später schwitzt ihr wieder."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.c_hoodie",
+  "edits": [],
+  "cuts": [
+   "Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.c_jacket",
+  "edits": [
+   [
+    "{WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke. || Pünktlich wie sonst nichts in diesem Land.",
+    "{WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke. || Wärmer wäre auch lieber gewesen."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_10.c_scarf",
+  "edits": [],
+  "cuts": [
+   "{WHEN} wird's kalt genug für den Schal. || Schau nicht so, ich kann auch nichts dafür."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.p_drier",
+  "edits": [],
+  "cuts": [
+   "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Jammer nicht. Ich hab mir den Tag auch anders vorgestellt."
+  ],
+  "adds": [
+   "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Langsam gehen selbst mir die Wörter für „nass“ aus."
+  ]
+ },
+ {
+  "where": "units_10.p_drier_snow",
+  "edits": [
+   [
+    "Der Schneefall lässt später nach. || Ich nicht.",
+    "Der Schneefall hört später auf. || Ich nicht."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_10.p_stays_wet",
+  "edits": [],
+  "cuts": [
+   "Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Du starrst trotzdem aufs Regenradar. Als ob das was hilft.",
+   "Der Regen hält den ganzen Tag an, der Schirm bleibt also dabei. || Und bring ihn wieder heim. Im Fundbüro liegen genug."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.p_wet_again",
+  "edits": [
+   [
+    "Der Regen hört später auf, aber nur kurz. {WHENP} regnet's wieder, also behalt den Schirm. || Kurz. Wie meine Geduld.",
+    "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || Dann muss der Schirm wenigstens nicht dauernd offen bleiben."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_10.p_wet_again_snow",
+  "edits": [],
+  "cuts": [
+   "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Schau nicht so. Ich hab mir das auch nicht ausgesucht."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.p_wetter",
+  "edits": [
+   [
+    "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und dann heißt es wieder „Es gibt kein schlechtes Wetter.“ Doch, gibt's.",
+    "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und dann heißt es wieder: „Es gibt kein schlechtes Wetter.“ Doch, gibt's."
+   ]
+  ],
+  "cuts": [
+   "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Vorausgesetzt, du weißt noch, wo er ist."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.shorts_early",
+  "edits": [],
+  "cuts": [
+   "Noch ist's kühl, aber {WHEN} kannst du in kurzer Hose rumlaufen. || Kannst, nicht musst. Schau nicht so verstört."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.steady",
+  "edits": [
+   [
+    "Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch frei nehmen können.",
+    "Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch freinehmen können."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_10.steady_hot",
+  "edits": [],
+  "cuts": [
+   "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.",
+   "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+   "Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie deine Blumen am Balkon.",
+   "Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt mehr als ein Schluck zum Mittagessen."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.steady_night",
+  "edits": [],
+  "cuts": [
+   "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein.",
+   "Was du anhast, passt für den restlichen Abend. || Ab hier wird's nur noch dunkler. Das kann ich auch ohne Vorhersage."
+  ],
+  "adds": [
+   "Was du anhast, passt für den Rest der Nacht. || Für eine dramatische Wendung ist mir das jetzt zu spät."
+  ]
+ },
+ {
+  "where": "units_10.w_hoodie",
+  "edits": [],
+  "cuts": [
+   "{WHEN} kannst du den Pulli ausziehen. || Aber nicht vorher. Ich seh das."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.w_jacket",
+  "edits": [],
+  "cuts": [
+   "{WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+   "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht."
+  ],
+  "adds": [
+   "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Platz nimmt sie danach natürlich trotzdem weg.",
+   "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Weniger anhaben, genauso viel zu schleppen. Großartig."
+  ]
+ },
+ {
+  "where": "units_10.w_scarf",
+  "edits": [],
+  "cuts": [
+   "{WHEN} kannst du den Schal ablegen. || Da kann man dich dann vielleicht sogar wieder erkennen.",
+   "{WHEN} kann der Schal weg. || Der Mantel bleibt aber. Werd nicht übermütig."
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_10.w_water",
+  "edits": [
+   [
+    "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+    "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Leitungswasser reicht. Es muss nicht nach Bergpanorama schmecken."
+   ]
+  ],
+  "cuts": [
+   "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.",
+   "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Gleich hat's das halbe Büro wieder mit dem Kreislauf. Kipp mir ja nicht wieder vom Stuhl!"
+  ],
+  "adds": []
+ },
+ {
+  "where": "units_11.arc_colder",
+  "edits": [
+   [
+    "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.",
+    "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm also eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern."
+  ]
+ },
+ {
+  "where": "units_11.arc_level",
+  "edits": [],
+  "cuts": [
+   "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze."
+  ],
+  "adds": [
+   "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.",
+   "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Griffbereit, nicht irgendwo. Das ist ein Unterschied."
+  ]
+ },
+ {
+  "where": "units_11.c_hoodie",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar."
+  ]
+ },
+ {
+  "where": "units_11.c_scarf",
+  "edits": [
+   [
+    "{WHEN} brauchst du den Schal, also nimm ihn mit. || Und bring ihn auch wieder mit nach hause, wenn's geht.",
+    "{WHEN} brauchst du den Schal, also nimm ihn mit. || Und bring ihn auch wieder mit nach Hause, wenn's geht."
+   ],
+   [
+    "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Keine Diskussion. Dein Hals ist nicht so hart, wie du tust.",
+    "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Keine Diskussion. Dein Hals ist nicht so hart, wie du immer behauptest."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "{WHEN} wird's kalt genug für den Schal. || Schau nicht so, ich kann auch nichts dafür."
+  ]
+ },
+ {
+  "where": "units_11.p_drier",
+  "edits": [
+   [
+    "Der Regen lässt später nach, für jetzt brauchst du aber einen Schirm. || Für deine Frisur ist's sowieso zu spät.",
+    "Der Regen hört später auf, für jetzt brauchst du aber einen Schirm. || Für deine Frisur ist's sowieso zu spät."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Jammer nicht. Ich hab mir den Tag auch anders vorgestellt."
+  ]
+ },
+ {
+  "where": "units_11.p_stays_wet",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Du starrst trotzdem aufs Regenradar. Als ob das was hilft.",
+   "Der Regen hält den ganzen Tag an, der Schirm bleibt also dabei. || Und bring ihn wieder heim. Im Fundbüro liegen genug."
+  ]
+ },
+ {
+  "where": "units_11.p_wet_again_snow",
+  "edits": [
+   [
+    "Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht.",
+    "Der Schneefall hört später auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht."
+   ]
+  ],
+  "cuts": [
+   "Der Schneefall hört später kurz auf, {WHENP} geht es weiter. || Zwei Runden Winter an einem Tag. Du schaffst ja nicht mal eine ohne Gejammer."
+  ],
+  "adds": [
+   "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Schau nicht so. Ich hab mir das auch nicht ausgesucht."
+  ]
+ },
+ {
+  "where": "units_11.p_wetter",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Vorausgesetzt, du weißt noch, wo er ist."
+  ]
+ },
+ {
+  "where": "units_11.p_wetter_long",
+  "edits": [
+   [
+    "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger. || Kein Schirm hilft gegen das Gesicht, das du dann machst.",
+    "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und der Regen hält länger an. || Kein Schirm hilft gegen das Gesicht, das du dann machst."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_11.shorts_early",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Noch ist's kühl, aber {WHEN} kannst du in kurzer Hose rumlaufen. || Kannst, nicht musst. Schau nicht so verstört."
+  ]
+ },
+ {
+  "where": "units_11.steady_cold",
+  "edits": [
+   [
+    "Es wird den ganzen Tag nicht wärmer. || Du kannst also aufhören, mich alle fünf Minuten anzustarren.",
+    "Es bleibt den ganzen Tag kalt. || Du kannst also aufhören, mich alle fünf Minuten anzustarren."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_11.steady_hot",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.",
+   "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+   "Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie deine Blumen auf dem Balkon.",
+   "Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt mehr als ein Schluck zum Mittagessen."
+  ]
+ },
+ {
+  "where": "units_11.steady_night",
+  "edits": [
+   [
+    "Was du anhast, passt für den ganzen Abend. || Auch für die Party, zu der du nicht eingeladen bist.",
+    "Was du anhast, passt für den Rest der Nacht. || Auch für die Party, zu der du nicht eingeladen bist."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein."
+  ]
+ },
+ {
+  "where": "units_11.w_coat",
+  "edits": [
+   [
+    "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Kurz Sommer im Winter. Jetzt bloß nicht gleich übermütig werden und lächeln.",
+    "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Jetzt bloß nicht gleich übermütig werden und lächeln."
+   ]
+  ],
+  "cuts": [],
+  "adds": []
+ },
+ {
+  "where": "units_11.w_hoodie",
+  "edits": [
+   [
+    "{WHEN} kannst du den Pulli ausziehen. || Und dieses mal etwas eleganter bitte. Das sieht jedes Mal aus wie Ringen.",
+    "{WHEN} kannst du den Pulli ausziehen. || Und dieses Mal etwas eleganter bitte. Das sieht jedes Mal aus wie Ringen."
+   ]
+  ],
+  "cuts": [],
+  "adds": [
+   "{WHEN} kannst du den Pulli ausziehen. || Aber nicht vorher. Ich seh das."
+  ]
+ },
+ {
+  "where": "units_11.w_jacket",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "{WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+   "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht."
+  ]
+ },
+ {
+  "where": "units_11.w_scarf",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "{WHEN} kannst du den Schal ablegen. || Da kann man dich dann vielleicht sogar wiedererkennen.",
+   "{WHEN} kann der Schal weg. || Der Mantel bleibt aber. Werd nicht übermütig."
+  ]
+ },
+ {
+  "where": "units_11.w_water",
+  "edits": [],
+  "cuts": [],
+  "adds": [
+   "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.",
+   "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+   "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Gleich hat's das halbe Büro wieder mit dem Kreislauf. Kipp mir ja nicht wieder vom Stuhl!"
+  ]
+ }
+]

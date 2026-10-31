@@ -342,6 +342,64 @@ storms). A much better round: 200 stars, 329 keeps.
   ist's dann wieder frisch … Außer mir.“). Garments: a joke about sleeves
   doesn't fit every layer. Storms: no "get inside" lectures.
 
+## Tightening (owner + proofreader, October 2026)
+
+The owner went through every German line with a proofreading agent and
+changed 177 of them (`review/rounds/2026-10-de-tight/changes.md` has every
+before and after). What they fixed is what writers and critics must get
+right the first time, in both languages unless marked.
+
+**Forecast sentences say exactly what happens.**
+- One verb per event, the plain one: rain „hört auf“, not „lässt nach“
+  (which could mean it only weakens). A break is „macht eine Pause“, not
+  „hört kurz auf“. English: "stops", "takes a break".
+- Say the state, not its absence: „Es bleibt kalt / heiß“, not „Es wird
+  nicht wärmer“, „Die Hitze lässt nicht nach“, „Bis zum Abend wird's nicht
+  milder“.
+- Don't claim more than the forecast knows: „Wege können glatt sein“, „es
+  droht Glatteis“, not „überall ist es glatt“. No weather-service terms
+  the data doesn't give („Kaltfront“): say „wird's kalt“.
+- Spell it out instead of hinting: „und der Regen hält länger an“, not
+  „und zwar länger“; drop vague add-ons („aber nicht für lange“).
+- A time word must match the placeholder's job: „später abzieht“, not
+  „bald abzieht“, when the time comes from the forecast.
+- A unit's forecast sentence matches its slot: a night unit says „für
+  den Rest der Nacht“, never „für den restlichen Abend“.
+
+**Jokes: no fixed facts that vary.** „Abends früher dunkel“, not „dunkel
+um fünf“; „Mehrere Bilder“, not „Drei Bilder“ (the screen shows two or
+three); no hour counts of daylight; no numbers the day doesn't guarantee.
+
+**Name the occasion in special-day lines.** „Weihnachtsgeschenk“, not
+„Geschenk“; „Heute kommt der Krampus“; „Beim Krampuslauf“; „Auf dem
+Oktoberfest“; „die Mandarine vom Nikolaus“. The line must say which day it
+is about on its own.
+
+**Level discipline, strictly.** Any line that addresses the reader with a
+nag, an order or a jab is 11: „Wasser, hab ich gesagt, nicht Bier“, „Ab ins
+Bett“, „Vorausgesetzt, du weißt noch, wo er ist“, „Wehe, du …“, „Schau
+nicht so“, „Also nicht wieder irgendwo liegen lassen“. At On the screen
+talks about the weather, other people or itself. 33 lines moved for this.
+
+**What got cut:** obscure references (Funkuhren, Föhnwetter); lines that
+lean on an assumption about the reader („Deine Leute“) or the day's timing
+(„Mittags wird's kurz warm … Verdächtig“); clichés („so lang wie deine
+guten Vorsätze“); jokes whose setup restates the forecast („Kurz Sommer im
+Winter.“ in front of the joke); clumsy wordplay („Auf den Schnee jetzt
+folgt eine kurze Pause, … kommt neuer dazu“); a medical brush-off („Du hast
+nichts. Vermutlich.“, replaced).
+
+**German mechanics** (the proofreader's most frequent fixes):
+- Comma before „aber“ and around infinitive clauses: „Überleg dir, eine
+  kurze Hose anzuziehen“; no comma before „oder“ in a plain list.
+- Direct speech with a colon and German quotes: „Gleich sagt wieder einer:
+  „Na, Montag, was?“ Ja. Montag.“ Never "…".
+- „das Gleiche“, „zu Hause“, „dieses Mal“, „rausgeht“, „freinehmen“,
+  „Wenn's nur …“ (the „es“ is needed).
+- Standard German, not Austrian/Bavarian: „dieses Jahr“ not „heuer“,
+  „auf dem Sofa / Balkon“ not „am“, „träumen“ not „tagträumen“.
+- „das Wetter“ in full where „'s Wetter“ reads like dialect.
+
 ## What to read before writing, in this order
 
 1. **The facts of the key** in [SCENARIOS.md](SCENARIOS.md): when it
@@ -353,6 +411,11 @@ storms). A much better round: 200 stars, 329 keeps.
    page. Write lines that would sit beside them.
 4. **`review/dont/<lang>.md`**: vetoed lines with their reasons. Never
    reuse one, or its sentence frame.
+5. **`docs/CRITIC.md`**: the checklist every critic cuts by. Write so
+   nothing on it applies.
+6. **`review/rounds/2026-10-de-tight/changes.md`**: the owner's
+   tightening pass, every before and after. The patterns are under
+   "Tightening" above; check your lines against them before handing over.
 
 ## How to write a round
 
