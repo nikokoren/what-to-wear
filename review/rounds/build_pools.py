@@ -379,6 +379,7 @@ FINAL = "2026-10-final"  # round 22: the read-through of every live text
 FINAL2 = "2026-10-final2"  # round 23: the English read-through, German rewrites
 FILL = "2026-10-fill"  # round 24: every thin slot to at least four lines
 ONFILL = "2026-10-onfill"  # round 25: English at On and the drawing lines, topped up
+THIN = "2026-11-thin"  # round 26: the groups under four lines that actually show, topped up
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -659,7 +660,7 @@ def main():
             if rewrites:
                 print(f"{lang} round 23 (rewrites): " + ", ".join(f"{v} {k}" for k, v in rewrites.items()))
         fill = (apply_follow(doc, lang, decisions, FILL) + apply_facts(doc, lang, decisions, FILL)
-                + apply_follow(doc, lang, decisions, ONFILL))
+                + apply_follow(doc, lang, decisions, ONFILL) + apply_follow(doc, lang, decisions, THIN))
         if fill:
             print(f"{lang} round 24 (fill-up): " + ", ".join(f"{v} {k}" for k, v in fill.items()))
         notes = apply_notes(doc, lang)
