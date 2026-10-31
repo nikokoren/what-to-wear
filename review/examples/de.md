@@ -1206,9 +1206,11 @@ Do not edit by hand; vote on the page instead.
 - Endlich passt das Wetter mal zu deinem Gesicht.
 - Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.
 - Nachher bitte nicht wieder den Flur volltropfen.
+- Nass sieht jeder ein bisschen erbärmlich aus. Du hast da einen Vorsprung.
 - Tropf mir nachher bloß nicht wieder alles voll.
 - Um deine Frisur ist's eh nicht schade.
 - Um deine Frisur ist's eh nicht schade.
+- Unterm Schirm erkennt dich wenigstens keiner.
 - Wenn du nass wirst, sag nicht, ich hätt's nicht gesagt.
 - Wenn du nass wirst, war's wieder meine Schuld. Klar.
 - Wenn du nass wirst, war's wieder meine Schuld. Klar.

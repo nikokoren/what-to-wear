@@ -756,7 +756,10 @@
       "Heute brauch ich kaum schwarze Pixel. Endlich mal ein sparsamer Tag."
     ],
     "warming": [
-      "Liebes Wetter, warum nicht gleich so?"
+      "Liebes Wetter, warum nicht gleich so?",
+      "Das letzte Bild war am schnellsten gezeichnet. Weniger Stoff, weniger Arbeit.",
+      "Das Wetter bessert sich später. Da hat wohl jemand eine Beschwerde geschrieben.",
+      "Später sitzt wieder alle draußen, als hätten sie sich das verdient."
     ],
     "wet": [
       "Einen Schirm hab ich dir schon gemalt. Mitnehmen musst du ihn selber.",
@@ -774,7 +777,8 @@
     "cooling": [
       "Auf das Wetter ist Verlass. Zumindest, wenn's ums Schlechterwerden geht.",
       "Ausleihen kannst du dir bei mir nichts, ich hab selber nur einen Rahmen.",
-      "Später stehen wieder alle an der Ampel und reiben sich die Hände. Wie Bösewichte."
+      "Später stehen wieder alle an der Ampel und reiben sich die Hände. Wie Bösewichte.",
+      "Später tun wieder alle überrascht. Dabei hab ich's extra gemalt."
     ],
     "hot": [
       "Die Wespen sind heute die Einzigen mit Energie.",
@@ -786,7 +790,9 @@
     "nice": [
       "Heute fahren alle mit dem Rad zur Arbeit und erzählen's dann den ganzen Tag.",
       "Heute ist die Eisdiele voller als das Fitnessstudio. Wie eigentlich immer.",
-      "Nichts zu meckern. Ich hab trotzdem schon mal einen Zettel angefangen."
+      "Nichts zu meckern. Ich hab trotzdem schon mal einen Zettel angefangen.",
+      "Viel ändert sich heute nicht. Gutes Wetter ist echt stinklangweilig.",
+      "Bei dem Wetter hab ich kurz überlegt, nett zu sein. Aber nur kurz."
     ]
   },
   "flavour_vf_11": {
@@ -801,14 +807,19 @@
     "fickle": [
       "An, aus, an. Irgendwo dazwischen verlierst du vermutlich wieder die Mütze.",
       "Dein Outfit ändert sich heute zweimal. Dein Gesichtsausdruck nicht.",
+      "Zwischendurch zeigst du wieder mehr von dir. Ein Glück, dass das nicht hält.",
       "Zwei Chancen, etwas Passendes anzuhaben. Ich bin gespannt."
     ],
     "snow": [
       "Jede Flocke ist einzigartig. Du hattest Pech.",
       "Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.",
-      "{M:10,11,12}Schnee kommt. Deine Stiefel sind natürlich noch im Keller."
+      "{M:10,11,12}Schnee kommt. Deine Stiefel sind natürlich noch im Keller.",
+      "Im Schnee schaust du aus wie ein Gartenzwerg. Ein besonders grantiger.",
+      "Unter dir knirscht der Schnee irgendwie lauter als bei anderen."
     ],
     "wet": [
+      "Unterm Schirm erkennt dich wenigstens keiner.",
+      "Nass sieht jeder ein bisschen erbärmlich aus. Du hast da einen Vorsprung.",
       "Du und der Regen, ihr habt was gemeinsam: Keiner freut sich, wenn ihr kommt.",
       "Den Schirm siehst du. Mitnehmen wirst du ihn trotzdem nicht.",
       "Regen ist gut für die Haut. Bei dir muss er sich aber anstrengen."

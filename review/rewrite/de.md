@@ -190,6 +190,36 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at 11: the Tour de France, 1 to 23 July (every steady day for three weeks). Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-de-cc365bc6fcc4` (2026-10-days)
 
+## flavour_vf_10.cooling
+
+- **Out:** Später heißt's wieder: „Vorhin war's doch noch warm.“ Ja. Vorhin.
+  **Wanted instead:** that's a bad joke. not sarcsm.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry
+  **What it's for:** New: sarcastic line at On. About the drawings: shows only with two or three of them (cooling day), no forecast line.
+  **Answers:** `of-de-709d10a954ba` (2026-10-onfill)
+- **Out:** Später wird das Wetter so frostig wie ich. Wurde auch Zeit.
+  **Wanted instead:** frostig does not work in german.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry
+  **What it's for:** New: sarcastic line at On. About the drawings: shows only with two or three of them (cooling day), no forecast line.
+  **Answers:** `of-de-efb47440638e` (2026-10-onfill)
+
+## flavour_vf_10.fickle
+
+- **Out:** Morgen hat das Fundbüro wieder Hochbetrieb.
+  **Wanted instead:** not funny without context. even with context it's stretching it.
+  **Tags:** not funny
+  **On screen:** drawing coat_dry
+  **What it's for:** New: sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.
+  **Answers:** `of-de-8e3906dfb265` (2026-10-onfill)
+- **Out:** Ein Tag für Leute mit großen Taschen und kleinen Erwartungen.
+  **Wanted instead:** i like the direction, but this is not landing.
+  **Tags:** not funny
+  **On screen:** drawing coat_dry
+  **What it's for:** New: sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.
+  **Answers:** `of-de-c27e5b222eb0` (2026-10-onfill)
+
 ## now_10.cold
 
 - **Out:** Kalter Boden. Wer jetzt barfuß läuft, kriegt den Satz mit der Blasenentzündung zu hören.

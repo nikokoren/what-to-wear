@@ -32728,6 +32728,368 @@
   "edit": "",
   "updatedAt": "2026-10-16T21:51:35.066Z"
  },
+ "of-de-1c1ae0f12a72": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_vf_11.snow[+]",
+  "text": "Im Schnee schaust du aus wie ein Gartenzwerg. Ein besonders grantiger.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:32:16.652Z"
+ },
+ "of-de-279a8f1ba89a": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_vf_10.nice[+]",
+  "text": "Auf den Bänken sitzen wieder die Rentner und bewerten jeden, der vorbeigeht. Kollegen.",
+  "source": "candidate",
+  "batch": "Drawings: nice",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "all your german phrasing is terrible. who wrote this?",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:30:55.521Z"
+ },
+ "of-de-27a2dfabcccd": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Das Wetter bessert sich später. Hat wohl jemand eine Beschwerde geschrieben.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Das Wetter bessert sich später. Da hat wohl jemand eine Beschwerde geschrieben.",
+  "updatedAt": "2026-10-31T20:32:50.686Z"
+ },
+ "of-de-3f3196a1677c": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Wetter heute, kurz gefasst: Ja. Nein. Doch.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:28:42.195Z"
+ },
+ "of-de-60798daed615": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Die Wärme kommt heute wie der Handwerker. Spät, aber sie kommt.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:32:57.719Z"
+ },
+ "of-de-709d10a954ba": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_vf_10.cooling[+]",
+  "text": "Später heißt's wieder: „Vorhin war's doch noch warm.“ Ja. Vorhin.",
+  "source": "candidate",
+  "batch": "Drawings: cooling",
+  "round": "2026-10-onfill",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "that's a bad joke. not sarcsm.",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:27:53.800Z"
+ },
+ "of-de-8411c3fa0ed4": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_vf_11.fickle[+]",
+  "text": "Zwischendurch zeigst du wieder mehr von dir. Ein Glück, dass das nicht hält.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:30:12.554Z"
+ },
+ "of-de-8e3906dfb265": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Morgen hat das Fundbüro wieder Hochbetrieb.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "not funny without context. even with context it's stretching it.",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:29:12.846Z"
+ },
+ "of-de-8e8f03ec7a45": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_vf_11.fickle[+]",
+  "text": "Ich zieh dich heute mehrmals um. Freiwillig macht das sonst keiner.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:30:22.102Z"
+ },
+ "of-de-901fa6894f7e": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_vf_11.wet[+]",
+  "text": "Unterm Schirm erkennt dich wenigstens keiner.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-10-onfill",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:35:51.269Z"
+ },
+ "of-de-9c38670f923a": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_vf_10.nice[+]",
+  "text": "Viel ändert sich auf meinen Bildern heute nicht. Gutes Wetter ist zum Malen stinklangweilig.",
+  "source": "candidate",
+  "batch": "Drawings: nice",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Viel ändert sich heute nicht. Gutes Wetter ist echt stinklangweilig.",
+  "updatedAt": "2026-10-31T20:31:46.606Z"
+ },
+ "of-de-9da2d74462c9": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_vf_11.wet[+]",
+  "text": "Nass sieht jeder ein bisschen erbärmlich aus. Du hast da einen Vorsprung.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-10-onfill",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:35:56.712Z"
+ },
+ "of-de-a0d001f61380": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Das Wetter hat heute mehr Wendungen als ein Tatort. Und ein genauso vorhersehbares Ende.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:29:27.529Z"
+ },
+ "of-de-a49169a58c70": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Später läuft wieder jeder mit was überm Arm rum wie ein Kellner.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:33:06.505Z"
+ },
+ "of-de-ae1720620f5e": {
+  "level": "11",
+  "key": "fickle",
+  "path": "flavour_vf_11.fickle[+]",
+  "text": "Auf dem Bild in der Mitte schaust du fast entspannt aus. Hab ich geschönt.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:30:32.800Z"
+ },
+ "of-de-c27e5b222eb0": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Ein Tag für Leute mit großen Taschen und kleinen Erwartungen.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-10-onfill",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "i like the direction, but this is not landing.",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:29:59.183Z"
+ },
+ "of-de-df43e7761f94": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_vf_11.snow[+]",
+  "text": "Unter dir knirscht der Schnee irgendwie lauter als bei anderen.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:32:23.138Z"
+ },
+ "of-de-e0303a87ddf3": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_vf_11.wet[+]",
+  "text": "Gegen Regen gibt's Schirme. Gegen dich nichts.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:36:01.553Z"
+ },
+ "of-de-e326b46135d0": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Später sitzt wieder jeder draußen, als hätte er sich das verdient.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Später sitzt wieder alle draußen, als hätten sie sich das verdient.",
+  "updatedAt": "2026-10-31T20:33:33.414Z"
+ },
+ "of-de-e6016ea071c9": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_vf_10.cooling[+]",
+  "text": "Später tun wieder alle überrascht. Dabei hab ich's extra gemalt.",
+  "source": "candidate",
+  "batch": "Drawings: cooling",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:28:07.400Z"
+ },
+ "of-de-efb47440638e": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_vf_10.cooling[+]",
+  "text": "Später wird das Wetter so frostig wie ich. Wurde auch Zeit.",
+  "source": "candidate",
+  "batch": "Drawings: cooling",
+  "round": "2026-10-onfill",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "frostig does not work in german.",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:28:28.088Z"
+ },
+ "of-de-f1a4ddaa8092": {
+  "level": "11",
+  "key": "snow",
+  "path": "flavour_vf_11.snow[+]",
+  "text": "Schnee ist ja auch nur Wasser, das sich mehr Mühe gibt als du.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-10-onfill",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:32:27.994Z"
+ },
+ "of-de-f43cc65dbb5d": {
+  "level": "10",
+  "key": "nice",
+  "path": "flavour_vf_10.nice[+]",
+  "text": "Bei dem Wetter hab ich kurz überlegt, nett zu sein. Ist vorbei.",
+  "source": "candidate",
+  "batch": "Drawings: nice",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Bei dem Wetter hab ich kurz überlegt, nett zu sein. Aber nur kurz.",
+  "updatedAt": "2026-10-31T20:32:08.937Z"
+ },
+ "of-de-fe7a83d9ca78": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Das letzte Bild war am schnellsten gezeichnet. Weniger Stoff, weniger Arbeit.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-10-onfill",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-10-31T20:33:44.750Z"
+ },
  "po-de-09248434e0ef": {
   "level": "0",
   "key": "steady_evening",

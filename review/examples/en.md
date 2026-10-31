@@ -39,6 +39,7 @@ Do not edit by hand; vote on the page instead.
 ## arc_level · dry
 
 - Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Off and on again. That fixes most things, me included.
+- Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Today is a microwave burrito. Warm in the middle, cold at both ends.
 
 ## arc_level · sarcastic
 
@@ -351,6 +352,7 @@ Do not edit by hand; vote on the page instead.
 
 ## hot · dry
 
+- Days like this, I'm very glad I don't have armpits.
 - Finally, a use for the fancy bottle you bought to drink more water.
 - Finally, a use for the fancy bottle you bought to drink more water.
 - Flat, pale and cool. I'm built for days like this.
@@ -364,6 +366,7 @@ Do not edit by hand; vote on the page instead.
 - No sweat here. One of the perks of being a screen.
 - No sweat here. One of the perks of being a screen.
 - Not for me, thanks. Water and I don't get along.
+- Seat belt buckles everywhere are turning into branding irons.
 - Somebody cranked the outside too high. Wasn't me.
 - Somebody cranked the outside too high. Wasn't me.
 - Somebody cranked the outside too high. Wasn't me.
@@ -411,6 +414,7 @@ Do not edit by hand; vote on the page instead.
 - On days like this you barely look at me. Fair enough.
 - Sunny days, you walk right past me. I've stopped taking it personally. Mostly.
 - Today the weather looks almost as good as I do.
+- Weather this nice is terrible for small talk. What's left to complain about?
 - Weather this nice makes my job easy. I'll still act busy.
 
 ## nice · sarcastic
@@ -547,6 +551,7 @@ Do not edit by hand; vote on the page instead.
 ## p_drier_snow · dry
 
 - It stops snowing {WHENSTOP}. || Right on time. I like a snowfall that keeps its word.
+- It stops snowing {WHENSTOP}. || Then every snow blower on the block starts up at once. Very peaceful.
 - The snow stops later. || The kids won't take the news well.
 
 ## p_drier_snow · sarcastic
@@ -1252,6 +1257,7 @@ Do not edit by hand; vote on the page instead.
 - It gets hot {WHEN}, so bring water. || Finally, a use for the fancy bottle you bought to drink more water.
 - It heats up {WHEN}, so take water with you. || Somebody's about to crank the outside too high. Not me.
 - Take a bottle of water. The heat arrives {WHEN}. || Not for me, thanks. Water and I don't get along.
+- Take a bottle of water. The heat arrives {WHEN}. || The kind of hot where a fan just moves the problem around.
 
 ## w_water · sarcastic
 
