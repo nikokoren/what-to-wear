@@ -703,6 +703,9 @@ def main():
         if words:
             print(f"{lang} words: {words} lines reworded")
         tight = apply_tight(doc, lang)
+        proofed = apply_proof_fixes(doc, lang)
+        if proofed:
+            print(f"{lang} proofreading fixes: {proofed}")
         if tight:
             print(f"{lang} tightened (owner + proofreader): " + ", ".join(f"{v} {k}" for k, v in tight.items()))
             # an edit can land on a wording a round put back: each line once
@@ -1145,6 +1148,32 @@ def apply_level_fixes(doc, lang):
             n["moved"] += 1
     return dict(n)
 
+
+
+# Proofreading fixes the owner approved for lines already voted in
+# (round 25's kept lines, October 2026). Applied after the tightening.
+PROOF_FIXES = {
+    "de": {"Später sitzt wieder alle draußen, als hätten sie sich das verdient.":
+           "Später sitzen wieder alle draußen, als hätten sie sich das verdient.",
+           "Das letzte Bild war am schnellsten gezeichnet. Weniger Stoff, weniger Arbeit.":
+           "Das letzte Bild ging am schnellsten. Weniger Stoff, weniger Arbeit."},
+    "en": {"The corner store's umbrella prices just went up. My forecast are still free.":
+           "The corner store's umbrella prices just went up. My forecasts are still free."},
+}
+
+
+def apply_proof_fixes(doc, lang):
+    n = 0
+    fixes = PROOF_FIXES.get(lang, {})
+    for pools in doc.values():
+        if isinstance(pools, dict):
+            for pool in pools.values():
+                if isinstance(pool, list):
+                    for i, line in enumerate(pool):
+                        if isinstance(line, str) and line in fixes:
+                            pool[i] = fixes[line]
+                            n += 1
+    return n
 
 
 # The texts tightened by the owner with a proofreading agent
