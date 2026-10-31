@@ -962,6 +962,8 @@ NOTES_REWRITE["en"].update({
     "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}.": "{G} can come off {WHEN}. Keep {GP} handy, you'll want {GP} back {WHEN2}.",
     "You could think about wearing shorts instead. It's warm {WHEN}, but bring {G} for {WHEN2}.": "You could think about wearing shorts instead. It's warm {WHEN}, but bring {G}. It cools off again {WHEN2}."})
 NOTES_REWRITE["de"].update({
+    # owner's beta screenshot, October 2026: clumsy German
+    "{WHEN} wird's kalt genug für die Winterjacke, also nimm sie, oder eine extra warme Schicht, mit.": "{WHEN} wird's kalt genug für die Winterjacke. Nimm sie mit, oder zumindest eine warme Schicht.",
     "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}.": "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder."})
 NOTES_DROP = {'en': ["That's three things to lose instead of one. Good luck.", "All three. I'm not haggling.", 'Hat hair or cold ears. Your choice.', 'You can hear people again. Not always an improvement.', "You'll say hats don't suit you. Neither do red ears.", 'Two odd gloves still count. Wear them.', 'Yes, that hat looks silly. Wear it anyway.']}
 NOTES_GARMENTS = {'en': {'garments': ('the hat and scarf', 'the scarf'), 'garments_pron': (0, 'it')}, 'de': {'garments': ('Mütze und Schal', 'der Schal'), 'garments_pron': (0, 'ihn'), 'garments_verb': ('können Mütze und Schal', 'kann der Schal')}}

@@ -290,16 +290,29 @@ current time moves every 15 minutes, so the merge variables change.
   units_11, by situation; no joke when the sentence carries it). Where the
   situation has units, the screen shows one instead of a forecast wording
   plus a separately picked reply, so the two always fit. On a day that
-  changes and rains, the unit is for the rain sentence, which comes last.
+  changes and rains, see ORDER below.
   A theme or special day has its own (SPECIAL DAYS). Situations without
   units yet work as before.
+  ORDER (owner, October 2026): on a day that changes and rains, the
+  sentences go in the order things happen, like the drawings: rain that's
+  falling now, or rain that starts before the temperature changes, first.
+  The unit is for whichever sentence comes last, so its joke follows it.
   {%- endcomment %}
+  {%- assign precip_first = false -%}
+  {%- if f_precip != '' and f_temp != '' and is_steady == false -%}
+    {%- if is_now_precip == 1 -%}
+      {%- assign precip_first = true -%}
+    {%- elsif precip_idx < primary_idx -%}
+      {%- assign precip_first = true -%}
+    {%- endif -%}
+  {%- endif -%}
   {%- assign unit_joke = nil -%}
   {%- assign u_lib_key = 'units_' | append: sarcasm_level -%}
   {%- assign u_lib = texts[u_lib_key] -%}
   {%- if sarcasm_level != '0' and u_lib and sp_pool == nil -%}
     {%- assign u_key = f_key -%}
-    {%- if f_precip != '' -%}{%- assign u_key = pk -%}{%- endif -%}
+    {%- assign u_for_precip = false -%}
+    {%- if f_precip != '' and precip_first == false -%}{%- assign u_key = pk -%}{%- assign u_for_precip = true -%}{%- endif -%}
     {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
     {%- assign u_pool = u_lib[u_key] -%}
     {%- comment %} One unit alone would be the same pair every time: two or more. {%- endcomment %}
@@ -341,7 +354,7 @@ current time moves every 15 minutes, so the merge variables change.
           {%- assign u_parts = u_cand | split: ' || ' -%}
           {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
           {%- assign unit_joke = u_parts[1] | default: '' | strip | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
-          {%- if f_precip != '' -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
+          {%- if u_for_precip -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
           {%- break -%}
         {%- endif -%}
         {%- assign u_i = u_i | plus: 1 | modulo: u_n -%}
@@ -350,6 +363,8 @@ current time moves every 15 minutes, so the merge variables change.
   {%- endif -%}
   {%- if is_steady and f_precip != '' -%}
     {%- assign fact_line = f_precip -%}
+  {%- elsif f_precip != '' and precip_first -%}
+    {%- assign fact_line = f_precip | append: ' ' | append: f_temp -%}
   {%- elsif f_precip != '' -%}
     {%- assign fact_line = f_temp | append: ' ' | append: f_precip -%}
   {%- else -%}

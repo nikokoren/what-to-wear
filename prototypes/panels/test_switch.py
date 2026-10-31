@@ -449,6 +449,26 @@ TEXTS["en"]["facts"] = saved_facts
 if units_saved:
     TEXTS["en"]["units_10"] = units_saved
 
+# The order (owner, October 2026): on a day that changes and rains, the
+# sentences go in the order things happen; the unit goes with the last one.
+saved_facts, saved_u = TEXTS["en"]["facts"], TEXTS["en"].get("units_10")
+temp_keys = [k for k in saved_facts if k[:2] in ("c_", "w_") or k.startswith(("arc_", "shorts_", "pants_"))]
+TEXTS["en"]["facts"] = dict(saved_facts, p_drier=["RAINSTOP {WHENSTOP}."], p_wetter=["RAINCOMES {WHENP}."],
+                            **{k: ["TEMPCHANGE {WHEN}."] for k in temp_keys})
+TEXTS["en"]["units_10"] = dict(p_drier=["RAINSTOP {WHENSTOP}. || RAINJOKE.", "RAINSTOP {WHENSTOP}. || RAINJOKE."],
+                               p_wetter=["RAINCOMES {WHENP}. || RAINJOKE.", "RAINCOMES {WHENP}. || RAINJOKE."],
+                               **{k: ["TEMPCHANGE {WHEN}. || TEMPJOKE.", "TEMPCHANGE {WHEN}. || TEMPJOKE."] for k in temp_keys})
+COOLING = [12] * 15 + [8, 6, 4, 2, 1, 0, 0, 0, 0]
+w = words_of(render(True, feels=COOLING, hour=8, probs=WET_AM, codes=[61] * 11 + [0] * 13))
+expect("raining now, colder later: rain sentence first, the temperature's joke last",
+       w.find("RAINSTOP") < w.find("TEMPCHANGE") and "TEMPJOKE" in w and "RAINJOKE" not in w)
+w = words_of(render(True, feels=COOLING, hour=8, probs=[0] * 20 + [90] * 4, codes=[0] * 20 + [61] * 4))
+expect("colder first, rain later: temperature sentence first, the rain's joke last",
+       0 <= w.find("TEMPCHANGE") < w.find("RAINCOMES") and "RAINJOKE" in w and "TEMPJOKE" not in w)
+TEXTS["en"]["facts"] = saved_facts
+if saved_u is not None:
+    TEXTS["en"]["units_10"] = saved_u
+
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:
     src = (BUILD / "views" / f"{view}.liquid").read_text(encoding="utf-8")
