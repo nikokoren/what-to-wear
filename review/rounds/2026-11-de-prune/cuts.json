@@ -1,0 +1,988 @@
+{
+  "cuts": [
+    {
+      "where": "facts.steady",
+      "text": "So, wie du angezogen bist, kommst du gut durch den ganzen Tag.",
+      "reason": "Same as 'Mit dem, was du anhast, kommst du gut durch den Tag', only wordier."
+    },
+    {
+      "where": "facts.steady_evening",
+      "text": "Für den Rest des Abends passt, was du anhast.",
+      "reason": "Same as 'Was du anhast, passt für den restlichen Abend', no gain."
+    },
+    {
+      "where": "facts.steady_hot",
+      "text": "Es bleibt den ganzen Tag heiß. Pack eine Flasche Wasser ein und such dir Schatten.",
+      "reason": "Near-identical to 'Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.'"
+    },
+    {
+      "where": "facts.steady_hot",
+      "text": "Es bleibt heute heiß, also nimm genug Wasser mit und bleib, wenn's geht, im Schatten.",
+      "reason": "Longest wording of the same advice; 'wenn's geht' adds nothing."
+    },
+    {
+      "where": "facts.steady_cold",
+      "text": "Es bleibt heute den ganzen Tag kalt.",
+      "reason": "Duplicates 'Es bleibt den ganzen Tag kalt' with a redundant 'heute'."
+    },
+    {
+      "where": "facts.w_scarf",
+      "text": "{WHEN} wird's wärmer, da kannst du den Schal abnehmen.",
+      "reason": "Same as 'kannst du den Schal ablegen'; 'da kannst du' adds nothing."
+    },
+    {
+      "where": "facts.w_coat",
+      "text": "Mit der Winterjacke ist {WHEN} Schluss, dann wird's nämlich wärmer.",
+      "reason": "Filler 'nämlich'; says the same as 'wird's wärmer, dann kann die Winterjacke weg'."
+    },
+    {
+      "where": "facts.c_scarf",
+      "text": "{WHEN} brauchst du eine extra warme Schicht, also nimm eventuell einen Schal mit.",
+      "reason": "Hedged and roundabout ('eventuell einen Schal'); the extra-layer wording already exists."
+    },
+    {
+      "where": "facts.shorts_early",
+      "text": "Gerade ist's frisch, aber {WHEN} ist's warm genug für ne kurze Hose.",
+      "reason": "Same as the starred 'Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen.'"
+    },
+    {
+      "where": "facts.shorts_early",
+      "text": "Lass dich vom kühlen Start nicht täuschen, spätestens {WHEN} reicht eine kurze Hose.",
+      "reason": "'spätestens {WHEN}' claims more certainty than the forecast has; long."
+    },
+    {
+      "where": "facts.p_wetter_long",
+      "text": "{WHENP} fängt's an zu regnen und hört nicht mehr auf, also nimm den Schirm mit.",
+      "reason": "Same as 'kommt Regen, und der hört so schnell nicht auf'; 'hört nicht mehr auf' overclaims."
+    },
+    {
+      "where": "facts.p_drier",
+      "text": "Der Regen hört später auf, für jetzt brauchst du noch einen Schirm.",
+      "reason": "'für jetzt' sounds translated (for now); duplicates 'Der Regen hört später auf, bis dahin brauchst du den Schirm.'"
+    },
+    {
+      "where": "facts.p_drier",
+      "text": "Jetzt brauchst du noch den Schirm, später wird's trocken.",
+      "reason": "Same content as 'Noch regnet's, aber später hört es auf. Bis dahin hilft der Schirm.'"
+    },
+    {
+      "where": "facts.p_wet_again",
+      "text": "Der Regen macht später eine Pause, {WHENP} kommt er aber zurück. Behalt den Schirm bei dir.",
+      "reason": "Same as 'Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm.'"
+    },
+    {
+      "where": "facts.p_wet_again",
+      "text": "Später hört der Regen eine Weile auf, {WHENP} geht's aber wieder los. Nimm den Schirm mit.",
+      "reason": "'eine Weile' adds a duration the data doesn't give; the plain wording is 'macht eine Pause'."
+    },
+    {
+      "where": "facts.p_drier_snow",
+      "text": "Der Schneefall hört später auf.",
+      "reason": "Same as 'Der Schnee hört später auf.'"
+    },
+    {
+      "where": "facts.p_drier_snow",
+      "text": "Es schneit noch eine Weile, dann hört's auf.",
+      "reason": "'noch eine Weile' adds a duration the data doesn't give."
+    },
+    {
+      "where": "facts.p_wet_again_snow",
+      "text": "Es schneit noch eine Weile, dann gibt's eine Pause. {WHENP} schneit's weiter.",
+      "reason": "Same frame as the owner's new 'Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder.'; 'eine Weile' adds a duration."
+    },
+    {
+      "where": "facts.p_wet_again_snow",
+      "text": "Erstmal schneit's weiter, dann gibt's eine Pause, und {WHENP} geht es wieder los.",
+      "reason": "Same frame again ('Erstmal ... dann Pause ... wieder'), stiffer and longer."
+    },
+    {
+      "where": "facts.shorts_swing",
+      "text": "Es lohnt sich eventuell, schon jetzt kurze Hosen anzuziehen, {WHEN} wird's warm.",
+      "reason": "Stiff ('Es lohnt sich eventuell, schon jetzt ...')."
+    },
+    {
+      "where": "facts.shorts_swing",
+      "text": "Zieh eventuell gleich deine kurze Hose an. {WHEN} ist's warm genug dafür.",
+      "reason": "Imperative plus 'eventuell' ('Zieh eventuell gleich ... an') is unnatural."
+    },
+    {
+      "where": "facts.p_wetter_ice",
+      "text": "Achtung, Glatteis: {WHENP} fällt kurz gefrierender Regen.",
+      "reason": "'Achtung, Glatteis:' asserts ice the forecast only threatens; same as 'Vorsicht, {WHENP} kommt kurz gefrierender Regen.'"
+    },
+    {
+      "where": "facts.p_wetter_ice",
+      "text": "Es regnet {WHENP} nur kurz, das reicht aber für Glatteis. Sei vorsichtig.",
+      "reason": "'das reicht aber für Glatteis' claims more than the forecast knows."
+    },
+    {
+      "where": "facts.p_wetter_long_ice",
+      "text": "Nimm den Schirm mit: {WHENP} fängt gefrierender Regen an und bleibt. Pass auf, es wird spiegelglatt.",
+      "reason": "'es wird spiegelglatt' overclaims (the kind of line the tightening fixed)."
+    },
+    {
+      "where": "facts.p_wetter_long_ice",
+      "text": "Vorsicht, Glatteis: {WHENP} beginnt gefrierender Regen, und der hält lange an.",
+      "reason": "'Vorsicht, Glatteis:' asserts ice; says the same as the 'beginnt gefrierender Regen, und der hält an' wording."
+    },
+    {
+      "where": "facts.p_wetter_maybe_ice",
+      "text": "{WHENP} könnte gefrierender Regen kommen. Dann wird's glatt, also pack lieber den Schirm ein und sei vorsichtig.",
+      "reason": "Wordy duplicate of '{WHENP} ist gefrierender Regen möglich, dann wird's glatt. Ein Schirm schadet nicht.'"
+    },
+    {
+      "where": "facts.p_wetter_maybe_ice",
+      "text": "Wahrscheinlich bleibt's trocken. Falls doch {WHENP} gefrierender Regen kommt, wird's glatt.",
+      "reason": "'Wahrscheinlich bleibt's trocken' gives odds the data doesn't give."
+    },
+    {
+      "where": "facts.p_stays_wet_ice",
+      "text": "Heute bleibt's bei gefrierendem Regen und Glatteis. Behalt den Schirm bei dir und lass dir auf dem Gehweg Zeit.",
+      "reason": "Asserts Glatteis as fact; 'Heute bleibt's bei ...' is stiff."
+    },
+    {
+      "where": "facts.p_stays_wet_ice",
+      "text": "Der gefrierende Regen hört heute nicht auf. Rechne überall mit Glatteis und sei vorsichtig.",
+      "reason": "'überall mit Glatteis' is the overclaim the tightening removed."
+    },
+    {
+      "where": "facts.p_wetter_storm",
+      "text": "Das Gewitter {WHENP} ist schnell vorbei, den Schirm brauchst du trotzdem.",
+      "reason": "Breaks with some placeholders ('Das Gewitter in zwei Stunden ist schnell vorbei')."
+    },
+    {
+      "where": "facts.p_wetter_long_storm",
+      "text": "{WHENP} wird's gewittrig. Nimm den Schirm mit.",
+      "reason": "Doesn't say the rain lasts; doesn't match its key."
+    },
+    {
+      "where": "facts.p_wetter_long_storm",
+      "text": "{WHENP} kommt ein Gewitter, und der Regen hört nicht mehr auf. Nimm den Schirm mit.",
+      "reason": "Same as '{WHENP} kommen Gewitter, und der Regen hört nicht mehr auf.'"
+    },
+    {
+      "where": "facts.p_wetter_maybe_storm",
+      "text": "Ob {WHENP} wirklich ein Gewitter kommt, ist offen. Den Schirm einzupacken, kostet dich nichts.",
+      "reason": "Longest and stiffest wording ('ist offen', 'Den Schirm einzupacken, kostet dich nichts')."
+    },
+    {
+      "where": "facts.p_stays_wet_storm",
+      "text": "Regen und Gewitter halten den ganzen Tag an.",
+      "reason": "Same as 'Regen und Gewitter halten den ganzen Tag an. Behalt den Schirm bei dir.' minus the umbrella."
+    },
+    {
+      "where": "facts.p_stays_wet_storm",
+      "text": "Blitz und Donner kommen heute immer wieder, und der Regen hört nicht auf.",
+      "reason": "Same as 'Heute gewittert's immer wieder, und der Regen hört nicht auf.'; 'Blitz und Donner kommen' is stiff."
+    },
+    {
+      "where": "units_10.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Wenigstens das Wetter ist heute mal unkompliziert.",
+      "reason": "Joke is identical to flavour_10.evening 'Wenigstens das Wetter ist heute mal unkompliziert.'"
+    },
+    {
+      "where": "units_10.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Dann bin ich heute wohl wieder nur Deko.",
+      "reason": "Joke is identical to the flavour_10.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_10.steady",
+      "text": "Dein Outfit passt heute den ganzen Tag. || Wenn doch alles so einfach wär.",
+      "reason": "Same joke as flavour_10.steady 'Wenn's nur immer so einfach wär.' (kept there)."
+    },
+    {
+      "where": "units_10.steady",
+      "text": "Heute ändert sich nichts, was du anhast, passt den ganzen Tag. || Für so eine Ansage bin ich eigentlich überqualifiziert.",
+      "reason": "Joke is identical to the flavour_10.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_10.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch freinehmen können.",
+      "reason": "Joke is identical to the flavour_10.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_10.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Dann kann ja nur noch alles andere schiefgehen.",
+      "reason": "Joke is identical to the flavour_10.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_10.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Gut so. Für Überraschungen bin ich schon zu müde.",
+      "reason": "Joke is identical to flavour_10.evening (kept there)."
+    },
+    {
+      "where": "units_10.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Am Outfit liegt's also nicht, wenn der Abend nichts wird.",
+      "reason": "Same joke as flavour_10.evening 'Am Outfit liegt's also nicht, wenn der Abend nix wird.' (kept there)."
+    },
+    {
+      "where": "units_10.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Jetzt fehlt nur noch die passende Laune.",
+      "reason": "Joke is identical to flavour_10.evening (kept there)."
+    },
+    {
+      "where": "units_10.steady_evening",
+      "text": "Am Wetter ändert sich heute Abend nichts, was du anhast, passt. || Schade. Ein bisschen Abwechslung wär mal wieder schön.",
+      "reason": "Same joke as flavour_10.evening 'Schade eigentlich. Ein bisschen Abwechslung ...'; the sentence is a clumsy comma splice."
+    },
+    {
+      "where": "units_10.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Mehr Gutes hab ich heute nicht mehr auf Lager.",
+      "reason": "Same 'no more good news' frame as 'Mehr Abendprogramm hab ich nicht zu bieten' and the c_relief line."
+    },
+    {
+      "where": "units_10.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Spannender wird's heute nur noch beim Tatort.",
+      "reason": "Tatort is only on Sundays: a fixed fact that varies."
+    },
+    {
+      "where": "units_10.steady_night",
+      "text": "Am Wetter ändert sich heute Nacht nichts mehr, was du anhast, passt. || Das ist ne Ausnahme, eigentlich hab ich schon Feierabend.",
+      "reason": "Same 'eigentlich hab ich schon Feierabend' joke as flavour_10.night; the sentence is a clumsy comma splice."
+    },
+    {
+      "where": "units_10.steady_cold",
+      "text": "Die Kälte hält den ganzen Tag an. || Da bleibt immerhin das Bier auf dem Balkon schön kühl.",
+      "reason": "Joke is identical to flavour_10.cold (kept there)."
+    },
+    {
+      "where": "units_10.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Da hilft auch kein Jammern.",
+      "reason": "Joke is identical to flavour_10.cold (kept there; also in units_10.c_coat)."
+    },
+    {
+      "where": "units_10.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Das ist keine Vorhersage, das ist ein Versprechen.",
+      "reason": "Same frame as flavour_10.cold 'Das ist keine Vorhersage, das ist eine Drohung.' (the better one, kept)."
+    },
+    {
+      "where": "units_10.steady_cold",
+      "text": "Es bleibt den ganzen Tag kalt. || Also Türe und Fenster zu, wir heizen nicht für draußen!",
+      "reason": "Same joke as flavour_10.cold 'Fenster zu, wir heizen nicht für draußen!'; 'Türe' is regional."
+    },
+    {
+      "where": "units_10.steady_cold",
+      "text": "{M:01}Es bleibt den ganzen Tag so kalt. || Da halten die Weihnachtsbäume am Gehweg wenigstens bis Ostern.",
+      "reason": "Joke is identical to flavour_10.cold (kept there)."
+    },
+    {
+      "where": "units_10.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Die Heizung bleibt, wo sie ist. Wir haben ja keinen Geldbaum im Garten stehen.",
+      "reason": "Same 'heating stays off' joke as 'Höher gedreht wird nicht ...'; the garden is an assumption."
+    },
+    {
+      "where": "units_10.steady_hot",
+      "text": "Es bleibt den ganzen Tag heiß, also nimm Wasser mit und ab in den Schatten. || Ich bleib drinnen. Aber ich hab ja keine Wahl.",
+      "reason": "Same joke as flavour_10.scorch 'Ich bleib hier. Aber ich hab ja keine Wahl.' (kept there)."
+    },
+    {
+      "where": "units_10.c_hoodie",
+      "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Nachher sagt wieder jeder: Ganz schön frisch geworden.",
+      "reason": "Same joke as flavour_10.on 'Später heißt's wieder überall: Ist aber frisch geworden.' (kept there)."
+    },
+    {
+      "where": "units_10.w_coat",
+      "text": "{WHEN} kann die Winterjacke weg. || Freu dich nicht zu früh. Das ist noch kein Frühling.",
+      "reason": "An order to the reader at On ('Freu dich nicht zu früh'); same spring frame as the Mai line."
+    },
+    {
+      "where": "units_10.w_coat",
+      "text": "{WHEN} ist es warm, dann brauchst du keine Winterjacke mehr. || Mehr gute Nachrichten hab ich heute nicht.",
+      "reason": "Same 'no more good news' frame as the c_relief and evening lines; weak."
+    },
+    {
+      "where": "units_10.c_relief",
+      "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Eigentlich meine ich „weniger schlimm“.",
+      "reason": "Wordplay on the forecast's own word; explains itself."
+    },
+    {
+      "where": "units_10.arc_warmer",
+      "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Kein Haken, kein Aber. Ich hab dreimal nachgeschaut.",
+      "reason": "Same 'a clear forecast for once' idea as 'Eine klare Ansage. Kommt bei mir selten vor'."
+    },
+    {
+      "where": "units_10.p_wetter_long",
+      "text": "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Den Satz könnt ich im Schlaf aufsagen.",
+      "reason": "Joke is identical to flavour_10.rain 'Den Satz könnt ich inzwischen im Schlaf aufsagen.'"
+    },
+    {
+      "where": "units_10.p_wetter_maybe",
+      "text": "{WHENP} könnte es regnen, ein Schirm schadet nicht. || Festlegen tu ich mich nicht. Sonst bin hinterher wieder ich schuld.",
+      "reason": "Same 'I won't commit' idea as 'Übersetzt: Ich weiß es auch nicht.' (starred)."
+    },
+    {
+      "where": "units_10.p_wetter_maybe",
+      "text": "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht. || Vielleicht. Mehr Verbindlichkeit gibt's heute nicht.",
+      "reason": "Same 'I won't commit' idea again; restates the forecast's 'Vielleicht'."
+    },
+    {
+      "where": "units_10.p_stays_wet_snow",
+      "text": "Heute hört's nicht auf zu schneien. || Freu dich nicht zu früh. Bald ist das alles grauer Matsch.",
+      "reason": "Joke is identical to flavour_10.snow (kept there)."
+    },
+    {
+      "where": "units_11.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Auch für die Joggingrunde, die du dann doch nicht drehst.",
+      "reason": "Joke is identical to the flavour_11.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_11.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Mehr kann ich für dich heute nicht tun.",
+      "reason": "Joke is identical to the flavour_11.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_11.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Ich hab dich schon schlechter angezogen gesehen. Gestern zum Beispiel.",
+      "reason": "Joke is identical to the flavour_11.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_11.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Ob's dir steht, ist eine andere Frage.",
+      "reason": "Joke is identical to the flavour_11.steady follow-up (kept there); same idea as 'Modisch reden wir lieber nicht drüber.'"
+    },
+    {
+      "where": "units_11.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Zumindest bis zum ersten Kaffeefleck.",
+      "reason": "Joke is identical to the flavour_11.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_11.steady",
+      "text": "Was du anhast, passt den ganzen Tag. || Dann kannst du heute ja nichts falsch machen. Theoretisch.",
+      "reason": "Joke is identical to the flavour_11.steady follow-up (kept there)."
+    },
+    {
+      "where": "units_11.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Eine Sorge weniger. Aber dir fällt bestimmt was Neues ein.",
+      "reason": "Joke is identical to flavour_11.evening (kept there)."
+    },
+    {
+      "where": "units_11.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Für ein Kompliment reicht's trotzdem nicht.",
+      "reason": "Same joke as flavour_11.evening 'Für den Abend reicht's. Für ein Kompliment nicht.' (kept there)."
+    },
+    {
+      "where": "units_11.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Gratuliere. Das war die einfachste Entscheidung deines Abends.",
+      "reason": "Joke is identical to flavour_11.evening (kept there)."
+    },
+    {
+      "where": "units_11.steady_evening",
+      "text": "Was du anhast, passt den ganzen Abend. || Das Wetter ist heute so abwechslungsreich wie dein Kleiderschrank.",
+      "reason": "'so abwechslungsreich wie dein Kleiderschrank' is the 'wie deine X' comparison CRITIC.md bans."
+    },
+    {
+      "where": "units_11.steady_night",
+      "text": "Was du anhast, passt für den Rest der Nacht. || Auch für den dritten Gang zum Kühlschrank.",
+      "reason": "Joke is identical to flavour_11.night (kept there)."
+    },
+    {
+      "where": "units_11.steady_night",
+      "text": "Was du anhast, passt für den Rest der Nacht. || Also für die zehn Minuten, bis du wieder auf dem Sofa einschläfst.",
+      "reason": "Joke is identical to flavour_11.night (kept there)."
+    },
+    {
+      "where": "units_11.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.",
+      "reason": "Same joke as now_11.cold 'Dick eingepackt gefällst du mir am besten. Man sieht weniger.' (kept there)."
+    },
+    {
+      "where": "units_11.steady_cold",
+      "text": "Es bleibt den ganzen Tag kalt. || Du kannst also aufhören, mich alle fünf Minuten anzustarren.",
+      "reason": "Joke is identical to flavour_11.cold (kept there)."
+    },
+    {
+      "where": "units_11.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Dann hast du ja den ganzen Tag ein Gesprächsthema.",
+      "reason": "Joke is identical to flavour_11.cold (kept there)."
+    },
+    {
+      "where": "units_11.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Dann fällt das Fitnessstudio heute ja wieder aus. „Wegen dem Wetter“.",
+      "reason": "Joke is identical to flavour_11.cold (kept there)."
+    },
+    {
+      "where": "units_11.steady_cold",
+      "text": "Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.",
+      "reason": "Same joke as flavour_11.cold 'Deine schlechte Laune hat heute ausnahmsweise mal einen guten Grund.' (kept there)."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser ist übrigens das Durchsichtige.",
+      "reason": "Joke is identical to flavour_11.hot and units_11.w_water (kept in flavour_11.hot)."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Trinken, nicht nur rumtragen. Ich kenn dich.",
+      "reason": "Joke is identical to units_11.w_water (kept there)."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Heute bleibt's heiß, trink Wasser und meide die pralle Sonne. || Heute Abend bist du dann trotzdem wieder rot wie ein Hummer.",
+      "reason": "Same joke as flavour_11.hot 'rot wie ein Hummer' (kept there); 'Heute Abend' is a clock word the forecast doesn't fix."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Kaffee zählt nicht als Wasser. Auch nicht mit Eis.",
+      "reason": "Joke is identical to units_11.w_water (kept there)."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.",
+      "reason": "Same joke as flavour_11.hot 'Wasser, hab ich gesagt. Bier zählt nicht.' (kept there)."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.",
+      "reason": "Joke is identical to units_11.w_water (kept there)."
+    },
+    {
+      "where": "units_11.steady_hot",
+      "text": "Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie deine Blumen auf dem Balkon.",
+      "reason": "Joke is identical to flavour_11.hot (kept there)."
+    },
+    {
+      "where": "units_11.w_jacket",
+      "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Mehr Sommer kriegst du heute nicht. Mehr verdienst du auch nicht.",
+      "reason": "'Mehr Sommer' names a season the slot doesn't guarantee."
+    },
+    {
+      "where": "units_11.w_jacket",
+      "text": "{WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.",
+      "reason": "Joke is identical to flavour_11.off (kept there)."
+    },
+    {
+      "where": "units_11.w_jacket",
+      "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht.",
+      "reason": "Joke is identical to flavour_11.off (kept there)."
+    },
+    {
+      "where": "units_11.w_hoodie",
+      "text": "{WHEN} kann der Pulli weg. || Bitte nicht wieder die Ärmel um den Bauch knoten.",
+      "reason": "Same 'tied round the waist' joke as units_11.w_jacket and units_11.c_hoodie (both starred, kept)."
+    },
+    {
+      "where": "units_11.c_scarf",
+      "text": "{WHEN} brauchst du den Schal, also nimm ihn mit. || Und bring ihn auch wieder mit nach Hause, wenn's geht.",
+      "reason": "Weak; the 'bring it back home' / losing-things frame is used many times."
+    },
+    {
+      "where": "units_11.c_scarf",
+      "text": "{WHEN} wird's kalt genug für den Schal. || Schau nicht so, ich kann auch nichts dafür.",
+      "reason": "Not a joke; the 'Schau nicht so' frame repeats across the 11 pools."
+    },
+    {
+      "where": "units_11.w_scarf",
+      "text": "Den Schal kannst du {WHEN} wegpacken. || Riech lieber nicht dran. Der war den ganzen Winter um deinen Hals.",
+      "reason": "'den ganzen Winter' names a season the slot doesn't guarantee (CRITIC: the cold, not winter)."
+    },
+    {
+      "where": "units_11.w_scarf",
+      "text": "{WHEN} wird's wärmer, da kannst du den Schal abnehmen. || Wärmer heißt nicht warm. Mach jetzt nicht auf Frühling, du bist kein Krokus.",
+      "reason": "Names a season (Frühling); wordplay on the forecast's 'wärmer'."
+    },
+    {
+      "where": "units_11.w_scarf",
+      "text": "{WHEN} brauchst du den Schal nicht mehr. || Ab dann kannst du nicht mehr so tun, als hättest du ein Doppelkinn wegen dem Schal.",
+      "reason": "Convoluted; needs a second read."
+    },
+    {
+      "where": "units_11.w_scarf",
+      "text": "{WHEN} wird's mild genug, dann kann der Schal wieder runter. || Und man sieht dir die schlechte Laune wieder in voller Größe an.",
+      "reason": "Same 'your face is visible again' idea as two other lines in this pool."
+    },
+    {
+      "where": "units_11.w_coat",
+      "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Und dann stopfst du sie wieder in deine viel zu kleine Tasche. Du lernst auch nicht dazu.",
+      "reason": "Long; assumes the reader's bag."
+    },
+    {
+      "where": "units_11.w_water",
+      "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser ist übrigens das Durchsichtige.",
+      "reason": "Joke is identical to flavour_11.hot (kept there)."
+    },
+    {
+      "where": "units_11.w_water",
+      "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.",
+      "reason": "Same joke as flavour_11.hot 'Wasser, hab ich gesagt. Bier zählt nicht.' (kept there)."
+    },
+    {
+      "where": "units_11.arc_level",
+      "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist meistens dein Problem.",
+      "reason": "Joke is identical to flavour_11.offon (kept there); same 'losing it' idea as two other lines here."
+    },
+    {
+      "where": "units_11.arc_colder",
+      "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.",
+      "reason": "Same joke as flavour_11.offon 'Ich hab's für dich extra einfach formuliert.' (kept there)."
+    },
+    {
+      "where": "units_11.arc_colder",
+      "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Später dann nicht jammern, ich hab dich gewarnt.",
+      "reason": "Weak, generic nag; 'nicht jammern' repeats across the pools."
+    },
+    {
+      "where": "units_11.shorts_early",
+      "text": "Jetzt noch frisch, {WHEN} wird's warm genug für ne kurze Hose. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken.",
+      "reason": "Same joke as flavour_11.shorts 'Deine Beine haben lang keine Sonne gesehen. Versuch, niemanden zu blenden.' (kept there)."
+    },
+    {
+      "where": "units_11.p_wetter",
+      "text": "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Vorausgesetzt, du weißt noch, wo er ist.",
+      "reason": "Joke is identical to flavour_11.rain (kept there)."
+    },
+    {
+      "where": "units_11.p_wetter_long",
+      "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Wenn du nass wirst, war's wieder meine Schuld. Klar.",
+      "reason": "Joke is identical to now_11.wet (kept there)."
+    },
+    {
+      "where": "units_11.p_stays_wet",
+      "text": "Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Du starrst trotzdem aufs Regenradar. Als ob das was hilft.",
+      "reason": "Same joke as now_10.wet 'Alle starren wieder aufs Regenradar. Als ob das was hilft.'"
+    },
+    {
+      "where": "units_11.p_drier",
+      "text": "Noch regnet's, aber später hört es auf. Bis dahin hilft der Schirm. || Gegen deine schlechte Laune hilft er leider nicht.",
+      "reason": "Weak; the 'schlechte Laune' jab is overused."
+    },
+    {
+      "where": "units_11.p_wetter_maybe",
+      "text": "{WHENP} ist eventuell ein Schauer drin, also lieber den Schirm einpacken. || Ein kleiner Schauer. Danach siehst du aus wie vorher. Also kein großer Verlust.",
+      "reason": "Restates the forecast ('Ein kleiner Schauer') and explains the joke."
+    },
+    {
+      "where": "units_11.p_stays_wet_snow",
+      "text": "Es schneit den ganzen Tag. || Und nein, deswegen fällt die Arbeit nicht aus.",
+      "reason": "Joke is identical to flavour_11.snow (kept there); assumes the reader works."
+    },
+    {
+      "where": "flavour_10.on",
+      "text": "Nachher sagt wieder jeder: Ganz schön frisch geworden.",
+      "reason": "Same joke as 'Später heißt's wieder überall: Ist aber frisch geworden.' in the same pool."
+    },
+    {
+      "where": "flavour_10.offon",
+      "text": "Zu warm, zu kalt, zu warm. Zum Meckern reicht's immer.",
+      "reason": "Same joke as the starred 'Erst zu warm, dann zu kalt. Hauptsache, man hat was zum Meckern.'"
+    },
+    {
+      "where": "flavour_10.snow",
+      "text": "Mehr sag ich nicht. Sonst heißt's wieder, ich mach Panik.",
+      "reason": "Joke is identical to units_10.p_snow_coming (kept there)."
+    },
+    {
+      "where": "flavour_10.theme_force",
+      "text": "Früher hieß das bei uns einfach 4. Mai.",
+      "reason": "Weak; not sarcastic."
+    },
+    {
+      "where": "flavour_11.off",
+      "text": "Und dann vergisst du {GP} irgendwo. Wie letztes Mal.",
+      "reason": "Same joke as units_11.w_jacket 'Und dann vergisst du sie irgendwo. Wie letztes Mal.' (kept there)."
+    },
+    {
+      "where": "flavour_11.off",
+      "text": "{W:coat,jacket,hoodie}Dann sieht jeder, was du drunter anhast: Das Gleiche wie gestern.",
+      "reason": "Joke is identical to units_11.w_jacket (kept there)."
+    },
+    {
+      "where": "flavour_11.on",
+      "text": "Bei dir muss ich's sicher wieder dreimal sagen.",
+      "reason": "Weak; same joke as units_11.c_jacket (kept there)."
+    },
+    {
+      "where": "flavour_11.offon",
+      "text": "An, aus, wieder an. Wie deine Beziehungen.",
+      "reason": "'Wie deine Beziehungen' is the banned 'wie deine X'; same joke as 'An, aus, an. Kennst du ja aus der Liebe.'"
+    },
+    {
+      "where": "flavour_11.offon",
+      "text": "Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich.",
+      "reason": "Joke is identical to units_11.arc_level (kept there)."
+    },
+    {
+      "where": "flavour_11.theme_ny",
+      "text": "Deine Neujahrsvorsätze hast du bis zum Zehnten sicher schon wieder vergessen. Ich kenn dich.",
+      "reason": "Same as 'Deine Neujahrsvorsätze sind bis zum Zehnten vergessen. Ich kenn dich.', only longer."
+    },
+    {
+      "where": "flavour_11.rain",
+      "text": "Und lass ihn nicht wieder in der Bahn liegen.",
+      "reason": "Same 'losing the umbrella' idea as 'Vorausgesetzt, du weißt noch, wo er ist.'"
+    },
+    {
+      "where": "flavour_11.rain",
+      "text": "Aber auf mich hörst du ja vermutlich erst mit nassen Socken.",
+      "reason": "Same joke as units_11.p_wetter_long 'Aber auf mich hörst du ja erst mit nassen Socken.' (kept there)."
+    },
+    {
+      "where": "flavour_11.rain",
+      "text": "Bevor du's sagst: Nein, das sind nicht nur ein paar Tropfen.",
+      "reason": "Joke is identical to units_11.p_wetter (kept there)."
+    },
+    {
+      "where": "flavour_11.rain",
+      "text": "Und bring ihn auch wieder heim. Im Fundbüro liegen schon genug.",
+      "reason": "Same 'losing the umbrella' idea again (also in units_11.p_stays_wet)."
+    },
+    {
+      "where": "flavour_11.snow",
+      "text": "Du wirst trotzdem so tun, als hätt's dir keiner gesagt.",
+      "reason": "Joke is identical to units_11.p_stays_wet_snow (kept there)."
+    },
+    {
+      "where": "flavour_11.hot",
+      "text": "Wasser mitnehmen, hab ich gesagt. Nicht Eiskaffee.",
+      "reason": "Same joke as 'Wasser, hab ich gesagt. Bier zählt nicht.'"
+    },
+    {
+      "where": "flavour_11.hot",
+      "text": "Im Schatten ist's dir dann wieder zu frisch. Wetten?",
+      "reason": "Same joke as units_11.steady_hot 'Da ist's dir dann wieder zu frisch. Wetten?' (kept there)."
+    },
+    {
+      "where": "flavour_11.hot",
+      "text": "Trinken, nicht nur rumtragen.",
+      "reason": "Same joke as units_11.w_water 'Trinken, nicht nur rumtragen. Ich kenn dich.' (kept there)."
+    },
+    {
+      "where": "flavour_11.hot",
+      "text": "Mehr sag ich dazu nicht. Ich bin ja nicht deine Mutter.",
+      "reason": "Same joke as units_11.w_water 'Mehr sag ich nicht. Ich bin ja nicht deine Mutter.' (kept there)."
+    },
+    {
+      "where": "flavour_11.cold",
+      "text": "Dein Handy bedienst du wieder mit der Nasenspitze. Sehr elegant.",
+      "reason": "Same joke as units_11.steady_cold 'Das Handy bedienst du heute wieder mit der Nasenspitze.' (kept there)."
+    },
+    {
+      "where": "flavour_11.shorts",
+      "text": "Dass du auf mich hörst, glaub ich erst, wenn ich dich in Shorts seh.",
+      "reason": "Convoluted; needs a second read."
+    },
+    {
+      "where": "flavour_11.pants",
+      "text": "Später wärst du dann der Einzige, der nicht friert. Gewöhn dich nicht dran.",
+      "reason": "Convoluted subjunctive; 'der Einzige' assumes a male reader."
+    },
+    {
+      "where": "flavour_11.scorch",
+      "text": "Kaffee zählt übrigens nicht als Wasser. Auch nicht mit Eis.",
+      "reason": "Same joke as units_11.w_water (kept there)."
+    },
+    {
+      "where": "flavour_vf_10.snow",
+      "text": "Malen kann ich den Schnee. Wegmachen musst du ihn selber.",
+      "reason": "Same 'Ich mal X. ... musst du selber' frame as two flavour_vf_10.wet lines."
+    },
+    {
+      "where": "flavour_vf_10.nice",
+      "text": "Viel ändert sich heute nicht. Gutes Wetter ist echt stinklangweilig.",
+      "reason": "Restates the weather; 'Viel ändert sich heute nicht' clashes with a slot that shows changes."
+    },
+    {
+      "where": "flavour_vf_11.cold",
+      "text": "Wettervorhersage für dein Gesicht: verkniffen, ganztägig.",
+      "reason": "'ganztägig' is the 'all day' the drawings can't promise."
+    },
+    {
+      "where": "flavour_vf_11.snow",
+      "text": "Ich sag dir, es schneit, und du bist trotzdem überrascht. Jedes Mal.",
+      "reason": "Same joke as units_11.p_snow_coming 'Ich sag's dir, und du bist dann trotzdem überrascht. Jedes Mal.'"
+    },
+    {
+      "where": "flavour_vf_11.cooling",
+      "text": "Später kommt eine Schicht dazu. Die einzige Veränderung, die du heute durchziehst.",
+      "reason": "Its setup restates the forecast before the joke."
+    },
+    {
+      "where": "flavour_vf_11.hot",
+      "text": "Den ganzen Tag heiß. Und Freunde mit Pool hast du vermutlich keine.",
+      "reason": "'Den ganzen Tag heiß' restates the weather and is the 'all day' the drawings can't promise."
+    },
+    {
+      "where": "flavour_vf_11.warming",
+      "text": "{M:02,03,04,05}Später kommt eine Schicht runter. Dann sieht man wieder, was du den Winter über gegessen hast.",
+      "reason": "Same joke as units_11.w_coat 'Dann sieht man wieder, was du den ganzen Winter gegessen hast.' (starred, kept); its setup restates the forecast."
+    },
+    {
+      "where": "now_10.nice",
+      "text": "Bei dem Wetter fällt selbst mir schlechte Laune schwer. Aber ich geb nicht auf.",
+      "reason": "Same 'nothing to grumble about' idea as 'Heute gibt's nichts auszusetzen. Das ärgert mich.'"
+    },
+    {
+      "where": "now_10.nice",
+      "text": "„Bei dem Wetter muss man echt raus.“ Wer sagt das eigentlich?",
+      "reason": "Weak; not sarcastic."
+    },
+    {
+      "where": "now_10.nice",
+      "text": "Ich find nichts zum Meckern. Verdammt.",
+      "reason": "Same 'nothing to grumble about' idea as 'Heute gibt's nichts auszusetzen. Das ärgert mich.'"
+    },
+    {
+      "where": "now_10.nice",
+      "text": "Ich hör schon den ersten Rasenmäher. BRRRRRRRRRRRRRR",
+      "reason": "Same joke as the Dieter lawnmower line, minus the name."
+    },
+    {
+      "where": "now_10.cool",
+      "text": "Wieder Wetter, bei dem dir irgendwo eine Oma „Zieh dir was über, du verkühlst dich!“ hinterherruft.",
+      "reason": "'verkühlst' is regional (standard: erkältest); long."
+    },
+    {
+      "where": "now_10.cold",
+      "text": "{M:10,11,12}Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+      "reason": "Same joke as 'Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.'; the owner noted it wears thin."
+    },
+    {
+      "where": "now_10.cold",
+      "text": "Saukalt. Mehr gibt's nicht zu sagen.",
+      "reason": "Same as 'Saukalt. Mehr fällt mir dazu nicht ein.'"
+    },
+    {
+      "where": "now_10.cold",
+      "text": "Kälte ist gesund, sagen immer die, die drinnen sitzen.",
+      "reason": "Same joke as '„Kälte härtet ab“, sagen die mit der Heizung auf fünf.'"
+    },
+    {
+      "where": "now_10.cold",
+      "text": "Und dann gibt's Leute, die sagen, sie mögen den Winter.",
+      "reason": "Same joke as 'Und dann gibt's Leute, die den Winter mögen. Angeblich.'"
+    },
+    {
+      "where": "now_10.cold",
+      "text": "{M:11,12,01}Bei der Kälte trinkt man sogar freiwillig Glühwein.",
+      "reason": "Same as '{M:11,12,01}Bei der Kälte schmeckt sogar Glühwein.'"
+    },
+    {
+      "where": "now_10.cold",
+      "text": "Und gleich wird trotzdem wieder stoßgelüftet.",
+      "reason": "Same joke as 'Gleich reißt wieder einer zum Stoßlüften alle Fenster auf.'"
+    },
+    {
+      "where": "now_10.cold",
+      "text": "Einer läuft vermutlich trotzdem gerade in kurzer Hose rum. Einen gibt's immer.",
+      "reason": "Same joke as 'Irgendein Depp läuft vermutlich trotzdem in kurzen Hosen rum.'"
+    },
+    {
+      "where": "now_10.hot",
+      "text": "In der Bahn kann man heute wieder seine Mitmenschen riechen.",
+      "reason": "Same joke as 'In der Bahn riecht's heute nach jedem Einzelnen.'"
+    },
+    {
+      "where": "now_10.hot",
+      "text": "Und im Winter wieder jammern, dass es zu kalt ist. Schon klar.",
+      "reason": "Same joke as 'Jetzt meckern, und im Januar wünschen sich alle wieder den Sommer zurück.'"
+    },
+    {
+      "where": "now_10.hot",
+      "text": "Heute kommen vermutlich wieder alle drauf, dass sie immer noch keine Ventilatoren haben, und stürmen den Baumarkt.",
+      "reason": "Same joke as the Baumarkt fan line; long."
+    },
+    {
+      "where": "now_10.hot",
+      "text": "Zum Meckern ist es mir heute zu heiß. Fast.",
+      "reason": "Same joke as 'Bei der Hitze ist mir sogar das Meckern zu anstrengend.' (also in units_10.steady_hot)."
+    },
+    {
+      "where": "now_10.wet",
+      "text": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+      "reason": "Same 'everyone watching the rain radar' idea as 'Das Regenradar hat heute mehr Zuschauer als jede Serie.'"
+    },
+    {
+      "where": "now_10.wet",
+      "text": "Nass. Wer hätte das gedacht.",
+      "reason": "Same pure-grumble frame as 'Regen. Mal wieder. Was sonst.'"
+    },
+    {
+      "where": "now_10.wet",
+      "text": "Kein schlechtes Wetter, nur falsche Kleidung? Schön wär's.",
+      "reason": "Same joke as '„Es gibt kein schlechtes Wetter.“ Doch, gibt's.'"
+    },
+    {
+      "where": "now_10.snow",
+      "text": "Fünf Zentimeter, und im Radio heißt's Schneechaos.",
+      "reason": "Same joke as 'Drei Flocken, und schon heißt's wieder Schneechaos.' (also in units_10.p_stays_wet_snow)."
+    },
+    {
+      "where": "now_10.snow",
+      "text": "Bis der Räumdienst endlich kommt, ist alles wieder geschmolzen.",
+      "reason": "Same joke as 'Der Schneepflug kommt wieder erst, wenn alles getaut ist.'"
+    },
+    {
+      "where": "now_10.snow",
+      "text": "Die Bahn hat bestimmt schon aufgegeben.",
+      "reason": "Same joke as 'Gleich fährt keine Bahn mehr, wetten?' (also in units_10.p_stays_wet_snow)."
+    },
+    {
+      "where": "now_10.snow",
+      "text": "Im Baumarkt ist das Streusalz bestimmt schon weg.",
+      "reason": "Same Streusalz joke as 'Jetzt hamstern wieder alle Streusalz ...'."
+    },
+    {
+      "where": "now_10.night",
+      "text": "Nachts stört mich wenigstens keiner beim Grummeln.",
+      "reason": "Same joke as 'Nachts kann ich wenigstens ungestört grantig sein.'"
+    },
+    {
+      "where": "now_11.nice",
+      "text": "Bestes Wetter, und du schaust trotzdem drein wie Montag.",
+      "reason": "Same joke as 'Traumwetter, und du guckst wie an einem Montag.'; 'dreinschauen' is regional."
+    },
+    {
+      "where": "now_11.nice",
+      "text": "So ein Wetter hätten sich andere mehr verdient.",
+      "reason": "Same joke as 'Dieses Wetter hast du dir eigentlich nicht verdient.'"
+    },
+    {
+      "where": "now_11.nice",
+      "text": "Geh an die frische Luft, bevor du so grau wirst wie ich.",
+      "reason": "Same joke as 'Geh raus, sonst wirst du so grau wie ich.'"
+    },
+    {
+      "where": "now_11.nice",
+      "text": "{M:09,10}Deine Sommersachen sind sicher schon im Keller, oder?",
+      "reason": "Weak; assumes the reader's cellar."
+    },
+    {
+      "where": "now_11.cool",
+      "text": "Nichts los da draußen. Wie an deinen Wochenenden.",
+      "reason": "Same joke as 'Draußen passiert nichts. Kennst du ja von deinen Samstagen.'"
+    },
+    {
+      "where": "now_11.cool",
+      "text": "Mittelmäßiges Wetter. Da fühlst du dich doch zuhause.",
+      "reason": "Same joke as 'Durchschnittswetter. Du kennst dich ja aus mit Durchschnitt.'; 'zuhause' should be 'zu Hause'."
+    },
+    {
+      "where": "now_11.cool",
+      "text": "Perfekt zum Fensterputzen. Nur so ein Hinweis.",
+      "reason": "Same joke as 'Ideales Fensterputzwetter. Deine hätten's nötig.'"
+    },
+    {
+      "where": "now_11.cold",
+      "text": "Und du träumst schon wieder vom Süden. Dann fahr halt endlich hin!",
+      "reason": "Same joke as 'Du träumst bestimmt schon wieder von Spanien. Dann buch halt endlich!'"
+    },
+    {
+      "where": "now_11.cold",
+      "text": "Gut eingemummelt siehst du am besten aus. Weniger sichtbar.",
+      "reason": "Same joke as 'Dick eingepackt gefällst du mir am besten. Man sieht weniger.'"
+    },
+    {
+      "where": "now_11.cold",
+      "text": "Bis du heut erstmal alles anhast, ist eh schon Frühling.",
+      "reason": "Same joke as 'Bis du fertig angezogen bist, blühen schon die Krokusse.'"
+    },
+    {
+      "where": "now_11.cold",
+      "text": "Du hängst gleich wieder am Heizkörper wie die Katze.",
+      "reason": "Assumes the reader has a cat; same joke as the Heizung/Katze line."
+    },
+    {
+      "where": "now_11.cold",
+      "text": "Gleich klebst du wieder an der Heizung wie die Katze.",
+      "reason": "Assumes the reader has a cat; same joke as the Heizkörper/Katze line."
+    },
+    {
+      "where": "now_11.cold",
+      "text": "Ohne Mütze raus, dann wieder beschweren. Das kennen wir schon.",
+      "reason": "Same joke as 'Ohne Mütze rausgehen und dann jammern. Kennen wir schon.'"
+    },
+    {
+      "where": "now_11.hot",
+      "text": "Heute ist dir jeder Meter zu viel. Also ein normaler Tag.",
+      "reason": "Same joke as 'Jeder Weg ist dir heut zu weit. Also wie immer.'"
+    },
+    {
+      "where": "now_11.hot",
+      "text": "Du hast bestimmt wieder kein Wasser dabei.",
+      "reason": "Weak; a plain nag, not a joke."
+    },
+    {
+      "where": "now_11.wet",
+      "text": "Endlich passt das Wetter mal zu deinem Gesicht.",
+      "reason": "Joke is identical to units_11.p_wetter (kept there); same joke as 'Das Wetter passt heute endlich zu deiner Laune.'"
+    },
+    {
+      "where": "now_11.wet",
+      "text": "Um deine Frisur ist's eh nicht schade.",
+      "reason": "Same joke as units_11.p_wetter 'Um deine Frisur ist's sowieso nicht schade.' (kept there)."
+    },
+    {
+      "where": "now_11.wet",
+      "text": "Wie viele Schirme hast du dieses Jahr eigentlich schon verlegt?",
+      "reason": "Same joke as 'Wie viele Schirme hast du dieses Jahr schon wieder irgendwo liegen lassen?'"
+    },
+    {
+      "where": "now_11.wet",
+      "text": "Nachher bitte nicht wieder den Flur volltropfen.",
+      "reason": "Same joke as 'Tropf mir nachher bloß nicht wieder alles voll.'; assumes a hallway."
+    },
+    {
+      "where": "now_11.snow",
+      "text": "Du und Schnee. Das wird wieder was.",
+      "reason": "Same 'you and snow' frame as 'Du auf Schnee. Ich hol schon mal Popcorn.'"
+    },
+    {
+      "where": "now_11.snow",
+      "text": "Jeder Schneemann hat heute mehr Ausstrahlung als du.",
+      "reason": "Same joke as 'Neben dir wirkt jeder Schneemann lebendig.'"
+    },
+    {
+      "where": "now_11.snow",
+      "text": "Schneeballschlacht? Du triffst doch sowieso nichts.",
+      "reason": "Same joke as 'Schneeballschlacht? Du triffst eh nix.'"
+    },
+    {
+      "where": "now_11.evening",
+      "text": "Das Handy kriegt heute wieder mehr Aufmerksamkeit als ich.",
+      "reason": "Same joke as 'Dein Handy kriegt heut wieder mehr Blicke als ich.'"
+    },
+    {
+      "where": "now_11.evening",
+      "text": "Du kannst gerne auch was Schöneres anziehen.",
+      "reason": "Weak; not sarcastic enough."
+    },
+    {
+      "where": "now_11.night",
+      "text": "Jetzt nur nicht wieder an den Kühlschrank.",
+      "reason": "Same joke as 'Finger weg vom Kühlschrank. Ich seh alles.'"
+    },
+    {
+      "where": "now_11.night",
+      "text": "„Noch eine Folge“, sagst du schon seit drei Folgen.",
+      "reason": "Same joke as '„Nur noch eine Folge.“ Das war vor zwei Folgen.'"
+    },
+    {
+      "where": "now_11.night",
+      "text": "Um die Zeit noch den Wetterbericht checken. Hut ab.",
+      "reason": "Same joke as 'Um die Uhrzeit noch aufs Wetter schauen. Respekt.'"
+    },
+    {
+      "where": "now_11.night",
+      "text": "Schönheitsschlaf brauchst du ja keinen mehr. Bei dir ist nichts zu retten.",
+      "reason": "Same joke as 'Schönheitsschlaf ist um die Uhrzeit sowieso nur noch Schadensbegrenzung.'"
+    },
+    {
+      "where": "now_11.night",
+      "text": "So spät noch wach? Ab ins Bett mit dir.",
+      "reason": "Same joke as 'Schon wieder so spät? Ab ins Bett.'"
+    }
+  ],
+  "fixes": [
+    {
+      "where": "facts.p_wet_again",
+      "old": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm sollte also dabei bleiben.",
+      "new": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm sollte also dabeibleiben.",
+      "reason": "'dabeibleiben' is one word."
+    },
+    {
+      "where": "units_10.c_hoodie",
+      "old": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich, so wirklich weiß das niemand.",
+      "new": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich. So wirklich weiß das niemand.",
+      "reason": "Comma splice; a full stop after the echoed word."
+    }
+  ]
+}
