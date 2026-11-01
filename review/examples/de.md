@@ -770,6 +770,10 @@ Do not edit by hand; vote on the page instead.
 - Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen.
 - Jetzt noch kühl, gegen Mittag ist es Shorts-Wetter.
 
+## shorts_early · dry
+
+- Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Genau für solche Tage wurde die Zip-off-Hose erfunden. Sieht halt leider scheiße aus.
+
 ## shorts_early · sarcastic
 
 - Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter. || Überleg dir das gut. Ich hab deine Knie schon gesehen.

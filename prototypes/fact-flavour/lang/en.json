@@ -374,7 +374,8 @@
     "theme_ny": [
       "I don't do New Year's resolutions. I was perfect last year too.",
       "New Year's outlook: scattered hangovers across the country.",
-      "Twelve new months of me being right. You're welcome."
+      "Twelve new months of me being right. You're welcome.",
+      "Nothing's open and nobody's up. The weather and I came to work anyway."
     ],
     "theme_spooky": [
       "Everyone's dressing up for Halloween. I'm going as a screen again.",
@@ -404,7 +405,9 @@
     "on": [
       "That's your one reminder. I don't do push notifications.",
       "{W:coat,jacket,hoodie}Shame. It was just getting comfortable.",
-      "{W:jacket,hoodie}It'll come out of the bag looking slept in. Still works."
+      "{W:jacket,hoodie}It'll come out of the bag looking slept in. Still works.",
+      "It's luggage now. Later it's the best idea I've had.",
+      "Right now it looks pointless. People said the same about me once."
     ],
     "offon": [
       "Off and on again. That fixes most things, me included.",
@@ -440,7 +443,8 @@
     "shorts": [
       "Your knees will have opinions at first. Ignore them.",
       "Brave call. Correct, but brave.",
-      "Fortune favors the bare-kneed."
+      "Fortune favors the bare-kneed.",
+      "Think of it as a small act of faith. In me."
     ],
     "pants": [
       "The warmth's lying to you. I'm not.",
@@ -477,7 +481,9 @@
     "theme_force": [
       "These are the clothes you're looking for.",
       "I have a bad feeling about this. Kidding. It's fine.",
-      "Wrong about the weather, I have never been."
+      "Wrong about the weather, I have never been.",
+      "Today is ehe one day people are nice to droids. I'll take it.",
+      "I don't need the Force. I have Wi-Fi."
     ]
   },
   "flavour_11": {
@@ -520,7 +526,8 @@
     ],
     "theme_easter": [
       "Your 'Sunday best' is a clean T-shirt, isn't it?",
-      "You're the reason the good chocolate gets hidden higher."
+      "You're the reason the good chocolate gets hidden higher.",
+      "You're the only person who actually likes Peeps, aren't you?"
     ],
     "theme_force": [
       "You still can't name the films in order, can you?",
@@ -531,12 +538,14 @@
     ],
     "theme_ny": [
       "You'll call this new year your year. You said that last year.",
-      "Resolution check: still horizontal? Right on track."
+      "Resolution check: still horizontal? Right on track.",
+      "Did you make it to midnight this time? Don't answer. I know."
     ],
     "theme_spooky": [
       "Your Halloween costume is 'tired adult' again, isn't it?",
       "Try not to buy candy for trick-or-treaters and eat it by eight again this year.",
-      "Kids will ask for candy. You'll hand out the kind you don't like."
+      "Kids will ask for candy. You'll hand out the kind you don't like.",
+      "Even the lawn skeletons have better posture than you."
     ],
     "theme_xmas": [
       "Your relatives will ask about your plans this Christmas. At least make some up.",
@@ -616,7 +625,9 @@
     "storm": [
       "You'll still check the radar every five minutes. I'm hurt, frankly.",
       "You'll pretend the thunder didn't make you jump.",
-      "The storm's getting more attention than you've had all year."
+      "The storm's getting more attention than you've had all year.",
+      "Thunder: the one thing that gets you to look up from your phone.",
+      "Finally, something in the neighborhood louder than you."
     ],
     "theme_ghd": [
       "Same outfit as yesterday, probably. Very on theme.",
@@ -676,23 +687,29 @@
     "warming": [
       "It starts chilly and gets better. Unlike most meetings.",
       "Later it's warmer. I drew it that way and the sky agreed.",
-      "The cold leaves early today. Best guest all year."
+      "The cold leaves early today. Best guest all year.",
+      "The weather improves later. It's the only thing today that will."
     ],
     "wet": [
       "The umbrella makes a guest appearance today. I cast it myself.",
-      "I drew the umbrella. Bringing it is your department."
+      "I drew the umbrella. Bringing it is your department.",
+      "The five-dollar umbrellas by the register are back. Built to survive one rain."
     ],
     "fickle": [
       "{3}Three outfits in one day. The laundry basket will love this.",
-      "Today the temperature takes the scenic route back to where it started."
+      "Today the temperature takes the scenic route back to where it started.",
+      "It warms up just long enough for someone to say 'see, it's nice out.'"
     ],
     "cold": [
       "Today's color scheme: cold, with a hint of cold.",
-      "A forecast so easy, even a phone could get it right."
+      "A forecast so easy, even a phone could get it right.",
+      "Every coffee out there is a hand warmer first and a drink second.",
+      "Today's weather has all the warmth of an automated phone line."
     ],
     "cooling": [
       "Flip through these fast. It's a short film about getting colder.",
-      "The day gets a little worse later. I'm reporting it, not endorsing it."
+      "The day gets a little worse later. I'm reporting it, not endorsing it.",
+      "{M:10,11,12,01,02,03,04}The day is generous at first. Then it remembers what month it is."
     ],
     "nice": [
       "Weather this nice is terrible for small talk. What's left to complain about?",
@@ -701,7 +718,10 @@
       "Not my hardest forecast. I'm taking the credit anyway."
     ],
     "snow": [
-      "Every pair of 'water-resistant' shoes is about to be tested."
+      "Snow, and nobody even had to shake me. Take that, snow globes.",
+      "Every pair of 'water-resistant' shoes is about to be tested.",
+      "People will drive like it's their first snow. Every year, it's their first snow.",
+      "TV reporters will stand in it and point at it. I cover snow from indoors, like a professional."
     ]
   },
   "flavour_vf_11": {
@@ -926,7 +946,8 @@
     ],
     "wet": [
       "Nothing gets me looked at like a chance of rain.",
-      "A chance of rain, and suddenly everyone checks on me."
+      "A chance of rain, and suddenly everyone checks on me.",
+      "Every dog that hates baths is about to get one anyway."
     ],
     "warming": [
       "Later it warms up, and I get to be right again. Best part of my day.",
@@ -939,30 +960,39 @@
       "Later it cools off. I could make that sound dramatic, but I'm not a news channel."
     ],
     "fickle": [
-      "Warm, then cold again. The weather can't commit."
+      "Warm, then cold again. The weather can't commit.",
+      "Warm, then cool again. The weather's playing hard to get."
     ]
   },
   "alone_11": {
     "cool": [
       "Today's as surprising as your usual coffee order.",
-      "Today asks nothing of you. You'll still find a way to do less."
+      "Today asks nothing of you. You'll still find a way to do less.",
+      "A cool, plain day. Finally, something on your level.",
+      "Cool air is supposed to wake you up. It's been trying for years."
     ],
     "fickle": [
       "A day that can't make up its mind. You two have a lot to talk about."
     ],
     "cooling": [
       "Later it cools off. You'll tell everyone it came out of nowhere.",
-      "Later it gets colder. Your goosebumps will be the most active thing about you."
+      "Later it gets colder. Your goosebumps will be the most active thing about you.",
+      "Later it cools off. Don't count on anyone lending you something warm.",
+      "Later it cools off. You'll go quiet from the cold. People may call it an improvement."
     ],
     "nice": [
-      "{M:05,06,07,08,09}A T-shirt day. Your farmer's tan has been waiting for this."
+      "{M:05,06,07,08,09}A T-shirt day. Your farmer's tan has been waiting for this.",
+      "A T-shirt day. Try to wear the one without the stain."
     ],
     "warming": [
-      "Later it warms up, and you'll pretend you were never cold."
+      "Later it warms up, and you'll pretend you were never cold.",
+      "Later it warms up. You'll say 'warm for this time of year' like you keep records."
     ],
     "wet": [
       "You'll do the little puddle hop and think it looked graceful.",
-      "You'll hold your bag over your head like that's ever worked."
+      "You'll hold your bag over your head like that's ever worked.",
+      "You'll show up looking like you lost a fight with a car wash.",
+      "Every puddle's a mirror today. Try not to look down."
     ]
   },
   "units_10": {
@@ -984,7 +1014,8 @@
     ],
     "steady_night": [
       "What you're wearing works until bed. || Whenever that is. I've stopped guessing.",
-      "You're dressed right for the rest of the night. || End of broadcast. Please enjoy this still image until morning."
+      "You're dressed right for the rest of the night. || End of broadcast. Please enjoy this still image until morning.",
+      "This works for the rest of the night. || My least-read forecast. Also my most accurate."
     ],
     "steady_cold": [
       "It's cold all day. || My only weakness is the cold. Kidding, I don't have one.",
@@ -1009,7 +1040,9 @@
     "w_hoodie": [
       "You can take the sweater off {WHEN}. || Thrilling stuff. I'm on the edge of my frame.",
       "You'll be fine without the sweater {WHEN}. || And 'fine' is high praise, coming from me.",
-      "It warms up {WHEN}, so the sweater can come off. || Folded in the bag, or balled up in the bag. Your call."
+      "It warms up {WHEN}, so the sweater can come off. || Folded in the bag, or balled up in the bag. Your call.",
+      "The sweater can come off {WHEN}. || Grandmas everywhere will still say to keep it on.",
+      "{WHEN} it's warm enough for short sleeves, so the sweater can come off. || The short-sleeve optimists finally look reasonable."
     ],
     "c_jacket": [
       "Bring a jacket. It cools down {WHEN}. || That's your one reminder. I don't do push notifications.",
@@ -1058,7 +1091,8 @@
     "arc_warmer": [
       "{G} can come off {WHEN} and stays off. || I'm not changing my mind about this one.",
       "You can take {G} off {WHEN}. || After that, you're just carrying {GP} around for company.",
-      "{G} can come off {WHEN} and stays off. || That's it. That's the forecast."
+      "{G} can come off {WHEN} and stays off. || That's it. That's the forecast.",
+      "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || TV weather people hate days like this. Nothing to point at."
     ],
     "arc_level": [
       "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || Today is a microwave burrito. Warm in the middle, cold at both ends.",
@@ -1287,11 +1321,14 @@
     ],
     "p_stays_wet": [
       "The rain doesn't stop today, so take the umbrella. || A day for staying in. You were born for this.",
-      "It rains all day, so bring the umbrella. || All day. So no, waiting ten minutes won't help."
+      "It rains all day, so bring the umbrella. || All day. So no, waiting ten minutes won't help.",
+      "It rains all day, so bring the umbrella. || The umbrella goes with any outfit. Even yours.",
+      "It's raining all day. Bring the umbrella. || Gray and sulking all day. Finally, you've got competition."
     ],
     "p_drier": [
       "Take the umbrella for now. The rain stops {WHENSTOP}. || Waiting it out is an option. Not a good one, but you like those.",
-      "It keeps raining for a while, then stops. Take the umbrella. || Rain makes everyone look a bit miserable. Today you won't stand out."
+      "It keeps raining for a while, then stops. Take the umbrella. || Rain makes everyone look a bit miserable. Today you won't stand out.",
+      "The rain stops later, but bring the umbrella for now. || The rain has a schedule. Nice to see at least someone with a plan."
     ],
     "p_snow_coming": [
       "Expect snow {WHENP}. || You'll be surprised anyway.",
@@ -1309,7 +1346,8 @@
     "p_wetter": [
       "A shower comes through {WHENP}, so take the umbrella. || Or spend it in a shop, pretending to browse. You know the drill.",
       "Bring the umbrella. There's a shower {WHENP}. || Not enough rain to fill a puddle, but plenty to fill a shoe.",
-      "Bring the umbrella. There's a shower {WHENP}. || Carrying an umbrella while it's dry. People will think you have your life together."
+      "Bring the umbrella. There's a shower {WHENP}. || Carrying an umbrella while it's dry. People will think you have your life together.",
+      "Bring the umbrella. There's a shower {WHENP}. || It shows up, does its job, and leaves. Ever tried that?"
     ],
     "p_wetter_maybe": [
       "Rain is possible {WHENP}, so maybe take the umbrella. || I'd decide for you, but then you'd have nothing to overthink.",

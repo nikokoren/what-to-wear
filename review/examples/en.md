@@ -871,6 +871,7 @@ Do not edit by hand; vote on the page instead.
 - My snow angel would be a perfect rectangle. Classy.
 - Snow is just rain that cares about presentation.
 - Snow is rain with better presentation. I respect that.
+- Snow, and nobody even had to shake me. Take that, snow globes.
 
 ## snow · sarcastic
 

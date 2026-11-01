@@ -47025,6 +47025,1047 @@
   "edit": "",
   "updatedAt": "2026-10-15T21:35:10.583Z"
  },
+ "tn-de-00f10814498c": {
+  "level": "10",
+  "key": "w_hoodie",
+  "path": "unit_10.w_hoodie[+]",
+  "text": "{WHEN} wird es warm genug, dann brauchst du keinen Pulli mehr. || So schnell wird man überflüssig. Ich kenn das Gefühl.",
+  "source": "candidate",
+  "batch": "Unit: w_hoodie",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:36.400Z"
+ },
+ "tn-de-0a8de69e8e84": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "{WHENSTOP} hört's auf zu schneien. || Selbst der Schnee hat dann genug von dir. Versteh ich gut.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:01.840Z"
+ },
+ "tn-de-0bcfa4ca5732": {
+  "level": "10",
+  "key": "w_hoodie",
+  "path": "unit_10.w_hoodie[+]",
+  "text": "{WHEN} wird's mild genug, um den Pulli auszuziehen. || Dann sieht man wieder die T-Shirts mit den lustigen Sprüchen. Die sind nie lustig.",
+  "source": "candidate",
+  "batch": "Unit: w_hoodie",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:43.100Z"
+ },
+ "tn-de-1a42dccc1881": {
+  "level": "10",
+  "key": "theme_ghd",
+  "path": "flavour_10.theme_ghd[+]",
+  "text": "Sieht das Murmeltier seinen Schatten, kommen noch sechs Wochen Winter. Nur sechs? Optimist.",
+  "source": "candidate",
+  "batch": "Joke: theme_ghd",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:36:15.764Z"
+ },
+ "tn-de-2088dbfeae1a": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "{WHEN} kühlt's ein bisschen ab, warm bleibt's trotzdem. || Gönn dir die Freude. Viele andere hast du ja nicht.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:39:47.932Z"
+ },
+ "tn-de-211569cdecba": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Die Wärme zwischendurch ist also nur zum Anfüttern.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Bloß nicht zu lange angenehm. Sonst gewöhnt man sich noch dran.",
+  "updatedAt": "2026-11-01T09:39:23.449Z"
+ },
+ "tn-de-21a2a9f86cff": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Spätestens dann sagt wieder einer: „So warm hätt's jetzt auch nicht werden müssen.“",
+  "source": "candidate",
+  "batch": "Joke: off",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:32:29.193Z"
+ },
+ "tn-de-22f2ba0f35c2": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Genau für solche Tage wurde die Zip-off-Hose erfunden. Und so sieht sie leider auch aus.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-11-thin",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Genau für solche Tage wurde die Zip-off-Hose erfunden. Sieht halt leider scheiße aus.",
+  "updatedAt": "2026-11-01T09:35:39.738Z"
+ },
+ "tn-de-2cb1be46257f": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Das sag ich nicht aus Bosheit. Nicht nur.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:50.926Z"
+ },
+ "tn-de-32749a152750": {
+  "level": "10",
+  "key": "theme_spooky",
+  "path": "flavour_10.theme_spooky[+]",
+  "text": "An Halloween gilt schlechte Laune als Kostüm. Endlich bin ich mal passend angezogen.",
+  "source": "candidate",
+  "batch": "Joke: theme_spooky",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:15.660Z"
+ },
+ "tn-de-34c4a8d28fad": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Wer mitdenkt, schleppt. Wer nicht, friert. Gerecht ist das nicht.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:44.721Z"
+ },
+ "tn-de-37fdcf71ad35": {
+  "level": "10",
+  "key": "shorts",
+  "path": "flavour_10.shorts[+]",
+  "text": "Die ersten Minuten sind dann eben wie Freibad im Mai.",
+  "source": "candidate",
+  "batch": "Joke: shorts",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:50.902Z"
+ },
+ "tn-de-388d05ab311a": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Kalt anfangen, warm aufhören. Meine Laune kriegt das nie hin.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:35:45.515Z"
+ },
+ "tn-de-3933be0d4124": {
+  "level": "10",
+  "key": "shorts",
+  "path": "flavour_10.shorts[+]",
+  "text": "Die Wärme kommt. Ich hab sie angekündigt, jetzt muss sie.",
+  "source": "candidate",
+  "batch": "Joke: shorts",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:35:02.161Z"
+ },
+ "tn-de-3f2cb5e37352": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "{WHENP} zieht ein Regenschauer durch, pack also den Schirm ein. || Ich hätt ihn ja verschwiegen. Aber dann heißt's wieder, ich hätt nichts gesagt.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:33:52.437Z"
+ },
+ "tn-de-48de7840e0b9": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "{WHEN} kann der Schal weg. || Ab dann ist's nur noch kalt statt saukalt. Man feiert, was man kriegt.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:02.330Z"
+ },
+ "tn-de-4d26e2cf2138": {
+  "level": "10",
+  "key": "w_water",
+  "path": "unit_10.w_water[+]",
+  "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Gegen die Hitze hilft Wasser. Gegen die Leute bei Hitze hilft nichts.",
+  "source": "candidate",
+  "batch": "Unit: w_water",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:17.601Z"
+ },
+ "tn-de-4db91617aee4": {
+  "level": "10",
+  "key": "off",
+  "path": "flavour_10.off[+]",
+  "text": "Die Zeit davor, in der's eigentlich schon zu warm ist, steht in keiner Vorhersage.",
+  "source": "candidate",
+  "batch": "Joke: off",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:32:41.428Z"
+ },
+ "tn-de-5564b6e12aa3": {
+  "level": "11",
+  "key": "theme_ghd",
+  "path": "flavour_11.theme_ghd[+]",
+  "text": "Das Murmeltier sieht seinen Schatten und erschrickt. Du kennst das vom Spiegel.",
+  "source": "candidate",
+  "batch": "Joke: theme_ghd",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:41:18.278Z"
+ },
+ "tn-de-5a2959818220": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Die Temperatur macht heute mehr Fortschritte als jede Baustelle.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:35:49.366Z"
+ },
+ "tn-de-613a6b32fd54": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Kurz bevor's kalt wird, ist's immer am schönsten. Das ist ja das Gemeine.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:09.166Z"
+ },
+ "tn-de-6338b74b4c9f": {
+  "level": "10",
+  "key": "shorts_early",
+  "path": "unit_10.shorts_early[+]",
+  "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Bis dahin gibt's draußen nur lange Hosen und lange Gesichter.",
+  "source": "candidate",
+  "batch": "Unit: shorts_early",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:35:57.952Z"
+ },
+ "tn-de-63c6ebc8a656": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Hinterher erzählt wieder jeder von einer Sintflut.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:33:58.014Z"
+ },
+ "tn-de-6b9959db9f3e": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "„Ist doch herrlich draußen!“ Noch, ja.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:14.180Z"
+ },
+ "tn-de-77c25ceecb97": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || Da oben sind wohl noch Reste übrig.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:33:30.493Z"
+ },
+ "tn-de-7e03fd86ab4f": {
+  "level": "10",
+  "key": "scorch",
+  "path": "flavour_10.scorch[+]",
+  "text": "Ein Platz im Schatten ist heute mehr wert als ein Parkplatz vor der Tür.",
+  "source": "candidate",
+  "batch": "Joke: scorch",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:37.436Z"
+ },
+ "tn-de-7f1492b7282e": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "Der Regen hält den ganzen Tag an. Der Schirm bleibt also bei dir. || Im Radio heißt das dann „ergiebig“. Fragt sich, für wen.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:32:51.486Z"
+ },
+ "tn-de-836e98d9b702": {
+  "level": "11",
+  "key": "c_relief",
+  "path": "unit_11.c_relief[+]",
+  "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Für einen Spaziergang reicht's dann wieder. Also für deinen: bis zum Kiosk und zurück.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:39:57.507Z"
+ },
+ "tn-de-84d6eadd1d8e": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Die kurze Hose bleibt dann eben im Schrank. Da hat sie's wenigstens warm.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:23.435Z"
+ },
+ "tn-de-86a9fdfd3bf9": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Die Ostereier sind wieder bunter angezogen als du.",
+  "source": "candidate",
+  "batch": "Joke: theme_easter",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Die Ostereier sind wieder schöner angezogen als du.",
+  "updatedAt": "2026-11-01T09:41:03.690Z"
+ },
+ "tn-de-8e0835463cdb": {
+  "level": "10",
+  "key": "theme_ny",
+  "path": "flavour_10.theme_ny[+]",
+  "text": "Irgendwer hat noch Böller von Silvester übrig. Wir werden's alle hören.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:06.178Z"
+ },
+ "tn-de-8f7e9624ee6d": {
+  "level": "10",
+  "key": "theme_ghd",
+  "path": "flavour_10.theme_ghd[+]",
+  "text": "Das Murmeltier verschläft den ganzen Winter und darf dann sagen, wie lang er noch dauert. So macht man Karriere.",
+  "source": "candidate",
+  "batch": "Joke: theme_ghd",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Das Murmeltier verschläft den ganzen Winter und darf dann sagen, wie lang er noch dauert. Was für ein Leben.",
+  "updatedAt": "2026-11-01T09:36:55.937Z"
+ },
+ "tn-de-9eee4db3f7c6": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Der Hund hat's gut. Der hat einfach immer das Gleiche an.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:32:01.699Z"
+ },
+ "tn-de-a6b3ef95c9e1": {
+  "level": "10",
+  "key": "w_jacket",
+  "path": "unit_10.w_jacket[+]",
+  "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Ab dann sieht man draußen wieder Menschen statt Funktionsjacken.",
+  "source": "candidate",
+  "batch": "Unit: w_jacket",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:49.826Z"
+ },
+ "tn-de-a80fac1fa6cc": {
+  "level": "10",
+  "key": "w_jacket",
+  "path": "unit_10.w_jacket[+]",
+  "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Die Wärme wartet immer, bis alle aus dem Haus sind. Das ist kein Zufall.",
+  "source": "candidate",
+  "batch": "Unit: w_jacket",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:55.403Z"
+ },
+ "tn-de-ab2e5f1910c0": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Den Schnee kann man wenigstens wegschippen. Dich nicht.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:30.029Z"
+ },
+ "tn-de-acb058c3789f": {
+  "level": "10",
+  "key": "theme_ny",
+  "path": "flavour_10.theme_ny[+]",
+  "text": "Mein Rückblick aufs alte Jahr: Es gab Wetter. Jeden Tag.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:37:10.351Z"
+ },
+ "tn-de-b06cbd4c325f": {
+  "level": "11",
+  "key": "theme_ghd",
+  "path": "flavour_11.theme_ghd[+]",
+  "text": "Kurz rausschauen, Schatten sehen, wieder verschwinden. Das Murmeltier hat deine Partystrategie geklaut.",
+  "source": "candidate",
+  "batch": "Joke: theme_ghd",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:41:33.963Z"
+ },
+ "tn-de-b2995dcf6d8a": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "{WHEN} kannst du den Schal ablegen. || Ohne Schal ist man wieder ansprechbar. Das muss man wollen.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:06.917Z"
+ },
+ "tn-de-b2d19b6e64af": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "Noch schneit's, aber später hört es auf. || Bis dahin kannst du noch behaupten, du wärst eingeschneit.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:06.387Z"
+ },
+ "tn-de-b89a8a1c9ca7": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Beim Gewitter zählen wieder alle die Sekunden zwischen Blitz und Donner. Was die Zahl bedeutet, weiß keiner mehr.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:36:05.346Z"
+ },
+ "tn-de-ba11fcede465": {
+  "level": "10",
+  "key": "shorts",
+  "path": "flavour_10.shorts[+]",
+  "text": "Das Thermometer weiß nur, wie's jetzt ist. Ich weiß, wie's später wird.",
+  "source": "candidate",
+  "batch": "Joke: shorts",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:35:06.561Z"
+ },
+ "tn-de-ba393ba79870": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Unterm Haltestellendach wird's heute wieder kuschelig.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:32:59.803Z"
+ },
+ "tn-de-bac41ce44826": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Donnergrollen ist übrigens kein Applaus. Nur damit du dir nichts einbildest.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:39.537Z"
+ },
+ "tn-de-bba4002569b5": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Früher war das Wetter wenigstens den ganzen Tag schlecht. Da wusste man noch, woran man war.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:32:10.579Z"
+ },
+ "tn-de-bbc7c91554a5": {
+  "level": "10",
+  "key": "theme_spooky",
+  "path": "flavour_10.theme_spooky[+]",
+  "text": "Halloween. „Süßes oder Saures“ hätte man früher Erpressung genannt.",
+  "source": "candidate",
+  "batch": "Joke: theme_spooky",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "„Süßes oder Saures“ hätte man früher Erpressung genannt.",
+  "updatedAt": "2026-11-01T09:37:25.369Z"
+ },
+ "tn-de-be2e44c6b410": {
+  "level": "10",
+  "key": "p_stays_wet",
+  "path": "unit_10.p_stays_wet[+]",
+  "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Ein paar Jogger laufen trotzdem. Die sind mir unheimlich.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Ein paar Jogger sind trotzdem unterwegs. Die sind mir unheimlich.",
+  "updatedAt": "2026-11-01T09:33:22.283Z"
+ },
+ "tn-de-c02fd94f0c5a": {
+  "level": "10",
+  "key": "w_scarf",
+  "path": "unit_10.w_scarf[+]",
+  "text": "{WHEN} brauchst du den Schal nicht mehr. || Das Wetter wird milder. Die Leute leider nicht.",
+  "source": "candidate",
+  "batch": "Unit: w_scarf",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:12.292Z"
+ },
+ "tn-de-c32e77a6e876": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Im Biergarten retten wieder alle zuerst ihr Bier. Dann sich.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:36:10.669Z"
+ },
+ "tn-de-c508bc0c1d11": {
+  "level": "10",
+  "key": "w_water",
+  "path": "unit_10.w_water[+]",
+  "text": "{WHEN} wird's heiß, da gehört eine Flasche Wasser in die Tasche. || Jeder Brunnen wird dann wieder zum Fußbad. Die Tauben sind empört.",
+  "source": "candidate",
+  "batch": "Unit: w_water",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:22.883Z"
+ },
+ "tn-de-c81a45bb2b33": {
+  "level": "10",
+  "key": "shorts",
+  "path": "flavour_10.shorts[+]",
+  "text": "Gefroren wird hierzulande ja sowieso. Heute lohnt es sich wenigstens.",
+  "source": "candidate",
+  "batch": "Joke: shorts",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:35:13.903Z"
+ },
+ "tn-de-c9395e0ba809": {
+  "level": "11",
+  "key": "arc_warmer",
+  "path": "unit_11.arc_warmer[+]",
+  "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Eine Schicht weniger, und trotzdem dreht sich keiner nach dir um.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:39:34.640Z"
+ },
+ "tn-de-d28560db5bba": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Ich hätt das ja in einem Rutsch erledigt.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:33:35.841Z"
+ },
+ "tn-de-d7476bc39a53": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Mit Schirm bist du wenigstens nur ein halb begossener Pudel.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:46.637Z"
+ },
+ "tn-de-d998ba7ee3d9": {
+  "level": "10",
+  "key": "c_scarf",
+  "path": "unit_10.c_scarf[+]",
+  "text": "{WHEN} wird's kalt genug für den Schal. || Zwei Meter Wolle um den Hals, und irgendwo zieht's trotzdem.",
+  "source": "candidate",
+  "batch": "Unit: c_scarf",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:31:41.321Z"
+ },
+ "tn-de-db4fc6c5add8": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien. || Es schneit heute öfter, als du rausgehst.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:33.680Z"
+ },
+ "tn-de-db71bc47b64f": {
+  "level": "10",
+  "key": "w_water",
+  "path": "unit_10.w_water[+]",
+  "text": "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Dann sagt wieder jeder: „Mir läuft der Schweiß den Rücken runter.“ Danke, sehr anschaulich.",
+  "source": "candidate",
+  "batch": "Unit: w_water",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:31.388Z"
+ },
+ "tn-de-e07921dfdf36": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Später fragt wieder einer: „Wer hätte das ahnen können?“ Ich, zum Beispiel.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:32.327Z"
+ },
+ "tn-de-e7ba3a3409dc": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || Heute hab ich gleich zweimal recht. Du wie üblich keinmal.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:17.779Z"
+ },
+ "tn-de-e92cfebdd534": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Du glaubst nicht mehr an den Osterhasen, ich weiß. Er an dich auch nicht.",
+  "source": "candidate",
+  "batch": "Joke: theme_easter",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:41:12.527Z"
+ },
+ "tn-de-ea33116c111e": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "Noch schneit's, aber später hört es auf. || Schade. Im Schneetreiben hat man dich wenigstens nicht so genau gesehen.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:12.244Z"
+ },
+ "tn-de-eae7180f78c6": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Zwischendurch reicht's für ein Eis. Aufessen muss man's dann wieder dick eingepackt.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:37.634Z"
+ },
+ "tn-de-ec6ef1e404e0": {
+  "level": "11",
+  "key": "arc_warmer",
+  "path": "unit_11.arc_warmer[+]",
+  "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Damit ist dein Tag fertig geplant. Mehr Fürsorge hast du nicht verdient.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:39:40.324Z"
+ },
+ "tn-de-f23f738d0da0": {
+  "level": "10",
+  "key": "scorch",
+  "path": "flavour_10.scorch[+]",
+  "text": "Heute stehen sogar die Tauben im Schatten Schlange.",
+  "source": "candidate",
+  "batch": "Joke: scorch",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:34:43.026Z"
+ },
+ "tn-de-f48266d96352": {
+  "level": "10",
+  "key": "arc_level",
+  "path": "unit_10.arc_level[+]",
+  "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Auf die Kühle ist Verlass. Auf viel mehr nicht.",
+  "source": "candidate",
+  "batch": "Unit: arc_level",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:38:42.059Z"
+ },
+ "tn-de-f4ff92111879": {
+  "level": "11",
+  "key": "p_wet_again",
+  "path": "unit_11.p_wet_again[+]",
+  "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. Halt den Schirm griffbereit. || Gut, dass der Schirm mitkommt. Sonst begleitet dich ja keiner.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:40:24.386Z"
+ },
+ "tn-de-f7666d35aed4": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {GV} weg. {WHEN2} wird's kälter als jetzt, nimm eine extra Schicht mit. || Dabei ist's jetzt schon nicht gerade Karibik.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:39:00.327Z"
+ },
+ "tn-de-feac0510734e": {
+  "level": "10",
+  "key": "c_scarf",
+  "path": "unit_10.c_scarf[+]",
+  "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Ab dann ist jeder Brillenträger beim Reinkommen erst mal blind.",
+  "source": "candidate",
+  "batch": "Unit: c_scarf",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:31:55.588Z"
+ },
  "tp-de-093b8bc72061": {
   "level": "11",
   "key": "day_eisheilige",

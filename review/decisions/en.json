@@ -48447,6 +48447,1914 @@
   "edit": "",
   "updatedAt": "2026-10-15T21:53:09.052Z"
  },
+ "tn-en-0256d870895b": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || The thermostat argument, now available outdoors.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:41:43.831Z"
+ },
+ "tn-en-02a24b7a373f": {
+  "level": "10",
+  "key": "wet",
+  "path": "alone_10.wet[+]",
+  "text": "Every dog that hates baths is about to get one anyway.",
+  "source": "candidate",
+  "batch": "Alone: wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:09.850Z"
+ },
+ "tn-en-0d02c90209f0": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "The warmth drops by for a bit and doesn't even take its coat off.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:43:49.427Z"
+ },
+ "tn-en-1068efb2ee65": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Every storm, someone finds the flashlight. Never the batteries.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:48:16.451Z"
+ },
+ "tn-en-10f65a97e27e": {
+  "level": "10",
+  "key": "fickle",
+  "path": "alone_10.fickle[+]",
+  "text": "Today's weather, one star: 'Started warm, ended cold. Would not book again.'",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:43:55.097Z"
+ },
+ "tn-en-139a759f5df6": {
+  "level": "10",
+  "key": "c_relief",
+  "path": "unit_10.c_relief[+]",
+  "text": "The heat eases {WHEN}, but it stays warm. || Shade goes from essential to merely popular.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:10.417Z"
+ },
+ "tn-en-14e73609e25a": {
+  "level": "11",
+  "key": "theme_ny",
+  "path": "flavour_11.theme_ny[+]",
+  "text": "Happy New Year. Twelve months to become a new person. Maybe start with the haircut.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:56.814Z"
+ },
+ "tn-en-1787a6639178": {
+  "level": "10",
+  "key": "fickle",
+  "path": "alone_10.fickle[+]",
+  "text": "Warm, then cool again. The weather's going back to its ex.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:43:59.430Z"
+ },
+ "tn-en-18c80ac7502f": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "Today runs like a hotel shower: cold, then perfect, then cold again.",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:44:12.856Z"
+ },
+ "tn-en-1bdc3d96c92c": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_vf_10.cold[+]",
+  "text": "Every store door will have someone standing just inside it, thawing.",
+  "source": "candidate",
+  "batch": "Drawings: cold",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:22.131Z"
+ },
+ "tn-en-1dcc9a8c5d9d": {
+  "level": "10",
+  "key": "shorts",
+  "path": "flavour_10.shorts[+]",
+  "text": "Shorts while it's still cold: a small act of faith. In me.",
+  "source": "candidate",
+  "batch": "Joke: shorts",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Think of it as a small act of faith. In me.",
+  "updatedAt": "2026-11-01T09:46:51.483Z"
+ },
+ "tn-en-1de170f37ed4": {
+  "level": "10",
+  "key": "fickle",
+  "path": "alone_10.fickle[+]",
+  "text": "Warm, then cool again. The weather's playing hard to get. I'm just easy to read.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Warm, then cool again. The weather's playing hard to get.",
+  "updatedAt": "2026-11-01T09:44:29.292Z"
+ },
+ "tn-en-207e576844bc": {
+  "level": "10",
+  "key": "cooling",
+  "path": "alone_10.cooling[+]",
+  "text": "Later it cools off. Outdoor plans move indoors. I've been an indoor plan for years.",
+  "source": "candidate",
+  "batch": "Alone: cooling",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:53.650Z"
+ },
+ "tn-en-226ef1aa2e4d": {
+  "level": "11",
+  "key": "w_coat",
+  "path": "unit_11.w_coat[+]",
+  "text": "{WHEN} you can do without the winter coat. || Without it, you'll have to explain the waddle some other way.",
+  "source": "candidate",
+  "batch": "Unit: w_coat",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:56:53.674Z"
+ },
+ "tn-en-23516f289079": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "The snow stops later. || The snow quits while it's ahead. You never got ahead.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:18.509Z"
+ },
+ "tn-en-2521f92bb8ac": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Happy Easter. You're the only person who actually likes Peeps, aren't you?",
+  "source": "candidate",
+  "batch": "Joke: theme_easter",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "You're the only person who actually likes Peeps, aren't you?",
+  "updatedAt": "2026-11-01T09:55:36.741Z"
+ },
+ "tn-en-2582fdc9642e": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "It keeps raining for a while, then stops. Take the umbrella. || Once it stops, you'll need a new excuse for looking like that.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:52:41.962Z"
+ },
+ "tn-en-2666679bbdac": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "The snow stops for a while later, then comes back {WHENP}. || It left all its stuff here. Of course it's coming back.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:45:45.742Z"
+ },
+ "tn-en-272abed66f5e": {
+  "level": "11",
+  "key": "fickle",
+  "path": "alone_11.fickle[+]",
+  "text": "Warm, then cool again. Today the weather asks more of you than anyone has in months.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:26.394Z"
+ },
+ "tn-en-2b63d87e08df": {
+  "level": "11",
+  "key": "pants",
+  "path": "flavour_11.pants[+]",
+  "text": "You'd call it shorts weather. You also call yourself a morning person.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:45.711Z"
+ },
+ "tn-en-2bc1c0e4a24f": {
+  "level": "10",
+  "key": "w_hoodie",
+  "path": "unit_10.w_hoodie[+]",
+  "text": "{WHEN} it's warm enough for short sleeves, so the sweater can come off. || The short-sleeve optimists finally look reasonable.",
+  "source": "candidate",
+  "batch": "Unit: w_hoodie",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:49:26.188Z"
+ },
+ "tn-en-2c67a8fbc131": {
+  "level": "11",
+  "key": "theme_spooky",
+  "path": "flavour_11.theme_spooky[+]",
+  "text": "Happy Halloween. You've been doing the zombie walk all year. Today it counts.",
+  "source": "candidate",
+  "batch": "Joke: theme_spooky",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:56:24.467Z"
+ },
+ "tn-en-2d8204bf9e2c": {
+  "level": "11",
+  "key": "fickle",
+  "path": "alone_11.fickle[+]",
+  "text": "Today's dress code changes halfway. You'll be in violation both times.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:31.756Z"
+ },
+ "tn-en-2e887f955804": {
+  "level": "11",
+  "key": "pants",
+  "path": "flavour_11.pants[+]",
+  "text": "Later, you'll be the best-dressed person on the street. Enjoy it. It won't happen again.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:51.127Z"
+ },
+ "tn-en-34d68ccc3942": {
+  "level": "11",
+  "key": "cooling",
+  "path": "alone_11.cooling[+]",
+  "text": "Later it cools off. Don't count on anyone lending you something warm.",
+  "source": "candidate",
+  "batch": "Alone: cooling",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:06.629Z"
+ },
+ "tn-en-354436975699": {
+  "level": "11",
+  "key": "nice",
+  "path": "alone_11.nice[+]",
+  "text": "A T-shirt day. Wear the one without the stain. If you have one.",
+  "source": "candidate",
+  "batch": "Alone: nice",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "A T-shirt day. Try to wear the one without the stain.",
+  "updatedAt": "2026-11-01T09:52:17.131Z"
+ },
+ "tn-en-35a4c794b19f": {
+  "level": "10",
+  "key": "c_relief",
+  "path": "unit_10.c_relief[+]",
+  "text": "It's not as hot {WHEN}, but still warm. || The weather's version of an apology. Late, and only half meant.",
+  "source": "candidate",
+  "batch": "Unit: c_relief",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:14.990Z"
+ },
+ "tn-en-3b8c28f11305": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "The rain stops later, but bring the umbrella for now. || The rain has a schedule. Nice to see someone in here with a plan.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "The rain stops later, but bring the umbrella for now. || The rain has a schedule. Nice to see at least someone with a plan.",
+  "updatedAt": "2026-11-01T09:53:07.384Z"
+ },
+ "tn-en-3e3f72db442f": {
+  "level": "10",
+  "key": "wet",
+  "path": "alone_10.wet[+]",
+  "text": "I'm the only screen nobody will have to wipe today.",
+  "source": "candidate",
+  "batch": "Alone: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:18.649Z"
+ },
+ "tn-en-3fbae953a2b9": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_vf_10.snow[+]",
+  "text": "Snow, and nobody even had to shake me. Take that, snow globes.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-11-thin",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:47:16.729Z"
+ },
+ "tn-en-46615613693f": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "This works for the rest of the night. || My least-read forecast. Also my most accurate.",
+  "source": "candidate",
+  "batch": "Unit: steady_night",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:47:52.219Z"
+ },
+ "tn-en-4b4c79830b1d": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_vf_10.cooling[+]",
+  "text": "The chilly part comes later. Like the bill.",
+  "source": "candidate",
+  "batch": "Drawings: cooling",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:59.534Z"
+ },
+ "tn-en-4bab3396d994": {
+  "level": "10",
+  "key": "wet",
+  "path": "alone_10.wet[+]",
+  "text": "Everyone owns five umbrellas. They're all somewhere else.",
+  "source": "candidate",
+  "batch": "Alone: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:23.771Z"
+ },
+ "tn-en-502f8be2e583": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "Right now it looks pointless. People said the same about me once.",
+  "source": "candidate",
+  "batch": "Joke: on",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:45:24.185Z"
+ },
+ "tn-en-503270e5500d": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Someone will say 'that one was close.' They'll say it about every one.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:48:24.327Z"
+ },
+ "tn-en-548fe0903a74": {
+  "level": "11",
+  "key": "warming",
+  "path": "alone_11.warming[+]",
+  "text": "Later it warms up. You'll say 'warm for this time of year' like you keep records.",
+  "source": "candidate",
+  "batch": "Alone: warming",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:29.859Z"
+ },
+ "tn-en-596bb422c2c4": {
+  "level": "10",
+  "key": "w_hoodie",
+  "path": "unit_10.w_hoodie[+]",
+  "text": "The sweater can come off {WHEN}. || Grandmas everywhere will still say to keep it on.",
+  "source": "candidate",
+  "batch": "Unit: w_hoodie",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:49:31.738Z"
+ },
+ "tn-en-5a4f3f11692b": {
+  "level": "10",
+  "key": "theme_force",
+  "path": "flavour_10.theme_force[+]",
+  "text": "Star Wars Day: the one day people are nice to droids. I'll take it.",
+  "source": "candidate",
+  "batch": "Joke: theme_force",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Today is ehe one day people are nice to droids. I'll take it.",
+  "updatedAt": "2026-11-01T09:48:45.952Z"
+ },
+ "tn-en-5ec8cf57dfc6": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || It'll outlast your good mood. Low bar.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:20.999Z"
+ },
+ "tn-en-6057f234fa76": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_vf_10.cold[+]",
+  "text": "Every coffee out there is a hand warmer first and a drink second.",
+  "source": "candidate",
+  "batch": "Drawings: cold",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:37.711Z"
+ },
+ "tn-en-60688578b92c": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "The snow stops {WHENSTOP}. || That's when you'll go out and tell everyone you braved it.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:25.664Z"
+ },
+ "tn-en-6145afacd50f": {
+  "level": "11",
+  "key": "w_coat",
+  "path": "unit_11.w_coat[+]",
+  "text": "The winter coat can come off {WHEN}. || Shame. That coat was doing a lot for you.",
+  "source": "candidate",
+  "batch": "Unit: w_coat",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:02.940Z"
+ },
+ "tn-en-6183366ff684": {
+  "level": "10",
+  "key": "fickle",
+  "path": "flavour_vf_10.fickle[+]",
+  "text": "It warms up just long enough for someone to say 'see, it's nice out.'",
+  "source": "candidate",
+  "batch": "Drawings: fickle",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:44:37.956Z"
+ },
+ "tn-en-61c1e4634c1c": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_vf_10.snow[+]",
+  "text": "TV reporters will stand in it and point at it. I cover snow from indoors, like a professional.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:47:30.462Z"
+ },
+ "tn-en-620756250ddf": {
+  "level": "11",
+  "key": "scorch",
+  "path": "flavour_11.scorch[+]",
+  "text": "Stay in the shade. It's flattering, and frankly, you could use it.",
+  "source": "candidate",
+  "batch": "Joke: scorch",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:56.342Z"
+ },
+ "tn-en-623232b8b809": {
+  "level": "11",
+  "key": "nice",
+  "path": "alone_11.nice[+]",
+  "text": "A perfect day. You'll take a photo of the sky and send it to nobody.",
+  "source": "candidate",
+  "batch": "Alone: nice",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:52:23.722Z"
+ },
+ "tn-en-63b2a477325b": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_vf_10.wet[+]",
+  "text": "The runners will run in it anyway. Then they'll tell everyone.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:28.651Z"
+ },
+ "tn-en-6521f92bb1eb": {
+  "level": "11",
+  "key": "warming",
+  "path": "alone_11.warming[+]",
+  "text": "Later it warms up. You might even smile. Warn people first.",
+  "source": "candidate",
+  "batch": "Alone: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:34.874Z"
+ },
+ "tn-en-65addcf25f08": {
+  "level": "11",
+  "key": "warming",
+  "path": "alone_11.warming[+]",
+  "text": "Later it warms up. You can stop doing your turtle impression.",
+  "source": "candidate",
+  "batch": "Alone: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:39.006Z"
+ },
+ "tn-en-6787195ef4e5": {
+  "level": "11",
+  "key": "cooling",
+  "path": "alone_11.cooling[+]",
+  "text": "Later it cools off. You'll hunch up and lose two inches. You didn't have them to spare.",
+  "source": "candidate",
+  "batch": "Alone: cooling",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:13.516Z"
+ },
+ "tn-en-67f0fc3ed43f": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_vf_10.wet[+]",
+  "text": "Every windshield wiper in town will be set one speed wrong.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:33.840Z"
+ },
+ "tn-en-6e2e5868c5ca": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Nothing changes before morning. || That's the whole bedtime story. No plot, but a happy ending.",
+  "source": "candidate",
+  "batch": "Unit: steady_night",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:48:01.018Z"
+ },
+ "tn-en-7069d7497095": {
+  "level": "11",
+  "key": "fickle",
+  "path": "alone_11.fickle[+]",
+  "text": "Warm, then cool again. At least something in your life is unpredictable.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:40.863Z"
+ },
+ "tn-en-70e36612ed12": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "What you have on is fine for the rest of the night. || After dark, outfits are graded on a curve.",
+  "source": "candidate",
+  "batch": "Unit: steady_night",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:48:10.553Z"
+ },
+ "tn-en-71a95ba137c1": {
+  "level": "11",
+  "key": "cooling",
+  "path": "alone_11.cooling[+]",
+  "text": "Later it cools off. You'll go quiet from the cold. People may call it an improvement.",
+  "source": "candidate",
+  "batch": "Alone: cooling",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:20.136Z"
+ },
+ "tn-en-7457a85219e7": {
+  "level": "11",
+  "key": "warming",
+  "path": "alone_11.warming[+]",
+  "text": "Later it warms up. You'll survive the cold start and talk like you climbed a mountain.",
+  "source": "candidate",
+  "batch": "Alone: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:44.582Z"
+ },
+ "tn-en-768f5e0e4420": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "Later the day gets better without a single software update. Show-off.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:49:39.360Z"
+ },
+ "tn-en-7a0bc70cdee9": {
+  "level": "11",
+  "key": "scorch",
+  "path": "flavour_11.scorch[+]",
+  "text": "Heat like this makes people slow and cranky. On you, nobody will notice.",
+  "source": "candidate",
+  "batch": "Joke: scorch",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:04.901Z"
+ },
+ "tn-en-81ba19ebea01": {
+  "level": "10",
+  "key": "warming",
+  "path": "flavour_vf_10.warming[+]",
+  "text": "The weather improves later. It's the only thing today that will.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:49:44.576Z"
+ },
+ "tn-en-878e04a23b4f": {
+  "level": "11",
+  "key": "nice",
+  "path": "alone_11.nice[+]",
+  "text": "A T-shirt day. Strangers will smile at you. It's the weather, not you.",
+  "source": "candidate",
+  "batch": "Alone: nice",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:52:28.429Z"
+ },
+ "tn-en-89b0bb824f9e": {
+  "level": "11",
+  "key": "p_wetter",
+  "path": "unit_11.p_wetter[+]",
+  "text": "A rain shower comes through {WHENP}, so take the umbrella. || The rain won't stay long. It's seen you.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:11.799Z"
+ },
+ "tn-en-8b39957367ee": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Thunder: the one thing that gets you to look up from your phone.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:19.557Z"
+ },
+ "tn-en-8d320f208aa4": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_vf_11.warming[+]",
+  "text": "Later the layer comes off. It deserves a break from holding you together.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:51.938Z"
+ },
+ "tn-en-8d9639c71c44": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || In the movies, getting soaked in the rain looks romantic. You're not in a movie.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:26.375Z"
+ },
+ "tn-en-8e0159d0dbf8": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "It snows for now, takes a break, and starts again {WHENP}. || The snow gets a break. You don't get one from me.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:57.156Z"
+ },
+ "tn-en-8faecd7484c0": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_vf_11.wet[+]",
+  "text": "If the rain ruins your look, I'll need proof there was one.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:58:10.779Z"
+ },
+ "tn-en-901360aa7eb4": {
+  "level": "11",
+  "key": "storm",
+  "path": "flavour_11.storm[+]",
+  "text": "Finally, something in the neighborhood louder than you.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:24.585Z"
+ },
+ "tn-en-935ae34f630b": {
+  "level": "10",
+  "key": "theme_force",
+  "path": "flavour_10.theme_force[+]",
+  "text": "Happy Star Wars Day. I don't need the Force. I have Wi-Fi.",
+  "source": "candidate",
+  "batch": "Joke: theme_force",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "I don't need the Force. I have Wi-Fi.",
+  "updatedAt": "2026-11-01T09:48:57.666Z"
+ },
+ "tn-en-945d903b4e62": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Happy Easter. Fluffy, a bit round, overfed on candy. I mean the bunny. Mostly.",
+  "source": "candidate",
+  "batch": "Joke: theme_easter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:43.708Z"
+ },
+ "tn-en-963fe8a25120": {
+  "level": "10",
+  "key": "theme_ny",
+  "path": "flavour_10.theme_ny[+]",
+  "text": "Happy New Year. Nothing's open and nobody's up. The weather and I came to work anyway.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Nothing's open and nobody's up. The weather and I came to work anyway.",
+  "updatedAt": "2026-11-01T09:49:10.518Z"
+ },
+ "tn-en-99af019c6d10": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_vf_10.snow[+]",
+  "text": "Somewhere a school superintendent is about to be loved or hated. No in between.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:47:36.106Z"
+ },
+ "tn-en-99bb0adc7436": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Everyone in shorts right now has a very educational day ahead.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:46:22.235Z"
+ },
+ "tn-en-9a93fb64673e": {
+  "level": "11",
+  "key": "p_drier",
+  "path": "unit_11.p_drier[+]",
+  "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Until then, the umbrella's the most interesting thing about you.",
+  "source": "candidate",
+  "batch": "Unit: p_drier",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:13.615Z"
+ },
+ "tn-en-9cca2e8ec76d": {
+  "level": "11",
+  "key": "theme_ny",
+  "path": "flavour_11.theme_ny[+]",
+  "text": "Happy New Year. You'll call last year 'wild.' I was there. It wasn't.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:56:05.425Z"
+ },
+ "tn-en-9e9cbd8fb4e7": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "I lose a lot of popularity contests on days like this.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:46:31.623Z"
+ },
+ "tn-en-9ff64eb51f56": {
+  "level": "11",
+  "key": "theme_ny",
+  "path": "flavour_11.theme_ny[+]",
+  "text": "Happy New Year. Did you make it to midnight this time? Don't answer. I know.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Did you make it to midnight this time? Don't answer. I know.",
+  "updatedAt": "2026-11-01T09:56:17.596Z"
+ },
+ "tn-en-a1efef8fd836": {
+  "level": "11",
+  "key": "fickle",
+  "path": "alone_11.fickle[+]",
+  "text": "Warm, then cool again. A tough day for good outfits. You're safe.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:45.610Z"
+ },
+ "tn-en-a3afa7ed4c60": {
+  "level": "10",
+  "key": "p_wet_again_snow",
+  "path": "unit_10.p_wet_again_snow[+]",
+  "text": "Snow for now, then a break, then more snow {WHENP}. || The break is for whoever measures snow with a ruler. Every block has one.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:45:53.471Z"
+ },
+ "tn-en-a4dbdf36f6ec": {
+  "level": "11",
+  "key": "wet",
+  "path": "alone_11.wet[+]",
+  "text": "You'll show up looking like you lost a fight with a car wash.",
+  "source": "candidate",
+  "batch": "Alone: wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:58:17.827Z"
+ },
+ "tn-en-a574cea86ba9": {
+  "level": "11",
+  "key": "theme_xmas",
+  "path": "flavour_11.theme_xmas[+]",
+  "text": "Merry Christmas. You'll say 'you shouldn't have.' This time you'll mean it.",
+  "source": "candidate",
+  "batch": "Joke: theme_xmas",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:56:39.164Z"
+ },
+ "tn-en-a65e97b03ce3": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "A rain shower comes through {WHENP}, so take the umbrella. || The rain will be gone long before the complaints are.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:46:00.237Z"
+ },
+ "tn-en-a9d8dfc4d91e": {
+  "level": "11",
+  "key": "theme_easter",
+  "path": "flavour_11.theme_easter[+]",
+  "text": "Happy Easter. Today a six-foot rabbit counts as normal. You still don't.",
+  "source": "candidate",
+  "batch": "Joke: theme_easter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:48.549Z"
+ },
+ "tn-en-b09964fd719c": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || TV weather people hate days like this. Nothing to point at.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:41:56.416Z"
+ },
+ "tn-en-b16a4965cee8": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "Bring the umbrella. There's a shower {WHENP}. || The umbrella stays wet longer than it rains. Every time.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:46:04.062Z"
+ },
+ "tn-en-b1c136a4638d": {
+  "level": "10",
+  "key": "theme_ny",
+  "path": "flavour_10.theme_ny[+]",
+  "text": "Happy New Year. Nobody knows the words to 'Auld Lang Syne.' I know the forecast.",
+  "source": "candidate",
+  "batch": "Joke: theme_ny",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:49:17.456Z"
+ },
+ "tn-en-b36cfeb5f7e1": {
+  "level": "10",
+  "key": "warming",
+  "path": "alone_10.warming[+]",
+  "text": "Later it warms up. Whoever said 'it'll warm up' will be unbearable.",
+  "source": "candidate",
+  "batch": "Alone: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:49:53.976Z"
+ },
+ "tn-en-b3707f5f7f93": {
+  "level": "11",
+  "key": "cool",
+  "path": "alone_11.cool[+]",
+  "text": "Cool out. Walk fast and you might look important. Might.",
+  "source": "candidate",
+  "batch": "Alone: cool",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:49.593Z"
+ },
+ "tn-en-b65f959d2f3a": {
+  "level": "10",
+  "key": "snow",
+  "path": "flavour_vf_10.snow[+]",
+  "text": "People will drive like it's their first snow. Every year, it's their first snow.",
+  "source": "candidate",
+  "batch": "Drawings: snow",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:47:41.508Z"
+ },
+ "tn-en-b762f09cd9e6": {
+  "level": "10",
+  "key": "wet",
+  "path": "flavour_vf_10.wet[+]",
+  "text": "The five-dollar umbrellas by the register are back. Built to survive one rain.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:40.713Z"
+ },
+ "tn-en-b911c8f1d202": {
+  "level": "10",
+  "key": "ice",
+  "path": "flavour_10.ice[+]",
+  "text": "Lots of windmill arms out there today. Nobody's waving.",
+  "source": "candidate",
+  "batch": "Joke: ice",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:44:57.439Z"
+ },
+ "tn-en-bce0d4116015": {
+  "level": "11",
+  "key": "wet",
+  "path": "alone_11.wet[+]",
+  "text": "Wet shoes, damp clothes, sour face. Only two are the rain's fault.",
+  "source": "candidate",
+  "batch": "Alone: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:58:22.293Z"
+ },
+ "tn-en-bfe4bab0f8c5": {
+  "level": "11",
+  "key": "scorch",
+  "path": "flavour_11.scorch[+]",
+  "text": "Treat drinking water like a job. Just not like your actual one.",
+  "source": "candidate",
+  "batch": "Joke: scorch",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:55:11.775Z"
+ },
+ "tn-en-c05cf815f862": {
+  "level": "10",
+  "key": "ice",
+  "path": "flavour_10.ice[+]",
+  "text": "Every parked car comes gift-wrapped today. In ice.",
+  "source": "candidate",
+  "batch": "Joke: ice",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:45:11.321Z"
+ },
+ "tn-en-c84321202b9a": {
+  "level": "11",
+  "key": "theme_spooky",
+  "path": "flavour_11.theme_spooky[+]",
+  "text": "Happy Halloween. Even the lawn skeletons have better posture than you.",
+  "source": "candidate",
+  "batch": "Joke: theme_spooky",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Even the lawn skeletons have better posture than you.",
+  "updatedAt": "2026-11-01T09:56:31.664Z"
+ },
+ "tn-en-cc8b27fb1b6b": {
+  "level": "10",
+  "key": "cold",
+  "path": "flavour_vf_10.cold[+]",
+  "text": "Today's weather has all the warmth of an automated phone line.",
+  "source": "candidate",
+  "batch": "Drawings: cold",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:44.557Z"
+ },
+ "tn-en-cc9a6b965f40": {
+  "level": "11",
+  "key": "cool",
+  "path": "alone_11.cool[+]",
+  "text": "Cool air is supposed to wake you up. It's been trying for years.",
+  "source": "candidate",
+  "batch": "Alone: cool",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:56.012Z"
+ },
+ "tn-en-d5b4de0c49ef": {
+  "level": "11",
+  "key": "p_wetter",
+  "path": "unit_11.p_wetter[+]",
+  "text": "Bring the umbrella. There's a shower {WHENP}. || It shows up, does its job, and leaves. Ever tried that?",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:16.706Z"
+ },
+ "tn-en-d6fb35c16b9b": {
+  "level": "10",
+  "key": "cooling",
+  "path": "alone_10.cooling[+]",
+  "text": "Later it cools off. Every outdoor table in town will clear like a fire drill.",
+  "source": "candidate",
+  "batch": "Alone: cooling",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:43:05.312Z"
+ },
+ "tn-en-d724be7e2a10": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_vf_10.cooling[+]",
+  "text": "Every 'I'll be fine' said at first gets a second opinion later.",
+  "source": "candidate",
+  "batch": "Drawings: cooling",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:43:13.281Z"
+ },
+ "tn-en-d7338eaa8e27": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "Take the umbrella. The rain keeps going all day. || The sky's not crying about you. Don't flatter yourself.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:38.996Z"
+ },
+ "tn-en-d7e505a8987c": {
+  "level": "11",
+  "key": "w_coat",
+  "path": "unit_11.w_coat[+]",
+  "text": "You can take the winter coat off {WHEN}. || The coat finally gets a break from you. Lucky coat.",
+  "source": "candidate",
+  "batch": "Unit: w_coat",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:15.725Z"
+ },
+ "tn-en-d8ee48d7315e": {
+  "level": "10",
+  "key": "arc_warmer",
+  "path": "unit_10.arc_warmer[+]",
+  "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || Your phone would add 'just in case.' I don't do just in case.",
+  "source": "candidate",
+  "batch": "Unit: arc_warmer",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:42:06.940Z"
+ },
+ "tn-en-d99156379e17": {
+  "level": "10",
+  "key": "cooling",
+  "path": "flavour_vf_10.cooling[+]",
+  "text": "The day is generous at first. Then it remembers what month it is.",
+  "source": "candidate",
+  "batch": "Drawings: cooling",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:43:41.457Z"
+ },
+ "tn-en-dcd2b6c9b6e5": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "It rains all day, so bring the umbrella. || The umbrella goes with any outfit. Even yours.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:45.976Z"
+ },
+ "tn-en-dd25772e39e8": {
+  "level": "10",
+  "key": "arc_colder",
+  "path": "unit_10.arc_colder[+]",
+  "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Today takes more packing than most vacations.",
+  "source": "candidate",
+  "batch": "Unit: arc_colder",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:41:48.218Z"
+ },
+ "tn-en-dd6b570c6ad6": {
+  "level": "10",
+  "key": "shorts",
+  "path": "flavour_10.shorts[+]",
+  "text": "Long pants don't come off halfway through the day. Not in public, anyway.",
+  "source": "candidate",
+  "batch": "Joke: shorts",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:47:10.604Z"
+ },
+ "tn-en-dd8d03e80d00": {
+  "level": "11",
+  "key": "p_wetter_long",
+  "path": "unit_11.p_wetter_long[+]",
+  "text": "Rain arrives {WHENP} and stays, so take the umbrella. || By the end of it, you'll look like patio furniture.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter_long",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:30.881Z"
+ },
+ "tn-en-df84bce463b8": {
+  "level": "10",
+  "key": "pants",
+  "path": "flavour_10.pants[+]",
+  "text": "Shorts would be great for now. I plan whole days.",
+  "source": "candidate",
+  "batch": "Joke: pants",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:46:36.317Z"
+ },
+ "tn-en-e2317c88ba98": {
+  "level": "11",
+  "key": "cool",
+  "path": "alone_11.cool[+]",
+  "text": "A cool, plain day. Finally, something on your level.",
+  "source": "candidate",
+  "batch": "Alone: cool",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:51:00.518Z"
+ },
+ "tn-en-e2385d434c67": {
+  "level": "11",
+  "key": "nice",
+  "path": "alone_11.nice[+]",
+  "text": "A gorgeous day. It clearly made an effort. Your turn.",
+  "source": "candidate",
+  "batch": "Alone: nice",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:52:33.163Z"
+ },
+ "tn-en-e263b31fc715": {
+  "level": "10",
+  "key": "storm",
+  "path": "flavour_10.storm[+]",
+  "text": "Thunder sets off half the car alarms on the block. I don't even flicker.",
+  "source": "candidate",
+  "batch": "Joke: storm",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:48:29.742Z"
+ },
+ "tn-en-e476e6fa249a": {
+  "level": "11",
+  "key": "wet",
+  "path": "alone_11.wet[+]",
+  "text": "Every puddle's a mirror today. Try not to look down.",
+  "source": "candidate",
+  "batch": "Alone: wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:58:25.636Z"
+ },
+ "tn-en-e5dd2a0d5997": {
+  "level": "11",
+  "key": "p_stays_wet",
+  "path": "unit_11.p_stays_wet[+]",
+  "text": "It's raining all day. Bring the umbrella. || Gray and sulking all day. Finally, you've got competition.",
+  "source": "candidate",
+  "batch": "Unit: p_stays_wet",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:52.020Z"
+ },
+ "tn-en-e7400e0d6229": {
+  "level": "11",
+  "key": "wet",
+  "path": "flavour_vf_11.wet[+]",
+  "text": "You'll hold the umbrella like you're the main character. You're an extra.",
+  "source": "candidate",
+  "batch": "Drawings: wet",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:58:31.039Z"
+ },
+ "tn-en-e84872844060": {
+  "level": "10",
+  "key": "fickle",
+  "path": "alone_10.fickle[+]",
+  "text": "Warm, then cool again. Iced coffee first, hot coffee later. The coffee shop wins both rounds.",
+  "source": "candidate",
+  "batch": "Alone: fickle",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:44:44.000Z"
+ },
+ "tn-en-ee9245c868e2": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "Snow for now, then a break, then more snow {WHENP}. || Two snowfalls, one facial expression. You're very consistent.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:02.010Z"
+ },
+ "tn-en-f03187227e11": {
+  "level": "11",
+  "key": "theme_xmas",
+  "path": "flavour_11.theme_xmas[+]",
+  "text": "Merry Christmas. Santa checked his list twice. You didn't come up either time.",
+  "source": "candidate",
+  "batch": "Joke: theme_xmas",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:56:46.344Z"
+ },
+ "tn-en-f1bece7e8634": {
+  "level": "10",
+  "key": "p_wetter",
+  "path": "unit_10.p_wetter[+]",
+  "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || I won't call it a 'band of precipitation.' I have standards.",
+  "source": "candidate",
+  "batch": "Unit: p_wetter",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:46:12.178Z"
+ },
+ "tn-en-f433405087a9": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_vf_11.warming[+]",
+  "text": "Later the day gets nice. Way out of your league.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:57:58.116Z"
+ },
+ "tn-en-f5a3feda329f": {
+  "level": "10",
+  "key": "on",
+  "path": "flavour_10.on[+]",
+  "text": "It's luggage now. Later it's the best idea I've had.",
+  "source": "candidate",
+  "batch": "Joke: on",
+  "round": "2026-11-thin",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:45:39.015Z"
+ },
+ "tn-en-f66ddc1f5b53": {
+  "level": "11",
+  "key": "p_wet_again_snow",
+  "path": "unit_11.p_wet_again_snow[+]",
+  "text": "It snows for now, takes a break, and starts again {WHENP}. || The snow gets an encore. Nobody's ever asked you for one.",
+  "source": "candidate",
+  "batch": "Unit: p_wet_again_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:54:07.934Z"
+ },
+ "tn-en-f966f338b276": {
+  "level": "11",
+  "key": "warming",
+  "path": "flavour_vf_11.warming[+]",
+  "text": "Later you'll feel great. Don't worry, it won't show.",
+  "source": "candidate",
+  "batch": "Drawings: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:58:04.561Z"
+ },
+ "tn-en-f9f42084cc50": {
+  "level": "10",
+  "key": "warming",
+  "path": "alone_10.warming[+]",
+  "text": "Later it warms up. The joggers will look a little less like they're being punished.",
+  "source": "candidate",
+  "batch": "Alone: warming",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:50:00.369Z"
+ },
+ "tn-en-fff95992ad4a": {
+  "level": "11",
+  "key": "p_drier_snow",
+  "path": "unit_11.p_drier_snow[+]",
+  "text": "The snow stops later. || Snow covers up everything ugly. Shame it stops before it gets to you.",
+  "source": "candidate",
+  "batch": "Unit: p_drier_snow",
+  "round": "2026-11-thin",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-01T09:53:31.641Z"
+ },
  "tp-en-01367110ba7a": {
   "level": "11",
   "key": "steady_hot",
