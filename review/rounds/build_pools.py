@@ -1182,9 +1182,18 @@ def apply_proof_fixes(doc, lang):
                 if isinstance(pool, list):
                     for i, line in enumerate(pool):
                         if isinstance(line, str) and line in fixes:
-                            pool[i] = fixes[line]
+                            pool[i] = line = fixes[line]
                             n += 1
+                        for a, b in PROOF_WORDS.get(lang, {}).items():
+                            if isinstance(line, str) and a in line:
+                                pool[i] = line = line.replace(a, b)
+                                n += 1
     return n
+
+
+# Word-level fixes anywhere in a line, units included (round 27's writer
+# found "rainshower" in a live forecast sentence).
+PROOF_WORDS = {"en": {"rainshower": "rain shower"}}
 
 
 # The German prune (owner, November 2026): the proofreader's cuts across
