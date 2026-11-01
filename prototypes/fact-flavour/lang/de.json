@@ -946,7 +946,8 @@
     ],
     "w_water": [
       "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Leitungswasser reicht. Es muss nicht nach Bergpanorama schmecken.",
-      "{WHEN} wird's heiß, pack lieber Wasser ein. || Aber stell's nicht in die Sonne. Warmes Wasser schmeckt scheiße."
+      "{WHEN} wird's heiß, pack lieber Wasser ein. || Aber stell's nicht in die Sonne. Warmes Wasser schmeckt scheiße.",
+      "{WHEN} wird's richtig heiß, nimm Wasser mit. || In der Bahn kleben dann wieder alle an den Sitzen. Beim Aufstehen hört man's."
     ],
     "c_relief": [
       "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Für Wunder bin ich nicht zuständig.",
@@ -962,6 +963,7 @@
       "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Irgendwer behält {GP} vermutlich trotzdem an. Wegen der Optik."
     ],
     "arc_level": [
+      "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Das Wetter heute ist wie ein Kurzurlaub: mehr Aus- und Einpacken als Erholung.",
       "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Daheim nützt's dir nichts. Da bin nur ich, und ich frier nicht.",
       "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Dazwischen tun wieder alle so, als wär Sommer."
     ],
@@ -978,6 +980,7 @@
     "p_wetter": [
       "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Ein kurzer. Aber lang genug, um sich drüber zu ärgern.",
       "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und dann heißt es wieder: „Es gibt kein schlechtes Wetter.“ Doch, gibt's.",
+      "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Irgendwer hält sich dann wieder einen Werbeprospekt über den Kopf. Endlich ist das Ding zu was gut.",
       "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || „Fliegen die Schwalben tief, kommt Regen.“ Ja sicher, einem Vogel glaubt man wieder mehr als mir."
     ],
     "p_wetter_long": [
@@ -1233,7 +1236,9 @@
     "p_wet_again": [
       "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Zweimal an dasselbe denken. Für dich ist das sportlich.",
       "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der kommt zurück. Anders als dein Schirm, wenn du ihn irgendwo stehen lässt.",
-      "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Aufspannen, zumachen, aufspannen. Endlich mal ein Tag mit Struktur für dich."
+      "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Aufspannen, zumachen, aufspannen. Endlich mal ein Tag mit Struktur für dich.",
+      "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Er kommt extra für dich zurück. So viel Aufmerksamkeit kriegst du sonst nur vom Inkassobüro.",
+      "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Zwei Duschen an einem Tag. Für deine Verhältnisse ist das schon Körperpflege."
     ],
     "p_wet_again_snow": [
       "Der Schneefall hört später auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht.",

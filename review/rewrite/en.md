@@ -5,6 +5,15 @@ kept line answers yet. Write completely new lines for each spot,
 not variations of what's out (it's all in `review/dont/`), and give
 each new row `"answers": "<id>"` in the next round's file.
 
+## alone_10.cooling
+
+- **Out:** Later it cools off. Every hand out there goes into a pocket, like everyone's hiding something.
+  **Wanted instead:** i like the direction, but this version isnt landing.
+  **Tags:** not funny, robotic, too long
+  **On screen:** drawing jacket_dry
+  **What it's for:** Standalone line at On for a cooling day, under the outfit with no forecast line.
+  **Answers:** `t2-en-8d20c3c697fd` (2026-11-thin2)
+
 ## flavour_10.day_dst_fall
 
 - **Out:** The clocks went back. An extra hour, and I spent it refreshing.
@@ -277,3 +286,21 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing tee_pants_dry
   **What it's for:** New at 11: the forecast sentence and its joke as one. Cools to sweater weather: a sweater needed later. Shows under the written forecast, with or without What to Wear Next's drawings above.
   **Answers:** `tp-en-de6ea2dc41b5` (2026-10-topics)
+
+## unit_11.p_drier
+
+- **Out:** The rain stops later, but bring the umbrella for now. || Of everyone I forecast for, you're the one I'd let get rained on.
+  **Wanted instead:** i love it. but tighten it up a bit. it doesnt sound quite right yet.
+  **Tags:** robotic
+  **On screen:** drawing jacket_rain
+  **What it's for:** New at 11: the forecast sentence and its joke as one. Raining now, stops later. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `t2-en-9d08b78e3bdc` (2026-11-thin2)
+
+## unit_11.p_wetter_long
+
+- **Out:** It starts raining {WHENP} and keeps going, so bring the umbrella. || A big day for snails and mushrooms. You've always had a lot in common with them.
+  **Wanted instead:** i like the direction, this one is not landing yet though.
+  **Tags:** not funny
+  **On screen:** drawing jacket_dry
+  **What it's for:** New at 11: the forecast sentence and its joke as one. Rain later, and it stays. Shown alone; after a change, it follows that sentence. Shows under the written forecast, with or without What to Wear Next's drawings above.
+  **Answers:** `t2-en-4b3bc7d9bedd` (2026-11-thin2)

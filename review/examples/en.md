@@ -1273,6 +1273,7 @@ Do not edit by hand; vote on the page instead.
 
 ## warming · sarcastic
 
+- Later the layer comes off. Turns out the tired look goes all the way down.
 - Later you'll lose a layer. Then you'll probably lose it for real.
 - Taking that layer off might be the highlight of your day.  
   _here sarcasm and the forecast work well together_
