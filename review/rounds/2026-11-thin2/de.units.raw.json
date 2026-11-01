@@ -1,0 +1,330 @@
+{
+ "lines": [
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Irgendwer reißt zwischendurch das Fenster auf. Später will's keiner gewesen sein."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Zu Risiken und Nebenwirkungen der Wärme zwischendurch fragen Sie Ihren Hals."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Dazwischen gehen sogar die Nichtraucher mit zur Raucherpause. Später sind die Raucher wieder unter sich."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Ich hab die Wärme so dünn verteilt, wie's ging. Für den ganzen Tag hat sie trotzdem nicht gereicht."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Die Wärme ist heute wie ein übereifriger Kellner: Kaum hat man's sich gemütlich gemacht, wird abgeräumt."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Rückrufaktion: Die Wärme hat einen Mangel bei der Haltbarkeit und wird wieder eingesammelt."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Perfektes Wetter, um Wäsche rauszuhängen. Und sie später genauso feucht wieder reinzuholen."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Auf dem Spielplatz liegt dann wieder ein Berg Klamotten. Später nimmt jedes Kind die falschen mit."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || In den Nachrichten heißt das später wieder „überraschend kühl“. Überraschend war daran gar nichts."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Eine Zeit lang haben heute sogar die Touristen in kurzen Hosen recht."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Die Ersten machen dazwischen das Verdeck auf. Später fahren sie mit Mütze weiter offen."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Das Wetter heute ist wie ein Kurzurlaub: mehr Aus- und Einpacken als Erholung."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Nimm den Schirm mit, {WHENP} kommt ein Regenschauer. || Der dauert ungefähr so lang, wie man braucht, um einen Taschenschirm aufzukriegen."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Der Satz hier dauert fast länger als der Schauer."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Pack den Schirm ein, {WHENP} wird's kurz nass. || Für die Blumen reicht das nicht. Für jede Frisur schon."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Irgendwer hält sich dann wieder einen Werbeprospekt über den Kopf. Endlich ist das Ding zu was gut."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Natürlich kurz nachdem irgendwer die Gartenstühle trockengewischt hat."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} zieht ein Regenschauer durch, pack also den Schirm ein. || Unter jedem Baum stehen dann wieder Leute, die so tun, als hätten sie da sowieso gewartet."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || So ein Schauer ist wie die Werbung vor einem Video. Kurz, und trotzdem hasst ihn jeder."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Nimm den Schirm mit, {WHENP} kommt ein Regenschauer. || Manchen reicht so ein Schauer als Ausrede, die ganze Woche nicht joggen zu gehen."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Danach riecht's im Bus wieder nach nassem Hund. Auch ohne Hund."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Schon jetzt in kurzer Hose sind nur die Paketboten. Die tragen die auch im Januar."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Bekanntmachung: Die Waden werden später zur Besichtigung freigegeben."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Bis dahin krempelt garantiert einer die Hose hoch und sieht aus, als käm gleich Hochwasser."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Ausgerechnet heute haben die Kinder recht, die gleich in kurzer Hose loswollten. Sagen darf man's ihnen nicht."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Beine sind wie Rotwein. Rausgeholt werden sie erst bei Zimmertemperatur."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Bild und Text widersprechen sich heute. Kennt man sonst nur aus Wohnungsanzeigen."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Die Kurze-Hosen-Saison hat hierzulande ungefähr elf Tage. Heute ist einer davon. Zur Hälfte."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Später sitzen in der Bahn wieder Männer in kurzen Hosen breitbeinig da. Als wär das ein Angebot."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Bald zeigt sich wieder, wer über den Winter Sport gemacht hat. Also fast keiner.",
+   "months": "3,4,5"
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Dann laufen die Ersten wieder in kurzer Hose und Winterstiefeln rum. Hauptsache, die Hälfte stimmt."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Der Tag ist wie ein alter Diesel. Morgens springt er schlecht an, später läuft er heiß."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Dann gibt's draußen wieder Beine zu sehen, die keiner bestellt hat."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen. || Sich im vollen Bus aus der Jacke zu schälen, wär übrigens olympiareif. Disziplin: Ellbogen."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Morgen in der Lokalzeitung: „Die Stadt atmet auf.“ Gemeint sind drei Leute ohne Jacke vor der Eisdiele."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Kleinanzeige: Jacke, kaum getragen, ab sofort abzugeben. Nur an Selbstabholer."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} wird's mild genug, um die Jacke auszuziehen. || Dann häuten sich wieder alle. Schlangen machen das eleganter."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann ziehen alle gleichzeitig die Jacke aus. Als hätte einer gepfiffen."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Ein paar behalten sie trotzdem an. Bei denen ist drunter vermutlich nur das Schlafshirt."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen. || In der Jackentasche bleibt dann wieder ein gebrauchtes Taschentuch zurück. Bis zum Herbst.",
+   "months": "3,4,5,6"
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Bei den Ersten wandert dann die Sonnenbrille ins Haar. Als Haarreif mit Ambitionen."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Ab dann trägt jeder Zweite die Jacke lässig über den Schultern. Wie ein Mafiaboss. Nur hat keiner Angst."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} kann der Schal weg. || Mancher Schal hat mehr Schnupfen abbekommen als ein Hausarzt."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "Den Schal kannst du {WHEN} wegpacken. || Die Kinder haben ihn sowieso schon an der ersten Ecke ausgezogen. Erfahren tun's die Eltern erst beim Abholen."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} brauchst du den Schal nicht mehr. || Die Wärme kommt heute als Teillieferung. Für den Hals reicht's, der Rest ist noch unterwegs."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} kannst du den Schal ablegen. || Neun von zehn Schals werden nie gewaschen. Der zehnte war ein Geschenk und wird nie getragen."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} kann der Schal weg. || Dann wickeln sich wieder alle aus ihren Schals. Wie Mumien, nur rückwärts."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} wird's mild genug, dann kann der Schal wieder runter. || Wie bei einem Pflaster: Kaum ist er ab, zieht's."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "Den Schal kannst du {WHEN} wegpacken. || Dann sieht man wieder, wer sich nur bis zum Kinn geschminkt hat."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} brauchst du den Schal nicht mehr. || Entwarnung für den Hals. Für den Rest gilt die Warnung weiter."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} kannst du den Schal ablegen. || Ab dann hängt er bei vielen nur noch lose um den Hals. Wie eine Krawatte nach der dritten Besprechung."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Hinweis der Wasserwerke: Bitte nicht alle gleichzeitig trinken."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Die Luft fühlt sich dann an wie ein Föhn auf höchster Stufe. Und ausmachen kann ihn keiner."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Die Hunde liegen dann wieder wie Bettvorleger auf dem Gehweg. Die haben's begriffen."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Am Bahnhof kostet das Wasser dann wieder so viel wie Sekt."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} wird's heiß, da gehört eine Flasche Wasser in die Tasche. || Im Büro bringt dann wieder einer seinen Ventilator mit. Und dreht ihn so, dass nur er was davon hat."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || In der Bahn kleben dann wieder alle an den Sitzen. Beim Aufstehen hört man's."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Irgendwer schwört dann wieder auf heißen Tee gegen die Hitze. Mit einem Eiskaffee in der Hand."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Meine Hitzeskala hat zwei Stufen: „Noch geht's“ und „Oben ohne auf dem Balkon“. Später ist Stufe zwei."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Die Balkonblumen kriegen dann auch wieder Wasser. Wie immer erst, wenn sie schon die Köpfe hängen lassen."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Im Restaurant ist ein Glas Leitungswasser dann wieder Verhandlungssache."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Ideales Wetter für alle, die heute im Anzug zum Vorstellungsgespräch müssen."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Vor der Eisdiele steht dann wieder eine Schlange bis zur Ecke. Ganz vorne probiert einer jede Sorte."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || Die Pause reicht, damit du dir einreden kannst, deine Hose wär wieder trocken."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der Regen kommt extra noch mal zurück. So viel Aufmerksamkeit kriegst du sonst nur vom Inkassobüro."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || In der Pause darfst du kurz so tun, als hättest du alles im Griff. Kurz."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm sollte also dabeibleiben. || Draußen läuft heute Waschen, Schleudern, Spülen. Frischer kommst du trotzdem nicht raus."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Der Regen hat heute mehr Termine als du."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || In der Pause klappst du den Schirm sicher zu, als hättest du gewonnen. Hast du nicht."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Zum Trocknen reicht die Pause. Zum Gutaussehen hätte bei dir auch kein Sommer gereicht."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Zwei Duschen an einem Tag. Für deine Verhältnisse ist das schon Körperpflege."
+  },
+  {
+   "path": "units_11.p_wet_again",
+   "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || Damit ist er zweimal dein bestes Accessoire. Die Konkurrenz ist aber auch schwach."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || In der Pause zielt sicher irgendwer mit einem Schneeball auf dich. Ich hätt Verständnis."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || In der Pause baut irgendein Kind einen Schneemann. Damit hat es heute mehr geschafft als du."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || Drinnen wär's jetzt richtig gemütlich. Nur halt nicht mit dir."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Der Schneefall hört später auf, {WHENP} geht es weiter. || Mit Schnee auf den Schultern siehst du aus wie die Werbung für Schuppenshampoo. Das Vorher-Bild."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Der Schnee fällt heute zweimal auf dich rein. Die meisten Leute nur einmal."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien. || In der Pause kannst du die Kapuze abnehmen. Darunter war's aber auch vorher nicht besser."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || Mit Schnee in den Haaren sieht man schon mal, wie du mit siebzig aussiehst. Kein Grund zur Vorfreude."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Der zweite Schnee ist für alle, die den ersten verschlafen haben. Also für dich."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Der Schneefall hört später auf, {WHENP} geht es weiter. || Draußen sieht's dann aus wie in einem Skiort. Du siehst trotzdem nicht aus wie ein Skilehrer."
+  }
+ ]
+}
