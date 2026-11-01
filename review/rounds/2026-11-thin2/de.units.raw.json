@@ -2,39 +2,39 @@
  "lines": [
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Irgendwer reißt zwischendurch das Fenster auf. Später will's keiner gewesen sein."
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Zwischendurch reißt einer das Fenster auf. Später will's keiner gewesen sein."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Zu Risiken und Nebenwirkungen der Wärme zwischendurch fragen Sie Ihren Hals."
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Zu Risiken und Nebenwirkungen der Wärme fragen Sie Ihren Hals."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Dazwischen gehen sogar die Nichtraucher mit zur Raucherpause. Später sind die Raucher wieder unter sich."
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Zwischendurch kommen sogar Nichtraucher mit zur Raucherpause. Später nicht mehr."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Ich hab die Wärme so dünn verteilt, wie's ging. Für den ganzen Tag hat sie trotzdem nicht gereicht."
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ich hab die Wärme dünn verteilt. Für den ganzen Tag reicht sie trotzdem nicht."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Die Wärme ist heute wie ein übereifriger Kellner: Kaum hat man's sich gemütlich gemacht, wird abgeräumt."
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Die Wärme ist wie ein übereifriger Kellner: Kaum sitzt man, wird abgeräumt."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Rückrufaktion: Die Wärme hat einen Mangel bei der Haltbarkeit und wird wieder eingesammelt."
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Rückrufaktion wegen Mängeln bei der Haltbarkeit: Die Wärme wird eingesammelt."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Perfektes Wetter, um Wäsche rauszuhängen. Und sie später genauso feucht wieder reinzuholen."
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Perfekt, um Wäsche rauszuhängen. Und sie später genauso feucht reinzuholen."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Auf dem Spielplatz liegt dann wieder ein Berg Klamotten. Später nimmt jedes Kind die falschen mit."
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Später nimmt auf dem Spielplatz jedes Kind die falschen Sachen vom Haufen."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || In den Nachrichten heißt das später wieder „überraschend kühl“. Überraschend war daran gar nichts."
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Im Radio heißt das später „überraschend kühl“. Überraschend war daran nichts."
   },
   {
    "path": "units_10.arc_level",
@@ -42,11 +42,11 @@
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Die Ersten machen dazwischen das Verdeck auf. Später fahren sie mit Mütze weiter offen."
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Die Ersten machen dazwischen das Verdeck auf. Später mit Mütze, aber offen."
   },
   {
    "path": "units_10.arc_level",
-   "text": "{WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Das Wetter heute ist wie ein Kurzurlaub: mehr Aus- und Einpacken als Erholung."
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Das Wetter heute ist wie ein Kurzurlaub: mehr Aus- und Einpacken als Erholung."
   },
   {
    "path": "units_10.p_wetter",
@@ -86,7 +86,7 @@
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Schon jetzt in kurzer Hose sind nur die Paketboten. Die tragen die auch im Januar."
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Schon jetzt in kurzer Hose sind nur die Paketboten. Die tragen sie auch im Januar."
   },
   {
    "path": "units_10.shorts_early",
@@ -94,11 +94,11 @@
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Bis dahin krempelt garantiert einer die Hose hoch und sieht aus, als käm gleich Hochwasser."
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Bis dahin krempelt garantiert einer die Hose hoch, als käm gleich Hochwasser."
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Ausgerechnet heute haben die Kinder recht, die gleich in kurzer Hose loswollten. Sagen darf man's ihnen nicht."
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Heute haben die Kinder recht, die in kurzer Hose loswollten. Sagen darf man's ihnen nicht."
   },
   {
    "path": "units_10.shorts_early",
@@ -110,11 +110,11 @@
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Die Kurze-Hosen-Saison hat hierzulande ungefähr elf Tage. Heute ist einer davon. Zur Hälfte."
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Die Kurze-Hosen-Saison hat hierzulande elf Tage. Heute ist einer davon. Zur Hälfte."
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Später sitzen in der Bahn wieder Männer in kurzen Hosen breitbeinig da. Als wär das ein Angebot."
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || In der Bahn sitzen dann wieder Männer in Shorts breitbeinig da. Als wär's ein Angebot."
   },
   {
    "path": "units_10.shorts_early",
@@ -123,11 +123,11 @@
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Dann laufen die Ersten wieder in kurzer Hose und Winterstiefeln rum. Hauptsache, die Hälfte stimmt."
+   "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Dann tragen die Ersten kurze Hose zu Winterstiefeln. Hauptsache, die Hälfte stimmt."
   },
   {
    "path": "units_10.shorts_early",
-   "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Der Tag ist wie ein alter Diesel. Morgens springt er schlecht an, später läuft er heiß."
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Der Tag ist wie ein alter Diesel. Morgens springt er schlecht an, später läuft er heiß."
   },
   {
    "path": "units_10.shorts_early",
@@ -139,7 +139,7 @@
   },
   {
    "path": "units_10.w_jacket",
-   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Morgen in der Lokalzeitung: „Die Stadt atmet auf.“ Gemeint sind drei Leute ohne Jacke vor der Eisdiele."
+   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Morgen in der Lokalzeitung: „Die Stadt atmet auf.“ Gemeint sind drei Leute vor der Eisdiele."
   },
   {
    "path": "units_10.w_jacket",
@@ -168,7 +168,7 @@
   },
   {
    "path": "units_10.w_jacket",
-   "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Ab dann trägt jeder Zweite die Jacke lässig über den Schultern. Wie ein Mafiaboss. Nur hat keiner Angst."
+   "text": "{WHEN} kann die Jacke weg. || Ab dann trägt jeder Zweite die Jacke lässig über den Schultern. Wie ein Mafiaboss. Nur hat keiner Angst."
   },
   {
    "path": "units_10.w_scarf",
@@ -176,7 +176,7 @@
   },
   {
    "path": "units_10.w_scarf",
-   "text": "Den Schal kannst du {WHEN} wegpacken. || Die Kinder haben ihn sowieso schon an der ersten Ecke ausgezogen. Erfahren tun's die Eltern erst beim Abholen."
+   "text": "Den Schal kannst du {WHEN} wegpacken. || Die Kinder haben ihn sowieso schon an der ersten Ecke ausgezogen. Die Eltern erfahren's erst beim Abholen."
   },
   {
    "path": "units_10.w_scarf",
@@ -224,7 +224,7 @@
   },
   {
    "path": "units_10.w_water",
-   "text": "{WHEN} wird's heiß, da gehört eine Flasche Wasser in die Tasche. || Im Büro bringt dann wieder einer seinen Ventilator mit. Und dreht ihn so, dass nur er was davon hat."
+   "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Im Büro bringt dann wieder einer seinen Ventilator mit. Und dreht ihn so, dass nur er was davon hat."
   },
   {
    "path": "units_10.w_water",
@@ -236,7 +236,7 @@
   },
   {
    "path": "units_10.w_water",
-   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Meine Hitzeskala hat zwei Stufen: „Noch geht's“ und „Oben ohne auf dem Balkon“. Später ist Stufe zwei."
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Meine Hitzeskala: „Noch geht's“ und „Oben ohne auf dem Balkon“. Später ist Stufe zwei."
   },
   {
    "path": "units_10.w_water",
@@ -256,11 +256,11 @@
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || Die Pause reicht, damit du dir einreden kannst, deine Hose wär wieder trocken."
+   "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Die Pause reicht, damit du dir einreden kannst, deine Hose wär wieder trocken."
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der Regen kommt extra noch mal zurück. So viel Aufmerksamkeit kriegst du sonst nur vom Inkassobüro."
+   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der Regen kommt extra zurück. So viel Aufmerksamkeit kriegst du sonst nur vom Inkassobüro."
   },
   {
    "path": "units_11.p_wet_again",
@@ -268,7 +268,7 @@
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm sollte also dabeibleiben. || Draußen läuft heute Waschen, Schleudern, Spülen. Frischer kommst du trotzdem nicht raus."
+   "text": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. || Draußen läuft heute Waschen, Schleudern, Spülen. Frischer kommst du trotzdem nicht raus."
   },
   {
    "path": "units_11.p_wet_again",
@@ -276,7 +276,7 @@
   },
   {
    "path": "units_11.p_wet_again",
-   "text": "Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || In der Pause klappst du den Schirm sicher zu, als hättest du gewonnen. Hast du nicht."
+   "text": "Den Schirm brauchst du heute zweimal: jetzt und {WHENP} wieder. || In der Pause klappst du ihn sicher zu, als hättest du gewonnen. Hast du nicht."
   },
   {
    "path": "units_11.p_wet_again",
@@ -292,11 +292,11 @@
   },
   {
    "path": "units_11.p_wet_again_snow",
-   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || In der Pause zielt sicher irgendwer mit einem Schneeball auf dich. Ich hätt Verständnis."
+   "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || In der Pause zielt sicher irgendwer mit einem Schneeball auf dich. Ich hätt Verständnis."
   },
   {
    "path": "units_11.p_wet_again_snow",
-   "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || In der Pause baut irgendein Kind einen Schneemann. Damit hat es heute mehr geschafft als du."
+   "text": "Der Schneefall hört später auf, {WHENP} geht es weiter. || In der Pause baut irgendein Kind einen Schneemann. Damit hat es heute mehr geschafft als du."
   },
   {
    "path": "units_11.p_wet_again_snow",
@@ -312,11 +312,11 @@
   },
   {
    "path": "units_11.p_wet_again_snow",
-   "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien. || In der Pause kannst du die Kapuze abnehmen. Darunter war's aber auch vorher nicht besser."
+   "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || In der Pause kannst du die Kapuze abnehmen. Darunter war's aber auch vorher nicht besser."
   },
   {
    "path": "units_11.p_wet_again_snow",
-   "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || Mit Schnee in den Haaren sieht man schon mal, wie du mit siebzig aussiehst. Kein Grund zur Vorfreude."
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Mit Schnee im Haar sieht man, wie du mit siebzig aussiehst. Kein Grund zur Vorfreude."
   },
   {
    "path": "units_11.p_wet_again_snow",
