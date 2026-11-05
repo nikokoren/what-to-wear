@@ -72,8 +72,13 @@ the view, the time always under the drawing; the half view lying wide
 puts the words beside them; only the half view standing tall (240 by
 800 on the OG) stacks them, one under the other. The portrait quarter
 keeps the row: stacked with the time under each, its drawings came out
-smaller. The drawings stay square, as drawn (owner, after comparing
-with a 2:3 crop). The times are larger on the X (`lg:label--xlarge`,
+smaller. The image boxes now use a 3:4 shape for the narrower artwork,
+targeting 50% more image height than the previous square slots while
+keeping the panel centers fixed. Short views and the portrait stack
+retain their height budgets so the labels and words still fit. Images
+use `object-fit: contain`: rain and umbrellas are never cropped, and
+older, wider sprites can grow less because they reach the width limit.
+The times are larger on the X (`lg:label--xlarge`,
 `lg:label--large` in the quarter).
 
 The words don't use TRMNL's content limiter. On the X the screen is

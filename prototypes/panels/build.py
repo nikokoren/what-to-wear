@@ -56,9 +56,14 @@ TEMPLATE = """{%- assign has_words = false -%}
   .wtw-box { container-type: size; width: 100%; height: 100%; }
   .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 92cqw; }
   .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 4cqw; }
-  .wtw-panel { display: flex; flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
-  .wtw-panel img { aspect-ratio: 1; object-fit: contain;
-    width: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih)); height: auto; }
+  /* Keep the column centers, but give the narrower artwork 50% more
+     height than the old square slot. The view's height budget still caps
+     short layouts. Contain keeps rain and umbrellas inside the image. */
+  .wtw-panels { --slot: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih));
+    --sprite-height: min(calc(var(--slot) * 1.5), var(--ih)); }
+  .wtw-panel { display: flex; flex: none; width: var(--slot); flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
+  .wtw-panel img { object-fit: contain; max-width: none;
+    width: calc(var(--sprite-height) * 0.75); height: var(--sprite-height); }
   .wtw-panel .label { white-space: nowrap; }
   /* 240 px wide (the OG's portrait quarter): "from" over "3 pm". The
      hours have a no-break space, so "3 pm" stays whole. */
@@ -113,8 +118,13 @@ SIDE = """.screen:not(.screen--portrait) .wtw-side { flex-direction: row; gap: 3
 STACK = """.screen--portrait .wtw-day { --lbl: 3.5cqh; }
   .screen--portrait.screen--lg .wtw-day { --lbl: 4.5cqh; }
   .screen--portrait .wtw-panels { flex-direction: column; align-items: center; gap: 2cqh; }
-  .screen--portrait .wtw-panel img { width: auto;
-    height: min(calc(({{ ihs }}cqh - {{ vgaps }}cqh - {{ panel_n }} * var(--lbl)) / {{ panel_n }}), 84cqw); }"""
+  .screen--portrait .wtw-panel { width: auto; }
+  /* A vertical stack already spends its height budget across all panels;
+     enlarge toward 50% only while the whole stack and its labels fit. */
+  .screen--portrait .wtw-panel img {
+    --stack-slot: min(calc(({{ ihs }}cqh - {{ vgaps }}cqh - {{ panel_n }} * var(--lbl)) / {{ panel_n }}), 84cqw);
+    height: min(calc(var(--stack-slot) * 1.5), calc(({{ ihs }}cqh - {{ vgaps }}cqh - {{ panel_n }} * var(--lbl)) / {{ panel_n }}));
+    width: min(calc(var(--stack-slot) * 1.125), 84cqw); }"""
 
 
 def main():
