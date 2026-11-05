@@ -62,11 +62,20 @@ from the copies the transitional markup carries.
     {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[35cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[78cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[23cqh] lg:portrait:h--max-[22cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
   {%- endif -%}
 {%- endif -%}
+{%- assign row_has_weather = false -%}
+{%- for slug in panel_slug_list -%}
+  {%- if slug contains '_rain' or slug contains '_snow' -%}
+    {%- assign row_has_weather = true -%}{%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if row_has_weather -%}
+  {%- assign c_image = c_image | replace: 'landscape:w--[40cqw]', 'landscape:w--[35cqw]' -%}
+{%- endif -%}
 <div class="{{ c_outer }}">
   <div class="{{ c_row }}" data-wtw="panels">
     {%- for slug in panel_slug_list %}
     <div class="flex flex--col gap--small {{ c_panel }}">
-      <img class="image image--contain image-dither aspect--3/4 {% if slug contains '_rain' or slug contains '_snow' %}{{ c_image | replace: 'landscape:w--[40cqw]', 'landscape:w--[35cqw]' }}{% else %}{{ c_image }}{% endif %}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+      <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
       <span class="label text--center mx--1 lg:label--xlarge{% if forloop.first %} font--bold label--underline{% endif %}">{{ panel_label_list[forloop.index0] }}</span>
     </div>
     {%- endfor %}

@@ -445,6 +445,19 @@ TEXTS["en"]["facts"] = saved_facts
 if saved_u is not None:
     TEXTS["en"]["units_10"] = saved_u
 
+# A rain transition must not resize just the wet outfits within a row.
+for view in VIEWS:
+    for forecast in (False, True):
+        html = render(forecast, view, nxt=True,
+                      probs=[0] * 13 + [90] * 11,
+                      codes=[0] * 13 + [61] * 11)
+        images = re.findall(r'<img class="([^"]*)" src="[^"]*/([^"/]+)\.png" alt="(?!Error)[^"]*">', html)
+        expect(f"mixed day has dry and wet outfits ({view}, forecast={forecast})",
+               any(slug.endswith('_dry') for _, slug in images)
+               and any(slug.endswith('_rain') for _, slug in images))
+        expect(f"mixed day uses one image size for the whole row ({view}, forecast={forecast})",
+               len({classes for classes, _ in images}) == 1)
+
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:
     src = (BUILD / "views" / f"{view}.liquid").read_text(encoding="utf-8")

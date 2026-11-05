@@ -207,22 +207,28 @@ from the copies the transitional markup carries.
                      f"{{%- assign c_words = '{words}' -%}}\n")
         a.append("  {%- endif -%}\n")
     a.append("{%- endif -%}\n")
-    image_classes = "{{ c_image }}"
     if view == "half_vertical":
-        # The transparent weather envelope is wider than the dry figure.
-        # Keep all of it visible, including the older square umbrella PNGs.
-        image_classes = ("{% if slug contains '_rain' or slug contains '_snow' %}"
-                         "{{ c_image | replace: 'landscape:w--[40cqw]', 'landscape:w--[35cqw]' }}"
-                         "{% else %}{{ c_image }}{% endif %}")
+        # Fit the whole row to its widest weather envelope. Never shrink
+        # individual wet panels relative to dry neighbours on a mixed day.
+        a.append("""{%- assign row_has_weather = false -%}
+{%- for slug in panel_slug_list -%}
+  {%- if slug contains '_rain' or slug contains '_snow' -%}
+    {%- assign row_has_weather = true -%}{%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if row_has_weather -%}
+  {%- assign c_image = c_image | replace: 'landscape:w--[40cqw]', 'landscape:w--[35cqw]' -%}
+{%- endif -%}
+""")
     a.append("""<div class="{{ c_outer }}">
   <div class="{{ c_row }}" data-wtw="panels">
     {%- for slug in panel_slug_list %}
     <div class="flex flex--col gap--small {{ c_panel }}">
-      <img class="image image--contain image-dither aspect--3/4 IMAGE_CLASSES" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+      <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
       <span class="label text--center mx--1 LABEL{% if forloop.first %} font--bold label--underline{% endif %}">{{ panel_label_list[forloop.index0] }}</span>
     </div>
     {%- endfor %}
-  </div>""".replace("LABEL", v["label"]).replace("IMAGE_CLASSES", image_classes) + WORDS + "\n</div>\n{%- endif %}\n")
+  </div>""".replace("LABEL", v["label"]) + WORDS + "\n</div>\n{%- endif %}\n")
     a.append(TITLE_BAR)
     return "".join(a)
 
