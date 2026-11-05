@@ -36,14 +36,10 @@ ANCHOR = "{%- comment %}\n============ THE PICTURE"
 # on both sides, so the transparent sides of the square don't push the
 # words away.
 #
-# Two or three drawings: as the prototype had them, rebuilt in classes.
-# - Neighbours overlap by a quarter: each panel is a column 3/4 as wide as
-#   its drawing, the drawing centred and overflowing it (n columns plus a
-#   quarter drawing fill the row: n x 3/4 + 1/4). The figure takes about
-#   55% of the square, so it stays inside its column.
-# - A drawing's box is square (aspect--1/1) and capped in height, so it
-#   is as big as the smaller of its share of the width and the height
-#   cap, and the time sits right under it.
+# Two or three drawings: use the reviewed 50% growth target for the new
+# portrait PNGs. A 3:4 box at 1.125 times the old square slot's width is
+# 1.5 times its height. Keep equal columns and the existing height caps;
+# contain preserves the whole drawing, including rain and umbrellas.
 # - Only the half view standing tall (240 by 800 on the OG) stacks them.
 #
 # The words take their natural height. No content limiter: on the X it
@@ -71,7 +67,7 @@ ONE_MIN = 40    # one drawing never gets less of the height than this
 # (words_fact): the forecast line and the sarcastic line are two to five
 # lines.
 # One drawing beside the words: its column, its box, and the words' width.
-ONE_SIDE = (36, 52, 60)
+ONE_SIDE = (40, 46, 56)
 # A stacked panel's time, with its gap, in view height: OG, X.
 STACK_LABEL = (3.5, 4.5)
 
@@ -169,9 +165,8 @@ from the copies the transitional markup carries.
     # ---- two or three drawings
     a.append("{%- else %}\n")
     def sizes(row, n):
-        den = n * 0.75 + 0.25
-        img = row / den
-        return round(img * 0.75), round(img)
+        slot = (row - (n - 1) * 4) / n
+        return round(row / n), round(slot * 1.125)
     for k in (2, 3):
         a.append(("{%- if n == 2 -%}\n" if k == 2 else "{%- else -%}\n"))
         # Three cases: the forecast line under the drawings (both switches on),
@@ -209,7 +204,7 @@ from the copies the transitional markup carries.
   <div class="{{ c_row }}" data-wtw="panels">
     {%- for slug in panel_slug_list %}
     <div class="flex flex--col gap--small {{ c_panel }}">
-      <img class="image image--contain image-dither aspect--1/1 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+      <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
       <span class="label text--center mx--1 LABEL{% if forloop.first %} font--bold label--underline{% endif %}">{{ panel_label_list[forloop.index0] }}</span>
     </div>
     {%- endfor %}

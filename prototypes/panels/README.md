@@ -111,27 +111,22 @@ half view standing tall 224 to 326, the quarter 146 to 173 (183 to 205
 in portrait), the half view lying wide in portrait 183 to 248; lying
 wide in landscape it already had the full height (173). Lying wide with words (the half view on its
 side, the quarter), it stands beside them at the view's full height. Its
-box (52% of the width) is wider than its column (36%) and overflows it
+box (46% of the width) is wider than its column (40%) and overflows it
 on both sides: the drawing's transparent sides don't push the words away.
 
-**Two or three drawings** look as they did in the prototype, rebuilt in
-classes:
+**Two or three drawings** use the reviewed larger-sprite sizing, in
+framework classes:
 
 - In a row, the time always under the drawing; the half view lying wide
   puts the words beside them; only the half view standing tall (240 by
   800 on the OG) stacks them, one under the other.
-- **Neighbours overlap by a quarter.** Each panel is a column 3/4 as
-  wide as its drawing, with the drawing centred in it and overflowing it
-  on both sides (a flex column centres an item wider than itself). The
-  drawings are transparent and the figure takes about 55% of the square
-  (the two old wide-umbrella drawings up to 95%: their rain reaches into
-  the neighbour's empty side), so the figure stays in its column and a
-  row of three is 2.5 drawings wide instead of three plus gaps.
-- A drawing's box is square and capped in height (`aspect--1/1` with
-  `h--max-[…cqh]`): as big as the smaller of its share of the width and
-  the cap, the time right under it.
-- The drawings stay square, as drawn (owner, after comparing with a 2:3
-  crop).
+- Equal-width columns keep the outfit centers fixed. The image boxes use
+  `aspect--3/4` for the narrower artwork, targeting 50% more image height
+  than the earlier square slots (width is 1.125 times the slot).
+- Existing height caps still protect the words and times in shorter views
+  and the portrait stack. The framework's `image--contain` keeps the whole
+  PNG visible, including rain and umbrellas; older wide PNGs can reach the
+  width limit sooner. Widths round to the framework's whole-cqw classes.
 - The words are the live view's size, except in the two tightest spots
   on the OG (the portrait half-tall column and the quarter), a step
   smaller.
