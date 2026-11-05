@@ -4,14 +4,16 @@ The redesign as one fork: the fact line and the sarcastic line, Visual
 Forecast, jokes about current events, and the new form. Everything here
 is built by `python3 tools/build_beta.py`; don't edit it by hand.
 
-**Current beta: `@bf2407b`** (the commit to put in the texts URL below).
+**Current beta: `@5ec93d7`** (the commit to put in the texts URL below).
 
 The larger-outfit layout update is in `beta/views/`. For an existing beta
 fork, replace all four view templates with these files. Shared markup,
 texts and form settings are unchanged by this layout update.
 
 The latest refinement enlarges the three-outfit half-vertical view in
-landscape again, with a separate cap for rain and umbrella clearance.
+landscape again. Every outfit in a row uses the same size. If any panel
+has rain or snow, the weather clearance cap applies to the entire row;
+individual wet outfits are never shrunk relative to their dry neighbours.
 If the previous larger-outfit build is already installed, only
 `beta/views/half_vertical.liquid` needs replacing.
 
@@ -25,7 +27,7 @@ If the previous larger-outfit build is already installed, only
 
    ```
    https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
-   https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@bf2407b/beta/lang/{{ language | default: 'en' }}.json
+   https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@5ec93d7/beta/lang/{{ language | default: 'en' }}.json
    ```
 
    No `#` anywhere: in a URL it starts a fragment, which never reaches
