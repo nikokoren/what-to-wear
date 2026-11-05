@@ -124,9 +124,9 @@ framework classes:
   `aspect--3/4` for the narrower artwork, targeting 50% more image height
   than the earlier square slots (width is 1.125 times the slot).
 - The three-outfit half-vertical row in landscape gets another 25% of
-  image width for a dry row, with wider columns. If any panel has rain or
-  snow, the entire row uses the weather-safe size (about 9% growth).
-  Every panel in a row uses the same image size, including mixed days.
+  image width for all weather conditions, with the outer columns inset
+  slightly to leave room for rain, snow and umbrellas. Every panel uses
+  the same image size; the weather never changes the scale.
   Single outfits, two-outfit rows and portrait stacks keep their sizes.
 - Existing height caps still protect the words and times in shorter views
   and the portrait stack. The framework's `image--contain` keeps the whole

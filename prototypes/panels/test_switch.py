@@ -457,6 +457,13 @@ for view in VIEWS:
                and any(slug.endswith('_rain') for _, slug in images))
         expect(f"mixed day uses one image size for the whole row ({view}, forecast={forecast})",
                len({classes for classes, _ in images}) == 1)
+        if view == "half_vertical":
+            dry_html = render(forecast, view, nxt=True)
+            dry_images = re.findall(r'<img class="([^"]*)" src="[^"]*/([^"/]+)\.png" alt="(?!Error)[^"]*">', dry_html)
+            expect(f"dry and mixed forecasts exercise three panels (forecast={forecast})",
+                   len(images) == len(dry_images) == 3)
+            expect(f"weather does not change the row's image scale (forecast={forecast})",
+                   {classes for classes, _ in images} == {classes for classes, _ in dry_images})
 
 # Framework classes only: no CSS of our own anywhere in the views.
 for view in VIEWS:

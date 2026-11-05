@@ -180,11 +180,11 @@ from the copies the transitional markup carries.
             panel = f"w--[{col}cqw]"
             image = f"w--[{img}cqw] h--max-[{ih}cqh]"
             # The three-up half-vertical row has spare height. Enlarge its
-            # portrait artwork another 25%, and spread the centers so wet
-            # sprites keep their umbrella clearance. Portrait stacks keep
+            # portrait artwork another 25%, and keep the outer centers
+            # inset so rain, snow and umbrellas fit. Portrait stacks keep
             # their separate width and height budgets below.
             if view == "half_vertical" and k == 3:
-                panel += " landscape:w--[35cqw]"
+                panel += " landscape:w--[33cqw] lg:landscape:w--[32cqw]"
                 image += " landscape:w--[40cqw]"
             outer = "layout layout--col gap--small"
             row = "flex flex--row gap--none"
@@ -207,19 +207,6 @@ from the copies the transitional markup carries.
                      f"{{%- assign c_words = '{words}' -%}}\n")
         a.append("  {%- endif -%}\n")
     a.append("{%- endif -%}\n")
-    if view == "half_vertical":
-        # Fit the whole row to its widest weather envelope. Never shrink
-        # individual wet panels relative to dry neighbours on a mixed day.
-        a.append("""{%- assign row_has_weather = false -%}
-{%- for slug in panel_slug_list -%}
-  {%- if slug contains '_rain' or slug contains '_snow' -%}
-    {%- assign row_has_weather = true -%}{%- break -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- if row_has_weather -%}
-  {%- assign c_image = c_image | replace: 'landscape:w--[40cqw]', 'landscape:w--[35cqw]' -%}
-{%- endif -%}
-""")
     a.append("""<div class="{{ c_outer }}">
   <div class="{{ c_row }}" data-wtw="panels">
     {%- for slug in panel_slug_list %}

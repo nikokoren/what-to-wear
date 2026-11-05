@@ -55,21 +55,12 @@ from the copies the transitional markup carries.
   {%- endif -%}
 {%- else -%}
   {%- if w_fact != '' -%}
-    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[35cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[50cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[14cqh] lg:portrait:h--max-[13cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--large' -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[33cqw] lg:landscape:w--[32cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[50cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[14cqh] lg:portrait:h--max-[13cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--large' -%}
   {%- elsif has_words -%}
-    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[35cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[62cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[18cqh] lg:portrait:h--max-[17cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[33cqw] lg:landscape:w--[32cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[62cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[18cqh] lg:portrait:h--max-[17cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
   {%- else -%}
-    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[35cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[78cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[23cqh] lg:portrait:h--max-[22cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[33cqw] lg:landscape:w--[32cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[78cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[23cqh] lg:portrait:h--max-[22cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
   {%- endif -%}
-{%- endif -%}
-{%- assign row_has_weather = false -%}
-{%- for slug in panel_slug_list -%}
-  {%- if slug contains '_rain' or slug contains '_snow' -%}
-    {%- assign row_has_weather = true -%}{%- break -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- if row_has_weather -%}
-  {%- assign c_image = c_image | replace: 'landscape:w--[40cqw]', 'landscape:w--[35cqw]' -%}
 {%- endif -%}
 <div class="{{ c_outer }}">
   <div class="{{ c_row }}" data-wtw="panels">
