@@ -123,6 +123,10 @@ framework classes:
 - Equal-width columns keep the outfit centers fixed. The image boxes use
   `aspect--3/4` for the narrower artwork, targeting 50% more image height
   than the earlier square slots (width is 1.125 times the slot).
+- The three-outfit half-vertical row in landscape gets another 25% of
+  image width for dry outfits, with wider columns. Rain and snow outfits
+  grow by about 9% so their full weather envelope still fits.
+  Single outfits, two-outfit rows and portrait stacks keep their sizes.
 - Existing height caps still protect the words and times in shorter views
   and the portrait stack. The framework's `image--contain` keeps the whole
   PNG visible, including rain and umbrellas; older wide PNGs can reach the
