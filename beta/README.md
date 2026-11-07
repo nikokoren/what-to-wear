@@ -37,21 +37,21 @@ If the previous larger-outfit build is already installed, only
    `beta/views/<view>.liquid` into its view (full, half horizontal, half
    vertical, quadrant).
 5. **In the fork's settings,** switch What to Wear Next? on (and
-   Forecast as you like), save, and Force Refresh.
+   Written forecast as you like), save, and Force Refresh.
 
 The drawings load from `sprites/` on `main`, where they already are.
 
 ## What to try
 
-- **The two switches,** Forecast and What to Wear Next?, in all four
+- **The two switches,** Written forecast and What to Wear Next?, in all four
   combinations. Both on: the drawings and the forecast line. Both off,
   with sarcasm On: the outfit and a sarcastic line.
 - **A saved "No" in the new on/off field** (this decides whether
   Forecast can become on/off at launch): before pasting the new form,
   set Forecast to "No" with the old form and save. Paste the new form.
-  Does the Forecast box show off? Does the screen still have no
+  Does the Written forecast box show off? Does the screen still have no
   forecast? Save once more without touching it, and check again. If the
-  box shows on, or saving turns the forecast on, Forecast stays a
+  box shows on, or saving turns the forecast on, Written forecast stays a
   select with "Yes"/"No" at launch.
 - **Defaults:** new installs get What to Wear Next? and Sarcasm (On)
   switched on. For an existing install, after pasting: is What to Wear
@@ -61,6 +61,8 @@ The drawings load from `sprites/` on `main`, where they already are.
   box shows ticked (the new default), so saving switches the drawings
   on. That is expected; only a change without a save would be a
   surprise.
+- **When do you head out?** is in the form but does nothing yet: it
+  belongs to the evening preview of tomorrow, which isn't built.
 - **Jokes about current events** are parked: the beta has none.
 - **Sarcasm** Off, On and 11, **both languages**, **all four views**,
   landscape and portrait, OG and X.

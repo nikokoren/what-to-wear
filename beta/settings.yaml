@@ -3,6 +3,12 @@
 # ships. TRMNL is still edited by hand. The owner's spec (October 2026,
 # docs/TODO.md item 12): Language, Do you run cold or warm?, Forecast,
 # What to Wear Next?, Sarcasm, in that order, with these labels.
+# Relabelled November 2026 (owner, after the new-user review): Forecast is
+# "Written forecast", What to Wear Next? says "(outfit drawings)", no
+# "(New!)" (it means nothing to a new install), and Sarcasm says what each
+# level does. "When do you head out?" is new (the evening preview of
+# tomorrow, docs/TODO.md): ship it only together with that screen, since
+# on its own it changes nothing.
 #
 # What changed from settings.yaml, and why no saved value moves:
 #
@@ -85,7 +91,7 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   - German: "de"
 - keyname: temp_preference
   field_type: select
-  name: Do you run cold or warm? (New!)
+  name: Do you run cold or warm?
   description: "Adjust clothing suggestions to match how you experience the temperature."
   description-de: "Passt die Kleidungsvorschläge daran an, wie du Temperaturen empfindest."
   default: "0"
@@ -97,25 +103,43 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   - "I run warm": 2
   - "I'm always hot": 4
   # Words, not degrees, and one uniform shift: see config/settings.yaml.
+- keyname: head_out_time
+  field_type: select
+  name: When do you head out?
+  description: "Every evening, your TRMNL already shows what to wear tomorrow morning. Everyone's morning starts at a different time, so pick your usual time out the door and the preview shows the outfit for that hour. In the morning itself, the screen always shows what to wear right now."
+  description-de: "Jeden Abend zeigt dein TRMNL schon, was du morgen früh anziehen solltest. Weil jeder zu einer anderen Zeit aus dem Haus geht, wähl hier deine übliche Uhrzeit: Die Vorschau zeigt dann das Outfit für genau diese Zeit. Am Morgen selbst zeigt der Bildschirm wie immer, was du jetzt anziehen solltest."
+  default: "varies"
+  optional: true
+  options:
+  - "It varies": "varies"
+  - "Around 5 am": "5"
+  - "Around 6 am": "6"
+  - "Around 7 am": "7"
+  - "Around 8 am": "8"
+  - "Around 9 am": "9"
+  - "Around 10 am": "10"
+  - "Around 11 am": "11"
+  # "It varies": the preview dresses for the coldest hour between 6 and
+  # 9 am and says when it gets easier (docs/TODO.md, tomorrow).
 - keyname: show_future_suggestions
   field_type: boolean
-  name: Forecast
+  name: Written forecast
   description: "Show a written summary of upcoming weather changes and what to wear."
-  description-de: "Zeigt in Worten, welche Wetteränderungen kommen und was du dann anziehen solltest."
+  description-de: "Vorhersage in Worten: zeigt, welche Wetteränderungen kommen und was du dann anziehen solltest."
   default: true
   optional: true
 - keyname: what_to_wear_next
   field_type: boolean
-  name: What to Wear Next? (New!)
+  name: What to Wear Next? (outfit drawings)
   description: "Preview upcoming outfit changes with dressed figurines and the times you'll need them."
-  description-de: "Zeigt mit angezogenen Figuren, welche Outfits heute noch kommen und ab wann du sie brauchst."
+  description-de: "Outfit-Zeichnungen: zeigt mit angezogenen Figuren, welche Outfits heute noch kommen und ab wann du sie brauchst."
   default: true
   optional: true
 - keyname: sarcasm_level
   field_type: select
   name: Sarcasm
-  description: "Turn the sarcasm off, on, or crank it up to 11. Expect commentary on the weather, what's coming, and your questionable life choices, regardless of whether the written forecast is enabled."
-  description-de: "Sarkasmus aus, an oder auf 11 gedreht. Rechne mit Kommentaren zum Wetter, zu dem, was kommt, und zu deinen fragwürdigen Lebensentscheidungen, auch wenn die Vorhersage in Worten aus ist."
+  description: "Off: just the forecast. On: your TRMNL gets smug about the weather. 11: it gets personal."
+  description-de: "Aus: nur die Vorhersage. An: dein TRMNL grantelt übers Wetter. 11: Es wird persönlich."
   default: "10"
   options:
   - "Off": 0
