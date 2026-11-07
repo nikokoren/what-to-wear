@@ -53,10 +53,14 @@ The drawings load from `sprites/` on `main`, where they already are.
   forecast? Save once more without touching it, and check again. If the
   box shows on, or saving turns the forecast on, Forecast stays a
   select with "Yes"/"No" at launch.
-- **Defaults:** after pasting, are What to Wear Next? off and Sarcasm
-  as you had it? If TRMNL fills in defaults for an existing install,
-  the new Sarcasm default (Off) would switch sarcasm off for everyone
-  at launch.
+- **Defaults:** new installs get What to Wear Next? and Sarcasm (On)
+  switched on. For an existing install, after pasting: is What to Wear
+  Next? still off on the screen, and Sarcasm as you had it? If TRMNL
+  fills in form defaults for an existing install without a save,
+  everyone would get the drawings at launch. Then open the form: the
+  box shows ticked (the new default), so saving switches the drawings
+  on. That is expected; only a change without a save would be a
+  surprise.
 - **Jokes about current events** are parked: the beta has none.
 - **Sarcasm** Off, On and 11, **both languages**, **all four views**,
   landscape and portrait, OG and X.

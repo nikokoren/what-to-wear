@@ -15,14 +15,21 @@
 #                            saved "No"? If it shows it as on, a user who
 #                            then saves the form switches the forecast on;
 #                            then this stays a select with "Yes"/"No".
-#   what_to_wear_next        New, on/off, default off: the drawings (it was
+#   what_to_wear_next        New, on/off, default ON for new installs
+#                            (owner, November 2026: the drawings are what
+#                            makes v2 worth a second look). Installs that
+#                            never saved it keep no drawings: the markup
+#                            reads no value as off. They get the ticked
+#                            box only if they open the form and save. The drawings (it was
 #                            Visual Forecast, a third Forecast value,
 #                            "visual", in the first beta; a fork with that
 #                            saved still gets the drawings without words).
 #                            Both switches can be on: drawings and words.
-#   sarcasm_level            Same key and values, default now Off. Saved
-#                            values stay; installs with none keep On, as
-#                            before (the markup's fallback). It works in
+#   sarcasm_level            Same key and values, default On (owner,
+#                            November 2026; the beta had Off). Saved values
+#                            stay; installs with none keep On, as before
+#                            (the markup's fallback), so form and markup
+#                            now agree. It works in
 #                            every mode now, the outfit alone included, so
 #                            nothing hides it any more.
 #   topical_lines            Gone: jokes about current events come with
@@ -102,14 +109,14 @@ What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits w
   name: What to Wear Next? (New!)
   description: "Preview upcoming outfit changes with dressed figurines and the times you'll need them."
   description-de: "Zeigt mit angezogenen Figuren, welche Outfits heute noch kommen und ab wann du sie brauchst."
-  default: false
+  default: true
   optional: true
 - keyname: sarcasm_level
   field_type: select
   name: Sarcasm
   description: "Turn the sarcasm off, on, or crank it up to 11. Expect commentary on the weather, what's coming, and your questionable life choices, regardless of whether the written forecast is enabled."
   description-de: "Sarkasmus aus, an oder auf 11 gedreht. Rechne mit Kommentaren zum Wetter, zu dem, was kommt, und zu deinen fragwürdigen Lebensentscheidungen, auch wenn die Vorhersage in Worten aus ist."
-  default: "0"
+  default: "10"
   options:
   - "Off": 0
   - "On": 10
