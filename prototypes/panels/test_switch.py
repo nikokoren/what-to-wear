@@ -529,6 +529,23 @@ expect("drawings and words off: today as before", EVE not in render2(nxt=False, 
 de = render2(lang="de")
 expect("German evening", "Morgen · Do" in de and ">Heute Abend<" in de and "ab 13\u00a0Uhr Regen" in de)
 
+# The evening line goes by tomorrow's weather (owner, after round 28):
+# jokes_<level>.<situation>, else .any, else none. "{DRY}" sentences only
+# while it's dry now.
+import copy
+saved = TEXTS["en"]
+TEXTS["en"] = copy.deepcopy(saved)
+TEXTS["en"]["evening"]["jokes_10"] = {"rain": ["RAIN LINE"], "any": ["ANY LINE"]}
+TEXTS["en"]["evening"]["facts"]["tmr_rain"] = ["{DRY}DRY ONLY {FROM}.", "ALWAYS {FROM}."]
+expect("a rainy tomorrow gets its own evening line", "RAIN LINE" in render2())
+expect("a kind of tomorrow with no lines falls back to .any", "ANY LINE" in render2(tmr_p=[0] * 24))
+TEXTS["en"]["evening"]["jokes_10"] = {"rain": ["RAIN LINE"]}
+expect("no lines for this tomorrow and no .any: no evening line", "RAIN LINE" not in render2(tmr_p=[0] * 24)
+       and EVE in render2(tmr_p=[0] * 24))
+seen = {("DRY ONLY" in h, "ALWAYS" in h) for h in (render2(hour=hh) for hh in (20, 21, 22, 23))}
+expect("{DRY} sentences show while it's dry", (True, False) in seen)
+TEXTS["en"] = saved
+
 if failures:
     print("FAILED:\n  " + "\n  ".join(failures))
     sys.exit(1)

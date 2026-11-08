@@ -19,7 +19,8 @@ as before: in the morning the screen shows what to wear right now.
     changes: one drawing, "all day".
   - Words: with Written forecast on, tomorrow's sentence (evening.facts),
     after today's forecast line when tonight still changes; with sarcasm
-    on, an evening line (evening.jokes_10 / _11) in place of the day's.
+    on, an evening line for that kind of tomorrow (evening.jokes_10 / _11,
+    by situation) in place of the day's.
 
 Needs tomorrow in the weather payload (forecast_days=2 in the polling
 URL). Without it, nothing here switches on and the evening stays as it
@@ -216,30 +217,45 @@ was. Appended after the drawings block by prototypes/panels/build.py.
   {%- assign wd = weekday_idx | plus: 1 | modulo: 7 -%}
   {%- assign ev_tag = EV.tomorrow | append: ' · ' | append: EV.days[wd] -%}
 
-  {%- comment %} Tomorrow's sentence. {%- endcomment %}
-  {%- if forecast_on -%}
-    {%- if nx_kind == 'T' -%}
-      {%- if nx_rank > ev_rank -%}{%- assign ek = 'tmr_warmer' -%}{%- else -%}{%- assign ek = 'tmr_colder' -%}{%- endif -%}
-    {%- elsif nx_kind == 'P' -%}
-      {%- if nx_wet == 1 and nx_snow == 1 -%}
-        {%- assign ek = 'tmr_snow' -%}
-      {%- elsif nx_wet == 1 -%}
-        {%- assign ek = 'tmr_rain' -%}
-      {%- else -%}
-        {%- assign ek = 'tmr_drier' -%}
-      {%- endif -%}
-    {%- elsif ev_wet == 1 and ev_snow == 1 -%}
-      {%- assign ek = 'tmr_snow_start' -%}
-    {%- elsif ev_wet == 1 -%}
-      {%- assign ek = 'tmr_wet' -%}
+  {%- comment %} What kind of tomorrow: the sentence's situation, and the evening line's pool (ev_sit). {%- endcomment %}
+  {%- if nx_kind == 'T' -%}
+    {%- if nx_rank > ev_rank -%}{%- assign ek = 'tmr_warmer' -%}{%- assign ev_sit = 'warmer' -%}{%- else -%}{%- assign ek = 'tmr_colder' -%}{%- assign ev_sit = 'colder' -%}{%- endif -%}
+  {%- elsif nx_kind == 'P' -%}
+    {%- if nx_wet == 1 and nx_snow == 1 -%}
+      {%- assign ek = 'tmr_snow' -%}{%- assign ev_sit = 'snow' -%}
+    {%- elsif nx_wet == 1 -%}
+      {%- assign ek = 'tmr_rain' -%}{%- assign ev_sit = 'rain' -%}
     {%- else -%}
-      {%- assign ek = 'tmr_steady' -%}
+      {%- assign ek = 'tmr_drier' -%}{%- assign ev_sit = 'drier' -%}
     {%- endif -%}
+  {%- elsif ev_wet == 1 and ev_snow == 1 -%}
+    {%- assign ek = 'tmr_snow_start' -%}{%- assign ev_sit = 'snow' -%}
+  {%- elsif ev_wet == 1 -%}
+    {%- assign ek = 'tmr_wet' -%}{%- assign ev_sit = 'rain' -%}
+  {%- else -%}
+    {%- assign ek = 'tmr_steady' -%}{%- assign ev_sit = 'steady' -%}
+  {%- endif -%}
+
+  {%- comment %}
+  Tomorrow's sentence. "{DRY}" in front: only while it's dry right now
+  (owner: "… ab 13 Uhr ist's wieder trocken" says "again").
+  {%- endcomment %}
+  {%- if forecast_on -%}
     {%- assign el = EV.facts[ek] -%}
     {%- if el and el.size > 0 -%}
       {%- assign en_ = el | size -%}
       {%- assign ei = text_rot | modulo: en_ -%}
-      {%- assign ev_fact = el[ei] | replace: '{FROM}', ev_from -%}
+      {%- for k in (1..en_) -%}
+        {%- assign e_cand = el[ei] -%}
+        {%- if e_cand contains '{DRY}' -%}
+          {%- if is_now_precip == 1 -%}{%- assign e_cand = '' -%}{%- else -%}{%- assign e_cand = e_cand | remove: '{DRY}' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if e_cand != '' -%}
+          {%- assign ev_fact = e_cand | replace: '{FROM}', ev_from -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign ei = ei | plus: 1 | modulo: en_ -%}
+      {%- endfor -%}
     {%- endif -%}
     {%- comment %} Tonight still changes: today's line about it first. {%- endcomment %}
     {%- if visual_forecast and panel_n > 1 and fact_line != '' -%}
@@ -247,10 +263,16 @@ was. Appended after the drawings block by prototypes/panels/build.py.
     {%- endif -%}
   {%- endif -%}
 
-  {%- comment %} The evening's sarcastic line (owner: it stays, at On and 11). {%- endcomment %}
+  {%- comment %}
+  The evening's sarcastic line (owner: it stays, at On and 11). It reacts
+  to tomorrow's weather (owner, after round 28: one pool for every evening
+  had nothing to react to): evening.jokes_<level>.<rain|colder|...>, and
+  .any where that kind of tomorrow has no lines yet. Neither: no line.
+  {%- endcomment %}
   {%- if sarcasm_level != '0' -%}
     {%- assign jk = 'jokes_' | append: sarcasm_level -%}
-    {%- assign jl = EV[jk] -%}
+    {%- assign jl = EV[jk][ev_sit] -%}
+    {%- if jl == nil or jl.size == 0 -%}{%- assign jl = EV[jk].any -%}{%- endif -%}
     {%- if jl and jl.size > 0 -%}
       {%- assign jn = jl | size -%}
       {%- assign ji = text_rot | plus: 3 | modulo: jn -%}

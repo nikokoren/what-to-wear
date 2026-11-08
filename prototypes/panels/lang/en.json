@@ -72,11 +72,15 @@
         "Tomorrow starts with snow."
       ]
     },
-    "jokes_10": [
-      "Two forecasts for the price of one. Still free."
-    ],
-    "jokes_11": [
-      "Lay it out tonight. Morning-you can't be trusted with decisions."
-    ]
+    "jokes_10": {
+      "any": [
+        "Two forecasts for the price of one. Still free."
+      ]
+    },
+    "jokes_11": {
+      "any": [
+        "Lay it out tonight. Morning-you can't be trusted with decisions."
+      ]
+    }
   }
 }

@@ -72,11 +72,15 @@
         "Morgen geht's mit Schnee los."
       ]
     },
-    "jokes_10": [
-      "Morgen wird's auch nicht besser. Ich hab schon nachgeschaut."
-    ],
-    "jokes_11": [
-      "Leg's dir heute schon raus. Morgen früh bist du eh zu nichts zu gebrauchen."
-    ]
+    "jokes_10": {
+      "any": [
+        "Morgen wird's auch nicht besser. Ich hab schon nachgeschaut."
+      ]
+    },
+    "jokes_11": {
+      "any": [
+        "Leg's dir heute schon raus. Morgen früh bist du eh zu nichts zu gebrauchen."
+      ]
+    }
   }
 }
