@@ -1,0 +1,388 @@
+{
+ "lines": [
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow's outfit works all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow, one outfit covers the whole day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow you can wear one outfit all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow is a one-outfit day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "One outfit is enough for all of tomorrow."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow the outfit stays the same all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow, the same outfit works from start to finish."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow you're set for the whole day in one outfit."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow, the outfit you start in lasts all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "For tomorrow, one outfit does the whole day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow, what works at the start works all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow, one outfit is right for the whole day."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow it warms up {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow it gets warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow starts cooler and warms up {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow the temperature climbs {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "It warms up tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Expect it to warm up tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow brings warmer weather {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Warmer weather arrives tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow it's warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow gets warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow the day warms up {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow starts cooler. It gets warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it gets colder {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it cools down {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow turns colder {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it gets colder {FROM}, so bring something warmer."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow you'll want something warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it's colder {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "It gets colder tomorrow {FROM}. Bring something warmer."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Expect colder weather tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it cools off {FROM}, so take something warmer along."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Colder weather moves in tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow starts warmer. It gets colder {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow the temperature drops {FROM}, so pack something warm."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow it rains {FROM}, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Rain moves in tomorrow {FROM}. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow brings rain {FROM}, so take the umbrella along."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Take the umbrella tomorrow. It rains {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow starts dry, with rain {FROM}. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Expect rain tomorrow {FROM}, so pack the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow you'll want the umbrella. It rains {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Rain is coming tomorrow {FROM}, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow there's rain {FROM}. Bring the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Pack the umbrella for tomorrow. Rain arrives {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow's forecast: rain {FROM}. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow turns wet {FROM}, so have the umbrella with you."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow it snows {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Expect snow tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow brings snow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Snow moves in tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow the snow arrives {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow's forecast: snow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "It snows tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow it turns snowy {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Snow comes tomorrow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow there's snow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow it's snowing {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow, snow falls {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow starts wet, then it's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow starts with rain. It's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow there's rain to start, then it's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Take the umbrella tomorrow. The rain stops {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow you'll need the umbrella to start. It's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow begins with rain and turns dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow it rains for a while, then it's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow starts rainy, but it's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow the rain is over {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow's rain stops {FROM}. Take the umbrella until then."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow it's wet to start and dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow the umbrella's for the start. It's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow starts with rain, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow will likely start wet, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Take the umbrella tomorrow. The day starts wet."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow begins wet, so have the umbrella with you."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow starts rainy. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow you'll want the umbrella from the start."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow starts with rain. The umbrella goes with you."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow the day opens with rain, so bring the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Expect a wet start tomorrow. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow's start looks wet, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Rain is likely at the start of tomorrow. Bring the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Pack the umbrella for tomorrow. It starts wet."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow begins with snow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow starts snowy."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Expect a snowy start tomorrow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow opens with snow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "There's snow to start tomorrow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow the day starts with snow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow's start looks snowy."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow kicks off with snow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "It's a snowy start tomorrow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow starts with snow falling."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Snow is likely at the start of tomorrow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow starts out snowy."
+  }
+ ]
+}
