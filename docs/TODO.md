@@ -746,16 +746,17 @@ Keep the unit; cut the follow-up copy.
 ### Tomorrow in the evening (owner, November 2026)
 
 Design sketch: https://claude.ai/artifact/PkzMTf3YvAo9rgAXdQfQaD (round 2,
-the owner's hybrid). From 6 pm to midnight the screen shows tonight on
+the owner's hybrid). From 8 pm to midnight the screen shows tonight on
 the left (an outlined "Tonight" tag: the outfit still coming tonight,
 "from 9 pm", or what you have on, "now") and tomorrow on the right (a
 black "Tomorrow · Sat" tag: the outfit at the reader's time out the door,
 then the next change; one drawing, "all day", on a steady day). Midnight
-to 6 pm: today as v2 shows it. Needs `forecast_days=2`, the evening
+to 8 pm: today as v2 shows it. Needs `forecast_days=2`, the evening
 variant of all four views, a writing round for "tomorrow" sentences (and
-the evening joke, if it stays), and tests (6 pm switch, midnight, steady
+the evening joke, if it stays), and tests (8 pm switch, midnight, steady
 tomorrow, tonight still changing, What to Wear Next? off).
 Form: `head_out_time` ("When do you head out?", default "It varies" =
 dress for the coldest hour from 6 to 9 am) is in config/settings.next.yaml,
-to ship only with this screen. Open: switch at 6 pm or later; joke on the
-evening screen; 2.0 or 2.1.
+to ship only with this screen. Decided: switch at 8 pm, ships in 2.0
+(owner, 8 November 2026). Open: the sarcastic line on the evening screen
+(both renders are on the sketch page).
