@@ -1,0 +1,205 @@
+{
+ "lines": [
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Morgen passt ein Outfit für den ganzen Tag."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Morgen kommst du mit einem Outfit gut durch den ganzen Tag."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Morgen musst du dich nur einmal anziehen."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Das Outfit für morgen passt den ganzen Tag."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Morgen wird's {FROM} wärmer."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Morgen geht's kühler los, {FROM} wird's wärmer."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Morgen wird's {FROM} wärmer, dann reicht was Leichteres."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Morgen steigen die Temperaturen {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Morgen wird's {FROM} kälter."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Morgen geht's wärmer los, {FROM} wird's kälter."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Morgen wird's {FROM} kälter, dann brauchst du eine Schicht mehr.",
+   "was": "Morgen wird's {FROM} kühler, dann brauchst du eine Schicht mehr.",
+   "reasons": [
+    "Passt nicht zur Situation"
+   ]
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Pack für morgen was Wärmeres ein, {FROM} wird's kälter."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Morgen regnet's {FROM}, also nimm den Schirm mit."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Morgen gibt's {FROM} Regen, der Schirm muss also mit."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Denk morgen an den Schirm, {FROM} regnet's."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Morgen ist's erst trocken, {FROM} regnet's. Nimm den Schirm mit."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Morgen schneit's {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Morgen gibt's {FROM} Schnee."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Rechne morgen {FROM} mit Schnee."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Für morgen ist {FROM} Schnee gemeldet."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Morgen geht's nass los, {FROM} ist's trocken."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Morgen brauchst du erst mal den Schirm, {FROM} ist's trocken.",
+   "was": "Morgen brauchst du erst den Schirm, {FROM} ist's trocken.",
+   "reasons": [
+    "Klingt unnatürlich",
+    "Unklar"
+   ]
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Morgen ist {FROM} Schluss mit dem Regen."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Morgen regnet's zunächst, {FROM} bleibt's trocken.",
+   "was": "Morgen regnet's zunächst, {FROM} wird's trocken.",
+   "reasons": [
+    "Klingt unnatürlich"
+   ]
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Morgen geht's mit Regen los, also nimm den Schirm mit."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Morgen brauchst du gleich den Schirm, es geht nass los."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Leg dir für morgen den Schirm bereit, es geht nass los."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Morgen beginnt der Tag mit Regen, also pack den Schirm ein."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Morgen geht's gleich mit Schnee los."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Morgen fängt der Tag mit Schnee an."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Morgen schneit's schon, wenn der Tag losgeht."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Morgen schneit's gleich zu Tagesbeginn.",
+   "was": "Morgen schneit's gleich zu Beginn.",
+   "reasons": [
+    "Unklar"
+   ]
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Ich wollte morgen absagen. Zu kurzfristig, hieß es."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Allergiehinweis: Morgen kann Spuren von Montag enthalten."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Am Abend vorher sieht jeder Tag harmlos aus. Das ist seine Masche."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Morgen ist die Fortsetzung von heute. Fortsetzungen sind meistens schlechter."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Abends ist jeder ein Frühaufsteher. Morgens komischerweise keiner."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Das Gute an der Vorschau: Man kann sich schon heute drüber ärgern. Spart morgen Zeit."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Hinweis: Diese Vorschau ist unverbindlich. Der Tag selbst leider nicht."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Die Sachen für morgen sehen gut aus. Solange du nicht drinsteckst."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Morgen ist das Wetter früher wach als dein Gesicht."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Ich sag's dir schon heute. Dann hast du die ganze Nacht Zeit, es falsch zu verstehen."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Leg dir für morgen auch gleich ein Lächeln raus. Morgens findest du sonst keins."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Die Sachen für morgen legst du sicher wieder auf den Stuhl. Zu denen von letzter Woche."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Ich mach diese Vorschau extra für dich. Andere Leute wissen auch so, was sie anziehen."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Schön, dass du dir mal Gedanken um deine Kleidung machst. Gemerkt hat man's bisher nicht."
+  }
+ ]
+}

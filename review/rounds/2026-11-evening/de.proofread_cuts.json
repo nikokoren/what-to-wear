@@ -1,0 +1,14 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10",
+   "text": "Das Wetter für morgen ist schon fertig. Die meisten Leute um die Uhrzeit auch.",
+   "reason": "Das Wortspiel mit „fertig“ (bereit / erschöpft) läuft schon live: flavour_11 „Für den Abend bist du also fertig angezogen. Fertig aussehen tust du schon länger.“ Dazu ist „Das Wetter … ist schon fertig“ schief (fertig ist die Vorhersage, nicht das Wetter). Mit „Die Vorhersage“ wäre der Satz richtig, aber immer noch dieselbe Pointe."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Wer abends schon nach morgen schaut, hat sein Leben im Griff. Heißt es. Hallo, Ausnahme.",
+   "reason": "Dieselbe Idee wie die Live-Unit in units_11 („… siehst du kurz aus, als hättest du dein Leben im Griff“) und nah am Veto „Einer von uns hat sein Leben im Griff“. „Hallo, Ausnahme.“ klingt übersetzt („Hello, exception“). Wenn man die Pointe deutsch macht („Du bist die Ausnahme.“), bleibt die Idee doppelt."
+  }
+ ]
+}
