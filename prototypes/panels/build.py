@@ -106,6 +106,58 @@ WORDS = """
   {%- endif %}"""
 
 
+# The evening (prototypes/panels/evening.liquid): tonight | tomorrow.
+# Per view: a drawing's column width and height cap (in view units), and
+# whether the words fit under the drawings. The half view lying wide and
+# the quarter show tags, drawings and times only.
+EVENING = {
+    "full": dict(w=30, h=46, h_bare=60, words="content--base lg:content--large", words_ok=True),
+    "half_horizontal": dict(w=30, h=62, h_bare=62, words="content--small lg:content--base", words_ok=False),
+    "half_vertical": dict(w=29, h=40, h_bare=54, words="content--small lg:content--base", words_ok=True),
+    "quadrant": dict(w=29, h=56, h_bare=56, words="content--small lg:content--base", words_ok=False),
+}
+
+
+def evening_view(v):
+    e = EVENING[v["_name"]]
+    w, label = e["w"], v["label"]
+    cell = (f'<div class="flex flex--col gap--small w--[{w}cqw]">'
+            f'<img class="image image--contain image-dither aspect--3/4 w--[{w + 1}cqw] h--max-[{{{{ ev_h }}}}cqh]" '
+            f'src="{{{{ sprite_base_url }}}}{{{{ SLUG }}}}.png" alt="{{{{ SLUG }}}}">'
+            f'<span class="label text--center {label}">{{{{ LABEL }}}}</span></div>')
+    words = """
+  {%- if ev_words %}
+  <div class="content content--center text--center w--[94cqw] """ + e["words"] + """" data-wtw="words">
+    {%- if ev_fact != '' %}<p class="font--bold">{{ ev_fact }}</p>{%- endif %}
+    {%- if ev_joke != '' %}<p>{{ ev_joke }}</p>{%- endif %}
+  </div>
+  {%- endif %}"""
+    words_ok = "true" if e["words_ok"] else "false"
+    return ("{%- elsif evening_on %}\n"
+            "{%- assign ev_words = false -%}\n"
+            "{%- if ev_fact != '' or ev_joke != '' -%}{%- assign ev_words = true -%}{%- endif -%}\n"
+            "{%- if ev_tonight_slug != '' and " + words_ok + " == false -%}{%- assign ev_words = false -%}{%- endif -%}\n"
+            "{%- if ev_words -%}{%- assign ev_h = " + str(e["h"]) + " -%}{%- else -%}{%- assign ev_h = " + str(e["h_bare"]) + " -%}{%- endif -%}\n"
+            '<div class="layout layout--col gap--small" data-wtw="evening">\n'
+            '  <div class="flex flex--row gap--small">\n'
+            "  {%- if ev_tonight_slug != '' %}\n"
+            f'    <div class="flex flex--col flex--center-x gap--small w--[{w + 2}cqw]">\n'
+            '      <span class="label label--outline">{{ texts.evening.tonight }}</span>\n      '
+            + cell.replace("{{ SLUG }}", "{{ ev_tonight_slug }}").replace("{{ LABEL }}", "{{ ev_tonight_label }}") + "\n"
+            "    </div>\n"
+            '    <div class="divider divider--v"></div>\n'
+            "  {%- endif %}\n"
+            '    <div class="flex flex--col flex--center-x gap--small">\n'
+            '      <span class="label label--inverted" data-wtw="tomorrow">{{ ev_tag }}</span>\n'
+            '      <div class="flex flex--row gap--none">\n'
+            "      {%- for slug in ev_slug_list %}\n"
+            "      {%- if ev_tonight_slug != '' or forloop.first %}\n        "
+            + cell.replace("{{ SLUG }}", "{{ slug }}").replace("{{ LABEL }}", "{{ ev_label_list[forloop.index0] }}") + "\n"
+            "      {%- endif %}\n"
+            "      {%- endfor %}\n"
+            "      </div>\n    </div>\n  </div>" + words + "\n</div>\n")
+
+
 def build_view(view, v):
     """One view: every forecast mode, panel count and orientation."""
     side, side_one, stack = v.get("side", False), v.get("side_one", False), v.get("stack")
@@ -138,6 +190,7 @@ from the copies the transitional markup carries.
 """)
     err = ERROR["row" if (side or side_one) else "col"]
     a.append("{%- if is_error %}\n" + err + "\n")
+    a.append(evening_view(v))
 
     # ---- one drawing
     col_words = f"w--[96cqw] {v['words']}"
@@ -226,12 +279,13 @@ def main():
         raise SystemExit("anchor not found in src/shared.liquid")
     ff = (FF / "block.liquid").read_text(encoding="utf-8")
     block = (HERE / "block.liquid").read_text(encoding="utf-8")
+    block += "\n" + (HERE / "evening.liquid").read_text(encoding="utf-8")
     (OUT / "views").mkdir(parents=True, exist_ok=True)
     (OUT / "lang").mkdir(parents=True, exist_ok=True)
     (OUT / "shared.liquid").write_text(shared.replace(ANCHOR, ff + "\n\n" + ANCHOR, 1) + "\n" + block, encoding="utf-8")
 
     for view, v in VIEWS.items():
-        (OUT / "views" / f"{view}.liquid").write_text(build_view(view, v), encoding="utf-8")
+        (OUT / "views" / f"{view}.liquid").write_text(build_view(view, {**v, "_name": view}), encoding="utf-8")
 
     for lang in ("en", "de"):
         doc = json.loads((REPO / "lang" / f"{lang}.json").read_text(encoding="utf-8"))

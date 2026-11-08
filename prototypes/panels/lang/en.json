@@ -28,5 +28,55 @@
       "10 pm",
       "11 pm"
     ]
+  },
+  "evening": {
+    "_note": "Stand-ins until the evening writing round (docs/TODO.md, Tomorrow in the evening).",
+    "tonight": "Tonight",
+    "tomorrow": "Tomorrow",
+    "now": "now",
+    "all_day": "all day",
+    "window": "6–9 am",
+    "bar": "Tonight & tomorrow",
+    "days": [
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "facts": {
+      "tmr_steady": [
+        "Tomorrow, one outfit works all day."
+      ],
+      "tmr_warmer": [
+        "Tomorrow it warms up {FROM}, so a layer can come off."
+      ],
+      "tmr_colder": [
+        "Tomorrow it gets colder {FROM}, so bring a layer."
+      ],
+      "tmr_rain": [
+        "Tomorrow: rain {FROM}, so take the umbrella."
+      ],
+      "tmr_snow": [
+        "Tomorrow: snow {FROM}."
+      ],
+      "tmr_drier": [
+        "Tomorrow starts wet. The rain stops {FROM}."
+      ],
+      "tmr_wet": [
+        "Tomorrow starts wet, so take the umbrella."
+      ],
+      "tmr_snow_start": [
+        "Tomorrow starts with snow."
+      ]
+    },
+    "jokes_10": [
+      "Two forecasts for the price of one. Still free."
+    ],
+    "jokes_11": [
+      "Lay it out tonight. Morning-you can't be trusted with decisions."
+    ]
   }
 }

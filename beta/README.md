@@ -26,7 +26,7 @@ If the previous larger-outfit build is already installed, only
    weather from the first and the texts from the second):
 
    ```
-   https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=1&timezone=auto
+   https://api.open-meteo.com/v1/forecast?latitude={{ lat_lon | split: ',' | first | strip | default: latitude }}&longitude={{ lat_lon | split: ',' | last | strip | default: longitude }}&hourly=temperature_2m,precipitation_probability,apparent_temperature,weather_code&current=temperature_2m,apparent_temperature,weather_code&forecast_days=2&timezone=auto
    https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@2a30dcd/beta/lang/{{ language | default: 'en' }}.json
    ```
 
@@ -61,8 +61,12 @@ The drawings load from `sprites/` on `main`, where they already are.
   box shows ticked (the new default), so saving switches the drawings
   on. That is expected; only a change without a save would be a
   surprise.
-- **When do you head out?** is in the form but does nothing yet: it
-  belongs to the evening preview of tomorrow, which isn't built.
+- **The evening, from 8 pm:** tonight on the left, tomorrow on the
+  right. It needs the new weather URL above (`forecast_days=2`): an
+  existing beta fork has to paste it again, or the evening stays as it
+  was. Try **When do you head out?** at 6 am and 9 am on a day that
+  starts cold, and "It varies". The evening sentences and jokes are
+  stand-ins until their writing round.
 - **Jokes about current events** are parked: the beta has none.
 - **Sarcasm** Off, On and 11, **both languages**, **all four views**,
   landscape and portrait, OG and X.

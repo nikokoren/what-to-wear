@@ -31,6 +31,38 @@ from the copies the transitional markup carries.
     </div>
   </div>
 </div>
+{%- elsif evening_on %}
+{%- assign ev_words = false -%}
+{%- if ev_fact != '' or ev_joke != '' -%}{%- assign ev_words = true -%}{%- endif -%}
+{%- if ev_tonight_slug != '' and true == false -%}{%- assign ev_words = false -%}{%- endif -%}
+{%- if ev_words -%}{%- assign ev_h = 40 -%}{%- else -%}{%- assign ev_h = 54 -%}{%- endif -%}
+<div class="layout layout--col gap--small" data-wtw="evening">
+  <div class="flex flex--row gap--small">
+  {%- if ev_tonight_slug != '' %}
+    <div class="flex flex--col flex--center-x gap--small w--[31cqw]">
+      <span class="label label--outline">{{ texts.evening.tonight }}</span>
+      <div class="flex flex--col gap--small w--[29cqw]"><img class="image image--contain image-dither aspect--3/4 w--[30cqw] h--max-[{{ ev_h }}cqh]" src="{{ sprite_base_url }}{{ ev_tonight_slug }}.png" alt="{{ ev_tonight_slug }}"><span class="label text--center lg:label--xlarge">{{ ev_tonight_label }}</span></div>
+    </div>
+    <div class="divider divider--v"></div>
+  {%- endif %}
+    <div class="flex flex--col flex--center-x gap--small">
+      <span class="label label--inverted" data-wtw="tomorrow">{{ ev_tag }}</span>
+      <div class="flex flex--row gap--none">
+      {%- for slug in ev_slug_list %}
+      {%- if ev_tonight_slug != '' or forloop.first %}
+        <div class="flex flex--col gap--small w--[29cqw]"><img class="image image--contain image-dither aspect--3/4 w--[30cqw] h--max-[{{ ev_h }}cqh]" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}"><span class="label text--center lg:label--xlarge">{{ ev_label_list[forloop.index0] }}</span></div>
+      {%- endif %}
+      {%- endfor %}
+      </div>
+    </div>
+  </div>
+  {%- if ev_words %}
+  <div class="content content--center text--center w--[94cqw] content--small lg:content--base" data-wtw="words">
+    {%- if ev_fact != '' %}<p class="font--bold">{{ ev_fact }}</p>{%- endif %}
+    {%- if ev_joke != '' %}<p>{{ ev_joke }}</p>{%- endif %}
+  </div>
+  {%- endif %}
+</div>
 {%- elsif n == 1 %}
 {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_wrap = '' -%}{%- assign c_image = 'image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[40cqh]' -%}{%- assign c_words = 'w--[96cqw] content--large lg:content--xlarge' -%}
 <div class="{{ c_outer }}">

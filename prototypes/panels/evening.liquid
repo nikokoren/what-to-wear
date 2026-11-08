@@ -1,0 +1,263 @@
+{%- comment %}
+============ THE EVENING: TONIGHT AND TOMORROW ============
+Owner, November 2026 (docs/TODO.md, "Tomorrow in the evening"): from
+EVENING_HOUR to midnight the screen shows tonight on the left and
+tomorrow on the right. Before that, and from midnight on, today exactly
+as before: in the morning the screen shows what to wear right now.
+
+  - Tonight (outlined tag): the last of today's drawings when something
+    still changes tonight ("from 9 pm"), otherwise what you have on
+    ("now"). Only with What to Wear Next? on.
+  - Tomorrow (black tag, with the weekday): the outfit at the reader's
+    time out the door (head_out_time; "varies" dresses for the coldest
+    hour from 6 to 9 am), then the first change after it, the way the
+    day's drawings find changes: an outfit band held for two hours, rain
+    or snow starting (one hour at RAIN_HIGH), two dry hours ending it.
+    Rain or snow starting wins over an outfit change (the umbrella has
+    to go in the bag in the morning), drawn in the outfit of that hour.
+    T-shirt and shorts count as one, as later in the day. Nothing
+    changes: one drawing, "all day".
+  - Words: with Written forecast on, tomorrow's sentence (evening.facts),
+    after today's forecast line when tonight still changes; with sarcasm
+    on, an evening line (evening.jokes_10 / _11) in place of the day's.
+
+Needs tomorrow in the weather payload (forecast_days=2 in the polling
+URL). Without it, nothing here switches on and the evening stays as it
+was. Appended after the drawings block by prototypes/panels/build.py.
+{%- endcomment %}
+{%- assign EVENING_HOUR = 20 -%}
+{%- assign evening_on = false -%}
+{%- assign ev_slugs = '' -%}
+{%- assign ev_labels = '' -%}
+{%- assign ev_tonight_slug = '' -%}
+{%- assign ev_tonight_label = '' -%}
+{%- assign ev_fact = '' -%}
+{%- assign ev_joke = '' -%}
+{%- assign EV = texts.evening -%}
+{%- if is_error == false and texts_ok and EV and local_hour >= EVENING_HOUR and temps -%}
+  {%- if visual_forecast or forecast_on -%}
+    {%- assign t0 = now_index | minus: local_hour | plus: 24 -%}
+    {%- assign t_end = t0 | plus: DAY_END_HOUR -%}
+    {%- assign t_last = t_end | plus: 1 -%}
+    {%- assign t_probe = h.time[t_last] | default: '' -%}
+    {%- assign t_start_probe = h.time[t0] | default: '' | slice: 11, 2 -%}
+    {%- if t_probe != '' and t_start_probe == '00' -%}
+      {%- assign evening_on = true -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if evening_on -%}
+  {%- assign PN = texts.panels -%}
+  {%- comment %} The reader's time out the door. {%- endcomment %}
+  {%- assign ho_raw = trmnl.plugin_settings.custom_fields_values.head_out_time | append: '' | strip -%}
+  {%- assign ho_from = 6 -%}
+  {%- assign ho_to = 9 -%}
+  {%- assign ho_label = EV.window -%}
+  {%- assign ho_num = ho_raw | plus: 0 -%}
+  {%- if ho_num >= 4 and ho_num <= 12 -%}
+    {%- assign ho_from = ho_num -%}
+    {%- assign ho_to = ho_num -%}
+    {%- assign ho_label = PN.hours[ho_num] | default: ho_num -%}
+  {%- endif -%}
+
+  {%- comment %} Tomorrow's first outfit: the coldest band in the window, wet if rain is likely in it. {%- endcomment %}
+  {%- assign ev_rank = 99 -%}
+  {%- assign ev_wet = 0 -%}
+  {%- assign ev_snow = 0 -%}
+  {%- assign i_from = t0 | plus: ho_from -%}
+  {%- assign i_to = t0 | plus: ho_to -%}
+  {%- for i in (i_from..i_to) -%}
+    {%- assign tv = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 | plus: temp_shift -%}
+    {%- assign rk = 1 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if tv > edge_c -%}{%- assign rk = forloop.index | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if rk < ev_rank -%}{%- assign ev_rank = rk -%}{%- endif -%}
+    {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
+    {%- if pv >= RAIN_HIGH -%}
+      {%- assign ev_wet = 1 -%}
+      {%- if codes -%}
+        {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+        {%- if SNOW_CODES contains cp -%}{%- assign ev_snow = 1 -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- comment %} The first change after it, up to DAY_END_HOUR tomorrow. {%- endcomment %}
+  {%- assign cur_rank = ev_rank -%}
+  {%- assign cur_wet = ev_wet -%}
+  {%- assign nx_kind = '' -%}
+  {%- assign nx_rank = ev_rank -%}
+  {%- assign nx_wet = ev_wet -%}
+  {%- assign nx_snow = 0 -%}
+  {%- assign nx_hour = 0 -%}
+  {%- assign t_hour = -1 -%}
+  {%- assign p_hour = -1 -%}
+  {%- assign i_from = i_to | plus: 1 -%}
+  {%- for i in (i_from..t_end) -%}
+    {%- assign j = i | plus: 1 -%}
+    {%- assign ta = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
+    {%- assign tb = temps[j] | default: temps_air[j] | default: ta | plus: 0 -%}
+    {%- assign held_hi = ta -%}
+    {%- assign held_lo = ta -%}
+    {%- if tb < held_hi -%}{%- assign held_hi = tb -%}{%- endif -%}
+    {%- if tb > held_lo -%}{%- assign held_lo = tb -%}{%- endif -%}
+    {%- assign hi_b = held_hi | plus: temp_shift -%}
+    {%- assign lo_b = held_lo | plus: temp_shift -%}
+    {%- assign r_hi = 1 -%}
+    {%- assign r_lo = 1 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if hi_b > edge_c -%}{%- assign r_hi = forloop.index | plus: 1 -%}{%- endif -%}
+      {%- if lo_b > edge_c -%}{%- assign r_lo = forloop.index | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- assign new_rank = cur_rank -%}
+    {%- if r_hi > cur_rank -%}
+      {%- assign new_rank = r_hi -%}
+    {%- elsif r_lo < cur_rank -%}
+      {%- assign new_rank = r_lo -%}
+    {%- endif -%}
+    {%- comment %} T-shirt and shorts are one outfit later in the day. {%- endcomment %}
+    {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}{%- assign new_rank = cur_rank -%}{%- endif -%}
+    {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+    {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+    {%- assign new_wet = cur_wet -%}
+    {%- assign new_snow = 0 -%}
+    {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
+      {%- assign new_wet = 1 -%}
+      {%- if codes -%}
+        {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+        {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
+      {%- endif -%}
+    {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+      {%- assign new_wet = 0 -%}
+    {%- endif -%}
+    {%- comment %} The first outfit change, and the first rain or snow starting (or, wet from the start, stopping). {%- endcomment %}
+    {%- if new_rank != cur_rank and t_hour == -1 -%}
+      {%- assign t_hour = i | minus: t0 -%}
+      {%- assign t_rank = new_rank -%}
+      {%- assign t_wet = new_wet -%}
+    {%- endif -%}
+    {%- if new_wet != cur_wet and p_hour == -1 -%}
+      {%- if new_wet == 1 or ev_wet == 1 -%}
+        {%- assign p_hour = i | minus: t0 -%}
+        {%- assign p_rank = new_rank -%}
+        {%- assign p_wet = new_wet -%}
+        {%- assign p_snow = new_snow -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign cur_rank = new_rank -%}
+    {%- assign cur_wet = new_wet -%}
+  {%- endfor -%}
+  {%- if p_hour >= 0 -%}
+    {%- assign nx_kind = 'P' -%}
+    {%- assign nx_rank = p_rank -%}
+    {%- assign nx_wet = p_wet -%}
+    {%- assign nx_snow = p_snow -%}
+    {%- assign nx_hour = p_hour -%}
+  {%- elsif t_hour >= 0 -%}
+    {%- assign nx_kind = 'T' -%}
+    {%- assign nx_rank = t_rank -%}
+    {%- assign nx_wet = t_wet -%}
+    {%- assign nx_hour = t_hour -%}
+  {%- endif -%}
+
+  {%- comment %} Drawings: a slug from a band and the weather, as the day's drawings do. {%- endcomment %}
+  {%- assign ri = ev_rank | minus: 1 -%}
+  {%- assign e_band = band_name_list[ri] -%}
+  {%- assign e_suffix = 'dry' -%}
+  {%- if ev_wet == 1 -%}
+    {%- assign e_suffix = 'rain' -%}
+    {%- if ev_snow == 1 -%}
+      {%- assign sprobe = ',' | append: e_band | append: ',' -%}
+      {%- if SNOW_OUTFITS contains sprobe -%}{%- assign e_suffix = 'snow' -%}{%- else -%}{%- assign e_suffix = 'dry' -%}{%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign ev_slugs = e_band | append: '_' | append: e_suffix -%}
+  {%- assign ev_from = '' -%}
+  {%- if nx_kind != '' -%}
+    {%- assign ri = nx_rank | minus: 1 -%}
+    {%- assign n_band = band_name_list[ri] -%}
+    {%- assign n_suffix = 'dry' -%}
+    {%- if nx_wet == 1 -%}
+      {%- assign n_suffix = 'rain' -%}
+      {%- if nx_snow == 1 -%}
+        {%- assign sprobe = ',' | append: n_band | append: ',' -%}
+        {%- if SNOW_OUTFITS contains sprobe -%}{%- assign n_suffix = 'snow' -%}{%- else -%}{%- assign n_suffix = 'dry' -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign n_slug = n_band | append: '_' | append: n_suffix -%}
+    {%- assign ev_from = PN.hours[nx_hour] | default: nx_hour -%}
+    {%- assign ev_from = PN.from | append: ' ' | append: ev_from -%}
+    {%- if n_slug == ev_slugs -%}
+      {%- comment %} A change that draws the same (snow on a T-shirt day): one drawing. {%- endcomment %}
+      {%- assign ev_labels = ho_label -%}
+    {%- else -%}
+      {%- assign ev_slugs = ev_slugs | append: '|' | append: n_slug -%}
+      {%- assign ev_labels = ho_label | append: '|' | append: ev_from -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign ev_labels = EV.all_day -%}
+  {%- endif -%}
+
+  {%- comment %} Tonight: the last of today's drawings when tonight still changes, otherwise now. {%- endcomment %}
+  {%- if visual_forecast -%}
+    {%- assign ev_tonight_slug = panel_slug_list | last -%}
+    {%- if panel_n > 1 -%}
+      {%- assign ev_tonight_label = panel_label_list | last -%}
+    {%- else -%}
+      {%- assign ev_tonight_label = EV.now -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment %} The tag: "Tomorrow · Sat". {%- endcomment %}
+  {%- assign wd = weekday_idx | plus: 1 | modulo: 7 -%}
+  {%- assign ev_tag = EV.tomorrow | append: ' · ' | append: EV.days[wd] -%}
+
+  {%- comment %} Tomorrow's sentence. {%- endcomment %}
+  {%- if forecast_on -%}
+    {%- if nx_kind == 'T' -%}
+      {%- if nx_rank > ev_rank -%}{%- assign ek = 'tmr_warmer' -%}{%- else -%}{%- assign ek = 'tmr_colder' -%}{%- endif -%}
+    {%- elsif nx_kind == 'P' -%}
+      {%- if nx_wet == 1 and nx_snow == 1 -%}
+        {%- assign ek = 'tmr_snow' -%}
+      {%- elsif nx_wet == 1 -%}
+        {%- assign ek = 'tmr_rain' -%}
+      {%- else -%}
+        {%- assign ek = 'tmr_drier' -%}
+      {%- endif -%}
+    {%- elsif ev_wet == 1 and ev_snow == 1 -%}
+      {%- assign ek = 'tmr_snow_start' -%}
+    {%- elsif ev_wet == 1 -%}
+      {%- assign ek = 'tmr_wet' -%}
+    {%- else -%}
+      {%- assign ek = 'tmr_steady' -%}
+    {%- endif -%}
+    {%- assign el = EV.facts[ek] -%}
+    {%- if el and el.size > 0 -%}
+      {%- assign en_ = el | size -%}
+      {%- assign ei = text_rot | modulo: en_ -%}
+      {%- assign ev_fact = el[ei] | replace: '{FROM}', ev_from -%}
+    {%- endif -%}
+    {%- comment %} Tonight still changes: today's line about it first. {%- endcomment %}
+    {%- if visual_forecast and panel_n > 1 and fact_line != '' -%}
+      {%- assign ev_fact = fact_line | append: ' ' | append: ev_fact -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment %} The evening's sarcastic line (owner: it stays, at On and 11). {%- endcomment %}
+  {%- if sarcasm_level != '0' -%}
+    {%- assign jk = 'jokes_' | append: sarcasm_level -%}
+    {%- assign jl = EV[jk] -%}
+    {%- if jl and jl.size > 0 -%}
+      {%- assign jn = jl | size -%}
+      {%- assign ji = text_rot | plus: 3 | modulo: jn -%}
+      {%- assign ev_joke = jl[ji] -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if location_label == '' -%}{%- assign location_label = EV.bar -%}{%- endif -%}
+{%- endif -%}
+{%- assign ev_slug_list = ev_slugs | split: '|' -%}
+{%- assign ev_label_list = ev_labels | split: '|' -%}

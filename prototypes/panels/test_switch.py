@@ -472,6 +472,63 @@ for view in VIEWS:
 html = render(False, lang="de", nxt=True)
 expect("German drawings say 'ab'", ">ab " in html and ">Jetzt<" in html)
 
+# The evening (prototypes/panels/evening.liquid): from 8 pm, tonight |
+# tomorrow, with tomorrow in the payload (forecast_days=2). Tomorrow here:
+# cold early, warmer from late morning, rain 1 pm to 5 pm.
+TMR = [-1, -1, -1, -1, -1, -1, 0, 1, 3, 4, 6, 8, 9, 9, 9, 9, 8, 7, 6, 6, 5, 5, 5, 5]
+TMR_P = [0] * 13 + [80] * 4 + [0] * 7
+
+
+def render2(hour=20, days=2, ho=None, tmr=None, tmr_p=None, view="full", sarcasm="10", lang="en", nxt=True, forecast=True):
+    today = [8] * 6 + [9, 10, 11, 12, 12, 12, 12, 12, 12, 11, 10, 9, 9, 8, 8, 8, 8, 8]
+    feels = today + (tmr or TMR)
+    probs = [0] * 24 + (tmr_p if tmr_p is not None else TMR_P)
+    d = dt.date.fromisoformat(DATE)
+    d2 = d + dt.timedelta(days=1)
+    times = [f"{d}T{h:02d}:00" for h in range(24)] + [f"{d2}T{h:02d}:00" for h in range(24)]
+    n = 24 * days
+    data = {"utc_offset_seconds": OFFSET, "timezone": "Europe/Vienna",
+            "current": {"time": f"{DATE}T{hour:02d}:30", "temperature_2m": feels[hour],
+                        "apparent_temperature": feels[hour], "weather_code": 0},
+            "hourly": {"time": times[:n], "temperature_2m": feels[:n], "apparent_temperature": feels[:n],
+                       "precipitation_probability": probs[:n], "weather_code": [61 if p else 0 for p in probs][:n]}}
+    cfg = {"language": lang, "sarcasm_level": sarcasm, "lat_lon": "48.2,16.4", "show_bottom_bar": "on",
+           "show_future_suggestions": forecast, "what_to_wear_next": nxt}
+    if ho is not None:
+        cfg["head_out_time"] = ho
+    ts = calendar.timegm((d.year, d.month, d.day, hour, 30, 0)) - OFFSET
+    ctx = {"trmnl": {"plugin_settings": {"custom_fields_values": cfg}, "system": {"timestamp_utc": ts},
+                     "user": {"utc_offset": OFFSET}, "device": {"width": 800}},
+           "IDX_0": data, "IDX_1": TEXTS[lang]}
+    return VIEWS[view].render(**ctx)
+
+
+EVE = 'data-wtw="evening"'
+for view in VIEWS:
+    html = render2(view=view)
+    expect(f"8:30 pm with tomorrow in the payload: the evening ({view})", EVE in html and "Tomorrow · Thu" in html
+           and ">Tonight<" in html)
+    expect(f"7:30 pm: still today ({view})", EVE not in render2(hour=19, view=view))
+    expect(f"no tomorrow in the payload: still today ({view})", EVE not in render2(days=1, view=view))
+html = render2()
+expect("tomorrow: the coldest outfit 6 to 9 am, then the rain", re.search(r"coat_dry\.png.*jacket_rain\.png", html, re.S) is not None
+       and ">6–9\u00a0am<" in html and ">from 1\u00a0pm<" in html and "rain from 1\u00a0pm" in html)
+expect("evening joke at On", "Two forecasts" in html)
+expect("no evening joke at Off", "Two forecasts" not in render2(sarcasm="0"))
+expect("evening joke at 11", "Morning-you" in render2(sarcasm="11"))
+expect("tonight: what you have on, 'now'", ">now<" in html)
+ho6, ho9 = render2(ho="6", tmr_p=[0] * 24), render2(ho="9", tmr_p=[0] * 24)
+expect("out at 6 am: the winter coat first", ">6\u00a0am<" in ho6 and re.search(r"Tomorrow · Thu.*?coat_dry", ho6, re.S))
+expect("out at 9 am: the jacket first", ">9\u00a0am<" in ho9 and re.search(r"Tomorrow · Thu.*?jacket_dry", ho9, re.S))
+steady = render2(tmr=[15] * 24, tmr_p=[0] * 24)
+expect("a steady tomorrow: one drawing, all day", ">all day<" in steady and "one outfit works all day" in steady)
+nodraw = render2(nxt=False)
+expect("drawings off: no tonight, one drawing of tomorrow", EVE in nodraw and ">Tonight<" not in nodraw
+       and nodraw.count('.png"') == 1)
+expect("drawings and words off: today as before", EVE not in render2(nxt=False, forecast=False))
+de = render2(lang="de")
+expect("German evening", "Morgen · Do" in de and ">Heute Abend<" in de and "ab 13\u00a0Uhr Regen" in de)
+
 if failures:
     print("FAILED:\n  " + "\n  ".join(failures))
     sys.exit(1)

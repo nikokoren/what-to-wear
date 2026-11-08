@@ -757,6 +757,11 @@ the evening joke, if it stays), and tests (8 pm switch, midnight, steady
 tomorrow, tonight still changing, What to Wear Next? off).
 Form: `head_out_time` ("When do you head out?", default "It varies" =
 dress for the coldest hour from 6 to 9 am) is in config/settings.next.yaml,
-to ship only with this screen. Decided: switch at 8 pm, ships in 2.0
-(owner, 8 November 2026). Open: the sarcastic line on the evening screen
-(both renders are on the sketch page).
+to ship only with this screen. Decided: switch at 8 pm, ships in 2.0, the
+sarcastic line stays (owner, 8 November 2026). **Built** in
+`prototypes/panels/evening.liquid` and the views (tests in
+`test_switch.py`); rain or snow starting wins tomorrow's second drawing.
+Still to do: the writing round for `evening` in
+`prototypes/panels/lang/<lang>.json` (the sentences and jokes there are
+stand-ins), and at release the live polling URL needs `forecast_days=2`
+(config/polling_urls.txt); with one day the evening simply stays off. 
