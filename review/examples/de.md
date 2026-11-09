@@ -360,6 +360,15 @@ Do not edit by hand; vote on the page instead.
 - Für den Abend reicht's. Für ein Kompliment nicht.
 - Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.
 
+## evening_tmr_rain · plain
+
+- Denk morgen an den Schirm, {FROM} regnet's.
+
+## evening_tmr_wet · plain
+
+- Leg dir für morgen den Schirm bereit, es geht nass los.
+- Morgen geht's mit Regen los, denk also an den Schirm.
+
 ## fickle · dry
 
 - Drei Bilder für einen Tag. Ich bin doch kein Daumenkino.

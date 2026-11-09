@@ -511,23 +511,33 @@ for view in VIEWS:
     expect(f"7:30 pm: still today ({view})", EVE not in render2(hour=19, view=view))
     expect(f"no tomorrow in the payload: still today ({view})", EVE not in render2(days=1, view=view))
 html = render2()
+# The texts change with every vote: check against whatever the pools hold.
+EVT = {l: TEXTS[l]["evening"] for l in TEXTS}
+
+
+def has_one(h, pool, fill="from 1\u00a0pm"):
+    return any(t.replace("{DRY}", "").replace("{FROM}", fill) in h for t in pool)
+
+
 expect("tomorrow: the coldest outfit 6 to 9 am, then the rain", re.search(r"coat_dry\.png.*jacket_rain\.png", html, re.S) is not None
-       and ">6–9\u00a0am<" in html and ">from 1\u00a0pm<" in html and "rain from 1\u00a0pm" in html)
-expect("evening joke at On", "Two forecasts" in html)
-expect("no evening joke at Off", "Two forecasts" not in render2(sarcasm="0"))
-expect("evening joke at 11", "Morning-you" in render2(sarcasm="11"))
+       and ">6–9\u00a0am<" in html and ">from 1\u00a0pm<" in html and has_one(html, EVT["en"]["facts"]["tmr_rain"]))
+on_pool = EVT["en"]["jokes_10"].get("rain") or EVT["en"]["jokes_10"].get("any") or []
+expect("evening joke at On", has_one(html, on_pool))
+expect("no evening joke at Off", not has_one(render2(sarcasm="0"), on_pool))
+de11 = EVT["de"]["jokes_11"].get("rain") or EVT["de"]["jokes_11"].get("any") or []
+expect("evening joke at 11", has_one(render2(sarcasm="11", lang="de"), de11))
 expect("tonight: what you have on, 'now'", ">now<" in html)
 ho6, ho9 = render2(ho="6", tmr_p=[0] * 24), render2(ho="9", tmr_p=[0] * 24)
 expect("out at 6 am: the winter coat first", ">6\u00a0am<" in ho6 and re.search(r"Tomorrow · Thu.*?coat_dry", ho6, re.S))
 expect("out at 9 am: the jacket first", ">9\u00a0am<" in ho9 and re.search(r"Tomorrow · Thu.*?jacket_dry", ho9, re.S))
 steady = render2(tmr=[15] * 24, tmr_p=[0] * 24)
-expect("a steady tomorrow: one drawing, all day", ">all day<" in steady and "one outfit works all day" in steady)
+expect("a steady tomorrow: one drawing, all day", ">all day<" in steady and has_one(steady, EVT["en"]["facts"]["tmr_steady"]))
 nodraw = render2(nxt=False)
 expect("drawings off: no tonight, one drawing of tomorrow", EVE in nodraw and ">Tonight<" not in nodraw
        and nodraw.count('.png"') == 1)
 expect("drawings and words off: today as before", EVE not in render2(nxt=False, forecast=False))
 de = render2(lang="de")
-expect("German evening", "Morgen · Do" in de and ">Heute Abend<" in de and "ab 13\u00a0Uhr Regen" in de)
+expect("German evening", "Morgen · Do" in de and ">Heute Abend<" in de and has_one(de, EVT["de"]["facts"]["tmr_rain"], "ab 13\u00a0Uhr"))
 
 # The evening line goes by tomorrow's weather (owner, after round 28):
 # jokes_<level>.<situation>, else .any, else none. "{DRY}" sentences only

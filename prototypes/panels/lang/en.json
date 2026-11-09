@@ -30,7 +30,6 @@
     ]
   },
   "evening": {
-    "_note": "Stand-ins until the evening writing round (docs/TODO.md, Tomorrow in the evening).",
     "tonight": "Tonight",
     "tomorrow": "Tomorrow",
     "now": "now",
@@ -48,39 +47,58 @@
     ],
     "facts": {
       "tmr_steady": [
-        "Tomorrow, one outfit works all day."
+        "Tomorrow you can wear one outfit all day.",
+        "Tomorrow's outfit works all day.",
+        "Tomorrow, one outfit works from start to finish.",
+        "Tomorrow is a one-outfit day."
       ],
       "tmr_warmer": [
-        "Tomorrow it warms up {FROM}, so a layer can come off."
+        "Tomorrow starts cooler and warms up {FROM}.",
+        "Tomorrow the temperature climbs {FROM}.",
+        "Tomorrow brings warmer weather {FROM}.",
+        "Tomorrow it's warmer {FROM}."
       ],
       "tmr_colder": [
-        "Tomorrow it gets colder {FROM}, so bring a layer."
+        "Tomorrow you'll want something warmer {FROM}.",
+        "Tomorrow it's colder {FROM}.",
+        "Tomorrow the temperature drops {FROM}, so pack something warm.",
+        "Tomorrow it gets colder {FROM}, so bring something warmer."
       ],
       "tmr_rain": [
-        "Tomorrow: rain {FROM}, so take the umbrella."
+        "Tomorrow there's rain {FROM}. Bring the umbrella.",
+        "Tomorrow it rains {FROM}, so take the umbrella.",
+        "Tomorrow you'll want the umbrella. It rains {FROM}.",
+        "Tomorrow starts dry, with rain {FROM}. Take the umbrella."
       ],
       "tmr_snow": [
-        "Tomorrow: snow {FROM}."
+        "Tomorrow it snows {FROM}.",
+        "Tomorrow there's snow {FROM}.",
+        "Tomorrow brings snow {FROM}.",
+        "Tomorrow, expect snow {FROM}."
       ],
       "tmr_drier": [
-        "Tomorrow starts wet. The rain stops {FROM}."
+        "Tomorrow it's wet to start and dry {FROM}.",
+        "Tomorrow starts wet, then it's dry {FROM}.",
+        "Tomorrow starts with rain. It's dry {FROM}.",
+        "Tomorrow you'll need the umbrella at first. It's dry {FROM}."
       ],
       "tmr_wet": [
-        "Tomorrow starts wet, so take the umbrella."
+        "Tomorrow starts with rain, so take the umbrella.",
+        "Expect a wet start tomorrow. Take the umbrella.",
+        "Take the umbrella tomorrow. The day starts wet.",
+        "Tomorrow you'll want the umbrella from the start."
       ],
       "tmr_snow_start": [
-        "Tomorrow starts with snow."
+        "Tomorrow starts out snowy.",
+        "Tomorrow begins with snow.",
+        "Expect a snowy start tomorrow."
       ]
     },
     "jokes_10": {
       "any": [
-        "Two forecasts for the price of one. Still free."
+        "I've known about tomorrow since lunch. I sat on it until now for the drama."
       ]
     },
-    "jokes_11": {
-      "any": [
-        "Lay it out tonight. Morning-you can't be trusted with decisions."
-      ]
-    }
+    "jokes_11": {}
   }
 }

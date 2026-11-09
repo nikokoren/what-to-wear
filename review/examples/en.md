@@ -333,6 +333,10 @@ Do not edit by hand; vote on the page instead.
 - You'll read all this, then do what you were going to anyway.
 - Your 'five minutes on the sofa' will probably cover the rest of it.
 
+## evening_tmr_snow_start · plain
+
+- Expect a snowy start tomorrow.
+
 ## fickle · dry
 
 - Three outfits in one day. The laundry basket will love this.

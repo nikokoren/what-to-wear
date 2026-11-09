@@ -30,7 +30,6 @@
     ]
   },
   "evening": {
-    "_note": "Platzhalter bis zur Schreibrunde fürs Abendbild (docs/TODO.md).",
     "tonight": "Heute Abend",
     "tomorrow": "Morgen",
     "now": "jetzt",
@@ -48,38 +47,60 @@
     ],
     "facts": {
       "tmr_steady": [
-        "Morgen reicht ein Outfit für den ganzen Tag."
+        "Morgen kommst du mit einem Outfit gut durch den ganzen Tag.",
+        "Das Outfit für morgen passt den ganzen Tag.",
+        "Morgen passt ein Outfit für den ganzen Tag."
       ],
       "tmr_warmer": [
-        "Morgen wird's {FROM} wärmer, dann kann eine Schicht runter."
+        "Morgen wird's {FROM} wärmer.",
+        "Morgen wird's {FROM} wärmer, dann reicht was Leichteres.",
+        "Morgen geht's kühler los, {FROM} wird's wärmer.",
+        "Morgen steigen die Temperaturen {FROM}."
       ],
       "tmr_colder": [
-        "Morgen wird's {FROM} kälter, also nimm eine Schicht mehr mit."
+        "Morgen wird's {FROM} kälter, dann brauchst du eine Schicht mehr.",
+        "Morgen geht's wärmer los, {FROM} wird's wieder kälter.",
+        "Morgen wird's {FROM} kälter."
       ],
       "tmr_rain": [
-        "Morgen {FROM} Regen, also nimm den Schirm mit."
+        "Morgen regnet's {FROM}, denk also an den Schirm.",
+        "Denk morgen an den Schirm, {FROM} regnet's.",
+        "Morgen ist's erst trocken, {FROM} regnet's. Nimm den Schirm mit."
       ],
       "tmr_snow": [
-        "Morgen {FROM} Schnee."
+        "Morgen kommt {FROM} der Schnee.",
+        "Rechne morgen {FROM} mit Schnee.",
+        "Morgen schneit's {FROM}.",
+        "Für morgen ist {FROM} Schnee vorhergesagt."
       ],
       "tmr_drier": [
-        "Morgen geht's nass los, {FROM} hört der Regen auf."
+        "Morgen geht's nass los, {FROM} ist's trocken.",
+        "{DRY}Morgen brauchst du erst mal den Schirm, {FROM} ist's wieder trocken.",
+        "Morgen regnet's zunächst, {FROM} bleibt's trocken."
       ],
       "tmr_wet": [
-        "Morgen geht's nass los, also nimm den Schirm mit."
+        "Morgen geht's mit Regen los, denk also an den Schirm.",
+        "Morgen beginnt der Tag mit Regen, also pack den Schirm ein.",
+        "Leg dir für morgen den Schirm bereit, es geht nass los.",
+        "Morgen brauchst du gleich den Schirm, es geht nass los."
       ],
       "tmr_snow_start": [
-        "Morgen geht's mit Schnee los."
+        "Morgen fängt der Tag mit Schnee an.",
+        "Morgen geht's gleich mit Schnee los."
       ]
     },
     "jokes_10": {
       "any": [
-        "Morgen wird's auch nicht besser. Ich hab schon nachgeschaut."
+        "Ich hab mich bei den Wettergöttern schon beschwert. Zu kurzfristig, hieß es.",
+        "Das Gute: Man kann sich schon heute drüber ärgern. Das spart morgen Zeit."
       ]
     },
     "jokes_11": {
       "any": [
-        "Leg's dir heute schon raus. Morgen früh bist du eh zu nichts zu gebrauchen."
+        "Leg dir für morgen auch gleich ein Lächeln raus. Morgens findest du sonst wieder keins."
+      ],
+      "rain": [
+        "Ich hab dich schon nass gesehen. Einmal reicht."
       ]
     }
   }
