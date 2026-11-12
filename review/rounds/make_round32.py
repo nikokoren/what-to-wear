@@ -3,9 +3,9 @@
 Round 32 (November 2026): the evening top-up after round 31 (level 11 in both
 languages, English warmer, drier and steady, German warmer), 20 lines by owner choice.
 
-    python3 review/rounds/make_round31.py
+    python3 review/rounds/make_round32.py
 
-Reads review/rounds/2026-11-evening31/<lang>.proofread.json (else the
+Reads review/rounds/2026-11-evening32/<lang>.proofread.json (else the
 critic's <lang>.json, else <lang>.written.json) and writes
 review/rounds/2026-11-evening31.json for the review page. A line's tag
 ({P}, {T}, {D:n}) stays out of its text and goes in "evtag";
