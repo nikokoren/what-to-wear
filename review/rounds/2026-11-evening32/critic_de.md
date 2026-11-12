@@ -1,6 +1,6 @@
 # Critic, round 32 (German evening line, top-up)
 
-Input: `de.written.json`, 13 lines. Kept 0, cut 13, fixed 0. Targets allowed up to 8 (11.any 3, 11.rain 1, 11.colder 1, 11.steady 1, 10.warmer 2). Each line was read under every tomorrow sentence of its pool (rain = tmr_rain + tmr_wet, colder = tmr_colder, warmer = tmr_warmer, steady = tmr_steady, `any` under all of them, {FROM} = „ab 13 Uhr“). Lines were checked against the live evening and daytime pools, the starred and vetoed lists, the owner's evening verdicts (rounds evening, evening2, ideas, evening31) and each other. The owner vetoed both 11/any-style lines round 31's critic kept, so the bar here is his and not the critic's. Numbers are positions in `de.written.json`.
+Input: `de.written.json`, 13 lines. Kept 0, cut 13, fixed 0. Targets allowed up to 8 (11.any 3, 11.rain 1, 11.colder 1, 11.steady 1, 10.warmer 2). Each line was read under every tomorrow sentence of its pool (rain = tmr_rain + tmr_wet, colder = tmr_colder, warmer = tmr_warmer, steady = tmr_steady, `any` under all of them, {FROM} = „ab 13 Uhr“). Lines were checked against the live evening and daytime pools, the starred and vetoed lists, the owner's evening verdicts (rounds evening, evening2, ideas, evening31) and each other. The owner vetoed both 11/any-style lines round 31's critic kept, so the bar here is the owner's and not the critic's. Numbers are positions in `de.written.json`.
 
 ## Cut
 

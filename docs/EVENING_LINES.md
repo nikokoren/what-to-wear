@@ -1,6 +1,6 @@
 # Evening lines: requirements
 
-What to Wear is a recipe for TRMNL, an e-ink screen people keep at home. It reads the local forecast and shows what to wear: an outfit drawing, a short plain forecast sentence, and, if the reader has turned sarcasm on, one sarcastic line. This document asks for that sarcastic line on the **evening screen**, which is new in v2.0. Two attempts at it failed; what failed and why is below.
+What to Wear is a recipe for TRMNL, an e-ink screen people keep at home. It reads the local forecast and shows what to wear: an outfit drawing, a short plain forecast sentence, and, if the reader has turned sarcasm on, one sarcastic line. This document asks for that sarcastic line on the **evening screen**, which is new in v2.0. Several attempts at it failed; what failed and why is below.
 
 ## The evening screen
 
@@ -91,6 +91,13 @@ All approved sentences per pool are in `prototypes/panels/lang/<lang>.json` unde
 2. The second attempt keyed the lines to tomorrow's weather, but too many still leaned on a stock image (dogs, grandmas, huddling) or needed context the screen doesn't give.
 
 What has worked across this project is a line that reacts to something specific on the screen with a confident twist, in very few words.
+
+**Rounds 31 and 32** (written in the directions the owner picked in round 30, `review/rounds/make_round30.py`) brought in the lines now live, then a top-up that both critics cut to nothing (`review/rounds/2026-11-evening32/critic_<lang>.md`). The faults to avoid:
+
+1. **Opening with a restatement.** "Warmer tomorrow.", "A one-outfit day.", „Wärmer morgen.“ in front of the joke. On screen it reads "Tomorrow it's warmer from 1 pm. Warmer tomorrow. …". Start with the reaction.
+2. **One frame for a whole pool.** Four 11 lines all said "the outfit is taken care of, you're the problem", which the owner had already vetoed. The "I asked the weather…" frame is live three times; don't add a fourth.
+3. **English and German telling the same joke.** Each language needs its own ideas, not a translation.
+4. **German written from an English open.** „Wärmer morgen.“ is English word order. The owner finds this the worst fault.
 
 ## Where things are
 
