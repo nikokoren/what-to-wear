@@ -10944,6 +10944,50 @@
   "edit": "",
   "updatedAt": "2026-11-12T14:37:56.307Z"
  },
+ "e5-de-08313e3bba71": {
+  "level": "11",
+  "key": "evening_rain",
+  "path": "flavour_11.evening_rain[+]",
+  "text": "Bei manchen sieht ein Schirm elegant aus. Bei dir wie geklaut.",
+  "source": "candidate",
+  "batch": "Evening, rain tomorrow: 11",
+  "round": "2026-11-evening33",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Auch wenn der Schirm bei dir immer irgendwie doof aussieht.",
+  "updatedAt": "2026-11-12T19:45:30.080Z"
+ },
+ "e5-de-6a95e73deb49": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Mich schaust du dir jeden Abend an. Die Zahnseide nie.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening33",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Schon mal überlegt so viel Zeit mit deiner Zahnseide zu verbringen wie mit mir?",
+  "updatedAt": "2026-11-12T19:44:29.516Z"
+ },
+ "e5-de-f905dfb28826": {
+  "level": "11",
+  "key": "evening_colder",
+  "path": "flavour_11.evening_colder[+]",
+  "text": "Wie bei allen, die dich näher kennenlernen.",
+  "source": "candidate",
+  "batch": "Evening, colder tomorrow: 11",
+  "round": "2026-11-evening33",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T19:44:41.362Z"
+ },
  "ev-de-0126eb060f19": {
   "level": "0",
   "key": "evening_tmr_colder",
