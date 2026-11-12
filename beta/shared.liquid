@@ -1859,8 +1859,11 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- endif -%}
   {%- endif -%}
 
-    {%- if sarcasm_level != '0' -%}
-    {%- assign jk = 'jokes_' | append: sarcasm_level -%}
+      {%- assign j_levels = sarcasm_level | split: ',' -%}
+  {%- if sarcasm_level == '11' -%}{%- assign j_levels = '11,10' | split: ',' -%}{%- endif -%}
+  {%- if sarcasm_level == '0' -%}{%- assign j_levels = '' | split: ',' -%}{%- endif -%}
+  {%- for j_level in j_levels -%}
+    {%- assign jk = 'jokes_' | append: j_level -%}
     {%- assign none_list = '' | split: ',' -%}
     {%- assign jl = EV[jk][ev_sit] -%}
     {%- if jl == nil -%}{%- assign jl = none_list -%}{%- endif -%}
@@ -1899,7 +1902,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign ji = ji | plus: 1 | modulo: jn -%}
       {%- endfor -%}
     {%- endif -%}
-  {%- endif -%}
+    {%- if ev_joke != '' -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
   {%- if location_label == '' -%}{%- assign location_label = EV.bar -%}{%- endif -%}
 {%- endif -%}
 {%- assign ev_slug_list = ev_slugs | split: '|' -%}

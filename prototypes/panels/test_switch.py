@@ -563,6 +563,12 @@ expect("no {P} lines with the drawings off", "BOTH FIGURES" not in render2(nxt=F
 TEXTS["en"]["evening"]["jokes_10"] = {"rain": ["{T}TIMED LINE"]}
 expect("{T} lines when the sentence names a time", "TIMED LINE" in render2())
 expect("no {T} lines on a day wet from the start", "TIMED LINE" not in render2(tmr_p=[80] * 24))
+TEXTS["en"]["evening"]["jokes_10"] = {"any": ["ON LINE"]}
+TEXTS["en"]["evening"]["jokes_11"] = {}
+expect("at 11 with no 11 line: an On line", "ON LINE" in render2(sarcasm="11"))
+TEXTS["en"]["evening"]["jokes_11"] = {"any": ["ELEVEN LINE"]}
+expect("at 11 with an 11 line: the 11 line", "ELEVEN LINE" in render2(sarcasm="11") and "ON LINE" not in render2(sarcasm="11"))
+expect("at Off: no evening line", "ON LINE" not in render2(sarcasm="0") and "ELEVEN LINE" not in render2(sarcasm="0"))
 TEXTS["en"]["evening"]["jokes_10"] = {"steady": ["{G}GOOD DAY LINE"]}
 expect("{G} lines on a good steady day", "GOOD DAY LINE" in render2(tmr=[18] * 24, tmr_p=[0] * 24))
 expect("no {G} lines on a steady cold day", "GOOD DAY LINE" not in render2(tmr=[1] * 24, tmr_p=[0] * 24))

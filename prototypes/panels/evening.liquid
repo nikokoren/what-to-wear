@@ -278,8 +278,12 @@ was. Appended after the drawings block by prototypes/panels/build.py.
   tomorrow is one of those weekdays (0 Sunday ... 6 Saturday). A line
   whose tag doesn't fit is skipped for the next one. No line fits: none.
   {%- endcomment %}
-  {%- if sarcasm_level != '0' -%}
-    {%- assign jk = 'jokes_' | append: sarcasm_level -%}
+  {%- comment %} At 11 with no 11 line that fits: an On line (owner, round 31: nothing stays empty at release). {%- endcomment %}
+  {%- assign j_levels = sarcasm_level | split: ',' -%}
+  {%- if sarcasm_level == '11' -%}{%- assign j_levels = '11,10' | split: ',' -%}{%- endif -%}
+  {%- if sarcasm_level == '0' -%}{%- assign j_levels = '' | split: ',' -%}{%- endif -%}
+  {%- for j_level in j_levels -%}
+    {%- assign jk = 'jokes_' | append: j_level -%}
     {%- assign none_list = '' | split: ',' -%}
     {%- assign jl = EV[jk][ev_sit] -%}
     {%- if jl == nil -%}{%- assign jl = none_list -%}{%- endif -%}
@@ -318,7 +322,8 @@ was. Appended after the drawings block by prototypes/panels/build.py.
         {%- assign ji = ji | plus: 1 | modulo: jn -%}
       {%- endfor -%}
     {%- endif -%}
-  {%- endif -%}
+    {%- if ev_joke != '' -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
   {%- if location_label == '' -%}{%- assign location_label = EV.bar -%}{%- endif -%}
 {%- endif -%}
 {%- assign ev_slug_list = ev_slugs | split: '|' -%}
