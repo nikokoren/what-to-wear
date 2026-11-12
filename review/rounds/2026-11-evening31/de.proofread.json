@@ -1,0 +1,52 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Na gut. Wenn's sein muss.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Das Wetter kann sich über Nacht noch ändern. Bei dir rechne ich nicht damit.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "Und ich darf wieder jede Flocke einzeln malen.",
+   "evtag": "",
+   "was": "Schnee. Und ich darf wieder jede Flocke einzeln malen.",
+   "reasons": [
+    "Klingt unnatürlich"
+   ]
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Die Kälte zieht morgen ein. Miete zahlt sie natürlich keine.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "Der Regen sagt sogar, wann er geht. Manieren hat er.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Es tut sich nichts. Ich male dann halt ein bisschen Hintergrund, damit's nach Arbeit aussieht.",
+   "evtag": "",
+   "was": "Es tut sich nichts. Ich mal dann halt ein bisschen Hintergrund, damit's nach Arbeit aussieht.",
+   "reasons": [
+    "Unklar"
+   ]
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Montag und Regen. Der Montag lässt wirklich nichts aus.",
+   "evtag": "{D:1}"
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Samstag, und das Wetter spielt mit. Kommt selten genug vor.",
+   "evtag": "{D:6}"
+  }
+ ]
+}
