@@ -96,6 +96,7 @@
     },
     "jokes_10": {
       "any": [
+        "I asked for a different tomorrow. This was the only one in stock.",
         "I've known about tomorrow since lunch. I sat on it until now for the drama.",
         "If this changes overnight, I'll quietly redraw it and act like it was always that way."
       ],
@@ -105,12 +106,14 @@
         "I asked if tomorrow's cold could wait a week. But it's already on its way."
       ],
       "rain": [
+        "Lovely. More water.",
         "I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
         "{T}The rain told us exactly when it's coming. No repairman has ever managed that.",
         "Just what we needed.",
         "{D:6}Rain on a Saturday. Great."
       ],
       "snow": [
+        "I asked for the snow to land somewhere more scenic. Apparently this is it.",
         "Just what we needed."
       ]
     },

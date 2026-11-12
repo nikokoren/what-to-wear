@@ -98,14 +98,24 @@
         "Ändert sich das doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen."
       ],
       "colder": [
+        "Die Kälte zieht morgen ein. Miete zahlt sie natürlich keine.",
         "Auch das noch."
       ],
+      "drier": [
+        "Der Regen sagt sogar, wann er geht. Manieren hat er."
+      ],
       "rain": [
+        "{D:1}Der Montag lässt wirklich nichts aus.",
         "Auch das noch.",
         "Ich wollte den Regen auf nächste Woche verschieben. Der ist aber schon unterwegs."
       ],
       "snow": [
+        "Und ich darf wieder jede Flocke einzeln malen.",
         "Auch das noch."
+      ],
+      "steady": [
+        "Vielleicht fang ich an, ein bisschen Hintergrund zu malen, damit's nicht zu langweilig wird.",
+        "{G}{D:6}Samstag, und das Wetter spielt mit. Kommt selten genug vor."
       ]
     },
     "jokes_11": {

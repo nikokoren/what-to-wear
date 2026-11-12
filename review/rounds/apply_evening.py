@@ -49,7 +49,10 @@ PLACE = {
     },
 }
 # Small fixes to the owner's edits (spelling only).
-FIXES = {"But it's already on it's way.": "But it's already on its way."}
+FIXES = {"But it's already on it's way.": "But it's already on its way.",
+         "Vielleicht fang ich an ein bisschen Hintergrund zu malen": "Vielleicht fang ich an, ein bisschen Hintergrund zu malen"}
+# Tags added after a vote, by the line's original text (owner's notes).
+EXTRA_TAGS = {"Samstag, und das Wetter spielt mit. Kommt selten genug vor.": "{G}"}
 
 
 def round_tags(lang):
@@ -90,7 +93,7 @@ def main():
             elif path.endswith(".evening"):
                 jokes.setdefault(("jokes_" + level, "any"), []).append(text)
             elif ".evening_" in path:
-                tag = tags.get((path, d["text"]), "")
+                tag = EXTRA_TAGS.get(d["text"], "") + tags.get((path, d["text"]), "")
                 jokes.setdefault(("jokes_" + level, path.split(".evening_", 1)[1]), []).append(tag + text)
         p = REPO / "prototypes" / "panels" / "lang" / f"{lang}.json"
         doc = json.loads(p.read_text(encoding="utf-8"))

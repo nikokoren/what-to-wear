@@ -2438,6 +2438,144 @@
   "edit": "",
   "updatedAt": "2026-10-15T19:37:01.429Z"
  },
+ "e3-en-218268ca3ac6": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "I've already sighed about tomorrow twice. Pacing myself.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening31",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:38:25.341Z"
+ },
+ "e3-en-38b3a705519f": {
+  "level": "10",
+  "key": "evening_rain",
+  "path": "flavour_10.evening_rain[+]",
+  "text": "Lovely. More water.",
+  "source": "candidate",
+  "batch": "Evening, rain tomorrow: On",
+  "round": "2026-11-evening31",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:39:19.008Z"
+ },
+ "e3-en-397a5f229061": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Current you, future you. Neither one's my best work.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening31",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:35:26.638Z"
+ },
+ "e3-en-53b31fb4c76d": {
+  "level": "10",
+  "key": "evening_colder",
+  "path": "flavour_10.evening_colder[+]",
+  "text": "Saturday and colder. Somebody had plans.",
+  "source": "candidate",
+  "batch": "Evening, colder tomorrow: On",
+  "round": "2026-11-evening31",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:39:05.908Z"
+ },
+ "e3-en-b8d9edc15885": {
+  "level": "10",
+  "key": "evening_warmer",
+  "path": "flavour_10.evening_warmer[+]",
+  "text": "Fewer layers to draw. I won't pretend I'm not relieved.",
+  "source": "candidate",
+  "batch": "Evening, warmer tomorrow: On",
+  "round": "2026-11-evening31",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:39:47.392Z"
+ },
+ "e3-en-ccfe8128db56": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "I asked for a different tomorrow. This was the only one in stock.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening31",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:38:31.458Z"
+ },
+ "e3-en-d476778f5127": {
+  "level": "10",
+  "key": "evening_snow",
+  "path": "flavour_10.evening_snow[+]",
+  "text": "I'll draw the snow cleaner than it'll stay. Professional courtesy.",
+  "source": "candidate",
+  "batch": "Evening, snow tomorrow: On",
+  "round": "2026-11-evening31",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:39:26.792Z"
+ },
+ "e3-en-d5632f715636": {
+  "level": "10",
+  "key": "evening_snow",
+  "path": "flavour_10.evening_snow[+]",
+  "text": "I asked for the snow to land somewhere more scenic. Apparently this is it.",
+  "source": "candidate",
+  "batch": "Evening, snow tomorrow: On",
+  "round": "2026-11-evening31",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:39:35.309Z"
+ },
+ "e3-en-ffa6594f153f": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "I've got two complaints about tomorrow. The weather's the second one.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening31",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T14:35:32.339Z"
+ },
  "en-005f96d41801": {
   "level": "11",
   "key": "nice",
