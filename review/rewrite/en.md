@@ -89,6 +89,31 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at On: the shortest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-e1b679198142` (2026-10-days)
 
+## flavour_10.evening_rain
+
+- **Out:** Somewhere, tomorrow's rain is getting an early night. Big day ahead.
+  **Tags:** not funny
+  **On screen:** drawing jacket_rain; above it: “Tomorrow it rains from 1 pm, so take the umbrella.”
+  **What it's for:** Idea 03, The weather's own night before. Tomorrow's weather is getting ready tonight, like everyone else. Only works the evening before, which is the point.
+  **Answers:** `id-en-1d78015ae4b6` (2026-11-ideas)
+
+## flavour_10.evening_steady
+
+- **Out:** Tomorrow is so uneventful I'm tempted to draw in a cat. For plot.
+  **Tags:** not funny
+  **On screen:** drawing sweater_dry; above it: “Tomorrow's outfit works all day.”
+  **What it's for:** Idea 08, The illustrator with nothing to draw. On a day that doesn't change, the screen as an artist bored by its own assignment.
+  **Answers:** `id-en-27237228728d` (2026-11-ideas)
+
+## flavour_10.evening_warmer
+
+- **Out:** The one on the left is jealous. The one on the right gets the warmer day.
+  **Wanted instead:** the rewrite still isnt perfect, but better.
+  **Tags:** not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Tomorrow the temperature climbs from 1 pm.”
+  **What it's for:** Idea 07, The drawn figures. The little figure in your drawings as a character. The evening screen shows it twice, tonight on the left and tomorrow on the right, so they can be keen, jealous or smug about each other.
+  **Answers:** `id-en-a9786d852304` (2026-11-ideas)
+
 ## flavour_10.night
 
 - **Out:** Your phone probably said bedtime an hour ago. Listen to one of us.

@@ -31,6 +31,38 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at On: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-de-f75c7c4ba8c4` (2026-10-days)
 
+## flavour_10.evening_colder
+
+- **Out:** Montag und kälter. Der Tag gibt sich echt Mühe.
+  **Wanted instead:** i like the idea. "der tag gibt sich echt mühe" just isnt the right "feel". something like monday is trying it's best to make people's life miserable. or something. maight need a slightly lighter tone since it's only level 10, not 11.
+  **Tags:** not funny
+  **On screen:** drawing coat_dry; above it: “Morgen wird's ab 13 Uhr kälter, dann brauchst du eine Schicht mehr.”
+  **What it's for:** Idea 13, Tomorrow's weekday. The tag says which day tomorrow is. Lines for the weather on a Saturday, a Monday, a Sunday. Needs logic, and you cut the Monday and Friday day lines once, so maybe not.
+  **Answers:** `id-de-96a491b4deca` (2026-11-ideas)
+- **Out:** Die Kälte packt gerade ihre Sachen. Morgen zieht sie hier ein.
+  **Wanted instead:** i like the direction, but the sarcasm could be more prominent?
+  **Tags:** not funny
+  **On screen:** drawing coat_dry; above it: “Morgen wird's ab 13 Uhr kälter, dann brauchst du eine Schicht mehr.”
+  **What it's for:** Idea 03, The weather's own night before. Tomorrow's weather is getting ready tonight, like everyone else. Only works the evening before, which is the point.
+  **Answers:** `id-de-b8648fdd97f5` (2026-11-ideas)
+
+## flavour_10.evening_rain
+
+- **Out:** Der Regen kommt auf die Stunde genau. Da kann sich die Bahn was abschauen.
+  **Wanted instead:** i like the direction. but the current framing of the regen kommt pünklich could be improved with slightly more sarcasm.
+  **On screen:** drawing jacket_rain; above it: “Morgen regnet's ab 13 Uhr, denk also an den Schirm.”
+  **What it's for:** Idea 12, The weather keeps its appointments. Tomorrow's weather comes with an exact time. Nobody else in life manages that. German has the obvious target, which may be too obvious.
+  **Answers:** `id-de-a8f1ad3359dd` (2026-11-ideas)
+
+## flavour_10.evening_steady
+
+- **Out:** Morgen passiert so wenig, dass ich überleg, eine Katze dazuzumalen. Für die Handlung.
+  **Wanted instead:** i like the new direction. the cat part and the "handlung" just doesnt make any sense. maybe something along the lines of i was going to start doodling, or start drawing some background, or the rest of your surroundings or something like that.
+  **Tags:** not funny, unclear
+  **On screen:** drawing sweater_dry; above it: “Das Outfit für morgen passt den ganzen Tag.”
+  **What it's for:** Idea 08, The illustrator with nothing to draw. On a day that doesn't change, the screen as an artist bored by its own assignment.
+  **Answers:** `id-de-101606c96fd4` (2026-11-ideas)
+
 ## flavour_10.pants
 
 - **Out:** Die in kurzen Hosen lachen jetzt noch.
@@ -128,6 +160,15 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “Dein Outfit passt heute den ganzen Tag.”
   **What it's for:** New sarcastic line at 11: the shortest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-de-91750aa3bb86` (2026-10-days)
+
+## flavour_11.evening_rain
+
+- **Out:** Gleich zeigt dieser Bildschirm deinen Kalender. Der sieht für morgen auch nicht trockener aus.
+  **Wanted instead:** how can a calender look dry?
+  **Tags:** unclear
+  **On screen:** drawing jacket_rain; above it: “Morgen regnet's ab 13 Uhr, denk also an den Schirm.”
+  **What it's for:** Idea 06, The playlist neighbours. TRMNL rotates several plugins on one screen. The weather screen comments on whatever comes on after it. Fresh and very TRMNL, but it guesses what else is on the reader's playlist.
+  **Answers:** `id-de-2ef9c7e45863` (2026-11-ideas)
 
 ## flavour_11.ice
 

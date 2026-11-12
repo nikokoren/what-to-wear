@@ -360,6 +360,10 @@ Do not edit by hand; vote on the page instead.
 - Für den Abend reicht's. Für ein Kompliment nicht.
 - Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.
 
+## evening_steady · dry
+
+- Ändert sich das doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen.
+
 ## evening_tmr_rain · plain
 
 - Denk morgen an den Schirm, {FROM} regnet's.

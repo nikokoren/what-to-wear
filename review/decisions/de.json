@@ -32034,6 +32034,203 @@
   "edit": "",
   "updatedAt": "2026-10-17T09:43:53.609Z"
  },
+ "id-de-101606c96fd4": {
+  "level": "10",
+  "key": "evening_steady",
+  "path": "flavour_10.evening_steady[+]",
+  "text": "Morgen passiert so wenig, dass ich überleg, eine Katze dazuzumalen. Für die Handlung.",
+  "source": "candidate",
+  "batch": "Idea 08: The illustrator with nothing to draw",
+  "round": "2026-11-ideas",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny",
+   "unclear"
+  ],
+  "note": "i like the new direction. the cat part and the \"handlung\" just doesnt make any sense. maybe something along the lines of i was going to start doodling, or start drawing some background, or the rest of your surroundings or something like that.",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:15:03.302Z"
+ },
+ "id-de-2ef9c7e45863": {
+  "level": "11",
+  "key": "evening_rain",
+  "path": "flavour_11.evening_rain[+]",
+  "text": "Gleich zeigt dieser Bildschirm deinen Kalender. Der sieht für morgen auch nicht trockener aus.",
+  "source": "candidate",
+  "batch": "Idea 06: The playlist neighbours",
+  "round": "2026-11-ideas",
+  "verdict": "rewrite",
+  "tags": [
+   "unclear"
+  ],
+  "note": "how can a calender look dry?",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:17:56.503Z"
+ },
+ "id-de-4a85319b4008": {
+  "level": "11",
+  "key": "evening_colder",
+  "path": "flavour_11.evening_colder[+]",
+  "text": "Du hast angegeben, dass du immer frierst. Morgen kriegst du recht.",
+  "source": "candidate",
+  "batch": "Idea 09: Your own settings, used against you",
+  "round": "2026-11-ideas",
+  "verdict": "veto",
+  "tags": [],
+  "note": "too nieche. only works for one setting.",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:17:28.919Z"
+ },
+ "id-de-56e908bc3955": {
+  "level": "10",
+  "key": "evening_rain",
+  "path": "flavour_10.evening_rain[+]",
+  "text": "Auch das noch.",
+  "source": "candidate",
+  "batch": "Idea 11: The two-word sigh",
+  "round": "2026-11-ideas",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:11:57.051Z"
+ },
+ "id-de-6b50630f602f": {
+  "level": "10",
+  "key": "evening_steady",
+  "path": "flavour_10.evening_steady[+]",
+  "text": "Die Figur da rechts ist schon für morgen angezogen. Streber.",
+  "source": "candidate",
+  "batch": "Idea 07: The drawn figures",
+  "round": "2026-11-ideas",
+  "verdict": "keep",
+  "tags": [
+   "unclear"
+  ],
+  "note": "make sure this phrasing works in all cases. are we sure we always have something left and right? so the phrasng of that person on the right is a know it all? in the preview we are just showing one person.",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:16:39.969Z"
+ },
+ "id-de-6ff4c38e02cd": {
+  "level": "10",
+  "key": "evening_rain",
+  "path": "flavour_10.evening_rain[+]",
+  "text": "Wenn das Licht ausgeht, sieht mich keiner mehr. E-Ink. Also lies zügig.",
+  "source": "candidate",
+  "batch": "Idea 05: E-ink in the dark",
+  "round": "2026-11-ideas",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:12:05.668Z"
+ },
+ "id-de-92dd9d734f02": {
+  "level": "11",
+  "key": "evening_rain",
+  "path": "flavour_11.evening_rain[+]",
+  "text": "Dein Schirm ist irgendwo hier. Seit dem letzten Regen weißt du nur nicht mehr, wo.",
+  "source": "candidate",
+  "batch": "Idea 10: Gear coming out of hiding",
+  "round": "2026-11-ideas",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:18:07.419Z"
+ },
+ "id-de-96a491b4deca": {
+  "level": "10",
+  "key": "evening_colder",
+  "path": "flavour_10.evening_colder[+]",
+  "text": "Montag und kälter. Der Tag gibt sich echt Mühe.",
+  "source": "candidate",
+  "batch": "Idea 13: Tomorrow's weekday",
+  "round": "2026-11-ideas",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "i like the idea. \"der tag gibt sich echt mühe\" just isnt the right \"feel\". something like monday is trying it's best to make people's life miserable. or something. maight need a slightly lighter tone since it's only level 10, not 11.",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:11:07.351Z"
+ },
+ "id-de-a8f1ad3359dd": {
+  "level": "10",
+  "key": "evening_rain",
+  "path": "flavour_10.evening_rain[+]",
+  "text": "Der Regen kommt auf die Stunde genau. Da kann sich die Bahn was abschauen.",
+  "source": "candidate",
+  "batch": "Idea 12: The weather keeps its appointments",
+  "round": "2026-11-ideas",
+  "verdict": "rewrite",
+  "tags": [],
+  "note": "i like the direction. but the current framing of the regen kommt pünklich could be improved with slightly more sarcasm.",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:13:17.801Z"
+ },
+ "id-de-b8648fdd97f5": {
+  "level": "10",
+  "key": "evening_colder",
+  "path": "flavour_10.evening_colder[+]",
+  "text": "Die Kälte packt gerade ihre Sachen. Morgen zieht sie hier ein.",
+  "source": "candidate",
+  "batch": "Idea 03: The weather's own night before",
+  "round": "2026-11-ideas",
+  "verdict": "rewrite",
+  "tags": [
+   "not funny"
+  ],
+  "note": "i like the direction, but the sarcasm could be more prominent?",
+  "edit": "Die Kälte packt gerade ihre Sachen. Morgen zieht sie bei dir ein.",
+  "updatedAt": "2026-11-12T12:11:51.051Z"
+ },
+ "id-de-ec90e9bf87cb": {
+  "level": "10",
+  "key": "evening_rain",
+  "path": "flavour_10.evening_rain[+]",
+  "text": "Ich meckere heute schon mal vor. Morgen reicht dann ein Seufzer.",
+  "source": "candidate",
+  "batch": "Idea 01: Grumbling in advance",
+  "round": "2026-11-ideas",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T12:13:28.651Z"
+ },
+ "id-de-f1d8edafe906": {
+  "level": "10",
+  "key": "evening_rain",
+  "path": "flavour_10.evening_rain[+]",
+  "text": "Ich wollte den Regen auf nächste Woche verschieben. Der ist aber schon losgefahren.",
+  "source": "candidate",
+  "batch": "Idea 02: Haggling with the weather",
+  "round": "2026-11-ideas",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Ich wollte den Regen auf nächste Woche verschieben. Der ist aber schon unterwegs.",
+  "updatedAt": "2026-11-12T12:13:45.320Z"
+ },
+ "id-de-f641c2c68ffd": {
+  "level": "10",
+  "key": "evening_steady",
+  "path": "flavour_10.evening_steady[+]",
+  "text": "Ändert sich das über Nacht, mal ich's heimlich um und tu so, als wär nichts gewesen.",
+  "source": "candidate",
+  "batch": "Idea 04: Covering up overnight changes",
+  "round": "2026-11-ideas",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "Ändert sich das doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen.",
+  "updatedAt": "2026-11-12T12:16:59.368Z"
+ },
  "ly-de-01eb79cae210": {
   "level": "10",
   "key": "c_coat",
