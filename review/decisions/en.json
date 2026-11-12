@@ -2576,6 +2576,48 @@
   "edit": "",
   "updatedAt": "2026-11-12T14:35:32.339Z"
  },
+ "e4-en-2860007d7038": {
+  "level": "11",
+  "key": "evening_rain",
+  "path": "flavour_11.evening_rain[+]",
+  "text": "You'll blame the rain for how you look. For once, that'll be half true.",
+  "source": "candidate",
+  "batch": "Evening, rain tomorrow: 11",
+  "round": "2026-11-evening32",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T16:28:23.123Z"
+ },
+ "e4-en-338644c6521a": {
+  "level": "10",
+  "key": "evening_drier",
+  "path": "flavour_10.evening_drier[+]",
+  "text": "Nobody say anything, or it'll come back.",
+  "source": "candidate",
+  "batch": "Evening, a wet start, dry later: On",
+  "round": "2026-11-evening32",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Nobody say anything, or the rain will come back.",
+  "updatedAt": "2026-11-12T16:28:13.476Z"
+ },
+ "e4-en-9e61b0e9ea71": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Good news: the outfit's taken care of. Bad news: you're still in it.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening32",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-12T16:27:56.625Z"
+ },
  "en-005f96d41801": {
   "level": "11",
   "key": "nice",

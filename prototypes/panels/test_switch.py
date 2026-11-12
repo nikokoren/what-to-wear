@@ -529,7 +529,9 @@ on_pool = strip_tags(EVT["en"]["jokes_10"].get("rain", []) + EVT["en"]["jokes_10
 expect("evening joke at On", has_one(html, on_pool))
 expect("no evening joke at Off", not has_one(render2(sarcasm="0"), on_pool))
 de11 = strip_tags(EVT["de"]["jokes_11"].get("rain", []) + EVT["de"]["jokes_11"].get("any", []))
-expect("evening joke at 11", has_one(render2(sarcasm="11", lang="de"), de11))
+de_on = strip_tags(EVT["de"]["jokes_10"].get("rain", []) + EVT["de"]["jokes_10"].get("any", []))
+# With fewer than four 11 lines the On lines share the rotation (tested below with stand-ins).
+expect("evening joke at 11", has_one(render2(sarcasm="11", lang="de"), de11 if len(de11) >= 4 else de11 + de_on))
 expect("tonight: what you have on, 'now'", ">now<" in html)
 ho6, ho9 = render2(ho="6", tmr_p=[0] * 24), render2(ho="9", tmr_p=[0] * 24)
 expect("out at 6 am: the winter coat first", ">6\u00a0am<" in ho6 and re.search(r"Tomorrow · Thu.*?coat_dry", ho6, re.S))
@@ -567,7 +569,15 @@ TEXTS["en"]["evening"]["jokes_10"] = {"any": ["ON LINE"]}
 TEXTS["en"]["evening"]["jokes_11"] = {}
 expect("at 11 with no 11 line: an On line", "ON LINE" in render2(sarcasm="11"))
 TEXTS["en"]["evening"]["jokes_11"] = {"any": ["ELEVEN LINE"]}
-expect("at 11 with an 11 line: the 11 line", "ELEVEN LINE" in render2(sarcasm="11") and "ON LINE" not in render2(sarcasm="11"))
+TEXTS["en"]["evening"]["jokes_10"] = {"any": ["ON LINE", "ON LINE", "ON LINE"]}
+hours11 = [render2(hour=hh, sarcasm="11") for hh in (20, 21, 22, 23)]
+expect("at 11 with fewer than four 11 lines: they share the rotation with the On lines",
+       any("ELEVEN LINE" in h for h in hours11) and any("ON LINE" in h for h in hours11))
+TEXTS["en"]["evening"]["jokes_11"] = {"any": ["ELEVEN LINE"] * 4}
+hours11 = [render2(hour=hh, sarcasm="11") for hh in (20, 21, 22, 23)]
+expect("at 11 with four 11 lines: only the 11 lines", all("ELEVEN LINE" in h and "ON LINE" not in h for h in hours11))
+TEXTS["en"]["evening"]["jokes_11"] = {"any": ["{D:1}ELEVEN LINE"] * 4}
+expect("at 11 with four 11 lines and none that fits: an On line", "ON LINE" in render2(sarcasm="11"))
 expect("at Off: no evening line", "ON LINE" not in render2(sarcasm="0") and "ELEVEN LINE" not in render2(sarcasm="0"))
 TEXTS["en"]["evening"]["jokes_10"] = {"steady": ["{G}GOOD DAY LINE"]}
 expect("{G} lines on a good steady day", "GOOD DAY LINE" in render2(tmr=[18] * 24, tmr_p=[0] * 24))

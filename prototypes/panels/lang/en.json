@@ -105,6 +105,9 @@
         "Just what we needed.",
         "I asked if tomorrow's cold could wait a week. But it's already on its way."
       ],
+      "drier": [
+        "Nobody say anything, or the rain will come back."
+      ],
       "rain": [
         "Lovely. More water.",
         "I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
@@ -117,6 +120,13 @@
         "Just what we needed."
       ]
     },
-    "jokes_11": {}
+    "jokes_11": {
+      "any": [
+        "Good news: the outfit's taken care of. Bad news: you're still in it."
+      ],
+      "rain": [
+        "You'll blame the rain for how you look. For once, that'll be half true."
+      ]
+    }
   }
 }

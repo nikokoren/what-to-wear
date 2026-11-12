@@ -1638,6 +1638,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
 {%- assign panel_label_list = panel_labels | split: '|' -%}
 
 {%- assign EVENING_HOUR = 20 -%}
+{%- assign EV_FEW_11 = 4 -%}
 {%- assign evening_on = false -%}
 {%- assign ev_slugs = '' -%}
 {%- assign ev_labels = '' -%}
@@ -1859,17 +1860,28 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- endif -%}
   {%- endif -%}
 
-      {%- assign j_levels = sarcasm_level | split: ',' -%}
-  {%- if sarcasm_level == '11' -%}{%- assign j_levels = '11,10' | split: ',' -%}{%- endif -%}
-  {%- if sarcasm_level == '0' -%}{%- assign j_levels = '' | split: ',' -%}{%- endif -%}
-  {%- for j_level in j_levels -%}
-    {%- assign jk = 'jokes_' | append: j_level -%}
-    {%- assign none_list = '' | split: ',' -%}
-    {%- assign jl = EV[jk][ev_sit] -%}
-    {%- if jl == nil -%}{%- assign jl = none_list -%}{%- endif -%}
-    {%- assign ja = EV[jk].any -%}
-    {%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
-    {%- assign jl = jl | concat: ja -%}
+      {%- assign none_list = '' | split: ',' -%}
+  {%- assign j_lv = sarcasm_level -%}
+  {%- if sarcasm_level == '11' -%}{%- assign j_lv = '10' -%}{%- endif -%}
+  {%- assign jk = 'jokes_' | append: j_lv -%}
+  {%- assign j_main = EV[jk][ev_sit] -%}{%- if j_main == nil -%}{%- assign j_main = none_list -%}{%- endif -%}
+  {%- assign ja = EV[jk].any -%}{%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
+  {%- assign j_main = j_main | concat: ja -%}
+  {%- assign j_passes = 'main' | split: ',' -%}
+  {%- if sarcasm_level == '11' -%}
+    {%- assign j_11 = EV.jokes_11[ev_sit] -%}{%- if j_11 == nil -%}{%- assign j_11 = none_list -%}{%- endif -%}
+    {%- assign ja = EV.jokes_11.any -%}{%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
+    {%- assign j_11 = j_11 | concat: ja -%}
+    {%- if j_11.size >= EV_FEW_11 -%}
+      {%- assign j_passes = '11,main' | split: ',' -%}
+    {%- else -%}
+      {%- assign j_11 = j_11 | concat: j_main -%}
+      {%- assign j_passes = '11' | split: ',' -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if sarcasm_level == '0' -%}{%- assign j_passes = none_list -%}{%- endif -%}
+  {%- for j_pass in j_passes -%}
+    {%- if j_pass == '11' -%}{%- assign jl = j_11 -%}{%- else -%}{%- assign jl = j_main -%}{%- endif -%}
     {%- if jl.size > 0 -%}
       {%- assign jn = jl | size -%}
       {%- assign ji = text_rot | plus: 3 | modulo: jn -%}
