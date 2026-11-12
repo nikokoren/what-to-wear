@@ -1,0 +1,64 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I've already sighed about tomorrow twice. Pacing myself.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I asked for a different tomorrow. This was the only one in stock.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Fine. I suppose.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Current you, future you. Neither one's my best work.",
+   "evtag": "{P}"
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "If the forecast changes overnight, I'll redraw it. You, I can't fix.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "I've got two complaints about tomorrow. The weather's the second one.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Lovely. More water.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "I asked for the snow to land somewhere more scenic. Apparently this is it.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "I'll draw the snow cleaner than it stays. Professional courtesy.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Fewer layers to draw tomorrow. I won't pretend I'm not relieved.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Nothing happens tomorrow. I may draw a few houses in the background. For morale.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Saturday and colder. Somebody had plans.",
+   "evtag": "{D:6}"
+  }
+ ]
+}
