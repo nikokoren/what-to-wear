@@ -92,7 +92,20 @@
     "jokes_10": {
       "any": [
         "Ich hab mich bei den Wettergöttern schon beschwert. Zu kurzfristig, hieß es.",
-        "Das Gute: Man kann sich schon heute drüber ärgern. Das spart morgen Zeit."
+        "Das Gute: Man kann sich schon heute drüber ärgern. Das spart morgen Zeit.",
+        "{P}Die Figur da rechts ist schon für morgen angezogen. Streber.",
+        "Ich meckere heute schon mal vor. Morgen reicht dann ein Seufzer.",
+        "Ändert sich das doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen."
+      ],
+      "colder": [
+        "Auch das noch."
+      ],
+      "rain": [
+        "Auch das noch.",
+        "Ich wollte den Regen auf nächste Woche verschieben. Der ist aber schon unterwegs."
+      ],
+      "snow": [
+        "Auch das noch."
       ]
     },
     "jokes_11": {

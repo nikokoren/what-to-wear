@@ -96,7 +96,22 @@
     },
     "jokes_10": {
       "any": [
-        "I've known about tomorrow since lunch. I sat on it until now for the drama."
+        "I've known about tomorrow since lunch. I sat on it until now for the drama.",
+        "If this changes overnight, I'll quietly redraw it and act like it was always that way."
+      ],
+      "colder": [
+        "Next on this screen, probably the stocks. Probably also forecasting a drop.",
+        "Just what we needed.",
+        "I asked if tomorrow's cold could wait a week. But it's already on its way."
+      ],
+      "rain": [
+        "I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
+        "The rain told us exactly when it's coming. No repairman has ever managed that.",
+        "Just what we needed.",
+        "{D:6}Rain on a Saturday. Great."
+      ],
+      "snow": [
+        "Just what we needed."
       ]
     },
     "jokes_11": {}

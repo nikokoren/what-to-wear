@@ -521,10 +521,14 @@ def has_one(h, pool, fill="from 1\u00a0pm"):
 
 expect("tomorrow: the coldest outfit 6 to 9 am, then the rain", re.search(r"coat_dry\.png.*jacket_rain\.png", html, re.S) is not None
        and ">6–9\u00a0am<" in html and ">from 1\u00a0pm<" in html and has_one(html, EVT["en"]["facts"]["tmr_rain"]))
-on_pool = EVT["en"]["jokes_10"].get("rain") or EVT["en"]["jokes_10"].get("any") or []
+def strip_tags(pool):
+    return [re.sub(r"^(\{P\}|\{D:[0-9,]+\})+", "", t) for t in pool]
+
+
+on_pool = strip_tags(EVT["en"]["jokes_10"].get("rain", []) + EVT["en"]["jokes_10"].get("any", []))
 expect("evening joke at On", has_one(html, on_pool))
 expect("no evening joke at Off", not has_one(render2(sarcasm="0"), on_pool))
-de11 = EVT["de"]["jokes_11"].get("rain") or EVT["de"]["jokes_11"].get("any") or []
+de11 = strip_tags(EVT["de"]["jokes_11"].get("rain", []) + EVT["de"]["jokes_11"].get("any", []))
 expect("evening joke at 11", has_one(render2(sarcasm="11", lang="de"), de11))
 expect("tonight: what you have on, 'now'", ">now<" in html)
 ho6, ho9 = render2(ho="6", tmr_p=[0] * 24), render2(ho="9", tmr_p=[0] * 24)
@@ -547,8 +551,19 @@ saved = TEXTS["en"]
 TEXTS["en"] = copy.deepcopy(saved)
 TEXTS["en"]["evening"]["jokes_10"] = {"rain": ["RAIN LINE"], "any": ["ANY LINE"]}
 TEXTS["en"]["evening"]["facts"]["tmr_rain"] = ["{DRY}DRY ONLY {FROM}.", "ALWAYS {FROM}."]
-expect("a rainy tomorrow gets its own evening line", "RAIN LINE" in render2())
-expect("a kind of tomorrow with no lines falls back to .any", "ANY LINE" in render2(tmr_p=[0] * 24))
+evening_hours = [render2(hour=hh) for hh in (20, 21, 22, 23)]
+expect("a rainy tomorrow: its own lines and the lines for any weather, in turn",
+       any("RAIN LINE" in h for h in evening_hours) and any("ANY LINE" in h for h in evening_hours))
+expect("a kind of tomorrow with no lines of its own: the lines for any weather", "ANY LINE" in render2(tmr_p=[0] * 24))
+# {P}: only with tonight's drawing beside tomorrow's. {D:n}: only when tomorrow is weekday n (DATE is a
+# Wednesday, so tomorrow is 4).
+TEXTS["en"]["evening"]["jokes_10"] = {"any": ["{P}BOTH FIGURES"]}
+expect("{P} lines with both drawings", "BOTH FIGURES" in render2())
+expect("no {P} lines with the drawings off", "BOTH FIGURES" not in render2(nxt=False))
+TEXTS["en"]["evening"]["jokes_10"] = {"any": ["{D:4}THURSDAY LINE", "{D:1}MONDAY LINE"]}
+hours = [render2(hour=hh) for hh in (20, 21, 22, 23)]
+expect("{D:} lines on their weekday only", all("THURSDAY LINE" in h for h in hours)
+       and not any("MONDAY LINE" in h for h in hours))
 TEXTS["en"]["evening"]["jokes_10"] = {"rain": ["RAIN LINE"]}
 expect("no lines for this tomorrow and no .any: no evening line", "RAIN LINE" not in render2(tmr_p=[0] * 24)
        and EVE in render2(tmr_p=[0] * 24))

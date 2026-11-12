@@ -266,17 +266,47 @@ was. Appended after the drawings block by prototypes/panels/build.py.
   {%- comment %}
   The evening's sarcastic line (owner: it stays, at On and 11). It reacts
   to tomorrow's weather (owner, after round 28: one pool for every evening
-  had nothing to react to): evening.jokes_<level>.<rain|colder|...>, and
-  .any where that kind of tomorrow has no lines yet. Neither: no line.
+  had nothing to react to): evening.jokes_<level>.<rain|colder|...>, plus
+  the lines for any weather (.any), which join every kind of tomorrow
+  (round 31: the screen's own evening, grumbling, the playlist...).
+  Tags in front of a line: "{P}" only with tonight's drawing beside
+  tomorrow's (the line talks about both figures); "{D:1,6}" only when
+  tomorrow is one of those weekdays (0 Sunday ... 6 Saturday). A line
+  whose tag doesn't fit is skipped for the next one. No line fits: none.
   {%- endcomment %}
   {%- if sarcasm_level != '0' -%}
     {%- assign jk = 'jokes_' | append: sarcasm_level -%}
+    {%- assign none_list = '' | split: ',' -%}
     {%- assign jl = EV[jk][ev_sit] -%}
-    {%- if jl == nil or jl.size == 0 -%}{%- assign jl = EV[jk].any -%}{%- endif -%}
-    {%- if jl and jl.size > 0 -%}
+    {%- if jl == nil -%}{%- assign jl = none_list -%}{%- endif -%}
+    {%- assign ja = EV[jk].any -%}
+    {%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
+    {%- assign jl = jl | concat: ja -%}
+    {%- if jl.size > 0 -%}
       {%- assign jn = jl | size -%}
       {%- assign ji = text_rot | plus: 3 | modulo: jn -%}
-      {%- assign ev_joke = jl[ji] -%}
+      {%- assign wd_probe = ',' | append: wd | append: ',' -%}
+      {%- for k in (1..jn) -%}
+        {%- assign j_cand = jl[ji] -%}
+        {%- if j_cand contains '{P}' -%}
+          {%- if ev_tonight_slug == '' -%}{%- assign j_cand = '' -%}{%- else -%}{%- assign j_cand = j_cand | remove_first: '{P}' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if j_cand contains '{D:' -%}
+          {%- assign j_tag = j_cand | split: '{D:' | last | split: '}' | first -%}
+          {%- assign j_tags = ',' | append: j_tag | append: ',' -%}
+          {%- if j_tags contains wd_probe -%}
+            {%- assign j_prefix = '{D:' | append: j_tag | append: '}' -%}
+            {%- assign j_cand = j_cand | remove_first: j_prefix -%}
+          {%- else -%}
+            {%- assign j_cand = '' -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if j_cand != '' -%}
+          {%- assign ev_joke = j_cand -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign ji = ji | plus: 1 | modulo: jn -%}
+      {%- endfor -%}
     {%- endif -%}
   {%- endif -%}
   {%- if location_label == '' -%}{%- assign location_label = EV.bar -%}{%- endif -%}
