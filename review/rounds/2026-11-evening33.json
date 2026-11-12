@@ -1,0 +1,45 @@
+{
+ "round": "2026-11-evening33",
+ "idPrefix": "e5",
+ "lines": [
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_any",
+   "text": "Mich schaust du dir jeden Abend an. Die Zahnseide nie.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Morgen regnet's ab 13 Uhr, denk also an den Schirm.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_rain",
+   "text": "Bei manchen sieht ein Schirm elegant aus. Bei dir wie geklaut.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Morgen regnet's ab 13 Uhr, denk also an den Schirm.",
+   "batch": "Evening, rain tomorrow: 11",
+   "meaning": "Evening screen at 11, rain tomorrow: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Proofread from: An manchen sieht ein Schirm elegant aus. An dir wie geklaut."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_colder",
+   "text": "Wie bei allen, die dich näher kennenlernen.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen wird's ab 13 Uhr kälter, dann brauchst du eine Schicht mehr.",
+   "batch": "Evening, colder tomorrow: 11",
+   "meaning": "Evening screen at 11, colder tomorrow: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Also under „Morgen geht's wärmer los, ab 13 Uhr wird's wieder kälter.“ (the critic's best fit) and „Morgen wird's ab 13 Uhr kälter.“"
+  }
+ ]
+}

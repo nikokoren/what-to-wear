@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Mich schaust du dir jeden Abend an. Die Zahnseide nie.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.rain",
+   "text": "Bei manchen sieht ein Schirm elegant aus. Bei dir wie geklaut.",
+   "evtag": "",
+   "was": "An manchen sieht ein Schirm elegant aus. An dir wie geklaut.",
+   "reasons": [
+    "Klingt unnatürlich"
+   ]
+  },
+  {
+   "path": "evening.jokes_11.colder",
+   "text": "Wie bei allen, die dich näher kennenlernen.",
+   "evtag": "",
+   "hint": "Also under „Morgen geht's wärmer los, ab 13 Uhr wird's wieder kälter.“ (the critic's best fit) and „Morgen wird's ab 13 Uhr kälter.“"
+  }
+ ]
+}

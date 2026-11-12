@@ -13,30 +13,6 @@ review/rounds/2026-11-evening33.json for the review page. A line's tag
 ({P}, {T}, {D:n}) stays out of its text and goes in "evtag";
 apply_evening.py puts it back in front when the line goes live.
 """
-Round 32 (November 2026): the evening top-up after round 31 (level 11 in both
-languages, English warmer, drier and steady, German warmer), 20 lines by owner choice.
-
-    python3 review/rounds/make_round32.py
-
-Reads review/rounds/2026-11-evening32/<lang>.proofread.json (else the
-critic's <lang>.json, else <lang>.written.json) and writes
-review/rounds/2026-11-evening32.json for the review page. A line's tag
-({P}, {T}, {D:n}) stays out of its text and goes in "evtag";
-apply_evening.py puts it back in front when the line goes live.
-"""
-Round 33 (November 2026): the German evening top-up (level 11 any, rain,
-colder, steady; On warmer), 8 slots by owner choice, written by a
-German-only writer that never sees the English lines (owner: get a German
-writer for the German phrases).
-
-    python3 review/rounds/make_round33.py
-
-Reads review/rounds/2026-11-evening33/<lang>.proofread.json (else the
-critic's <lang>.json, else <lang>.written.json) and writes
-review/rounds/2026-11-evening33.json for the review page. A line's tag
-({P}, {T}, {D:n}) stays out of its text and goes in "evtag";
-apply_evening.py puts it back in front when the line goes live.
-"""
 
 import json
 import pathlib
