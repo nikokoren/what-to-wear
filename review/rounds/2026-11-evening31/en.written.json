@@ -1,0 +1,154 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I'll check again at midnight. If it's changed, this conversation never happened.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "The other plugins on this screen will act like tomorrow isn't happening. Amateurs.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I've already sighed about tomorrow twice. Pacing myself.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I asked for a different tomorrow. This was the only one in stock.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "The little one on the left has seen what the right one's wearing. Tense evening.",
+   "evtag": "{P}"
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Fine. I suppose.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Current you, future you. Neither one's my best work.",
+   "evtag": "{P}"
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "If the forecast changes overnight, I'll redraw it. You, I can't fix.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "I've got two complaints about tomorrow. The weather's the second one.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "The rain has a booking for tomorrow. It never cancels.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Lovely. More water.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.rain",
+   "text": "The rain already knows exactly when it's showing up. That's more of a plan than you've got.",
+   "evtag": "{T}"
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "I asked for the snow to land somewhere more scenic. Apparently this is it.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "I'll draw the snow cleaner than it stays. Professional courtesy.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.snow",
+   "text": "Snow covers everything up. Just stand in it for a while.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "The heating has been waiting for this. Let it have its moment.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Colder. Of course.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.colder",
+   "text": "One more layer tomorrow. Finally, something between you and the public.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Warmer tomorrow. I'll be accepting the credit.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Fewer layers to draw tomorrow. I won't pretend I'm not relieved.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.warmer",
+   "text": "You'll call it 'gorgeous out' like you arranged it.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "The rain leaves partway through, like it remembered it left the stove on.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "First the rain, then the drying off. Thrilling.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.drier",
+   "text": "Dry later, so there's no excuse to look like that.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Nothing happens tomorrow. I may draw a few houses in the background. For morale.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "One outfit all day. Some of my best work is knowing when to stop.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.steady",
+   "text": "One outfit all day. Please don't let it be this one.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Monday tomorrow. The weather is just helping.",
+   "evtag": "{D:1}"
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Saturday and colder. Somebody had plans.",
+   "evtag": "{D:6}"
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Sunday tomorrow, and nothing changes. Even the weather's taking it easy.",
+   "evtag": "{D:0}"
+  }
+ ]
+}

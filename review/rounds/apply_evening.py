@@ -35,7 +35,7 @@ PLACE = {
         "Next on this screen, probably the stocks. Also forecasting a drop.": ("10", ["colder"], ""),
         "Marvelous. Truly.": ("10", ["rain", "snow", "colder"], ""),
         "Rain on a Saturday. The weather doesn't do weekends.": ("10", ["rain"], "{D:6}"),
-        "The rain told us exactly when it's coming. No repairman has ever managed that.": ("10", ["rain"], ""),
+        "The rain told us exactly when it's coming. No repairman has ever managed that.": ("10", ["rain"], "{T}"),
         "I asked if tomorrow's cold could wait a week. It's already left the house.": ("10", ["colder"], ""),
         "I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.": ("10", ["rain"], ""),
         "If this changes overnight, I'll quietly redraw it and act like it was always that way.": ("10", ["any"], ""),

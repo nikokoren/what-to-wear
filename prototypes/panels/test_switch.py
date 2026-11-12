@@ -522,7 +522,7 @@ def has_one(h, pool, fill="from 1\u00a0pm"):
 expect("tomorrow: the coldest outfit 6 to 9 am, then the rain", re.search(r"coat_dry\.png.*jacket_rain\.png", html, re.S) is not None
        and ">6–9\u00a0am<" in html and ">from 1\u00a0pm<" in html and has_one(html, EVT["en"]["facts"]["tmr_rain"]))
 def strip_tags(pool):
-    return [re.sub(r"^(\{P\}|\{D:[0-9,]+\})+", "", t) for t in pool]
+    return [re.sub(r"^(\{P\}|\{T\}|\{D:[0-9,]+\})+", "", t) for t in pool]
 
 
 on_pool = strip_tags(EVT["en"]["jokes_10"].get("rain", []) + EVT["en"]["jokes_10"].get("any", []))
@@ -560,6 +560,9 @@ expect("a kind of tomorrow with no lines of its own: the lines for any weather",
 TEXTS["en"]["evening"]["jokes_10"] = {"any": ["{P}BOTH FIGURES"]}
 expect("{P} lines with both drawings", "BOTH FIGURES" in render2())
 expect("no {P} lines with the drawings off", "BOTH FIGURES" not in render2(nxt=False))
+TEXTS["en"]["evening"]["jokes_10"] = {"rain": ["{T}TIMED LINE"]}
+expect("{T} lines when the sentence names a time", "TIMED LINE" in render2())
+expect("no {T} lines on a day wet from the start", "TIMED LINE" not in render2(tmr_p=[80] * 24))
 TEXTS["en"]["evening"]["jokes_10"] = {"any": ["{D:4}THURSDAY LINE", "{D:1}MONDAY LINE"]}
 hours = [render2(hour=hh) for hh in (20, 21, 22, 23)]
 expect("{D:} lines on their weekday only", all("THURSDAY LINE" in h for h in hours)
