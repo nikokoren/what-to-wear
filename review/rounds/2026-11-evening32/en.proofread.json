@@ -1,0 +1,23 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Good news: the outfit's taken care of. Bad news: you're still in it.",
+   "evtag": "",
+   "was": "Good news: the outfit is sorted. Bad news: you're still in it.",
+   "hint": "Critic: close to the vetoed idea \"the outfit's handled, you're the problem\""
+  },
+  {
+   "path": "evening.jokes_11.rain",
+   "text": "You'll blame the rain for how you look. For once, that'll be half true.",
+   "evtag": "",
+   "hint": "Critic: same idea as the live \"Today you have no weather to blame. Awkward.\""
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "Nobody say anything, or it'll come back.",
+   "evtag": "",
+   "hint": "Cut from \"The rain leaves early. Nobody say anything, or it'll come back.\": the first sentence restated the line above"
+  }
+ ]
+}

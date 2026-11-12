@@ -7,7 +7,7 @@ languages, English warmer, drier and steady, German warmer), 20 lines by owner c
 
 Reads review/rounds/2026-11-evening32/<lang>.proofread.json (else the
 critic's <lang>.json, else <lang>.written.json) and writes
-review/rounds/2026-11-evening31.json for the review page. A line's tag
+review/rounds/2026-11-evening32.json for the review page. A line's tag
 ({P}, {T}, {D:n}) stays out of its text and goes in "evtag";
 apply_evening.py puts it back in front when the line goes live.
 """
@@ -52,7 +52,8 @@ def main():
             lv = lvk.split("_")[1]
             fact = facts[FACT_KEY[pool]][0].replace("{DRY}", "").replace("{FROM}", FROM[lang])
             tag = item.get("evtag", "")
-            hints = [h for h in (tag_hint(tag), ("Proofread from: " + item["was"]) if item.get("was") else "") if h]
+            hints = [h for h in (tag_hint(tag), ("Proofread from: " + item["was"]) if item.get("was") else "",
+                                  item.get("hint", "")) if h]
             lines.append({"lang": lang, "path": f"flavour_{lv}.evening_{pool}", "text": item["text"].strip(),
                           "evtag": tag, "role": "flavour", "sprite": SPRITE[pool], "fact": fact,
                           "batch": f"Evening, {POOL[pool]}: {LEVEL[lv]}",
