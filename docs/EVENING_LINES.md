@@ -50,9 +50,10 @@ All approved sentences per pool are in `prototypes/panels/lang/<lang>.json` unde
 - **Nothing the screen can't know:** no assumptions about the reader's job, partner, kids, car, commute or plans; no packing, no "lay it out tonight"; evening is not necessarily bedtime. Don't predict the reader's mishaps.
 - **No wordplay** on the forecast's own words or on idioms around them ("cold feet", "rain on your parade").
 - **Short:** one or two short sentences, clear on first read, never explain the joke. The sentence above and the line together stay under about 165 characters.
-- **Not new means dead:** never repeat an idea from a live line, a starred line or a vetoed line (see "Where things are").
+- **Not new means dead:** never repeat an idea from a live line or a starred line in the same language (see "Where things are"). A vetoed line is different: the veto may have been about its wording, so a topic vetoed once may come back with a clearly new take (owner, November 2026). Only a near-copy of a vetoed line is out.
+- **Across languages:** never translate. The same idea in both languages is fine when each writer came to it on their own (owner, November 2026).
 
-## Ideas that are dead (vetoed, don't go near them)
+## Ideas that failed more than once (avoid unless you have a clearly new take)
 
 - The screen knowing tomorrow before anyone else.
 - Tonight-you against morning-you.
@@ -97,7 +98,7 @@ What has worked across this project is a line that reacts to something specific 
 
 1. **Opening with a restatement.** "Warmer tomorrow.", "A one-outfit day.", „Wärmer morgen.“ in front of the joke. On screen it reads "Tomorrow it's warmer from 1 pm. Warmer tomorrow. …". Start with the reaction.
 2. **One frame for a whole pool.** Four 11 lines all said "the outfit is taken care of, you're the problem", which the owner had already vetoed. The "I asked the weather…" frame is live three times; don't add a fourth.
-3. **English and German telling the same joke.** Each language needs its own ideas, not a translation.
+3. **English and German telling the same joke.** Each language needs its own lines, not a translation. (Arriving at the same idea independently is fine.)
 4. **German written from an English open.** „Wärmer morgen.“ is English word order. The owner finds this the worst fault.
 
 ## Where things are

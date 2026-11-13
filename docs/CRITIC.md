@@ -53,4 +53,14 @@ Cut a candidate if any of these hold:
   before direct speech; „das Gleiche“, „zu Hause“, „dieses Mal“.
 
 **Duplicates**: two candidates with one idea (keep the better), or a
-repeat of a live line's idea.
+repeat of a live line's idea in the same language.
+
+**Not a reason to cut** (owner, November 2026: the critics were too
+harsh):
+- The same idea in the other language, when the writers came to it on
+  their own. Cut only a translation: the same joke in the same shape.
+- A topic the owner vetoed once. A veto may have been about the wording,
+  not the idea. Cut only a near-copy of a vetoed line; otherwise keep it
+  and name the vetoed line in your report, so the owner can judge.
+  An idea the owner vetoed with a note against the idea itself (e.g.
+  "Don't reference the drawings that much") still counts.

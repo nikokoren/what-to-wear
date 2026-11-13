@@ -744,6 +744,8 @@ Most common reasons: not funny (842), unclear (142), robotic (84), too long (20)
 
 - Das Wetter kann sich über Nacht noch ändern. Bei dir rechne ich nicht damit.  
   _not funny_
+- Ich mach das hier nur, weil der Spiegel gekündigt hat.  
+  _no tag_
 - Sonntag. Da darfst du aussehen, wie du immer aussiehst.  
   _not funny_
 

@@ -2792,6 +2792,80 @@
   "edit": "",
   "updatedAt": "2026-11-13T15:43:00.623Z"
  },
+ "e8-en-44d1de5cd0ac": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "It says 'Fri' up there. For most people, that's the whole forecast.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening36",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T16:29:19.690Z"
+ },
+ "e8-en-4b09bb36c510": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Some people trust only their porch thermometer. It's been in direct sun since 1994.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening36",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Some people trust only their porch thermometer. It's been in direct sun since 1993.",
+  "updatedAt": "2026-11-13T16:29:45.673Z"
+ },
+ "e8-en-58e5ac940ad5": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Checking three apps and believing the nicest isn't forecasting. It's voting.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening36",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Checking three apps and believing the nicest isn't forecasting.",
+  "updatedAt": "2026-11-13T16:30:06.741Z"
+ },
+ "e8-en-a96c1e1ab7d7": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "I go on last, after the drawings and the sentence. Headliners always do.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening36",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T16:30:21.248Z"
+ },
+ "e8-en-de85abba2ba1": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "I'm a paper doll with Wi-Fi. Somehow that makes me a smart device.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening36",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T16:30:40.866Z"
+ },
  "en-005f96d41801": {
   "level": "11",
   "key": "nice",
