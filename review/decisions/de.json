@@ -11192,6 +11192,34 @@
   "edit": "Dein Stil: Hauptsache angezogen.",
   "updatedAt": "2026-11-13T16:28:49.870Z"
  },
+ "e9-de-2c401641d961": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Ich helf dir jeden Abend beim Anziehen. Andere kriegen dafür einen Pflegegrad.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening37",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Ich helf dir jeden Abend beim Anziehen. Andere brauchen dafür einen Pflegegrad.",
+  "updatedAt": "2026-11-13T18:00:49.545Z"
+ },
+ "e9-de-9a8081dafd6e": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Falls ich mal was Nettes über dich sag, ist das ein Bug.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening37",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Merk dir: falls ich mal was Nettes über dich sag, wurden wir gehackt.",
+  "updatedAt": "2026-11-13T18:01:14.662Z"
+ },
  "ev-de-0126eb060f19": {
   "level": "0",
   "key": "evening_tmr_colder",

@@ -2866,6 +2866,20 @@
   "edit": "",
   "updatedAt": "2026-11-13T16:30:40.866Z"
  },
+ "e9-en-307ed16b23d0": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Swedes say there's no bad weather, only wrong clothes. So it's all on me.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening37",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "People say there's no bad weather, only wrong clothes. And just like that they throw me under the bus.",
+  "updatedAt": "2026-11-13T18:01:54.596Z"
+ },
  "en-005f96d41801": {
   "level": "11",
   "key": "nice",
