@@ -11044,6 +11044,98 @@
   "edit": "",
   "updatedAt": "2026-11-13T14:54:23.297Z"
  },
+ "e7-de-40895cf7ca35": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Ein Ausrufezeichen hat sich das Wetter bei mir noch nie verdient.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening35",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T15:40:07.039Z"
+ },
+ "e7-de-415c24251886": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "„Mo“. Mehr Buchstaben ist mir der Montag nicht wert.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening35",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T15:40:17.100Z"
+ },
+ "e7-de-5be81299e0ec": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Irgendwer freut sich auf genau dieses Wetter. Den möcht ich nicht kennen.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening35",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T15:40:32.886Z"
+ },
+ "e7-de-9901a7a0fb46": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Meine Figuren haben denselben Gesichtsausdruck. Meinen.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening35",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T15:40:39.997Z"
+ },
+ "e7-de-eb2e8c6b0637": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Sonntag. Da darfst du aussehen, wie du immer aussiehst.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening35",
+  "verdict": "veto",
+  "tags": [
+   "not funny"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T15:40:52.362Z"
+ },
+ "e7-de-f3a2f030f0eb": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "Kamera hab ich keine. Das ist kein Datenschutz, das ist Selbstschutz.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening35",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "Kamera hab ich keine. Mir geht’s nicht um Datenschutz, ich will dich einfach nicht sehen.",
+  "updatedAt": "2026-11-13T15:41:20.410Z"
+ },
  "ev-de-0126eb060f19": {
   "level": "0",
   "key": "evening_tmr_colder",

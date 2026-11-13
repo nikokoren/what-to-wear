@@ -46,6 +46,7 @@ All approved sentences per pool are in `prototypes/panels/lang/<lang>.json` unde
 - **Don't restate the sentence above.** It already says what and when. Add a reaction, an image, a consequence.
 - **Avoid "Tomorrow" as the first or last word.** The sentence above almost always starts with it.
 - **No setup the screen doesn't give.** The owner vetoed „Ab dann haben wieder alle Omas recht.“ because the joke needs the reader to know grandmas always tell you to wear a scarf.
+- **True to the drawings:** the figure has a simple face (dot eyes, a nose dash, a mouth line) and, from November 2026, no logo (the owner redrew the sprites). Faces are white, clothes are shades of gray.
 - **Nothing the screen can't know:** no assumptions about the reader's job, partner, kids, car, commute or plans; no packing, no "lay it out tonight"; evening is not necessarily bedtime. Don't predict the reader's mishaps.
 - **No wordplay** on the forecast's own words or on idioms around them ("cold feet", "rain on your parade").
 - **Short:** one or two short sentences, clear on first read, never explain the joke. The sentence above and the line together stay under about 165 characters.

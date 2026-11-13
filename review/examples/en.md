@@ -335,12 +335,14 @@ Do not edit by hand; vote on the page instead.
 
 ## evening_any · dry
 
+- All of tomorrow in a few words. Some need a five-minute voice memo to say less.
 - Horoscopes predict the future too. Not one has ever mentioned pants.
 
 ## evening_any · sarcastic
 
 - When you read this, your mouth hangs open a little. Nobody else was going to tell you.
 - You turned me up to 11 on purpose. Most daring thing you've done all year.
+- You've looked at this outfit longer than anyone will look at you in it.
 
 ## evening_tmr_snow_start · plain
 
