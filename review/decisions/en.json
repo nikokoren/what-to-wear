@@ -2618,6 +2618,80 @@
   "edit": "",
   "updatedAt": "2026-11-12T16:27:56.625Z"
  },
+ "e6-en-3149dea531c5": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "All of tomorrow in a few words. Some people need four voice memos to cancel lunch.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening34",
+  "verdict": "keep",
+  "tags": [
+   "too long"
+  ],
+  "note": "",
+  "edit": "All of tomorrow in a few words. Some people would need a 5 minute voice memo to say the same thing.",
+  "updatedAt": "2026-11-13T14:56:56.625Z"
+ },
+ "e6-en-357fb8fde93f": {
+  "level": "10",
+  "key": "evening_any",
+  "path": "flavour_10.evening_any[+]",
+  "text": "Horoscopes predict tomorrow too. Not one has ever mentioned pants.",
+  "source": "candidate",
+  "batch": "Evening, any weather: On",
+  "round": "2026-11-evening34",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "Horoscopes predict the future too. Not one has ever mentioned pants.",
+  "updatedAt": "2026-11-13T14:57:26.584Z"
+ },
+ "e6-en-965151ce10cb": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "The little figure always looks so calm. It has no idea it's supposed to be you.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening34",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T14:57:57.973Z"
+ },
+ "e6-en-adbaf1cb078d": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "When you read this, your mouth hangs open a little. Nobody else was going to tell you.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening34",
+  "verdict": "star",
+  "tags": [
+   "too long"
+  ],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T14:58:11.898Z"
+ },
+ "e6-en-b0c2ee52e641": {
+  "level": "11",
+  "key": "evening_any",
+  "path": "flavour_11.evening_any[+]",
+  "text": "You turned me up to 11 on purpose. Most daring thing you've done all year.",
+  "source": "candidate",
+  "batch": "Evening, any weather: 11",
+  "round": "2026-11-evening34",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-13T14:58:22.841Z"
+ },
  "en-005f96d41801": {
   "level": "11",
   "key": "nice",

@@ -333,6 +333,15 @@ Do not edit by hand; vote on the page instead.
 - You'll read all this, then do what you were going to anyway.
 - Your 'five minutes on the sofa' will probably cover the rest of it.
 
+## evening_any · dry
+
+- Horoscopes predict the future too. Not one has ever mentioned pants.
+
+## evening_any · sarcastic
+
+- When you read this, your mouth hangs open a little. Nobody else was going to tell you.
+- You turned me up to 11 on purpose. Most daring thing you've done all year.
+
 ## evening_tmr_snow_start · plain
 
 - Expect a snowy start tomorrow.

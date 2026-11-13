@@ -51,7 +51,8 @@ PLACE = {
 # Small fixes to the owner's edits (spelling only).
 FIXES = {"But it's already on it's way.": "But it's already on its way.",
          "Vielleicht fang ich an ein bisschen Hintergrund zu malen": "Vielleicht fang ich an, ein bisschen Hintergrund zu malen",
-         "Schon mal überlegt so viel Zeit": "Schon mal überlegt, so viel Zeit"}
+         "Schon mal überlegt so viel Zeit": "Schon mal überlegt, so viel Zeit",
+         "a 5 minute voice memo": "a five-minute voice memo"}
 # Tags added after a vote, by the line's original text (owner's notes).
 EXTRA_TAGS = {"Samstag, und das Wetter spielt mit. Kommt selten genug vor.": "{G}"}
 

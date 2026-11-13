@@ -360,6 +360,11 @@ Do not edit by hand; vote on the page instead.
 - Für den Abend reicht's. Für ein Kompliment nicht.
 - Wie war dein Tag? Lass, ich hab's an deinem Gesicht gesehen.
 
+## evening_any · dry
+
+- Das war die höfliche Version. Die ehrliche wär kürzer.
+- Freitag. Da könnt ich Hagel malen, und alle hätten trotzdem gute Laune.
+
 ## evening_steady · dry
 
 - Ändert sich das doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen.
