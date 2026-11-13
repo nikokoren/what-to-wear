@@ -1,10 +1,18 @@
-{"lines": [
- {"path": "evening.jokes_10.any", "evtag": "{S}",
-  "text": "All of tomorrow in a few words. Some people need a five-minute voice memo to say less.",
-  "replaces": "All of tomorrow in a few words. Some people would need a five-minute voice memo to say the same thing.",
-  "hint": "Shortened (owner: too long); replaces the live line if kept: All of tomorrow in a few words. Some people would need a five-minute voice memo to say the same thing."},
- {"path": "evening.jokes_11.any", "evtag": "",
-  "text": "You read me with your mouth open. Someone had to tell you.",
-  "replaces": "When you read this, your mouth hangs open a little. Nobody else was going to tell you.",
-  "hint": "Shortened (owner: too long); replaces the live line if kept: When you read this, your mouth hangs open a little. Nobody else was going to tell you."}
-]}
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "evtag": "{S}",
+   "text": "All of tomorrow in a few words. Some need a five-minute voice memo to say less.",
+   "replaces": "All of tomorrow in a few words. Some people would need a five-minute voice memo to say the same thing.",
+   "hint": "Shortened (owner: too long); replaces the live line if kept: All of tomorrow in a few words. Some people would need a five-minute voice memo to say the same thing."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "evtag": "",
+   "text": "You read me with your mouth open. Someone had to tell you.",
+   "replaces": "When you read this, your mouth hangs open a little. Nobody else was going to tell you.",
+   "hint": "Shortened (owner: too long); replaces the live line if kept: When you read this, your mouth hangs open a little. Nobody else was going to tell you."
+  }
+ ]
+}
