@@ -1,0 +1,112 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "„Mo“. Mehr Buchstaben ist mir der Montag nicht wert.",
+   "evtag": "{D:1}",
+   "note": "Reacts to the weekday tag 'Morgen · Mo': the Grantler pretends the abbreviation is spite against Monday; true on screen, any weather."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Sonntag. Alles hat zu, nur das Wetter hat wie immer geöffnet.",
+   "evtag": "{D:0}",
+   "note": "Sunday closing laws (DE/AT/CH alike): everything is shut except the weather, which never takes a day off; grumbles at the world, fits good or bad weather."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Ein Ausrufezeichen hat sich das Wetter bei mir noch nie verdient.",
+   "evtag": "{S}",
+   "note": "Points at the bold sentence, which always ends in a plain full stop: the Grantler has never been impressed by any weather, so it reads under rain and sunshine alike."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Die Nacht dazwischen spar ich mir. Wär eh nur ein schwarzes Bild.",
+   "evtag": "{P}",
+   "note": "Reacts to tonight's and tomorrow's drawings side by side: the screen skips drawing the night because on e-ink it would just be a black square; lazy, grumpy, true."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Meine Figuren haben alle denselben Gesichtsausdruck. Meinen.",
+   "evtag": "",
+   "note": "Reacts to the drawn faces (dots and a flat mouth line, the same every day): the Grantler claims the blank grumpy look as a self-portrait; about the screen, not the reader."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Fett gedruckt, weil's sonst wieder keiner glaubt.",
+   "evtag": "{S}",
+   "note": "Points at the bold type of the sentence above: the screen sets it in bold because nobody believes a forecast; about people, not the reader, any weather."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Irgendwer freut sich auf genau dieses Wetter. Den möcht ich nicht kennen.",
+   "evtag": "",
+   "note": "Whatever tomorrow brings, someone somewhere is pleased about it, and the Grantler wants nothing to do with that person; reacts to the sentence without assuming good or bad."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Früher hat das ein Wetterhäuschen gemacht. Aus Holz und ohne Kommentar.",
+   "evtag": "",
+   "note": "The screen as the descendant of the kitschy Alpine weather house with its little figures (which it now draws itself), admitting it is the talkative upgrade."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Links heute, rechts morgen. Politisch ist das nicht gemeint.",
+   "evtag": "{P}",
+   "note": "Reacts to the layout (tonight left, tomorrow right) with a dry Kabarett disclaimer; true with tonight's drawing beside tomorrow's."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Um Mitternacht ist der Zauber vorbei. Aschenputtel durfte wenigstens tanzen.",
+   "evtag": "",
+   "note": "The evening view really switches off at midnight; the Grantler compares itself to Cinderella and grumbles that it only gets the deadline, not the ball."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Kamera hab ich keine. Das ist kein Datenschutz, das ist Selbstschutz.",
+   "evtag": "",
+   "note": "True for the device (no camera): the screen spares itself the sight of the reader; a short, confident looks jab in very German privacy vocabulary."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Auf 11 hast du mich selbst gestellt. Selbstachtung sieht anders aus.",
+   "evtag": "",
+   "note": "True for every line in this pool: the reader chose to be insulted, which the screen reads as a lack of self-respect; worth jab tied to the setting."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Sonntag. Da darfst du aussehen, wie du immer aussiehst.",
+   "evtag": "{D:0}",
+   "note": "Reacts to the 'Morgen · So' tag: Sunday is the day sloppy is allowed, and for the reader that's no change; specific, cruel, assumes nothing about their life."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Für jemand Wichtigeren hätt ich mir bei dem Satz mehr Mühe gegeben.",
+   "evtag": "{S}",
+   "note": "Points at the plain bold sentence: it is that plain because the reader didn't rate more effort; a worth jab with no claim about the weather."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Wie du heißt, weiß ich gar nicht. Gefragt hab ich auch nie.",
+   "evtag": "",
+   "note": "The screen talks to the reader every evening and never cared to learn their name; cold indifference as the insult, true for the screen."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Farbe kann ich nicht. Bei deinem Geschmack ist das ein Segen.",
+   "evtag": "",
+   "note": "Reacts to the gray clothes in the drawings: e-ink's lack of colour spares everyone the reader's taste; looks jab that doesn't contrast picture and real life."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Eingerichtet hast du mich ganz allein. Hätt ich dir nicht zugetraut.",
+   "evtag": "",
+   "note": "The reader did set the screen up, and the Grantler is openly surprised they managed; a backhanded compliment as a jab at their competence."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Abends schon das Wetter für morgen studieren. Fehlt nur noch die Strickweste.",
+   "evtag": "",
+   "note": "Checking tomorrow's weather the evening before is what old people do; the cardigan is the age jab, in the screen's own clothing terms."
+  }
+ ]
+}
