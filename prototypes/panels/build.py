@@ -107,55 +107,135 @@ WORDS = """
 
 
 # The evening (prototypes/panels/evening.liquid): tonight | tomorrow.
-# Per view: a drawing's column width and height cap (in view units), and
-# whether the words fit under the drawings. The half view lying wide and
-# the quarter show tags, drawings and times only.
-EVENING = {
-    "full": dict(w=30, h=46, h_bare=60, words="content--base lg:content--large", words_ok=True),
-    "half_horizontal": dict(w=30, h=62, h_bare=62, words="content--small lg:content--base", words_ok=False),
-    "half_vertical": dict(w=29, h=40, h_bare=54, words="content--small lg:content--base", words_ok=True),
-    "quadrant": dict(w=29, h=56, h_bare=56, words="content--small lg:content--base", words_ok=False),
-}
+# It reuses the daytime screen's parts (owner: the other scenarios already
+# size the drawings and the type well on every device): the classes of
+# one drawing or of a row of two or three (one_classes, row_classes), the
+# times' label size and WORDS. It adds only the two tags, which take a
+# little of the drawings' height (TAG_H, view height), and the divider
+# between tonight and tomorrow.
+TAG_H = 6
 
 
-def evening_view(v):
-    e = EVENING[v["_name"]]
-    w, label = e["w"], v["label"]
-    cell = (f'<div class="flex flex--col gap--small w--[{w}cqw]">'
-            f'<img class="image image--contain image-dither aspect--3/4 w--[{w + 1}cqw] h--max-[{{{{ ev_h }}}}cqh]" '
-            f'src="{{{{ sprite_base_url }}}}{{{{ SLUG }}}}.png" alt="{{{{ SLUG }}}}">'
-            f'<span class="label text--center {label}">{{{{ LABEL }}}}</span></div>')
-    words = """
-  {%- if ev_words %}
-  <div class="content content--center text--center w--[94cqw] """ + e["words"] + """" data-wtw="words">
-    {%- if ev_fact != '' %}<p class="font--bold">{{ ev_fact }}</p>{%- endif %}
-    {%- if ev_joke != '' %}<p>{{ ev_joke }}</p>{%- endif %}
-  </div>
-  {%- endif %}"""
-    words_ok = "true" if e["words_ok"] else "false"
-    return ("{%- elsif evening_on %}\n"
-            "{%- assign ev_words = false -%}\n"
-            "{%- if ev_fact != '' or ev_joke != '' -%}{%- assign ev_words = true -%}{%- endif -%}\n"
-            "{%- if ev_tonight_slug != '' and " + words_ok + " == false -%}{%- assign ev_words = false -%}{%- endif -%}\n"
-            "{%- if ev_words -%}{%- assign ev_h = " + str(e["h"]) + " -%}{%- else -%}{%- assign ev_h = " + str(e["h_bare"]) + " -%}{%- endif -%}\n"
-            '<div class="layout layout--col gap--small" data-wtw="evening">\n'
-            '  <div class="flex flex--row gap--small">\n'
-            "  {%- if ev_tonight_slug != '' %}\n"
-            f'    <div class="flex flex--col flex--center-x gap--small w--[{w + 2}cqw]">\n'
-            '      <span class="label label--outline">{{ texts.evening.tonight }}</span>\n      '
-            + cell.replace("{{ SLUG }}", "{{ ev_tonight_slug }}").replace("{{ LABEL }}", "{{ ev_tonight_label }}") + "\n"
-            "    </div>\n"
-            '    <div class="divider divider--v"></div>\n'
-            "  {%- endif %}\n"
-            '    <div class="flex flex--col flex--center-x gap--small">\n'
-            '      <span class="label label--inverted" data-wtw="tomorrow">{{ ev_tag }}</span>\n'
-            '      <div class="flex flex--row gap--none">\n'
-            "      {%- for slug in ev_slug_list %}\n"
-            "      {%- if ev_tonight_slug != '' or forloop.first %}\n        "
-            + cell.replace("{{ SLUG }}", "{{ slug }}").replace("{{ LABEL }}", "{{ ev_label_list[forloop.index0] }}") + "\n"
-            "      {%- endif %}\n"
-            "      {%- endfor %}\n"
-            "      </div>\n    </div>\n  </div>" + words + "\n</div>\n")
+def evening_view(view, v):
+    a = ["{%- elsif evening_on %}\n"
+         "{%- assign w_fact = ev_fact -%}{%- assign w_flavour = ev_joke -%}\n"
+         "{%- assign has_words = false -%}\n"
+         "{%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}\n"
+         "{%- assign ev_n = ev_slug_list | size -%}\n"
+         "{%- if ev_tonight_slug == '' %}\n"]
+    # Drawings off: one drawing of tomorrow, as one drawing in the day.
+    a.append(one_classes(v, tag=True))
+    a.append("""<div class="{{ c_outer }}" data-wtw="evening">
+  {%- if c_wrap != '' %}<div class="{{ c_wrap }}">{%- endif %}
+  <span class="label label--inverted LABEL" data-wtw="tomorrow">{{ ev_tag }}</span>
+  <img class="{{ c_image }}" src="{{ sprite_base_url }}{{ ev_slug_list | first }}.png" alt="{{ ev_slug_list | first }}">
+  {%- if c_wrap != '' %}</div>{%- endif %}""".replace("LABEL", v["label"]) + WORDS + "\n</div>\n")
+    a.append("{%- else -%}\n{%- assign n = ev_n | plus: 1 -%}\n")
+    a.append(row_classes(view, v, tag=True))
+    label = v["label"]
+    cell = ("""<div class="flex flex--col gap--small {{ c_panel }}">
+        <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}SLUG.png" alt="SLUG">
+        <span class="label text--center mx--1 LABELCLS">TIME</span>
+      </div>""").replace("LABELCLS", label)
+    divider = "divider divider--v" + (" portrait:hidden" if v.get("stack") else "")
+    a.append("""<div class="{{ c_outer }}" data-wtw="evening">
+  <div class="{{ c_row }}" data-wtw="panels">
+    <div class="flex flex--col flex--center-x gap--small">
+      <span class="label label--outline LABEL">{{ texts.evening.tonight }}</span>
+      """.replace("LABEL", label)
+             + cell.replace("SLUG", "{{ ev_tonight_slug }}").replace("TIME", "{{ ev_tonight_label }}") + """
+    </div>
+    <div class="DIVIDER"></div>
+    <div class="flex flex--col flex--center-x gap--small">
+      <span class="label label--inverted LABEL" data-wtw="tomorrow">{{ ev_tag }}</span>
+      <div class="{{ c_row }}">
+      {%- for slug in ev_slug_list %}
+      """.replace("LABEL", label).replace("DIVIDER", divider)
+             + cell.replace("SLUG", "{{ slug }}").replace("TIME", "{{ ev_label_list[forloop.index0] }}") + """
+      {%- endfor %}
+      </div>
+    </div>
+  </div>""" + WORDS + "\n</div>\n{%- endif %}\n")
+    return "".join(a)
+
+
+def one_classes(v, tag=False):
+    """The classes of one drawing, with or without words (Liquid assigns)."""
+    side, side_one = v.get("side", False), v.get("side_one", False)
+    one_min = ONE_MIN - (TAG_H if tag else 0)
+    col_words = f"w--[96cqw] {v['words']}"
+    one_col = ("layout layout--col gap--small",
+               f"image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[{one_min}cqh]")
+    a = []
+    if side or side_one:
+        c, box, w = ONE_SIDE
+        a.append("{%- if has_words -%}\n")
+        a.append(f"  {{%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}}\n"
+                 f"  {{%- assign c_wrap = 'flex flex--col gap--none w--[{c}cqw] h--[100cqh] portrait:w--[100cqw] portrait:h--auto portrait:stretch' -%}}\n"
+                 f"  {{%- assign c_image = 'image image--contain image-dither w--[{box}cqw] h--[{100 - (TAG_H if tag else 0)}cqh] portrait:w--[100cqw] portrait:h--auto portrait:stretch portrait:h--min-[{one_min}cqh]' -%}}\n"
+                 f"  {{%- assign c_words = 'w--[{w}cqw] portrait:w--[96cqw] {v['words']}' -%}}\n")
+        a.append("{%- else -%}\n")
+        a.append(f"  {{%- assign c_outer = '{one_col[0]}' -%}}{{%- assign c_wrap = '' -%}}{{%- assign c_image = '{one_col[1]}' -%}}\n")
+        a.append("{%- endif -%}\n")
+    else:
+        a.append(f"{{%- assign c_outer = '{one_col[0]}' -%}}{{%- assign c_wrap = '' -%}}{{%- assign c_image = '{one_col[1]}' -%}}"
+                 f"{{%- assign c_words = '{col_words}' -%}}\n")
+    return "".join(a)
+
+
+def row_classes(view, v, tag=False):
+    """The classes of a row of two or three drawings, for n = 2 or 3 and
+    the three word cases (Liquid assigns). tag: the evening's tags take
+    TAG_H of the height."""
+    side, stack = v.get("side", False), v.get("stack")
+    words_n = v.get("words_n", v["words"])
+    th = TAG_H if tag else 0
+    a = []
+
+    def sizes(row, n):
+        slot = (row - (n - 1) * 4) / n
+        return round(row / n), round(slot * 1.125)
+    for k in (2, 3):
+        a.append(("{%- if n == 2 -%}\n" if k == 2 else "{%- else -%}\n"))
+        # Three cases: the forecast line under the drawings (both switches on),
+        # only the sarcastic line, no words.
+        for case in ("fact", "words", "bare"):
+            a.append({"fact": "  {%- if w_fact != '' -%}\n", "words": "  {%- elsif has_words -%}\n",
+                      "bare": "  {%- else -%}\n"}[case])
+            ih = {"fact": v["ih_fact"], "words": v["ih_words"], "bare": v["ih_bare"]}[case] - th
+            wclass = v["words_fact"] if case == "fact" else words_n
+            col, img = sizes(ROW, k)
+            panel = f"w--[{col}cqw]"
+            image = f"w--[{img}cqw] h--max-[{ih}cqh]"
+            # The three-up half-vertical row has spare height. Enlarge its
+            # portrait artwork another 25%, and keep the outer centers
+            # inset so rain, snow and umbrellas fit. Portrait stacks keep
+            # their separate width and height budgets below.
+            if view == "half_vertical" and k == 3:
+                panel += " landscape:w--[33cqw] lg:landscape:w--[32cqw]"
+                image += " landscape:w--[40cqw]"
+            outer = "layout layout--col gap--small"
+            row = "flex flex--row gap--none"
+            words = f"w--[92cqw] {wclass}"
+            if side and case != "bare":
+                srow, swords = (SIDE_ROW_FACT, SIDE_WORDS_FACT) if case == "fact" else (SIDE_ROW, SIDE_WORDS)
+                scol, simg = sizes(srow, k)
+                outer = "layout layout--row portrait:layout--col gap"
+                panel = f"w--[{scol}cqw] portrait:w--[{col}cqw]"
+                image = f"w--[{simg}cqw] h--max-[{v['side_ih'] - th}cqh] portrait:w--[{img}cqw] portrait:h--max-[{ih}cqh]"
+                words = f"w--[{swords}cqw] portrait:w--[92cqw] {wclass}"
+            if stack:
+                total = stack[case] - (2 * th if tag else 0)
+                caps = [int((total - (k - 1) * 2 - k * lbl) / k) for lbl in STACK_LABEL]
+                row += " portrait:flex--col"
+                panel += " portrait:w--[100cqw]"
+                image += f" portrait:w--[84cqw] portrait:h--max-[{caps[0]}cqh] lg:portrait:h--max-[{caps[1]}cqh]"
+            a.append(f"    {{%- assign c_outer = '{outer}' -%}}{{%- assign c_row = '{row}' -%}}"
+                     f"{{%- assign c_panel = '{panel}' -%}}{{%- assign c_image = '{image}' -%}}"
+                     f"{{%- assign c_words = '{words}' -%}}\n")
+        a.append("  {%- endif -%}\n")
+    a.append("{%- endif -%}\n")
+    return "".join(a)
 
 
 def build_view(view, v):
@@ -190,26 +270,11 @@ from the copies the transitional markup carries.
 """)
     err = ERROR["row" if (side or side_one) else "col"]
     a.append("{%- if is_error %}\n" + err + "\n")
-    a.append(evening_view(v))
+    a.append(evening_view(view, v))
 
     # ---- one drawing
-    col_words = f"w--[96cqw] {v['words']}"
-    one_col = (f"layout layout--col gap--small",
-               f"image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[{ONE_MIN}cqh]")
     a.append("{%- elsif n == 1 %}\n")
-    if side or side_one:
-        c, box, w = ONE_SIDE
-        a.append("{%- if has_words -%}\n")
-        a.append(f"  {{%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}}\n"
-                 f"  {{%- assign c_wrap = 'flex flex--col gap--none w--[{c}cqw] h--[100cqh] portrait:w--[100cqw] portrait:h--auto portrait:stretch' -%}}\n"
-                 f"  {{%- assign c_image = 'image image--contain image-dither w--[{box}cqw] h--[100cqh] portrait:w--[100cqw] portrait:h--auto portrait:stretch portrait:h--min-[{ONE_MIN}cqh]' -%}}\n"
-                 f"  {{%- assign c_words = 'w--[{w}cqw] portrait:w--[96cqw] {v['words']}' -%}}\n")
-        a.append("{%- else -%}\n")
-        a.append(f"  {{%- assign c_outer = '{one_col[0]}' -%}}{{%- assign c_wrap = '' -%}}{{%- assign c_image = '{one_col[1]}' -%}}\n")
-        a.append("{%- endif -%}\n")
-    else:
-        a.append(f"{{%- assign c_outer = '{one_col[0]}' -%}}{{%- assign c_wrap = '' -%}}{{%- assign c_image = '{one_col[1]}' -%}}"
-                 f"{{%- assign c_words = '{col_words}' -%}}\n")
+    a.append(one_classes(v))
     a.append("""<div class="{{ c_outer }}">
   {%- if c_wrap != '' %}<div class="{{ c_wrap }}">{%- endif %}
   <img class="{{ c_image }}" src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'" alt="Outfit">
@@ -217,49 +282,7 @@ from the copies the transitional markup carries.
 
     # ---- two or three drawings
     a.append("{%- else %}\n")
-    def sizes(row, n):
-        slot = (row - (n - 1) * 4) / n
-        return round(row / n), round(slot * 1.125)
-    for k in (2, 3):
-        a.append(("{%- if n == 2 -%}\n" if k == 2 else "{%- else -%}\n"))
-        # Three cases: the forecast line under the drawings (both switches on),
-        # only the sarcastic line, no words.
-        for case in ("fact", "words", "bare"):
-            a.append({"fact": "  {%- if w_fact != '' -%}\n", "words": "  {%- elsif has_words -%}\n",
-                      "bare": "  {%- else -%}\n"}[case])
-            ih = {"fact": v["ih_fact"], "words": v["ih_words"], "bare": v["ih_bare"]}[case]
-            wclass = v["words_fact"] if case == "fact" else words_n
-            col, img = sizes(ROW, k)
-            panel = f"w--[{col}cqw]"
-            image = f"w--[{img}cqw] h--max-[{ih}cqh]"
-            # The three-up half-vertical row has spare height. Enlarge its
-            # portrait artwork another 25%, and keep the outer centers
-            # inset so rain, snow and umbrellas fit. Portrait stacks keep
-            # their separate width and height budgets below.
-            if view == "half_vertical" and k == 3:
-                panel += " landscape:w--[33cqw] lg:landscape:w--[32cqw]"
-                image += " landscape:w--[40cqw]"
-            outer = "layout layout--col gap--small"
-            row = "flex flex--row gap--none"
-            words = f"w--[92cqw] {wclass}"
-            if side and case != "bare":
-                srow, swords = (SIDE_ROW_FACT, SIDE_WORDS_FACT) if case == "fact" else (SIDE_ROW, SIDE_WORDS)
-                scol, simg = sizes(srow, k)
-                outer = "layout layout--row portrait:layout--col gap"
-                panel = f"w--[{scol}cqw] portrait:w--[{col}cqw]"
-                image = f"w--[{simg}cqw] h--max-[{v['side_ih']}cqh] portrait:w--[{img}cqw] portrait:h--max-[{ih}cqh]"
-                words = f"w--[{swords}cqw] portrait:w--[92cqw] {wclass}"
-            if stack:
-                total = stack[case]
-                caps = [int((total - (k - 1) * 2 - k * lbl) / k) for lbl in STACK_LABEL]
-                row += " portrait:flex--col"
-                panel += " portrait:w--[100cqw]"
-                image += f" portrait:w--[84cqw] portrait:h--max-[{caps[0]}cqh] lg:portrait:h--max-[{caps[1]}cqh]"
-            a.append(f"    {{%- assign c_outer = '{outer}' -%}}{{%- assign c_row = '{row}' -%}}"
-                     f"{{%- assign c_panel = '{panel}' -%}}{{%- assign c_image = '{image}' -%}}"
-                     f"{{%- assign c_words = '{words}' -%}}\n")
-        a.append("  {%- endif -%}\n")
-    a.append("{%- endif -%}\n")
+    a.append(row_classes(view, v))
     a.append("""<div class="{{ c_outer }}">
   <div class="{{ c_row }}" data-wtw="panels">
     {%- for slug in panel_slug_list %}

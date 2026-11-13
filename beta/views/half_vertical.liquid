@@ -32,37 +32,73 @@ from the copies the transitional markup carries.
   </div>
 </div>
 {%- elsif evening_on %}
-{%- assign ev_words = false -%}
-{%- if ev_fact != '' or ev_joke != '' -%}{%- assign ev_words = true -%}{%- endif -%}
-{%- if ev_tonight_slug != '' and true == false -%}{%- assign ev_words = false -%}{%- endif -%}
-{%- if ev_words -%}{%- assign ev_h = 40 -%}{%- else -%}{%- assign ev_h = 54 -%}{%- endif -%}
-<div class="layout layout--col gap--small" data-wtw="evening">
-  <div class="flex flex--row gap--small">
-  {%- if ev_tonight_slug != '' %}
-    <div class="flex flex--col flex--center-x gap--small w--[31cqw]">
-      <span class="label label--outline">{{ texts.evening.tonight }}</span>
-      <div class="flex flex--col gap--small w--[29cqw]"><img class="image image--contain image-dither aspect--3/4 w--[30cqw] h--max-[{{ ev_h }}cqh]" src="{{ sprite_base_url }}{{ ev_tonight_slug }}.png" alt="{{ ev_tonight_slug }}"><span class="label text--center lg:label--xlarge">{{ ev_tonight_label }}</span></div>
-    </div>
-    <div class="divider divider--v"></div>
+{%- assign w_fact = ev_fact -%}{%- assign w_flavour = ev_joke -%}
+{%- assign has_words = false -%}
+{%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
+{%- assign ev_n = ev_slug_list | size -%}
+{%- if ev_tonight_slug == '' %}
+{%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_wrap = '' -%}{%- assign c_image = 'image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[34cqh]' -%}{%- assign c_words = 'w--[96cqw] content--large lg:content--xlarge' -%}
+<div class="{{ c_outer }}" data-wtw="evening">
+  {%- if c_wrap != '' %}<div class="{{ c_wrap }}">{%- endif %}
+  <span class="label label--inverted lg:label--xlarge" data-wtw="tomorrow">{{ ev_tag }}</span>
+  <img class="{{ c_image }}" src="{{ sprite_base_url }}{{ ev_slug_list | first }}.png" alt="{{ ev_slug_list | first }}">
+  {%- if c_wrap != '' %}</div>{%- endif %}
+  {%- if has_words %}
+  <div class="content content--center text--center {{ c_words }}" data-wtw="words">
+    {%- if w_fact != '' %}<p class="font--bold">{{ w_fact }}</p>{%- endif %}
+    {%- if w_flavour != '' %}<p>{{ w_flavour }}</p>{%- endif %}
+  </div>
   {%- endif %}
+</div>
+{%- else -%}
+{%- assign n = ev_n | plus: 1 -%}
+{%- if n == 2 -%}
+  {%- if w_fact != '' -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[47cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[51cqw] h--max-[44cqh] portrait:w--[84cqw] portrait:h--max-[18cqh] lg:portrait:h--max-[17cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--large' -%}
+  {%- elsif has_words -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[47cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[51cqw] h--max-[56cqh] portrait:w--[84cqw] portrait:h--max-[24cqh] lg:portrait:h--max-[23cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
+  {%- else -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[47cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[51cqw] h--max-[72cqh] portrait:w--[84cqw] portrait:h--max-[32cqh] lg:portrait:h--max-[31cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
+  {%- endif -%}
+{%- else -%}
+  {%- if w_fact != '' -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[33cqw] lg:landscape:w--[32cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[44cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[10cqh] lg:portrait:h--max-[9cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--large' -%}
+  {%- elsif has_words -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[33cqw] lg:landscape:w--[32cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[56cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[14cqh] lg:portrait:h--max-[13cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
+  {%- else -%}
+    {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_row = 'flex flex--row gap--none portrait:flex--col' -%}{%- assign c_panel = 'w--[31cqw] landscape:w--[33cqw] lg:landscape:w--[32cqw] portrait:w--[100cqw]' -%}{%- assign c_image = 'w--[32cqw] h--max-[72cqh] landscape:w--[40cqw] portrait:w--[84cqw] portrait:h--max-[19cqh] lg:portrait:h--max-[18cqh]' -%}{%- assign c_words = 'w--[92cqw] content--base lg:content--xlarge' -%}
+  {%- endif -%}
+{%- endif -%}
+<div class="{{ c_outer }}" data-wtw="evening">
+  <div class="{{ c_row }}" data-wtw="panels">
     <div class="flex flex--col flex--center-x gap--small">
-      <span class="label label--inverted" data-wtw="tomorrow">{{ ev_tag }}</span>
-      <div class="flex flex--row gap--none">
+      <span class="label label--outline lg:label--xlarge">{{ texts.evening.tonight }}</span>
+      <div class="flex flex--col gap--small {{ c_panel }}">
+        <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}{{ ev_tonight_slug }}.png" alt="{{ ev_tonight_slug }}">
+        <span class="label text--center mx--1 lg:label--xlarge">{{ ev_tonight_label }}</span>
+      </div>
+    </div>
+    <div class="divider divider--v portrait:hidden"></div>
+    <div class="flex flex--col flex--center-x gap--small">
+      <span class="label label--inverted lg:label--xlarge" data-wtw="tomorrow">{{ ev_tag }}</span>
+      <div class="{{ c_row }}">
       {%- for slug in ev_slug_list %}
-      {%- if ev_tonight_slug != '' or forloop.first %}
-        <div class="flex flex--col gap--small w--[29cqw]"><img class="image image--contain image-dither aspect--3/4 w--[30cqw] h--max-[{{ ev_h }}cqh]" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}"><span class="label text--center lg:label--xlarge">{{ ev_label_list[forloop.index0] }}</span></div>
-      {%- endif %}
+      <div class="flex flex--col gap--small {{ c_panel }}">
+        <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+        <span class="label text--center mx--1 lg:label--xlarge">{{ ev_label_list[forloop.index0] }}</span>
+      </div>
       {%- endfor %}
       </div>
     </div>
   </div>
-  {%- if ev_words %}
-  <div class="content content--center text--center w--[94cqw] content--small lg:content--base" data-wtw="words">
-    {%- if ev_fact != '' %}<p class="font--bold">{{ ev_fact }}</p>{%- endif %}
-    {%- if ev_joke != '' %}<p>{{ ev_joke }}</p>{%- endif %}
+  {%- if has_words %}
+  <div class="content content--center text--center {{ c_words }}" data-wtw="words">
+    {%- if w_fact != '' %}<p class="font--bold">{{ w_fact }}</p>{%- endif %}
+    {%- if w_flavour != '' %}<p>{{ w_flavour }}</p>{%- endif %}
   </div>
   {%- endif %}
 </div>
+{%- endif %}
 {%- elsif n == 1 %}
 {%- assign c_outer = 'layout layout--col gap--small' -%}{%- assign c_wrap = '' -%}{%- assign c_image = 'image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[40cqh]' -%}{%- assign c_words = 'w--[96cqw] content--large lg:content--xlarge' -%}
 <div class="{{ c_outer }}">
