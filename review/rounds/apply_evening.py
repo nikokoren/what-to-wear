@@ -26,7 +26,7 @@ import pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 JOKE_ROUNDS = ("2026-11-evening", "2026-11-evening2", "2026-11-ideas")
-TAGGED_ROUNDS = ("2026-11-evening31", "2026-11-evening32", "2026-11-evening33", "2026-11-evening34", "2026-11-evening35")
+TAGGED_ROUNDS = ("2026-11-evening31", "2026-11-evening32", "2026-11-evening33", "2026-11-evening34", "2026-11-evening35", "2026-11-evening36")
 FACT_ROUNDS = ("2026-11-evening",)
 
 # Round 30's kept samples: (level, [pools]), the tag in front.
