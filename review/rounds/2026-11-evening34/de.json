@@ -1,6 +1,24 @@
-{"lines": [
-  {"path": "evening.jokes_10.any", "text": "Oben steht die höfliche Fassung. Die ehrliche wär kürzer.", "evtag": ""},
-  {"path": "evening.jokes_10.any", "text": "Freitag. Da könnt ich Hagel malen, und alle hätten trotzdem gute Laune.", "evtag": "{D:5}"},
-  {"path": "evening.jokes_11.any", "text": "Punkt, Punkt, Komma, Strich. Mehr hab ich für dein Gesicht nicht gebraucht.", "evtag": ""},
-  {"path": "evening.jokes_11.any", "text": "So viel zum Wetter. Jetzt zur Soße an deinem Kinn.", "evtag": ""}
-]}
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Oben steht die höfliche Fassung. Die ehrliche wär kürzer.",
+   "evtag": "{S}"
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Freitag. Da könnt ich Hagel malen, und alle hätten trotzdem gute Laune.",
+   "evtag": "{D:5}"
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Punkt, Punkt, Komma, Strich. Mehr hab ich für dein Gesicht nicht gebraucht.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "So viel zum Wetter. Jetzt zur Soße an deinem Kinn.",
+   "evtag": ""
+  }
+ ]
+}

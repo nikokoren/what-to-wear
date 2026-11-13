@@ -1894,6 +1894,9 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- if j_cand contains '{G}' -%}
           {%- if ev_wet == 0 and ev_rank >= 4 and ev_rank <= 6 and nx_kind == '' -%}{%- assign j_cand = j_cand | remove_first: '{G}' -%}{%- else -%}{%- assign j_cand = '' -%}{%- endif -%}
         {%- endif -%}
+        {%- if j_cand contains '{S}' -%}
+          {%- if forecast_on -%}{%- assign j_cand = j_cand | remove_first: '{S}' -%}{%- else -%}{%- assign j_cand = '' -%}{%- endif -%}
+        {%- endif -%}
         {%- if j_cand contains '{T}' -%}
           {%- if ev_from == '' -%}{%- assign j_cand = '' -%}{%- else -%}{%- assign j_cand = j_cand | remove_first: '{T}' -%}{%- endif -%}
         {%- endif -%}
