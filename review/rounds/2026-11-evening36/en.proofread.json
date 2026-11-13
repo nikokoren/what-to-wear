@@ -1,0 +1,33 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I go on last, after the drawings and the sentence. Headliners always do.",
+   "evtag": "{S}"
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Some people trust only their porch thermometer. It's been in direct sun since 1994.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Checking three apps and believing the nicest isn't forecasting. It's voting.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I'm a paper doll with Wi-Fi. Somehow that makes me a smart device.",
+   "evtag": "",
+   "was": "I'm a paper doll with internet. Somehow that makes me a smart device.",
+   "reasons": [
+    "Unnatural"
+   ]
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "It says 'Fri' up there. For most people, that's the whole forecast.",
+   "evtag": "{D:5}"
+  }
+ ]
+}
