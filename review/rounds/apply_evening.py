@@ -26,7 +26,7 @@ import pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 JOKE_ROUNDS = ("2026-11-evening", "2026-11-evening2", "2026-11-ideas")
-TAGGED_ROUNDS = ("2026-11-evening31", "2026-11-evening32", "2026-11-evening33", "2026-11-evening34")
+TAGGED_ROUNDS = ("2026-11-evening31", "2026-11-evening32", "2026-11-evening33", "2026-11-evening34", "2026-11-evening35")
 FACT_ROUNDS = ("2026-11-evening",)
 
 # Round 30's kept samples: (level, [pools]), the tag in front.
@@ -57,6 +57,18 @@ FIXES = {"But it's already on it's way.": "But it's already on its way.",
 EXTRA_TAGS = {"Samstag, und das Wetter spielt mit. Kommt selten genug vor.": "{G}"}
 
 
+def round_replaces(lang):
+    """(path, text) -> the live line it replaces, from the tagged rounds' files."""
+    out = {}
+    for rnd in TAGGED_ROUNDS:
+        f = HERE / f"{rnd}.json"
+        if f.exists():
+            for row in json.loads(f.read_text(encoding="utf-8"))["lines"]:
+                if row["lang"] == lang and row.get("replaces"):
+                    out[(row["path"], row["text"])] = row["replaces"]
+    return out
+
+
 def round_tags(lang):
     """(path, text) -> tag, from the tagged rounds' files."""
     tags = {}
@@ -73,6 +85,8 @@ def main():
     for lang in ("en", "de"):
         dec = json.loads((REPO / "review" / "decisions" / f"{lang}.json").read_text(encoding="utf-8"))
         tags = round_tags(lang)
+        repl = round_replaces(lang)
+        dropped = set()
         facts, jokes = {}, {}
         for d in dec.values():
             rnd = d.get("round")
@@ -96,6 +110,8 @@ def main():
                 jokes.setdefault(("jokes_" + level, "any"), []).append(text)
             elif ".evening_" in path:
                 tag = EXTRA_TAGS.get(d["text"], "") + tags.get((path, d["text"]), "")
+                if (path, d["text"]) in repl:  # a kept rewrite of a live line: the old one goes
+                    dropped.add(repl[(path, d["text"])])
                 jokes.setdefault(("jokes_" + level, path.split(".evening_", 1)[1]), []).append(tag + text)
         p = REPO / "prototypes" / "panels" / "lang" / f"{lang}.json"
         doc = json.loads(p.read_text(encoding="utf-8"))
@@ -104,7 +120,7 @@ def main():
             ev["facts"][key] = list(dict.fromkeys(texts))
         ev["jokes_10"], ev["jokes_11"] = {}, {}
         for (group, pool), texts in sorted(jokes.items()):
-            ev[group][pool] = list(dict.fromkeys(texts))
+            ev[group][pool] = [x for x in dict.fromkeys(texts) if x.split("}")[-1] not in dropped]
         ev.pop("_note", None)
         p.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(lang, {g: {k: len(v) for k, v in ev[g].items()} for g in ("jokes_10", "jokes_11")})

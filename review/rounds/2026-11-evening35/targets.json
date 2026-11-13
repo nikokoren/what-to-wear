@@ -1,0 +1,8 @@
+{
+ "round": "2026-11-evening35",
+ "note": "Any-weather evening lines, same approach as round 34 (owner: good round; a larger one). 30 slots, 2 lines each (60). Plus two shortened versions of live English lines the owner tagged too long (en.extra.json).",
+ "slots": {
+  "en": {"evening.jokes_10.any": 8, "evening.jokes_11.any": 8},
+  "de": {"evening.jokes_10.any": 7, "evening.jokes_11.any": 7}
+ }
+}
