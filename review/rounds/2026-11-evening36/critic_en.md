@@ -27,3 +27,7 @@ How I checked: I read every line under all 31 tomorrow sentences in `evening.fac
 ## What the pool would hold
 
 On, any: 5 live plus 6 here = 11.
+
+## After the critic
+
+#12 (Swedes) cut by the coordinator: the German pool already has a live line on the same saying („Es gibt kein schlechtes Wetter.“ Doch, gibt's.), and the two languages never tell the same joke.
