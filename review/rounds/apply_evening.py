@@ -28,6 +28,7 @@ REPO = HERE.parent.parent
 JOKE_ROUNDS = ("2026-11-evening", "2026-11-evening2", "2026-11-ideas")
 TAGGED_ROUNDS = ("2026-11-evening31", "2026-11-evening32", "2026-11-evening33", "2026-11-evening34", "2026-11-evening35", "2026-11-evening36", "2026-11-evening37")
 FACT_ROUNDS = ("2026-11-evening",)
+ALONE_ROUND = "2026-11-evening-alone"
 
 # Round 30's kept samples: (level, [pools]), the tag in front.
 PLACE = {
@@ -115,6 +116,12 @@ def main():
                 if (path, d["text"]) in repl:  # a kept rewrite of a live line: the old one goes
                     dropped.add(repl[(path, d["text"])])
                 jokes.setdefault(("jokes_" + level, path.split(".evening_", 1)[1]), []).append(tag + text)
+        # Round "2026-11-evening-alone": every live line shown without the
+        # forecast sentence. Veto = it needs the sentence: "{S}" in front.
+        needs_s = {d["text"] for d in dec.values()
+                   if d.get("round") == ALONE_ROUND and d.get("verdict") in ("veto", "rewrite")}
+        for key in list(jokes):
+            jokes[key] = [("{S}" + x if x.split("}")[-1] in needs_s and "{S}" not in x else x) for x in jokes[key]]
         p = REPO / "prototypes" / "panels" / "lang" / f"{lang}.json"
         doc = json.loads(p.read_text(encoding="utf-8"))
         ev = doc["evening"]
