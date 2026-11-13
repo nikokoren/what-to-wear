@@ -46,7 +46,7 @@ Numbers are positions in `de.written.json`.
 3. „Ich helf dir jeden Abend beim Anziehen. Andere kriegen dafür einen Pflegegrad.“
    - The closest cut. „Pflegegrad“ is a sharp, very German punch.
    - But the premise was vetoed in round 2026-11-evening: „Ich mach diese Vorschau extra für dich. Andere Leute wissen auch so, was sie anziehen.“ That line is the same idea (you need the screen to dress, others don't).
-   - It is also on worth, not looks. If the owner thinks his veto was about the wording and not the idea, this is the line to bring back.
+   - It is also on worth, not looks. If the owner thinks their veto was about the wording and not the idea, this is the line to bring back.
 4. `{D:3}` „Mittwoch ist Bergfest. Bei dir ging's schon viel früher bergab.“
    - A pun on the idiom (Bergfest/bergab) with a generic "you're in decline" jab. It is no stronger than the vetoed Sonntag line.
    - The vetoed „Längster Tag des Jahres. Ab morgen geht's wieder bergab.“ already used „bergab“.
