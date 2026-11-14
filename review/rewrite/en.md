@@ -89,6 +89,15 @@ each new row `"answers": "<id>"` in the next round's file.
   **What it's for:** New sarcastic line at On: the shortest day of the year. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-e1b679198142` (2026-10-days)
 
+## flavour_10.evening_any
+
+- **Out:** Some people trust only their porch thermometer. It's been in direct sun since 1993.
+  **Wanted instead:** i'm not sure i get the joke here.
+  **Tags:** unclear
+  **On screen:** drawing sweater_dry
+  **What it's for:** Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).
+  **Answers:** `ea-en-f55c4c22b8b3` (2026-11-evening-alone)
+
 ## flavour_10.evening_rain
 
 - **Out:** Somewhere, tomorrow's rain is getting an early night. Big day ahead.
@@ -214,6 +223,14 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry; above it: “This outfit works all day.”
   **What it's for:** New sarcastic line at 11: Monday mornings, before noon. Shows on a day whose weather doesn't change, under "works all day" or alone under the drawing.
   **Answers:** `sd-en-40a9ea608d79` (2026-10-days)
+
+## flavour_11.evening_any
+
+- **Out:** You've looked at this outfit longer than anyone will look at you in it.
+  **Tags:** unclear, too long
+  **On screen:** drawing sweater_dry
+  **What it's for:** Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).
+  **Answers:** `ea-en-63bbb955de55` (2026-11-evening-alone)
 
 ## flavour_11.ice
 

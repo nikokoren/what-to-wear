@@ -121,11 +121,16 @@ def main():
         # Edit = a version for the screen without the sentence (owner): the
         # original stays as it is, with "{S}"; the edit joins it with "{N}"
         # and the original's other tags.
-        needs_s, alone = set(), {}
+        # A note asking for the edit on the original too ("apply this change
+        # to the original too"): the edit replaces the line everywhere.
+        needs_s, alone, everywhere = set(), {}, {}
         for d in dec.values():
             if d.get("round") != ALONE_ROUND:
                 continue
             edit = (d.get("edit") or "").strip()
+            if edit and edit != d["text"] and "original" in (d.get("note") or "").lower():
+                everywhere[d["text"]] = edit
+                continue
             if d.get("verdict") in ("veto", "rewrite") or (edit and edit != d["text"]):
                 needs_s.add(d["text"])
             if edit and edit != d["text"] and d.get("verdict") in ("keep", "star"):
@@ -136,6 +141,8 @@ def main():
             out = []
             for x in jokes[key]:
                 tag, body = x[:len(x) - len(x.split("}")[-1])], x.split("}")[-1]
+                if body in everywhere:
+                    x, body = tag + everywhere[body], everywhere[body]
                 out.append(("{S}" + x) if body in needs_s and "{S}" not in tag else x)
                 if body in alone:
                     out.append("{N}" + tag.replace("{S}", "") + alone[body])

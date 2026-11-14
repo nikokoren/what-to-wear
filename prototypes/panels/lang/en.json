@@ -96,26 +96,33 @@
     },
     "jokes_10": {
       "any": [
-        "I asked for a different tomorrow. This was the only one in stock.",
-        "Horoscopes predict the future too. Not one has ever mentioned pants.",
+        "{S}I asked for a different tomorrow. This was the only one in stock.",
+        "{N}I asked for different weather tomorrow. This was the only one in stock.",
+        "{S}Horoscopes predict the future too. Not one has ever mentioned pants.",
+        "{N}Horoscopes pretend to predict the future too. Not one has ever mentioned pants.",
         "{S}All of tomorrow in a few words. Some need a five-minute voice memo to say less.",
-        "Some people trust only their porch thermometer. It's been in direct sun since 1993.",
+        "{S}Some people trust only their porch thermometer. It's been in direct sun since 1993.",
         "Checking three apps and believing the nicest isn't forecasting.",
-        "People say there's no bad weather, only wrong clothes. And just like that they throw me under the bus.",
-        "I've known about tomorrow since lunch. I sat on it until now for the drama.",
-        "If this changes overnight, I'll quietly redraw it and act like it was always that way."
+        "{S}People say there's no bad weather, only wrong clothes. And just like that they throw me under the bus.",
+        "{N}People say there's no bad weather, only wrong clothing choices. And just like that they throw me under the bus.",
+        "{S}I've known about tomorrow since lunch. I sat on it until now for the drama.",
+        "{N}I've known about tomorrow since lunch. I sat on it until now for the extra drama.",
+        "{S}If this changes overnight, I'll quietly redraw it and act like it was always that way.",
+        "{N}If the weather changes overnight, I'll quietly redraw your outfit and act like it was always that way."
       ],
       "colder": [
-        "Next on this screen, probably the stocks. Probably also forecasting a drop.",
+        "{S}Next on this screen, probably the stocks. Probably also forecasting a drop.",
+        "{N}Next on this screen, probably STONKS. Probably also forecasting a drop.",
         "Just what we needed.",
         "I asked if tomorrow's cold could wait a week. But it's already on its way."
       ],
       "drier": [
-        "Nobody say anything, or the rain will come back."
+        "PSSST. Nobody say anything, or the rain will come back."
       ],
       "rain": [
         "Lovely. More water.",
-        "I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
+        "{S}I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
+        "{N}I'm doing tomorrow's grumbling tonight. During the rain I'll be too busy drawing umbrellas.",
         "{T}The rain told us exactly when it's coming. No repairman has ever managed that.",
         "Just what we needed.",
         "{D:6}Rain on a Saturday. Great."
@@ -128,11 +135,13 @@
     "jokes_11": {
       "any": [
         "Good news: the outfit's taken care of. Bad news: you're still in it.",
-        "The little figure always looks so calm. It has no idea it's supposed to be you.",
+        "{S}The little figure always looks so calm. It has no idea it's supposed to be you.",
         "You turned me up to 11 on purpose. Most daring thing you've done all year.",
-        "You read with your mouth open. Someone had to tell you.",
-        "You've looked at this outfit longer than anyone will look at you in it.",
-        "You take fashion advice from a black-and-white screen. It shows.",
+        "{S}You read with your mouth open. Someone had to tell you.",
+        "{N}You read with your mouth open. I'm sorry, but someone had to tell you.",
+        "{S}You've looked at this outfit longer than anyone will look at you in it.",
+        "{S}You take fashion advice from a black-and-white screen. It shows.",
+        "{N}You take fashion advice from an e-ink screen. It shows.",
         "You always read to the end in case it's a compliment. It never is.",
         "My whole audience tonight is you. I've worked better rooms."
       ],
