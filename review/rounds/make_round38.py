@@ -29,6 +29,8 @@ DAYS = {"en": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 def tag_hint(tag):
     if tag == "{P}":
         return "Only with tonight's drawing beside tomorrow's"
+    if tag.startswith("{N}"):
+        return "Only without tomorrow's sentence (written forecast off)"
     if tag == "{S}":
         return "Only when tomorrow's sentence shows (not with the written forecast off)"
     if tag == "{T}":
