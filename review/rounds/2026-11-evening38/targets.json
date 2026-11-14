@@ -1,0 +1,8 @@
+{
+ "round": "2026-11-evening38",
+ "note": "Variations of starred lines for the thinnest evening pools (owner: variations of starred phrasings are fine where variety is thin), 20 slots, 2 lines each (40). Plus English extras: punchline options for the 'Checking three apps' line, a standalone version of 'You've looked at this outfit...', clearer versions of the porch-thermometer line.",
+ "slots": {
+  "en": {"evening.jokes_10.rain": 2, "evening.jokes_10.snow": 2, "evening.jokes_10.drier": 2, "evening.jokes_10.warmer": 2, "evening.jokes_10.steady": 2},
+  "de": {"evening.jokes_10.colder": 2, "evening.jokes_10.drier": 2, "evening.jokes_10.steady": 2, "evening.jokes_10.warmer": 2, "evening.jokes_10.snow": 2}
+ }
+}
