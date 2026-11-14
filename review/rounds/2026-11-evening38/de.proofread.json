@@ -3,17 +3,20 @@
   {
    "path": "evening.jokes_10.colder",
    "text": "„Ist doch herrlich frisch“, sagen dann wieder die mit Sitzheizung.",
-   "evtag": ""
+   "evtag": "",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.drier",
    "text": "Ab da sind die Schnecken wieder schlecht gelaunt. Willkommen im Club.",
-   "evtag": ""
+   "evtag": "",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.drier",
    "text": "{D:5}Freitag. Da macht auch der Regen früher Schluss.",
-   "evtag": "{D:5}"
+   "evtag": "{D:5}",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.steady",
@@ -22,32 +25,38 @@
    "was": "Ich mal der Figur ein Lächeln dazu. Irgendwas muss sich ja ändern.",
    "reasons": [
     "Klingt unnatürlich"
-   ]
+   ],
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.steady",
    "text": "{D:0}Sonntag. Sogar das Wetter hält sich an die Sonntagsruhe.",
-   "evtag": "{D:0}"
+   "evtag": "{D:0}",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.warmer",
    "text": "Die Figur zieht dann eine Schicht aus. Freizügiger wird's bei mir nicht.",
-   "evtag": ""
+   "evtag": "",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.warmer",
    "text": "Einer setzt dann garantiert die Sonnenbrille auf. Auch ohne Sonne.",
-   "evtag": ""
+   "evtag": "",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.snow",
    "text": "Der Hausmeister stellt sich die Schneeschaufel heut schon ans Bett.",
-   "evtag": ""
+   "evtag": "",
+   "hint": "Variation of a starred line"
   },
   {
    "path": "evening.jokes_10.snow",
    "text": "Die Bahn hat die Durchsage für morgen bestimmt schon aufgenommen.",
-   "evtag": ""
+   "evtag": "",
+   "hint": "Variation of a starred line"
   }
  ]
 }
