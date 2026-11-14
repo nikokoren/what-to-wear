@@ -101,10 +101,10 @@
         "{S}Horoscopes predict the future too. Not one has ever mentioned pants.",
         "{N}Horoscopes pretend to predict the future too. Not one has ever mentioned pants.",
         "{S}All of tomorrow in a few words. Some need a five-minute voice memo to say less.",
-        "{S}Some people trust only their porch thermometer. It's been in direct sun since 1993.",
-        "Checking three apps and believing the nicest isn't forecasting.",
         "{S}People say there's no bad weather, only wrong clothes. And just like that they throw me under the bus.",
         "{N}People say there's no bad weather, only wrong clothing choices. And just like that they throw me under the bus.",
+        "Some people trust the porch thermometer over me. It sits in full sun.",
+        "Checking apps until one says sunny isn't forecasting. It's shaking a Magic 8 Ball.",
         "{S}I've known about tomorrow since lunch. I sat on it until now for the drama.",
         "{N}I've known about tomorrow since lunch. I sat on it until now for the extra drama.",
         "{S}If this changes overnight, I'll quietly redraw it and act like it was always that way.",
@@ -117,10 +117,14 @@
         "I asked if tomorrow's cold could wait a week. But it's already on its way."
       ],
       "drier": [
-        "PSSST. Nobody say anything, or the rain will come back."
+        "PSSST. Nobody say anything, or the rain will come back.",
+        "'Rain before seven, clear by eleven.' Close enough for folklore.",
+        "For once I can say 'it'll pass' and mean it."
       ],
       "rain": [
         "Lovely. More water.",
+        "Rain is just snow that stopped trying.",
+        "Doormats everywhere are about to have a very long day.",
         "{S}I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
         "{N}I'm doing tomorrow's grumbling tonight. During the rain I'll be too busy drawing umbrellas.",
         "{T}The rain told us exactly when it's coming. No repairman has ever managed that.",
@@ -129,6 +133,7 @@
       ],
       "snow": [
         "I asked for the snow to land somewhere more scenic. Apparently this is it.",
+        "Every dad on the block is about to become a road-salt expert.",
         "Just what we needed."
       ]
     },

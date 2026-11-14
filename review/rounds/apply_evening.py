@@ -21,6 +21,7 @@ show a line only while it's dry right now puts "{DRY}" in front of it
 """
 
 import json
+import re
 import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -28,7 +29,7 @@ REPO = HERE.parent.parent
 JOKE_ROUNDS = ("2026-11-evening", "2026-11-evening2", "2026-11-ideas")
 TAGGED_ROUNDS = ("2026-11-evening31", "2026-11-evening32", "2026-11-evening33", "2026-11-evening34", "2026-11-evening35", "2026-11-evening36", "2026-11-evening37", "2026-11-evening38")
 FACT_ROUNDS = ("2026-11-evening",)
-ALONE_ROUND = "2026-11-evening-alone"
+ALONE_ROUNDS = ("2026-11-evening-alone", "2026-11-evening-alone2")
 
 # Round 30's kept samples: (level, [pools]), the tag in front.
 PLACE = {
@@ -115,6 +116,9 @@ def main():
                 tag = EXTRA_TAGS.get(d["text"], "") + tags.get((path, d["text"]), "")
                 if (path, d["text"]) in repl:  # a kept rewrite of a live line: the old one goes
                     dropped.add(repl[(path, d["text"])])
+                # A tag the writer also left in the text counts once.
+                lead = re.match(r"^((?:\{[A-Z](?::[0-9,]+)?\})*)", text).group(1)
+                tag = "".join(x for x in re.findall(r"\{[A-Z](?::[0-9,]+)?\}", tag) if x not in lead)
                 jokes.setdefault(("jokes_" + level, path.split(".evening_", 1)[1]), []).append(tag + text)
         # Round "2026-11-evening-alone": every live line shown without the
         # forecast sentence. Veto = it needs the sentence: "{S}" in front.
@@ -125,7 +129,7 @@ def main():
         # to the original too"): the edit replaces the line everywhere.
         needs_s, alone, everywhere = set(), {}, {}
         for d in dec.values():
-            if d.get("round") != ALONE_ROUND:
+            if d.get("round") not in ALONE_ROUNDS:
                 continue
             edit = (d.get("edit") or "").strip()
             if edit and edit != d["text"] and "original" in (d.get("note") or "").lower():

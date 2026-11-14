@@ -757,6 +757,8 @@ Most common reasons: not funny (842), unclear (142), robotic (84), too long (20)
   _write new, not funny: i like the direction, but the sarcasm could be more prominent?_
 - Montag und kälter. Der Tag gibt sich echt Mühe.  
   _write new, not funny: i like the idea. "der tag gibt sich echt mühe" just isnt the right "feel". something like monday is trying it's best to make people's life miserable. or something. maight need a slightly lighter tone since it's only level 10, not 11._
+- „Ist doch herrlich frisch“, sagen dann wieder die mit Sitzheizung.  
+  _no tag_
 
 ## evening_colder · sarcastic
 
@@ -791,6 +793,8 @@ Most common reasons: not funny (842), unclear (142), robotic (84), too long (20)
 
 - Endlich legt sich mal einer fest. Ausgerechnet das Wetter.  
   _not funny_
+- Ich mal der Figur ein Lächeln ins Gesicht. Irgendwas muss sich ja ändern.  
+  _no tag_
 - Morgen passiert so wenig, dass ich überleg, eine Katze dazuzumalen. Für die Handlung.  
   _write new, not funny, unclear: i like the new direction. the cat part and the "handlung" just doesnt make any sense. maybe something along the lines of i was going to start doodling, or start drawing some background, or the rest of your surroundings or something like that._
 
@@ -826,6 +830,11 @@ Most common reasons: not funny (842), unclear (142), robotic (84), too long (20)
 ## evening_tmr_steady · plain
 
 - Morgen musst du dich nur einmal anziehen.  
+  _no tag_
+
+## evening_warmer · dry
+
+- Einer setzt dann garantiert die Sonnenbrille auf. Auch ohne Sonne.  
   _no tag_
 
 ## fickle · dry

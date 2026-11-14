@@ -97,6 +97,12 @@ each new row `"answers": "<id>"` in the next round's file.
   **On screen:** drawing sweater_dry
   **What it's for:** Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).
   **Answers:** `ea-en-f55c4c22b8b3` (2026-11-evening-alone)
+- **Out:** Checking three apps and believing the nicest isn't forecasting. It's swiping right.
+  **And the line it would have replaced:** Checking three apps and believing the nicest isn't forecasting.
+  **Tags:** unclear, not funny
+  **On screen:** drawing coat_snow; above it: “Tomorrow it snows from 1 pm.”
+  **What it's for:** Evening screen at On, any weather: the line under tomorrow's sentence.
+  **Answers:** `eb-en-62f71c19e2d6` (2026-11-evening38)
 
 ## flavour_10.evening_rain
 

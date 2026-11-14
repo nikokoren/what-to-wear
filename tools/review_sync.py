@@ -50,7 +50,7 @@ LEVEL_NAME = {"0": "plain", "10": "dry", "11": "sarcastic"}
 # Rounds that judge a property of live lines, not their quality (Keep = it
 # stands without the forecast sentence, Veto = it needs it): their votes stay
 # out of review/examples and review/dont.
-JUDGE_ROUNDS = ("2026-11-evening-alone",)
+JUDGE_ROUNDS = ("2026-11-evening-alone", "2026-11-evening-alone2")
 FIELDS = ("lang", "level", "key", "path", "text", "source", "batch", "round",
           "verdict", "tags", "note", "edit", "updatedAt")
 

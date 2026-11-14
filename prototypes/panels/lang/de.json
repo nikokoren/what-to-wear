@@ -108,7 +108,9 @@
       ],
       "drier": [
         "{S}Der Regen sagt sogar, wann er geht. Manieren hat er.",
-        "{N}Immerhin bleibt der Regen nicht zu lange. Ein paar Manieren hat er."
+        "{N}Immerhin bleibt der Regen nicht zu lange. Ein paar Manieren hat er.",
+        "{D:5}Freitag. Da macht auch der Regen früher Schluss.",
+        "Ab da sind die Schnecken wieder schlecht gelaunt. Willkommen im Club."
       ],
       "rain": [
         "{D:1}Der Montag lässt wirklich nichts aus.",
@@ -119,11 +121,17 @@
       "snow": [
         "{S}Und ich darf wieder jede Flocke einzeln malen.",
         "{N}Und ich darf wieder jede Flocke einzeln malen. Super.",
+        "Der Hausmeister stellt sich die Schneeschaufel heut schon ans Bett.",
+        "Die Bahn hat die Verspätungsdurchsage für morgen bestimmt schon aufgenommen.",
         "Auch das noch."
       ],
       "steady": [
         "Vielleicht fang ich an, ein bisschen Hintergrund zu malen, damit's nicht zu langweilig wird.",
-        "{G}{D:6}Samstag, und das Wetter spielt mit. Kommt selten genug vor."
+        "{G}{D:6}Samstag, und das Wetter spielt mit. Kommt selten genug vor.",
+        "{D:0}Sogar das Wetter hält sich an die Sonntagsruhe."
+      ],
+      "warmer": [
+        "Die Figur zieht dann eine Schicht aus. Freizügiger wird's bei mir nicht."
       ]
     },
     "jokes_11": {
