@@ -64,3 +64,6 @@ harsh):
   and name the vetoed line in your report, so the owner can judge.
   An idea the owner vetoed with a note against the idea itself (e.g.
   "Don't reference the drawings that much") still counts.
+- A variation of a starred line, where the pool is thin or the round
+  asks for variety (owner, November 2026): same joke shape or frame, a
+  new image or twist. Cut only a copy or a trivial reword.

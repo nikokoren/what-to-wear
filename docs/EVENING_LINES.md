@@ -51,6 +51,7 @@ All approved sentences per pool are in `prototypes/panels/lang/<lang>.json` unde
 - **No wordplay** on the forecast's own words or on idioms around them ("cold feet", "rain on your parade").
 - **Short:** one or two short sentences, clear on first read, never explain the joke. The sentence above and the line together stay under about 165 characters.
 - **Not new means dead:** never repeat an idea from a live line or a starred line in the same language (see "Where things are"). A vetoed line is different: the veto may have been about its wording, so a topic vetoed once may come back with a clearly new take (owner, November 2026). Only a near-copy of a vetoed line is out.
+- **Variations of starred lines** are welcome where a pool is thin or more variety is wanted and the size budget allows (owner, November 2026): the same joke shape with a new image or twist, never a copy or a trivial reword.
 - **Across languages:** never translate. The same idea in both languages is fine when each writer came to it on their own (owner, November 2026).
 
 ## Ideas that failed more than once (avoid unless you have a clearly new take)
