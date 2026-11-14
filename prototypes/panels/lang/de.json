@@ -110,7 +110,7 @@
         "{S}Der Regen sagt sogar, wann er geht. Manieren hat er.",
         "{N}Immerhin bleibt der Regen nicht zu lange. Ein paar Manieren hat er.",
         "{D:5}Freitag. Da macht auch der Regen früher Schluss.",
-        "Ab da sind die Schnecken wieder schlecht gelaunt. Willkommen im Club."
+        "{S}Ab da sind die Schnecken wieder schlecht gelaunt. Willkommen im Club."
       ],
       "rain": [
         "{D:1}Der Montag lässt wirklich nichts aus.",
@@ -131,7 +131,7 @@
         "{D:0}Sogar das Wetter hält sich an die Sonntagsruhe."
       ],
       "warmer": [
-        "Die Figur zieht dann eine Schicht aus. Freizügiger wird's bei mir nicht."
+        "{S}Die Figur zieht dann eine Schicht aus. Freizügiger wird's bei mir nicht."
       ]
     },
     "jokes_11": {
