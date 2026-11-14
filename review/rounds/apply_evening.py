@@ -118,10 +118,28 @@ def main():
                 jokes.setdefault(("jokes_" + level, path.split(".evening_", 1)[1]), []).append(tag + text)
         # Round "2026-11-evening-alone": every live line shown without the
         # forecast sentence. Veto = it needs the sentence: "{S}" in front.
-        needs_s = {d["text"] for d in dec.values()
-                   if d.get("round") == ALONE_ROUND and d.get("verdict") in ("veto", "rewrite")}
+        # Edit = a version for the screen without the sentence (owner): the
+        # original stays as it is, with "{S}"; the edit joins it with "{N}"
+        # and the original's other tags.
+        needs_s, alone = set(), {}
+        for d in dec.values():
+            if d.get("round") != ALONE_ROUND:
+                continue
+            edit = (d.get("edit") or "").strip()
+            if d.get("verdict") in ("veto", "rewrite") or (edit and edit != d["text"]):
+                needs_s.add(d["text"])
+            if edit and edit != d["text"] and d.get("verdict") in ("keep", "star"):
+                for a, b in FIXES.items():
+                    edit = edit.replace(a, b)
+                alone[d["text"]] = edit
         for key in list(jokes):
-            jokes[key] = [("{S}" + x if x.split("}")[-1] in needs_s and "{S}" not in x else x) for x in jokes[key]]
+            out = []
+            for x in jokes[key]:
+                tag, body = x[:len(x) - len(x.split("}")[-1])], x.split("}")[-1]
+                out.append(("{S}" + x) if body in needs_s and "{S}" not in tag else x)
+                if body in alone:
+                    out.append("{N}" + tag.replace("{S}", "") + alone[body])
+            jokes[key] = out
         p = REPO / "prototypes" / "panels" / "lang" / f"{lang}.json"
         doc = json.loads(p.read_text(encoding="utf-8"))
         ev = doc["evening"]

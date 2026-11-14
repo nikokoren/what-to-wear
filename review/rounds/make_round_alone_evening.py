@@ -4,7 +4,9 @@ Round "2026-11-evening-alone" (November 2026): every live evening line
 shown without tomorrow's sentence, as the screen shows it with the written
 forecast off (owner: some lines don't work without it; judge them one by
 one). Keep = it stands alone. Veto = it needs the sentence: apply_evening.py
-puts "{S}" in front, so it shows only with the forecast on. Lines already
+puts "{S}" in front, so it shows only with the forecast on. An edit (with
+Keep) is a version for the screen without the sentence only: the original
+stays unchanged with "{S}", the edit is added with "{N}" (owner). Lines already
 tagged {S} are left out. These votes stay out of review/examples and
 review/dont (tools/review_sync.py, JUDGE_ROUNDS).
 
@@ -43,7 +45,7 @@ def main():
                                              "Keep = it stands alone. Veto = it needs the sentence (it then shows only "
                                              "with the forecast on; it is not deleted).",
                                   "new": False,
-                                  "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+                                  "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
                                           + (f" · tag {tag}" if tag else "")})
     (HERE / f"{ROUND}.json").write_text(json.dumps({"round": ROUND, "idPrefix": "ea", "lines": lines},
                                                    ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

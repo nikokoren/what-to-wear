@@ -123,7 +123,7 @@ Put the lines into `prototypes/panels/lang/<lang>.json` under `evening.jokes_10`
 "jokes_11": {"rain": ["…"], "steady": ["…"]}
 ```
 
-A tag in front of a line limits when it shows: `{P}` only with tonight's drawing beside tomorrow's; `{T}` only when tomorrow's sentence names a time; `{S}` only when tomorrow's sentence shows (the line points at it; the written forecast can be off); `{G}` only on a good day (dry, mild, unchanging); `{D:1,6}` only when tomorrow is one of those weekdays (0 Sunday … 6 Saturday).
+A tag in front of a line limits when it shows: `{P}` only with tonight's drawing beside tomorrow's; `{T}` only when tomorrow's sentence names a time; `{S}` only when tomorrow's sentence shows (the line points at it; the written forecast can be off); `{N}` only when it doesn't (a version reworded for the screen without the sentence); `{G}` only on a good day (dry, mild, unchanging); `{D:1,6}` only when tomorrow is one of those weekdays (0 Sunday … 6 Saturday).
 
 Empty pools may be left out; the screen then uses `any`, and shows no line if `any` is empty too. Then rebuild and test:
 

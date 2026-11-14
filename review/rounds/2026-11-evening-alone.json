@@ -13,7 +13,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -26,7 +26,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -39,7 +39,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -52,7 +52,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -65,7 +65,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -78,7 +78,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -91,7 +91,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -104,7 +104,7 @@
    "batch": "Without the sentence: On, colder tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -117,7 +117,7 @@
    "batch": "Without the sentence: On, colder tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -130,7 +130,7 @@
    "batch": "Without the sentence: On, colder tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -143,7 +143,7 @@
    "batch": "Without the sentence: On, a wet start, dry later",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -156,7 +156,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -169,7 +169,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -182,7 +182,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · tag {T}"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is · tag {T}"
   },
   {
    "lang": "en",
@@ -195,7 +195,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -208,7 +208,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · tag {D:6}"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is · tag {D:6}"
   },
   {
    "lang": "en",
@@ -221,7 +221,7 @@
    "batch": "Without the sentence: On, snow tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -234,7 +234,7 @@
    "batch": "Without the sentence: On, snow tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -247,7 +247,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -260,7 +260,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -273,7 +273,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -286,7 +286,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -299,7 +299,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -312,7 +312,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -325,7 +325,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -338,7 +338,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "en",
@@ -351,7 +351,7 @@
    "batch": "Without the sentence: 11, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -364,7 +364,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · tag {D:5}"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is · tag {D:5}"
   },
   {
    "lang": "de",
@@ -377,7 +377,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -390,7 +390,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -403,7 +403,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · tag {P}"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is · tag {P}"
   },
   {
    "lang": "de",
@@ -416,7 +416,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -429,7 +429,7 @@
    "batch": "Without the sentence: On, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -442,7 +442,7 @@
    "batch": "Without the sentence: On, colder tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -455,7 +455,7 @@
    "batch": "Without the sentence: On, colder tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -468,7 +468,7 @@
    "batch": "Without the sentence: On, a wet start, dry later",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -481,7 +481,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · tag {D:1}"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is · tag {D:1}"
   },
   {
    "lang": "de",
@@ -494,7 +494,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -507,7 +507,7 @@
    "batch": "Without the sentence: On, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -520,7 +520,7 @@
    "batch": "Without the sentence: On, snow tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -533,7 +533,7 @@
    "batch": "Without the sentence: On, snow tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -546,7 +546,7 @@
    "batch": "Without the sentence: On, no change tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -559,7 +559,7 @@
    "batch": "Without the sentence: On, no change tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · tag {G}{D:6}"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is · tag {G}{D:6}"
   },
   {
    "lang": "de",
@@ -572,7 +572,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -585,7 +585,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -598,7 +598,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -611,7 +611,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -624,7 +624,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -637,7 +637,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -650,7 +650,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -663,7 +663,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -676,7 +676,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -689,7 +689,7 @@
    "batch": "Without the sentence: 11, any weather",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -702,7 +702,7 @@
    "batch": "Without the sentence: 11, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   },
   {
    "lang": "de",
@@ -715,7 +715,7 @@
    "batch": "Without the sentence: 11, rain tomorrow",
    "meaning": "Evening screen with the written forecast off: no sentence above. Keep = it stands alone. Veto = it needs the sentence (it then shows only with the forecast on; it is not deleted).",
    "new": false,
-   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted)"
+   "hint": "Keep = stands alone · Veto = needs the sentence (not deleted) · Edit = a version only for screens without the sentence; the original stays as it is"
   }
  ]
 }
