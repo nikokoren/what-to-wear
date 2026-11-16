@@ -20,23 +20,45 @@ the current outfit.
 
 ## The switch
 
-One field, not a new one: the forecast field (`show_future_suggestions`)
-gets a third value next to "Yes" and "No", `visual`, labelled "Visual
-Forecast (new)". Words and pictures are two ways of showing the same
-forecast, so they can't both be on, and a separate on/off would have
-made "forecast off, Visual Forecast on" a setting that means nothing.
-The whole form is `config/settings.next.yaml`.
+Two on/off switches (owner's spec, October 2026; the whole form is
+`config/settings.next.yaml`). It's called **What to Wear Next?** in the
+form; it was Visual Forecast, a third value of the Forecast field, in the
+first beta.
 
-| Forecast | Sarcasm Off | Sarcasm On / 11 |
-|---|---|---|
-| Off ("No") | the outfit now | (sarcasm hidden in the form) |
-| In words ("Yes") | outfit, fact line | plus the sarcastic line |
-| Visual Forecast ("visual") | the day's outfits; "works all day" when steady | plus the sarcastic line |
+| Forecast | What to Wear Next? | Sarcasm Off | Sarcasm On / 11 |
+|---|---|---|---|
+| off | off | the outfit now | plus a now line |
+| on | off | outfit, forecast line | plus a now line, or the day's on a day that changes |
+| off | on | the day's outfits; "works all day" when steady | plus a now line, or one written for the drawings |
+| on | on | the day's outfits and the forecast line | plus a now line, or the day's |
 
-Saved values don't move: "Yes", "No", old spellings and no value at all
-keep the words, and markup from before reads "visual" as on, so the
-form can ship before the markup. Each view is `{% if visual_forecast %}`
-the panels `{% else %}` the fact + flavour view.
+**Which sarcastic line** (October 2026, after the owner saw a cool-day
+joke, "You'll call it 'crisp'…", under a T-shirt on a day that warms
+up): by what's on screen, not by the shape of the day.
+
+- **Now lines** (`now_10` / `now_11`) go by what the Now drawing shows:
+  snow or rain while it falls, night (22:00), evening (18:00), hot,
+  cold, nice, cool. They stand alone and agree with the drawing, so
+  every screen can show them, the outfit alone included.
+- **The day's lines** (`flavour_10` / `_11`, by the day's mood:
+  warming, cooling, fickle, rain later…) may be about a change, so they
+  join only when the change is on screen: the forecast line on a day
+  that changes.
+- **Lines for the drawings** (`flavour_vf_10` / `_11`) join only with two
+  or three drawings and no forecast line.
+- Whichever join, they're mixed with the now lines and rotate by the
+  hour. Warming and cooling days no longer borrow the cool lines.
+
+Until the rework round sorts every line, the now pools are each mood's
+lines minus the ones round 10 voted "needs the fact"
+(`build_pools.py`, `build_now`). `test_switch.py` pins which pool shows
+where, and the owner's screen.
+
+Saved values don't move: Forecast keeps its key, and "Yes", "No", old
+spellings, true/false and no value at all all read right (the shared
+markup no longer puts a `default:` on it, which would turn false into
+"yes"). The first beta's "visual" still gets the drawings without words.
+Markup from before ignores What to Wear Next?, so the form can ship first.
 
 ## The rules
 
@@ -60,34 +82,91 @@ the panels `{% else %}` the fact + flavour view.
   wraps to "from" over "1 pm".
 - **Words:** one panel shows a "works all day" fact wording, plus the
   sarcastic line at On and 11. Two or three panels show only the
-  sarcastic line, and nothing at Off.
+  sarcastic line, and nothing at Off. With no fact line above it, that
+  line comes from the mood's Visual Forecast pool (`flavour_vf_10` /
+  `_11`, built from review round 10): lines that work without the fact,
+  and lines written for the drawings. No pool, the usual line.
 
 On 7:00 readings in London, Vienna and New York over a year: one panel
 21%, two 33%, three 46%.
 
 ## Views
 
-Generated from one template in `build.py`. Panels sit in a row, sized to
-the view, the time always under the drawing; the half view lying wide
-puts the words beside them; only the half view standing tall (240 by
-800 on the OG) stacks them, one under the other. The portrait quarter
-keeps the row: stacked with the time under each, its drawings came out
-smaller. The image boxes now use a 3:4 shape for the narrower artwork,
-targeting 50% more image height than the previous square slots while
-keeping the panel centers fixed. Short views and the portrait stack
-retain their height budgets so the labels and words still fit. Images
-use `object-fit: contain`: rain and umbrellas are never cropped, and
-older, wider sprites can grow less because they reach the width limit.
-The times are larger on the X (`lg:label--xlarge`,
-`lg:label--large` in the quarter).
+Every screen, in every forecast mode (Visual Forecast, words, none),
+comes from one template in `build.py`, **in TRMNL's framework classes
+only**: no `<style>`, no inline style (`test_switch.py` checks). Sizes
+are shares of the view: TRMNL's `layout` is a size container, so
+`w--[40cqw]` and `h--max-[66cqh]` mean 40% of its width and 66% of its
+height.
+
+**One drawing** (a steady day, the words view, no forecast) is as big as
+the view allows. Its box is a square as wide as the view
+(`aspect--1/1 w--[100cqw]`) that gives up height to the words, since
+images shrink in a flex column, down to 40% of the height. So the
+drawing fills what the words leave, and stays right above them when the
+width is what limits it (the portrait views). The owner found the
+earlier one, fixed at 60% of the height as live, small next to the space
+left on screen. On a steady day on the OG: full view 247 to 332 px,
+half view standing tall 224 to 326, the quarter 146 to 173 (183 to 205
+in portrait), the half view lying wide in portrait 183 to 248; lying
+wide in landscape it already had the full height (173). Lying wide with words (the half view on its
+side, the quarter), it stands beside them at the view's full height. Its
+box (46% of the width) is wider than its column (40%) and overflows it
+on both sides: the drawing's transparent sides don't push the words away.
+
+**Two or three drawings** use the reviewed larger-sprite sizing, in
+framework classes:
+
+- In a row, the time always under the drawing; the half view lying wide
+  puts the words beside them; only the half view standing tall (240 by
+  800 on the OG) stacks them, one under the other.
+- Equal-width columns keep the outfit centers fixed. The image boxes use
+  `aspect--3/4` for the narrower artwork, targeting 50% more image height
+  than the earlier square slots (width is 1.125 times the slot).
+- The three-outfit half-vertical row in landscape gets another 25% of
+  image width for all weather conditions, with the outer columns inset
+  slightly to leave room for rain, snow and umbrellas. Every panel uses
+  the same image size; the weather never changes the scale.
+  Single outfits, two-outfit rows and portrait stacks keep their sizes.
+- Existing height caps still protect the words and times in shorter views
+  and the portrait stack. The framework's `image--contain` keeps the whole
+  PNG visible, including rain and umbrellas; older wide PNGs can reach the
+  width limit sooner. Widths round to the framework's whole-cqw classes.
+- The words are the live view's size, except in the two tightest spots
+  on the OG (the portrait half-tall column and the quarter), a step
+  smaller.
+- **With the forecast line too** (both switches on), the forecast line
+  and the sarcastic line are two to five lines, so the drawings get a
+  lower cap and the words are a size smaller (`ih_fact`, `words_fact`
+  in `build.py`; the half view lying wide gives the words half its
+  width). On the OG in the full view: 205 px instead of 279.
+- The times are larger on the X (`lg:label--xlarge`, `lg:label--large`
+  in the quarter); "Now" is bold and underlined with the framework's own classes
+  (`font--bold label--underline`: a dotted line on the OG, a thin grey
+  one on the X; the OG's pixel font is already bold, so the bold barely
+  shows there). A time wraps
+  to "from" over "3 pm" when its column is too narrow.
 
 The words don't use TRMNL's content limiter. On the X the screen is
 scaled up with a CSS transform, and the limiter adds the drawings'
-scaled height to the layout's unscaled one: with the panels above it,
-it found 10 px left and hid the line. The words fit themselves instead
-(they shrink in the column and clamp at three lines each). The live
-views escape it only because there the sum goes negative, which turns
-the limiter off.
+scaled height to the layout's unscaled one: with the drawings above it,
+it found 10 px left and hid the line. The words take their natural
+height instead, and the drawings make room.
+
+`data-wtw="panels"` and `data-wtw="words"` mark the row of drawings and
+the words for the tests; they style nothing.
+
+Fit check (October 2026): every mock day in both languages, Visual
+Forecast, words and no forecast, sarcasm Off, On and 11, OG and X,
+landscape and portrait, every view, as rendered and again with the
+longest fact and the longest sarcastic line swapped in (3,136 screens):
+no words cut off or past the title bar, no figure cut or off the side,
+no neighbouring figures overlapping, no times touching. Then, for the
+two switches, both on (drawings, forecast line and sarcastic line) and
+the outfit alone with a sarcastic line, at every sarcasm level (2,240
+screens): clean once both-on got its own sizes. The times
+touched in the portrait quarter until each got a small margin
+(`mx--1`).
 
 ## Open
 

@@ -1,0 +1,1250 @@
+{
+ "round": "2026-11-evening",
+ "idPrefix": "ev",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Tomorrow is a one-outfit day.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Tomorrow's outfit works all day.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Tomorrow you can wear one outfit all day.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Tomorrow, one outfit works from start to finish.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Tomorrow, the same outfit works from start to finish."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Tomorrow starts cooler and warms up {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Tomorrow it's warmer {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Tomorrow the temperature climbs {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Tomorrow brings warmer weather {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Tomorrow it gets colder {FROM}, so bring something warmer.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Tomorrow you'll want something warmer {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Tomorrow it's colder {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Tomorrow the temperature drops {FROM}, so pack something warm.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Tomorrow it rains {FROM}, so take the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Tomorrow you'll want the umbrella. It rains {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Tomorrow starts dry, with rain {FROM}. Take the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Tomorrow there's rain {FROM}. Bring the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Tomorrow it snows {FROM}.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Tomorrow there's snow {FROM}.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Tomorrow brings snow {FROM}.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Tomorrow, expect snow {FROM}.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Tomorrow, snow falls {FROM}."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Tomorrow starts wet, then it's dry {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Tomorrow starts with rain. It's dry {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Tomorrow you'll need the umbrella at first. It's dry {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Tomorrow you'll need the umbrella to start. It's dry {FROM}."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Tomorrow it's wet to start and dry {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Tomorrow starts with rain, so take the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Take the umbrella tomorrow. The day starts wet.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Tomorrow you'll want the umbrella from the start.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Expect a wet start tomorrow. Take the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Tomorrow begins with snow.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Tomorrow starts with snow falling.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Expect a snowy start tomorrow.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Tomorrow starts out snowy.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "from 1 pm"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "I've watched tomorrow twice already. The middle drags.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Bakers get up at four to get the day ready. I had tomorrow done by eight.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Tomorrow's outfit took me longer than today's. It had to look effortless.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "I know tomorrow's weather. The weather itself won't find out until morning.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "I've known about tomorrow since lunch. I sat on it until eight for the drama.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: I've known about tomorrow since lunch. I held it until eight for the drama."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "This forecast is final. The weather can appeal in the morning.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "The evening news makes everyone wait for the weather. I lead with it.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "I've seen tomorrow. You look tired in it.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Tomorrow hasn't seen you yet. Lucky tomorrow.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Tomorrow's a fresh start. For the weather.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Notice: tomorrow's outfit has been chosen. Your input was considered and rejected.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "You've read tomorrow's forecast. Probably the most reading you'll do tonight.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "I show you tomorrow a night early. Frankly, you need the head start.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Tomorrow's weather is taken care of. Tomorrow's hair is on you.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Looking ahead to tomorrow already? Today went that well, huh?",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow: rain from 1 pm, so take the umbrella.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Morgen passt ein Outfit für den ganzen Tag.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Morgen kommst du mit einem Outfit gut durch den ganzen Tag.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Morgen musst du dich nur einmal anziehen.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_steady",
+   "text": "Das Outfit für morgen passt den ganzen Tag.",
+   "role": "fact",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: steady",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow's outfit works all day (one drawing, 'all day').",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Morgen wird's {FROM} wärmer.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Morgen geht's kühler los, {FROM} wird's wärmer.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Morgen wird's {FROM} wärmer, dann reicht was Leichteres.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_warmer",
+   "text": "Morgen steigen die Temperaturen {FROM}.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: warmer",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow warms up from the time shown; the second drawing is lighter.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Morgen wird's {FROM} kälter.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Morgen geht's wärmer los, {FROM} wird's kälter.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Morgen wird's {FROM} kälter, dann brauchst du eine Schicht mehr.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Morgen wird's {FROM} kühler, dann brauchst du eine Schicht mehr."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_colder",
+   "text": "Pack für morgen was Wärmeres ein, {FROM} wird's kälter.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: colder",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow gets colder from the time shown; the second drawing is warmer.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Morgen regnet's {FROM}, also nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Morgen gibt's {FROM} Regen, der Schirm muss also mit.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Denk morgen an den Schirm, {FROM} regnet's.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_rain",
+   "text": "Morgen ist's erst trocken, {FROM} regnet's. Nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: rain",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Rain starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Morgen schneit's {FROM}.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Morgen gibt's {FROM} Schnee.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Rechne morgen {FROM} mit Schnee.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow",
+   "text": "Für morgen ist {FROM} Schnee gemeldet.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Snow starts tomorrow at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Morgen geht's nass los, {FROM} ist's trocken.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Morgen brauchst du erst mal den Schirm, {FROM} ist's trocken.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Morgen brauchst du erst den Schirm, {FROM} ist's trocken."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Morgen ist {FROM} Schluss mit dem Regen.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_drier",
+   "text": "Morgen regnet's zunächst, {FROM} bleibt's trocken.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: drier",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet; the rain stops at the time shown.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Morgen regnet's zunächst, {FROM} wird's trocken."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Morgen geht's mit Regen los, also nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Morgen brauchst du gleich den Schirm, es geht nass los.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Leg dir für morgen den Schirm bereit, es geht nass los.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_wet",
+   "text": "Morgen beginnt der Tag mit Regen, also pack den Schirm ein.",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: wet",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts wet: rain likely when you head out.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Morgen geht's gleich mit Schnee los.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Morgen fängt der Tag mit Schnee an.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Morgen schneit's schon, wenn der Tag losgeht.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_snow_start",
+   "text": "Morgen schneit's gleich zu Tagesbeginn.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{FROM}": "ab 13 Uhr"
+   },
+   "batch": "Tomorrow: snow start",
+   "meaning": "Evening screen, tomorrow's forecast sentence. Tomorrow starts with snow.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight · Proofread from: Morgen schneit's gleich zu Beginn."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Ich wollte morgen absagen. Zu kurzfristig, hieß es.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Allergiehinweis: Morgen kann Spuren von Montag enthalten.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Am Abend vorher sieht jeder Tag harmlos aus. Das ist seine Masche.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Morgen ist die Fortsetzung von heute. Fortsetzungen sind meistens schlechter.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Abends ist jeder ein Frühaufsteher. Morgens komischerweise keiner.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Das Gute an der Vorschau: Man kann sich schon heute drüber ärgern. Spart morgen Zeit.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Hinweis: Diese Vorschau ist unverbindlich. Der Tag selbst leider nicht.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: On",
+   "meaning": "Evening screen at On: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Die Sachen für morgen sehen gut aus. Solange du nicht drinsteckst.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Morgen ist das Wetter früher wach als dein Gesicht.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ich sag's dir schon heute. Dann hast du die ganze Nacht Zeit, es falsch zu verstehen.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Leg dir für morgen auch gleich ein Lächeln raus. Morgens findest du sonst keins.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Die Sachen für morgen legst du sicher wieder auf den Stuhl. Zu denen von letzter Woche.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Ich mach diese Vorschau extra für dich. Andere Leute wissen auch so, was sie anziehen.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Schön, dass du dir mal Gedanken um deine Kleidung machst. Gemerkt hat man's bisher nicht.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen ab 13 Uhr Regen, also nimm den Schirm mit.",
+   "batch": "Evening line: 11",
+   "meaning": "Evening screen at 11: the sarcastic line under tomorrow's sentence, in any weather.",
+   "new": true,
+   "hint": "Evening, 8 pm to midnight"
+  }
+ ]
+}

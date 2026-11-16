@@ -22,6 +22,27 @@ A candidates file is a round of new lines from a writer, reviewed beside
 "batch" is opaque on the page: it is how a blind comparison between two
 writers is kept blind. Keep the batch -> writer key out of the file.
 
+A round can also say how its lines sit on the screen, so the page can
+show an edit live (round 8, the re-read):
+
+    "idPrefix": "rr"            ids become rr-<lang>-<hash>: rated afresh,
+                                whatever earlier rounds said about the text
+    "role": "fact" | "flavour"  the line is the bold fact, or the line under it
+    "fills": {"{WHEN}": ...}    placeholder words, filled live as you type
+    "fillsAlt": {...}           the same with the hours ("in two hours")
+    "under": "..."              a fact's sarcastic line, for context
+    "earlier": "keep in ..."    the line's verdict in an earlier round
+    "panels": [{sprite, label}] Visual Forecast: the drawings in a row, no fact
+    "ask": "alone"              a yes/no instead of a verdict (round 10:
+                                "works without the fact" / "needs the fact")
+    "hint": "..."               Claude's guess, shown under the screen
+    "starred": true             starred in an earlier round (round 22's read-through)
+    "replaces": "..."           the line this one would replace ("*": every
+                                wording of the situation); on the page,
+                                "Write new" reads "Veto both" then
+    "answers": "<id>"           the "Write new" vote this new line answers
+                                (review/rewrite/<lang>.md lists them)
+
 Every row carries a stable id: language plus a hash of the text. A line
 that moves index keeps its decision; a line whose text changes is a new
 line and is reviewed again.
@@ -36,7 +57,7 @@ import shutil
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 TIP_BUDGET = 165  # src/shared.liquid
-PATH_RE = re.compile(r"^((temp|precip|flavour|fact|topical)_(\d+))\.([a-z0-9_]+)$")
+PATH_RE = re.compile(r"^((temp|precip|flavour|flavour_vf|now|alone|fact|topical|unit)_(\d+))\.([a-z0-9_]+)$")
 PROTO = REPO / "prototypes" / "fact-flavour" / "lang"
 
 # Which drawing each key renders over, and which hinge fills {WHEN}. The
@@ -134,6 +155,13 @@ def fill(text, doc, garment_rank=3):
     return re.sub(r"  +", " ", out).strip()
 
 
+def fill_with(text, fills):
+    """A template with a round's own placeholder words (round 8)."""
+    for k in ("{WHENSTOP}", "{WHEN2}", "{WHEN}", "{WHENP}", "{GV}", "{GP}", "{G}"):
+        text = text.replace(k, fills.get(k, ""))
+    return re.sub(r"  +", " ", text).strip()
+
+
 def flavour_context(lang, doc, key, text):
     facts = json.loads((PROTO / f"{lang}.json").read_text(encoding="utf-8"))["facts"]
     sprite, fact_keys, meaning = FLAVOUR_CTX.get(key, ("jacket_dry", ["steady"], ""))
@@ -150,8 +178,8 @@ def flavour_context(lang, doc, key, text):
 
 def context(lang, doc, section, key, text):
     """What the device shows for this line: drawing, full tip, pairing."""
-    kind, level = section.split("_")
-    if kind == "flavour":
+    kind, level = section.rsplit("_", 1)
+    if kind in ("flavour", "flavour_vf", "now"):
         return flavour_context(lang, doc, key, text)
     if kind == "topical":
         # A topical line takes the flavour slot on an ordinary day; the
@@ -214,9 +242,25 @@ def rows_from_candidates(cand_path):
         r = row(lang, docs[lang], section, key, c["text"], c["path"] + "[+]",
                 "candidate", c.get("batch", ""))
         # A round can say exactly what the screen shows next to its line.
-        for field in ("sprite", "fact", "meaning"):
+        for field in ("sprite", "fact", "meaning", "role", "fills", "fillsAlt", "under", "earlier", "panels", "ask", "hint",
+                      "replaces", "answers", "starred"):
             if field in c:
                 r[field] = c[field]
+        if data.get("idPrefix"):
+            r["id"] = data["idPrefix"] + "-" + r["id"]
+        if r.get("role") == "fact":
+            r["fact"] = ""
+            r["tip"] = sentence_case(fill_with(c["text"], r.get("fills", {})))
+            r["tooLong"] = len(r["tip"]) + 1 + len(r.get("under", "")) > 200
+        elif r.get("role") == "unit":
+            # The forecast sentence and its joke, written and voted as one:
+            # "fact || joke" (the joke may be absent: one sentence with both).
+            fact, _, joke = c["text"].partition(" || ")
+            r["tip"] = c["text"]
+            r["tooLong"] = len(fill_with(fact, r.get("fills", {}))) + 1 + len(joke) > 200
+        elif r.get("role") == "flavour":
+            r["tip"] = c["text"]
+            r["tooLong"] = len(r.get("fact", "")) + 1 + len(r["tip"]) > 200
         r["round"] = data.get("round", "")
         if section.startswith("fact_"):
             r["levelName"] = "every setting"
@@ -228,7 +272,7 @@ def rows_from_candidates(cand_path):
 
 
 def row(lang, doc, section, key, text, path, source, batch):
-    level = section.split("_")[1]
+    level = section.rsplit("_", 1)[1]
     ctx = context(lang, doc, section, key, text)
     return {
         "id": line_id(lang, text), "lang": lang, "level": level,
@@ -277,7 +321,8 @@ def main():
         old.unlink()
     for path in a.candidates:
         shutil.copy(path, out / "rounds" / pathlib.Path(path).name)
-    for sprite in sorted({r["sprite"] for r in unique}):
+    used = {r["sprite"] for r in unique} | {p["sprite"] for r in unique for p in r.get("panels", [])}
+    for sprite in sorted(used):
         shutil.copy(REPO / "sprites" / f"{sprite}.png", out / "sprites" / f"{sprite}.png")
 
     payload = json.dumps({"round": round_name, "focus": a.focus, "rows": unique}, ensure_ascii=False)
@@ -285,8 +330,8 @@ def main():
     page = (REPO / "review" / "page.html").read_text(encoding="utf-8")
     (out / "index.html").write_text(page.replace("/*ROWS*/null", payload), encoding="utf-8")
     files = sorted(str(f.relative_to(out)) for f in [*(out / "sprites").glob("*.png"), *(out / "rounds").glob("*.json")]
-                   if f.parent.name == "rounds" or f.stem in {r["sprite"] for r in unique})
-    print(f"{len(unique)} lines, {len({r['sprite'] for r in unique})} sprites -> {out}/index.html")
+                   if f.parent.name == "rounds" or f.stem in used)
+    print(f"{len(unique)} lines, {len(used)} sprites -> {out}/index.html")
     print("publish with root " + str(out) + " and files: " + json.dumps(files))
 
 

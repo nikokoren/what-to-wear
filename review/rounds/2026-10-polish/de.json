@@ -1,0 +1,315 @@
+{
+ "round": "2026-10-polish",
+ "lines": [
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "{WHEN} wird's warm. Überleg dir, gleich Shorts anzuziehen.",
+   "answers": [
+    "rp-de-4aea965b70d8",
+    "rp-de-f72a3badc228"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Heute lohnen sich eventuell schon Shorts, {WHEN} wird's warm.",
+   "answers": [
+    "rp-de-c8c023ac9316"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Zieh eventuell gleich Shorts an. {WHEN} ist's warm genug dafür.",
+   "answers": [
+    "rp-de-e90fd31055dc"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} wird's warm, {WHEN2} wieder kühl. Shorts gehen eventuell trotzdem.",
+   "answers": [
+    "rp-de-3f0c72d9e161",
+    "rp-de-6c69db1fa3c7"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "Überleg dir Shorts, {WHEN} wird's warm. Die warme Schicht nimmst du aber mit.",
+   "answers": [
+    "rp-de-1d2fe7dad56d"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "Eventuell gehen heute Shorts, {WHEN} wird's warm. {WHEN2} brauchst du die warme Schicht wieder.",
+   "answers": [
+    "rp-de-7aebfc690f52"
+   ]
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "{WHEN} wird's kalt. Überleg dir lange Hosen und eine warme Schicht."
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "Vielleicht doch lieber lange Hosen? {WHEN} kommt eine Kaltfront."
+  },
+  {
+   "path": "fact_0.steady",
+   "text": "So, wie du angezogen bist, passt es den ganzen Tag.",
+   "answers": [
+    "rp-de-af355f128a0d"
+   ]
+  },
+  {
+   "path": "fact_0.steady",
+   "text": "Dein Outfit passt heute den ganzen Tag.",
+   "answers": [
+    "rp-de-be6c61b5f41a"
+   ]
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "Es wird heute den ganzen Tag nicht wärmer.",
+   "answers": [
+    "rp-de-042eec739e25"
+   ]
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "Die Kälte hält heute den ganzen Tag an.",
+   "answers": [
+    "rp-de-7e371f0a2751"
+   ]
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "Kalt bleibt's heute, und zwar den ganzen Tag.",
+   "answers": [
+    "rp-de-fa4276bbbbdf"
+   ]
+  },
+  {
+   "path": "fact_0.steady_evening",
+   "text": "Dein Outfit passt den ganzen Abend.",
+   "answers": [
+    "rp-de-c2ea8930f02f"
+   ]
+  },
+  {
+   "path": "fact_0.steady_evening",
+   "text": "Für den Rest des Abends passt, was du anhast.",
+   "answers": [
+    "rp-de-ee0484b79ad1"
+   ]
+  },
+  {
+   "path": "fact_0.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit.",
+   "answers": [
+    "rp-de-efc53a2044e8"
+   ]
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "Es schneit noch eine Weile, dann hört's auf.",
+   "answers": [
+    "rp-de-eab471716ac0"
+   ]
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien.",
+   "answers": [
+    "rp-de-4ce4abf7f20e"
+   ]
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's wieder.",
+   "answers": [
+    "rp-de-b37a5bc94d86"
+   ]
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Vorsicht, Glatteis: Der gefrierende Regen hört erst später auf, und die Wege bleiben danach glatt.",
+   "answers": [
+    "rp-de-6f766f8b90ca"
+   ]
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Noch gewittert's, später zieht es ab. Bis dahin bist du drinnen am sichersten.",
+   "answers": [
+    "rp-de-88ade1716ce9"
+   ]
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "Der Schneefall hört {WHENSTOP} auf."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Vorsicht, Glatteis. Der gefrierende Regen hört erst {WHENSTOP} auf, glatt bleibt's auch danach."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "{WHENSTOP} hört der gefrierende Regen auf. Die Wege können danach noch glatt sein, also geh vorsichtig."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Das Gewitter zieht {WHENSTOP} ab. Bis dahin bist du drinnen am sichersten."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Noch gewittert's, {WHENSTOP} ist es vorbei. Solange es donnert, bleib lieber drinnen."
+  },
+  {
+   "path": "fact_0.p_wet_again",
+   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. Behalt den Schirm dabei."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los."
+  },
+  {
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Vorsicht, Glatteis: Der gefrierende Regen hört {WHENSTOP} auf, {WHENP} kommt er zurück."
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "Der Regen hört {WHENSTOP} auf, aber {WHENP} kommt ein Gewitter. Dann bist du drinnen am sichersten."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Und stell die Flasche nicht in die Sonne. Sonst trinkst du Tee.",
+   "answers": [
+    "rp-de-edc4ddc258ed"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Sonst hängst du später durch wie die Geranien.",
+   "answers": [
+    "se-de-498ddaa47dd7"
+   ]
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Ich würd ja streuen. Aber ich hab keine Hände.",
+   "answers": [
+    "rp-de-807e72f94980"
+   ]
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Heute ist jeder Gehweg eine Eisbahn. Nur ohne Glühweinstand.",
+   "answers": [
+    "rp-de-943ebd8e3212"
+   ]
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Ich trau dem schönen Wetter auch nicht. Zu Recht, wie's aussieht.",
+   "answers": [
+    "rp-de-90c4c23c7cfb"
+   ]
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Ich halt das aus, ich bin aus Plastik. Du nicht.",
+   "answers": [
+    "rp-de-9ff1ee175996"
+   ]
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Einen Blitzableiter hast du übrigens nicht. Also rein, wenn's donnert.",
+   "answers": [
+    "rp-de-118daa47676a"
+   ]
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Gegen den Regen hilft der Schirm, gegen Blitze nur ein Dach.",
+   "answers": [
+    "rp-de-c95ef84f7140"
+   ]
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Für den Abend reicht's. Für ein Kompliment nicht.",
+   "answers": [
+    "rp-de-44815a206418"
+   ]
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Gratuliere. Das war die einfachste Entscheidung deines Abends.",
+   "answers": [
+    "rp-de-f5d0beefe6e8"
+   ]
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Und nicht wieder die Schuhe ohne Profil. Ich weiß, welche ich mein.",
+   "answers": [
+    "rp-de-89d7bf36fe78"
+   ]
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Elegant gehst du ja sowieso nicht. Heute fällt's wenigstens nicht auf.",
+   "answers": [
+    "rp-de-d4da1f45236d"
+   ]
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Auch für den dritten Gang zum Kühlschrank.",
+   "answers": [
+    "rp-de-4870f40f150e"
+   ]
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "Schön. Dann musst du dir nur noch eine Ausrede fürs Aufbleiben ausdenken.",
+   "answers": [
+    "rp-de-89481a3919c1"
+   ]
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Deine Beine haben lang keine Sonne gesehen. Das wird man merken.",
+   "answers": [
+    "rp-de-ca24c35f7ffc"
+   ]
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Heute Nacht hängt wieder ein Fuß aus der Decke. Als ob das was bringt.",
+   "answers": [
+    "fu-de-673b503b046c"
+   ]
+  },
+  {
+   "path": "now_11.hot",
+   "text": "Ein Eimer kaltes Wasser für die Füße, und schon nennst du's Wellnesstag.",
+   "answers": [
+    "rp-de-c23d806731f3"
+   ]
+  }
+ ]
+}

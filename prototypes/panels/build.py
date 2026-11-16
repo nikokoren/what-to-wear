@@ -6,14 +6,12 @@ Builds the outfit-panels prototype into build/panels/:
 
 shared.liquid = src/shared.liquid + the fact + flavour block (as in
 prototypes/fact-flavour) + this prototype's block.liquid at the end.
-Each view is the panels, generated from one template below (so the
-layouts differ only where the view's size makes them differ), when the
-forecast field says Visual Forecast, and otherwise the real view with
-the fact + flavour lines, as that prototype builds it. Language files
-are lang/<code>.json merged with both prototypes' additions.
+Every view, in every forecast mode (Visual Forecast, words, none), is
+generated from one template below, in TRMNL's framework classes only.
+Language files are lang/<code>.json merged with both prototypes'
+additions.
 """
 
-import importlib.util
 import json
 import pathlib
 
@@ -23,83 +21,74 @@ FF = REPO / "prototypes" / "fact-flavour"
 OUT = REPO / "build" / "panels"
 ANCHOR = "{%- comment %}\n============ THE PICTURE"
 
-_spec = importlib.util.spec_from_file_location("ff_build", FF / "build.py")
-ff_build = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(ff_build)
 
 
-def text_view(view):
-    """The real view with the fact + flavour lines, as prototypes/fact-flavour builds it."""
-    src = (REPO / "src" / "views" / f"{view}.liquid").read_text(encoding="utf-8")
-    if ff_build.OLD_TIP not in src:
-        raise SystemExit(f"{view}.liquid: tip markup not found")
-    return src.replace(ff_build.OLD_TIP, ff_build.NEW_TIP).replace("today_tip != ''", "fact_line != ''")
-
-# Per view: image height (in view height) with words / without, the
-# words' size and the time's size (larger on the X). Only the portrait
-# half-tall stacks the panels (ihs: the whole stack's height, times
-# included); everywhere the time sits under the drawing.
+# Every screen comes from one template below, in TRMNL's framework classes
+# only: no <style>, no inline style, no limiter tricks. Sizes are shares of
+# the view (cqw, cqh: TRMNL's `layout` is a size container).
+#
+# One drawing (a steady day, the words view, no forecast): a square box
+# as wide as the view that gives up height to the words (images shrink in
+# a flex column), so the drawing is as big as the view allows and stays
+# with the words when the width is what limits it.
+# Lying wide with words (the half view on its side, the quarter), it
+# stands beside them; its box is wider than its column and overflows it
+# on both sides, so the transparent sides of the square don't push the
+# words away.
+#
+# Two or three drawings: use the reviewed 50% growth target for the new
+# portrait PNGs. A 3:4 box at 1.125 times the old square slot's width is
+# 1.5 times its height. Keep equal columns and the existing height caps;
+# contain preserves the whole drawing, including rain and umbrellas.
+# - Only the half view standing tall (240 by 800 on the OG) stacks them.
+#
+# The words take their natural height. No content limiter: on the X it
+# measures the drawings scaled up and the space not, and hides the words.
 VIEWS = {
-    "full": dict(ih_words=56, ih_bare=74, words="content--large lg:content--xlarge", label="lg:label--xlarge", stack=False),
-    "half_horizontal": dict(ih_words=58, ih_bare=74, words="content--base lg:content--large", label="lg:label--xlarge", stack=False, side=True),
-    "half_vertical": dict(ih_words=58, ih_bare=76, ihs_words=70, ihs_bare=84, words="content--base", label="lg:label--xlarge", stack=True),
-    "quadrant": dict(ih_words=52, ih_bare=70, words="content--small lg:content--base", label="lg:label--large", stack=False),
+    "full": dict(words="content--xlarge lg:content--xxlarge", label="lg:label--xlarge", ih_words=66, ih_bare=80,
+                 ih_fact=50, words_fact="content--large lg:content--xlarge"),
+    "half_horizontal": dict(words="content--large lg:content--xlarge", label="lg:label--xlarge", ih_words=62, ih_bare=78,
+                            ih_fact=48, words_fact="content--base lg:content--large",
+                            side=True, side_ih=84),
+    "half_vertical": dict(words="content--large lg:content--xlarge", words_n="content--base lg:content--xlarge",
+                          label="lg:label--xlarge", ih_words=62, ih_bare=78, stack=dict(fact=58, words=70, bare=86),
+                          ih_fact=50, words_fact="content--base lg:content--large"),
+    "quadrant": dict(words="content--base lg:content--large", words_n="content--small lg:content--large",
+                     label="lg:label--large", ih_words=54, ih_bare=74, side_one=True,
+                     ih_fact=42, words_fact="content--small lg:content--base"),
+}
+ROW = 94        # the row of two or three drawings, in view width
+SIDE_ROW = 60   # the same, with the words beside it (side_words wide)
+SIDE_WORDS = 34
+SIDE_ROW_FACT, SIDE_WORDS_FACT = 50, 46   # with the forecast line too, the words get more room
+ONE_MIN = 40    # one drawing never gets less of the height than this
+# Two or three drawings with the forecast line under or beside them (both
+# switches on) get a lower cap (ih_fact) and words a size smaller
+# (words_fact): the forecast line and the sarcastic line are two to five
+# lines.
+# One drawing beside the words: its column, its box, and the words' width.
+ONE_SIDE = (40, 46, 56)
+# A stacked panel's time, with its gap, in view height: OG, X.
+STACK_LABEL = (3.5, 4.5)
+
+ERROR = {
+    "col": """<div class="layout layout--col layout--center">
+  <div class="richtext richtext--center gap w--max-[100cqw]">
+    <img class="image image--contain h--[60cqh]" src="{{ sprite_url }}" alt="Error">
+    <div class="content content--center text--center w--max-[100cqw] content--base lg:content--large" data-content-limiter="true">
+      <p>{{ error_message }}</p>
+    </div>
+  </div>
+</div>""",
+    "row": """<div class="layout layout--row portrait:layout--col layout--center gap">
+  <img class="image image--contain h--[100cqh] w--max-[40cqw] portrait:h--[60cqh] portrait:w--max-[100cqw]" src="{{ sprite_url }}" alt="Error">
+  <div class="content content--center text--center stretch-x content--large" data-content-limiter="true">
+    <p>{{ error_headline }}</p>
+  </div>
+</div>""",
 }
 
-TEMPLATE = """{%- assign has_words = false -%}
-{%- if panel_fact != '' or panel_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
-{%- if has_words -%}{%- assign ih = IH_WORDS -%}{%- assign ihs = IHS_WORDS -%}{%- else -%}{%- assign ih = IH_BARE -%}{%- assign ihs = IHS_BARE -%}{%- endif -%}
-{%- assign gaps = panel_n | minus: 1 | times: 4 -%}
-{%- assign vgaps = panel_n | minus: 1 | times: 2 -%}
-<style>
-  /* The view is the measure: every cq unit below is a share of it. */
-  .wtw-box { container-type: size; width: 100%; height: 100%; }
-  .wtw-day { width: 100cqw; height: 100cqh; --ih: {{ ih }}cqh; --pw: 92cqw; }
-  .wtw-panels { flex: none; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 4cqw; }
-  /* Keep the column centers, but give the narrower artwork 50% more
-     height than the old square slot. The view's height budget still caps
-     short layouts. Contain keeps rain and umbrellas inside the image. */
-  .wtw-panels { --slot: min(calc((var(--pw) - {{ gaps }}cqw) / {{ panel_n }}), var(--ih));
-    --sprite-height: min(calc(var(--slot) * 1.5), var(--ih)); }
-  .wtw-panel { display: flex; flex: none; width: var(--slot); flex-direction: column; align-items: center; gap: 1cqh; margin: 0; }
-  .wtw-panel img { object-fit: contain; max-width: none;
-    width: calc(var(--sprite-height) * 0.75); height: var(--sprite-height); }
-  .wtw-panel .label { white-space: nowrap; }
-  /* 240 px wide (the OG's portrait quarter): "from" over "3 pm". The
-     hours have a no-break space, so "3 pm" stays whole. */
-  @container (max-width: 300px) { .wtw-panel .label { white-space: normal; text-align: center; justify-content: center; } }
-  .wtw-now .label { font-weight: 700; text-decoration: underline; }
-  /* The words fit themselves: TRMNL's content limiter miscounts on the X
-     (it measures the drawings scaled up, the space not) and hides them. */
-  .wtw-words { width: 92cqw; flex: 0 1 auto; min-height: 0; overflow: hidden; }
-  .wtw-words p { margin: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-  SIDE_CSS
-  STACK_CSS
-</style>
-<div class="wtw-box">
-<div class="layout layout--col layout--center gap--small wtw-day{% if has_words %} wtw-side{% endif %}">
-  {%- if is_error %}
-    <img class="image image--contain h--[60cqh]" src="{{ sprite_url }}" alt="Error">
-    <div class="content content--center text--center content--base" data-content-limiter="true"><p>{{ error_headline }}</p></div>
-  {%- else %}
-  <div class="wtw-panels">
-    {%- for slug in panel_slug_list %}
-    <figure class="wtw-panel{% if forloop.first %} wtw-now{% endif %}">
-      <img class="image image-dither" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
-      {%- if panel_n > 1 %}<span class="label LABEL">{{ panel_label_list[forloop.index0] }}</span>{%- endif %}
-    </figure>
-    {%- endfor %}
-  </div>
-  {%- if has_words %}
-  <div class="content content--center text--center WORDS wtw-words">
-    {%- if panel_fact != '' %}<p class="font--bold">{{ panel_fact }}</p>{%- endif %}
-    {%- if panel_flavour != '' %}<p>{{ panel_flavour }}</p>{%- endif %}
-  </div>
-  {%- endif %}
-  {%- endif %}
-</div>
-</div>
-
+TITLE_BAR = """
 {%- if show_bottom_bar == 'on' -%}
   <div class="title_bar">
     <span class="title">What to Wear</span>
@@ -108,23 +97,203 @@ TEMPLATE = """{%- assign has_words = false -%}
 {%- endif -%}
 """
 
-# Wide and short (the half view on its side, 800x240 on the OG): the
-# words go beside the panels, so the drawings get the full height.
-SIDE = """.screen:not(.screen--portrait) .wtw-side { flex-direction: row; gap: 3cqw; --ih: IH_BARE_SIDEcqh; --pw: 60cqw; }
-  .screen:not(.screen--portrait) .wtw-side .wtw-words { width: 34cqw; }"""
+WORDS = """
+  {%- if has_words %}
+  <div class="content content--center text--center {{ c_words }}" data-wtw="words">
+    {%- if w_fact != '' %}<p class="font--bold">{{ w_fact }}</p>{%- endif %}
+    {%- if w_flavour != '' %}<p>{{ w_flavour }}</p>{%- endif %}
+  </div>
+  {%- endif %}"""
 
-# Stacked (portrait half-tall, 240 by 800 on the OG): one panel under the
-# other, the time under each drawing. --lbl is a time's height with its gap.
-STACK = """.screen--portrait .wtw-day { --lbl: 3.5cqh; }
-  .screen--portrait.screen--lg .wtw-day { --lbl: 4.5cqh; }
-  .screen--portrait .wtw-panels { flex-direction: column; align-items: center; gap: 2cqh; }
-  .screen--portrait .wtw-panel { width: auto; }
-  /* A vertical stack already spends its height budget across all panels;
-     enlarge toward 50% only while the whole stack and its labels fit. */
-  .screen--portrait .wtw-panel img {
-    --stack-slot: min(calc(({{ ihs }}cqh - {{ vgaps }}cqh - {{ panel_n }} * var(--lbl)) / {{ panel_n }}), 84cqw);
-    height: min(calc(var(--stack-slot) * 1.5), calc(({{ ihs }}cqh - {{ vgaps }}cqh - {{ panel_n }} * var(--lbl)) / {{ panel_n }}));
-    width: min(calc(var(--stack-slot) * 1.125), 84cqw); }"""
+
+# The evening (prototypes/panels/evening.liquid): tonight | tomorrow.
+# It reuses the daytime screen's parts (owner: the other scenarios already
+# size the drawings and the type well on every device): the classes of
+# one drawing or of a row of two or three (one_classes, row_classes), the
+# times' label size and WORDS. It adds only the two tags, which take a
+# little of the drawings' height (TAG_H, view height), and the divider
+# between tonight and tomorrow.
+TAG_H = 6
+
+
+def evening_view(view, v):
+    a = ["{%- elsif evening_on %}\n"
+         "{%- assign w_fact = ev_fact -%}{%- assign w_flavour = ev_joke -%}\n"
+         "{%- assign has_words = false -%}\n"
+         "{%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}\n"
+         "{%- assign ev_n = ev_slug_list | size -%}\n"
+         "{%- if ev_tonight_slug == '' %}\n"]
+    # Drawings off: one drawing of tomorrow, as one drawing in the day.
+    a.append(one_classes(v, tag=True))
+    a.append("""<div class="{{ c_outer }}" data-wtw="evening">
+  {%- if c_wrap != '' %}<div class="{{ c_wrap }}">{%- endif %}
+  <span class="label label--inverted LABEL" data-wtw="tomorrow">{{ ev_tag }}</span>
+  <img class="{{ c_image }}" src="{{ sprite_base_url }}{{ ev_slug_list | first }}.png" alt="{{ ev_slug_list | first }}">
+  {%- if c_wrap != '' %}</div>{%- endif %}""".replace("LABEL", v["label"]) + WORDS + "\n</div>\n")
+    a.append("{%- else -%}\n{%- assign n = ev_n | plus: 1 -%}\n")
+    a.append(row_classes(view, v, tag=True))
+    label = v["label"]
+    cell = ("""<div class="flex flex--col gap--small {{ c_panel }}">
+        <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}SLUG.png" alt="SLUG">
+        <span class="label text--center mx--1 LABELCLS">TIME</span>
+      </div>""").replace("LABELCLS", label)
+    divider = "divider divider--v" + (" portrait:hidden" if v.get("stack") else "")
+    a.append("""<div class="{{ c_outer }}" data-wtw="evening">
+  <div class="{{ c_row }}" data-wtw="panels">
+    <div class="flex flex--col flex--center-x gap--small">
+      <span class="label label--outline LABEL">{{ texts.evening.tonight }}</span>
+      """.replace("LABEL", label)
+             + cell.replace("SLUG", "{{ ev_tonight_slug }}").replace("TIME", "{{ ev_tonight_label }}") + """
+    </div>
+    <div class="DIVIDER"></div>
+    <div class="flex flex--col flex--center-x gap--small">
+      <span class="label label--inverted LABEL" data-wtw="tomorrow">{{ ev_tag }}</span>
+      <div class="{{ c_row }}">
+      {%- for slug in ev_slug_list %}
+      """.replace("LABEL", label).replace("DIVIDER", divider)
+             + cell.replace("SLUG", "{{ slug }}").replace("TIME", "{{ ev_label_list[forloop.index0] }}") + """
+      {%- endfor %}
+      </div>
+    </div>
+  </div>""" + WORDS + "\n</div>\n{%- endif %}\n")
+    return "".join(a)
+
+
+def one_classes(v, tag=False):
+    """The classes of one drawing, with or without words (Liquid assigns)."""
+    side, side_one = v.get("side", False), v.get("side_one", False)
+    one_min = ONE_MIN - (TAG_H if tag else 0)
+    col_words = f"w--[96cqw] {v['words']}"
+    one_col = ("layout layout--col gap--small",
+               f"image image--contain image-dither aspect--1/1 w--[100cqw] h--min-[{one_min}cqh]")
+    a = []
+    if side or side_one:
+        c, box, w = ONE_SIDE
+        a.append("{%- if has_words -%}\n")
+        a.append(f"  {{%- assign c_outer = 'layout layout--row portrait:layout--col gap' -%}}\n"
+                 f"  {{%- assign c_wrap = 'flex flex--col gap--none w--[{c}cqw] h--[100cqh] portrait:w--[100cqw] portrait:h--auto portrait:stretch' -%}}\n"
+                 f"  {{%- assign c_image = 'image image--contain image-dither w--[{box}cqw] h--[{100 - (TAG_H if tag else 0)}cqh] portrait:w--[100cqw] portrait:h--auto portrait:stretch portrait:h--min-[{one_min}cqh]' -%}}\n"
+                 f"  {{%- assign c_words = 'w--[{w}cqw] portrait:w--[96cqw] {v['words']}' -%}}\n")
+        a.append("{%- else -%}\n")
+        a.append(f"  {{%- assign c_outer = '{one_col[0]}' -%}}{{%- assign c_wrap = '' -%}}{{%- assign c_image = '{one_col[1]}' -%}}\n")
+        a.append("{%- endif -%}\n")
+    else:
+        a.append(f"{{%- assign c_outer = '{one_col[0]}' -%}}{{%- assign c_wrap = '' -%}}{{%- assign c_image = '{one_col[1]}' -%}}"
+                 f"{{%- assign c_words = '{col_words}' -%}}\n")
+    return "".join(a)
+
+
+def row_classes(view, v, tag=False):
+    """The classes of a row of two or three drawings, for n = 2 or 3 and
+    the three word cases (Liquid assigns). tag: the evening's tags take
+    TAG_H of the height."""
+    side, stack = v.get("side", False), v.get("stack")
+    words_n = v.get("words_n", v["words"])
+    th = TAG_H if tag else 0
+    a = []
+
+    def sizes(row, n):
+        slot = (row - (n - 1) * 4) / n
+        return round(row / n), round(slot * 1.125)
+    for k in (2, 3):
+        a.append(("{%- if n == 2 -%}\n" if k == 2 else "{%- else -%}\n"))
+        # Three cases: the forecast line under the drawings (both switches on),
+        # only the sarcastic line, no words.
+        for case in ("fact", "words", "bare"):
+            a.append({"fact": "  {%- if w_fact != '' -%}\n", "words": "  {%- elsif has_words -%}\n",
+                      "bare": "  {%- else -%}\n"}[case])
+            ih = {"fact": v["ih_fact"], "words": v["ih_words"], "bare": v["ih_bare"]}[case] - th
+            wclass = v["words_fact"] if case == "fact" else words_n
+            col, img = sizes(ROW, k)
+            panel = f"w--[{col}cqw]"
+            image = f"w--[{img}cqw] h--max-[{ih}cqh]"
+            # The three-up half-vertical row has spare height. Enlarge its
+            # portrait artwork another 25%, and keep the outer centers
+            # inset so rain, snow and umbrellas fit. Portrait stacks keep
+            # their separate width and height budgets below.
+            if view == "half_vertical" and k == 3:
+                panel += " landscape:w--[33cqw] lg:landscape:w--[32cqw]"
+                image += " landscape:w--[40cqw]"
+            outer = "layout layout--col gap--small"
+            row = "flex flex--row gap--none"
+            words = f"w--[92cqw] {wclass}"
+            if side and case != "bare":
+                srow, swords = (SIDE_ROW_FACT, SIDE_WORDS_FACT) if case == "fact" else (SIDE_ROW, SIDE_WORDS)
+                scol, simg = sizes(srow, k)
+                outer = "layout layout--row portrait:layout--col gap"
+                panel = f"w--[{scol}cqw] portrait:w--[{col}cqw]"
+                image = f"w--[{simg}cqw] h--max-[{v['side_ih'] - th}cqh] portrait:w--[{img}cqw] portrait:h--max-[{ih}cqh]"
+                words = f"w--[{swords}cqw] portrait:w--[92cqw] {wclass}"
+            if stack:
+                total = stack[case] - (2 * th if tag else 0)
+                caps = [int((total - (k - 1) * 2 - k * lbl) / k) for lbl in STACK_LABEL]
+                row += " portrait:flex--col"
+                panel += " portrait:w--[100cqw]"
+                image += f" portrait:w--[84cqw] portrait:h--max-[{caps[0]}cqh] lg:portrait:h--max-[{caps[1]}cqh]"
+            a.append(f"    {{%- assign c_outer = '{outer}' -%}}{{%- assign c_row = '{row}' -%}}"
+                     f"{{%- assign c_panel = '{panel}' -%}}{{%- assign c_image = '{image}' -%}}"
+                     f"{{%- assign c_words = '{words}' -%}}\n")
+        a.append("  {%- endif -%}\n")
+    a.append("{%- endif -%}\n")
+    return "".join(a)
+
+
+def build_view(view, v):
+    """One view: every forecast mode, panel count and orientation."""
+    side, side_one, stack = v.get("side", False), v.get("side_one", False), v.get("stack")
+    words_n = v.get("words_n", v["words"])
+    a = []
+    a.append("""{%- comment %}
+The words. Forecast on: the forecast line, with or without the drawings.
+Only the drawings: "works all day" on one. The sarcastic line is the same
+for every screen (flavour_line): the blocks pick it for what's on screen.
+{%- endcomment %}
+{%- assign w_fact = '' -%}
+{%- assign w_flavour = flavour_line -%}
+{%- if forecast_on and fact_line != '' -%}
+  {%- assign w_fact = fact_line -%}
+{%- elsif visual_forecast -%}
+  {%- assign w_fact = panel_fact -%}
+{%- endif -%}
+{%- comment %}
+No texts file with the forecast wordings (a device that has this markup
+but not yet the texts polling URL, rollout step 1): the old one-line tip,
+from the copies the transitional markup carries.
+{%- endcomment %}
+{%- if w_fact == '' and w_flavour == '' and texts.facts == nil and show_future_suggestions == 'on' and today_tip != '' -%}
+  {%- assign w_flavour = today_tip -%}
+{%- endif -%}
+{%- assign has_words = false -%}
+{%- if w_fact != '' or w_flavour != '' -%}{%- assign has_words = true -%}{%- endif -%}
+{%- assign n = 1 -%}
+{%- if visual_forecast -%}{%- assign n = panel_n -%}{%- endif -%}
+""")
+    err = ERROR["row" if (side or side_one) else "col"]
+    a.append("{%- if is_error %}\n" + err + "\n")
+    a.append(evening_view(view, v))
+
+    # ---- one drawing
+    a.append("{%- elsif n == 1 %}\n")
+    a.append(one_classes(v))
+    a.append("""<div class="{{ c_outer }}">
+  {%- if c_wrap != '' %}<div class="{{ c_wrap }}">{%- endif %}
+  <img class="{{ c_image }}" src="{{ sprite_url }}" onerror="this.onerror=null;this.src='{{ fallback_sprite_url }}'" alt="Outfit">
+  {%- if c_wrap != '' %}</div>{%- endif %}""" + WORDS + "\n</div>\n")
+
+    # ---- two or three drawings
+    a.append("{%- else %}\n")
+    a.append(row_classes(view, v))
+    a.append("""<div class="{{ c_outer }}">
+  <div class="{{ c_row }}" data-wtw="panels">
+    {%- for slug in panel_slug_list %}
+    <div class="flex flex--col gap--small {{ c_panel }}">
+      <img class="image image--contain image-dither aspect--3/4 {{ c_image }}" src="{{ sprite_base_url }}{{ slug }}.png" alt="{{ slug }}">
+      <span class="label text--center mx--1 LABEL{% if forloop.first %} font--bold label--underline{% endif %}">{{ panel_label_list[forloop.index0] }}</span>
+    </div>
+    {%- endfor %}
+  </div>""".replace("LABEL", v["label"]) + WORDS + "\n</div>\n{%- endif %}\n")
+    a.append(TITLE_BAR)
+    return "".join(a)
 
 
 def main():
@@ -133,18 +302,13 @@ def main():
         raise SystemExit("anchor not found in src/shared.liquid")
     ff = (FF / "block.liquid").read_text(encoding="utf-8")
     block = (HERE / "block.liquid").read_text(encoding="utf-8")
+    block += "\n" + (HERE / "evening.liquid").read_text(encoding="utf-8")
     (OUT / "views").mkdir(parents=True, exist_ok=True)
     (OUT / "lang").mkdir(parents=True, exist_ok=True)
     (OUT / "shared.liquid").write_text(shared.replace(ANCHOR, ff + "\n\n" + ANCHOR, 1) + "\n" + block, encoding="utf-8")
 
     for view, v in VIEWS.items():
-        src = (TEMPLATE.replace("IHS_WORDS", str(v.get("ihs_words", v["ih_words"]))).replace("IHS_BARE", str(v.get("ihs_bare", v["ih_bare"])))
-               .replace("IH_WORDS", str(v["ih_words"])).replace("IH_BARE", str(v["ih_bare"]))
-               .replace("WORDS", v["words"]).replace("LABEL", v["label"]).replace("STACK_CSS", STACK if v["stack"] else "")
-               .replace("SIDE_CSS", SIDE.replace("IH_BARE_SIDE", str(v["ih_bare"])) if v.get("side") else ""))
-        src = ("{%- if visual_forecast -%}\n" + src.rstrip() + "\n{%- else -%}\n"
-               + text_view(view).rstrip() + "\n{%- endif -%}\n")
-        (OUT / "views" / f"{view}.liquid").write_text(src, encoding="utf-8")
+        (OUT / "views" / f"{view}.liquid").write_text(build_view(view, {**v, "_name": view}), encoding="utf-8")
 
     for lang in ("en", "de"):
         doc = json.loads((REPO / "lang" / f"{lang}.json").read_text(encoding="utf-8"))

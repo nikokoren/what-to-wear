@@ -12,14 +12,159 @@ to pick it up cold.
   and the old drawings in the repo root; `lang/` and `sprites/` are
   unchanged.
 - Running on `main` now: the weekly `topical-prune` workflow (a no-op
-  until topical lines ship in `lang/`) and the "Topical scout" routine,
-  which reads the `topical` skill from `main`.
+  until topical lines ship in `lang/`). The "Topical scout" routine
+  (reads the `topical` skill from `main`) is paused since 15 October
+  2026, with topical lines (item 8).
 - Item 1 is decided and coded; the 19 drawings are next.
 - Item 3 (the text) is well along in the prototype; see item 5 below.
 
+### Rollout 2.0 (owner, October 2026)
+
+Two steps, texts URL pinned to a version tag, merge to `main` once the
+drawings are in. `tools/build_release.py` and `docs/MIGRATION.md` ("2.0").
+Before release: the 19 drawings (below), a contact method in the About
+text (`config/settings.next.yaml`), the owner's read of the 2.0 changelog
+in both languages, then build, merge, tag `v2.0.0`, and the three steps.
+
+**On hold (16 October 2026):** the owner found the forecast sentence and
+the sarcastic line still don't flow together, even on a plain "works all
+day". Fix first: **units**. With sarcasm on, each forecast sentence and its
+joke are written and voted as one ("fact || joke", or one sentence with
+both); the screen never combines two separate picks. Sarcasm off keeps the
+plain wordings. Markup: `UNITS` in `prototypes/fact-flavour/block.liquid`
+(`units_10`/`units_11` in the texts); a situation without units works as
+before, so they arrive a family at a time: steady days (round 17,
+`review/rounds/make_round17.py`), then layers, then rain.
+
+### From the German read-through (owner, round 22)
+
+Done in both languages, without a vote (the owner's call): a known stop
+time shows only the wordings that say it (block.liquid); "{AM}" marks
+midday-sun wordings, shown only before noon, with one afternoon wording
+for dangerous heat; the scarf alone is the extra-cold layer (wordings,
+garment name and pronoun; units joking about hats or gloves dropped);
+no "get inside" in storm wordings. All in `build_pools.py`
+(`apply_notes`), so later rebuilds keep them. Still open:
+5. **Groups the vote emptied** (de), now falling back: theme_xmas at On (theme_nikolo since cut), the storm follow-ups at On (the rain ones show),
+   the drawings' warming line at On, units w_scarf and arc_warmer
+   at 11 (the separate pick shows).
+
+### Bug: drawings and sarcastic line disagree (owner, 23 October 2026)
+
+After the read-through (round 22), not before. Seen on the beta: two
+drawings, dry now and rain from 21:00, with „Draußen passiert nichts.
+Kennst du ja von deinen Samstagen.“ With two or three drawings and no
+forecast line, the pool mixes the few lines written for the drawings
+(flavour_vf, 1 to 3 per mood) with the current-weather lines (now_*),
+which only know the moment. Plan:
+1. Two or three drawings: no now_* lines; only drawing lines and the
+   day lines (alone_*). Until there are enough, the owner picks the
+   fallback: no line, or today's mix.
+2. Finer drawing situations by first and last drawing: rain later, rain
+   stops, snow later, snow stops, a layer off, a layer on, off and back
+   on, three outfits.
+3. Write them with the round 20 setup, about four per situation and
+   level.
+
+### Next review batch (owner, October 2026)
+
+One batch, with the round 20 setup (data-built brief, four candidates
+per line, a critic, then the vote):
+
+1. **The US English rewrites** (below).
+2. **Fresh topics the owner picked**, as follow-ups, standalone lines
+   or units wherever they fit the situation:
+   - English: "feels like" (the recipe dresses by it); the phone's
+     weather app as the screen's rival; weather small talk; weather lore
+     (red sky at night, April showers); early dark (November to January,
+     month-tagged); the one person in shorts in February; "too hot" two
+     days after "when's summer coming"; pumpkin spice (September,
+     October).
+   - German: Bauernregeln and Lostage; der Wetterfrosch (the screen as
+     its successor); Föhn as the all-purpose excuse (never claiming
+     today is a Föhn day); Kreislauf in the heat; Wetterfühligkeit;
+     Ruhezeiten (someone's mower on a Sunday, never the reader's);
+     Saturday's freshly washed car before the rain; Hausschuhe; Wetter-App
+     gegen Wetterbericht (a new angle, not the Regenradar again).
+3. **New special days for the dated ones** (markup: `block.liquid`,
+   SPECIAL DAYS, like Pi Day): Altweibersommer (late September), de. Cut
+   by the owner: St Swithin's Day, Siebenschläfer, Hundstage, Schafskälte
+   (not widely understood), and Eisheilige (October 2026, after its lines
+   were all voted out).
+
+Leave alone: topics already well mined (Bahn, Schneechaos, Regenradar,
+Zugluft, Oma; e-ink and grey, fans and ice-cream vans) and the ones
+mostly vetoed (Übergangsjacke, nature calendar, group chats). Humidity
+(„schwül“, "muggy"), wind and pollen need weather data the recipe
+doesn't fetch yet.
+
+### US English (owner, October 2026)
+
+English is US English: spelling (color, gray, favorite, humor,
+neighborhood, practice as a verb), words (salt trucks, not gritters;
+sidewalk, not pavement; apartment, not flat; fall next to autumn) and
+units in the jokes (inches, not centimetres: "Five centimetres and
+everyone forgets how to drive" needs "Two inches…"). A first scan of
+the beta texts found about 15 lines to fix. Two parts:
+1. **The next rewrite round** fixes them (the owner votes the reworded
+   lines), and its brief says US English (now in docs/BRIEF.md).
+2. **Before release**, check all English texts again (`lang/en.json`,
+   the beta texts, the About text and changelog in
+   `config/settings.next.yaml`, the error screen copies in
+   `src/shared.liquid`).
+
+### Error screen wording (owner, October 2026)
+
+When the weather can't be loaded, say it will try again on its own:
+"Weather data couldn't be loaded. We'll try again with the next
+refresh." German uses TRMNL's own word for a refresh, „Aktualisierung“
+(as in the device settings): „Wetterdaten konnten nicht geladen werden.
+Wir versuchen es bei der nächsten Aktualisierung erneut.“ French to
+match. The places: `ui.error_current` / `ui.error_hourly` (and the short
+headlines) in `lang/*.json`, and the built-in fallback copies in
+`src/shared.liquid` (the error-screen block, en/de/fr). The location
+error stays as it is: that one needs the reader to act.
+
+### French, as 2.1 (owner, October 2026)
+
+France only. The plumbing is in (base strings in `lang/fr.json`: errors,
+time words, garments; the drawing labels in `prototypes/panels/lang/fr.json`,
+„Maintenant“ and „dès 13 h“; garments and their pronouns in
+`prototypes/fact-flavour/lang/fr.json`; the error screen in `src/shared.liquid`).
+Not offered in the form yet: a French reader would get no words.
+
+To do, in order:
+1. **The voice: the râleur.** The Parisian national sport of complaining,
+   kin to the Grantler, written in French from scratch, never translated.
+   Write a short voice sheet with the owner first, like docs/BRIEF.md's
+   "Who is talking".
+2. **Forecast wordings** (238 in German), checked by a native reader:
+   time words, garment articles, and pronoun elision ({GP} before a
+   consonant: „le remettre“, never „le enlever“).
+3. **The current-weather and standalone lines, then units** (steady,
+   layers, rain), with the round 20 setup: data-built brief, four
+   candidates per line, a critic, then the vote.
+4. **French theme days:** Galette des rois, Chandeleur, Poisson d'avril,
+   14 juillet, Beaujolais nouveau (Krampus and Oktoberfest stay German).
+   Avoid regional words (France only: dîner is the evening meal).
+5. **A French review page**, separate from the owner's, so a French
+   reviewer's votes never touch the English and German ones; stamp each
+   vote with who cast it.
+6. **Ship:** "Français" in the form (`config/settings.next.yaml`), the
+   About text and changelog in French, "fr" in the language lists of
+   `prototypes/panels/build.py` and `tools/build_beta.py`.
+
 ### Open, in order
 
-1. **Draw the 19 sprites** (item 1). Replace the files in `sprites/` on
+1. **Draw the 19 sprites** (item 1). Seen on the beta (owner, October
+   2026): text and drawing disagree wherever two placeholders are the
+   same picture: „der Regen hört erst in einer Stunde auf“ under a dry
+   bundled figure, and two identical drawings side by side ("Jetzt",
+   "ab 22 Uhr"). The logic is right; the art isn't there yet. These pairs
+   are byte-identical today, so draw them first: bundled_rain (= bundled_dry),
+   coat_rain (= coat_dry), jacket_snow (= jacket_dry), tee_shorts_dry
+   (= tee_pants_dry: shorts weather shows long pants), tee_shorts_rain
+   (= tee_pants_rain), extreme_heat_rain (= heat_rain). Replace the files in `sprites/` on
    `main`; `python3 tools/check_sprites.py` lists the placeholders left.
    This is what blocks shipping.
 2. **Check the new views in TRMNL's editor**, original TRMNL and X,
@@ -29,15 +174,37 @@ to pick it up cold.
    on the left, then each change, at most three, today only, never
    tomorrow. Decided: square drawings as drawn, the time under every
    drawing, "from" on every later time ("Now · from 1 pm · from
-   7 pm"), larger times on the X. Settings: it is "Visual Forecast", a
-   third value of the forecast field, so nothing saved moves
-   (`config/settings.next.yaml`, the whole form for the beta and the
-   launch).
-4. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
+   7 pm"), larger times on the X. Settings: it is "What to Wear Next?",
+   its own on/off switch next to Forecast (item 12,
+   `config/settings.next.yaml`). Sarcastic line with no forecast line
+   above it: its own pool of
+   lines that work without the fact plus lines written for the drawings
+   (review round 10, then `build_pools.py`).
+4. **Done (October 2026): the views in TRMNL's framework classes
+   only.** The owner: "I can't put this out like this" about the
+   hand-written `<style>` block the Visual Forecast views carried. Now
+   every view, in every mode (Visual Forecast, words, no forecast), comes
+   from one template in `prototypes/panels/build.py` with no `<style>`
+   and no inline style (`test_switch.py` checks). The overlap is a column
+   narrower than its drawing; sizes are shares of the view (`w--[…cqw]`,
+   `h--max-[…cqh]`, `aspect--1/1`). At the same time, from the owner's
+   beta testing: the single drawing was small next to the space left, so
+   it now grows into what the words leave (full view on the OG 247 to
+   332 px). Fit check over 3,136 screens: clean. Details in
+   `prototypes/panels/README.md`. Still to see on a real device (item 2).
+5. **Ship**, once the art is in, following `docs/MIGRATION.md`: the
    transitional markup first, then the second polling URL (with
    `weather_code` in the hourly list), then the final markup. Switching
    the texts URL to the usage Worker at that step starts the counting.
-5. **Item 3, the text**: in progress. The tip becomes a fact line plus a
+   **Texts:** all of them come from the texts polling URL
+   (`lang/<code>.json`), none are hardcoded in the markup (owner, October
+   2026). TRMNL takes at most 100 KB per polled URL, so the file leaves
+   out what the new markup never shows: the old forecast-text pools
+   (`temp_*`, `precip_*`) keep one line per list, as in the beta
+   (`tools/build_beta.py`: 38 KB English, 44 KB German), since the logic
+   only checks that three of their keys exist (`shorts_early`, the
+   "perfect" variants, `wet_again`). Build `lang/` that way at launch.
+6. **Item 3, the text**: in progress. The tip becomes a fact line plus a
    flavour line; voice, fact style and most pools are decided by four
    rounds of votes (`review/README.md`). Round 5 (variants) is synced
    and fully rated. Next:
@@ -56,7 +223,7 @@ to pick it up cold.
    "Nikolo") and Krampus (Alpine; lines must still make sense in
    Hamburg). Three candidates per level and language, in calendar order
    from Halloween; the joke comes out of the day itself.
-6. **Variance, again: week of 16 October 2026.** The owner wants
+7. **Variance, again: week of 16 October 2026.** The owner wants
    repeats rare enough that nobody notices: "closer to Carrot Weather
    than to us" over the long term. Round 5 is only the first step.
    Measure with `python3 tools/climate/repeat_report.py <climate dir>`
@@ -71,7 +238,34 @@ to pick it up cold.
    shuffled order instead of in sequence, so a pool never reads as a
    cycle; lines keyed to the weekday, the season or the run of weather
    ("third grey day in a row"); and the topical lines (item 7) earlier.
-7. **Topical lines**: On and 11 lines about current events, written with
+   **Lines about the sky** (owner, October 2026): sarcastic lines about
+   what the weather is doing, not just what to wear, for more variety.
+   The owner's example from Carrot Weather, not to copy: "I sent you this fog."
+   What we have for free: Open-Meteo's `weather_code`, now and hourly,
+   is already in the data (clear, cloudy, overcast, fog, drizzle, rain,
+   freezing rain, snow, thunderstorm, hail). Wind isn't (it would need
+   `wind_speed_10m` in the polling URL). How often, at 6 to 7 am in 2024
+   (station data, `tools/climate/`; Open-Meteo's model codes may differ):
+   overcast 40 to 50% in London, Cologne, Frankfurt, Munich, Hamburg and
+   Amsterdam; fog 14% in Zurich, 12% in Los Angeles, 8% in Paris, 1 to 6%
+   elsewhere; clear 30 to 45% in Phoenix, Dallas, Minneapolis and
+   Stockholm. Decided (owner, October 2026):
+   - **Only while it's happening.** A line about fog shows only while
+     there's fog now; otherwise it makes no sense. So these lines need
+     the texts to change during the day (item 10), which comes first.
+   - **Mixed in at random** with the mood's lines as the day goes on,
+     no fixed share or slot.
+   - **Rain and snow only with their drawing**: a rain or snow line
+     shows only while the drawing has the rain or the snow. There are no
+     fog or overcast drawings, so everything else is looser: it shows
+     when the condition is strong enough right now (thick fog, fully
+     overcast, a real thunderstorm, not a passing cloud).
+8. **Parked (owner, October 2026): topical lines.** The first drafts
+   didn't land, and the owner doesn't want the focus on them now.
+   Everything stays in place to pick up later; nothing new is written
+   for them, and they don't ship with the text (no `topical_*` pools in
+   `lang/`, so nothing shows). The weekly "Topical scout" routine is
+   paused (15 October 2026); switch it back on to resume. What was built: On and 11 lines about current events, written with
    Claude whenever something happens, each with a date window so it
    rotates in and out by itself. Built in the prototype (markup, opt-in
    field, review rounds, add and prune tool, weekly prune job, the
@@ -79,6 +273,217 @@ to pick it up cold.
    going back, is voted and in the prototype; a weekly scout routine
    proposes events from Wikipedia and German news. Details in
    `docs/FUTURE-topical-lines.md`.
+9. **Later: the sarcastic line in italics?** To set it apart from the
+   fact line, as bold sets the fact apart now. What there is: TRMNL's
+   framework has no italic class, though it loads an italic Inter (the
+   font of the larger text sizes); the pixel fonts of the smaller sizes
+   have no italic, so the browser would slant them, which looks rough
+   in 1-bit. Item 4 rules out our own CSS, so: is there a framework way,
+   and does it read well on the OG and the X?
+10. **Done (October 2026): the texts change every hour.** The owner
+   wanted it livelier, and the lines about the sky (item 7) need it: they
+   may only show while their weather is happening. The fact wording, the
+   rain fact, the sarcastic line and Visual Forecast's now pick their line
+   by `text_rot` = day x 101 + hour x 103 (`prototypes/fact-flavour/
+   block.liquid`), each on its own offset, instead of by day. The primes
+   are larger than any pool, so an hour on lands elsewhere in the pool
+   (it doesn't read as a cycle), every line comes round, and someone who
+   looks at 7:00 every morning still sees the whole pool over the days.
+   `test_rotation.py` pins it, and that every pool stays under 101 lines.
+   Topical lines (parked) keep their every-third-day rhythm.
+   - **TRMNL regenerates** when the merge variables change, and
+     Open-Meteo's current time moves every 15 minutes, so a refresh after
+     the hour turns shows the hour's lines. How often depends on the
+     user's refresh rate; nothing new is fetched, so it costs nothing.
+   - **Repeats:** for someone who looks once a morning, nothing changes
+     (`repeat_report.py` at 7:00, London, New York, Minneapolis, Phoenix,
+     Vienna: identical to the daily rotation, the flavour line 71% seen
+     in the last 30 days in both languages): how often a line comes back
+     is set by the size of its pool. Someone who looks several times a
+     day now sees new lines, and goes through a pool faster (three
+     glances a day see a 15-line pool in five days): more reason for
+     bigger pools and the lines about the sky (item 7).
+11. **Later, beta feedback: the day with no more changes.** In Visual
+   Forecast, a day whose outfit holds until tomorrow gets one drawing,
+   a "works all day" fact ("What you have on works from now until
+   tonight.", `facts.steady`, `_evening`, `_hot`, `_cold`) and the
+   mood's usual sarcastic line, which was written to follow other
+   facts. The owner, beta testing: together they're too long and
+   don't feel connected. Idea: sarcastic lines only for this case
+   ("nothing changes until tomorrow"), so the screen reads as one
+   calm, good piece; maybe a shorter fact with them, or none. It
+   probably affects the words view's steady days too (same kind of
+   fact, same pairing); the owner noticed it in Visual Forecast only
+   because that's what the beta is set up to test, so solve it for
+   both. Where it's picked: the one-panel branch of
+   `prototypes/panels/block.liquid` ("this works all day") and the
+   words view's steady fact in `prototypes/fact-flavour/block.liquid`.
+12. **Built (October 2026), to check in the beta: the new form.** In
+   `config/settings.next.yaml` and the beta; how the switches combine is
+   in `prototypes/panels/README.md` ("The switch"), pinned by
+   `test_switch.py`. Left: the checks in `beta/README.md` ("What to
+   try": a saved "No" in the new on/off field, and whether TRMNL fills
+   in defaults for an existing install), a contact method in the about
+   text, and the owner's read of the German descriptions. The owner's
+   spec, these fields, these labels and descriptions, in this order:
+   1. **Language.** Hint: "Don't see your preferred language and want
+      to help me translate? Reach out via the contact method linked in
+      the about section above."
+   2. **Do you run cold or warm? (New!)** "Adjust clothing suggestions
+      to match how you experience the temperature." Options as now,
+      default Average.
+   3. **Forecast.** "Show a written summary of upcoming weather changes
+      and what to wear." On or off, default on.
+   4. **What to Wear Next? (New!)** "Preview upcoming outfit changes
+      with dressed figurines and the times you'll need them." On or
+      off, default off. This is Visual Forecast, renamed.
+   5. **Sarcasm.** "Turn the sarcasm off, on, or crank it up to 11.
+      Expect commentary on the weather, what's coming, and your
+      questionable life choices, regardless of whether the written
+      forecast is enabled." Off · On · 11, default Off.
+
+   And no field for jokes about current events (`topical_lines`):
+   turning sarcasm on opts in to them. (Topical lines are parked, item
+   8: no field, and nothing shows until they're picked up again.)
+
+   What it means for `config/settings.next.yaml`, the markup and the
+   ~500 installs:
+   - **Forecast stays `show_future_suggestions`**, so saved choices
+     carry over. Live values are "Yes" and "No"; check what TRMNL's
+     on/off field does with a saved "No" (the markup already reads
+     anything but no/false/0 as on). If it can't read them, keep a
+     select with two options.
+   - **What to Wear Next? is a new key**, replacing the "visual"
+     option. Beta forks with "visual" saved have to switch it on.
+   - **Four combinations now, not three.** Both off: the outfit
+     alone. Forecast only: the words. Next only: the drawings. Both
+     on (owner's decision): the drawings and the forecast line, so
+     the sarcastic line there can be the usual one, which answers it.
+   - **Sarcasm without the written forecast** (owner's decision: it
+     still works). Today the sarcastic line shows only with the
+     forecast on, and the form hides Sarcasm when Forecast is off. So
+     the outfit-alone screen gets a sarcastic line too: room in the
+     layout, and lines that don't answer a fact: the What to Wear Next
+     pools, extended (item 13). Drop the `conditional_validation` that
+     hides Sarcasm.
+   - **Visual Forecast is now called What to Wear Next** everywhere it
+     shows: the form, the about text and changelog, `beta/README.md`.
+     Keys and pool names in the code can stay.
+   - **Sarcasm default Off** (live default is On). Saved values stay;
+     only new installs start without it, unless TRMNL fills in
+     defaults for existing installs (the same check as the note on
+     `topical_lines`).
+   - **Topical lines on with sarcasm** (when they're picked up again,
+     item 8). The markup's check for
+     `topical_lines == 'on'` becomes sarcasm On or 11. Existing
+     installs with sarcasm On, most of them because it was the
+     default, start seeing them when this ships.
+   - **The language hint** points to a contact method "in the about
+     section above": the about text has none yet, and needs one; it
+     stays the first field. Location, location name, the title bar
+     and the old location fields aren't in the spec: presumably they
+     keep their places (location first, the title bar last).
+   - **German** labels and descriptions for all five.
+13. **Next: rework the sarcastic lines, so each makes sense on its own.**
+   The owner, seeing them alone in the beta: they need context, the
+   forecast line they were written to answer, and the shape of the day
+   they were picked by ("You'll call it 'crisp'…", a cool-day joke,
+   under a T-shirt on a day that warms up).
+   - **Done (October 2026): the markup picks by what's on screen.** Now
+     lines (`now_10` / `now_11`, by what the Now drawing shows) on every
+     screen; the day's lines only with the forecast line on a day that
+     changes; lines for the drawings only with two or three drawings
+     and no words; mixed, by the hour. Details in
+     `prototypes/panels/README.md` ("Which sarcastic line"). Interim now
+     pools: each mood's lines minus round 10's "needs the fact".
+   - **Round 11 synced (October 2026).** 350 lines voted; pools rebuilt.
+     Its lesson (docs/BRIEF.md): two kinds of line. **Done:** under the
+     forecast line only follow-ups (flavour_*), everywhere else standalone
+     lines (now_*, alone_*, with the drawings flavour_vf_*); month tags
+     ("{M:10,11}…", build_pools puts them in front, the markup skips a
+     line out of season). Day lines the owner called "fine on its own"
+     moved to alone_*.
+   - **Round 12 is on the review page** (`2026-10-follow`, 104 lines,
+     review/README.md). Follow-ups are now keyed by what the forecast
+     line says (ten groups, `fu_key`), not by mood. Its plan was: Follow-ups per situation (warming, cooling,
+     fickle, rain coming, steady…) in both languages and levels: the
+     pools are nearly empty (German has 1 to 3 per mood); the 41 "Write
+     new" spots (review/rewrite/); month tags for the seasonal lines
+     (first cold spell, first snow); "Three outfits" only on days with
+     three different drawings.
+   - **Round 11 was on the review page** (`2026-10-alone`, 350 lines,
+     review/README.md). Then: sync, build_pools, beta. Its plan was: sort every line into now (stands alone, agrees
+     with the drawing) or day/drawings (about a change); rewrite or drop
+     what needs context; fill the gaps: German cool at On has one now
+     line, English fickle and German warming/cooling are thin; item 11's
+     lines for the day with no more changes; later the lines about the
+     sky (item 7: fog, overcast) as now lines. Keep one wording per joke:
+     with the hourly rotation, round 5's reworded twins can show in
+     back-to-back hours. Each line on the page under the drawing it
+     would show with; "Write new" (item 14) is ready.
+14. **Done (October 2026): "Write new", a veto that drops both.** The
+   owner: a veto that keeps the old line isn't always right; sometimes
+   neither should stay, and what's wanted is completely new lines.
+   - **On the page:** a fourth verdict, "Write new" (`W`), "Veto both" on
+     a line that would replace another. It stays on the line and opens
+     the note for what's wanted instead. Counted as a veto in the key
+     list; its own filter.
+   - **In the build** (`build_pools.py`, `apply_write_new`, last): the
+     line and the one it would have replaced are out; a pool is never
+     emptied (its last line stays and is reported).
+   - **After a sync:** `review/rewrite/<lang>.md` lists every spot
+     waiting for new lines (screen, what's out, the note, the vote's id);
+     both lines go on the "don't" list. A new row with `"answers": "<id>"`
+     that gets kept takes the spot off the list.
+   - `tools/test_write_new.py` pins it. The review page gets it with the
+     next round (it isn't republished before then). Round 9's vetoes can
+     be re-marked as "Write new" then, if the owner wants.
+15. **Done (October 2026): big swings into shorts weather.** Since round 14 the Now drawing shows the weather as it is now and only the forecast line suggests shorts or long pants (owner); later drawings on a shorts day show shorts. Open: on a day that turns cold again in the evening, is shorts still the right call (owner, round 14)? A reader in
+   Colorado: freezing at dawn, shorts weather by afternoon, long pants
+   all day on the screen. Three hours or more of shorts weather now make
+   a shorts day however cold it starts: the coat now, shorts in the
+   later drawings, and the forecast line says to go out in shorts
+   (`shorts_swing`, `shorts_swing_back`; THE LONG-PANTS RULE in
+   `src/shared.liquid`). Pinned in `tools/logic_test.py` and
+   `prototypes/panels/test_switch.py`.
+17. **Later (owner, October 2026; not now): the UV index.** Sunscreen
+   advice on bright days, in the forecast line and in the sarcastic line,
+   with a setting to switch those lines on or off. Needs `uv_index` (and
+   probably `uv_index_clear_sky`) added to the weather polling URL, which
+   reaches every user, and a new on/off field in the form (optional, like
+   the other switches, so saved settings keep working). Decide the
+   threshold (WHO: 3 moderate, 6 high, 8 very high), which hours count
+   (midday, not 8 am), and how it combines with dangerous heat.
+18. **Round 16 (October 2026): special days.** Lines for the seven theme
+   days that had drawings but no lines (Groundhog Day, Pi Day, Easter,
+   Star Wars Day, World Bicycle Day, the Tour de France, Oktoberfest),
+   and new "day" lines: the clock change (that Sunday and the Monday
+   after; Europe, the US and Canada, by the forecast's time zone), the
+   longest and shortest day (swapped in the south), Monday mornings and
+   Friday afternoons. They show on a steady day, every other hour
+   (`block.liquid`, "Special days"; `test_switch.py` pins the dates).
+   **Cut on 31 October 2026 (owner):** all the day lines (clock change,
+   longest/shortest day, Monday, Friday) and the themes Pi Day, Bike Day,
+   Tour de France, Oktoberfest, Krampus and Nikolo. Kept: New Year,
+   Groundhog Day, Easter, May the 4th, Halloween, Thanksgiving (en),
+   Christmas. `build_pools.py` drops the cut keys at the end of the build.
+   Left for later from the same list: fog and drizzle as their own
+   lines (item 7), yesterday's comparison and wind (polling URL).
+16. **Next: other weather outliers** (rendered 16 October 2026):
+   - **The reverse swing** (a "blue norther"): 24 °C at 8 am, freezing
+     by 3 pm. Shorts now, then "bring the winter coat". The legs rule
+     only looks at warm weather; three hours or more at coat weather
+     should mean long pants at the door.
+   - **Dangerous heat:** 37 °C at 9 am climbing to 43 °C reads "Some
+     relief from the heat tonight" because the evening's easing wins the
+     story. Above about 35 °C the water and shade line should win.
+   - **Freezing rain** (codes 56, 57, 66, 67) counts as rain: umbrella
+     advice, no word about ice.
+   - **Thunderstorms** (95 to 99) count as rain too.
+   - **Extreme cold:** everything at −5 °C or below is one outfit, so
+     −30 °C reads like −6 °C.
+   - **Wind** isn't fetched; feels-like covers the wind chill, but not
+     an umbrella in a gale.
 
 ## 1. Rethink the clothing system and the temperature bands
 
@@ -322,3 +727,41 @@ are the first candidates for this review.
   only count real users once the refactored markup is live (step 4 of
   the order above); until then, switching the published recipe to two
   polling URLs would break it. Steps are in `worker/README.md`.
+
+### Texts size (owner, October 2026)
+
+TRMNL takes at most 100 KB per polled URL. The build's margin is now 95
+KB (was 90). After round 24 the German texts are 92.9 KB: room for about
+25 more German lines. Before a round that adds more, either cut lines
+or split the texts across two polled URLs (each URL gets its own 100 KB).
+
+Since the theme cut and the German prune (31 October 2026), German is
+78 KB and English 73 KB. **When a language needs more room (owner):**
+first cut the follow-ups (`flavour_10/11`) whose joke repeats one of
+the units for the same situation. Where a situation has two or more
+units, the screen always shows a unit, and with the forecast off no
+follow-up shows at all, so those copies practically never appear.
+Keep the unit; cut the follow-up copy.
+
+### Tomorrow in the evening (owner, November 2026)
+
+Design sketch: https://claude.ai/artifact/PkzMTf3YvAo9rgAXdQfQaD (round 2,
+the owner's hybrid). From 8 pm to midnight the screen shows tonight on
+the left (an outlined "Tonight" tag: the outfit still coming tonight,
+"from 9 pm", or what you have on, "now") and tomorrow on the right (a
+black "Tomorrow · Sat" tag: the outfit at the reader's time out the door,
+then the next change; one drawing, "all day", on a steady day). Midnight
+to 8 pm: today as v2 shows it. Needs `forecast_days=2`, the evening
+variant of all four views, a writing round for "tomorrow" sentences (and
+the evening joke, if it stays), and tests (8 pm switch, midnight, steady
+tomorrow, tonight still changing, What to Wear Next? off).
+Form: `head_out_time` ("When do you head out?", default "It varies" =
+dress for the coldest hour from 6 to 9 am) is in config/settings.next.yaml,
+to ship only with this screen. Decided: switch at 8 pm, ships in 2.0, the
+sarcastic line stays (owner, 8 November 2026). **Built** in
+`prototypes/panels/evening.liquid` and the views (tests in
+`test_switch.py`); rain or snow starting wins tomorrow's second drawing.
+Still to do: the writing round for `evening` in
+`prototypes/panels/lang/<lang>.json` (the sentences and jokes there are
+stand-ins), and at release the live polling URL needs `forecast_days=2`
+(config/polling_urls.txt); with one day the evening simply stays off. 

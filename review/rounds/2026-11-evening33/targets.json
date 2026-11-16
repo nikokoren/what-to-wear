@@ -1,0 +1,12 @@
+{
+ "round": "2026-11-evening33",
+ "lang": "de",
+ "note": "German only, written by a German-only writer that never sees the English lines. 8 slots, 2 lines each (16).",
+ "slots": {
+  "evening.jokes_11.any": 3,
+  "evening.jokes_11.rain": 1,
+  "evening.jokes_11.colder": 1,
+  "evening.jokes_11.steady": 1,
+  "evening.jokes_10.warmer": 2
+ }
+}

@@ -24,8 +24,18 @@ How lines get written, judged and kept. The writer's side is in
    Star, Keep or Veto, with tags (robotic, too long, not funny, wrong
    garment, wrong fact, unclear) and an optional note. Keyboard: `S` `K`
    `V`, tags `1`–`6` (set them before the verdict), `N` for a note, `R`
-   for the rain pairing, arrows to move. The key list counts stars,
+   for the rain pairing, arrows to move. In rounds whose lines say how
+   they sit on the screen (round 8), `E` edits the wording in place: the
+   screen follows as you type, the time words and garments fill in, and
+   Enter saves the change as a keep of the new words. The key list counts stars,
    keeps and vetoes and warns before a key is vetoed empty.
+
+   **Write new** (`W`) is a veto that asks for more: the line is out,
+   nothing like it should come back, and that spot gets completely new
+   lines. On a line that would replace another (a rewording), it reads
+   **Veto both**: the original goes too. It stays on the line and opens
+   the note, for what the new lines should do instead (`Esc` leaves the
+   note, `J` moves on).
 4. **Sync.** Ask Claude to sync the review. It reads the votes from the
    page's database (or use the page's "Save decisions file") and runs:
 
@@ -35,7 +45,11 @@ How lines get written, judged and kept. The writer's side is in
    ```
 
    That updates `review/decisions/`, `review/examples/` and `review/dont/`
-   in the repo, and writes a fix file: vetoed shipped lines are deleted,
+   in the repo, lists the "Write new" spots still waiting for new lines in
+   `review/rewrite/<lang>.md` (with what the screen shows there, what's
+   out and the note; the next round answers each with `"answers": "<id>"`
+   on its new rows, and a kept answer takes the spot off the list), and
+   writes a fix file: vetoed shipped lines are deleted,
    starred or kept candidates appended. `apply_review.py` refuses any fix
    whose line changed since the vote, and never deletes a key's last line.
 5. **Check and ship.** `validate_lang.py`, `check_combinations.py`,
@@ -211,6 +225,249 @@ eight Christmas placeholders, voted at last. Every line names its day.
 The rest of the year (Groundhog Day to Oktoberfest) is the next theme
 round.
 
+## Round 8: the re-read (October 2026)
+
+The owner saw the first new lines on a device and wasn't sure they work,
+so every line the beta ships is back on the page: `2026-10-reread.json`
+(`make_round8.py`), 571 lines. Fact wordings (set Facts, 199), sarcastic
+lines at On and 11 with the Christmas ones (set Sarcasm, 367) and the
+topical lines (set Topical, 5).
+
+- Each line is shown on its screen: a fact with its drawing and a
+  sarcastic line under it, a sarcastic line under the fact of a typical
+  day for its mood. A dashed outline marks the line being rated.
+- **Edit in place:** `E`, change the words, Enter. The screen follows as
+  you type, with the time words ("this afternoon", or "in two hours" with
+  the switch on the left) and garments filled in; a warning shows when a
+  placeholder like `{WHEN}` goes missing. An edited line counts as a keep
+  of the new words; "Back to the original" undoes it.
+- Ids carry the prefix `rr`, so every line is rated afresh; its verdict
+  in an earlier round shows under the screen as "earlier: ...".
+- After the vote: sync, then `python3 review/rounds/build_pools.py`,
+  which applies this round last: a veto takes the line out, an edit
+  replaces it, and a fact keeps at least one wording. Then
+  `python3 tools/build_beta.py` for the fork.
+
+Round 7 (theme days) was on the same page.
+
+- **Result (10 October):** every line rated. Facts: 155 kept, 40
+  starred, 4 vetoed. Sarcastic lines: 245 kept, 58 starred, 69 vetoed.
+  58 reworded on the page. German "warming" at On lost all its lines (it
+  still draws from "cool"). Round 7: 26 kept, 1 starred, 21 vetoed; the
+  owner's rewrites in its notes are in `EDIT`. The eight Christmas
+  placeholders were in both rounds; round 7's later vote stands. Typos
+  in the owner's edits are corrected in `EDIT_FIX`. Lessons in
+  `docs/BRIEF.md`.
+
+## Round 9: the rework
+
+`2026-10-rework.json` (`make_round9.py`), 43 lines, what round 8's notes
+asked for:
+
+- **Rain and snow:** new wordings for "raining now, a break, back
+  later" that say the order (the drawing already shows the umbrella).
+  Kept ones replace every current wording of the situation.
+- **Not a wall:** a reworded twin of every kept line that puts the
+  screen on a wall. A kept twin replaces its original; a veto leaves
+  the original.
+- **Themes:** the day worked into the sentence; the owner's New Year
+  idea and a shorter take; three new English Christmas lines at 11.
+
+After voting: sync, then `python3 review/rounds/build_pools.py` (it
+applies round 9 after round 8), then `python3 tools/build_beta.py`.
+
+- **Result (10 October):** every rain and snow wording kept (they now
+  replace the old ones), every wall rewording kept, themes 17 kept or
+  starred of 20 ("Am Nikolaustag bringen Schuhe …", "Die Weihnachtsgans
+  …" and "Unlike the Christmas tree …" vetoed, so their originals stay).
+  Both German New Year takes were kept, so that joke is in the pool
+  twice.
+
+## Round 10: Visual Forecast's sarcastic line
+
+With two or three panels (79% of mornings) the screen shows drawings and
+times but no fact line, so a sarcastic line that answers the fact ("that
+layer", "admit I was right") points at nothing. `2026-10-visual.json`
+(`make_round10.py`), 281 lines, on the same page as round 9, both shown
+the way Visual Forecast shows them (the panels, the times, the line):
+
+- **Stands alone?** (209): every line of the moods that come with
+  changes. The buttons read "Works without the fact" and "Needs the
+  fact"; "needs" only keeps a line off Visual Forecast, it stays in the
+  words. Claude's guess is under each screen.
+- **For the drawings** (72): new lines about what the panels show, per
+  mood, at On and 11. They never name a panel by position.
+
+After voting: sync, then `python3 review/rounds/build_pools.py`, which
+writes `flavour_vf_10` / `flavour_vf_11` (per mood: the new lines first,
+then those that work alone; warming and cooling take cool's too). The
+panels pick from them on multi-panel days and fall back to the usual
+line without them. Then `python3 tools/build_beta.py`.
+
+- **Result (10 October):** "needs the fact": 5 English lines (both
+  coat-rack lines, both "that layer … by tonight", "glossy … matte"), no
+  German one. New lines: 11 of 36 kept in each language; the owner's
+  edits prefer "the forecast" to "the drawings". The Visual Forecast
+  pools hold 2 to 16 lines per mood; English fickle at 11 is the
+  thinnest (2). On real mornings with two or three panels, 130 of 132
+  draw from them.
+
+No more voting rounds for now (owner, 10 October).
+
+## Round 11: the lines on their own
+
+`2026-10-alone.json` (`make_round11.py`, ids `al-…`), 350 lines. The
+owner, seeing the sarcastic lines alone in the beta: they need context.
+The line is now picked by what's on screen (`prototypes/panels/README.md`,
+"Which sarcastic line"), so every current line is sorted into where it
+can show and voted there:
+
+- **Now** (`now_10` / `now_11`, by the Now drawing): alone under its
+  drawing. Must make sense with nothing else on screen.
+- **Day** (`flavour_10` / `_11`): about the day's shape, a change or a
+  steady day. Under the forecast line.
+- **Drawings** (`flavour_vf_10` / `_11`): with the two or three drawings.
+
+Round 5's reworded twins are flagged ("keep one wording": with the
+hourly rotation they can show in back-to-back hours), and 37 new lines
+fill the thin now pools (English cool at On had none). Keep: the line
+stays where its set says. Veto: out. Write new: out, and new lines for
+that spot. `build_pools.py` rebuilds the pools from the votes: current
+lines stay unless vetoed, new ones only if kept.
+
+## Round 12: follow-ups
+
+`2026-10-follow.json` (`make_round12.py`, ids `fu-…`), 104 lines. Round
+11's lesson: under the forecast line a sarcastic line has to build on it.
+The markup picks those follow-ups by what the forecast line says (ten
+groups: rain, snow, off, on, offon, hot, steady, cold, evening, night;
+`block.liquid`, `fu_key`), not by the mood. On the page each sits under
+its forecast line. Also: new lines for all 41 "Write new" spots of round
+11 (`answers`), and "Months?" for seasonal lines (first cold weeks,
+first snow, Glühwein season, the start of summer): "Only in these
+months" tags them (`{M:..}`, the markup skips them out of season).
+"Three outfits for one day" comes back with `{3}`: only with three
+different drawings.
+
+## Round 13: seasons and riffs
+
+`2026-10-seasons.json` (`make_round13.py`, ids `se-…`). Round 12 left the
+follow-up groups thin (steady, hot and evening worst), with the owner's
+notes saying many didn't flow from the forecast line. Three writers:
+
+- **The scout** reads both languages' kept and starred lines and writes
+  notes for each writer on ideas that work in the other language and
+  haven't been tried in theirs: described, never quoted, so the writer
+  riffs on the idea instead of translating it.
+- **The English and the German writer**, each reading only their own
+  language and the scout's notes, fill the follow-up groups, answer the
+  "Write new" spots, and write seasonal lines with month ranges.
+
+Raw output in `2026-10-seasons/<lang>.json`, notes in
+`2026-10-seasons/notes_for_<lang>.md`. New in the markup:
+
+- **Garments in follow-ups.** The off, on and offon forecast lines name a
+  garment that changes from day to day (jacket, sweater, winter coat, hat
+  and scarf). A follow-up says `{GP}` for its pronoun ("it"/"them",
+  "sie"/"ihn") or `{G}` for the garment, or lists the garments it fits
+  (`{W:jacket,coat}`); it's skipped on a forecast line that names another.
+- **Seasons south of the equator.** Month tags name the northern season;
+  with a southern latitude in the weather data, the month runs six on.
+- **Result (15 October):** English 0 stars, 31 keeps, 45 vetoes, 5 Write
+  new; German 5 stars, 22 keeps, 37 vetoes, 12 Write new. Lessons in
+  `docs/BRIEF.md` ("What rounds 12 and 13 added").
+
+## Round 14: replies and forecast wordings
+
+`2026-10-replies.json` (`make_round14.py`, ids `rp-…`), 452 lines. Every
+forecast wording in the pools back for a vote, with two or three new
+ones per situation beside them, and the big swing's two new situations
+(`shorts_swing`, `shorts_swing_back`: a cold morning with three hours or
+more of shorts weather). Then follow-ups for the thin groups and new
+lines for every "Write new" spot, written to copy round 13's stars:
+short replies to the forecast line. Raw output in `2026-10-replies/`.
+A veto or Write new on a forecast wording takes it out, never a
+situation's last; an edit replaces it (`build_pools.py`, apply_facts).
+
+## Round 15: polish
+
+`2026-10-polish.json` (`make_round15.py`, ids `po-…`), 105 lines: every
+"Write new" spot of round 14, the big-swing wordings again (soft and
+short; the owner keeps the shorts suggestion on days that cool again),
+wordings that say when the rain or snow stops (`{WHENSTOP}`), storm and
+ice wordings that lead with the danger, and follow-ups for the groups
+still under three lines. Raw output in `2026-10-polish/`.
+
+## Round 16: special days
+
+`2026-10-days.json` (`make_round16.py`, ids `sd-…`), 244 lines: the seven
+theme days that had drawings but no lines (Groundhog Day, Pi Day, Easter,
+Star Wars Day, World Bicycle Day, the Tour de France, Oktoberfest), the
+new special days (Monday mornings, Friday afternoons, both clock changes,
+the longest and shortest day; `block.liquid`, "Special days"), and round
+15's last "Write new" spots. Every line names its day, so it works under
+"works all day" and alone under the drawing.
+
+## Round 17: units
+
+`2026-10-units.json` (`make_round17.py`, ids `un-…`), 164 lines: the
+forecast sentence and its joke written together ("fact || joke", or one
+sentence with both), voted as one. The owner found two separately picked
+lines don't flow. Steady days first (all day, evening, night, cold, hot);
+layers and rain follow. `build_pools.py` puts kept units in
+`units_10`/`units_11`; the markup shows one wherever a situation has some.
+Raw output in `2026-10-units/`.
+
+## Round 18: layer units
+
+`2026-10-layers.json` (`make_round18.py`, ids `ly-…`), 202 lines: units
+for the days a layer comes off or goes on (`w_*`, `c_*`, `arc_*`,
+`shorts_early`), shown under their drawings because they can sit under
+What to Wear Next's two or three (or none). Plus round 17's "Write new"
+units and English late-night units. Raw output in `2026-10-layers/`.
+
+## Round 19: rain units
+
+`2026-10-rain.json` (`make_round19.py`, ids `rn-…`): units for the rain
+and snow sentences (`p_*`, not the ice and thunderstorm variants), which
+come last on screen, alone or after a temperature sentence; plus top-ups
+so every steady and layer situation reaches three units (the screen
+needs two). Raw output in `2026-10-rain/`.
+
+A weak round: 96 of 200 kept (rounds 17 and 18: 78% and 77%). English
+37 of 101, German 59 of 99. Why, from the votes:
+- Rounds 17 and 18 leaned on re-pairing jokes already starred or kept
+  (round 17 about half). This round English reused three; new jokes kept
+  34% in English, 60% in German, reused ones nearly all.
+- After round 18 the English writer was told the winners "answer the
+  forecast sentence" and turned that into wordplay on its words ("Moves
+  in. Like it's paying rent.", "As opposed to the other kind of
+  shower."): vetoed.
+- "Like your X" jabs at the reader („Wie deine Witze.“, „Wie deine
+  Diät.“, "Keeps going, like your excuses"): vetoed.
+- The top-ups were the situations that had already failed twice.
+What was kept: the screen's own view („Ich nicht.“, "Good day to be a
+screen. Bad day to be a sock.") and shared everyday truths (Schneechaos
+at five centimetres, "The novelty lasts about an hour.").
+
+## Round 20: gap units
+
+`2026-10-gaps.json` (`make_round20.py`, ids `gp-…`), 92 lines: the slots
+still under three units, with a new setup after round 19. Fresh writers
+with a short brief built from the data (`2026-10-gaps/brief_<lang>.md`),
+four candidates per unit needed (`<lang>.raw.json`: en 172, de 88), and
+a critic (`2026-10-gaps/critic.md`) that cut them to one more than
+needed per slot, or fewer when the rest were weak (`<lang>.json`: en 57,
+de 35).
+
+Result: 45 of 92 kept (en 27 of 57, de 18 of 35), about round 19's rate.
+The critic cut the volume, not the miss rate. The brief's "everyday
+truths" turned into gentle observation with no bite ("Then every car
+wears a white hat for a few days.", the owner: "where's the sarcasm?"),
+and several German jokes needed explaining („Was soll das heißen?“, "no
+flow"). The owner's edits pulled jokes back to the screen's own stake
+("…but I'm not the one dealing with the consequences.").
+
 ## Topical rounds
 
 Lines about a current event, with a date window, written with Claude
@@ -221,3 +478,82 @@ the round file (`<yyyy-mm>-topical-<slug>.json`, set T), then
 `2026-10-topical-clocks`, the clocks going back: 2 of 9 kept in each
 language, all at 11. Most vetoes were "missing the context": a line has
 to name the event itself, because nothing else on the screen does.
+
+## Round 21: fresh topics
+
+`2026-10-topics.json` (`make_round21.py`, ids `tp-…`), 60 lines: the
+topics the owner picked (en: feels like, the weather app, small talk,
+weather lore, early dark, shorts in February, "too hot", pumpkin spice;
+de: Bauernregeln, Wetterfrosch, Föhn, Kreislauf, Wetterfühligkeit,
+Ruhezeiten, the washed car, Hausschuhe, App gegen Wetterbericht,
+Altweibersommer, and Eisheilige as a special day), as units and now
+lines; round 20's setup (fresh writers, critic: en 24 of 64, de 34 of
+92). Plus two US English rewrites that replace their old lines when kept.
+
+## Round 22: the read-through
+
+`2026-10-final.json` (`make_round22.py`, ids `fn-…`), 1,608 lines: every
+live 2.0 text in both languages (forecast wordings, follow-ups, lines for
+the drawings, now and standalone lines, units, theme and special days),
+before release. Lines starred in an earlier round carry `"starred"`: the
+page shows a gold badge and frame and has an "Earlier vote" filter.
+`build_pools.py` applies it last (`apply_final`): a veto or "Write new"
+takes a line out (a forecast situation keeps its last wording), an edit
+replaces it.
+
+## Round 23: the English read-through, the German rewrites
+
+`2026-10-final2.json` (`make_round23.py`, ids `f2-…`): every live English
+text (788, built from today's texts; 210 starred before, including lines
+reworded since), applied like round 22; and 77 new German lines for the
+slots the German read-through emptied or thinned (brief
+`2026-10-final2/brief_de.md`, a fresh writer: 237 candidates, a critic:
+77), added if kept.
+
+The level check (owner: "drop the no looks limit for 11"): of the 62
+flags, 36 lines moved to the other level (same situation), 16 were
+rewritten where they stand (not sarcastic, or a move would leave 11
+with fewer than two units for the situation), 2 jokes that sat at both
+levels stay at On only, and 6 flagged for looks or worth at 11 stay.
+`LEVEL_FIXES` in `build_pools.py`; the page notes each line it touched
+("Level check" batch).
+
+German new lines voted (October 2026): 8 starred, 26 kept (15 with the
+owner's edits), 43 vetoed, almost all "not funny". Not rewritten yet, on
+the owner's word. Still empty or thin in German: Eisheilige (no line at
+either level), Weihnachten at On (none, falls back), Nikolaus, storm and
+pants at On (one each), and at 11 the units for scarf off and warmer
+later (one each, so the screen uses the plain forecast there). The
+"Write new" spots wait in `review/rewrite/de.md`.
+
+English read-through voted (October 2026): 777 of 786 lines, 545
+starred, 214 kept (67 with the owner's edits), 18 vetoed; plus 52 votes
+on German live lines. Round 23's votes now apply after WORDS and again
+after the level check, since the page showed the lines that way. Owner's
+notes: three `alone_` lines (two fickle at 11, one nice at On) "don't
+work on their own without the What to Wear Next drawings"; and "This
+forecast is brought to you by… nobody" (starred) should find more spots.
+
+## Round 24: the fill-up
+
+`2026-10-fill.json` (`make_round24.py`, ids `fl-…`): every slot under
+four live lines (`2026-10-fill/cells.json`: 117 English, 97 German) gets
+5-6 candidates plus one out of the box (hint "Out of the box"). Twelve
+fresh writers (briefs `2026-10-fill/brief_*.md`: the slot's meaning,
+level, live lines, the owner's stars and vetoes there), 12 candidates a
+slot; four critics picked (`*.critic_*.json`, merged into `<lang>.json`):
+787 English, 659 German; trimmed on the owner's word to enough to reach four plus two spares (491 English, 396 German). Each slot is its own batch with "Fill-up: n
+live here now". After voting: sync, then `build_pools.py` (FILL) adds
+the kept lines.
+
+## Proofreading page (German first)
+
+`tools/make_proofread.py de` builds `review/proofread.html` from
+`review/proofread.template.html` and the live texts: every German line,
+with a short intro for a native-speaker reviewer (what the screen does,
+the levels, what to flag). Published at
+https://claude.ai/artifact/HdTMEeB2qtcxmkyURMpKc1. Flags live in its
+database (`flags`, one document per line id, with reasons, suggestion,
+note, status offen / übernommen / abgelehnt); the "Markiert" tab lists
+them with a word diff for the owner to take or leave. Rebuild and
+republish after a round: the flags stay.

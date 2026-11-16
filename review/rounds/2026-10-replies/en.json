@@ -1,0 +1,862 @@
+{
+ "lines": [
+  {
+   "path": "fact_0.steady",
+   "text": "You can wear this all day without changing a thing."
+  },
+  {
+   "path": "fact_0.steady",
+   "text": "You'll be comfortable in this for the whole day."
+  },
+  {
+   "path": "fact_0.steady_evening",
+   "text": "You can wear this for the rest of the evening without changing a thing."
+  },
+  {
+   "path": "fact_0.steady_evening",
+   "text": "You'll be comfortable in this for the rest of the evening."
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "The whole day is hot, so carry water and keep to the shade."
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "The heat doesn't let up today. Drink water and find some shade."
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "It doesn't get any warmer today."
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "Expect the cold to last all day."
+  },
+  {
+   "path": "fact_0.w_scarf",
+   "text": "It warms up {WHEN}, so the hat, scarf and gloves can come off."
+  },
+  {
+   "path": "fact_0.w_scarf",
+   "text": "{WHEN} you won't need the hat, scarf and gloves any more."
+  },
+  {
+   "path": "fact_0.w_scarf",
+   "text": "You'll be fine without the hat, scarf and gloves {WHEN}."
+  },
+  {
+   "path": "fact_0.w_coat",
+   "text": "{WHEN} you can do without the winter coat."
+  },
+  {
+   "path": "fact_0.w_coat",
+   "text": "You'll be fine without the winter coat {WHEN}."
+  },
+  {
+   "path": "fact_0.w_jacket",
+   "text": "{WHEN} you won't need the jacket any more."
+  },
+  {
+   "path": "fact_0.w_jacket",
+   "text": "Once it warms up {WHEN}, the jacket can come off."
+  },
+  {
+   "path": "fact_0.w_hoodie",
+   "text": "{WHEN} it's warm enough for short sleeves, so the sweater can come off."
+  },
+  {
+   "path": "fact_0.w_hoodie",
+   "text": "You'll be fine without the sweater {WHEN}."
+  },
+  {
+   "path": "fact_0.w_water",
+   "text": "Take a bottle of water. The heat arrives {WHEN}."
+  },
+  {
+   "path": "fact_0.w_water",
+   "text": "{WHEN} it's properly hot, so have water with you."
+  },
+  {
+   "path": "fact_0.w_water",
+   "text": "You'll want water {WHEN}, when the heat comes in."
+  },
+  {
+   "path": "fact_0.c_scarf",
+   "text": "Take a hat, scarf and gloves along. You'll want them {WHEN}."
+  },
+  {
+   "path": "fact_0.c_scarf",
+   "text": "{WHEN} the coat isn't enough on its own. Bring a hat, scarf and gloves."
+  },
+  {
+   "path": "fact_0.c_scarf",
+   "text": "The cold sets in {WHEN}, so pack a hat, scarf and gloves."
+  },
+  {
+   "path": "fact_0.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}."
+  },
+  {
+   "path": "fact_0.c_coat",
+   "text": "{WHEN} a jacket won't be enough, so bring the winter coat."
+  },
+  {
+   "path": "fact_0.c_coat",
+   "text": "Don't leave the winter coat behind. You'll want it {WHEN}."
+  },
+  {
+   "path": "fact_0.c_jacket",
+   "text": "Take a jacket along. You'll want it {WHEN}."
+  },
+  {
+   "path": "fact_0.c_jacket",
+   "text": "A sweater won't do {WHEN}, so bring a jacket."
+  },
+  {
+   "path": "fact_0.c_hoodie",
+   "text": "Pack a sweater. You'll be glad of it {WHEN}."
+  },
+  {
+   "path": "fact_0.c_hoodie",
+   "text": "{WHEN} short sleeves won't be enough, so bring a sweater."
+  },
+  {
+   "path": "fact_0.c_relief",
+   "text": "{WHEN} the worst of the heat is over, but it stays warm."
+  },
+  {
+   "path": "fact_0.c_relief",
+   "text": "It's not as hot {WHEN}, but it's still warm."
+  },
+  {
+   "path": "fact_0.arc_warmer",
+   "text": "You can take {G} off {WHEN}. Even later on, you won't need {GP}."
+  },
+  {
+   "path": "fact_0.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off."
+  },
+  {
+   "path": "fact_0.arc_warmer",
+   "text": "{G} comes off {WHEN}. It cools a little later, but you won't want {GP} back."
+  },
+  {
+   "path": "fact_0.arc_level",
+   "text": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}."
+  },
+  {
+   "path": "fact_0.arc_level",
+   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}."
+  },
+  {
+   "path": "fact_0.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top."
+  },
+  {
+   "path": "fact_0.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}."
+  },
+  {
+   "path": "fact_0.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top."
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad of them."
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "Shorts feel cool at first, but {WHEN} they're just right."
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "{WHEN} it's shorts weather, so they're worth a cool start."
+  },
+  {
+   "path": "fact_0.p_wetter",
+   "text": "Take the umbrella along for a shower {WHENP}."
+  },
+  {
+   "path": "fact_0.p_wetter",
+   "text": "There's a short shower {WHENP}. Have the umbrella with you."
+  },
+  {
+   "path": "fact_0.p_wetter_long",
+   "text": "Rain arrives {WHENP} and stays, so take the umbrella."
+  },
+  {
+   "path": "fact_0.p_wetter_long",
+   "text": "Pack the umbrella. Rain sets in {WHENP} and doesn't let up."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe",
+   "text": "Rain {WHENP} is possible but not likely. The umbrella is up to you."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe",
+   "text": "You might get some rain {WHENP}, so the umbrella could come in handy."
+  },
+  {
+   "path": "fact_0.p_stays_wet",
+   "text": "Take the umbrella. The rain keeps going all day."
+  },
+  {
+   "path": "fact_0.p_stays_wet",
+   "text": "The rain lasts all day, so keep the umbrella with you."
+  },
+  {
+   "path": "fact_0.p_stays_wet",
+   "text": "There's no dry spell today. Bring the umbrella."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "It keeps raining for a while, then stops. Take the umbrella."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "Later the rain stops. For now, keep the umbrella with you."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "The rain is here for now but stops later, so bring the umbrella."
+  },
+  {
+   "path": "fact_0.p_wet_again",
+   "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella."
+  },
+  {
+   "path": "fact_0.p_wet_again",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away."
+  },
+  {
+   "path": "fact_0.p_snow_coming",
+   "text": "There's snow on the way {WHENP}."
+  },
+  {
+   "path": "fact_0.p_snow_coming",
+   "text": "Snow moves in {WHENP}."
+  },
+  {
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "The snow doesn't stop today."
+  },
+  {
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "It won't stop snowing today."
+  },
+  {
+   "path": "fact_0.p_stays_wet_snow",
+   "text": "There's no break in the snow today."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "It's snowing now, but it stops later."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "It snows for a while yet, then stops."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "Later on the snow stops."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "The snow pauses later and starts again {WHENP}."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "After a break later on, the snow returns {WHENP}."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "The one with the bent spoke still counts. Just about.",
+   "answers": [
+    "fu-en-3c6bdbfdd863",
+    "se-en-94930a50790f"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Open it outside, please. I can't afford the bad luck.",
+   "answers": [
+    "fu-en-e98dbe0b0635"
+   ]
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "And you'll still stick a hand out to check. Rude."
+  },
+  {
+   "path": "flavour_11.rain",
+   "text": "Skip it and I'll know. Wet jeans go a shade darker."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Pretty through the window. Less pretty inside your shoe."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "I've never once slipped on ice. Never left the house, either."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "You'll say it won't settle. You say that every time."
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "You'll take the same photo out of the window as last year.",
+   "answers": [
+    "fu-en-eed13c7b2739"
+   ]
+  },
+  {
+   "path": "flavour_11.snow",
+   "text": "You'll walk on the untouched bits first. Don't pretend you won't."
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "I'd take a layer off too, but mine are glued on.",
+   "answers": [
+    "fu-en-0a5ba52b3d29"
+   ],
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Then out come the arms. Nearly as pale as me.",
+   "garments": [
+    "hoodie"
+   ],
+   "months": "03,04,05"
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "You'll take {GP} off an hour early, then shiver to prove a point.",
+   "answers": [
+    "fu-en-239e1d4134a0"
+   ],
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Later you'll pull {GP} on and say 'ah, that's better'. Out loud.",
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "It'll come out of the bag looking slept in. Still counts.",
+   "garments": [
+    "jacket",
+    "hoodie"
+   ]
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "That's your one reminder. I don't do push notifications.",
+   "answers": [
+    "fu-en-849a29148e5c"
+   ]
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "Tonight you'll say 'it's turned chilly' like it's news to you.",
+   "answers": [
+    "fu-en-c992fdc6bf87"
+   ]
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "Later you'll stand there cold, holding {GP}. Just holding {GP}.",
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_11.offon",
+   "text": "You'll feel invincible without {GP}. It wears off.",
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Finally, a use for the fancy bottle you bought to drink more water.",
+   "answers": [
+    "fu-en-dd8f4cdc60cb"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "You'll cross the road for a strip of shade the width of a lamppost.",
+   "answers": [
+    "se-en-c03a8d6cc521"
+   ]
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Not for me, thanks. Water and I don't get along."
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "You'll press the bottle to your forehead more than you drink from it."
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "And somehow you'll still burn the back of your neck."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Same look all day, no updates. You'd make a decent screen."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "No layer to carry today. Both hands free for snacks."
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "One less reason to be late. You'll find another.",
+   "answers": [
+    "fu-en-26ddf5890d42"
+   ]
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "You'll still pack something extra, just in case. Of what?",
+   "answers": [
+    "fu-en-c5c30c011d66"
+   ]
+  },
+  {
+   "path": "flavour_11.steady",
+   "text": "You've worn worse for longer."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "You'll say 'it's freezing' twenty times today. I said it once.",
+   "answers": [
+    "fu-en-612d3d196d2a"
+   ]
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "If the sun shows up today, it's purely decorative."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Your phone will claim it's dead at thirty percent. Drama queen."
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "You'll see your breath and pretend you're a dragon. Don't deny it."
+  },
+  {
+   "path": "flavour_11.cold",
+   "text": "You'll pull your sleeves over your hands and call them gloves."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "The weather's sorted for the evening. The washing-up isn't."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "It works for going out, too. In theory."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Also fine for a Christmas party. The dancing's out of my hands.",
+   "months": "12"
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "You'll probably spend half of it choosing what to watch."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "Plenty of evening left for not answering that message."
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "The rest of your clothes are still on the chair, I assume."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Tomorrow's forecast will be ready before you are. As always."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Not that anyone will see it at this hour. Except me.",
+   "answers": [
+    "fu-en-a7b23a4e959f"
+   ]
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Your phone probably said bedtime an hour ago. Listen to one of us."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "It'll last longer than you will tonight.",
+   "answers": [
+    "fu-en-df61dfbc0240"
+   ]
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "The only thing changing tonight is your plan to sleep early."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "It's still working, which makes one of you."
+  },
+  {
+   "path": "now_10.cool",
+   "text": "That jacket pocket still has a tissue from spring. Used, probably.",
+   "answers": [
+    "al-en-2bc20fba84eb"
+   ],
+   "months": "09,10,11"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Keys? Jacket pocket. You'll check everywhere else first.",
+   "answers": [
+    "se-en-c3eda54f17b6"
+   ]
+  },
+  {
+   "path": "now_10.wet",
+   "text": "Umbrella up, and one shoulder will still get soaked. Every time.",
+   "answers": [
+    "se-en-33e4ced9401e"
+   ]
+  },
+  {
+   "path": "now_11.cold",
+   "text": "Ten seconds into any shop and you'll be boiling in that coat.",
+   "answers": [
+    "al-en-3a72421a8159"
+   ]
+  },
+  {
+   "path": "now_11.cold",
+   "text": "You'll get fully zipped into that coat, then need the loo.",
+   "answers": [
+    "se-en-f6a8fa54dc39"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Shorts weather arrives {WHEN}, so wear shorts now and keep {G} just for the start."
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "Shorts weather {WHEN}, a layer again {WHEN2}. Wear shorts and keep {G} handy."
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Wear shorts today and keep {G} on for the cold start. {WHEN} it's shorts weather."
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "Wear shorts and keep {G} with you. It's warm {WHEN}, then cooler again {WHEN2}."
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "Wear long pants today, even though it's warm now. Cold weather arrives {WHEN}, so bring a warm coat."
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "A cold front comes through {WHEN}. Wear long pants and take a warm coat, even if it feels warm now."
+  },
+  {
+   "path": "fact_0.heat_danger",
+   "text": "The heat is dangerous today. Keep drinking water, stay in the shade and avoid the midday sun."
+  },
+  {
+   "path": "fact_0.heat_danger",
+   "text": "Drink water often and stay in the shade. Today's heat is dangerous, especially at midday."
+  },
+  {
+   "path": "fact_0.p_wetter_ice",
+   "text": "Take the umbrella. Freezing rain {WHENP} makes the pavements icy, so walk carefully."
+  },
+  {
+   "path": "fact_0.p_wetter_ice",
+   "text": "{WHENP} there's freezing rain and the roads turn icy. Bring the umbrella and take it slowly."
+  },
+  {
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Freezing rain begins {WHENP} and doesn't stop. Expect icy pavements and take the umbrella."
+  },
+  {
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "There might be freezing rain {WHENP}. That would mean ice, so take the umbrella and tread carefully."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_ice",
+   "text": "Freezing rain could come {WHENP}, and with it ice. Take the umbrella to be safe."
+  },
+  {
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "It's freezing rain all day, so the pavements stay icy. Walk carefully and keep the umbrella with you."
+  },
+  {
+   "path": "fact_0.p_stays_wet_ice",
+   "text": "The freezing rain keeps going all day and leaves ice everywhere. Bring the umbrella and go slowly."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Take the umbrella for now. The freezing rain stops later, but the pavements stay icy."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully."
+  },
+  {
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and mind the ice."
+  },
+  {
+   "path": "fact_0.p_wet_again_ice",
+   "text": "The freezing rain pauses later and returns {WHENP}. The pavements stay icy, so keep the umbrella and go slowly."
+  },
+  {
+   "path": "fact_0.p_wetter_storm",
+   "text": "There's a thunderstorm {WHENP}. Take the umbrella, and head indoors while it thunders."
+  },
+  {
+   "path": "fact_0.p_wetter_storm",
+   "text": "Bring the umbrella for the thunderstorm {WHENP}, and get inside when it starts."
+  },
+  {
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "A thunderstorm arrives {WHENP} and the rain stays after it. Take the umbrella and stay indoors during the thunder."
+  },
+  {
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "{WHENP} thunderstorms move in and the rain keeps going. Bring the umbrella, and get inside while it thunders."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "There could be a thunderstorm {WHENP}. Take the umbrella, just in case."
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "A thunderstorm {WHENP} isn't certain, but bring the umbrella. If it thunders, get inside."
+  },
+  {
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "Thunderstorms come and go all day. Take the umbrella and stay indoors when it thunders."
+  },
+  {
+   "path": "fact_0.p_stays_wet_storm",
+   "text": "It's wet and stormy all day. Bring the umbrella, and get inside whenever it thunders."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Take the umbrella for now. The thunderstorm passes later."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "The thunderstorm moves on later. For now, keep the umbrella and get inside while it thunders."
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "The rain takes a break, but a thunderstorm follows {WHENP}. Keep the umbrella and get inside when it hits."
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "After a dry spell, thunder arrives {WHENP}. Hang on to the umbrella, and head indoors when it starts."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Your knees will have opinions this morning. Ignore them."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Warm on top, shorts below. You'll look like you couldn't decide."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Trust me. I've never had cold legs."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Brave call. Correct, but brave."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "You'll spend the first hour explaining your legs."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Your legs will go a lovely blotchy colour. Briefly."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "You'll doubt me for the first hour. Then you won't admit it."
+  },
+  {
+   "path": "flavour_11.shorts",
+   "text": "Very PE teacher of you. Still the right call."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Yes, a coat. Yes, I can see the sun too."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "The sun's lying to you. I'm not."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I've seen the afternoon. You haven't."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "A coat on a shorts morning. Odd now, smug later."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You'll want to argue. Your legs will side with me later."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You'll carry the coat like a grudge. Then wear it like a hug."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Check another app if you like. It'll say the same thing, in colour."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Later you'll say 'where did that come from?' From here. This morning."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "For once, staying in with me is the sensible choice."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "I'm staying in the shade too. I recommend the company."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "I'll handle the forecast. You handle refilling that bottle."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Plenty of water today. Not the sip-and-forget kind."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Do nothing at midday. Finally, a plan you're good at."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "You'll forget to drink, then wonder about the headache. Drink now."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Refill the bottle before it's empty. You never do."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Not a day for proving anything. Sit in the shade and drink."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Walk like you're carrying a very full cup of coffee."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "If you're late, blame the ice. It's the one excuse I'll back."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Move like me today: slowly, and not at all if possible."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Hold on to the umbrella. Hold on to the railing more."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "You'll say 'it's not that bad'. Say it slowly, while walking slowly."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Today you're allowed to walk like your gran. Encouraged, even."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "Whatever you'd normally run for today, let it go."
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "You'll look at your phone while walking. Not today."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Film it from inside. The thunder sounds just as good."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Don't unplug me. I'm on battery and I'm not scared."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "When it thunders, swap the umbrella for a roof."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "I'll stay in for this one. Then again, I always do."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll count the seconds after every flash. From inside, please."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll say you love a good storm. From indoors, you do."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll still check the radar every five minutes. I'm hurt, frankly."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll pretend the thunder didn't make you jump."
+  }
+ ]
+}

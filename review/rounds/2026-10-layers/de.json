@@ -1,0 +1,458 @@
+{
+ "round": "2026-10-layers",
+ "lines": [
+  {
+   "path": "unit_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an."
+  },
+  {
+   "path": "unit_10.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Und dann darfst du sie wieder überm Arm spazieren tragen."
+  },
+  {
+   "path": "unit_10.w_jacket",
+   "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht."
+  },
+  {
+   "path": "unit_10.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen. || Ob du sie danach wiederfindest, sag ich dir nicht voraus."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Und dann wieder um die Hüfte binden? Bitte nicht."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen. || Und dann vergisst du sie irgendwo. Wie letztes Mal."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "{WHEN} kann die Jacke weg. || Dann sieht jeder, was du drunter anhast. Das Gleiche wie gestern."
+  },
+  {
+   "path": "unit_11.w_jacket",
+   "text": "{WHEN} kannst du die Jacke ausziehen. || Dann hängt sie den Rest des Tages über deinem Stuhl."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "{WHEN} kannst du den Pulli ausziehen. || Aber nicht vorher. Ich seh das."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "{WHEN} kann der Pulli weg. || Hier drin merk ich davon natürlich wieder nichts."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "{WHEN} wird's wärmer, dann kann der Pulli weg. || Ich sag das an. Ausziehen musst du ihn selber."
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "{WHEN} kannst du den Pulli ausziehen. || Die Haare stehen danach wieder in alle Richtungen. Ist halt so."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} kann der Pulli weg. || Bitte nicht wieder die Ärmel um den Bauch knoten."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} kann der Pulli weg. || Was drunter ist, hast du dir heute früh hoffentlich angeschaut."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} wird's wärmer, dann kann der Pulli weg. || Ehrlich gesagt hätt ich ihn gar nicht erst angezogen."
+  },
+  {
+   "path": "unit_11.w_hoodie",
+   "text": "{WHEN} kannst du den Pulli ausziehen. || Und zwar ohne Kampf, bitte. Das sieht jedes Mal aus wie Ringen."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "Nimm eine Jacke mit, {WHEN} kühlt's ab. || Wär ja auch zu schön gewesen, wenn's gehalten hätte."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "Nimm eine Jacke mit, {WHEN} kühlt's ab. || Ich weiß, jetzt sieht's nicht danach aus. Ich hab trotzdem recht."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "{WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke. || Pünktlich wie sonst nichts in diesem Land."
+  },
+  {
+   "path": "unit_10.c_jacket",
+   "text": "{WHEN} wird's kühl, dann bist du froh über eine Jacke. || Bedanken kannst du dich dann bei mir. Tut aber keiner."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "Nimm eine Jacke mit, {WHEN} kühlt's ab. || Und du überlegst schon, ob's nicht auch ohne geht. Seh ich doch."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "{WHEN} brauchst du eine Jacke, also nimm eine mit. || Bei dir muss ich's sicher wieder dreimal sagen."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "Pack eine Jacke ein, {WHEN} wird's kühler. || Als ob dein Schrank sowas hergibt."
+  },
+  {
+   "path": "unit_11.c_jacket",
+   "text": "{WHEN} wird's kühl, dann bist du froh über eine Jacke. || Froh warst du schon lang nicht mehr. Ich bin gespannt."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Nachher sagt wieder jeder: Ganz schön frisch geworden."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Ich sag's lieber jetzt. Später hört mir sowieso keiner zu."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "{WHEN} wird's frisch genug für einen Pulli. || Die Oma hätt's dir schon heute früh gesagt. Ich sag's halt jetzt."
+  },
+  {
+   "path": "unit_10.c_hoodie",
+   "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Vermutlich, sag ich. Ich will ja nicht schuld sein."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Und nicht wieder den von jemand anderem."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli. || Und ich bin froh, wenn du dann nicht jammerst."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Notfalls den kratzigen von der Oma. Der wärmt wenigstens."
+  },
+  {
+   "path": "unit_11.c_hoodie",
+   "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Zum Anziehen. Nicht zum Um-den-Bauch-Knoten."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe. || Alle drei. Ich hab nachgezählt."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "Pack Mütze, Schal und Handschuhe ein, {WHEN} wird's kälter. || Die Oma wär stolz auf mich."
+  },
+  {
+   "path": "unit_10.c_scarf",
+   "text": "Denk an Mütze, Schal und Handschuhe, {WHEN} wird's ungemütlich kalt. || So wie ich, nur draußen."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "Pack Mütze, Schal und Handschuhe ein, {WHEN} wird's kälter. || Zurück bringst du davon ja meistens nur zwei."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "{WHEN} wird's kalt genug für Mütze, Schal und Handschuhe. || Die Mütze steht dir nicht. Setz sie trotzdem auf."
+  },
+  {
+   "path": "unit_11.c_scarf",
+   "text": "{WHEN} brauchst du Mütze, Schal und Handschuhe, also nimm sie mit. || Beide Handschuhe, wenn's geht."
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} wird's kälter, da braucht's die Winterjacke. || Da hilft auch kein Jammern."
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Deutlich heißt bei mir: Ich mein's ernst."
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} wird's kalt genug für die Winterjacke. || Die Übergangsjacke hat ihren Übergang hinter sich."
+  },
+  {
+   "path": "unit_11.c_coat",
+   "text": "Nimm die Winterjacke mit, {WHEN} wird's kälter. || Ja, die dicke. Ich weiß, wie du drin aussiehst."
+  },
+  {
+   "path": "unit_11.c_coat",
+   "text": "{WHEN} brauchst du die Winterjacke, also nimm sie mit. || Vorausgesetzt, sie geht nach den Feiertagen noch zu.",
+   "months": "01"
+  },
+  {
+   "path": "unit_11.c_coat",
+   "text": "{WHEN} wird's kälter, da braucht's die Winterjacke. || Dein „Mir ist nie kalt“ hebst du dir bitte für einen anderen Tag auf."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "{WHEN} können Mütze, Schal und Handschuhe weg. || Ein Handschuh bleibt dann wieder irgendwo liegen. Immer der linke."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Die Mützenfrisur bleibt dir allerdings noch eine Weile."
+  },
+  {
+   "path": "unit_10.w_scarf",
+   "text": "{WHEN} können Mütze, Schal und Handschuhe weg. || Ich würd ja sagen, der Frühling kommt. So weit geh ich aber nicht."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "{WHEN} können Mütze, Schal und Handschuhe weg. || Dann sieht man wieder deine Frisur. Schade eigentlich."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "{WHEN} kannst du Mütze, Schal und Handschuhe ablegen. || Drei Sachen auf einmal merken. Das wird schwer für dich."
+  },
+  {
+   "path": "unit_11.w_scarf",
+   "text": "Mütze, Schal und Handschuhe kannst du {WHEN} einpacken. || Die Handschuhe findest du dann im Frühling wieder."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} kann die Winterjacke weg. || Freu dich nicht zu früh. Das ist noch kein Frühling."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Und dann trägst du einen Schlafsack über dem Arm."
+  },
+  {
+   "path": "unit_10.w_coat",
+   "text": "{WHEN} kannst du die Winterjacke ausziehen. || Ich hab's gewusst, bevor du's gemerkt hast. Wie immer."
+  },
+  {
+   "path": "unit_11.w_coat",
+   "text": "{WHEN} kann die Winterjacke weg. || Dann sieht man wieder, was du den ganzen Winter gegessen hast."
+  },
+  {
+   "path": "unit_11.w_coat",
+   "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Und dann stopfst du sie in eine viel zu kleine Tasche."
+  },
+  {
+   "path": "unit_11.w_coat",
+   "text": "{WHEN} kannst du die Winterjacke ausziehen. || Bitte nicht gleich übertreiben. Das ist noch kein Sommer."
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier."
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter."
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Und stell's nicht in die Sonne. Warmes Wasser schmeckt scheiße."
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser ist übrigens das Durchsichtige."
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Trinken, nicht nur rumtragen. Ich kenn dich."
+  },
+  {
+   "path": "unit_11.w_water",
+   "text": "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Kaffee zählt übrigens nicht als Wasser. Auch nicht mit Eis."
+  },
+  {
+   "path": "unit_10.c_relief",
+   "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Etwas. Mehr Erleichterung gibt's von mir heute nicht."
+  },
+  {
+   "path": "unit_10.c_relief",
+   "text": "{WHEN} ist das Schlimmste der Hitze vorbei, es bleibt aber warm. || Bei mir ist das Schlimmste nie vorbei."
+  },
+  {
+   "path": "unit_10.c_relief",
+   "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehm ist ein großes Wort. Ich sag lieber: weniger schlimm."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Du jammerst trotzdem weiter. Nur etwas leiser."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehmer als du jedenfalls."
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Dein Sonnenbrand nicht."
+  },
+  {
+   "path": "unit_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Mitschleppen musst du {GP} trotzdem. Den ganzen Rest des Tages."
+  },
+  {
+   "path": "unit_10.arc_warmer",
+   "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Eine klare Ansage. Kommt bei mir selten vor, genieß sie."
+  },
+  {
+   "path": "unit_10.arc_warmer",
+   "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Morgen früh suchst du {GP} dann wieder."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || Vergessen wirst du {GP} trotzdem irgendwo. Ich kenn dich."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{WHEN} {GV} weg, und zwar für den Rest des Tages. || Den Rest des Tages siehst du also aus wie du. Mutig."
+  },
+  {
+   "path": "unit_11.arc_warmer",
+   "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Endlich mal was, das bei dir hält."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Früher hat man sich einmal am Tag angezogen. Einmal!"
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen."
+  },
+  {
+   "path": "unit_10.arc_level",
+   "text": "{WHEN} {GV} weg, aber behalt {GP} griffbereit für {WHEN2}. || Griffbereit, nicht irgendwo. Das ist ein Unterschied."
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen kannst du. Wiederfinden ist dein Problem."
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ausziehen, wieder anziehen. Das schaffst du schon. Vermutlich."
+  },
+  {
+   "path": "unit_11.arc_level",
+   "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Hauptsache, man hat was zum Meckern."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Dein Rucksack hat heute mehr an als du."
+  },
+  {
+   "path": "unit_10.arc_colder",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || So ein Hin und Her hält ja kein Mensch aus."
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Extra einfach formuliert. Für dich."
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Am Abend dann: Michelin-Männchen."
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine Schicht mehr mit. || Und dann jammerst du in zwei Schichten."
+  },
+  {
+   "path": "unit_10.shorts_early",
+   "text": "Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter. || Überleg's dir. Ich hab da keine Meinung. Doch, hab ich."
+  },
+  {
+   "path": "unit_10.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in Shorts rumlaufen. || Kannst. Nicht musst. Ich sag's nur."
+  },
+  {
+   "path": "unit_10.shorts_early",
+   "text": "Jetzt noch frisch, {WHEN} wird's ein Tag für kurze Hosen. || Früher hätt man dazu einfach Sommer gesagt."
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "Jetzt ist's noch kühl, aber {WHEN} ist es Shorts-Wetter. || Ob du das der Welt antun willst, musst du selber wissen."
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "Jetzt noch frisch, {WHEN} wird's ein Tag für kurze Hosen. || Deine Beine haben lang keine Sonne gesehen. Man wird's merken."
+  },
+  {
+   "path": "unit_11.shorts_early",
+   "text": "Noch ist's kühl, aber {WHEN} kannst du in Shorts rumlaufen. || Rumlaufen. Bei dir eher rumsitzen."
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Der Winterspeck darf also bleiben.",
+   "answers": [
+    "un-de-0226450260c5"
+   ]
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Heute ist die Heizung die Einzige, die richtig arbeitet.",
+   "answers": [
+    "un-de-0226450260c5"
+   ]
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Dann kann ich ja jetzt in Ruhe grantig sein.",
+   "answers": [
+    "un-de-9eb265baf10a"
+   ]
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Das Wetter hat schon Feierabend. Nur ich muss noch.",
+   "answers": [
+    "un-de-9eb265baf10a"
+   ]
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Schöner wird der Abend dadurch aber auch nicht.",
+   "answers": [
+    "un-de-ea2ddf176734"
+   ]
+  },
+  {
+   "path": "unit_10.steady_evening",
+   "text": "Was du anhast, passt den ganzen Abend. || Spannender wird's heute nur noch im Krimi.",
+   "answers": [
+    "un-de-ea2ddf176734"
+   ]
+  },
+  {
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Ein Baum reicht. Eine Laterne nicht.",
+   "answers": [
+    "un-de-bb9c51ab7a21"
+   ]
+  },
+  {
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, trink genug Wasser und meide die pralle Sonne. || Die meide ich das ganze Jahr. Ich bin ein Bildschirm.",
+   "answers": [
+    "un-de-bb9c51ab7a21"
+   ]
+  },
+  {
+   "path": "unit_10.steady_hot",
+   "text": "Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt übrigens mehr als ein Schluck zum Mittagessen.",
+   "answers": [
+    "un-de-c9a4a487618a"
+   ]
+  },
+  {
+   "path": "unit_10.steady_hot",
+   "text": "Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mach's wie die Katze. Die weiß das ohne mich.",
+   "answers": [
+    "un-de-c9a4a487618a"
+   ]
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Ich bin um die Uhrzeit nur noch aus Höflichkeit an.",
+   "answers": [
+    "un-de-a25c4724c8a3"
+   ]
+  },
+  {
+   "path": "unit_10.steady_night",
+   "text": "Was du anhast, passt für den Rest der Nacht. || Ich schau trotzdem noch mal nach. Einer muss ja wach bleiben.",
+   "answers": [
+    "un-de-a25c4724c8a3"
+   ]
+  }
+ ]
+}

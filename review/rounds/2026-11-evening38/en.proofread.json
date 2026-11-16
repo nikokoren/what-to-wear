@@ -1,0 +1,110 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Doormats everywhere are about to have a very long day.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Rain is just snow that stopped trying.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "Snow is lovely for about an hour. Then it's a parking problem.",
+   "evtag": "",
+   "was": "Snow is lovely for about an hour. After that, it's a parking problem.",
+   "reasons": [
+    "Unnatural"
+   ],
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "Every dad on the block is about to become a road-salt expert.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "'Rain before seven, clear by eleven.' Close enough for folklore.",
+   "evtag": "",
+   "was": "'Rain before seven, clear by eleven.' Close enough, for folklore.",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "For once I can say 'it'll pass' and mean it.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Later someone out there will say 'oh, that's nice' out loud. To nobody.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "An app needs a whole graph for this. I just draw less clothing.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Weather this dependable could sell life insurance.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "I could do this forecast in sleep mode. I do most things in sleep mode.",
+   "evtag": "",
+   "hint": "Variation of a starred line"
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Checking three apps and believing the nicest isn't forecasting. It's swiping right.",
+   "evtag": "",
+   "replaces": "Checking three apps and believing the nicest isn't forecasting.",
+   "hint": "Option: keep one, it replaces the live line: Checking three apps and believing the nicest isn't forecasting."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Checking three apps and believing the nicest isn't forecasting. It's asking Dad.",
+   "evtag": "",
+   "replaces": "Checking three apps and believing the nicest isn't forecasting.",
+   "hint": "Option: keep one, it replaces the live line: Checking three apps and believing the nicest isn't forecasting."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Checking apps until one says sunny isn't forecasting. It's shaking a Magic 8 Ball.",
+   "evtag": "",
+   "replaces": "Checking three apps and believing the nicest isn't forecasting.",
+   "hint": "Option: keep one, it replaces the live line: Checking three apps and believing the nicest isn't forecasting."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "This is that outfit's big moment. Once you put it on, nobody looks.",
+   "evtag": "{N}",
+   "hint": "New version of 'You've looked at this outfit…' for the screen without the sentence; the original stays with it"
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Some people trust the porch thermometer. It hangs in full sun and always says shorts.",
+   "evtag": "",
+   "replaces": "Some people trust only their porch thermometer. It's been in direct sun since 1993.",
+   "hint": "Option: keep one, it replaces the live line: Some people trust only their porch thermometer. It's been in direct sun since 1993."
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Some people trust the porch thermometer over me. It sits in full sun. Total optimist.",
+   "evtag": "",
+   "replaces": "Some people trust only their porch thermometer. It's been in direct sun since 1993.",
+   "hint": "Option: keep one, it replaces the live line: Some people trust only their porch thermometer. It's been in direct sun since 1993."
+  }
+ ]
+}

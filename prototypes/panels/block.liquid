@@ -10,7 +10,8 @@ A panel is a stretch of the day, from one change to the next:
     hour at RAIN_HIGH is enough: a shower counts, as in the text), or
     two dry hours ending it;
   - tee_pants and tee_shorts count as one outfit later in the day: legs
-    are decided at the door;
+    are decided at the door. On a shorts day (three hours or more of
+    shorts weather, THE LONG-PANTS RULE) the warm drawings are shorts;
   - the "now" panel shows rain only if it is falling now; a later panel
     shows it if it starts with that panel, or anywhere inside it once
     panels are merged;
@@ -18,22 +19,21 @@ A panel is a stretch of the day, from one change to the next:
     its own panel while there is room, and otherwise wets the panel it
     falls in.
 
-Text: one panel says "this works all day" (a steady fact wording) and
-adds the sarcastic line at On and 11. Two or three panels show only the
-sarcastic line, and nothing at Off.
+Text: with the Forecast switch on, the forecast line and the sarcastic
+line, as in words. With only this one: one panel says "this works all
+day" (a steady fact wording) and adds the sarcastic line at On and 11;
+two or three panels show only a sarcastic line that stands alone, and
+nothing at Off.
 
-The switch is the third value of the forecast field, "visual" (Visual
-Forecast, config/settings.next.yaml); "Yes" keeps the forecast in words
-and "No" turns it off. Markup from before this reads anything but
-no/false/0 as on, so a form that ships first falls back to the words.
+The switch is What to Wear Next? (what_to_wear_next, on/off,
+config/settings.next.yaml), read in the fact + flavour block (next_on).
+Markup from before this ignores the field and shows the words.
 
 Appended to the end of the shared markup by prototypes/panels/build.py,
 after the fact + flavour block and the picture.
 {%- endcomment %}
-{%- assign visual_forecast = false -%}
-{%- if show_future_suggestions == 'on' and sfs_check == 'visual' -%}
-  {%- assign visual_forecast = true -%}
-{%- endif -%}
+{%- comment %} The drawings are the What to Wear Next? switch (next_on, set in the fact + flavour block). {%- endcomment %}
+{%- assign visual_forecast = next_on -%}
 {%- assign panel_n = 1 -%}
 {%- assign panel_slugs = '' -%}
 {%- assign panel_labels = '' -%}
@@ -54,7 +54,7 @@ after the fact + flavour block and the picture.
   {%- assign cur_rank = band_rank -%}
   {%- assign cur_wet = is_now_precip -%}
   {%- assign cur_snow = is_now_snow -%}
-  {%- if show_future_suggestions == 'on' and has_future_window and rank_hi_list -%}
+  {%- if has_future_window and rank_hi_list -%}
     {%- for r in rank_hi_list -%}
       {%- assign k = forloop.index0 -%}
       {%- assign i = start_index | plus: k -%}
@@ -66,7 +66,13 @@ after the fact + flavour block and the picture.
       {%- elsif lo < cur_rank -%}
         {%- assign new_rank = lo -%}
       {%- endif -%}
-      {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
+      {%- comment %} A shorts day (THE LONG-PANTS RULE): once it's warm, the legs are shorts. {%- endcomment %}
+      {%- assign shorts_day = shorts_swing -%}
+      {%- if shorts_early -%}{%- assign shorts_day = true -%}{%- endif -%}
+      {%- if shorts_day -%}
+        {%- comment %} The Now drawing stays as it is; from the first shorts hour on, shorts. {%- endcomment %}
+        {%- if new_rank == 5 and cur_rank != 5 -%}{%- assign new_rank = 6 -%}{%- endif -%}
+      {%- elsif cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
         {%- assign new_rank = cur_rank -%}
       {%- endif -%}
 
@@ -244,7 +250,7 @@ after the fact + flavour block and the picture.
   {%- assign panel_n = panel_slugs | split: '|' | size -%}
 
   {%- comment %} Words: "this works all day" for one panel; the sarcastic line at On and 11. {%- endcomment %}
-  {%- if show_future_suggestions == 'on' and texts_ok -%}
+  {%- if texts_ok -%}
     {%- if panel_n == 1 and texts.facts -%}
       {%- if local_hour >= 17 -%}
         {%- assign sk = 'steady_evening' -%}
@@ -256,15 +262,85 @@ after the fact + flavour block and the picture.
         {%- assign sk = 'steady' -%}
       {%- endif -%}
       {%- assign sl = texts.facts[sk] -%}
-      {%- if sl -%}
+      {%- if sl and sl.size > 0 -%}
         {%- assign sn = sl | size -%}
-        {%- assign si = local_days | plus: 2 | modulo: sn -%}
+        {%- assign si = text_rot | plus: 2 | modulo: sn -%}
         {%- assign panel_fact = sl[si] -%}
       {%- endif -%}
+      {%- comment %}
+      One drawing and sarcasm on: the unit the fact block picked for this
+      steady day (UNITS there), its sentence in place of "works all day"
+      and its own joke. Not when rain or snow decided the unit.
+      {%- endcomment %}
+      {%- if sp_fact != '' -%}{%- assign panel_fact = sp_fact -%}{%- endif -%}
+      {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
+        {%- assign panel_fact = f_temp -%}
+        {%- assign flavour_line = unit_joke -%}
+      {%- endif -%}
     {%- endif -%}
-    {%- if sarcasm_level != '0' -%}
-      {%- assign panel_flavour = flavour_line -%}
+    {%- comment %}
+    Two or three drawings and no forecast line: the change is on screen as
+    drawings, so the mood's lines written for them (flavour_vf_10 / _11,
+    review round 10) join the standalone lines. Theme days and topical lines keep
+    theirs. Every view shows flavour_line.
+    {%- endcomment %}
+    {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
+      {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
+      {%- comment %}
+      The drawings' line goes by what the drawings show: the same outfit
+      first and last is off-and-on-again (no extra layer to bring), a
+      colder last one is cooling, a warmer one warming.
+      {%- endcomment %}
+      {%- assign vf_mood = mood -%}
+      {%- if mood == 'cooling' or mood == 'warming' or mood == 'fickle' -%}
+        {%- assign vf_first = pr | first | plus: 0 -%}
+        {%- assign vf_last = pr | last | plus: 0 -%}
+        {%- if vf_first == vf_last -%}
+          {%- assign vf_mood = 'fickle' -%}
+        {%- elsif vf_last < vf_first -%}
+          {%- assign vf_mood = 'cooling' -%}
+        {%- else -%}
+          {%- assign vf_mood = 'warming' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign vf_pool = texts[vf_key][vf_mood] -%}
+      {%- if vf_pool and vf_pool.size > 0 -%}
+        {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
+        {%- assign vf_n = vf_pool | size -%}
+        {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
+        {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
+        {%- assign vf_month = ',' | append: season_month | append: ',' -%}
+        {%- for k in (1..vf_n) -%}
+          {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- if vf_cand contains '{AM}' -%}
+            {%- if local_hour >= 12 -%}{%- assign vf_cand = '{M:00}' -%}{%- else -%}{%- assign vf_cand = vf_cand | remove: '{AM}' -%}{%- endif -%}
+          {%- endif -%}
+          {%- comment %} "{3}": only with three different drawings ("Three outfits for one day"). {%- endcomment %}
+          {%- if vf_cand contains '{3}' -%}
+            {%- assign vf_slugs = panel_slugs | split: '|' -%}
+            {%- if panel_n == 3 and vf_slugs[0] != vf_slugs[2] -%}
+              {%- assign vf_cand = vf_cand | remove_first: '{3}' -%}
+            {%- else -%}
+              {%- assign vf_cand = '{M:00}' -%}
+            {%- endif -%}
+          {%- endif -%}
+          {%- if vf_cand contains '{M:' -%}
+            {%- assign vf_tag = vf_cand | split: '}' | first | remove: '{M:' -%}
+            {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}
+            {%- if vf_tags contains vf_month -%}
+              {%- assign vf_prefix = '{M:' | append: vf_tag | append: '}' -%}
+              {%- assign flavour_line = vf_cand | remove_first: vf_prefix -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign flavour_line = vf_cand -%}
+            {%- break -%}
+          {%- endif -%}
+          {%- assign vf_i = vf_i | plus: 1 | modulo: vf_n -%}
+        {%- endfor -%}
+      {%- endif -%}
     {%- endif -%}
+    {%- assign panel_flavour = flavour_line -%}
   {%- endif -%}
 {%- endif -%}
 {%- assign panel_slug_list = panel_slugs | split: '|' -%}

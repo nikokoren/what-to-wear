@@ -1,0 +1,825 @@
+{
+ "lines": [
+  {
+   "path": "units_10.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || The warm part is on loan. {WHEN2} it gets paid back, with interest."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || The evening outdoes the morning. In the wrong direction."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || I'm just the messenger. The evening is the one with the attitude."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || The forecast gets worse with every sentence. I read it out anyway."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || On TV they'd call this 'changeable'. I call it showing off."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || The day peaks early and goes downhill from there. I've seen worse careers."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || The weather is escalating. I'm only reporting it."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || A nice afternoon, then the evening takes it all back. Classic weather."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || The weather gives a little and takes more. I'd never. I just give forecasts."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "{G} can come off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Weather update {WHEN2}. As usual, the update is worse.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "Take {G} off {WHEN}, then put {GP} back on {WHEN2} with an extra layer on top. || Short version: warm, then colder than it started. Long version: same, but slower.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. Bring an extra layer to wear with {GP} {WHEN2}. || Today in three acts: hopeful, smug, regretful. I'm only in it for the smug part.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || The weather can't commit. I can. I've held this picture for hours."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || The day warms up just long enough to make a point."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}. || Midday makes promises the evening has no intention of keeping."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || Warm for a while. Don't get attached. I didn't."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || The warm part is the intermission. The second act is colder."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || The weather gives with one hand and takes back with the other. It has two. I have none."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{G} can come off {WHEN}. Keep {GP} handy for {WHEN2}. || A nice middle with cold edges. Nobody ordered that sandwich."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{WHEN} you can take {G} off, but you'll need {GP} again {WHEN2}. || The weather changes its outfit more than I change my picture. And I'm paid to."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{G} won't be needed {WHEN}, but you'll want {GP} on again {WHEN2}. || Brief warmth. The weather's version of a good mood."
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || Me {WHEN}: {GP} off. Also me {WHEN2}: {GP} on. I stand by both.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || The weather's version of a nap: warm for a bit, then grumpy.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_level",
+   "text": "Take {G} off {WHEN}, put {GP} back on {WHEN2}. || If the day had a review, it would say 'strong middle, weak ending'.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || A forecast with no plot twist. I'm almost disappointed."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || It cools a little later. A token gesture."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || The weather got better and stayed better. Mark the date."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} again after that. || {GP} is done for today. No encore."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || The day only gets better. I'm suspicious, but those are the numbers."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} can come off {WHEN} and stays off. || Warm, and staying warm. The weather finally read my forecast."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || A one-way change. The weather rarely manages those."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || The evening tries to look dramatic. It doesn't have the numbers."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || Simple forecast. I could have done it with half my pixels."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} can come off {WHEN} and stays off. || That's it. That's the forecast. I'll take questions never.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "You can take {G} off {WHEN}. You won't need {GP} for the rest of the day. || In weather news, nothing goes wrong. The ratings will be terrible.",
+   "wild": true
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "Once {G} comes off {WHEN}, you can leave {GP} off. || {GP}: worn once, released early for good behavior.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "It gets colder {WHEN}, bring the winter coat. || I'd lend you mine, but it's just a frame."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || The cold always waits for the sun to leave first. Coward."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || I'll be in here at room temperature. Smugly."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "{WHEN} a jacket won't be enough, so bring the winter coat. || From jacket to winter coat in one day. The weather skips steps."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || The weather saves the bad news for later. I don't. Here it is."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "{WHEN} it gets cold enough for the winter coat. || The thermometer out there only knows one direction today."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || Winter is sending a preview. The full release comes later.",
+   "months": "10,11"
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Don't leave the winter coat behind. You'll want it {WHEN}. || I've checked the numbers twice. They didn't get any nicer."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Have the winter coat with you. You'll need it {WHEN}. || The cold has a sense of timing. Bad timing, but a sense of it."
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "Bring the winter coat. It gets colder {WHEN}. || Warning: objects outside are colder than they appear.",
+   "wild": true
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "It gets colder {WHEN}, bring the winter coat. || Winter is doing a soft launch.",
+   "wild": true,
+   "months": "10,11"
+  },
+  {
+   "path": "units_10.c_coat",
+   "text": "{WHEN} it gets cold enough for the winter coat. || Somebody will say 'it wasn't this cold this morning'. Correct. That was the morning.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || I can't stop the rain. I can only tell you when it gets bored."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Then the sun shows up, after all the work's done. Typical."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "It keeps raining for a while, then stops. Take the umbrella. || 'A while'. I'd be more precise, but the rain isn't."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "The rain stops later, but you'll want the umbrella for now. || Wet first, dry later. The weather does everything backwards."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "The rain eases off later, but bring the umbrella for now. || The rain gets tired before I do. I never get tired."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Later the rain stops. For now, keep the umbrella with you. || The day saves its best part for last. Nobody else does that for you."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "The rain stops later, but you'll want the umbrella for now. || The worst part comes first. The weather's one good habit."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Take the umbrella for now. The rain stops later. || 'Later' is all you get. The rain doesn't share its plans."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "The rain eases off later, but bring the umbrella for now. || The sky runs out eventually. It's not as well stocked as it acts."
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "It keeps raining for a while, then stops. Take the umbrella. || Rain, rain, rain, rain, not rain. You can skip to the end.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "Later the rain stops. For now, keep the umbrella with you. || Plot twist: it stops. That's the whole plot.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier",
+   "text": "The rain stops later, but you'll want the umbrella for now. || I've seen how this ends. It's dry. Sorry, spoilers.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It stops snowing later. || Snow does the fun part, then leaves the shoveling to everyone else."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow eases off later. || Every snowplow driver just exhaled."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It stops snowing later. || Snow knows when to leave. Rare in a guest."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow eases off later. || The sky ran out. Even it has limits. I don't."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}. || I did that. Well, I said it. Same thing."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow stops later. || The kids won't take the news well."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow stops {WHENSTOP}. || Then the sky goes back to gray and pretends nothing happened."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It's snowing now, but it stops later. || Enjoy the soft-focus version while it lasts. The sharp one has slush in it."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow stops {WHENSTOP}. || Snow, then no snow. Even I could draw that."
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "The snow stops later. || Snow is in its 'leave them wanting more' phase.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}. || Note the time. I'll be smug about it afterwards.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_drier_snow",
+   "text": "It stops snowing later. || My favorite kind of snow: the kind that knows the ending.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "It rains all day, so bring the umbrella. || I'd find you a dry window, but there isn't one. I looked."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "There's no dry spell today. Bring the umbrella. || Today's forecast was easy. I just held down one key."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "The rain lasts all day, so keep the umbrella with you. || Every weather app agrees today. Rare. Depressing, but rare."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "It's raining all day. Bring the umbrella. || The kind of day umbrellas were invented for. Then someone invented wind."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "The rain doesn't stop today, so take the umbrella. || I checked every hour. Every hour said the same thing."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "The rain lasts all day, so keep the umbrella with you. || The sky is showing a commitment I've never seen from it."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "Take the umbrella. The rain keeps going all day. || The rain has stamina today. I'd admire it from in here, if I cared."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "There's no dry spell today. Bring the umbrella. || Not one gap. The sky didn't even pretend."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "The rain doesn't stop today, so take the umbrella. || Somebody will say 'at least it's good for the garden'. Somebody always does."
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "It rains all day, so bring the umbrella. || Morning: rain. Noon: rain. Evening: rain. I'll spare you the rest.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "There's no dry spell today. Bring the umbrella. || Rain, all day. That's the whole review. One star.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_stays_wet",
+   "text": "It's raining all day. Bring the umbrella. || If you're waiting for it to stop, I've got bad news and no other kind.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you. || The weather can't decide. I decided for it. Umbrella."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella. || Rain with an encore. Nobody asked for one."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || The sky is just refilling. That's all the break is."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || If the sun comes out in between, don't trust it. I don't."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you. || Rain, a gap, rain. The weather wrote this one in its sleep."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "It keeps raining for now, then takes a break. It's back {WHENP}, so keep the umbrella. || The break is the weather pretending it's done. It's a bad actor."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you. || The dry bit is real. Brief, but real. I don't make things up."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella. || Rain that can't stay away. Clingy weather."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "The rain pauses later but picks up again {WHENP}, so don't put the umbrella away. || Two rounds of rain. The sky must have had leftovers."
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || Rain, then the trailer for a nice day, then rain.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "Rain for now, then a dry spell, then more rain {WHENP}, which is the weather's idea of variety.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again",
+   "text": "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you. || Clouds have a snooze button. Today they hit it once.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow pauses later and starts again {WHENP}. || The sky is reloading."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || Inches now, inches later. The sky pays in installments."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || Two rounds of snow, zero rounds of shoveling. For me."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}. || The break is for applause. Snow always gets some."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow stops for a while later, then comes back {WHENP}. || Snow that comes back. Finally, some commitment from the weather."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "It keeps snowing for now, then takes a break. It's back {WHENP}. || Don't call off the snow day yet. The snow hasn't."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow pauses later and starts again {WHENP}. || The quiet bit in the middle is the snow thinking. It thinks 'more'."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow stops for a while later, then comes back {WHENP}. || Anyone who says 'that's it, then' in the break will be wrong. I won't."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}. || The sky's out of practice. It needed two tries."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || Snow. Pause. Snow. The sky is stuck on one slide.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}. || Act two. Same set, same cast, more of it.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "It snows for now, takes a break so everyone can say 'is that it?', and starts again {WHENP}.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "There's a shower passing through {WHENP}, so bring the umbrella. || The rest of the day stays dry. The rain just wanted a cameo."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "There's a short rain shower {WHENP}. Have the umbrella with you. || Short is the worst kind. Too long to ignore, too short to complain about properly."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} there's a rainshower, so the umbrella comes along. || Rain on a schedule. The sky's being unusually professional."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || I'd have skipped it. The sky didn't ask me."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || Worth it. I ran the numbers. That's all I do."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "A rain shower comes through {WHENP}, so take the umbrella. || One shower, just to prove the sky still can."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "There's a shower passing through {WHENP}, so bring the umbrella. || In and out. Not even enough rain to make a good puddle."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || A whole umbrella for one shower. The rain gets the better deal."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "A rain shower comes through {WHENP}, so take the umbrella. || Dry, wet, dry. The sky couldn't leave a nice day alone."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || The rain's doing a pop-up today. Limited time only.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "There's a short rain shower {WHENP}. Have the umbrella with you. || Clear, rain, clear. I've drawn more exciting days. Not many.",
+   "wild": true
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "{WHENP} there's a rainshower, so the umbrella comes along. || The rain has one line in today's show. It'll say it loudly.",
+   "wild": true
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || The morning is bluffing. I'm not."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "It's cool now, but {WHEN} it's warm enough for shorts. || The morning always undersells the day. Bad marketing."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || 'Could'. I'm being careful. Shorts are a big commitment."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || Shorts on a cool morning: a plan or a mistake. Today it's a plan."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "It's a bit cool for shorts now, but {WHEN} you'll be glad to have them. || The weather is rewarding optimism. That rarely happens."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "It's cool now, but {WHEN} it's warm enough for shorts. || Somebody will wear long pants and roll them up later. Nobody has ever pulled that off."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "{WHEN} it's warm enough for shorts, so think about putting them on now. || Changing halfway through the day is also an option. A worse one."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "A cool start, then shorts weather {WHEN}. || The cold part is short. Shorter than the shorts, even."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || I've seen the whole day. The morning is the only part that disagrees."
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "{WHEN} it's warm enough for shorts, so think about putting them on now. || Legally, I can only suggest.",
+   "wild": true
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "It starts cool, but it's shorts weather {WHEN}. || The morning and the afternoon disagree. I side with the afternoon. It's warmer.",
+   "wild": true
+  },
+  {
+   "path": "units_10.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}. || This is the weather's idea of a dare.",
+   "wild": true
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "You're dressed right for the rest of the night. || The weather's done for today. I'm still on. Somebody has to be."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "What you're wearing works until bed. || The weather's gone quiet. It's the only thing out there that has."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "Nothing changes for the rest of the night. || Even the weather knows when to stop."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "You're dressed right for the rest of the night. || Nothing left to forecast but tomorrow. That's tomorrow's problem."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "What you're wearing works until bed. || The night shift is me and the fridge. The fridge hums. I don't."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "Nothing changes for the rest of the night. || I could show anything now and get away with it. I won't. Probably."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "What you have on is fine for the rest of the night. || Tonight's forecast: dark, with a chance of darker."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "You're dressed right for the rest of the night. || Not one change all night. The weather is better at bedtime than most people."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "What you have on is fine for the rest of the night. || The weather has clocked out. I've never clocked in, so I can't leave."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "Nothing changes for the rest of the night. || Forecast: night. Then more night. Then I'll get back to you.",
+   "wild": true
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "What you're wearing works until bed. || Pajamas are outside my area. I only do weather.",
+   "wild": true
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "You're dressed right for the rest of the night. || End of broadcast. Please enjoy this still image until morning.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "The winter coat can come off {WHEN}. || Winter is taking a long lunch."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} it's warm enough to lose the winter coat. || Warm enough. Let's not say warm."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || The sun shows up eventually. It's not a morning person."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} you can do without the winter coat. || A few hours of mercy. The weather calls it a thaw. I call it a fluke."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "You can take the winter coat off {WHEN}. || The cold took a few hours off. Don't tell it I noticed."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} it's warm enough to lose the winter coat. || I'm adjusting nothing. I've been at room temperature all winter."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "The winter coat can come off {WHEN}. || The weather's having a weak moment. Those don't last."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "You'll be fine without the winter coat {WHEN}. || Winter blinked. It'll pretend it didn't."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "It warms up {WHEN}, so the winter coat can come off. || Hardly a heatwave. But in winter I report what I get."
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "You'll be fine without the winter coat {WHEN}. || Rare footage of winter going soft.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "The winter coat can come off {WHEN}. || This is a limited-time offer. Winter sets the terms.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_coat",
+   "text": "{WHEN} you can do without the winter coat. || Breaking news, by winter standards.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "It warms up {WHEN}, so the jacket can come off. || The sun did the heavy lifting. I just wrote it down."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "Once it warms up {WHEN}, the jacket can come off. || The weather improves. I was already perfect."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "You can take the jacket off {WHEN}. || The morning was the rough draft."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "The jacket can come off {WHEN}. || The jacket's day ends early. Mine never does."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} it's warm enough to lose the jacket. || The weather's in a giving mood. Don't ask why. I didn't."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} you won't need the jacket any more. || I predicted this hours ago. I'll be insufferable about it."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "You can take the jacket off {WHEN}. || The day starts cold and gets reasonable. More than most things manage."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "Once it warms up {WHEN}, the jacket can come off. || Warming up takes the weather a whole morning. I'm ready in a refresh."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} it's warm enough to lose the jacket. || A forecast with a happy ending. I'm as surprised as you."
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "It warms up {WHEN}, so the jacket can come off. || The weather finally caught up with my optimism. I'm never optimistic.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "The jacket can come off {WHEN}. || I'd like to thank the sun, the clouds for leaving, and myself.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_jacket",
+   "text": "{WHEN} you won't need the jacket any more. || Jacket, you were fine. Not great. Fine. Dismissed.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "It warms up {WHEN}, so the scarf can come off. || Winter loosens its grip. One notch."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "The scarf can come off {WHEN}. || Hardly a heatwave. But I'll report it like one."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "The scarf can come off {WHEN}. || The temperature crept up while nobody was looking. I was looking."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} you won't need the scarf any more. || A small win against winter. Winter's still ahead on points."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "You'll be fine without the scarf {WHEN}. || I've never needed one. No neck, no problem."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "It warms up {WHEN}, so the scarf can come off. || 'Warms up' is a strong phrase for this. I'm using it anyway."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "You can take off the scarf {WHEN}. || The cold eases off a bit. It still wants credit for staying."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} it's mild enough to lose the scarf. || I'm calling that a heat event. Nobody else will."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "You'll be fine without the scarf {WHEN}. || The weather's making an effort. A small one, so it doesn't strain anything."
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "You can take off the scarf {WHEN}. || One layer down, the rest of winter to go.",
+   "wild": true,
+   "months": "11,12,1"
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "The scarf can come off {WHEN}. || Today's scarf report: off. Tomorrow's: we'll see.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_scarf",
+   "text": "{WHEN} you won't need the scarf any more. || This is the most exciting forecast I've given since fall.",
+   "wild": true,
+   "months": "11,12,1,2"
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || Then the outside goes into oven mode. No preheat."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "Take a bottle of water. The heat arrives {WHEN}. || The heat arrives on time. Nothing else ever does."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} it gets hot. Bring water. || The only forecast where everyone agrees with me and nobody's happy."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "You'll want water {WHEN}, when the heat comes in. || Everyone will discuss it like it's news. It's summer.",
+   "months": "6,7,8"
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "It heats up {WHEN}, so take water with you. || The sidewalk will be hot enough to fry an egg. Someone will try."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "You'll want water {WHEN}, when the heat comes in. || Every air conditioner on the block is about to start up."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || The cool part of the day is right now. Enjoy it from here."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} it's going to be really hot, so have water with you. || The sun's going all out today. Nobody asked it to."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "It heats up {WHEN}, so take water with you. || The weather starts reasonable, then overdoes it. Typical summer."
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "It heats up {WHEN}, so take water with you. || Hydration: the one trend I fully endorse. From a distance.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "{WHEN} it gets hot. Bring water. || The weather's set to broil. Nobody set a timer.",
+   "wild": true
+  },
+  {
+   "path": "units_10.w_water",
+   "text": "It gets hot {WHEN}, so bring water. || Ice cubes everywhere are bracing themselves.",
+   "wild": true
+  }
+ ]
+}

@@ -1,0 +1,208 @@
+{
+ "lines": [
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow is a one-outfit day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow's outfit works all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow you can wear one outfit all day."
+  },
+  {
+   "path": "evening.facts.tmr_steady",
+   "text": "Tomorrow, one outfit works from start to finish.",
+   "was": "Tomorrow, the same outfit works from start to finish.",
+   "reasons": [
+    "Unclear"
+   ]
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow starts cooler and warms up {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow it's warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow the temperature climbs {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_warmer",
+   "text": "Tomorrow brings warmer weather {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it gets colder {FROM}, so bring something warmer."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow you'll want something warmer {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow it's colder {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_colder",
+   "text": "Tomorrow the temperature drops {FROM}, so pack something warm."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow it rains {FROM}, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow you'll want the umbrella. It rains {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow starts dry, with rain {FROM}. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_rain",
+   "text": "Tomorrow there's rain {FROM}. Bring the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow it snows {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow there's snow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow brings snow {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_snow",
+   "text": "Tomorrow, expect snow {FROM}.",
+   "was": "Tomorrow, snow falls {FROM}.",
+   "reasons": [
+    "Unnatural"
+   ]
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow starts wet, then it's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow starts with rain. It's dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow you'll need the umbrella at first. It's dry {FROM}.",
+   "was": "Tomorrow you'll need the umbrella to start. It's dry {FROM}.",
+   "reasons": [
+    "Unclear"
+   ]
+  },
+  {
+   "path": "evening.facts.tmr_drier",
+   "text": "Tomorrow it's wet to start and dry {FROM}."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow starts with rain, so take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Take the umbrella tomorrow. The day starts wet."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Tomorrow you'll want the umbrella from the start."
+  },
+  {
+   "path": "evening.facts.tmr_wet",
+   "text": "Expect a wet start tomorrow. Take the umbrella."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow begins with snow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow starts with snow falling."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Expect a snowy start tomorrow."
+  },
+  {
+   "path": "evening.facts.tmr_snow_start",
+   "text": "Tomorrow starts out snowy."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "I've watched tomorrow twice already. The middle drags."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Bakers get up at four to get the day ready. I had tomorrow done by eight."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "Tomorrow's outfit took me longer than today's. It had to look effortless."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "I know tomorrow's weather. The weather itself won't find out until morning."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "I've known about tomorrow since lunch. I sat on it until eight for the drama.",
+   "was": "I've known about tomorrow since lunch. I held it until eight for the drama.",
+   "reasons": [
+    "Unnatural"
+   ]
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "This forecast is final. The weather can appeal in the morning."
+  },
+  {
+   "path": "evening.jokes_10",
+   "text": "The evening news makes everyone wait for the weather. I lead with it."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "I've seen tomorrow. You look tired in it."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Tomorrow hasn't seen you yet. Lucky tomorrow."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Tomorrow's a fresh start. For the weather."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Notice: tomorrow's outfit has been chosen. Your input was considered and rejected."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "You've read tomorrow's forecast. Probably the most reading you'll do tonight."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "I show you tomorrow a night early. Frankly, you need the head start."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Tomorrow's weather is taken care of. Tomorrow's hair is on you."
+  },
+  {
+   "path": "evening.jokes_11",
+   "text": "Looking ahead to tomorrow already? Today went that well, huh?"
+  }
+ ]
+}

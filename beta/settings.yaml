@@ -1,0 +1,174 @@
+# TRMNL form fields for the redesign: the whole form, to paste into the
+# beta fork now and to replace config/settings.yaml when the redesign
+# ships. TRMNL is still edited by hand. The owner's spec (October 2026,
+# docs/TODO.md item 12): Language, Do you run cold or warm?, Forecast,
+# What to Wear Next?, Sarcasm, in that order, with these labels.
+# Relabelled November 2026 (owner, after the new-user review): Forecast is
+# "Written forecast", What to Wear Next? says "(outfit drawings)", no
+# "(New!)" (it means nothing to a new install), and Sarcasm says what each
+# level does. "When do you head out?" is new (the evening preview of
+# tomorrow, docs/TODO.md): ship it only together with that screen, since
+# on its own it changes nothing.
+#
+# What changed from settings.yaml, and why no saved value moves:
+#
+#   show_future_suggestions  Same key, now on/off (boolean: true/false).
+#                            Saved "Yes"/"No" still work: the markup reads
+#                            no/false/0 as off and anything else as on, and
+#                            no longer uses `default:` for this field (it
+#                            would turn a saved false into "yes"). Check in
+#                            the beta: how does the on/off field show a
+#                            saved "No"? If it shows it as on, a user who
+#                            then saves the form switches the forecast on;
+#                            then this stays a select with "Yes"/"No".
+#   what_to_wear_next        New, on/off, default ON for new installs
+#                            (owner, November 2026: the drawings are what
+#                            makes v2 worth a second look). Installs that
+#                            never saved it keep no drawings: the markup
+#                            reads no value as off. They get the ticked
+#                            box only if they open the form and save. The drawings (it was
+#                            Visual Forecast, a third Forecast value,
+#                            "visual", in the first beta; a fork with that
+#                            saved still gets the drawings without words).
+#                            Both switches can be on: drawings and words.
+#   sarcasm_level            Same key and values, default On (owner,
+#                            November 2026; the beta had Off). Saved values
+#                            stay; installs with none keep On, as before
+#                            (the markup's fallback), so form and markup
+#                            now agree. It works in
+#                            every mode now, the outfit alone included, so
+#                            nothing hides it any more.
+#   topical_lines            Gone: jokes about current events come with
+#                            sarcasm when they're picked up again (they are
+#                            parked, docs/TODO.md item 8; until then the
+#                            markup shows none, as it does with no value).
+#   temp_preference, language  Same keys, values and defaults; new labels.
+#   latitude, longitude      Same keys, in a collapsed group.
+#
+# The on/off fields are `optional: true`: a required checkbox can't be
+# saved unticked.
+#
+# German: the field names have no German version in TRMNL's form (only
+# description-de); the Language hint is help_text in English and
+# description-de in German.
+#
+# Adding a language means adding an option to the `language` field below
+# AND shipping lang/<code>.json. See docs/TRANSLATING.md.
+- keyname: author_bio
+  field_type: author_bio
+  name: About this plugin
+  # The 2.0 entry is in, in both languages (beta is filled in by
+  # tools/build_release.py; the beta shows "beta"). Still missing before
+  # shipping: a contact method, in both languages. The Language field's
+  # hint sends people here to offer translations.
+  description: "Getting out the door has never been this easy!<br>Your TRMNL reads your local weather forecast and tells you exactly what to wear, now and as the day changes.<br>Read it as a short forecast, see it as outfit drawings with What to Wear Next?, or both. Tell it whether you run cold or warm, and choose how much sarcasm you can take: off, on, or eleven.<br>Comes with 30+ hand-drawn outfits, including festive themes that unlock throughout the year.<br>Install (don't Fork!) to automatically receive new outfits and updates.<br><br>v2.0.0 – beta
+New: What to Wear Next? shows your day as outfit drawings with their times, easy to take in at a glance and great for kids who can't read yet. New: Do you run cold or warm? shifts when each piece of clothing gets suggested. The sarcasm is rethought: a plain forecast line, then a reply to it, in English from your TRMNL itself and in German from a grumpy Grantler, changing every hour. Smarter about wild weather: big temperature swings, cold fronts, dangerous heat, freezing rain and thunderstorms. Rebuilt for every TRMNL layout, including the X.<br>v1.2.0 – 2026-09-03
+New light jacket outfit for the gap between hoodie and puffer, plus an extra cold band so freezing and properly freezing finally look different. Future hints now name the layer you're actually wearing and add the timing, so you know when the jacket comes off or the sweatshirt goes back on. All three tones rewritten: neutral got warmer, sarcastic got more range, and eleven got a narrator who makes it personal.<br>v1.1.0 – 2026-01-23 What to Wear now speaks Deutsch. Added German future outfit suggestions and expanded the English text library with more variety across future weather conditions and sarcasm levels.<br> <br>v1.0.1 - 2025-11-26 Time is now calculated based on coordinates, not local time of device. Dedicated to everyone using TRMNL to dissociate into a sunny mini-vacation."
+  category: "life,environment"
+  description-de: "Noch nie war es so einfach, aus dem Haus zu gehen!<br>Dein TRMNL liest die lokale Wettervorhersage und sagt dir genau, was du anziehen solltest, jetzt und wenn sich der Tag ändert.<br>Lies es als kurze Vorhersage, sieh es mit What to Wear Next? als Outfit-Zeichnungen, oder beides. Sag ihm, ob du eher frierst oder schnell schwitzt, und wähl, wie viel Sarkasmus du verträgst: aus, an oder elf.<br>Mit über 30 handgezeichneten Outfits, darunter festliche Designs, die im Laufe des Jahres freigeschaltet werden.<br>Installieren (nicht forken!), um zukünftig neue Outfits und Updates zu erhalten.<br><br>v2.0.0 – beta
+Neu: What to Wear Next? zeigt deinen Tag als Outfit-Zeichnungen mit Uhrzeiten, auf einen Blick und auch für Kinder, die noch nicht lesen können. Neu: „Do you run cold or warm?“ verschiebt, ab wann welches Kleidungsstück vorgeschlagen wird. Der Sarkasmus ist neu gedacht: eine sachliche Vorhersage und darunter eine Antwort darauf, auf Deutsch vom Grantler, jede Stunde neu. Schlauer bei wildem Wetter: große Temperatursprünge, Kaltfronten, gefährliche Hitze, Glatteis und Gewitter. Neu gebaut für jedes TRMNL-Layout, auch für das X.<br><br>v1.1.0 – 2026-01-23
+What to Wear spricht jetzt Deutsch. Deutsche Hinweise für zukünftige Outfits wurden ergänzt und die englische Textbibliothek um mehr Varianten für unterschiedliche Wetterverläufe und Sarkasmus-Stufen erweitert. <br><br>v1.0.1 – 26.11.2025 Die Zeit wird nun anhand von Koordinaten berechnet und nicht mehr anhand der Ortszeit des Geräts. Gewidmet allen, die TRMNL nutzen, um sich in einen sonnigen Kurzurlaub zu versetzen."
+- keyname: lat_lon
+  field_type: lat_lon
+  name: Location
+  description: Search for a city or postal code, or provide a comma-separated lat/long.
+  description-de: "Suche nach Stadt oder Postleitzahl, oder gib Breiten- und Längengrad durch Komma getrennt ein."
+  # Deliberately NOT optional: see the note in config/settings.yaml.
+- keyname: location_label
+  field_type: string
+  name: Location name
+  description: Optional. Name will be shown in the bottom bar
+  optional: true
+  description-de: "Optional. Name wird in der Fußleiste angezeigt"
+- keyname: language
+  field_type: select
+  name: Language
+  help_text: "Don't see your preferred language and want to help me translate? Reach out via the contact method linked in the about section above."
+  description-de: "Deine Sprache fehlt und du würdest beim Übersetzen helfen? Melde dich über den Kontakt, der oben unter „About this plugin“ verlinkt ist."
+  default: "en"
+  options:
+  - English: "en"
+  - German: "de"
+- keyname: temp_preference
+  field_type: select
+  name: Do you run cold or warm?
+  description: "Adjust clothing suggestions to match how you experience the temperature."
+  description-de: "Passt die Kleidungsvorschläge daran an, wie du Temperaturen empfindest."
+  default: "0"
+  optional: true
+  options:
+  - "I'm always cold": -4
+  - "I feel the cold": -2
+  - "Average": 0
+  - "I run warm": 2
+  - "I'm always hot": 4
+  # Words, not degrees, and one uniform shift: see config/settings.yaml.
+- keyname: head_out_time
+  field_type: select
+  name: When do you head out?
+  description: "Every evening, your TRMNL already shows what to wear tomorrow morning. Everyone's morning starts at a different time, so pick your usual time out the door and the preview shows the outfit for that hour. In the morning itself, the screen always shows what to wear right now."
+  description-de: "Jeden Abend zeigt dein TRMNL schon, was du morgen früh anziehen solltest. Weil jeder zu einer anderen Zeit aus dem Haus geht, wähl hier deine übliche Uhrzeit: Die Vorschau zeigt dann das Outfit für genau diese Zeit. Am Morgen selbst zeigt der Bildschirm wie immer, was du jetzt anziehen solltest."
+  default: "varies"
+  optional: true
+  options:
+  - "It varies": "varies"
+  - "Around 5 am": "5"
+  - "Around 6 am": "6"
+  - "Around 7 am": "7"
+  - "Around 8 am": "8"
+  - "Around 9 am": "9"
+  - "Around 10 am": "10"
+  - "Around 11 am": "11"
+  # "It varies": the preview dresses for the coldest hour between 6 and
+  # 9 am and says when it gets easier (docs/TODO.md, tomorrow).
+- keyname: show_future_suggestions
+  field_type: boolean
+  name: Written forecast
+  description: "Show a written summary of upcoming weather changes and what to wear."
+  description-de: "Vorhersage in Worten: zeigt, welche Wetteränderungen kommen und was du dann anziehen solltest."
+  default: true
+  optional: true
+- keyname: what_to_wear_next
+  field_type: boolean
+  name: What to Wear Next? (outfit drawings)
+  description: "Preview upcoming outfit changes with dressed figurines and the times you'll need them."
+  description-de: "Outfit-Zeichnungen: zeigt mit angezogenen Figuren, welche Outfits heute noch kommen und ab wann du sie brauchst."
+  default: true
+  optional: true
+- keyname: sarcasm_level
+  field_type: select
+  name: Sarcasm
+  description: "Off: just the forecast. On: your TRMNL gets smug about the weather. 11: it gets personal."
+  description-de: "Aus: nur die Vorhersage. An: dein TRMNL grantelt übers Wetter. 11: Es wird persönlich."
+  default: "10"
+  options:
+  - "Off": 0
+  - "On": 10
+  - 11: 11
+- keyname: show_bottom_bar
+  field_type: select
+  name: Title bar
+  description: "Do you want to show or hide the bottom title bar?"
+  default: "on"
+  options:
+  - Show: "on"
+  - Hide: "off"
+  description-de: "Willst du die untere Titelleiste ausblenden oder anzeigen?"
+
+# Superseded by lat_lon and kept, folded away: deleting them is the one
+# step of the location migration that can break a working install. See
+# config/settings.yaml and docs/MIGRATION.md.
+- keyname: latitude
+  field_type: string
+  name: Latitude (legacy)
+  description: "Superseded by Location above. Leave as is."
+  optional: true
+  group: "Old location fields"
+  description-de: "Wird durch das Feld Ort ersetzt. Unverändert lassen."
+- keyname: longitude
+  field_type: string
+  name: Longitude (legacy)
+  description: "Superseded by Location above. Leave as is."
+  optional: true
+  group: "Old location fields"
+  description-de: "Wird durch das Feld Ort ersetzt. Unverändert lassen."

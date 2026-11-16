@@ -1,0 +1,531 @@
+{
+ "lines": [
+  {
+   "path": "units_10.arc_colder",
+   "text": "{WHEN} {G} can come off. {WHEN2} you'll need {GP} again, and something warm on top. || The thermostat argument, now available outdoors."
+  },
+  {
+   "path": "units_10.arc_colder",
+   "text": "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer. || Today takes more packing than most vacations."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} can come off {WHEN}, and you won't need {GP} again today. || Your phone would add 'just in case.' I don't do just in case."
+  },
+  {
+   "path": "units_10.arc_warmer",
+   "text": "{G} comes off {WHEN}. It cools a little later, but you won't need {GP} back. || TV weather people hate days like this. Nothing to point at."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "It's not as hot {WHEN}, but still warm. || The weather's version of an apology. Late, and only half meant."
+  },
+  {
+   "path": "units_10.c_relief",
+   "text": "The heat eases {WHEN}, but it stays warm. || Shade goes from essential to merely popular."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "The snow stops for a while later, then comes back {WHENP}. || It left all its stuff here. Of course it's coming back."
+  },
+  {
+   "path": "units_10.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || The break is for whoever measures snow with a ruler. Every block has one."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "A rain shower comes through {WHENP}, so take the umbrella. || The rain will be gone long before the complaints are."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || The umbrella stays wet longer than it rains. Every time."
+  },
+  {
+   "path": "units_10.p_wetter",
+   "text": "Expect a rain shower {WHENP}. The umbrella's worth taking. || I won't call it a 'band of precipitation.' I have standards."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "What you have on is fine for the rest of the night. || After dark, outfits are graded on a curve.",
+   "was": "What you have on is fine for the rest of the night. || After ten, outfits are graded on a curve.",
+   "reasons": [
+    "Doesn't fit the situation"
+   ]
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "This works for the rest of the night. || My least-read forecast. Also my most accurate."
+  },
+  {
+   "path": "units_10.steady_night",
+   "text": "Nothing changes before morning. || That's the whole bedtime story. No plot, but a happy ending.",
+   "was": "Nothing changes before morning. || That's the whole bedtime story. No plot, happy ending.",
+   "reasons": [
+    "Unnatural"
+   ]
+  },
+  {
+   "path": "units_10.w_hoodie",
+   "text": "The sweater can come off {WHEN}. || Grandmas everywhere will still say to keep it on."
+  },
+  {
+   "path": "units_10.w_hoodie",
+   "text": "{WHEN} it's warm enough for short sleeves, so the sweater can come off. || The short-sleeve optimists finally look reasonable."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}. || Until then, the umbrella's the most interesting thing about you."
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "It keeps raining for a while, then stops. Take the umbrella. || Once it stops, you'll need a new excuse for looking like that.",
+   "was": "It keeps raining for a while, then stops. Take the umbrella. || After that, you'll need a new excuse for looking like that.",
+   "reasons": [
+    "Unnatural"
+   ]
+  },
+  {
+   "path": "units_11.p_drier",
+   "text": "The rain stops later, but bring the umbrella for now. || The rain has a schedule. Nice to see someone in here with a plan."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow stops later. || Snow covers up everything ugly. Shame it stops before it gets to you."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow stops later. || The snow quits while it's ahead. You never got ahead."
+  },
+  {
+   "path": "units_11.p_drier_snow",
+   "text": "The snow stops {WHENSTOP}. || That's when you'll go out and tell everyone you braved it."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "Take the umbrella. The rain keeps going all day. || The sky's not crying about you. Don't flatter yourself."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It rains all day, so bring the umbrella. || The umbrella goes with any outfit. Even yours."
+  },
+  {
+   "path": "units_11.p_stays_wet",
+   "text": "It's raining all day. Bring the umbrella. || Gray and sulking all day. Finally, you've got competition.",
+   "was": "It's raining all day. Bring the umbrella. || Gray and sulking all day. Finally, someone gives you competition.",
+   "reasons": [
+    "Unnatural"
+   ]
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}. || The snow gets an encore. Nobody's ever asked you for one."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "It snows for now, takes a break, and starts again {WHENP}. || The snow gets a break. You don't get one from me."
+  },
+  {
+   "path": "units_11.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}. || Two snowfalls, one facial expression. You're very consistent."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "A rain shower comes through {WHENP}, so take the umbrella. || The rain won't stay long. It's seen you."
+  },
+  {
+   "path": "units_11.p_wetter",
+   "text": "Bring the umbrella. There's a shower {WHENP}. || It shows up, does its job, and leaves. Ever tried that?"
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "It starts raining {WHENP} and keeps going, so bring the umbrella. || It'll outlast your good mood. Low bar."
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || In the movies, getting soaked in the rain looks romantic. You're not in a movie.",
+   "was": "The rain starts {WHENP} and doesn't stop. Bring the umbrella. || In films, getting soaked in the rain looks romantic. You're not in a film.",
+   "reasons": [
+    "Not US English"
+   ]
+  },
+  {
+   "path": "units_11.p_wetter_long",
+   "text": "Rain arrives {WHENP} and stays, so take the umbrella. || By the end of it, you'll look like patio furniture."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "The winter coat can come off {WHEN}. || Shame. That coat was doing a lot for you."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "You can take the winter coat off {WHEN}. || The coat finally gets a break from you. Lucky coat."
+  },
+  {
+   "path": "units_11.w_coat",
+   "text": "{WHEN} you can do without the winter coat. || Without it, you'll have to explain the waddle some other way."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Lots of windmill arms out there today. Nobody's waving."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Every parked car comes gift-wrapped today. In ice."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "It's luggage now. Later it's the best idea I've had."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Right now it looks pointless. People said the same about me once."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Everyone in shorts right now has a very educational day ahead."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Shorts would be great for now. I plan whole days."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I lose a lot of popularity contests on days like this.",
+   "was": "I lose a lot of popularity contests on mornings like this.",
+   "reasons": [
+    "Doesn't fit the situation"
+   ]
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Long pants don't come off halfway through the day. Not in public, anyway."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Shorts while it's still cold: a small act of faith. In me.",
+   "was": "Shorts on a cold morning: a small act of faith. In me.",
+   "reasons": [
+    "Doesn't fit the situation"
+   ]
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Thunder sets off half the car alarms on the block. I don't even flicker."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Every storm, someone finds the flashlight. Never the batteries."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Someone will say 'that one was close.' They'll say it about every one."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star Wars Day: the one day people are nice to droids. I'll take it."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Happy Star Wars Day. I don't need the Force. I have Wi-Fi."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Nobody knows the words to 'Auld Lang Syne.' I know the forecast."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Happy New Year. Nothing's open and nobody's up. The weather and I came to work anyway."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "Later, you'll be the best-dressed person on the street. Enjoy it. It won't happen again."
+  },
+  {
+   "path": "flavour_11.pants",
+   "text": "You'd call it shorts weather. You also call yourself a morning person."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Stay in the shade. It's flattering, and frankly, you could use it."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Treat drinking water like a job. Just not like your actual one."
+  },
+  {
+   "path": "flavour_11.scorch",
+   "text": "Heat like this makes people slow and cranky. On you, nobody will notice."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Thunder: the one thing that gets you to look up from your phone."
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "Finally, something in the neighborhood louder than you."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. You're the only person who actually likes Peeps, aren't you?"
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Today a six-foot rabbit counts as normal. You still don't."
+  },
+  {
+   "path": "flavour_11.theme_easter",
+   "text": "Happy Easter. Fluffy, a bit round, overfed on candy. I mean the bunny. Mostly."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Twelve months to become a new person. Maybe start with the haircut."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. You'll call last year 'wild.' I was there. It wasn't."
+  },
+  {
+   "path": "flavour_11.theme_ny",
+   "text": "Happy New Year. Did you make it to midnight this time? Don't answer. I know."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. Even the lawn skeletons have better posture than you."
+  },
+  {
+   "path": "flavour_11.theme_spooky",
+   "text": "Happy Halloween. You've been doing the zombie walk all year. Today it counts."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. Santa checked his list twice. You didn't come up either time."
+  },
+  {
+   "path": "flavour_11.theme_xmas",
+   "text": "Merry Christmas. You'll say 'you shouldn't have.' This time you'll mean it."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "People will drive like it's their first snow. Every year, it's their first snow."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "TV reporters will stand in it and point at it. I cover snow from indoors, like a professional."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Snow, and nobody even had to shake me. Take that, snow globes."
+  },
+  {
+   "path": "flavour_vf_10.snow",
+   "text": "Somewhere a school superintendent is about to be loved or hated. No in between."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Every coffee out there is a hand warmer first and a drink second."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Every store door will have someone standing just inside it, thawing."
+  },
+  {
+   "path": "flavour_vf_10.cold",
+   "text": "Today's weather has all the warmth of an automated phone line."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The day is generous at first. Then it remembers what month it is.",
+   "months": "10,11,12,1,2,3,4"
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "The chilly part comes later. Like the bill."
+  },
+  {
+   "path": "flavour_vf_10.cooling",
+   "text": "Every 'I'll be fine' said at first gets a second opinion later."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "Today runs like a hotel shower: cold, then perfect, then cold again."
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "It warms up just long enough for someone to say 'see, it's nice out.'"
+  },
+  {
+   "path": "flavour_vf_10.fickle",
+   "text": "The warmth drops by for a bit and doesn't even take its coat off."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "Later the day gets better without a single software update. Show-off."
+  },
+  {
+   "path": "flavour_vf_10.warming",
+   "text": "The weather improves later. It's the only thing today that will."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The five-dollar umbrellas by the register are back. Built to survive one rain."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "Every windshield wiper in town will be set one speed wrong."
+  },
+  {
+   "path": "flavour_vf_10.wet",
+   "text": "The runners will run in it anyway. Then they'll tell everyone."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later the day gets nice. Way out of your league."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later you'll feel great. Don't worry, it won't show."
+  },
+  {
+   "path": "flavour_vf_11.warming",
+   "text": "Later the layer comes off. It deserves a break from holding you together."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "You'll hold the umbrella like you're the main character. You're an extra."
+  },
+  {
+   "path": "flavour_vf_11.wet",
+   "text": "If the rain ruins your look, I'll need proof there was one."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Later it cools off. Every outdoor table in town will clear like a fire drill."
+  },
+  {
+   "path": "alone_10.cooling",
+   "text": "Later it cools off. Outdoor plans move indoors. I've been an indoor plan for years."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Warm, then cool again. The weather's going back to its ex."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Warm, then cool again. Iced coffee first, hot coffee later. The coffee shop wins both rounds."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Warm, then cool again. The weather's playing hard to get. I'm just easy to read."
+  },
+  {
+   "path": "alone_10.fickle",
+   "text": "Today's weather, one star: 'Started warm, ended cold. Would not book again.'",
+   "wild": true
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "Later it warms up. Whoever said 'it'll warm up' will be unbearable."
+  },
+  {
+   "path": "alone_10.warming",
+   "text": "Later it warms up. The joggers will look a little less like they're being punished."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Everyone owns five umbrellas. They're all somewhere else."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "I'm the only screen nobody will have to wipe today."
+  },
+  {
+   "path": "alone_10.wet",
+   "text": "Every dog that hates baths is about to get one anyway."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "A cool, plain day. Finally, something on your level."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Cool out. Walk fast and you might look important. Might."
+  },
+  {
+   "path": "alone_11.cool",
+   "text": "Cool air is supposed to wake you up. It's been trying for years."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Later it cools off. You'll hunch up and lose two inches. You didn't have them to spare."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Later it cools off. Don't count on anyone lending you something warm."
+  },
+  {
+   "path": "alone_11.cooling",
+   "text": "Later it cools off. You'll go quiet from the cold. People may call it an improvement."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Warm, then cool again. A tough day for good outfits. You're safe."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Warm, then cool again. At least something in your life is unpredictable."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Warm, then cool again. Today the weather asks more of you than anyone has in months."
+  },
+  {
+   "path": "alone_11.fickle",
+   "text": "Today's dress code changes halfway. You'll be in violation both times.",
+   "wild": true
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "A T-shirt day. Wear the one without the stain. If you have one."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "A perfect day. You'll take a photo of the sky and send it to nobody."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "A gorgeous day. It clearly made an effort. Your turn."
+  },
+  {
+   "path": "alone_11.nice",
+   "text": "A T-shirt day. Strangers will smile at you. It's the weather, not you."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later it warms up. You'll survive the cold start and talk like you climbed a mountain."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later it warms up. You might even smile. Warn people first."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later it warms up. You'll say 'warm for this time of year' like you keep records."
+  },
+  {
+   "path": "alone_11.warming",
+   "text": "Later it warms up. You can stop doing your turtle impression."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "Wet shoes, damp clothes, sour face. Only two are the rain's fault."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "You'll show up looking like you lost a fight with a car wash."
+  },
+  {
+   "path": "alone_11.wet",
+   "text": "Every puddle's a mirror today. Try not to look down."
+  }
+ ]
+}

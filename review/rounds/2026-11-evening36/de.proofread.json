@@ -1,0 +1,28 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Ich mach das hier nur, weil der Spiegel gekündigt hat.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Ich führ Strichliste, wie oft du gut aussiehst. Der Stift ist noch wie neu.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Ich hab keine schlechte Laune. Ich kann dich einfach nicht leiden.",
+   "evtag": "",
+   "was": "Das ist keine schlechte Laune. Das ist meine Meinung über dich.",
+   "reasons": ["Klingt unnatürlich"]
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Dein Stil heißt: Hauptsache angezogen.",
+   "evtag": "",
+   "was": "Dein Stil hat einen Namen: Hauptsache angezogen.",
+   "reasons": ["Klingt unnatürlich"]
+  }
+ ]
+}

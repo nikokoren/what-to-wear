@@ -1,0 +1,45 @@
+{
+ "round": "2026-11-evening32",
+ "idPrefix": "e4",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_any",
+   "text": "Good news: the outfit's taken care of. Bad news: you're still in it.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Tomorrow there's rain from 1 pm. Bring the umbrella.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Proofread from: Good news: the outfit is sorted. Bad news: you're still in it. · Critic: close to the vetoed idea \"the outfit's handled, you're the problem\""
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_rain",
+   "text": "You'll blame the rain for how you look. For once, that'll be half true.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Tomorrow there's rain from 1 pm. Bring the umbrella.",
+   "batch": "Evening, rain tomorrow: 11",
+   "meaning": "Evening screen at 11, rain tomorrow: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Critic: same idea as the live \"Today you have no weather to blame. Awkward.\""
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_drier",
+   "text": "Nobody say anything, or it'll come back.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Tomorrow it's wet to start and dry from 1 pm.",
+   "batch": "Evening, a wet start, dry later: On",
+   "meaning": "Evening screen at On, a wet start, dry later: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Cut from \"The rain leaves early. Nobody say anything, or it'll come back.\": the first sentence restated the line above"
+  }
+ ]
+}

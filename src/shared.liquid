@@ -11,7 +11,7 @@ because the order of the two rollout steps matters.
 Polling URL box must contain exactly two lines:
 
   https://api.open-meteo.com/v1/forecast?latitude=...&timezone=auto
-  https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@main/lang/##{{ language | default: 'en' }}.json
+  https://cdn.jsdelivr.net/gh/nikokoren/what-to-wear@main/lang/{{ language | default: 'en' }}.json
 
 This file reads the weather from either shape:
   one URL   -> current / hourly at the root
@@ -99,7 +99,13 @@ in snow.
 
 {%- comment %} ============ SETTINGS ============ {%- endcomment %}
 {%- assign location_label_raw = trmnl.plugin_settings.custom_fields_values.location_label | default: '' -%}
-{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions | default: 'yes' -%}
+{%- comment %}
+Forecast: "Yes"/"No" as saved for years, true/false from the on/off field
+that replaced the select. No `default:` here: Liquid's default replaces
+false too, which would turn a switched-off forecast back on.
+{%- endcomment %}
+{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions -%}
+{%- if show_future_suggestions_raw == nil or show_future_suggestions_raw == '' -%}{%- assign show_future_suggestions_raw = 'yes' -%}{%- endif -%}
 {%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}
 {%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}
 {%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}
@@ -132,7 +138,7 @@ already has.
 {%- endif -%}
 
 {%- assign show_future_suggestions = 'on' -%}
-{%- assign sfs_check = show_future_suggestions_raw | downcase | strip -%}
+{%- assign sfs_check = show_future_suggestions_raw | append: '' | downcase | strip -%}
 {%- if sfs_check == 'no' or sfs_check == 'false' or sfs_check == '0' -%}
   {%- assign show_future_suggestions = 'off' -%}
 {%- endif -%}
@@ -227,7 +233,19 @@ ordinary message.
   screen with no words on it helps nobody.
   {%- endcomment %}
   {%- if error_message == '' or error_message == nil -%}
-    {%- if lang == 'de' -%}
+    {%- if lang == 'fr' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'Aucun lieu choisi. Ouvre les réglages et choisis-en un.' -%}
+        {%- assign error_headline = 'Aucun lieu choisi' -%}
+      {%- else -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Impossible de récupérer la météo. Réessaie plus tard.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Impossible de charger les prévisions. Réessaie plus tard.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Météo illisible' -%}
+      {%- endif -%}
+    {%- elsif lang == 'de' -%}
       {%- if error_key == 'error_location' -%}
         {%- assign error_message = 'Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.' -%}
         {%- assign error_headline = 'Kein Ort eingestellt' -%}
@@ -306,6 +324,8 @@ single contains test instead of a chained and/or condition.
 {%- assign temp_c = 0 -%}
 {%- assign wmo = 0 -%}
 {%- assign is_now_precip = 0 -%}
+{%- assign heat_danger = false -%}
+{%- assign stop_idx = -1 -%}
 {%- assign is_now_snow = 0 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
@@ -521,10 +541,20 @@ single contains test instead of a chained and/or condition.
         cool part   hours from now until shorts weather starts
         warm part   hours of shorts weather in the window
 
-      If the cool part is no longer than the warm part, draw shorts now:
-      a bit cool for a while beats sweating all afternoon. A shorts day
-      that only arrives late keeps the long pants. The worst case is
-      shorts at the bottom of rank 5 (18 C feels-like) for a few hours.
+      If the cool part is no longer than the warm part, suggest shorts
+      now: a bit cool for a while beats sweating all afternoon. A shorts
+      day that only arrives late keeps the long pants.
+
+      The Now drawing always shows what the weather calls for right now
+      (owner, October 2026): the forecast line makes the suggestion, the
+      drawing doesn't. Later drawings on a shorts day show shorts.
+
+      Big swings (owner, October 2026, from a reader in Colorado): three
+      hours or more of shorts weather and the legs are shorts, however
+      cold the morning. Better cold for a bit on the way out than sitting
+      in jeans all afternoon. The Now drawing keeps what's right now, the
+      later drawings show shorts, and the forecast line suggests going
+      out in shorts (shorts_swing, where the language has it).
       {%- endcomment %}
       {%- assign shorts_idx = -1 -%}
       {%- assign shorts_hours = 0 -%}
@@ -536,15 +566,48 @@ single contains test instead of a chained and/or condition.
         {%- endif -%}
       {%- endfor -%}
       {%- assign shorts_early = false -%}
+      {%- assign shorts_swing = false -%}
+      {%- if band_rank <= 4 and shorts_hours >= 3 -%}
+        {%- assign shorts_swing = true -%}
+      {%- endif -%}
       {%- if band_rank == 5 and shorts_idx >= 0 -%}
         {%- assign cool_hours = shorts_idx | minus: now_index -%}
-        {%- if cool_hours <= shorts_hours -%}
+        {%- if cool_hours <= shorts_hours or shorts_hours >= 3 -%}
           {%- assign shorts_early = true -%}
-          {%- assign band_rank = 6 -%}
-          {%- assign band = band_name_list[5] -%}
-          {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
         {%- endif -%}
       {%- endif -%}
+
+      {%- comment %}
+      The other way round, a cold front: shorts weather now and three hours
+      or more at coat weather later. The forecast line suggests long
+      pants at the door (pants_swing, where the language has it); the
+      drawing shows today's shorts weather as it is. Getting cold costs
+      more than being warm, so this wins over shorts early.
+      Dangerous heat: two hours or more above 34 C feels-like
+      (extreme_heat). The forecast line leads with water and shade
+      (heat_danger), whatever else the day does.
+      {%- endcomment %}
+      {%- assign pants_swing = false -%}
+      {%- assign pants_idx = -1 -%}
+      {%- assign cold_hours = 0 -%}
+      {%- assign scorch_hours = 0 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
+        {%- if rv <= 2 -%}
+          {%- assign cold_hours = cold_hours | plus: 1 -%}
+          {%- if pants_idx < 0 -%}{%- assign pants_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
+        {%- endif -%}
+        {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- comment %} Liquid reads and/or right to left, so the two cases are spelled out. {%- endcomment %}
+      {%- assign legs_short = shorts_early -%}
+      {%- if band_rank >= 6 -%}{%- assign legs_short = true -%}{%- endif -%}
+      {%- if legs_short and cold_hours >= 3 -%}
+        {%- assign pants_swing = true -%}
+        {%- assign shorts_early = false -%}
+      {%- endif -%}
+      {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
 
       {%- comment %}
       Two different cold spells, kept apart because they tell different
@@ -595,6 +658,9 @@ single contains test instead of a chained and/or condition.
       {%- assign back_best = 0 -%}
       {%- assign back_peak = 0 -%}
       {%- assign back_idx = -1 -%}
+      {%- comment %} When the rain stops: the first dry hour of the first dry break (for {WHENSTOP}). {%- endcomment %}
+      {%- assign stop_idx = -1 -%}
+      {%- assign stop_try = -1 -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
         {%- if pv > peak_rain -%}
@@ -629,8 +695,10 @@ single contains test instead of a chained and/or condition.
           {%- endif -%}
         {%- elsif pv < RAIN_LOW -%}
           {%- assign dry_run = dry_run | plus: 1 -%}
+          {%- if dry_run == 1 -%}{%- assign stop_try = i -%}{%- endif -%}
           {%- if dry_run >= 2 -%}
             {%- assign gap_found = true -%}
+            {%- assign stop_idx = stop_try -%}
           {%- endif -%}
         {%- else -%}
           {%- assign dry_run = 0 -%}
@@ -802,6 +870,11 @@ single contains test instead of a chained and/or condition.
 
       1. a dip before the peak. It is the first thing the reader walks
          into, and getting cold is the one mistake with a real cost.
+      1b. a cold front out of shorts weather: long pants at the door.
+      1c. a big swing into shorts weather (THE LONG-PANTS RULE): go out
+         in shorts, keep the warm layer for the way out; with the
+         evening wanting a layer back, say that too. Only where the
+         language has the wording (texts.facts), else the stories below.
       2. an arc: a layer comes off and the evening wants one back. Needs
          something you can actually take off, so w_water plus a cooling
          key is not an arc - there is nothing to shed, so the evening
@@ -817,6 +890,23 @@ single contains test instead of a chained and/or condition.
     {%- if dip_key != '' -%}
       {%- assign temp_scenario = dip_key -%}
       {%- assign primary_idx = dip_idx -%}
+    {%- elsif pants_swing and texts.facts.pants_swing -%}
+      {%- assign temp_scenario = 'pants_swing' -%}
+      {%- assign primary_idx = pants_idx -%}
+    {%- elsif shorts_swing and texts.facts.shorts_swing -%}
+      {%- assign temp_scenario = 'shorts_swing' -%}
+      {%- assign primary_idx = shorts_idx -%}
+      {%- comment %} The evening wants more than a T-shirt: the first hour after the peak below shorts and long-pants weather, as the drawings show it. {%- endcomment %}
+      {%- assign swing_back_idx = -1 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign hr = start_index | plus: forloop.index0 -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- if swing_back_idx < 0 and hr > max_temp_idx and rv <= 4 -%}{%- assign swing_back_idx = hr -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if swing_back_idx >= 0 -%}
+        {%- assign temp_scenario = 'shorts_swing_back' -%}
+        {%- assign secondary_idx = swing_back_idx -%}
+      {%- endif -%}
     {%- elsif warm_removable and after_key != '' -%}
       {%- if after_rank < band_rank -%}
         {%- assign temp_scenario = 'arc_colder' -%}
@@ -825,6 +915,17 @@ single contains test instead of a chained and/or condition.
       {%- else -%}
         {%- assign temp_scenario = 'arc_level' -%}
       {%- endif -%}
+      {%- assign primary_idx = warm_idx -%}
+      {%- assign secondary_idx = back_on_idx -%}
+    {%- elsif after_key != '' and after_rank >= band_rank and band_rank <= 4 -%}
+      {%- comment %}
+      The evening wants back only what's on now: the jacket now, a little
+      warmer around midday, the jacket again tonight. Too small a rise to
+      count as warming (MIN_DELTA), but the drawings show the jacket off
+      in between, and "bring a jacket" to someone wearing one is wrong.
+      It's the arc: off, and back on.
+      {%- endcomment %}
+      {%- assign temp_scenario = 'arc_level' -%}
       {%- assign primary_idx = warm_idx -%}
       {%- assign secondary_idx = back_on_idx -%}
     {%- elsif after_key != '' -%}
@@ -836,7 +937,7 @@ single contains test instead of a chained and/or condition.
     {%- elsif shorts_early and texts_ok -%}
       {%- assign se_key = 'temp_' | append: sarcasm_level -%}
       {%- assign se_lib = texts[se_key] -%}
-      {%- if se_lib['shorts_early'] -%}
+      {%- if se_lib['shorts_early'] or texts.facts.shorts_early -%}
         {%- assign temp_scenario = 'shorts_early' -%}
         {%- assign primary_idx = shorts_idx -%}
       {%- endif -%}
@@ -911,8 +1012,10 @@ single contains test instead of a chained and/or condition.
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment %} arc second token, always a bucket {%- endcomment %}
-    {%- if is_arc and texts_ok -%}
+    {%- comment %} arc second token, always a bucket (also the big swing's layer back on) {%- endcomment %}
+    {%- assign two_hinges = is_arc -%}
+    {%- if temp_scenario == 'shorts_swing_back' -%}{%- assign two_hinges = true -%}{%- endif -%}
+    {%- if two_hinges and texts_ok -%}
       {%- assign gap2 = secondary_idx | minus: now_index -%}
       {%- assign th2 = local_hour | plus: gap2 -%}
       {%- if th2 > 23 -%}{%- assign th2 = 23 -%}{%- endif -%}
@@ -976,7 +1079,6 @@ single contains test instead of a chained and/or condition.
 {%- assign active_theme = '' -%}
 {%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
 {%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
-{%- if today_md == '03-14' -%}{%- assign active_theme = 'pi' -%}{%- endif -%}
 {%- comment %}
 Easter Sunday, by the anonymous Gregorian computus. Integer arithmetic
 only, which Liquid's divided_by gives us when both sides are whole.
@@ -1004,14 +1106,9 @@ only, which Liquid's divided_by gives us when both sides are whole.
 {%- assign easter_md = easter_md | append: easter_day -%}
 {%- if today_md == easter_md -%}{%- assign active_theme = 'easter' -%}{%- endif -%}
 {%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
-{%- if today_md == '06-03' -%}{%- assign active_theme = 'bike' -%}{%- endif -%}
-{%- if today_md >= '07-01' and today_md <= '07-23' -%}{%- assign active_theme = 'tdf' -%}{%- endif -%}
-{%- if today_md >= '09-20' and today_md <= '10-05' -%}{%- assign active_theme = 'okt' -%}{%- endif -%}
 {%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
 {%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
 {%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
-{%- if today_md == '12-05' -%}{%- assign active_theme = 'krampus' -%}{%- endif -%}
-{%- if today_md == '12-06' -%}{%- assign active_theme = 'nikolo' -%}{%- endif -%}
 {%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
 
 {%- comment %}

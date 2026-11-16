@@ -1,0 +1,3428 @@
+[
+ {
+  "path": "units_10.arc_level",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.arc_level",
+    "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Der Sommer kommt heute nur auf einen Sprung vorbei."
+   },
+   {
+    "path": "units_10.arc_level",
+    "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Die Biergärten bleiben trotzdem voll. Mit Decken.",
+    "months": "4,5,6,7,8,9,10"
+   },
+   {
+    "path": "units_10.arc_level",
+    "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Jetzt glaubt mir das keiner. Später alle."
+   },
+   {
+    "path": "units_10.arc_level",
+    "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Hin und zurück, wie die Pendler. Nur ohne Verspätung."
+   },
+   {
+    "path": "units_10.arc_level",
+    "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Typisch. Kaum ist's schön, wird schon wieder abgebaut."
+   },
+   {
+    "path": "units_10.arc_level",
+    "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder, und dazwischen tun alle so, als wär Sommer.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.arc_warmer",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Kein Haken, kein Aber. Ich hab dreimal nachgeschaut."
+   },
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} weg, und dabei bleibt's dann für heute. || Ausnahmsweise hält sich heute mal einer an seine Ansage. Das Wetter."
+   },
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Irgendwer behält {GP} vermutlich trotzdem an. Aus Prinzip."
+   },
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || So ein Tag gehört eigentlich gerahmt. Ich wär bereit."
+   },
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || Gleich tun wieder alle so, als hätten sie's geahnt."
+   },
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Mich fragt ja keiner. Ich hätt's lieber kühl."
+   },
+   {
+    "path": "units_10.arc_warmer",
+    "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Amtlich. Gezeichnet: ich.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.c_hoodie",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.c_hoodie",
+    "text": "{WHEN} wird's frisch genug für einen Pulli. || Und schon heißt's wieder: Der Sommer war viel zu kurz.",
+    "months": "8,9,10"
+   },
+   {
+    "path": "units_10.c_hoodie",
+    "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Und irgendwer sagt dann wieder: „Geht doch noch.“ Mit blauen Lippen."
+   },
+   {
+    "path": "units_10.c_hoodie",
+    "text": "{WHEN} kühlt's ab, da brauchst du vermutlich einen Pulli. || Ich brauch keinen. Mich wärmt mein eigenes Gemecker."
+   },
+   {
+    "path": "units_10.c_hoodie",
+    "text": "{WHEN} wird's frisch genug für einen Pulli. || Frisch. So sagen Leute, die nicht frieren wollen."
+   },
+   {
+    "path": "units_10.c_hoodie",
+    "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli. || Froh über einen Pulli. So weit sind wir schon."
+   },
+   {
+    "path": "units_10.c_hoodie",
+    "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Ich sag das jetzt, damit ich's später nicht sagen muss.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.c_relief",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} kühlt's ein bisschen ab, warm bleibt's trotzdem. || Gleich sitzen wieder alle auf dem Balkon und nennen das erfrischend."
+   },
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Für Wunder bin ich nicht zuständig."
+   },
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Geschwitzt wird weiter, nur mit weniger Überzeugung."
+   },
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Der Asphalt hat's noch nicht mitbekommen."
+   },
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} kühlt's ein bisschen ab, warm bleibt's trotzdem. || Gleich sagt wieder einer: „Jetzt lässt sich's aushalten.“ Der hat eine Klimaanlage."
+   },
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} ist die schlimmste Hitze überstanden, es bleibt aber warm. || Die Schlange vor der Eisdiele geht trotzdem bis um die Ecke."
+   },
+   {
+    "path": "units_10.c_relief",
+    "text": "{WHEN} lässt die größte Hitze nach. Kühl wird's trotzdem nicht. || Von „Backofen“ auf „Gewächshaus“ runtergedreht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.c_scarf",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "units_10.c_scarf",
+    "text": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Ich hab keinen Hals. Ein Vorteil, den ich selten erwähne."
+   },
+   {
+    "path": "units_10.c_scarf",
+    "text": "{WHEN} brauchst du eine extra warme Schicht, also nimm eventuell einen Schal mit. || Eventuell heißt bei mir: auf jeden Fall."
+   },
+   {
+    "path": "units_10.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal. || Ab da ist der Schal kein Accessoire mehr, sondern Notwehr."
+   },
+   {
+    "path": "units_10.c_scarf",
+    "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Bald riecht der Bus wieder nach Wolle und Erkältung."
+   },
+   {
+    "path": "units_10.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal. || Die Abgehärteten nennen das „frisch“. Die frieren auch, nur leiser."
+   },
+   {
+    "path": "units_10.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal. || Bald sieht man von den meisten Leuten nur noch die Augen."
+   },
+   {
+    "path": "units_10.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal, und für die ersten Leute, die „Schön knackig!“ sagen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.p_drier",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.p_drier",
+    "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Dann kommen alle raus und tun so, als wär nichts gewesen."
+   },
+   {
+    "path": "units_10.p_drier",
+    "text": "Jetzt brauchst du noch den Schirm, später wird's trocken. || Später. Das sagen Handwerker auch."
+   },
+   {
+    "path": "units_10.p_drier",
+    "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Bis dahin ist der Schirm wichtiger als ich. Das tut weh."
+   },
+   {
+    "path": "units_10.p_drier",
+    "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Die Autos fahren danach trotzdem noch durch jede Pfütze."
+   },
+   {
+    "path": "units_10.p_drier",
+    "text": "Der Regen hört später auf, bis dahin brauchst du den Schirm. || Wer jetzt schon ohne rausgeht, nennt das vermutlich Abhärtung."
+   },
+   {
+    "path": "units_10.p_drier",
+    "text": "Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm. || Danach dampft der Asphalt, und alle sagen: „Riecht das gut.“"
+   },
+   {
+    "path": "units_10.p_drier",
+    "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || „Hört gleich auf“, sagt jeder, der unterm Vordach wartet.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.p_snow_coming",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.p_snow_coming",
+    "text": "Mach dich auf Schnee gefasst, {WHENP} geht's los. || Ob der Winterdienst das auch weiß, ist eine andere Frage."
+   },
+   {
+    "path": "units_10.p_snow_coming",
+    "text": "Rechne {WHENP} mit Schnee. || Weiße Weihnachten wird's trotzdem nicht. Wird's nie.",
+    "months": "11"
+   },
+   {
+    "path": "units_10.p_snow_coming",
+    "text": "{WHENP} soll es schneien. || Für einen Schneemann reicht's vermutlich wieder nicht. Zu nass, wie immer."
+   },
+   {
+    "path": "units_10.p_snow_coming",
+    "text": "{WHENP} fängt's an zu schneien. || Ich krieg davon nur die Daten. Ist mir auch lieber so."
+   },
+   {
+    "path": "units_10.p_snow_coming",
+    "text": "{WHENP} soll es schneien. || Und schon redet die ganze Straße wieder übers Wetter. Mein Thema."
+   },
+   {
+    "path": "units_10.p_snow_coming",
+    "text": "{WHENP} fängt's an zu schneien. || Schnee! So, jetzt hab ich mich auch einmal gefreut. Reicht für den Winter.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.p_stays_wet",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Heute riecht jede Bahn nach nassem Hund. Auch ohne Hund."
+   },
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Heute hört's nicht auf zu regnen. Nimm den Schirm mit. || „Gut für die Natur“, sagt garantiert wieder einer. Mit trockenen Füßen."
+   },
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Wetter wie im Tatort. Nur ohne Leiche. Hoffentlich."
+   },
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Die Schuhe, die „ein bisschen Regen abkönnen“, finden das heute raus."
+   },
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Eine Regenpause gibt's heute nicht. Nimm den Schirm mit. || Auch keine kleine. Ich hab mich schon beschwert."
+   },
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Heute hört's nicht auf zu regnen. Nimm den Schirm mit. || So stellt man sich den Herbst vor. Leider zu Recht.",
+    "months": "10,11"
+   },
+   {
+    "path": "units_10.p_stays_wet",
+    "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Auf einer Skala von eins bis Herbst: Herbst.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.p_stays_wet_snow",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.p_stays_wet_snow",
+    "text": "Der Schneefall hält den ganzen Tag an. || Alle Autos sehen heute gleich aus. Endlich mal Gerechtigkeit."
+   },
+   {
+    "path": "units_10.p_stays_wet_snow",
+    "text": "Es schneit den ganzen Tag so weiter. || Morgen beschwert sich wieder einer, dass nicht gestreut war."
+   },
+   {
+    "path": "units_10.p_stays_wet_snow",
+    "text": "Heute hört's nicht auf zu schneien. || Romantisch finden das nur die, die nirgends hinmüssen."
+   },
+   {
+    "path": "units_10.p_stays_wet_snow",
+    "text": "Heute schneit's ohne Unterbrechung. || Im Radio sind die Staumeldungen heute länger als die Nachrichten."
+   },
+   {
+    "path": "units_10.p_stays_wet_snow",
+    "text": "Der Schneefall hält den ganzen Tag an. || Heute wird jede Bushaltestelle zum Wartezimmer."
+   },
+   {
+    "path": "units_10.p_stays_wet_snow",
+    "text": "Heute hört's nicht auf zu schneien. || Schippen, warten, schippen. Das Programm für heute.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.p_wet_again_snow",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter. || Wie eine Halbzeitpause. Danach wird's selten besser."
+   },
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Ich hätt's gern in einem Satz gesagt. Das Wetter braucht zwei."
+   },
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien. || Der Winter hat heute nicht vor, sich kurz zu fassen."
+   },
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Ein Winter mit Werbeunterbrechung."
+   },
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter. || In der Ruhe hört man dann jeden Schneeschieber in der Straße."
+   },
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Nachschub ist also bestellt. Zurückschicken geht nicht."
+   },
+   {
+    "path": "units_10.p_wet_again_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Ich sag Bescheid, wenn's wieder losgeht. Ach nein, hab ich ja grad.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.p_wetter_long",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.p_wetter_long",
+    "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || Bis dahin tun alle so, als wär's ein schöner Tag."
+   },
+   {
+    "path": "units_10.p_wetter_long",
+    "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Und hinterher sagt wieder keiner, dass ich's angekündigt hab."
+   },
+   {
+    "path": "units_10.p_wetter_long",
+    "text": "Ohne Schirm wird's heute nichts, {WHENP} setzt Dauerregen ein. || Taschenschirme halten so was nicht lang durch. Die sind eher symbolisch."
+   },
+   {
+    "path": "units_10.p_wetter_long",
+    "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || So schnell hört bei uns ja gar nichts auf. Baustellen zum Beispiel."
+   },
+   {
+    "path": "units_10.p_wetter_long",
+    "text": "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger. || Länger. Mehr verrat ich nicht, sonst wird's nur schlimmer."
+   },
+   {
+    "path": "units_10.p_wetter_long",
+    "text": "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit. || Kurzfassung: nass. Langfassung: sehr lange nass.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.shorts_early",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "units_10.shorts_early",
+    "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Die Beine sind noch winterweiß. Bei allen. Tröstlich.",
+    "months": "4,5,6"
+   },
+   {
+    "path": "units_10.shorts_early",
+    "text": "Gerade ist's noch frisch, aber {WHEN} wird's warm genug für kurze Hosen. || Ich hätt gern das Problem. Ich hab nicht mal Beine."
+   },
+   {
+    "path": "units_10.shorts_early",
+    "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || Die Ersten haben sie jetzt schon an. Mit Gänsehaut und Überzeugung."
+   },
+   {
+    "path": "units_10.shorts_early",
+    "text": "Gerade ist's frisch, aber {WHEN} ist's warm genug für ne kurze Hose. || Der Tag fängt an wie ein Montag und hört auf wie ein Freitag."
+   },
+   {
+    "path": "units_10.shorts_early",
+    "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Das Bild zeigt noch die lange. Ich bin halt vorsichtig."
+   },
+   {
+    "path": "units_10.shorts_early",
+    "text": "Lass dich vom kühlen Start nicht täuschen, spätestens {WHEN} reicht eine kurze Hose. || Kurze Hose. Ich sag's leise, damit's der Morgen nicht hört.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_10.w_coat",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} kann die Winterjacke weg. || Und schon sitzen die Ersten im T-Shirt vorm Café.",
+    "months": "2,3,4"
+   },
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} kannst du die Winterjacke ausziehen. || Mit der dicken Jacke in der Hand sieht jeder aus wie auf dem Weg zur Reinigung."
+   },
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} kann die Winterjacke weg. || Die Eisdiele macht trotzdem erst im März auf. Ordnung muss sein.",
+    "months": "1,2"
+   },
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} wird's mild genug, um die Winterjacke auszuziehen. || Die Mütze bleibt bei manchen trotzdem auf. Aus Misstrauen."
+   },
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} kann die Winterjacke weg. || Spätestens dann wird wieder diskutiert, ob das noch normal ist für die Jahreszeit."
+   },
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Bald taut auch wieder raus, was der Schnee so alles versteckt hat.",
+    "months": "2,3"
+   },
+   {
+    "path": "units_10.w_coat",
+    "text": "{WHEN} kannst du die Winterjacke ausziehen. || „Ist das schon Frühling?“ Frag mich das im Mai.",
+    "wild": true,
+    "months": "1,2,3"
+   }
+  ]
+ },
+ {
+  "path": "units_10.w_jacket",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_10.w_jacket",
+    "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Ab dann weiß wieder keiner, wohin mit den Händen. Die Taschen sind ja weg."
+   },
+   {
+    "path": "units_10.w_jacket",
+    "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Für mich ändert sich nichts. Ich bin immer gleich angezogen. Nämlich gar nicht."
+   },
+   {
+    "path": "units_10.w_jacket",
+    "text": "{WHEN} kannst du die Jacke ausziehen. || Endlich wieder Wetter, bei dem keiner meckert. Ich übernehm das."
+   },
+   {
+    "path": "units_10.w_jacket",
+    "text": "{WHEN} kann die Jacke weg. || Dann kommen wieder die Leute raus, die man den Winter über nicht vermisst hat."
+   },
+   {
+    "path": "units_10.w_jacket",
+    "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Warm genug. Nicht warm. Den Unterschied merkt man im Schatten."
+   },
+   {
+    "path": "units_10.w_jacket",
+    "text": "{WHEN} kannst du die Jacke ausziehen, und ich kann endlich mal was Nettes sagen. Fast.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.arc_colder",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.arc_colder",
+    "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Deine Tasche ist heute besser vorbereitet als du."
+   },
+   {
+    "path": "units_11.arc_colder",
+    "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Die Wärme hast du dir nicht verdient. Die Kälte schon."
+   },
+   {
+    "path": "units_11.arc_colder",
+    "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Später nicht jammern. Du hast es gerade gelesen."
+   },
+   {
+    "path": "units_11.arc_colder",
+    "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || Später bist du ein Kleiderständer. Ein schiefer."
+   },
+   {
+    "path": "units_11.arc_colder",
+    "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm eine extra Schicht mit. || In mehr Schichten wirkst du fast kräftig. Von Weitem."
+   },
+   {
+    "path": "units_11.arc_colder",
+    "text": "{WHEN} {GV} weg, aber {WHEN2} wird's kälter, als du dir das jetzt vorstellen willst. Nimm eine extra Schicht mit.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.arc_level",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.arc_level",
+    "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Ein paar Stunden ohne. Mehr Abwechslung hat dein Tag eh nicht."
+   },
+   {
+    "path": "units_11.arc_level",
+    "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also kurz ausziehen und so tun, als wär's Sommer. Darin bist du ja gut."
+   },
+   {
+    "path": "units_11.arc_level",
+    "text": "{WHEN} {GV} weg. Nimm {GP} trotzdem mit, {WHEN2} wird's wieder kühler. || Ja, den ganzen Tag. Nein, du darfst nicht meckern."
+   },
+   {
+    "path": "units_11.arc_level",
+    "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Dazwischen siehst du kurz aus, als hättest du dein Leben im Griff."
+   },
+   {
+    "path": "units_11.arc_level",
+    "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Zweimal am Tag richtig angezogen. Das wär ein persönlicher Rekord."
+   },
+   {
+    "path": "units_11.arc_level",
+    "text": "{WHEN} {GV} weg, aber nicht für lange: {WHEN2} brauchst du {GP} wieder, und dann gefällst du mir auch wieder besser.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.arc_warmer",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Ab dann gibt's keine Ausrede mehr, warum du so aussiehst."
+   },
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} weg, und du brauchst {GP} danach heute nicht mehr. || Besser wird der Tag nicht. Du übrigens auch nicht."
+   },
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Ein Tag ohne Hin und Her. Selbst du kannst da nichts falsch anziehen."
+   },
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. || Also kein Grund zum Meckern. Du findest trotzdem einen, wetten?"
+   },
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} weg. Den restlichen Tag brauchst du {GP} dann nicht mehr. || Danach kannst du dich ganz auf deine anderen Probleme konzentrieren."
+   },
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} runter, und dabei bleibt's dann für heute. || Einfacher wird's nicht. Und du schaust trotzdem schon wieder so skeptisch."
+   },
+   {
+    "path": "units_11.arc_warmer",
+    "text": "{WHEN} {GV} runter, und zwar für den Rest des Tages. Wenn nicht für dich, dann für die Leute, die neben dir schwitzen müssten.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.c_coat",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.c_coat",
+    "text": "{WHEN} kühlt's deutlich ab, dann ist die Winterjacke dran. || Die hat schon Schlimmeres überstanden. Dich, zum Beispiel."
+   },
+   {
+    "path": "units_11.c_coat",
+    "text": "Nimm die Winterjacke mit, {WHEN} wird's kälter. || Die von letztem Winter. Ich weiß, du hättest gern eine neue. Verdient hast du sie nicht."
+   },
+   {
+    "path": "units_11.c_coat",
+    "text": "{WHEN} wird's kälter, da brauchst du dann die Winterjacke. || Schlepp sie halt mit. Du schleppst ja auch sonst allerhand mit dir rum."
+   },
+   {
+    "path": "units_11.c_coat",
+    "text": "{WHEN} wird's kalt genug für die Winterjacke. || Bibbernd dastehen und so tun, als wär das Stil, zählt nicht."
+   },
+   {
+    "path": "units_11.c_coat",
+    "text": "{WHEN} wird's kälter, da brauchst du dann die Winterjacke. || Wenigstens ein Teil an dir, das hält, was es verspricht."
+   },
+   {
+    "path": "units_11.c_coat",
+    "text": "{WHEN} wird's kalt genug für die Winterjacke. || Tapfer frieren sieht nur bei anderen gut aus."
+   },
+   {
+    "path": "units_11.c_coat",
+    "text": "{WHEN} wird's kalt genug für die Winterjacke. || Ich trag nie eine. Ich hab aber auch nicht deine Durchblutung.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.c_hoodie",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.c_hoodie",
+    "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Der mit dem Fleck geht auch. Auf dich achtet eh keiner."
+   },
+   {
+    "path": "units_11.c_hoodie",
+    "text": "{WHEN} brauchst du einen Pulli, also nimm einen mit. || Dein Lieblingspulli darf es sein. Ich weiß, du hast nur den einen."
+   },
+   {
+    "path": "units_11.c_hoodie",
+    "text": "{WHEN} wird's kühl, dann bist du froh über einen Pulli. || Und alle anderen sind froh, dass sie dein T-Shirt nicht mehr sehen müssen."
+   },
+   {
+    "path": "units_11.c_hoodie",
+    "text": "{WHEN} wird's frisch genug für einen Pulli. || Ein Pulli verzeiht viel. Bei dir muss er heute ganz schön viel verzeihen."
+   },
+   {
+    "path": "units_11.c_hoodie",
+    "text": "Nimm einen Pulli mit, {WHEN} kühlt's ab. || Du findest sicher einen, der nicht nach Schrank riecht. Viel Glück."
+   },
+   {
+    "path": "units_11.c_hoodie",
+    "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Es ist nur ein Pulli. Kein Grund, so ein Gesicht zu machen."
+   },
+   {
+    "path": "units_11.c_hoodie",
+    "text": "Pack einen Pulli ein, {WHEN} wird's kühler. || Strickt dir ja sonst keiner mehr einen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.c_relief",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.c_relief",
+    "text": "Die Hitze lässt {WHEN} nach, aber es bleibt warm. || Dein Gesicht bleibt trotzdem rot. Ist das jetzt die Sonne oder du?"
+   },
+   {
+    "path": "units_11.c_relief",
+    "text": "{WHEN} ist die schlimmste Hitze überstanden, es bleibt aber warm. || Du hast sie überstanden. Wie, wollen wir lieber nicht wissen."
+   },
+   {
+    "path": "units_11.c_relief",
+    "text": "{WHEN} wird's angenehmer, aber es bleibt warm. || Angenehm genug, dass man dich wieder ansprechen kann. Ungefähr."
+   },
+   {
+    "path": "units_11.c_relief",
+    "text": "{WHEN} lässt die Hitze etwas nach, aber es bleibt warm. || Das T-Shirt klebt dann nur noch ein bisschen. Für dich ist das schon gepflegt."
+   },
+   {
+    "path": "units_11.c_relief",
+    "text": "Die Hitze lässt {WHEN} nach, aber es bleibt warm. || Ein guter Moment, um wieder freundlich zu sein. Zu anderen, nicht zu mir."
+   }
+  ]
+ },
+ {
+  "path": "units_11.c_scarf",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.c_scarf",
+    "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Den guten. Nicht den, mit dem du aussiehst wie ein Fußballfan nach der Niederlage."
+   },
+   {
+    "path": "units_11.c_scarf",
+    "text": "{WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Und keine Diskussion. Dein Hals ist nicht so hart, wie du tust."
+   },
+   {
+    "path": "units_11.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal. || Du frierst ja schon, wenn jemand „Herbst“ sagt."
+   },
+   {
+    "path": "units_11.c_scarf",
+    "text": "Denk an deinen Schal, {WHEN} wird's ungemütlich kalt. || Je mehr davon um deinen Hals, desto weniger hört man dich meckern."
+   },
+   {
+    "path": "units_11.c_scarf",
+    "text": "Pack deinen Schal ein, {WHEN} wird's kälter. || Ja, auch wenn er kratzt. Du hältst ja auch sonst einiges aus. Mich zum Beispiel."
+   },
+   {
+    "path": "units_11.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal. || Wickel ihn ordentlich. Du bist schon so nicht der Eleganteste."
+   },
+   {
+    "path": "units_11.c_scarf",
+    "text": "{WHEN} wird's kalt genug für den Schal. Und kalt genug, dass dein Gemecker kleine Wölkchen macht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_drier",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.p_drier",
+    "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Bis dahin hast du was in der Hand. Das sieht fast nach Plan aus."
+   },
+   {
+    "path": "units_11.p_drier",
+    "text": "Der Regen hört später auf, bis dahin brauchst du den Schirm. || Und danach? Dann siehst du halt aus wie immer. Trocken, aber sonst."
+   },
+   {
+    "path": "units_11.p_drier",
+    "text": "Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm. || Aufspannen, bevor du nass bist. Ich sag's dazu, weil ich dich kenne."
+   },
+   {
+    "path": "units_11.p_drier",
+    "text": "Jetzt brauchst du noch den Schirm, später wird's trocken. || Später kannst du dann wieder so tun, als hättest du's ohne geschafft."
+   },
+   {
+    "path": "units_11.p_drier",
+    "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Wer dann noch nass ist, hat nicht zugehört. Ich schau dich dabei nicht an."
+   },
+   {
+    "path": "units_11.p_drier",
+    "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Ich sag nur, wann's aufhört. Wann du aufhörst zu jammern, kann ich nicht vorhersagen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_drier_snow",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "Der Schnee hört später auf. || Danach ist alles still und weiß. Bis du rausgehst und was sagst."
+   },
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "Später hört's auf zu schneien. || Die Schneeballschlacht kannst du dann also ohne Ausrede verlieren."
+   },
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "Der Schneefall lässt später nach. || Dann darfst du wieder raus. Ob das draußen jemand will, ist eine andere Frage."
+   },
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "Noch schneit's, aber später hört es auf. || Auf die Mütze verzichten musst du deswegen nicht. Du siehst darunter eh nicht besser aus."
+   },
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien. || Bis dahin stehst du am Fenster und kommentierst jede Flocke. Vermutlich."
+   },
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "Der Schneefall hört {WHENSTOP} auf. || Dann hast du keinen Grund mehr, so verfroren zu schauen. Du schaust trotzdem so."
+   },
+   {
+    "path": "units_11.p_drier_snow",
+    "text": "Der Schnee hört später auf. || Ich zeig's dir auch noch mal im Bild. Lesen ist ja nicht so deins.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_snow_coming",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.p_snow_coming",
+    "text": "{WHENP} fängt's an zu schneien. || Für dich heißt das: drei Tage reden, als hättest du eine Expedition überlebt."
+   },
+   {
+    "path": "units_11.p_snow_coming",
+    "text": "{WHENP} kommt Schnee. || Dann ist's draußen ruhig und ordentlich. Also das Gegenteil von dir."
+   },
+   {
+    "path": "units_11.p_snow_coming",
+    "text": "{WHENP} kommt Schnee. || Ab dann steht draußen einer mit mehr Ausstrahlung als du. Mit Karotte im Gesicht."
+   },
+   {
+    "path": "units_11.p_snow_coming",
+    "text": "{WHENP} soll es schneien. || Jetzt willst du vermutlich wieder rodeln. Mit deinem Rücken?"
+   },
+   {
+    "path": "units_11.p_snow_coming",
+    "text": "{WHENP} fängt's an zu schneien. || Du kommentierst es dann wieder wie ein Wetterexperte. Den Job hab schon ich."
+   },
+   {
+    "path": "units_11.p_snow_coming",
+    "text": "{WHENP} kommt Schnee. || Ich sag's extra früh. Dann hast du mehr Zeit zum Jammern.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_stays_wet",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "units_11.p_stays_wet",
+    "text": "Der Regen hält den ganzen Tag an. Der Schirm bleibt also bei dir. || Jetzt hast du wenigstens was, an dem du dich festhalten kannst."
+   },
+   {
+    "path": "units_11.p_stays_wet",
+    "text": "Regen bis zum Abend. Der Schirm sollte wirklich mit. || Nass siehst du nicht schlechter aus. Aber auch nicht besser."
+   },
+   {
+    "path": "units_11.p_stays_wet",
+    "text": "Eine Regenpause gibt's heute nicht. Nimm den Schirm mit. || Ich weiß, das passt nicht in deinen Plan. Du hattest nur keinen."
+   },
+   {
+    "path": "units_11.p_stays_wet",
+    "text": "Den ganzen Tag Regen. Ohne Schirm geht nichts. || Das ist heute die einzige Regel. Selbst du kannst dir eine merken."
+   },
+   {
+    "path": "units_11.p_stays_wet",
+    "text": "Es regnet den ganzen Tag, also nimm den Schirm mit. || Den ganzen Tag. Auch für deine Frisur, falls man das so nennen kann."
+   },
+   {
+    "path": "units_11.p_stays_wet",
+    "text": "Heute hört's nicht auf zu regnen. Nimm den Schirm mit. || Wenn du mich deswegen hasst: Stell dich hinten an.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_stays_wet_snow",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Der Schneefall hält den ganzen Tag an. || Draußen wird alles weich und rund. Dir steht das nicht so gut."
+   },
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Schnee bis zum Abend. || Bis dahin hast du deine Meinung über Winter dreimal geändert. Mindestens."
+   },
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Es schneit den ganzen Tag so weiter. || Zieh dich warm an. Nicht schön, nur warm. Schön klappt eh nicht."
+   },
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Der Schneefall hält den ganzen Tag an. || Ich weiß, du wolltest heute was erledigen. Das sagst du allerdings jeden Tag."
+   },
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Es schneit den ganzen Tag. || Den Schneemann baust du heute aber nicht nach deinem Vorbild. Das wär gemein zum Schnee."
+   },
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Heute schneit's ohne Unterbrechung. || Ein ganzer Tag, an dem draußen alles hübscher aussieht als du."
+   },
+   {
+    "path": "units_11.p_stays_wet_snow",
+    "text": "Heute hört's nicht auf zu schneien. || Ich hab nachgeschaut, ob's eine bessere Nachricht gibt. Für dich nicht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_wet_again",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "units_11.p_wet_again",
+    "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Aufspannen, zumachen, aufspannen. Endlich mal ein Tag mit Struktur für dich."
+   },
+   {
+    "path": "units_11.p_wet_again",
+    "text": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. || In der Pause bitte nicht den Schirm schütteln wie ein nasser Hund."
+   },
+   {
+    "path": "units_11.p_wet_again",
+    "text": "Der Regen macht später eine Pause, {WHENP} kommt er aber zurück. || Dazwischen siehst du kurz trocken aus. Schau trotzdem nicht in den Spiegel."
+   },
+   {
+    "path": "units_11.p_wet_again",
+    "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Den Schirm faltest du dazwischen eh nicht ordentlich. Dir trau ich nicht so viel Ordnung zu."
+   },
+   {
+    "path": "units_11.p_wet_again",
+    "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || In der Pause kannst du schnell mal raus. Schnell ist allerdings nicht so deins."
+   },
+   {
+    "path": "units_11.p_wet_again",
+    "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Fühl dich nicht verfolgt. Der Regen meint nicht dich. Ich schon.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_wet_again_snow",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "units_11.p_wet_again_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Wer in der Pause rausgeht, hält sich für schlau. Du zum Beispiel."
+   },
+   {
+    "path": "units_11.p_wet_again_snow",
+    "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien. || Zweimal Schnee, und du hast nur die eine Mütze, die dir nicht steht."
+   },
+   {
+    "path": "units_11.p_wet_again_snow",
+    "text": "Erstmal schneit's weiter, dann ist kurz Pause, und {WHENP} geht es wieder los. || Zwei Ladungen Schnee. Und du bist immer noch kein Wintertyp."
+   },
+   {
+    "path": "units_11.p_wet_again_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Die Pause reicht für ein Foto. Nicht für eins, auf dem du gut aussiehst."
+   },
+   {
+    "path": "units_11.p_wet_again_snow",
+    "text": "Der Schneefall hört später kurz auf, {WHENP} geht es weiter. || Zwei Runden Winter an einem Tag. Du schaffst ja nicht mal eine ohne Gejammer."
+   },
+   {
+    "path": "units_11.p_wet_again_snow",
+    "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. Dazwischen ist's kurz still. Genieß es, du bist ja selten still.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_wetter_long",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.p_wetter_long",
+    "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Oder lass ihn da. Dann siehst du endlich so aus, wie du dich fühlst."
+   },
+   {
+    "path": "units_11.p_wetter_long",
+    "text": "{WHENP} setzt Regen ein und bleibt. Nimm den Schirm mit. || Erledig draußen alles vorher. Ich weiß, „erledigen“ ist ein Fremdwort für dich."
+   },
+   {
+    "path": "units_11.p_wetter_long",
+    "text": "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger. || Also kein Sprint mit der Jacke überm Kopf. Sah bei dir eh nie gut aus."
+   },
+   {
+    "path": "units_11.p_wetter_long",
+    "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || Den Rest des Tages siehst du also nass und beleidigt aus. Also kaum anders."
+   },
+   {
+    "path": "units_11.p_wetter_long",
+    "text": "{WHENP} kommt Regen, und der hört so schnell nicht auf. Nimm den Schirm mit. || Heute darfst du mal so tun, als wärst du vorausschauend."
+   },
+   {
+    "path": "units_11.p_wetter_long",
+    "text": "Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger. || Kein Schirm hilft gegen das Gesicht, das du dann machst.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.p_wetter_maybe",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "units_11.p_wetter_maybe",
+    "text": "{WHENP} ist eventuell ein Schauer drin, also lieber den Schirm einpacken. || Lieber umsonst geschleppt als nass gejammert. Ich kenn dich nass. Nicht schön."
+   },
+   {
+    "path": "units_11.p_wetter_maybe",
+    "text": "Ob's {WHENP} regnet, ist nicht ganz sicher. Der Schirm schadet vermutlich nicht. || Sicher ist nur, dass du dich so oder so beschwerst."
+   },
+   {
+    "path": "units_11.p_wetter_maybe",
+    "text": "{WHENP} ist Regen möglich. Nimm lieber den Schirm mit. || Kein Grund zur Panik. Ich weiß, du machst trotzdem welche."
+   },
+   {
+    "path": "units_11.p_wetter_maybe",
+    "text": "{WHENP} ist eventuell ein Schauer drin, also lieber den Schirm einpacken. || Ein kleiner Schauer. Danach siehst du aus wie vorher. Also kein großer Verlust."
+   },
+   {
+    "path": "units_11.p_wetter_maybe",
+    "text": "Vielleicht regnet's {WHENP}. Der Schirm schadet nicht. || Ein Schirm macht dich nicht hübscher. Aber er hält wenigstens das Wasser aus deinem Gesicht."
+   },
+   {
+    "path": "units_11.p_wetter_maybe",
+    "text": "{WHENP} ist Regen möglich. Nimm lieber den Schirm mit. || Ich hab keinen und brauch keinen. Einer von uns hat sein Leben im Griff.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.w_coat",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.w_coat",
+    "text": "{WHEN} wird es warm, dann brauchst du keine Winterjacke mehr. || Also ab dann ohne Rüstung. Viel Glück da draußen."
+   },
+   {
+    "path": "units_11.w_coat",
+    "text": "{WHEN} kann die Winterjacke weg. || Und mit ihr der einzige Grund, warum man dich für sportlich gehalten hat."
+   },
+   {
+    "path": "units_11.w_coat",
+    "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Ab dann trägst du sie wie ein Baby durch die Gegend. Steht dir genauso wenig."
+   },
+   {
+    "path": "units_11.w_coat",
+    "text": "{WHEN} kannst du die Winterjacke ausziehen. || Dann kannst du endlich wieder mit den Armen gestikulieren. Leider."
+   },
+   {
+    "path": "units_11.w_coat",
+    "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Dann siehst du wieder aus wie ein Mensch. Ungefähr."
+   },
+   {
+    "path": "units_11.w_coat",
+    "text": "{WHEN} wird's wärmer, dann kann die Winterjacke weg. || Kurz Sommer im Winter. Jetzt bloß nicht gleich übermütig werden und lächeln.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.w_jacket",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.w_jacket",
+    "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Ab dann musst du ganz alleine gut aussehen. Viel Glück."
+   },
+   {
+    "path": "units_11.w_jacket",
+    "text": "{WHEN} kannst du die Jacke ausziehen. || Ich sag's dir lieber vorher. Du schwitzt ja sonst stundenlang, bevor's dir auffällt."
+   },
+   {
+    "path": "units_11.w_jacket",
+    "text": "{WHEN} kann die Jacke weg. || Ab dann gibt's nichts mehr, was dein Outfit zusammenhält."
+   },
+   {
+    "path": "units_11.w_jacket",
+    "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Endlich ein Tag, an dem du was richtig machst, nur indem du was weglässt."
+   },
+   {
+    "path": "units_11.w_jacket",
+    "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Mehr Sommer kriegst du heute nicht. Mehr verdienst du auch nicht."
+   },
+   {
+    "path": "units_11.w_jacket",
+    "text": "{WHEN} wird's wärmer, dann kann die Jacke weg. || Dann sieht man wieder deine Arme. Hat keiner verlangt, aber gut."
+   },
+   {
+    "path": "units_11.w_jacket",
+    "text": "{WHEN} kannst du die Jacke ausziehen, und dann bist du wieder ganz du. Ich sag nicht, dass das gut ist.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.w_scarf",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} brauchst du den Schal nicht mehr. || Dann sieht man wieder dein Gesicht. Die Leute haben's ganz gut ausgehalten ohne."
+   },
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} kann der Schal weg. || Endlich kannst du wieder deutlich reden. Ob das ein Gewinn ist, bezweifle ich."
+   },
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} wird's wärmer, da kannst du den Schal abnehmen. || Wärmer heißt nicht warm. Mach jetzt nicht auf Frühling, du bist kein Krokus."
+   },
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} brauchst du den Schal nicht mehr. || Ab dann kannst du nicht mehr so tun, als hättest du ein Doppelkinn wegen dem Schal."
+   },
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} kann der Schal weg. || Ein Teil weniger, um den du dir Sorgen machen musst. Bleiben noch ungefähr alle anderen."
+   },
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} kannst du den Schal ablegen. || Mehr als das ist heute nicht drin. Für dich wär's eh zu viel Aufregung."
+   },
+   {
+    "path": "units_11.w_scarf",
+    "text": "{WHEN} wird's mild genug, dann kann der Schal wieder runter, und man sieht dir die schlechte Laune wieder in voller Größe an.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "units_11.w_water",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "units_11.w_water",
+    "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Und nicht wieder bis zum Abend warten und dann alles auf einmal. Du bist kein Kamel."
+   },
+   {
+    "path": "units_11.w_water",
+    "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Gerade siehst du noch frisch aus. Für deine Verhältnisse."
+   },
+   {
+    "path": "units_11.w_water",
+    "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Dann glänzt du wieder. Nicht im guten Sinn."
+   },
+   {
+    "path": "units_11.w_water",
+    "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Genieß das „noch“. Danach bist du wieder der mit dem nassen Rücken."
+   },
+   {
+    "path": "units_11.w_water",
+    "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Mehr Wasser, weniger Meckern. Eins davon wirst du schaffen."
+   },
+   {
+    "path": "units_11.w_water",
+    "text": "{WHEN} kommt die Hitze, nimm genug zu trinken mit. || Wasser ist gratis. Ich weiß, du stehst eher auf das, was dich ruiniert."
+   },
+   {
+    "path": "units_11.w_water",
+    "text": "{WHEN} wird's heiß, da gehört eine Flasche Wasser in die Tasche, und in den Kopf ein bisschen Vernunft.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_stays_wet_ice",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Vorsicht, Glatteis: Der gefrierende Regen hält den ganzen Tag an. Geh langsam und lass dir Zeit."
+   },
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Gefrierender Regen bis zum Abend, Straßen und Gehwege bleiben glatt. Pass auf, wo du hintrittst."
+   },
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Der gefrierende Regen hört heute nicht auf. Rechne überall mit Glatteis und geh vorsichtig."
+   },
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Heute bleibt's den ganzen Tag glatt, der gefrierende Regen hört nicht auf. Geh lieber langsam."
+   },
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Achtung, Glatteis! Es fällt den ganzen Tag gefrierender Regen, überall kann es glatt sein."
+   },
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Es regnet den ganzen Tag, und der Regen gefriert auf dem Boden. Vorsicht auf Straßen und Gehwegen."
+   },
+   {
+    "path": "facts.p_stays_wet_ice",
+    "text": "Heute ist ein Tag für kleine Schritte. Der gefrierende Regen hört nicht auf, und überall ist es glatt.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_stays_wet_storm",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Gewitter und Regen bis zum Abend, eine Pause gibt's heute nicht."
+   },
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Den ganzen Tag gewittert's immer wieder, und dazwischen regnet's weiter."
+   },
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Es bleibt den ganzen Tag gewittrig und nass."
+   },
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Blitz und Donner kommen heute immer wieder, und der Regen hört nicht auf."
+   },
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Ein Gewitter folgt aufs nächste, dazwischen regnet's durch. Den Schirm brauchst du den ganzen Tag."
+   },
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Heute donnert's immer wieder, und der Regen bleibt den ganzen Tag. Der Schirm bleibt also dabei."
+   },
+   {
+    "path": "facts.p_stays_wet_storm",
+    "text": "Heute wird's weder trocken noch ruhig: Regen und Gewitter halten den ganzen Tag an.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_wetter_ice",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "Vorsicht, {WHENP} kommt kurz gefrierender Regen. Danach kann es auf den Wegen glatt sein."
+   },
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "{WHENP} gibt's einen Schauer mit gefrierendem Regen. Rechne danach mit Glatteis."
+   },
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "Achtung, Glatteis: {WHENP} fällt kurz gefrierender Regen. Geh dann lieber langsam."
+   },
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "Pass {WHENP} auf: Ein kurzer gefrierender Regen macht die Wege glatt."
+   },
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "Vorsicht, {WHENP} wird's glatt: Ein kurzer gefrierender Regen zieht durch."
+   },
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "{WHENP} regnet's kurz, und der Regen gefriert. Auf Straßen und Gehwegen kann's dann glatt werden."
+   },
+   {
+    "path": "facts.p_wetter_ice",
+    "text": "Es regnet {WHENP} nur kurz, das reicht aber für Glatteis. Sei auf den Wegen vorsichtig.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_wetter_long_ice",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "Vorsicht, Glatteis: {WHENP} beginnt gefrierender Regen, und der hält lange an."
+   },
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "{WHENP} kommt gefrierender Regen, der so schnell nicht aufhört. Die Wege werden glatt, also geh langsam."
+   },
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "Achtung, {WHENP} setzt gefrierender Regen ein, und zwar für länger. Dann wird's überall glatt."
+   },
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "Pass auf: {WHENP} kommt gefrierender Regen, und der hält an. Es wird glatt."
+   },
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "{WHENP} wird's glatt: Gefrierender Regen setzt ein und hört so bald nicht auf."
+   },
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "Der gefrierende Regen kommt {WHENP} und bleibt. Rechne mit Glatteis und lass dir draußen Zeit."
+   },
+   {
+    "path": "facts.p_wetter_long_ice",
+    "text": "Noch ist's trocken. {WHENP} kommt gefrierender Regen, und ab dann bleibt's glatt.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_wetter_long_storm",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "{WHENP} beginnt Dauerregen, immer wieder mit Gewittern. Pack den Schirm ein."
+   },
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "{WHENP} wird's gewittrig, und trocken wird's danach nicht mehr. Nimm den Schirm mit."
+   },
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "{WHENP} beginnt ein langer Regen mit Blitz und Donner. Pack den Schirm ein."
+   },
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "{WHENP} zieht ein Gewitter auf, und der Regen dahinter bleibt. Nimm den Schirm mit."
+   },
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "{WHENP} wird's gewittrig und nass, und das bleibt dann auch so. Nimm den Schirm mit."
+   },
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "Rechne {WHENP} mit Gewitter und Regen, der lange anhält. Der Schirm muss mit."
+   },
+   {
+    "path": "facts.p_wetter_long_storm",
+    "text": "Erst bleibt's trocken. {WHENP} kommt ein Gewitter, und danach hört der Regen nicht mehr auf. Nimm den Schirm mit.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_wetter_maybe_ice",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "Möglicherweise gibt's {WHENP} gefrierenden Regen. Dann kann es auf den Wegen glatt werden."
+   },
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "Ganz ausgeschlossen ist es nicht: {WHENP} kann gefrierender Regen fallen. Achte dann auf glatte Wege."
+   },
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "{WHENP} ist Glatteis durch gefrierenden Regen nicht ausgeschlossen. Pass lieber auf."
+   },
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "Vorsicht, {WHENP} kann es glatt werden. Gefrierender Regen ist möglich."
+   },
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "Mit etwas Pech kommt {WHENP} gefrierender Regen, dann wird's glatt. Sei auf den Gehwegen lieber vorsichtig."
+   },
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "Es kann sein, dass {WHENP} gefrierender Regen fällt. Dann sind Straßen und Gehwege schnell glatt."
+   },
+   {
+    "path": "facts.p_wetter_maybe_ice",
+    "text": "Wahrscheinlich bleibt's trocken. Falls doch {WHENP} gefrierender Regen kommt, wird's schnell glatt.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_wetter_maybe_storm",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "{WHENP} könnte es gewittern. Pack sicherheitshalber den Schirm ein."
+   },
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "Ein Gewitter ist {WHENP} nicht ausgeschlossen. Der Schirm kann ruhig mit."
+   },
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "Es kann sein, dass {WHENP} ein Gewitter aufzieht. Nimm lieber den Schirm mit."
+   },
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "Mit etwas Pech gibt's {WHENP} ein Gewitter. Pack lieber den Schirm ein."
+   },
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "Ganz sicher ist es nicht, aber {WHENP} kann's donnern. Der Schirm sollte mit."
+   },
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "{WHENP} kann's gewittern, wahrscheinlich ist es aber nicht. Nimm den Schirm trotzdem mit."
+   },
+   {
+    "path": "facts.p_wetter_maybe_storm",
+    "text": "Ob {WHENP} wirklich ein Gewitter kommt, ist offen. Den Schirm einzupacken, kostet dich nichts.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.p_wetter_storm",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "Vorsicht, {WHENP} zieht kurz ein Gewitter auf. Der Schirm sollte mit."
+   },
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "{WHENP} kommt ein kurzes Gewitter mit Regen. Nimm den Schirm mit."
+   },
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "Rechne {WHENP} mit einem Gewitter. Lange dauert's nicht, aber der Schirm sollte mit."
+   },
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "{WHENP} gibt's einen kräftigen Gewitterschauer, der schnell wieder vorbei ist. Nimm den Schirm mit."
+   },
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "Ein Gewitter ist {WHENP} angesagt, aber nur kurz. Pack den Schirm ein."
+   },
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "{WHENP} blitzt und donnert es eine Weile. Mit Schirm bleibst du trocken."
+   },
+   {
+    "path": "facts.p_wetter_storm",
+    "text": "Das Gewitter {WHENP} ist schnell vorbei, den Schirm brauchst du trotzdem.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.shorts_swing",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.shorts_swing",
+    "text": "Jetzt ist's kalt, {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose schon jetzt."
+   },
+   {
+    "path": "facts.shorts_swing",
+    "text": "{WHEN} ist Wetter für kurze Hosen. Vielleicht ziehst du sie gleich an."
+   },
+   {
+    "path": "facts.shorts_swing",
+    "text": "Der Morgen ist kalt, {WHEN} wird's aber warm genug für kurze Hosen. Überleg dir, sie gleich anzuziehen."
+   },
+   {
+    "path": "facts.shorts_swing",
+    "text": "Kurze Hosen könnten sich heute lohnen, {WHEN} wird's richtig warm."
+   },
+   {
+    "path": "facts.shorts_swing",
+    "text": "Noch ist's kalt, {WHEN} aber schon warm. Eventuell reicht heute eine kurze Hose."
+   },
+   {
+    "path": "facts.shorts_swing",
+    "text": "{WHEN} wird's so warm, dass eine kurze Hose passt. Überleg dir, ob du nicht gleich damit losgehst."
+   },
+   {
+    "path": "facts.shorts_swing",
+    "text": "Der kalte Morgen dauert nicht lang, {WHEN} wird's warm. Eventuell lohnt sich die kurze Hose ab jetzt.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "facts.shorts_swing_back",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "{WHEN} wird's warm genug für eine kurze Hose, {WHEN2} brauchst du die warme Schicht wieder."
+   },
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "{WHEN} ist's warm, {WHEN2} wieder frisch. Überleg dir eine kurze Hose und nimm die warme Schicht mit."
+   },
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "Eine kurze Hose lohnt sich eventuell, {WHEN} wird's warm. {WHEN2} wird's kühl, also nimm die warme Schicht mit."
+   },
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "{WHEN} reicht eventuell eine kurze Hose. {WHEN2} brauchst du die warme Schicht wieder."
+   },
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "Überleg dir eine kurze Hose, {WHEN} wird's warm. Die warme Schicht nimm trotzdem mit, {WHEN2} kühlt's ab."
+   },
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "Warm wird's {WHEN}, kühl {WHEN2}. Eventuell lohnt sich die kurze Hose, die warme Schicht gehört trotzdem dazu."
+   },
+   {
+    "path": "facts.shorts_swing_back",
+    "text": "Lohnt sich heute eine kurze Hose? Eventuell: {WHEN} wird's warm. {WHEN2} brauchst du aber die warme Schicht wieder.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.day_dst_fall",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Die Uhr im Auto stimmt jetzt wieder. Für ein halbes Jahr."
+   },
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Die EU wollte die Zeitumstellung abschaffen. Das war 2018."
+   },
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Die geschenkte Stunde holen sie sich im März zurück. Geschenkt ist anders."
+   },
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Eine Stunde mehr Schlaf, und alle schauen genauso müde wie sonst."
+   },
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Heute Nacht standen die Nachtzüge eine Stunde lang still. Ausnahmsweise nach Plan."
+   },
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Vor oder zurück? Zurück. Die Frage beantworte ich jetzt seit Jahren."
+   },
+   {
+    "path": "flavour_10.day_dst_fall",
+    "text": "Heute Nacht war's zweimal halb drei. Beim zweiten Mal war auch nichts los.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.day_dst_spring",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Die Uhr am Herd geht jetzt wieder falsch. In einem halben Jahr stimmt sie von selbst."
+   },
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Die Kühe wollen trotzdem zur alten Zeit gemolken werden. Gefragt hat sie auch keiner."
+   },
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Die Stunde zwischen zwei und drei ist heute Nacht ausgefallen. Wie die halbe S-Bahn."
+   },
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Ich hab heute Nacht umgestellt, ohne zu murren. Das Murren hol ich jetzt nach."
+   },
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Mini-Jetlag nennen sie das in der Zeitung. Verreist ist aber keiner."
+   },
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Die Funkuhren haben's heute Nacht ganz von allein gemacht. Angeber."
+   },
+   {
+    "path": "flavour_10.day_dst_spring",
+    "text": "Ich hab die fehlende Stunde nicht. Durchsuch mich ruhig.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.day_longest",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Längster Tag des Jahres. Die Mücken freuen sich über jede Minute."
+   },
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Heute bleibt's lange hell. Der Rasenmäher nebenan nutzt jede Minute."
+   },
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Längster Tag des Jahres. Im Norden feiern sie Mittsommer. Hier feiert keiner."
+   },
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Heute haben die Straßenlaternen den kürzesten Dienst des Jahres. Beneidenswert."
+   },
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Sommeranfang, sagen die Astronomen. Die Meteorologen sagen, der war schon am Ersten. Einigt euch mal."
+   },
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Längster Tag des Jahres. Die Kinder kriegt heute keiner vor zehn ins Bett."
+   },
+   {
+    "path": "flavour_10.day_longest",
+    "text": "Die Nacht hat heute nur ein paar Stunden. Die Glückliche.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.day_monday",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Montagmorgen. Im Radio sind sie schon wieder gut gelaunt. Verdächtig."
+   },
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Montagmorgen. Im Postfach warten jetzt die Mails, die Freitag um fünf noch rausmussten."
+   },
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Montagmorgen. Gleich sagt wieder einer „Na, Montag, was?“. Ja. Montag."
+   },
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Montagmorgen. Irgendwo hatte ein Presslufthammer ein erholsames Wochenende."
+   },
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Montagmorgen. Irgendwo beginnt jetzt ein Meeting, das eine Mail hätte sein können."
+   },
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Montagmorgen. Der Kollege, der „Montag ist auch nur ein Tag“ sagt, ist leider auch schon da."
+   },
+   {
+    "path": "flavour_10.day_monday",
+    "text": "Automatische Antwort: Ich bin bis Dienstag nicht ansprechbar. Das Wetter gilt trotzdem.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.day_shortest",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Kürzester Tag des Jahres. Um vier blinkt beim Nachbarn schon die Lichterkette. Heute sogar zu Recht."
+   },
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Kürzester Tag des Jahres. Die Fotografen nennen's goldene Stunde. Den ganzen Tag."
+   },
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Kürzester Tag des Jahres. Im hohen Norden geht die Sonne gar nicht auf. Hier tut sie wenigstens so."
+   },
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Kürzester Tag des Jahres. Im Drogeriemarkt ist das Vitamin D ausverkauft."
+   },
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Ab heute geht's aufwärts, sagen alle. Und dann kommt der Januar."
+   },
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Kürzester Tag des Jahres. Für den Sonnenaufgang muss man heute nicht mal früh aufstehen."
+   },
+   {
+    "path": "flavour_10.day_shortest",
+    "text": "Sonnenaufgang: spät. Sonnenuntergang: gleich danach.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.night",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.night",
+    "text": "Um die Uhrzeit ist das zugegeben keine große Leistung von mir."
+   },
+   {
+    "path": "flavour_10.night",
+    "text": "Um die Uhrzeit stellt mir auch keiner mehr Fragen. Zum Glück."
+   },
+   {
+    "path": "flavour_10.night",
+    "text": "Spannender wird's heute nicht mehr. Versprochen."
+   },
+   {
+    "path": "flavour_10.night",
+    "text": "Das war's mit dem Wetter für heute. Den Rest macht der Wecker."
+   },
+   {
+    "path": "flavour_10.night",
+    "text": "Und falls nicht, merkt's um die Zeit auch keiner."
+   },
+   {
+    "path": "flavour_10.night",
+    "text": "Wär ja auch noch schöner, wenn sich nachts noch was tut."
+   },
+   {
+    "path": "flavour_10.night",
+    "text": "(Ich sag's leise, wegen der Nachbarn.)",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.pants",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_10.pants",
+    "text": "Ich hab mir das nicht ausgedacht. Ich hätt's mir schöner ausgedacht."
+   },
+   {
+    "path": "flavour_10.pants",
+    "text": "Kurze Hosen bei Kaltfront hat noch keiner bereut. Außer allen."
+   },
+   {
+    "path": "flavour_10.pants",
+    "text": "Erst Sommer, dann April. Ganz normaler Tag in Mitteleuropa."
+   },
+   {
+    "path": "flavour_10.pants",
+    "text": "Die kurze Hose läuft nicht weg. Die Kaltfront leider auch nicht."
+   },
+   {
+    "path": "flavour_10.pants",
+    "text": "Hochkrempeln geht immer. Bei kurzen Hosen runterkrempeln eher nicht."
+   },
+   {
+    "path": "flavour_10.pants",
+    "text": "Das ist keine Meinung, das ist eine Kaltfront."
+   },
+   {
+    "path": "flavour_10.pants",
+    "text": "Kurze Hose gegen Kaltfront. Ich tipp nicht auf die Hose.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.snow",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_10.snow",
+    "text": "Im Baumarkt sind die Schneeschaufeln jetzt natürlich ausverkauft."
+   },
+   {
+    "path": "flavour_10.snow",
+    "text": "Auf den Parkplätzen sind jetzt die Linien weg. Und damit jede Ordnung."
+   },
+   {
+    "path": "flavour_10.snow",
+    "text": "Auf der Straße fahren jetzt wieder alle entweder zwanzig oder viel zu schnell."
+   },
+   {
+    "path": "flavour_10.snow",
+    "text": "Jetzt rufen wieder alle bei der Oma an, damit sie bloß nicht rausgeht. Sie geht trotzdem."
+   },
+   {
+    "path": "flavour_10.snow",
+    "text": "Die Mülltonnen kriegen jetzt Mützen. Geleert werden sie trotzdem erst nächste Woche."
+   },
+   {
+    "path": "flavour_10.snow",
+    "text": "Jetzt sieht man wieder, wie viele Leute einen Schlitten haben. Und wie wenige einen Berg."
+   },
+   {
+    "path": "flavour_10.snow",
+    "text": "Zwischenstand: Schnee eins, Winterdienst null.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.storm",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_10.storm",
+    "text": "Die Hunde in der Nachbarschaft wissen's vermutlich schon länger."
+   },
+   {
+    "path": "flavour_10.storm",
+    "text": "Irgendwo hängt jetzt noch Wäsche draußen. Nicht mehr lange."
+   },
+   {
+    "path": "flavour_10.storm",
+    "text": "Danach liegt bestimmt wieder irgendwo ein Ast auf der Oberleitung."
+   },
+   {
+    "path": "flavour_10.storm",
+    "text": "Bis dahin steht die Luft wie im Wartezimmer."
+   },
+   {
+    "path": "flavour_10.storm",
+    "text": "Dann gehen überall gleichzeitig die Rollläden runter. Wie einstudiert."
+   },
+   {
+    "path": "flavour_10.storm",
+    "text": "Im Freibad pfeift der Bademeister dann wieder alle aus dem Becken. Sein Lieblingsmoment.",
+    "months": "5,6,7,8,9"
+   },
+   {
+    "path": "flavour_10.storm",
+    "text": "Wagner hätte das gefallen. Mir nicht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_easter",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Frohe Ostern. Die Hasen stehen seit Januar im Supermarkt. Wurde ja auch Zeit."
+   },
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Ostersonntag. Die Kirche ist heute voll. Das nächste Mal dann an Weihnachten."
+   },
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Beim Osterfeuer verbrennt man Gartenabfall und nennt es Brauchtum."
+   },
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Ab morgen gibt's wieder Eiersalat. Bis mindestens Mittwoch."
+   },
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Frohe Ostern. Die Eierfarbe geht von den Fingern erst zu Pfingsten wieder ab."
+   },
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Ostersonntag. Im Garten suchen jetzt Erwachsene Eier, die sie selbst versteckt haben."
+   },
+   {
+    "path": "flavour_10.theme_easter",
+    "text": "Vorhersage für Ostersonntag: vereinzelt Eier, örtlich Schokolade, gegen Abend Bauchweh.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_force",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_force",
+    "text": "Star-Wars-Tag. Heute zitieren wieder Leute Filme, die sie seit 1983 nicht gesehen haben."
+   },
+   {
+    "path": "flavour_10.theme_force",
+    "text": "Auf Tatooine gibt's zwei Sonnen. Hier reicht schon eine, damit alle jammern."
+   },
+   {
+    "path": "flavour_10.theme_force",
+    "text": "Star-Wars-Tag. Die Fans streiten wieder, welcher Teil der schlechteste ist. Wie an jedem anderen Tag auch."
+   },
+   {
+    "path": "flavour_10.theme_force",
+    "text": "Star-Wars-Tag. Nur fürs Protokoll: Ich bin nicht dein Vater."
+   },
+   {
+    "path": "flavour_10.theme_force",
+    "text": "Star-Wars-Tag. Die Lichtschwerter im Spielzeugladen sind ausverkauft. Die Erwachsenen waren schneller."
+   },
+   {
+    "path": "flavour_10.theme_force",
+    "text": "R2-D2 piepst nur rum, und alle lieben ihn. Ich sag ganze Sätze."
+   },
+   {
+    "path": "flavour_10.theme_force",
+    "text": "Das ist nicht der Wetterbericht, den du suchst.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_ghd",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "Hier heißt der Tag Lichtmess. Die Bauernregel dazu kennt trotzdem keiner mehr."
+   },
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "Sieht das Murmeltier heute seinen Schatten, geht's wieder in den Bau. Ich versteh's."
+   },
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "Sechs Wochen mehr Winter, sagt das Murmeltier vermutlich. Das sagt mir auch der Kalender."
+   },
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "Das Murmeltier heißt seit über hundert Jahren Phil. Angeblich immer derselbe."
+   },
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "Murmeltiertag. Ein Nagetier mit eigenem Pressesprecher."
+   },
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "Murmeltiertag. In Deutschland hätten wir dafür eine Behörde."
+   },
+   {
+    "path": "flavour_10.theme_ghd",
+    "text": "„Und, Murmeltier, wie wird's?“ „Lasst mich schlafen.“",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_krampus",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Krampustag. Die Fellkostüme riechen wieder nach nassem Hund."
+   },
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Heute ist Krampustag. Der Nikolaus kriegt morgen trotzdem die ganze Anerkennung."
+   },
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Krampustag. Erwachsene erschrecken Kinder und nennen es Tradition."
+   },
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Krampustag. Der Krampus arbeitet einen Abend im Jahr und ist trotzdem berühmter als ich."
+   },
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Krampustag. Die Masken sind handgeschnitzt und kosten so viel wie ein Gebrauchtwagen."
+   },
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Krampustag. Das Kettengerassel draußen kommt heute ausnahmsweise nicht von der Baustelle."
+   },
+   {
+    "path": "flavour_10.theme_krampus",
+    "text": "Krampuslauf, Bewertung: ein Stern. Zu laut, zu haarig. Würde wieder hingehen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_nikolo",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Nikolaustag. Heute werden wieder Stiefel geputzt, die das ganze Jahr keiner angeschaut hat."
+   },
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Nikolaustag. Die Mandarine aus dem Stiefel schmeckt ein bisschen nach Stiefel."
+   },
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Nikolaustag. Der Nikolaus ist ein Bischof, kein Weihnachtsmann. Erklär das mal einem Supermarkt."
+   },
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Heute steckt wieder in jedem Nikolauskostüm ein Onkel. Die Kinder erkennen ihn an den Schuhen."
+   },
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Nikolaustag. Heute müssen wieder Kinder ein Gedicht aufsagen, um an Schokolade zu kommen. Harte Zeiten."
+   },
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Nikolaustag. Der goldene Bischofsstab im Kaufhaus ist aus Plastik. Der Nikolaus auch."
+   },
+   {
+    "path": "flavour_10.theme_nikolo",
+    "text": "Zustellversuch: Nikolaus. Stiefel nicht angetroffen. Sendung liegt beim Nachbarn.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_ny",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Neujahrskonzert. Beim Radetzkymarsch klatschen wieder alle mit, ob sie wollen oder nicht."
+   },
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Neujahrsspringen in Garmisch. Heute sind wieder alle Experten für Telemark."
+   },
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Ab heute schreibt wieder jeder bis Februar die falsche Jahreszahl."
+   },
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Neujahr. Die Hunde im Viertel kommen vermutlich erst morgen wieder unterm Bett vor."
+   },
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Frohes Neues. Das sagt man jetzt wieder zu jedem bis Mitte Januar."
+   },
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Neujahr. Alles hat zu, und die Tankstelle macht das Geschäft des Jahres."
+   },
+   {
+    "path": "flavour_10.theme_ny",
+    "text": "Neues Jahr, Version unverändert. Bekannte Fehler bleiben erhalten.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_okt",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Oktoberfest. Jetzt fahren wieder Leute aus ganz Europa nach München, um in einem Zelt zu sitzen."
+   },
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Im Bierzelt ist das Wetter sowieso egal. Da bin ich überflüssig."
+   },
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Oktoberfest. Im Fundbüro landen wieder Gebisse, Krücken und Eheringe."
+   },
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Oktoberfest. Für die Sanitäter auf der Wiesn sind's die längsten zwei Wochen im Jahr."
+   },
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Oktoberfest. Australier in Lederhosen, Amerikanerinnen im Dirndl. Völkerverständigung, irgendwie."
+   },
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Oktoberfest. Die Schlange vor dem Klo ist länger als die am Ausschank."
+   },
+   {
+    "path": "flavour_10.theme_okt",
+    "text": "Wiesn-Wetter: heiter bis wolkig, gegen Abend schwankend.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_spooky",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Halloween. Jedes Jahr regen sich dieselben Leute über diesen amerikanischen Brauch auf. Ich auch."
+   },
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Halloween. Die geschnitzten Kürbisse fangen morgen an zu schimmeln. Gruselig genug."
+   },
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Halloween. Im Supermarkt liegen die Gruselmasken neben den Lebkuchen. Das ist der wahre Horror."
+   },
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Irgendwo im Viertel hängt seit September ein Plastikskelett im Vorgarten. Und bleibt vermutlich bis Ostern."
+   },
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Halloween. Ich bin schwarzweiß und flacker beim Umblättern. Verkleiden muss ich mich nicht."
+   },
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Halloween. Das Gruseligste daran ist, dass morgen November ist."
+   },
+   {
+    "path": "flavour_10.theme_spooky",
+    "text": "Buh. So, das war mein Beitrag.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_10.theme_xmas",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Weihnachten. Aschenbrödel läuft wieder. Den Schuh verliert sie trotzdem jedes Jahr."
+   },
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Drei Tage Weihnachten. Am dritten will jeder nur noch ein Butterbrot."
+   },
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Ab dem Siebenundzwanzigsten wird umgetauscht. Bis dahin lächeln alle."
+   },
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Weihnachten. In der Plätzchendose sind nur noch die, die keiner mag."
+   },
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Weihnachten. Irgendein Geschenk braucht garantiert Batterien, die keiner im Haus hat."
+   },
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Weihnachten. „Last Christmas“ läuft jetzt seit acht Wochen. Heute passt's wenigstens."
+   },
+   {
+    "path": "flavour_10.theme_xmas",
+    "text": "Mein Wunschzettel: ein Pixel Farbe. Kam wieder nicht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.day_dst_fall",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Die Zeit wurde zurückgedreht. An dir sieht man davon leider nichts."
+   },
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Ab jetzt wird's früher dunkel. Bei dir oben ist das ja nichts Neues."
+   },
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Eine Woche lang sagst du jetzt wieder „Eigentlich ist es ja erst …“."
+   },
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Die Stunde mehr Schlaf steht dir. Nimm ruhig noch ein paar."
+   },
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Die geschenkte Stunde hast du sicher wieder mit Scrollen verbracht."
+   },
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Die Uhren hat man heute zurückgestellt. Deinen Kleidungsstil schon vor Jahren."
+   },
+   {
+    "path": "flavour_11.day_dst_fall",
+    "text": "Eine Stunde mehr. Ich hätt sie an deiner Stelle in die Frisur investiert.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.day_dst_spring",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Sommerzeit. Man sieht dich jetzt abends wieder länger. Schade eigentlich."
+   },
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Eine Stunde weniger Schlaf, und du jammerst, als wär's eine ganze Nacht."
+   },
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Abends ist's jetzt länger hell. Fürs Sofa musst du dir neue Gründe suchen."
+   },
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Die Uhr hat sich umgestellt. Dein Winterspeck noch nicht."
+   },
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Gemerkt hast du's vermutlich erst, als Handy und Küchenuhr sich nicht einig waren."
+   },
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Eine Stunde früher aufstehen. Für dich ist das quasi Extremsport."
+   },
+   {
+    "path": "flavour_11.day_dst_spring",
+    "text": "Abgebucht: eine Stunde Schlaf. Dein Konto war vorher schon im Minus.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.day_friday",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Freitagnachmittag. Du wirkst fast motiviert. Liegt am Feierabend, nicht an dir."
+   },
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Freitagnachmittag. Jetzt bist du auf einmal schnell. Ging doch die ganze Woche auch."
+   },
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Freitag. Das Wochenende hast du dir verdient. Sagen wir: Du kriegst es trotzdem."
+   },
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Freitag. Die Woche war nicht deine beste. Die davor allerdings auch nicht."
+   },
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Zwei Tage Wochenende nur mit dir. Das Wochenende tut mir jetzt schon leid."
+   },
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Freitagnachmittag. Jetzt grüßt du sogar wieder Leute. Fast sympathisch."
+   },
+   {
+    "path": "flavour_11.day_friday",
+    "text": "Freitag. Ich arbeite am Wochenende durch. Du nicht mal unter der Woche.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.day_longest",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Längster Tag des Jahres. Und um zehn sagst du sicher wieder „Ist ja noch hell“, als wär das ein Grund."
+   },
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Längster Tag des Jahres. Morgen jammerst du sicher schon, dass die Tage wieder kürzer werden."
+   },
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Längster Tag des Jahres. Für alle, die ihn mit dir verbringen, gefühlt noch länger."
+   },
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Längster Tag des Jahres. Heute siehst du mal fast erholt aus. Liegt am Licht."
+   },
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Längster Tag des Jahres. Lang genug, dass sogar du mal pünktlich sein könntest."
+   },
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Längster Tag des Jahres. Das Licht reicht bis spät abends. Deine Energie bis Mittag."
+   },
+   {
+    "path": "flavour_11.day_longest",
+    "text": "Sonnenaufgang: früh. Sonnenuntergang: spät. Dein erster vernünftiger Satz: offen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.day_monday",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Montagmorgen. Die Augenringe sind heute nicht ganz deine Schuld. Fast."
+   },
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Montag. Du gähnst sicher wieder, als hättest du am Wochenende was erlebt."
+   },
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Montagmorgen. Die Woche hat kaum angefangen, und du bist schon hinterher."
+   },
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Montag. Heute erzählst du sicher jedem, das Wochenende war zu kurz. Als ob's an der Länge lag."
+   },
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Montagmorgen. Deine Frisur hat das Wochenende auch noch nicht verarbeitet."
+   },
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Montag. Irgendwer freut sich heute sicher, dich wiederzusehen. Ich kenn nur keinen."
+   },
+   {
+    "path": "flavour_11.day_monday",
+    "text": "Ich war das ganze Wochenende an und seh trotzdem frischer aus als du.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.day_shortest",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Kürzester Tag des Jahres. Nur ein paar Stunden Tageslicht auf deinem Gesicht. Ein Segen."
+   },
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Kürzester Tag des Jahres. Wenn du jetzt noch ausschläfst, siehst du ihn gar nicht."
+   },
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Kürzester Tag des Jahres. Deine Winterblässe ist heute offiziell begründet."
+   },
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Wintersonnenwende. Ab jetzt geht's aufwärts. Mit dem Licht, nicht mit dir."
+   },
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Kürzester Tag des Jahres. Der Tag macht heute früh Schluss. Kann ich verstehen, er hat dich gesehen."
+   },
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Kürzester Tag des Jahres. Heute tut sogar die Sonne nur das Nötigste. Hat sie sich bei dir abgeschaut."
+   },
+   {
+    "path": "flavour_11.day_shortest",
+    "text": "Kürzester Tag des Jahres. Ich hätt gern auch nur acht Stunden mit dir.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.evening",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_11.evening",
+    "text": "Umziehen lohnt sich also nicht. Hat sich bei dir eh nie gelohnt."
+   },
+   {
+    "path": "flavour_11.evening",
+    "text": "Nichts ändern müssen. Das ist ja sowieso dein Lieblingsplan."
+   },
+   {
+    "path": "flavour_11.evening",
+    "text": "Gut so. Zweimal am Tag anziehen ist für dich ja schon Sport."
+   },
+   {
+    "path": "flavour_11.evening",
+    "text": "Für den Abend bist du also fertig angezogen. Fertig aussehen tust du schon länger."
+   },
+   {
+    "path": "flavour_11.evening",
+    "text": "Du kannst also bleiben, wie du bist. Hat dir sonst noch keiner gesagt."
+   },
+   {
+    "path": "flavour_11.evening",
+    "text": "Dann musst du heute Abend wenigstens nicht nachdenken. Kommt dir ja entgegen."
+   },
+   {
+    "path": "flavour_11.evening",
+    "text": "Gilt für die Kleidung. Für den Rest von dir übernehm ich keine Garantie.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.ice",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_11.ice",
+    "text": "Heute darfst du dich an jedem festhalten. Viel Glück beim Finden von Freiwilligen."
+   },
+   {
+    "path": "flavour_11.ice",
+    "text": "Heute brauchst du draußen volle Konzentration. Ich weiß, das ist neu für dich."
+   },
+   {
+    "path": "flavour_11.ice",
+    "text": "Gegen Glatteis hilft kein Charme. Bei dir wär das auch knapp geworden."
+   },
+   {
+    "path": "flavour_11.ice",
+    "text": "Kleine Schritte. Große hast du ja sonst auch nicht gemacht."
+   },
+   {
+    "path": "flavour_11.ice",
+    "text": "Heute ist dein Gleichgewicht gefragt. Ausgerechnet."
+   },
+   {
+    "path": "flavour_11.ice",
+    "text": "Heute schaust du bitte auf den Boden. Das kannst du doch sonst auch, wenn dich jemand grüßt."
+   },
+   {
+    "path": "flavour_11.ice",
+    "text": "Hände aus den Taschen, Blick nach unten, Stolz zu Hause lassen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.storm",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_11.storm",
+    "text": "Die Frisur ist heute hin. Ehrlich gesagt kein großer Verlust."
+   },
+   {
+    "path": "flavour_11.storm",
+    "text": "Dein Schirm hat schon bessere Tage gesehen. Du übrigens auch."
+   },
+   {
+    "path": "flavour_11.storm",
+    "text": "Dein Schirm hat mehr Rückgrat als du. Zumindest bis zur ersten Böe."
+   },
+   {
+    "path": "flavour_11.storm",
+    "text": "Mit nassen Haaren siehst du wenigstens aus, als hättest du was erlebt."
+   },
+   {
+    "path": "flavour_11.storm",
+    "text": "Gewitter. Jetzt weißt du, wie's den Leuten um dich herum sonst geht."
+   },
+   {
+    "path": "flavour_11.storm",
+    "text": "Mit dem Schirm in der Böe siehst du aus wie Mary Poppins. Nur ohne Charme."
+   },
+   {
+    "path": "flavour_11.storm",
+    "text": "Hast du den Schirm? Gut. Und deine Würde?",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_easter",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Ostern. Jetzt siehst du wieder aus wie ein Schokohase in der Sonne. Etwas zerlaufen."
+   },
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Frohe Ostern. Der Schokohase ist innen hohl. Ihr habt also was gemeinsam."
+   },
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Ostersonntag. Heute isst du wieder Schokolade zum Frühstück und nennst es Tradition."
+   },
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Ostersonntag. Der Osterhase hat sich bei dir sicher nicht reingetraut."
+   },
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Ostersonntag. Der Hase verteilt nach Verdienst. Deshalb ist dein Nest so leer."
+   },
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Ostersonntag. Wenn du heute Eier suchst, such dein Selbstbewusstsein gleich mit."
+   },
+   {
+    "path": "flavour_11.theme_easter",
+    "text": "Ich hab dieses Jahr nichts versteckt. Bei dir findet man ja nicht mal das Offensichtliche.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_force",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Möge der Vierte mit dir sein. Sonst ist ja keiner mit dir."
+   },
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Star-Wars-Tag. Mit der Frisur gehst du heute locker als Chewbacca durch."
+   },
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Star-Wars-Tag. Die dunkle Seite hätte dich sicher auch nicht genommen."
+   },
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Star-Wars-Tag. Du erklärst sicher wieder allen, welche Teile die guten sind. Keiner hat gefragt."
+   },
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Star-Wars-Tag. Und du atmest beim Treppensteigen wieder wie Darth Vader."
+   },
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Star-Wars-Tag. Den Jedi-Gedankentrick probierst du sicher wieder an der Kasse."
+   },
+   {
+    "path": "flavour_11.theme_force",
+    "text": "Vor langer Zeit, in einer weit, weit entfernten Galaxis, hast du zuletzt was Sportliches gemacht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_ghd",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_ghd",
+    "text": "Murmeltiertag. Das Murmeltier wird fürs Rauskommen gefeiert. Bei dir klatscht keiner."
+   },
+   {
+    "path": "flavour_11.theme_ghd",
+    "text": "Murmeltiertag. Im Film wird einer durch tausend gleiche Tage ein besserer Mensch. Bei dir bräucht's mehr."
+   },
+   {
+    "path": "flavour_11.theme_ghd",
+    "text": "Murmeltiertag. Wenn das Murmeltier dich sieht, gibt's sicher noch sechs Wochen Winter."
+   },
+   {
+    "path": "flavour_11.theme_ghd",
+    "text": "Murmeltiertag. Ein Tier mit Pelz und schlechter Laune. Ihr hättet euch viel zu sagen."
+   },
+   {
+    "path": "flavour_11.theme_ghd",
+    "text": "Murmeltiertag. Ein Murmeltier darf so rund sein. Es hat Winterschlaf als Ausrede."
+   },
+   {
+    "path": "flavour_11.theme_ghd",
+    "text": "Murmeltier oder du: Wer schaut morgens grantiger aus dem Loch?",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_krampus",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampustag. Der Krampus nimmt die Schlimmen mit. Dich lässt er sicher stehen."
+   },
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampustag. Mit der Frisur könntest du heute glatt beim Krampuslauf mitlaufen."
+   },
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampustag. Auf seiner Liste stehst du ganz oben. Endlich mal irgendwo ganz oben."
+   },
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampustag. Brav warst du nicht. Interessant leider auch nicht."
+   },
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampustag. Der Krampus hat Hörner, Fell und Glocken. Und trotzdem mehr Charme als du."
+   },
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampustag. Dass morgen der Nikolaus kommt, ist für dich eher theoretisch."
+   },
+   {
+    "path": "flavour_11.theme_krampus",
+    "text": "Krampus: Hörner, Fell, schlechte Laune. Du: zwei von drei.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_nikolo",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "Nikolaustag. Im goldenen Buch steht bei dir sicher nur „siehe Krampus“."
+   },
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "Nikolaustag. Der Nikolaus hat sich deine Schuhe angeschaut und ist weitergegangen."
+   },
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "Nikolaustag. Der Nikolaus weiß alles über dich. Der Arme."
+   },
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "Nikolaustag. Für dich gibt's sicher eine Mandarine. Aus Mitleid."
+   },
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "Nikolaustag. Mit deinem Bauch könntest du heute glatt für den Nikolaus einspringen."
+   },
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "Nikolaustag. Der Nikolaus glaubt an das Gute in jedem. Bei dir braucht er dafür Fantasie."
+   },
+   {
+    "path": "flavour_11.theme_nikolo",
+    "text": "„Warst du brav?“ „Geht so.“ Der Nikolaus nennt das „nein“.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_ny",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Neujahr. „Dinner for One“ hast du gestern sicher wieder mitgesprochen. Jedes Wort."
+   },
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Neujahr. Das Jahr ist einen Tag alt und hat schon genug von dir."
+   },
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Neujahr. „Neues Jahr, neues Ich“, sagst du. Das alte war ja auch nicht zu halten."
+   },
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Neujahr. Das Glücksschwein hat man dir sicher nicht ohne Grund geschenkt."
+   },
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Neujahr. Die Raketenreste auf der Straße sehen heute frischer aus als du."
+   },
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Neujahr. Dein Jahresrückblick passt sicher wieder auf einen Bierdeckel."
+   },
+   {
+    "path": "flavour_11.theme_ny",
+    "text": "Ich hab fürs neue Jahr ein Update bekommen. Du leider nicht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_okt",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Oktoberfest. Deine Tracht ist wieder aus dem Internet. Sieht man."
+   },
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Oktoberfest. Ein Hendl, eine Maß, und du nennst es Kultur."
+   },
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Oktoberfest. Die Tracht vom letzten Jahr spannt sicher. Liegt am Waschen, sagst du."
+   },
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Oktoberfest. Der Wirt ist ab heute der Einzige, der sich über dich freut."
+   },
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Oktoberfest. Zwei Wochen lang hast du eine Ausrede für den roten Kopf."
+   },
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Oktoberfest. Wer dich in Tracht sieht, braucht danach auch eine Maß."
+   },
+   {
+    "path": "flavour_11.theme_okt",
+    "text": "Zu verkaufen: deine Tracht. Einmal getragen. Würde nicht inbegriffen.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_spooky",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Halloween. Der Kürbis vor der Tür hat heute mehr Ausdruck im Gesicht als du."
+   },
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Halloween. Heute sieht jeder ein bisschen aus wie du. Nur freiwillig."
+   },
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Halloween. Spinnweben gibt's heute überall. Bei dir allerdings das ganze Jahr."
+   },
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Halloween. Skelette laufen heute überall rum. Du hast ja auch ein paar im Schrank."
+   },
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Halloween. Morgen ist Allerheiligen. Du bist da vermutlich nicht gemeint."
+   },
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Halloween. Dein Kostüm vom letzten Jahr passt dir sicher nicht mehr."
+   },
+   {
+    "path": "flavour_11.theme_spooky",
+    "text": "Kostümidee für dich: Geh als jemand mit Plan. Erkennt garantiert keiner.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_11.theme_xmas",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Weihnachten. Dein Weihnachtspulli ist ironisch gemeint, sagst du. Seit acht Jahren."
+   },
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Weihnachten. Die Socken nimmst du sicher wieder mit einem Lächeln an, das keiner glaubt."
+   },
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Weihnachten. Die Geschenke hast du sicher wieder am 23. gekauft. Sieht man ihnen an."
+   },
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Weihnachten. Nach dem Essen machst du sicher wieder heimlich den Hosenknopf auf."
+   },
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Weihnachten. Auf dem Familienfoto stehst du sicher wieder ganz außen. Aus gutem Grund."
+   },
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Weihnachten. Du bist das Geschenk? Dann bitte mit Kassenzettel."
+   },
+   {
+    "path": "flavour_11.theme_xmas",
+    "text": "Mein Wunschzettel: mehr Licht, weniger Staub, ein anderer Mensch vor mir.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.cold",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Jetzt kratzen wieder alle ihre Scheiben frei. Mit der Kundenkarte."
+   },
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Die Raucher vor den Büros sehen heute aus wie eine Polarexpedition."
+   },
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Irgendwer trägt seinen Müll gleich wieder im Bademantel raus. Im Sprint."
+   },
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Dreimal dieselbe Winterjacke gemalt. Ich komm mir vor wie ein Kopierer."
+   },
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Heute laufen alle mit hochgezogenen Schultern rum, als hätten sie was angestellt."
+   },
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Jede Bushaltestelle ist heute ein Kühlschrank mit Fahrplan."
+   },
+   {
+    "path": "flavour_vf_10.cold",
+    "text": "Durchsage: Der Frühling verspätet sich auf unbestimmte Zeit. Grund ist eine Störung im Betriebsablauf.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.cold",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Bei der Kälte kriegst du endlich mal Farbe ins Gesicht. Rot, aber immerhin."
+   },
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Ich hab dich dreimal gemalt. Glücklich kriegt dich bei der Kälte keiner hin."
+   },
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Bei der Kälte bewegst du dich endlich mal schnell."
+   },
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Zittern kannst du immerhin. Endlich ein Talent."
+   },
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Der Winter zeigt heute, was er kann. Nimm dir ruhig ein Beispiel."
+   },
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Deine Gänsehaut ist heute das Spannendste an dir."
+   },
+   {
+    "path": "flavour_vf_11.cold",
+    "text": "Wettervorhersage für dein Gesicht: verkniffen, ganztägig.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.cooling",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Später sieht man wieder, wer was Warmes dabeihat und wer nur Optimist ist."
+   },
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Auf das Wetter ist Verlass. Zumindest, wenn's ums Schlechterwerden geht."
+   },
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Ich hab's angesagt. Ausleihen kann ich nichts, ich hab selber nur einen Rahmen."
+   },
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Die ersten Bilder sind geschönt. Das letzte ist ehrlich."
+   },
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Später stehen wieder alle an der Ampel und reiben sich die Hände. Wie Bösewichte."
+   },
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Später ziehen im Biergarten alle die Schultern hoch. Und bestellen trotzdem noch eine Runde.",
+    "months": "5,6,7,8,9"
+   },
+   {
+    "path": "flavour_vf_10.cooling",
+    "text": "Vermisst: die Wärme von heute früh. Hinweise bitte an mich.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.cooling",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Mehr anziehen kannst du. Mehr hermachen leider nicht."
+   },
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Auf dem letzten Bild bist du wärmer angezogen. Klüger hab ich dich nicht hingekriegt."
+   },
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Später brauchst du eine Schicht mehr. Heiße Luft allein wärmt halt nicht."
+   },
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Eine Schicht mehr? Am Bauch hast du ja schon vorgesorgt."
+   },
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Später kommt eine Schicht dazu. Die einzige Veränderung, die du heute durchziehst."
+   },
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Dass es später kühler wird, hab ich dir extra aufgemalt. Lesen war ja nie deins."
+   },
+   {
+    "path": "flavour_vf_11.cooling",
+    "text": "Glückwunsch, du hast eine Extraschicht gewonnen. Mehr gewinnst du ja selten.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.fickle",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "Das mittlere Bild ist nur Werbung. Das Programm bleibt gleich."
+   },
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "In jedem Café hängt heute über jeder Stuhllehne ein halber Kleiderschrank."
+   },
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "Mittags kurz warm. Das Wetter weiß halt, wie man Leute hinhält."
+   },
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "Mittags wird's kurz warm. Genau so lange, wie die Mittagspause dauert. Zufall ist das nicht."
+   },
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "Mittags will plötzlich jeder draußen essen. Abends erinnert sich keiner mehr daran."
+   },
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "Mittags ruft wieder einer: „Jetzt wird's Frühling!“ Abends sagt er nichts mehr.",
+    "months": "3,4,5"
+   },
+   {
+    "path": "flavour_vf_10.fickle",
+    "text": "Morgens: Schicht an. Mittags: Schicht in der Hand. Abends: siehe morgens.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.fickle",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Mittags siehst du auf dem Bild kurz entspannt aus. Genieß es, das mal ich selten."
+   },
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Heute ziehst du dich öfter um, als du Sport machst. Also zweimal."
+   },
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Heute ziehst du dich so oft um wie vor einem Date. Mit ähnlichem Ergebnis."
+   },
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Morgens und abends gleich angezogen. So konsequent bist du sonst nur beim Aufschieben."
+   },
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Mittags kurz Sommer. Für eine Strandfigur reicht's bei dir trotzdem nicht."
+   },
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Dein Outfit ändert sich heute zweimal. Dein Gesichtsausdruck nicht."
+   },
+   {
+    "path": "flavour_vf_11.fickle",
+    "text": "Packliste für heute: eine Schicht, eine Tasche, Geduld. Zwei davon hast du.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.hot",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Ein Glück, dass ich nicht schwitzen kann. Bei mir wär das ein Kurzschluss."
+   },
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Die Wespen sind heute die Einzigen mit Energie."
+   },
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Heute laufen alle im Zickzack von Schatten zu Schatten. Wie Vampire mit Termin."
+   },
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Irgendwo sitzt jetzt wieder ein Erwachsener im Planschbecken und nennt es Homeoffice."
+   },
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Heute ist jede Tiefgarage ein Kurort."
+   },
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Wer eine Klimaanlage hat, erzählt's heute ungefragt jedem."
+   },
+   {
+    "path": "flavour_vf_10.hot",
+    "text": "Ich hab den Ventilator gefragt, wie's ihm geht. Er hat sich weggedreht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.hot",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Bei der Hitze bewegst du dich wie immer. Heute fällt's nur nicht auf."
+   },
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Den ganzen Tag heiß. Und Freunde mit Pool hast du vermutlich keine."
+   },
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Zu heiß zum Denken, sagst du. Als ob's daran läge."
+   },
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Endlich ein Grund, den ganzen Tag nichts zu tun. Als ob du einen gebraucht hättest."
+   },
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Die Sonne meint's heute gut mit dir. Ist auch die Einzige."
+   },
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Du träumst sicher wieder vom Meer. Das Meer träumt nicht von dir."
+   },
+   {
+    "path": "flavour_vf_11.hot",
+    "text": "Heute für dich: Wasser, Schatten und bitte keinen Spiegel.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.nice",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Die Bilder unterscheiden sich heute kaum. Ein Suchbild für Leute mit viel Zeit."
+   },
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Heute fahren wieder alle Cabrios offen. Langsam. Damit's jeder sieht."
+   },
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Heute fahren alle mit dem Rad zur Arbeit und erzählen's dann den ganzen Tag."
+   },
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Heute ist die Eisdiele voller als das Fitnessstudio. Wie eigentlich immer."
+   },
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Nichts zu meckern. Ich hab trotzdem schon mal einen Zettel angefangen."
+   },
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Heute heißt wieder jedes Getränk Aperol.",
+    "months": "4,5,6,7,8,9"
+   },
+   {
+    "path": "flavour_vf_10.nice",
+    "text": "Das Wetter heute: vier von fünf Sternen. Einen zieh ich ab, weil's mich nicht braucht.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.nice",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Schönes Wetter. Endlich mal was in deiner Nähe, das gut aussieht."
+   },
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Geh raus, da sehen dich auch mal andere als ich. Die Armen."
+   },
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Bei dem Wetter sieht sogar dein Outfit gewollt aus."
+   },
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Heute würde dir Sonne guttun. Ein Friseur auch."
+   },
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Das Wetter macht heute alles richtig. Einer muss es ja tun."
+   },
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Auf den Bildern siehst du heute richtig entspannt aus. Ich kann halt gut lügen."
+   },
+   {
+    "path": "flavour_vf_11.nice",
+    "text": "Die Sonne scheint heute auf alle, auch auf dich. Sie ist halt nicht wählerisch.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.snow",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Gleich fühlt sich wieder jeder SUV-Fahrer bestätigt."
+   },
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Gleich bauen wieder Erwachsene Schneemänner und tun, als wär's für die Kinder."
+   },
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Gleich schaufelt jeder seinen Gehweg frei. Und schiebt den Schnee zum Nachbarn."
+   },
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Der Schnee macht alles leiser. Außer die Leute, die über den Schnee reden."
+   },
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Die Autos sehen heute alle gleich aus. Endlich Gerechtigkeit."
+   },
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Heute zeigt sich, wer seinen Eiskratzer im Auto hat und wer im Keller."
+   },
+   {
+    "path": "flavour_vf_10.snow",
+    "text": "Heute brauch ich kaum schwarze Pixel. Endlich mal ein sparsamer Tag.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.snow",
+  "live_now": 2,
+  "keep": 4,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "Der Schnee deckt heute alles zu. Bei dir wär's auch nett gewesen."
+   },
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "So eingepackt siehst du aus wie das Michelin-Männchen. Nur ohne Stern."
+   },
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "Weiße Pracht. Und mittendrin du. Irgendwas stört."
+   },
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "Heute darfst du wieder wie ein Kind im Schnee rumtollen. Die Kinder finden's peinlich."
+   },
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "Schnee schippen wär heute mal eine Chance, nützlich zu sein."
+   },
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "Der Schnee bleibt liegen. Du ja auch, sobald du kannst."
+   },
+   {
+    "path": "flavour_vf_11.snow",
+    "text": "Jede Flocke ist einzigartig. Du hattest Pech.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.warming",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Später wird's wärmer. Die Heizung bleibt trotzdem an. Aus Prinzip."
+   },
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Später wird's milder. Irgendein Optimist erklärt dann den Frühling für eröffnet.",
+    "months": "2,3,4"
+   },
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Die Sonne kommt später doch noch in die Gänge. Wie jeder Kollege nach dem dritten Kaffee."
+   },
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Später wird's angenehm. Bis dahin hat der Tag ja Zeit, sich zu entschuldigen."
+   },
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Später reißt in jedem Bus einer das Fenster auf. Und einer macht's wieder zu."
+   },
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Das erste Bild ist für Pessimisten, das letzte für Optimisten. Ich hab beide gemalt, ich bin neutral."
+   },
+   {
+    "path": "flavour_vf_10.warming",
+    "text": "Liebes Wetter, warum nicht gleich so?",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.warming",
+  "live_now": 0,
+  "keep": 6,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "Ohne die Schicht sieht man später wieder deine Haltung. Schade eigentlich."
+   },
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "Später wird's besser. Beim Wetter jedenfalls."
+   },
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "Später kommt eine Schicht runter. Dann sieht man wieder, was du den Winter über gegessen hast.",
+    "months": "2,3,4,5"
+   },
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "Das letzte Bild ist das freundlichste. Von dir kann man das nicht behaupten."
+   },
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "Später ist eine Schicht weg. Dein Charme kommt trotzdem nicht zum Vorschein."
+   },
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "Später wird's draußen angenehm. Drinnen auch, sobald du draußen bist."
+   },
+   {
+    "path": "flavour_vf_11.warming",
+    "text": "„Wird's wärmer?“ – „Ja.“ – „Und ich?“ – „Nein.“",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_10.wet",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Gleich tropft wieder in jeder Bahn ein fremder Schirm auf fremde Schuhe."
+   },
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Die Radfahrer schauen heute wieder, als hätte man sie persönlich beleidigt."
+   },
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Heute riecht wieder jede Bahn nach nassem Hund. Auch ohne Hund."
+   },
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Irgendein Autofahrer zielt heute wieder auf die Pfütze an der Haltestelle."
+   },
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Gleich gehen wieder überall die Schirme auf. Auf Augenhöhe."
+   },
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Jedes Café ist heute voll mit Leuten, die nur kurz das Ende abwarten wollen."
+   },
+   {
+    "path": "flavour_vf_10.wet",
+    "text": "Die Pfützen heute: gute Tiefe, kräftiger Abgang.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "flavour_vf_11.wet",
+  "live_now": 1,
+  "keep": 5,
+  "candidates": [
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Regen ist gut für die Haut. Bei dir muss er sich aber anstrengen."
+   },
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Unterm Schirm ist Platz für zwei. Rein theoretisch."
+   },
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Regen macht alle hässlich. Bei dir ist der Unterschied nur kleiner."
+   },
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Bei Regen riecht alles stärker. Auch du. Nur so als Hinweis."
+   },
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Du und dein Schirm: Beide klappen bei Gegenwind zusammen."
+   },
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Du und der Regen, ihr habt was gemeinsam: Keiner freut sich, wenn ihr kommt."
+   },
+   {
+    "path": "flavour_vf_11.wet",
+    "text": "Im Film küsst man sich jetzt im Regen. Bei dir läuft eher die Doku.",
+    "wild": true
+   }
+  ]
+ },
+ {
+  "path": "now_10.evening",
+  "live_now": 3,
+  "keep": 3,
+  "candidates": [
+   {
+    "path": "now_10.evening",
+    "text": "Jetzt hat im Supermarkt wieder genau eine Kasse offen. Wie jeden Abend."
+   },
+   {
+    "path": "now_10.evening",
+    "text": "Jetzt schreiben wieder alle „Bin gleich da“ und stehen noch unter der Dusche."
+   },
+   {
+    "path": "now_10.evening",
+    "text": "Jetzt geht in jedem Büro das Licht aus. Bis auf eins. Da sitzt einer, der was beweisen will."
+   },
+   {
+    "path": "now_10.evening",
+    "text": "Jetzt treffen sich wieder alle auf ein Feierabendbier. Und reden dann doch nur über die Arbeit."
+   },
+   {
+    "path": "now_10.evening",
+    "text": "Jetzt fragen sich wieder Millionen Menschen, was es zu essen gibt. Die Antwort ist Nudeln."
+   },
+   {
+    "path": "now_10.evening",
+    "text": "Gleich steht wieder einer „nur kurz“ in zweiter Reihe. Mit Warnblinker, also ganz legal."
+   },
+   {
+    "path": "now_10.evening",
+    "text": "„Wir müssen uns unbedingt mal wieder treffen.“ Sagt man um die Zeit. Und dann nie wieder.",
+    "wild": true
+   }
+  ]
+ }
+]

@@ -1,0 +1,923 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die Uhr im Auto stimmt jetzt wieder. Für ein halbes Jahr."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die EU wollte die Zeitumstellung abschaffen. Das war 2018."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die geschenkte Stunde holen sie sich im März zurück. Geschenkt ist anders."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Normalzeit heißt das offiziell. Normal ist daran gar nichts."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Eine Stunde mehr Schlaf, und alle schauen genauso müde wie sonst."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Heute Nacht standen die Nachtzüge eine Stunde lang still. Ausnahmsweise nach Plan."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Vor oder zurück? Zurück. Die Frage beantworte ich jetzt seit Jahren."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Im Radio erklärt wieder ein Schlafforscher, wie ungesund das ist. Danke."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die Uhren sind umgestellt. Der Kreislauf noch nicht."
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Heute Nacht war's zweimal halb drei. Beim zweiten Mal war auch nichts los.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Die Uhr am Herd und ich reden jetzt bis März nicht mehr miteinander.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_dst_fall",
+   "text": "Irgendwer sitzt heute garantiert eine Stunde zu früh beim Bäcker. Vermutlich mehrere.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Die Uhr am Herd geht jetzt wieder falsch. In einem halben Jahr stimmt sie von selbst."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Nach der Zeitumstellung gähnen sogar die Nachrichtensprecher."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Die Kühe wollen trotzdem zur alten Zeit gemolken werden. Gefragt hat sie auch keiner."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Die Stunde zwischen zwei und drei ist heute Nacht ausgefallen. Wie die halbe S-Bahn."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Heute früh war's wieder dunkel wie im Januar. Das nennt sich jetzt Sommerzeit."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Ich hab heute Nacht umgestellt, ohne zu murren. Das Murren hol ich jetzt nach."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Mini-Jetlag nennen sie das in der Zeitung. Verreist ist aber keiner."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Ab heute erklärt man wieder Kindern, warum man bei Tageslicht ins Bett muss."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Die Funkuhren haben's heute Nacht ganz von allein gemacht. Angeber."
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Eilmeldung: Eine Stunde spurlos verschwunden. Die Polizei hat keine Hinweise.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Ich hab die fehlende Stunde nicht. Durchsuch mich ruhig.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_dst_spring",
+   "text": "Heute Nacht kam nach zwei gleich drei. Ich war wach, ich hab's gesehen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Die Mücken freuen sich über jede Minute."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Heute bleibt's lange hell. Der Rasenmäher nebenan nutzt jede Minute."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Im Norden feiern sie Mittsommer. Hier feiert keiner."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Sommersonnenwende. Irgendwo tanzt jetzt einer barfuß um ein Feuer. Freiwillig."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Die Sperrstunde ist trotzdem um elf."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Heute geht die Sonne vor fünf auf. Wer hat das bestellt?"
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Heute haben die Straßenlaternen den kürzesten Dienst des Jahres. Beneidenswert."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Sommeranfang, sagen die Astronomen. Die Meteorologen sagen, der war schon am Ersten. Einigt euch mal."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Die Kinder kriegt heute keiner vor zehn ins Bett."
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Längster Tag des Jahres. Ich hab mitgestoppt. Stimmt.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "Die Nacht hat heute nur ein paar Stunden. Die Glückliche.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_longest",
+   "text": "„Ist doch schön, so lang hell.“ Sagt jeder, bis um vier die Vögel anfangen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Im Radio sind sie schon wieder gut gelaunt. Verdächtig."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Vor der Kaffeemaschine im Büro steht schon eine Schlange."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Das Wetter ist pünktlich da. Die S-Bahn eher nicht."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Im Postfach warten jetzt die Mails, die Freitag um fünf noch rausmussten."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Gleich sagt wieder einer „Na, Montag, was?“. Ja. Montag."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Irgendwo hatte ein Presslufthammer ein erholsames Wochenende."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Irgendwo beginnt jetzt ein Meeting, das eine Mail hätte sein können."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Im Stau stehen jetzt wieder alle, die am Freitag auch schon drin standen."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Der Kollege, der „Montag ist auch nur ein Tag“ sagt, ist leider auch schon da."
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Automatische Antwort: Ich bin bis Dienstag nicht ansprechbar. Das Wetter gilt trotzdem.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Montagmorgen. Bis Freitagabend sind's noch gut hundert Stunden. Ich hab nachgerechnet.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_monday",
+   "text": "Kaffee: läuft. S-Bahn: läuft nicht. Montag: läuft leider.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Um vier blinkt beim Nachbarn schon die Lichterkette. Heute sogar zu Recht."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Wintersonnenwende. Früher gab's dafür Feuer auf den Bergen. Heute den Adventskranz."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Acht Stunden Tageslicht heute. Die meisten sehen davon die Bürodecke."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Die Fotografen nennen's goldene Stunde. Den ganzen Tag."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Im hohen Norden geht die Sonne gar nicht auf. Hier tut sie wenigstens so."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Im Drogeriemarkt ist das Vitamin D ausverkauft."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Wintersonnenwende sagen die Astronomen. Alle anderen sagen einfach dunkel."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Ab heute geht's aufwärts, sagen alle. Und dann kommt der Januar."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Für den Sonnenaufgang muss man heute nicht mal früh aufstehen."
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Sonnenaufgang: spät. Sonnenuntergang: gleich danach.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Die Nacht hat sich wieder das größte Stück genommen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.day_shortest",
+   "text": "Kürzester Tag des Jahres. Der Rest ist Nacht. Viel Rest.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Um die Uhrzeit ist das zugegeben keine große Leistung von mir."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Die Vorhersage für die Nacht ist die einfachste. Und die undankbarste."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Um die Uhrzeit stellt mir auch keiner mehr Fragen. Zum Glück."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Nachts lieg ich nie daneben. Ist auch keine Kunst."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Spannender wird's heute nicht mehr. Versprochen."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Das war's mit dem Wetter für heute. Den Rest macht der Wecker."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Und falls nicht, merkt's um die Zeit auch keiner."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Nachts ist das Wetter so langweilig, dass sogar ich es merke."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Wär ja auch noch schöner, wenn sich nachts noch was tut."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "(Ich sag's leise, wegen der Nachbarn.)",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Wetterlage bis zum Morgen: ruhig. Meine Laune: unverändert.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Mitternacht ist ein schlechter Zeitpunkt für Überraschungen. Deshalb gibt's keine.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Ich hab mir das nicht ausgedacht. Ich hätt's mir schöner ausgedacht."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Kurze Hosen bei Kaltfront hat noch keiner bereut. Außer allen."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Erst Sommer, dann April. Ganz normaler Tag in Mitteleuropa."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Die kurze Hose läuft nicht weg. Die Kaltfront leider auch nicht."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Ich weiß, ich klinge wie die Oma. Die hatte aber meistens recht."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Hochkrempeln geht immer. Bei kurzen Hosen runterkrempeln eher nicht."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Auf der Wetterkarte hat die Kaltfront so kleine blaue Dreiecke. Sieht harmloser aus, als es ist."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Das ist keine Meinung, das ist eine Kaltfront."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Sowas nennt man hierzulande Übergangszeit. Den ganzen Sommer lang."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Kurze Hose gegen Kaltfront. Ich tipp nicht auf die Hose.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Amtliche Warnung vor kurzen Hosen. Gültig ab später.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Sommer, Teil eins von eins. Fortsetzung entfällt.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Im Baumarkt sind die Schneeschaufeln jetzt natürlich ausverkauft."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Irgendwo hoffen jetzt Kinder auf schulfrei. Und Eltern dagegen."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Auf den Parkplätzen sind jetzt die Linien weg. Und damit jede Ordnung."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Auf der Straße fahren jetzt wieder alle entweder zwanzig oder viel zu schnell."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Beim Scheibenkratzen schauen wieder alle gleich. Nämlich böse."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Auf jeden Schneemann kommt ein Hund, der seine Meinung dazu hat."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Jetzt rufen wieder alle bei der Oma an, damit sie bloß nicht rausgeht. Sie geht trotzdem."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Die Mülltonnen kriegen jetzt Mützen. Geleert werden sie trotzdem erst nächste Woche."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Jetzt sieht man wieder, wie viele Leute einen Schlitten haben. Und wie wenige einen Berg."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Zwischenstand: Schnee eins, Winterdienst null.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Zu verschenken: Schnee. Nur an Selbstabholer, gern mit Schaufel.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Liebes Tagebuch, heute wieder Schnee angesagt. Bedankt hat sich keiner.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Die Hunde in der Nachbarschaft wissen's vermutlich schon länger."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Die Uhrzeit oben ist bei Gewittern übrigens eher eine Schätzung. Die kommen, wann sie wollen."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Hinterher ist's meistens genauso schwül wie vorher. Großes Theater für nichts."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Und irgendwer sagt dann wieder: „Das zieht vorbei.“ Tut's nicht."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Irgendwo hängt jetzt noch Wäsche draußen. Nicht mehr lange."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Danach liegt bestimmt wieder irgendwo ein Ast auf der Oberleitung."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Bis dahin steht die Luft wie im Wartezimmer."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Dann gehen überall gleichzeitig die Rollläden runter. Wie einstudiert."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Im Freibad pfeift der Bademeister dann wieder alle aus dem Becken. Sein Lieblingsmoment.",
+   "months": "5,6,7,8,9"
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Licht, Ton, Wasserspiele. Eintritt frei, Applaus unerwünscht.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Für Schäden durch Hagel übernimmt dieser Bildschirm keine Haftung.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Wagner hätte das gefallen. Mir nicht.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Frohe Ostern. Die Hasen stehen seit Januar im Supermarkt. Wurde ja auch Zeit."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostersonntag. Das Beste daran ist der Montag."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostersonntag. Die Kirche ist heute voll. Das nächste Mal dann an Weihnachten."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Beim Osterfeuer verbrennt man Gartenabfall und nennt es Brauchtum."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ab morgen gibt's wieder Eiersalat. Bis mindestens Mittwoch."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Frohe Ostern. Die Eierfarbe geht von den Fingern erst zu Pfingsten wieder ab."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostersonntag. Im Garten suchen jetzt Erwachsene Eier, die sie selbst versteckt haben."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostersonntag. Zum Frühstück gibt's Schokolade, und keiner sagt was."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Ostern. Die Eier im Kühlschrank sind jetzt alle bunt. Und alle hart."
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Polizeibericht: Unbekannter Hase versteckt Eier in fremden Gärten. Zeugen schweigen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Schokohasen: vier. Davon mit Ohren: keiner.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_easter",
+   "text": "Vorhersage für Ostersonntag: vereinzelt Eier, örtlich Schokolade, gegen Abend Bauchweh.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Heute zitieren wieder Leute Filme, die sie seit 1983 nicht gesehen haben."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Möge der Vierte mit dir sein. Auf Englisch klingt das witziger."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Auf Tatooine gibt's zwei Sonnen. Hier reicht schon eine, damit alle jammern."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Auf Hoth wären sie für so einen Tag dankbar."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Die Fans streiten wieder, welcher Teil der schlechteste ist. Wie an jedem anderen Tag auch."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Nur fürs Protokoll: Ich bin nicht dein Vater."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Die Lichtschwerter im Spielzeugladen sind ausverkauft. Die Erwachsenen waren schneller."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "R2-D2 piepst nur rum, und alle lieben ihn. Ich sag ganze Sätze."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Star-Wars-Tag. Die dunkle Seite hat wenigstens Kekse. Ich hab nur Wetter."
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Passen, was du anhast, wird. Meckern, ich trotzdem werde.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Die Macht ist heute mit dir. Ab morgen musst du sie neu beantragen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_force",
+   "text": "Das ist nicht der Wetterbericht, den du suchst.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Murmeltiertag. In Amerika sagt heute ein Nagetier den Frühling an. Mit Blaskapelle."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Hier heißt der Tag Lichtmess. Die Bauernregel dazu kennt trotzdem keiner mehr."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Sieht das Murmeltier heute seinen Schatten, geht's wieder in den Bau. Ich versteh's."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Heute wird ein Murmeltier geweckt, damit Männer mit Zylinder was verkünden können."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Sechs Wochen mehr Winter, sagt das Murmeltier vermutlich. Das sagt mir auch der Kalender."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Das Murmeltier heißt seit über hundert Jahren Phil. Angeblich immer derselbe."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Murmeltiertag. Die Murmeltiere in den Alpen schlafen übrigens noch. Die sind schlauer."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Murmeltiertag. Ein Nagetier mit eigenem Pressesprecher."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Murmeltiertag. In Deutschland hätten wir dafür eine Behörde."
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Pressemitteilung: Das Murmeltier hat seinen Schatten gesehen. Wir melden uns in sechs Wochen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "„Und, Murmeltier, wie wird's?“ „Lasst mich schlafen.“",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ghd",
+   "text": "Heute klingelt für ein Murmeltier der Wecker. Endlich mal nicht für alle anderen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Die Fellkostüme riechen wieder nach nassem Hund."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Heute ist Krampustag. Der Nikolaus kriegt morgen trotzdem die ganze Anerkennung."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Erwachsene erschrecken Kinder und nennen es Tradition."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Der Krampus arbeitet einen Abend im Jahr und ist trotzdem berühmter als ich."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Die Masken sind handgeschnitzt und kosten so viel wie ein Gebrauchtwagen."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Früher kamen die Kinder in den Sack. Heute gibt's dafür ein Formular."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Früher war die Rute Erziehung. Heute hängt sie vergoldet im Schaufenster."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Das Kettengerassel draußen kommt heute ausnahmsweise nicht von der Baustelle."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampustag. Der einzige Feiertag, an dem schlechte Laune Kostümpflicht ist."
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Stellenanzeige: Krampus gesucht. Erfahrung mit Ketten erwünscht. Lächeln nicht nötig.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Krampuslauf, Bewertung: ein Stern. Zu laut, zu haarig. Würde wieder hingehen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_krampus",
+   "text": "Ich hätt heute auch gern Hörner gehabt. Gekriegt hab ich ein Update.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Heute werden wieder Stiefel geputzt, die das ganze Jahr keiner angeschaut hat."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Die Mandarine aus dem Stiefel schmeckt ein bisschen nach Stiefel."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Der Nikolaus ist ein Bischof, kein Weihnachtsmann. Erklär das mal einem Supermarkt."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Heute steckt wieder in jedem Nikolauskostüm ein Onkel. Die Kinder erkennen ihn an den Schuhen."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Heute müssen wieder Kinder ein Gedicht aufsagen, um an Schokolade zu kommen. Harte Zeiten."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Erst kommt der Krampus, dann der Nikolaus. Erst Angst, dann Schokolade. Hat sich bewährt."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Der Nikolaus hat heute mehr Termine als ein Hausarzt."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Die Nüsse aus dem Stiefel liegen bis Ostern auf dem Tisch."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Nikolaustag. Der goldene Bischofsstab im Kaufhaus ist aus Plastik. Der Nikolaus auch."
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Zustellversuch: Nikolaus. Stiefel nicht angetroffen. Sendung liegt beim Nachbarn.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Lieber Nikolaus, ich war dieses Jahr brav. Ich hab jeden Tag das Wetter angesagt. Jeden.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_nikolo",
+   "text": "Heute wird ein Bischof aus dem vierten Jahrhundert mit Schokolade gefeiert. Er hätte Fragen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neujahrskonzert. Beim Radetzkymarsch klatschen wieder alle mit, ob sie wollen oder nicht."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neujahrsspringen in Garmisch. Heute sind wieder alle Experten für Telemark."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Ab heute schreibt wieder jeder bis Februar die falsche Jahreszahl."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neues Jahr. Das Wetter ist allerdings noch das alte."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neujahr. Der ruhigste Tag des Jahres. Bis auf die, die noch Böller übrig haben."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neujahr. Die Hunde im Viertel kommen vermutlich erst morgen wieder unterm Bett vor."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Frohes Neues. Das sagt man jetzt wieder zu jedem bis Mitte Januar."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neujahr. Alles hat zu, und die Tankstelle macht das Geschäft des Jahres."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Vom Raclette ist noch so viel Käse übrig, das reicht bis Ostern."
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Neues Jahr, Version unverändert. Bekannte Fehler bleiben erhalten.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Vorhersage fürs neue Jahr: 365 Tage Wetter, davon die Hälfte zum Meckern.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_ny",
+   "text": "Ich zeig heute nur mit halber Helligkeit. Aus Rücksicht.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Jetzt fahren wieder Leute aus ganz Europa nach München, um in einem Zelt zu sitzen."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Wo die Dirndlschleife hingehört, wird jetzt wieder erklärt. Jedes Jahr, jedem."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Im Bierzelt ist das Wetter sowieso egal. Da bin ich überflüssig."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Im Fundbüro landen wieder Gebisse, Krücken und Eheringe."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Wer heute einen Tisch hat, hat ihn im Februar reserviert."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Für die Sanitäter auf der Wiesn sind's die längsten zwei Wochen im Jahr."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Australier in Lederhosen, Amerikanerinnen im Dirndl. Völkerverständigung, irgendwie."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Die Schlange vor dem Klo ist länger als die am Ausschank."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Oktoberfest. Jetzt sagen in ganz Deutschland wieder Leute „Servus“, die sonst „Moin“ sagen."
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Wiesn-Wetter: heiter bis wolkig, gegen Abend schwankend.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Ich hätt auch gern ein Lebkuchenherz. Mit „Grantler“ drauf.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_okt",
+   "text": "Sechs Millionen Besucher, sieben Millionen Maß. Den Rest kann jeder selbst ausrechnen.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Jedes Jahr regen sich dieselben Leute über diesen amerikanischen Brauch auf. Ich auch."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Die geschnitzten Kürbisse fangen morgen an zu schimmeln. Gruselig genug."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Im Supermarkt liegen die Gruselmasken neben den Lebkuchen. Das ist der wahre Horror."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Irgendwo im Viertel hängt seit September ein Plastikskelett im Vorgarten. Und bleibt vermutlich bis Ostern."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Ich bin schwarzweiß und flacker beim Umblättern. Verkleiden muss ich mich nicht."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Die Zahnärzte freuen sich schon auf November."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Das Gruseligste daran ist, dass morgen November ist."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Im Supermarkt kaufen heute auffällig viele Jugendliche Eier."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Halloween. Die Partys dazu gibt's schon seit letztem Wochenende. Und noch bis zum nächsten."
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Buh. So, das war mein Beitrag.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Diesen Herbst im Kino: Es wird früh dunkel. Und es bleibt so.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_spooky",
+   "text": "Ich verkleide mich heute als Bildschirm mit guter Laune. Gruselig, oder?",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Aschenbrödel läuft wieder. Den Schuh verliert sie trotzdem jedes Jahr."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Die Kartons von den Paketen stehen bis Februar rum. Mindestens."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Drei Tage Weihnachten. Am dritten will jeder nur noch ein Butterbrot."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Die Nadeln vom Baum findet man noch an Ostern."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Ab dem Siebenundzwanzigsten wird umgetauscht. Bis dahin lächeln alle."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. In der Plätzchendose sind nur noch die, die keiner mag."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Irgendein Geschenk braucht garantiert Batterien, die keiner im Haus hat."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. „Last Christmas“ läuft jetzt seit acht Wochen. Heute passt's wenigstens."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Weihnachten. Die Paketboten haben endlich frei. Die Einzigen, die sich wirklich freuen."
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Mein Wunschzettel: ein Pixel Farbe. Kam wieder nicht.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "O Tannenbaum. Grün sind deine Blätter bei mir übrigens nicht. Nur grau.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.theme_xmas",
+   "text": "Ho, ho, ho. Mehr Begeisterung ist von mir nicht zu erwarten.",
+   "wild": true
+  }
+ ]
+}

@@ -1,0 +1,685 @@
+{
+ "round": "2026-10-rework",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "The rain stops for a while later, then comes back {WHENP}. Keep the umbrella with you.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I don't get wet. Perks of living indoors.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The rain pauses, then returns {WHENP}, so keep the umbrella with you. / The rain takes a break, then comes back {WHENP}. Keep the umbrella. / A dry spell, then more rain {WHENP}. Keep the umbrella with you."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "It keeps raining for now, then takes a break. It's back {WHENP}, so keep the umbrella.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I don't get wet. Perks of living indoors.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The rain pauses, then returns {WHENP}, so keep the umbrella with you. / The rain takes a break, then comes back {WHENP}. Keep the umbrella. / A dry spell, then more rain {WHENP}. Keep the umbrella with you."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "Rain for now, then a dry spell, then more rain {WHENP}. The umbrella stays with you.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I don't get wet. Perks of living indoors.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The rain pauses, then returns {WHENP}, so keep the umbrella with you. / The rain takes a break, then comes back {WHENP}. Keep the umbrella. / A dry spell, then more rain {WHENP}. Keep the umbrella with you."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "Later the rain takes a break, but it returns {WHENP}. Hang on to the umbrella.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I don't get wet. Perks of living indoors.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The rain pauses, then returns {WHENP}, so keep the umbrella with you. / The rain takes a break, then comes back {WHENP}. Keep the umbrella. / A dry spell, then more rain {WHENP}. Keep the umbrella with you."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "The snow stops for a while later, then comes back {WHENP}.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I've never seen snow. Describe it to me later.",
+   "replaces": "*",
+   "meaning": "Snowing now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The snow pauses, then returns {WHENP}. / The snow takes a break, then comes back {WHENP}. / A break in the snow, then more {WHENP}."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "It keeps snowing for now, then takes a break. It's back {WHENP}.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I've never seen snow. Describe it to me later.",
+   "replaces": "*",
+   "meaning": "Snowing now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The snow pauses, then returns {WHENP}. / The snow takes a break, then comes back {WHENP}. / A break in the snow, then more {WHENP}."
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Snow for now, then a break, then more snow {WHENP}.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I've never seen snow. Describe it to me later.",
+   "replaces": "*",
+   "meaning": "Snowing now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: The snow pauses, then returns {WHENP}. / The snow takes a break, then comes back {WHENP}. / A break in the snow, then more {WHENP}."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.nice",
+   "text": "I'm a screen, and even I'd go outside today.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at On. A steady, pleasant day. Replaces: “I'm a screen on a wall, but even I'd go outside today.”. A veto keeps the original.",
+   "replaces": "I'm a screen on a wall, but even I'd go outside today."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "Thrilling stuff. I'm on the edge of my frame.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "meaning": "Sarcastic line at On. An ordinary day that warms up: a layer comes off and stays off. Replaces: “Thrilling stuff. I'm on the edge of my wall.”. A veto keeps the original.",
+   "replaces": "Thrilling stuff. I'm on the edge of my wall."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.warming",
+   "text": "Gripping weather. I can barely stay in my frame.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "meaning": "Sarcastic line at On. An ordinary day that warms up: a layer comes off and stays off. Replaces: “Gripping weather. I can barely stay on the wall.”. A veto keeps the original.",
+   "replaces": "Gripping weather. I can barely stay on the wall."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I'm staying in here where it's warm.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. Cold: winter coat or more. Replaces: “I'm staying on the wall where it's warm.”. A veto keeps the original.",
+   "replaces": "I'm staying on the wall where it's warm."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "I'll be in here, dry and smug.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "meaning": "Sarcastic line at On. Rain at some point: coming, possible, or stopping. Replaces: “I'll be on the wall, dry and smug.”. A veto keeps the original.",
+   "replaces": "I'll be on the wall, dry and smug."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.wet",
+   "text": "Staying dry is easy when you live indoors.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "meaning": "Sarcastic line at On. Rain at some point: coming, possible, or stopping. Replaces: “Staying dry is easy when you live on a wall.”. A veto keeps the original.",
+   "replaces": "Staying dry is easy when you live on a wall."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "Perfect weather. I can't leave the house. What's your excuse?",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at 11. A steady, pleasant day. Replaces: “Perfect weather. I can't leave the wall. What's your excuse?”. A veto keeps the original.",
+   "replaces": "Perfect weather. I can't leave the wall. What's your excuse?"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.nice",
+   "text": "I'm stuck in here. What's keeping you in today?",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at 11. A steady, pleasant day. Replaces: “I'm stuck on a wall. What's keeping you in today?”. A veto keeps the original.",
+   "replaces": "I'm stuck on a wall. What's keeping you in today?"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "Still up? I'm a screen and even I'm tired.",
+   "batch": "Not a wall",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "meaning": "Sarcastic line at 11. A steady night, from 22:00. Bed jokes allowed. Replaces: “Still up? I'm a wall decoration and even I'm tired.”. A veto keeps the original.",
+   "replaces": "Still up? I'm a wall decoration and even I'm tired."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_ny",
+   "text": "I don't do New Year's resolutions. I was perfect last year too.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. New Year's Day: shown instead of the mood's line. Replaces: “New Year. I don't do resolutions. I was perfect last year too.”. A veto keeps the original.",
+   "replaces": "New Year. I don't do resolutions. I was perfect last year too."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_ny",
+   "text": "Every gym is full of New Year's resolutions today. Give it a week.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. New Year's Day: shown instead of the mood's line. Replaces: “New Year. Somewhere a gym is about to be very full. Briefly.”. A veto keeps the original.",
+   "replaces": "New Year. Somewhere a gym is about to be very full. Briefly."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_spooky",
+   "text": "Everyone's dressing up for Halloween. I'm going as a screen again.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at On. Halloween: shown instead of the mood's line. Replaces: “Halloween. Everyone's dressing up. I'm going as a screen again.”. A veto keeps the original.",
+   "replaces": "Halloween. Everyone's dressing up. I'm going as a screen again."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_spooky",
+   "text": "Pale, staring, never blinking. I've been dressed for Halloween all year.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at On. Halloween: shown instead of the mood's line. Replaces: “Halloween. I've been pale and staring from this wall all year.”. A veto keeps the original.",
+   "replaces": "Halloween. I've been pale and staring from this wall all year."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_spooky",
+   "text": "That ghosting on my screen? It's for Halloween.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at On. Halloween: shown instead of the mood's line. Replaces: “Happy Halloween. The ghosting on my screen? Festive.”. A veto keeps the original.",
+   "replaces": "Happy Halloween. The ghosting on my screen? Festive."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_thanks",
+   "text": "This Thanksgiving, I'm thankful I don't have to eat anything.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. Thanksgiving: shown instead of the mood's line. Replaces: “Happy Thanksgiving. I'm thankful I don't have to eat anything.”. A veto keeps the original.",
+   "replaces": "Happy Thanksgiving. I'm thankful I don't have to eat anything."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_thanks",
+   "text": "After Thanksgiving dinner, I'll be the only one not napping.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. Thanksgiving: shown instead of the mood's line. Replaces: “Thanksgiving. I'm the only one here who won't need a nap later.”. A veto keeps the original.",
+   "replaces": "Thanksgiving. I'm the only one here who won't need a nap later."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_xmas",
+   "text": "Of all the Christmas decorations, I'm the only one that knows the forecast.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. Christmas, 24 to 26 December: shown instead of the mood's line. Replaces: “Merry Christmas. I'm the only decoration that knows the forecast.”. A veto keeps the original.",
+   "replaces": "Merry Christmas. I'm the only decoration that knows the forecast."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.theme_xmas",
+   "text": "Unlike the Christmas tree, I'll still be up in February.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at On. Christmas, 24 to 26 December: shown instead of the mood's line. Replaces: “Merry Christmas. Unlike the tree, I'll still be up in February.”. A veto keeps the original.",
+   "replaces": "Merry Christmas. Unlike the tree, I'll still be up in February."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_ny",
+   "text": "You'll call this New Year your year. You said that last year.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at 11. New Year's Day: shown instead of the mood's line. Replaces: “New Year. You'll say 'this is my year'. You said that last year.”. A veto keeps the original.",
+   "replaces": "New Year. You'll say 'this is my year'. You said that last year."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_spooky",
+   "text": "Your Halloween costume is 'tired adult' again, isn't it.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "meaning": "Sarcastic line at 11. Halloween: shown instead of the mood's line. Replaces: “Halloween. Your costume is 'tired adult' again, isn't it.”. A veto keeps the original.",
+   "replaces": "Halloween. Your costume is 'tired adult' again, isn't it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "Your relatives will ask about your plans this Christmas. Have some.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at 11. Christmas, 24 to 26 December: shown instead of the mood's line. New: English has no Christmas line at 11."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "The Christmas walk after lunch is the only exercise you'll get. Enjoy it.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at 11. Christmas, 24 to 26 December: shown instead of the mood's line. New: English has no Christmas line at 11."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.theme_xmas",
+   "text": "You'll say the Christmas cookies were for guests. There were no guests.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "meaning": "Sarcastic line at 11. Christmas, 24 to 26 December: shown instead of the mood's line. New: English has no Christmas line at 11."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "Der Regen macht später eine Pause, {WHENP} kommt er aber zurück. Behalt den Schirm dabei.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Der Regen macht Pause und kommt {WHENP} zurück, also nimm den Schirm trotzdem mit."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. Der Schirm bleibt dabei.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Der Regen macht Pause und kommt {WHENP} zurück, also nimm den Schirm trotzdem mit."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "Später hört der Regen eine Weile auf, {WHENP} geht's aber wieder los. Nimm den Schirm mit.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Der Regen macht Pause und kommt {WHENP} zurück, also nimm den Schirm trotzdem mit."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "Jetzt Regen, dann eine Pause, {WHENP} wieder Regen. Der Schirm bleibt also dabei.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Alle starren wieder aufs Regenradar. Als ob das was hilft.",
+   "replaces": "*",
+   "meaning": "Raining now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Der Regen macht Pause und kommt {WHENP} zurück, also nimm den Schirm trotzdem mit."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Der Schnee macht später eine Pause, {WHENP} schneit's aber wieder.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+   "replaces": "*",
+   "meaning": "Snowing now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Erstmal eine Schneepause. {WHENP} schneit es dann aber wieder."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Erst schneit's weiter, dann ist Pause, und {WHENP} schneit es wieder.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+   "replaces": "*",
+   "meaning": "Snowing now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Erstmal eine Schneepause. {WHENP} schneit es dann aber wieder."
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Jetzt Schnee, dann eine Pause, {WHENP} wieder Schnee.",
+   "batch": "Rain and snow",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Drei Flocken, und schon heißt's wieder Schneechaos.",
+   "replaces": "*",
+   "meaning": "Snowing now, stops, comes back. Says the order: rain now (the umbrella in the drawing), a break later, back again. Kept wordings replace all of today's: Erstmal eine Schneepause. {WHENP} schneit es dann aber wieder."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_krampus",
+   "text": "Am Krampustag ist endlich mal einer schlechter gelaunt als ich.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "meaning": "Sarcastic line at On. Krampustag, 5 December: shown instead of the mood's line. Replaces: “Krampustag. Endlich ist mal einer schlechter gelaunt als ich.”. A veto keeps the original.",
+   "replaces": "Krampustag. Endlich ist mal einer schlechter gelaunt als ich."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_nikolo",
+   "text": "Am Nikolaustag bringen Schuhe vor der Tür ausnahmsweise was.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "meaning": "Sarcastic line at On. Nikolaustag, 6 December: shown instead of the mood's line. Replaces: “Nikolaus. Der einzige Tag, an dem Schuhe vor der Tür was bringen.”. A veto keeps the original.",
+   "replaces": "Nikolaus. Der einzige Tag, an dem Schuhe vor der Tür was bringen."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_ny",
+   "text": "Erst das Silvesterfeuerwerk, dann der Feinstaub. Prost Neujahr.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "meaning": "Sarcastic line at On. New Year's Day: shown instead of the mood's line. Replaces: “Silvester. Erst Feuerwerk, dann Feinstaub. Prost Neujahr.”. A veto keeps the original.",
+   "replaces": "Silvester. Erst Feuerwerk, dann Feinstaub. Prost Neujahr."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.theme_xmas",
+   "text": "Die Weihnachtsgans hat heute den schlechtesten Tag von allen.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "meaning": "Sarcastic line at On. Christmas, 24 to 26 December: shown instead of the mood's line. Replaces: “Weihnachten. Die Gans hat heute den schlechtesten Tag von allen.”. A veto keeps the original.",
+   "replaces": "Weihnachten. Die Gans hat heute den schlechtesten Tag von allen."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_ny",
+   "text": "Deine Neujahrsvorsätze hast du bis zum Zehnten sicher schon wieder vergessen. Ich kenn dich.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "meaning": "Sarcastic line at 11. New Year's Day: shown instead of the mood's line. Replaces: “Neues Jahr, gute Vorsätze. Ich geb dir bis zum Zehnten.”. A veto keeps the original.",
+   "replaces": "Neues Jahr, gute Vorsätze. Ich geb dir bis zum Zehnten."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.theme_ny",
+   "text": "Deine Neujahrsvorsätze sind bis zum Zehnten vergessen. Ich kenn dich.",
+   "batch": "Themes",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "meaning": "Sarcastic line at 11. New Year's Day: shown instead of the mood's line. Replaces: “Neues Jahr, gute Vorsätze. Ich geb dir bis zum Zehnten.”. A veto keeps the original.",
+   "replaces": "Neues Jahr, gute Vorsätze. Ich geb dir bis zum Zehnten."
+  }
+ ]
+}

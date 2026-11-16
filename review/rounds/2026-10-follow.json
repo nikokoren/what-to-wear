@@ -1,0 +1,1333 @@
+{
+ "round": "2026-10-follow",
+ "idPrefix": "fu",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.rain",
+   "text": "I'd hold it for you, but I'm not that kind of screen.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.rain",
+   "text": "Bring it back, too. I'm keeping count.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.rain",
+   "text": "Forecast delivered. What happens to the umbrella next is on you.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.rain",
+   "text": "That's my rain forecast. The umbrella's forecast is less certain.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Snow on schedule. I'd take a bow if I had a waist.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It starts snowing this afternoon.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "text": "Everyone will act shocked anyway. I'm used to it.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It starts snowing this afternoon.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.off",
+   "text": "Act surprised when it does. I like an audience.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.off",
+   "text": "And it'll spend the afternoon where they all do: over one arm.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.off",
+   "text": "Peeling off a layer: the closest today gets to drama.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-f0292af384b7"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.on",
+   "text": "Shame. It was just getting comfortable.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "It cools down this afternoon, so bring a jacket.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-deb8fe54c5a7"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.on",
+   "text": "You'll forget it. Then you'll remember me.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "It cools down this afternoon, so bring a jacket.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.on",
+   "text": "Pack it now, feel smug later. I'll feel smugger.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "It cools down this afternoon, so bring a jacket.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.offon",
+   "text": "Off, on. The layer gets more exercise than most people today.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-fa88b0de371e"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.offon",
+   "text": "Don't lose it in between. Many have.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Water and shade are on you. Staying cool is my thing.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "It stays hot all day, so bring water and look for shade.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "I'd come along, but I'm already the coolest thing in the house.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "It stays hot all day, so bring water and look for shade.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.hot",
+   "text": "Stay in the shade. It's where all the good screens hang out.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "It stays hot all day, so bring water and look for shade.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.steady",
+   "text": "Get dressed once and you're done. I do the same, permanently.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-2f51a68cfc40"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.steady",
+   "text": "Nothing to update. I'll just stand here being right.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-34807153d5d8"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.steady",
+   "text": "One outfit, all day, no plot twists. Restful, isn't it?",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-366e6ff11ab9"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "All day. I checked twice, out of pure spite.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "text": "I'd soften it, but I only do accurate.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Same outfit, new lighting. Evenings are generous like that.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "text": "Whatever the evening brings, the outfit won't be the problem.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "And 'the rest of the evening' should be about five minutes now.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "text": "It also works for bed, I'm told.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.rain",
+   "text": "Bring it, and maybe bring it home this time.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.rain",
+   "text": "You'll leave it by the door anyway. I'll know.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.rain",
+   "text": "I said umbrella. You heard 'my hood will do'.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "There's a shower passing through this afternoon, so bring the umbrella.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "You'll still act like it's the first snow ever.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It starts snowing this afternoon.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.snow",
+   "text": "And you'll still call it 'unexpected'.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It starts snowing this afternoon.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.off",
+   "text": "You'll carry it around all afternoon like a trophy.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.on",
+   "text": "Bring it. Or practise your 'I'm not cold' face for later.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "It cools down this afternoon, so bring a jacket.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.offon",
+   "text": "You'll be too warm at noon and blame me tonight.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "The jacket can come off around midday, but you'll want it back this evening.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "You'll forget the water and blame the weather.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "It stays hot all day, so bring water and look for shade.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "text": "Shade, water, fewer complaints about the heat. Pick two.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "It stays hot all day, so bring water and look for shade.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.steady",
+   "text": "Dressed right all day. Enjoy it, it won't happen often.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-en-11e1b81980e7"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.steady",
+   "text": "For once you got it right on the first try.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "What you're wearing works for the whole day.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "All day. So no, you can't wait it out.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.cold",
+   "text": "You'll still check again in an hour, hoping I changed my mind.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "It stays this cold all day.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "text": "Your outfit's ready for the evening. Are you?",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "The rest of the evening. Not the rest of the night. Bed.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "text": "It works for the couch too, which is where this is going.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.cool",
+   "text": "Somewhere between coat and T-shirt. Like me, between genius and modest.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-2bc20fba84eb"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.cool",
+   "text": "The one forecast I could do in my sleep. If I slept.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-3a5a4d4b3c45",
+    "al-en-c8f52b03ff11"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.hot",
+   "text": "I'm the one thing in the house not making it any warmer.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-20adb58a013a"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.nice",
+   "text": "Sunny days, you walk right past me. I've stopped taking it personally. Mostly.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-b6443acaf37e"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.nice",
+   "text": "Weather this nice makes my job easy. I'll still act busy.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-82f1402ff917",
+    "al-en-f76ab5ca1d24"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.night",
+   "text": "I'll hold this picture all night without using any power. Your phone could never.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-78db20cf6d05",
+    "al-en-4dbb3f093574"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.wet",
+   "text": "Rainy days, everyone checks me twice. I'm not complaining.",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-2b4e31f0019a"
+   ],
+   "meaning": "New: sarcastic line at On. A now line: it's raining now: the drawing has the umbrella. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.cold",
+   "text": "You'll put the coat on and still complain. I can see it from here.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-3a72421a8159"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a winter coat or more. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.cool",
+   "text": "Same jacket, same route, same podcast. Living dangerously.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-ca90af0e18cf",
+    "al-en-368963ae1960"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.cool",
+   "text": "You'll describe today as 'fine'. You describe everything as 'fine'.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-7d61836a1a98"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "now_11.evening",
+   "text": "Another evening of you walking past me like I don't do anything.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-1951606912e1"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: 18:00 to 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_vf_10.fickle",
+   "text": "Three outfits for one day. You're basically a costume department.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-en-3e32d0fd5b64"
+   ],
+   "meaning": "New: sarcastic line at On. About the drawings: shows only with two or three of them (fickle day), no forecast line.",
+   "hint": "Answers a “Write new” from round 11 · only shows with three different drawings, never coat → jacket → coat",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Now"
+    },
+    {
+     "sprite": "jacket_dry",
+     "label": "from 1 pm"
+    },
+    {
+     "sprite": "coat_dry",
+     "label": "from 7 pm"
+    }
+   ],
+   "three": true
+  },
+  {
+   "lang": "en",
+   "path": "now_11.hot",
+   "text": "You asked for warm weather. Careful what you wish for.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "05,06,07",
+   "batch": "Months?",
+   "hint": "Proposed: only May–Jul (the start of summer)",
+   "meaning": "A seasonal line. “Only in these months” shows it May–Jul only; “All year” leaves it be."
+  },
+  {
+   "lang": "en",
+   "path": "now_11.hot",
+   "text": "Remember wishing for summer? This is what you get.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "05,06,07",
+   "batch": "Months?",
+   "hint": "Proposed: only May–Jul (the start of summer)",
+   "meaning": "A seasonal line. “Only in these months” shows it May–Jul only; “All year” leaves it be."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.rain",
+   "text": "Und bring ihn auch wieder heim. Im Fundbüro liegen schon genug.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.rain",
+   "text": "Ich sag's nur. Nass werden darfst du trotzdem selber.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.rain",
+   "text": "Kapuze zählt nicht. Hab ich extra so gesagt.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Und morgen sind trotzdem wieder alle überrascht.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag soll es schneien.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.snow",
+   "text": "Angesagt hab ich's. Den Winterdienst ruf ich trotzdem nicht an.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag soll es schneien.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.off",
+   "text": "Und dann trägt wieder jeder alles überm Arm spazieren.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kann die Jacke weg.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-de2d9309fe1c"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.off",
+   "text": "Ein Grund zum Meckern weniger. Ich find schon einen neuen.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kann die Jacke weg.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-ee48eb1587c6"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.off",
+   "text": "Und dann liegt's wieder in irgendeinem Büro rum.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kann die Jacke weg.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.on",
+   "text": "Und nein, wärmer wird's nicht, nur weil du's nicht glauben willst.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.on",
+   "text": "Abends hat's dann wieder keiner dabei. Außer dir, hoffentlich.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.offon",
+   "text": "An, aus, an. Wie die Heizung im Büro.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.offon",
+   "text": "Also schön dabeibehalten. Nicht wieder irgendwo liegen lassen.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Und trotzdem stehen gleich wieder alle in der prallen Sonne vor der Eisdiele.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "text": "Wasser, hab ich gesagt. Bier zählt nicht.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.steady",
+   "text": "Einmal angezogen, fertig. Wenn doch alles so einfach wär.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "Was du anhast, passt für den ganzen Tag.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.steady",
+   "text": "Heut gibt's nicht mal was zum Umziehen. Langweilig.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "Was du anhast, passt für den ganzen Tag.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at On: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Den ganzen Tag. Da hilft auch kein Jammern. Ich hab's probiert.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.cold",
+   "text": "Und morgen vermutlich auch. Aber das sag ich erst morgen.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Am Outfit liegt's also nicht, wenn der Abend nix wird.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "new": true,
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening",
+   "text": "Passt also. Jetzt muss nur noch der Abend passen.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "new": true,
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Der restliche Abend ist um die Uhrzeit eh nicht mehr lang.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.night",
+   "text": "Für die Couch passt's sowieso.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.rain",
+   "text": "Und lass ihn nicht wieder in der Bahn liegen.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.rain",
+   "text": "Den nimmst du eh nicht mit. Ich sag's trotzdem, damit ich später recht hab.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kommt ein Schauer, also nimm den Schirm mit.",
+   "new": true,
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.snow",
+   "text": "Du wirst trotzdem so tun, als hätt's dir keiner gesagt.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag soll es schneien.",
+   "new": true,
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.off",
+   "text": "Und dann vergisst du's irgendwo. Wie letztes Mal.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kann die Jacke weg.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-54570f1c1b1b"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.off",
+   "text": "Und dann hängt's den Rest des Tages über deinem Stuhl.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag kann die Jacke weg.",
+   "new": true,
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-7fbce4aa0163"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.on",
+   "text": "Nimm's mit. Frieren steht dir nicht.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-3ec4402a46f4"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.on",
+   "text": "Und später stehst du wieder bibbernd an der Haltestelle und tust überrascht.",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Heute Nachmittag kühlt's ab, da brauchst du vermutlich eine Jacke.",
+   "new": true,
+   "batch": "Follow-up: on",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer is needed later. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-c63e80b31f40"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.offon",
+   "text": "Du ziehst es aus, und am Abend weißt du nicht mehr, wo's ist.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-1500f3dab84c",
+    "al-de-1f633d85128d",
+    "al-de-38f7804356ce",
+    "al-de-4b134e3a656d"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.offon",
+   "text": "Ausziehen kannst du. Wiederfinden ist dein Problem.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Gegen Mittag kann die Jacke weg, heute Abend brauchst du sie wieder.",
+   "new": true,
+   "batch": "Follow-up: offon",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off, then back on in the evening. It should pick up what the line says and twist it.",
+   "answers": [
+    "al-de-6fe381539e29",
+    "al-de-99eff7b19d6d",
+    "al-de-f99586262e21"
+   ],
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Wasser mitnehmen, hab ich gesagt. Nicht Eiskaffee.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.hot",
+   "text": "Du suchst dir eh wieder den einzigen Platz ohne Schatten.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten.",
+   "new": true,
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.steady",
+   "text": "Den ganzen Tag richtig angezogen. Merk dir das Gefühl.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "Was du anhast, passt für den ganzen Tag.",
+   "new": true,
+   "batch": "Follow-up: steady",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says what you're wearing works all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.cold",
+   "text": "Den ganzen Tag. Du kannst also aufhören, alle fünf Minuten nachzuschauen.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Es bleibt den ganzen Tag so kalt.",
+   "new": true,
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "text": "Passt bis heute Abend. Bei dir ist das schon eine Leistung.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "new": true,
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "text": "Der restliche Abend war vor einer Stunde. Ab ins Bett.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "new": true,
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.cool",
+   "text": "Du trägst die Jacke heut schon wieder offen. Als ob du was beweisen müsstest.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-de-2b3e85392ed2"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.hot",
+   "text": "Du hast bestimmt wieder kein Wasser dabei. Aber eine Meinung zur Hitze.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-de-d95a69473a4c"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.hot",
+   "text": "Deine Laune schmilzt heute schneller als dein Eis.",
+   "role": "flavour",
+   "sprite": "heat_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-de-ee52197dd001"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.nice",
+   "text": "Traumwetter, und du suchst trotzdem schon die erste Wolke.",
+   "role": "flavour",
+   "sprite": "tee_pants_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-de-88026c93fc93"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows a mild or warm outfit. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.night",
+   "text": "Um die Zeit fängst du wieder mit „Weißt du, was ich glaube?“ an. Nein. Schlaf.",
+   "role": "flavour",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "new": true,
+   "batch": "Write new",
+   "answers": [
+    "al-de-0cb9fc2cedad"
+   ],
+   "meaning": "New: sarcastic line at 11. A now line: from 22:00, any weather. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "hint": "Answers a “Write new” from round 11"
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cold",
+   "text": "Kalt ist's. Wie jedes Jahr, und jedes Jahr sind alle überrascht.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "10,11,12",
+   "batch": "Months?",
+   "hint": "Proposed: only Oct–Dec (the first cold weeks (owner, round 11))",
+   "meaning": "A seasonal line. “Only in these months” shows it Oct–Dec only; “All year” leaves it be."
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cold",
+   "text": "Jedes Jahr wird's kalt. Und jedes Jahr tun alle überrascht.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "10,11,12",
+   "batch": "Months?",
+   "hint": "Proposed: only Oct–Dec (the first cold weeks (owner, round 11))",
+   "meaning": "A seasonal line. “Only in these months” shows it Oct–Dec only; “All year” leaves it be."
+  },
+  {
+   "lang": "de",
+   "path": "flavour_vf_11.snow",
+   "text": "Schnee kommt. Deine Stiefel sind natürlich noch im Keller.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "10,11,12",
+   "batch": "Months?",
+   "hint": "Proposed: only Oct–Dec (the first snow (owner, round 11))",
+   "meaning": "A seasonal line. “Only in these months” shows it Oct–Dec only; “All year” leaves it be.",
+   "panels": [
+    {
+     "sprite": "coat_dry",
+     "label": "Jetzt"
+    },
+    {
+     "sprite": "coat_snow",
+     "label": "ab 15 Uhr"
+    }
+   ]
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cold",
+   "text": "Bei der Kälte schmeckt sogar Glühwein.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "11,12,01",
+   "batch": "Months?",
+   "hint": "Proposed: only Nov–Jan (Glühwein season)",
+   "meaning": "A seasonal line. “Only in these months” shows it Nov–Jan only; “All year” leaves it be."
+  },
+  {
+   "lang": "de",
+   "path": "now_10.cold",
+   "text": "Bei der Kälte trinkt man sogar freiwillig Glühwein.",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "",
+   "ask": "months",
+   "months": "11,12,01",
+   "batch": "Months?",
+   "hint": "Proposed: only Nov–Jan (Glühwein season)",
+   "meaning": "A seasonal line. “Only in these months” shows it Nov–Jan only; “All year” leaves it be."
+  }
+ ]
+}

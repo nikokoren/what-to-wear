@@ -124,7 +124,7 @@ region can be derived from coordinates without asking the user anything, and
 interpolated into the URL the way `language` already is:
 
 ```
-topical/##{{ language }}-##{{ region }}.json
+topical/{{ language }}-{{ region }}.json
 ```
 
 Start with `en-US`, `en-GB`, `de-DE`, `de-AT`. Fall back to the plain

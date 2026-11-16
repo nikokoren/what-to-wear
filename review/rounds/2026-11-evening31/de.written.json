@@ -1,0 +1,154 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Falls morgen früh alles anders aussieht: Ich war's nicht. Ich hab nur gemalt.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Nach mir zeigt der Bildschirm wieder was anderes. Ab da bist du wettermäßig auf dich allein gestellt.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Über morgen hab ich mich schon ausgiebig aufgeregt. Jetzt ist erst mal Feierabend.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Ich hab nach einem anderen Morgen gefragt. Umtausch erst nach Gebrauch.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Muss das sein? Offenbar ja.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Na gut. Wenn's sein muss.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Links du heute, rechts du morgen. Ich hab mir bei beiden Mühe gegeben. Sieht man nicht, ich weiß.",
+   "evtag": "{P}"
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Das Wetter kann sich über Nacht noch ändern. Bei dir rechne ich nicht damit.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Ich meckere heute über morgen. Über dich meckere ich das ganze Jahr.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Der Regen geht heut früh ins Bett. Morgen will er gründlich sein.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Der Regen hat sich sogar mit Uhrzeit angekündigt. Höflich ist er ja, das muss man ihm lassen.",
+   "evtag": "{T}"
+  },
+  {
+   "path": "evening.jokes_11.rain",
+   "text": "Nach dem Regen siehst du wenigstens frisch gewaschen aus. Fürs Erste.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "Schnee. Und ich darf wieder jede Flocke einzeln malen.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "Schnee. Na dann.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.snow",
+   "text": "Im Schnee sieht jeder ein bisschen besser aus. Fast jeder.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Die Kälte zieht morgen ein. Miete zahlt sie natürlich keine.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Kälter. War ja klar.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.colder",
+   "text": "Eine Schicht mehr. Dann machst du wenigstens was her.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Wärmer. Ich find schon noch was zum Meckern.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Weniger Schichten zu malen. Endlich mal ein ruhiger Tag für mich.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.warmer",
+   "text": "Wärmer morgen. Weniger anziehen musst du trotzdem nicht. Glaub mir.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "Der Regen sagt sogar, wann er geht. Manieren hat er.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.drier",
+   "text": "Erst nass, dann trocken. Entscheid dich halt.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.drier",
+   "text": "Erst nass, dann trocken. Deine Frisur kommt da so schnell nicht hinterher.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Es tut sich nichts. Ich mal dann halt ein bisschen Hintergrund, damit's nach Arbeit aussieht.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Ein Outfit für den ganzen Tag. Mehr Komfort gibt's bei mir nicht.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.steady",
+   "text": "Ein Outfit für den ganzen Tag. Das ist mehr Beständigkeit, als du sonst so hinkriegst.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "Montag. Da ist das Wetter noch das kleinere Übel.",
+   "evtag": "{D:1}"
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Montag und Regen. Der Montag lässt wirklich nichts aus.",
+   "evtag": "{D:1}"
+  },
+  {
+   "path": "evening.jokes_10.steady",
+   "text": "Samstag, und das Wetter spielt mit. Kommt selten genug vor.",
+   "evtag": "{D:6}"
+  }
+ ]
+}

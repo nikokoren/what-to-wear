@@ -1,0 +1,342 @@
+{
+ "lines": [
+  {
+   "path": "fact_0.steady",
+   "text": "This outfit works all day.",
+   "answers": [
+    "rp-en-32c3e2f2c24d"
+   ]
+  },
+  {
+   "path": "fact_0.steady",
+   "text": "You're set for the whole day.",
+   "answers": [
+    "rp-en-f9c4c466c555"
+   ]
+  },
+  {
+   "path": "fact_0.steady_cold",
+   "text": "It's this cold the whole day.",
+   "answers": [
+    "rp-en-153b917fc097"
+   ]
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "The heat lasts all day. Keep water with you and stay in the shade.",
+   "answers": [
+    "rp-en-3b02ae06b384"
+   ]
+  },
+  {
+   "path": "fact_0.steady_hot",
+   "text": "It's hot the whole day, so drink plenty of water and find shade.",
+   "answers": [
+    "rp-en-9e054f0ccabf"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}.",
+   "answers": [
+    "rp-en-c4b592377d99"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_early",
+   "text": "{WHEN} it's warm enough for shorts, so think about wearing them now.",
+   "answers": [
+    "rp-en-cd872e0ed538"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "{WHEN} it's shorts weather. Maybe wear shorts and keep {G} for the cold start.",
+   "answers": [
+    "rp-en-3d11c238695f"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "Shorts could work today. {WHEN} it's warm, and {G} covers the cold start.",
+   "answers": [
+    "rp-en-7172117c3a8b"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing",
+   "text": "It's warm enough for shorts {WHEN}. Think about shorts, with {G} on top for now."
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "You could wear shorts today. It's warm {WHEN}, but bring {G} for {WHEN2}.",
+   "answers": [
+    "rp-en-639841d32d48"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "Shorts might work today: warm {WHEN}, cooler {WHEN2}. Keep {G} with you either way.",
+   "answers": [
+    "rp-en-7a66928543c3"
+   ]
+  },
+  {
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} it's shorts weather, and {WHEN2} it cools down again. If you go with shorts, keep {G} handy."
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "Cold weather is coming {WHEN}, so long pants and a warm coat might be wise.",
+   "answers": [
+    "rp-en-ec280b9c82cb"
+   ]
+  },
+  {
+   "path": "fact_0.pants_swing",
+   "text": "{WHEN} it's coat weather. Long pants and a warm coat are worth thinking about."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}."
+  },
+  {
+   "path": "fact_0.p_drier",
+   "text": "The rain stops {WHENSTOP}, but you'll want the umbrella before that."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "The snow stops {WHENSTOP}."
+  },
+  {
+   "path": "fact_0.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "Watch for ice. The freezing rain stops {WHENSTOP}, but pavements may stay icy."
+  },
+  {
+   "path": "fact_0.p_drier_ice",
+   "text": "The freezing rain stops {WHENSTOP}. Roads and pavements may stay icy after that, so walk carefully."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "The thunderstorm passes {WHENSTOP}. Until it does, stay inside if you can."
+  },
+  {
+   "path": "fact_0.p_drier_storm",
+   "text": "Thunder for now, so stay indoors if you can. The storm clears {WHENSTOP}."
+  },
+  {
+   "path": "fact_0.p_wet_again",
+   "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella with you."
+  },
+  {
+   "path": "fact_0.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}."
+  },
+  {
+   "path": "fact_0.p_wet_again_ice",
+   "text": "The freezing rain stops {WHENSTOP} and returns {WHENP}. Pavements may be icy all day, so walk carefully."
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can."
+  },
+  {
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Freezing rain sets in {WHENP} and stays, so roads and pavements may be icy. Walk carefully."
+  },
+  {
+   "path": "fact_0.p_wetter_storm",
+   "text": "There's a thunderstorm {WHENP}. If you can, be indoors when it hits.",
+   "answers": [
+    "rp-en-942ddcad8fdf"
+   ]
+  },
+  {
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "Thunderstorms move in {WHENP}. Stay inside while it thunders, and take the umbrella for the rain that follows.",
+   "answers": [
+    "rp-en-8e2a7cda8a97"
+   ]
+  },
+  {
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.",
+   "answers": [
+    "rp-en-a45505dcf0f2"
+   ]
+  },
+  {
+   "path": "fact_0.p_wet_again_storm",
+   "text": "A thunderstorm comes {WHENP}, after a dry spell. Try to be indoors for that one.",
+   "answers": [
+    "rp-en-76e1681366e3"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "You'll keep it closed through the whole shower. 'It's only spitting.'",
+   "answers": [
+    "fu-en-3c6bdbfdd863",
+    "rp-en-56e4f3fc7279"
+   ]
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "You own at least four. Any one of them will do.",
+   "answers": [
+    "se-en-94930a50790f"
+   ]
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "You'll go out just to hear it crunch. Admit it.",
+   "answers": [
+    "rp-en-42a5d72f8898"
+   ]
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "You'll keep the coat on inside for ten minutes, 'just to warm up'.",
+   "answers": [
+    "rp-en-1026571f4b4d"
+   ]
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "The leftovers in your fridge, less so.",
+   "answers": [
+    "rp-en-0b902a8b328c"
+   ]
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Still showing this at three in the morning. Hopefully to nobody.",
+   "answers": [
+    "rp-en-f3c635d1dffb"
+   ]
+  },
+  {
+   "path": "flavour_10.off",
+   "text": "Static hair for the rest of the afternoon, then. Worth it.",
+   "answers": [
+    "rp-en-81f060ebb9c4"
+   ],
+   "garments": [
+    "hoodie"
+   ]
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "You'll feel overdressed at first. Then very well informed.",
+   "answers": [
+    "rp-en-064cfc5e2e14"
+   ]
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "I don't do the midday sun either. Look how well I've turned out.",
+   "answers": [
+    "rp-en-820d2cf92f6d"
+   ]
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "The coolest spot in the house is the floor. I won't tell anyone.",
+   "answers": [
+    "rp-en-838e72ab9e4d"
+   ]
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "All that flashing. Some of us manage fine without a backlight.",
+   "answers": [
+    "rp-en-2bbc4b958677"
+   ]
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "If the power goes out, I'll still be here, showing this.",
+   "answers": [
+    "rp-en-e59aebff92b7"
+   ]
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Small steps today. I'm the expert: I haven't taken one in years.",
+   "answers": [
+    "rp-en-020f12b0a2e7"
+   ]
+  },
+  {
+   "path": "flavour_11.evening",
+   "text": "You'll probably be in joggers within the hour anyway.",
+   "answers": [
+    "rp-en-2bef94de3974"
+   ]
+  },
+  {
+   "path": "flavour_11.hot",
+   "text": "You'll say 'I'm not built for this' at least once. You're right.",
+   "answers": [
+    "rp-en-64543a36ac88"
+   ]
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "You'll text 'running late'. Please don't actually run.",
+   "answers": [
+    "rp-en-4e1ab0c99855"
+   ]
+  },
+  {
+   "path": "flavour_11.ice",
+   "text": "No showing off on the ice today. Yes, you were going to."
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "You could go to bed in it. You have before.",
+   "answers": [
+    "fu-en-df61dfbc0240"
+   ]
+  },
+  {
+   "path": "flavour_11.night",
+   "text": "You'll scroll in bed for an hour and call it winding down."
+  },
+  {
+   "path": "flavour_11.off",
+   "text": "You'll announce 'it's actually warm' to people who are also outside.",
+   "answers": [
+    "fu-en-239e1d4134a0"
+   ],
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ]
+  },
+  {
+   "path": "flavour_11.storm",
+   "text": "You'll call it over after one quiet minute. Optimist."
+  },
+  {
+   "path": "now_10.cool",
+   "text": "The jacket pocket pat-down: keys, phone, wallet. Then again, slower.",
+   "answers": [
+    "rp-en-ed99c949e136"
+   ]
+  },
+  {
+   "path": "now_10.cool",
+   "text": "You'll call it your good jacket. It's your only jacket.",
+   "answers": [
+    "se-en-c3eda54f17b6"
+   ]
+  }
+ ]
+}

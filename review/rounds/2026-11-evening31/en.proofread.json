@@ -1,0 +1,53 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I've already sighed about tomorrow twice. Pacing myself.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.any",
+   "text": "I asked for a different tomorrow. This was the only one in stock.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Current you, future you. Neither one's my best work.",
+   "evtag": "{P}"
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "I've got two complaints about tomorrow. The weather's the second one.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.rain",
+   "text": "Lovely. More water.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "I asked for the snow to land somewhere more scenic. Apparently this is it.",
+   "evtag": ""
+  },
+  {
+   "path": "evening.jokes_10.snow",
+   "text": "I'll draw the snow cleaner than it'll stay. Professional courtesy.",
+   "evtag": "",
+   "was": "I'll draw the snow cleaner than it stays. Professional courtesy.",
+   "reasons": ["Unnatural"]
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Fewer layers to draw. I won't pretend I'm not relieved.",
+   "evtag": "",
+   "was": "Fewer layers to draw tomorrow. I won't pretend I'm not relieved.",
+   "reasons": ["Other"]
+  },
+  {
+   "path": "evening.jokes_10.colder",
+   "text": "Saturday and colder. Somebody had plans.",
+   "evtag": "{D:6}"
+  }
+ ]
+}

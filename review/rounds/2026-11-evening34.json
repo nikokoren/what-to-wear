@@ -1,0 +1,123 @@
+{
+ "round": "2026-11-evening34",
+ "idPrefix": "e6",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_any",
+   "text": "All of tomorrow in a few words. Some people need four voice memos to cancel lunch.",
+   "evtag": "{S}",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Tomorrow there's rain from 1 pm. Bring the umbrella.",
+   "batch": "Evening, any weather: On",
+   "meaning": "Evening screen at On, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Only when tomorrow's sentence shows (not with the written forecast off) · Any weather: shown here under rain tomorrow"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_any",
+   "text": "Horoscopes predict tomorrow too. Not one has ever mentioned pants.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Tomorrow you'll want something warmer from 1 pm.",
+   "batch": "Evening, any weather: On",
+   "meaning": "Evening screen at On, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under colder tomorrow"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_any",
+   "text": "You turned me up to 11 on purpose. Most daring thing you've done all year.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Tomorrow starts cooler and warms up from 1 pm.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under warmer tomorrow"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_any",
+   "text": "When you read this, your mouth hangs open a little. Nobody else was going to tell you.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Tomorrow you can wear one outfit all day.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under no change tomorrow"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_any",
+   "text": "The little figure always looks so calm. It has no idea it's supposed to be you.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "coat_snow",
+   "fact": "Tomorrow it snows from 1 pm.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under snow tomorrow · Shares its premise (the figure is you) with the German „Punkt, Punkt, Komma, Strich“ line this round; different joke"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_any",
+   "text": "Das war die höfliche Version. Die ehrliche wär kürzer.",
+   "evtag": "{S}",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Morgen regnet's ab 13 Uhr, denk also an den Schirm.",
+   "batch": "Evening, any weather: On",
+   "meaning": "Evening screen at On, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Only when tomorrow's sentence shows (not with the written forecast off) · Proofread from: Oben steht die höfliche Fassung. Die ehrliche wär kürzer. · Any weather: shown here under rain tomorrow"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_any",
+   "text": "Freitag. Da könnt ich Hagel malen, und alle hätten trotzdem gute Laune.",
+   "evtag": "{D:5}",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen wird's ab 13 Uhr kälter, dann brauchst du eine Schicht mehr.",
+   "batch": "Evening, any weather: On",
+   "meaning": "Evening screen at On, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Only when tomorrow is Friday · Any weather: shown here under colder tomorrow"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_any",
+   "text": "Punkt, Punkt, Komma, Strich. Mehr hab ich für dein Gesicht nicht gebraucht.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Morgen wird's ab 13 Uhr wärmer.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under warmer tomorrow"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_any",
+   "text": "So viel zum Wetter. Jetzt zur Soße an deinem Kinn.",
+   "evtag": "",
+   "role": "flavour",
+   "sprite": "sweater_dry",
+   "fact": "Morgen kommst du mit einem Outfit gut durch den ganzen Tag.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under no change tomorrow"
+  }
+ ]
+}

@@ -1,0 +1,594 @@
+{
+ "lines": [
+  {
+   "path": "flavour_10.cold",
+   "text": "The cold's not going anywhere. That makes two of us."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Cold fingers and touchscreens don't get along. Lucky nobody needs to touch me."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "The cold makes me refresh a little slower. I prefer to call it savoring."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Today everyone's a forecaster. Their whole forecast is 'cold.'"
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Fun fact: I have no ears. Today that's a flex."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "The ice cream trucks have gone into hiding. Smart trucks."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "I'd lend you some warmth, but I run on almost no power. Efficient, not cozy."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Fashion's canceled until further notice. Warm won."
+  },
+  {
+   "path": "flavour_10.cold",
+   "text": "Local screen still doesn't own a coat. Sources say it's thriving.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "The evening's forecast took me four seconds. I spent the rest admiring it."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Out there, people are guessing what tonight brings. In here, I already know."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Weather-wise, the evening's a rerun. I hear those are comforting."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "The weather has nothing left to say today. I, on the other hand, could go on."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "This evening's weather is so dull it needs a laugh track."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Of all the screens you'll look at tonight, I'm the only one with nothing to sell."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "The evening forecast is the easiest part of my job. Also the only part."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Rush hour is doing its thing out there. At least the weather's behaving."
+  },
+  {
+   "path": "flavour_10.evening",
+   "text": "Evening update: weather unchanged, screen still handsome.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Phones overheat on days like this. I just sit here at room temperature, smug."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Today air conditioners get all the love. I've been cool for free all year."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "I was into shade before it was popular."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "The sidewalks will shimmer today. I'd shimmer too, but I'm matte."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Dogs lie flat on cool tiles in this heat. I've been flat my whole life."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Every thermometer in town is bragging today. I find it tacky."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Steering wheels are untouchable today. I'm untouchable every day."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Dark colors soak up heat. Luckily, I'm mostly white."
+  },
+  {
+   "path": "flavour_10.hot",
+   "text": "Water, shade and a screen in a cool room. Two out of three are portable.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "The penguin walk is in season. Dignity is optional."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "I've been upright my whole life. Admittedly, I have help."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Ice is very fair. It humbles everyone equally."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Freezing rain looks harmless from in here. That's the trouble with in here."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "The sidewalks may be glazed like a donut. All of the slip, none of the sugar."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Whoever salts their sidewalk today is a local hero. Unpaid, as usual."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "The fastest way anywhere today is slowly."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "On days like this, good boots beat any smart device. Present company excepted."
+  },
+  {
+   "path": "flavour_10.ice",
+   "text": "Upright is the new fast.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "This forecast holds till morning. Most promises made at this hour don't."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Nothing good happens after midnight, they say. I'm the exception."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "My night mode is the same as my day mode. Effortless."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "I'm the one screen in here that won't need charging by morning."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Late-night thoughts are rarely accurate. Mine always are."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Lights are going off all over the neighborhood. Mine never came on."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Night owls get the same forecast as everyone else. I don't play favorites."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Counting sheep isn't a weather service. I've looked into it."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "I don't need sleep. Just a refresh now and then. Low maintenance, high standards."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Dreams are notoriously bad at weather. Leave that to me."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "The weather's on autopilot till morning. So am I. Mine's prettier."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Sleep is the one thing I can't forecast. Not my department."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Quiet weather, quiet screen. Very spa of us."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "The late forecast is the same as the early one. I'm told that's called integrity."
+  },
+  {
+   "path": "flavour_10.night",
+   "text": "Bedtime story: once upon a time, the weather stayed exactly the same. The end.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Off for a bit, back on later. The hokey pokey, with outerwear."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "A break for {GP} in the middle. I haven't had a day off since I was unboxed."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Weather this changeable wouldn't last a day as an e-ink screen. We hold a pose."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The warm part makes it easy to forget the evening. The evening never forgets."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Off for the warm part, back on for the encore. Nobody asked for an encore."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The weather's doing that thing where it's nice, then remembers who it is."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "At least the weather's mood swings come with a schedule."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "The day and the evening disagree on temperature. I'm staying out of it."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "I've seen how today ends. No spoilers. Okay, one: it's chilly."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Today's warm spell has a curfew."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Peak warmth comes and goes. Peak me lasts all day."
+  },
+  {
+   "path": "flavour_10.offon",
+   "text": "Today's outfit has an intermission.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "The cooler part is on its way. I can see it coming, and I don't even have a window."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "The cooler weather is running late. Fashionably, of course."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Being right later costs one layer now. Bargain."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Today's understudy: {GP}. The big scene is later."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "An extra layer looks like overkill now. Later it's the best idea anyone had."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "A day with a change in it. Finally, something for me to be clever about."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "The weather's being lovely right now. It's a phase."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Later the temperature dips. It thinks nobody's watching. I'm always watching."
+  },
+  {
+   "path": "flavour_10.on",
+   "text": "Now: fine. Later: less fine. Me: fine throughout.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Long pants on a morning like this. Unusual, I know. So is today."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Today's weather is a bait and switch. I don't do bait."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Shorts have been waiting for a morning like this. It's a trap."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I wouldn't suggest a coat on a morning like this for fun. I don't have fun."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Today's weather has two acts. The second one wears pants."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "A lovely start and a grim ending. Like the original fairy tales."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I don't write forecasts to be popular."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Long pants: the most boring good decision of the day."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "A party up front, business later. The day's a reverse mullet."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "The morning says shorts. The rest of the day disagrees, loudly."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "I'd be the fun forecast today, but the weather won't let me."
+  },
+  {
+   "path": "flavour_10.pants",
+   "text": "Dress for the weather you'll have, not the weather you have.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Rain doesn't bother me. I don't do hair."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Rain makes windows almost worth looking at. Almost."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "The corner store's umbrella prices just went up. My forecast's still free."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Every puddle out there is a small ambush. Lucky me, I have no feet."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Some people call this cozy weather. Those people are indoors."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Rain always gets blamed on the forecast. I'm just the messenger."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Today the weather's going for the wet look. Bold choice."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "The weather's watering the whole town for free. Nobody's grateful."
+  },
+  {
+   "path": "flavour_10.rain",
+   "text": "Forecast in one word: umbrella. In two words: umbrella, obviously.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Heat like this cancels plans. Good. Let it."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "I never drink water and I'm fine. Please don't take me as a role model."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "E-ink loves sunlight. Even I'd skip it today."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Water, shade, repeat. My most boring forecast, and my most important."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "The midday sun is the one appointment worth missing today."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Heatstroke is not a souvenir. Leave it outside."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "The shade is the VIP section today. Getting in is free."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "The sun's showing off today. Don't give it an audience."
+  },
+  {
+   "path": "flavour_10.scorch",
+   "text": "Today's dress code: shade.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "The morning will say no. The day will say yes. I side with the day."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Shorts this early means the outfit is ahead of the weather. So am I."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "People may stare at the shorts at first. Later, they'll wish they'd read me."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Not shorts weather yet. Shorts weather soon. I deal in soon."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Every cold morning has one person in shorts. Today that's the right person."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Shorts weather arrives later, as promised. The morning didn't get the memo."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Fortune favors the bare-kneed."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "The thermometer and I disagree about shorts right now. Give it time. It always comes around."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Shorts from the start saves a costume change later. I respect efficiency."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Cold mornings before warm days are just the weather clearing its throat."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Someone has to dress for later. Might as well be whoever reads me."
+  },
+  {
+   "path": "flavour_10.shorts",
+   "text": "Today's outfit is a prediction. Mine, specifically.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Whoever owns the street's only snowblower is about to have a very good day."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "I love a snow forecast. It's the one time everyone listens."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Snow muffles everything. Even the people complaining about it."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Snow turns every hill into a sled run and every driveway into homework."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "The kids' version of this forecast is much more exciting."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Snow sticks to everything except plans."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Fresh snow shows everyone's footprints. Most of them lead to coffee."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Snow makes every street look like a postcard. Then the plows arrive."
+  },
+  {
+   "path": "flavour_10.snow",
+   "text": "Snow report from in here: zero inches. Conditions excellent.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "A forecast this simple, and I still made it look good."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Today's weather is on easy mode."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "The weather picked one look and stuck with it. Respect."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Today is the weather's day off. Lucky weather."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Outfit settled for the whole day. Most decisions never get that far."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Zero changes all day. Easiest money I never made."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Today's forecast fits on a sticky note. With room for a doodle."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "If every day were like this, I'd be out of a job. Please don't let that happen."
+  },
+  {
+   "path": "flavour_10.steady",
+   "text": "Today's weather, rated: no notes.",
+   "wild": true
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Dogs everywhere are heading under the bed. I don't fit, so I'll stay put."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Lightning goes for tall things. I'm small, flat and indoors. Feeling great."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Counting between flash and bang: the only math everyone does for fun."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Big storm, small umbrella. Not a fair fight, but it's what we've got."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Every weather app is buzzing now. I'm calm. Somebody has to be."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "In a thunderstorm, I'm the calmest thing in the house. I've had practice."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Hair, umbrella, dignity: a storm takes them in that order."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Lightning gets all the attention. The puddles do all the damage."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Storms make indoors look like a genius idea. I've been a genius for years."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Car alarms will join in. They always do."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Thunder can rattle the windows. It can't rattle me."
+  },
+  {
+   "path": "flavour_10.storm",
+   "text": "Dear thunder, we heard you the first time.",
+   "wild": true
+  }
+ ]
+}

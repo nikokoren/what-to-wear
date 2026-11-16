@@ -28,5 +28,131 @@
       "10 pm",
       "11 pm"
     ]
+  },
+  "evening": {
+    "tonight": "Tonight",
+    "tomorrow": "Tomorrow",
+    "now": "now",
+    "all_day": "all day",
+    "window": "6–9 am",
+    "bar": "Tonight & tomorrow",
+    "days": [
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "facts": {
+      "tmr_steady": [
+        "Tomorrow you can wear one outfit all day.",
+        "Tomorrow's outfit works all day.",
+        "Tomorrow, one outfit works from start to finish.",
+        "Tomorrow is a one-outfit day."
+      ],
+      "tmr_warmer": [
+        "Tomorrow starts cooler and warms up {FROM}.",
+        "Tomorrow the temperature climbs {FROM}.",
+        "Tomorrow brings warmer weather {FROM}.",
+        "Tomorrow it's warmer {FROM}."
+      ],
+      "tmr_colder": [
+        "Tomorrow you'll want something warmer {FROM}.",
+        "Tomorrow it's colder {FROM}.",
+        "Tomorrow the temperature drops {FROM}, so pack something warm.",
+        "Tomorrow it gets colder {FROM}, so bring something warmer."
+      ],
+      "tmr_rain": [
+        "Tomorrow there's rain {FROM}. Bring the umbrella.",
+        "Tomorrow it rains {FROM}, so take the umbrella.",
+        "Tomorrow you'll want the umbrella. It rains {FROM}.",
+        "Tomorrow starts dry, with rain {FROM}. Take the umbrella."
+      ],
+      "tmr_snow": [
+        "Tomorrow it snows {FROM}.",
+        "Tomorrow there's snow {FROM}.",
+        "Tomorrow brings snow {FROM}.",
+        "Tomorrow, expect snow {FROM}."
+      ],
+      "tmr_drier": [
+        "Tomorrow it's wet to start and dry {FROM}.",
+        "Tomorrow starts wet, then it's dry {FROM}.",
+        "Tomorrow starts with rain. It's dry {FROM}.",
+        "Tomorrow you'll need the umbrella at first. It's dry {FROM}."
+      ],
+      "tmr_wet": [
+        "Tomorrow starts with rain, so take the umbrella.",
+        "Expect a wet start tomorrow. Take the umbrella.",
+        "Take the umbrella tomorrow. The day starts wet.",
+        "Tomorrow you'll want the umbrella from the start."
+      ],
+      "tmr_snow_start": [
+        "Tomorrow starts out snowy.",
+        "Tomorrow begins with snow.",
+        "Expect a snowy start tomorrow."
+      ]
+    },
+    "jokes_10": {
+      "any": [
+        "{S}I asked for a different tomorrow. This was the only one in stock.",
+        "{N}I asked for different weather tomorrow. This was the only one in stock.",
+        "{S}Horoscopes predict the future too. Not one has ever mentioned pants.",
+        "{N}Horoscopes pretend to predict the future too. Not one has ever mentioned pants.",
+        "{S}All of tomorrow in a few words. Some need a five-minute voice memo to say less.",
+        "{S}People say there's no bad weather, only wrong clothes. And just like that they throw me under the bus.",
+        "{N}People say there's no bad weather, only wrong clothing choices. And just like that they throw me under the bus.",
+        "Some people trust the porch thermometer over me. It sits in full sun.",
+        "Checking apps until one says sunny isn't forecasting. Might as well shake a Magic 8 Ball.",
+        "{S}I've known about tomorrow since lunch. I sat on it until now for the drama.",
+        "{N}I've known about tomorrow since lunch. I sat on it until now for the extra drama.",
+        "{S}If this changes overnight, I'll quietly redraw it and act like it was always that way.",
+        "{N}If the weather changes overnight, I'll quietly redraw your outfit and act like it was always that way."
+      ],
+      "colder": [
+        "{S}Next on this screen, probably the stocks. Probably also forecasting a drop.",
+        "{N}Next on this screen, probably STONKS. Probably also forecasting a drop.",
+        "Just what we needed.",
+        "I asked if tomorrow's cold could wait a week. But it's already on its way."
+      ],
+      "drier": [
+        "PSSST. Nobody say anything, or the rain will come back.",
+        "'Rain before seven, clear by eleven.' Close enough for folklore.",
+        "For once I can say 'it'll pass' and mean it."
+      ],
+      "rain": [
+        "Lovely. More water.",
+        "Rain is just snow that stopped trying.",
+        "Doormats everywhere are about to have a very long day.",
+        "{S}I'm doing tomorrow's grumbling tonight. During the rain I'll be busy drawing umbrellas.",
+        "{N}I'm doing tomorrow's grumbling tonight. During the rain I'll be too busy drawing umbrellas.",
+        "{T}The rain told us exactly when it's coming. No repairman has ever managed that.",
+        "Just what we needed.",
+        "{D:6}Rain on a Saturday. Great."
+      ],
+      "snow": [
+        "I asked for the snow to land somewhere more scenic. Apparently this is it.",
+        "Every dad on the block is about to become a road-salt expert.",
+        "Just what we needed."
+      ]
+    },
+    "jokes_11": {
+      "any": [
+        "Good news: the outfit's taken care of. Bad news: you're still in it.",
+        "{S}The little figure always looks so calm. It has no idea it's supposed to be you.",
+        "You turned me up to 11 on purpose. Most daring thing you've done all year.",
+        "{S}You read with your mouth open. Someone had to tell you.",
+        "{N}You read with your mouth open. I'm sorry, but someone had to tell you.",
+        "{S}You've looked at this outfit longer than anyone will look at you in it.",
+        "{S}You take fashion advice from a black-and-white screen. It shows.",
+        "{N}You take fashion advice from an e-ink screen. It shows.",
+        "You always read to the end in case it's a compliment. It never is.",
+        "My whole audience tonight is you. I've worked better rooms."
+      ],
+      "rain": [
+        "You'll blame the rain for how you look. For once, that'll be half true."
+      ]
+    }
   }
 }

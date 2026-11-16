@@ -25,6 +25,13 @@ Only the flavour line has a voice; sarcasm Off shows the fact alone.
 | On (`10`) | sarcastic, dry |
 | `11` | sarcastic and personal: it's about you |
 
+The level check (owner, October 2026): **at 11, looks are fair game**,
+and so is worth ("I had someone more deserving in mind"). A personal jab
+at On belongs at 11; a line at 11 that isn't about you belongs at On;
+each joke sits at one level only. `LEVEL_FIXES` in
+`review/rounds/build_pools.py` moved or rewrote the lines the check
+caught.
+
 ### What the first voice audition settled (October 2026)
 
 From 160 votes and the owner's notes (`review/decisions/`):
@@ -188,8 +195,237 @@ Rückfrage" just before six, the neighbour's drill.
 - **Work lines need their evening.** "Ignorierte Mails gehen nicht weg"
   read as "a random sentence about emails from your weather app". The
   kept ones carry their context: Feierabend, the Stau, the S-Bahn.
-- **The TRMNL is a screen, not a wall.** It hangs on one. "Perks of
-  being a wall" was corrected to "a screen".
+- **The TRMNL is a screen, not a wall.** "Perks of being a wall" was
+  corrected to "a screen".
+
+### What round 8 added (the re-read)
+
+Every line the beta ships, voted again by the owner after seeing the
+first ones on a device: 98 vetoed, 58 reworded on the page (round 8
+facts 155 kept, 40 starred, 4 vetoed; sarcastic lines 245 kept, 58
+starred, 69 vetoed, nearly all "not funny").
+
+- **Don't assume a wall.** The screen may stand on a desk, a shelf or
+  the fridge. "On a wall", "I can't leave the wall": out. "In here",
+  "indoors", "my frame" work wherever it is.
+- **Theme lines: the day in the sentence.** Not "Christmas. Joke." but a
+  sentence the day belongs to: "Der Nikolaus hat in deinem Stiefel
+  bestimmt nur Kohle gelassen", "Ich hab dem Krampus deine Adresse nicht
+  gegeben. Noch nicht."
+- **A fact must agree with the drawing.** While it rains the drawing
+  has the umbrella, so "the rain is taking a break" reads as a lie. Say
+  the order: rain for now, a break later, back this afternoon.
+- **Hedge a guess about the reader.** The owner's edits added
+  "vermutlich", "sicher", "lieber": "Irgendein Depp läuft vermutlich
+  trotzdem in kurzen Hosen rum". The screen doesn't know; it guesses.
+- **When two rounds vote the same line, the later vote stands.**
+
+### What round 11 added (the lines on their own)
+
+Every sarcastic line shown where it can appear (now lines alone under
+their drawing, day lines under the forecast line). 350 lines, 41 "Write
+new".
+
+- **Two kinds of sarcastic line** (owner, October 2026). Under the
+  forecast line, a line has to **build on it**: the ones that worked pick
+  up what it said and twist it ("Taking that layer off might be the
+  highlight of your day", "You'll put it on later and act like it was
+  your idea", "Fifty-fifty that layer goes missing by tonight"). A line
+  that is "fine on its own" reads as disconnected there ("sarcasm and
+  forecast aren't flowing together"), and one that answers the forecast
+  makes no sense without it ("You'll read all this, then do what you
+  were going to anyway"). So: **follow-ups** only under the forecast
+  line, written per situation; **standalone lines** everywhere else (the
+  outfit alone, the drawings).
+- **Seasonal lines.** Some only work at the start of the season ("every
+  year everyone's surprised it's cold" is wrong in February; the boots
+  still in the basement only at the first snow). A line can carry the
+  months it shows in.
+- **Twins are fine.** The owner kept both wordings of most round 5 twins.
+- **Say what it means.** "Unclear" came with questions: what's "refresh
+  on a schedule", "weather doesn't dress", "a neutral palette"? Plain
+  images over clever ones.
+
+### What rounds 12 and 13 added (follow-ups, seasons, riffs)
+
+Round 12: 104 follow-ups and answers. Round 13: 157 lines from two
+writers riffing on a scout's notes about the other language. English 0
+stars, 31 keeps, 50 out; German 5 stars, 22 keeps, 49 out.
+
+- **The follow-ups that land are short and answer the forecast line.**
+  All five German stars of round 13 sit under "what you're wearing works
+  all day" or "the layer comes off": „Da hätt ich heute auch frei nehmen
+  können.“, „Dann kann ja nur noch alles andere schiefgehen.“, „Ob's dir
+  steht, ist eine andere Frage.“, „Zumindest bis zum ersten
+  Kaffeefleck.“, „Wohin damit, ist dann dein Problem. Ich sag nur das
+  Wetter an.“ The owner's edits cut lines to their sharpest half and
+  make them about "you" ("I'll know" → "I know you").
+- **Scenes from elsewhere don't follow.** A follow-up that opens a new
+  scene ("Somewhere a neighbour just picked up a drill", the pool's chip
+  stand, the commute) reads as disconnected, however good the scene.
+  English "somewhere, someone…" observations went out almost to a line.
+- **Riffs travel badly.** Most ideas carried over from the other language
+  were vetoed; the seasonal ones held up best (asparagus prices, the
+  Brenner jam, Christmas trees on the pavement, "dark since four",
+  browsing flights in January).
+- **Don't time a line on something the screen can't know.** "You'll
+  enjoy it right up to the first sneeze" is wrong once the sneeze has
+  happened, and the screen can't tell. Cut that kind of line.
+- **Don't assume where the reader is or what they're doing.** „Also Tür
+  zu“ implies the door is open right now; the screen may sit on a desk.
+  Nor that the TRMNL shows only this recipe: other frames showing the
+  grandchildren could be this one.
+- **The garment changes** (jacket, sweater, winter coat, hat and scarf):
+  follow-ups to a layer coming off or going on say `{GP}`/`{G}` or list
+  the garments they fit.
+
+### What round 14 added (replies, forecast wordings, weather outliers)
+
+622 lines: every forecast wording again with new ones, follow-ups, and
+the new situations (big swings, cold fronts, dangerous heat, ice,
+storms). A much better round: 200 stars, 329 keeps.
+
+- **Suggest, don't command, on the big swings.** The owner's edits soften
+  the shorts and long-pants advice ("think about wearing shorts",
+  "maybe wear long pants", „Überleg dir …“, „eventuell“). Those lines
+  were also too long and too complex: one idea, short.
+- **The Now drawing is the weather right now.** The suggestion (shorts on
+  a cold morning, long pants before a cold front) is the forecast line's,
+  never the drawing's.
+- **Storm and ice wordings lead with the danger.** "Bring the umbrella,
+  then get inside when it hits: why the umbrella?" The ice warning is
+  about the ice, not the umbrella; the thunder part must not be tacked
+  on. Hedge what's uncertain ("may be icy").
+- **"Until tonight" implies a change tonight.** A steady day's wording
+  says all day.
+- **Short replies keep winning** under the forecast line: „Wenigstens das
+  Wetter ist heute mal unkompliziert.“, "No layer to carry today. Both
+  hands free for snacks.", "That's your one reminder. I don't do push
+  notifications."
+
+- **The forecast and its joke are one unit (round 17).** Two lines picked
+  separately don't talk to each other: „Was du anhast, passt für den
+  ganzen Abend.“ then „Dein Handy kriegt heut wieder mehr Blicke als ich.“
+  With sarcasm on, write the forecast sentence and its joke together
+  ("fact || joke"), or as one sentence. The forecast part still states the
+  forecast plainly; the joke lands only because of that sentence.
+
+- **Where the screen is: "room", never a hallway (round 17).** The
+  screen's spot in the home is "room" in English; `build_pools.py` turns
+  any "hallway" into "room". In German keep it just as open: „drinnen“,
+  „hier drin“, never a named room for where the screen hangs.
+
+- **Predicting the reader's mishaps doesn't land (round 18).** "You'll
+  bring two of the three", the lost left glove, „Vergessen wirst du ihn
+  trotzdem“, „Und dann jammerst du in zwei Schichten“: vetoed. What
+  worked answers the forecast sentence itself („Hauptsache, du hast was
+  zum Meckern.“, "Hat hair or cold ears. Your choice."). And the owner
+  cuts explanations: „Die meide ich das ganze Jahr.“ without „Ich bin ein
+  Bildschirm.“
+
+- **No wordplay on the forecast's words, no "like your X" (round 19).**
+  "Moves in. Like it's paying rent.", „Wie deine Witze.“, "Keeps going,
+  like your excuses": vetoed, nearly all. "Answer the forecast" means
+  answer what it means for the day, not pun on a word in it. What kept:
+  the screen's own view („Ich nicht.“, "Good day to be a screen. Bad day
+  to be a sock.") and everyday truths everyone shares („Drei Flocken, und
+  schon heißt's wieder Schneechaos.“, "The novelty lasts about an hour.").
+
+- **English is US English (owner, October 2026).** Color, gray,
+  favorite, neighborhood; sidewalk, apartment, salt trucks; inches in
+  jokes about snow. Temperatures stay as the screen shows them.
+
+- **Round 22, the German read-through.** Don't assume how the reader
+  lives (the tumble dryer „irgendwo im Haus“: not everyone rents a flat).
+  Don't call a broad time precise (*pünktlich* next to „heute
+  Nachmittag“). A guess anyone could make isn't a forecast boast („Abends
+  ist's dann wieder frisch … Außer mir.“). Garments: a joke about sleeves
+  doesn't fit every layer. Storms: no "get inside" lectures.
+
+## Tightening (owner + proofreader, October 2026)
+
+The owner went through every line with a proofreading agent: 177 German
+changes and 176 English ones (`review/rounds/2026-10-de-tight/changes.md`
+and `2026-10-en-tight/changes.md` have every before and after). What they
+fixed is what writers and critics must get right the first time, in both
+languages unless marked. Both passes found the same things.
+
+**Forecast sentences say exactly what happens.**
+- One verb per event, the plain one: rain „hört auf“ / "stops", not
+  „lässt nach“ / "eases off" (which could mean it only weakens). A break
+  is „macht eine Pause“ / "takes a break", not „hört kurz auf“.
+- Say the state, not its absence: „Es bleibt kalt / heiß“ / "It stays
+  cold today", not „Es wird nicht wärmer“ / "No warming up today", "It
+  doesn't get any warmer".
+- Don't claim more than the forecast knows: „Wege können glatt sein“, „es
+  droht Glatteis“ / "sidewalks may stay icy", "can leave icy patches",
+  not „überall ist es glatt“ / "ice everywhere", "the ice stays". No
+  weather-service terms the data doesn't give („Kaltfront“): say „wird's
+  kalt“. No odds the data doesn't give: a possible shower is "possible",
+  not "possible but not likely" or "it probably stays dry"; no added
+  durations ("a short dry spell").
+- Spell it out instead of hinting: „und der Regen hält länger an“, not
+  „und zwar länger“; drop vague add-ons („aber nicht für lange“).
+- A time word must match the placeholder's job: „später abzieht“, not
+  „bald abzieht“, when the time comes from the forecast.
+- A unit's forecast sentence matches its slot: a night unit says „für
+  den Rest der Nacht“, never „für den restlichen Abend“.
+
+**Jokes: no fixed facts that vary.** „Abends früher dunkel“, not „dunkel
+um fünf“; „Mehrere Bilder“, not „Drei Bilder“ (the screen shows two or
+three); no hour counts of daylight; no numbers the day doesn't guarantee.
+No clock words the change doesn't fix: "at first", "later", "yet", not
+"this morning", "for the first hour", "for hours", "tonight", "at ten",
+"dark since about four". Under the drawings the condition may not last
+all day: "Heat in the forecast", not "Hot all day"; no "in every
+drawing". No season or sky the slot doesn't guarantee: "the cold", not
+"winter" (a scarf comes off in March too); "the warmth's lying to you",
+not "the sun's" (it may be cloudy).
+
+**Name the occasion in special-day lines.** „Weihnachtsgeschenk“, not
+„Geschenk“; „Heute kommt der Krampus“; „Beim Krampuslauf“; „Auf dem
+Oktoberfest“; „die Mandarine vom Nikolaus“. The line must say which day it
+is about on its own.
+
+**Level discipline, strictly.** Any line that addresses the reader with a
+nag, an order or a jab is 11: „Wasser, hab ich gesagt, nicht Bier“, „Ab ins
+Bett“, „Vorausgesetzt, du weißt noch, wo er ist“, „Wehe, du …“, „Schau
+nicht so“, „Also nicht wieder irgendwo liegen lassen“; "You'll forget it",
+"Don't let it go to your head", "I'm a screen, not your mother", "So
+that's not what's keeping you up". At On the screen talks about the
+weather, other people or itself. 33 German and 35 English lines moved up
+for this; two English lines moved down because they weren't about the
+reader at all ("This forecast is brought to you by… nobody").
+
+**What got cut:** obscure references (Funkuhren, Föhnwetter); lines that
+lean on an assumption about the reader („Deine Leute“) or the day's timing
+(„Mittags wird's kurz warm … Verdächtig“); clichés („so lang wie deine
+guten Vorsätze“); jokes whose setup restates the forecast („Kurz Sommer im
+Winter.“ in front of the joke); clumsy wordplay („Auf den Schnee jetzt
+folgt eine kurze Pause, … kommt neuer dazu“); a medical brush-off („Du hast
+nichts. Vermutlich.“, replaced).
+
+**English mechanics** (the proofreader's most frequent fixes):
+- US punctuation: periods and commas inside quotes ('fine.', 'it'll
+  pass,'); a question mark on a tag question ("didn't you?", "isn't it?");
+  a comma before a direct address ("Take that, smartphone").
+- US words, not British: grandma (not gran), need to pee (not need the
+  pee), really (not properly), watch your step (not mind your step), a
+  little worse for wear (not sorry for itself), taken care of (not sorted).
+- "Their hopes" for a group of people, not "its".
+- Don't assume the reader's social life: "the whole neighborhood's
+  conversation", not "your whole conversation with the neighbors".
+
+**German mechanics** (the proofreader's most frequent fixes):
+- Comma before „aber“ and around infinitive clauses: „Überleg dir, eine
+  kurze Hose anzuziehen“; no comma before „oder“ in a plain list.
+- Direct speech with a colon and German quotes: „Gleich sagt wieder einer:
+  „Na, Montag, was?“ Ja. Montag.“ Never "…".
+- „das Gleiche“, „zu Hause“, „dieses Mal“, „rausgeht“, „freinehmen“,
+  „Wenn's nur …“ (the „es“ is needed).
+- Standard German, not Austrian/Bavarian: „dieses Jahr“ not „heuer“,
+  „auf dem Sofa / Balkon“ not „am“, „träumen“ not „tagträumen“.
+- „das Wetter“ in full where „'s Wetter“ reads like dialect.
 
 ## What to read before writing, in this order
 
@@ -202,6 +438,11 @@ Rückfrage" just before six, the neighbour's drill.
    page. Write lines that would sit beside them.
 4. **`review/dont/<lang>.md`**: vetoed lines with their reasons. Never
    reuse one, or its sentence frame.
+5. **`docs/CRITIC.md`**: the checklist every critic cuts by. Write so
+   nothing on it applies.
+6. **`review/rounds/2026-10-<lang>-tight/changes.md`**: the owner's
+   tightening pass, every before and after. The patterns are under
+   "Tightening" above; check your lines against them before handing over.
 
 ## How to write a round
 
@@ -226,6 +467,14 @@ Rückfrage" just before six, the neighbour's drill.
   flags the habits that made the last corpus read as generated: objects
   given a job (the jacket's "shift", the rain's "calendar"), semicolons,
   ", because" explanations, and repeated sentence frames.
+
+- **Every round goes writer → critic → proofreader → owner** (owner,
+  October 2026, after round 25's German). No line reaches the review page
+  without a proofreading pass in its own language, by a separate agent
+  following `docs/PROOFREAD_DE.md` / `docs/PROOFREAD_EN.md` in candidate
+  mode (the section at their end): it fixes grammar, punctuation and
+  unnatural phrasing in place, and cuts what can't be fixed. Its fixes
+  are recorded beside each line, so the owner sees what changed.
 
 Hard limits that stay: no temperatures in the text, the 165-character
 budget for the full tip (`tools/check_combinations.py`), and the token

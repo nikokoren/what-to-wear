@@ -1,0 +1,185 @@
+{
+ "lines": [
+  {
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt den ganzen Tag. || „…oder es bleibt, wie es ist.“ Mit so einer Regel läge ich auch nie daneben.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Liegt eine Bauernregel daneben, lachen alle. Lieg ich daneben, wird geflucht.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Fliegen die Schwalben tief, kommt Regen. Einem Vogel glaubt man mehr als mir.",
+   "topic": "Bauernregeln"
+  },
+  {
+   "path": "unit_11.steady",
+   "text": "Dein Outfit passt den ganzen Tag. || Früher hat das ein Frosch im Glas gemacht. Der kriegte Fliegen, ich krieg Staub.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "unit_11.steady_cold",
+   "text": "Kalt bleibt's heute, den ganzen Tag. || Der Frosch im Glas hätte jetzt Winterstarre. Ich muss trotzdem arbeiten.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "Beschwerden über die Vorhersage bitte an den Frosch. Der hatte den Job vor mir.",
+   "topic": "der Wetterfrosch"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Ihr schiebt eure Laune auf den Föhn. Ich hab keinen Föhn. Ich bin einfach so.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "unit_10.w_hoodie",
+   "text": "Mit dem Pulli ist {WHEN} Schluss. || Ob's Föhn ist, steht hier nicht. Die Ausrede fürs Kopfweh such dir selber.",
+   "topic": "Föhn"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Bei Föhn ist man gereizt, heißt es. Und was ist eure Ausrede an den anderen Tagen?",
+   "topic": "Föhn"
+  },
+  {
+   "path": "unit_11.steady_hot",
+   "text": "Die Hitze lässt den ganzen Tag nicht nach. || Wer's mit dem Kreislauf hat, erzählt's bitte wem anders. Ich hab keinen.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_10.w_water",
+   "text": "Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Ab dann hat's das halbe Büro wieder mit dem Kreislauf.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_11.c_relief",
+   "text": "{WHEN} ist das Schlimmste der Hitze vorbei. || Dann erholt sich auch der Kreislauf. Erstaunlich schnell.",
+   "topic": "Kreislauf"
+  },
+  {
+   "path": "unit_10.c_coat",
+   "text": "{WHEN} ist die Winterjacke dran. || Und schon ist halb Deutschland wetterfühlig. Die andere Hälfte war's vorher schon.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "unit_11.arc_colder",
+   "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} und was Warmes dazu. || Für Wetterfühlige ist so ein Tag wie Weihnachten.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "now_10.cool",
+   "text": "„Ich bin halt wetterfühlig.“ Ich auch. Ich fühl jedes Wetter. Beruflich.",
+   "topic": "Wetterfühligkeit"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Rasenmähwetter. Einer mäht, der andere schreibt schon den Zettel fürs Treppenhaus.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "now_11.cool",
+   "text": "Einer bläst das Laub zum Nachbarn, der Nachbar bläst es zurück.",
+   "topic": "Ruhezeiten",
+   "months": "10,11"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Herrlicher Tag. Ich hör schon den ersten Rasenmäher. Und ich hab nicht mal Ohren.",
+   "topic": "Ruhezeiten"
+  },
+  {
+   "path": "unit_11.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und der bleibt. || Wer Regen will, wäscht sein Auto. Das klappt zuverlässiger als ich.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Regen. Irgendwo steht einer neben seinem frisch gewaschenen Auto und nimmt das persönlich.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Ob's regnet, hängt davon ab, ob gerade jemand sein Auto wäscht.",
+   "topic": "das frisch gewaschene Auto"
+  },
+  {
+   "path": "now_10.cold",
+   "text": "Kalter Boden. Wer jetzt barfuß läuft, kriegt den Satz mit der Blasenentzündung zu hören.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "now_11.cold",
+   "text": "Alle kriegen Hausschuhe. Ich krieg nicht mal eine Decke.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "unit_10.steady_cold",
+   "text": "Es bleibt den ganzen Tag so kalt. || Die Heizung wird trotzdem nicht höher gedreht. Dafür gibt's ja Hausschuhe.",
+   "topic": "Hausschuhe",
+   "months": "11,12,01,02"
+  },
+  {
+   "path": "unit_11.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Die App sagt dreißig Prozent. Was das heißt, weiß sie selber nicht.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "unit_10.p_wetter_maybe",
+   "text": "{WHENP} ist ein Schauer drin. || Im Radio heißt das „vereinzelte Schauer“. Damit liegen die nie falsch.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_11.wet",
+   "text": "Kostenlose Wetter-App, zwanzig Werbebanner, und trotzdem nass.",
+   "topic": "Wetter-App gegen Wetterbericht"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Altweibersommer. Der Sommer kommt noch mal, wenn die Sommersachen schon im Keller sind.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_10.nice",
+   "text": "Altweibersommer. Biergartenwetter, und der Biergarten hat schon zu.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "now_11.nice",
+   "text": "Altweibersommer. Genieß ihn. Ich kenn den November.",
+   "topic": "Altweibersommer",
+   "months": "09,10"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Ich kann noch so oft mild ansagen, gegen fünf Heilige komm ich nicht an.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Wer die Geranien schon draußen hat, betet jetzt zur Kalten Sophie.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Kein Frost in Sicht, aber vor dem 15. verspreche ich gar nichts.",
+   "topic": "Eisheilige",
+   "months": "05"
+  },
+  {
+   "path": "flavour_11.day_eisheilige",
+   "text": "Eisheilige. Der Baumarkt verkauft dir die Tomatenpflanzen trotzdem schon seit April.",
+   "topic": "Eisheilige",
+   "months": "05"
+  }
+ ]
+}

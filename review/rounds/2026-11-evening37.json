@@ -1,0 +1,48 @@
+{
+ "round": "2026-11-evening37",
+ "idPrefix": "e9",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_any",
+   "text": "Swedes say there's no bad weather, only wrong clothes. So it's all on me.",
+   "evtag": "",
+   "replaces": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Tomorrow there's rain from 1 pm. Bring the umbrella.",
+   "batch": "Evening, any weather: On",
+   "meaning": "Evening screen at On, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under rain tomorrow · Round 36, cut only because a live German line uses the same saying"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_any",
+   "text": "Falls ich mal was Nettes über dich sag, ist das ein Bug.",
+   "evtag": "",
+   "replaces": "",
+   "role": "flavour",
+   "sprite": "jacket_rain",
+   "fact": "Morgen regnet's ab 13 Uhr, denk also an den Schirm.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under rain tomorrow · Round 36, cut only because a live English line has a similar idea"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_any",
+   "text": "Ich helf dir jeden Abend beim Anziehen. Andere kriegen dafür einen Pflegegrad.",
+   "evtag": "",
+   "replaces": "",
+   "role": "flavour",
+   "sprite": "coat_dry",
+   "fact": "Morgen wird's ab 13 Uhr kälter, dann brauchst du eine Schicht mehr.",
+   "batch": "Evening, any weather: 11",
+   "meaning": "Evening screen at 11, any weather: the line under tomorrow's sentence.",
+   "new": true,
+   "hint": "Any weather: shown here under colder tomorrow · Round 36, cut only because of a once-vetoed topic (the screen helping you dress)"
+  }
+ ]
+}

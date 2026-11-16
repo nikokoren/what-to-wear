@@ -1,0 +1,88 @@
+{
+ "lines": [
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Das ist übrigens der Tag, auf den du alles verschoben hast.",
+   "evtag": "",
+   "note": "The screen points at tomorrow as the day the reader keeps postponing everything to; a reveal-style take on the postponing idea the owner liked but vetoed twice for having no punch, true under any weather."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Mich schaust du dir jeden Abend an. Die Zahnseide nie.",
+   "evtag": "",
+   "note": "Evening-routine hygiene jab: the reader checks the screen every night but never the floss; needs no weather, so it fits every pool."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Ich seh ja, wie's bei dir aussieht. Da red ich lieber übers Wetter.",
+   "evtag": "",
+   "note": "The screen has seen the state of the reader's home and would rather stick to small talk about the weather, which ties back to whatever forecast sits above it."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Wir sind beide keine großen Leuchten. Bei mir hat's wenigstens technische Gründe.",
+   "evtag": "",
+   "note": "Idiom 'keine große Leuchte' (not very bright): the e-ink screen with no backlight admits it is dim too but has a technical excuse, and the reader has none."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Ich lauf wochenlang mit einer Akkuladung. Du schnaufst schon im zweiten Stock.",
+   "evtag": "",
+   "note": "Screen versus reader on stamina: one battery charge lasts the screen weeks, and the reader is out of breath by the second floor; a true device fact, weather-free."
+  },
+  {
+   "path": "evening.jokes_11.any",
+   "text": "Dein Horoskop für morgen erspar ich dir.",
+   "evtag": "",
+   "note": "The screen gives tomorrow's weather but kindly spares the reader their horoscope; a short fate jab that works under good and bad tomorrows alike."
+  },
+  {
+   "path": "evening.jokes_11.rain",
+   "text": "An manchen sieht ein Schirm elegant aus. An dir wie geklaut.",
+   "evtag": "",
+   "note": "Every rain and wet-start sentence names the umbrella; on some people it looks elegant, on the reader it looks stolen, and nobody gets wet."
+  },
+  {
+   "path": "evening.jokes_11.rain",
+   "text": "Aufgespannt braucht der Schirm fast so viel Platz wie du.",
+   "evtag": "",
+   "note": "Size jab: an open umbrella takes up almost as much room as the reader; fits every rain sentence without predicting a soaking."
+  },
+  {
+   "path": "evening.jokes_11.colder",
+   "text": "Wie bei allen, die dich näher kennenlernen.",
+   "evtag": "",
+   "note": "Tomorrow cools off the way everyone does once they get to know the reader; strongest under the warm-start sentence and true under all three (social rejection, not the vetoed huddling frame)."
+  },
+  {
+   "path": "evening.jokes_11.colder",
+   "text": "Zwiebellook ist angesagt. Bei dir passt sogar der Geruch.",
+   "evtag": "",
+   "note": "The weather-report phrase for layering days, turned on the reader's smell; holds for any colder day, from T-shirt to sweater up to winter coat (risk: 'Zwiebelprinzip' was in two vetoed On lines, as a weak 'they call it X' gag)."
+  },
+  {
+   "path": "evening.jokes_11.steady",
+   "text": "Wie eine Schaufensterpuppe. Bloß ohne die Figur.",
+   "evtag": "",
+   "note": "One outfit all day, like a shop-window mannequin but without the mannequin's figure; a body jab that builds on the steady sentence without repeating it."
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Die Wärme reizt ihre Gleitzeit mal wieder voll aus.",
+   "evtag": "",
+   "note": "Warmth that turns up later in the day is an office worker using every minute of flexitime; about the weather, and it works whether warmer means mild or hot (nearest live idea: the 'Durchsage' line about warmth being delayed)."
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Diesmal kommt die Wärme wenigstens ohne Nebenkostenabrechnung.",
+   "evtag": "",
+   "note": "The Grantler's grudging plus about the world: this warmth comes without a utility bill; holds whether warmer means pleasant or hot."
+  },
+  {
+   "path": "evening.jokes_10.warmer",
+   "text": "Ein Tag wie eine Koalition: für jeden was dabei, zufrieden ist keiner.",
+   "evtag": "",
+   "note": "A day that starts cooler and ends warmer is like a coalition, with something for everyone and nobody happy; neutral on mild and hot days alike."
+  }
+ ]
+}

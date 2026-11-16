@@ -1,0 +1,1928 @@
+{%- comment %}
+What to Wear, beta. Built by tools/build_beta.py from src/shared.liquid and
+prototypes/; the comments explaining it are there. Don't edit by hand.
+{%- endcomment %}
+{%- assign MIN_DELTA = 2 -%}
+{%- assign RAIN_LOW = 25 -%}
+{%- assign RAIN_HIGH = 50 -%}
+{%- assign DAY_END_HOUR = 21 -%}
+{%- assign TIP_BUDGET = 165 -%}
+
+{%- assign BAND_EDGES = '-5,5,12,18,24,30,34' -%}
+{%- assign BAND_NAMES = 'bundled,coat,jacket,sweater,tee_pants,tee_shorts,heat,extreme_heat' -%}
+{%- assign SNOW_OUTFITS = ',bundled,coat,jacket,' -%}
+
+{%- assign sprite_base_url  = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/sprites/' -%}
+{%- assign error_sprite_url = 'https://raw.githubusercontent.com/nikokoren/what-to-wear/refs/heads/main/404.png' -%}
+
+{%- assign location_label_raw = trmnl.plugin_settings.custom_fields_values.location_label | default: '' -%}
+{%- assign show_future_suggestions_raw = trmnl.plugin_settings.custom_fields_values.show_future_suggestions -%}
+{%- if show_future_suggestions_raw == nil or show_future_suggestions_raw == '' -%}{%- assign show_future_suggestions_raw = 'yes' -%}{%- endif -%}
+{%- assign language_raw = trmnl.plugin_settings.custom_fields_values.language | default: 'en' -%}
+{%- assign sarcasm_level_raw = trmnl.plugin_settings.custom_fields_values.sarcasm_level | default: '10' -%}
+{%- assign show_bottom_bar = trmnl.plugin_settings.custom_fields_values.show_bottom_bar | default: 'on' -%}
+{%- assign temp_preference_raw = trmnl.plugin_settings.custom_fields_values.temp_preference | default: '0' -%}
+
+{%- assign temp_shift = 0 -%}
+{%- assign tp_check = temp_preference_raw | strip -%}
+{%- if tp_check == '-4' or tp_check == '-2' or tp_check == '2' or tp_check == '4' -%}
+  {%- assign temp_shift = tp_check | plus: 0 -%}
+{%- endif -%}
+
+{%- assign show_future_suggestions = 'on' -%}
+{%- assign sfs_check = show_future_suggestions_raw | append: '' | downcase | strip -%}
+{%- if sfs_check == 'no' or sfs_check == 'false' or sfs_check == '0' -%}
+  {%- assign show_future_suggestions = 'off' -%}
+{%- endif -%}
+
+{%- assign lang = language_raw | downcase | strip -%}
+{%- if lang == '' -%}
+  {%- assign lang = 'en' -%}
+{%- endif -%}
+
+{%- assign sarcasm_level = '0' -%}
+{%- assign sarc_check = sarcasm_level_raw | strip -%}
+{%- if sarc_check == '10' or sarc_check == '11' -%}
+  {%- assign sarcasm_level = sarc_check -%}
+{%- endif -%}
+
+{%- assign location_label = location_label_raw -%}
+
+{%- assign texts = nil -%}
+{%- if IDX_0 -%}
+  {%- assign cw = IDX_0.current -%}
+  {%- assign h = IDX_0.hourly -%}
+  {%- assign wx_offset = IDX_0.utc_offset_seconds -%}
+  {%- assign texts = IDX_1 -%}
+{%- else -%}
+  {%- assign cw = current -%}
+  {%- assign h = hourly -%}
+  {%- assign wx_offset = utc_offset_seconds -%}
+{%- endif -%}
+
+{%- assign texts_ok = false -%}
+{%- if texts.meta.code -%}
+  {%- assign texts_ok = true -%}
+{%- endif -%}
+
+{%- assign now_time = cw.time -%}
+
+{%- assign is_error = false -%}
+{%- assign error_message = '' -%}
+{%- assign error_headline = '' -%}
+
+{%- if cw == nil -%}
+  {%- assign is_error = true -%}
+  {%- assign error_key = 'error_current' -%}
+{%- elsif h == nil -%}
+  {%- assign is_error = true -%}
+  {%- assign error_key = 'error_hourly' -%}
+{%- endif -%}
+
+{%- assign has_location = false -%}
+{%- assign lat_lon_set = trmnl.plugin_settings.custom_fields_values.lat_lon | default: '' | strip -%}
+{%- assign latitude_set = trmnl.plugin_settings.custom_fields_values.latitude | default: '' | strip -%}
+{%- if lat_lon_set != '' or latitude_set != '' -%}
+  {%- assign has_location = true -%}
+{%- endif -%}
+{%- if is_error and has_location == false -%}
+  {%- assign error_key = 'error_location' -%}
+{%- endif -%}
+
+{%- if is_error -%}
+  {%- if texts_ok -%}
+    {%- assign error_message = texts.ui[error_key] -%}
+    {%- assign error_headline = texts.ui.error_short -%}
+    {%- if error_key == 'error_location' and texts.ui.error_location_short -%}
+      {%- assign error_headline = texts.ui.error_location_short -%}
+    {%- endif -%}
+  {%- endif -%}
+    {%- if error_message == '' or error_message == nil -%}
+    {%- if lang == 'fr' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'Aucun lieu choisi. Ouvre les réglages et choisis-en un.' -%}
+        {%- assign error_headline = 'Aucun lieu choisi' -%}
+      {%- else -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Impossible de récupérer la météo. Réessaie plus tard.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Impossible de charger les prévisions. Réessaie plus tard.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Météo illisible' -%}
+      {%- endif -%}
+    {%- elsif lang == 'de' -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'Kein Ort eingestellt. Öffne die Einstellungen und wähle einen aus.' -%}
+        {%- assign error_headline = 'Kein Ort eingestellt' -%}
+      {%- else -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Wetterdaten konnten nicht abgerufen werden. Bitte versuche es später erneut.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Wettervorhersage konnte nicht geladen werden. Bitte versuche es später erneut.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Wetterdaten konnten nicht gelesen werden' -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- if error_key == 'error_location' -%}
+        {%- assign error_message = 'No location set. Open this plugin’s settings and choose one.' -%}
+        {%- assign error_headline = 'No location set' -%}
+      {%- else -%}
+        {%- if error_key == 'error_current' -%}
+          {%- assign error_message = 'Unable to retrieve weather data. Please try again later.' -%}
+        {%- else -%}
+          {%- assign error_message = 'Unable to load forecast data. Please try again later.' -%}
+        {%- endif -%}
+        {%- assign error_headline = 'Could not read weather data' -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- assign local_hour = 12 -%}
+{%- assign today_md = '01-01' -%}
+{%- assign today_year = '2026' -%}
+
+{%- assign epoch_utc = trmnl.system.timestamp_utc | default: 0 | plus: 0 -%}
+{%- assign day_offset = trmnl.user.utc_offset | default: 0 | plus: 0 -%}
+{%- if wx_offset != nil -%}
+  {%- assign day_offset = wx_offset | plus: 0 -%}
+{%- endif -%}
+{%- assign local_secs = epoch_utc | plus: day_offset -%}
+
+{%- if now_time -%}
+  {%- assign local_hour = now_time | slice: 11, 2 | plus: 0 -%}
+  {%- assign today_md = now_time | slice: 5, 5 -%}
+  {%- assign today_year = now_time | slice: 0, 4 -%}
+{%- else -%}
+  {%- assign local_hour = local_secs | divided_by: 3600 | modulo: 24 -%}
+  {%- assign today_md = local_secs | date: '%m-%d' -%}
+  {%- assign today_year = local_secs | date: '%Y' -%}
+{%- endif -%}
+
+{%- assign local_days = local_secs | divided_by: 86400 -%}
+
+{%- assign RAIN_CODES = ',51,53,55,56,57,61,63,65,66,67,80,81,82,95,96,99,' -%}
+{%- assign SNOW_CODES = ',71,73,75,77,85,86,' -%}
+
+{%- assign temp_c = 0 -%}
+{%- assign wmo = 0 -%}
+{%- assign is_now_precip = 0 -%}
+{%- assign heat_danger = false -%}
+{%- assign stop_idx = -1 -%}
+{%- assign is_now_snow = 0 -%}
+{%- assign band = 'mild' -%}
+{%- assign band_rank = 5 -%}
+{%- assign weather_slug = '' -%}
+
+{%- assign has_future_window = false -%}
+{%- assign max_temp_future = 0 -%}
+{%- assign max_temp_idx = 0 -%}
+{%- assign peak_rain = 0 -%}
+{%- assign first_rain_idx = -1 -%}
+{%- assign first_snow_idx = -1 -%}
+{%- assign future_has_snow = false -%}
+{%- assign rain_qualifies = false -%}
+
+{%- assign scenario = 'perfect' -%}
+{%- assign temp_scenario = '' -%}
+{%- assign precip_scenario = '' -%}
+{%- assign when_temp = '' -%}
+{%- assign when_temp2 = '' -%}
+{%- assign when_precip = '' -%}
+{%- assign when_temp_bucket = -1 -%}
+{%- assign is_arc = false -%}
+{%- assign garment_n = '' -%}
+{%- assign garment_a = '' -%}
+
+{%- if is_error == false -%}
+
+    {%- assign temp_c = cw.apparent_temperature | default: cw.temperature_2m | default: 0 | plus: 0 -%}
+  {%- assign wmo = cw.weather_code | default: 0 | plus: 0 -%}
+
+  {%- assign wmo_probe = ',' | append: wmo | append: ',' -%}
+  {%- if RAIN_CODES contains wmo_probe -%}
+    {%- assign is_now_precip = 1 -%}
+  {%- elsif SNOW_CODES contains wmo_probe -%}
+    {%- assign is_now_precip = 1 -%}
+    {%- assign is_now_snow = 1 -%}
+  {%- endif -%}
+
+    {%- assign band_edge_list = BAND_EDGES | split: ',' -%}
+  {%- assign band_name_list = BAND_NAMES | split: ',' -%}
+
+  {%- assign temp_banded = temp_c | plus: temp_shift -%}
+  {%- assign band_rank = 8 -%}
+  {%- for edge in band_edge_list -%}
+    {%- assign edge_c = edge | plus: 0 -%}
+    {%- if temp_banded <= edge_c -%}
+      {%- assign band_rank = forloop.index -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign band_idx = band_rank | minus: 1 -%}
+  {%- assign band = band_name_list[band_idx] -%}
+
+    {%- assign precip_suffix = 'dry' -%}
+  {%- if is_now_snow == 1 -%}
+    {%- assign precip_suffix = 'snow' -%}
+  {%- elsif is_now_precip == 1 -%}
+    {%- assign precip_suffix = 'rain' -%}
+  {%- endif -%}
+  {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+
+    {%- assign now_index = -1 -%}
+  {%- if now_time and h.time -%}
+    {%- assign now_stamp = now_time | slice: 0, 13 -%}
+    {%- for t in h.time -%}
+      {%- if t contains now_stamp -%}
+        {%- assign now_index = forloop.index0 -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if now_index < 0 -%}
+    {%- assign now_index = local_hour -%}
+  {%- endif -%}
+
+    {%- assign cutoff_hour = DAY_END_HOUR -%}
+  {%- assign min_cutoff = local_hour | plus: 3 -%}
+  {%- if min_cutoff > cutoff_hour -%}
+    {%- assign cutoff_hour = min_cutoff -%}
+  {%- endif -%}
+  {%- if cutoff_hour > 23 -%}
+    {%- assign cutoff_hour = 23 -%}
+  {%- endif -%}
+
+  {%- assign temps = h.apparent_temperature -%}
+  {%- assign temps_air = h.temperature_2m -%}
+  {%- assign probs = h.precipitation_probability -%}
+  {%- assign codes = h.weather_code -%}
+
+  {%- if temps != nil and probs != nil and cutoff_hour > local_hour -%}
+    {%- assign h_count = temps | size | default: 0 -%}
+    {%- assign last_index = h_count | minus: 1 -%}
+    {%- assign span = cutoff_hour | minus: local_hour -%}
+    {%- assign start_index = now_index | plus: 1 -%}
+    {%- assign end_index = now_index | plus: span -%}
+    {%- if end_index > last_index -%}
+      {%- assign end_index = last_index -%}
+    {%- endif -%}
+
+    {%- if start_index <= end_index -%}
+      {%- assign has_future_window = true -%}
+
+            {%- assign held_lo_csv = '' -%}
+      {%- assign rank_hi_csv = '' -%}
+      {%- assign rank_lo_csv = '' -%}
+            {%- assign max_temp_future = temp_c -%}
+      {%- assign max_temp_idx = now_index -%}
+      {%- assign up_rank = band_rank -%}
+      {%- for i in (start_index..end_index) -%}
+        {%- assign tv = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
+        {%- assign held_hi = tv -%}
+        {%- assign held_lo = tv -%}
+        {%- assign j = i | plus: 1 -%}
+        {%- if j <= last_index -%}
+          {%- assign tn = temps[j] | default: temps_air[j] | default: tv | plus: 0 -%}
+          {%- if tn < held_hi -%}{%- assign held_hi = tn -%}{%- endif -%}
+          {%- if tn > held_lo -%}{%- assign held_lo = tn -%}{%- endif -%}
+        {%- endif -%}
+
+                {%- assign hi_banded = held_hi | plus: temp_shift -%}
+        {%- assign lo_banded = held_lo | plus: temp_shift -%}
+        {%- assign r_hi = 1 -%}
+        {%- assign r_lo = 1 -%}
+        {%- for edge in band_edge_list -%}
+          {%- assign edge_c = edge | plus: 0 -%}
+          {%- if hi_banded > edge_c -%}{%- assign r_hi = forloop.index | plus: 1 -%}{%- endif -%}
+          {%- if lo_banded > edge_c -%}{%- assign r_lo = forloop.index | plus: 1 -%}{%- endif -%}
+        {%- endfor -%}
+
+        {%- if held_hi > max_temp_future -%}
+          {%- assign max_temp_future = held_hi -%}
+          {%- assign max_temp_idx = i -%}
+          {%- assign up_rank = r_hi -%}
+        {%- endif -%}
+
+                {%- unless forloop.first -%}
+          {%- assign held_lo_csv = held_lo_csv | append: ',' -%}
+          {%- assign rank_hi_csv = rank_hi_csv | append: ',' -%}
+          {%- assign rank_lo_csv = rank_lo_csv | append: ',' -%}
+        {%- endunless -%}
+        {%- assign held_lo_csv = held_lo_csv | append: held_lo -%}
+        {%- assign rank_hi_csv = rank_hi_csv | append: r_hi -%}
+        {%- assign rank_lo_csv = rank_lo_csv | append: r_lo -%}
+      {%- endfor -%}
+      {%- assign held_lo_list = held_lo_csv | split: ',' -%}
+      {%- assign rank_hi_list = rank_hi_csv | split: ',' -%}
+      {%- assign rank_lo_list = rank_lo_csv | split: ',' -%}
+
+            {%- assign shorts_idx = -1 -%}
+      {%- assign shorts_hours = 0 -%}
+      {%- for r in rank_hi_list -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- if rv >= 6 -%}
+          {%- assign shorts_hours = shorts_hours | plus: 1 -%}
+          {%- if shorts_idx < 0 -%}{%- assign shorts_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- assign shorts_early = false -%}
+      {%- assign shorts_swing = false -%}
+      {%- if band_rank <= 4 and shorts_hours >= 3 -%}
+        {%- assign shorts_swing = true -%}
+      {%- endif -%}
+      {%- if band_rank == 5 and shorts_idx >= 0 -%}
+        {%- assign cool_hours = shorts_idx | minus: now_index -%}
+        {%- if cool_hours <= shorts_hours or shorts_hours >= 3 -%}
+          {%- assign shorts_early = true -%}
+        {%- endif -%}
+      {%- endif -%}
+
+            {%- assign pants_swing = false -%}
+      {%- assign pants_idx = -1 -%}
+      {%- assign cold_hours = 0 -%}
+      {%- assign scorch_hours = 0 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
+        {%- if rv <= 2 -%}
+          {%- assign cold_hours = cold_hours | plus: 1 -%}
+          {%- if pants_idx < 0 -%}{%- assign pants_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
+        {%- endif -%}
+        {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+            {%- assign legs_short = shorts_early -%}
+      {%- if band_rank >= 6 -%}{%- assign legs_short = true -%}{%- endif -%}
+      {%- if legs_short and cold_hours >= 3 -%}
+        {%- assign pants_swing = true -%}
+        {%- assign shorts_early = false -%}
+      {%- endif -%}
+      {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
+
+            {%- assign dip_min = temp_c -%}
+      {%- assign dip_rank = band_rank -%}
+      {%- assign after_min = max_temp_future -%}
+      {%- assign after_rank = up_rank -%}
+      {%- assign after_idx = max_temp_idx -%}
+      {%- for v in held_lo_list -%}
+        {%- assign hr = start_index | plus: forloop.index0 -%}
+        {%- assign vv = v | plus: 0 -%}
+        {%- if hr < max_temp_idx -%}
+          {%- if vv < dip_min -%}
+            {%- assign dip_min = vv -%}
+            {%- assign dip_rank = rank_lo_list[forloop.index0] | plus: 0 -%}
+          {%- endif -%}
+        {%- elsif hr > max_temp_idx -%}
+          {%- if vv < after_min -%}
+            {%- assign after_min = vv -%}
+            {%- assign after_idx = hr -%}
+            {%- assign after_rank = rank_lo_list[forloop.index0] | plus: 0 -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+            {%- assign run_len = 0 -%}
+      {%- assign best_run = 0 -%}
+      {%- assign dry_run = 0 -%}
+      {%- assign gap_found = false -%}
+      {%- assign back_run = 0 -%}
+      {%- assign back_best = 0 -%}
+      {%- assign back_peak = 0 -%}
+      {%- assign back_idx = -1 -%}
+            {%- assign stop_idx = -1 -%}
+      {%- assign stop_try = -1 -%}
+      {%- for i in (start_index..end_index) -%}
+        {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
+        {%- if pv > peak_rain -%}
+          {%- assign peak_rain = pv -%}
+        {%- endif -%}
+        {%- if pv >= RAIN_LOW -%}
+          {%- assign run_len = run_len | plus: 1 -%}
+          {%- if run_len > best_run -%}
+            {%- assign best_run = run_len -%}
+          {%- endif -%}
+          {%- if first_rain_idx < 0 -%}
+            {%- assign first_rain_idx = i -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign run_len = 0 -%}
+        {%- endif -%}
+
+        {%- if gap_found -%}
+          {%- if pv > back_peak -%}
+            {%- assign back_peak = pv -%}
+          {%- endif -%}
+          {%- if pv >= RAIN_LOW -%}
+            {%- assign back_run = back_run | plus: 1 -%}
+            {%- if back_run > back_best -%}
+              {%- assign back_best = back_run -%}
+            {%- endif -%}
+            {%- if back_idx < 0 -%}
+              {%- assign back_idx = i -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign back_run = 0 -%}
+          {%- endif -%}
+        {%- elsif pv < RAIN_LOW -%}
+          {%- assign dry_run = dry_run | plus: 1 -%}
+          {%- if dry_run == 1 -%}{%- assign stop_try = i -%}{%- endif -%}
+          {%- if dry_run >= 2 -%}
+            {%- assign gap_found = true -%}
+            {%- assign stop_idx = stop_try -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign dry_run = 0 -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- if best_run >= 2 or peak_rain >= RAIN_HIGH -%}
+        {%- assign rain_qualifies = true -%}
+      {%- endif -%}
+      {%- assign rain_returns = false -%}
+      {%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}
+        {%- assign rain_returns = true -%}
+      {%- endif -%}
+
+            {%- if codes != nil -%}
+        {%- for i in (start_index..end_index) -%}
+          {%- assign c_probe = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains c_probe -%}
+            {%- assign future_has_snow = true -%}
+            {%- assign first_snow_idx = i -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if has_future_window -%}
+
+        {%- assign GARMENTS_N = texts.garments.n -%}
+    {%- assign GARMENTS_A = texts.garments.a -%}
+    {%- assign WKEYS = 'w_scarf,w_coat,w_jacket,w_hoodie' | split: ',' -%}
+    {%- assign CKEYS = 'c_scarf,c_coat,c_jacket,c_hoodie' | split: ',' -%}
+
+        {%- assign garment_n = '' -%}
+    {%- assign garment_a = '' -%}
+    {%- if band_rank <= 4 and texts_ok -%}
+      {%- assign gi = band_rank | minus: 1 -%}
+      {%- assign garment_n = GARMENTS_N[gi] -%}
+      {%- assign garment_a = GARMENTS_A[gi] -%}
+    {%- endif -%}
+
+        {%- assign delta_up = max_temp_future | minus: temp_c -%}
+    {%- assign warm_key = '' -%}
+    {%- assign warm_removable = false -%}
+    {%- if delta_up >= MIN_DELTA and up_rank > band_rank -%}
+      {%- assign same_class = false -%}
+      {%- if band_rank >= 5 and band_rank <= 6 and up_rank >= 5 and up_rank <= 6 -%}
+        {%- assign same_class = true -%}
+      {%- endif -%}
+      {%- unless same_class -%}
+        {%- if band_rank <= 4 -%}
+          {%- assign wi = band_rank | minus: 1 -%}
+          {%- assign warm_key = WKEYS[wi] -%}
+          {%- assign warm_removable = true -%}
+        {%- elsif up_rank >= 7 -%}
+                    {%- assign warm_key = 'w_water' -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+        {%- assign dip_key = '' -%}
+    {%- assign delta_dip = temp_c | minus: dip_min -%}
+    {%- if delta_dip >= MIN_DELTA and dip_rank < band_rank -%}
+      {%- assign same_class = false -%}
+      {%- if dip_rank >= 5 and dip_rank <= 6 and band_rank >= 5 and band_rank <= 6 -%}
+        {%- assign same_class = true -%}
+      {%- endif -%}
+      {%- unless same_class -%}
+        {%- if dip_rank <= 4 -%}
+          {%- assign ci = dip_rank | minus: 1 -%}
+          {%- assign dip_key = CKEYS[ci] -%}
+        {%- else -%}
+          {%- assign dip_key = 'c_relief' -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+    {%- assign after_key = '' -%}
+    {%- assign delta_after = max_temp_future | minus: after_min -%}
+    {%- if delta_after >= MIN_DELTA and after_rank < up_rank -%}
+      {%- assign same_class = false -%}
+      {%- if after_rank >= 5 and after_rank <= 6 and up_rank >= 5 and up_rank <= 6 -%}
+        {%- assign same_class = true -%}
+      {%- endif -%}
+      {%- unless same_class -%}
+        {%- if after_rank <= 4 -%}
+          {%- assign ci = after_rank | minus: 1 -%}
+          {%- assign after_key = CKEYS[ci] -%}
+        {%- else -%}
+          {%- assign after_key = 'c_relief' -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+        {%- assign off_rank = band_rank | plus: 1 -%}
+    {%- if band_rank == 5 -%}
+      {%- assign off_rank = 7 -%}
+    {%- endif -%}
+    {%- assign back_rank = band_rank -%}
+    {%- if after_rank > band_rank -%}
+      {%- assign back_rank = after_rank -%}
+    {%- endif -%}
+    {%- assign warm_idx = -1 -%}
+    {%- assign dip_idx = -1 -%}
+    {%- assign bring_idx = -1 -%}
+    {%- assign back_on_idx = -1 -%}
+    {%- for r in rank_lo_list -%}
+      {%- assign hr = start_index | plus: forloop.index0 -%}
+      {%- assign rv = r | plus: 0 -%}
+      {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
+      {%- if hr > max_temp_idx -%}
+        {%- if bring_idx < 0 and rv <= after_rank -%}{%- assign bring_idx = hr -%}{%- endif -%}
+        {%- if back_on_idx < 0 and rv <= back_rank -%}{%- assign back_on_idx = hr -%}{%- endif -%}
+      {%- else -%}
+        {%- if warm_idx < 0 and hv >= off_rank -%}{%- assign warm_idx = hr -%}{%- endif -%}
+        {%- if dip_idx < 0 and hr < max_temp_idx and rv <= dip_rank -%}{%- assign dip_idx = hr -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if warm_idx < 0 -%}{%- assign warm_idx = max_temp_idx -%}{%- endif -%}
+    {%- if dip_idx < 0 -%}{%- assign dip_idx = start_index -%}{%- endif -%}
+    {%- if bring_idx < 0 -%}{%- assign bring_idx = after_idx -%}{%- endif -%}
+    {%- if back_on_idx < 0 -%}{%- assign back_on_idx = after_idx -%}{%- endif -%}
+
+        {%- assign primary_idx = 0 -%}
+    {%- assign secondary_idx = 0 -%}
+
+    {%- if dip_key != '' -%}
+      {%- assign temp_scenario = dip_key -%}
+      {%- assign primary_idx = dip_idx -%}
+    {%- elsif pants_swing and texts.facts.pants_swing -%}
+      {%- assign temp_scenario = 'pants_swing' -%}
+      {%- assign primary_idx = pants_idx -%}
+    {%- elsif shorts_swing and texts.facts.shorts_swing -%}
+      {%- assign temp_scenario = 'shorts_swing' -%}
+      {%- assign primary_idx = shorts_idx -%}
+            {%- assign swing_back_idx = -1 -%}
+      {%- for r in rank_lo_list -%}
+        {%- assign hr = start_index | plus: forloop.index0 -%}
+        {%- assign rv = r | plus: 0 -%}
+        {%- if swing_back_idx < 0 and hr > max_temp_idx and rv <= 4 -%}{%- assign swing_back_idx = hr -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if swing_back_idx >= 0 -%}
+        {%- assign temp_scenario = 'shorts_swing_back' -%}
+        {%- assign secondary_idx = swing_back_idx -%}
+      {%- endif -%}
+    {%- elsif warm_removable and after_key != '' -%}
+      {%- if after_rank < band_rank -%}
+        {%- assign temp_scenario = 'arc_colder' -%}
+      {%- elsif after_rank > band_rank -%}
+        {%- assign temp_scenario = 'arc_warmer' -%}
+      {%- else -%}
+        {%- assign temp_scenario = 'arc_level' -%}
+      {%- endif -%}
+      {%- assign primary_idx = warm_idx -%}
+      {%- assign secondary_idx = back_on_idx -%}
+    {%- elsif after_key != '' and after_rank >= band_rank and band_rank <= 4 -%}
+            {%- assign temp_scenario = 'arc_level' -%}
+      {%- assign primary_idx = warm_idx -%}
+      {%- assign secondary_idx = back_on_idx -%}
+    {%- elsif after_key != '' -%}
+      {%- assign temp_scenario = after_key -%}
+      {%- assign primary_idx = bring_idx -%}
+    {%- elsif warm_key != '' -%}
+      {%- assign temp_scenario = warm_key -%}
+      {%- assign primary_idx = warm_idx -%}
+    {%- elsif shorts_early and texts_ok -%}
+      {%- assign se_key = 'temp_' | append: sarcasm_level -%}
+      {%- assign se_lib = texts[se_key] -%}
+      {%- if se_lib['shorts_early'] or texts.facts.shorts_early -%}
+        {%- assign temp_scenario = 'shorts_early' -%}
+        {%- assign primary_idx = shorts_idx -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- assign is_arc = false -%}
+    {%- if temp_scenario contains 'arc' -%}
+      {%- assign is_arc = true -%}
+    {%- endif -%}
+
+        {%- assign precip_idx = 0 -%}
+    {%- if future_has_snow and is_now_snow == 0 -%}
+      {%- assign precip_scenario = 'snow_coming' -%}
+      {%- assign precip_idx = first_snow_idx -%}
+    {%- elsif is_now_precip == 0 and rain_qualifies -%}
+      {%- if peak_rain < 60 -%}
+        {%- assign precip_scenario = 'wetter_maybe' -%}
+      {%- elsif best_run >= 4 -%}
+        {%- assign precip_scenario = 'wetter_long' -%}
+      {%- else -%}
+        {%- assign precip_scenario = 'wetter' -%}
+      {%- endif -%}
+      {%- assign precip_idx = first_rain_idx -%}
+    {%- elsif is_now_precip == 1 -%}
+      {%- if rain_qualifies == false -%}
+        {%- assign precip_scenario = 'drier' -%}
+        {%- assign precip_idx = start_index -%}
+      {%- elsif gap_found and rain_returns -%}
+        {%- assign precip_scenario = 'wet_again' -%}
+        {%- assign precip_idx = back_idx -%}
+      {%- elsif gap_found -%}
+        {%- assign precip_scenario = 'drier' -%}
+        {%- assign precip_idx = start_index -%}
+      {%- else -%}
+        {%- assign precip_scenario = 'stays_wet' -%}
+        {%- assign precip_idx = end_index -%}
+      {%- endif -%}
+    {%- endif -%}
+
+        {%- assign BUCKETS = texts.buckets -%}
+    {%- assign RELATIVE = texts.relative -%}
+        {%- assign HOUR_BUCKET = '0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,3,3,3,4,4,4,4' | split: ',' -%}
+
+    {%- assign now_bucket = HOUR_BUCKET[local_hour] | plus: 0 -%}
+
+        {%- if temp_scenario != '' and texts_ok -%}
+      {%- assign gap = primary_idx | minus: now_index -%}
+      {%- assign th = local_hour | plus: gap -%}
+      {%- if th > 23 -%}{%- assign th = 23 -%}{%- endif -%}
+      {%- assign tb = HOUR_BUCKET[th] | plus: 0 -%}
+      {%- assign when_temp_bucket = tb -%}
+      {%- if tb == now_bucket and gap >= 1 and gap <= 3 and is_arc == false -%}
+        {%- assign gi = gap | minus: 1 -%}
+        {%- assign when_temp = RELATIVE[gi] -%}
+      {%- else -%}
+        {%- assign when_temp = BUCKETS[tb] -%}
+      {%- endif -%}
+    {%- endif -%}
+
+        {%- assign two_hinges = is_arc -%}
+    {%- if temp_scenario == 'shorts_swing_back' -%}{%- assign two_hinges = true -%}{%- endif -%}
+    {%- if two_hinges and texts_ok -%}
+      {%- assign gap2 = secondary_idx | minus: now_index -%}
+      {%- assign th2 = local_hour | plus: gap2 -%}
+      {%- if th2 > 23 -%}{%- assign th2 = 23 -%}{%- endif -%}
+      {%- assign tb2 = HOUR_BUCKET[th2] | plus: 0 -%}
+            {%- if tb2 == when_temp_bucket -%}
+        {%- if when_temp_bucket < 4 -%}
+          {%- assign when_temp2 = BUCKETS[4] -%}
+        {%- else -%}
+          {%- assign when_temp2 = '' -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign when_temp2 = BUCKETS[tb2] -%}
+      {%- endif -%}
+    {%- endif -%}
+
+        {%- assign wants_whenp = false -%}
+    {%- if precip_scenario contains 'wetter' -%}
+      {%- assign wants_whenp = true -%}
+    {%- endif -%}
+    {%- if precip_scenario == 'snow_coming' or precip_scenario == 'wet_again' -%}
+      {%- assign wants_whenp = true -%}
+    {%- endif -%}
+    {%- if wants_whenp and texts_ok -%}
+      {%- assign pgap = precip_idx | minus: now_index -%}
+      {%- assign ph = local_hour | plus: pgap -%}
+      {%- if ph > 23 -%}{%- assign ph = 23 -%}{%- endif -%}
+      {%- assign pb = HOUR_BUCKET[ph] | plus: 0 -%}
+      {%- if pb == now_bucket and pgap >= 1 and pgap <= 3 -%}
+        {%- assign pgi = pgap | minus: 1 -%}
+        {%- assign when_precip = RELATIVE[pgi] -%}
+      {%- else -%}
+        {%- assign when_precip = BUCKETS[pb] -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if temp_scenario != '' -%}
+      {%- assign scenario = temp_scenario -%}
+    {%- else -%}
+      {%- assign scenario = 'perfect' -%}
+    {%- endif -%}
+
+  {%- else -%}
+    {%- assign scenario = 'perfect' -%}
+    {%- assign precip_scenario = '' -%}
+  {%- endif -%}
+
+{%- endif -%}
+
+{%- assign active_theme = '' -%}
+{%- if today_md == '12-31' or today_md == '01-01' -%}{%- assign active_theme = 'ny' -%}{%- endif -%}
+{%- if today_md == '02-02' -%}{%- assign active_theme = 'ghd' -%}{%- endif -%}
+{%- assign ey = today_year | plus: 0 -%}
+{%- assign ea = ey | modulo: 19 -%}
+{%- assign eb = ey | divided_by: 100 -%}
+{%- assign ec = ey | modulo: 100 -%}
+{%- assign ed = eb | divided_by: 4 -%}
+{%- assign ee = eb | modulo: 4 -%}
+{%- assign ef = eb | plus: 8 | divided_by: 25 -%}
+{%- assign eg = eb | minus: ef | plus: 1 | divided_by: 3 -%}
+{%- assign eh = ea | times: 19 | plus: eb | minus: ed | minus: eg | plus: 15 | modulo: 30 -%}
+{%- assign ei = ec | divided_by: 4 -%}
+{%- assign ek = ec | modulo: 4 -%}
+{%- assign el = ee | times: 2 | plus: 32 | plus: ei | plus: ei | minus: eh | minus: ek | modulo: 7 -%}
+{%- assign eh11 = eh | times: 11 -%}
+{%- assign em = el | times: 22 | plus: ea | plus: eh11 | divided_by: 451 -%}
+{%- assign em7 = em | times: 7 -%}
+{%- assign en_ = eh | plus: el | minus: em7 | plus: 114 -%}
+{%- assign easter_month = en_ | divided_by: 31 -%}
+{%- assign easter_day = en_ | modulo: 31 | plus: 1 -%}
+{%- assign easter_md = '0' | append: easter_month | append: '-' -%}
+{%- if easter_day < 10 -%}{%- assign easter_md = easter_md | append: '0' -%}{%- endif -%}
+{%- assign easter_md = easter_md | append: easter_day -%}
+{%- if today_md == easter_md -%}{%- assign active_theme = 'easter' -%}{%- endif -%}
+{%- if today_md == '05-04' -%}{%- assign active_theme = 'force' -%}{%- endif -%}
+{%- if today_md == '10-31' -%}{%- assign active_theme = 'spooky' -%}{%- endif -%}
+{%- assign weekday_idx = local_days | plus: 4 | modulo: 7 -%}
+{%- if today_md >= '11-22' and today_md <= '11-28' and weekday_idx == 4 -%}{%- assign active_theme = 'thanks' -%}{%- endif -%}
+{%- if today_md == '12-24' or today_md == '12-25' -%}{%- assign active_theme = 'xmas' -%}{%- endif -%}
+
+{%- assign theme_whitelist = '' -%}
+
+{%- assign is_steady = false -%}
+{%- if scenario == 'perfect' -%}
+  {%- assign is_steady = true -%}
+    {%- assign variant_csv = '' -%}
+  {%- if active_theme != '' -%}
+    {%- assign variant_csv = 'theme_' | append: active_theme -%}
+  {%- endif -%}
+  {%- if local_hour >= 17 -%}
+    {%- assign variant_csv = variant_csv | append: ',perfect_evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign variant_csv = variant_csv | append: ',perfect_hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign variant_csv = variant_csv | append: ',perfect_cold' -%}
+  {%- endif -%}
+  {%- assign temp_probe_key = 'temp_' | append: sarcasm_level -%}
+  {%- assign probe_lib = texts[temp_probe_key] -%}
+  {%- assign variant_list = variant_csv | split: ',' -%}
+  {%- for perfect_variant in variant_list -%}
+    {%- if probe_lib[perfect_variant] -%}
+      {%- assign scenario = perfect_variant -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- assign temp_clause = '' -%}
+{%- assign precip_clause = '' -%}
+{%- assign today_tip = '' -%}
+
+{%- if is_error == false and show_future_suggestions == 'on' and texts_ok -%}
+
+  {%- assign temp_lib_key = 'temp_' | append: sarcasm_level -%}
+  {%- assign temp_lib = texts[temp_lib_key] -%}
+  {%- assign t_arr = temp_lib[scenario] -%}
+
+  {%- if t_arr -%}
+    {%- assign n = t_arr | size -%}
+    {%- if n > 0 -%}
+      {%- assign idx = local_days | modulo: n -%}
+      {%- assign temp_clause = t_arr[idx] -%}
+            {%- assign need_plain = false -%}
+      {%- if when_temp == '' or when_temp == nil -%}
+        {%- assign need_plain = true -%}
+      {%- endif -%}
+      {%- if is_arc and when_temp2 == '' -%}
+        {%- assign need_plain = true -%}
+      {%- endif -%}
+      {%- if need_plain and temp_clause contains '{WHEN' -%}
+        {%- for line in t_arr -%}
+          {%- unless line contains '{WHEN' -%}
+            {%- assign temp_clause = line -%}
+            {%- break -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+
+    {%- assign temp_clause = temp_clause | replace: '{GARMENT}', garment_n -%}
+  {%- assign temp_clause = temp_clause | replace: '{GARMENTA}', garment_a -%}
+  {%- assign temp_clause = temp_clause | replace: '{WHEN2}', when_temp2 -%}
+  {%- assign temp_clause = temp_clause | replace: '{WHEN}', when_temp -%}
+  {%- assign temp_clause = temp_clause | replace: '  ', ' ' | strip -%}
+
+    {%- if precip_scenario == 'wet_again' -%}
+    {%- assign wa_lib_key = 'precip_' | append: sarcasm_level -%}
+    {%- assign wa_lib = texts[wa_lib_key] -%}
+    {%- unless wa_lib['wet_again'] -%}
+      {%- assign precip_scenario = 'drier' -%}
+    {%- endunless -%}
+  {%- endif -%}
+
+  {%- if precip_scenario != '' -%}
+        {%- if is_steady -%}
+      {%- assign p_key = precip_scenario -%}
+    {%- else -%}
+      {%- assign p_key = precip_scenario | append: '_j' -%}
+    {%- endif -%}
+
+    {%- assign precip_lib_key = 'precip_' | append: sarcasm_level -%}
+    {%- assign precip_lib = texts[precip_lib_key] -%}
+    {%- assign p_arr = precip_lib[p_key] -%}
+
+    {%- if p_arr -%}
+      {%- assign pn = p_arr | size -%}
+      {%- if pn > 0 -%}
+                {%- if is_steady -%}
+                    {%- assign room = TIP_BUDGET -%}
+        {%- else -%}
+          {%- assign room = TIP_BUDGET | minus: temp_clause.size | minus: 1 -%}
+        {%- endif -%}
+        {%- assign start_at = local_days | plus: 3 | modulo: pn -%}
+        {%- for probe in (0..11) -%}
+          {%- if probe >= pn -%}{%- break -%}{%- endif -%}
+          {%- assign try_at = start_at | plus: probe | modulo: pn -%}
+          {%- assign candidate = p_arr[try_at] -%}
+          {%- if candidate.size <= room -%}
+            {%- assign precip_clause = candidate -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if precip_clause == '' -%}
+          {%- assign shortest = 9999 -%}
+          {%- for candidate in p_arr -%}
+            {%- if candidate.size < shortest -%}
+              {%- assign shortest = candidate.size -%}
+              {%- assign precip_clause = candidate -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
+        {%- assign precip_clause = precip_clause | replace: '{WHENP}', when_precip -%}
+        {%- assign precip_clause = precip_clause | replace: '  ', ' ' | strip -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if is_steady and precip_clause != '' -%}
+    {%- assign today_tip = precip_clause -%}
+  {%- elsif precip_clause != '' -%}
+    {%- assign today_tip = temp_clause | append: ' ' | append: precip_clause -%}
+  {%- else -%}
+    {%- assign today_tip = temp_clause -%}
+  {%- endif -%}
+
+  {%- assign today_tip = today_tip | strip -%}
+
+      {%- assign marked = today_tip | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
+  {%- assign sentences = marked | split: '^^' -%}
+  {%- assign cased = '' -%}
+  {%- for sentence in sentences -%}
+    {%- assign head = sentence | slice: 0 | upcase -%}
+    {%- assign tail = sentence | slice: 1, 400 -%}
+    {%- if forloop.first -%}
+      {%- assign cased = head | append: tail -%}
+    {%- else -%}
+      {%- assign cased = cased | append: ' ' | append: head | append: tail -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if cased != '' -%}
+    {%- assign today_tip = cased -%}
+  {%- endif -%}
+
+{%- endif -%}
+
+{%- assign fact_line = '' -%}
+{%- assign nice_now = false -%}
+{%- if band_rank == 5 or band_rank == 6 -%}
+  {%- if wmo <= 2 -%}{%- assign nice_now = true -%}{%- endif -%}
+{%- endif -%}
+{%- assign flavour_line = '' -%}
+{%- assign mood = '' -%}
+{%- assign now_mood = '' -%}
+{%- assign fl_now_pool = nil -%}
+{%- assign fl_alone_all = nil -%}
+{%- assign today_month = today_md | slice: 0, 2 -%}
+{%- assign season_month = today_month -%}
+{%- assign wx_lat = IDX_0.latitude | default: 0 | plus: 0 -%}
+{%- if wx_lat < 0 -%}
+  {%- assign sm = today_month | plus: 5 | modulo: 12 | plus: 1 -%}
+  {%- if sm < 10 -%}{%- assign season_month = '0' | append: sm -%}{%- else -%}{%- assign season_month = sm | append: '' -%}{%- endif -%}
+{%- endif -%}
+{%- assign flavour_topical = false -%}
+{%- assign forecast_on = false -%}
+{%- if show_future_suggestions == 'on' and sfs_check != 'visual' -%}{%- assign forecast_on = true -%}{%- endif -%}
+{%- assign next_check = trmnl.plugin_settings.custom_fields_values.what_to_wear_next | append: '' | downcase | strip -%}
+{%- assign next_on = false -%}
+{%- if next_check == 'true' or next_check == 'on' or next_check == 'yes' or next_check == '1' or sfs_check == 'visual' -%}
+  {%- assign next_on = true -%}
+{%- endif -%}
+{%- assign text_rot = local_days | times: 101 -%}
+{%- assign text_rot_h = local_hour | times: 103 -%}
+{%- assign text_rot = text_rot | plus: text_rot_h -%}
+{%- if is_error == false and texts_ok and texts.facts -%}
+  {%- assign F = texts.facts -%}
+  {%- if is_steady -%}
+    {%- if local_hour >= 17 -%}
+      {%- assign f_key = 'steady_evening' -%}
+    {%- elsif band_rank >= 7 -%}
+      {%- assign f_key = 'steady_hot' -%}
+    {%- elsif band_rank <= 2 -%}
+      {%- assign f_key = 'steady_cold' -%}
+    {%- else -%}
+      {%- assign f_key = 'steady' -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign f_key = temp_scenario -%}
+    {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
+  {%- endif -%}
+    {%- if heat_danger and F.heat_danger -%}{%- assign f_key = 'heat_danger' -%}{%- endif -%}
+    {%- assign f_g = '' -%}
+  {%- assign f_gp = '' -%}
+  {%- assign f_gv = '' -%}
+  {%- if band_rank <= 4 -%}
+    {%- assign fgi = band_rank | minus: 1 -%}
+    {%- assign f_g = F.garments[fgi] -%}
+    {%- assign f_gp = F.garments_pron[fgi] -%}
+    {%- assign f_gv = F.garments_verb[fgi] -%}
+  {%- endif -%}
+    {%- assign f_temp = '' -%}
+  {%- assign f_list = F[f_key] -%}
+    {%- if f_list and f_list.size > 0 -%}
+    {%- assign f_n = f_list | size -%}
+    {%- assign f_vi = text_rot | plus: 2 | modulo: f_n -%}
+    {%- for k in (1..f_n) -%}
+      {%- assign f_cand = f_list[f_vi] -%}
+      {%- unless f_cand contains '{AM}' and local_hour >= 12 -%}
+        {%- assign f_temp = f_cand | remove: '{AM}' -%}
+        {%- break -%}
+      {%- endunless -%}
+      {%- assign f_vi = f_vi | plus: 1 | modulo: f_n -%}
+    {%- endfor -%}
+    {%- if f_temp == '' -%}{%- assign f_temp = f_list[0] | remove: '{AM}' -%}{%- endif -%}
+  {%- endif -%}
+  {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
+  {%- assign f_temp = f_temp | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
+  {%- assign f_precip = '' -%}
+  {%- if precip_scenario != '' -%}
+    {%- assign pk = 'p_' | append: precip_scenario -%}
+        {%- if is_now_snow == 1 -%}
+      {%- assign pks = pk | append: '_snow' -%}
+      {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+    {%- else -%}
+            {%- assign p_ice = false -%}
+      {%- assign p_storm = false -%}
+      {%- assign wx_codes = ',' | append: wmo | append: ',' -%}
+      {%- if has_future_window and codes -%}
+        {%- for i in (start_index..end_index) -%}
+          {%- assign pi = probs[i] | default: 0 | plus: 0 -%}
+          {%- if pi >= RAIN_LOW -%}{%- assign wx_codes = wx_codes | append: codes[i] | append: ',' -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if wx_codes contains ',56,' or wx_codes contains ',57,' or wx_codes contains ',66,' or wx_codes contains ',67,' -%}{%- assign p_ice = true -%}{%- endif -%}
+      {%- if wx_codes contains ',95,' or wx_codes contains ',96,' or wx_codes contains ',99,' -%}{%- assign p_storm = true -%}{%- endif -%}
+      {%- assign pki = pk | append: '_ice' -%}
+      {%- assign pkt = pk | append: '_storm' -%}
+      {%- if p_ice and F[pki] -%}
+        {%- assign pk = pki -%}
+      {%- elsif p_storm and F[pkt] -%}
+        {%- assign pk = pkt -%}
+      {%- endif -%}
+    {%- endif -%}
+        {%- assign when_stop = '' -%}
+    {%- if stop_idx >= 0 and is_now_precip == 1 -%}
+      {%- assign sgap = stop_idx | minus: now_index -%}
+      {%- assign sh = local_hour | plus: sgap -%}
+      {%- if sh > 23 -%}{%- assign sh = 23 -%}{%- endif -%}
+      {%- assign sb = HOUR_BUCKET[sh] | plus: 0 -%}
+      {%- if sb == now_bucket and sgap >= 1 and sgap <= 3 -%}
+        {%- assign sgi = sgap | minus: 1 -%}
+        {%- assign when_stop = RELATIVE[sgi] -%}
+      {%- else -%}
+        {%- assign when_stop = BUCKETS[sb] -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign p_list = F[pk] -%}
+        {%- assign p_joined = p_list | join: '|' -%}
+    {%- assign p_need_stop = false -%}
+    {%- if when_stop != '' and p_joined contains '{WHENSTOP}' -%}{%- assign p_need_stop = true -%}{%- endif -%}
+    {%- if p_list and p_list.size > 0 -%}
+      {%- assign p_n = p_list | size -%}
+      {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
+      {%- for k in (1..p_n) -%}
+        {%- assign p_cand = p_list[p_vi] -%}
+        {%- assign p_skip = false -%}
+        {%- if p_cand contains '{WHENSTOP}' -%}
+          {%- if when_stop == '' -%}{%- assign p_skip = true -%}{%- endif -%}
+        {%- elsif p_need_stop -%}
+          {%- assign p_skip = true -%}
+        {%- endif -%}
+        {%- unless p_skip -%}
+          {%- assign f_precip = p_cand | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
+          {%- break -%}
+        {%- endunless -%}
+        {%- assign p_vi = p_vi | plus: 1 | modulo: p_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+    {%- assign sp_pool = nil -%}
+  {%- assign sp_kind = '' -%}
+  {%- assign sp_fact = '' -%}
+  {%- assign sp_lib_key = 'flavour_' | append: sarcasm_level -%}
+  {%- assign sp_lib = texts[sp_lib_key] -%}
+  {%- assign sp_ok = false -%}
+  {%- if f_key == 'steady' or f_key == 'steady_evening' -%}{%- assign sp_ok = true -%}{%- endif -%}
+  {%- if sarcasm_level != '0' and sp_lib and is_steady and f_precip == '' and sp_ok -%}
+    {%- assign th_key = 'theme_' | append: active_theme -%}
+    {%- if active_theme != '' and sp_lib[th_key] -%}
+      {%- assign sp_pool = sp_lib[th_key] -%}
+      {%- assign sp_kind = 'theme' -%}
+    {%- endif -%}
+    {%- if sp_pool and texts.facts.steady_special.size > 0 -%}
+      {%- assign sp_list = texts.facts.steady_special -%}
+      {%- assign sp_n = sp_list | size -%}
+      {%- assign sp_i = text_rot | plus: 2 | modulo: sp_n -%}
+      {%- assign sp_fact = sp_list[sp_i] -%}
+      {%- assign f_temp = sp_fact -%}
+    {%- endif -%}
+  {%- endif -%}
+    {%- assign precip_first = false -%}
+  {%- if f_precip != '' and f_temp != '' and is_steady == false -%}
+    {%- if is_now_precip == 1 -%}
+      {%- assign precip_first = true -%}
+    {%- elsif precip_idx < primary_idx -%}
+      {%- assign precip_first = true -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign unit_joke = nil -%}
+  {%- assign u_lib_key = 'units_' | append: sarcasm_level -%}
+  {%- assign u_lib = texts[u_lib_key] -%}
+  {%- if sarcasm_level != '0' and u_lib and sp_pool == nil -%}
+    {%- assign u_key = f_key -%}
+    {%- assign u_for_precip = false -%}
+    {%- if f_precip != '' and precip_first == false -%}{%- assign u_key = pk -%}{%- assign u_for_precip = true -%}{%- endif -%}
+    {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
+    {%- assign u_pool = u_lib[u_key] -%}
+        {%- assign u_n = u_pool | size -%}
+    {%- if u_pool and u_n >= 2 -%}
+      {%- assign u_i = text_rot | plus: 7 | modulo: u_n -%}
+      {%- assign u_month = ',' | append: season_month | append: ',' -%}
+      {%- for k in (1..u_n) -%}
+        {%- assign u_cand = u_pool[u_i] -%}
+        {%- assign u_ok = true -%}
+        {%- if u_cand contains '{M:' -%}
+          {%- assign u_tag = u_cand | split: '{M:' | last | split: '}' | first -%}
+          {%- assign u_tags = ',' | append: u_tag | append: ',' -%}
+          {%- unless u_tags contains u_month -%}{%- assign u_ok = false -%}{%- endunless -%}
+          {%- assign u_prefix = '{M:' | append: u_tag | append: '}' -%}
+          {%- assign u_cand = u_cand | remove_first: u_prefix -%}
+        {%- endif -%}
+                {%- assign u_first = u_cand | slice: 0 -%}
+        {%- if u_first == '#' -%}
+          {%- assign u_ref = u_cand | split: ' || ' -%}
+          {%- assign u_ix = u_ref[0] | remove_first: '#' | plus: 0 -%}
+          {%- assign u_cand = texts.facts[u_key][u_ix] | append: ' || ' | append: u_ref[1] -%}
+        {%- endif -%}
+        {%- if u_cand contains '{WHENSTOP}' -%}
+          {%- if when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- elsif when_stop != '' -%}
+                    {%- if u_key contains 'drier' or u_key contains 'wet_again' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- endif -%}
+        {%- if u_cand contains '{AM}' -%}
+          {%- if local_hour >= 12 -%}{%- assign u_ok = false -%}{%- endif -%}
+          {%- assign u_cand = u_cand | remove: '{AM}' -%}
+        {%- endif -%}
+        {%- if u_ok -%}
+          {%- assign u_parts = u_cand | split: ' || ' -%}
+          {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
+          {%- assign unit_joke = u_parts[1] | default: '' | strip | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
+          {%- if u_for_precip -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign u_i = u_i | plus: 1 | modulo: u_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if is_steady and f_precip != '' -%}
+    {%- assign fact_line = f_precip -%}
+  {%- elsif f_precip != '' and precip_first -%}
+    {%- assign fact_line = f_precip | append: ' ' | append: f_temp -%}
+  {%- elsif f_precip != '' -%}
+    {%- assign fact_line = f_temp | append: ' ' | append: f_precip -%}
+  {%- else -%}
+    {%- assign fact_line = f_temp -%}
+  {%- endif -%}
+  {%- assign fact_line = fact_line | replace: '  ', ' ' | replace: ' .', '.' | replace: ' ,', ',' | strip -%}
+  {%- assign marked = fact_line | replace: '. ', '.^^' | replace: '! ', '!^^' | replace: '? ', '?^^' -%}
+  {%- assign sentences = marked | split: '^^' -%}
+  {%- assign cased = '' -%}
+  {%- for sentence in sentences -%}
+    {%- assign s = sentence | strip -%}
+    {%- assign head = s | slice: 0 | upcase -%}
+    {%- assign tail = s | slice: 1, 400 -%}
+    {%- if forloop.first -%}
+      {%- assign cased = head | append: tail -%}
+    {%- else -%}
+      {%- assign cased = cased | append: ' ' | append: head | append: tail -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign fact_line = cased -%}
+
+    {%- assign temp_prefix = temp_scenario | slice: 0, 2 -%}
+  {%- if precip_scenario == 'snow_coming' or is_now_snow == 1 -%}
+    {%- assign mood = 'snow' -%}
+  {%- elsif precip_scenario != '' -%}
+    {%- assign mood = 'wet' -%}
+  {%- elsif is_steady and local_hour >= 22 -%}
+        {%- assign mood = 'night' -%}
+  {%- elsif is_steady and local_hour >= 18 -%}
+    {%- assign mood = 'evening' -%}
+  {%- elsif is_arc and temp_scenario != 'arc_warmer' -%}
+        {%- assign mood = 'fickle' -%}
+  {%- elsif band_rank >= 7 or up_rank >= 7 -%}
+    {%- assign mood = 'hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign mood = 'cold' -%}
+  {%- elsif is_steady and nice_now -%}
+    {%- assign mood = 'nice' -%}
+  {%- elsif temp_prefix == 'c_' -%}
+        {%- assign mood = 'cooling' -%}
+  {%- elsif temp_scenario != '' -%}
+        {%- assign mood = 'warming' -%}
+  {%- else -%}
+        {%- assign mood = 'cool' -%}
+  {%- endif -%}
+    {%- if is_now_snow == 1 -%}
+    {%- assign now_mood = 'snow' -%}
+  {%- elsif is_now_precip == 1 -%}
+    {%- assign now_mood = 'wet' -%}
+  {%- elsif local_hour >= 22 -%}
+    {%- assign now_mood = 'night' -%}
+  {%- elsif local_hour >= 18 -%}
+    {%- assign now_mood = 'evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign now_mood = 'hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign now_mood = 'cold' -%}
+  {%- elsif nice_now -%}
+    {%- assign now_mood = 'nice' -%}
+  {%- else -%}
+    {%- assign now_mood = 'cool' -%}
+  {%- endif -%}
+  {%- if sarcasm_level != '0' -%}
+    {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
+    {%- assign fl_lib = texts[fl_key] -%}
+        {%- assign now_key = 'now_' | append: sarcasm_level -%}
+    {%- assign alone_key = 'alone_' | append: sarcasm_level -%}
+    {%- assign fl_now_pool = texts[now_key][now_mood] -%}
+    {%- assign fl_alone_pool = texts[alone_key][mood] -%}
+    {%- assign fl_alone_all = fl_now_pool -%}
+    {%- if fl_alone_pool and fl_now_pool -%}
+      {%- assign fl_alone_all = fl_alone_pool | concat: fl_now_pool -%}
+    {%- elsif fl_alone_pool -%}
+      {%- assign fl_alone_all = fl_alone_pool -%}
+    {%- endif -%}
+        {%- if fl_alone_all == nil and texts[now_key] == nil -%}
+            {%- if fl_lib[mood] -%}{%- assign fl_alone_all = fl_lib[mood] -%}{%- else -%}{%- assign fl_alone_all = fl_lib['cool'] -%}{%- endif -%}
+    {%- endif -%}
+        {%- assign fu_key = '' -%}
+    {%- if f_precip != '' -%}
+      {%- if pk contains '_ice' -%}{%- assign fu_key = 'ice' -%}{%- elsif pk contains '_storm' -%}{%- assign fu_key = 'storm' -%}{%- elsif pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
+    {%- else -%}
+      {%- case f_key -%}
+        {%- when 'steady_evening' -%}
+          {%- if local_hour >= 22 -%}{%- assign fu_key = 'night' -%}{%- else -%}{%- assign fu_key = 'evening' -%}{%- endif -%}
+        {%- when 'steady_hot', 'w_water' -%}{%- assign fu_key = 'hot' -%}
+        {%- when 'steady_cold' -%}{%- assign fu_key = 'cold' -%}
+        {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
+        {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'shorts_swing', 'shorts_swing_back' -%}{%- assign fu_key = 'shorts' -%}
+        {%- when 'pants_swing' -%}{%- assign fu_key = 'pants' -%}
+        {%- when 'heat_danger' -%}{%- assign fu_key = 'scorch' -%}
+      {%- endcase -%}
+    {%- endif -%}
+        {%- assign fu_gi = -1 -%}
+    {%- case f_key -%}
+      {%- when 'w_scarf', 'c_scarf' -%}{%- assign fu_gi = 0 -%}
+      {%- when 'w_coat', 'c_coat' -%}{%- assign fu_gi = 1 -%}
+      {%- when 'w_jacket', 'c_jacket' -%}{%- assign fu_gi = 2 -%}
+      {%- when 'w_hoodie', 'c_hoodie' -%}{%- assign fu_gi = 3 -%}
+      {%- when 'arc_warmer', 'arc_level', 'arc_colder', 'shorts_swing', 'shorts_swing_back' -%}
+        {%- if f_g != '' -%}{%- assign fu_gi = band_rank | minus: 1 -%}{%- endif -%}
+    {%- endcase -%}
+    {%- assign fu_g = '' -%}
+    {%- assign fu_gp = '' -%}
+    {%- assign fu_gs = '' -%}
+    {%- if fu_gi >= 0 -%}
+      {%- assign fu_g = F.garments[fu_gi] -%}
+      {%- assign fu_gp = F.garments_pron[fu_gi] -%}
+      {%- assign fu_slugs = 'scarf,coat,jacket,hoodie' | split: ',' -%}
+      {%- assign fu_gs = ',' | append: fu_slugs[fu_gi] | append: ',' -%}
+    {%- endif -%}
+        {%- unless fl_lib[fu_key] -%}
+      {%- case fu_key -%}
+        {%- when 'ice', 'storm' -%}{%- assign fu_key = 'rain' -%}
+        {%- when 'shorts' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'pants' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'scorch' -%}{%- assign fu_key = 'hot' -%}
+      {%- endcase -%}
+    {%- endunless -%}
+    {%- assign fl_pool = fl_alone_all -%}
+    {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
+      {%- assign fl_pool = fl_lib[fu_key] -%}
+    {%- endif -%}
+        {%- assign fl_theme = false -%}
+    {%- if sp_pool -%}
+      {%- assign fl_pool = sp_pool -%}
+      {%- if sp_kind == 'theme' -%}{%- assign fl_theme = true -%}{%- endif -%}
+    {%- endif -%}
+        {%- if fl_pool and fl_pool.size > 0 -%}
+      {%- assign fl_n = fl_pool | size -%}
+      {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
+            {%- assign fl_month = ',' | append: season_month | append: ',' -%}
+      {%- for k in (1..fl_n) -%}
+        {%- assign fl_cand = fl_pool[fl_i] -%}
+        {%- assign fl_ok = true -%}
+        {%- if fl_cand contains '{AM}' -%}
+          {%- if local_hour >= 12 -%}{%- assign fl_ok = false -%}{%- endif -%}
+          {%- assign fl_cand = fl_cand | remove: '{AM}' -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{M:' -%}
+          {%- assign fl_tag = fl_cand | split: '{M:' | last | split: '}' | first -%}
+          {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
+          {%- unless fl_tags contains fl_month -%}{%- assign fl_ok = false -%}{%- endunless -%}
+          {%- assign fl_prefix = '{M:' | append: fl_tag | append: '}' -%}
+          {%- assign fl_cand = fl_cand | remove_first: fl_prefix -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{W:' -%}
+          {%- assign fl_tag = fl_cand | split: '{W:' | last | split: '}' | first -%}
+          {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
+          {%- if fu_gs == '' -%}
+            {%- assign fl_ok = false -%}
+          {%- else -%}
+            {%- unless fl_tags contains fu_gs -%}{%- assign fl_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- assign fl_prefix = '{W:' | append: fl_tag | append: '}' -%}
+          {%- assign fl_cand = fl_cand | remove_first: fl_prefix -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{G' and fu_g == '' -%}{%- assign fl_ok = false -%}{%- endif -%}
+        {%- if fl_ok -%}
+          {%- assign flavour_line = fl_cand | replace: '{GP}', fu_gp | replace: '{G}', fu_g -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+        {%- if unit_joke != nil and forecast_on and fact_line != '' and fl_theme == false -%}
+      {%- assign flavour_line = unit_joke -%}
+    {%- endif -%}
+
+        {%- assign topical_raw = trmnl.plugin_settings.custom_fields_values.topical_lines | default: 'off' | downcase | strip -%}
+    {%- assign tp_key = 'topical_' | append: sarcasm_level -%}
+    {%- assign tp_list = texts[tp_key] -%}
+    {%- if topical_raw == 'on' and fl_theme == false and tp_list -%}
+            {%- if IDX_0 -%}{%- assign tp_tz = IDX_0.timezone | default: '' -%}{%- else -%}{%- assign tp_tz = timezone | default: '' -%}{%- endif -%}
+      {%- assign tp_probe = ',' | append: tp_tz | append: ',' -%}
+      {%- assign tp_region = '' -%}
+      {%- assign US_ZONES = ',America/New_York,America/Chicago,America/Denver,America/Los_Angeles,America/Phoenix,America/Anchorage,America/Detroit,America/Boise,America/Juneau,America/Sitka,America/Nome,America/Yakutat,America/Metlakatla,America/Adak,America/Menominee,Pacific/Honolulu,' -%}
+      {%- if tp_probe == ',Europe/Berlin,' or tp_probe == ',Europe/Busingen,' -%}
+        {%- assign tp_region = 'DE' -%}
+      {%- elsif tp_probe == ',Europe/Vienna,' -%}
+        {%- assign tp_region = 'AT' -%}
+      {%- elsif tp_probe == ',Europe/Zurich,' -%}
+        {%- assign tp_region = 'CH' -%}
+      {%- elsif tp_probe == ',Europe/London,' -%}
+        {%- assign tp_region = 'UK' -%}
+      {%- elsif tp_probe == ',Europe/Dublin,' -%}
+        {%- assign tp_region = 'IE' -%}
+      {%- elsif US_ZONES contains tp_probe or tp_tz contains 'America/Indiana/' or tp_tz contains 'America/Kentucky/' or tp_tz contains 'America/North_Dakota/' -%}
+        {%- assign tp_region = 'US' -%}
+      {%- elsif tp_tz contains 'Australia/' -%}
+        {%- assign tp_region = 'AU' -%}
+      {%- endif -%}
+      {%- assign tp_region_probe = ',' | append: tp_region | append: ',' -%}
+      {%- assign tp_mood_probe = ',' | append: mood | append: ',' -%}
+      {%- assign tp_today = today_year | append: '-' | append: today_md -%}
+      {%- assign tp_cycle = local_days | modulo: 3 -%}
+      {%- assign tp_joined = '' -%}
+      {%- assign tp_n = 0 -%}
+      {%- for t in tp_list -%}
+        {%- if t.from <= tp_today and t.until >= tp_today -%}
+          {%- assign tp_ok = true -%}
+          {%- if t.region and t.region != '' -%}
+            {%- assign tp_regions = ',' | append: t.region | remove: ' ' | append: ',' -%}
+            {%- unless tp_region != '' and tp_regions contains tp_region_probe -%}{%- assign tp_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- if t.moods and t.moods != '' -%}
+            {%- assign tp_moods = ',' | append: t.moods | remove: ' ' | append: ',' -%}
+            {%- unless tp_moods contains tp_mood_probe -%}{%- assign tp_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- if tp_ok and t.from == tp_today or tp_ok and tp_cycle == 0 -%}
+            {%- if tp_n == 0 -%}
+              {%- assign tp_joined = t.text -%}
+            {%- else -%}
+              {%- assign tp_joined = tp_joined | append: '~|~' | append: t.text -%}
+            {%- endif -%}
+            {%- assign tp_n = tp_n | plus: 1 -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if tp_n > 0 -%}
+        {%- assign tp_texts = tp_joined | split: '~|~' -%}
+        {%- assign tp_i = local_days | divided_by: 3 | modulo: tp_n -%}
+        {%- assign flavour_line = tp_texts[tp_i] -%}
+        {%- assign flavour_topical = true -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- assign snow_probe = ',' | append: band | append: ',' -%}
+{%- if weather_slug contains '_snow' -%}
+  {%- unless SNOW_OUTFITS contains snow_probe -%}
+    {%- assign weather_slug = band | append: '_dry' -%}
+  {%- endunless -%}
+{%- endif -%}
+{%- assign sprite_slug = weather_slug -%}
+{%- if active_theme != '' and is_error == false -%}
+  {%- assign slug_probe = ',' | append: weather_slug | append: ',' -%}
+  {%- if theme_whitelist == 'ALL' or theme_whitelist contains slug_probe -%}
+    {%- assign sprite_slug = active_theme | append: '_' | append: weather_slug -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if is_error -%}
+  {%- assign sprite_url = error_sprite_url -%}
+  {%- assign fallback_sprite_url = error_sprite_url -%}
+{%- else -%}
+  {%- assign sprite_url = sprite_base_url | append: sprite_slug | append: '.png' -%}
+    {%- assign fallback_sprite_url = sprite_base_url | append: weather_slug | append: '.png' -%}
+{%- endif -%}
+
+{%- assign visual_forecast = next_on -%}
+{%- assign panel_n = 1 -%}
+{%- assign panel_slugs = '' -%}
+{%- assign panel_labels = '' -%}
+{%- assign panel_fact = '' -%}
+{%- assign panel_flavour = '' -%}
+{%- if is_error == false and visual_forecast -%}
+  {%- assign PN = texts.panels -%}
+  {%- assign p_now = PN.now | default: 'Now' -%}
+  {%- assign p_from = PN.from | default: 'from' -%}
+
+    {%- assign b_idx = '' -%}
+  {%- assign b_kind = '' -%}
+  {%- assign b_rank = '' -%}
+  {%- assign b_wet = '' -%}
+  {%- assign b_snow = '' -%}
+  {%- assign b_n = 0 -%}
+  {%- assign cur_rank = band_rank -%}
+  {%- assign cur_wet = is_now_precip -%}
+  {%- assign cur_snow = is_now_snow -%}
+  {%- if has_future_window and rank_hi_list -%}
+    {%- for r in rank_hi_list -%}
+      {%- assign k = forloop.index0 -%}
+      {%- assign i = start_index | plus: k -%}
+      {%- assign hi = r | plus: 0 -%}
+      {%- assign lo = rank_lo_list[k] | plus: 0 -%}
+      {%- assign new_rank = cur_rank -%}
+      {%- if hi > cur_rank -%}
+        {%- assign new_rank = hi -%}
+      {%- elsif lo < cur_rank -%}
+        {%- assign new_rank = lo -%}
+      {%- endif -%}
+            {%- assign shorts_day = shorts_swing -%}
+      {%- if shorts_early -%}{%- assign shorts_day = true -%}{%- endif -%}
+      {%- if shorts_day -%}
+                {%- if new_rank == 5 and cur_rank != 5 -%}{%- assign new_rank = 6 -%}{%- endif -%}
+      {%- elsif cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}
+        {%- assign new_rank = cur_rank -%}
+      {%- endif -%}
+
+      {%- assign j = i | plus: 1 -%}
+      {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+      {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+      {%- assign new_wet = cur_wet -%}
+      {%- assign new_snow = cur_snow -%}
+            {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
+        {%- assign new_wet = 1 -%}
+        {%- assign new_snow = 0 -%}
+        {%- if codes -%}
+          {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
+        {%- endif -%}
+      {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+        {%- assign new_wet = 0 -%}
+        {%- assign new_snow = 0 -%}
+      {%- endif -%}
+
+      {%- if new_rank != cur_rank or new_wet != cur_wet -%}
+        {%- if new_rank != cur_rank -%}{%- assign kind = 'T' -%}{%- else -%}{%- assign kind = 'P' -%}{%- endif -%}
+        {%- if b_n > 0 -%}
+          {%- assign b_idx = b_idx | append: ',' -%}
+          {%- assign b_kind = b_kind | append: ',' -%}
+          {%- assign b_rank = b_rank | append: ',' -%}
+          {%- assign b_wet = b_wet | append: ',' -%}
+          {%- assign b_snow = b_snow | append: ',' -%}
+        {%- endif -%}
+        {%- assign b_idx = b_idx | append: i -%}
+        {%- assign b_kind = b_kind | append: kind -%}
+        {%- assign b_rank = b_rank | append: new_rank -%}
+        {%- assign b_wet = b_wet | append: new_wet -%}
+        {%- assign b_snow = b_snow | append: new_snow -%}
+        {%- assign b_n = b_n | plus: 1 -%}
+        {%- assign cur_rank = new_rank -%}
+        {%- assign cur_wet = new_wet -%}
+        {%- assign cur_snow = new_snow -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+    {%- assign bi = b_idx | split: ',' -%}
+  {%- assign bk = b_kind | split: ',' -%}
+  {%- assign br = b_rank | split: ',' -%}
+  {%- assign bw = b_wet | split: ',' -%}
+  {%- assign bs = b_snow | split: ',' -%}
+  {%- assign keep = '' -%}
+  {%- assign kept = 0 -%}
+  {%- assign t_hours = ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = '0' -%}
+    {%- if kind == 'T' and kept < 2 -%}
+      {%- assign here = bi[idx0] | plus: 0 -%}
+      {%- assign later_t = false -%}
+      {%- for k2 in bk offset: forloop.index -%}
+        {%- assign j2 = idx0 | plus: forloop.index -%}
+        {%- assign there = bi[j2] | plus: 0 | minus: here -%}
+        {%- if k2 == 'T' and there < 2 -%}{%- assign later_t = true -%}{%- endif -%}
+      {%- endfor -%}
+      {%- unless later_t -%}
+        {%- assign flag = '1' -%}
+        {%- assign kept = kept | plus: 1 -%}
+        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- assign keep = keep | append: flag -%}
+  {%- endfor -%}
+  {%- assign keep2 = '' -%}
+  {%- assign chosen = t_hours | split: ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = keep | slice: idx0 -%}
+    {%- if flag == '0' and kind == 'P' and kept < 2 -%}
+      {%- assign here = bi[idx0] | plus: 0 -%}
+      {%- assign near = false -%}
+      {%- for c in chosen -%}
+        {%- if c != '' -%}
+          {%- assign d = c | plus: 0 | minus: here | abs -%}
+          {%- if d < 2 -%}{%- assign near = true -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- unless near -%}
+        {%- assign flag = '1' -%}
+        {%- assign kept = kept | plus: 1 -%}
+        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+        {%- assign chosen = t_hours | split: ',' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- assign keep2 = keep2 | append: flag -%}
+  {%- endfor -%}
+
+    {%- assign p_rank = band_rank | append: '' -%}
+  {%- assign p_wet = is_now_precip | append: '' -%}
+  {%- assign p_snow = is_now_snow | append: '' -%}
+  {%- assign p_hour = '' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = keep2 | slice: idx0 -%}
+    {%- if flag == '1' -%}
+      {%- assign p_rank = p_rank | append: ',' | append: br[idx0] -%}
+      {%- assign p_wet = p_wet | append: ',' | append: bw[idx0] -%}
+      {%- assign p_snow = p_snow | append: ',' | append: bs[idx0] -%}
+      {%- assign bix = bi[idx0] | plus: 0 -%}
+      {%- assign hr = h.time[bix] | slice: 11, 2 | plus: 0 -%}
+      {%- assign p_hour = p_hour | append: ',' | append: hr -%}
+    {%- elsif bw[idx0] == '1' -%}
+            {%- assign wl = p_wet | split: ',' -%}
+      {%- assign sl = p_snow | split: ',' -%}
+      {%- assign last = wl | size | minus: 1 -%}
+      {%- if last > 0 -%}
+        {%- assign p_wet = '' -%}
+        {%- assign p_snow = '' -%}
+        {%- for w in wl -%}
+          {%- unless forloop.first -%}{%- assign p_wet = p_wet | append: ',' -%}{%- assign p_snow = p_snow | append: ',' -%}{%- endunless -%}
+          {%- if forloop.index0 == last -%}
+            {%- assign p_wet = p_wet | append: '1' -%}
+            {%- assign p_snow = p_snow | append: bs[idx0] -%}
+          {%- else -%}
+            {%- assign p_wet = p_wet | append: w -%}
+            {%- assign p_snow = p_snow | append: sl[forloop.index0] -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign pr = p_rank | split: ',' -%}
+  {%- assign pw = p_wet | split: ',' -%}
+  {%- assign ps = p_snow | split: ',' -%}
+  {%- assign ph = p_hour | split: ',' -%}
+  {%- assign prev_slug = '' -%}
+  {%- for rk in pr -%}
+    {%- assign n0 = forloop.index0 -%}
+    {%- assign ri = rk | plus: 0 | minus: 1 -%}
+    {%- assign pband = band_name_list[ri] -%}
+    {%- assign suffix = 'dry' -%}
+    {%- if pw[n0] == '1' -%}
+      {%- assign suffix = 'rain' -%}
+      {%- if ps[n0] == '1' -%}
+        {%- assign sprobe = ',' | append: pband | append: ',' -%}
+        {%- if SNOW_OUTFITS contains sprobe -%}{%- assign suffix = 'snow' -%}{%- else -%}{%- assign suffix = 'dry' -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if forloop.first -%}
+      {%- assign label = p_now -%}
+    {%- else -%}
+      {%- assign hn = ph[n0] | plus: 0 -%}
+            {%- assign label = PN.hours[hn] | default: hn -%}
+      {%- assign label = p_from | append: ' ' | append: label -%}
+    {%- endif -%}
+        {%- assign this_slug = pband | append: '_' | append: suffix -%}
+    {%- if this_slug != prev_slug -%}
+      {%- unless forloop.first -%}
+        {%- assign panel_slugs = panel_slugs | append: '|' -%}
+        {%- assign panel_labels = panel_labels | append: '|' -%}
+      {%- endunless -%}
+      {%- assign panel_slugs = panel_slugs | append: this_slug -%}
+      {%- assign panel_labels = panel_labels | append: label -%}
+    {%- endif -%}
+    {%- assign prev_slug = this_slug -%}
+  {%- endfor -%}
+  {%- assign panel_n = panel_slugs | split: '|' | size -%}
+
+    {%- if texts_ok -%}
+    {%- if panel_n == 1 and texts.facts -%}
+      {%- if local_hour >= 17 -%}
+        {%- assign sk = 'steady_evening' -%}
+      {%- elsif band_rank >= 7 -%}
+        {%- assign sk = 'steady_hot' -%}
+      {%- elsif band_rank <= 2 -%}
+        {%- assign sk = 'steady_cold' -%}
+      {%- else -%}
+        {%- assign sk = 'steady' -%}
+      {%- endif -%}
+      {%- assign sl = texts.facts[sk] -%}
+      {%- if sl and sl.size > 0 -%}
+        {%- assign sn = sl | size -%}
+        {%- assign si = text_rot | plus: 2 | modulo: sn -%}
+        {%- assign panel_fact = sl[si] -%}
+      {%- endif -%}
+            {%- if sp_fact != '' -%}{%- assign panel_fact = sp_fact -%}{%- endif -%}
+      {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
+        {%- assign panel_fact = f_temp -%}
+        {%- assign flavour_line = unit_joke -%}
+      {%- endif -%}
+    {%- endif -%}
+        {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
+      {%- assign vf_key = 'flavour_vf_' | append: sarcasm_level -%}
+            {%- assign vf_mood = mood -%}
+      {%- if mood == 'cooling' or mood == 'warming' or mood == 'fickle' -%}
+        {%- assign vf_first = pr | first | plus: 0 -%}
+        {%- assign vf_last = pr | last | plus: 0 -%}
+        {%- if vf_first == vf_last -%}
+          {%- assign vf_mood = 'fickle' -%}
+        {%- elsif vf_last < vf_first -%}
+          {%- assign vf_mood = 'cooling' -%}
+        {%- else -%}
+          {%- assign vf_mood = 'warming' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign vf_pool = texts[vf_key][vf_mood] -%}
+      {%- if vf_pool and vf_pool.size > 0 -%}
+        {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
+        {%- assign vf_n = vf_pool | size -%}
+        {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
+                {%- assign vf_month = ',' | append: season_month | append: ',' -%}
+        {%- for k in (1..vf_n) -%}
+          {%- assign vf_cand = vf_pool[vf_i] -%}
+          {%- if vf_cand contains '{AM}' -%}
+            {%- if local_hour >= 12 -%}{%- assign vf_cand = '{M:00}' -%}{%- else -%}{%- assign vf_cand = vf_cand | remove: '{AM}' -%}{%- endif -%}
+          {%- endif -%}
+                    {%- if vf_cand contains '{3}' -%}
+            {%- assign vf_slugs = panel_slugs | split: '|' -%}
+            {%- if panel_n == 3 and vf_slugs[0] != vf_slugs[2] -%}
+              {%- assign vf_cand = vf_cand | remove_first: '{3}' -%}
+            {%- else -%}
+              {%- assign vf_cand = '{M:00}' -%}
+            {%- endif -%}
+          {%- endif -%}
+          {%- if vf_cand contains '{M:' -%}
+            {%- assign vf_tag = vf_cand | split: '}' | first | remove: '{M:' -%}
+            {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}
+            {%- if vf_tags contains vf_month -%}
+              {%- assign vf_prefix = '{M:' | append: vf_tag | append: '}' -%}
+              {%- assign flavour_line = vf_cand | remove_first: vf_prefix -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign flavour_line = vf_cand -%}
+            {%- break -%}
+          {%- endif -%}
+          {%- assign vf_i = vf_i | plus: 1 | modulo: vf_n -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign panel_flavour = flavour_line -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign panel_slug_list = panel_slugs | split: '|' -%}
+{%- assign panel_label_list = panel_labels | split: '|' -%}
+
+{%- assign EVENING_HOUR = 20 -%}
+{%- assign EV_FEW_11 = 4 -%}
+{%- assign evening_on = false -%}
+{%- assign ev_slugs = '' -%}
+{%- assign ev_labels = '' -%}
+{%- assign ev_tonight_slug = '' -%}
+{%- assign ev_tonight_label = '' -%}
+{%- assign ev_fact = '' -%}
+{%- assign ev_joke = '' -%}
+{%- assign EV = texts.evening -%}
+{%- if is_error == false and texts_ok and EV and local_hour >= EVENING_HOUR and temps -%}
+  {%- if visual_forecast or forecast_on -%}
+    {%- assign t0 = now_index | minus: local_hour | plus: 24 -%}
+    {%- assign t_end = t0 | plus: DAY_END_HOUR -%}
+    {%- assign t_last = t_end | plus: 1 -%}
+    {%- assign t_probe = h.time[t_last] | default: '' -%}
+    {%- assign t_start_probe = h.time[t0] | default: '' | slice: 11, 2 -%}
+    {%- if t_probe != '' and t_start_probe == '00' -%}
+      {%- assign evening_on = true -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if evening_on -%}
+  {%- assign PN = texts.panels -%}
+    {%- assign ho_raw = trmnl.plugin_settings.custom_fields_values.head_out_time | append: '' | strip -%}
+  {%- assign ho_from = 6 -%}
+  {%- assign ho_to = 9 -%}
+  {%- assign ho_label = EV.window -%}
+  {%- assign ho_num = ho_raw | plus: 0 -%}
+  {%- if ho_num >= 4 and ho_num <= 12 -%}
+    {%- assign ho_from = ho_num -%}
+    {%- assign ho_to = ho_num -%}
+    {%- assign ho_label = PN.hours[ho_num] | default: ho_num -%}
+  {%- endif -%}
+
+    {%- assign ev_rank = 99 -%}
+  {%- assign ev_wet = 0 -%}
+  {%- assign ev_snow = 0 -%}
+  {%- assign i_from = t0 | plus: ho_from -%}
+  {%- assign i_to = t0 | plus: ho_to -%}
+  {%- for i in (i_from..i_to) -%}
+    {%- assign tv = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 | plus: temp_shift -%}
+    {%- assign rk = 1 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if tv > edge_c -%}{%- assign rk = forloop.index | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if rk < ev_rank -%}{%- assign ev_rank = rk -%}{%- endif -%}
+    {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
+    {%- if pv >= RAIN_HIGH -%}
+      {%- assign ev_wet = 1 -%}
+      {%- if codes -%}
+        {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+        {%- if SNOW_CODES contains cp -%}{%- assign ev_snow = 1 -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+    {%- assign cur_rank = ev_rank -%}
+  {%- assign cur_wet = ev_wet -%}
+  {%- assign nx_kind = '' -%}
+  {%- assign nx_rank = ev_rank -%}
+  {%- assign nx_wet = ev_wet -%}
+  {%- assign nx_snow = 0 -%}
+  {%- assign nx_hour = 0 -%}
+  {%- assign t_hour = -1 -%}
+  {%- assign p_hour = -1 -%}
+  {%- assign i_from = i_to | plus: 1 -%}
+  {%- for i in (i_from..t_end) -%}
+    {%- assign j = i | plus: 1 -%}
+    {%- assign ta = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
+    {%- assign tb = temps[j] | default: temps_air[j] | default: ta | plus: 0 -%}
+    {%- assign held_hi = ta -%}
+    {%- assign held_lo = ta -%}
+    {%- if tb < held_hi -%}{%- assign held_hi = tb -%}{%- endif -%}
+    {%- if tb > held_lo -%}{%- assign held_lo = tb -%}{%- endif -%}
+    {%- assign hi_b = held_hi | plus: temp_shift -%}
+    {%- assign lo_b = held_lo | plus: temp_shift -%}
+    {%- assign r_hi = 1 -%}
+    {%- assign r_lo = 1 -%}
+    {%- for edge in band_edge_list -%}
+      {%- assign edge_c = edge | plus: 0 -%}
+      {%- if hi_b > edge_c -%}{%- assign r_hi = forloop.index | plus: 1 -%}{%- endif -%}
+      {%- if lo_b > edge_c -%}{%- assign r_lo = forloop.index | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- assign new_rank = cur_rank -%}
+    {%- if r_hi > cur_rank -%}
+      {%- assign new_rank = r_hi -%}
+    {%- elsif r_lo < cur_rank -%}
+      {%- assign new_rank = r_lo -%}
+    {%- endif -%}
+        {%- if cur_rank >= 5 and cur_rank <= 6 and new_rank >= 5 and new_rank <= 6 -%}{%- assign new_rank = cur_rank -%}{%- endif -%}
+    {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+    {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+    {%- assign new_wet = cur_wet -%}
+    {%- assign new_snow = 0 -%}
+    {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
+      {%- assign new_wet = 1 -%}
+      {%- if codes -%}
+        {%- assign cp = ',' | append: codes[i] | append: ',' -%}
+        {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
+      {%- endif -%}
+    {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+      {%- assign new_wet = 0 -%}
+    {%- endif -%}
+        {%- if new_rank != cur_rank and t_hour == -1 -%}
+      {%- assign t_hour = i | minus: t0 -%}
+      {%- assign t_rank = new_rank -%}
+      {%- assign t_wet = new_wet -%}
+    {%- endif -%}
+    {%- if new_wet != cur_wet and p_hour == -1 -%}
+      {%- if new_wet == 1 or ev_wet == 1 -%}
+        {%- assign p_hour = i | minus: t0 -%}
+        {%- assign p_rank = new_rank -%}
+        {%- assign p_wet = new_wet -%}
+        {%- assign p_snow = new_snow -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign cur_rank = new_rank -%}
+    {%- assign cur_wet = new_wet -%}
+  {%- endfor -%}
+  {%- if p_hour >= 0 -%}
+    {%- assign nx_kind = 'P' -%}
+    {%- assign nx_rank = p_rank -%}
+    {%- assign nx_wet = p_wet -%}
+    {%- assign nx_snow = p_snow -%}
+    {%- assign nx_hour = p_hour -%}
+  {%- elsif t_hour >= 0 -%}
+    {%- assign nx_kind = 'T' -%}
+    {%- assign nx_rank = t_rank -%}
+    {%- assign nx_wet = t_wet -%}
+    {%- assign nx_hour = t_hour -%}
+  {%- endif -%}
+
+    {%- assign ri = ev_rank | minus: 1 -%}
+  {%- assign e_band = band_name_list[ri] -%}
+  {%- assign e_suffix = 'dry' -%}
+  {%- if ev_wet == 1 -%}
+    {%- assign e_suffix = 'rain' -%}
+    {%- if ev_snow == 1 -%}
+      {%- assign sprobe = ',' | append: e_band | append: ',' -%}
+      {%- if SNOW_OUTFITS contains sprobe -%}{%- assign e_suffix = 'snow' -%}{%- else -%}{%- assign e_suffix = 'dry' -%}{%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign ev_slugs = e_band | append: '_' | append: e_suffix -%}
+  {%- assign ev_from = '' -%}
+  {%- if nx_kind != '' -%}
+    {%- assign ri = nx_rank | minus: 1 -%}
+    {%- assign n_band = band_name_list[ri] -%}
+    {%- assign n_suffix = 'dry' -%}
+    {%- if nx_wet == 1 -%}
+      {%- assign n_suffix = 'rain' -%}
+      {%- if nx_snow == 1 -%}
+        {%- assign sprobe = ',' | append: n_band | append: ',' -%}
+        {%- if SNOW_OUTFITS contains sprobe -%}{%- assign n_suffix = 'snow' -%}{%- else -%}{%- assign n_suffix = 'dry' -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign n_slug = n_band | append: '_' | append: n_suffix -%}
+    {%- assign ev_from = PN.hours[nx_hour] | default: nx_hour -%}
+    {%- assign ev_from = PN.from | append: ' ' | append: ev_from -%}
+    {%- if n_slug == ev_slugs -%}
+            {%- assign ev_labels = ho_label -%}
+    {%- else -%}
+      {%- assign ev_slugs = ev_slugs | append: '|' | append: n_slug -%}
+      {%- assign ev_labels = ho_label | append: '|' | append: ev_from -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign ev_labels = EV.all_day -%}
+  {%- endif -%}
+
+    {%- if visual_forecast -%}
+    {%- assign ev_tonight_slug = panel_slug_list | last -%}
+    {%- if panel_n > 1 -%}
+      {%- assign ev_tonight_label = panel_label_list | last -%}
+    {%- else -%}
+      {%- assign ev_tonight_label = EV.now -%}
+    {%- endif -%}
+  {%- endif -%}
+
+    {%- assign wd = weekday_idx | plus: 1 | modulo: 7 -%}
+  {%- assign ev_tag = EV.tomorrow | append: ' · ' | append: EV.days[wd] -%}
+
+    {%- if nx_kind == 'T' -%}
+    {%- if nx_rank > ev_rank -%}{%- assign ek = 'tmr_warmer' -%}{%- assign ev_sit = 'warmer' -%}{%- else -%}{%- assign ek = 'tmr_colder' -%}{%- assign ev_sit = 'colder' -%}{%- endif -%}
+  {%- elsif nx_kind == 'P' -%}
+    {%- if nx_wet == 1 and nx_snow == 1 -%}
+      {%- assign ek = 'tmr_snow' -%}{%- assign ev_sit = 'snow' -%}
+    {%- elsif nx_wet == 1 -%}
+      {%- assign ek = 'tmr_rain' -%}{%- assign ev_sit = 'rain' -%}
+    {%- else -%}
+      {%- assign ek = 'tmr_drier' -%}{%- assign ev_sit = 'drier' -%}
+    {%- endif -%}
+  {%- elsif ev_wet == 1 and ev_snow == 1 -%}
+    {%- assign ek = 'tmr_snow_start' -%}{%- assign ev_sit = 'snow' -%}
+  {%- elsif ev_wet == 1 -%}
+    {%- assign ek = 'tmr_wet' -%}{%- assign ev_sit = 'rain' -%}
+  {%- else -%}
+    {%- assign ek = 'tmr_steady' -%}{%- assign ev_sit = 'steady' -%}
+  {%- endif -%}
+
+    {%- if forecast_on -%}
+    {%- assign el = EV.facts[ek] -%}
+    {%- if el and el.size > 0 -%}
+      {%- assign en_ = el | size -%}
+      {%- assign ei = text_rot | modulo: en_ -%}
+      {%- for k in (1..en_) -%}
+        {%- assign e_cand = el[ei] -%}
+        {%- if e_cand contains '{DRY}' -%}
+          {%- if is_now_precip == 1 -%}{%- assign e_cand = '' -%}{%- else -%}{%- assign e_cand = e_cand | remove: '{DRY}' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if e_cand != '' -%}
+          {%- assign ev_fact = e_cand | replace: '{FROM}', ev_from -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign ei = ei | plus: 1 | modulo: en_ -%}
+      {%- endfor -%}
+    {%- endif -%}
+        {%- if visual_forecast and panel_n > 1 and fact_line != '' -%}
+      {%- assign ev_fact = fact_line | append: ' ' | append: ev_fact -%}
+    {%- endif -%}
+  {%- endif -%}
+
+      {%- assign none_list = '' | split: ',' -%}
+  {%- assign j_lv = sarcasm_level -%}
+  {%- if sarcasm_level == '11' -%}{%- assign j_lv = '10' -%}{%- endif -%}
+  {%- assign jk = 'jokes_' | append: j_lv -%}
+  {%- assign j_main = EV[jk][ev_sit] -%}{%- if j_main == nil -%}{%- assign j_main = none_list -%}{%- endif -%}
+  {%- assign ja = EV[jk].any -%}{%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
+  {%- assign j_main = j_main | concat: ja -%}
+  {%- assign j_passes = 'main' | split: ',' -%}
+  {%- if sarcasm_level == '11' -%}
+    {%- assign j_11 = EV.jokes_11[ev_sit] -%}{%- if j_11 == nil -%}{%- assign j_11 = none_list -%}{%- endif -%}
+    {%- assign ja = EV.jokes_11.any -%}{%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
+    {%- assign j_11 = j_11 | concat: ja -%}
+    {%- if j_11.size >= EV_FEW_11 -%}
+      {%- assign j_passes = '11,main' | split: ',' -%}
+    {%- else -%}
+      {%- assign j_11 = j_11 | concat: j_main -%}
+      {%- assign j_passes = '11' | split: ',' -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if sarcasm_level == '0' -%}{%- assign j_passes = none_list -%}{%- endif -%}
+  {%- for j_pass in j_passes -%}
+    {%- if j_pass == '11' -%}{%- assign jl = j_11 -%}{%- else -%}{%- assign jl = j_main -%}{%- endif -%}
+    {%- if jl.size > 0 -%}
+      {%- assign jn = jl | size -%}
+      {%- assign ji = text_rot | plus: 3 | modulo: jn -%}
+      {%- assign wd_probe = ',' | append: wd | append: ',' -%}
+      {%- for k in (1..jn) -%}
+        {%- assign j_cand = jl[ji] -%}
+        {%- if j_cand contains '{P}' -%}
+          {%- if ev_tonight_slug == '' -%}{%- assign j_cand = '' -%}{%- else -%}{%- assign j_cand = j_cand | remove_first: '{P}' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if j_cand contains '{G}' -%}
+          {%- if ev_wet == 0 and ev_rank >= 4 and ev_rank <= 6 and nx_kind == '' -%}{%- assign j_cand = j_cand | remove_first: '{G}' -%}{%- else -%}{%- assign j_cand = '' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if j_cand contains '{N}' -%}
+          {%- if forecast_on -%}{%- assign j_cand = '' -%}{%- else -%}{%- assign j_cand = j_cand | remove_first: '{N}' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if j_cand contains '{S}' -%}
+          {%- if forecast_on -%}{%- assign j_cand = j_cand | remove_first: '{S}' -%}{%- else -%}{%- assign j_cand = '' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if j_cand contains '{T}' -%}
+          {%- if ev_from == '' -%}{%- assign j_cand = '' -%}{%- else -%}{%- assign j_cand = j_cand | remove_first: '{T}' -%}{%- endif -%}
+        {%- endif -%}
+        {%- if j_cand contains '{D:' -%}
+          {%- assign j_tag = j_cand | split: '{D:' | last | split: '}' | first -%}
+          {%- assign j_tags = ',' | append: j_tag | append: ',' -%}
+          {%- if j_tags contains wd_probe -%}
+            {%- assign j_prefix = '{D:' | append: j_tag | append: '}' -%}
+            {%- assign j_cand = j_cand | remove_first: j_prefix -%}
+          {%- else -%}
+            {%- assign j_cand = '' -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if j_cand != '' -%}
+          {%- assign ev_joke = j_cand -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign ji = ji | plus: 1 | modulo: jn -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if ev_joke != '' -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if location_label == '' -%}{%- assign location_label = EV.bar -%}{%- endif -%}
+{%- endif -%}
+{%- assign ev_slug_list = ev_slugs | split: '|' -%}
+{%- assign ev_label_list = ev_labels | split: '|' -%}

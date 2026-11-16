@@ -1,0 +1,304 @@
+# English tightening: before and after (owner + proofreader, October 2026)
+
+Every change the owner's proofreading pass made to the live English texts. The lessons are in `docs/BRIEF.md` ("Tightening").
+
+## Reworded
+
+- `facts.arc_colder`
+  - before: You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer.
+  - after: You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, plus an extra layer.
+- `facts.p_drier`
+  - before: The rain eases off later, but bring the umbrella for now.
+  - after: The rain stops later, but bring the umbrella for now.
+- `facts.p_drier_ice`
+  - before: The freezing rain stops later, but the ice stays. Take the umbrella for now and watch your step.
+  - after: The freezing rain stops later, but ice may remain. Take the umbrella for now and watch your step.
+- `facts.p_drier_ice`
+  - before: Take the umbrella for now. The freezing rain stops later, but the sidewalks stay icy.
+  - after: Take the umbrella for now. The freezing rain stops later, but the sidewalks may stay icy.
+- `facts.p_drier_ice`
+  - before: Bring the umbrella for the freezing rain now. It stops later, but the ice stays, so walk carefully.
+  - after: Bring the umbrella for the freezing rain now. It stops later, but ice may remain, so walk carefully.
+- `facts.p_drier_snow`
+  - before: It snows for a while still, then stops later.
+  - after: It keeps snowing for a while, then stops.
+- `facts.p_stays_wet_ice`
+  - before: The freezing rain keeps going all day and leaves ice everywhere. Bring the umbrella and go slowly.
+  - after: The freezing rain keeps going all day and can leave icy patches. Bring the umbrella and go slowly.
+- `facts.p_stays_wet_ice`
+  - before: The freezing rain doesn't let up today, and the ground may turn icy. Take the umbrella and mind your step.
+  - after: The freezing rain doesn't let up today, and the ground may turn icy. Take the umbrella and watch your step.
+- `facts.p_wet_again_ice`
+  - before: Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and mind your steps.
+  - after: Freezing rain for now, then a break, then more {WHENP}. Keep the umbrella and watch your step.
+- `facts.p_wet_again_storm`
+  - before: A thunderstorm comes {WHENP}, after a short dry spell. Keep the umbrella close.
+  - after: A thunderstorm comes {WHENP}, after a dry spell. Keep the umbrella close.
+- `facts.p_wetter_long_ice`
+  - before: Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and everything gets icy.
+  - after: Bring the umbrella. {WHENP} freezing rain sets in for the rest of the day, and roads and sidewalks may get icy.
+- `facts.p_wetter_maybe`
+  - before: Rain {WHENP} is possible but not likely. The umbrella is up to you.
+  - after: Rain {WHENP} is possible. The umbrella is up to you.
+- `facts.p_wetter_maybe_ice`
+  - before: Watch out for ice {WHENP}. Freezing rain is possible, though not likely. Bring the umbrella.
+  - after: Watch out for ice {WHENP}. Freezing rain is possible. Bring the umbrella.
+- `facts.p_wetter_maybe_storm`
+  - before: It probably stays dry, but a thunderstorm could pop up {WHENP}. Bring the umbrella.
+  - after: A thunderstorm could pop up {WHENP}. Bring the umbrella.
+- `facts.shorts_swing`
+  - before: Shorts could work today. {WHEN} it's warm, and {G} alone could get you through the cold start.
+  - after: Shorts could work today. {WHEN} it's warm, and {G} could help you through the cold start.
+- `flavour_10.pants`
+  - before: The sun's lying to you. I'm not.
+  - after: The warmth's lying to you. I'm not.
+- `flavour_10.rain`
+  - before: Open it outside, please. You can't afford the bad luck.
+  - after: Open it outside, please. I don't need the bad luck.
+- `flavour_10.shorts`
+  - before: Your knees will have opinions this morning. Ignore them.
+  - after: Your knees will have opinions at first. Ignore them.
+- `flavour_10.theme_ny`
+  - before: Today's forecast: quiet, with scattered hangovers across the country.
+  - after: New Year's outlook: scattered hangovers across the country.
+- `flavour_10.theme_pi`
+  - before: I'm a rectangle, so I'll be sitting this one out.
+  - after: It's Pi Day. I'm a rectangle, so I'll be sitting this one out.
+- `flavour_11.day_friday`
+  - before: The weekend plans are 'we'll see', aren't they.
+  - after: The weekend plans are 'we'll see', aren't they?
+- `flavour_11.day_monday`
+  - before: You hit snooze, didn't you. More than once.
+  - after: You hit snooze, didn't you? More than once.
+- `flavour_11.ice`
+  - before: Today you're allowed to walk like your gran. Encouraged, even.
+  - after: Today you're allowed to walk like your grandma. Encouraged, even.
+- `flavour_11.offon`
+  - before: Tonight you'll say 'it's turned chilly' like it's news to you.
+  - after: Later you'll say 'it's turned chilly' like it's news to you.
+- `flavour_11.on`
+  - before: Bringing a layer you won't need for hours. Look at you, all grown up.
+  - after: Bringing a layer you don't need yet. Look at you, all grown up.
+- `flavour_11.rain`
+  - before: I said umbrella. You heard 'my hood will do'.
+  - after: I said umbrella. You heard 'my hood will do.'
+- `flavour_11.shorts`
+  - before: You'll doubt me for the first hour. Then you won't admit I was right.
+  - after: You'll doubt me at first. Then you won't admit I was right.
+- `flavour_11.snow`
+  - before: And you'll still call it 'unexpected'.
+  - after: And you'll still call it 'unexpected.'
+- `flavour_11.theme_easter`
+  - before: Your 'Sunday best' is a clean T-shirt, isn't it.
+  - after: Your 'Sunday best' is a clean T-shirt, isn't it?
+- `flavour_11.theme_force`
+  - before: You still can't name the films in order, can you.
+  - after: You still can't name the films in order, can you?
+- `flavour_11.theme_ny`
+  - before: You'll call this New Year your year. You said that last year.
+  - after: You'll call this new year your year. You said that last year.
+- `flavour_11.theme_pi`
+  - before: 3.14159… You stopped reading at the dot, didn't you.
+  - after: 3.14159… You stopped reading at the dot, didn't you?
+- `flavour_11.theme_spooky`
+  - before: Your Halloween costume is 'tired adult' again, isn't it.
+  - after: Your Halloween costume is 'tired adult' again, isn't it?
+- `flavour_vf_10.hot`
+  - before: Less and less clothing in these drawings. But I'm keeping it tasteful.
+  - after: A lot of bare skin in these drawings. But I'm keeping it tasteful.
+- `flavour_vf_10.hot`
+  - before: Hot all day. The ice cream trucks have never felt more confident.
+  - after: Heat in the forecast. The ice cream trucks have never felt more confident.
+- `flavour_vf_11.cold`
+  - before: The coat looks good in every drawing. Can't say the same for you.
+  - after: At least the coat looks good. Can't say the same for you.
+- `flavour_vf_11.cold`
+  - before: Cold all day. Today you have an excuse for that face.
+  - after: Cold out there. Today you have an excuse for that face.
+- `flavour_vf_11.hot`
+  - before: Hot all day. You'll walk slower than usual. Hard to tell, but still.
+  - after: Heat in the forecast. You'll walk slower than usual. Hard to tell, but still.
+- `flavour_vf_11.hot`
+  - before: Hot all day. Everyone will look rough. You've got a head start.
+  - after: Heat in the forecast. Everyone will look rough. You've got a head start.
+- `flavour_vf_11.snow`
+  - before: Snow all day. You'll make one snowball and feel very wild about it.
+  - after: Snow in the forecast. You'll make one snowball and feel very wild about it.
+- `flavour_vf_11.snow`
+  - before: Snow all day. You're one carrot away from a snowman.
+  - after: Snow in the forecast. You're one carrot away from a snowman.
+- `flavour_vf_11.warming`
+  - before: Later you'll have one less layer to hide behind.
+  - after: Later you'll have less clothing to hide behind.
+- `now_10.nice`
+  - before: "Nice out." That's your whole conversation with the neighbors sorted.
+  - after: "Nice out." That's the whole neighborhood's conversation taken care of.
+- `now_10.night`
+  - before: I'll hold this picture all night without using any power. Take that smartphone.
+  - after: I'll hold this picture all night without using any power. Take that, smartphone.
+- `now_11.cold`
+  - before: You'll get fully zipped into that coat, then need the pee.
+  - after: You'll get fully zipped into that coat, then need to pee.
+- `now_11.cool`
+  - before: You'd describe today as 'fine'. You describe everything as 'fine'.
+  - after: You'd describe today as 'fine.' You describe everything as 'fine.'
+- `now_11.evening`
+  - before: Another evening, another walk past me. Not as single 'Thank you', as usual.
+  - after: Another evening, another walk past me. Not a single 'Thank you,' as usual.
+- `now_11.night`
+  - before: Bed's right there and you're choosing me. I'm touched.
+  - after: You could be in bed, and you're choosing me. I'm touched.
+- `alone_10.fickle`
+  - before: Warm, then cold again. The weather can't commit either.
+  - after: Warm, then cold again. The weather can't commit.
+- `alone_11.cooling`
+  - before: You'll be cold by tonight and tell everyone it came out of nowhere.
+  - after: Later it cools off. You'll tell everyone it came out of nowhere.
+- `units_10.c_hoodie`
+  - before: It cools down {WHEN}, so bring a sweater. || It'll come out of the bag looking a bit sorry for itself. Still works.
+  - after: It cools down {WHEN}, so bring a sweater. || It'll come out of the bag looking a little worse for wear. Still works.
+- `units_10.p_drier`
+  - before: It keeps raining for a while, then stops. Take the umbrella. || 'A while'. I'd be more precise, but the rain isn't.
+  - after: It keeps raining for a while, then stops. Take the umbrella. || 'A while.' I'd be more precise, but the rain isn't.
+- `units_10.p_drier_snow`
+  - before: The snow eases off later. || Every snowplow driver just exhaled.
+  - after: The snow stops later. || Every snowplow driver just exhaled.
+- `units_10.p_snow_coming`
+  - before: {WHENP} it starts to snow. || Every kid in the neighborhood just got its hopes up.
+  - after: {WHENP} it starts to snow. || Every kid in the neighborhood just got their hopes up.
+- `units_10.p_stays_wet`
+  - before: The rain doesn't stop today, so take the umbrella. || Somebody will say 'at least it's good for the garden'. Somebody always does.
+  - after: The rain doesn't stop today, so take the umbrella. || Somebody will say 'at least it's good for the garden.' Somebody always does.
+- `units_10.p_wetter_long`
+  - before: The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass', but I'm honest.
+  - after: The rain starts {WHENP} and doesn't stop. Bring the umbrella. || I'd say 'it'll pass,' but I'm honest.
+- `units_10.p_wetter_maybe`
+  - before: Rain {WHENP} is possible but not likely. The umbrella's up to you. || I said 'not likely'. But I'm not the one dealing with the consequences.
+  - after: Rain {WHENP} is possible. The umbrella's up to you. || I said 'possible.' But I'm not the one dealing with the consequences.
+- `units_10.p_wetter_maybe`
+  - before: It might rain {WHENP}, so an umbrella wouldn't hurt. || Low odds. I'd take that bet, but I won't get wet either way.
+  - after: It might rain {WHENP}, so an umbrella wouldn't hurt. || Maybe. I'd take that bet, but I won't get wet either way.
+- `units_10.p_wetter_maybe`
+  - before: Rain {WHENP} is possible but not likely. The umbrella is up to you. || I'd say 'probably not', but I don't have to deal with the consequences.
+  - after: Rain {WHENP} is possible. The umbrella is up to you. || I'd say 'maybe,' but I don't have to deal with the consequences.
+- `units_10.shorts_early`
+  - before: It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cold first hour. But that's easy for me to say. I don't freeze.
+  - after: It starts cool, but it's shorts weather {WHEN}. || Shorts might be worth a cool start. But that's easy for me to say. I don't freeze.
+- `units_10.steady_cold`
+  - before: No warming up today. || If the sun shows up, it's purely decorative.
+  - after: It stays cold today. || If the sun shows up, it's purely decorative.
+- `units_10.w_coat`
+  - before: {WHEN} you can do without the winter coat. || Breaking news, by winter standards.
+  - after: {WHEN} you can do without the winter coat. || Breaking news, by cold-weather standards.
+- `units_10.w_scarf`
+  - before: {WHEN} it's mild enough to lose the scarf. || 'Mild'. You'll be calling it practically spring.
+  - after: {WHEN} it's mild enough to lose the scarf. || 'Mild.' You'll be calling it practically spring.
+- `units_10.w_scarf`
+  - before: {WHEN} you won't need the scarf any more. || A small win against winter. Winter's still ahead on points.
+  - after: {WHEN} you won't need the scarf any more. || A small win against the cold. The cold's still ahead on points.
+- `units_10.w_scarf`
+  - before: {WHEN} you won't need the scarf any more. || That's as much good news as winter is allowed to give.
+  - after: {WHEN} you won't need the scarf any more. || That's as much good news as the cold is allowed to give.
+- `units_11.c_hoodie`
+  - before: Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you won't need for hours. Look at you, prepared.
+  - after: Pack a sweater. You'll be glad to have it {WHEN}. || Bringing a layer you don't need yet. Look at you, prepared.
+- `units_11.shorts_early`
+  - before: A cool start, then shorts weather {WHEN}. || You'll doubt me for the first hour. Then you won't admit I was right.
+  - after: A cool start, then shorts weather {WHEN}. || You'll doubt me at first. Then you won't admit I was right.
+- `units_11.shorts_early`
+  - before: Shorts could be worth it today. It's cool now, but warm {WHEN}. || A cold first hour builds character. You could use some.
+  - after: Shorts could be worth it today. It's cool now, but warm {WHEN}. || A cold start builds character. You could use some.
+- `units_11.steady`
+  - before: This outfit is good all day. || You've already decided it isn't, haven't you.
+  - after: This outfit is good all day. || You've already decided it isn't, haven't you?
+- `units_11.steady_cold`
+  - before: No warming up today. || You'll see your breath and pretend you're a dragon. Don't deny it.
+  - after: It stays cold today. || You'll see your breath and pretend you're a dragon. Don't deny it.
+- `units_11.steady_cold`
+  - before: It doesn't get any warmer today. || No use checking again in an hour, I won't change my mind.
+  - after: It stays cold today. || No use checking again in an hour, I won't change my mind.
+- `units_11.steady_night`
+  - before: This works for the rest of the evening. || It works for the couch too, which is where this is going.
+  - after: This works for the rest of the night. || It works for the couch too, which is where this is going.
+- `units_11.w_water`
+  - before: {WHEN} it's properly hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right.
+  - after: {WHEN} it's really hot, so have water with you. || You'll say 'I'm not built for this' at least once. You're right.
+
+## Moved to the other level
+
+- `flavour_10.cold` → `flavour_11.cold`: You'll say 'it's freezing' twenty times today.
+- `flavour_10.cold` → `flavour_11.cold`: You'll keep the coat on inside for ten minutes, 'just to warm up'.
+- `flavour_10.day_dst_fall` → `flavour_11.day_dst_fall`: An extra hour this weekend. I'd ask what you did with it, but I know.
+- `flavour_10.day_monday` → `flavour_11.day_monday`: Monday morning. At least one of us is fully charged.
+- `flavour_10.evening` → `flavour_11.evening`: That leaves the evening free for losing your remote. Again.
+- `flavour_10.hot` → `flavour_11.hot`: Finally, a use for the fancy bottle you bought to drink more water.
+- `flavour_10.off` → `flavour_11.off`: Or keep {GP} on out of loyalty and quietly cook.
+- `flavour_10.off` → `flavour_11.off`: {W:hoodie}Try not to get stuck halfway, arms up. I can't come and help.
+- `flavour_10.offon` → `flavour_11.offon`: Two outfit changes in one day. Very pop star of you.
+- `flavour_10.on` → `flavour_11.on`: You'll forget {GP}. Then you'll remember this moment.
+- `flavour_10.on` → `flavour_11.on`: {W:jacket,coat,hoodie,scarf}Later you'll pull {GP} on and say 'ah, that's better'. Out loud. You're welcome.
+- `flavour_10.rain` → `flavour_11.rain`: Bring it back, too. I'm keeping count.
+- `flavour_10.snow` → `flavour_11.snow`: You'll go out just to hear it crunch. Admit it.
+- `flavour_10.steady` → `flavour_11.steady`: So you can stop staring into the wardrobe now.
+- `flavour_10.steady` → `flavour_11.steady`: Same look all day, no updates. You'd make a decent e-ink screen.
+- `now_11.cool` → `now_10.cool`: This forecast is brought to you by… nobody. I don't do ads.
+- `now_11.evening` → `now_10.evening`: {M:11,12,01}The sun's on half days until February. Must be nice.
+- `units_10.arc_level` → `units_11.arc_level`: {G} can come off {WHEN}. Keep {GP} handy, you'll want {GP} back {WHEN2}. || Handy means with you. Not 'somewhere you'll remember later'.
+- `units_10.arc_warmer` → `units_11.arc_warmer`: Once {G} comes off {WHEN}, you can leave {GP} off. || Leave {GP} off. Not 'leave {GP} somewhere'.
+- `units_10.c_hoodie` → `units_11.c_hoodie`: Bring a sweater. It cools down {WHEN}. || I'll only say it once. I'm a screen, not your mother.
+- `units_10.c_jacket` → `units_11.c_jacket`: It gets cooler {WHEN}, so take a jacket along. || Later you'll pull it on and say 'ah, that's better'. Out loud.
+- `units_10.c_relief` → `units_11.c_relief`: The heat eases {WHEN}, but it stays warm. || I'd call it relief. You'll call it 'still too hot'.
+- `units_10.c_relief` → `units_11.c_relief`: It cools off a little {WHEN}, but stays warm. || A little. Don't get excited.
+- `units_10.steady` → `units_11.steady`: What you have on is right for the whole day. || Don't let it go to your head.
+- `units_10.steady` → `units_11.steady`: You're dressed right for the whole day. || So you can stop staring into the wardrobe now.
+- `units_10.steady` → `units_11.steady`: Nothing changes all day. || You'll check again anyway. I'll say the same thing, just less politely.
+- `units_10.steady_cold` → `units_11.steady_cold`: It doesn't get any warmer today. || Staring at me longer won't change that.
+- `units_10.steady_cold` → `units_11.steady_cold`: Expect the cold to last all day. || Your nose will turn a color I can't even display.
+- `units_10.steady_evening` → `units_11.steady_evening`: You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote. Again.
+- `units_10.steady_hot` → `units_11.steady_hot`: It's hot all day, so drink water and find shade. || Finally, a use for the fancy bottle you bought to drink more water.
+- `units_10.steady_night` → `units_11.steady_night`: What you have on is fine for the rest of the night. || Including the bit on the sofa you'll call 'resting my eyes'.
+- `units_10.steady_night` → `units_11.steady_night`: You're dressed right for the rest of the night. || So that's not what's keeping you up.
+- `units_10.w_hoodie` → `units_11.w_hoodie`: The sweater can come off {WHEN}. || Try not to get stuck halfway, arms up. I can't come and help.
+- `units_10.w_jacket` → `units_11.w_jacket`: {WHEN} you won't need the jacket any more. || Or keep it on out of loyalty and quietly cook.
+- `units_10.w_water` → `units_11.w_water`: It gets hot {WHEN}, so bring water. || Finally, a use for the fancy bottle you bought to drink more water.
+
+## Cut
+
+- `facts.p_drier_snow`: The snow eases off later.
+- `facts.p_wetter_maybe_storm`: Probably dry, maybe a thunderstorm {WHENP}. The umbrella covers the maybe.
+- `facts.steady_cold`: It doesn't get any warmer today.
+- `facts.steady_cold`: No warming up today.
+- `flavour_10.day_friday`: Same weather as Tuesday, but everyone's much nicer about it.
+- `flavour_10.day_shortest`: Lunch and sunset are practically neighbors now.
+- `flavour_10.evening`: {M:11,12,01}And there's plenty of it. It's been dark since about four.
+- `flavour_10.night`: It also works for bed, I'm told.
+- `flavour_10.pants`: Yes, a coat. Yes, I can see the sun too. Just do it.
+- `flavour_10.theme_ny`: Every gym is full of New Year's resolutions today. Give it a week.
+- `flavour_10.theme_okt`: So would a dirndl, apparently.
+- `flavour_11.day_longest`: You'll say 'it's still so light' at ten.
+- `flavour_vf_10.cold`: I'd draw something warmer later, but I don't do fiction.
+- `flavour_vf_10.warming`: The sequel has fewer layers. Most sequels do.
+- `flavour_vf_10.warming`: Slow start, warm finish. The weather's not a morning person either.
+- `flavour_vf_10.wet`: Spot the difference. Hint: one of these has an umbrella.
+- `flavour_vf_11.warming`: Later you'll lose a layer. Then you'll probably lose it for real.
+- `flavour_vf_11.warming`: Later you lose a layer. Shame it's not the attitude.
+- `now_10.cool`: I'd wear a jacket too, if I had arms. And somewhere to go.
+- `now_10.cool`: {M:09,10,11}That jacket pocket still has a tissue from spring. Used, probably.
+- `now_11.cool`: You'll zip the jacket to your chin and call it a style.
+- `now_11.cool`: You call this your good jacket. It's your only jacket.
+- `now_11.nice`: Strangers will say 'nice day, huh?' like it's news.
+- `now_11.snow`: 'Proper snow,' you'll say. As if there's improper snow.
+- `alone_11.cool`: You'll wear the jacket open to look relaxed. It's not working.
+- `alone_11.cool`: Flat light, no tan, no glow. So, your usual look.
+- `units_10.c_coat`: Have the winter coat with you. You'll need it {WHEN}. || The cold always waits for the sun to leave first. Coward.
+- `units_10.p_drier_snow`: It stops snowing {WHENSTOP}. || Right on time. I like a snowfall that keeps its word.
+- `units_10.p_wet_again_snow`: Snow for now, then a break, then more snow {WHENP}. || Part two is always the slushier one.
+- `units_10.p_wetter_maybe`: It could rain {WHENP}. Take the umbrella to be safe. || It's a small chance. Small chances have soaked better people.
+
+## New
+
+- `facts.steady_cold`: It stays cold today.
+- `facts.steady_cold`: It stays cold today.
+- `flavour_10.pants`: Yes, a coat. Warm now doesn't mean warm later.
+- `now_10.nice`: You'll say 'nice day, huh?' like it's news.
+- `units_11.p_wetter_maybe`: It could rain {WHENP}. Take the umbrella to be safe. || A chance is enough for wet socks.

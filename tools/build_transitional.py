@@ -46,9 +46,16 @@ def liquid_escape(text):
     return text
 
 
-def build_capture(name, library):
+# The embedded copies serve a device only until its texts polling URL lands,
+# so they keep a few wordings per situation, not all of them: what keeps
+# this build under the 100 KB ceiling as the markup grows (October 2026).
+EMBEDDED_PER_KEY = 5
+
+
+def build_capture(name, library, per_key=None):
     entries = []
     for key, lines in library.items():
+        lines = lines[:per_key or EMBEDDED_PER_KEY]
         for line in lines:
             liquid_escape(line)
         entries.append(f"{key}::" + "||".join(lines))
@@ -85,7 +92,21 @@ Rollout step 1; see docs/MIGRATION.md.
 
 
 def main():
-    src = FINAL.read_text(encoding="utf-8")
+    src = build(FINAL.read_text(encoding="utf-8"))
+    OUT.write_text(HEADER + src, encoding="utf-8")
+    size = OUT.stat().st_size
+    print(f"wrote {OUT.relative_to(REPO)}  ({size:,} bytes)")
+    if size > 100_000:
+        print("WARNING: over the 100 KB markup ceiling", file=sys.stderr)
+        return 1
+    print(f"headroom under 100 KB: {100_000 - size:,} bytes")
+    return 0
+
+
+def build(src, per_key=None):
+    """The transitional markup from a final one: embedded copies of the
+    frozen libraries for devices without the texts polling URL. Also used
+    by tools/build_release.py on the 2.0 markup."""
 
     # Comments are for people reading the repo. This build has a byte budget,
     # and the reader of this particular file is the TRMNL markup editor.
@@ -109,8 +130,8 @@ def main():
     for code in LANGS:
         doc = langs[code]
         for level in LEVELS:
-            captures.append(build_capture(f"temp_{level}_{code}", doc[f"temp_{level}"]))
-            captures.append(build_capture(f"precip_{level}_{code}", doc[f"precip_{level}"]))
+            captures.append(build_capture(f"temp_{level}_{code}", doc[f"temp_{level}"], per_key))
+            captures.append(build_capture(f"precip_{level}_{code}", doc[f"precip_{level}"], per_key))
     captures_blob = "\n".join(captures)
 
     # ---- 2. garments, buckets and relative need inline fallbacks ----
@@ -171,7 +192,7 @@ def main():
     for old, new, label in [
         ("{%- if band_rank <= 4 and texts_ok -%}", "{%- if band_rank <= 4 -%}", "band guard"),
         ("{%- if temp_scenario != '' and texts_ok -%}", "{%- if temp_scenario != '' -%}", "temp token guard"),
-        ("{%- if is_arc and texts_ok -%}", "{%- if is_arc -%}", "arc guard"),
+        ("{%- if two_hinges and texts_ok -%}", "{%- if two_hinges -%}", "arc guard"),
         ("{%- if wants_whenp and texts_ok -%}", "{%- if wants_whenp -%}", "whenp guard"),
         (
             "{%- if is_error == false and show_future_suggestions == 'on' and texts_ok -%}",
@@ -275,16 +296,7 @@ def main():
             compact.append(bare)
         else:
             compact.append("\n" + line + "\n")
-    src = "".join(compact)
-
-    OUT.write_text(HEADER + src, encoding="utf-8")
-    size = OUT.stat().st_size
-    print(f"wrote {OUT.relative_to(REPO)}  ({size:,} bytes)")
-    if size > 100_000:
-        print("WARNING: over the 100 KB markup ceiling", file=sys.stderr)
-        return 1
-    print(f"headroom under 100 KB: {100_000 - size:,} bytes")
-    return 0
+    return "".join(compact)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,125 @@
+{
+  "lines": [
+    {
+      "path": "units_10.arc_level",
+      "text": "{WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Die Ersten machen dazwischen das Verdeck auf. Später mit Mütze, aber offen."
+    },
+    {
+      "path": "units_10.arc_level",
+      "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Eine Zeit lang haben heute sogar die Touristen in kurzen Hosen recht."
+    },
+    {
+      "path": "units_10.arc_level",
+      "text": "{WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler. || Die Wärme ist wie ein übereifriger Kellner: Kaum sitzt man, wird abgeräumt."
+    },
+    {
+      "path": "units_10.arc_level",
+      "text": "{WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Das Wetter heute ist wie ein Kurzurlaub: mehr Aus- und Einpacken als Erholung."
+    },
+    {
+      "path": "units_10.p_wetter",
+      "text": "{WHENP} kommt ein Schauer, also nimm den Schirm mit. || Irgendwer hält sich dann wieder einen Werbeprospekt über den Kopf. Endlich ist das Ding zu was gut."
+    },
+    {
+      "path": "units_10.p_wetter",
+      "text": "Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Natürlich kurz nachdem irgendwer die Gartenstühle trockengewischt hat."
+    },
+    {
+      "path": "units_10.p_wetter",
+      "text": "Nimm den Schirm mit, {WHENP} kommt ein Regenschauer. || Der dauert ungefähr so lang, wie man braucht, um einen Taschenschirm aufzukriegen."
+    },
+    {
+      "path": "units_10.shorts_early",
+      "text": "Jetzt ist's noch kühl, aber {WHEN} wird's warm genug für die kurze Hose. || Beine sind wie Rotwein. Rausgeholt werden sie erst bei Zimmertemperatur."
+    },
+    {
+      "path": "units_10.shorts_early",
+      "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Die Kurze-Hosen-Saison hat hierzulande elf Tage. Heute ist einer davon. Zur Hälfte."
+    },
+    {
+      "path": "units_10.shorts_early",
+      "text": "Noch ist's kühl, aber {WHEN} kannst du in kurzen Hosen rumlaufen. || In der Bahn sitzen dann wieder Männer in Shorts breitbeinig da. Als wär's ein Angebot."
+    },
+    {
+      "path": "units_10.shorts_early",
+      "text": "Jetzt ist's noch frisch, {WHEN} passen aber kurze Hosen besser. || Heute haben die Kinder recht, die in kurzer Hose loswollten. Sagen darf man's ihnen nicht."
+    },
+    {
+      "path": "units_10.w_jacket",
+      "text": "Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Morgen in der Lokalzeitung: „Die Stadt atmet auf.“ Gemeint sind drei Leute vor der Eisdiele."
+    },
+    {
+      "path": "units_10.w_jacket",
+      "text": "{WHEN} wird's mild genug, um die Jacke auszuziehen. || Dann häuten sich wieder alle. Schlangen machen das eleganter."
+    },
+    {
+      "path": "units_10.w_jacket",
+      "text": "{WHEN} ist es warm genug, dann brauchst du keine Jacke mehr. || Ein paar behalten sie trotzdem an. Bei denen ist drunter vermutlich nur das Schlafshirt."
+    },
+    {
+      "path": "units_10.w_scarf",
+      "text": "Den Schal kannst du {WHEN} wegpacken. || Dann sieht man wieder, wer sich nur bis zum Kinn geschminkt hat."
+    },
+    {
+      "path": "units_10.w_scarf",
+      "text": "{WHEN} kannst du den Schal ablegen. || Neun von zehn Schals werden nie gewaschen. Der zehnte war ein Geschenk und wird nie getragen."
+    },
+    {
+      "path": "units_10.w_scarf",
+      "text": "{WHEN} brauchst du den Schal nicht mehr. || Die Wärme kommt heute als Teillieferung. Für den Hals reicht's, der Rest ist noch unterwegs."
+    },
+    {
+      "path": "units_10.w_water",
+      "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Hinweis der Wasserwerke: Bitte nicht alle gleichzeitig trinken."
+    },
+    {
+      "path": "units_10.w_water",
+      "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || In der Bahn kleben dann wieder alle an den Sitzen. Beim Aufstehen hört man's."
+    },
+    {
+      "path": "units_10.w_water",
+      "text": "{WHEN} wird's heiß, pack lieber Wasser ein. || Im Büro bringt dann wieder einer seinen Ventilator mit. Und dreht ihn so, dass nur er was davon hat."
+    },
+    {
+      "path": "units_10.w_water",
+      "text": "{WHEN} wird's richtig heiß, nimm Wasser mit. || Im Restaurant ist ein Glas Leitungswasser dann wieder Verhandlungssache."
+    },
+    {
+      "path": "units_11.p_wet_again",
+      "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Der Regen kommt extra zurück. So viel Aufmerksamkeit kriegst du sonst nur vom Inkassobüro."
+    },
+    {
+      "path": "units_11.p_wet_again",
+      "text": "Erst regnet's weiter, dann ist Pause, und {WHENP} kommt der Regen wieder. || Zwei Duschen an einem Tag. Für deine Verhältnisse ist das schon Körperpflege."
+    },
+    {
+      "path": "units_11.p_wet_again",
+      "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. || Zum Trocknen reicht die Pause. Zum Gutaussehen hätte bei dir auch kein Sommer gereicht."
+    },
+    {
+      "path": "units_11.p_wet_again_snow",
+      "text": "Der Schneefall hört später auf, {WHENP} geht es weiter. || Mit Schnee auf den Schultern siehst du aus wie die Werbung für Schuppenshampoo. Das Vorher-Bild."
+    },
+    {
+      "path": "units_11.p_wet_again_snow",
+      "text": "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || Drinnen wär's jetzt richtig gemütlich. Nur halt nicht mit dir."
+    },
+    {
+      "path": "units_11.p_wet_again_snow",
+      "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Der Schnee fällt heute zweimal auf dich rein. Die meisten Leute nur einmal."
+    },
+    {
+      "path": "flavour_vf_10.fickle",
+      "text": "„Typisch Aprilwetter“, heißt's heute wieder. In jedem Monat außer April.",
+      "months": "1,2,3,5,6,7,8,9,10,11,12"
+    },
+    {
+      "path": "flavour_vf_10.fickle",
+      "text": "Das Wetter wechselt heute wie die Bahn das Gleis. Und am Ende steht man wieder am alten."
+    },
+    {
+      "path": "flavour_vf_10.fickle",
+      "text": "Ein Wetter wie bei Familienfeiern: Zwischendurch wird's kurz herzlich, am Ende ist wieder alles unterkühlt."
+    }
+  ]
+}

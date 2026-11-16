@@ -1,0 +1,306 @@
+# German tightening: before and after (owner + proofreader, October 2026)
+
+Every change the owner's proofreading pass made to the live German texts. Writers: study the pairs; the lessons are in `docs/BRIEF.md` ("Tightening").
+
+## Reworded
+
+- `facts.arc_colder`
+  - vorher: {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht.
+  - nachher: {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder und noch eine weitere Schicht.
+- `facts.arc_level`
+  - vorher: {WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler.
+  - nachher: {WHEN} {GV} weg, aber {WHEN2} wird's wieder kühler.
+- `facts.c_coat`
+  - vorher: {WHEN} wird's kalt genug für die Winterjacke. Nimm sie mit, oder zumindest eine warme Schicht.
+  - nachher: {WHEN} wird's kalt genug für die Winterjacke, also nimm sie oder eine extra warme Schicht mit.
+- `facts.p_drier`
+  - vorher: Der Regen lässt später nach, für jetzt brauchst du noch einen Schirm.
+  - nachher: Der Regen hört später auf, für jetzt brauchst du noch einen Schirm.
+- `facts.p_drier`
+  - vorher: Nimm den Schirm mit, auch wenn der Regen bald abzieht.
+  - nachher: Nimm den Schirm mit, auch wenn der Regen später abzieht.
+- `facts.p_drier_snow`
+  - vorher: Der Schneefall lässt später nach.
+  - nachher: Der Schneefall hört später auf.
+- `facts.p_stays_wet_ice`
+  - vorher: Den ganzen Tag gefrierender Regen, Straßen und Gehwege sind glatt. Nimm den Schirm mit und pass auf.
+  - nachher: Den ganzen Tag gefrierender Regen, Straßen und Gehwege können glatt sein. Nimm den Schirm mit und pass auf.
+- `facts.p_stays_wet_ice`
+  - vorher: Der gefrierende Regen hält den ganzen Tag an, überall ist es glatt. Nimm den Schirm mit und sei vorsichtig.
+  - nachher: Der gefrierende Regen hält den ganzen Tag an, es droht Glatteis. Nimm den Schirm mit und sei vorsichtig.
+- `facts.p_stays_wet_ice`
+  - vorher: Der gefrierende Regen hört nicht auf, und überall ist es glatt.
+  - nachher: Der gefrierende Regen hört nicht auf, die Wege können glatt sein.
+- `facts.p_wet_again`
+  - vorher: Der Regen hört später auf, aber nur kurz. {WHENP} regnet's wieder, also behalt den Schirm.
+  - nachher: Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm.
+- `facts.p_wet_again_ice`
+  - vorher: Der gefrierende Regen hört später kurz auf, {WHENP} kommt er zurück. Behalt den Schirm dabei.
+  - nachher: Der gefrierende Regen hört später auf, {WHENP} kommt er zurück. Behalt den Schirm dabei.
+- `facts.p_wet_again_snow`
+  - vorher: Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's weiter.
+  - nachher: Es schneit noch eine Weile, dann gibt's eine Pause. {WHENP} schneit's weiter.
+- `facts.p_wet_again_snow`
+  - vorher: Erstmal schneit's weiter, dann ist kurz Pause, und {WHENP} geht es wieder los.
+  - nachher: Erstmal schneit's weiter, dann gibt's eine Pause, und {WHENP} geht es wieder los.
+- `facts.p_wet_again_snow`
+  - vorher: Der Schneefall hört später kurz auf, {WHENP} geht es weiter.
+  - nachher: Der Schneefall hört später auf, {WHENP} geht es weiter.
+- `facts.p_wet_again_storm`
+  - vorher: Der Regen hört später kurz auf, {WHENP} kommt ein Gewitter. Behalt den Schirm dabei.
+  - nachher: Der Regen hört später auf, {WHENP} kommt ein Gewitter. Behalt den Schirm dabei.
+- `facts.p_wetter_long`
+  - vorher: Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger.
+  - nachher: Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und der Regen hält länger an.
+- `facts.p_wetter_long_ice`
+  - vorher: {WHENP} kommt gefrierender Regen, und ab dann bleibt's glatt.
+  - nachher: {WHENP} kommt gefrierender Regen, es droht Glatteis.
+- `facts.pants_swing`
+  - vorher: Gerade passt noch die kurze Hose, aber {WHEN} wird's kalt. Zieh eine lange Hosen an und nimm eine warme Schicht mit.
+  - nachher: Gerade passt noch die kurze Hose, aber {WHEN} wird's kalt. Zieh eine lange Hose an und nimm eine warme Schicht mit.
+- `facts.pants_swing`
+  - vorher: Jetzt fühlt's sich nach Kurze-Hosen-Wetter an, doch {WHEN} kommt eine Kaltfront. Lange Hosen sind heute besser, und eine warme Schicht muss mit.
+  - nachher: Jetzt fühlt's sich nach Kurze-Hosen-Wetter an, doch {WHEN} wird's kalt. Lange Hosen sind heute besser, und eine warme Schicht muss mit.
+- `facts.pants_swing`
+  - vorher: Vielleicht doch lieber ne lange Hose? {WHEN} kommt eine Kaltfront.
+  - nachher: Vielleicht doch lieber ne lange Hose? {WHEN} wird's kalt.
+- `facts.shorts_swing`
+  - vorher: Jetzt ist's kalt aber, {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose.
+  - nachher: Jetzt ist's kalt, aber {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose.
+- `facts.shorts_swing`
+  - vorher: Der kalte Morgen dauert nicht lang, {WHEN} wird's warm. Eventuell lohnt sich die kurze Hose.
+  - nachher: Jetzt ist's noch kalt, {WHEN} wird's warm. Eventuell lohnt sich die kurze Hose.
+- `facts.shorts_swing_back`
+  - vorher: Überleg dir eine kurze Hose anzuziehen, {WHEN} wird's warm. Nimm die warme Schicht trotzdem mit, {WHEN2} kühlt's ab.
+  - nachher: Überleg dir, eine kurze Hose anzuziehen, {WHEN} wird's warm. Nimm die warme Schicht trotzdem mit, {WHEN2} kühlt's ab.
+- `facts.steady`
+  - vorher: So, wie du angezogen bist, passt es den ganzen Tag.
+  - nachher: So, wie du angezogen bist, kommst du gut durch den ganzen Tag.
+- `facts.steady_cold`
+  - vorher: Es wird heute den ganzen Tag nicht wärmer.
+  - nachher: Es bleibt heute den ganzen Tag kalt.
+- `facts.steady_hot`
+  - vorher: Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.
+  - nachher: Es bleibt den ganzen Tag heiß. Pack eine Flasche Wasser ein und such dir Schatten.
+- `facts.steady_hot`
+  - vorher: Es wird heute nicht kühler, also nimm genug Wasser mit und bleib, wenn's geht, im Schatten.
+  - nachher: Es bleibt heute heiß, also nimm genug Wasser mit und bleib, wenn's geht, im Schatten.
+- `flavour_10.day_dst_fall`
+  - vorher: Endlich wieder dunkel um fünf. Das hat mir echt gefehlt.
+  - nachher: Abends früher dunkel. Das hat mir echt gefehlt.
+- `flavour_10.day_dst_spring`
+  - vorher: Ich hab heute Nacht umgestellt, ohne zu murren. Das Murren hol ich jetzt nach.
+  - nachher: Ich hab die Uhr umgestellt, ohne zu murren. Das Murren hol ich jetzt nach.
+- `flavour_10.day_monday`
+  - vorher: Gleich sagt wieder einer „Na, Montag, was?“. Ja. Montag.
+  - nachher: Gleich sagt wieder einer: „Na, Montag, was?“ Ja. Montag.
+- `flavour_10.on`
+  - vorher: Gleich heißt's wieder überall: Ist aber frisch geworden.
+  - nachher: Später heißt's wieder überall: Ist aber frisch geworden.
+- `flavour_10.steady`
+  - vorher: Da hätt ich heute auch frei nehmen können.
+  - nachher: Da hätt ich heute auch freinehmen können.
+- `flavour_10.steady`
+  - vorher: Wenn nur immer so einfach wär.
+  - nachher: Wenn's nur immer so einfach wär.
+- `flavour_10.theme_krampus`
+  - vorher: Heute ist endlich mal einer schlechter gelaunt als ich.
+  - nachher: Heute kommt der Krampus. Endlich mal einer, der schlechter gelaunt ist als ich.
+- `flavour_10.theme_krampus`
+  - vorher: Erwachsene erschrecken wieder Kinder und nennen es Tradition.
+  - nachher: Beim Krampuslauf erschrecken Erwachsene Kinder und nennen es Tradition.
+- `flavour_10.theme_nikolo`
+  - vorher: Die Mandarine aus dem Stiefel schmeckt ein bisschen nach Stiefel.
+  - nachher: Die Mandarine vom Nikolaus schmeckt ein bisschen nach Stiefel.
+- `flavour_10.theme_xmas`
+  - vorher: In der Keksdose sind nur noch die, die keiner mag.
+  - nachher: Von den Weihnachtskeksen sind nur noch die übrig, die keiner mag.
+- `flavour_10.theme_xmas`
+  - vorher: Irgendein Geschenk braucht wieder Batterien, die keiner im Haus hat.
+  - nachher: Irgendein Weihnachtsgeschenk braucht wieder Batterien, die keiner im Haus hat.
+- `flavour_10.theme_xmas`
+  - vorher: Mein Wunsch: ein Pixel Farbe. Hab ich wieder nicht bekommen.
+  - nachher: Mein Weihnachtswunsch: ein bisschen Farbe. Hab ich wieder nicht bekommen.
+- `flavour_11.day_dst_spring`
+  - vorher: Abends ist's jetzt länger hell. Am Sofa merkst du das aber eh nicht.
+  - nachher: Abends ist's jetzt länger hell. Auf dem Sofa merkst du das aber eh nicht.
+- `flavour_11.off`
+  - vorher: {W:coat,jacket,hoodie}Dann sieht jeder, was du drunter anhast: Das gleiche wie gestern.
+  - nachher: {W:coat,jacket,hoodie}Dann sieht jeder, was du drunter anhast: Das Gleiche wie gestern.
+- `flavour_11.theme_okt`
+  - vorher: Der Wirt ist ab heute der Einzige, der sich über dich freut.
+  - nachher: Auf dem Oktoberfest ist der Wirt der Einzige, der sich über dich freut.
+- `flavour_11.theme_xmas`
+  - vorher: Nach dem Essen machst du sicher wieder heimlich den Hosenknopf auf.
+  - nachher: Nach dem Weihnachtsessen machst du sicher wieder heimlich den Hosenknopf auf.
+- `flavour_11.theme_xmas`
+  - vorher: Du sagst wieder „wir schenken uns nichts“. Nur weil du keine guten Ideen hast.
+  - nachher: Du sagst wieder: „Wir schenken uns nichts.“ Nur weil du keine guten Ideen hast.
+- `flavour_11.theme_xmas`
+  - vorher: Du bist das Geschenk? Dann bitte mit Kassenzettel.
+  - nachher: Du bist das Weihnachtsgeschenk? Dann bitte mit Kassenzettel.
+- `flavour_vf_10.cold`
+  - vorher: Durchsage: Der Frühling verspätet sich auf unbestimmte Zeit. Grund ist ein vorausfahrender Zug.
+  - nachher: Durchsage: Die Wärme verspätet sich auf unbestimmte Zeit. Grund ist ein vorausfahrender Zug.
+- `flavour_vf_10.fickle`
+  - vorher: Drei Bilder für einen Tag. Ich bin doch kein Daumenkino.
+  - nachher: Mehrere Bilder für einen Tag. Ich bin doch kein Daumenkino.
+- `flavour_vf_10.hot`
+  - vorher: Heute erzählen dir wieder alle, dass sie zu hause ne Klimaanlage haben. Schön für dich.
+  - nachher: Heute erzählen dir wieder alle, dass sie zu Hause ne Klimaanlage haben. Schön für sie.
+- `now_10.nice`
+  - vorher: {M:04,05,06}Ein Kilo Spargel kostet jetzt wieder so viel wie früher meine Miete.
+  - nachher: {M:04,05,06}Ein Kilo Spargel kostet jetzt wieder so viel wie früher ein Wocheneinkauf.
+- `now_11.cold`
+  - vorher: Und du tagträumst schon wieder vom Süden. Dann fahr halt endlich hin!
+  - nachher: Und du träumst schon wieder vom Süden. Dann fahr halt endlich hin!
+- `now_11.cold`
+  - vorher: Du tagträumst bestimmt schon wieder von Spanien. Dann buch halt endlich!
+  - nachher: Du träumst bestimmt schon wieder von Spanien. Dann buch halt endlich!
+- `now_11.nice`
+  - vorher: Jetzt passt's Wetter einmal, und du findest sicher trotzdem was.
+  - nachher: Jetzt passt das Wetter einmal, und du findest sicher trotzdem was.
+- `now_11.night`
+  - vorher: Hör auf, um die Uhrzeit Symptome zu googeln. Du hast nichts. Vermutlich.
+  - nachher: Hör auf, um die Uhrzeit Symptome zu googeln. Als ob du noch einen Grund brauchst, schlecht zu schlafen.
+- `now_11.night`
+  - vorher: "Noch eine Folge", sagst du schon seit drei Folgen.
+  - nachher: „Noch eine Folge“, sagst du schon seit drei Folgen.
+- `now_11.snow`
+  - vorher: Du und Glatteis. Das wird wieder was.
+  - nachher: Du und Schnee. Das wird wieder was.
+- `now_11.snow`
+  - vorher: Du auf Glatteis. Ich hol schon mal Popcorn.
+  - nachher: Du auf Schnee. Ich hol schon mal Popcorn.
+- `now_11.wet`
+  - vorher: Wer ohne Schirm raus geht, braucht nachher nicht jammern.
+  - nachher: Wer ohne Schirm rausgeht, braucht nachher nicht jammern.
+- `now_11.wet`
+  - vorher: Wie viele Schirme hast du heuer eigentlich schon verlegt?
+  - nachher: Wie viele Schirme hast du dieses Jahr eigentlich schon verlegt?
+- `units_10.c_jacket`
+  - vorher: {WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke. || Pünktlich wie sonst nichts in diesem Land.
+  - nachher: {WHEN} kühlt's ab, da brauchst du vermutlich eine Jacke. || Wärmer wäre auch lieber gewesen.
+- `units_10.p_drier_snow`
+  - vorher: Der Schneefall lässt später nach. || Ich nicht.
+  - nachher: Der Schneefall hört später auf. || Ich nicht.
+- `units_10.p_wet_again`
+  - vorher: Der Regen hört später auf, aber nur kurz. {WHENP} regnet's wieder, also behalt den Schirm. || Kurz. Wie meine Geduld.
+  - nachher: Der Regen macht später eine Pause. {WHENP} regnet's wieder, also behalt den Schirm. || Dann muss der Schirm wenigstens nicht dauernd offen bleiben.
+- `units_10.p_wetter`
+  - vorher: {WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und dann heißt es wieder „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
+  - nachher: {WHENP} regnet's kurz. Mit Schirm bleibst du trocken. || Und dann heißt es wieder: „Es gibt kein schlechtes Wetter.“ Doch, gibt's.
+- `units_10.steady`
+  - vorher: Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch frei nehmen können.
+  - nachher: Was du anhast, passt den ganzen Tag. || Da hätt ich heute auch freinehmen können.
+- `units_10.w_water`
+  - vorher: Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.
+  - nachher: Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Leitungswasser reicht. Es muss nicht nach Bergpanorama schmecken.
+- `units_11.arc_colder`
+  - vorher: {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder, und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.
+  - nachher: {WHEN} {GV} weg. {WHEN2} brauchst du {GP} wieder und noch eine weitere Schicht. || Ich hab's für dich extra simpel formuliert.
+- `units_11.c_scarf`
+  - vorher: {WHEN} brauchst du den Schal, also nimm ihn mit. || Und bring ihn auch wieder mit nach hause, wenn's geht.
+  - nachher: {WHEN} brauchst du den Schal, also nimm ihn mit. || Und bring ihn auch wieder mit nach Hause, wenn's geht.
+- `units_11.c_scarf`
+  - vorher: {WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Keine Diskussion. Dein Hals ist nicht so hart, wie du tust.
+  - nachher: {WHEN} wird's kälter, da brauchst du vermutlich einen Schal. || Keine Diskussion. Dein Hals ist nicht so hart, wie du immer behauptest.
+- `units_11.p_drier`
+  - vorher: Der Regen lässt später nach, für jetzt brauchst du aber einen Schirm. || Für deine Frisur ist's sowieso zu spät.
+  - nachher: Der Regen hört später auf, für jetzt brauchst du aber einen Schirm. || Für deine Frisur ist's sowieso zu spät.
+- `units_11.p_wet_again_snow`
+  - vorher: Der Schneefall hört später kurz auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht.
+  - nachher: Der Schneefall hört später auf, {WHENP} geht er weiter. || Weiß, grau, weiß. Mehr Farbe kriegt der Tag nicht. Du übrigens auch nicht.
+- `units_11.p_wetter_long`
+  - vorher: Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und zwar länger. || Kein Schirm hilft gegen das Gesicht, das du dann machst.
+  - nachher: Nimm den Schirm mit, {WHENP} fängt's an zu regnen, und der Regen hält länger an. || Kein Schirm hilft gegen das Gesicht, das du dann machst.
+- `units_11.steady_cold`
+  - vorher: Es wird den ganzen Tag nicht wärmer. || Du kannst also aufhören, mich alle fünf Minuten anzustarren.
+  - nachher: Es bleibt den ganzen Tag kalt. || Du kannst also aufhören, mich alle fünf Minuten anzustarren.
+- `units_11.steady_night`
+  - vorher: Was du anhast, passt für den ganzen Abend. || Auch für die Party, zu der du nicht eingeladen bist.
+  - nachher: Was du anhast, passt für den Rest der Nacht. || Auch für die Party, zu der du nicht eingeladen bist.
+- `units_11.w_coat`
+  - vorher: {WHEN} wird's wärmer, dann kann die Winterjacke weg. || Kurz Sommer im Winter. Jetzt bloß nicht gleich übermütig werden und lächeln.
+  - nachher: {WHEN} wird's wärmer, dann kann die Winterjacke weg. || Jetzt bloß nicht gleich übermütig werden und lächeln.
+- `units_11.w_hoodie`
+  - vorher: {WHEN} kannst du den Pulli ausziehen. || Und dieses mal etwas eleganter bitte. Das sieht jedes Mal aus wie Ringen.
+  - nachher: {WHEN} kannst du den Pulli ausziehen. || Und dieses Mal etwas eleganter bitte. Das sieht jedes Mal aus wie Ringen.
+
+## Moved to the other level (On → 11: the line is about the reader)
+
+- `flavour_10.hot` → `flavour_11.hot`: Wasser, hab ich gesagt. Bier zählt nicht.
+- `flavour_10.hot` → `flavour_11.hot`: Mehr sag ich dazu nicht. Ich bin ja nicht deine Mutter.
+- `flavour_10.off` → `flavour_11.off`: Dann darfst du dich kurz freuen. Aber übertreib's nicht.
+- `flavour_10.off` → `flavour_11.off`: Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+- `flavour_10.offon` → `flavour_11.offon`: Also nicht wieder irgendwo liegen lassen.
+- `flavour_10.pants` → `flavour_11.pants`: Schau nicht so, ich hab mir das nicht ausgedacht.
+- `flavour_10.rain` → `flavour_11.rain`: Vorausgesetzt, du weißt noch, wo er ist.
+- `flavour_10.rain` → `flavour_11.rain`: Und bring ihn auch wieder heim. Im Fundbüro liegen schon genug.
+- `flavour_10.scorch` → `flavour_11.scorch`: Erst mal einen Schluck Wasser trinken. Meckern kannst du später.
+- `flavour_10.shorts` → `flavour_11.shorts`: Wer dich dann sieht, hält dich für verrückt. Diesmal zu Unrecht.
+- `flavour_10.shorts` → `flavour_11.shorts`: Stylisch ist das nicht. Aber praktisch.
+- `now_10.night` → `now_11.night`: Schon wieder so spät? Ab ins Bett.
+- `now_10.night` → `now_11.night`: So spät noch wach? Ab ins Bett mit dir.
+- `units_10.arc_colder` → `units_11.arc_colder`: {WHEN} {GV} weg, aber {WHEN2} wird's kälter. Nimm also eine Schicht mehr mit. || Hauptsache, du hast was zum Meckern.
+- `units_10.arc_level` → `units_11.arc_level`: {WHEN} {GV} weg. {WHEN2} brauchst du {GP} aber wieder. || Also nicht wieder irgendwo liegen lassen.
+- `units_10.arc_level` → `units_11.arc_level`: {WHEN} {GV} weg. Halt {GP} aber griffbereit, {WHEN2} brauchst du {GP} wieder. || Griffbereit, nicht irgendwo. Das ist ein Unterschied.
+- `units_10.c_hoodie` → `units_11.c_hoodie`: Pack einen Pulli ein, {WHEN} wird's kühler. || Jetzt lächeln und nicken, und dann wieder frieren. Klar.
+- `units_10.c_scarf` → `units_11.c_scarf`: {WHEN} wird's kalt genug für den Schal. || Schau nicht so, ich kann auch nichts dafür.
+- `units_10.p_drier` → `units_11.p_drier`: Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf. || Jammer nicht. Ich hab mir den Tag auch anders vorgestellt.
+- `units_10.p_stays_wet` → `units_11.p_stays_wet`: Heute hört's nicht auf zu regnen, nimm den Schirm mit. || Du starrst trotzdem aufs Regenradar. Als ob das was hilft.
+- `units_10.p_stays_wet` → `units_11.p_stays_wet`: Der Regen hält den ganzen Tag an, der Schirm bleibt also dabei. || Und bring ihn wieder heim. Im Fundbüro liegen genug.
+- `units_10.p_wet_again_snow` → `units_11.p_wet_again_snow`: {WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los. || Schau nicht so. Ich hab mir das auch nicht ausgesucht.
+- `units_10.p_wetter` → `units_11.p_wetter`: Schirm nicht vergessen, {WHENP} kommt ein Regenschauer. || Vorausgesetzt, du weißt noch, wo er ist.
+- `units_10.shorts_early` → `units_11.shorts_early`: Noch ist's kühl, aber {WHEN} kannst du in kurzer Hose rumlaufen. || Kannst, nicht musst. Schau nicht so verstört.
+- `units_10.steady_hot` → `units_11.steady_hot`: Es bleibt den ganzen Tag heiß, nimm Wasser mit und such dir Schatten. || Wasser, hab ich gesagt, nicht Bier.
+- `units_10.steady_hot` → `units_11.steady_hot`: Heute bleibt's heiß, nimm Wasser mit und such dir Schatten. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.
+- `units_10.steady_hot` → `units_11.steady_hot`: Die Hitze bleibt den ganzen Tag, also viel Wasser trinken. || Viel heißt mehr als ein Schluck zum Mittagessen.
+- `units_10.steady_night` → `units_11.steady_night`: Was du anhast, passt für den Rest der Nacht. || Ich geh jetzt in den Ruhemodus. Einer von uns muss ja vernünftig sein.
+- `units_10.w_hoodie` → `units_11.w_hoodie`: {WHEN} kannst du den Pulli ausziehen. || Aber nicht vorher. Ich seh das.
+- `units_10.w_jacket` → `units_11.w_jacket`: {WHEN} kann die Jacke weg. || Wohin damit, ist dann dein Problem. Ich sag nur das Wetter an.
+- `units_10.w_jacket` → `units_11.w_jacket`: {WHEN} wird's wärmer, dann kann die Jacke weg. || Dann darfst du dich kurz freuen. Aber übertreib's nicht.
+- `units_10.w_scarf` → `units_11.w_scarf`: {WHEN} kann der Schal weg. || Der Mantel bleibt aber. Werd nicht übermütig.
+- `units_10.w_water` → `units_11.w_water`: {WHEN} wird's richtig heiß, nimm Wasser mit. || Wasser, hab ich gesagt, nicht Bier.
+- `units_10.w_water` → `units_11.w_water`: Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Gleich hat's das halbe Büro wieder mit dem Kreislauf. Kipp mir ja nicht wieder vom Stuhl!
+
+## Cut
+
+- `facts.p_wet_again_snow`: Auf den Schnee jetzt folgt eine kurze Pause, {WHENP} kommt neuer dazu.
+- `facts.steady_cold`: Bis zum Abend wird's nicht milder.
+- `flavour_10.day_dst_spring`: Die Funkuhren haben's heute Nacht ganz von allein gemacht. Die Angeber.
+- `flavour_10.hot`: Sonst hängst du später durch wie deine Blumen am Balkon.
+- `flavour_10.off`: Wehe, du nimmst sie schon vorher ab.
+- `flavour_10.shorts`: {AM}Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.
+- `flavour_10.theme_ny`: Und wieder hat niemand seine Raketenreste weggemacht.
+- `flavour_10.theme_spooky`: Buh. So, das war mein Beitrag.
+- `flavour_11.day_dst_fall`: Die Uhren hat man heute zurückgestellt. Deinen Kleidungsstil schon vor Jahren.
+- `flavour_11.day_shortest`: Ich hätt gern auch nur acht Stunden mit dir.
+- `flavour_vf_10.fickle`: Mittags wird's kurz warm. Genau so lange, wie die Mittagspause dauert. Verdächtig.
+- `flavour_vf_10.fickle`: Mittags will plötzlich wieder jeder draußen essen.
+- `flavour_vf_10.warming`: Das Wetter wird besser. Deine Leute gleich lauter.
+- `now_11.nice`: Bei Föhnwetter ist man gereizt, heißt es. Und was ist deine Ausrede an den anderen Tagen?
+- `units_10.arc_level`: {WHEN} {GV} weg, {WHEN2} brauchst du {GP} wieder. || Jetzt glaubt mir das keiner. Später schwitzt ihr wieder.
+- `units_10.steady_hot`: Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie deine Blumen am Balkon.
+- `units_10.steady_night`: Was du anhast, passt für den restlichen Abend. || Ab hier wird's nur noch dunkler. Das kann ich auch ohne Vorhersage.
+- `units_10.w_scarf`: {WHEN} kannst du den Schal ablegen. || Da kann man dich dann vielleicht sogar wieder erkennen.
+- `units_11.arc_level`: {WHEN} {GV} weg, aber nicht für lange: {WHEN2} wird's wieder kühler. || Ungefähr so lang wie deine guten Vorsätze.
+- `units_11.p_wet_again_snow`: Der Schneefall hört später kurz auf, {WHENP} geht es weiter. || Zwei Runden Winter an einem Tag. Du schaffst ja nicht mal eine ohne Gejammer.
+
+## New
+
+- `facts.p_wet_again_snow`: Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder.
+- `facts.steady_cold`: Es bleibt den ganzen Tag kalt.
+- `flavour_10.off`: Ich würde ja mitmachen, aber unter dem Rahmen hab ich nichts an.
+- `flavour_10.theme_ny`: Zum Jahreswechsel kann man immer sehen, wer Geld zum Verballern hat.
+- `flavour_10.theme_spooky`: Buh. Mehr Halloween gibt's von mir nicht.
+- `flavour_11.hot`: Sonst hängst du später durch wie deine Blumen auf dem Balkon.
+- `flavour_11.off`: {W:scarf,coat,jacket,hoodie}Wehe, du legst {GP} schon vorher ab.
+- `flavour_vf_11.fickle`: Zwei Chancen, etwas Passendes anzuhaben. Ich bin gespannt.
+- `units_10.p_drier`: {WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm. || Langsam gehen selbst mir die Wörter für „nass“ aus.
+- `units_10.steady_night`: Was du anhast, passt für den Rest der Nacht. || Für eine dramatische Wendung ist mir das jetzt zu spät.
+- `units_10.w_jacket`: Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Platz nimmt sie danach natürlich trotzdem weg.
+- `units_10.w_jacket`: Mit der Jacke ist {WHEN} Schluss, dann wird's wärmer. || Weniger anhaben, genauso viel zu schleppen. Großartig.
+- `units_11.steady_hot`: Heute bleibt's heiß, also trink genug Wasser und bleib im Schatten. || Sonst hängst du später durch wie deine Blumen auf dem Balkon.
+- `units_11.w_scarf`: {WHEN} kannst du den Schal ablegen. || Da kann man dich dann vielleicht sogar wiedererkennen.
+- `units_11.w_water`: Noch geht's, aber {WHEN} wird's heiß. Nimm genug Wasser mit. || Mehr sag ich nicht. Ich bin ja nicht deine Mutter.

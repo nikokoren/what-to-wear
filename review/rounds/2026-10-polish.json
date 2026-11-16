@@ -1,0 +1,2598 @@
+{
+ "round": "2026-10-polish",
+ "idPrefix": "po",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "fact_0.steady",
+   "text": "This outfit works all day.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-32c3e2f2c24d"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "No layer to carry today. Both hands free for snacks.",
+   "meaning": "Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\".",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady",
+   "text": "You're set for the whole day.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-f9c4c466c555"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "No layer to carry today. Both hands free for snacks.",
+   "meaning": "Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\".",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_cold",
+   "text": "It's this cold the whole day.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-153b917fc097"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "All day. I checked twice, out of pure spite.",
+   "meaning": "Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_hot",
+   "text": "The heat lasts all day. Keep water with you and stay in the shade.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-3b02ae06b384"
+   ],
+   "batch": "Forecast: heat",
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Finally, a use for the fancy bottle you bought to drink more water.",
+   "meaning": "Forecast line, the same at every sarcasm level. Steady heat, before 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.steady_hot",
+   "text": "It's hot the whole day, so drink plenty of water and find shade.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-9e054f0ccabf"
+   ],
+   "batch": "Forecast: heat",
+   "sprite": "heat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Finally, a use for the fancy bottle you bought to drink more water.",
+   "meaning": "Forecast line, the same at every sarcasm level. Steady heat, before 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_early",
+   "text": "Shorts could be worth it today. It's cool now, but warm {WHEN}.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-c4b592377d99"
+   ],
+   "batch": "Forecast: a layer comes off",
+   "sprite": "tee_shorts_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Thrilling stuff. I'm on the edge of my frame.",
+   "meaning": "Forecast line, the same at every sarcasm level. Shorts drawn on a cool morning that turns into shorts weather.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_early",
+   "text": "{WHEN} it's warm enough for shorts, so think about wearing them now.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-cd872e0ed538"
+   ],
+   "batch": "Forecast: a layer comes off",
+   "sprite": "tee_shorts_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Thrilling stuff. I'm on the edge of my frame.",
+   "meaning": "Forecast line, the same at every sarcasm level. Shorts drawn on a cool morning that turns into shorts weather.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_swing",
+   "text": "{WHEN} it's shorts weather. Maybe wear shorts and keep {G} for the cold start.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-3d11c238695f"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Your knees will have opinions this morning. Ignore them.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_swing",
+   "text": "Shorts could work today. {WHEN} it's warm, and {G} covers the cold start.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-7172117c3a8b"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Your knees will have opinions this morning. Ignore them.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_swing",
+   "text": "It's warm enough for shorts {WHEN}. Think about shorts, with {G} on top for now.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Your knees will have opinions this morning. Ignore them.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_swing_back",
+   "text": "You could wear shorts today. It's warm {WHEN}, but bring {G} for {WHEN2}.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-639841d32d48"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Your knees will have opinions this morning. Ignore them.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_swing_back",
+   "text": "Shorts might work today: warm {WHEN}, cooler {WHEN2}. Keep {G} with you either way.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-7a66928543c3"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Your knees will have opinions this morning. Ignore them.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} it's shorts weather, and {WHEN2} it cools down again. If you go with shorts, keep {G} handy.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "around midday",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Your knees will have opinions this morning. Ignore them.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.pants_swing",
+   "text": "Cold weather is coming {WHEN}, so long pants and a warm coat might be wise.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-ec280b9c82cb"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Yes, a coat. Yes, I can see the sun too. Just do it.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.pants_swing",
+   "text": "{WHEN} it's coat weather. Long pants and a warm coat are worth thinking about.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Yes, a coat. Yes, I can see the sun too. Just do it.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier",
+   "text": "Take the umbrella for now. The rain stops {WHENSTOP}.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: rain",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Rain or not, my humour stays bone dry.",
+   "meaning": "Forecast line, the same at every sarcasm level. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier",
+   "text": "The rain stops {WHENSTOP}, but you'll want the umbrella before that.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: rain",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Rain or not, my humour stays bone dry.",
+   "meaning": "Forecast line, the same at every sarcasm level. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_snow",
+   "text": "The snow stops {WHENSTOP}.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Everyone will act shocked anyway. I'm used to it.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_snow",
+   "text": "It stops snowing {WHENSTOP}.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Everyone will act shocked anyway. I'm used to it.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_ice",
+   "text": "Watch for ice. The freezing rain stops {WHENSTOP}, but pavements may stay icy.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Walk like you're carrying a very full cup of coffee.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_ice",
+   "text": "The freezing rain stops {WHENSTOP}. Roads and pavements may stay icy after that, so walk carefully.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Walk like you're carrying a very full cup of coffee.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_storm",
+   "text": "The thunderstorm passes {WHENSTOP}. Until it does, stay inside if you can.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_drier_storm",
+   "text": "Thunder for now, so stay indoors if you can. The storm clears {WHENSTOP}.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again",
+   "text": "The rain stops {WHENSTOP} and comes back {WHENP}. Keep the umbrella with you.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: rain",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Rain or not, my humour stays bone dry.",
+   "meaning": "Forecast line, the same at every sarcasm level. Raining now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "The snow stops {WHENSTOP} and starts again {WHENP}.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Everyone will act shocked anyway. I'm used to it.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_ice",
+   "text": "The freezing rain stops {WHENSTOP} and returns {WHENP}. Pavements may be icy all day, so walk carefully.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Walk like you're carrying a very full cup of coffee.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time · Long (104 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "The rain stops {WHENSTOP}, then a thunderstorm arrives {WHENP}. Be indoors for that one if you can.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long_ice",
+   "text": "Freezing rain sets in {WHENP} and stays, so roads and pavements may be icy. Walk carefully.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "Walk like you're carrying a very full cup of coffee.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "hint": "New wording"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_storm",
+   "text": "There's a thunderstorm {WHENP}. If you can, be indoors when it hits.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-942ddcad8fdf"
+   ],
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, a short spell. Shown alone (a steady day); on a day that changes, it follows that sentence.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_long_storm",
+   "text": "Thunderstorms move in {WHENP}. Stay inside while it thunders, and take the umbrella for the rain that follows.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-8e2a7cda8a97"
+   ],
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "hint": "New wording · Long (110 characters): after a temperature sentence it may not fit · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wetter_maybe_storm",
+   "text": "A thunderstorm is possible {WHENP}. If it comes, wait it out indoors.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-a45505dcf0f2"
+   ],
+   "batch": "Forecast: storms",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Rain possible later, not likely. Shown alone; after a change, it follows that sentence.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "A thunderstorm comes {WHENP}, after a dry spell. Try to be indoors for that one.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-en-76e1681366e3"
+   ],
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "this afternoon",
+    "{WHENP}": "this afternoon",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "this evening",
+    "{WHEN}": "in two hours",
+    "{WHENP}": "in two hours",
+    "{WHENSTOP}": "around midday",
+    "{G}": "the jacket",
+    "{GP}": "it"
+   },
+   "under": "I'll stay in for this one. Then again, I always do.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.rain",
+   "sprite": "jacket_dry",
+   "fact": "There's a short shower this afternoon. Have the umbrella with you.",
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.",
+   "text": "You'll keep it closed through the whole shower. 'It's only spitting.'",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "fu-en-3c6bdbfdd863",
+    "rp-en-56e4f3fc7279"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.rain",
+   "sprite": "jacket_dry",
+   "fact": "There's a short shower this afternoon. Have the umbrella with you.",
+   "batch": "Follow-up: rain",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a rain line: shower later, rain all day, rain stopping, or rain now. It should pick up what the line says and twist it.",
+   "text": "You own at least four. Any one of them will do.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "se-en-94930a50790f"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.snow",
+   "sprite": "coat_dry",
+   "fact": "Snow moves in this afternoon.",
+   "batch": "Follow-up: snow",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a snow line: snow later, all day, or stopping. It should pick up what the line says and twist it.",
+   "text": "You'll go out just to hear it crunch. Admit it.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-42a5d72f8898"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.cold",
+   "sprite": "coat_dry",
+   "fact": "It doesn't get any warmer today.",
+   "batch": "Follow-up: cold",
+   "meaning": "New follow-up at On: shows under the forecast line when it says it stays this cold all day. It should pick up what the line says and twist it.",
+   "text": "You'll keep the coat on inside for ten minutes, 'just to warm up'.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-1026571f4b4d"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at On: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.",
+   "text": "The leftovers in your fridge, less so.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-0b902a8b328c"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.night",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at On: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "text": "Still showing this at three in the morning. Hopefully to nobody.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-f3c635d1dffb"
+   ],
+   "hint": "Shown from 22:00 · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.off",
+   "sprite": "sweater_dry",
+   "fact": "You'll be fine without the sweater this afternoon.",
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "text": "Static hair for the rest of the afternoon, then. Worth it.",
+   "role": "flavour",
+   "new": true,
+   "garments": [
+    "hoodie"
+   ],
+   "answers": [
+    "rp-en-81f060ebb9c4"
+   ],
+   "hint": "Only when the forecast line names: sweater · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "It's shorts weather now, but it turns cold this afternoon. Maybe wear long pants and bring a warmer layer.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "You'll feel overdressed at first. Then very well informed.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-064cfc5e2e14"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "I don't do the midday sun either. Look how well I've turned out.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-820d2cf92f6d"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Dangerous heat today. Drink plenty of water, stay in the shade and keep out of the midday sun.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "The coolest spot in the house is the floor. I won't tell anyone.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-838e72ab9e4d"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "There's a thunderstorm this afternoon. Take the umbrella, and head indoors while it thunders.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "All that flashing. Some of us manage fine without a backlight.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-2bbc4b958677"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "There's a thunderstorm this afternoon. Take the umbrella, and head indoors while it thunders.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "If the power goes out, I'll still be here, showing this.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-e59aebff92b7"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Small steps today. I'm the expert: I haven't taken one in years.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-020f12b0a2e7"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.",
+   "text": "You'll probably be in joggers within the hour anyway.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-2bef94de3974"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.hot",
+   "sprite": "heat_dry",
+   "fact": "The heat doesn't let up today. Drink water and find some shade.",
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.",
+   "text": "You'll say 'I'm not built for this' at least once. You're right.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-64543a36ac88"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "You'll text 'running late'. Please don't actually run.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-4e1ab0c99855"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Freezing rain this afternoon makes roads and pavements icy. Take the umbrella and watch your step.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "No showing off on the ice today. Yes, you were going to.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "text": "You could go to bed in it. You have before.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "fu-en-df61dfbc0240"
+   ],
+   "hint": "Shown from 22:00 · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.night",
+   "sprite": "jacket_dry",
+   "fact": "What you're wearing works for the rest of the evening.",
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "text": "You'll scroll in bed for an hour and call it winding down.",
+   "role": "flavour",
+   "new": true,
+   "hint": "Shown from 22:00"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.off",
+   "sprite": "jacket_dry",
+   "fact": "You can take the jacket off this afternoon.",
+   "batch": "Follow-up: off",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a layer comes off later (jacket, sweater, coat, scarf) and stays off. It should pick up what the line says and twist it.",
+   "text": "You'll announce 'it's actually warm' to people who are also outside.",
+   "role": "flavour",
+   "new": true,
+   "garments": [
+    "jacket",
+    "coat",
+    "hoodie",
+    "scarf"
+   ],
+   "answers": [
+    "fu-en-239e1d4134a0"
+   ],
+   "hint": "Only when the forecast line names: jacket, winter coat, sweater, hat and scarf · Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.storm",
+   "sprite": "jacket_dry",
+   "fact": "There's a thunderstorm this afternoon. Take the umbrella, and head indoors while it thunders.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "You'll call it over after one quiet minute. Optimist.",
+   "role": "flavour",
+   "new": true
+  },
+  {
+   "lang": "en",
+   "path": "now_10.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Now: cool",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "The jacket pocket pat-down: keys, phone, wallet. Then again, slower.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-en-ed99c949e136"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "en",
+   "path": "now_10.cool",
+   "sprite": "jacket_dry",
+   "fact": "",
+   "batch": "Now: cool",
+   "meaning": "New: sarcastic line at On. A now line: the drawing shows a jacket. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "You'll call it your good jacket. It's your only jacket.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "se-en-c3eda54f17b6"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing",
+   "text": "{WHEN} wird's warm. Überleg dir, gleich Shorts anzuziehen.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-4aea965b70d8",
+    "rp-de-f72a3badc228"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing",
+   "text": "Heute lohnen sich eventuell schon Shorts, {WHEN} wird's warm.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-c8c023ac9316"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing",
+   "text": "Zieh eventuell gleich Shorts an. {WHEN} ist's warm genug dafür.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-e90fd31055dc"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold morning with three hours or more of shorts weather later (a reader in Colorado). The drawing keeps the coat; go out in shorts anyway.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing_back",
+   "text": "{WHEN} wird's warm, {WHEN2} wieder kühl. Shorts gehen eventuell trotzdem.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-3f0c72d9e161",
+    "rp-de-6c69db1fa3c7"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing_back",
+   "text": "Überleg dir Shorts, {WHEN} wird's warm. Die warme Schicht nimmst du aber mit.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-1d2fe7dad56d"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.shorts_swing_back",
+   "text": "Eventuell gehen heute Shorts, {WHEN} wird's warm. {WHEN2} brauchst du die warme Schicht wieder.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-7aebfc690f52"
+   ],
+   "batch": "Forecast: big swings",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "gegen Mittag",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Auf dem Weg wirst du mich dafür verfluchen. Mittags nicht mehr.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: the same, and the evening wants a layer back. {WHEN} is shorts weather, {WHEN2} the layer.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.pants_swing",
+   "text": "{WHEN} wird's kalt. Überleg dir lange Hosen und eine warme Schicht.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Sieht nicht danach aus, ich weiß. Dafür gibt's ja mich.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.pants_swing",
+   "text": "Vielleicht doch lieber lange Hosen? {WHEN} kommt eine Kaltfront.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: big swings",
+   "sprite": "tee_pants_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Sieht nicht danach aus, ich weiß. Dafür gibt's ja mich.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a cold front. Shorts weather now, three hours or more of coat weather later: long pants at the door.",
+   "hint": "New wording"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady",
+   "text": "So, wie du angezogen bist, passt es den ganzen Tag.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-af355f128a0d"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Für so eine Ansage bin ich eigentlich überqualifiziert.",
+   "meaning": "Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\".",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady",
+   "text": "Dein Outfit passt heute den ganzen Tag.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-be6c61b5f41a"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "sweater_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Für so eine Ansage bin ich eigentlich überqualifiziert.",
+   "meaning": "Forecast line, the same at every sarcasm level. Nothing changes all day. About half of all screens; also Visual Forecast's \"works all day\".",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Es wird heute den ganzen Tag nicht wärmer.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-042eec739e25"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Da hilft auch kein Jammern.",
+   "meaning": "Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Die Kälte hält heute den ganzen Tag an.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-7e371f0a2751"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Da hilft auch kein Jammern.",
+   "meaning": "Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_cold",
+   "text": "Kalt bleibt's heute, und zwar den ganzen Tag.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-fa4276bbbbdf"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "coat_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Da hilft auch kein Jammern.",
+   "meaning": "Forecast line, the same at every sarcasm level. Steady cold (coat or more), before 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_evening",
+   "text": "Dein Outfit passt den ganzen Abend.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-c2ea8930f02f"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Wenigstens das Wetter ist heute mal unkompliziert.",
+   "meaning": "Forecast line, the same at every sarcasm level. Nothing changes, from 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.steady_evening",
+   "text": "Für den Rest des Abends passt, was du anhast.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-ee0484b79ad1"
+   ],
+   "batch": "Forecast: steady",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Wenigstens das Wetter ist heute mal unkompliziert.",
+   "meaning": "Forecast line, the same at every sarcasm level. Nothing changes, from 17:00.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wetter_long",
+   "text": "{WHENP} kommt Regen, und zwar für den Rest des Tages. Nimm den Schirm mit.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-efc53a2044e8"
+   ],
+   "batch": "Forecast: rain",
+   "sprite": "jacket_dry",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Vorausgesetzt, du weißt noch, wo er ist.",
+   "meaning": "Forecast line, the same at every sarcasm level. Rain later, and it stays. Shown alone; after a change, it follows that sentence.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_snow",
+   "text": "Es schneit noch eine Weile, dann hört's auf.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-eab471716ac0"
+   ],
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops later.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Der Schnee hört später auf, aber {WHENP} fängt's wieder an zu schneien.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-4ce4abf7f20e"
+   ],
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops, comes back.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "Es schneit noch eine Weile, dann ist kurz Ruhe. {WHENP} schneit's wieder.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-b37a5bc94d86"
+   ],
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops, comes back.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_ice",
+   "text": "Vorsicht, Glatteis: Der gefrierende Regen hört erst später auf, und die Wege bleiben danach glatt.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-6f766f8b90ca"
+   ],
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_storm",
+   "text": "Noch gewittert's, später zieht es ab. Bis dahin bist du drinnen am sichersten.",
+   "role": "fact",
+   "new": true,
+   "answers": [
+    "rp-de-88ade1716ce9"
+   ],
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "hint": "New wording · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier",
+   "text": "{WHENSTOP} hört der Regen auf, bis dahin brauchst du den Schirm.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: rain",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Vorausgesetzt, du weißt noch, wo er ist.",
+   "meaning": "Forecast line, the same at every sarcasm level. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier",
+   "text": "Nimm den Schirm mit, der Regen hört erst {WHENSTOP} auf.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: rain",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Vorausgesetzt, du weißt noch, wo er ist.",
+   "meaning": "Forecast line, the same at every sarcasm level. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_snow",
+   "text": "Der Schneefall hört {WHENSTOP} auf.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_ice",
+   "text": "Vorsicht, Glatteis. Der gefrierende Regen hört erst {WHENSTOP} auf, glatt bleibt's auch danach.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_ice",
+   "text": "{WHENSTOP} hört der gefrierende Regen auf. Die Wege können danach noch glatt sein, also geh vorsichtig.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time · Long (103 characters): after a temperature sentence it may not fit"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_storm",
+   "text": "Das Gewitter zieht {WHENSTOP} ab. Bis dahin bist du drinnen am sichersten.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_drier_storm",
+   "text": "Noch gewittert's, {WHENSTOP} ist es vorbei. Solange es donnert, bleib lieber drinnen.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops later.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again",
+   "text": "{WHENSTOP} hört der Regen auf, {WHENP} kommt er wieder. Behalt den Schirm dabei.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: rain",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Vorausgesetzt, du weißt noch, wo er ist.",
+   "meaning": "Forecast line, the same at every sarcasm level. Raining now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_snow",
+   "text": "{WHENSTOP} hört's auf zu schneien, {WHENP} geht's wieder los.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: snow",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Schön ist so ein Schnee ja. Die ersten zehn Minuten.",
+   "meaning": "Forecast line, the same at every sarcasm level. Snowing now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_ice",
+   "text": "Vorsicht, Glatteis: Der gefrierende Regen hört {WHENSTOP} auf, {WHENP} kommt er zurück.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: ice",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Heute ist Pinguingang angesagt. Sieht doof aus, hilft aber.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: freezing rain, the ice warning. Raining now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_wet_again_storm",
+   "text": "Der Regen hört {WHENSTOP} auf, aber {WHENP} kommt ein Gewitter. Dann bist du drinnen am sichersten.",
+   "role": "fact",
+   "new": true,
+   "batch": "Forecast: storms",
+   "sprite": "jacket_rain",
+   "fills": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "heute Nachmittag",
+    "{WHENP}": "heute Nachmittag",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "fillsAlt": {
+    "{WHEN2}": "heute Abend",
+    "{WHEN}": "in zwei Stunden",
+    "{WHENP}": "in zwei Stunden",
+    "{WHENSTOP}": "gegen Mittag",
+    "{G}": "die Jacke",
+    "{GP}": "sie",
+    "{GV}": "kann die Jacke"
+   },
+   "under": "Bei Donner bleib ich auch drinnen. Wie immer, eigentlich.",
+   "meaning": "Forecast line, the same at every sarcasm level. New: a thunderstorm. Raining now, stops, comes back.",
+   "hint": "New wording · Says when it stops; only shows when there's a stop time"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "sprite": "heat_dry",
+   "fact": "Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.",
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.",
+   "text": "Und stell die Flasche nicht in die Sonne. Sonst trinkst du Tee.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-edc4ddc258ed"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.hot",
+   "sprite": "heat_dry",
+   "fact": "Die Hitze lässt den ganzen Tag nicht nach. Pack eine Flasche Wasser ein und such dir Schatten.",
+   "batch": "Follow-up: hot",
+   "meaning": "New follow-up at On: shows under the forecast line when it says heat: stays hot, gets hot later, or eases a little; water and shade. It should pick up what the line says and twist it.",
+   "text": "Sonst hängst du später durch wie die Geranien.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "se-de-498ddaa47dd7"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Ich würd ja streuen. Aber ich hab keine Hände.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-807e72f94980"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at On: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Heute ist jeder Gehweg eine Eisbahn. Nur ohne Glühweinstand.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-943ebd8e3212"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.pants",
+   "sprite": "tee_pants_dry",
+   "fact": "Gerade ist Shorts-Wetter, aber heute Nachmittag wird's kalt. Zieh lange Hosen an und nimm eine warme Schicht mit.",
+   "batch": "Follow-up: pants",
+   "meaning": "New follow-up at On: shows under the forecast line when it says long pants on a shorts morning: a cold front later. It should pick up what the line says and twist it.",
+   "text": "Ich trau dem schönen Wetter auch nicht. Zu Recht, wie's aussieht.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-90c4c23c7cfb"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.scorch",
+   "sprite": "extreme_heat_dry",
+   "fact": "Heute wird's gefährlich heiß. Trink viel Wasser, bleib im Schatten und meide die Mittagssonne.",
+   "batch": "Follow-up: scorch",
+   "meaning": "New follow-up at On: shows under the forecast line when it says dangerous heat: water and shade. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Ich halt das aus, ich bin aus Plastik. Du nicht.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-9ff1ee175996"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "Nimm den Schirm mit, heute Nachmittag gibt's ein Gewitter. Wenn's donnert, geh lieber rein.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Einen Blitzableiter hast du übrigens nicht. Also rein, wenn's donnert.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-118daa47676a"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.storm",
+   "sprite": "jacket_dry",
+   "fact": "Nimm den Schirm mit, heute Nachmittag gibt's ein Gewitter. Wenn's donnert, geh lieber rein.",
+   "batch": "Follow-up: storm",
+   "meaning": "New follow-up at On: shows under the forecast line when it says a thunderstorm: the umbrella, inside while it thunders. It should pick up what the line says and twist it.",
+   "text": "Gegen den Regen hilft der Schirm, gegen Blitze nur ein Dach.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-c95ef84f7140"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.",
+   "text": "Für den Abend reicht's. Für ein Kompliment nicht.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-44815a206418"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "batch": "Follow-up: evening",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says 18:00 to 22:00: what you're wearing works for the rest of the evening. It should pick up what the line says and twist it.",
+   "text": "Gratuliere. Das war die einfachste Entscheidung deines Abends.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-f5d0beefe6e8"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Und nicht wieder die Schuhe ohne Profil. Ich weiß, welche ich mein.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-89d7bf36fe78"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.ice",
+   "sprite": "jacket_dry",
+   "fact": "Heute Nachmittag droht Glatteis durch gefrierenden Regen. Nimm den Schirm mit und geh auf den Gehwegen langsam.",
+   "batch": "Follow-up: ice",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says freezing rain: icy roads and pavements. Never undercut the advice. It should pick up what the line says and twist it.",
+   "text": "Elegant gehst du ja sowieso nicht. Heute fällt's wenigstens nicht auf.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-d4da1f45236d"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "text": "Auch für den dritten Gang zum Kühlschrank.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-4870f40f150e"
+   ],
+   "hint": "Shown from 22:00 · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.night",
+   "sprite": "jacket_dry",
+   "fact": "Was du anhast, passt für den restlichen Abend.",
+   "batch": "Follow-up: night",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says from 22:00: the same line, late. It should pick up what the line says and twist it.",
+   "text": "Schön. Dann musst du dir nur noch eine Ausrede fürs Aufbleiben ausdenken.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-89481a3919c1"
+   ],
+   "hint": "Shown from 22:00 · Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.shorts",
+   "sprite": "coat_dry",
+   "fact": "Heute Nachmittag ist Shorts-Wetter. Zieh schon jetzt Shorts an, die warme Schicht brauchst du nur für den Weg.",
+   "batch": "Follow-up: shorts",
+   "meaning": "New follow-up at 11: shows under the forecast line when it says go out in shorts on a cold morning: shorts weather later. It should pick up what the line says and twist it.",
+   "text": "Deine Beine haben lang keine Sonne gesehen. Das wird man merken.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-ca24c35f7ffc"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.hot",
+   "sprite": "heat_dry",
+   "fact": "",
+   "batch": "Now: hot",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Heute Nacht hängt wieder ein Fuß aus der Decke. Als ob das was bringt.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "fu-de-673b503b046c"
+   ],
+   "hint": "Answers a “Write new”"
+  },
+  {
+   "lang": "de",
+   "path": "now_11.hot",
+   "sprite": "heat_dry",
+   "fact": "",
+   "batch": "Now: hot",
+   "meaning": "New: sarcastic line at 11. A now line: the drawing shows heat. It shows on every screen with this drawing, the outfit alone included, so it has to make sense with nothing else on screen.",
+   "text": "Ein Eimer kaltes Wasser für die Füße, und schon nennst du's Wellnesstag.",
+   "role": "flavour",
+   "new": true,
+   "answers": [
+    "rp-de-c23d806731f3"
+   ],
+   "hint": "Answers a “Write new”"
+  }
+ ]
+}

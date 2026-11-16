@@ -1,0 +1,43 @@
+{
+  "$schema": "../lang/schema.json",
+  "meta": {
+    "code": "fr",
+    "name": "Français",
+    "schema": 1
+  },
+  "ui": {
+    "error_current": "Impossible de récupérer la météo. Réessaie plus tard.",
+    "error_hourly": "Impossible de charger les prévisions. Réessaie plus tard.",
+    "error_short": "Météo illisible",
+    "error_location": "Aucun lieu choisi. Ouvre les réglages et choisis-en un.",
+    "error_location_short": "Aucun lieu choisi"
+  },
+  "garments": {
+    "n": [
+      "L'écharpe",
+      "Le manteau d'hiver",
+      "La veste",
+      "Le sweat à capuche",
+      "Le pull"
+    ],
+    "a": [
+      "l'écharpe",
+      "le manteau d'hiver",
+      "la veste",
+      "le sweat à capuche",
+      "le pull"
+    ]
+  },
+  "buckets": [
+    "ce matin",
+    "vers midi",
+    "cet après-midi",
+    "ce soir",
+    "cette nuit"
+  ],
+  "relative": [
+    "dans une heure",
+    "dans deux heures",
+    "dans trois heures"
+  ]
+}

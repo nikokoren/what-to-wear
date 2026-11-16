@@ -10,10 +10,66 @@ after the old hint is built, so both can be rendered side by side.
 Reads only what the scenario logic above already worked out.
 {%- endcomment %}
 {%- assign fact_line = '' -%}
+{%- comment %}
+Nice weather (owner, October 2026: 15 C and cloudy said „Traumwetter“):
+T-shirt weather, 18 to 30 C feels-like (the T-shirt bands), under a
+clear or partly cloudy sky (weather codes 0 to 2). Sweater weather, or
+overcast or fog, is the cool mood.
+{%- endcomment %}
+{%- assign nice_now = false -%}
+{%- if band_rank == 5 or band_rank == 6 -%}
+  {%- if wmo <= 2 -%}{%- assign nice_now = true -%}{%- endif -%}
+{%- endif -%}
 {%- assign flavour_line = '' -%}
 {%- assign mood = '' -%}
+{%- assign now_mood = '' -%}
+{%- assign fl_now_pool = nil -%}
+{%- assign fl_alone_all = nil -%}
+{%- assign today_month = today_md | slice: 0, 2 -%}
+{%- comment %}
+Month tags ({M:..}) name the northern season. South of the equator the
+seasons run six months on, so a December line about the cold shows there
+in June. The latitude comes with the weather data.
+{%- endcomment %}
+{%- assign season_month = today_month -%}
+{%- assign wx_lat = IDX_0.latitude | default: 0 | plus: 0 -%}
+{%- if wx_lat < 0 -%}
+  {%- assign sm = today_month | plus: 5 | modulo: 12 | plus: 1 -%}
+  {%- if sm < 10 -%}{%- assign season_month = '0' | append: sm -%}{%- else -%}{%- assign season_month = sm | append: '' -%}{%- endif -%}
+{%- endif -%}
 {%- assign flavour_topical = false -%}
-{%- if is_error == false and show_future_suggestions == 'on' and texts_ok and texts.facts -%}
+{%- comment %}
+The two switches (config/settings.next.yaml):
+  Forecast            show_future_suggestions, the field that was there:
+                      "Yes"/"No" saved before, true/false now. The words.
+  What to Wear Next?  what_to_wear_next, true/false: the drawings.
+Both can be on. The first beta had the drawings as a third Forecast value,
+"visual": a fork with that saved keeps drawings without words.
+The sarcastic line no longer needs either: it shows at On and 11 even on
+the outfit alone.
+{%- endcomment %}
+{%- assign forecast_on = false -%}
+{%- if show_future_suggestions == 'on' and sfs_check != 'visual' -%}{%- assign forecast_on = true -%}{%- endif -%}
+{%- assign next_check = trmnl.plugin_settings.custom_fields_values.what_to_wear_next | append: '' | downcase | strip -%}
+{%- assign next_on = false -%}
+{%- if next_check == 'true' or next_check == 'on' or next_check == 'yes' or next_check == '1' or sfs_check == 'visual' -%}
+  {%- assign next_on = true -%}
+{%- endif -%}
+{%- comment %}
+Which wording shows changes every hour, not once a day, so a day whose
+weather doesn't change still reads differently in the afternoon. Each
+pool takes (text_rot + its own offset) mod its size. Day and hour are
+multiplied by primes larger than any pool (101, 103: coprime with every
+size up to 100), so each step lands somewhere else in the pool instead
+of on the next line, every line comes round, and someone who looks at
+7:00 every morning sees the whole pool over the days, not a subset.
+The screen changes when TRMNL next regenerates it: the weather's
+current time moves every 15 minutes, so the merge variables change.
+{%- endcomment %}
+{%- assign text_rot = local_days | times: 101 -%}
+{%- assign text_rot_h = local_hour | times: 103 -%}
+{%- assign text_rot = text_rot | plus: text_rot_h -%}
+{%- if is_error == false and texts_ok and texts.facts -%}
   {%- assign F = texts.facts -%}
   {%- if is_steady -%}
     {%- if local_hour >= 17 -%}
@@ -27,7 +83,10 @@ Reads only what the scenario logic above already worked out.
     {%- endif -%}
   {%- else -%}
     {%- assign f_key = temp_scenario -%}
+    {%- if f_key == 'shorts_swing_back' and when_temp2 == '' -%}{%- assign f_key = 'shorts_swing' -%}{%- endif -%}
   {%- endif -%}
+  {%- comment %} Dangerous heat leads with water and shade, whatever else the day does. {%- endcomment %}
+  {%- if heat_danger and F.heat_danger -%}{%- assign f_key = 'heat_danger' -%}{%- endif -%}
   {%- comment %}
   The garment on screen, for the arc keys: {G} the garment, {GP} its
   pronoun, {GV} garment with its verb (German agrees "kann"/"können").
@@ -42,16 +101,28 @@ Reads only what the scenario logic above already worked out.
     {%- assign f_gv = F.garments_verb[fgi] -%}
   {%- endif -%}
   {%- comment %}
-  Each situation has several wordings, rotated by day like the flavour
-  line but on their own offsets, so a run of the same weather doesn't
-  show the same words, and fact and flavour don't repeat as a pair.
+  Each situation has several wordings, rotated by the hour like the
+  flavour line (text_rot) but on their own offsets, so a run of the same
+  weather doesn't show the same words.
   {%- endcomment %}
   {%- assign f_temp = '' -%}
   {%- assign f_list = F[f_key] -%}
-  {%- if f_list -%}
+  {%- comment %}
+  "{AM}" in front: a wording that only fits before noon ("keep out of the
+  midday sun", owner, round 22). After noon the next wording shows.
+  {%- endcomment %}
+  {%- if f_list and f_list.size > 0 -%}
     {%- assign f_n = f_list | size -%}
-    {%- assign f_vi = local_days | plus: 2 | modulo: f_n -%}
-    {%- assign f_temp = f_list[f_vi] -%}
+    {%- assign f_vi = text_rot | plus: 2 | modulo: f_n -%}
+    {%- for k in (1..f_n) -%}
+      {%- assign f_cand = f_list[f_vi] -%}
+      {%- unless f_cand contains '{AM}' and local_hour >= 12 -%}
+        {%- assign f_temp = f_cand | remove: '{AM}' -%}
+        {%- break -%}
+      {%- endunless -%}
+      {%- assign f_vi = f_vi | plus: 1 | modulo: f_n -%}
+    {%- endfor -%}
+    {%- if f_temp == '' -%}{%- assign f_temp = f_list[0] | remove: '{AM}' -%}{%- endif -%}
   {%- endif -%}
   {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
   {%- assign f_temp = f_temp | replace: '{WHEN2}', when_temp2 | replace: '{WHEN}', when_temp -%}
@@ -62,16 +133,186 @@ Reads only what the scenario logic above already worked out.
     {%- if is_now_snow == 1 -%}
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+    {%- else -%}
+      {%- comment %}
+      Freezing rain in the window (WMO 56, 57, 66, 67): the ice warning.
+      A thunderstorm (95, 96, 99): the storm wording. Each where the
+      situation has one; freezing rain first.
+      {%- endcomment %}
+      {%- assign p_ice = false -%}
+      {%- assign p_storm = false -%}
+      {%- assign wx_codes = ',' | append: wmo | append: ',' -%}
+      {%- if has_future_window and codes -%}
+        {%- for i in (start_index..end_index) -%}
+          {%- assign pi = probs[i] | default: 0 | plus: 0 -%}
+          {%- if pi >= RAIN_LOW -%}{%- assign wx_codes = wx_codes | append: codes[i] | append: ',' -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if wx_codes contains ',56,' or wx_codes contains ',57,' or wx_codes contains ',66,' or wx_codes contains ',67,' -%}{%- assign p_ice = true -%}{%- endif -%}
+      {%- if wx_codes contains ',95,' or wx_codes contains ',96,' or wx_codes contains ',99,' -%}{%- assign p_storm = true -%}{%- endif -%}
+      {%- assign pki = pk | append: '_ice' -%}
+      {%- assign pkt = pk | append: '_storm' -%}
+      {%- if p_ice and F[pki] -%}
+        {%- assign pk = pki -%}
+      {%- elsif p_storm and F[pkt] -%}
+        {%- assign pk = pkt -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- comment %}
+    {WHENSTOP}: when the rain or snow falling now stops, from the first dry
+    break. A wording that says it is skipped when there's no such time.
+    {%- endcomment %}
+    {%- assign when_stop = '' -%}
+    {%- if stop_idx >= 0 and is_now_precip == 1 -%}
+      {%- assign sgap = stop_idx | minus: now_index -%}
+      {%- assign sh = local_hour | plus: sgap -%}
+      {%- if sh > 23 -%}{%- assign sh = 23 -%}{%- endif -%}
+      {%- assign sb = HOUR_BUCKET[sh] | plus: 0 -%}
+      {%- if sb == now_bucket and sgap >= 1 and sgap <= 3 -%}
+        {%- assign sgi = sgap | minus: 1 -%}
+        {%- assign when_stop = RELATIVE[sgi] -%}
+      {%- else -%}
+        {%- assign when_stop = BUCKETS[sb] -%}
+      {%- endif -%}
     {%- endif -%}
     {%- assign p_list = F[pk] -%}
-    {%- if p_list -%}
+    {%- comment %}
+    When the stop time is known, only the wordings that say it: „hört
+    später auf“ is for when it isn't (owner, round 22).
+    {%- endcomment %}
+    {%- assign p_joined = p_list | join: '|' -%}
+    {%- assign p_need_stop = false -%}
+    {%- if when_stop != '' and p_joined contains '{WHENSTOP}' -%}{%- assign p_need_stop = true -%}{%- endif -%}
+    {%- if p_list and p_list.size > 0 -%}
       {%- assign p_n = p_list | size -%}
-      {%- assign p_vi = local_days | plus: 3 | modulo: p_n -%}
-      {%- assign f_precip = p_list[p_vi] | replace: '{WHENP}', when_precip -%}
+      {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
+      {%- for k in (1..p_n) -%}
+        {%- assign p_cand = p_list[p_vi] -%}
+        {%- assign p_skip = false -%}
+        {%- if p_cand contains '{WHENSTOP}' -%}
+          {%- if when_stop == '' -%}{%- assign p_skip = true -%}{%- endif -%}
+        {%- elsif p_need_stop -%}
+          {%- assign p_skip = true -%}
+        {%- endif -%}
+        {%- unless p_skip -%}
+          {%- assign f_precip = p_cand | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
+          {%- break -%}
+        {%- endunless -%}
+        {%- assign p_vi = p_vi | plus: 1 | modulo: p_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- comment %}
+  SPECIAL DAYS. A seasonal theme day: Christmas, New Year, Easter,
+  Halloween, Star Wars Day, Groundhog Day, Thanksgiving (the owner cut the
+  rest, and the weekday and clock-change days, November 2026). Only on a
+  dry day whose weather doesn't change and isn't cold or hot (owner,
+  round 17): there the weather's own unit has the say. The day's lines
+  come with one fixed forecast sentence that holds at any hour
+  (facts.steady_special), never a separately picked one.
+  {%- endcomment %}
+  {%- assign sp_pool = nil -%}
+  {%- assign sp_kind = '' -%}
+  {%- assign sp_fact = '' -%}
+  {%- assign sp_lib_key = 'flavour_' | append: sarcasm_level -%}
+  {%- assign sp_lib = texts[sp_lib_key] -%}
+  {%- assign sp_ok = false -%}
+  {%- if f_key == 'steady' or f_key == 'steady_evening' -%}{%- assign sp_ok = true -%}{%- endif -%}
+  {%- if sarcasm_level != '0' and sp_lib and is_steady and f_precip == '' and sp_ok -%}
+    {%- assign th_key = 'theme_' | append: active_theme -%}
+    {%- if active_theme != '' and sp_lib[th_key] -%}
+      {%- assign sp_pool = sp_lib[th_key] -%}
+      {%- assign sp_kind = 'theme' -%}
+    {%- endif -%}
+    {%- if sp_pool and texts.facts.steady_special.size > 0 -%}
+      {%- assign sp_list = texts.facts.steady_special -%}
+      {%- assign sp_n = sp_list | size -%}
+      {%- assign sp_i = text_rot | plus: 2 | modulo: sp_n -%}
+      {%- assign sp_fact = sp_list[sp_i] -%}
+      {%- assign f_temp = sp_fact -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- comment %}
+  UNITS (owner, October 2026): with sarcasm on, a forecast sentence and its
+  joke written and voted together, "fact || joke" (texts units_10 /
+  units_11, by situation; no joke when the sentence carries it). Where the
+  situation has units, the screen shows one instead of a forecast wording
+  plus a separately picked reply, so the two always fit. On a day that
+  changes and rains, see ORDER below.
+  A theme or special day has its own (SPECIAL DAYS). Situations without
+  units yet work as before.
+  ORDER (owner, October 2026): on a day that changes and rains, the
+  sentences go in the order things happen, like the drawings: rain that's
+  falling now, or rain that starts before the temperature changes, first.
+  The unit is for whichever sentence comes last, so its joke follows it.
+  {%- endcomment %}
+  {%- assign precip_first = false -%}
+  {%- if f_precip != '' and f_temp != '' and is_steady == false -%}
+    {%- if is_now_precip == 1 -%}
+      {%- assign precip_first = true -%}
+    {%- elsif precip_idx < primary_idx -%}
+      {%- assign precip_first = true -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign unit_joke = nil -%}
+  {%- assign u_lib_key = 'units_' | append: sarcasm_level -%}
+  {%- assign u_lib = texts[u_lib_key] -%}
+  {%- if sarcasm_level != '0' and u_lib and sp_pool == nil -%}
+    {%- assign u_key = f_key -%}
+    {%- assign u_for_precip = false -%}
+    {%- if f_precip != '' and precip_first == false -%}{%- assign u_key = pk -%}{%- assign u_for_precip = true -%}{%- endif -%}
+    {%- if u_key == 'steady_evening' and local_hour >= 22 and u_lib['steady_night'] -%}{%- assign u_key = 'steady_night' -%}{%- endif -%}
+    {%- assign u_pool = u_lib[u_key] -%}
+    {%- comment %} One unit alone would be the same pair every time: two or more. {%- endcomment %}
+    {%- assign u_n = u_pool | size -%}
+    {%- if u_pool and u_n >= 2 -%}
+      {%- assign u_i = text_rot | plus: 7 | modulo: u_n -%}
+      {%- assign u_month = ',' | append: season_month | append: ',' -%}
+      {%- for k in (1..u_n) -%}
+        {%- assign u_cand = u_pool[u_i] -%}
+        {%- assign u_ok = true -%}
+        {%- if u_cand contains '{M:' -%}
+          {%- assign u_tag = u_cand | split: '{M:' | last | split: '}' | first -%}
+          {%- assign u_tags = ',' | append: u_tag | append: ',' -%}
+          {%- unless u_tags contains u_month -%}{%- assign u_ok = false -%}{%- endunless -%}
+          {%- assign u_prefix = '{M:' | append: u_tag | append: '}' -%}
+          {%- assign u_cand = u_cand | remove_first: u_prefix -%}
+        {%- endif -%}
+        {%- comment %}
+        "#3 || joke": the shipped texts keep a unit's forecast sentence once,
+        in facts (TRMNL's 100 KB limit; tools/build_beta.py compacts them).
+        {%- endcomment %}
+        {%- assign u_first = u_cand | slice: 0 -%}
+        {%- if u_first == '#' -%}
+          {%- assign u_ref = u_cand | split: ' || ' -%}
+          {%- assign u_ix = u_ref[0] | remove_first: '#' | plus: 0 -%}
+          {%- assign u_cand = texts.facts[u_key][u_ix] | append: ' || ' | append: u_ref[1] -%}
+        {%- endif -%}
+        {%- if u_cand contains '{WHENSTOP}' -%}
+          {%- if when_stop == '' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- elsif when_stop != '' -%}
+          {%- comment %} A known stop time: only units that say it; none, and the plain wording shows. {%- endcomment %}
+          {%- if u_key contains 'drier' or u_key contains 'wet_again' -%}{%- assign u_ok = false -%}{%- endif -%}
+        {%- endif -%}
+        {%- if u_cand contains '{AM}' -%}
+          {%- if local_hour >= 12 -%}{%- assign u_ok = false -%}{%- endif -%}
+          {%- assign u_cand = u_cand | remove: '{AM}' -%}
+        {%- endif -%}
+        {%- if u_ok -%}
+          {%- assign u_parts = u_cand | split: ' || ' -%}
+          {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
+          {%- assign unit_joke = u_parts[1] | default: '' | strip | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
+          {%- if u_for_precip -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign u_i = u_i | plus: 1 | modulo: u_n -%}
+      {%- endfor -%}
     {%- endif -%}
   {%- endif -%}
   {%- if is_steady and f_precip != '' -%}
     {%- assign fact_line = f_precip -%}
+  {%- elsif f_precip != '' and precip_first -%}
+    {%- assign fact_line = f_precip | append: ' ' | append: f_temp -%}
   {%- elsif f_precip != '' -%}
     {%- assign fact_line = f_temp | append: ' ' | append: f_precip -%}
   {%- else -%}
@@ -116,7 +357,7 @@ Reads only what the scenario logic above already worked out.
     {%- assign mood = 'hot' -%}
   {%- elsif band_rank <= 2 -%}
     {%- assign mood = 'cold' -%}
-  {%- elsif is_steady and band_rank >= 4 -%}
+  {%- elsif is_steady and nice_now -%}
     {%- assign mood = 'nice' -%}
   {%- elsif temp_prefix == 'c_' -%}
     {%- comment %} An ordinary day, split by what it actually does: a layer is needed later... {%- endcomment %}
@@ -128,35 +369,180 @@ Reads only what the scenario logic above already worked out.
     {%- comment %} ...or a steady, cool jacket day. {%- endcomment %}
     {%- assign mood = 'cool' -%}
   {%- endif -%}
+  {%- comment %}
+  What the Now drawing shows, for the "now" lines (now_10 / now_11): they
+  stand alone and agree with the drawing, so they fit every screen, the
+  outfit alone included. Rain and snow only while they fall: that's when
+  the drawing has them.
+  {%- endcomment %}
+  {%- if is_now_snow == 1 -%}
+    {%- assign now_mood = 'snow' -%}
+  {%- elsif is_now_precip == 1 -%}
+    {%- assign now_mood = 'wet' -%}
+  {%- elsif local_hour >= 22 -%}
+    {%- assign now_mood = 'night' -%}
+  {%- elsif local_hour >= 18 -%}
+    {%- assign now_mood = 'evening' -%}
+  {%- elsif band_rank >= 7 -%}
+    {%- assign now_mood = 'hot' -%}
+  {%- elsif band_rank <= 2 -%}
+    {%- assign now_mood = 'cold' -%}
+  {%- elsif nice_now -%}
+    {%- assign now_mood = 'nice' -%}
+  {%- else -%}
+    {%- assign now_mood = 'cool' -%}
+  {%- endif -%}
   {%- if sarcasm_level != '0' -%}
     {%- assign fl_key = 'flavour_' | append: sarcasm_level -%}
     {%- assign fl_lib = texts[fl_key] -%}
-    {%- assign fl_pool = fl_lib[mood] -%}
     {%- comment %}
-    Ordinary days share: warming and cooling also draw from the cool pool,
-    whose lines are about an unremarkable day and fit any of the three.
+    Two kinds of sarcastic line (owner, round 11). Under the forecast line,
+    follow-ups (flavour_10 / _11, by the day's mood): they build on what it
+    said ("Taking that layer off might be the highlight of your day").
+    Everywhere else, standalone lines: the now lines (now_10 / _11, by what
+    the Now drawing shows) and the day's own standalone lines (alone_10 /
+    _11, by the day's mood: "Later it cools off. I saw that coming"). Two
+    or three drawings add theirs in the panels block. No follow-ups for
+    the mood: the standalone lines.
     {%- endcomment %}
-    {%- if mood == 'warming' or mood == 'cooling' -%}
-      {%- assign fl_cool = fl_lib['cool'] -%}
-      {%- if fl_pool and fl_cool -%}
-        {%- assign fl_pool = fl_pool | concat: fl_cool -%}
-      {%- elsif fl_cool -%}
-        {%- assign fl_pool = fl_cool -%}
-      {%- endif -%}
+    {%- assign now_key = 'now_' | append: sarcasm_level -%}
+    {%- assign alone_key = 'alone_' | append: sarcasm_level -%}
+    {%- assign fl_now_pool = texts[now_key][now_mood] -%}
+    {%- assign fl_alone_pool = texts[alone_key][mood] -%}
+    {%- assign fl_alone_all = fl_now_pool -%}
+    {%- if fl_alone_pool and fl_now_pool -%}
+      {%- assign fl_alone_all = fl_alone_pool | concat: fl_now_pool -%}
+    {%- elsif fl_alone_pool -%}
+      {%- assign fl_alone_all = fl_alone_pool -%}
     {%- endif -%}
-    {%- comment %} A seasonal day with nothing else to say gets its own lines. {%- endcomment %}
+    {%- comment %}
+    A texts file from before the now and day pools (13 October 2026): its
+    lines are still by the day's mood. That happens when the texts URL is
+    behind the markup (a fork's pinned commit, or jsDelivr still serving
+    an old @main for a few hours after a release). Without this, two
+    screens in three had no sarcastic line.
+    {%- endcomment %}
+    {%- if fl_alone_all == nil and texts[now_key] == nil -%}
+      {%- comment %} Those files have no "cooling" lines: cooling days drew from "cool". {%- endcomment %}
+      {%- if fl_lib[mood] -%}{%- assign fl_alone_all = fl_lib[mood] -%}{%- else -%}{%- assign fl_alone_all = fl_lib['cool'] -%}{%- endif -%}
+    {%- endif -%}
+    {%- comment %}
+    A follow-up goes by what the forecast line says, not by the mood: a
+    cold day's line may say it stays cold or that the coat comes off. Ten
+    groups, each one message: rain, snow (the umbrella or the snow; a
+    rain sentence comes last when there are two), off (a layer comes off
+    later), on (a layer is needed later), offon (off, then back on), hot
+    (the line says water), steady, cold, evening, night. The heat easing
+    a little (c_relief) says no water: the standalone lines.
+    {%- endcomment %}
+    {%- assign fu_key = '' -%}
+    {%- if f_precip != '' -%}
+      {%- if pk contains '_ice' -%}{%- assign fu_key = 'ice' -%}{%- elsif pk contains '_storm' -%}{%- assign fu_key = 'storm' -%}{%- elsif pk contains 'snow' -%}{%- assign fu_key = 'snow' -%}{%- else -%}{%- assign fu_key = 'rain' -%}{%- endif -%}
+    {%- else -%}
+      {%- case f_key -%}
+        {%- when 'steady_evening' -%}
+          {%- if local_hour >= 22 -%}{%- assign fu_key = 'night' -%}{%- else -%}{%- assign fu_key = 'evening' -%}{%- endif -%}
+        {%- when 'steady_hot', 'w_water' -%}{%- assign fu_key = 'hot' -%}
+        {%- when 'steady_cold' -%}{%- assign fu_key = 'cold' -%}
+        {%- when 'steady' -%}{%- assign fu_key = 'steady' -%}
+        {%- when 'w_scarf', 'w_coat', 'w_jacket', 'w_hoodie', 'arc_warmer', 'shorts_early' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'c_scarf', 'c_coat', 'c_jacket', 'c_hoodie' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'arc_level', 'arc_colder' -%}{%- assign fu_key = 'offon' -%}
+        {%- when 'shorts_swing', 'shorts_swing_back' -%}{%- assign fu_key = 'shorts' -%}
+        {%- when 'pants_swing' -%}{%- assign fu_key = 'pants' -%}
+        {%- when 'heat_danger' -%}{%- assign fu_key = 'scorch' -%}
+      {%- endcase -%}
+    {%- endif -%}
+    {%- comment %}
+    The garment the forecast line names, for follow-ups that point back at
+    it: {GP} its pronoun ("it"/"them", "sie"/"ihn"), {G} the garment. A
+    line may also say which garments it fits: "{W:coat,jacket}…" (slugs
+    scarf, coat, jacket, hoodie). Such lines are skipped on a forecast
+    line that names no garment, or another one.
+    {%- endcomment %}
+    {%- assign fu_gi = -1 -%}
+    {%- case f_key -%}
+      {%- when 'w_scarf', 'c_scarf' -%}{%- assign fu_gi = 0 -%}
+      {%- when 'w_coat', 'c_coat' -%}{%- assign fu_gi = 1 -%}
+      {%- when 'w_jacket', 'c_jacket' -%}{%- assign fu_gi = 2 -%}
+      {%- when 'w_hoodie', 'c_hoodie' -%}{%- assign fu_gi = 3 -%}
+      {%- when 'arc_warmer', 'arc_level', 'arc_colder', 'shorts_swing', 'shorts_swing_back' -%}
+        {%- if f_g != '' -%}{%- assign fu_gi = band_rank | minus: 1 -%}{%- endif -%}
+    {%- endcase -%}
+    {%- assign fu_g = '' -%}
+    {%- assign fu_gp = '' -%}
+    {%- assign fu_gs = '' -%}
+    {%- if fu_gi >= 0 -%}
+      {%- assign fu_g = F.garments[fu_gi] -%}
+      {%- assign fu_gp = F.garments_pron[fu_gi] -%}
+      {%- assign fu_slugs = 'scarf,coat,jacket,hoodie' | split: ',' -%}
+      {%- assign fu_gs = ',' | append: fu_slugs[fu_gi] | append: ',' -%}
+    {%- endif -%}
+    {%- comment %} A new group with no lines yet borrows its neighbour's. {%- endcomment %}
+    {%- unless fl_lib[fu_key] -%}
+      {%- case fu_key -%}
+        {%- when 'ice', 'storm' -%}{%- assign fu_key = 'rain' -%}
+        {%- when 'shorts' -%}{%- assign fu_key = 'off' -%}
+        {%- when 'pants' -%}{%- assign fu_key = 'on' -%}
+        {%- when 'scorch' -%}{%- assign fu_key = 'hot' -%}
+      {%- endcase -%}
+    {%- endunless -%}
+    {%- assign fl_pool = fl_alone_all -%}
+    {%- if forecast_on and fact_line != '' and fu_key != '' and fl_lib[fu_key] -%}
+      {%- assign fl_pool = fl_lib[fu_key] -%}
+    {%- endif -%}
+    {%- comment %} A theme day or a special day (SPECIAL DAYS, above the units). {%- endcomment %}
     {%- assign fl_theme = false -%}
-    {%- if is_steady and active_theme != '' -%}
-      {%- assign th_key = 'theme_' | append: active_theme -%}
-      {%- if fl_lib[th_key] -%}
-        {%- assign fl_pool = fl_lib[th_key] -%}
-        {%- assign fl_theme = true -%}
-      {%- endif -%}
+    {%- if sp_pool -%}
+      {%- assign fl_pool = sp_pool -%}
+      {%- if sp_kind == 'theme' -%}{%- assign fl_theme = true -%}{%- endif -%}
     {%- endif -%}
-    {%- if fl_pool -%}
+    {%- comment %} An empty pool (every line voted out) must not reach the modulo below. {%- endcomment %}
+    {%- if fl_pool and fl_pool.size > 0 -%}
       {%- assign fl_n = fl_pool | size -%}
-      {%- assign fl_i = local_days | plus: 5 | modulo: fl_n -%}
-      {%- assign flavour_line = fl_pool[fl_i] -%}
+      {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
+      {%- comment %}
+      A line may carry the months it shows in, as a tag build_pools.py puts
+      in front: "{M:10,11}Every year everyone's surprised…". In another
+      month the next line of the pool shows instead.
+      {%- endcomment %}
+      {%- assign fl_month = ',' | append: season_month | append: ',' -%}
+      {%- for k in (1..fl_n) -%}
+        {%- assign fl_cand = fl_pool[fl_i] -%}
+        {%- assign fl_ok = true -%}
+        {%- if fl_cand contains '{AM}' -%}
+          {%- if local_hour >= 12 -%}{%- assign fl_ok = false -%}{%- endif -%}
+          {%- assign fl_cand = fl_cand | remove: '{AM}' -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{M:' -%}
+          {%- assign fl_tag = fl_cand | split: '{M:' | last | split: '}' | first -%}
+          {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
+          {%- unless fl_tags contains fl_month -%}{%- assign fl_ok = false -%}{%- endunless -%}
+          {%- assign fl_prefix = '{M:' | append: fl_tag | append: '}' -%}
+          {%- assign fl_cand = fl_cand | remove_first: fl_prefix -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{W:' -%}
+          {%- assign fl_tag = fl_cand | split: '{W:' | last | split: '}' | first -%}
+          {%- assign fl_tags = ',' | append: fl_tag | append: ',' -%}
+          {%- if fu_gs == '' -%}
+            {%- assign fl_ok = false -%}
+          {%- else -%}
+            {%- unless fl_tags contains fu_gs -%}{%- assign fl_ok = false -%}{%- endunless -%}
+          {%- endif -%}
+          {%- assign fl_prefix = '{W:' | append: fl_tag | append: '}' -%}
+          {%- assign fl_cand = fl_cand | remove_first: fl_prefix -%}
+        {%- endif -%}
+        {%- if fl_cand contains '{G' and fu_g == '' -%}{%- assign fl_ok = false -%}{%- endif -%}
+        {%- if fl_ok -%}
+          {%- assign flavour_line = fl_cand | replace: '{GP}', fu_gp | replace: '{G}', fu_g -%}
+          {%- break -%}
+        {%- endif -%}
+        {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- comment %} A unit's own joke, under its own forecast sentence (UNITS above). {%- endcomment %}
+    {%- if unit_joke != nil and forecast_on and fact_line != '' and fl_theme == false -%}
+      {%- assign flavour_line = unit_joke -%}
     {%- endif -%}
 
     {%- comment %}
