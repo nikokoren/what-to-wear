@@ -43,9 +43,10 @@ import build_beta  # noqa: E402
 import build_transitional  # noqa: E402
 
 LIMIT = 100_000
-# The old wording step 1 carries only serves its one-day window: two
-# wordings per situation keep the 2.0 markup under the ceiling.
-STEP1_PER_KEY = 2
+# The old wording step 1 carries only serves its one-day window: one
+# wording per situation keeps the 2.0 markup under the ceiling (two did
+# until the rain timeline, November 2026: 105 KB with two, 94 KB with one).
+STEP1_PER_KEY = 1
 OFFSET = 7200
 STEP1_HEADER = """{%- comment %}
 What to Wear {version}, rollout step 1. Built by tools/build_release.py:

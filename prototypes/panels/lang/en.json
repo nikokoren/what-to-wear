@@ -92,6 +92,11 @@
         "Tomorrow starts out snowy.",
         "Tomorrow begins with snow.",
         "Expect a snowy start tomorrow."
+      ],
+      "tmr_maybe": [
+        "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+        "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+        "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you."
       ]
     },
     "jokes_10": {

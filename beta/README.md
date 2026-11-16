@@ -67,6 +67,14 @@ The drawings load from `sprites/` on `main`, where they already are.
   was. Try **When do you head out?** at 6 am and 9 am on a day that
   starts cold, and "It varies". The evening sentences and jokes are
   stand-ins until their writing round.
+- **Rain, in words and drawings** (new in this beta): they now go by the
+  same hours. Rain is drawn and called rain from an hour at 50%; a 25 to
+  49% stretch is "might rain" and draws no umbrella; on a wet day the
+  drawings stay wet as long as the words say so. Also new: snow that
+  turns to rain, rain due within the hour (umbrella on the Now drawing),
+  the evening's layer always drawn on a day with many changes, and the
+  heat warning no longer moving with "Do you run cold or warm?". The
+  shared markup changed: paste `beta/shared.liquid` again.
 - **Jokes about current events** are parked: the beta has none.
 - **Sarcasm** Off, On and 11, **both languages**, **all four views**,
   landscape and portrait, OG and X.

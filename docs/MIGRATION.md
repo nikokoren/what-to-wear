@@ -21,7 +21,7 @@ file is under 100 KB. `release/2.0.0/README.md` has the steps:
 
 1. **Markup, views and form.** `step1/shared.liquid` is the 2.0 markup
    that also reads today's single-URL shape and carries the old wording
-   (two variants per situation) for devices without the texts URL yet.
+   (one variant per situation, to fit under 100 KB) for devices without the texts URL yet.
    They show the 2.0 drawings with the old one-line tip.
 2. **Polling URL.** Weather, then the texts at `@v2.0.0`. Push the tag
    first and open the URL in a browser.

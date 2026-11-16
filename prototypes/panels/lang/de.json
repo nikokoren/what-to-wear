@@ -87,6 +87,11 @@
       "tmr_snow_start": [
         "Morgen fängt der Tag mit Schnee an.",
         "Morgen geht's gleich mit Schnee los."
+      ],
+      "tmr_maybe": [
+        "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+        "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+        "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht."
       ]
     },
     "jokes_10": {

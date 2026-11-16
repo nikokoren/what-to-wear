@@ -165,7 +165,13 @@ TEXTS["en"]["now_10"] = {m: ["NOW LINE"] for m in MOODS}
 TEXTS["en"]["alone_10"] = {}
 ARC = [2, 2, 2, 2, 2, 3, 4, 5, 7, 10, 13, 15, 16, 16, 15, 13, 10, 7, 5, 4, 3, 3, 2, 2]
 UP = [2, 2, 2, 2, 2, 3, 4, 6, 9, 13, 17, 21, 24, 26, 27, 27, 26, 25, 24, 23, 22, 21, 20, 19]
-expect("jacket, sweater, jacket: no 'three outfits' line", all("THREE LINE" not in render(False, feels=ARC, hour=h, nxt=True) for h in (8, 9)))
+# ARC ends colder than it starts (jacket, sweater, coat: three different
+# drawings since the last change is always kept); BACK only returns to the
+# morning's jacket, so its first and third drawings are the same.
+BACK = [7, 7, 7, 7, 7, 7, 7, 7, 7, 10, 13, 15, 16, 16, 15, 13, 10, 8, 7, 7, 7, 7, 7, 7]
+expect("jacket, sweater, jacket: no 'three outfits' line", all("THREE LINE" not in render(False, feels=BACK, hour=h, nxt=True) for h in (8, 9)))
+expect("jacket, sweater, coat: the 'three outfits' line can show",
+       any("THREE LINE" in render(False, feels=ARC, hour=h, nxt=True) for h in range(8, 11)))
 expect("three different outfits: the 'three outfits' line can show",
        any("THREE LINE" in render(False, feels=UP, hour=h, nxt=True) for h in range(7, 10)))
 # The garment the forecast line names: {GP} its pronoun, {G} the garment;
@@ -438,7 +444,8 @@ COOLING = [12] * 15 + [8, 6, 4, 2, 1, 0, 0, 0, 0]
 w = words_of(render(True, feels=COOLING, hour=8, probs=WET_AM, codes=[61] * 11 + [0] * 13))
 expect("raining now, colder later: rain sentence first, the temperature's joke last",
        w.find("RAINSTOP") < w.find("TEMPCHANGE") and "TEMPJOKE" in w and "RAINJOKE" not in w)
-w = words_of(render(True, feels=COOLING, hour=8, probs=[0] * 20 + [90] * 4, codes=[0] * 20 + [61] * 4))
+# Two hours of rain: four would be "sets in and stays" (p_wetter_long), counted past the window's end.
+w = words_of(render(True, feels=COOLING, hour=8, probs=[0] * 20 + [90] * 2 + [0] * 2, codes=[0] * 20 + [61] * 2 + [0] * 2))
 expect("colder first, rain later: temperature sentence first, the rain's joke last",
        0 <= w.find("TEMPCHANGE") < w.find("RAINCOMES") and "RAINJOKE" in w and "TEMPJOKE" not in w)
 TEXTS["en"]["facts"] = saved_facts

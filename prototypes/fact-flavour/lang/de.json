@@ -231,6 +231,12 @@
       "Der Schneefall hört später auf, {WHENP} geht es weiter.",
       "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder."
     ],
+    "p_turns_rain": [
+      "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit.",
+      "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein.",
+      "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit.",
+      "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit."
+    ],
     "shorts_swing": [
       "{WHEN} wird's warm. Überleg dir, gleich ne kurze Hose anzuziehen.",
       "Jetzt ist's kalt, aber {WHEN} wird's richtig warm. Eventuell lohnt sich die kurze Hose.",

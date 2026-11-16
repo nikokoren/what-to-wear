@@ -12,7 +12,11 @@ as before: in the morning the screen shows what to wear right now.
     time out the door (head_out_time; "varies" dresses for the coldest
     hour from 6 to 9 am), then the first change after it, the way the
     day's drawings find changes: an outfit band held for two hours, rain
-    or snow starting (one hour at RAIN_HIGH), two dry hours ending it.
+    or snow starting (one hour at RAIN_HIGH), two hours under RAIN_LOW
+    ending it: the same rule as today's rain timeline (src/shared.liquid).
+    Rain that's only possible (two hours running at RAIN_LOW, never one
+    at RAIN_HIGH) draws nothing, but a day that would otherwise read
+    "one outfit all day" says so (evening.facts.tmr_maybe).
     Rain or snow starting wins over an outfit change (the umbrella has
     to go in the bag in the morning), drawn in the outfit of that hour.
     T-shirt and shorts count as one, as later in the day. Nothing
@@ -98,6 +102,13 @@ was. Appended after the drawings block by prototypes/panels/build.py.
   {%- assign t_hour = -1 -%}
   {%- assign p_hour = -1 -%}
   {%- assign i_from = i_to | plus: 1 -%}
+  {%- comment %} Rain that's only possible tomorrow: two hours running at RAIN_LOW, and never wet. {%- endcomment %}
+  {%- assign ev_any_wet = false -%}
+  {%- if ev_wet == 1 -%}{%- assign ev_any_wet = true -%}{%- endif -%}
+  {%- assign ev_maybe = false -%}
+  {%- assign mb_run = 0 -%}
+  {%- assign mb_p0 = probs[i_to] | default: 0 | plus: 0 -%}
+  {%- if mb_p0 >= RAIN_LOW -%}{%- assign mb_run = 1 -%}{%- endif -%}
   {%- for i in (i_from..t_end) -%}
     {%- assign j = i | plus: 1 -%}
     {%- assign ta = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
@@ -133,8 +144,15 @@ was. Appended after the drawings block by prototypes/panels/build.py.
         {%- assign cp = ',' | append: codes[i] | append: ',' -%}
         {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
       {%- endif -%}
-    {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+    {%- elsif cur_wet == 1 and p1 < RAIN_LOW and p2 < RAIN_LOW -%}
       {%- assign new_wet = 0 -%}
+    {%- endif -%}
+    {%- if new_wet == 1 -%}{%- assign ev_any_wet = true -%}{%- endif -%}
+    {%- if p1 >= RAIN_LOW -%}
+      {%- assign mb_run = mb_run | plus: 1 -%}
+      {%- if mb_run >= 2 -%}{%- assign ev_maybe = true -%}{%- endif -%}
+    {%- else -%}
+      {%- assign mb_run = 0 -%}
     {%- endif -%}
     {%- comment %} The first outfit change, and the first rain or snow starting (or, wet from the start, stopping). {%- endcomment %}
     {%- if new_rank != cur_rank and t_hour == -1 -%}
@@ -233,6 +251,8 @@ was. Appended after the drawings block by prototypes/panels/build.py.
     {%- assign ek = 'tmr_snow_start' -%}{%- assign ev_sit = 'snow' -%}
   {%- elsif ev_wet == 1 -%}
     {%- assign ek = 'tmr_wet' -%}{%- assign ev_sit = 'rain' -%}
+  {%- elsif ev_maybe and ev_any_wet == false and EV.facts.tmr_maybe -%}
+    {%- assign ek = 'tmr_maybe' -%}{%- assign ev_sit = 'rain' -%}
   {%- else -%}
     {%- assign ek = 'tmr_steady' -%}{%- assign ev_sit = 'steady' -%}
   {%- endif -%}

@@ -252,13 +252,19 @@ must not carry `{WHENP}` and should read as a continuation.
 
 | Key | Fires when | Say |
 |---|---|---|
-| `wetter_maybe` | rain likely but under 60% at peak | it might; the umbrella is cheap insurance |
-| `wetter` | rain is coming, short | take the umbrella, it arrives `{WHENP}` |
-| `wetter_long` | rain for 4+ consecutive hours | it settles in; the umbrella earns its keep |
+| `wetter_maybe` | two hours running at 25% or more, never an hour at 50% | it might; the umbrella is cheap insurance |
+| `wetter` | an hour at 50% or more ahead, short | take the umbrella, it arrives `{WHENP}` |
+| `wetter_long` | that rain lasts 4+ hours (counted past the end of the window) | it settles in; the umbrella earns its keep |
 | `drier` | **raining now**, stopping later | it clears; the umbrella gets a rest |
-| `stays_wet` | **raining now**, no dry break of 2+ hours in the window | all day, no gap |
+| `stays_wet` | **raining now**, no two hours running under 25% in the window | all day, no gap |
 | `wet_again` | **raining now**, a dry break, then rain again `{WHENP}` | it stops for a while; don't leave the umbrella anywhere |
 | `snow_coming` | snow ahead, not snowing yet | snow `{WHENP}`; footwear, not umbrellas |
+
+All of these are read off one hour-by-hour rain timeline (ONE RAIN TIMELINE in
+`src/shared.liquid`), the same one the drawings use: rain starts at an hour of
+50% or more and stops at the first of two hours running under 25%. In the
+2.0 texts, `facts.p_turns_rain` covers snow now that turns to rain `{WHENP}`,
+and `evening.facts.tmr_maybe` a tomorrow with one outfit and possible rain.
 
 `drier`, `stays_wet` and `wet_again` **never tell anyone to take an
 umbrella**, and only `wet_again` (standalone form) names a time — when the

@@ -18,6 +18,39 @@ to pick it up cold.
 - Item 1 is decided and coded; the 19 drawings are next.
 - Item 3 (the text) is well along in the prototype; see item 5 below.
 
+### Weather fixes after the beta review (November 2026)
+
+Fixed in `src/shared.liquid` and the prototypes, pinned by
+`prototypes/panels/test_weather_cases.py`:
+
+- **One rain timeline** for the words and the drawings (starts at an hour
+  of 50%, stops at two hours running under 25%). "Maybe" is two hours at
+  25% and never one at 50%, and draws nothing. The words' "rain is coming"
+  now starts at 50%, not 60.
+- Snow that turns to rain, rain due within the current hour, rain past
+  the end of the window (a wet night isn't "a short shower"), a shower
+  inside the Now stretch, tomorrow's possible rain in the evening.
+- With more than two outfit changes the drawings keep the last one and
+  the outfit furthest from now.
+- Dangerous heat goes by the raw feels-like reading, not the one shifted
+  by "Do you run cold or warm?".
+
+**For the owner to read (not voted):** the new plain sentences,
+`facts.p_turns_rain` (4 per language, `prototypes/fact-flavour/lang/`)
+and `evening.facts.tmr_maybe` (3 per language, `prototypes/panels/lang/`).
+A language without them falls back to the rain wording and to "one
+outfit all day".
+
+**Step 1 of the rollout** now carries one old wording per situation, not
+two (`STEP1_PER_KEY` in `tools/build_release.py`): the markup grew by
+about 6 KB and step 1 with two was 105 KB. The slim markup is 90 KB of
+100; the next logic change needs that room found first.
+
+Still open from the same review: with two or three drawings and no
+written forecast, rain that's only possible shows nowhere; snow that
+stops and comes back as rain reads "turns to rain"; at 11 pm there is no
+window left, so rain due that hour is drawn but not said.
+
 ### Rollout 2.0 (owner, October 2026)
 
 Two steps, texts URL pinned to a version tag, merge to `main` once the

@@ -133,6 +133,30 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if is_now_snow == 1 -%}
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+      {%- comment %}
+      Snowing now, and the wet hours ahead turn to rain (turn_idx, from
+      the rain timeline): "the snow doesn't stop today" would be wrong.
+      Its own wording says when the rain takes over; a language without
+      one falls back to the rain wording, which is at least true of the
+      rest of the day.
+      {%- endcomment %}
+      {%- if turn_idx >= 0 -%}
+        {%- if F.p_turns_rain -%}
+          {%- assign pk = 'p_turns_rain' -%}
+          {%- assign tgap = turn_idx | minus: now_index -%}
+          {%- assign tnh = local_hour | plus: tgap -%}
+          {%- if tnh > 23 -%}{%- assign tnh = 23 -%}{%- endif -%}
+          {%- assign tnb = HOUR_BUCKET[tnh] | plus: 0 -%}
+          {%- if tnb == now_bucket and tgap >= 1 and tgap <= 3 -%}
+            {%- assign tgi = tgap | minus: 1 -%}
+            {%- assign when_precip = RELATIVE[tgi] -%}
+          {%- else -%}
+            {%- assign when_precip = BUCKETS[tnb] -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign pk = 'p_' | append: precip_scenario -%}
+        {%- endif -%}
+      {%- endif -%}
     {%- else -%}
       {%- comment %}
       Freezing rain in the window (WMO 56, 57, 66, 67): the ice warning.

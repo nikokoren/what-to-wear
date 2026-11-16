@@ -170,6 +170,9 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
 {%- assign heat_danger = false -%}
 {%- assign stop_idx = -1 -%}
 {%- assign is_now_snow = 0 -%}
+{%- assign now_wet = 0 -%}
+{%- assign now_snow = 0 -%}
+{%- assign turn_idx = -1 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
 {%- assign weather_slug = '' -%}
@@ -258,6 +261,24 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- assign probs = h.precipitation_probability -%}
   {%- assign codes = h.weather_code -%}
 
+    {%- assign now_wet = is_now_precip -%}
+  {%- assign now_snow = is_now_snow -%}
+  {%- if is_now_precip == 0 and probs != nil -%}
+    {%- assign now_prob = probs[now_index] | default: 0 | plus: 0 -%}
+    {%- if now_prob >= RAIN_HIGH -%}
+      {%- assign now_wet = 1 -%}
+      {%- assign precip_suffix = 'rain' -%}
+      {%- if codes != nil -%}
+        {%- assign c_probe = ',' | append: codes[now_index] | append: ',' -%}
+        {%- if SNOW_CODES contains c_probe -%}
+          {%- assign now_snow = 1 -%}
+          {%- assign precip_suffix = 'snow' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+    {%- endif -%}
+  {%- endif -%}
+
   {%- if temps != nil and probs != nil and cutoff_hour > local_hour -%}
     {%- assign h_count = temps | size | default: 0 -%}
     {%- assign last_index = h_count | minus: 1 -%}
@@ -276,6 +297,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- assign rank_lo_csv = '' -%}
             {%- assign max_temp_future = temp_c -%}
       {%- assign max_temp_idx = now_index -%}
+      {%- assign scorch_c = band_edge_list | last | plus: 0 -%}
+      {%- assign scorch_hours = 0 -%}
       {%- assign up_rank = band_rank -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign tv = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
@@ -297,6 +320,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
           {%- if hi_banded > edge_c -%}{%- assign r_hi = forloop.index | plus: 1 -%}{%- endif -%}
           {%- if lo_banded > edge_c -%}{%- assign r_lo = forloop.index | plus: 1 -%}{%- endif -%}
         {%- endfor -%}
+
+                {%- if held_hi > scorch_c -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
 
         {%- if held_hi > max_temp_future -%}
           {%- assign max_temp_future = held_hi -%}
@@ -341,7 +366,6 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
             {%- assign pants_swing = false -%}
       {%- assign pants_idx = -1 -%}
       {%- assign cold_hours = 0 -%}
-      {%- assign scorch_hours = 0 -%}
       {%- for r in rank_lo_list -%}
         {%- assign rv = r | plus: 0 -%}
         {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
@@ -349,7 +373,6 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
           {%- assign cold_hours = cold_hours | plus: 1 -%}
           {%- if pants_idx < 0 -%}{%- assign pants_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
         {%- endif -%}
-        {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
       {%- endfor -%}
             {%- assign legs_short = shorts_early -%}
       {%- if band_rank >= 6 -%}{%- assign legs_short = true -%}{%- endif -%}
@@ -357,7 +380,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign pants_swing = true -%}
         {%- assign shorts_early = false -%}
       {%- endif -%}
-      {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
+      {%- if scorch_hours >= 2 or temp_c > scorch_c -%}{%- assign heat_danger = true -%}{%- endif -%}
 
             {%- assign dip_min = temp_c -%}
       {%- assign dip_rank = band_rank -%}
@@ -383,14 +406,6 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
 
             {%- assign run_len = 0 -%}
       {%- assign best_run = 0 -%}
-      {%- assign dry_run = 0 -%}
-      {%- assign gap_found = false -%}
-      {%- assign back_run = 0 -%}
-      {%- assign back_best = 0 -%}
-      {%- assign back_peak = 0 -%}
-      {%- assign back_idx = -1 -%}
-            {%- assign stop_idx = -1 -%}
-      {%- assign stop_try = -1 -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
         {%- if pv > peak_rain -%}
@@ -407,41 +422,109 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- else -%}
           {%- assign run_len = 0 -%}
         {%- endif -%}
-
-        {%- if gap_found -%}
-          {%- if pv > back_peak -%}
-            {%- assign back_peak = pv -%}
-          {%- endif -%}
-          {%- if pv >= RAIN_LOW -%}
-            {%- assign back_run = back_run | plus: 1 -%}
-            {%- if back_run > back_best -%}
-              {%- assign back_best = back_run -%}
-            {%- endif -%}
-            {%- if back_idx < 0 -%}
-              {%- assign back_idx = i -%}
-            {%- endif -%}
-          {%- else -%}
-            {%- assign back_run = 0 -%}
-          {%- endif -%}
-        {%- elsif pv < RAIN_LOW -%}
-          {%- assign dry_run = dry_run | plus: 1 -%}
-          {%- if dry_run == 1 -%}{%- assign stop_try = i -%}{%- endif -%}
-          {%- if dry_run >= 2 -%}
-            {%- assign gap_found = true -%}
-            {%- assign stop_idx = stop_try -%}
-          {%- endif -%}
-        {%- else -%}
-          {%- assign dry_run = 0 -%}
-        {%- endif -%}
       {%- endfor -%}
-
       {%- if best_run >= 2 or peak_rain >= RAIN_HIGH -%}
         {%- assign rain_qualifies = true -%}
       {%- endif -%}
-      {%- assign rain_returns = false -%}
-      {%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}
-        {%- assign rain_returns = true -%}
+      {%- assign force_dry = false -%}
+      {%- if is_now_precip == 1 and rain_qualifies == false -%}
+        {%- assign force_dry = true -%}
       {%- endif -%}
+
+      {%- assign tl_wet = now_wet -%}
+      {%- assign tl_snow = now_snow -%}
+      {%- assign wet_csv = '' -%}
+      {%- assign snow_csv = '' -%}
+            {%- assign first_wet_idx = -1 -%}
+      {%- assign wet_run = 0 -%}
+      {%- assign run_open = false -%}
+      {%- if is_now_precip == 0 and now_wet == 1 -%}
+        {%- assign first_wet_idx = now_index -%}
+        {%- assign wet_run = 1 -%}
+        {%- assign run_open = true -%}
+      {%- endif -%}
+            {%- assign stop_idx = -1 -%}
+      {%- assign back_idx = -1 -%}
+      {%- assign turn_idx = -1 -%}
+      {%- for i in (start_index..end_index) -%}
+        {%- assign j = i | plus: 1 -%}
+        {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+        {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+        {%- assign code_snow = false -%}
+        {%- assign code_rain = false -%}
+        {%- if codes != nil -%}
+          {%- assign c_probe = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains c_probe -%}
+            {%- assign code_snow = true -%}
+          {%- elsif RAIN_CODES contains c_probe -%}
+            {%- assign code_rain = true -%}
+          {%- endif -%}
+        {%- endif -%}
+                {%- assign new_wet = tl_wet -%}
+        {%- if tl_wet == 0 -%}
+          {%- if p1 >= RAIN_HIGH or code_snow -%}{%- assign new_wet = 1 -%}{%- endif -%}
+        {%- elsif code_snow -%}
+          {%- assign new_wet = 1 -%}
+        {%- elsif force_dry -%}
+          {%- assign new_wet = 0 -%}
+        {%- elsif p1 < RAIN_LOW and p2 < RAIN_LOW -%}
+          {%- assign new_wet = 0 -%}
+        {%- endif -%}
+        {%- assign new_snow = 0 -%}
+        {%- if new_wet == 1 -%}
+          {%- if tl_wet == 1 -%}{%- assign new_snow = tl_snow -%}{%- endif -%}
+          {%- if code_snow -%}
+            {%- assign new_snow = 1 -%}
+          {%- elsif code_rain -%}
+            {%- assign new_snow = 0 -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if new_wet == 1 and tl_wet == 0 -%}
+          {%- if is_now_precip == 1 -%}
+            {%- if back_idx < 0 -%}{%- assign back_idx = i -%}{%- endif -%}
+          {%- elsif first_wet_idx < 0 -%}
+            {%- assign first_wet_idx = i -%}
+            {%- assign run_open = true -%}
+          {%- endif -%}
+        {%- elsif new_wet == 0 and tl_wet == 1 -%}
+          {%- if is_now_precip == 1 and stop_idx < 0 -%}{%- assign stop_idx = i -%}{%- endif -%}
+          {%- assign run_open = false -%}
+        {%- endif -%}
+        {%- if run_open and new_wet == 1 -%}{%- assign wet_run = wet_run | plus: 1 -%}{%- endif -%}
+        {%- if is_now_snow == 1 and turn_idx < 0 and new_wet == 1 and new_snow == 0 -%}
+          {%- assign turn_idx = i -%}
+        {%- endif -%}
+
+        {%- unless forloop.first -%}
+          {%- assign wet_csv = wet_csv | append: ',' -%}
+          {%- assign snow_csv = snow_csv | append: ',' -%}
+        {%- endunless -%}
+        {%- assign wet_csv = wet_csv | append: new_wet -%}
+        {%- assign snow_csv = snow_csv | append: new_snow -%}
+        {%- assign tl_wet = new_wet -%}
+        {%- assign tl_snow = new_snow -%}
+      {%- endfor -%}
+      {%- assign wet_list = wet_csv | split: ',' -%}
+      {%- assign snow_list = snow_csv | split: ',' -%}
+
+            {%- if run_open and wet_run < 4 and end_index < last_index -%}
+        {%- assign past_from = end_index | plus: 1 -%}
+        {%- assign past_to = end_index | plus: 4 -%}
+        {%- if past_to > last_index -%}{%- assign past_to = last_index -%}{%- endif -%}
+        {%- for i in (past_from..past_to) -%}
+          {%- assign j = i | plus: 1 -%}
+          {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+          {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+          {%- if p1 < RAIN_LOW and p2 < RAIN_LOW -%}{%- break -%}{%- endif -%}
+          {%- assign wet_run = wet_run | plus: 1 -%}
+        {%- endfor -%}
+      {%- endif -%}
+
+      {%- assign gap_found = false -%}
+      {%- if stop_idx >= 0 -%}{%- assign gap_found = true -%}{%- endif -%}
+      {%- assign rain_returns = false -%}
+      {%- if back_idx >= 0 -%}{%- assign rain_returns = true -%}{%- endif -%}
 
             {%- if codes != nil -%}
         {%- for i in (start_index..end_index) -%}
@@ -613,20 +696,18 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- if future_has_snow and is_now_snow == 0 -%}
       {%- assign precip_scenario = 'snow_coming' -%}
       {%- assign precip_idx = first_snow_idx -%}
-    {%- elsif is_now_precip == 0 and rain_qualifies -%}
-      {%- if peak_rain < 60 -%}
-        {%- assign precip_scenario = 'wetter_maybe' -%}
-      {%- elsif best_run >= 4 -%}
+    {%- elsif is_now_precip == 0 and first_wet_idx >= 0 -%}
+      {%- if wet_run >= 4 -%}
         {%- assign precip_scenario = 'wetter_long' -%}
       {%- else -%}
         {%- assign precip_scenario = 'wetter' -%}
       {%- endif -%}
+      {%- assign precip_idx = first_wet_idx -%}
+    {%- elsif is_now_precip == 0 and rain_qualifies -%}
+      {%- assign precip_scenario = 'wetter_maybe' -%}
       {%- assign precip_idx = first_rain_idx -%}
     {%- elsif is_now_precip == 1 -%}
-      {%- if rain_qualifies == false -%}
-        {%- assign precip_scenario = 'drier' -%}
-        {%- assign precip_idx = start_index -%}
-      {%- elsif gap_found and rain_returns -%}
+      {%- if gap_found and rain_returns -%}
         {%- assign precip_scenario = 'wet_again' -%}
         {%- assign precip_idx = back_idx -%}
       {%- elsif gap_found -%}
@@ -965,6 +1046,23 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- if is_now_snow == 1 -%}
       {%- assign pks = pk | append: '_snow' -%}
       {%- if F[pks] -%}{%- assign pk = pks -%}{%- endif -%}
+            {%- if turn_idx >= 0 -%}
+        {%- if F.p_turns_rain -%}
+          {%- assign pk = 'p_turns_rain' -%}
+          {%- assign tgap = turn_idx | minus: now_index -%}
+          {%- assign tnh = local_hour | plus: tgap -%}
+          {%- if tnh > 23 -%}{%- assign tnh = 23 -%}{%- endif -%}
+          {%- assign tnb = HOUR_BUCKET[tnh] | plus: 0 -%}
+          {%- if tnb == now_bucket and tgap >= 1 and tgap <= 3 -%}
+            {%- assign tgi = tgap | minus: 1 -%}
+            {%- assign when_precip = RELATIVE[tgi] -%}
+          {%- else -%}
+            {%- assign when_precip = BUCKETS[tnb] -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign pk = 'p_' | append: precip_scenario -%}
+        {%- endif -%}
+      {%- endif -%}
     {%- else -%}
             {%- assign p_ice = false -%}
       {%- assign p_storm = false -%}
@@ -1375,8 +1473,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- assign b_snow = '' -%}
   {%- assign b_n = 0 -%}
   {%- assign cur_rank = band_rank -%}
-  {%- assign cur_wet = is_now_precip -%}
-  {%- assign cur_snow = is_now_snow -%}
+  {%- assign cur_wet = now_wet -%}
+  {%- assign cur_snow = now_snow -%}
   {%- if has_future_window and rank_hi_list -%}
     {%- for r in rank_hi_list -%}
       {%- assign k = forloop.index0 -%}
@@ -1397,24 +1495,10 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign new_rank = cur_rank -%}
       {%- endif -%}
 
-      {%- assign j = i | plus: 1 -%}
-      {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
-      {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
-      {%- assign new_wet = cur_wet -%}
-      {%- assign new_snow = cur_snow -%}
-            {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
-        {%- assign new_wet = 1 -%}
-        {%- assign new_snow = 0 -%}
-        {%- if codes -%}
-          {%- assign cp = ',' | append: codes[i] | append: ',' -%}
-          {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
-        {%- endif -%}
-      {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
-        {%- assign new_wet = 0 -%}
-        {%- assign new_snow = 0 -%}
-      {%- endif -%}
+            {%- assign new_wet = wet_list[k] | default: cur_wet | plus: 0 -%}
+      {%- assign new_snow = snow_list[k] | default: cur_snow | plus: 0 -%}
 
-      {%- if new_rank != cur_rank or new_wet != cur_wet -%}
+      {%- if new_rank != cur_rank or new_wet != cur_wet or new_snow != cur_snow -%}
         {%- if new_rank != cur_rank -%}{%- assign kind = 'T' -%}{%- else -%}{%- assign kind = 'P' -%}{%- endif -%}
         {%- if b_n > 0 -%}
           {%- assign b_idx = b_idx | append: ',' -%}
@@ -1441,13 +1525,13 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- assign br = b_rank | split: ',' -%}
   {%- assign bw = b_wet | split: ',' -%}
   {%- assign bs = b_snow | split: ',' -%}
-  {%- assign keep = '' -%}
-  {%- assign kept = 0 -%}
-  {%- assign t_hours = ',' -%}
+  {%- assign elig = '' -%}
+  {%- assign elig_n = 0 -%}
+  {%- assign last_e = -1 -%}
   {%- for kind in bk -%}
     {%- assign idx0 = forloop.index0 -%}
     {%- assign flag = '0' -%}
-    {%- if kind == 'T' and kept < 2 -%}
+    {%- if kind == 'T' -%}
       {%- assign here = bi[idx0] | plus: 0 -%}
       {%- assign later_t = false -%}
       {%- for k2 in bk offset: forloop.index -%}
@@ -1457,9 +1541,39 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- endfor -%}
       {%- unless later_t -%}
         {%- assign flag = '1' -%}
-        {%- assign kept = kept | plus: 1 -%}
-        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+        {%- assign elig_n = elig_n | plus: 1 -%}
+        {%- assign last_e = idx0 -%}
       {%- endunless -%}
+    {%- endif -%}
+    {%- assign elig = elig | append: flag -%}
+  {%- endfor -%}
+  {%- assign best_e = -1 -%}
+  {%- assign best_d = -1 -%}
+  {%- if elig_n > 2 -%}
+    {%- for kind in bk -%}
+      {%- assign idx0 = forloop.index0 -%}
+      {%- assign flag = elig | slice: idx0 -%}
+      {%- if flag == '1' and idx0 < last_e -%}
+        {%- assign d = br[idx0] | plus: 0 | minus: band_rank | abs -%}
+        {%- if d > best_d -%}
+          {%- assign best_d = d -%}
+          {%- assign best_e = idx0 -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- assign keep = '' -%}
+  {%- assign kept = 0 -%}
+  {%- assign t_hours = ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = elig | slice: idx0 -%}
+    {%- if flag == '1' and elig_n > 2 -%}
+      {%- unless idx0 == last_e or idx0 == best_e -%}{%- assign flag = '0' -%}{%- endunless -%}
+    {%- endif -%}
+    {%- if flag == '1' -%}
+      {%- assign kept = kept | plus: 1 -%}
+      {%- assign t_hours = t_hours | append: bi[idx0] | append: ',' -%}
     {%- endif -%}
     {%- assign keep = keep | append: flag -%}
   {%- endfor -%}
@@ -1488,8 +1602,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- endfor -%}
 
     {%- assign p_rank = band_rank | append: '' -%}
-  {%- assign p_wet = is_now_precip | append: '' -%}
-  {%- assign p_snow = is_now_snow | append: '' -%}
+  {%- assign p_wet = now_wet | append: '' -%}
+  {%- assign p_snow = now_snow | append: '' -%}
   {%- assign p_hour = '' -%}
   {%- for kind in bk -%}
     {%- assign idx0 = forloop.index0 -%}
@@ -1505,7 +1619,19 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
             {%- assign wl = p_wet | split: ',' -%}
       {%- assign sl = p_snow | split: ',' -%}
       {%- assign last = wl | size | minus: 1 -%}
-      {%- if last > 0 -%}
+            {%- assign wet_it = true -%}
+      {%- if last == 0 and now_wet == 1 -%}
+                {%- assign wet_it = false -%}
+      {%- elsif last == 0 -%}
+        {%- assign here = bi[idx0] | plus: 0 -%}
+        {%- for c in chosen -%}
+          {%- if c != '' -%}
+            {%- assign d = c | plus: 0 | minus: here -%}
+            {%- if d >= 0 and d < 2 -%}{%- assign wet_it = false -%}{%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if wet_it -%}
         {%- assign p_wet = '' -%}
         {%- assign p_snow = '' -%}
         {%- for w in wl -%}
@@ -1580,6 +1706,10 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
       {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
         {%- assign panel_fact = f_temp -%}
         {%- assign flavour_line = unit_joke -%}
+      {%- endif -%}
+            {%- if forecast_on == false and f_precip != '' -%}
+        {%- assign panel_fact = f_precip -%}
+        {%- if sarcasm_level != '0' and u_for_precip and unit_joke != nil -%}{%- assign flavour_line = unit_joke -%}{%- endif -%}
       {%- endif -%}
     {%- endif -%}
         {%- if sarcasm_level != '0' and panel_n > 1 and forecast_on == false and fl_theme != true and flavour_topical != true -%}
@@ -1706,6 +1836,12 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- assign t_hour = -1 -%}
   {%- assign p_hour = -1 -%}
   {%- assign i_from = i_to | plus: 1 -%}
+    {%- assign ev_any_wet = false -%}
+  {%- if ev_wet == 1 -%}{%- assign ev_any_wet = true -%}{%- endif -%}
+  {%- assign ev_maybe = false -%}
+  {%- assign mb_run = 0 -%}
+  {%- assign mb_p0 = probs[i_to] | default: 0 | plus: 0 -%}
+  {%- if mb_p0 >= RAIN_LOW -%}{%- assign mb_run = 1 -%}{%- endif -%}
   {%- for i in (i_from..t_end) -%}
     {%- assign j = i | plus: 1 -%}
     {%- assign ta = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
@@ -1740,8 +1876,15 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
         {%- assign cp = ',' | append: codes[i] | append: ',' -%}
         {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
       {%- endif -%}
-    {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
+    {%- elsif cur_wet == 1 and p1 < RAIN_LOW and p2 < RAIN_LOW -%}
       {%- assign new_wet = 0 -%}
+    {%- endif -%}
+    {%- if new_wet == 1 -%}{%- assign ev_any_wet = true -%}{%- endif -%}
+    {%- if p1 >= RAIN_LOW -%}
+      {%- assign mb_run = mb_run | plus: 1 -%}
+      {%- if mb_run >= 2 -%}{%- assign ev_maybe = true -%}{%- endif -%}
+    {%- else -%}
+      {%- assign mb_run = 0 -%}
     {%- endif -%}
         {%- if new_rank != cur_rank and t_hour == -1 -%}
       {%- assign t_hour = i | minus: t0 -%}
@@ -1834,6 +1977,8 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
     {%- assign ek = 'tmr_snow_start' -%}{%- assign ev_sit = 'snow' -%}
   {%- elsif ev_wet == 1 -%}
     {%- assign ek = 'tmr_wet' -%}{%- assign ev_sit = 'rain' -%}
+  {%- elsif ev_maybe and ev_any_wet == false and EV.facts.tmr_maybe -%}
+    {%- assign ek = 'tmr_maybe' -%}{%- assign ev_sit = 'rain' -%}
   {%- else -%}
     {%- assign ek = 'tmr_steady' -%}{%- assign ev_sit = 'steady' -%}
   {%- endif -%}

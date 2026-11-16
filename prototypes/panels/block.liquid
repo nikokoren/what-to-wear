@@ -6,18 +6,23 @@ ends at DAY_END_HOUR, and nothing about tomorrow is ever drawn.
 
 A panel is a stretch of the day, from one change to the next:
   - a change is an outfit band crossed for two hours running (the
-    same rank lists the text logic uses), rain or snow starting (one
-    hour at RAIN_HIGH is enough: a shower counts, as in the text), or
-    two dry hours ending it;
+    same rank lists the text logic uses), or rain or snow starting,
+    stopping or turning into the other. Wet or dry is not worked out
+    here: it is read from the shared rain timeline (wet_list, snow_list,
+    ONE RAIN TIMELINE in src/shared.liquid), the one the words go by;
   - tee_pants and tee_shorts count as one outfit later in the day: legs
     are decided at the door. On a shorts day (three hours or more of
     shorts weather, THE LONG-PANTS RULE) the warm drawings are shorts;
-  - the "now" panel shows rain only if it is falling now; a later panel
+  - the "now" panel shows rain if it is falling now, due within the
+    hour (now_wet), or starting inside it with no panel of its own;
+    a later panel
     shows it if it starts with that panel, or anywhere inside it once
     panels are merged;
   - at most three panels. Outfit changes win; a rain change only gets
     its own panel while there is room, and otherwise wets the panel it
-    falls in.
+    falls in. With more than two outfit changes, the last one is always
+    kept (where the day ends up: the layer that goes back on in the
+    evening), and of the earlier ones the outfit furthest from now.
 
 Text: with the Forecast switch on, the forecast line and the sarcastic
 line, as in words. With only this one: one panel says "this works all
@@ -52,8 +57,8 @@ after the fact + flavour block and the picture.
   {%- assign b_snow = '' -%}
   {%- assign b_n = 0 -%}
   {%- assign cur_rank = band_rank -%}
-  {%- assign cur_wet = is_now_precip -%}
-  {%- assign cur_snow = is_now_snow -%}
+  {%- assign cur_wet = now_wet -%}
+  {%- assign cur_snow = now_snow -%}
   {%- if has_future_window and rank_hi_list -%}
     {%- for r in rank_hi_list -%}
       {%- assign k = forloop.index0 -%}
@@ -76,25 +81,11 @@ after the fact + flavour block and the picture.
         {%- assign new_rank = cur_rank -%}
       {%- endif -%}
 
-      {%- assign j = i | plus: 1 -%}
-      {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
-      {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
-      {%- assign new_wet = cur_wet -%}
-      {%- assign new_snow = cur_snow -%}
-      {%- comment %} One likely hour starts it (a shower counts, as in the text); only two dry hours end it. {%- endcomment %}
-      {%- if cur_wet == 0 and p1 >= RAIN_HIGH -%}
-        {%- assign new_wet = 1 -%}
-        {%- assign new_snow = 0 -%}
-        {%- if codes -%}
-          {%- assign cp = ',' | append: codes[i] | append: ',' -%}
-          {%- if SNOW_CODES contains cp -%}{%- assign new_snow = 1 -%}{%- endif -%}
-        {%- endif -%}
-      {%- elsif cur_wet == 1 and p1 < RAIN_HIGH and p2 < RAIN_HIGH -%}
-        {%- assign new_wet = 0 -%}
-        {%- assign new_snow = 0 -%}
-      {%- endif -%}
+      {%- comment %} Wet or dry, snow or rain: the shared timeline's answer for this hour. {%- endcomment %}
+      {%- assign new_wet = wet_list[k] | default: cur_wet | plus: 0 -%}
+      {%- assign new_snow = snow_list[k] | default: cur_snow | plus: 0 -%}
 
-      {%- if new_rank != cur_rank or new_wet != cur_wet -%}
+      {%- if new_rank != cur_rank or new_wet != cur_wet or new_snow != cur_snow -%}
         {%- if new_rank != cur_rank -%}{%- assign kind = 'T' -%}{%- else -%}{%- assign kind = 'P' -%}{%- endif -%}
         {%- if b_n > 0 -%}
           {%- assign b_idx = b_idx | append: ',' -%}
@@ -119,21 +110,26 @@ after the fact + flavour block and the picture.
   {%- comment %}
   Pick at most two changes, at least two hours apart. Outfit changes
   first: of two within two hours the later one wins, since it's where
-  the day settles. Then rain changes, while there is room and nothing
-  chosen is within two hours. keep2 is a 0/1 string over all changes.
+  the day settles. With more than two left, keep the last one (where
+  the day ends up; on a day that warms and cools again it's the layer
+  to bring) and, of the ones before it, the outfit furthest from what's
+  on now (the earliest of equals). The first two in order used to win,
+  and coat, jacket, sweater, jacket lost its evening jacket. Then rain
+  changes, while there is room and nothing chosen is within two hours.
+  keep2 is a 0/1 string over all changes.
   {%- endcomment %}
   {%- assign bi = b_idx | split: ',' -%}
   {%- assign bk = b_kind | split: ',' -%}
   {%- assign br = b_rank | split: ',' -%}
   {%- assign bw = b_wet | split: ',' -%}
   {%- assign bs = b_snow | split: ',' -%}
-  {%- assign keep = '' -%}
-  {%- assign kept = 0 -%}
-  {%- assign t_hours = ',' -%}
+  {%- assign elig = '' -%}
+  {%- assign elig_n = 0 -%}
+  {%- assign last_e = -1 -%}
   {%- for kind in bk -%}
     {%- assign idx0 = forloop.index0 -%}
     {%- assign flag = '0' -%}
-    {%- if kind == 'T' and kept < 2 -%}
+    {%- if kind == 'T' -%}
       {%- assign here = bi[idx0] | plus: 0 -%}
       {%- assign later_t = false -%}
       {%- for k2 in bk offset: forloop.index -%}
@@ -143,9 +139,39 @@ after the fact + flavour block and the picture.
       {%- endfor -%}
       {%- unless later_t -%}
         {%- assign flag = '1' -%}
-        {%- assign kept = kept | plus: 1 -%}
-        {%- assign t_hours = t_hours | append: here | append: ',' -%}
+        {%- assign elig_n = elig_n | plus: 1 -%}
+        {%- assign last_e = idx0 -%}
       {%- endunless -%}
+    {%- endif -%}
+    {%- assign elig = elig | append: flag -%}
+  {%- endfor -%}
+  {%- assign best_e = -1 -%}
+  {%- assign best_d = -1 -%}
+  {%- if elig_n > 2 -%}
+    {%- for kind in bk -%}
+      {%- assign idx0 = forloop.index0 -%}
+      {%- assign flag = elig | slice: idx0 -%}
+      {%- if flag == '1' and idx0 < last_e -%}
+        {%- assign d = br[idx0] | plus: 0 | minus: band_rank | abs -%}
+        {%- if d > best_d -%}
+          {%- assign best_d = d -%}
+          {%- assign best_e = idx0 -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- assign keep = '' -%}
+  {%- assign kept = 0 -%}
+  {%- assign t_hours = ',' -%}
+  {%- for kind in bk -%}
+    {%- assign idx0 = forloop.index0 -%}
+    {%- assign flag = elig | slice: idx0 -%}
+    {%- if flag == '1' and elig_n > 2 -%}
+      {%- unless idx0 == last_e or idx0 == best_e -%}{%- assign flag = '0' -%}{%- endunless -%}
+    {%- endif -%}
+    {%- if flag == '1' -%}
+      {%- assign kept = kept | plus: 1 -%}
+      {%- assign t_hours = t_hours | append: bi[idx0] | append: ',' -%}
     {%- endif -%}
     {%- assign keep = keep | append: flag -%}
   {%- endfor -%}
@@ -175,8 +201,8 @@ after the fact + flavour block and the picture.
 
   {%- comment %} The panels: the now panel, then one per kept change. A dropped rain start wets the panel it falls in. {%- endcomment %}
   {%- assign p_rank = band_rank | append: '' -%}
-  {%- assign p_wet = is_now_precip | append: '' -%}
-  {%- assign p_snow = is_now_snow | append: '' -%}
+  {%- assign p_wet = now_wet | append: '' -%}
+  {%- assign p_snow = now_snow | append: '' -%}
   {%- assign p_hour = '' -%}
   {%- for kind in bk -%}
     {%- assign idx0 = forloop.index0 -%}
@@ -193,7 +219,26 @@ after the fact + flavour block and the picture.
       {%- assign wl = p_wet | split: ',' -%}
       {%- assign sl = p_snow | split: ',' -%}
       {%- assign last = wl | size | minus: 1 -%}
-      {%- if last > 0 -%}
+      {%- comment %}
+      Still the Now panel: it gets the umbrella too, unless a kept change
+      follows within two hours (that panel is drawn wet already).
+      Otherwise a shower between now and the first change was drawn
+      nowhere while the words said "take the umbrella".
+      {%- endcomment %}
+      {%- assign wet_it = true -%}
+      {%- if last == 0 and now_wet == 1 -%}
+        {%- comment %} Already wet with what's falling now: it keeps its own rain or snow. {%- endcomment %}
+        {%- assign wet_it = false -%}
+      {%- elsif last == 0 -%}
+        {%- assign here = bi[idx0] | plus: 0 -%}
+        {%- for c in chosen -%}
+          {%- if c != '' -%}
+            {%- assign d = c | plus: 0 | minus: here -%}
+            {%- if d >= 0 and d < 2 -%}{%- assign wet_it = false -%}{%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if wet_it -%}
         {%- assign p_wet = '' -%}
         {%- assign p_snow = '' -%}
         {%- for w in wl -%}
@@ -276,6 +321,16 @@ after the fact + flavour block and the picture.
       {%- if sarcasm_level != '0' and forecast_on == false and fl_theme != true and unit_joke != nil and f_precip == '' -%}
         {%- assign panel_fact = f_temp -%}
         {%- assign flavour_line = unit_joke -%}
+      {%- endif -%}
+      {%- comment %}
+      One drawing can't show rain that's only possible, or coming and
+      going inside it: then the rain sentence is the one to show, not
+      "works all day" (with its own joke where the pair was written as
+      a unit).
+      {%- endcomment %}
+      {%- if forecast_on == false and f_precip != '' -%}
+        {%- assign panel_fact = f_precip -%}
+        {%- if sarcasm_level != '0' and u_for_precip and unit_joke != nil -%}{%- assign flavour_line = unit_joke -%}{%- endif -%}
       {%- endif -%}
     {%- endif -%}
     {%- comment %}

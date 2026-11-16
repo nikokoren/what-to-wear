@@ -247,6 +247,12 @@
       "It snows for now, takes a break, and starts again {WHENP}.",
       "After a break later on, the snow returns {WHENP}."
     ],
+    "p_turns_rain": [
+      "The snow turns to rain {WHENP}. Bring the umbrella.",
+      "It's snowing now, but {WHENP} it turns to rain. Take the umbrella.",
+      "{WHENP} the snow becomes rain, so bring the umbrella.",
+      "Snow for now, rain {WHENP}. Have the umbrella with you."
+    ],
     "shorts_swing": [
       "Shorts weather arrives {WHEN}, so think about wearing shorts now and keep {G} just for the start.",
       "{WHEN} it's shorts weather. Maybe wear shorts now and keep {G} for the cold start.",

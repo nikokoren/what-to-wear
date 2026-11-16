@@ -327,6 +327,9 @@ single contains test instead of a chained and/or condition.
 {%- assign heat_danger = false -%}
 {%- assign stop_idx = -1 -%}
 {%- assign is_now_snow = 0 -%}
+{%- assign now_wet = 0 -%}
+{%- assign now_snow = 0 -%}
+{%- assign turn_idx = -1 -%}
 {%- assign band = 'mild' -%}
 {%- assign band_rank = 5 -%}
 {%- assign weather_slug = '' -%}
@@ -437,6 +440,31 @@ single contains test instead of a chained and/or condition.
   {%- assign probs = h.precipitation_probability -%}
   {%- assign codes = h.weather_code -%}
 
+  {%- comment %}
+  Dry by the current weather code, but this very hour is forecast at
+  RAIN_HIGH or more: the rain is due before the next hour starts, which
+  is where the window begins. The drawing gets its umbrella now and the
+  words count it as rain coming (is_now_precip stays 0: nothing is
+  falling yet).
+  {%- endcomment %}
+  {%- assign now_wet = is_now_precip -%}
+  {%- assign now_snow = is_now_snow -%}
+  {%- if is_now_precip == 0 and probs != nil -%}
+    {%- assign now_prob = probs[now_index] | default: 0 | plus: 0 -%}
+    {%- if now_prob >= RAIN_HIGH -%}
+      {%- assign now_wet = 1 -%}
+      {%- assign precip_suffix = 'rain' -%}
+      {%- if codes != nil -%}
+        {%- assign c_probe = ',' | append: codes[now_index] | append: ',' -%}
+        {%- if SNOW_CODES contains c_probe -%}
+          {%- assign now_snow = 1 -%}
+          {%- assign precip_suffix = 'snow' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign weather_slug = band | append: '_' | append: precip_suffix -%}
+    {%- endif -%}
+  {%- endif -%}
+
   {%- if temps != nil and probs != nil and cutoff_hour > local_hour -%}
     {%- assign h_count = temps | size | default: 0 -%}
     {%- assign last_index = h_count | minus: 1 -%}
@@ -480,6 +508,8 @@ single contains test instead of a chained and/or condition.
       {%- endcomment %}
       {%- assign max_temp_future = temp_c -%}
       {%- assign max_temp_idx = now_index -%}
+      {%- assign scorch_c = band_edge_list | last | plus: 0 -%}
+      {%- assign scorch_hours = 0 -%}
       {%- assign up_rank = band_rank -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign tv = temps[i] | default: temps_air[i] | default: temp_c | plus: 0 -%}
@@ -506,6 +536,9 @@ single contains test instead of a chained and/or condition.
           {%- if hi_banded > edge_c -%}{%- assign r_hi = forloop.index | plus: 1 -%}{%- endif -%}
           {%- if lo_banded > edge_c -%}{%- assign r_lo = forloop.index | plus: 1 -%}{%- endif -%}
         {%- endfor -%}
+
+        {%- comment %} Dangerous heat is read off the raw feels-like value: a warning is not a preference. {%- endcomment %}
+        {%- if held_hi > scorch_c -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
 
         {%- if held_hi > max_temp_future -%}
           {%- assign max_temp_future = held_hi -%}
@@ -583,14 +616,16 @@ single contains test instead of a chained and/or condition.
       pants at the door (pants_swing, where the language has it); the
       drawing shows today's shorts weather as it is. Getting cold costs
       more than being warm, so this wins over shorts early.
-      Dangerous heat: two hours or more above 34 C feels-like
-      (extreme_heat). The forecast line leads with water and shade
+      Dangerous heat: two hours or more above 34 C feels-like, or above
+      it now. Counted in the walk above on the reading as it is, not as
+      shifted by "Do you run cold or warm?": someone who is always cold
+      still gets the warning at 34 C, and someone who runs warm doesn't
+      get it at 30. The forecast line leads with water and shade
       (heat_danger), whatever else the day does.
       {%- endcomment %}
       {%- assign pants_swing = false -%}
       {%- assign pants_idx = -1 -%}
       {%- assign cold_hours = 0 -%}
-      {%- assign scorch_hours = 0 -%}
       {%- for r in rank_lo_list -%}
         {%- assign rv = r | plus: 0 -%}
         {%- assign hv = rank_hi_list[forloop.index0] | plus: 0 -%}
@@ -598,7 +633,6 @@ single contains test instead of a chained and/or condition.
           {%- assign cold_hours = cold_hours | plus: 1 -%}
           {%- if pants_idx < 0 -%}{%- assign pants_idx = start_index | plus: forloop.index0 -%}{%- endif -%}
         {%- endif -%}
-        {%- if hv >= 8 -%}{%- assign scorch_hours = scorch_hours | plus: 1 -%}{%- endif -%}
       {%- endfor -%}
       {%- comment %} Liquid reads and/or right to left, so the two cases are spelled out. {%- endcomment %}
       {%- assign legs_short = shorts_early -%}
@@ -607,7 +641,7 @@ single contains test instead of a chained and/or condition.
         {%- assign pants_swing = true -%}
         {%- assign shorts_early = false -%}
       {%- endif -%}
-      {%- if scorch_hours >= 2 or band_rank >= 8 -%}{%- assign heat_danger = true -%}{%- endif -%}
+      {%- if scorch_hours >= 2 or temp_c > scorch_c -%}{%- assign heat_danger = true -%}{%- endif -%}
 
       {%- comment %}
       Two different cold spells, kept apart because they tell different
@@ -640,27 +674,33 @@ single contains test instead of a chained and/or condition.
       {%- endfor -%}
 
       {%- comment %}
-      Two tier rain. Qualifies when either two consecutive hours
-      reach RAIN_LOW or any single hour reaches RAIN_HIGH. This is
-      what kills the summer convection false positives that a flat
-      20 percent threshold produced.
+      ============ ONE RAIN TIMELINE ============
+      The words and the drawings read the same hour-by-hour answer to "is
+      it wet?", so they can't disagree:
 
-      The same pass looks for a dry break: two consecutive hours under
-      RAIN_LOW. When it is raining now, that break is the difference
-      between "this clears", "this never lets up" and "this stops and
-      comes back", and the rain after the break is judged on its own.
+        it starts   at one hour of RAIN_HIGH or more (a shower counts);
+        it stops    at the first of two hours running under RAIN_LOW;
+        in between  it stays wet, whatever the hours say.
+
+      wet_list / snow_list hold that answer for every hour of the window
+      (the same indexes as the rank lists); now_wet / now_snow are where
+      it starts from. Before this the words stopped the rain at RAIN_LOW
+      and the drawings at RAIN_HIGH, and a wet day at 40 percent read
+      "raining all day" under a dry drawing.
+
+      "Maybe" is the one tier with no drawing: two hours running at
+      RAIN_LOW and never an hour at RAIN_HIGH. This is what kills the
+      summer convection false positives that a flat 20 percent threshold
+      produced.
+
+      While it is raining now and nothing ahead qualifies as rain, it is
+      taken to stop with the next hour.
+
+      Snow or rain is read per wet hour from its weather code, so snow
+      that turns to rain (turn_idx) is not "snow all day".
       {%- endcomment %}
       {%- assign run_len = 0 -%}
       {%- assign best_run = 0 -%}
-      {%- assign dry_run = 0 -%}
-      {%- assign gap_found = false -%}
-      {%- assign back_run = 0 -%}
-      {%- assign back_best = 0 -%}
-      {%- assign back_peak = 0 -%}
-      {%- assign back_idx = -1 -%}
-      {%- comment %} When the rain stops: the first dry hour of the first dry break (for {WHENSTOP}). {%- endcomment %}
-      {%- assign stop_idx = -1 -%}
-      {%- assign stop_try = -1 -%}
       {%- for i in (start_index..end_index) -%}
         {%- assign pv = probs[i] | default: 0 | plus: 0 -%}
         {%- if pv > peak_rain -%}
@@ -677,41 +717,117 @@ single contains test instead of a chained and/or condition.
         {%- else -%}
           {%- assign run_len = 0 -%}
         {%- endif -%}
-
-        {%- if gap_found -%}
-          {%- if pv > back_peak -%}
-            {%- assign back_peak = pv -%}
-          {%- endif -%}
-          {%- if pv >= RAIN_LOW -%}
-            {%- assign back_run = back_run | plus: 1 -%}
-            {%- if back_run > back_best -%}
-              {%- assign back_best = back_run -%}
-            {%- endif -%}
-            {%- if back_idx < 0 -%}
-              {%- assign back_idx = i -%}
-            {%- endif -%}
-          {%- else -%}
-            {%- assign back_run = 0 -%}
-          {%- endif -%}
-        {%- elsif pv < RAIN_LOW -%}
-          {%- assign dry_run = dry_run | plus: 1 -%}
-          {%- if dry_run == 1 -%}{%- assign stop_try = i -%}{%- endif -%}
-          {%- if dry_run >= 2 -%}
-            {%- assign gap_found = true -%}
-            {%- assign stop_idx = stop_try -%}
-          {%- endif -%}
-        {%- else -%}
-          {%- assign dry_run = 0 -%}
-        {%- endif -%}
       {%- endfor -%}
-
       {%- if best_run >= 2 or peak_rain >= RAIN_HIGH -%}
         {%- assign rain_qualifies = true -%}
       {%- endif -%}
-      {%- assign rain_returns = false -%}
-      {%- if back_best >= 2 or back_peak >= RAIN_HIGH -%}
-        {%- assign rain_returns = true -%}
+      {%- assign force_dry = false -%}
+      {%- if is_now_precip == 1 and rain_qualifies == false -%}
+        {%- assign force_dry = true -%}
       {%- endif -%}
+
+      {%- assign tl_wet = now_wet -%}
+      {%- assign tl_snow = now_snow -%}
+      {%- assign wet_csv = '' -%}
+      {%- assign snow_csv = '' -%}
+      {%- comment %} Not raining now: where it starts, and how many hours that first rain lasts. {%- endcomment %}
+      {%- assign first_wet_idx = -1 -%}
+      {%- assign wet_run = 0 -%}
+      {%- assign run_open = false -%}
+      {%- if is_now_precip == 0 and now_wet == 1 -%}
+        {%- assign first_wet_idx = now_index -%}
+        {%- assign wet_run = 1 -%}
+        {%- assign run_open = true -%}
+      {%- endif -%}
+      {%- comment %} Raining now: the first dry hour (for {WHENSTOP}), and where it comes back. {%- endcomment %}
+      {%- assign stop_idx = -1 -%}
+      {%- assign back_idx = -1 -%}
+      {%- assign turn_idx = -1 -%}
+      {%- for i in (start_index..end_index) -%}
+        {%- assign j = i | plus: 1 -%}
+        {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+        {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+        {%- assign code_snow = false -%}
+        {%- assign code_rain = false -%}
+        {%- if codes != nil -%}
+          {%- assign c_probe = ',' | append: codes[i] | append: ',' -%}
+          {%- if SNOW_CODES contains c_probe -%}
+            {%- assign code_snow = true -%}
+          {%- elsif RAIN_CODES contains c_probe -%}
+            {%- assign code_rain = true -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- comment %} An hour whose code is snow counts as wet whatever its percentage: it is what "snow coming" goes by. {%- endcomment %}
+        {%- assign new_wet = tl_wet -%}
+        {%- if tl_wet == 0 -%}
+          {%- if p1 >= RAIN_HIGH or code_snow -%}{%- assign new_wet = 1 -%}{%- endif -%}
+        {%- elsif code_snow -%}
+          {%- assign new_wet = 1 -%}
+        {%- elsif force_dry -%}
+          {%- assign new_wet = 0 -%}
+        {%- elsif p1 < RAIN_LOW and p2 < RAIN_LOW -%}
+          {%- assign new_wet = 0 -%}
+        {%- endif -%}
+        {%- assign new_snow = 0 -%}
+        {%- if new_wet == 1 -%}
+          {%- if tl_wet == 1 -%}{%- assign new_snow = tl_snow -%}{%- endif -%}
+          {%- if code_snow -%}
+            {%- assign new_snow = 1 -%}
+          {%- elsif code_rain -%}
+            {%- assign new_snow = 0 -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if new_wet == 1 and tl_wet == 0 -%}
+          {%- if is_now_precip == 1 -%}
+            {%- if back_idx < 0 -%}{%- assign back_idx = i -%}{%- endif -%}
+          {%- elsif first_wet_idx < 0 -%}
+            {%- assign first_wet_idx = i -%}
+            {%- assign run_open = true -%}
+          {%- endif -%}
+        {%- elsif new_wet == 0 and tl_wet == 1 -%}
+          {%- if is_now_precip == 1 and stop_idx < 0 -%}{%- assign stop_idx = i -%}{%- endif -%}
+          {%- assign run_open = false -%}
+        {%- endif -%}
+        {%- if run_open and new_wet == 1 -%}{%- assign wet_run = wet_run | plus: 1 -%}{%- endif -%}
+        {%- if is_now_snow == 1 and turn_idx < 0 and new_wet == 1 and new_snow == 0 -%}
+          {%- assign turn_idx = i -%}
+        {%- endif -%}
+
+        {%- unless forloop.first -%}
+          {%- assign wet_csv = wet_csv | append: ',' -%}
+          {%- assign snow_csv = snow_csv | append: ',' -%}
+        {%- endunless -%}
+        {%- assign wet_csv = wet_csv | append: new_wet -%}
+        {%- assign snow_csv = snow_csv | append: new_snow -%}
+        {%- assign tl_wet = new_wet -%}
+        {%- assign tl_snow = new_snow -%}
+      {%- endfor -%}
+      {%- assign wet_list = wet_csv | split: ',' -%}
+      {%- assign snow_list = snow_csv | split: ',' -%}
+
+      {%- comment %}
+      Rain still falling where the window ends: how long it goes on is
+      read from the hours after it (tomorrow's, with forecast_days=2), so
+      rain that sets in at 10 pm for the night isn't "a short shower".
+      {%- endcomment %}
+      {%- if run_open and wet_run < 4 and end_index < last_index -%}
+        {%- assign past_from = end_index | plus: 1 -%}
+        {%- assign past_to = end_index | plus: 4 -%}
+        {%- if past_to > last_index -%}{%- assign past_to = last_index -%}{%- endif -%}
+        {%- for i in (past_from..past_to) -%}
+          {%- assign j = i | plus: 1 -%}
+          {%- assign p1 = probs[i] | default: 0 | plus: 0 -%}
+          {%- assign p2 = probs[j] | default: p1 | plus: 0 -%}
+          {%- if p1 < RAIN_LOW and p2 < RAIN_LOW -%}{%- break -%}{%- endif -%}
+          {%- assign wet_run = wet_run | plus: 1 -%}
+        {%- endfor -%}
+      {%- endif -%}
+
+      {%- assign gap_found = false -%}
+      {%- if stop_idx >= 0 -%}{%- assign gap_found = true -%}{%- endif -%}
+      {%- assign rain_returns = false -%}
+      {%- if back_idx >= 0 -%}{%- assign rain_returns = true -%}{%- endif -%}
 
       {%- comment %}
       Snow anywhere in the window. Needs weather_code in the HOURLY list of
@@ -950,6 +1066,10 @@ single contains test instead of a chained and/or condition.
 
     {%- comment %}
     ============ PRECIP SCENARIO ============
+    All read off the rain timeline above. Not raining now:
+      it starts (an hour at RAIN_HIGH), four hours or more      -> wetter_long
+      it starts, shorter                                        -> wetter
+      never RAIN_HIGH, but two hours running at RAIN_LOW        -> wetter_maybe
     While it is raining now:
       nothing qualifies, or a dry break with nothing behind it -> drier
       a dry break, then rain that qualifies on its own          -> wet_again
@@ -961,20 +1081,18 @@ single contains test instead of a chained and/or condition.
     {%- if future_has_snow and is_now_snow == 0 -%}
       {%- assign precip_scenario = 'snow_coming' -%}
       {%- assign precip_idx = first_snow_idx -%}
-    {%- elsif is_now_precip == 0 and rain_qualifies -%}
-      {%- if peak_rain < 60 -%}
-        {%- assign precip_scenario = 'wetter_maybe' -%}
-      {%- elsif best_run >= 4 -%}
+    {%- elsif is_now_precip == 0 and first_wet_idx >= 0 -%}
+      {%- if wet_run >= 4 -%}
         {%- assign precip_scenario = 'wetter_long' -%}
       {%- else -%}
         {%- assign precip_scenario = 'wetter' -%}
       {%- endif -%}
+      {%- assign precip_idx = first_wet_idx -%}
+    {%- elsif is_now_precip == 0 and rain_qualifies -%}
+      {%- assign precip_scenario = 'wetter_maybe' -%}
       {%- assign precip_idx = first_rain_idx -%}
     {%- elsif is_now_precip == 1 -%}
-      {%- if rain_qualifies == false -%}
-        {%- assign precip_scenario = 'drier' -%}
-        {%- assign precip_idx = start_index -%}
-      {%- elsif gap_found and rain_returns -%}
+      {%- if gap_found and rain_returns -%}
         {%- assign precip_scenario = 'wet_again' -%}
         {%- assign precip_idx = back_idx -%}
       {%- elsif gap_found -%}
