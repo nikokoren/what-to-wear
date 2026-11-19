@@ -1,0 +1,287 @@
+{
+ "_about": "Runde 39, nach Formen geschrieben (docs/SHAPES.md). 'cut': vom Kritiker gestrichen, mit der Regel aus docs/CRITIC.md. 'live': steht schon in den Texten, hier zum ersten Mal zur Abstimmung.",
+ "facts": {
+  "p_turns_rain": [
+   {
+    "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit.",
+    "live": true
+   },
+   {
+    "text": "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein.",
+    "live": true
+   },
+   {
+    "text": "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit.",
+    "live": true
+   },
+   {
+    "text": "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit.",
+    "live": true
+   },
+   {
+    "text": "Noch schneit es, aber {WHENP} geht's in Regen über. Nimm den Schirm mit."
+   },
+   {
+    "text": "{WHENP} wird der Schnee zu Regen. Denk an den Schirm."
+   },
+   {
+    "text": "Der Schnee wird {WHENP} zu Regen, also pack den Schirm ein."
+   },
+   {
+    "text": "Jetzt schneit's noch, {WHENP} regnet's. Nimm den Schirm mit."
+   },
+   {
+    "text": "Lang schneit's nicht mehr: {WHENP} kommt Regen. Nimm den Schirm mit."
+   },
+   {
+    "text": "{WHENP} regnet's, statt zu schneien, also nimm den Schirm mit.",
+    "was": "{WHENP} regnet's statt zu schneien, also nimm den Schirm mit."
+   },
+   {
+    "text": "{WHENP} setzt Tauwetter ein.",
+    "cut": "ein Begriff, den die Vorhersage nicht hergibt: Regen heißt nicht, dass es taut"
+   },
+   {
+    "text": "Ab {WHENP} Regen statt Schnee.",
+    "cut": "Präposition vor dem Platzhalter; zu knapp"
+   }
+  ],
+  "evening_tmr_maybe": [
+   {
+    "text": "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+    "live": true
+   },
+   {
+    "text": "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+    "live": true
+   },
+   {
+    "text": "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht.",
+    "live": true
+   },
+   {
+    "text": "Morgen passt ein Outfit für den ganzen Tag. Regnen kann's aber, also lieber den Schirm einpacken."
+   },
+   {
+    "text": "Morgen musst du dich nicht umziehen, aber es könnte regnen. Ein Schirm schadet nicht."
+   },
+   {
+    "text": "Morgen könnte es regnen, nimm also lieber den Schirm mit. Das Outfit passt den ganzen Tag."
+   },
+   {
+    "text": "Morgen ändert sich am Outfit nichts. Vielleicht regnet's, der Schirm schadet also nicht."
+   },
+   {
+    "text": "Morgen ist Regen möglich, sonst bleibt alles gleich. Nimm lieber den Schirm mit."
+   },
+   {
+    "text": "Morgen wahrscheinlich kein Regen.",
+    "cut": "Wahrscheinlichkeit, die die Daten so nicht hergeben"
+   }
+  ]
+ },
+ "units": {
+  "10": [
+   {
+    "fact": 0,
+    "joke": "Erst Schnee, dann Matsch. Auch das noch.",
+    "shape": "sigh"
+   },
+   {
+    "fact": 1,
+    "joke": "„Wie schön, Schnee!“ Ja. Noch.",
+    "shape": "quote"
+   },
+   {
+    "fact": 2,
+    "joke": "Schön war's. Hat nicht lang gehalten, wie alles Schöne.",
+    "shape": "sigh"
+   },
+   {
+    "fact": 3,
+    "joke": "Schnee hätt ich gern länger gezeichnet. Regen kann jeder.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Kaum liegt was, ist's schon wieder Matsch.",
+    "shape": "sigh"
+   },
+   {
+    "fact": 1,
+    "joke": "Für einen Schneemann reicht's nicht. Für nasse Füße schon.",
+    "shape": "sigh"
+   },
+   {
+    "fact": 2,
+    "joke": "Ich bleib eh im Trockenen. Viel Spaß da draußen.",
+    "shape": "self",
+    "was": "Ich bleib eh trocken. Euch draußen wünsch ich viel Spaß."
+   },
+   {
+    "fact": 3,
+    "joke": "„Endlich Winter“, haben sie gesagt. Hat sich erledigt.",
+    "shape": "quote"
+   },
+   {
+    "fact": 0,
+    "joke": "Matsch. Das Lieblingswetter von niemandem.",
+    "shape": "people"
+   },
+   {
+    "fact": 1,
+    "joke": "Der Winter probt heute nur.",
+    "shape": "other",
+    "cut": "unklar beim ersten Lesen"
+   },
+   {
+    "fact": 2,
+    "joke": "Schneeschippen kannst du dir sparen. Den Schirm nicht.",
+    "shape": "other",
+    "cut": "Annahme über das Leben des Lesers (Schneeschippen)"
+   },
+   {
+    "fact": 3,
+    "joke": "Typisch Wetter, typisch Winter, typisch alles.",
+    "shape": "sigh",
+    "cut": "nicht witzig: Gejammer ohne Pointe"
+   }
+  ],
+  "11": [
+   {
+    "fact": 0,
+    "joke": "Erst Fotos, dann Gejammer. Ich kenn dich.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "Den Schirm findest du eh nicht. Fang jetzt an zu suchen.",
+    "shape": "habit"
+   },
+   {
+    "fact": 2,
+    "joke": "Viel ruinieren kann der Regen an deiner Frisur nicht mehr.",
+    "shape": "jab"
+   },
+   {
+    "fact": 3,
+    "joke": "Und gleich sagst du wieder „typisch“.",
+    "shape": "quote"
+   },
+   {
+    "fact": 0,
+    "joke": "Nass wirst du heute zweimal. Draus lernen wirst du nichts.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "„Schneit's noch?“ Nicht mehr lang. Hör auf zu fragen.",
+    "shape": "parent"
+   },
+   {
+    "fact": 2,
+    "joke": "Du wolltest Winter. Bitte, da hast du ihn. Kurz.",
+    "shape": "quote"
+   },
+   {
+    "fact": 3,
+    "joke": "Schnee steht dir. Regen eher nicht.",
+    "shape": "jab",
+    "was": "Der Schnee steht dir. Der Regen wird's nicht."
+   },
+   {
+    "fact": 0,
+    "joke": "Schnee oder Regen, beschweren wirst du dich so oder so.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "Wenn du jetzt einen Schneemann baust, schaust du ihm später beim Schmelzen zu.",
+    "shape": "other",
+    "cut": "zu lang, und keine Spitze gegen dich"
+   },
+   {
+    "fact": 2,
+    "joke": "Wie dein Gemüt: erst kalt, dann trüb.",
+    "shape": "simile",
+    "cut": "„wie dein X“"
+   },
+   {
+    "fact": 3,
+    "joke": "Beim ersten nassen Socken weißt du's wieder.",
+    "shape": "habit",
+    "cut": "ein einmaliger Moment, den der Bildschirm nicht timen kann"
+   }
+  ]
+ },
+ "evening_jokes": {
+  "10": [
+   {
+    "joke": "Vielleicht Regen. Das Wetter, bei dem ich nie falsch lieg.",
+    "shape": "self"
+   },
+   {
+    "joke": "Regnet's, hab ich's gesagt. Regnet's nicht, auch recht.",
+    "shape": "self"
+   },
+   {
+    "joke": "Schirm oder nicht? Das weiß nicht mal das Wetter.",
+    "shape": "sigh"
+   },
+   {
+    "joke": "Ich bleib morgen eh trocken. Mir kann's wurscht sein.",
+    "shape": "self"
+   },
+   {
+    "joke": "„Vielleicht“. Das ehrlichste Wort im ganzen Wetterbericht.",
+    "shape": "quote"
+   },
+   {
+    "joke": "Einen Schirm umsonst rumschleppen. Das ist halt das Risiko.",
+    "shape": "sigh"
+   },
+   {
+    "joke": "„Wird schon nicht regnen.“ Berühmte letzte Worte.",
+    "shape": "quote",
+    "cut": "Klischee"
+   },
+   {
+    "joke": "Ich würd ja einen mitnehmen. Hab nur keine Hände.",
+    "shape": "self",
+    "cut": "derselbe Witz wie in der englischen Runde, gleiche Form: nur eine Übersetzung"
+   }
+  ],
+  "11": [
+   {
+    "joke": "Den Schirm lässt du eh daheim. Ich kenn dich.",
+    "shape": "habit"
+   },
+   {
+    "joke": "Und morgen früh fragst du mich trotzdem noch mal.",
+    "shape": "habit"
+   },
+   {
+    "joke": "Nimm ihn mit oder jammer morgen. Du hast die Wahl.",
+    "shape": "parent"
+   },
+   {
+    "joke": "„Wird schon nicht regnen“, sagst du. Hast du letztes Mal auch gesagt.",
+    "shape": "quote"
+   },
+   {
+    "joke": "Du bist eh der Typ, der im Regen ohne Schirm dasteht.",
+    "shape": "jab"
+   },
+   {
+    "joke": "Das Wetter ist unentschlossen wie du. Ihr zwei würdet euch verstehen.",
+    "shape": "jab",
+    "was": "Unentschlossen wie du. Ihr zwei würdet euch verstehen."
+   },
+   {
+    "joke": "Du und Schirme. Das wird nie eine Liebesgeschichte.",
+    "shape": "jab",
+    "cut": "unklar ohne Vorwissen"
+   }
+  ]
+ }
+}

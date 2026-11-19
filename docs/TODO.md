@@ -35,11 +35,15 @@ Fixed in `src/shared.liquid` and the prototypes, pinned by
 - Dangerous heat goes by the raw feels-like reading, not the one shifted
   by "Do you run cold or warm?".
 
-**For the owner to read (not voted):** the new plain sentences,
-`facts.p_turns_rain` (4 per language, `prototypes/fact-flavour/lang/`)
-and `evening.facts.tmr_maybe` (3 per language, `prototypes/panels/lang/`).
-A language without them falls back to the rain wording and to "one
-outfit all day".
+**Round 39 (`2026-11-turns`), on the review page:** the first round
+written by shape (`docs/SHAPES.md`). More wordings for both new
+situations, the four and three written without a vote included; units at
+On and 11 for snow turning to rain; and the evening line for a maybe-rain
+tomorrow (`evening.jokes_10/11.maybe`, new; until it's voted the markup
+borrows the rain lines, which promise rain the forecast doesn't). After
+the vote: `review_sync.py`, then `build_pools.py` and `apply_evening.py`.
+Then `tools/shape_report.py`: if this round's veto rate is clearly under
+the thin rounds' (55 to 83%), write the weak pools the same way next.
 
 **Step 1 of the rollout** now carries one old wording per situation, not
 two (`STEP1_PER_KEY` in `tools/build_release.py`): the markup grew by

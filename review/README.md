@@ -21,9 +21,13 @@ How lines get written, judged and kept. The writer's side is in
    page's database, so a new build never loses one.
 3. **Vote.** Each line is shown on a mock device with its drawing and
    time words filled in; lines that join a rain sentence show the pair.
-   Star, Keep or Veto, with tags (robotic, too long, not funny, wrong
-   garment, wrong fact, unclear) and an optional note. Keyboard: `S` `K`
-   `V`, tags `1`–`6` (set them before the verdict), `N` for a note, `R`
+   Star, Keep or Veto, with tags and an optional note. The tags say why
+   (November 2026; "not funny" alone told the writers nothing): not funny,
+   not sarcastic (merely pleasant), restates the weather, forced, doesn't
+   follow the fact, wrong level, good idea but bad wording, unclear, too
+   long, robotic, wrong fact, wrong garment. **Good idea, bad wording**
+   sends the idea back: the next round rewords it (`review/reword/`).
+   Keyboard: `S` `K` `V`, tags `1`–`0` (set them before the verdict), `N` for a note, `R`
    for the rain pairing, arrows to move. In rounds whose lines say how
    they sit on the screen (round 8), `E` edits the wording in place: the
    screen follows as you type, the time words and garments fill in, and

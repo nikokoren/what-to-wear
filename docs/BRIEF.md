@@ -4,6 +4,11 @@ This replaces the rulebook in [VOICE.md](VOICE.md) as the thing a writer
 works from. It is short on purpose: what steers the writing is the
 owner's taste, kept as examples, not adjectives.
 
+**Write by shape (November 2026).** Before writing a sarcastic line, read
+[SHAPES.md](SHAPES.md): the joke mechanisms the owner stars and the ones
+that get vetoed, with starred examples of each. A round asks for lines by
+shape, not just "more lines for this mood".
+
 ## Who is talking
 
 Settled by two auditions (October 2026):

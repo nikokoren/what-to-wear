@@ -381,6 +381,7 @@ FILL = "2026-10-fill"  # round 24: every thin slot to at least four lines
 ONFILL = "2026-10-onfill"  # round 25: English at On and the drawing lines, topped up
 THIN = "2026-11-thin"  # round 26: the groups under four lines that actually show, topped up
 THIN2 = "2026-11-thin2"  # round 27: the groups still under four, outside the box
+TURNS = "2026-11-turns"  # round 39: snow turning to rain (its evening rows are apply_evening.py's)
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -461,6 +462,8 @@ def apply_follow(doc, lang, decisions, rnd=None):
     for row in json.loads(path.read_text(encoding="utf-8"))["lines"]:
         if row["lang"] != lang or row.get("role") == "fact" or row.get("live"):
             continue  # a live line under read-through is apply_final's
+        if row["path"].split(".", 1)[1].startswith("evening_"):
+            continue  # the evening screen's: apply_evening.py
         d = votes.get((row["path"], row["text"])) or {}
         verdict = d.get("verdict", "")
         section, key = row["path"].split(".", 1)
@@ -663,6 +666,9 @@ def main():
         fill = (apply_follow(doc, lang, decisions, FILL) + apply_facts(doc, lang, decisions, FILL)
                 + apply_follow(doc, lang, decisions, ONFILL) + apply_follow(doc, lang, decisions, THIN)
                 + apply_follow(doc, lang, decisions, THIN2))
+        turns = apply_facts(doc, lang, decisions, TURNS) + apply_follow(doc, lang, decisions, TURNS)
+        if turns:
+            print(f"{lang} round 39 (snow turns to rain): " + ", ".join(f"{v} {k}" for k, v in turns.items()))
         if fill:
             print(f"{lang} round 24 (fill-up): " + ", ".join(f"{v} {k}" for k, v in fill.items()))
         notes = apply_notes(doc, lang)
@@ -915,6 +921,8 @@ def apply_facts(doc, lang, decisions, rnd):
         if row["lang"] != lang or row.get("role") != "fact":
             continue
         key = row["path"].split(".", 1)[1]
+        if key.startswith("evening_"):
+            continue  # the evening screen's: apply_evening.py
         d = votes.get((row["path"], row["text"])) or {}
         verdict = d.get("verdict", "")
         text = EDIT_FIX.get(d.get("edit"), d.get("edit")) or row["text"]

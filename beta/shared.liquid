@@ -1978,7 +1978,7 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- elsif ev_wet == 1 -%}
     {%- assign ek = 'tmr_wet' -%}{%- assign ev_sit = 'rain' -%}
   {%- elsif ev_maybe and ev_any_wet == false and EV.facts.tmr_maybe -%}
-    {%- assign ek = 'tmr_maybe' -%}{%- assign ev_sit = 'rain' -%}
+    {%- assign ek = 'tmr_maybe' -%}{%- assign ev_sit = 'maybe' -%}
   {%- else -%}
     {%- assign ek = 'tmr_steady' -%}{%- assign ev_sit = 'steady' -%}
   {%- endif -%}
@@ -2009,12 +2009,16 @@ prototypes/; the comments explaining it are there. Don't edit by hand.
   {%- assign j_lv = sarcasm_level -%}
   {%- if sarcasm_level == '11' -%}{%- assign j_lv = '10' -%}{%- endif -%}
   {%- assign jk = 'jokes_' | append: j_lv -%}
-  {%- assign j_main = EV[jk][ev_sit] -%}{%- if j_main == nil -%}{%- assign j_main = none_list -%}{%- endif -%}
+    {%- assign j_main = EV[jk][ev_sit] -%}
+  {%- if j_main == nil and ev_sit == 'maybe' -%}{%- assign j_main = EV[jk].rain -%}{%- endif -%}
+  {%- if j_main == nil -%}{%- assign j_main = none_list -%}{%- endif -%}
   {%- assign ja = EV[jk].any -%}{%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
   {%- assign j_main = j_main | concat: ja -%}
   {%- assign j_passes = 'main' | split: ',' -%}
   {%- if sarcasm_level == '11' -%}
-    {%- assign j_11 = EV.jokes_11[ev_sit] -%}{%- if j_11 == nil -%}{%- assign j_11 = none_list -%}{%- endif -%}
+    {%- assign j_11 = EV.jokes_11[ev_sit] -%}
+    {%- if j_11 == nil and ev_sit == 'maybe' -%}{%- assign j_11 = EV.jokes_11.rain -%}{%- endif -%}
+    {%- if j_11 == nil -%}{%- assign j_11 = none_list -%}{%- endif -%}
     {%- assign ja = EV.jokes_11.any -%}{%- if ja == nil -%}{%- assign ja = none_list -%}{%- endif -%}
     {%- assign j_11 = j_11 | concat: ja -%}
     {%- if j_11.size >= EV_FEW_11 -%}

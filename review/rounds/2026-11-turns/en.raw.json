@@ -1,0 +1,286 @@
+{
+ "_about": "Round 39, written by shape (docs/SHAPES.md). 'cut' marks a line the critic pass took out, with the rule from docs/CRITIC.md. 'live' marks a wording already in the texts, voted here for the first time.",
+ "facts": {
+  "p_turns_rain": [
+   {
+    "text": "The snow turns to rain {WHENP}. Bring the umbrella.",
+    "live": true
+   },
+   {
+    "text": "It's snowing now, but {WHENP} it turns to rain. Take the umbrella.",
+    "live": true
+   },
+   {
+    "text": "{WHENP} the snow becomes rain, so bring the umbrella.",
+    "live": true
+   },
+   {
+    "text": "Snow for now, rain {WHENP}. Have the umbrella with you.",
+    "live": true
+   },
+   {
+    "text": "The snow changes to rain {WHENP}, so you'll want the umbrella."
+   },
+   {
+    "text": "{WHENP} the snow turns into rain, so take the umbrella."
+   },
+   {
+    "text": "It keeps snowing for now. {WHENP} it turns to rain, so bring the umbrella."
+   },
+   {
+    "text": "It's snowing for now. {WHENP} it's raining, so pack the umbrella.",
+    "was": "Right now it's snow. {WHENP} it's rain, so pack the umbrella."
+   },
+   {
+    "text": "The snow won't last: {WHENP} it turns to rain. Have the umbrella with you."
+   },
+   {
+    "text": "It's snowing, but it turns to rain {WHENP}. Pack the umbrella."
+   },
+   {
+    "text": "The snow turns to rain {WHENP}, and the sidewalks turn to slush.",
+    "cut": "more certainty than the forecast has: it doesn't say the snow settles"
+   },
+   {
+    "text": "Snow until {WHENP}, then rain. Umbrella.",
+    "cut": "a preposition in front of a placeholder; robotic"
+   }
+  ],
+  "evening_tmr_maybe": [
+   {
+    "text": "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+    "live": true
+   },
+   {
+    "text": "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+    "live": true
+   },
+   {
+    "text": "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you.",
+    "live": true
+   },
+   {
+    "text": "Tomorrow's outfit works all day. Rain is possible, so think about the umbrella."
+   },
+   {
+    "text": "One outfit works all day tomorrow. It might rain, so the umbrella could come too."
+   },
+   {
+    "text": "Tomorrow you won't need to change, but it could rain. Maybe take the umbrella."
+   },
+   {
+    "text": "Tomorrow it might rain, so an umbrella wouldn't hurt. The outfit works all day."
+   },
+   {
+    "text": "No outfit change tomorrow. There's a chance of rain, so the umbrella is up to you."
+   },
+   {
+    "text": "Tomorrow there's a 40 percent chance of rain.",
+    "cut": "odds the data doesn't give in this form"
+   }
+  ]
+ },
+ "units": {
+  "10": [
+   {
+    "fact": 0,
+    "joke": "Snow, then rain. Lucky I don't own shoes.",
+    "shape": "screen"
+   },
+   {
+    "fact": 1,
+    "joke": "Snow, then rain. Wasn't me.",
+    "shape": "credit"
+   },
+   {
+    "fact": 2,
+    "joke": "I'll take the credit for the snow. Not the rest.",
+    "shape": "credit"
+   },
+   {
+    "fact": 3,
+    "joke": "I'll keep drawing snow as long as I'm allowed.",
+    "shape": "screen"
+   },
+   {
+    "fact": 0,
+    "joke": "Wet feet later. Not mine. I don't have feet.",
+    "shape": "screen"
+   },
+   {
+    "fact": 1,
+    "joke": "The snow lasts just long enough to get your hopes up.",
+    "shape": "sting"
+   },
+   {
+    "fact": 2,
+    "joke": "Slush: the snow's least popular sequel.",
+    "shape": "other"
+   },
+   {
+    "fact": 3,
+    "joke": "Enjoy the snow while it still looks good on a postcard.",
+    "shape": "other"
+   },
+   {
+    "fact": 0,
+    "joke": "Snow to rain. Even the weather gives up on winter early.",
+    "shape": "other"
+   },
+   {
+    "fact": 1,
+    "joke": "The weather can't commit either.",
+    "shape": "other",
+    "cut": "a live line's idea in the same language ('The weather can't commit.')"
+   },
+   {
+    "fact": 2,
+    "joke": "Your gloves and your umbrella, together at last.",
+    "shape": "other",
+    "cut": "wrong garment: the forecast doesn't name gloves"
+   },
+   {
+    "fact": 3,
+    "joke": "Snow in the morning, slush by lunch. That's winter for you.",
+    "shape": "people",
+    "cut": "clock words the change doesn't fix ('morning', 'lunch')"
+   }
+  ],
+  "11": [
+   {
+    "fact": 0,
+    "joke": "You'll take one photo of the snow. Then it's slush.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "Find the umbrella now. You know how long that takes you.",
+    "shape": "habit"
+   },
+   {
+    "fact": 2,
+    "joke": "Two kinds of wet today, and you'll complain about both.",
+    "shape": "habit"
+   },
+   {
+    "fact": 3,
+    "joke": "The snow is flattering. The rain won't be.",
+    "shape": "jab"
+   },
+   {
+    "fact": 0,
+    "joke": "You'll plan a snowman. Planning is as far as you get.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "Wet socks later, and you'll act surprised. Again.",
+    "shape": "sting"
+   },
+   {
+    "fact": 2,
+    "joke": "You'll say 'at least it was pretty.' Briefly.",
+    "shape": "quote"
+   },
+   {
+    "fact": 3,
+    "joke": "Take the umbrella, or gamble. You do love a bad bet.",
+    "shape": "jab"
+   },
+   {
+    "fact": 0,
+    "joke": "Your hair survives the snow. The rain is another story.",
+    "shape": "jab"
+   },
+   {
+    "fact": 1,
+    "joke": "Snow, then rain. Like your mood by noon.",
+    "shape": "simile",
+    "cut": "'like your X'; clock word 'noon'"
+   },
+   {
+    "fact": 2,
+    "joke": "Your umbrella's still in the car, isn't it?",
+    "shape": "habit",
+    "cut": "an assumption about the reader's life (a car)"
+   },
+   {
+    "fact": 3,
+    "joke": "You'll enjoy the snow right up to the first wet sock.",
+    "shape": "habit",
+    "cut": "a one-off moment the screen can't time"
+   }
+  ]
+ },
+ "evening_jokes": {
+  "10": [
+   {
+    "joke": "Maybe rain. My favorite forecast: I can't be wrong.",
+    "shape": "credit"
+   },
+   {
+    "joke": "If it rains, I warned you. If not, you're welcome.",
+    "shape": "credit"
+   },
+   {
+    "joke": "The umbrella's your call. I'm staying out of it. And dry.",
+    "shape": "screen"
+   },
+   {
+    "joke": "I'd bring an umbrella myself, but I don't have hands.",
+    "shape": "screen"
+   },
+   {
+    "joke": "Even the sky hasn't decided yet. Don't look at me.",
+    "shape": "credit"
+   },
+   {
+    "joke": "Enough rain to carry the umbrella. Maybe not enough to open it.",
+    "shape": "other"
+   },
+   {
+    "joke": "Maybe. The weather's favorite word.",
+    "shape": "other",
+    "cut": "flat: restates the forecast"
+   },
+   {
+    "joke": "Sleep on it. The umbrella will still be a question tomorrow.",
+    "shape": "other",
+    "cut": "evening is not bedtime before 10 pm"
+   }
+  ],
+  "11": [
+   {
+    "joke": "You'll decide against the umbrella. I can already tell.",
+    "shape": "habit"
+   },
+   {
+    "joke": "You'll ask me again in the morning. Same answer.",
+    "shape": "habit"
+   },
+   {
+    "joke": "You'll leave the umbrella at home and blame me. Again.",
+    "shape": "sting"
+   },
+   {
+    "joke": "You'll overthink this umbrella all evening.",
+    "shape": "habit"
+   },
+   {
+    "joke": "You'll check this three more times tonight. It'll still say maybe.",
+    "shape": "jab",
+    "was": "A maybe. Finally, something you and the weather have in common."
+   },
+   {
+    "joke": "Take it or gamble. You do love a bad bet.",
+    "shape": "jab",
+    "cut": "duplicate of a line in this round (snow turning to rain, 11)"
+   },
+   {
+    "joke": "'It won't rain,' you'll say. You said that last time too.",
+    "shape": "quote",
+    "cut": "the same joke as the German round line, same shape: kept in German, where the shape is stronger"
+   }
+  ]
+ }
+}

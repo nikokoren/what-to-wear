@@ -1,0 +1,1433 @@
+{
+ "round": "2026-11-turns",
+ "idPrefix": "tr",
+ "lines": [
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "It's snowing now, but {WHENP} it turns to rain. Take the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "{WHENP} the snow becomes rain, so bring the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "Snow for now, rain {WHENP}. Have the umbrella with you.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "The snow changes to rain {WHENP}, so you'll want the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "{WHENP} the snow turns into rain, so take the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "It keeps snowing for now. {WHENP} it turns to rain, so bring the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "It's snowing for now. {WHENP} it's raining, so pack the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "The snow won't last: {WHENP} it turns to rain. Have the umbrella with you.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.p_turns_rain",
+   "text": "It's snowing, but it turns to rain {WHENP}. Pack the umbrella.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella. || Snow, then rain. Lucky I don't own shoes.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the screen's own limits"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "It's snowing now, but {WHENP} it turns to rain. Take the umbrella. || Snow, then rain. Wasn't me.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: taking credit, denying blame"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "{WHENP} the snow becomes rain, so bring the umbrella. || I'll take the credit for the snow. Not the rest.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: taking credit, denying blame"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "Snow for now, rain {WHENP}. Have the umbrella with you. || I'll keep drawing snow as long as I'm allowed.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the screen's own limits"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella. || Wet feet later. Not mine. I don't have feet.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the screen's own limits"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "It's snowing now, but {WHENP} it turns to rain. Take the umbrella. || The snow lasts just long enough to get your hopes up.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: ends on a sting word"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "{WHENP} the snow becomes rain, so bring the umbrella. || Slush: the snow's least popular sequel.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: outside the strong shapes, for variety"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "Snow for now, rain {WHENP}. Have the umbrella with you. || Enjoy the snow while it still looks good on a postcard.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: outside the strong shapes, for variety"
+  },
+  {
+   "lang": "en",
+   "path": "unit_10.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella. || Snow to rain. Even the weather gives up on winter early.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: outside the strong shapes, for variety"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella. || You'll take one photo of the snow. Then it's slush.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "It's snowing now, but {WHENP} it turns to rain. Take the umbrella. || Find the umbrella now. You know how long that takes you.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "{WHENP} the snow becomes rain, so bring the umbrella. || Two kinds of wet today, and you'll complain about both.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "Snow for now, rain {WHENP}. Have the umbrella with you. || The snow is flattering. The rain won't be.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: a jab at you"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella. || You'll plan a snowman. Planning is as far as you get.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "It's snowing now, but {WHENP} it turns to rain. Take the umbrella. || Wet socks later, and you'll act surprised. Again.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: ends on a sting word"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "{WHENP} the snow becomes rain, so bring the umbrella. || You'll say 'at least it was pretty.' Briefly.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your words thrown back"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "Snow for now, rain {WHENP}. Have the umbrella with you. || Take the umbrella, or gamble. You do love a bad bet.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: a jab at you"
+  },
+  {
+   "lang": "en",
+   "path": "unit_11.p_turns_rain",
+   "text": "The snow turns to rain {WHENP}. Bring the umbrella. || Your hair survives the snow. The rain is another story.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "around midday"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in two hours"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: a jab at you"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": false,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": false,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": false,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Tomorrow's outfit works all day. Rain is possible, so think about the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "One outfit works all day tomorrow. It might rain, so the umbrella could come too.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Tomorrow you won't need to change, but it could rain. Maybe take the umbrella.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Tomorrow it might rain, so an umbrella wouldn't hurt. The outfit works all day.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "No outfit change tomorrow. There's a chance of rain, so the umbrella is up to you.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_maybe",
+   "text": "Maybe rain. My favorite forecast: I can't be wrong.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: taking credit, denying blame · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_maybe",
+   "text": "If it rains, I warned you. If not, you're welcome.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: taking credit, denying blame · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_maybe",
+   "text": "The umbrella's your call. I'm staying out of it. And dry.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the screen's own limits · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_maybe",
+   "text": "I'd bring an umbrella myself, but I don't have hands.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the screen's own limits · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_maybe",
+   "text": "Even the sky hasn't decided yet. Don't look at me.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: taking credit, denying blame · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_10.evening_maybe",
+   "text": "Enough rain to carry the umbrella. Maybe not enough to open it.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: outside the strong shapes, for variety · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_maybe",
+   "text": "You'll decide against the umbrella. I can already tell.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: your habits, predicted · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_maybe",
+   "text": "You'll ask me again in the morning. Same answer.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: your habits, predicted · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_maybe",
+   "text": "You'll leave the umbrella at home and blame me. Again.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: ends on a sting word · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_maybe",
+   "text": "You'll overthink this umbrella all evening.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: your habits, predicted · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "en",
+   "path": "flavour_11.evening_maybe",
+   "text": "You'll check this three more times tonight. It'll still say maybe.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: a jab at you · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": false,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Noch schneit es, aber {WHENP} geht's in Regen über. Nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "{WHENP} wird der Schnee zu Regen. Denk an den Schirm.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Der Schnee wird {WHENP} zu Regen, also pack den Schirm ein.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Jetzt schneit's noch, {WHENP} regnet's. Nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "Lang schneit's nicht mehr: {WHENP} kommt Regen. Nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.p_turns_rain",
+   "text": "{WHENP} regnet's, statt zu schneien, also nimm den Schirm mit.",
+   "role": "fact",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: forecast",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. The forecast sentence, at every setting.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Erst Schnee, dann Matsch. Auch das noch.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the Grantler's sigh"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein. || „Wie schön, Schnee!“ Ja. Noch.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: your words thrown back"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit. || Schön war's. Hat nicht lang gehalten, wie alles Schöne.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the Grantler's sigh"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit. || Schnee hätt ich gern länger gezeichnet. Regen kann jeder.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the Grantler about himself"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Kaum liegt was, ist's schon wieder Matsch.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the Grantler's sigh"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein. || Für einen Schneemann reicht's nicht. Für nasse Füße schon.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the Grantler's sigh"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit. || Ich bleib eh im Trockenen. Viel Spaß da draußen.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: the Grantler about himself"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit. || „Endlich Winter“, haben sie gesagt. Hat sich erledigt.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: your words thrown back"
+  },
+  {
+   "lang": "de",
+   "path": "unit_10.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Matsch. Das Lieblingswetter von niemandem.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: On",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At On: the sentence and its joke as one.",
+   "hint": "Shape: other people"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Erst Fotos, dann Gejammer. Ich kenn dich.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein. || Den Schirm findest du eh nicht. Fang jetzt an zu suchen.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit. || Viel ruinieren kann der Regen an deiner Frisur nicht mehr.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: a jab at you"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit. || Und gleich sagst du wieder „typisch“.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your words thrown back"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Nass wirst du heute zweimal. Draus lernen wirst du nichts.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein. || „Schneit's noch?“ Nicht mehr lang. Hör auf zu fragen.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: the parent's scold"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit. || Du wolltest Winter. Bitte, da hast du ihn. Kurz.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your words thrown back"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit. || Schnee steht dir. Regen eher nicht.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: a jab at you"
+  },
+  {
+   "lang": "de",
+   "path": "unit_11.p_turns_rain",
+   "text": "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Schnee oder Regen, beschweren wirst du dich so oder so.",
+   "role": "unit",
+   "sprite": "coat_snow",
+   "fills": {
+    "{WHENP}": "gegen Mittag"
+   },
+   "fillsAlt": {
+    "{WHENP}": "in zwei Stunden"
+   },
+   "batch": "Snow turns to rain: 11",
+   "new": true,
+   "meaning": "Snowing now, turning to rain {WHENP}: the drawing is in snow now, in rain later. At 11: the sentence and its joke as one.",
+   "hint": "Shape: your habits, predicted"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": false,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": false,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": false,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": "In the texts since the beta review, not voted yet"
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen passt ein Outfit für den ganzen Tag. Regnen kann's aber, also lieber den Schirm einpacken.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen musst du dich nicht umziehen, aber es könnte regnen. Ein Schirm schadet nicht.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen könnte es regnen, nimm also lieber den Schirm mit. Das Outfit passt den ganzen Tag.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen ändert sich am Outfit nichts. Vielleicht regnet's, der Schirm schadet also nicht.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "fact_0.evening_tmr_maybe",
+   "text": "Morgen ist Regen möglich, sonst bleibt alles gleich. Nimm lieber den Schirm mit.",
+   "role": "fact",
+   "sprite": "jacket_dry",
+   "batch": "Tomorrow, rain possible: forecast",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. Tomorrow's sentence.",
+   "hint": ""
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_maybe",
+   "text": "Vielleicht Regen. Das Wetter, bei dem ich nie falsch lieg.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the Grantler about himself · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_maybe",
+   "text": "Regnet's, hab ich's gesagt. Regnet's nicht, auch recht.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the Grantler about himself · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_maybe",
+   "text": "Schirm oder nicht? Das weiß nicht mal das Wetter.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the Grantler's sigh · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_maybe",
+   "text": "Ich bleib morgen eh trocken. Mir kann's wurscht sein.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the Grantler about himself · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_maybe",
+   "text": "„Vielleicht“. Das ehrlichste Wort im ganzen Wetterbericht.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: your words thrown back · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_10.evening_maybe",
+   "text": "Einen Schirm umsonst rumschleppen. Das ist halt das Risiko.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: On",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At On: the line under tomorrow's sentence.",
+   "hint": "Shape: the Grantler's sigh · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_maybe",
+   "text": "Den Schirm lässt du eh daheim. Ich kenn dich.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: your habits, predicted · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_maybe",
+   "text": "Und morgen früh fragst du mich trotzdem noch mal.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: your habits, predicted · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_maybe",
+   "text": "Nimm ihn mit oder jammer morgen. Du hast die Wahl.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: the parent's scold · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_maybe",
+   "text": "„Wird schon nicht regnen“, sagst du. Hast du letztes Mal auch gesagt.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: your words thrown back · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_maybe",
+   "text": "Du bist eh der Typ, der im Regen ohne Schirm dasteht.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: a jab at you · Only when tomorrow's sentence shows"
+  },
+  {
+   "lang": "de",
+   "path": "flavour_11.evening_maybe",
+   "text": "Das Wetter ist unentschlossen wie du. Ihr zwei würdet euch verstehen.",
+   "role": "flavour",
+   "evtag": "{S}",
+   "sprite": "jacket_dry",
+   "fact": "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht.",
+   "batch": "Tomorrow, rain possible: 11",
+   "new": true,
+   "meaning": "Evening screen, 8 pm to midnight. Tomorrow one outfit works all day (one drawing, 'all day'), and rain is possible but never likely: no umbrella in the drawing. At 11: the line under tomorrow's sentence.",
+   "hint": "Shape: a jab at you · Only when tomorrow's sentence shows"
+  }
+ ]
+}

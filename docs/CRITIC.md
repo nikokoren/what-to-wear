@@ -12,7 +12,17 @@ Cut a candidate if any of these hold:
 - Not funny, not sarcastic, merely pleasant, or restates the weather.
 - Unclear on first read; too long for the screen.
 - Wordplay on the forecast's words; "like your X" / „wie deine X“;
-  predicting the reader's mishaps; explaining the joke; a cliché.
+  explaining the joke; a cliché.
+- A one-off moment the screen can't time: "the first sneeze", "your first
+  slip". The line is wrong the moment it has happened, and the screen
+  can't know (owner, November 2026).
+- At 11, a prediction of the reader's **habits** is not a reason to cut:
+  "You'll double-check on your phone. As if it knows better." It is the
+  best-rated shape at 11 in English and in German („Ich kenn dich“). The
+  old rule against "predicting the reader's mishaps" cut it; it only ever
+  meant the one-off moments above.
+- A joke over about 60 characters: under 45 is starred twice as often as
+  70 to 100, in both languages. Over 70 it has to earn it.
 - A setup that restates the forecast before the joke.
 - An obscure reference, or an assumption about the reader's life.
 
@@ -51,6 +61,10 @@ Cut a candidate if any of these hold:
 - German: standard German (no „heuer“, „am Sofa“, „tagträumen“); comma
   before „aber“ and around infinitive clauses; German quotes „…“, a colon
   before direct speech; „das Gleiche“, „zu Hause“, „dieses Mal“.
+
+**Shape** (`docs/SHAPES.md`): a round that asks for shapes gets lines in
+the shape asked for. A line in the weak shapes (other people, similes, at
+On a scold) needs to be clearly better than the rest to stay.
 
 **Duplicates**: two candidates with one idea (keep the better), or a
 repeat of a live line's idea in the same language.
