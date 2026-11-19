@@ -89,9 +89,13 @@
         "Morgen geht's gleich mit Schnee los."
       ],
       "tmr_maybe": [
-        "Morgen passt ein Outfit für den ganzen Tag, es kann aber regnen. Ein Schirm schadet nicht.",
-        "Das Outfit für morgen passt den ganzen Tag. Vielleicht regnet's, nimm lieber den Schirm mit.",
-        "Morgen kommst du mit einem Outfit durch den Tag, Regen ist aber möglich. Der Schirm schadet nicht."
+        "Morgen könnte es regnen, pack also lieber den Schirm ein.",
+        "Morgen ist Regen möglich. Pack lieber den Schirm ein.",
+        "Morgen regnet's vielleicht, der Schirm schadet also nicht.",
+        "Morgen könnte es regnen. Ein Schirm schadet nicht.",
+        "Morgen ist Regen möglich. Der Schirm wär ne gute Idee.",
+        "Morgen kann es regnen. Ein Schirm schadet nicht.",
+        "Vielleicht regnet's morgen, pack lieber den Schirm ein."
       ]
     },
     "jokes_10": {
@@ -116,6 +120,12 @@
         "{N}Immerhin bleibt der Regen nicht zu lange. Ein paar Manieren hat er.",
         "{D:5}Freitag. Da macht auch der Regen früher Schluss.",
         "{S}Ab da sind die Schnecken wieder schlecht gelaunt. Willkommen im Club."
+      ],
+      "maybe": [
+        "{S}Ich bleib morgen eh trocken. Mir kann's wurscht sein.",
+        "{S}Regnet's, hab ich's gesagt. Regnet's nicht, passt's auch.",
+        "{S}Vielleicht Regen. Das Wetter, bei dem ich nie falsch lieg.",
+        "{S}„Vielleicht“. Das ehrlichste Wort im ganzen Wetterbericht."
       ],
       "rain": [
         "{D:1}Der Montag lässt wirklich nichts aus.",
@@ -152,6 +162,12 @@
         "Ich helf dir jeden Abend beim Anziehen. Andere brauchen dafür einen Pflegegrad.",
         "Merk dir: Falls ich mal was Nettes über dich sag, wurden wir gehackt.",
         "Leg dir für morgen auch gleich ein Lächeln raus. Morgens findest du sonst wieder keins."
+      ],
+      "maybe": [
+        "{S}Und morgen früh fragst du mich trotzdem noch mal.",
+        "{S}„Wird schon nicht regnen“, sagst du. Hast du letztes Mal auch gesagt.",
+        "{S}Das Wetter ist unentschlossen wie du. Ihr zwei würdet euch verstehen.",
+        "{S}Den Schirm lässt du trotzdem daheim. Ich kenn dich."
       ],
       "rain": [
         "Ich hab dich schon nass gesehen. Einmal reicht.",

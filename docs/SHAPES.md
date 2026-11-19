@@ -142,5 +142,26 @@ wieder stoßgelüftet.“); they fail as plain observation.
 4. After the vote, `tools/shape_report.py` shows whether the shapes
    still hold.
 
-The first round written this way: `2026-11-turns` (round 39,
-`review/rounds/make_round39.py`).
+## Round 39, the first round written this way
+
+`2026-11-turns` (`review/rounds/make_round39.py`), voted 19 November 2026.
+59 jokes, 4 starred, 49% vetoed overall, but two very different halves:
+
+| Situation | Vetoed | Starred |
+|---|---|---|
+| Tomorrow, rain possible (evening) | 22% | 4 of 23 |
+| Snowing now, rain later (units) | 67% | 0 of 36 |
+
+The thin rounds before it were vetoed 55 to 83%. So shapes help where the
+situation gives the joke something to push against: a maybe-rain evening
+is about the reader's umbrella dithering, which fits "your habits" and
+"I can't be wrong" exactly. Snow turning to slush gives a joke almost
+nothing but "the nice part ends", and no shape rescued it; the vetoes
+were "not funny, forced" across every shape. Two lessons:
+
+- **Before writing, ask what the situation gives the joke.** If the only
+  angle is the weather itself, write fewer lines (a thin, rare situation
+  can live with three units) or find the human angle first.
+- **"Your habits, predicted" held up:** 9 of 13 kept, the best shape in
+  the round, at 11 in both languages. "Zitat zurück" did worse here (2
+  of 7) than its history; one of the two kept was starred.

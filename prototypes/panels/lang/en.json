@@ -94,9 +94,14 @@
         "Expect a snowy start tomorrow."
       ],
       "tmr_maybe": [
-        "Tomorrow one outfit works all day, but rain is possible. An umbrella wouldn't hurt.",
-        "Tomorrow's outfit works all day. It might rain, so maybe take the umbrella.",
-        "Tomorrow is a one-outfit day with a chance of rain. The umbrella is up to you."
+        "There is a chance of rain tomorrow. Maybe pack an umbrella.",
+        "There is a chance of rain tomorrow. Packing the umbrella might be wise.",
+        "Rain is possible tomorrow. An umbrella wouldn't hurt.",
+        "Tomorrow it might rain, so packing an umbrella might be a smart move.",
+        "It might rain tomorrow, so pack the umbrella.",
+        "There's a chance of rain tomorrow, but the umbrella is up to you.",
+        "Rain is possible tomorrow, so think about packing an umbrella.",
+        "It might rain tomorrow, so maybe take the umbrella."
       ]
     },
     "jokes_10": {
@@ -126,6 +131,13 @@
         "'Rain before seven, clear by eleven.' Close enough for folklore.",
         "For once I can say 'it'll pass' and mean it."
       ],
+      "maybe": [
+        "{S}If it rains, I warned you. If not, you're welcome.",
+        "{S}The umbrella's your call. I'm staying out of it. And dry.",
+        "{S}Enough rain to carry the umbrella. Maybe not enough to open it.",
+        "{S}I'd bring an umbrella myself, but I don't have hands.",
+        "{S}Maybe rain. My favorite forecast: I can't be wrong."
+      ],
       "rain": [
         "Lovely. More water.",
         "Rain is just snow that stopped trying.",
@@ -154,6 +166,13 @@
         "{N}You take fashion advice from an e-ink screen. It shows.",
         "You always read to the end in case it's a compliment. It never is.",
         "My whole audience tonight is you. I've worked better rooms."
+      ],
+      "maybe": [
+        "{S}You'll ask me again in the morning. Same answer.",
+        "{S}You'll check this three more times tonight. It'll still say maybe.",
+        "{S}You'll leave the umbrella at home and blame me. Again.",
+        "{S}You'll overthink this umbrella all evening.",
+        "{S}You'll decide against the umbrella. I can already tell."
       ],
       "rain": [
         "You'll blame the rain for how you look. For once, that'll be half true."

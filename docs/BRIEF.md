@@ -72,7 +72,10 @@ fact line talks about the outfit on screen, then what changes, and says
 why when it asks for something: "It cools down this evening, so bring a
 jacket." / "Gegen Mittag kommt ein Schauer, also nimm den Schirm mit."
 A steady day says the outfit works ("What you're wearing works for the
-whole day"), not "no changes". Time words, not clock times. The current
+whole day"), not "no changes". **One thing per sentence** (owner,
+November 2026): when something needs doing, say only that ("It might
+rain tomorrow, so pack the umbrella."); what the drawing already shows
+stays out of the words. Time words, not clock times. The current
 templates are `facts` in `prototypes/fact-flavour/lang/`.
 
 ### What round 2 added about the flavour line

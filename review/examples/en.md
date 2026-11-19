@@ -344,6 +344,14 @@ Do not edit by hand; vote on the page instead.
 - You turned me up to 11 on purpose. Most daring thing you've done all year.
 - You've looked at this outfit longer than anyone will look at you in it.
 
+## evening_maybe · dry
+
+- Maybe rain. My favorite forecast: I can't be wrong.
+
+## evening_maybe · sarcastic
+
+- You'll leave the umbrella at home and blame me. Again.
+
 ## evening_tmr_snow_start · plain
 
 - Expect a snowy start tomorrow.

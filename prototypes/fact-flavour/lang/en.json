@@ -251,7 +251,13 @@
       "The snow turns to rain {WHENP}. Bring the umbrella.",
       "It's snowing now, but {WHENP} it turns to rain. Take the umbrella.",
       "{WHENP} the snow becomes rain, so bring the umbrella.",
-      "Snow for now, rain {WHENP}. Have the umbrella with you."
+      "Snow for now, rain {WHENP}. Have the umbrella with you.",
+      "The snow changes to rain {WHENP}, so you'll want the umbrella.",
+      "{WHENP} the snow turns into rain, so take the umbrella.",
+      "It keeps snowing for now. {WHENP} it turns to rain, so bring the umbrella.",
+      "It's snowing for now. {WHENP} it's raining, so pack the umbrella.",
+      "The snow won't last: {WHENP} it turns to rain. Have the umbrella with you.",
+      "It's snowing, but it turns to rain {WHENP}. Pack the umbrella."
     ],
     "shorts_swing": [
       "Shorts weather arrives {WHEN}, so think about wearing shorts now and keep {G} just for the start.",
@@ -1205,6 +1211,11 @@
       "The rain stops for a bit, then it's back {WHENP}. Keep the umbrella. || I saw round two coming. It's my one job.",
       "It rains for now, stops for a bit, and starts again {WHENP}. Keep the umbrella. || The sky is just refilling. That's all the break is.",
       "It rains, stops for a bit, and starts again {WHENP}. Keep the umbrella. || It's not done. It just forgot something."
+    ],
+    "p_turns_rain": [
+      "{WHENP} the snow becomes rain, so bring the umbrella. || I'll take the credit for the snow. Not the rest.",
+      "Snow for now, rain {WHENP}. Have the umbrella with you. || I'll keep drawing snow as long as I'm allowed.",
+      "It's snowing now, but {WHENP} it turns to rain. Take the umbrella. || The snow lasts just long enough to get your hopes up."
     ]
   },
   "units_11": {
@@ -1401,6 +1412,11 @@
       "It snows for now, takes a break, and starts again {WHENP}. || The break is mainly so the salt trucks can feel useful.",
       "The snow stops {WHENSTOP} and starts again {WHENP}. || Two rounds of snow. You can't even handle one with dignity.",
       "The snow stops {WHENSTOP} and starts again {WHENP}. || That's two rounds of you saying 'it's really coming down.'"
+    ],
+    "p_turns_rain": [
+      "It's snowing now, but {WHENP} it turns to rain. Take the umbrella. || Find the umbrella now. You know how long that takes you.",
+      "{WHENP} the snow becomes rain, so bring the umbrella. || Two kinds of wet today, and you'll complain about both.",
+      "Snow for now, rain {WHENP}. Have the umbrella with you. || Take the umbrella, or gamble. You do love a bad bet."
     ]
   }
 }

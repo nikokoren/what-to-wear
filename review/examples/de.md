@@ -369,6 +369,14 @@ Do not edit by hand; vote on the page instead.
 
 - {D:5}Freitag. Da macht auch der Regen früher Schluss.
 
+## evening_maybe · dry
+
+- Ich bleib morgen eh trocken. Mir kann's wurscht sein.
+
+## evening_maybe · sarcastic
+
+- „Wird schon nicht regnen“, sagst du. Hast du letztes Mal auch gesagt.
+
 ## evening_steady · dry
 
 - Ändert sich das doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen.

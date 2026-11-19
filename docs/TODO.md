@@ -35,20 +35,14 @@ Fixed in `src/shared.liquid` and the prototypes, pinned by
 - Dangerous heat goes by the raw feels-like reading, not the one shifted
   by "Do you run cold or warm?".
 
-**Round 39 (`2026-11-turns`), on the review page:** the first round
-written by shape (`docs/SHAPES.md`). More wordings for both new
-situations, the four and three written without a vote included; units at
-On and 11 for snow turning to rain; and the evening line for a maybe-rain
-tomorrow (`evening.jokes_10/11.maybe`, new; until it's voted the markup
-borrows the rain lines, which promise rain the forecast doesn't). After
-the vote: `review_sync.py`, then `build_pools.py` and `apply_evening.py`.
-Then `tools/shape_report.py`: if this round's veto rate is clearly under
-the thin rounds' (55 to 83%), write the weak pools the same way next.
-
-**Step 1 of the rollout** now carries one old wording per situation, not
-two (`STEP1_PER_KEY` in `tools/build_release.py`): the markup grew by
-about 6 KB and step 1 with two was 105 KB. The slim markup is 90 KB of
-100; the next logic change needs that room found first.
+**Round 39 (`2026-11-turns`), voted and in (19 November 2026):** the
+first round written by shape. Forecast sentences all kept, the evening
+ones shortened by the owner to one thing each (now a rule in
+`docs/CRITIC.md`). Maybe-rain evening lines: 22% vetoed, 4 stars, now
+`evening.jokes_10/11.maybe`. Snow-to-rain units: 67% vetoed, no stars;
+3 English and 2 to 4 German per level made it, enough to rotate. What it
+taught is in `docs/SHAPES.md` ("Round 39"): pick situations with a human
+angle before writing many lines for them.
 
 Still open from the same review: with two or three drawings and no
 written forecast, rain that's only possible shows nowhere; snow that

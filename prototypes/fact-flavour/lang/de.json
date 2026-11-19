@@ -235,7 +235,13 @@
       "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit.",
       "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein.",
       "{WHENP} wird aus dem Schnee Regen, also nimm den Schirm mit.",
-      "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit."
+      "Erst Schnee, {WHENP} dann Regen. Nimm den Schirm mit.",
+      "Noch schneit es, aber {WHENP} geht's in Regen über. Nimm den Schirm mit.",
+      "{WHENP} wird der Schnee zu Regen. Denk an den Schirm.",
+      "Der Schnee wird {WHENP} zu Regen, also pack den Schirm ein.",
+      "Jetzt schneit's noch, {WHENP} regnet's. Nimm den Schirm mit.",
+      "Lang schneit's nicht mehr: {WHENP} kommt Regen. Nimm den Schirm mit.",
+      "{WHENP} regnet's, statt zu schneien, also nimm den Schirm mit."
     ],
     "shorts_swing": [
       "{WHEN} wird's warm. Überleg dir, gleich ne kurze Hose anzuziehen.",
@@ -1045,6 +1051,12 @@
       "Der Schnee hört später auf, {WHENP} geht's wieder los. || Der neue deckt wenigstens den grauen Matsch von vorhin zu.",
       "Der Schnee macht später eine Pause, {WHENP} schneit's aber weiter. || Ein Winter mit Werbeunterbrechung.",
       "Jetzt schneit's noch, dann ist Pause. {WHENP} schneit's wieder. || Da oben sind wohl noch Reste übrig."
+    ],
+    "p_turns_rain": [
+      "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Erst Schnee, dann Matsch. Auch das noch.",
+      "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Kaum liegt was, ist's schon wieder Matsch.",
+      "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein. || Für einen Schneemann reicht's nicht. Für nasse Füße schon.",
+      "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Matsch. Das Lieblingswetter von niemandem."
     ]
   },
   "units_11": {
@@ -1257,6 +1269,10 @@
       "Noch schneit's, aber später hört es auf. || Schade. Im Schneetreiben hat man dich wenigstens nicht so genau gesehen.",
       "Noch schneit's, aber später hört es auf. || Bis dahin kannst du noch behaupten, du wärst eingeschneit.",
       "{WHENSTOP} hört's auf zu schneien. || Selbst der Schnee hat dann genug von dir. Versteh ich gut."
+    ],
+    "p_turns_rain": [
+      "Noch schneit's, {WHENP} wird Regen draus. Pack den Schirm ein. || Fang lieber gleich an zu suchen.",
+      "Der Schnee geht {WHENP} in Regen über. Nimm den Schirm mit. || Schnee oder Regen, beschweren wirst du dich so oder so."
     ]
   }
 }

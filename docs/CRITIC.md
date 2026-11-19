@@ -43,6 +43,12 @@ Cut a candidate if any of these hold:
   dry", "a short dry spell").
 - Only the slot's placeholders; no preposition in front of one; a unit's
   sentence matches its slot (night says night).
+- **One thing per sentence** (owner, round 39): a forecast sentence says
+  the one thing to act on. "Rain is possible tomorrow. An umbrella
+  wouldn't hurt." not "Tomorrow one outfit works all day, but rain is
+  possible. An umbrella wouldn't hurt." What the drawing already shows
+  (one outfit, "all day") stays out of the words; two short parts only
+  in edge cases.
 
 **Facts**
 - No fixed facts that vary: hours of daylight, "dark at five", "three
