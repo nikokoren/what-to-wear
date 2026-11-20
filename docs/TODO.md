@@ -44,6 +44,12 @@ ones shortened by the owner to one thing each (now a rule in
 taught is in `docs/SHAPES.md` ("Round 39"): pick situations with a human
 angle before writing many lines for them.
 
+**Round 40 (`2026-11-steady`), on the review page:** units for the
+steady screens (steady day, evening, night, cold all day), On and 11,
+both languages, written by shape. 82 lines, 25 cut before the vote
+(`review/rounds/2026-11-steady/critic.md`). After the vote:
+`review_sync.py`, then `build_pools.py`.
+
 Still open from the same review: with two or three drawings and no
 written forecast, rain that's only possible shows nowhere; snow that
 stops and comes back as rain reads "turns to rain"; at 11 pm there is no

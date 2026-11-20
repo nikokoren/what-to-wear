@@ -1,0 +1,288 @@
+{
+ "_about": "Runde 40, nach Formen geschrieben (docs/SHAPES.md): Einheiten für die ruhigen Tage, die häufigsten Bildschirme. 'fact': Index in facts.<key> (steady_night: in NIGHT in make_round40.py). 'cut': vom Kritiker gestrichen, mit der Regel.",
+ "steady": {
+  "10": [
+   {
+    "fact": 1,
+    "joke": "Heute gibt's nichts zu melden. Ich schau trotzdem wichtig.",
+    "shape": "self"
+   },
+   {
+    "fact": 1,
+    "joke": "Den ganzen Tag dasselbe. Willkommen in meinem Alltag.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Wenn heute was schiefgeht, war's nicht das Wetter. Und nicht ich.",
+    "shape": "self"
+   },
+   {
+    "fact": 1,
+    "joke": "Heute könnt ich mich auch selber ausschalten.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Langweilig. Aber ich beschwer mich nicht. Doch, eigentlich schon.",
+    "shape": "sigh"
+   },
+   {
+    "fact": 1,
+    "joke": "Draußen passiert heute nichts. Bei mir auch nicht.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Die Leute sagen „schönes Wetter“. Ich sag: unauffällig.",
+    "shape": "quote"
+   },
+   {
+    "fact": 1,
+    "joke": "„Kann man so lassen.“ Mein höchstes Lob.",
+    "shape": "quote",
+    "cut": "nur eine Übersetzung einer englischen Zeile ('Fine' is the highest praise I give)"
+   },
+   {
+    "fact": 0,
+    "joke": "„Passt“. Mehr Wetterbericht gibt's heute nicht.",
+    "shape": "quote",
+    "cut": "die Idee einer Zeile, die schon läuft („Mehr als „passt“ fällt mir … nicht mehr ein“)"
+   }
+  ],
+  "11": [
+   {
+    "fact": 1,
+    "joke": "Am Wetter liegt's heute nicht. Am Rest schon.",
+    "shape": "jab"
+   },
+   {
+    "fact": 1,
+    "joke": "„Was zieh ich bloß an?“ Hat sich erledigt. Das, was du anhast.",
+    "shape": "quote"
+   },
+   {
+    "fact": 0,
+    "joke": "Den ganzen Tag dasselbe Outfit. Bei dir fällt das eh keinem auf.",
+    "shape": "jab"
+   },
+   {
+    "fact": 1,
+    "joke": "Heute kannst du dich auf nichts rausreden. Auch nicht aufs Wetter.",
+    "shape": "habit"
+   },
+   {
+    "fact": 0,
+    "joke": "Einen Spiegel brauchst du heute nicht. Würd eh nichts helfen.",
+    "shape": "jab"
+   },
+   {
+    "fact": 1,
+    "joke": "Ein Tag ohne Wetterwechsel. Bei dir ändert sich ja auch nie was.",
+    "shape": "jab"
+   },
+   {
+    "fact": 0,
+    "joke": "Und trotzdem stehst du gleich wieder ratlos vorm Kleiderschrank.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "Du schaust trotzdem noch zweimal nach. Ich kenn dich.",
+    "shape": "habit",
+    "cut": "die Idee einer Zeile, die schon läuft"
+   },
+   {
+    "fact": 0,
+    "joke": "Der Tag ist pflegeleicht. Du bist's nicht.",
+    "shape": "jab",
+    "cut": "die Idee einer Zeile, die schon läuft („So pflegeleicht bist du selten“)"
+   }
+  ]
+ },
+ "steady_evening": {
+  "10": [
+   {
+    "fact": 0,
+    "joke": "Geht der Abend schief, war's nicht das Wetter. Ich hab Zeugen.",
+    "shape": "self"
+   },
+   {
+    "fact": 1,
+    "joke": "Wie jeden Abend bei mir: nichts Neues.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Ich würd ja auch ausgehen. Mich fragt nur nie wer.",
+    "shape": "self"
+   },
+   {
+    "fact": 1,
+    "joke": "„Was machst du heute Abend?“ Dasselbe wie immer. Das hier.",
+    "shape": "quote"
+   },
+   {
+    "fact": 0,
+    "joke": "Ruhiger Abend. Genau so, wie ich's mag. Also gar nicht.",
+    "shape": "sigh"
+   },
+   {
+    "fact": 1,
+    "joke": "Fürs Wetter passt's. Für mehr bin ich nicht zuständig.",
+    "shape": "self"
+   }
+  ],
+  "11": [
+   {
+    "fact": 0,
+    "joke": "Gleich hast du eh die Jogginghose an. Ich kenn dich.",
+    "shape": "habit"
+   },
+   {
+    "fact": 1,
+    "joke": "„Ich geh heute noch raus.“ Sicher.",
+    "shape": "quote"
+   },
+   {
+    "fact": 0,
+    "joke": "Das Wetter weiß, was es heute Abend macht. Du nicht.",
+    "shape": "jab"
+   },
+   {
+    "fact": 1,
+    "joke": "Wer dich heute Abend sieht, sieht dich so. Mein Beileid.",
+    "shape": "jab"
+   },
+   {
+    "fact": 0,
+    "joke": "Nimm dir heute Abend nicht zu viel vor. Du schaffst es eh nicht.",
+    "shape": "parent"
+   },
+   {
+    "fact": 1,
+    "joke": "Den Abend verbringst du eh auf dem Sofa. Da passt das Outfit auch.",
+    "shape": "habit",
+    "cut": "die Idee einer Zeile, die schon läuft („Für die Couch passt's sowieso“)"
+   }
+  ]
+ },
+ "steady_night": {
+  "10": [
+   {
+    "fact": 0,
+    "joke": "Ich ändere mich um die Zeit auch nicht mehr.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Nachtschicht. Keiner schaut, und ich mach's trotzdem.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Draußen schläft das Wetter. Ich muss weiter.",
+    "shape": "self"
+   },
+   {
+    "fact": 0,
+    "joke": "Hab extra bis morgen früh nachgeschaut.",
+    "shape": "self"
+   }
+  ],
+  "11": [
+   {
+    "fact": 0,
+    "joke": "Du bist noch wach. Das Wetter nicht. Lern was draus.",
+    "shape": "parent"
+   },
+   {
+    "fact": 0,
+    "joke": "„Nur noch kurz aufs Handy.“ Das sagst du seit einer Stunde.",
+    "shape": "quote"
+   },
+   {
+    "fact": 0,
+    "joke": "Morgen früh jammerst du wieder, dass du müde bist. Ich kenn dich.",
+    "shape": "habit"
+   },
+   {
+    "fact": 0,
+    "joke": "Was du jetzt anhast, sieht eh keiner. Zum Glück.",
+    "shape": "jab",
+    "cut": "die Idee einer Zeile, die schon läuft („sieht dich ja sowieso keiner mehr“)"
+   },
+   {
+    "fact": 0,
+    "joke": "Sechs Wecker stellen, fünf ignorieren. Du hast ein System.",
+    "shape": "habit",
+    "cut": "derselbe Witz wie eine englische Zeile dieser Runde, gleiche Form"
+   }
+  ]
+ },
+ "steady_cold": {
+  "10": [
+   {
+    "fact": 2,
+    "joke": "Mir egal, ich hab keine Füße.",
+    "shape": "self"
+   },
+   {
+    "fact": 2,
+    "joke": "Ich hab nicht mal eine Heizung. Nur eine Meinung.",
+    "shape": "self"
+   },
+   {
+    "fact": 1,
+    "joke": "Hält sich wenigstens an die Vorhersage.",
+    "shape": "self"
+   },
+   {
+    "fact": 4,
+    "joke": "Ganz ehrlich: Ich würd heut auch nicht rausgehen.",
+    "shape": "self"
+   },
+   {
+    "fact": 2,
+    "joke": "„Ist doch schön frisch.“ Nein. Ist es nicht.",
+    "shape": "quote",
+    "cut": "die Idee einer Zeile, die schon läuft („herrlich frisch“)"
+   },
+   {
+    "fact": 5,
+    "joke": "Kalt, kälter, heute. Na servas.",
+    "shape": "sigh",
+    "cut": "vom Besitzer schon gestrichen („Na servas“, zu österreichisch)"
+   }
+  ],
+  "11": [
+   {
+    "fact": 2,
+    "joke": "Die Hände in den Taschen, den Kopf eingezogen. Also wie immer.",
+    "shape": "jab"
+   },
+   {
+    "fact": 1,
+    "joke": "Du sagst heute dreimal „ist das kalt“. Mindestens.",
+    "shape": "quote"
+   },
+   {
+    "fact": 4,
+    "joke": "Deine Laune wird heute auch nicht wärmer.",
+    "shape": "jab",
+    "was": "Bis zum Abend wird's nicht wärmer. Deine Laune auch nicht."
+   },
+   {
+    "fact": 2,
+    "joke": "Die rote Nase steht dir. Lenkt vom Rest ab.",
+    "shape": "jab"
+   },
+   {
+    "fact": 5,
+    "joke": "Den Tee lässt du wieder kalt werden. Passt ja zum Wetter.",
+    "shape": "habit",
+    "cut": "die Idee einer Zeile, die schon läuft (der kalte Kaffee)"
+   }
+  ]
+ }
+}

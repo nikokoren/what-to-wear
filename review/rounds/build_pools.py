@@ -382,6 +382,7 @@ ONFILL = "2026-10-onfill"  # round 25: English at On and the drawing lines, topp
 THIN = "2026-11-thin"  # round 26: the groups under four lines that actually show, topped up
 THIN2 = "2026-11-thin2"  # round 27: the groups still under four, outside the box
 TURNS = "2026-11-turns"  # round 39: snow turning to rain (its evening rows are apply_evening.py's)
+STEADY = "2026-11-steady"  # round 40: units for the steady screens, written by shape
 # Follow-ups go by what the forecast line says (block.liquid, fu_key), not
 # by the mood: round 11's day lines are renamed to the group they follow.
 MOOD_TO_GROUP = {"warming": "off", "cooling": "on", "fickle": "offon", "wet": "rain", "snow": "snow",
@@ -666,9 +667,10 @@ def main():
         fill = (apply_follow(doc, lang, decisions, FILL) + apply_facts(doc, lang, decisions, FILL)
                 + apply_follow(doc, lang, decisions, ONFILL) + apply_follow(doc, lang, decisions, THIN)
                 + apply_follow(doc, lang, decisions, THIN2))
-        turns = apply_facts(doc, lang, decisions, TURNS) + apply_follow(doc, lang, decisions, TURNS)
+        turns = (apply_facts(doc, lang, decisions, TURNS) + apply_follow(doc, lang, decisions, TURNS)
+                 + apply_follow(doc, lang, decisions, STEADY))
         if turns:
-            print(f"{lang} round 39 (snow turns to rain): " + ", ".join(f"{v} {k}" for k, v in turns.items()))
+            print(f"{lang} rounds 39 and 40: " + ", ".join(f"{v} {k}" for k, v in turns.items()))
         if fill:
             print(f"{lang} round 24 (fill-up): " + ", ".join(f"{v} {k}" for k, v in fill.items()))
         notes = apply_notes(doc, lang)
