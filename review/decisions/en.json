@@ -47380,6 +47380,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:58:41.391Z"
  },
+ "sd-en-0b8154a56f70": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "It stays this cold all day. || A good excuse for that face you're making.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:30.587Z"
+ },
  "sd-en-0d325c6b013f": {
   "level": "11",
   "key": "theme_ghd",
@@ -47424,6 +47438,20 @@
   "edit": "No weekends for me, but no Mondays either. Fair trade.",
   "updatedAt": "2026-10-16T13:47:53.515Z"
  },
+ "sd-en-15de4371f64c": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "It's cold all day. || You'll walk like a penguin and call it efficient.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:34.605Z"
+ },
  "sd-en-166a7188057c": {
   "level": "11",
   "key": "theme_okt",
@@ -47453,6 +47481,20 @@
   "note": "",
   "edit": "This weekend you'll finally sort out that drawer. Sure.",
   "updatedAt": "2026-10-16T14:03:58.193Z"
+ },
+ "sd-en-16763f82823d": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "What you're wearing works for the rest of the evening. || The weather's done for today. I'm not. I never am.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:29.555Z"
  },
  "sd-en-18b2934e9d97": {
   "level": "10",
@@ -47500,6 +47542,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:01:29.958Z"
  },
+ "sd-en-1c361fa518f1": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "It stays cold today. || The cold won't let up. Neither will your complaining.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:42.221Z"
+ },
  "sd-en-1ec41c918797": {
   "level": "10",
   "key": "theme_easter",
@@ -47532,6 +47588,34 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:48:03.346Z"
  },
+ "sd-en-212e4a2a683d": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "This outfit works all day. || Same outfit all day. I've worn the same frame for years.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "This outfit works all day. || I've worn the same frame for years.",
+  "updatedAt": "2026-11-20T14:32:11.205Z"
+ },
+ "sd-en-21c082ae8803": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "You're dressed right for the rest of the evening. || Whatever happens tonight, the forecast was right.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:36.039Z"
+ },
  "sd-en-237efe51a88c": {
   "level": "10",
   "key": "theme_force",
@@ -47545,6 +47629,20 @@
   "note": "",
   "edit": "These are the clothes you're looking for.",
   "updatedAt": "2026-10-16T13:59:07.410Z"
+ },
+ "sd-en-2432ba6b9331": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "You're dressed right for the rest of the evening. || You'll change into sweatpants anyway. They'd work too.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:55.638Z"
  },
  "sd-en-2732a33922fc": {
   "level": "10",
@@ -47578,6 +47676,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:03:32.375Z"
+ },
+ "sd-en-2789be0a86b6": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "What you're wearing works for the whole day. || The weather's fine with your outfit. That makes one of us.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:29:45.171Z"
  },
  "sd-en-2f1d93a871ba": {
   "level": "10",
@@ -47623,6 +47735,20 @@
   "edit": "That exercise bike makes a lovely clothes rack.",
   "updatedAt": "2026-10-16T14:07:49.693Z"
  },
+ "sd-en-30d5f391c3f2": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "What you're wearing works for the whole day. || Dressed right? For the weather, yes.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:29:48.404Z"
+ },
  "sd-en-311071098596": {
   "level": "10",
   "key": "theme_pi",
@@ -47638,6 +47764,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:01:06.674Z"
+ },
+ "sd-en-34177e1e70d7": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "You're dressed right for the rest of the evening. || Whatever you do tonight, you'll do it in this. Bold.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:03.421Z"
  },
  "sd-en-3523669daeff": {
   "level": "11",
@@ -47682,6 +47822,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:05:23.725Z"
+ },
+ "sd-en-374efa6312cc": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "This outfit works all day. || The forecast is easy today. You, as always, are not.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:29:55.154Z"
  },
  "sd-en-375b86d79cc6": {
   "level": "10",
@@ -47744,6 +47898,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T13:48:07.314Z"
+ },
+ "sd-en-3a523dee90fe": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "You're dressed right for the rest of the evening. || I'd go out tonight myself. No legs, sadly.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:40.422Z"
+ },
+ "sd-en-3b3fafd9240a": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "It's cold all day. || I wouldn't know. I run warm.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:05.089Z"
  },
  "sd-en-3febaafe580d": {
   "level": "11",
@@ -47822,6 +48004,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T13:59:30.390Z"
+ },
+ "sd-en-46213af3e96a": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "What you're wearing works for the whole day. || Easy day. I'll take full credit anyway.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:32:17.538Z"
  },
  "sd-en-4659ac775c65": {
   "level": "10",
@@ -48009,6 +48205,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:08:07.808Z"
  },
+ "sd-en-651ac2069631": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "It's this cold the whole day. || Hot drink in hand all day. You'll call it hydration.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:45.804Z"
+ },
  "sd-en-67e2a9f3408f": {
   "level": "11",
   "key": "evening",
@@ -48022,6 +48232,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:07:27.092Z"
+ },
+ "sd-en-683051c16520": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "You're set for the whole day. || You'll stand in front of the mirror anyway. It won't help.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:04.071Z"
+ },
+ "sd-en-691c9bb1826b": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "This works for the rest of the night. || The night is calm. Your browser history, less so.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:39.204Z"
  },
  "sd-en-69b34c762c31": {
   "level": "11",
@@ -48039,6 +48277,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:10:59.909Z"
  },
+ "sd-en-69f8b2752577": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "It's this cold the whole day. || I'd lend you my warmth, but it's mostly battery.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:11.439Z"
+ },
  "sd-en-6aabdb76cac8": {
   "level": "10",
   "key": "day_dst_fall",
@@ -48055,6 +48307,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:46:26.480Z"
  },
+ "sd-en-6b2424aa4e93": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "It stays cold today. || Don't blame me. I only report it.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:16.155Z"
+ },
  "sd-en-6b254854e3c7": {
   "level": "11",
   "key": "day_friday",
@@ -48070,6 +48336,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:04:11.708Z"
+ },
+ "sd-en-6bddcb103821": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Nothing changes tonight. || I checked until morning so you don't have to.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:58.255Z"
  },
  "sd-en-6f31fea39bba": {
   "level": "11",
@@ -48119,6 +48399,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:56:25.374Z"
  },
+ "sd-en-72c49f167fa6": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "You're set for the whole day. || You'll wear it all day. Then, knowing you, tomorrow too.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:08.337Z"
+ },
  "sd-en-73b265c30ca5": {
   "level": "10",
   "key": "theme_bike",
@@ -48165,6 +48459,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:08:11.991Z"
  },
+ "sd-en-773a14e32e02": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "That outfit will see you through the evening. || If the evening goes wrong, I have an alibi.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:43.322Z"
+ },
  "sd-en-776edd3e5727": {
   "level": "10",
   "key": "day_monday",
@@ -48180,6 +48488,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T13:51:07.180Z"
+ },
+ "sd-en-7820333e819c": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "That outfit will see you through the evening. || A quiet evening. My favorite kind of forecast.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:46.672Z"
  },
  "sd-en-7b0f107ebde2": {
   "level": "10",
@@ -48241,6 +48563,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:47:17.397Z"
  },
+ "sd-en-7f5c764a0eea": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "This works for the rest of the night. || I'll keep watch. It's not like I sleep.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:05.056Z"
+ },
  "sd-en-7f8e0408d430": {
   "level": "10",
   "key": "day_longest",
@@ -48287,6 +48623,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:10:19.658Z"
  },
+ "sd-en-833bd5a5cdac": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "You're set for the whole day. || You won't need me again today. Rude, but true.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:32:25.871Z"
+ },
  "sd-en-86c55510c13d": {
   "level": "10",
   "key": "day_friday",
@@ -48316,6 +48666,20 @@
   "note": "",
   "edit": "Longest day of the year and you'll still say you ran out of time.",
   "updatedAt": "2026-10-16T14:04:42.576Z"
+ },
+ "sd-en-8a70b8a7437e": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "Nothing changes tonight. || Neither will your sleep schedule.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:43.288Z"
  },
  "sd-en-8affc0a081cd": {
   "level": "10",
@@ -48377,6 +48741,20 @@
   "edit": "Shortest day of the year and you'll still waste most of it.",
   "updatedAt": "2026-10-16T14:06:36.911Z"
  },
+ "sd-en-91489e785b7d": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "What you're wearing works for the rest of the evening. || Evening plans? The weather has none either.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:52.238Z"
+ },
  "sd-en-93597c48728a": {
   "level": "10",
   "key": "day_longest",
@@ -48424,6 +48802,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:02:04.641Z"
+ },
+ "sd-en-94df4d48c40d": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "This outfit works all day. || The day's sorted. Your hair, less so.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:12.471Z"
  },
  "sd-en-965ee16865b2": {
   "level": "10",
@@ -48501,6 +48893,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:09:25.825Z"
  },
+ "sd-en-9bcfb09bcf7a": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "You're set for the whole day. || Today I'm basically a picture frame. A smug one.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:32:33.221Z"
+ },
  "sd-en-9c3232179ce8": {
   "level": "11",
   "key": "day_friday",
@@ -48562,6 +48968,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:11:47.125Z"
+ },
+ "sd-en-a32133a3d9aa": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "What you're wearing works for the rest of the evening. || The weather won't ruin tonight. You might.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:13.571Z"
  },
  "sd-en-a48772c15337": {
   "level": "10",
@@ -48669,6 +49089,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:02:45.558Z"
  },
+ "sd-en-b5635bd9776d": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "This outfit works all day. || You'll feel right at home. Nothing ever changes with you either.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:20.721Z"
+ },
  "sd-en-b8908bd38bcc": {
   "level": "11",
   "key": "day_dst_spring",
@@ -48684,6 +49118,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:03:40.008Z"
+ },
+ "sd-en-b963f6468a2d": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "What you're wearing works for the whole day. || The weather's on autopilot. So am I.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:32:37.171Z"
  },
  "sd-en-ba1ac55e2adb": {
   "level": "11",
@@ -48745,6 +49193,34 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:10:24.425Z"
  },
+ "sd-en-c3563ac890b4": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "What you're wearing works for the whole day. || No layers to lose today. You'll lose your keys instead.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:30:24.221Z"
+ },
+ "sd-en-c436d73791bc": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "This outfit works all day. || Nothing for me to do all day. I'll still look busy.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "This outfit works all day. || Excellent. I was going to ask for the rest of the day off anyway.",
+  "updatedAt": "2026-11-20T14:33:04.156Z"
+ },
  "sd-en-c479afa4d07c": {
   "level": "11",
   "key": "day_friday",
@@ -48793,6 +49269,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:08:01.191Z"
  },
+ "sd-en-cb7f3c1c203d": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "What you're wearing works for the rest of the evening. || Perfect evening for that thing you keep putting off. You won't.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "What you're wearing works for the rest of the evening. || Perfect evening for that thing you keep putting off.",
+  "updatedAt": "2026-11-20T14:31:29.990Z"
+ },
  "sd-en-ce8a3cf1c0fe": {
   "level": "11",
   "key": "day_monday",
@@ -48823,6 +49313,34 @@
   "edit": "",
   "updatedAt": "2026-10-16T13:50:16.580Z"
  },
+ "sd-en-d217617e27cd": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "You're set for the whole day. || I checked every hour. Nothing. Riveting stuff.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "You're set for the whole day. || I checked every hour. Nothing.",
+  "updatedAt": "2026-11-20T14:33:15.490Z"
+ },
+ "sd-en-d480a019b324": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "That outfit will see you through the evening. || You'll say you're going out. You won't.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:34.921Z"
+ },
  "sd-en-d4a863bb05f5": {
   "level": "11",
   "key": "day_friday",
@@ -48836,6 +49354,20 @@
   "note": "",
   "edit": "The weekend plans are 'we'll see', aren't they.",
   "updatedAt": "2026-10-16T14:04:31.243Z"
+ },
+ "sd-en-d58d4fad2933": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "You're dressed right for the rest of the night. || You'll set five alarms and ignore four.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:47.421Z"
  },
  "sd-en-d5c07f442ba8": {
   "level": "11",
@@ -49031,6 +49563,20 @@
   "edit": "A groundhog is having a better day than you.",
   "updatedAt": "2026-10-16T14:10:02.326Z"
  },
+ "sd-en-e88dde91ccf7": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "This outfit works all day. || If anything changes, it wasn't in my forecast. So it won't.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:33:51.288Z"
+ },
  "sd-en-e9306aea8e1a": {
   "level": "11",
   "key": "day_longest",
@@ -49044,6 +49590,34 @@
   "note": "",
   "edit": "You'll say 'it's still so light' at ten.",
   "updatedAt": "2026-10-16T14:05:15.526Z"
+ },
+ "sd-en-e9f99d281b4b": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "You're dressed right for the rest of the night. || I'd yawn, if I could.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:09.272Z"
+ },
+ "sd-en-ece419b3c7de": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "It stays this cold all day. || The cold keeps its word today. I respect that.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:34:21.755Z"
  },
  "sd-en-edb3180bb36a": {
   "level": "10",
@@ -49104,6 +49678,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T13:56:16.691Z"
+ },
+ "sd-en-f6e132ae4545": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "This works for the rest of the night. || Still up? The weather's gone to bed. Take the hint.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:31:53.905Z"
  },
  "sd-en-f73dc8201cb3": {
   "level": "11",

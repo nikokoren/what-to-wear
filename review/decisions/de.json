@@ -45971,6 +45971,20 @@
   "edit": "Gerade ist's frisch, aber {WHEN} ist Shorts-Wetter.",
   "updatedAt": "2026-10-10T09:11:25.553Z"
  },
+ "sd-de-0075d0592871": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag kalt. || Deine Laune wird heute auch nicht wärmer.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:46.973Z"
+ },
  "sd-de-0234365fb119": {
   "level": "11",
   "key": "theme_force",
@@ -46032,6 +46046,48 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:19:20.142Z"
+ },
+ "sd-de-057ec1bc34a2": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Hab extra bis morgen früh nachgeschaut.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:50.156Z"
+ },
+ "sd-de-06411b576bb6": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Dein Outfit passt heute den ganzen Tag. || Den ganzen Tag dasselbe Outfit. Bei dir fällt das eh keinem auf.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:16.123Z"
+ },
+ "sd-de-08a66aa3b01a": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Heute könnt ich mich auch selber ausschalten.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:22.787Z"
  },
  "sd-de-08c9bf192082": {
   "level": "11",
@@ -46097,6 +46153,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:18:35.292Z"
  },
+ "sd-de-0eb228fcfdd4": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "Was du anhast, passt für den restlichen Abend. || Fürs Wetter passt's. Für mehr bin ich nicht zuständig.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:24.672Z"
+ },
  "sd-de-0f1bee0a781b": {
   "level": "11",
   "key": "day_friday",
@@ -46145,6 +46215,34 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:16:55.409Z"
  },
+ "sd-de-12dfce5446a2": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag so kalt. || Mir egal, ich hab keine Füße.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:00.405Z"
+ },
+ "sd-de-167c565f1909": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Ich ändere mich um die Zeit auch nicht mehr.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:54.040Z"
+ },
  "sd-de-1734f81a6b0d": {
   "level": "11",
   "key": "day_dst_fall",
@@ -46161,6 +46259,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:19:26.376Z"
  },
+ "sd-de-1987b68d8d99": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "Dein Outfit passt den ganzen Abend. || Geht der Abend schief, war's nicht das Wetter. Ich hab Zeugen.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:30.455Z"
+ },
  "sd-de-1acaa4cd90dd": {
   "level": "10",
   "key": "theme_okt",
@@ -46176,6 +46288,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:17:13.393Z"
+ },
+ "sd-de-1b979730de94": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "Was du anhast, passt für den restlichen Abend. || Wie jeden Abend bei mir: nichts Neues.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:33.306Z"
  },
  "sd-de-1b9e21fe0217": {
   "level": "10",
@@ -46209,6 +46335,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:18:06.309Z"
  },
+ "sd-de-1f6bb15ff85b": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Ein Tag ohne Wetterwechsel. Bei dir ändert sich ja auch nie was.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:20.840Z"
+ },
  "sd-de-1fa66d5c489e": {
   "level": "10",
   "key": "theme_okt",
@@ -46222,6 +46362,20 @@
   "note": "",
   "edit": "Morgen erzählt wieder jeder, er hätt nur zwei Maß gehabt.",
   "updatedAt": "2026-10-16T14:17:23.644Z"
+ },
+ "sd-de-1fb7814a6c5a": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Du bist noch wach. Das Wetter nicht. Lern was draus.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:27.389Z"
  },
  "sd-de-20afb78586cd": {
   "level": "10",
@@ -46345,6 +46499,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:22:27.260Z"
  },
+ "sd-de-26e673145553": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "Die Kälte hält heute den ganzen Tag an. || Du sagst heute dreimal „ist das kalt“. Mindestens.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:51.556Z"
+ },
  "sd-de-27233ffa51a3": {
   "level": "11",
   "key": "day_longest",
@@ -46377,6 +46545,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:18:11.909Z"
  },
+ "sd-de-29428b53a171": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Dein Outfit passt heute den ganzen Tag. || Und trotzdem stehst du gleich wieder ratlos vorm Kleiderschrank.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:27.439Z"
+ },
  "sd-de-2ddb35020b84": {
   "level": "10",
   "key": "day_shortest",
@@ -46406,6 +46588,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:12:40.858Z"
+ },
+ "sd-de-2f50ab03449a": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Draußen schläft das Wetter. Ich muss weiter.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:55.972Z"
  },
  "sd-de-3108013bf4e4": {
   "level": "11",
@@ -46612,6 +46808,20 @@
   "edit": "Eine Stunde mehr, und ich weiß nicht, wohin damit.",
   "updatedAt": "2026-10-16T14:12:20.959Z"
  },
+ "sd-de-4499aed19c70": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Dein Outfit passt heute den ganzen Tag. || Die Leute sagen „schönes Wetter“. Ich sag: unauffällig.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:27.321Z"
+ },
  "sd-de-48bd1beb9da5": {
   "level": "11",
   "key": "day_friday",
@@ -46672,6 +46882,48 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:16:29.259Z"
  },
+ "sd-de-5406ab81fd53": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "Die Kälte hält heute den ganzen Tag an. || Hält sich wenigstens an die Vorhersage.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:04.189Z"
+ },
+ "sd-de-54fd7df712ed": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "Dein Outfit passt den ganzen Abend. || Ich würd ja auch ausgehen. Mich fragt nur nie wer.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:39.589Z"
+ },
+ "sd-de-56169aa98e54": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || „Was zieh ich bloß an?“ Hat sich erledigt. Das, was du anhast.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:31.422Z"
+ },
  "sd-de-56db1d9be06e": {
   "level": "11",
   "key": "day_monday",
@@ -46701,6 +46953,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:14:04.925Z"
+ },
+ "sd-de-5a8a409827bc": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Draußen passiert heute nichts. Bei mir auch nicht.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:31.839Z"
  },
  "sd-de-5c97d308adfa": {
   "level": "10",
@@ -46751,6 +47017,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:14:16.859Z"
  },
+ "sd-de-5d7fd490fe0e": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "Was du anhast, passt für den restlichen Abend. || „Was machst du heute Abend?“ Dasselbe wie immer. Das hier.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:43.422Z"
+ },
  "sd-de-66020a299d72": {
   "level": "11",
   "key": "theme_tdf",
@@ -46769,6 +47049,34 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:25:11.943Z"
  },
+ "sd-de-6813d3b80d0e": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag so kalt. || Die rote Nase steht dir. Lenkt vom Rest ab.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "star",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:54.789Z"
+ },
+ "sd-de-68f9e67428d9": {
+  "level": "11",
+  "key": "steady_cold",
+  "path": "unit_11.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag so kalt. || Die Hände in den Taschen, den Kopf eingezogen. Also wie immer.",
+  "source": "candidate",
+  "batch": "Cold all day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:59.522Z"
+ },
  "sd-de-69bd842ac4f1": {
   "level": "10",
   "key": "theme_tdf",
@@ -46785,6 +47093,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:18:50.409Z"
+ },
+ "sd-de-6c89a77b5749": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Den ganzen Tag dasselbe. Willkommen in meinem Alltag.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:38.838Z"
  },
  "sd-de-6d2893dbc8bc": {
   "level": "11",
@@ -47007,6 +47329,20 @@
   "edit": "Die fehlende Stunde sieht man dir an.",
   "updatedAt": "2026-10-16T14:20:02.194Z"
  },
+ "sd-de-812f5f44a220": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || „Nur noch kurz aufs Handy.“ Das sagst du seit einer Stunde.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:32.789Z"
+ },
  "sd-de-83a5f9af2260": {
   "level": "10",
   "key": "day_dst_fall",
@@ -47164,6 +47500,34 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:15:38.792Z"
  },
+ "sd-de-9b4ddc0846c2": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Heute kannst du dich auf nichts rausreden. Auch nicht aufs Wetter.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:39.173Z"
+ },
+ "sd-de-9bc11df87135": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag kalt. || Ganz ehrlich: Ich würd heut auch nicht rausgehen.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:09.472Z"
+ },
  "sd-de-9e1acee1aaae": {
   "level": "11",
   "key": "theme_tdf",
@@ -47212,6 +47576,20 @@
   "edit": "Gleich sagst du wieder „Ich brauch erst mal einen Kaffee“. Originell.",
   "updatedAt": "2026-10-16T14:21:40.360Z"
  },
+ "sd-de-a0ef0227c555": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "Dein Outfit passt den ganzen Abend. || Das Wetter weiß, was es heute Abend macht. Du nicht.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:02.472Z"
+ },
  "sd-de-a358144d955c": {
   "level": "10",
   "key": "day_friday",
@@ -47241,6 +47619,34 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:23:53.808Z"
+ },
+ "sd-de-a8a8ddc90ad9": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Dein Outfit passt heute den ganzen Tag. || Langweilig. Aber ich beschwer mich nicht. Doch, eigentlich schon.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:44.589Z"
+ },
+ "sd-de-a914a2984b18": {
+  "level": "11",
+  "key": "steady_night",
+  "path": "unit_11.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Morgen früh jammerst du wieder, dass du müde bist. Ich kenn dich.",
+  "source": "candidate",
+  "batch": "Steady night: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:38.306Z"
  },
  "sd-de-aa0c2abcc028": {
   "level": "10",
@@ -47334,6 +47740,48 @@
   "edit": "Dein Wochenendprogramm: viel vornehmen, nichts machen.",
   "updatedAt": "2026-10-16T14:20:47.727Z"
  },
+ "sd-de-bcb5e6555e78": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "Dein Outfit passt den ganzen Abend. || Nimm dir heute Abend nicht zu viel vor. Du schaffst es eh nicht.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:05.973Z"
+ },
+ "sd-de-bcf9521d507d": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "Was du anhast, passt für den restlichen Abend. || Wer dich heute Abend sieht, sieht dich so. Mein Beileid.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:09.672Z"
+ },
+ "sd-de-bf4a080e44ba": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Heute gibt's nichts zu melden. Ich schau trotzdem wichtig.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:52.956Z"
+ },
  "sd-de-c04401feb54e": {
   "level": "10",
   "key": "theme_ghd",
@@ -47396,6 +47844,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:20:08.226Z"
+ },
+ "sd-de-c41106a8a69f": {
+  "level": "10",
+  "key": "steady_night",
+  "path": "unit_10.steady_night[+]",
+  "text": "Was du anhast, passt für den Rest der Nacht. || Nachtschicht. Keiner schaut, und ich mach's trotzdem.",
+  "source": "candidate",
+  "batch": "Steady night: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:04.122Z"
  },
  "sd-de-c48c0c32c61d": {
   "level": "10",
@@ -47553,6 +48015,48 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:24:49.676Z"
  },
+ "sd-de-da5e8fb260a1": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Was du anhast, passt für den ganzen Tag. || Am Wetter liegt's heute nicht. Am Rest schon.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:41.573Z"
+ },
+ "sd-de-dd5f423b8556": {
+  "level": "10",
+  "key": "steady",
+  "path": "unit_10.steady[+]",
+  "text": "Dein Outfit passt heute den ganzen Tag. || Wenn heute was schiefgeht, war's nicht das Wetter. Und nicht ich.",
+  "source": "candidate",
+  "batch": "Steady day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:35:57.238Z"
+ },
+ "sd-de-dd695a1626b6": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "Was du anhast, passt für den restlichen Abend. || „Ich geh heute noch raus.“ Sicher.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:16.489Z"
+ },
  "sd-de-ddbada1580b7": {
   "level": "11",
   "key": "theme_okt",
@@ -47697,6 +48201,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:14:32.109Z"
  },
+ "sd-de-eaec1fbcf6cb": {
+  "level": "11",
+  "key": "steady",
+  "path": "unit_11.steady[+]",
+  "text": "Dein Outfit passt heute den ganzen Tag. || Einen Spiegel brauchst du heute nicht. Würd eh nichts helfen.",
+  "source": "candidate",
+  "batch": "Steady day: 11",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:37:44.439Z"
+ },
  "sd-de-ef818351bbce": {
   "level": "10",
   "key": "day_monday",
@@ -47712,6 +48230,20 @@
   "note": "",
   "edit": "",
   "updatedAt": "2026-10-16T14:14:37.392Z"
+ },
+ "sd-de-ef8e9394c5a2": {
+  "level": "10",
+  "key": "steady_evening",
+  "path": "unit_10.steady_evening[+]",
+  "text": "Dein Outfit passt den ganzen Abend. || Ruhiger Abend. Genau so, wie ich's mag. Also gar nicht.",
+  "source": "candidate",
+  "batch": "Steady evening: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:47.439Z"
  },
  "sd-de-f066fc574a90": {
   "level": "11",
@@ -47745,6 +48277,20 @@
   "edit": "",
   "updatedAt": "2026-10-16T14:22:35.292Z"
  },
+ "sd-de-f5cb3ad47319": {
+  "level": "10",
+  "key": "steady_cold",
+  "path": "unit_10.steady_cold[+]",
+  "text": "Es bleibt den ganzen Tag so kalt. || Ich hab nicht mal eine Heizung. Nur eine Meinung.",
+  "source": "candidate",
+  "batch": "Cold all day: On",
+  "round": "2026-11-steady",
+  "verdict": "veto",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:36:16.605Z"
+ },
  "sd-de-f75c7c4ba8c4": {
   "level": "10",
   "key": "day_monday",
@@ -47774,6 +48320,20 @@
   "note": "",
   "edit": "Wer jetzt noch eine Besprechung ansetzt, ist ein schlechter Mensch.",
   "updatedAt": "2026-10-16T14:13:40.443Z"
+ },
+ "sd-de-f999b7237dfe": {
+  "level": "11",
+  "key": "steady_evening",
+  "path": "unit_11.steady_evening[+]",
+  "text": "Dein Outfit passt den ganzen Abend. || Gleich hast du eh die Jogginghose an. Ich kenn dich.",
+  "source": "candidate",
+  "batch": "Steady evening: 11",
+  "round": "2026-11-steady",
+  "verdict": "keep",
+  "tags": [],
+  "note": "",
+  "edit": "",
+  "updatedAt": "2026-11-20T14:38:22.489Z"
  },
  "sd-de-fb4b5505e2a9": {
   "level": "10",

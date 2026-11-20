@@ -2375,10 +2375,16 @@ Most common reasons: not funny (1172), unclear (138), robotic (54), wrong fact (
   _not funny_
 - Outfit settled for the whole day. Most decisions never get that far.  
   _not funny_
+- This outfit works all day. || If anything changes, it wasn't in my forecast. So it won't.  
+  _no tag_
 - Today's forecast fits on a sticky note. With room for a doodle.  
   _not funny_
 - What you're wearing works all day, no changes. || You'd make a decent screen.  
   _not funny_
+- What you're wearing works for the whole day. || The weather's on autopilot. So am I.  
+  _no tag_
+- You're set for the whole day. || Today I'm basically a picture frame. A smug one.  
+  _no tag_
 - Zero changes all day. Easiest money I never made.  
   _not funny_
 
@@ -2394,6 +2400,20 @@ Most common reasons: not funny (1172), unclear (138), robotic (54), wrong fact (
   _not funny_
 - The weather does nothing new all day. || The most reliable thing you'll deal with today, then.  
   _not funny_
+- This outfit works all day. || The day's sorted. Your hair, less so.  
+  _no tag_
+- This outfit works all day. || The forecast is easy today. You, as always, are not.  
+  _no tag_
+- This outfit works all day. || You'll feel right at home. Nothing ever changes with you either.  
+  _no tag_
+- What you're wearing works for the whole day. || Dressed right? For the weather, yes.  
+  _no tag_
+- What you're wearing works for the whole day. || No layers to lose today. You'll lose your keys instead.  
+  _no tag_
+- What you're wearing works for the whole day. || The weather's fine with your outfit. That makes one of us.  
+  _no tag_
+- You're set for the whole day. || You'll wear it all day. Then, knowing you, tomorrow too.  
+  _no tag_
 
 ## steady_cold · plain
 
@@ -2402,10 +2422,19 @@ Most common reasons: not funny (1172), unclear (138), robotic (54), wrong fact (
 
 ## steady_cold · dry
 
+- It's cold all day. || I wouldn't know. I run warm.  
+  _no tag_
 - It's cold all day. || You'll say 'it's freezing' twenty times anyway.  
   _not funny_
+- It's this cold the whole day. || I'd lend you my warmth, but it's mostly battery.  
+  _no tag_
 - The cold doesn't budge all day. || You'll keep everything on indoors for ten minutes, 'just to warm up'.  
   _not funny_
+
+## steady_cold · sarcastic
+
+- It's this cold the whole day. || Hot drink in hand all day. You'll call it hydration.  
+  _no tag_
 
 ## steady_evening · dry
 
@@ -2413,15 +2442,33 @@ Most common reasons: not funny (1172), unclear (138), robotic (54), wrong fact (
   _write new, unclear_
 - Nothing changes for the rest of the evening. || Unlike the TV, I won't ask if you're still watching.  
   _not funny_
+- That outfit will see you through the evening. || A quiet evening. My favorite kind of forecast.  
+  _no tag_
+- That outfit will see you through the evening. || If the evening goes wrong, I have an alibi.  
+  _no tag_
 - What you have on works for the rest of the evening. || I'll be quiet now. The other screens in here won't.  
   _not funny_
 - What you have on works for the rest of the evening. || Whoever you see tonight, nobody will be better forecast.  
   _not funny_
+- What you're wearing works for the rest of the evening. || The weather's done for today. I'm not. I never am.  
+  _no tag_
+- You're dressed right for the rest of the evening. || I'd go out tonight myself. No legs, sadly.  
+  _no tag_
+- You're dressed right for the rest of the evening. || Whatever happens tonight, the forecast was right.  
+  _no tag_
 
 ## steady_evening · sarcastic
 
+- That outfit will see you through the evening. || You'll say you're going out. You won't.  
+  _no tag_
 - The rest of the evening needs nothing more than this. || Your 'five minutes on the sofa' will probably cover it.  
   _not funny_
+- What you're wearing works for the rest of the evening. || The weather won't ruin tonight. You might.  
+  _no tag_
+- You're dressed right for the rest of the evening. || Whatever you do tonight, you'll do it in this. Bold.  
+  _no tag_
+- You're dressed right for the rest of the evening. || You'll change into sweatpants anyway. They'd work too.  
+  _no tag_
 
 ## steady_hot · plain
 
@@ -2458,12 +2505,16 @@ Most common reasons: not funny (1172), unclear (138), robotic (54), wrong fact (
   _not funny_
 - Nothing changes for the rest of the night. || Not that anyone will see it at this hour. Except me.  
   _not funny_
+- Nothing changes tonight. || I checked until morning so you don't have to.  
+  _no tag_
 - Nothing more from the weather tonight. || I'll tell you the rest in the morning. Assuming you're up.  
   _not funny_
 - Nothing to change before bed. || Well, one thing. But that's up to you.  
   _not funny_
 - The weather settles down for the night. || Worth a try.  
   _not funny_
+- This works for the rest of the night. || I'll keep watch. It's not like I sleep.  
+  _no tag_
 - What you have on is fine for the rest of the night. || After dark, outfits are graded on a curve.  
   _not funny_
 - What you have on is fine for the rest of the night. || Same as before, only darker. Groundbreaking work, if I say so myself.  
@@ -2472,6 +2523,15 @@ Most common reasons: not funny (1172), unclear (138), robotic (54), wrong fact (
   _not funny_
 - What you're wearing works until bed. || The night shift is me and the fridge. The fridge hums. I don't.  
   _not funny_
+
+## steady_night · sarcastic
+
+- Nothing changes tonight. || Neither will your sleep schedule.  
+  _no tag_
+- This works for the rest of the night. || The night is calm. Your browser history, less so.  
+  _no tag_
+- You're dressed right for the rest of the night. || You'll set five alarms and ignore four.  
+  _no tag_
 
 ## storm · dry
 

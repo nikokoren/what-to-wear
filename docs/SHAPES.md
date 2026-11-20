@@ -165,3 +165,37 @@ were "not funny, forced" across every shape. Two lessons:
 - **"Your habits, predicted" held up:** 9 of 13 kept, the best shape in
   the round, at 11 in both languages. "Zitat zurück" did worse here (2
   of 7) than its history; one of the two kept was starred.
+
+## Round 40: the steady screens
+
+`2026-11-steady` (`review/rounds/make_round40.py`), voted 20 November
+2026. 82 units, 2 starred, **72% vetoed**: worse than round 39 and in the
+range of the thin rounds. No veto carried a tag or a note.
+
+| | Kept |
+|---|---|
+| English | 17 of 42 (40%) |
+| German | 6 of 40 (15%) |
+| Jabs at you (11) | 2 of 19 |
+| Quotes thrown back | 0 of 6 |
+| Habits, credit, the screen's limits | 12 of 32 (about 40%) |
+
+What it says:
+
+- **Shapes don't refill a full pool.** The steady slots already held
+  11 to 22 voted lines each, covering the obvious angles (nothing to do,
+  nothing to blame, you'll check anyway). New lines landed in the same
+  angles and read as seen before. The shape method helps a new or thin
+  situation (round 39's maybe-rain evening); it doesn't help here.
+- **The German was weak.** 15% kept, every German slot under 25%. As in
+  the owner's earlier notes, it reads as written rather than spoken.
+  German needs a native writer, or the owner's own lines, more than more
+  rounds.
+- **Jabs at 11 failed** this time (11% kept) after doing well in the
+  history; a jab needs a fresh target, and steady days don't give one.
+- **The owner cut the sting endings** in two kept lines ("Riveting
+  stuff.", "You won't."): end on the laugh, and the laugh was earlier.
+
+So for the steady screens the next step is not another writing round but
+the markup: rotate through the voted lines better (see `docs/TODO.md`).
+

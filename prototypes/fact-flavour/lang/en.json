@@ -1034,14 +1034,20 @@
       "No layer to carry today. That means you have both hands free for snacks.",
       "This outfit works all day. || The one forecast I could do in my sleep.",
       "Today needs nothing more than what you have on. || A rare thing for me to say about anyone.",
-      "{M:09,10}This outfit works all day. || No pumpkin in the forecast. It's in everything else, though."
+      "{M:09,10}This outfit works all day. || No pumpkin in the forecast. It's in everything else, though.",
+      "This outfit works all day. || Excellent. I was going to ask for the rest of the day off anyway.",
+      "This outfit works all day. || I've worn the same frame for years.",
+      "You're set for the whole day. || You won't need me again today. Rude, but true.",
+      "What you're wearing works for the whole day. || Easy day. I'll take full credit anyway.",
+      "You're set for the whole day. || I checked every hour. Nothing."
     ],
     "steady_evening": [
       "What you're wearing works for the rest of the evening. || So whatever the evening brings, your outfit won't be the problem.",
       "You're fine as you are for the rest of the evening. || Rare words from me. Enjoy them.",
       "You're dressed for the rest of the evening. || I'll go back to looking decorative.",
       "Nothing to change for the rest of the evening. || My work here is done. Not that I'll stop.",
-      "Your outfit holds for the rest of the evening. || I'll keep refreshing anyway. It's a hobby."
+      "Your outfit holds for the rest of the evening. || I'll keep refreshing anyway. It's a hobby.",
+      "What you're wearing works for the rest of the evening. || Evening plans? The weather has none either."
     ],
     "steady_night": [
       "What you're wearing works until bed. || Whenever that is. I've stopped guessing.",
@@ -1049,13 +1055,16 @@
       "This works for the rest of the night. || My least-read forecast. Also my most accurate.",
       "This works for the rest of the night. || Out there, it's down to delivery drivers and bad decisions.",
       "You're dressed right for the rest of the night. || The weather saves its drama for daytime, when there's an audience.",
-      "This works for the rest of the night. || The rest of the night fits on a sticky note. I used a whole screen anyway."
+      "This works for the rest of the night. || The rest of the night fits on a sticky note. I used a whole screen anyway.",
+      "You're dressed right for the rest of the night. || I'd yawn, if I could."
     ],
     "steady_cold": [
+      "It stays cold today. || Don't blame me. I only report it.",
       "It's cold all day. || My only weakness is the cold. Kidding, I don't have one.",
       "It stays this cold the whole day. || I'm staying in here where it's warm.",
       "It stays this cold all day. || All day. I checked twice, out of pure spite.",
-      "It stays cold today. || If the sun shows up, it's purely decorative."
+      "It stays cold today. || If the sun shows up, it's purely decorative.",
+      "It stays this cold all day. || The cold keeps its word today. I respect that."
     ],
     "steady_hot": [
       "The heat lasts all day: drink water and find shade. || Somebody cranked the outside too high. Wasn't me.",
@@ -1231,6 +1240,7 @@
       "You're dressed for the whole day. || Whatever you were going to complain about, it isn't this.",
       "No changes all day, so there's nothing to forget. || You'll manage something anyway.",
       "The weather stays put all day. || So will you, probably.",
+      "You're set for the whole day. || You'll stand in front of the mirror anyway. It won't help.",
       "One outfit covers the whole day. || Set it and forget it, like your gym membership.",
       "What you have on is right for the whole day. || Don't let it go to your head.",
       "You're dressed right for the whole day. || So you can stop staring into the wardrobe now.",
@@ -1244,6 +1254,7 @@
       "Nothing changes for the rest of the evening. || Plenty of time to start something you won't finish.",
       "The weather won't change for the rest of the evening. || You'll still blame it if your plans fall through.",
       "No changes for the rest of the evening. || You'll still check me again in an hour. I'll still say this.",
+      "What you're wearing works for the rest of the evening. || Perfect evening for that thing you keep putting off.",
       "You're dressed right for the rest of the evening. || That leaves the evening free for losing the remote. Again."
     ],
     "steady_night": [
@@ -1252,6 +1263,7 @@
       "You can wear this for the rest of the night. || You could even go to bed in it. I know you have before.",
       "The weather's done for the night. || You checked anyway. For what, exactly?",
       "Nothing changes before morning. || Tomorrow-you is already annoyed with tonight-you.",
+      "This works for the rest of the night. || Still up? The weather's gone to bed. Take the hint.",
       "What you have on is fine for the rest of the night. || Including the bit on the sofa you'll call 'resting my eyes'.",
       "You're dressed right for the rest of the night. || So that's not what's keeping you up."
     ],
@@ -1264,6 +1276,9 @@
       "It stays this cold all day. || So no, you can't wait it out.",
       "The cold stays all day. || You'll pull your sleeves over your hands and call them gloves.",
       "Expect the cold to last all day. || You'll make that noise once you're outside. You know the one.",
+      "It's cold all day. || You'll walk like a penguin and call it efficient.",
+      "It stays this cold all day. || A good excuse for that face you're making.",
+      "It stays cold today. || The cold won't let up. Neither will your complaining.",
       "It doesn't get any warmer today. || Staring at me longer won't change that.",
       "Expect the cold to last all day. || Your nose will turn a color I can't even display."
     ],

@@ -1947,23 +1947,45 @@ Most common reasons: not funny (856), unclear (142), robotic (84), too long (20)
 
 ## steady · dry
 
+- Dein Outfit passt heute den ganzen Tag. || Die Leute sagen „schönes Wetter“. Ich sag: unauffällig.  
+  _no tag_
+- Dein Outfit passt heute den ganzen Tag. || Wenn heute was schiefgeht, war's nicht das Wetter. Und nicht ich.  
+  _no tag_
 - Der Laubbläser vom Nachbarn hält auch den ganzen Tag durch.  
   _not funny_
 - Früher hat man dafür aus dem Fenster geschaut.  
   _not funny_
 - Was du anhast, passt den ganzen Tag. || Ich hab extra nach einem Haken gesucht. Es gibt keinen. Ärgerlich.  
   _no tag_
+- Was du anhast, passt für den ganzen Tag. || Draußen passiert heute nichts. Bei mir auch nicht.  
+  _no tag_
+- Was du anhast, passt für den ganzen Tag. || Heute gibt's nichts zu melden. Ich schau trotzdem wichtig.  
+  _no tag_
+- Was du anhast, passt für den ganzen Tag. || Heute könnt ich mich auch selber ausschalten.  
+  _no tag_
 
 ## steady · sarcastic
 
 - Dein Outfit passt den ganzen Tag. || „…oder es bleibt, wie es ist.“ Mit so einer Regel läge ich auch nie daneben.  
   _not funny_
+- Dein Outfit passt heute den ganzen Tag. || Den ganzen Tag dasselbe Outfit. Bei dir fällt das eh keinem auf.  
+  _no tag_
+- Dein Outfit passt heute den ganzen Tag. || Einen Spiegel brauchst du heute nicht. Würd eh nichts helfen.  
+  _no tag_
 - Den ganzen Tag richtig angezogen. Merk dir das Gefühl.  
   _write new, not funny_
 - So, wie du angezogen bist, kommst du durch den ganzen Tag. || Wie du das sonst schaffst, ist mir ein Rätsel.  
   _not funny_
 - Was du anhast, passt den ganzen Tag. || Das ist heute vermutlich das Einzige, was bei dir passt.  
   _not funny_
+- Was du anhast, passt für den ganzen Tag. || Am Wetter liegt's heute nicht. Am Rest schon.  
+  _no tag_
+- Was du anhast, passt für den ganzen Tag. || Ein Tag ohne Wetterwechsel. Bei dir ändert sich ja auch nie was.  
+  _no tag_
+- Was du anhast, passt für den ganzen Tag. || Heute kannst du dich auf nichts rausreden. Auch nicht aufs Wetter.  
+  _no tag_
+- Was du anhast, passt für den ganzen Tag. || „Was zieh ich bloß an?“ Hat sich erledigt. Das, was du anhast.  
+  _no tag_
 
 ## steady_cold · plain
 
@@ -1984,13 +2006,25 @@ Most common reasons: not funny (856), unclear (142), robotic (84), too long (20)
   _not funny_
 - Die Kälte hält heute den ganzen Tag an. || Draußen rauchen heute auch die Nichtraucher.  
   _not funny_
+- Die Kälte hält heute den ganzen Tag an. || Hält sich wenigstens an die Vorhersage.  
+  _no tag_
 - Es bleibt den ganzen Tag so kalt. || Die Heizung wird trotzdem nicht höher gedreht. Dafür gibt's ja Hausschuhe.  
   _write new: Maybe some other phrasings work better, like i dont have a bag full of money laying around, or wir sind her ja nicht im schlaraffenland. or maybe a riff on. hopefully the neighbors crank up their heat and we can profit off of that. there might be a few different versions that are good in there. give it a go._
+- Es bleibt den ganzen Tag so kalt. || Ich hab nicht mal eine Heizung. Nur eine Meinung.  
+  _no tag_
+- Es bleibt den ganzen Tag so kalt. || Mir egal, ich hab keine Füße.  
+  _no tag_
 - Wärmer wird's heute den ganzen Tag nicht. || Meine Laune übrigens auch nicht.  
   _write new, unclear, not funny: Does a Laune really get warmer?_
 
 ## steady_cold · sarcastic
 
+- Die Kälte hält heute den ganzen Tag an. || Du sagst heute dreimal „ist das kalt“. Mindestens.  
+  _no tag_
+- Es bleibt den ganzen Tag kalt. || Deine Laune wird heute auch nicht wärmer.  
+  _no tag_
+- Es bleibt den ganzen Tag so kalt. || Die Hände in den Taschen, den Kopf eingezogen. Also wie immer.  
+  _no tag_
 - Kalt bleibt's heute, den ganzen Tag. || Der Frosch im Glas hätte jetzt Winterstarre. Ich muss trotzdem arbeiten.  
   _not funny_
 
@@ -2005,10 +2039,31 @@ Most common reasons: not funny (856), unclear (142), robotic (84), too long (20)
 
 ## steady_evening · dry
 
+- Dein Outfit passt den ganzen Abend. || Geht der Abend schief, war's nicht das Wetter. Ich hab Zeugen.  
+  _no tag_
+- Dein Outfit passt den ganzen Abend. || Ich würd ja auch ausgehen. Mich fragt nur nie wer.  
+  _no tag_
+- Dein Outfit passt den ganzen Abend. || Ruhiger Abend. Genau so, wie ich's mag. Also gar nicht.  
+  _no tag_
 - Für den Rest des Abends passt, was du anhast. || Sonst passt heute ja nicht viel, aber das schon.  
   _write new, not funny_
 - Was du anhast, passt den ganzen Abend. || Ich hab heute auch nichts mehr vor. Ich hab nie was vor.  
   _write new, not funny_
+- Was du anhast, passt für den restlichen Abend. || Wie jeden Abend bei mir: nichts Neues.  
+  _no tag_
+- Was du anhast, passt für den restlichen Abend. || „Was machst du heute Abend?“ Dasselbe wie immer. Das hier.  
+  _no tag_
+
+## steady_evening · sarcastic
+
+- Dein Outfit passt den ganzen Abend. || Das Wetter weiß, was es heute Abend macht. Du nicht.  
+  _no tag_
+- Dein Outfit passt den ganzen Abend. || Nimm dir heute Abend nicht zu viel vor. Du schaffst es eh nicht.  
+  _no tag_
+- Was du anhast, passt für den restlichen Abend. || Wer dich heute Abend sieht, sieht dich so. Mein Beileid.  
+  _no tag_
+- Was du anhast, passt für den restlichen Abend. || „Ich geh heute noch raus.“ Sicher.  
+  _no tag_
 
 ## steady_hot · plain
 
@@ -2037,8 +2092,16 @@ Most common reasons: not funny (856), unclear (142), robotic (84), too long (20)
 
 - Mit dem, was du anhast, kommst du gut durch den Abend. || Um die Zeit bin ich nur noch ein Testbild mit Meinung.  
   _not funny_
+- Was du anhast, passt für den Rest der Nacht. || Draußen schläft das Wetter. Ich muss weiter.  
+  _no tag_
+- Was du anhast, passt für den Rest der Nacht. || Hab extra bis morgen früh nachgeschaut.  
+  _no tag_
 - Was du anhast, passt für den Rest der Nacht. || Ich schau trotzdem noch mal nach. Einer muss ja wach bleiben.  
   _not funny_
+- Was du anhast, passt für den Rest der Nacht. || Ich ändere mich um die Zeit auch nicht mehr.  
+  _no tag_
+- Was du anhast, passt für den Rest der Nacht. || Nachtschicht. Keiner schaut, und ich mach's trotzdem.  
+  _no tag_
 - Was du anhast, passt für den Rest des Abends. || Der ist um die Uhrzeit sowieso nicht mehr lang.  
   _write new, not funny_
 
@@ -2046,6 +2109,10 @@ Most common reasons: not funny (856), unclear (142), robotic (84), too long (20)
 
 - Mit dem, was du anhast, kommst du gut durch den Abend. || Ich frag nicht, warum du noch angezogen bist. Ich will's nicht wissen.  
   _not funny_
+- Was du anhast, passt für den Rest der Nacht. || Du bist noch wach. Das Wetter nicht. Lern was draus.  
+  _no tag_
+- Was du anhast, passt für den Rest der Nacht. || „Nur noch kurz aufs Handy.“ Das sagst du seit einer Stunde.  
+  _no tag_
 - Was du anhast, passt für den Rest des Abends. || Der war übrigens vor einer Stunde. Ab ins Bett.  
   _not funny_
 

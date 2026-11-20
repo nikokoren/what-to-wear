@@ -973,6 +973,7 @@ Do not edit by hand; vote on the page instead.
 - Expect the cold to last all day. || Your nose will turn a color I can't even display.
 - It doesn't get any warmer today. || Staring at me longer won't change that.
 - It doesn't get any warmer today. || Staring at me longer won't change that.
+- It stays cold today. || Don't blame me. I only report it.
 - It stays this cold the whole day. || I'm staying in here where it's warm.
 - It stays this cold the whole day. || I'm staying in here where it's warm.
 - It's cold all day. || My only weakness is the cold. Kidding, I don't have one.

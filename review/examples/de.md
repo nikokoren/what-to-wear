@@ -962,6 +962,7 @@ Do not edit by hand; vote on the page instead.
 - Es bleibt den ganzen Tag so kalt. || Deine schlechte Laune hat heute ausnahmsweise mal einen Grund.
 - Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.
 - Es bleibt den ganzen Tag so kalt. || Dick eingepackt gefällst du mir sowieso am besten. Man sieht weniger.
+- Es bleibt den ganzen Tag so kalt. || Die rote Nase steht dir. Lenkt vom Rest ab.
 - Es wird den ganzen Tag nicht wärmer. || Du kannst also aufhören, mich alle fünf Minuten anzuglotzen.
 - Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.
 - Wärmer wird's heute den ganzen Tag nicht. || Du kannst es trotzdem gern noch mal mit Jammern versuchen.
