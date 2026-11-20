@@ -98,7 +98,22 @@ for lang, doc in TEXTS.items():
             n = len(lib.get(m, [])) + len(lib.get("cool", []))
             expect(f"{lang} {level} {m} with cool's lines: {n}, fewer than 101", n < 101)
 
+# A line that sits out (a month tag, here) doesn't hand its turn to the next
+# one: over a month the others come round about equally. Before November
+# 2026 the line after a tagged one showed about twice as often.
+import collections
+saved = TEXTS["en"]["units_10"]["steady"]
+TEXTS["en"]["units_10"]["steady"] = ["This outfit works all day. || UNIT A", "{M:12}This outfit works all day. || DECEMBER",
+                                     "This outfit works all day. || UNIT B", "This outfit works all day. || UNIT C",
+                                     "This outfit works all day. || UNIT D", "This outfit works all day. || UNIT E"]
+seen = collections.Counter(render((dt.date(2026, 6, 1) + dt.timedelta(days=i)).isoformat(), h)[1]
+                           for i in range(30) for h in range(7, 17))
+TEXTS["en"]["units_10"]["steady"] = saved
+expect("a December line never shows in June", "DECEMBER" not in seen)
+expect(f"the lines after a skipped one come round evenly ({dict(seen)})",
+       len(seen) == 5 and max(seen.values()) <= 1.3 * min(seen.values()))
+
 if failures:
     print("FAILED:\n  " + "\n  ".join(failures))
     sys.exit(1)
-print("all good: a new wording every hour, steady within the hour, every line comes round")
+print("all good: a new wording every hour, steady within the hour, every line comes round, evenly")

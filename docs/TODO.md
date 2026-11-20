@@ -55,6 +55,14 @@ screens; and fix the rotation's skip bias (a month-tagged line that's
 filtered out hands its turn to the next line, which then shows twice as
 often).
 
+**Rotation fixed (20 November 2026):** every pool now picks among the
+lines allowed right now (fact, rain, units, the sarcastic line, the
+drawings' line, the evening's sentence and line), so a line that sits
+out no longer doubles the next one (`test_rotation.py` pins it). A
+steady day over four weeks (4 glances a day): English at On 19 different
+screens, the most-seen 9 times (was 13 and 22). With every line coming
+round, the number of screens is now the pool's size.
+
 Still open from the same review: with two or three drawings and no
 written forecast, rain that's only possible shows nowhere; snow that
 stops and comes back as rain reads "turns to rain"; at 11 pm there is no

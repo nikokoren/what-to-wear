@@ -65,6 +65,10 @@ of on the next line, every line comes round, and someone who looks at
 7:00 every morning sees the whole pool over the days, not a subset.
 The screen changes when TRMNL next regenerates it: the weather's
 current time moves every 15 minutes, so the merge variables change.
+Every pool picks among the lines allowed right now (month tags, before
+noon, a known stop time, ...): text_rot modulo how many are allowed. A
+line that sits out used to hand its turn to the next line in the pool,
+which then showed about twice as often as the rest (November 2026).
 {%- endcomment %}
 {%- assign text_rot = local_days | times: 101 -%}
 {%- assign text_rot_h = local_hour | times: 103 -%}
@@ -113,15 +117,24 @@ current time moves every 15 minutes, so the merge variables change.
   {%- endcomment %}
   {%- if f_list and f_list.size > 0 -%}
     {%- assign f_n = f_list | size -%}
-    {%- assign f_vi = text_rot | plus: 2 | modulo: f_n -%}
-    {%- for k in (1..f_n) -%}
-      {%- assign f_cand = f_list[f_vi] -%}
+    {%- comment %}
+    Every pool picks among the lines allowed right now (ROTATION, above):
+    a skipped line no longer hands its turn to the next one.
+    {%- endcomment %}
+    {%- assign f_ok_s = '' -%}
+    {%- assign f_ok_n = 0 -%}
+    {%- for f_cand in f_list -%}
       {%- unless f_cand contains '{AM}' and local_hour >= 12 -%}
-        {%- assign f_temp = f_cand | remove: '{AM}' -%}
-        {%- break -%}
+        {%- if f_ok_n > 0 -%}{%- assign f_ok_s = f_ok_s | append: '~|~' -%}{%- endif -%}
+        {%- assign f_ok_s = f_ok_s | append: f_cand -%}
+        {%- assign f_ok_n = f_ok_n | plus: 1 -%}
       {%- endunless -%}
-      {%- assign f_vi = f_vi | plus: 1 | modulo: f_n -%}
     {%- endfor -%}
+    {%- if f_ok_n > 0 -%}
+      {%- assign f_ok_l = f_ok_s | split: '~|~' -%}
+      {%- assign f_vi = text_rot | plus: 2 | modulo: f_ok_n -%}
+      {%- assign f_temp = f_ok_l[f_vi] | remove: '{AM}' -%}
+    {%- endif -%}
     {%- if f_temp == '' -%}{%- assign f_temp = f_list[0] | remove: '{AM}' -%}{%- endif -%}
   {%- endif -%}
   {%- assign f_temp = f_temp | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g -%}
@@ -209,9 +222,9 @@ current time moves every 15 minutes, so the merge variables change.
     {%- if when_stop != '' and p_joined contains '{WHENSTOP}' -%}{%- assign p_need_stop = true -%}{%- endif -%}
     {%- if p_list and p_list.size > 0 -%}
       {%- assign p_n = p_list | size -%}
-      {%- assign p_vi = text_rot | plus: 3 | modulo: p_n -%}
-      {%- for k in (1..p_n) -%}
-        {%- assign p_cand = p_list[p_vi] -%}
+      {%- assign p_ok_s = '' -%}
+      {%- assign p_ok_n = 0 -%}
+      {%- for p_cand in p_list -%}
         {%- assign p_skip = false -%}
         {%- if p_cand contains '{WHENSTOP}' -%}
           {%- if when_stop == '' -%}{%- assign p_skip = true -%}{%- endif -%}
@@ -219,11 +232,16 @@ current time moves every 15 minutes, so the merge variables change.
           {%- assign p_skip = true -%}
         {%- endif -%}
         {%- unless p_skip -%}
-          {%- assign f_precip = p_cand | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
-          {%- break -%}
+          {%- if p_ok_n > 0 -%}{%- assign p_ok_s = p_ok_s | append: '~|~' -%}{%- endif -%}
+          {%- assign p_ok_s = p_ok_s | append: p_cand -%}
+          {%- assign p_ok_n = p_ok_n | plus: 1 -%}
         {%- endunless -%}
-        {%- assign p_vi = p_vi | plus: 1 | modulo: p_n -%}
       {%- endfor -%}
+      {%- if p_ok_n > 0 -%}
+        {%- assign p_ok_l = p_ok_s | split: '~|~' -%}
+        {%- assign p_vi = text_rot | plus: 3 | modulo: p_ok_n -%}
+        {%- assign f_precip = p_ok_l[p_vi] | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endif -%}
   {%- comment %}
@@ -290,10 +308,11 @@ current time moves every 15 minutes, so the merge variables change.
     {%- comment %} One unit alone would be the same pair every time: two or more. {%- endcomment %}
     {%- assign u_n = u_pool | size -%}
     {%- if u_pool and u_n >= 2 -%}
-      {%- assign u_i = text_rot | plus: 7 | modulo: u_n -%}
       {%- assign u_month = ',' | append: season_month | append: ',' -%}
-      {%- for k in (1..u_n) -%}
-        {%- assign u_cand = u_pool[u_i] -%}
+      {%- assign u_ok_s = '' -%}
+      {%- assign u_ok_n = 0 -%}
+      {%- for u_raw in u_pool -%}
+        {%- assign u_cand = u_raw -%}
         {%- assign u_ok = true -%}
         {%- if u_cand contains '{M:' -%}
           {%- assign u_tag = u_cand | split: '{M:' | last | split: '}' | first -%}
@@ -323,14 +342,20 @@ current time moves every 15 minutes, so the merge variables change.
           {%- assign u_cand = u_cand | remove: '{AM}' -%}
         {%- endif -%}
         {%- if u_ok -%}
+          {%- if u_ok_n > 0 -%}{%- assign u_ok_s = u_ok_s | append: '~|~' -%}{%- endif -%}
+          {%- assign u_ok_s = u_ok_s | append: u_cand -%}
+          {%- assign u_ok_n = u_ok_n | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if u_ok_n > 0 -%}
+          {%- assign u_ok_l = u_ok_s | split: '~|~' -%}
+          {%- assign u_i = text_rot | plus: 7 | modulo: u_ok_n -%}
+          {%- assign u_cand = u_ok_l[u_i] -%}
           {%- assign u_parts = u_cand | split: ' || ' -%}
           {%- assign u_fact = u_parts[0] | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
           {%- assign unit_joke = u_parts[1] | default: '' | strip | replace: '{GV}', f_gv | replace: '{GP}', f_gp | replace: '{G}', f_g | replace: '{WHEN2}', when_temp2 | replace: '{WHENP}', when_precip | replace: '{WHENSTOP}', when_stop | replace: '{WHEN}', when_temp -%}
           {%- if u_for_precip -%}{%- assign f_precip = u_fact -%}{%- else -%}{%- assign f_temp = u_fact -%}{%- endif -%}
-          {%- break -%}
-        {%- endif -%}
-        {%- assign u_i = u_i | plus: 1 | modulo: u_n -%}
-      {%- endfor -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endif -%}
   {%- if is_steady and f_precip != '' -%}
@@ -524,15 +549,17 @@ current time moves every 15 minutes, so the merge variables change.
     {%- comment %} An empty pool (every line voted out) must not reach the modulo below. {%- endcomment %}
     {%- if fl_pool and fl_pool.size > 0 -%}
       {%- assign fl_n = fl_pool | size -%}
-      {%- assign fl_i = text_rot | plus: 5 | modulo: fl_n -%}
+
       {%- comment %}
       A line may carry the months it shows in, as a tag build_pools.py puts
       in front: "{M:10,11}Every year everyone's surprised…". In another
-      month the next line of the pool shows instead.
+      month it sits out, and the pick is among the lines that can show.
       {%- endcomment %}
       {%- assign fl_month = ',' | append: season_month | append: ',' -%}
-      {%- for k in (1..fl_n) -%}
-        {%- assign fl_cand = fl_pool[fl_i] -%}
+      {%- assign fl_ok_s = '' -%}
+      {%- assign fl_ok_n = 0 -%}
+      {%- for fl_raw in fl_pool -%}
+        {%- assign fl_cand = fl_raw -%}
         {%- assign fl_ok = true -%}
         {%- if fl_cand contains '{AM}' -%}
           {%- if local_hour >= 12 -%}{%- assign fl_ok = false -%}{%- endif -%}
@@ -558,11 +585,16 @@ current time moves every 15 minutes, so the merge variables change.
         {%- endif -%}
         {%- if fl_cand contains '{G' and fu_g == '' -%}{%- assign fl_ok = false -%}{%- endif -%}
         {%- if fl_ok -%}
-          {%- assign flavour_line = fl_cand | replace: '{GP}', fu_gp | replace: '{G}', fu_g -%}
-          {%- break -%}
+          {%- if fl_ok_n > 0 -%}{%- assign fl_ok_s = fl_ok_s | append: '~|~' -%}{%- endif -%}
+          {%- assign fl_ok_s = fl_ok_s | append: fl_cand -%}
+          {%- assign fl_ok_n = fl_ok_n | plus: 1 -%}
         {%- endif -%}
-        {%- assign fl_i = fl_i | plus: 1 | modulo: fl_n -%}
       {%- endfor -%}
+      {%- if fl_ok_n > 0 -%}
+        {%- assign fl_ok_l = fl_ok_s | split: '~|~' -%}
+        {%- assign fl_i = text_rot | plus: 5 | modulo: fl_ok_n -%}
+        {%- assign flavour_line = fl_ok_l[fl_i] | replace: '{GP}', fu_gp | replace: '{G}', fu_g -%}
+      {%- endif -%}
     {%- endif -%}
     {%- comment %} A unit's own joke, under its own forecast sentence (UNITS above). {%- endcomment %}
     {%- if unit_joke != nil and forecast_on and fact_line != '' and fl_theme == false -%}

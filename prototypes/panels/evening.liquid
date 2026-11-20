@@ -265,18 +265,20 @@ was. Appended after the drawings block by prototypes/panels/build.py.
     {%- assign el = EV.facts[ek] -%}
     {%- if el and el.size > 0 -%}
       {%- assign en_ = el | size -%}
-      {%- assign ei = text_rot | modulo: en_ -%}
-      {%- for k in (1..en_) -%}
-        {%- assign e_cand = el[ei] -%}
+      {%- assign e_ok_s = '' -%}
+      {%- assign e_ok_n = 0 -%}
+      {%- for e_raw in el -%}
+        {%- assign e_cand = e_raw -%}
         {%- if e_cand contains '{DRY}' -%}
           {%- if is_now_precip == 1 -%}{%- assign e_cand = '' -%}{%- else -%}{%- assign e_cand = e_cand | remove: '{DRY}' -%}{%- endif -%}
         {%- endif -%}
-        {%- if e_cand != '' -%}
-          {%- assign ev_fact = e_cand | replace: '{FROM}', ev_from -%}
-          {%- break -%}
-        {%- endif -%}
-        {%- assign ei = ei | plus: 1 | modulo: en_ -%}
+        {%- if e_cand != '' -%}{%- if e_ok_n > 0 -%}{%- assign e_ok_s = e_ok_s | append: '~|~' -%}{%- endif -%}{%- assign e_ok_s = e_ok_s | append: e_cand -%}{%- assign e_ok_n = e_ok_n | plus: 1 -%}{%- endif -%}
       {%- endfor -%}
+      {%- if e_ok_n > 0 -%}
+        {%- assign e_ok_l = e_ok_s | split: '~|~' -%}
+        {%- assign ei = text_rot | modulo: e_ok_n -%}
+        {%- assign ev_fact = e_ok_l[ei] | replace: '{FROM}', ev_from -%}
+      {%- endif -%}
     {%- endif -%}
     {%- comment %} Tonight still changes: today's line about it first. {%- endcomment %}
     {%- if visual_forecast and panel_n > 1 and fact_line != '' -%}
@@ -338,10 +340,11 @@ was. Appended after the drawings block by prototypes/panels/build.py.
     {%- if j_pass == '11' -%}{%- assign jl = j_11 -%}{%- else -%}{%- assign jl = j_main -%}{%- endif -%}
     {%- if jl.size > 0 -%}
       {%- assign jn = jl | size -%}
-      {%- assign ji = text_rot | plus: 3 | modulo: jn -%}
       {%- assign wd_probe = ',' | append: wd | append: ',' -%}
-      {%- for k in (1..jn) -%}
-        {%- assign j_cand = jl[ji] -%}
+      {%- assign j_ok_s = '' -%}
+      {%- assign j_ok_n = 0 -%}
+      {%- for j_raw in jl -%}
+        {%- assign j_cand = j_raw -%}
         {%- if j_cand contains '{P}' -%}
           {%- if ev_tonight_slug == '' -%}{%- assign j_cand = '' -%}{%- else -%}{%- assign j_cand = j_cand | remove_first: '{P}' -%}{%- endif -%}
         {%- endif -%}
@@ -367,12 +370,13 @@ was. Appended after the drawings block by prototypes/panels/build.py.
             {%- assign j_cand = '' -%}
           {%- endif -%}
         {%- endif -%}
-        {%- if j_cand != '' -%}
-          {%- assign ev_joke = j_cand -%}
-          {%- break -%}
-        {%- endif -%}
-        {%- assign ji = ji | plus: 1 | modulo: jn -%}
+        {%- if j_cand != '' -%}{%- if j_ok_n > 0 -%}{%- assign j_ok_s = j_ok_s | append: '~|~' -%}{%- endif -%}{%- assign j_ok_s = j_ok_s | append: j_cand -%}{%- assign j_ok_n = j_ok_n | plus: 1 -%}{%- endif -%}
       {%- endfor -%}
+      {%- if j_ok_n > 0 -%}
+        {%- assign j_ok_l = j_ok_s | split: '~|~' -%}
+        {%- assign ji = text_rot | plus: 3 | modulo: j_ok_n -%}
+        {%- assign ev_joke = j_ok_l[ji] -%}
+      {%- endif -%}
     {%- endif -%}
     {%- if ev_joke != '' -%}{%- break -%}{%- endif -%}
   {%- endfor -%}

@@ -362,11 +362,13 @@ after the fact + flavour block and the picture.
       {%- if vf_pool and vf_pool.size > 0 -%}
         {%- if fl_alone_all -%}{%- assign vf_pool = vf_pool | concat: fl_alone_all -%}{%- endif -%}
         {%- assign vf_n = vf_pool | size -%}
-        {%- assign vf_i = text_rot | plus: 5 | modulo: vf_n -%}
         {%- comment %} Month tags as in the fact + flavour block. {%- endcomment %}
         {%- assign vf_month = ',' | append: season_month | append: ',' -%}
-        {%- for k in (1..vf_n) -%}
-          {%- assign vf_cand = vf_pool[vf_i] -%}
+        {%- comment %} The pick is among the lines that can show now, as in the fact + flavour block. {%- endcomment %}
+        {%- assign vf_ok_s = '' -%}
+        {%- assign vf_ok_n = 0 -%}
+        {%- for vf_raw in vf_pool -%}
+          {%- assign vf_cand = vf_raw -%}
           {%- if vf_cand contains '{AM}' -%}
             {%- if local_hour >= 12 -%}{%- assign vf_cand = '{M:00}' -%}{%- else -%}{%- assign vf_cand = vf_cand | remove: '{AM}' -%}{%- endif -%}
           {%- endif -%}
@@ -384,15 +386,18 @@ after the fact + flavour block and the picture.
             {%- assign vf_tags = ',' | append: vf_tag | append: ',' -%}
             {%- if vf_tags contains vf_month -%}
               {%- assign vf_prefix = '{M:' | append: vf_tag | append: '}' -%}
-              {%- assign flavour_line = vf_cand | remove_first: vf_prefix -%}
-              {%- break -%}
+              {%- assign vf_cand = vf_cand | remove_first: vf_prefix -%}
+              {%- if vf_ok_n > 0 -%}{%- assign vf_ok_s = vf_ok_s | append: '~|~' -%}{%- endif -%}{%- assign vf_ok_s = vf_ok_s | append: vf_cand -%}{%- assign vf_ok_n = vf_ok_n | plus: 1 -%}
             {%- endif -%}
           {%- else -%}
-            {%- assign flavour_line = vf_cand -%}
-            {%- break -%}
+            {%- if vf_ok_n > 0 -%}{%- assign vf_ok_s = vf_ok_s | append: '~|~' -%}{%- endif -%}{%- assign vf_ok_s = vf_ok_s | append: vf_cand -%}{%- assign vf_ok_n = vf_ok_n | plus: 1 -%}
           {%- endif -%}
-          {%- assign vf_i = vf_i | plus: 1 | modulo: vf_n -%}
         {%- endfor -%}
+        {%- if vf_ok_n > 0 -%}
+          {%- assign vf_ok_l = vf_ok_s | split: '~|~' -%}
+          {%- assign vf_i = text_rot | plus: 5 | modulo: vf_ok_n -%}
+          {%- assign flavour_line = vf_ok_l[vf_i] -%}
+        {%- endif -%}
       {%- endif -%}
     {%- endif -%}
     {%- assign panel_flavour = flavour_line -%}
