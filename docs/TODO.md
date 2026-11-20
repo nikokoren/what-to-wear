@@ -48,12 +48,13 @@ angle before writing many lines for them.
 vetoed, 23 of 82 kept (17 English, 6 German), the owner's edits applied.
 Why in `docs/SHAPES.md` ("Round 40"). No more writing rounds for the
 steady slots for now. Instead, for the repetition on steady days (13
-different screens in 112 glances over four weeks), in the markup:
-alternate the unit with the plain steady fact plus a voted standalone
-line (`now_*`, `alone_*`), so already-voted lines make more different
-screens; and fix the rotation's skip bias (a month-tagged line that's
-filtered out hands its turn to the next line, which then shows twice as
-often).
+different screens in 112 glances over four weeks), the rotation's skip
+bias was fixed (below). **Decided (owner, 20 November 2026): units only.**
+Mixing a plain steady sentence with a separately voted standalone line
+was proposed and turned down: it breaks the October rule that with
+sarcasm on the screen never combines two separate picks. Steady-day
+variety grows with the unit pools (the owner's own lines, or a native
+German writer), not in the markup.
 
 **Rotation fixed (20 November 2026):** every pool now picks among the
 lines allowed right now (fact, rain, units, the sarcastic line, the
