@@ -47,7 +47,7 @@
     ],
     "facts": {
       "tmr_steady": [
-        "Morgen kommst du mit einem Outfit gut durch den ganzen Tag.",
+        "Das Outfit von morgen früh passt den ganzen Tag.",
         "Das Outfit für morgen passt den ganzen Tag.",
         "Morgen passt ein Outfit für den ganzen Tag."
       ],
@@ -59,7 +59,7 @@
       ],
       "tmr_colder": [
         "Morgen wird's {FROM} kälter, dann brauchst du eine Schicht mehr.",
-        "Morgen geht's wärmer los, {FROM} wird's wieder kälter.",
+        "Morgen geht's wärmer los. {FROM} wird's kälter.",
         "Morgen wird's {FROM} kälter."
       ],
       "tmr_rain": [
@@ -68,21 +68,20 @@
         "Morgen ist's erst trocken, {FROM} regnet's. Nimm den Schirm mit."
       ],
       "tmr_snow": [
-        "Morgen kommt {FROM} der Schnee.",
+        "Morgen beginnt es {FROM} zu schneien.",
         "Rechne morgen {FROM} mit Schnee.",
         "Morgen schneit's {FROM}.",
-        "Für morgen ist {FROM} Schnee vorhergesagt."
+        "Morgen fällt {FROM} Schnee."
       ],
       "tmr_drier": [
         "Morgen geht's nass los, {FROM} ist's trocken.",
-        "{DRY}Morgen brauchst du erst mal den Schirm, {FROM} ist's wieder trocken.",
-        "Morgen regnet's zunächst, {FROM} bleibt's trocken."
+        "Morgen ist es anfangs nass und {FROM} trocken."
       ],
       "tmr_wet": [
         "Morgen geht's mit Regen los, denk also an den Schirm.",
         "Morgen beginnt der Tag mit Regen, also pack den Schirm ein.",
         "Leg dir für morgen den Schirm bereit, es geht nass los.",
-        "Morgen brauchst du gleich den Schirm, es geht nass los."
+        "Morgen geht's nass los. Den Schirm brauchst du gleich beim Rausgehen."
       ],
       "tmr_snow_start": [
         "Morgen fängt der Tag mit Schnee an.",
@@ -98,7 +97,7 @@
         "{S}Das Gute: Man kann sich schon heute drüber ärgern. Das spart morgen Zeit.",
         "{N}Die gute Nachricht: Man kann sich schon heute drüber ärgern. Das spart morgen Zeit.",
         "{S}{P}Die Figur da rechts ist schon für morgen angezogen. Streber.",
-        "{N}{P}Die Figur da rechts hat schon die Hausübung für morgen gemacht. Streber.",
+        "{N}{P}Die Figur da rechts ist schon für morgen angezogen. Streber.",
         "Ich meckere heute schon mal vor. Morgen reicht dann ein Seufzer.",
         "Ändert sich das Wetter doch noch, mal ich's heimlich um und tu so, als wär nichts gewesen."
       ],
@@ -114,7 +113,7 @@
       ],
       "rain": [
         "{D:1}Der Montag lässt wirklich nichts aus.",
-        "Auch das noch.",
+        "Manche tragen ihren Schirm wieder auf Augenhöhe. Damit alle anderen auch was davon haben.",
         "{S}Ich wollte den Regen auf nächste Woche verschieben. Der ist aber schon unterwegs.",
         "{N}Ich wollte den Regen auf nächste Woche verschieben, aber der ist schon unterwegs."
       ],
@@ -122,8 +121,7 @@
         "{S}Und ich darf wieder jede Flocke einzeln malen.",
         "{N}Und ich darf wieder jede Flocke einzeln malen. Super.",
         "Der Hausmeister stellt sich die Schneeschaufel heut schon ans Bett.",
-        "Die Bahn hat die Verspätungsdurchsage für morgen bestimmt schon aufgenommen.",
-        "Auch das noch."
+        "Die Bahn hat die Verspätungsdurchsage für morgen bestimmt schon aufgenommen."
       ],
       "steady": [
         "Vielleicht fang ich an, ein bisschen Hintergrund zu malen, damit's nicht zu langweilig wird.",
@@ -144,14 +142,16 @@
         "{S}Ich führ Strichliste, wie oft du gut aussiehst. Der Stift ist noch wie neu.",
         "{N}Ich führ eine Strichliste, wie oft du gut aussiehst. Der Stift ist noch wie neu.",
         "Dein Stil: Hauptsache angezogen.",
-        "Ich helf dir jeden Abend beim Anziehen. Andere brauchen dafür einen Pflegegrad.",
         "Merk dir: Falls ich mal was Nettes über dich sag, wurden wir gehackt.",
         "Leg dir für morgen auch gleich ein Lächeln raus. Morgens findest du sonst wieder keins."
       ],
       "rain": [
         "Ich hab dich schon nass gesehen. Einmal reicht.",
-        "{S}Auch wenn der Schirm bei dir immer irgendwie doof aussieht.",
+        "{S}Nimm einen großen Schirm. Dann sieht man von deinem Outfit wenigstens von oben nichts.",
         "{N}Mit Schirm siehst du immer irgendwie doof aus. Kann man nichts machen."
+      ],
+      "snow": [
+        "Wie viel Schnee fällt, weiß ich noch nicht. Wie viel du draus machst, kann ich mir denken."
       ]
     }
   }
