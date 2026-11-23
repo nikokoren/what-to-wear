@@ -435,7 +435,8 @@
     ],
     "steady": [
       "No layer to carry today. Both hands free for snacks.",
-      "The one forecast I could do in my sleep."
+      "The one forecast I could do in my sleep.",
+      "I'd offer a second opinion, but it'd be me in a different font."
     ],
     "shorts": [
       "Your knees will have opinions at first. Ignore them.",
@@ -600,7 +601,8 @@
       "Later you'll say, “Where did that come from?” From right here."
     ],
     "scorch": [
-      "{AM}Do nothing at midday. Finally, a plan you're good at."
+      "{AM}Do nothing at midday. Finally, a plan you're good at.",
+      "Shade does wonders for that shirt. So would total darkness."
     ],
     "ice": [
       "Clingy is a good look on you today.",
@@ -976,7 +978,8 @@
     ],
     "warming": [
       "Later it warms up, and you'll pretend you were never cold.",
-      "Later it warms up. You'll say 'warm for this time of year' like you keep records."
+      "Later it warms up. You'll say 'warm for this time of year' like you keep records.",
+      "It warms up later. I'll give you a minute to practice saying you picked the outfit yourself."
     ],
     "wet": [
       "You'll do the little puddle hop and think it looked graceful.",
@@ -1287,7 +1290,8 @@
     ],
     "arc_level": [
       "You can take {G} off {WHEN}. You'll want {GP} back {WHEN2}. || Then you'll say 'it's turned chilly' like it's news to you.",
-      "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you."
+      "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Off, on. The layer gets more exercise than you.",
+      "{G} can come off {WHEN}, but you'll want {GP} back {WHEN2}. || Think of it as a round trip. The lost and found is an optional stop."
     ],
     "arc_colder": [
       "You can take {G} off {WHEN}. {WHEN2} you'll want {GP} back, and maybe an extra layer. || 'Maybe' is me being polite. Bring it.",
